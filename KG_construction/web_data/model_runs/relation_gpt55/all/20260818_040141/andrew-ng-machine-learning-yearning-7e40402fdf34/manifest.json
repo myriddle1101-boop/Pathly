@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "andrew-ng-machine-learning-yearning-7e40402fdf34",
+  "created_at": "2026-07-28T02:43:59+08:00",
+  "updated_at": "2026-07-29T13:08:56+08:00",
+  "status": "success",
+  "run_attempts": 3,
+  "document": {
+    "file_name": "andrew-ng-machine-learning-yearning.pdf",
+    "doc_name": "andrew-ng-machine-learning-yearning",
+    "sha256": "7e40402fdf34502f85a74e6b6629ab1caa2f4c68f2620563c92cf59b06a5d303",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\andrew-ng-machine-learning-yearning.pdf",
+    "pdf_size_bytes": 5705059
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": null,
+    "duration_seconds": 0.0718
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-28T02:43:59+08:00",
+      "ended_at": "2026-07-28T02:44:10+08:00",
+      "duration_seconds": 10.6316,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\andrew-ng-machine-learning-yearning.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 26231\n[2] 清洗后词数: 26259\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 143\n[5] 分块数（过滤后）: 132\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=239\nMachine Learning Yearning is a deeplearning.ai project. Deeplearning.AI  2018 Andrew Ng. All Rights Reserved. Page 2 Machine Learning Yearning-Draft Andrew Ng Table of Contents 1 Why Machine Learning Strategy 2 How to u...\n\n[Chunk 2] words=224\n26 Error analysis on the training set 27 Techniques for reducing variance 28 Diagnosing bias and variance: Learning curves 29 Plotting training error 30 Interpreting learning curves: High bias 31 Interpreting learning cu...\n\n[Chunk 3] words=192\n1 Why Machine Learning Strategy Machine learning is the foundation of countless important applications, including web search, email anti-spam, speech recognition, product recommendations, and more. I assume that you or y...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 2,
+      "started_at": "2026-07-28T02:45:33+08:00",
+      "ended_at": "2026-07-28T02:46:56+08:00",
+      "duration_seconds": 83.5549,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "eyBERT] chunk 78/132 ...\n[KeyBERT] chunk 79/132 ...\n[KeyBERT] chunk 80/132 ...\n[KeyBERT] chunk 81/132 ...\n[KeyBERT] chunk 82/132 ...\n[KeyBERT] chunk 83/132 ...\n[KeyBERT] chunk 84/132 ...\n[KeyBERT] chunk 85/132 ...\n[KeyBERT] chunk 86/132 ...\n[KeyBERT] chunk 87/132 ...\n[KeyBERT] chunk 88/132 ...\n[KeyBERT] chunk 89/132 ...\n[KeyBERT] chunk 90/132 ...\n[KeyBERT] chunk 91/132 ...\n[KeyBERT] chunk 92/132 ...\n[KeyBERT] chunk 93/132 ...\n[KeyBERT] chunk 94/132 ...\n[KeyBERT] chunk 95/132 ...\n[KeyBERT] chunk 96/132 ...\n[KeyBERT] chunk 97/132 ...\n[KeyBERT] chunk 98/132 ...\n[KeyBERT] chunk 99/132 ...\n[KeyBERT] chunk 100/132 ...\n[KeyBERT] chunk 101/132 ...\n[KeyBERT] chunk 102/132 ...\n[KeyBERT] chunk 103/132 ...\n[KeyBERT] chunk 104/132 ...\n[KeyBERT] chunk 105/132 ...\n[KeyBERT] chunk 106/132 ...\n[KeyBERT] chunk 107/132 ...\n[KeyBERT] chunk 108/132 ...\n[KeyBERT] chunk 109/132 ...\n[KeyBERT] chunk 110/132 ...\n[KeyBERT] chunk 111/132 ...\n[KeyBERT] chunk 112/132 ...\n[KeyBERT] chunk 113/132 ...\n[KeyBERT] chunk 114/132 ...\n[KeyBERT] chunk 115/132 ...\n[KeyBERT] chunk 116/132 ...\n[KeyBERT] chunk 117/132 ...\n[KeyBERT] chunk 118/132 ...\n[KeyBERT] chunk 119/132 ...\n[KeyBERT] chunk 120/132 ...\n[KeyBERT] chunk 121/132 ...\n[KeyBERT] chunk 122/132 ...\n[KeyBERT] chunk 123/132 ...\n[KeyBERT] chunk 124/132 ...\n[KeyBERT] chunk 125/132 ...\n[KeyBERT] chunk 126/132 ...\n[KeyBERT] chunk 127/132 ...\n[KeyBERT] chunk 128/132 ...\n[KeyBERT] chunk 129/132 ...\n[KeyBERT] chunk 130/132 ...\n[KeyBERT] chunk 131/132 ...\n[KeyBERT] chunk 132/132 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Machine Learning\n02. Neural Networks\n03. Training Process\n04. Model Evaluation\n05. Data Management\n06. Performance Metrics\n07. Pipeline Design\n08. Overfitting and Generalization\n09. Specialized Applications\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4925.01it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-28T02:46:56+08:00",
+      "ended_at": "2026-07-28T02:47:04+08:00",
+      "duration_seconds": 8.139,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 8 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Data Management -> Training Process | Data is essential for training models.\n02. Training Process -> Model Evaluation | Models need to be evaluated after training.\n03. Model Evaluation -> Performance Metrics | Performance metrics are used in model evaluation.\n04. Training Process -> Overfitting and Generalization | Understanding training is key to addressing overfitting.\n05. Neural Networks -> Training Process | Neural networks require a specific training process.\n06. Pipeline Design -> Training Process | Pipeline design includes the training process.\n07. Pipeline Design -> Data Management | Data management is a component of pipeline design.\n08. Specialized Applications -> Machine Learning | Specialized applications are based on machine learning principles.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-28T02:47:04+08:00",
+      "ended_at": "2026-07-28T02:47:36+08:00",
+      "duration_seconds": 31.5442,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 3 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Model Evaluation <-> Training Process | sim=0.7926\n02. Machine Learning <-> Specialized Applications | sim=0.756\n03. Machine Learning <-> Training Process | sim=0.7509\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5244.76it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-28T02:47:36+08:00",
+      "ended_at": "2026-07-28T02:48:04+08:00",
+      "duration_seconds": 27.8591,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Machine Learning\n[LLM] 2/9 Neural Networks\n[LLM] 3/9 Training Process\n[LLM] 4/9 Model Evaluation\n[LLM] 5/9 Data Management\n[LLM] 6/9 Performance Metrics\n[LLM] 7/9 Pipeline Design\n[LLM] 8/9 Overfitting and Generalization\n[LLM] 9/9 Specialized Applications\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-28T02:48:04+08:00",
+      "ended_at": "2026-07-28T02:48:06+08:00",
+      "duration_seconds": 2.0507,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output present"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 8\n[3] Similarity edges: 3\n[4] Graph nodes=9, edges=11\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T13:08:56+08:00"
+}

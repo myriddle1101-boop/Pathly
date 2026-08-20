@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="similarity" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Attention Mechanisms" label="Attention Mechanisms">
+        <attvalues>
+          <attvalue for="0" value="Techniques that allow models to focus on specific parts of the input sequence." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Self Attention&quot;, &quot;description&quot;: &quot;A mechanism where a sequence attends to itself to capture dependencies.&quot;}, {&quot;name&quot;: &quot;Multi-Head Attention&quot;, &quot;description&quot;: &quot;An extension of attention that allows the model to jointly attend to information from different representation subspaces.&quot;}, {&quot;name&quot;: &quot;Attention Output&quot;, &quot;description&quot;: &quot;The result produced by applying attention mechanisms to input sequences.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and sequence data." />
+          <attvalue for="6" value="[&quot;Self-Attention&quot;, &quot;Multi-Head Attention&quot;]" />
+          <attvalue for="7" value="[&quot;Attention is only for NLP tasks&quot;, &quot;Attention mechanisms replace RNNs completely&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Image Captioning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Transformers" label="Transformers">
+        <attvalues>
+          <attvalue for="0" value="A neural network architecture that relies heavily on attention mechanisms." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Encoder-Decoder Architecture&quot;, &quot;description&quot;: &quot;A structure that consists of an encoder to process input and a decoder to generate output.&quot;}, {&quot;name&quot;: &quot;Transformer Encoder&quot;, &quot;description&quot;: &quot;The part of the transformer that processes the input sequence.&quot;}, {&quot;name&quot;: &quot;Transformer Decoder&quot;, &quot;description&quot;: &quot;The part of the transformer that generates the output sequence.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and deep learning concepts." />
+          <attvalue for="6" value="[&quot;Attention Mechanism&quot;, &quot;Self-Attention&quot;, &quot;Positional Encoding&quot;, &quot;Multi-Head Attention&quot;]" />
+          <attvalue for="7" value="[&quot;Transformers are only for NLP tasks&quot;, &quot;Attention mechanisms are the same as traditional neural network weights&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Image Processing&quot;, &quot;Speech Recognition&quot;, &quot;Recommender Systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Sequence Processing" label="Sequence Processing">
+        <attvalues>
+          <attvalue for="0" value="Methods and techniques for handling sequential data in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Source Sequence&quot;, &quot;description&quot;: &quot;The original input sequence fed into the model.&quot;}, {&quot;name&quot;: &quot;Sentence Encoding&quot;, &quot;description&quot;: &quot;The process of converting sentences into numerical representations.&quot;}, {&quot;name&quot;: &quot;Sequence Attention&quot;, &quot;description&quot;: &quot;Applying attention mechanisms specifically to sequences.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and linear algebra." />
+          <attvalue for="6" value="[&quot;Recurrent Neural Networks (RNNs)&quot;, &quot;Long Short-Term Memory (LSTM) networks&quot;]" />
+          <attvalue for="7" value="[&quot;Sequential data can be processed like static data&quot;, &quot;All sequence models require large datasets&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing (NLP)&quot;, &quot;Time Series Forecasting&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain, consisting of interconnected neurons." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Neural Machine Translation&quot;, &quot;description&quot;: &quot;Using neural networks to translate text from one language to another.&quot;}, {&quot;name&quot;: &quot;Vanishing Gradient Problem&quot;, &quot;description&quot;: &quot;A challenge in training deep networks where gradients become too small.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neuron based on its input.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;, &quot;Loss Functions&quot;, &quot;Overfitting and Regularization&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods used to optimize machine learning models during training." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by propagating errors backward.&quot;}, {&quot;name&quot;: &quot;Normalization Techniques&quot;, &quot;description&quot;: &quot;Methods to adjust and scale inputs to improve training efficiency.&quot;}, {&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Regularization&quot;, &quot;Batch Normalization&quot;, &quot;Early Stopping&quot;]" />
+          <attvalue for="7" value="[&quot;More training data always leads to better models&quot;, &quot;Overfitting can be ignored if the model performs well on training data&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model accuracy&quot;, &quot;Reducing training time&quot;, &quot;Enhancing model generalization&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Dimensionality Reduction" label="Dimensionality Reduction">
+        <attvalues>
+          <attvalue for="0" value="Techniques to reduce the number of features in a dataset while preserving important information." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Training Dimensionality&quot;, &quot;description&quot;: &quot;The dimensionality of the input data used during model training.&quot;}, {&quot;name&quot;: &quot;Normalization Trick&quot;, &quot;description&quot;: &quot;A technique to stabilize training by normalizing inputs.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and statistics." />
+          <attvalue for="6" value="[&quot;Principal Component Analysis (PCA)&quot;, &quot;t-Distributed Stochastic Neighbor Embedding (t-SNE)&quot;]" />
+          <attvalue for="7" value="[&quot;Dimensionality reduction always improves model performance.&quot;, &quot;All features are equally important for reduction.&quot;]" />
+          <attvalue for="8" value="[&quot;Data visualization&quot;, &quot;Noise reduction in datasets&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Attention Variants" label="Attention Variants">
+        <attvalues>
+          <attvalue for="0" value="Different forms and applications of attention mechanisms in models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Attention Heads&quot;, &quot;description&quot;: &quot;Individual attention mechanisms within multi-head attention.&quot;}, {&quot;name&quot;: &quot;Scaled Dot-Product Attention&quot;, &quot;description&quot;: &quot;A specific implementation of attention that scales dot products.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and deep learning concepts." />
+          <attvalue for="6" value="[&quot;Self-Attention&quot;, &quot;Multi-Head Attention&quot;, &quot;Scaled Dot-Product Attention&quot;, &quot;Attention Mechanism in NLP&quot;]" />
+          <attvalue for="7" value="[&quot;Attention is only used in NLP tasks&quot;, &quot;Attention mechanisms always improve model performance&quot;]" />
+          <attvalue for="8" value="[&quot;Machine Translation&quot;, &quot;Image Captioning&quot;, &quot;Speech Recognition&quot;, &quot;Recommender Systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Language Models" label="Language Models">
+        <attvalues>
+          <attvalue for="0" value="Models designed to understand and generate human language." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;RNN Language Models&quot;, &quot;description&quot;: &quot;Recurrent neural networks used for language processing.&quot;}, {&quot;name&quot;: &quot;Neural Representation&quot;, &quot;description&quot;: &quot;The way language is represented in neural networks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Natural Language Processing&quot;, &quot;Neural Networks&quot;]" />
+          <attvalue for="7" value="[&quot;Language models can understand context like humans&quot;, &quot;All language models are the same&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots&quot;, &quot;Text summarization&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Output Generation" label="Output Generation">
+        <attvalues>
+          <attvalue for="0" value="Processes involved in generating outputs from models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Decoder Input&quot;, &quot;description&quot;: &quot;The input provided to the decoder during output generation.&quot;}, {&quot;name&quot;: &quot;Predicting Words&quot;, &quot;description&quot;: &quot;The task of generating the next word in a sequence.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Model Predictions&quot;, &quot;Output Interpretation&quot;]" />
+          <attvalue for="7" value="[&quot;Outputs are always accurate&quot;, &quot;All models generate the same type of output&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Attention Mechanisms" target="Transformers">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Transformers rely heavily on attention, especially self-attention, as a core architectural component." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Attention Mechanisms" target="Attention Variants">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Attention variants require understanding the basic attention mechanism before studying specialized forms." />
+          <attvalue for="11" value="0.8418" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Neural Networks" target="Attention Mechanisms">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Attention mechanisms are typically implemented within neural network models and require understanding neural network representations." />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Neural Networks" target="Transformers">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Transformers are neural network architectures, so neural network fundamentals are needed to understand their structure and training." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

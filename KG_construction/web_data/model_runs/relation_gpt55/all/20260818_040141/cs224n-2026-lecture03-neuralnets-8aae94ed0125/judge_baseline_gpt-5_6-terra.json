@@ -1,0 +1,119 @@
+{
+  "created_at": "2026-08-18T18:50:46.778071+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-cs224n-2026-lecture03-neuralnets-8aae94ed0125",
+  "file_name": "cs224n-2026-lecture03-neuralnets-8aae94ed0125",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 13,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6923,
+    "f1": 0.8182,
+    "tp": 9,
+    "fp": 0,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.4286,
+    "recall": 0.5,
+    "f1": 0.4615,
+    "tp": 3,
+    "fp": 4,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Neural Networks",
+      "Backpropagation",
+      "Activation Functions",
+      "Loss Functions",
+      "Gradient Descent",
+      "Classification Techniques",
+      "Gradient Flow",
+      "Model Evaluation",
+      "Shape and Parameters"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Matrix Calculus",
+        "reason": "The lecture explicitly develops vectorized gradients, Jacobians, and derivative shape conventions."
+      },
+      {
+        "name": "Chain Rule",
+        "reason": "The multivariate chain rule is presented as the central mathematical basis of backpropagation."
+      },
+      {
+        "name": "Computation Graphs",
+        "reason": "The source explains forward propagation and backpropagation through computation graphs."
+      },
+      {
+        "name": "Automatic Differentiation",
+        "reason": "The lecture explicitly describes automatic gradient computation in modern deep-learning frameworks."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Backpropagation",
+        "reason": "Backpropagation is presented as the method for computing gradients and training neural-network parameters."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Activation Functions",
+        "reason": "Activation functions are required for multilayer neural networks to represent nonlinear functions."
+      },
+      {
+        "from": "Loss Functions",
+        "to": "Gradient Descent",
+        "reason": "Stochastic gradient descent updates parameters by taking gradients of the training objective/loss."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Loss Functions",
+        "reason": "Loss functions are general optimization objectives and are not a learning dependency that follows specifically from neural networks."
+      },
+      {
+        "from": "Backpropagation",
+        "to": "Gradient Flow",
+        "reason": "The source discusses gradients being propagated during backpropagation, but does not establish Gradient Flow as a separate downstream prerequisite concept."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Model Evaluation",
+        "reason": "The source treats evaluation of word vectors separately from optimization; gradient descent is not required to understand evaluation."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Shape and Parameters",
+        "reason": "Parameter shapes and dimensionality are implementation and calculus details, not a clearly directional consequence of learning neural networks."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Chain Rule",
+        "to": "Backpropagation",
+        "reason": "The lecture states that backpropagation recursively applies the generalized chain rule."
+      },
+      {
+        "from": "Matrix Calculus",
+        "to": "Backpropagation",
+        "reason": "Matrix calculus, Jacobians, and vectorized gradients are used to derive neural-network backpropagation."
+      },
+      {
+        "from": "Backpropagation",
+        "to": "Gradient Descent",
+        "reason": "Backpropagation computes the parameter gradients used by stochastic gradient descent updates."
+      }
+    ],
+    "overall_note": "The predicted topics cover the lecture well, but the prerequisite set omits the lecture's core mathematical foundations: matrix calculus and the chain rule."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture03-neuralnets-8aae94ed0125.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture03-neuralnets-8aae94ed0125.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture03-neuralnets-8aae94ed0125_ledger.csv"
+  }
+}

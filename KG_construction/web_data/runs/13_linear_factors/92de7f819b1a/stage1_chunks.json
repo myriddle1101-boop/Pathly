@@ -1,0 +1,74 @@
+[
+  {
+    "chunk_id": 1,
+    "word_count": 270,
+    "doc_type": "slides",
+    "text": "CHAPTER 13. LINEAR FACTOR MODELS sample from. Next we sample the real-valued observable variables given the factors: x = W h + b + noise (13.2) where the noise is typically Gaussian and diagonal (independent across dimensions). Linear Factor Models This is illustrated in figure 13.1. hh hh hh 11 22 33 xx xx xx 11 22 33 xx == WW hh ++ bb ++ nnooiissee Figure 13.1: The directed graphical mo Fdigeulrde e 1 s 3 c.1 ribing the linear factor model family, in which we assume that an observed data vector x is obtained by a linear combination of independent latent factors h, plus some noise. Different models, such as probabilistic (Goodfellow 2016) PCA, factor analysis or ICA, make different choices about the form of the noise and of the prior p(h). 13.1 Probabilistic PCA and Factor Analysis Probabilistic PCA (principal components analysis), factor analysis and other linear factor models are special cases of the above equations (13.1 and 13.2) and only differ in the choices made for the noise distribution and the model’s prior over h x latent variables before observing . In factor analysis (Bartholomew, 1987; Basilevsky, 1994), the latent variable prior is just the unit variance Gaussian h (h; 0, I ) (13.3) ⇠ N while the observed variables x are assumed to be conditionally independent, i h given . Specifically, the noise is assumed to be drawn from a diagonal co- 2 = diag(\u0000 ) variance Gaussian distribution, with covariance matrix , with 2 2 2 2 \u0000 = [\u0000 , \u0000 , . . . , \u0000 ] a vector of per-variable variances."
+  },
+  {
+    "chunk_id": 2,
+    "word_count": 52,
+    "doc_type": "slides",
+    "text": "> 1 2 n The role of the latent variables is thus to capture the dependencies between x x the different observed variables . Indeed, it can easily be shown that is just a i multivariate normal random variable, with x (x; b, W W + ). (13.4) > ⇠ N 490"
+  },
+  {
+    "chunk_id": 3,
+    "word_count": 132,
+    "doc_type": "slides",
+    "text": "Probabilistic PCA and Factor Analysis\n• Linear factor model\n• Gaussian prior\n• Extends PCA\n• Given an input, yields a distribution over codes, rather\nthan a single code\n• Estimates a probability density function\n• Can generate samples\n(Goodfellow 2016) Independent Components\nAnalysis\nFactorial but non-Gaussian prior\n•\nLearns components that are closer to statistically\n•\nindependent than the raw features\nCan be used to separate voices of n speakers\n•\nrecorded by n microphones, or to separate multiple\nEEG signals\nMany variants, some more probabilistic than others\n•\n(Goodfellow 2016) Slow Feature Analysis\nLearn features that change gradually over time\n•\nSFA algorithm does so in closed form for a linear\n•\nmodel\nDeep SFA by composing many models with fixed\n•\nfeature expansions, like quadratic feature expansion\n(Goodfellow 2016)"
+  },
+  {
+    "chunk_id": 4,
+    "word_count": 218,
+    "doc_type": "slides",
+    "text": "CHAPTER 13. LINEAR FACTOR MODELS CHAPTER 13. LINEAR FACTOR MODELS This is in comparison to other learning algorithms where the cost function depends highly on specific pixel values, making it much more difficult to determine what features the model will learn. This is in comparison to other learning algorithms where the cost function depends Deep SFA has also been used to learn features for object recognition and pose highly on specific pixel values, making it much more difficult to determine what estimation (Franzius et al., 2008). So far, the slowness principle has not become features the model will learn. the basis for any state of the art applications. It is unclear what factor has limited Deep SFA has also been used to learn features for object recognition and pose its performance. We speculate that perhaps the slowness prior is too strong, and estimation (Franzius et al., 2008). So far, the slowness principle has not become that, rather than imposing a prior that features should be approximately constant, the basis for any state of the art applications. It is unclear what factor has limited it would be better to impose a prior that features should be easy to predict from its performance. We speculate that perhaps the slowness prior is too strong, and one time step to the next."
+  },
+  {
+    "chunk_id": 5,
+    "word_count": 148,
+    "doc_type": "slides",
+    "text": "The position of an object is a useful feature regardless of that, rather than imposing a prior that features should be approximately constant, whether the object’s velocity is high or low, but the slowness principle encourages it would be better to impose a prior that features should be easy to predict from the model to ignore the position of objects that have high velocity. one time step to the next. The position of an object is a useful feature regardless of whether the object’s velocity is high or low, but the slowness principle encourages 13.4 Sparse Coding the model to ignore the position of objects that have high velocity. CHAPTER 13. LINEAR FACTOR MODELS Sparse coding (Olshausen and Field, 1996) is a linear factor model that has 13.4 been Shpeaavirlysestu Cdioeddaisnagn unsupervised feature learning and feature extraction Training sparse coding with maximum likelihood is intractable. Instead, the mechanism."
+  },
+  {
+    "chunk_id": 6,
+    "word_count": 275,
+    "doc_type": "slides",
+    "text": "Strictly speaking, the term “sparse coding” refers to the process of traini i n n g fer a r l i t n e g rn th a e te v s a b lu e e tw of eehn in en t c h o is d m in o g d t e h l, e w d h a il t e a “s a p n a d rs t e ra m in od in e g lin t g h ” e r d ef e e c r o s d to er th to e p b r e o t c t e e s r s Sparse coding (Olshausen and Field, 1996) is a linear factor model that has reconostf rduecstigtnhiengdaantad gleivaernnintghetheencmooddinelg,.b Tuthitsheapteprrmoa“cshpawrsilel cboedijnugs”tifiiseodftfeunrtuhseerdatso been heavily studied as an unsupervised feature learning and feature extraction a prinrecfieprletdo abpopthr.oximation to maximum likelihood later, in section 19.3. mechanism. Strictly speaking, the term “sparse coding” refers to the process of Like most other linear factor models, it uses a linear decoder plus noise to For models such as PCA, we have seen the use of a parametric encoder function inferring the value of h in this model, while “sparse modeling” refers to the process obtain reconstructions of x, as specified in equation 13.2. More specifically, sparse that predicts h and consists only of multiplication by a weight matrix. The encoder of designing and learning the model, but the term “sparse coding” is often used to coding models typically assume that the linear factors have Gaussian noise with that we use with sparse coding is not a parametric encoder."
+  },
+  {
+    "chunk_id": 7,
+    "word_count": 273,
+    "doc_type": "slides",
+    "text": "Instead, the encoder refer to both. isotropic precision \u0000: is an optimization algorithm, that solves an optimization problem in which we seek Like most other linear factor models, it uses a linear decoder plus noise to Sparse Coding 1 the single most likely code value: obtain reconstructions of x, a p s (x spe h ci ) fi = ed in (x e ; q W ua h tio + n b 1 , 3.2 I . ). More specifically, (s 1 p 3 a.1 rs 2 e) | N \u0000 coding models typically assume that the linear factors have Gaussian noise with h = f (x) = arg max p(h x). (13.15) ⇤ | isotropic Tphreecdiissitornibu \u0000 t:ion p(h) is chosen to bhe one with sharp peaks near 0 (Olshausen and Field, 1996). Common choices include factorized Laplace, Cauchy or factorized 1 When combined with equation 13.13 and equation 13.12, this yields the following Student-t distribution p s ( . x For h e ) x = ampl ( e x , ; t W he h La + pla b c , e p I r ) io . r parametrized in t(e 1 rm 3.s 12 o)f optimization problem: | N \u0000 the sparsity penalty coefficient \u0000 is given by The distribution p(h) a is rg ch m o a se x n p( t h o b x e ) one w 2 ith sh\u0000arp peaks near 0 (Ols(h 1 a 3 u.1 s 6 e)n 1 \u0000 h p(h ) = Lapla|ce(h ; 0, ) = e i (13.13) 2 ih i \u0000 | | and Field, 1996)."
+  },
+  {
+    "chunk_id": 8,
+    "word_count": 268,
+    "doc_type": "slides",
+    "text": "Common choices include facto\u0000rized 4 Laplace, Cauchy or factorized = arg max log p(h x) (13.17) Student-t distributions. For example, the Laplace prior parametrized in terms of and the Student-t prior by | h the sparsity penalty coefficient \u0000 is given by 2 1 = arg min \u0000 h + \u0000 x W h , (13.18) 1 p(h ) . 2 (13.14) || || || \u0000 || i h 2 2 \u0000 / h ⌫+1 1 (1 + i ) \u0000 h p(h ) = Laplace(h ; 0, ) = 2 e i (13.13) i i ⌫ \u0000 2 | | \u0000 4 where we have dropped terms not depending on h and divided by positive scaling 496 (Goodfellow 2016) faancdtotrhseto Stsuimdepnltif-yt pthrieoreqbuyation. 1 Due to the imposition of an L norm on 1 h, this procedure will yield a sparse p(h ) . (13.14) h (See section 7.1.2). i 2 ⇤ / h ⌫+1 (1 + i ) 2 ⌫ To train the model rather than just perform inference, we alternate between 496 minimization with respect to h and minimization with respect to W . In this presentation, we treat \u0000 as a hyperparameter. Typically it is set to 1 because its role in this optimization problem is shared with \u0000 and there is no need for both hyperparameters. In principle, we could also treat \u0000 as a parameter of the model and learn it. Our presentation here has discarded some terms that do not depend on h but do depend on \u0000. To learn \u0000, these terms must be included, or \u0000 will collapse to 0."
+  },
+  {
+    "chunk_id": 9,
+    "word_count": 86,
+    "doc_type": "slides",
+    "text": "Not all approaches to sparse coding explicitly build a p(h) and a p(x h). | Often we are just interested in learning a dictionary of features with activation values that will often be zero when extracted using this inference procedure. If we sample h from a Laplace prior, it is in fact a zero probability event for an element of h to actually be zero. The generative model itself is not especially sparse, only the feature extractor is. Goodfellow et al. (2013 d) describe approximate 497"
+  },
+  {
+    "chunk_id": 10,
+    "word_count": 243,
+    "doc_type": "slides",
+    "text": "Sparse Coding CHAPTER 13. LINEAR FACTOR MODELS Samples Weights Figure 13.2: Example samples and weights from a spike and slab sparse coding model Figure 13.2 trained on the MNIST dataset. (Left)The samples from the model do not resemble the (Goodfellow 2016) training examples. At first glance, one might assume the model is poorly fit. (Right)The weight vectors of the model have learned to represent penstrokes and sometimes complete digits. The model has thus learned useful features. The problem is that the factorial prior over features results in random subsets of features being combined. Few such subsets are appropriate to form a recognizable MNIST digit. This motivates the development of generative models that have more powerful distributions over their latent codes. Figure reproduced with permission from Goodfellow et al. (2013 d). factorial distribution on the deepest code layer, as well as the development of more sophisticated shallow models. 13.5 Manifold Interpretation of PCA Linear factor models including PCA and factor analysis can be interpreted as learning a manifold (Hinton et al., 1997). We can view probabilistic PCA as defining a thin pancake-shaped region of high probability—a Gaussian distribution that is very narrow along some axes, just as a pancake is very flat along its vertical axis, but is elongated along other axes, just as a pancake is wide along its horizontal axes. This is illustrated in figure 13.3. PCA can be interpreted as aligning this pancake with a linear manifold in a higher-dimensional space."
+  },
+  {
+    "chunk_id": 11,
+    "word_count": 52,
+    "doc_type": "slides",
+    "text": "This interpretation applies not just to traditional PCA but also to any linear autoencoder that learns matrices W and V with the goal of making the reconstruction of x lie as close to x as possible, Let the encoder be h = f (x) = W (x µ). (13.19) > \u0000 499"
+  },
+  {
+    "chunk_id": 12,
+    "word_count": 248,
+    "doc_type": "slides",
+    "text": "CHAPTER 13. LINEAR FACTOR MODELS\nManifold Interpretation of\nThe encoder computes a low-dimensional representation of h. With the autoencoder\nview, we have a decoder computing the reconstruction\nPCA\nxˆ = g(h) = b + V h. (13.20)\nFigure 13.3: Flat Gaussian capturing probability concentration near a low-dimensional\nFigure 13.3\nmanifold. The figure shows the upper half of the “pancake” above the “manifold plane”\nwhich goes through its middle. The variance in the direction orthogonal to the manifold is\n(Goodfellow 2016)\nvery small (arrow pointing out of plane) and can be considered like “noise,” while the other\nvariances are large (arrows in the plane) and correspond to “signal,” and a coordinate\nsystem for the reduced-dimension data.\nThe choices of linear encoder and decoder that minimize reconstruction error\n2\nE [ x xˆ ] (13.21)\n|| \u0000 ||\ncorrespond to V = W , µ = b = E [x] and the columns of W form an orthonormal\nbasis which spans the same subspace as the principal eigenvectors of the covariance\nmatrix\nC = E [(x µ)(x µ) ]. (13.22)\n>\n\u0000 \u0000\nIn the case of PCA, the columns of W are these eigenvectors, ordered by the\nmagnitude of the corresponding eigenvalues (which are all real and non-negative).\nOne can also show that eigenvalue \u0000 of C corresponds to the variance of x\ni\n(i) D d\nin the direction of eigenvector v . If x R and h R with d < D, then the\n2 2\n500"
+  }
+]

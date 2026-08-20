@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Loss Functions",
+      "to": "Gradient Descent",
+      "reason": "Gradient Descent minimizes the loss function."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Neural Network Architecture",
+      "reason": "Understanding Neural Networks is essential for grasping their architecture."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Training Dynamics",
+      "reason": "Training Dynamics involves the optimization process, which includes Gradient Descent."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Gradient Noise",
+      "reason": "Gradient Noise affects the performance of Gradient Descent."
+    },
+    {
+      "from": "Optimization Techniques",
+      "to": "Eigenvalues in Optimization",
+      "reason": "Eigenvalues are important for understanding optimization methods."
+    },
+    {
+      "from": "Training Dynamics",
+      "to": "Experimental Techniques",
+      "reason": "Experimental Techniques are used to evaluate training dynamics."
+    }
+  ]
+}

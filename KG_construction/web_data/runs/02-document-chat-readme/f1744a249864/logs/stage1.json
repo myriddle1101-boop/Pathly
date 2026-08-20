@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\02-document-chat-README.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 4.1876,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 118\n[2] 清洗后词数: 118\n[3] 文档类型识别: paper_book\n[4] 分块数（过滤前）: 1\n[5] 分块数（过滤后）: 1\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage1_text_cleaned.txt\n\n--- 前1块预览 ---\n\n[Chunk 1] words=118\nExample 2: Document Chat System An interactive chat system that lets you ask questions about your documents with conversation history. Features (cid:127) n Load text documents from files or directories (cid:127) n Smart ...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

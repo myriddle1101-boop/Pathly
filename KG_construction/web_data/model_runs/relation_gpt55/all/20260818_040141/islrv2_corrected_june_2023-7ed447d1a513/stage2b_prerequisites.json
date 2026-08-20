@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Regression",
+      "to": "Regression Trees",
+      "relation_type": "strong_prerequisite",
+      "reason": "Regression trees are used for continuous-value prediction, so understanding regression targets and prediction objectives is necessary first."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-07">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Reasoning Techniques" label="Reasoning Techniques">
+        <attvalues>
+          <attvalue for="0" value="Explores various methods and models for reasoning in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Reasoning Models&quot;, &quot;description&quot;: &quot;Different models used for reasoning tasks.&quot;}, {&quot;name&quot;: &quot;Reasoning Paths&quot;, &quot;description&quot;: &quot;Paths taken by models to arrive at conclusions.&quot;}, {&quot;name&quot;: &quot;Reasoning Behavior&quot;, &quot;description&quot;: &quot;How models exhibit reasoning in their outputs.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning principles and algorithms." />
+          <attvalue for="6" value="[&quot;Logical Reasoning&quot;, &quot;Probabilistic Reasoning&quot;, &quot;Symbolic Reasoning&quot;, &quot;Neural Reasoning&quot;]" />
+          <attvalue for="7" value="[&quot;Reasoning is only about logic&quot;, &quot;All reasoning techniques are equally effective in all scenarios&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Game AI&quot;, &quot;Decision Support Systems&quot;, &quot;Robotics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Complexity Analysis" label="Complexity Analysis">
+        <attvalues>
+          <attvalue for="0" value="Examines the complexity of algorithms and models in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Complexity PPO&quot;, &quot;description&quot;: &quot;Complexity considerations in Proximal Policy Optimization.&quot;}, {&quot;name&quot;: &quot;Dissecting Complexity&quot;, &quot;description&quot;: &quot;Breaking down complexity into manageable components.&quot;}, {&quot;name&quot;: &quot;Training Complexity&quot;, &quot;description&quot;: &quot;Complexity involved in the training process.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algorithms and data structures, familiarity with big O notation." />
+          <attvalue for="6" value="[&quot;Time Complexity&quot;, &quot;Space Complexity&quot;]" />
+          <attvalue for="7" value="[&quot;Complexity analysis only applies to sorting algorithms.&quot;, &quot;Higher complexity always means slower performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating model efficiency in machine learning&quot;, &quot;Optimizing algorithms for large datasets&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Decoding Techniques" label="Decoding Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods for decoding outputs from machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Temperature Sampling&quot;, &quot;description&quot;: &quot;Sampling methods that use temperature as a parameter.&quot;}, {&quot;name&quot;: &quot;Nucleus Sampling&quot;, &quot;description&quot;: &quot;A technique for sampling from a probability distribution.&quot;}, {&quot;name&quot;: &quot;Decoding Limitations&quot;, &quot;description&quot;: &quot;Challenges and limitations in decoding outputs.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Greedy Decoding&quot;, &quot;Beam Search&quot;, &quot;Top-k Sampling&quot;, &quot;Temperature Scaling&quot;]" />
+          <attvalue for="7" value="[&quot;Decoding is only relevant for classification tasks&quot;, &quot;All decoding techniques yield the same quality of output&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Image Captioning&quot;, &quot;Speech Recognition&quot;, &quot;Reinforcement Learning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Strategies" label="Training Strategies">
+        <attvalues>
+          <attvalue for="0" value="Strategies and techniques for training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;PPO Training&quot;, &quot;description&quot;: &quot;Training methods specific to Proximal Policy Optimization.&quot;}, {&quot;name&quot;: &quot;Importance Sampling&quot;, &quot;description&quot;: &quot;A technique to improve training efficiency.&quot;}, {&quot;name&quot;: &quot;Training Value&quot;, &quot;description&quot;: &quot;Evaluating the value of different training approaches.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Batch Training&quot;, &quot;Online Training&quot;, &quot;Transfer Learning&quot;, &quot;Data Augmentation&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Training and testing data can be mixed&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Time series forecasting&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Fundamental concepts and architectures of neural networks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Artificial Neural Networks&quot;, &quot;description&quot;: &quot;Models inspired by biological neural networks.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of neural network nodes.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;A method for training neural networks through gradient descent.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;, &quot;Loss Functions&quot;, &quot;Overfitting and Regularization&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Techniques for evaluating the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual values.&quot;}, {&quot;name&quot;: &quot;Readability&quot;, &quot;description&quot;: &quot;Assessing the clarity and interpretability of model outputs.&quot;}, {&quot;name&quot;: &quot;Performance Metrics&quot;, &quot;description&quot;: &quot;Metrics used to evaluate model performance.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;ROC Curve&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern if the model performs well on training data.&quot;, &quot;A higher accuracy always indicates a better model.&quot;]" />
+          <attvalue for="8" value="[&quot;Comparing different models&quot;, &quot;Tuning hyperparameters&quot;, &quot;Assessing model robustness&quot;, &quot;Selecting features&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Reinforcement Learning" label="Reinforcement Learning">
+        <attvalues>
+          <attvalue for="0" value="Principles and techniques in reinforcement learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;RL Zero&quot;, &quot;description&quot;: &quot;A concept in reinforcement learning focusing on zero-shot learning.&quot;}, {&quot;name&quot;: &quot;Policy Value&quot;, &quot;description&quot;: &quot;Evaluating the value of different policies in reinforcement learning.&quot;}, {&quot;name&quot;: &quot;GRPO Objective&quot;, &quot;description&quot;: &quot;Objectives specific to Generalized Proximal Policy Optimization.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and probability theory." />
+          <attvalue for="6" value="[&quot;Markov Decision Processes&quot;, &quot;Q-Learning&quot;, &quot;Policy Gradients&quot;, &quot;Exploration vs. Exploitation&quot;]" />
+          <attvalue for="7" value="[&quot;Reinforcement learning is the same as supervised learning&quot;, &quot;More rewards always lead to better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Game playing (e.g., AlphaGo)&quot;, &quot;Robotics&quot;, &quot;Autonomous vehicles&quot;, &quot;Personalized recommendations&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Sampling Methods" label="Sampling Methods">
+        <attvalues>
+          <attvalue for="0" value="Various methods for sampling in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Use Sampling&quot;, &quot;description&quot;: &quot;Techniques for effectively utilizing sampling in models.&quot;}, {&quot;name&quot;: &quot;Averaging GRPO&quot;, &quot;description&quot;: &quot;Averaging techniques in the context of GRPO.&quot;}, {&quot;name&quot;: &quot;Sampling Use Cases&quot;, &quot;description&quot;: &quot;Practical applications of different sampling methods.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and machine learning principles." />
+          <attvalue for="6" value="[&quot;Random Sampling&quot;, &quot;Stratified Sampling&quot;, &quot;Systematic Sampling&quot;, &quot;Cluster Sampling&quot;]" />
+          <attvalue for="7" value="[&quot;Sampling is only about random selection.&quot;, &quot;All samples must be of the same size.&quot;]" />
+          <attvalue for="8" value="[&quot;Data collection for surveys&quot;, &quot;Training data preparation for machine learning models&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Reasoning in Language Processing" label="Reasoning in Language Processing">
+        <attvalues>
+          <attvalue for="0" value="Explores reasoning techniques applied in natural language processing." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Language Processing&quot;, &quot;description&quot;: &quot;Techniques for processing and understanding human language.&quot;}, {&quot;name&quot;: &quot;Variables Reasoning&quot;, &quot;description&quot;: &quot;How variables influence reasoning in language models.&quot;}, {&quot;name&quot;: &quot;Thought Reasoning&quot;, &quot;description&quot;: &quot;Cognitive aspects of reasoning in language tasks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and machine learning principles." />
+          <attvalue for="6" value="[&quot;Logical reasoning&quot;, &quot;Inference mechanisms&quot;, &quot;Semantic understanding&quot;, &quot;Contextual reasoning&quot;]" />
+          <attvalue for="7" value="[&quot;Reasoning is only about logic&quot;, &quot;NLP does not require reasoning capabilities&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots and virtual assistants&quot;, &quot;Text summarization&quot;, &quot;Sentiment analysis&quot;, &quot;Question answering systems&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Reasoning Techniques" target="Reasoning in Language Processing" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="General reasoning techniques are foundational for applying reasoning in language processing." />
+        </attvalues>
+      </edge>
+      <edge source="Complexity Analysis" target="Sampling Methods" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding complexity is important for evaluating the efficiency of sampling methods." />
+        </attvalues>
+      </edge>
+      <edge source="Training Strategies" target="Model Evaluation" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Effective training strategies are necessary to evaluate model performance accurately." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Training Strategies" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding neural networks is essential for developing effective training strategies." />
+        </attvalues>
+      </edge>
+      <edge source="Model Evaluation" target="Training Strategies" id="4">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7859" />
+        </attvalues>
+      </edge>
+      <edge source="Reinforcement Learning" target="Reasoning Techniques" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Reinforcement learning often requires understanding reasoning techniques for decision-making." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

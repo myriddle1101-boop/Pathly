@@ -1,0 +1,103 @@
+{
+  "created_at": "2026-08-18T18:46:00.843007+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-15_representation-4d0c1e4d0bc5",
+  "file_name": "15_representation-4d0c1e4d0bc5",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 19,
+  "topic_metrics": {
+    "precision": 0.6667,
+    "recall": 0.6,
+    "f1": 0.6316,
+    "tp": 6,
+    "fp": 3,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 3,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Distributed Representation",
+      "Neural Networks",
+      "Classification Techniques",
+      "Training Methods",
+      "Generative Models",
+      "Transfer Learning"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Error Analysis",
+        "reason": "The text reports comparative performance results but does not discuss error analysis as a learning concept or method."
+      },
+      {
+        "name": "Activation Functions",
+        "reason": "Thresholded features are mentioned, but activation functions are not presented as a distinct topic."
+      },
+      {
+        "name": "Backpropagation",
+        "reason": "The source does not discuss backpropagation or gradient computation through network layers."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Unsupervised Pretraining",
+        "reason": "The source directly discusses the effects of unsupervised pretraining on learning trajectories and task performance."
+      },
+      {
+        "name": "Domain Adaptation",
+        "reason": "Domain adaptation is explicitly defined as transfer across settings with the same task but changed input distributions."
+      },
+      {
+        "name": "Semi-Supervised Learning",
+        "reason": "The source gives a mixture-model example explaining when unsupervised modeling of p(x) can support learning p(y|x) from few labels."
+      },
+      {
+        "name": "Generative Adversarial Networks",
+        "reason": "GANs are explicitly discussed as a way to learn salient structured features and avoid limitations of mean squared error."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Activation Functions",
+        "to": "Neural Networks",
+        "reason": "Activation functions are not treated as a distinct source topic, and the text does not establish this as a learning dependency."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Backpropagation",
+        "reason": "Backpropagation is not discussed in the source, so this dependency is unsupported by the provided text."
+      },
+      {
+        "from": "Activation Functions",
+        "to": "Backpropagation",
+        "reason": "Neither activation functions nor backpropagation is substantively covered as a topic in the source."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Unsupervised Learning",
+        "to": "Semi-Supervised Learning",
+        "reason": "The semi-supervised-learning discussion relies on modeling the unlabeled input distribution p(x) before using limited labeled examples to learn p(y|x)."
+      },
+      {
+        "from": "Representation Learning",
+        "to": "Transfer Learning",
+        "reason": "The transfer-learning architectures and zero-shot example rely on learning representations that can be shared or mapped across tasks and domains."
+      }
+    ],
+    "overall_note": "The source centers on representation learning, pretraining, transfer/domain adaptation, and generative approaches; it does not cover backpropagation or activation functions as standalone instructional topics."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-15_representation-4d0c1e4d0bc5.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-15_representation-4d0c1e4d0bc5.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-15_representation-4d0c1e4d0bc5_ledger.csv"
+  }
+}

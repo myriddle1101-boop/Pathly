@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-06-24">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Machine Learning Fundamentals" label="Machine Learning Fundamentals">
+        <attvalues>
+          <attvalue for="0" value="Core concepts and techniques in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Training Inference&quot;, &quot;description&quot;: &quot;The process of making predictions based on a trained model.&quot;}, {&quot;name&quot;: &quot;Model Training&quot;, &quot;description&quot;: &quot;The procedure of teaching a model using data.&quot;}, {&quot;name&quot;: &quot;Loss Function&quot;, &quot;description&quot;: &quot;A method to evaluate how well a model's predictions match the actual outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting&quot;, &quot;Model Evaluation&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning can solve any problem&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Architectures and components of artificial neural networks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neuron.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing error.&quot;}, {&quot;name&quot;: &quot;Linear Separability&quot;, &quot;description&quot;: &quot;The ability to separate classes with a linear boundary.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;, &quot;Loss Functions&quot;, &quot;Optimization Algorithms&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Adversarial Machine Learning" label="Adversarial Machine Learning">
+        <attvalues>
+          <attvalue for="0" value="Techniques and challenges related to adversarial attacks on models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Adversarial Examples&quot;, &quot;description&quot;: &quot;Inputs designed to fool machine learning models.&quot;}, {&quot;name&quot;: &quot;Threat Model&quot;, &quot;description&quot;: &quot;A framework for understanding potential adversarial threats.&quot;}, {&quot;name&quot;: &quot;Model Vulnerability&quot;, &quot;description&quot;: &quot;The susceptibility of models to adversarial attacks.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and neural networks." />
+          <attvalue for="6" value="[&quot;Adversarial Examples&quot;, &quot;Defense Mechanisms&quot;]" />
+          <attvalue for="7" value="[&quot;Adversarial attacks only affect deep learning models&quot;, &quot;All models are equally vulnerable to adversarial attacks&quot;]" />
+          <attvalue for="8" value="[&quot;Robustness testing in AI systems&quot;, &quot;Security in autonomous vehicles&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Security in Machine Learning" label="Security in Machine Learning">
+        <attvalues>
+          <attvalue for="0" value="Considerations for securing machine learning systems." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Privacy Security&quot;, &quot;description&quot;: &quot;Protecting sensitive information in machine learning applications.&quot;}, {&quot;name&quot;: &quot;Poisoning Learning&quot;, &quot;description&quot;: &quot;Attacks that manipulate training data to degrade model performance.&quot;}, {&quot;name&quot;: &quot;Secure Computation&quot;, &quot;description&quot;: &quot;Methods to ensure computations are performed securely.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning principles and algorithms." />
+          <attvalue for="6" value="[&quot;Data Privacy&quot;, &quot;Model Robustness&quot;, &quot;Adversarial Attacks&quot;, &quot;Secure Data Handling&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning models are inherently secure.&quot;, &quot;Security is only a concern after deployment.&quot;]" />
+          <attvalue for="8" value="[&quot;Secure model training environments&quot;, &quot;Robustness against adversarial inputs&quot;, &quot;Privacy-preserving machine learning techniques&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Techniques for assessing the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Training Data Misprediction&quot;, &quot;description&quot;: &quot;Errors that occur when a model misclassifies training data.&quot;}, {&quot;name&quot;: &quot;Performance Limitations&quot;, &quot;description&quot;: &quot;Constraints that affect a model's effectiveness.&quot;}, {&quot;name&quot;: &quot;Outliers Detection&quot;, &quot;description&quot;: &quot;Identifying data points that deviate significantly from the norm.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;ROC Curve&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern if the model performs well on training data.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating classification models in healthcare.&quot;, &quot;Assessing regression models in finance.&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Genetic Algorithms" label="Genetic Algorithms">
+        <attvalues>
+          <attvalue for="0" value="Optimization techniques inspired by natural selection." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Genetic Variants&quot;, &quot;description&quot;: &quot;Different configurations of genetic algorithms.&quot;}, {&quot;name&quot;: &quot;Apply Genetic&quot;, &quot;description&quot;: &quot;Utilizing genetic algorithms for problem-solving.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algorithms and optimization techniques." />
+          <attvalue for="6" value="[&quot;Selection&quot;, &quot;Crossover&quot;, &quot;Mutation&quot;, &quot;Fitness Function&quot;]" />
+          <attvalue for="7" value="[&quot;Genetic algorithms always find the optimal solution&quot;, &quot;They mimic biological evolution exactly&quot;]" />
+          <attvalue for="8" value="[&quot;Scheduling problems&quot;, &quot;Route optimization&quot;, &quot;Machine learning hyperparameter tuning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Learning Techniques" label="Learning Techniques">
+        <attvalues>
+          <attvalue for="0" value="Various methodologies for training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Machine Teaching&quot;, &quot;description&quot;: &quot;A paradigm where the teacher guides the learning process.&quot;}, {&quot;name&quot;: &quot;Learning Theory&quot;, &quot;description&quot;: &quot;The study of the principles and foundations of learning.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;, &quot;Transfer Learning&quot;]" />
+          <attvalue for="7" value="[&quot;All machine learning requires large datasets&quot;, &quot;More complex models always perform better&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Cybersecurity and AI" label="Cybersecurity and AI">
+        <attvalues>
+          <attvalue for="0" value="Intersection of artificial intelligence and cybersecurity." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Symposium Security&quot;, &quot;description&quot;: &quot;Discussions and research on security in AI contexts.&quot;}, {&quot;name&quot;: &quot;Adversary Attacks&quot;, &quot;description&quot;: &quot;Strategies employed by adversaries to compromise AI systems.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and cybersecurity principles." />
+          <attvalue for="6" value="[&quot;Machine Learning in Threat Detection&quot;, &quot;Automated Response Systems&quot;]" />
+          <attvalue for="7" value="[&quot;AI can fully replace human cybersecurity experts&quot;, &quot;All AI solutions are equally effective against cyber threats&quot;]" />
+          <attvalue for="8" value="[&quot;Intrusion Detection Systems&quot;, &quot;Phishing Detection Algorithms&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Privacy" label="Data Privacy">
+        <attvalues>
+          <attvalue for="0" value="Ensuring the confidentiality and integrity of data in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Privacy Machine&quot;, &quot;description&quot;: &quot;Techniques to maintain privacy in machine learning applications.&quot;}, {&quot;name&quot;: &quot;Integrity Privacy&quot;, &quot;description&quot;: &quot;Ensuring data integrity while preserving privacy.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data handling and machine learning principles." />
+          <attvalue for="6" value="[&quot;Data anonymization&quot;, &quot;Differential privacy&quot;]" />
+          <attvalue for="7" value="[&quot;Data privacy is only about encryption&quot;, &quot;All data can be made completely anonymous&quot;]" />
+          <attvalue for="8" value="[&quot;Secure data sharing in healthcare&quot;, &quot;Privacy-preserving machine learning models&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Machine Learning Fundamentals" target="Neural Networks" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Neural networks are a key technique in machine learning." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning Fundamentals" target="Model Evaluation" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding core concepts is essential for evaluating models." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning Fundamentals" target="Learning Techniques" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Fundamental concepts are necessary to grasp various learning methodologies." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning Fundamentals" target="Security in Machine Learning" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Basic understanding of machine learning is needed to address security concerns." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning Fundamentals" target="Data Privacy" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Fundamental concepts are necessary to understand data privacy issues." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning Fundamentals" target="Cybersecurity and AI" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Core concepts are needed to explore the intersection of AI and cybersecurity." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Adversarial Machine Learning" id="6">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Knowledge of neural networks is crucial to understand adversarial attacks." />
+        </attvalues>
+      </edge>
+      <edge source="Genetic Algorithms" target="Learning Techniques" id="7">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Genetic algorithms are a specific optimization technique within learning methodologies." />
+        </attvalues>
+      </edge>
+      <edge source="Learning Techniques" target="Machine Learning Fundamentals" id="8">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.8542" />
+        </attvalues>
+      </edge>
+      <edge source="Learning Techniques" target="Model Evaluation" id="9">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7905" />
+        </attvalues>
+      </edge>
+      <edge source="Data Privacy" target="Security in Machine Learning" id="10">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.752" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

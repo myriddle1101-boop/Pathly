@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "14_autoencoders-130bdd5f620b",
+  "created_at": "2026-07-29T14:04:32+08:00",
+  "updated_at": "2026-07-29T14:06:37+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "14_autoencoders.pdf",
+    "doc_name": "14_autoencoders",
+    "sha256": "130bdd5f620b395c4f6d53184474648caf3be5832c689aa31fd97005725c31fb",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\14_autoencoders.pdf",
+    "pdf_size_bytes": 9011966
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 125.1855
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:04:32+08:00",
+      "ended_at": "2026-07-29T14:04:38+08:00",
+      "duration_seconds": 5.6519,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\14_autoencoders.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 4361\n[2] 清洗后词数: 4396\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 23\n[5] 分块数（过滤后）: 20\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=271\nCHAPTER 14. AUTOENCODERS to the activations on the reconstructed input. Recirculation is regarded as more Structure of an Autoencoder biologically plausible than back-propagation, but is rarely used for machine learning ...\n\n[Chunk 2] words=275\nCHAPTER 14. AUTOENCODERS Typically, the output variables are treated as being conditionally independent h given so that this probability distribution is inexpensive to evaluate, but some techniques such as mixture densit...\n\n[Chunk 3] words=112\nAvoiding Trivial Identity  Undercomplete autoencoders  h has lower dimension than x  f or g has low capacity (e.g., linear g)  Must discard some information in h  Overcomplete autoencoders  h has higher dimension t...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:04:38+08:00",
+      "ended_at": "2026-07-29T14:05:30+08:00",
+      "duration_seconds": 52.1309,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：20\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/20 ...\n[KeyBERT] chunk 2/20 ...\n[KeyBERT] chunk 3/20 ...\n[KeyBERT] chunk 4/20 ...\n[KeyBERT] chunk 5/20 ...\n[KeyBERT] chunk 6/20 ...\n[KeyBERT] chunk 7/20 ...\n[KeyBERT] chunk 8/20 ...\n[KeyBERT] chunk 9/20 ...\n[KeyBERT] chunk 10/20 ...\n[KeyBERT] chunk 11/20 ...\n[KeyBERT] chunk 12/20 ...\n[KeyBERT] chunk 13/20 ...\n[KeyBERT] chunk 14/20 ...\n[KeyBERT] chunk 15/20 ...\n[KeyBERT] chunk 16/20 ...\n[KeyBERT] chunk 17/20 ...\n[KeyBERT] chunk 18/20 ...\n[KeyBERT] chunk 19/20 ...\n[KeyBERT] chunk 20/20 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Autoencoders\n02. Manifold Learning\n03. Learning Algorithms\n04. Neural Network Components\n05. Training Techniques\n06. Data Reconstruction\n07. Autoencoder Variants\n08. Coordinate Systems\n09. Model Evaluation\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4910.47it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:05:30+08:00",
+      "ended_at": "2026-07-29T14:05:37+08:00",
+      "duration_seconds": 7.0716,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Neural Network Components -> Autoencoders | Understanding neural network components is essential to grasp how autoencoders function.\n02. Learning Algorithms -> Training Techniques | Knowledge of learning algorithms is necessary to apply training techniques effectively.\n03. Autoencoders -> Data Reconstruction | Autoencoders are specifically designed for the task of data reconstruction.\n04. Autoencoders -> Autoencoder Variants | Understanding basic autoencoders is required to learn about their variants.\n05. Manifold Learning -> Coordinate Systems | Manifold learning techniques often involve understanding coordinate systems for data representation.\n06. Training Techniques -> Model Evaluation | Effective training techniques are necessary to evaluate model performance accurately.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:05:37+08:00",
+      "ended_at": "2026-07-29T14:06:10+08:00",
+      "duration_seconds": 33.1319,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 3 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Learning Algorithms <-> Training Techniques | sim=0.8366\n02. Model Evaluation <-> Training Techniques | sim=0.7989\n03. Learning Algorithms <-> Model Evaluation | sim=0.7431\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6738.68it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:06:10+08:00",
+      "ended_at": "2026-07-29T14:06:36+08:00",
+      "duration_seconds": 25.2991,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Autoencoders\n[LLM] 2/9 Manifold Learning\n[LLM] 3/9 Learning Algorithms\n[LLM] 4/9 Neural Network Components\n[LLM] 5/9 Training Techniques\n[LLM] 6/9 Data Reconstruction\n[LLM] 7/9 Autoencoder Variants\n[LLM] 8/9 Coordinate Systems\n[LLM] 9/9 Model Evaluation\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:06:36+08:00",
+      "ended_at": "2026-07-29T14:06:37+08:00",
+      "duration_seconds": 1.8063,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output present"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 6\n[3] Similarity edges: 3\n[4] Graph nodes=9, edges=8\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T14:04:32+08:00"
+}

@@ -1,0 +1,43 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 15,
+  "prerequisite_count": 7,
+  "prerequisites": [
+    {
+      "from": "deep learning algorithms",
+      "to": "deep learning for image recognition in drones",
+      "reason": "deep learning for image recognition relies on understanding deep learning algorithms"
+    },
+    {
+      "from": "learning agents in AI",
+      "to": "reinforcement learning for autonomous systems",
+      "reason": "reinforcement learning is a type of learning agent in AI"
+    },
+    {
+      "from": "machine learning models",
+      "to": "deep learning algorithms",
+      "reason": "deep learning algorithms are a subset of machine learning models"
+    },
+    {
+      "from": "autonomous drone navigation",
+      "to": "autonomous drone applications in logistics",
+      "reason": "autonomous drone applications require knowledge of navigation"
+    },
+    {
+      "from": "drone technology advancements",
+      "to": "drone delivery systems",
+      "reason": "advancements in technology are foundational for understanding delivery systems"
+    },
+    {
+      "from": "drone fleet management",
+      "to": "autonomous drone applications in logistics",
+      "reason": "effective fleet management is essential for logistics applications"
+    },
+    {
+      "from": "real-time data processing for drones",
+      "to": "autonomous drone navigation",
+      "reason": "navigation requires real-time data processing capabilities"
+    }
+  ]
+}

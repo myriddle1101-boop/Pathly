@@ -1,0 +1,15 @@
+{
+  "run_id": "04_numerical-dd3a4dd53cd3",
+  "can_resume": false,
+  "last_failed_stage": null,
+  "next_resume_stage": null,
+  "completed_stages": [
+    "stage1",
+    "stage2a",
+    "stage2b",
+    "stage2c",
+    "stage3",
+    "stage4"
+  ],
+  "updated_at": "2026-07-29T13:46:15+08:00"
+}

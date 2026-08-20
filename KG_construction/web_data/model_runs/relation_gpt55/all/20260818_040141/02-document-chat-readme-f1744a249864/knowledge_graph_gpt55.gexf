@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="similarity" type="double" />
+      <attribute id="12" title="score" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="python document_chat implementation" label="python document_chat implementation">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: python document_chat implementation" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python programming and familiarity with natural language processing concepts." />
+          <attvalue for="6" value="[&quot;Document embedding&quot;, &quot;Chatbot integration&quot;, &quot;Natural language understanding&quot;]" />
+          <attvalue for="7" value="[&quot;Document chat only works with structured data&quot;, &quot;Chatbots cannot handle complex queries&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support automation&quot;, &quot;Information retrieval systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="document chat functionality in Python" label="document chat functionality in Python">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: document chat functionality in Python" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python programming and familiarity with natural language processing concepts." />
+          <attvalue for="6" value="[&quot;Text processing&quot;, &quot;Chatbot integration&quot;, &quot;Document retrieval&quot;, &quot;User interaction&quot;]" />
+          <attvalue for="7" value="[&quot;Document chat is only for FAQs&quot;, &quot;It requires advanced AI knowledge&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support automation&quot;, &quot;Information retrieval systems&quot;, &quot;Interactive learning tools&quot;]" />
+        </attvalues>
+      </node>
+      <node id="document_chat library usage in Python" label="document_chat library usage in Python">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: document_chat library usage in Python" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python programming and familiarity with natural language processing concepts." />
+          <attvalue for="6" value="[&quot;Document retrieval&quot;, &quot;Chatbot integration&quot;, &quot;Natural language understanding&quot;]" />
+          <attvalue for="7" value="[&quot;The library can only handle text documents&quot;, &quot;It requires advanced machine learning knowledge to use&quot;]" />
+          <attvalue for="8" value="[&quot;Building chatbots for customer support&quot;, &quot;Automating document-based queries&quot;, &quot;Enhancing user interaction with document data&quot;]" />
+        </attvalues>
+      </node>
+      <node id="document_chat API integration" label="document_chat API integration">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: document_chat API integration" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of APIs and JSON format." />
+          <attvalue for="6" value="[&quot;API endpoints&quot;, &quot;Authentication methods&quot;, &quot;Data parsing&quot;]" />
+          <attvalue for="7" value="[&quot;APIs are only for web applications&quot;, &quot;Integration is only about sending data&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbot development&quot;, &quot;Customer support automation&quot;]" />
+        </attvalues>
+      </node>
+      <node id="conversation machine learning models" label="conversation machine learning models">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: conversation machine learning models" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and natural language processing." />
+          <attvalue for="6" value="[&quot;Natural Language Processing (NLP)&quot;, &quot;Sequence-to-Sequence Models&quot;, &quot;Transformers&quot;, &quot;Reinforcement Learning in Conversations&quot;]" />
+          <attvalue for="7" value="[&quot;Conversation models can understand context like humans&quot;, &quot;All conversation models are chatbots&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support automation&quot;, &quot;Virtual personal assistants&quot;, &quot;Language translation services&quot;, &quot;Interactive gaming&quot;]" />
+        </attvalues>
+      </node>
+      <node id="documents conversation analysis techniques" label="documents conversation analysis techniques">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: documents conversation analysis techniques" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and machine learning principles." />
+          <attvalue for="6" value="[&quot;Text preprocessing&quot;, &quot;Sentiment analysis&quot;, &quot;Topic modeling&quot;, &quot;Dialogue systems&quot;]" />
+          <attvalue for="7" value="[&quot;Conversation analysis is only about sentiment&quot;, &quot;All documents require the same analysis techniques&quot;]" />
+          <attvalue for="8" value="[&quot;Customer service chatbots&quot;, &quot;Social media sentiment tracking&quot;, &quot;Market research analysis&quot;, &quot;Academic research in linguistics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="real-time document chat applications" label="real-time document chat applications">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: real-time document chat applications" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and web development." />
+          <attvalue for="6" value="[&quot;Natural Language Processing (NLP)&quot;, &quot;WebSocket for real-time communication&quot;]" />
+          <attvalue for="7" value="[&quot;Real-time chat requires complex server infrastructure&quot;, &quot;Only large companies can implement such applications&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support chatbots&quot;, &quot;Collaborative document editing platforms&quot;]" />
+        </attvalues>
+      </node>
+      <node id="document chat user interface design" label="document chat user interface design">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: document chat user interface design" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of user interface design principles and familiarity with chat applications." />
+          <attvalue for="6" value="[&quot;User Experience (UX) Design&quot;, &quot;Natural Language Processing (NLP)&quot;, &quot;User Interaction Patterns&quot;, &quot;Accessibility in Design&quot;]" />
+          <attvalue for="7" value="[&quot;Document chat interfaces are only for technical users.&quot;, &quot;All chat interfaces require complex AI integration.&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support chatbots&quot;, &quot;Collaborative document editing tools&quot;, &quot;Educational platforms with interactive Q&amp;A&quot;, &quot;Virtual assistants for document management&quot;]" />
+        </attvalues>
+      </node>
+      <node id="document chat performance optimization" label="document chat performance optimization">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: document chat performance optimization" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and natural language processing." />
+          <attvalue for="6" value="[&quot;Document retrieval techniques&quot;, &quot;Chatbot response generation&quot;, &quot;Performance metrics for chat systems&quot;]" />
+          <attvalue for="7" value="[&quot;Document chat is only about keyword matching&quot;, &quot;Performance optimization is only about speed&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support chatbots&quot;, &quot;Information retrieval systems&quot;, &quot;Interactive learning tools&quot;]" />
+        </attvalues>
+      </node>
+      <node id="conversation machine architecture" label="conversation machine architecture">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: conversation machine architecture" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and natural language processing." />
+          <attvalue for="6" value="[&quot;Encoder-Decoder Architecture&quot;, &quot;Attention Mechanism&quot;]" />
+          <attvalue for="7" value="[&quot;Conversation machines can understand context like humans&quot;, &quot;All conversation machines use the same architecture&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support chatbots&quot;, &quot;Virtual personal assistants&quot;]" />
+        </attvalues>
+      </node>
+      <node id="documents conversation data processing" label="documents conversation data processing">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: documents conversation data processing" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and data structures." />
+          <attvalue for="6" value="[&quot;Text preprocessing&quot;, &quot;Sentiment analysis&quot;, &quot;Entity recognition&quot;, &quot;Conversation flow analysis&quot;]" />
+          <attvalue for="7" value="[&quot;All conversation data is structured&quot;, &quot;Sentiment analysis is always accurate&quot;, &quot;Data processing is only about cleaning text&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support chatbots&quot;, &quot;Social media sentiment tracking&quot;, &quot;Market research analysis&quot;, &quot;Automated transcription services&quot;]" />
+        </attvalues>
+      </node>
+      <node id="document chat security considerations" label="document chat security considerations">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: document chat security considerations" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and data privacy principles." />
+          <attvalue for="6" value="[&quot;Data encryption&quot;, &quot;User authentication&quot;, &quot;Access control&quot;, &quot;Data anonymization&quot;]" />
+          <attvalue for="7" value="[&quot;Document chat is inherently secure&quot;, &quot;Only technical measures are needed for security&quot;]" />
+          <attvalue for="8" value="[&quot;Secure messaging platforms&quot;, &quot;Collaborative document editing&quot;, &quot;Compliance with data protection regulations&quot;]" />
+        </attvalues>
+      </node>
+      <node id="python document_chat error handling" label="python document_chat error handling">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: python document_chat error handling" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python programming and familiarity with exception handling." />
+          <attvalue for="6" value="[&quot;Exception types in Python&quot;, &quot;Using try-except blocks&quot;, &quot;Logging errors&quot;, &quot;Raising exceptions&quot;]" />
+          <attvalue for="7" value="[&quot;All errors can be caught with a single except clause&quot;, &quot;Error handling is unnecessary in small scripts&quot;, &quot;Ignoring errors is acceptable in production code&quot;]" />
+          <attvalue for="8" value="[&quot;Building robust applications&quot;, &quot;Debugging and troubleshooting&quot;, &quot;Improving user experience by handling errors gracefully&quot;]" />
+        </attvalues>
+      </node>
+      <node id="document chat use cases in business" label="document chat use cases in business">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: document chat use cases in business" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and natural language processing." />
+          <attvalue for="6" value="[&quot;Natural Language Processing (NLP)&quot;, &quot;Conversational AI&quot;, &quot;Document Retrieval&quot;, &quot;User Interaction Design&quot;]" />
+          <attvalue for="7" value="[&quot;Document chat is only for customer service.&quot;, &quot;It requires extensive programming knowledge.&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support automation&quot;, &quot;Internal knowledge management&quot;, &quot;Sales and marketing assistance&quot;, &quot;Training and onboarding support&quot;]" />
+        </attvalues>
+      </node>
+      <node id="conversation machine training datasets" label="conversation machine training datasets">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: conversation machine training datasets" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and natural language processing." />
+          <attvalue for="6" value="[&quot;Data collection methods&quot;, &quot;Data preprocessing techniques&quot;]" />
+          <attvalue for="7" value="[&quot;All datasets are equally useful&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbot development&quot;, &quot;Sentiment analysis&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="python document_chat implementation" target="python document_chat error handling">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Error handling requires an existing understanding of the implementation flow." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="python document_chat implementation" target="document chat performance optimization">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Optimization requires a working implementation to measure and improve." />
+        </attvalues>
+      </edge>
+      <edge id="2" source="document chat functionality in Python" target="python document_chat implementation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Implementation requires understanding the expected document chat behavior in Python." />
+          <attvalue for="11" value="0.9281" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="document chat functionality in Python" target="document_chat library usage in Python">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.8854" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="document chat functionality in Python" target="python document_chat error handling">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.8257" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="document_chat library usage in Python" target="python document_chat implementation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Using the library is necessary to implement document_chat features with it." />
+          <attvalue for="11" value="0.921" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="document_chat library usage in Python" target="python document_chat error handling">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.8737" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="document_chat API integration" target="python document_chat implementation">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.7266" />
+        </attvalues>
+      </edge>
+      <edge id="8" source="conversation machine learning models" target="conversation machine training datasets">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.8327" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="documents conversation analysis techniques" target="documents conversation data processing">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.8942" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="document chat user interface design" target="real-time document chat applications">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.7355" />
+        </attvalues>
+      </edge>
+      <edge id="11" source="conversation machine architecture" target="conversation machine learning models">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.8137" />
+        </attvalues>
+      </edge>
+      <edge id="12" source="conversation machine architecture" target="conversation machine training datasets">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.7773" />
+        </attvalues>
+      </edge>
+      <edge id="13" source="documents conversation data processing" target="documents conversation analysis techniques">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Analysis techniques require processed and structured document conversation data." />
+        </attvalues>
+      </edge>
+      <edge id="14" source="python document_chat error handling" target="python document_chat implementation">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.8909" />
+        </attvalues>
+      </edge>
+      <edge id="15" source="conversation machine training datasets" target="conversation machine learning models">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training and evaluating conversation models requires understanding the datasets used." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

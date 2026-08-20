@@ -1,0 +1,12 @@
+{
+  "assets": {
+    "knowledge_version": "self-attention-chain-v1",
+    "asset_count": 12,
+    "published": false
+  },
+  "neo4j": {
+    "canonical_nodes": 4,
+    "relationships": 3,
+    "knowledge_version": "self-attention-chain-v1"
+  }
+}

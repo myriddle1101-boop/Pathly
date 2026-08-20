@@ -1,0 +1,36 @@
+{
+  "stage": "2c",
+  "method": "sbert_cosine",
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "topic_count": 15,
+  "similarity_count": 5,
+  "threshold": 0.72,
+  "top_k_per_topic": 5,
+  "similarity_edges": [
+    {
+      "from": "designing machine learning systems for engineers",
+      "to": "learning design principles in machine learning",
+      "similarity": 0.8479
+    },
+    {
+      "from": "designing machine learning systems for engineers",
+      "to": "engineers' lecture series on machine learning",
+      "similarity": 0.8164
+    },
+    {
+      "from": "machine learning for predictive modeling",
+      "to": "machine learning techniques for data analysis",
+      "similarity": 0.771
+    },
+    {
+      "from": "softmax and its role in classification tasks",
+      "to": "softmax function applications in machine learning",
+      "similarity": 0.7387
+    },
+    {
+      "from": "designing machine learning systems for engineers",
+      "to": "machine learning for predictive modeling",
+      "similarity": 0.7206
+    }
+  ]
+}

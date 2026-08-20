@@ -1,0 +1,102 @@
+{
+  "created_at": "2026-08-18T18:42:23.399453+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-07_regularization-997097d7933e",
+  "file_name": "07_regularization-997097d7933e",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 18,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6429,
+    "f1": 0.7826,
+    "tp": 9,
+    "fp": 0,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6667,
+    "tp": 3,
+    "fp": 0,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Neural Networks",
+      "Learning Algorithms",
+      "Loss Functions",
+      "Regularization Techniques",
+      "Data Handling",
+      "Model Evaluation",
+      "Tangent Classifiers",
+      "Regression Techniques",
+      "Unsupervised Learning"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Weight Decay",
+        "reason": "The slides explicitly analyze L2 regularization/weight decay and its optimization effects."
+      },
+      {
+        "name": "Early Stopping",
+        "reason": "A dedicated section explains stopping training at the point of lowest validation-set error."
+      },
+      {
+        "name": "Dropout",
+        "reason": "The source explicitly presents dropout as training an ensemble of subnetworks."
+      },
+      {
+        "name": "Bagging",
+        "reason": "The source explains bagging through resampling datasets with replacement and averaging models."
+      },
+      {
+        "name": "Adversarial Training",
+        "reason": "The source describes training on adversarial examples as regularization that promotes local constancy."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Loss Functions",
+        "to": "Regularization Techniques",
+        "reason": "Regularization is explicitly formulated by adding a penalty term to the loss/objective."
+      },
+      {
+        "from": "Loss Functions",
+        "to": "Learning Algorithms",
+        "reason": "The source treats learning algorithms as optimizing objectives defined by losses, including regularized losses."
+      },
+      {
+        "from": "Learning Algorithms",
+        "to": "Neural Networks",
+        "reason": "The discussed neural-network methods require training procedures such as gradient descent and regularization."
+      }
+    ],
+    "rejected_prerequisites": [],
+    "missing_prerequisites": [
+      {
+        "from": "Validation Set Performance",
+        "to": "Early Stopping",
+        "reason": "Early stopping selects the parameter setting at the point with the lowest validation-set error."
+      },
+      {
+        "from": "L2 Norm Penalty",
+        "to": "Weight Decay",
+        "reason": "The source explicitly identifies L2 regularization with weight decay."
+      },
+      {
+        "from": "Autoencoders",
+        "to": "Manifold Tangent Classifier",
+        "reason": "The manifold tangent classifier estimates manifold tangent directions by training an autoencoder."
+      }
+    ],
+    "overall_note": "All predicted topics are broadly grounded in the slides, but the predictions are high-level and omit several central named regularization methods."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-07_regularization-997097d7933e.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-07_regularization-997097d7933e.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-07_regularization-997097d7933e_ledger.csv"
+  }
+}

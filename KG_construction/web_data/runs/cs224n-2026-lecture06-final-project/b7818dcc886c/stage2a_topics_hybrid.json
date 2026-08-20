@@ -1,0 +1,827 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 18,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "project proposal",
+      "avg_score": 0.6882,
+      "frequency": 2,
+      "chunk_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "name": "final project",
+      "avg_score": 0.6858,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "final projects",
+      "avg_score": 0.6822,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "proposal team",
+      "avg_score": 0.6634,
+      "frequency": 2,
+      "chunk_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "name": "project plan",
+      "avg_score": 0.6437,
+      "frequency": 2,
+      "chunk_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "name": "proposal",
+      "avg_score": 0.5789,
+      "frequency": 2,
+      "chunk_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "name": "lecture transformers",
+      "avg_score": 0.5204,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "grading policy",
+      "avg_score": 0.6655,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "training models",
+      "avg_score": 0.654,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.6507,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "neural network",
+      "avg_score": 0.6452,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "use gpt",
+      "avg_score": 0.6428,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.6343,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "model training",
+      "avg_score": 0.6317,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "datasets available",
+      "avg_score": 0.6289,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "neural nets",
+      "avg_score": 0.6289,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "gpt use",
+      "avg_score": 0.6285,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "available datasets",
+      "avg_score": 0.6281,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "proposal primarily",
+      "avg_score": 0.6246,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "training set",
+      "avg_score": 0.6141,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "data projects",
+      "avg_score": 0.6115,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "getting neural",
+      "avg_score": 0.6111,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "decoder attention",
+      "avg_score": 0.6072,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "project writeup",
+      "avg_score": 0.6058,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "project plans",
+      "avg_score": 0.6021,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "cross attention",
+      "avg_score": 0.6012,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "work grading",
+      "avg_score": 0.5958,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "set training",
+      "avg_score": 0.5952,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "course grade",
+      "avg_score": 0.5911,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "plan relevant",
+      "avg_score": 0.5889,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "model overfitting",
+      "avg_score": 0.5855,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "projects project",
+      "avg_score": 0.5832,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "data project",
+      "avg_score": 0.5815,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "com datasets",
+      "avg_score": 0.5766,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "experimental strategy",
+      "avg_score": 0.5765,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "gpt model",
+      "avg_score": 0.5749,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "course project",
+      "avg_score": 0.5712,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "overfitting training",
+      "avg_score": 0.5712,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "attitude neural",
+      "avg_score": 0.5701,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "custom final",
+      "avg_score": 0.5654,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "project 2026",
+      "avg_score": 0.5637,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "grading",
+      "avg_score": 0.5628,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "courses use",
+      "avg_score": 0.56,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "data strategies",
+      "avg_score": 0.5577,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "datasets released",
+      "avg_score": 0.5576,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "project analyze",
+      "avg_score": 0.5571,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "learning models",
+      "avg_score": 0.5562,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "online sorts",
+      "avg_score": 0.5546,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "data tuning",
+      "avg_score": 0.5503,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "neural",
+      "avg_score": 0.5495,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "datasets lots",
+      "avg_score": 0.5472,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "project people",
+      "avg_score": 0.5461,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "data research",
+      "avg_score": 0.5453,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "training evaluation",
+      "avg_score": 0.5451,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "ended project",
+      "avg_score": 0.5425,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "learning nlp",
+      "avg_score": 0.5413,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "writeup quality",
+      "avg_score": 0.5406,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "conferences neur",
+      "avg_score": 0.5399,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.5375,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "gpt chat",
+      "avg_score": 0.5366,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "projects",
+      "avg_score": 0.5354,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "self attention",
+      "avg_score": 0.5299,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "attention looks",
+      "avg_score": 0.5275,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "best project",
+      "avg_score": 0.5271,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "attention transformers",
+      "avg_score": 0.527,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "old deep",
+      "avg_score": 0.524,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "collect data",
+      "avg_score": 0.524,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "model introduction",
+      "avg_score": 0.5165,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "training data",
+      "avg_score": 0.5159,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "learning revival",
+      "avg_score": 0.5138,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "new deep",
+      "avg_score": 0.5101,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "attention details",
+      "avg_score": 0.5092,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "fast project",
+      "avg_score": 0.5092,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "conferences",
+      "avg_score": 0.5091,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "transformer quadratic",
+      "avg_score": 0.509,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "project guided",
+      "avg_score": 0.5058,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "project research",
+      "avg_score": 0.5058,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "attention keys",
+      "avg_score": 0.5048,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "lecture plan",
+      "avg_score": 0.5033,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "finding data",
+      "avg_score": 0.5011,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Neural Networks",
+      "description": "Fundamental structures in machine learning that mimic the way human brains operate.",
+      "sub_topics": [
+        {
+          "name": "Artificial Neural Networks",
+          "description": "Computational models inspired by biological neural networks."
+        },
+        {
+          "name": "Neural Network Training",
+          "description": "The process of adjusting weights in a neural network to minimize error."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": [
+        {
+          "name": "Convolutional Neural Networks",
+          "description": "A type of deep learning model particularly effective for image processing."
+        },
+        {
+          "name": "Recurrent Neural Networks",
+          "description": "Neural networks designed for sequential data processing."
+        },
+        {
+          "name": "Transformers",
+          "description": "A model architecture that uses self-attention mechanisms for sequence-to-sequence tasks."
+        }
+      ]
+    },
+    {
+      "name": "Model Training",
+      "description": "The process of teaching a machine learning model to make predictions based on data.",
+      "sub_topics": [
+        {
+          "name": "Training Sets",
+          "description": "Datasets used to train machine learning models."
+        },
+        {
+          "name": "Overfitting",
+          "description": "A modeling error that occurs when a model learns noise instead of the signal."
+        },
+        {
+          "name": "Training Evaluation",
+          "description": "Assessing the performance of a trained model on unseen data."
+        }
+      ]
+    },
+    {
+      "name": "Project Proposals",
+      "description": "Formal documents outlining the objectives and plans for machine learning projects.",
+      "sub_topics": [
+        {
+          "name": "Final Projects",
+          "description": "Capstone projects that demonstrate the application of learned concepts."
+        },
+        {
+          "name": "Project Plans",
+          "description": "Detailed outlines of project timelines and deliverables."
+        },
+        {
+          "name": "Proposal Teams",
+          "description": "Groups of students collaborating on project proposals."
+        }
+      ]
+    },
+    {
+      "name": "Grading Policies",
+      "description": "Criteria and standards used to evaluate student performance in machine learning courses.",
+      "sub_topics": [
+        {
+          "name": "Course Grades",
+          "description": "Overall assessments based on project and exam performance."
+        },
+        {
+          "name": "Work Grading",
+          "description": "Evaluation of individual contributions to group projects."
+        }
+      ]
+    },
+    {
+      "name": "Datasets",
+      "description": "Collections of data used for training and testing machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Available Datasets",
+          "description": "Publicly accessible datasets for machine learning research."
+        },
+        {
+          "name": "Data Projects",
+          "description": "Projects focused on the analysis and utilization of datasets."
+        }
+      ]
+    },
+    {
+      "name": "Training Models",
+      "description": "The methodologies and techniques used to develop machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Model Introduction",
+          "description": "An overview of different types of machine learning models."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Attention Mechanisms",
+      "description": "Techniques that allow models to focus on specific parts of the input data.",
+      "sub_topics": [
+        {
+          "name": "Self-Attention",
+          "description": "A mechanism that allows a model to weigh the importance of different input elements."
+        },
+        {
+          "name": "Cross Attention",
+          "description": "A method that enables models to attend to different sequences during processing."
+        }
+      ]
+    },
+    {
+      "name": "Experimental Strategies",
+      "description": "Approaches used to design and conduct experiments in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Data Tuning",
+          "description": "Adjusting parameters and features to improve model performance."
+        },
+        {
+          "name": "Model Evaluation",
+          "description": "Assessing the effectiveness of a model using various metrics."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 27.6846,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

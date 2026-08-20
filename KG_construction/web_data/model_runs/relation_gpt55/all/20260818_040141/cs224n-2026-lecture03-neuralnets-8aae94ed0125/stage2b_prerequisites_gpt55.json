@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation is defined for training neural networks, so the network structure must be understood first."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Gradient Descent",
+      "relation_type": "strong_prerequisite",
+      "reason": "Gradient descent minimizes an objective such as a loss function, so the loss being optimized must be understood first."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation training uses gradients to update parameters through gradient-based optimization."
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation requires differentiating through activation functions to compute gradients."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation starts from the training error measured by a loss function and propagates its gradients backward."
+    }
+  ]
+}

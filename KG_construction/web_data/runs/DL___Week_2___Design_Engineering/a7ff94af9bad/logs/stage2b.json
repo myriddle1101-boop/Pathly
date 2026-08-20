@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_2___design_engineering\\a7ff94af9bad\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_2___design_engineering\\a7ff94af9bad\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.8848,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 7 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_2___design_engineering\\a7ff94af9bad\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Neural Networks -> Artificial Neural Networks | Artificial Neural Networks are a specific type of Neural Networks.\n02. Artificial Neural Networks -> Backpropagation | Backpropagation is a training algorithm specifically for Artificial Neural Networks.\n03. Neural Networks -> Training Techniques | Training Techniques are essential for effectively training Neural Networks.\n04. Training Techniques -> Model Evaluation | Model Evaluation is necessary to assess the effectiveness of Training Techniques.\n05. Linear Separation -> Classification Techniques | Classification Techniques often rely on the concept of Linear Separation.\n06. Regression Analysis -> Model Evaluation | Model Evaluation is important for assessing the results of Regression Analysis.\n07. Optimization Algorithms -> Backpropagation | Optimization Algorithms are used to minimize the loss function in Backpropagation.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

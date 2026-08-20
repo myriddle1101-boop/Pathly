@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b",
+  "run_id": "14_autoencoders-130bdd5f620b",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:06:59.331370+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "67d9c3927803e1e0037a6db778d255f87c2bde0cbcd42a7fa6d396162bcb1839",
+    "stage2a_topics_hybrid.json": "71cb00a1accbfed0a8490044666e90fc388f580fd6929a948068cf8c8b396e30",
+    "stage2c_similarity_edges.json": "72b686b39b0a051123ec1498587c6931ebb52e30985b27042bb0f32657da27ad",
+    "stage3_topics_with_summary.json": "89b56a7450c3386c7589d3ed8d099e3a5bb1b1ba5228c6e814510b4b6e210845"
+  },
+  "old_relation_count": 6,
+  "new_relation_count": 3,
+  "new_node_count": 9,
+  "new_edge_count": 6,
+  "golden_path_resource": false
+}

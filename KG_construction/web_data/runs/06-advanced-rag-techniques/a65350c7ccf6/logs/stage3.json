@@ -1,0 +1,29 @@
+{
+  "stage": "stage3",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage3_node_summary_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage3_node_summary_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6\\stage3_topics_with_summary.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 26.1734,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage3_topics_with_summary.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Text Chunking\n[LLM] 2/9 Query Processing\n[LLM] 3/9 Results Management\n[LLM] 4/9 Semantic Processing\n[LLM] 5/9 Hybrid Search\n[LLM] 6/9 Document Compression\n[LLM] 7/9 Neural Network Concepts\n[LLM] 8/9 Performance Optimization\n[LLM] 9/9 Query Variations\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+  "stderr_tail": ""
+}

@@ -1,0 +1,79 @@
+{
+  "goal_catalog_version": "full-experience-goal-catalog-v1",
+  "bundles": [
+    {
+      "scope_id": "goal:word_embeddings",
+      "manifest_version": "word_embeddings-assets-v1",
+      "asset_count": 12,
+      "digest": "769af441ebd471db",
+      "status": "published"
+    },
+    {
+      "scope_id": "goal:self_attention",
+      "manifest_version": "self_attention-assets-v1",
+      "asset_count": 12,
+      "digest": "c3dee92d7f86c24b",
+      "status": "published"
+    },
+    {
+      "scope_id": "goal:rag",
+      "manifest_version": "rag-assets-v1",
+      "asset_count": 12,
+      "digest": "b0d3779c50e74026",
+      "status": "published"
+    }
+  ],
+  "legacy_global_manifest": {
+    "manifest_version": "ta-golden-v2",
+    "asset_ids": [
+      "activation-functions-advanced_derivation-v1",
+      "activation-functions-advanced_worked_example-v1",
+      "activation-functions-code_exercise-v1",
+      "activation-functions-contextual_example_variant-v1",
+      "activation-functions-formula_explanation-v1",
+      "activation-functions-foundation_intuition-v1",
+      "activation-functions-foundation_worked_example-v1",
+      "activation-functions-transfer_challenge-v1",
+      "activation-functions-visual_or_coordinate_description-v1",
+      "gradient-descent-advanced_derivation-v1",
+      "gradient-descent-advanced_worked_example-v1",
+      "gradient-descent-code_exercise-v1",
+      "gradient-descent-contextual_example_variant-v1",
+      "gradient-descent-formula_explanation-v1",
+      "gradient-descent-foundation_intuition-v1",
+      "gradient-descent-foundation_worked_example-v1",
+      "gradient-descent-transfer_challenge-v1",
+      "gradient-descent-visual_or_coordinate_description-v1",
+      "linear-separability-advanced_derivation-v1",
+      "linear-separability-advanced_worked_example-v1",
+      "linear-separability-code_exercise-v1",
+      "linear-separability-contextual_example_variant-v1",
+      "linear-separability-formula_explanation-v1",
+      "linear-separability-foundation_intuition-v1",
+      "linear-separability-foundation_worked_example-v1",
+      "linear-separability-transfer_challenge-v1",
+      "linear-separability-visual_or_coordinate_description-v1",
+      "neural-networks-advanced_derivation-v1",
+      "neural-networks-advanced_worked_example-v1",
+      "neural-networks-code_exercise-v1",
+      "neural-networks-contextual_example_variant-v1",
+      "neural-networks-formula_explanation-v1",
+      "neural-networks-foundation_intuition-v1",
+      "neural-networks-foundation_worked_example-v1",
+      "neural-networks-transfer_challenge-v1",
+      "neural-networks-visual_or_coordinate_description-v1",
+      "xor-advanced_derivation-v1",
+      "xor-advanced_worked_example-v1",
+      "xor-code_exercise-v1",
+      "xor-contextual_example_variant-v1",
+      "xor-formula_explanation-v1",
+      "xor-foundation_intuition-v1",
+      "xor-foundation_worked_example-v1",
+      "xor-transfer_challenge-v1",
+      "xor-visual_or_coordinate_description-v1"
+    ],
+    "digest": "f420777706f4363e",
+    "status": "published",
+    "published_at": "2026-08-14T18:52:36.805775+00:00"
+  }
+}

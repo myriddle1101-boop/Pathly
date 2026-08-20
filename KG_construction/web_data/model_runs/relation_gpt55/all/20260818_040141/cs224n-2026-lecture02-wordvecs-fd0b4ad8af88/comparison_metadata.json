@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88",
+  "run_id": "cs224n-2026-lecture02-wordvecs-fd0b4ad8af88",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:09:40.643138+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "e44bbf9cdb3a92e3876619ccdddac4feb0d97a8d447e5027baed314b28c8dce6",
+    "stage2a_topics_hybrid.json": "f08c20c3157eccc0c84fbd06066a06a8f9e8fbd9a3a2331abda52fa4ec1bdb31",
+    "stage2c_similarity_edges.json": "2406f4120583e040601889304d471e93c4c0f8cf69359e7b0bbd95edee510169",
+    "stage3_topics_with_summary.json": "2df948e394f7134aa817e8c19d1f76e4bcd4318c61caca5a1c159fce3eac39cd"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 3,
+  "new_node_count": 9,
+  "new_edge_count": 6,
+  "golden_path_resource": false
+}

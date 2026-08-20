@@ -1,0 +1,139 @@
+{
+  "created_at": "2026-08-18T19:02:56.086110+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-linear_algebra-02de2e03aa08",
+  "file_name": "linear_algebra-02de2e03aa08",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 1,
+  "topic_metrics": {
+    "precision": 0.125,
+    "recall": 0.2,
+    "f1": 0.1538,
+    "tp": 1,
+    "fp": 7,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 7,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Linear Algebra"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Artificial Neural Networks",
+        "reason": "Neural networks are not discussed in the source."
+      },
+      {
+        "name": "Loss Functions",
+        "reason": "The source minimizes geometric distance for projection, not a machine-learning loss function."
+      },
+      {
+        "name": "Regression",
+        "reason": "Regression is not discussed."
+      },
+      {
+        "name": "Classification",
+        "reason": "Classification is not discussed."
+      },
+      {
+        "name": "Training Techniques",
+        "reason": "Model training methods are not discussed."
+      },
+      {
+        "name": "Exercises",
+        "reason": "This is a document section/type rather than a learning concept."
+      },
+      {
+        "name": "Machine Learning Fundamentals",
+        "reason": "The source is a linear-algebra exercise and does not present machine-learning fundamentals."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Projection onto a line",
+        "reason": "The exercise derives the nearest point on the line spanned by a unit vector."
+      },
+      {
+        "name": "Unit vectors",
+        "reason": "The derivation uses the property u^T u = 1."
+      },
+      {
+        "name": "Euclidean distance and norm",
+        "reason": "The solution minimizes ||x - y||^2."
+      },
+      {
+        "name": "Dot product",
+        "reason": "The projection coefficient is derived as alpha = x^T u."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Linear Algebra",
+        "to": "Artificial Neural Networks",
+        "reason": "Although generally plausible, artificial neural networks are absent from the source."
+      },
+      {
+        "from": "Machine Learning Fundamentals",
+        "to": "Loss Functions",
+        "reason": "Neither machine-learning fundamentals nor loss functions are presented."
+      },
+      {
+        "from": "Machine Learning Fundamentals",
+        "to": "Regression",
+        "reason": "Neither concept is discussed in the source."
+      },
+      {
+        "from": "Machine Learning Fundamentals",
+        "to": "Classification",
+        "reason": "Neither concept is discussed in the source."
+      },
+      {
+        "from": "Machine Learning Fundamentals",
+        "to": "Training Techniques",
+        "reason": "Neither concept is discussed in the source."
+      },
+      {
+        "from": "Loss Functions",
+        "to": "Training Techniques",
+        "reason": "Neither machine-learning concept appears in the source."
+      },
+      {
+        "from": "Exercises",
+        "to": "Machine Learning Fundamentals",
+        "reason": "Exercises are a content format, not a directional conceptual prerequisite, and machine-learning fundamentals are absent."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Unit vectors",
+        "to": "Projection onto a line",
+        "reason": "The projection derivation relies on u being unit length to simplify u^T u to 1."
+      },
+      {
+        "from": "Euclidean distance and norm",
+        "to": "Projection onto a line",
+        "reason": "Projection is defined and solved as minimizing the squared distance from x to points on the line."
+      },
+      {
+        "from": "Dot product",
+        "to": "Projection onto a line",
+        "reason": "The resulting projection coefficient is computed using x^T u."
+      }
+    ],
+    "overall_note": "The source is narrowly focused on deriving orthogonal projection onto a line using basic linear algebra, not machine-learning topics."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-linear_algebra-02de2e03aa08.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-linear_algebra-02de2e03aa08.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-linear_algebra-02de2e03aa08_ledger.csv"
+  }
+}

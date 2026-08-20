@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Loss Functions",
+      "to": "Gradient Descent",
+      "relation_type": "strong_prerequisite",
+      "reason": "Gradient descent minimizes an objective, so understanding loss functions is needed to understand what is being optimized."
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Transformers",
+      "relation_type": "strong_prerequisite",
+      "reason": "Transformers are advanced neural network architectures, so core deep learning concepts are needed before studying them."
+    }
+  ]
+}

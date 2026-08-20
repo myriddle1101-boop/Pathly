@@ -1,0 +1,103 @@
+{
+  "run_id": "cs224n-2026-lecture07-pretraining-2011d5086c71",
+  "events": [
+    {
+      "time": "2026-07-07T19:49:34+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "cs224n-2026-lecture07-pretraining.pdf",
+        "sha256": "2011d5086c717a25c628d0af7e6d2efa9847f9e58509a157b108935ae446ec6a",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71",
+        "resume_from_stage": "stage1",
+        "run_attempts": 1
+      }
+    },
+    {
+      "time": "2026-07-07T19:49:34+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T19:49:42+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 8.0284,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T19:49:42+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T19:50:50+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 67.5964,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T19:50:50+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T19:51:14+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 23.6617,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T19:51:14+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T19:52:17+08:00",
+      "level": "error",
+      "stage": "stage2c",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 1,
+        "duration_seconds": 63.7725,
+        "outputs_ok": false
+      }
+    }
+  ],
+  "updated_at": "2026-07-07T19:52:17+08:00"
+}

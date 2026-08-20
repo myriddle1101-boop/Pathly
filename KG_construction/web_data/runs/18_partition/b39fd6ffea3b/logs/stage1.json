@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\18_partition.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 4.8422,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 1806\n[2] 清洗后词数: 1812\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 12\n[5] 分块数（过滤后）: 9\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=280\nChapter 18 Chapter 18 Confronting the Partition Confronting the Partition Function Function In section 16.2.2 we saw that many probabilistic models (commonly known as undi- In section 16.2.2 we saw that many probabilisti...\n\n[Chunk 2] words=228\nCHAPTER 18. CONFRONTING THE PARTITION FUNCTION 18.1 The Log-Likelihood Gradient What makes learning undirected models by maximum likelihood particularly difficult is that the partition function depends on the parameters....\n\n[Chunk 3] words=277\nCHAPTER 18. CONFRONTING THE PARTITION FUNCTION 18.1 The Log-Likelihood Gradient What makes learning undirected models by maximum likelihood particularly difficult is that the partition function depends on the parameters....\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

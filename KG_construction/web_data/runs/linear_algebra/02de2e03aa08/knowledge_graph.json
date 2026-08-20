@@ -1,0 +1,144 @@
+{
+  "nodes": [
+    {
+      "id": "Artificial Neural Networks",
+      "description": "A computational model inspired by the human brain's network of neurons.",
+      "sub_topics": "[{\"name\": \"Neuron\", \"description\": \"The basic unit of computation in an artificial neural network.\"}, {\"name\": \"Activation Function\", \"description\": \"A mathematical function that determines the output of a neuron.\"}, {\"name\": \"Backpropagation\", \"description\": \"An algorithm for training neural networks by minimizing error.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Linear Algebra",
+      "description": "A branch of mathematics essential for understanding machine learning algorithms.",
+      "sub_topics": "[{\"name\": \"Linear Separation\", \"description\": \"The ability to separate data points using a linear boundary.\"}, {\"name\": \"Matrix Operations\", \"description\": \"Fundamental operations involving matrices used in machine learning.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of algebra and familiarity with mathematical notation.",
+      "key_sub_concepts": "[\"Vectors\", \"Matrices\", \"Linear transformations\", \"Eigenvalues and eigenvectors\"]",
+      "common_misconceptions": "[\"Linear algebra is only about solving equations\", \"Vectors can only represent physical quantities\"]",
+      "practical_applications": "[\"Data representation in machine learning\", \"Dimensionality reduction techniques like PCA\", \"Optimization in algorithms\"]"
+    },
+    {
+      "id": "Loss Functions",
+      "description": "Functions that measure the difference between predicted and actual outcomes.",
+      "sub_topics": "[{\"name\": \"Mean Squared Error\", \"description\": \"A common loss function used for regression tasks.\"}, {\"name\": \"Cross-Entropy Loss\", \"description\": \"A loss function often used for classification problems.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Mean Squared Error\", \"Cross-Entropy Loss\"]",
+      "common_misconceptions": "[\"Loss functions only apply to regression problems.\", \"Lower loss always means better model.\"]",
+      "practical_applications": "[\"Training machine learning models\", \"Evaluating model performance\"]"
+    },
+    {
+      "id": "Regression",
+      "description": "A statistical method for predicting continuous outcomes.",
+      "sub_topics": "[{\"name\": \"Linear Regression\", \"description\": \"A technique for modeling the relationship between variables.\"}, {\"name\": \"Polynomial Regression\", \"description\": \"An extension of linear regression that models non-linear relationships.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and algebra.",
+      "key_sub_concepts": "[\"Linear Regression\", \"Multiple Regression\"]",
+      "common_misconceptions": "[\"Regression implies causation\", \"Only linear relationships can be modeled\"]",
+      "practical_applications": "[\"Predicting housing prices\", \"Forecasting sales revenue\"]"
+    },
+    {
+      "id": "Classification",
+      "description": "The process of predicting categorical outcomes based on input data.",
+      "sub_topics": "[{\"name\": \"Binary Classification\", \"description\": \"A classification task with two possible outcomes.\"}, {\"name\": \"Multi-Class Classification\", \"description\": \"A classification task with more than two possible outcomes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Binary Classification\", \"Multi-class Classification\", \"Evaluation Metrics\", \"Overfitting and Underfitting\"]",
+      "common_misconceptions": "[\"Classification is only for binary outcomes\", \"More features always improve classification accuracy\"]",
+      "practical_applications": "[\"Spam detection in emails\", \"Image recognition\", \"Sentiment analysis\", \"Medical diagnosis\"]"
+    },
+    {
+      "id": "Training Techniques",
+      "description": "Methods used to improve the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Gradient Descent\", \"description\": \"An optimization algorithm used to minimize loss functions.\"}, {\"name\": \"Regularization\", \"description\": \"Techniques to prevent overfitting in machine learning models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Cross-validation\", \"Regularization\", \"Data augmentation\", \"Hyperparameter tuning\"]",
+      "common_misconceptions": "[\"More data always leads to better performance\", \"Overfitting only occurs with complex models\"]",
+      "practical_applications": "[\"Improving model accuracy\", \"Reducing overfitting\", \"Enhancing generalization on unseen data\"]"
+    },
+    {
+      "id": "Exercises",
+      "description": "Practical tasks designed to reinforce learning concepts in machine learning.",
+      "sub_topics": "[{\"name\": \"Hands-On Coding\", \"description\": \"Exercises that involve writing code to implement algorithms.\"}, {\"name\": \"Theoretical Problems\", \"description\": \"Exercises focused on understanding the mathematical foundations.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning principles and programming skills in Python.",
+      "key_sub_concepts": "[\"Data preprocessing\", \"Model evaluation techniques\"]",
+      "common_misconceptions": "[\"Exercises are only for beginners\", \"Practical tasks are not necessary for understanding theory\"]",
+      "practical_applications": "[\"Building simple predictive models\", \"Implementing algorithms on real datasets\"]"
+    },
+    {
+      "id": "Machine Learning Fundamentals",
+      "description": "Core principles and concepts that underpin machine learning.",
+      "sub_topics": "[{\"name\": \"Supervised Learning\", \"description\": \"A type of learning where the model is trained on labeled data.\"}, {\"name\": \"Unsupervised Learning\", \"description\": \"A type of learning where the model identifies patterns in unlabeled data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Overfitting\", \"Model Evaluation\"]",
+      "common_misconceptions": "[\"Machine learning can solve any problem\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Recommendation systems\", \"Fraud detection\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Linear Algebra",
+      "to": "Artificial Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Linear Algebra is essential for understanding the mathematical operations in neural networks."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Training Techniques",
+      "relation": "prerequisite",
+      "reason": "Knowledge of loss functions is crucial for applying training techniques effectively."
+    },
+    {
+      "from": "Exercises",
+      "to": "Machine Learning Fundamentals",
+      "relation": "prerequisite",
+      "reason": "Exercises reinforce the understanding of core principles in machine learning."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Loss Functions",
+      "relation": "prerequisite",
+      "reason": "Understanding core principles is necessary to grasp how loss functions evaluate model performance."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Regression",
+      "relation": "prerequisite",
+      "reason": "Core principles provide the foundation for understanding regression techniques."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Classification",
+      "relation": "prerequisite",
+      "reason": "Core principles are necessary to understand classification methods."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Training Techniques",
+      "relation": "prerequisite",
+      "reason": "Understanding core principles is necessary to learn effective training methods."
+    }
+  ]
+}

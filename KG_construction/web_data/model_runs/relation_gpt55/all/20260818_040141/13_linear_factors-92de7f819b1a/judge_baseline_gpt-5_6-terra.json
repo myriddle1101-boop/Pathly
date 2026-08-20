@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-08-18T18:44:44.017817+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-13_linear_factors-92de7f819b1a",
+  "file_name": "13_linear_factors-92de7f819b1a",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 12,
+  "topic_metrics": {
+    "precision": 0.625,
+    "recall": 0.5,
+    "f1": 0.5556,
+    "tp": 5,
+    "fp": 3,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 5,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Factor Models",
+      "Coding Techniques",
+      "Dimensionality Reduction",
+      "Statistical Models",
+      "Learning Algorithms"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "The source discusses linear factor models and linear/deep SFA compositions, but does not present neural networks as a topic."
+      },
+      {
+        "name": "Regression and Classification",
+        "reason": "The source focuses on unsupervised feature learning, latent-variable models, and dimensionality reduction, not regression or classification."
+      },
+      {
+        "name": "Model Evaluation",
+        "reason": "No model-evaluation methods, metrics, or evaluation procedures are discussed."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Probabilistic PCA",
+        "reason": "Explicitly presented as a linear factor model that extends PCA and produces a distribution over latent codes."
+      },
+      {
+        "name": "Factor Analysis",
+        "reason": "Explicitly defined using a unit-variance Gaussian latent prior and conditionally independent observed variables."
+      },
+      {
+        "name": "Independent Component Analysis",
+        "reason": "Explicitly discussed as using a factorial non-Gaussian prior to learn statistically independent components."
+      },
+      {
+        "name": "Sparse Coding",
+        "reason": "A dedicated section describes sparse coding, sparse priors, MAP inference, and alternating optimization."
+      },
+      {
+        "name": "Slow Feature Analysis",
+        "reason": "Explicitly described as learning features that change gradually over time."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Statistical Models",
+        "to": "Factor Models",
+        "reason": "Factor models being a kind of statistical model is a taxonomic relationship, not a demonstrated directional learning prerequisite."
+      },
+      {
+        "from": "Statistical Models",
+        "to": "Regression and Classification",
+        "reason": "Regression and classification are not covered in the source."
+      },
+      {
+        "from": "Learning Algorithms",
+        "to": "Neural Networks",
+        "reason": "Neural networks are not a supported source topic."
+      },
+      {
+        "from": "Regression and Classification",
+        "to": "Model Evaluation",
+        "reason": "Neither regression/classification nor model evaluation is discussed, and evaluation is not a prerequisite for those methods."
+      },
+      {
+        "from": "Dimensionality Reduction",
+        "to": "Model Evaluation",
+        "reason": "The source does not establish model evaluation as a learning dependency for dimensionality reduction."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Linear Factor Models",
+        "to": "Probabilistic PCA",
+        "reason": "The source explicitly identifies probabilistic PCA as a special case of the linear factor model equations."
+      },
+      {
+        "from": "Linear Factor Models",
+        "to": "Factor Analysis",
+        "reason": "The source explicitly presents factor analysis as a special case of linear factor models with particular prior and noise assumptions."
+      },
+      {
+        "from": "Sparse Priors",
+        "to": "Sparse Coding",
+        "reason": "Sparse coding is defined through latent priors sharply peaked near zero, such as Laplace, Cauchy, or Student-t priors."
+      }
+    ],
+    "overall_note": "The predictions capture the broad factor-model and dimensionality-reduction themes, but omit the chapter's central named methods and include several unsupported supervised-learning and evaluation topics."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-13_linear_factors-92de7f819b1a.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-13_linear_factors-92de7f819b1a.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-13_linear_factors-92de7f819b1a_ledger.csv"
+  }
+}

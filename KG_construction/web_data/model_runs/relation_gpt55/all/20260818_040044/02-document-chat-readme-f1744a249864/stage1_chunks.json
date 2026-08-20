@@ -1,0 +1,8 @@
+[
+  {
+    "chunk_id": 1,
+    "word_count": 118,
+    "doc_type": "paper_book",
+    "text": "Example 2: Document Chat System\nAn interactive chat system that lets you ask questions about your documents with conversation history.\nFeatures\n(cid:127) n Load text documents from files or directories\n(cid:127) n Smart text chunking with overlap\n(cid:127) n Conversational interface with history\n(cid:127) n Source attribution for answers\n(cid:127) n Multi-turn conversations\nSetup\ncd examples/02-document-chat\n# Set API key\nexport OPENAI_API_KEY=\"your-key-here\"\n# Run\npython document_chat.py\nUsage\n\nThe system will: 1. Create sample documents about AI and RAG 2. Load and chunk them 3. Start an\ninteractive chat session\nChat Commands\n(cid:127) Type your question and press Enter\n(cid:127) Type stats to see system statistics\n(cid:127) Type quit to exit\nExample Conversation\n``` You: What is machine learning?"
+  }
+]

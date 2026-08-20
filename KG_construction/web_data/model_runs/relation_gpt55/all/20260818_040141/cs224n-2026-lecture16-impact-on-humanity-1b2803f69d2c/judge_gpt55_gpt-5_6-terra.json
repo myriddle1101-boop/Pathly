@@ -1,0 +1,97 @@
+{
+  "created_at": "2026-08-18T18:56:28.254343+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c",
+  "file_name": "cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 11,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 2,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Language Models",
+      "Calibrated Models",
+      "Creativity in AI",
+      "Statistical Ciphers",
+      "Feedback Mechanisms",
+      "Model Training",
+      "AI Tools",
+      "Workforce Impact"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Hypothesis Generation",
+        "reason": "The source discusses hypotheses for hallucination, but does not present hypothesis generation as a learning concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Hallucination",
+        "reason": "Why language models hallucinate is a central lecture topic, including citation hallucinations and causes of factual errors."
+      },
+      {
+        "name": "Reinforcement Learning from Human Feedback (RLHF)",
+        "reason": "RLHF is repeatedly discussed as affecting calibration, sycophancy, diversity, and post-training behavior."
+      },
+      {
+        "name": "Good-Turing Estimator",
+        "reason": "The estimator is explicitly introduced to explain how models reserve probability mass for previously unseen events."
+      },
+      {
+        "name": "Constitutional AI",
+        "reason": "The final section presents Constitutional AI as an approach for reducing dependence on biased human feedback."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Model Training",
+        "to": "Calibrated Models",
+        "reason": "The source defines calibration and discusses its relationship to training methods, but does not establish general model training as a strong prerequisite for learning calibrated models."
+      },
+      {
+        "from": "Model Training",
+        "to": "Language Models",
+        "reason": "Language-model training is mentioned, but the lecture does not frame general model training as a required conceptual prerequisite for language models."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Calibration",
+        "to": "Hallucination",
+        "reason": "The source's central argument is that calibrated language models must assign probability to unseen arbitrary facts and therefore can hallucinate."
+      },
+      {
+        "from": "Good-Turing Estimator",
+        "to": "Hallucination",
+        "reason": "The estimator provides the probability-mass-reservation intuition used to explain hallucination on unseen events."
+      },
+      {
+        "from": "Reinforcement Learning from Human Feedback (RLHF)",
+        "to": "Constitutional AI",
+        "reason": "Constitutional AI is presented as an alternative feedback procedure that still trains a preference model before RLHF proceeds."
+      }
+    ],
+    "overall_note": "The predictions capture several broad lecture themes, but omit the central mechanisms of hallucination, RLHF, and Good-Turing estimation."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c_ledger.csv"
+  }
+}

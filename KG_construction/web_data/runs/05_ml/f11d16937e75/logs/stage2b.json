@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05_ml\\f11d16937e75\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05_ml\\f11d16937e75\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.3226,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05_ml\\f11d16937e75\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Training Data -> Model Evaluation | Model evaluation requires a dataset to assess performance.\n02. Error Metrics -> Model Evaluation | Error metrics are essential for evaluating model performance.\n03. Regression -> Classification | Understanding regression is foundational for grasping classification techniques.\n04. Dimensionality Reduction -> Distance Metrics | Dimensionality reduction often relies on distance metrics for feature selection.\n05. Neural Networks -> Training Data | Neural networks require training data to learn from.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

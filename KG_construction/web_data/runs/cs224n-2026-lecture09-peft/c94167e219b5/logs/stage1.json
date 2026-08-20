@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5\\cs224n-2026-lecture09-peft.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 7.6993,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3227\n[2] 清洗后词数: 3291\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 13\n[5] 分块数（过滤后）: 13\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=248\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang Lecture 9: Efficient Adaptation Overview  Introducing DPO (15 mins)  Human preferences data (5 mins) 1. Prompting (15 mins) 2. Introduction to ...\n\n[Chunk 2] words=277\nPutting it together for DPO   |   Derived reward model:  ,  =  log +  log ()   | Log Z term  Final DPO loss via the Bradley-Terry model of human preferences: cancels as the loss only measures  ...\n\n[Chunk 3] words=250\nWhat’s next for RLHF?  RLHF is still a very underexplored and fast-moving area!  RLHF gets you further than instruction finetuning, but is (still!) data expensive.  Recent work aims to alleviate such data requirements...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

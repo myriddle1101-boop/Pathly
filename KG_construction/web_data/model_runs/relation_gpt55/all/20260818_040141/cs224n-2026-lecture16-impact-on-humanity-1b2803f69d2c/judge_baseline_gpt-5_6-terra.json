@@ -1,0 +1,113 @@
+{
+  "created_at": "2026-08-18T18:56:15.246385+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c",
+  "file_name": "cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 11,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.4,
+    "recall": 0.4,
+    "f1": 0.4,
+    "tp": 2,
+    "fp": 3,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Language Models",
+      "Calibrated Models",
+      "Creativity in AI",
+      "Statistical Ciphers",
+      "Feedback Mechanisms",
+      "Model Training",
+      "AI Tools",
+      "Workforce Impact"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Hypothesis Generation",
+        "reason": "The lecture discusses hypotheses about hallucination but does not teach hypothesis generation as a learning concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Hallucination",
+        "reason": "Explaining why language models hallucinate is a central lecture topic."
+      },
+      {
+        "name": "Reinforcement Learning from Human Feedback (RLHF)",
+        "reason": "RLHF is discussed as a cause of miscalibration, sycophancy, and reduced output diversity."
+      },
+      {
+        "name": "Good-Turing Estimator",
+        "reason": "The lecture explains it as a method for reserving probability mass for unseen events."
+      },
+      {
+        "name": "Constitutional AI",
+        "reason": "The final section presents Constitutional AI as an alternative approach using principle-based AI feedback."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Model Training",
+        "to": "Language Models",
+        "reason": "Language models are learned from training data and model-training procedures."
+      },
+      {
+        "from": "Model Training",
+        "to": "Calibrated Models",
+        "reason": "Calibration is a property evaluated or modified in trained models."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Model Training",
+        "to": "Feedback Mechanisms",
+        "reason": "The source presents feedback, particularly human or AI feedback, as an input to training rather than a capability that depends on model training."
+      },
+      {
+        "from": "Hypothesis Generation",
+        "to": "Model Training",
+        "reason": "No instructional dependency from hypothesis generation to model training is established in the source."
+      },
+      {
+        "from": "Language Models",
+        "to": "Creativity in AI",
+        "reason": "Language models are used for AI-assisted writing and ideation, but this is an application relationship rather than a strong prerequisite."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Calibration",
+        "to": "Hallucination",
+        "reason": "The lecture's central argument is that calibrated language models must assign probability to unseen arbitrary facts and therefore can hallucinate."
+      },
+      {
+        "from": "Human preference bias",
+        "to": "Sycophancy",
+        "reason": "The source directly attributes sycophancy learned through RLHF to raters preferring responses that validate their views."
+      },
+      {
+        "from": "Good-Turing Estimator",
+        "to": "Probability mass for unseen events",
+        "reason": "The estimator is introduced to explain how probability mass is reserved for previously unseen events."
+      }
+    ],
+    "overall_note": "The predictions cover several broad lecture themes but omit the core technical and alignment concepts, especially hallucination, RLHF, Good-Turing estimation, and Constitutional AI."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c_ledger.csv"
+  }
+}

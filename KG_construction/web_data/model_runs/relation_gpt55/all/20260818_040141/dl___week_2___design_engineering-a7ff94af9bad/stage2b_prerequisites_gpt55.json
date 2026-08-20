@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Artificial Neural Networks",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation is specifically a training algorithm for artificial neural networks, so the network model must be understood first."
+    }
+  ]
+}

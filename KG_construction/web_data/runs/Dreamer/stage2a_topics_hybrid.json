@@ -1,0 +1,454 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 16,
+  "candidate_count": 39,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "swingup cartpole",
+      "avg_score": 0.5515,
+      "frequency": 2,
+      "chunk_ids": [
+        7,
+        16
+      ]
+    },
+    {
+      "name": "reconstructionsoflong termpredictions",
+      "avg_score": 0.7224,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "reconstructionsoflong",
+      "avg_score": 0.69,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "balance cartpole",
+      "avg_score": 0.6532,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "cartpole balance",
+      "avg_score": 0.6522,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "forlatentdynamicsmodels max",
+      "avg_score": 0.6485,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "imageobservationsfor",
+      "avg_score": 0.6481,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "imageobservationsfor ofthe",
+      "avg_score": 0.6353,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "2000 forlatentdynamicsmodels",
+      "avg_score": 0.6346,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "neuralcomputation 541",
+      "avg_score": 0.6239,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "neuralcomputation",
+      "avg_score": 0.6193,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "google brain",
+      "avg_score": 0.6173,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "brain abstract",
+      "avg_score": 0.6106,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "imagereconstruction",
+      "avg_score": 0.6009,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "universalplanningnetworks ar",
+      "avg_score": 0.596,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "forlatentdynamicsmodels",
+      "avg_score": 0.59,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "sparse cartpole",
+      "avg_score": 0.5859,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "cartpole swingup",
+      "avg_score": 0.5845,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "edosip cartpole",
+      "avg_score": 0.5729,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "finn universalplanningnetworks",
+      "avg_score": 0.5718,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "neural information",
+      "avg_score": 0.5702,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "universalplanningnetworks",
+      "avg_score": 0.5688,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "acrobot swingup",
+      "avg_score": 0.5614,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "400 dreamer",
+      "avg_score": 0.5613,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "imagination horizon",
+      "avg_score": 0.5608,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "advancesin neural",
+      "avg_score": 0.5547,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "sparse hopper",
+      "avg_score": 0.5542,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "hop hopper",
+      "avg_score": 0.5377,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "neural",
+      "avg_score": 0.5307,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "hopper stand",
+      "avg_score": 0.5198,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "hopper hop",
+      "avg_score": 0.5181,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "modelcomponents",
+      "avg_score": 0.5141,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "references alemi",
+      "avg_score": 0.5122,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "spin 1000",
+      "avg_score": 0.4976,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "guoetal 2018",
+      "avg_score": 0.4928,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "nrute edosip",
+      "avg_score": 0.4927,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "edosip hopper",
+      "avg_score": 0.4868,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "rehcae dra",
+      "avg_score": 0.481,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "kla eloptra",
+      "avg_score": 0.4806,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Cartpole Dynamics",
+      "description": "Explores the dynamics and control strategies for the cartpole problem.",
+      "sub_topics": [
+        {
+          "name": "Swingup Cartpole",
+          "description": "Techniques for swinging the cartpole to an upright position."
+        },
+        {
+          "name": "Balance Cartpole",
+          "description": "Methods for maintaining the cartpole in a balanced state."
+        },
+        {
+          "name": "Sparse Cartpole",
+          "description": "Approaches using sparse representations for cartpole control."
+        }
+      ]
+    },
+    {
+      "name": "Neural Computation",
+      "description": "Focuses on the principles and applications of neural networks.",
+      "sub_topics": [
+        {
+          "name": "Neural Information",
+          "description": "Study of information processing in neural networks."
+        },
+        {
+          "name": "Neural Network Models",
+          "description": "Different architectures and components of neural networks."
+        }
+      ]
+    },
+    {
+      "name": "Imagination and Planning",
+      "description": "Investigates the role of imagination in planning and decision-making.",
+      "sub_topics": [
+        {
+          "name": "Universal Planning Networks",
+          "description": "Frameworks for planning using neural networks."
+        },
+        {
+          "name": "Imagination Horizon",
+          "description": "Concepts related to the foresight in planning."
+        }
+      ]
+    },
+    {
+      "name": "Reconstruction Techniques",
+      "description": "Methods for reconstructing data and predictions in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Image Reconstruction",
+          "description": "Techniques for reconstructing images from data."
+        },
+        {
+          "name": "Long-term Predictions",
+          "description": "Approaches for reconstructing long-term predictions."
+        }
+      ]
+    },
+    {
+      "name": "Latent Dynamics Models",
+      "description": "Models that capture the latent dynamics of systems.",
+      "sub_topics": [
+        {
+          "name": "For Latent Dynamics Models",
+          "description": "Techniques and frameworks for latent dynamics."
+        },
+        {
+          "name": "Dreamer Models",
+          "description": "Specific models for dreaming and planning in latent spaces."
+        }
+      ]
+    },
+    {
+      "name": "Hopper Dynamics",
+      "description": "Focuses on the dynamics and control strategies for the hopper problem.",
+      "sub_topics": [
+        {
+          "name": "Hopper Stand",
+          "description": "Techniques for maintaining the hopper in a standing position."
+        },
+        {
+          "name": "Hopper Hop",
+          "description": "Methods for controlling the hopping motion of the hopper."
+        }
+      ]
+    },
+    {
+      "name": "Activation Functions",
+      "description": "Functions that determine the output of neural network nodes.",
+      "sub_topics": [
+        {
+          "name": "Common Activation Functions",
+          "description": "Overview of widely used activation functions in neural networks."
+        },
+        {
+          "name": "Custom Activation Functions",
+          "description": "Development of specialized activation functions for specific tasks."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Functions used to measure the difference between predicted and actual outcomes.",
+      "sub_topics": [
+        {
+          "name": "Common Loss Functions",
+          "description": "Overview of frequently used loss functions in machine learning."
+        },
+        {
+          "name": "Custom Loss Functions",
+          "description": "Designing loss functions tailored to specific applications."
+        }
+      ]
+    },
+    {
+      "name": "Backpropagation",
+      "description": "The algorithm used for training neural networks through gradient descent.",
+      "sub_topics": [
+        {
+          "name": "Gradient Descent",
+          "description": "Optimization technique used in backpropagation."
+        },
+        {
+          "name": "Training Neural Networks",
+          "description": "Process of training neural networks using backpropagation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "id": "Neural Networks",
+      "description": "A class of models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": "[{\"name\": \"Neural Network Types\", \"description\": \"Different architectures of neural networks, including feedforward and recurrent.\"}, {\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of a neural network node.\"}, {\"name\": \"Loss Functions\", \"description\": \"Metrics used to evaluate the performance of a neural network during training.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": "[{\"name\": \"Convolutional Neural Networks\", \"description\": \"Neural networks designed for processing structured grid data like images.\"}, {\"name\": \"Recurrent Neural Networks\", \"description\": \"Neural networks that are particularly suited for sequential data.\"}, {\"name\": \"Autoencoders\", \"description\": \"Neural networks used for unsupervised learning of efficient codings.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra, calculus, and programming in Python.",
+      "key_sub_concepts": "[\"Neural Networks\", \"Backpropagation\", \"Convolutional Neural Networks (CNNs)\", \"Recurrent Neural Networks (RNNs)\"]",
+      "common_misconceptions": "[\"Deep learning is the same as machine learning.\", \"More layers always lead to better performance.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Autonomous vehicles\", \"Healthcare diagnostics\"]"
+    },
+    {
+      "id": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models effectively.",
+      "sub_topics": "[{\"name\": \"Backpropagation\", \"description\": \"An algorithm for training neural networks by minimizing the loss function.\"}, {\"name\": \"Stochastic Gradient Descent\", \"description\": \"An optimization algorithm used to minimize the loss function.\"}, {\"name\": \"Contrastive Divergence\", \"description\": \"A method for training models like Restricted Boltzmann Machines.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Overfitting and Underfitting\", \"Cross-Validation\", \"Hyperparameter Tuning\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Training and testing data can be mixed\", \"Complex models are always better\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Predictive analytics\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Learning Representations",
+      "description": "Techniques for transforming input data into a format suitable for machine learning.",
+      "sub_topics": "[{\"name\": \"Feature Learning\", \"description\": \"Automatically discovering the representations needed for feature detection.\"}, {\"name\": \"Dimensionality Reduction\", \"description\": \"Techniques for reducing the number of features in a dataset.\"}, {\"name\": \"Generative Models\", \"description\": \"Models that can generate new data points from learned distributions.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and statistics.",
+      "key_sub_concepts": "[\"Feature Extraction\", \"Dimensionality Reduction\"]",
+      "common_misconceptions": "[\"Learning representations is only about neural networks.\", \"More features always lead to better performance.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Statistical Learning",
+      "description": "A framework for understanding and applying statistical methods in machine learning.",
+      "sub_topics": "[{\"name\": \"Gaussian Processes\", \"description\": \"A probabilistic model used for regression and classification tasks.\"}, {\"name\": \"Learning Theory\", \"description\": \"The study of the principles and algorithms of machine learning.\"}, {\"name\": \"Statistical Language Models\", \"description\": \"Models that predict the probability of sequences of words.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Regression Analysis\", \"Classification Techniques\"]",
+      "common_misconceptions": "[\"Statistical learning is only about regression.\", \"More data always leads to better models.\"]",
+      "practical_applications": "[\"Predictive modeling in finance\", \"Customer segmentation in marketing\"]"
+    },
+    {
+      "id": "Neural Computation",
+      "description": "The study of how neural networks process information and learn from data.",
+      "sub_topics": "[{\"name\": \"Neural Dynamics\", \"description\": \"The study of how neural networks evolve over time during learning.\"}, {\"name\": \"Probabilistic Neural Models\", \"description\": \"Models that incorporate uncertainty in their predictions.\"}, {\"name\": \"Neural Abstraction\", \"description\": \"The process of simplifying complex neural network structures.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and activation functions\", \"Feedforward and backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Applications of Neural Networks",
+      "description": "Real-world use cases where neural networks are applied.",
+      "sub_topics": "[{\"name\": \"Speech Recognition\", \"description\": \"Using neural networks to convert spoken language into text.\"}, {\"name\": \"Image Classification\", \"description\": \"Identifying objects within images using neural networks.\"}, {\"name\": \"Audio Classification\", \"description\": \"Categorizing audio signals using machine learning techniques.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and programming.",
+      "key_sub_concepts": "[\"Image Recognition\", \"Natural Language Processing\", \"Reinforcement Learning\", \"Generative Models\"]",
+      "common_misconceptions": "[\"Neural networks can solve all problems\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Facial recognition in security systems\", \"Chatbots for customer service\", \"Self-driving car navigation\", \"Medical diagnosis from imaging data\"]"
+    },
+    {
+      "id": "Neural Network Evaluation",
+      "description": "Methods for assessing the performance of neural networks.",
+      "sub_topics": "[{\"name\": \"Model Validation\", \"description\": \"Techniques for ensuring that a model generalizes well to unseen data.\"}, {\"name\": \"Performance Metrics\", \"description\": \"Quantitative measures used to evaluate model accuracy and efficiency.\"}, {\"name\": \"Hyperparameter Tuning\", \"description\": \"The process of optimizing the parameters that govern the training process.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and neural networks.",
+      "key_sub_concepts": "[\"Accuracy\", \"Precision and Recall\", \"F1 Score\", \"Confusion Matrix\", \"ROC Curve\"]",
+      "common_misconceptions": "[\"Higher accuracy always means a better model\", \"Overfitting is not a concern if the training loss is low\"]",
+      "practical_applications": "[\"Model selection\", \"Hyperparameter tuning\", \"Performance benchmarking\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Neural Networks",
+      "to": "Deep Learning",
+      "relation": "prerequisite",
+      "reason": "Deep Learning is a subset of Neural Networks."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Applications of Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Understanding Neural Networks is essential to apply them in real-world scenarios."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Neural Network Evaluation",
+      "relation": "prerequisite",
+      "reason": "Evaluating Neural Networks requires knowledge of how they function."
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Neural Networks",
+      "relation": "similarity",
+      "score": 0.7399
+    },
+    {
+      "from": "Training Techniques",
+      "to": "Neural Network Evaluation",
+      "relation": "prerequisite",
+      "reason": "Effective training techniques are necessary to evaluate the performance of neural networks."
+    },
+    {
+      "from": "Learning Representations",
+      "to": "Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Transforming input data is crucial for training Neural Networks."
+    },
+    {
+      "from": "Statistical Learning",
+      "to": "Neural Computation",
+      "relation": "prerequisite",
+      "reason": "Statistical methods are foundational for understanding how neural networks learn."
+    },
+    {
+      "from": "Neural Computation",
+      "to": "Neural Networks",
+      "relation": "similarity",
+      "score": 0.8316
+    },
+    {
+      "from": "Neural Computation",
+      "to": "Neural Network Evaluation",
+      "relation": "similarity",
+      "score": 0.777
+    }
+  ]
+}

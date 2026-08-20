@@ -1,0 +1,703 @@
+Received:23 September 2019 Revised:17 December 2019 Accepted:31 December 2019
+DOI:10.1002/widm.1356
+OVERVIEW
+—
+Bias in data-driven artificial intelligence systems An
+introductory survey
+Eirini Ntoutsi 1 | Pavlos Fafalios 2 | Ujwal Gadiraju 1 | Vasileios Iosifidis 1 |
+Wolfgang Nejdl 1 | Maria-Esther Vidal 3 | Salvatore Ruggieri 4 |
+Franco Turini 4 | Symeon Papadopoulos 5 | Emmanouil Krasanakis 5 |
+Ioannis Kompatsiaris 5 | Katharina Kinder-Kurlanda 6 | Claudia Wagner 6 |
+Fariba Karimi 6 | Miriam Fernandez 7 | Harith Alani 7 | Bettina Berendt 8,9 |
+Tina Kruegel 10 | Christian Heinze 10 | Klaus Broelemann 11 | Gjergji Kasneci 11 |
+Thanassis Tiropanis 12 | Steffen Staab 1,12,13
+1 L 3 SResearch Center&Facultyof Electrical Engineeringand Computer Science,Leibniz University Hannover,Hannover,Germany
+2 Instituteof Computer Science,Foundationfor Researchand Technology-Hellas(FORTH-ICS),Heraklion,Greece
+3 TIBLeibniz Information Centre For Scienceand Tecnhnology,Hannover,Germany
+4 KDDLAB,Dipartimentodi Informatica,Universitàdi Pisa,Pisa,Italy
+5 Information Technologies Institute,The Centrefor Research&Technology,Hellas(CERTH),Thessaloniki,Greece
+6 GESISLeibniz Instituteforthe Social Sciences,Cologne,Germany
+7 Knowledge Media Institute,The Open University,Milton Keynes,UK
+8 Facultyof Electrical Engineeringand Computer Science,TUBerlin,Berlin,Germany
+9 Departmentof Computer Science,KULeuven,Leuven,Belgium
+10 Institutefor Legal Informatics,Leibniz Universityof Hanover,Hanover,Germany
+11 Innovation Lab,SCHUFAHolding AG,Wiesbaden,Germany
+12 Electronicsand Computer Science,Universityof Southampton,Southampton,UK
+13 Institutefor Paralleland Distributed Systems,Universityof Stuttgart,Germany
+Correspondence
+Abstract
+Eirini Ntoutsi,L 3 SResearch Center&
+Facultyof Electrical Engineeringand Artificial Intelligence(AI)-basedsystemsarewidelyemployednowadaystomake
+Computer Science,Leibniz University decisions that have far-reaching impact on individuals and society. Their deci-
+Hannover,Hannover,Germany.
+sions might affect everyone, everywhere, and anytime, entailing concerns about
+Email:ntoutsi@l 3 s.de
+potential human rights issues. Therefore, it is necessary to move beyond tradi-
+Fundinginformation
+tional AIalgorithmsoptimizedforpredictiveperformanceandembedethicaland
+European Commission,Grant/Award
+legal principles in their design, training, and deployment to ensure social good
+Number:860630
+while still benefiting from the huge potential of the AI technology. The goal of
+thissurveyistoprovideabroadmultidisciplinaryoverviewoftheareaofbiasin
+AI systems, focusing on technical challenges and solutions as well as to suggest
+new research directions towards approaches well-grounded in a legal frame. In
+Thisisanopenaccessarticleunderthetermsofthe Creative Commons Attribution License,whichpermitsuse,distributionandreproductioninanymedium,provided
+theoriginalworkisproperlycited.
+©2020 The Authors.WIREs Data Miningand Knowledge Discoverypublishedby Wiley Periodicals,Inc.
+WIREs Data Mining Knowl Discov.2020;e 1356. wires.wiley.com/dmkd 1 of 14
+https://doi.org/10.1002/widm.1356
+
+2 of 14 NTOUTSIETAL.
+this survey, we focus on data-driven AI, as a large part of AI is powered nowa-
+days by (big) data and powerful machine learning algorithms. If otherwise not
+specified,weusethegeneraltermbiastodescribeproblemsrelatedtothegather-
+ingorprocessingofdatathatmightresultinprejudiceddecisionsonthebasesof
+demographicfeaturessuchasrace,sex,andsoforth.
+Thisarticleiscategorizedunder:
+Commercial,Legal,and Ethical Issues>Fairnessin Data Mining
+Commercial,Legal,and Ethical Issues>Ethical Considerations
+Commercial,Legal,and Ethical Issues>Legal Issues
+KEYWORDS
+fairness,fairness-aware AI,fairness-awaremachinelearning,interpretability,responsible AI
+1 | INTRODUCTION
+Artificial Intelligence (AI) algorithms are widely employed by businesses, governments, and other organizations in
+order to make decisions that have far-reaching impacts on individuals and society. Their decisions might influence
+everyone, everywhere, and anytime, offering solutions to problems faced in different disciplines or in daily life, but at
+the same time entailing risks like being denied a job or a medical treatment. The discriminative impact of AI-based
+decision-making to certain population groups has been already observed in a variety of cases. For instance, the COM-
+PAS system for predicting the risk of re-offending was found to predict higher risk values for black defendants (and
+lower for white ones) than their actual risk (Angwin, Larson, Mattu, & Kirchner, 2016) (racial-bias). In another case,
+Google's Ads tool for targeted advertising was found to serve significantly fewer ads for high paid jobs to women than
+to men (Datta, Tschantz, & Datta, 2015) (gender-bias). Such incidents have led to an ever increasing public concern
+abouttheimpactof AIinourlives.
+Biasisnotanewproblemrather“biasisasoldashumancivilization”and“itishumannatureformembersofthe
+dominant majoritytobeoblivious to theexperiencesofother groups.”1 However, AI-based decision-making maymag-
+nify pre-existing biases and evolve new classifications and criteria with huge potential for new types of biases. These
+constantly increasing concerns have led to a reconsideration of AI-based systems towards new approaches that also
+address the fairness oftheir decisions. In thispaper, wesurvey recent technical approacheson bias and fairness in AI-
+based decision-making systems, we discuss their legal ground 2 as well as open challenges and directions towards AI-
+solutionsforsocietalgood.Wedividetheworksintothreebroadcategories:
+(cid:129) Understanding bias. Approaches that help understand how bias is created in the society and enters our socio-
+technicalsystems,ismanifestedinthedatausedby AIalgorithms,andcanbemodeledandformallydefined.
+(cid:129) Mitigating bias. Approaches that tackle bias in different stages of AI-decision making, namely, preprocessing, in-
+processing,andpost-processingmethodsfocusingondatainputs,learningalgorithms,andmodeloutputs,respectively.
+(cid:129) Accounting for bias. Approaches that account for bias proactively, via bias-aware data collection, or retroactively, by
+explaining AI-decisionsinhumanterms.
+Figure 1 providesavisualmapofthetopicsdiscussedinthissurvey.
+Thispapercomplementsexistingsurveysthateitherhaveastrongfocusonmachineethics,suchas Yuetal.(2018),
+study a specific subproblem, such as explaining black box models (Atzmueller, 2017; Guidotti et al., 2019), or focus in
+specific contexts, such as the Web (Baeza-Yates, 2018), by providing a broad categorization of the technical challenges
+andsolutions,acomprehensivecoverageofthedifferentlinesofresearchaswellastheirlegalgrounds.
+We are aware that the problems of bias and discrimination are not limited to AI and that the technology can be
+deployed (consciously or unconsciously) in ways that reflect, amplify or distort real world perception, and status quo.
+Therefore, as the roots to these problems are not only technological, it is also naive to believe that technological solu-
+tionswillsuffice.Rather,morethantechnicalsolutionsarerequiredincludingsociallyacceptabledefinitionsoffairness
+and meaningful interventions to ensure the long-term well-being of all groups. These challenges require
+
+NTOUTSIETAL. 3 of 14
+LEGAL ISSUES
+UNDERSTANDING BIAS
+Socio-technical causes of bias Bias manifestation in data Fairness definition Regulations provisions
+(cid:129) Data generation (cid:129) Sensitive features & causal inferences (cid:129) Similarity-based (cid:129) Predicted & actual outcome (cid:129) Data accuracy (GDPR)
+(cid:129) Data collection (cid:129) Data representativeness (cid:129) Causal reasoning (cid:129) Predicted probabilities & (cid:129) Equality, prohibition of
+(cid:129) Institutional bias (cid:129) Data modalities (cid:129) Predicted outcome actual outcome discrimination (CFR-EU)
+MITIGATING BIAS
+Pre-processing In-processing Post-processing Are data modifications legal?
+(cid:129) Instance class modification (cid:129) Classification model adaptation (cid:129) Confidence/probability score corrections (cid:129) Intellectual Property issues
+(cid:129) Instance selection (cid:129) Regularization / Loss function s.t. constraints (cid:129) Promoting/demoting boundary decisions (cid:129) Legal basis for data/model
+(cid:129) Instance weighting (cid:129) Latent fair classes (cid:129) Wrapping a fair classifier on top of a black-box baselearner modification
+ACCOUNTING FOR BIAS
+Application of existing rules
+Bias-aware data collection Explaining AI decisions
+Describing and modelling bias (cid:129) Applicability to algorithmic
+(cid:129) Bias elicitation: individual assessors, mathematical (cid:129) Description and causal logics (cid:129) Model explanation by approximation decision-making
+pooling, group elicitation, consensus building (cid:129) Ontological formalisms and reasoning (cid:129) Inherently interpretable models (cid:129) Limited scope of anti-
+(cid:129) Crowdsourcing (cid:129) Local behaviour explanation discrimination law. Indirect
+discrimination
+FIGURE 1 Overviewoftopicsdiscussedinthissurvey
+multidisciplinary perspectives and a constant dialogue with the society as bias and fairness are multifaceted and vola-
+tile. Nevertheless, as the AI technology penetrates our lives, it is extremely important for technology creators to be
+awareofbiasanddiscriminationandtoensureresponsibleusageofthetechnology,keepinginmindthatatechnologi-
+calapproachonitsownisnotapanaceaforallsortsofbiasand AIproblems.
+2 | UNDERSTANDING BIAS
+Bias is an old concept in machine learning (ML), traditionally referring to the assumptions made by a specific model
+(inductive bias) (Mitchell,1997). A classicalexample is Occam's razor preferenceforthe simplest hypothesis. With respect
+to human bias, its many facets have been studied by many disciplines including psychology, ethnography, law, and so
+forth. In this survey, we consider as bias the inclination or prejudice of a decision made by an AI system which is for or
+against one person or group,especially ina way considered tobeunfair.Given this definition,we focuson howbiasenters
+AIsystemsandhowitismanifestedinthedatacomprisingtheinputto AIalgorithms.Tacklingbiasentailsansweringthe
+questionhowtodefinefairnesssuchthatitcanbeconsideredin AIsystems;wediscussdifferentfairnessnotionsemployed
+byexistingsolutions.Finally,weclosethissectionwithlegalimplicationsofdatacollectionandbiasdefinitions.
+2.1 | Socio-technical causes of bias
+AI relies heavily on data generated by humans (e.g., user-generated content) or collected via systems created by
+humans. Therefore, whatever biases exist in humans enter our systems and even worse, they are amplified due to the
+complex sociotechnical systems, such as the Web.3 As a result, algorithms may reproduce (or even increase) existing
+inequalities or discriminations (Karimi, Génois, Wagner, Singer, & Strohmaier, 2018). Within societies, certain social
+groupsmaybedisadvantaged,whichusuallyresultsin“institutionalbias”wherethereisatendencyfortheprocedures
+andpracticesofparticularinstitutionstooperateinwaysinwhichsomesocialgroupsarebeingadvantagedandothers
+disadvantaged. This needs not be the result of conscious discrimination but rather of the majority following existing
+norms.Institutionalracismandsexismarecommonexamples(Chandler&Munday,2011).Algorithmsarepartofexis-
+ting (biased) institutions and structures, but they may also amplify or introduce bias as they favor those phenomena
+and aspects of human behavior that are easily quantifiable over those which are hard or even impossible to measure.
+This problem is exacerbated by the fact that certain data may be easier to access and analyze than others, which has
+caused, for example, the role of Twitter for various societal phenomena to be overemphasized (Tufekci, 2014). Once
+introduced, algorithmic systems encourage the creation of very specific data collection infrastructures and policies, for
+
+4 of 14 NTOUTSIETAL.
+example,theymaysuggesttrackingandsurveillance(Introna&Wood,2004)whichthenchangeoramplifypowerrela-
+tions.Algorithmsthusshapesocietalinstitutionsandpotentialinterventions,andviceversa.Itiscurrentlynotentirely
+clear, how this complex interaction between algorithms and structures plays out in our societies. Scholars have thus
+called for “algorithmic accountability” to improve understanding of the power structures, biases, and influences that
+algorithmsexerciseinsociety(Diakopoulos,2015).
+2.2 | How is bias manifested in data?
+Bias can be manifested in (multimodal) data through sensitive features and their causal influences, or through under/
+over-representationofcertaingroups.
+2.2.1 | Sensitive features and causal influences
+Dataencodeanumberofpeoplecharacteristicsintheformoffeaturevalues.Sensitivecharacteristicsthatidentifygro-
+unds of discrimination or bias may be present or not. Removing or ignoring such sensitive features does not prevent
+learning biasedmodels, because other correlated features (also known asredundant encodings) maybe usedasproxies
+forthem.Forexample,neighborhoodsin U.S.citiesarehighlycorrelatedwithrace,andthisfacthasbeenusedforsys-
+tematic denial of services such as bank loans or same-day purchase delivery.4 Rather, including sensitive features in
+datamaybebeneficialinthedesignoffairmodels(Zliobaite&Custers,2016).Sensitivefeaturesmayalsobecorrelated
+withthetargetfeaturethatclassificationmodelswanttopredict.Forexample,aminority'spreferenceforredcarsmay
+induce bias against the minority in predicting accident rate if red cars are also preferred by aggressive drivers. Higher
+insurance premium may then be set for red car owners, which disproportionately impacts minority members. Simple
+correlation between apparently neutral features can then lead to biased decisions. Discovering and understanding
+causalinfluencesamongvariablesisafundamentaltoolfordealingwithbias,asrecognizedinthelegalcircles(Foster,
+2004)andinmedicalresearch(Grimes&Schulz,2002).Theinterestedreaderisreferredtotherecentsurveyoncausal
+approachestofairnessinclassificationmodels(Loftus,Russell,Kusner,&Silva,2018).
+2.2.2 | Representativeness of data
+Statistical (including ML) inferences require that the data from which the model was learned be representative of the
+data on which it is applied. However, data collection often suffers from biases that lead to the over- or under-
+representationofcertaingroups,especiallyinbigdata,where manydatasetshavenotbeencreated withtherigorofa
+statisticalstudy,buttheyaretheby-productofotheractivitieswithdifferent,oftenoperational,goals(Barocas&Selbst,
+2016). Frequently occurring biases include selection bias (certain individuals are more likely to be selected for study),
+oftenasself-selectionbias,andthereverseexclusionbias;reportingbias(observationsofacertainkindaremorelikelyto
+bereported,whichleadstoasortofselectionbiasonobservations);anddetectionbias(aphenomenonismorelikelyto
+beobservedforaparticularsetofsubjects).Analogousbiasescanleadtounder-orover-representationsofpropertiesof
+individuals, for example Boyd and Crawford (2012)). If the mis-represented groups coincide with social groups against
+which therealreadyexists socialbiassuch asprejudiceordiscrimination, even“unbiased computationalprocessescan
+lead to discriminative decision procedures” (Calders & Zliobaite, 2013). Mis-representation in the data can lead to
+vicious cycles that perpetuate discrimination and disadvantage (Barocas & Selbst, 2016). Such “pernicious feedback
+loops” (O'Neil, 2016) can occur with both under-representation of historically disadvantaged groups, for example,
+women and people of color in IT developer communities and image datasets (Buolamwini & Gebru, 2018), and with
+over-representation,forexample,blackpeopleindrug-relatedarrests(Lum&Isaac,2016).
+2.2.3 | Data modalities and bias
+Data come in different modalities (numerical, textual, images, etc.) as well as in multimodal representations
+(e.g., audio-visual content). Most of the fairness-aware ML approaches refer to structured data represented in some
+
+NTOUTSIETAL. 5 of 14
+fixedfeature space. Data modality-specific approaches also exist, especially for textual data and images. Bias in lan-
+guage has attracted a lot of recent interest with many studies exposing a large number of offensive associations
+related to gender and race on publicly available word embeddings (Bolukbasi, Chang, Zou, Saligrama, & Kalai,
+2016) as well as how these associations have evolved over time (Kutuzov, Øvrelid, Szymanski, & Velldal, 2018).
+Similarly for the computer vision community where standard image collections like MNIST are exploited for train-
+ing, or off-the-shelf pretrained models are used as feature extractors, assuming the collections comprise representa-
+tive samples of the real world. In reality, though, the collections can be biased as many recent studies have
+indicated. For instance, Buolamwini and Gebru (2018) have found that commercial facial recognition services per-
+form much better on lighter male subjects than darker female ones. Overall, the additional layer of feature extrac-
+tion that is typically used within AI-based multimodal analysis systems makes it even more challenging to trace
+the source of bias in such systems.
+2.3 | How is fairness defined?
+More than 20 different definitions of fairness have appeared thus far in the computer science literature (Verma &
+Rubin,2018;Zliobaite,2017);andsomeofthesedefinitionsandotherswereproposedandinvestigatedinworkonfor-
+malizingfairnessfromotherdisciplines,suchaseducation,overthepast 50 years(Hutchinson&Mitchell,2019).Exis-
+ting fairness definitions can be categorized into: (a) “predicted outcome,” (b) “predicted and actual outcome,”
+(c) “predicted probabilities and actual outcome,” (d) “similarity based,” and (e) “causal reasoning” (Verma & Rubin,
+2018).“Predictedoutcome”definitionssolelyrelyonamodel'spredictions(e.g.,demographicparitychecksthepercent-
+ageofprotectedandnon-protectedgroupsinthepositiveclass).“Predictedandactualoutcome”combineamodel'spre-
+dictions with the true labels (e.g., equalized odds requires false positive and negative rates to be similar among
+protected and non-protected groups). “Predicted probabilities and actual outcome” employ the predicted probabilities
+instead of the predicted outcomes (e.g., good calibration requires the true positive probabilities between protected and
+non-protectedgroupstobethesame).Contrarytodefinitions(a)–(c)thatonlyconsiderthesensitiveattribute,“similar-
+ity based” definitions also employ non-sensitive attributes (e.g., fairness through awareness states that similar individ-
+uals must be treated equally). Finally, “causal reasoning” definitions are based on directed acyclic graphs that capture
+relations between features and their impact on the outcomes by structural equations (e.g., counterfactual fairness
+(Kusner,Loftus,Russell,&Silva,2017)constructsagraphthatverifieswhethertheattributesdefiningtheoutcomeare
+correlatedtothesensitiveattribute).
+Despitethemanyformal,mathematicaldefinitionsoffairnessproposedoverthelastyearstheproblemofformaliz-
+ing fairness is still open as well as the discussion about the merits and demerits of the different measures is missing.
+Corbett-Davies and Goel (2018) show the statistical limitations of prevailing mathematical definitions of fairness and
+the (negative) effect of enforcing such fairness-measures on group well-being and urge the community to explicitly
+focusonconsequencesofpotentialinterventions.
+2.4 | Legal issues of bias and fairness in AI
+Takingintoaccountthevarietyofbiascreationin AIsystemsanditsimpactonsociety,thequestionariseswhetherthe
+lawshouldprovideregulationsfornon-discriminatory AI-baseddecisionmaking.Generallyspeaking,existing EUregu-
+lation comes into play when (discriminatory) decisions have been taken, while provisions tackling the quality of
+selecteddataarerare.Fortheearlier,thecontrolofdiscriminatorydecisions,theprincipleofequalityandtheprohibi-
+tion of discrimination (Art. 20, 21 EU Charter of Fundamental Rights, Art. 4 Directive 2004/113 and other directives)
+apply. However, these provisions only address discrimination on the basis of specific criteria and require prima facie
+evidence of a less favorable treatment on grounds of a prohibited criterion, which will often be difficult to establish
+(Hacker, 2018). For the latter, the control of the quality of the selected data, with respect to “personal data” Art.
+5(1)GDPR,5 stipulates “theprincipleofdataaccuracy”which, however,doesnothinder wrongful ordisproportionate
+selection.Withrespecttoautomateddecision-making(Art.22 GDPR),recital 71 onlypointsoutthatappropriatemath-
+ematical or statistical procedures shall be used and that discriminatory effects shall be prevented. While the effective-
+nessof Art.22 GDPRisuncertain(Zuiderveen Borgesius,2018)itprovidessomesafeguards,suchasrestrictionsonthe
+use ofautomated decision-making,and, where it isused, a rightto transparency,to obtain human intervention and to
+
+6 of 14 NTOUTSIETAL.
+contest the decision. Finally, some provisions in area-specific legislation can be found, for example, Art. 12 Regulation
+(EC)No 223/2009 for Europeanstatistics.
+3 | MITIGATING BIAS
+Approaches for bias mitigation can be categorized into: (a) preprocessing methods focusing on the data, (b) in-
+processing methods focusing on the ML algorithm, and (c) post-processing methods focusing on the ML model. We
+concludethesectionwithadiscussiononthelegalissuesofbiasmitigation.
+3.1 | Preprocessing approaches
+Approaches in thiscategory focuson the data,the primarysource ofbias,aiming toproducea“balanced” datasetthat
+can then be fed into any learning algorithm. The intuition behind these approaches is that the fairer the training data
+is, the less discriminative the resulting model will be. Such methods modify the original data distribution by altering
+class labels of carefully selected instances close to the decision boundary (Kamiran & Calders, 2009) or in local neigh-
+borhoods (Luong, Ruggieri, & Turini, 2011), by assigning different weights to instances based on their group member-
+ship (Calders, Kamiran, & Pechenizkiy, 2009) or by carefully sampling from each group. These methods use heuristics
+aimingtobalancetheprotectedandunprotectedgroupsinthetrainingset;however,theirimpactisnotwellcontrolled
+despite their efforts for minimal data interventions. Recently, Calmon, Wei, Vinzamuri, Ramamurthy, and Varshney
+(2017) proposed a probabilistic fairness-aware framework that alters the data distribution towards fairness while con-
+trollingtheper-instancedistortionandbypreservingdatautilityforlearning.
+3.2 | In-processing approaches
+In-processing approaches reformulate the classification problem by explicitly incorporating the model's discrimination
+behaviorintheobjectivefunctionthroughregularizationorconstraints,orbytrainingonlatenttargetlabels.Forexam-
+ple,Kamiran,Calders,and Pechenizkiy(2010)modifythesplittingcriterionofdecisiontreestoalsoconsidertheimpact
+ofthesplitw.r.t.theprotectedattribute.Kamishima,Akaho,Asoh,and Sakuma(2012)integratearegularizertoreduce
+the effect of “indirect prejudice” (mutual information between the sensitive features and class labels). Dwork, Hardt,
+Pitassi,Reingold,and Zemel(2012)redefinetheclassificationproblembyminimizinganarbitrarylossfunctionsubject
+to the individual fairness-constraint (similar individuals are treated similarly). Zafar, Valera, Gomez-Rodriguez, and
+Gummadi (2017) propose a constraint-based approach for disparate mistreatment (defined in terms of misclassification
+rates) which can be incorporated into logistic-regression and SVMs. In a different direction, Krasanakis, Xioufis,
+Papadopoulos, and Kompatsiaris (2018) assume the existence of latent fair classes and propose an iterative training
+approach towards those classes which alters the in-training weights of the instances. Iosifidis and Ntoutsi (2019) pro-
+poseasequentialfairensemble,Ada Fair,thatextendstheweighteddistributionapproachof Ada Boostbyalsoconsider-
+ing the cumulative fairness of the learner up to the current boosting round and moreover, it optimizes for balanced
+errorinsteadofoverallerrortoaccountforclassimbalance.
+While most of the in-processing approaches refer to classification, approaches for the unsupervised case have also
+emerged recently, for example, the fair-PCA approach of Samadi, Tantipongpipat, Morgenstern, Singh, and Vempala
+(2018)thatforcesequalreconstructionerrorsforbothprotectedandunprotectedgroups.Chierichetti,Kumar,Lattanzi,
+and Vassilvitskii (2017)formulatetheproblem offairclustering ashaving approximately equalrepresentationforeach
+protectedgroupineveryclusteranddefinefair-variantsofclassicalk-meansandk-medoidsalgorithms.
+3.3 | Post-processing approaches
+Thethirdstrategyistopostprocesstheclassificationmodelonceithasbeenlearnedfromdata.Thisconsistsofaltering
+the model's internals (white-box approaches) or its predictions (black-box approaches). Examples of the white-box
+approach consist of correcting the confidence of CPAR classification rules (Pedreschi, Ruggieri, & Turini, 2009),
+
+NTOUTSIETAL. 7 of 14
+probabilities in Naïve Bayes models (Calders & Verwer, 2010), or the class label at leaves of decision trees (Kamiran
+etal.,2010).White-boxapproacheshavenotbeenfurtherdevelopedinrecentyears,beingsupersededbyin-processing
+methods. Examples of the black-box approach aim at keeping proportionality of decisions among protected versus
+unprotectedgroupsbypromotingordemotingpredictionsclosetothedecisionboundary(Kamiran,Mansha,Karim,&
+Zhang,2018),bydifferentiatingthedecisionboundaryitselfovergroups(Hardt,Price,&Srebro,2016),orbywrapping
+afairclassifierontopofablack-boxbaseclassifier(Agarwal,Beygelzimer,Dudík,Langford,&Wallach,2018).Ananal-
+ysis of how to postprocess group-wise calibrated classifiers under fairness constraints is given in (Canetti et al., 2019).
+While the majority of approaches are concerned with classification models, bias post-processing has been deemed as
+relevantwheninterpretingclusteringmodelsaswell(Lorimer,Held,&Stoop,2017).
+3.4 | Legal issues of mitigating bias
+Pertinentlegalquestions involvewhether modifications ofdataasenvisagedbythepre-and in-processing approaches,
+aswellasalteringthemodelinthepost-processingapproach,couldbeconsideredlawful.Besidesintellectualproperty
+issues that might occur, there is no general legal provision dealing with the way data is collected, selected or (even)
+modified. Provisions are in place mainly if such training data would (still) be personal data. Modifications (as well as
+any other processing) would need a legal basis. However, legitimation could derive from informed consent (provided
+thatspecificsafeguardsaremet),orcouldrelyoncontractorlegitimateinterest.Besides,dataqualitycouldberelevant
+in terms of warranties, if a data provider sells data. A specific issue arises when “debiasing” involves sensitive data, as
+under Art.9 GDPRspecialcategorydatasuchasethnicityoftenrequiresexplicitconsent(Kilbertusetal.,2018).Apos-
+sible solution could be Art. 9(2)(g) GDPR which permits processing for reasons of substantial public interest, which
+arguablycouldbeseenin‘debiasing’.Thesamegroundsoflegitimationapplywhenalteringthemodel.However,con-
+trary to data modification, data protection law would arguably not be applicable here, as the model would not contain
+personaldata,unlessthemodelisvulnerabletoconfidentialityattackssuchasmodelinversionandmembershipinfer-
+ence(Veale,Binns,&Edwards,2018).
+4 | ACCOUNTING FOR BIAS
+Algorithmic accountability refers to the assignment ofresponsibility for howan algorithm is created and its impact on
+society (Kaplan, Donovan, Hanson, & Matthews, 2019). In case of AI algorithms the problem is aggravated as we do
+notcodifythesolution,ratherthesolutionisinferredvia MLalgorithmsandcomplexdata.AIaccountabilityhasmany
+facets, we focus below on the most prominent ones that account for bias either proactively, via bias-aware data collec-
+tion, or retroactively by explaining AI decisions in human terms; furthermore, we discuss the importance of describing
+anddocumentingbiasbymeansofformalismslikeontologies.
+4.1 | Proactively: bias-aware data collection
+Avarietyofmethods areadoptedfordataacquisition toservediverseneeds;thesemaybepronetointroducingbiasat
+the data collection stage itself, for example, Morstatter, Pfeffer, and Liu (2014). Proposals have been made for a struc-
+tured approach to bias elicitation in evidence synthesis, including bias checklists and elicitation tasks that can be per-
+formed either by individual assessors and mathematical pooling, group elicitation and consensus building or hybrid
+approaches (Turner, Spiegelhalter, Smith, & Thompson, 2009). However, bias elicitations have themselves been found
+tobebiasedevenwhenhighqualityassessorsareinvolvedandremedieshavebeenproposed(Manzi&Forster,2019).
+Among other methods, crowdsourcing is a popular approach that relies on large-scale acquisition of human input
+for dealing with data and label scarcity in ML. Crowdsourced data and labels may be subject to bias at different stages
+of the process: task design and experimental setup, task decomposition and result aggregation, selection of workers,
+and the entailing human factors (Hube, Fetahu, & Gadiraju, 2019; Kamar, Kapoor, & Horvitz, 2015; Karger, Oh, &
+Shah,2011). Mitigating biasesincrowdsourceddatabecomes harderinsubjectivetasks, where thepresence ofvarying
+ideologicalandculturalbackgrounds ofworkersmeansthatitispossibletoobservebiasedlabelswithcompleteagree-
+mentamongtheworkers.
+
+8 of 14 NTOUTSIETAL.
+4.2 | Describing and modeling bias using ontologies
+Accounting for bias not only requires understanding of the different sources, that is, data, knowledge bases, and algo-
+rithms,butmoreimportantly,itdemandstheinterpretationanddescriptionofthemeaning,potentialsideeffects,prov-
+enance,andcontextofbias.Usuallyunbalancedcategoriesareunderstoodasbiasandconsideredassourcesofnegative
+side effects. Nevertheless, skewed distributions may simply hide features or domain characteristics that, if removed,
+wouldhinderthediscoveryofrelevantinsights.Thissituationcanbeobserved,forinstance,inpopulationsoflungcan-
+cer patients. As highlighted in diverse scientific reports, for example, (Garrido et al., 2019), lung cancer in women and
+menhassignificantdifferencessuchasetiology,pathophysiology,histology,andriskfactors,whichmayimpactincan-
+ceroccurrence,treatmentoutcomes,andsurvival.Furthermore,therearespecificorganizationsthatcollaborateinlung
+cancer prevention and in the battle against smoking; some of these campaigns are oriented to particular focus groups
+andtheeffectsoftheseinitiativesareobservedincertainpopulations.Allthesefactsimpactonthegenderdistribution
+of the population and could be interpreted as bias. However, in this context, imbalance reveals domain specific facts
+thatneedtobepreserved inthepopulation, andaformaldescription oftheseuneven distributions shouldbeprovided
+to avoid misinterpretation. Moreover, as any type of data source, knowledge bases and ontologies can also suffer from
+various types of bias or knowledge imbalance. For example, the description of the existing mutations of a gene in a
+knowledge base like COSMIC,6 or the properties associated with a gene in the Gene Ontology,7 may be biased by the
+amount of research that has been conducted in the diseases associated with these genes. Expressive formal models are
+demanded in order to describe and explain the characteristics of a data source and under which conditions or context,
+thedatasourceisbiased.
+Formalisms like description and causal logics, for example, (Besnard, Cordier, & Moinard, 2014; Dehaspe & Raedt,
+1996; Krötzsch, Marx, Ozaki, & Thost, 2018; Le Blanc, Balduccini, & Vennekens, 2019), allow for measuring and
+detecting bias in data collections ofdiverse types, for example, online data sets (Pitoura et al.,2017) and recommenda-
+tion systems (Serbos, Qi, Mamoulis, Pitoura, & Tsaparas, 2017). They also enable the annotation of statements with
+trustworthiness (Son, Pontelli, Gelfond, & Balduccini, 2016) and temporality (Ozaki, Krötzsch, & Rudolph, 2019), as
+well as causation relationships between them (Le Blanc et al., 2019). Ontologies also play a relevant role as knowledge
+representation models for describing universe of discourses in terms of concepts such as classes, properties, and sub-
+sumption relationships, as well as contextual statements of these concepts. Nd Fluents (Giménez-García, Zimmer-
+mann, & Maret, 2017) and Context Ontology Language (Co OL) (Strang, Linnhoff-Popien, & Frank, 2003), represent
+exemplar ontology formal models able to express and combine diverse contextual dimensions and interrelations
+(e.g., locality and vicinity). Albeit expressive, existing logic-based and ontological formalisms are not tailored for rep-
+resenting contextual bias or differentiating unbalanced categories that consistently correspond to instances of a real-
+world domain. Therefore, expressive ontological formalisms are demanded to represent the contextual dimensions of
+various types ofsources, forexample,data collections, knowledgebases, orontologies, aswell asannotations denoting
+causality and provenance of the represented knowledge. These formalisms will equip bias detection algorithms with
+reasoningmechanismsthatnotonlyenhanceaccuracybutalsoenableexplainabilityofthemeaning,conditions,origin,
+and context of bias. Thus, domain modeling using ontologies will support context-aware bias description and
+interpretability.
+4.3 | Retroactively: explaining AI decisions
+Explainability refers to the extent the internal mechanics of a learning model can be explained in human terms. It is
+oftenusedinterchangeablywithinterpretability,althoughthelatterreferstowhetheronecanpredictwhatwillhappen
+given a change in the model input or parameters. Although attempts to tackle interpretable ML have existed for some
+time(Hoffman&Klein,2017),therehasbeenanexceptionalgrowthofresearchliteratureinthelastyearswithemerg-
+ing keywords such as explainable AI (Adadi & Berrada, 2018) and black box explanation (Guidotti et al., 2019). Many
+papers propose approaches for understanding the global logic of a model by building an interpretable classifier able to
+mimicthe obscuredecisionsystem. Generally, thesemethods aredesignedforexplaining specific models,forexample,
+deep neural networks (Montavon, Samek, & Müller, 2018). Only few are agnostic to the black box model (Henelius,
+Puolamäki, Boström, Asker, & Papapetrou, 2014). The difficulties in explaining black boxes and complex models ex
+post, have motivated proposals of transparent classifiers which are interpretable on their own and exhibit predictive
+accuracy close to that of obscure models. These include Bayesian models (Li & Huan, 2017), generalized additive
+
+NTOUTSIETAL. 9 of 14
+models(Lou,Caruana,Gehrke,&Hooker,2013),supersparselinearmodels(Ustun&Rudin,2016),rule-baseddecision
+sets (Lakkaraju, Bach, & Leskovec, 2016), optimal classification trees (Bertsimas & Dunn, 2017), model trees
+(Broelemann&Kasneci,2019),andneuralnetworkswithinterpretablelayers(Zhang,Wu,&Zhu,2018).
+Adifferentstreamofapproachesfocusesonthelocalbehaviorofamodel,searchingforanexplanationofthedeci-
+sionmadeforaspecificinstance(Guidottietal.,2019).Suchapproachesareeithermodel-dependent,forexample,Tay-
+lor approximations (Kasneci & Gottron, 2016), saliency masks (the image regions that are mainly responsible for the
+decision)forneuralnetworkdecisions(Ma,Yu,&Yue,2015),andattentionmodelsforrecurrentnetworks(Choietal.,
+2016), or model-agnostic, such as those started by the LIME method (Ribeiro, Singh, & Guestrin, 2016). The main idea
+istoderivealocalexplanation foradecisionoutcomeonaspecific instancebylearninganinterpretablemodelfroma
+randomly generated neighborhood of the instance. A third stream aims at bridging the local and the global ones by
+defining a strategy for combining local models in an incremental way (Pedreschi et al., 2019). More recent work has
+asked the fundamental question What is an explanation? (Mittelstadt, Russell, & Wachter, 2019) and reject such usage
+oftheterm“explanation,”criticizingthatitmightbeappropriateforamodelingexpert,butnotforalayman,andthat,
+forexample,humanitiesorphilosophyhaveanentirelydifferentunderstandingofwhatexplanationsare.
+We speculate that there are computational methods that will allow us to find some middle ground. For instance,
+some approaches in ML, statistical relational learning in particular (Raedt, Kersting, Natarajan, & Poole, 2016), take
+the perspective of knowledge representation and reasoning into account when developing ML models on more formal
+logical and statistical grounds. AI knowledge representation has been developing a rich theory of argumentation over
+the last 25 years (Dung, 1995), which recent approaches (Cocarascu & Toni, 2016) try to leverage for generalizing the
+reasoning aspect of ML towards the use of computational models of argumentation. The outcome are models of argu-
+ments andcounterarguments towards certain classifications thatcanbe inspected byahumanuser and might beused
+asformalgroundsforexplanationsinthemannerthat Mittelstadtetal.(2019)calledoutfor.
+4.4 | Legal issues of accounting for bias
+While data protection rules affect both the input (data) and the output (automated decision) level of AI decision-mak-
+ing,anti-discriminationlaws,aswellasconsumerandcompetitionrules,addressdiscriminatorypoliciesprimarilyfrom
+the perspective of the (automated) decision and the actions based on it. However, the application of these rules to AI-
+baseddecisionsislargelyunclear.Underpresentlawandtheprincipleofprivateautonomy,decisionsbyprivateparties
+normally do not have to include reasons or explanations. Therefore, a first issue will be how existing rules can be
+applied to algorithmic decision-making. Given that a decision will often not be reasoned (hence the reasons will be
+unknown),itwillbedifficulttoestablishthatitwasmadeonthebasisofabiaseddecision-makingprocess(Mittelstadt
+etal.,2019).
+Even if bias can be proven, a second issue is the limited scope of anti-discrimination law. Under present law, only
+certain transactions between private parties fall under the EU anti-discrimination directives (Liddell & O'Flaherty,
+2018).Moreover,inmostcases AIdecision-makinginstrumentswillnotdirectlyuseanunlawfulcriterion(e.g.,gender)
+as a basis for their decision, but rather a “neutral” one (e.g., residence) which in practice lead to a less favorable treat-
+ment of certain groups. This raises the difficult concept of indirect discrimination, that is, ascenario where an “appar-
+ently neutral rule disadvantages a person or a group sharing the same characteristics” (Liddell & O'Flaherty, 2018).
+Finally,mostformsofdifferentialtreatmentcanbejustifiedwhereitpursuesalegitimateaimandwherethemeansto
+pursue that aim areappropriate and necessary. Itis unclear whether the argument that AI-baseddecision making sys-
+temsproducedecisionswhichareeconomicallysoundcanbesufficientasjustification.
+5 | FUTURE DIRECTIONS AND CONCLUSIONS
+Thereareseveraldirectionsthatcanimpactthisfieldgoingforward.First,despitethelargenumberofmethodsformit-
+igating bias, there are still no conclusive results regarding what is the state of the art method for each category, which
+ofthe fairness-related interventions perform best, orwhether category-specific interventions perform better comparing
+toholisticapproachesthattacklebiasatallstagesoftheanalysisprocess.Webelievethatasystematicevaluationofthe
+existingapproachesisnecessarytounderstandtheircapabilitiesandlimitationsandalso,avitalpartofproposingnew
+solutions. The difficulty of the evaluation lies on the fact that different methods work with different fairness notions
+
+10 of 14 NTOUTSIETAL.
+and are applicable to different AI models. To this end, benchmark datasets should be made available that cover differ-
+ent application areas and manifest real-world challenges. Finally, standard evaluation procedures and measures cover-
+ing both model performance and fairness-related aspects should be followed, in accordance with international
+standardslikethe IEEE—ALGB-WG—Algorithmic Bias Working Group.8
+Second, we recognize that “fairness cannot be reduced to a simple self-contained mathematical definition,” “fair-
+ness is dynamic and social and not a statistical issue.”9 Also, “fair is not fair everywhere” (Schäfer, Haun, &
+Tomasello,2015)meaningthatthenotionoffairnessvariesacrosscountries,culturesandapplicationdomains.There-
+fore, it is important to have realistic and applicable fairness definitions for different contexts as well as domain-
+specific datasets for method development and evaluation. Moreover, it is important to move beyond the typical
+training-test evaluation setup and to consider the consequences of potential fairness-related interventions to ensure
+long-term wellbeing of different groups. Finally, given the temporal changes of fairness perception, the question of
+whetherone cantrainmodelson historicaldataandusethemforcurrentfairness-relatedproblemsbecomesincreas-
+inglypressing.
+Third, the related work thus far focuses mainly on supervised learning. Inmany cases however, direct feedback on
+the data (i.e., as labels) is not available. Therefore alternative learning tasks should be considered, like unsupervised
+learningorreinforcementlearning(RL)whereonlyintermediatefeedbackisprovidedtothemodel.Recentworkshave
+emerged in this direction, for example, Jabbari, Joseph, Kearns, Morgenstern, and Roth (2017) examine fairness in the
+RLcontextwhereoneneedstoreconsidertheeffectsofshort-termactionsonlong-termrewards.
+Fourth,thereisageneraltrendinthe MLcommunityrecentlyforgeneratingplausibledatafromexistingdatausing
+Generative Adversarial Networks in an attempt to cover the high data demand of modern methods, especially DNNs.
+Recently, such approaches have been used also in the context of fairness (Xu, Yuan, Zhang, & Wu, 2018), that is, how
+to generate synthetic fair data that are similar to the real data. Still however, the problem of representativeness of the
+training data and its impact on the representativeness of the generated data might aggravate issues of fairness and
+discrimination. Inthe same topic, recent work revealed that DNNs arevulnerable to adversarial attacks, that is, inten-
+tional perturbations of the input examples, and therefore there is a need for methods to enhance their resilience
+(Songetal.,2018).
+Fifth,AIscientistsandeveryoneinvolvedinthedecisionmakingprocessshouldbeawareofbias-relatedissuesand
+the effect of their design choices and assumptions. For instance, studies show that representation-related biases creep
+intodevelopmentprocessesbecausethedevelopmentteamsarenotawareoftheimportanceofdistinguishingbetween
+certaincategories(Buolamwini&Gebru,2018).Membersofaprivilegedgroupmaynotevenbeawareoftheexistence
+of(e.g.,racial)categoriesinthesensethattheyoftenperceivethemselvesas“justpeople,”andtheinterpretationofthis
+asanunconsciousdefaultrequiresthevoiceofindividualsfromunderprivilegedgroups,whopersistentlyperceivetheir
+being“different.”Twostrategiesappearpromisingforaddressingthiscognitivebias:trytoimprovediversityindevelop-
+ment teams, and subject algorithms to outside and as-open-as-possible scrutiny, for example by permitting certain
+formsofreverseengineeringforalgorithmicaccountability.
+Finally,fromalegalpointofview,apartfromdataprotectionlaw,generalprovisionswithrespecttodataqualityor
+selectionarestillmissing.Recentlyan ISOstandardondataquality(ISO 8000)waspublished,thoughnotbindingand
+notwithregardtodecision-makingtechniques.Moreover,firstimportantstepshavebeenmade,forexample,the Draft
+Ethics Guidelines for trustworthy AI from the European Commission's high-level Expertgroupon AI orthe European
+parliamentresolutioncontainingrecommendationstothe Commissionon Civil Law Ruleson Robotics.However,these
+resolutions are still generic. Further interdisciplinary research is needed to define specifically what is needed to meet
+thebalancebetweenthefundamentalrightsandfreedomsofcitizensbymitigatingbias,whileatthesametimeconsid-
+eringthetechnicalchallengesandeconomicalneeds.Therefore,anylegislativeprocedureswillrequireaclosecollabo-
+ration of legal and technical experts. As already mentioned, the legal discussion in this paper refers to the EU where
+despite the many recent efforts, there is still no consensus for algorithmic fairness regulations across its countries.
+Therefore,thereisstillalotofworktobedoneonanalyzingthelegalstandardsandregulationsatanationalandinter-
+nationalleveltosupportgloballylegal AIdesigns.
+To conclude, the problem of bias and discrimination in AI-based decision-making systems has attracted a lot of
+attentionrecentlyfromscience,industry,societyandpolicymakers,andthereisanongoingdebateonthe AIopportu-
+nities and risksforourlivesand ourcivilization. This papersurveys technicalchallenges andsolutionsaswellastheir
+legal grounds in order to advance this field in a direction that exploits the tremendous power of AI for solving real
+world problems but also considers the societal implications of these solutions. As a final note, we want to stress again
+that biases are deeply embedded in our societies and it is an illusion to believe that the AI and bias problem will be
+
+NTOUTSIETAL. 11 of 14
+eliminatedonlywithtechnicalsolutions.Nevertheless,asthetechnologyreflectsandprojectsourbiasesintothefuture,
+it is a key responsibility of technology creators to understand its limits and to propose safeguards to avoid pitfalls. Of
+equalimportanceisalsoforthetechnologycreatorstorealizethattechnicalsolutionswithoutanysocialandlegalgro-
+undcannotthriveandthereforemultidisciplinaryapproachesarerequired.
+ACKNOWLEDGMENT
+This work is supported by the project “No Bias - Artificial Intelligence without Bias,” which has received funding from
+the European Union's Horizon 2020 research and innovation programme, under the Marie Skłodowska-Curie
+(Innovative Training Network)grantagreementno.860630.
+CONFLICT OF INTEREST
+Theauthorshavedeclarednoconflictsofinterestforthisarticle.
+AUTHOR CONTRIBUTIONS
+Eirini Ntoutsi: Conceptualization; investigation; methodology; resources; validation; writing-original draft; writing-
+review and editing. Pavlos Fafalios: Conceptualization; project administration; writing-original draft; writing-review
+and editing. Ujwal Gadiraju: Investigation; resources; writing-original draft. Vasileios Iosifidis: Investigation;
+resources; writing-original draft. Wolfgang Nejdl: Conceptualization. Maria-Esther Vidal: Resources; writing-
+original draft. Salvatore Ruggieri: Conceptualization; investigation; methodology; resources; writing-original draft;
+writing-reviewandediting.Franco Turini:Conceptualization;methodology;resources;writing-originaldraft;writing-
+reviewandediting.Symeon Papadopoulos:Conceptualization;methodology;resources;visualization;writing-original
+draft;writing-reviewandediting.Emmanouil Krasanakis:Writing-originaldraft.Ioannis Kompatsiaris:Conceptu-
+alization.Katharina Kinder-Kurlanda:Methodology;resources;writing-originaldraft.Claudia Wagner:Resources;
+writing-original draft. Fariba Karimi: Resources; writing-original draft. Miriam Fernandez: Resources; writing-
+original draft. Harith Alani: Resources; writing-original draft; writing-review and editing. Bettina Berendt: Concep-
+tualization; methodology; resources; writing-original draft; writing-review and editing. Tina Kruegel: Investigation;
+resources; writing-original draft; writing-review and editing. Christian Heinze: Resources; writing-original draft;
+writing-review and editing. Klaus Broelemann: Methodology; resources; writing-original draft; writing-review and
+editing. Gjergji Kasneci: Methodology; resources; writing-original draft; writing-review and editing. Thanassis
+Tiropanis: Methodology; resources; writing-original draft; writing-review and editing. Steffen Staab: Conceptualiza-
+tion;methodology;resources;writing-originaldraft;writing-reviewandediting.
+ORCID
+Eirini Ntoutsi https://orcid.org/0000-0001-5729-1003
+Pavlos Fafalios https://orcid.org/0000-0003-2788-526 X
+Salvatore Ruggieri https://orcid.org/0000-0002-1917-6087
+Franco Turini https://orcid.org/0000-0001-6789-5476
+Symeon Papadopoulos https://orcid.org/0000-0002-5441-7341
+Emmanouil Krasanakis https://orcid.org/0000-0002-3947-222 X
+Ioannis Kompatsiaris https://orcid.org/0000-0001-6447-9020
+Katharina Kinder-Kurlanda https://orcid.org/0000-0002-7749-645 X
+Miriam Fernandez https://orcid.org/0000-0001-5939-4321
+Bettina Berendt https://orcid.org/0000-0002-8003-3413
+ENDNOTES
+1 Fei-Fei Li,Chief-Scientistfor AIat Googleand Professorat Stanford(http://fortune.com/longform/ai-bias-problem/).
+2 Thelegaldiscussioninthispaperrefersprimarilytothe EUsituation.Weacknowledgethedifficultyofmappingtheterritorybetween AI
+andthelawaswellastheextracomplexitythatcountry-specificlegislationbringsuponandtherefore,webelievethisisoneoftheimpor-
+tantareasforfuturework.
+3 The Web Science Manifesto—By Web Scientists.Building Web Science.Fora Better World,https://www.webscience.org/manifesto/
+4 Amazondoesnotconsidertheraceofitscustomers.Should It?https://www.bloomberg.com/graphics/2016-amazon-same-day/
+5 The General Data Protection Regulation(EU)2016/679(GDPR),https://gdpr-info.eu/
+
+12 of 14 NTOUTSIETAL.
+6 https://cancer.sanger.ac.uk/cosmic
+7 http://geneontology.org/
+8 https://standards.ieee.org/project/7003.html
+9 https://www.wired.com/story/ideas-joi-ito-insurance-algorithms/
+RELATED WIRES ARTICLES
+Causabilityandexplainabilityofartificialintelligenceinmedicine
+REFERENCES
+Adadi, A., & Berrada, M. (2018). Peeking inside the black-box: A survey on explainable artificial intelligence (XAI). IEEE Access, 6,
+52138–52160.
+Agarwal,A.,Beygelzimer,A.,Dudík,M.,Langford,J.,&Wallach,H.M.(2018).Areductionsapproachtofairclassification.ICML,80,60–69.
+Angwin,J.,Larson,J.,Mattu,S.,&Kirchner,L.(2016,May 23).Machinebias.Pro Publica.
+Atzmueller, M. (2017). Declarative aspects in explicative data mining for computational sensemaking. In Declarative programming and
+knowledgemanagement(pp.97–114).Springer.
+Baeza-Yates,R.(2018).Biasontheweb.Communicationsofthe ACM,61(6),54–61.
+Barocas,S.,&Selbst,A.D.(2016).Bigdata'sdisparateimpact.California Law Review,104,671.
+Bertsimas,D.,&Dunn,J.(2017).Optimalclassificationtrees.Machine Learning,106(7),1039–1082.
+Besnard,P.,Cordier,M.,&Moinard,Y.(2014).Argumentsusingontologicalandcausalknowledge.In Fo IKSLecturenotesincomputersci-
+ence(Vol.8367,pp.79–96).Springer.
+Bolukbasi, T., Chang, K., Zou, J. Y., Saligrama, V., & Kalai, A. T. (2016). Man is to computer programmer as woman is to homemaker?
+Debiasingwordembeddings.In NIPS(pp.4349–4357).
+Boyd,D.,&Crawford,K.(2012).Criticalquestionsforbigdata:Provocationsforacultural,technological,andscholarlyphenomenon.Infor-
+mation,Communications Society,15(5),662–679.
+Broelemann, K., & Kasneci, G. (2019). A gradient-based split criterion for highly accurate and transparent model trees. In IJCAI
+(pp.2030–2037).AAAIPress.
+Buolamwini,J.,&Gebru,T.(2018).Gendershades:Intersectionalaccuracydisparitiesincommercialgenderclassification.In FAT,Proceed-
+ingsofmachinelearningresearch(Vol.81,pp.77–91).PMLR.
+Calders,T.,Kamiran,F.,&Pechenizkiy,M.(2009).Buildingclassifierswithindependencyconstraints.In ICDMworkshops(pp.13–18).IEEE
+Computer Society.
+Calders,T.,&Verwer,S.(2010).Threenaivebayesapproachesfordiscrimination-freeclassification.Data Miningand Knowledge Discovery,
+21(2),277–292.
+Calders,T.,&Zliobaite,I.(2013).Whyunbiasedcomputationalprocessescanleadtodiscriminativedecisionprocedures.In Discrimination
+andprivacyintheinformationsociety Studiesinappliedphilosophy,epistemologyandrationalethics(Vol.3,pp.43–57).Springer.
+Calmon,F.,Wei,D.,Vinzamuri,B.,Ramamurthy,K.N.,&Varshney,K.R.(2017).Optimizedpre-processingfordiscriminationprevention.
+In NIPS(pp.3992–4001).
+Canetti,R.,Cohen,A.,Dikkala,N.,Ramnarayan,G.,Scheffler,S.,&Smith,A.D.(2019).Fromsoftclassifierstoharddecisions:Howfaircan
+webe?In FAT(pp.309–318).ACM.
+Chandler,D.,&Munday,R.(2011).Adictionaryofmediaandcommunication.OUPOxford.
+Chierichetti,F.,Kumar,R.,Lattanzi,S.,&Vassilvitskii,S.(2017).Fairclusteringthroughfairlets.In NIPS(pp.5029–5037).
+Choi,E.,Bahadori,M.T.,Sun,J.,Kulas,J.,Schuetz,A.,&Stewart,W.F.(2016).RETAIN:Aninterpretablepredictivemodelforhealthcare
+usingreversetimeattentionmechanism.In NIPS(pp.3504–3512).
+Cocarascu,O.,&Toni,F.(2016).Argumentationformachinelearning:Asurvey.In COMMAFrontiersinartificialintelligenceandapplica-
+tions(Vol.287,pp.219–230).IOSPress.
+Corbett-Davies,S.,&Goel,S.(2018).Themeasureandmismeasureoffairness:Acriticalreviewoffairmachinelearning.ar Xivpreprintar Xiv:
+1808.00023.
+Datta, A., Tschantz, M. C., & Datta, A. (2015). Automated experiments on ad privacy settings. Privacy Enhancing Technologies, 2015(1),
+92–112.
+Dehaspe, L., & Raedt, L. D. (1996). DLAB: A declarative language bias formalism. In ISMIS Lecture notes in computer science (Vol. 1079,
+pp.613–622).Springer.
+Diakopoulos, N. (2015). Algorithmic accountability: Journalistic investigation of computational power structures. Digital Journalism, 3(3),
+398–415.
+Dung, P. M. (1995). On the acceptability of arguments and its fundamental role in nonmonotonic reasoning, logic programming and n-
+persongames.Artificial Intelligence,77(2),321–358.
+Dwork,C.,Hardt,M.,Pitassi,T.,Reingold,O.,&Zemel,R.S.(2012).Fairnessthroughawareness.In ITCS(pp.214–226).ACM.
+Foster,S.R.(2004).Causationinantidiscriminationlaw:Beyondintentversusimpact.Houston Law Review,41(5),1469.
+
+NTOUTSIETAL. 13 of 14
+Garrido,P.,Viñolas,N.,Isla,D.,Provencio,M.,Majem,M.,Artal,A.,…Felip,E.(2019).Lungcancerinspanishwomen:The WORLD 07 pro-
+ject.European Journalof Cancer Care,28(1),e 12941.
+Giménez-García,J.M.,Zimmermann,A.,&Maret,P.(2017).Nd Fluents:Anontologyforannotatedstatementswithinferencepreservation.
+In ESWC(1)Lecturenotesincomputerscience(Vol.10249,pp.638–654).
+Grimes,D.A.,&Schulz,K.F.(2002).Biasandcausalassociationsinobservationalresearch.Lancet,359,248–252.
+Guidotti, R., Monreale, A., Ruggieri, S., Turini, F., Giannotti, F., & Pedreschi, D. (2019). A survey of methods for explaining black box
+models.ACMComputing Surveys,51(5),93:1–93:42.
+Hacker,P.(2018).Teachingfairnesstoartificialintelligence:Existingandnovelstrategiesagainstalgorithmicdiscriminationundereulaw.
+Common Market Law Review,55(4),1143–1185.
+Hardt,M.,Price,E.,&Srebro,N.(2016).Equalityofopportunityinsupervisedlearning.In NIPS(pp.3315–3323).
+Henelius,A.,Puolamäki,K.,Boström,H.,Asker,L.,&Papapetrou,P.(2014).Apeekintotheblackbox:Exploringclassifiersbyrandomiza-
+tion.Data Miningand Knowledge Discovery,28(5–6),1503–1529.
+Hoffman,R.R.,&Klein,G.(2017).Explainingexplanation,part 1:Theoreticalfoundations.IEEEIntelligent Systems,32(3),68–73.
+Hube,C.,Fetahu,B.,&Gadiraju,U.(2019).Understandingandmitigatingworkerbiasesinthecrowdsourcedcollectionofsubjectivejudg-
+ments.In CHI(p.407).ACM.
+Hutchinson,B.,&Mitchell,M.(2019).50 yearsoftest(un)fairness:Lessonsformachinelearning.In FAT(pp.49–58).ACM.
+Introna,L.,&Wood,D.(2004).Picturingalgorithmicsurveillance:Thepoliticsoffacialrecognitionsystems.Surveillance&Society,2(2/3),
+177–198.
+Iosifidis,V.,&Ntoutsi,E.(2019).Ada Fair:Cumulativefairnessadaptiveboosting.In CIKM.ACM.
+Jabbari,S.,Joseph,M.,Kearns,M.J.,Morgenstern,J.,&Roth,A.(2017).Fairnessinreinforcementlearning.In ICMLProceedingsofmachine
+learningresearch(Vol.70,pp.1617–1626).PMLR.
+Kamar,E.,Kapoor,A.,&Horvitz,E.(2015).Identifyingandaccountingfortask-dependentbiasincrowdsourcing.In HCOMP(pp.92–101).
+AAAIPress.
+Kamiran,F.,&Calders,T.(2009).Classifyingwithoutdiscriminating.In Computer,controlandcommunication(pp.1–6).IEEEComputer
+Society.
+Kamiran, F., Calders, T., &Pechenizkiy, M. (2010). Discrimination aware decision tree learning. In ICDM (pp. 869–874). IEEE Computer
+Society.
+Kamiran,F.,Mansha,S.,Karim,A.,&Zhang,X.(2018).Exploitingrejectoptioninclassificationforsocialdiscriminationcontrol.Informa-
+tion Sciences,425,18–33.
+Kamishima,T.,Akaho,S.,Asoh,H.,&Sakuma,J.(2012).Fairness-awareclassifierwithprejudiceremoverregularizer.In ECML/PKDD(2)
+Lecturenotesincomputerscience(Vol.7524,pp.35–50).Springer.
+Kaplan, R., Donovan, J., Hanson, L., & Matthews, J. (2019). Algorithmic accountability: A primer. Retrieved from https://datasociety.net/
+output/algorithmic-accountability-a-primer/
+Karger,D.R.,Oh,S.,&Shah,D.(2011).Iterativelearningforreliablecrowdsourcingsystems.In NIPS(pp.1953–1961).
+Karimi,F.,Génois,M.,Wagner,C.,Singer,P.,&Strohmaier,M.(2018).Homophilyinfluencesrankingofminoritiesinsocialnetworks.Sci-
+entific Reports,8.
+Kasneci, G., &Gottron, T.(2016). LICON:Alinear weighting scheme forthe contributionof input variablesin deepartificial neural net-
+works.In CIKM(pp.45–54).ACM.
+Kilbertus,N.,Gascon,A.,Kusner,M.,Veale,M.,Gummadi,K.,&Weller,A.(2018).Blind justice:Fairnesswithencryptedsensitiveattri-
+butes.In ICML(pp.2630–2639).PMLR.
+Krasanakis,E.,Xioufis,E.S.,Papadopoulos,S.,&Kompatsiaris,Y.(2018).Adaptivesensitivereweightingtomitigatebiasinfairness-aware
+classification.In WWW(pp.853–862).ACM.
+Krötzsch, M., Marx, M., Ozaki, A., & Thost, V. (2018). Attributed description logics: Reasoning on knowledge graphs. In IJCAI
+(pp.5309–5313).AAAIPress.
+Kusner,M.J.,Loftus,J.,Russell,C.,&Silva,R.(2017).Counterfactualfairness.In NIPS(pp.4066–4076).
+Kutuzov, A., Øvrelid, L., Szymanski, T., & Velldal, E. (2018). Diachronic word embeddings and semantic shifts: A survey. In COLING
+(pp.1384–1397).ACL.
+Lakkaraju, H., Bach, S. H., & Leskovec, J. (2016). Interpretable decision sets: A joint framework for description and prediction. In KDD
+(pp.1675–1684).ACM.
+Le Blanc,E.C.,Balduccini,M.,&Vennekens,J.(2019).Explainingactualcausationviareasoningaboutactionsandchange.In JELIALecture
+notesincomputerscience(Vol.11468,pp.231–246).Springer.
+Li,X.,&Huan,J.(2017).Constructivismlearning:Alearningparadigmfortransparentpredictiveanalytics.In KDD(pp.285–294).ACM.
+Liddell, R., & O'Flaherty, M. (2018). Handbook on European non-discrimination law. European Union Agency for Fundamental
+Rights(FRA).
+Loftus,J.R.,Russell,C.,Kusner,M.J.,&Silva,R.(2018).Causalreasoningforalgorithmicfairness.Co RR,abs/1805.05859
+Lorimer, T., Held, J., & Stoop, R. (2017). Clustering: How much bias do we need? Philosophical Transactions of the Royal Society A, 375,
+20160293.
+Lou,Y.,Caruana,R.,Gehrke,J.,&Hooker,G.(2013).Accurateintelligiblemodelswithpairwiseinteractions.In KDD(pp.623–631).ACM.
+Lum,K.,&Isaac,W.(2016).Topredictandserve?Significance,13(5),14–19.
+
+14 of 14 NTOUTSIETAL.
+Luong,B.T.,Ruggieri,S.,&Turini,F.(2011).k-NNasanimplementationofsituationtestingfordiscriminationdiscoveryandprevention.
+In KDD(pp.502–510).ACM.
+Ma,R.,Yu,Y.,&Yue,X.(2015).Surveyonimagesaliencydetectionmethods.In Cyber C(pp.329–338).IEEEComputer Society.
+Manzi,G.,&Forster,M.(2019).Biasesinbiaselicitation.Communicationsin Statistics–Theoryand Methods,48(18),4656-4674.
+Mitchell,T.M.(1997).Machinelearning(1 sted.).New York,NY:Mc Graw-Hill.
+Mittelstadt,B.D.,Russell,C.,&Wachter,S.(2019).Explainingexplanationsin AI.In FAT(pp.279–288).ACM.
+Montavon,G.,Samek,W.,&Müller,K.(2018).Methodsforinterpretingandunderstandingdeepneuralnetworks.Digital Signal Processing,
+73,1–15.
+Morstatter,F.,Pfeffer,J.,&Liu,H.(2014).Whenisitbiased?Assessingtherepresentativenessoftwitter'sstreaming API.In WWW(compan-
+ionvolume)(pp.555–556).ACM.
+O'Neil,C.(2016).Weaponsofmathdestruction:Howbigdataincreasesinequalityandthreatensdemocracy.Crown Publishing Group.
+Ozaki,A.,Krötzsch,M.,&Rudolph,S.(2019).Temporallyattributeddescriptionlogics.In Descriptionlogic,theorycombination,andallthat
+Lecturenotesincomputerscience(Vol.11560,pp.441–474).Springer.
+Pedreschi,D.,Giannotti,F.,Guidotti,R.,Monreale,A.,Ruggieri,S.,&Turini,F.(2019).Meaningfulexplanationsofblackbox AIdecision
+systems.In AAAI(pp.9780–9784).AAAIPress.
+Pedreschi,D.,Ruggieri,S.,&Turini,F.(2009).Measuringdiscriminationinsocially-sensitivedecisionrecords.In SDM(pp.581–592).SIAM.
+Pitoura,E.,Tsaparas,P.,Flouris,G.,Fundulaki,I.,Papadakos,P.,Abiteboul,S.,&Weikum,G.(2017).Onmeasuringbiasinonlineinforma-
+tion.SIGMODRecord,46(4),16–21.
+Raedt,L.D.,Kersting,K.,Natarajan,S.,&Poole,D.(2016).Statisticalrelationalartificialintelligence:Logic,probability,andcomputation.
+Synthesis Lectureson Artificial Intelligenceand Machine Learning,10(2),1–189.
+Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). “Why should I trust you?”: Explaining the predictions of any classifier. In KDD
+(pp.1135–1144).ACM.
+Samadi,S.,Tantipongpipat,U.T.,Morgenstern,J.H.,Singh,M.,&Vempala,S.(2018).Thepriceoffair PCA:Oneextradimension.In Neu-
+r IPS(pp.10999–11010).
+Schäfer,M.,Haun,D.B.,&Tomasello,M.(2015).Fairisnotfaireverywhere.Psychological Science,26(8),1252–1260.
+Serbos, D., Qi, S., Mamoulis, N., Pitoura, E., & Tsaparas, P. (2017). Fairness in package-to-group recommendations. In WWW
+(pp.371–379).ACM.
+Son,T.C.,Pontelli,E.,Gelfond,M.,&Balduccini,M.(2016).Reasoningabouttruthfulnessofagentsusinganswersetprogramming.In KR
+(pp.605–608).AAAIPress.
+Song,C.,Cheng,H.,Yang,H.,Li,S.,Wu,C.,Wu,Q.,…Li,H.(2018).MAT:Amulti-strengthadversarialtrainingmethodtomitigateadver-
+sarialattacks.In ISVLSI(pp.476–481).IEEEComputer Society.
+Strang,T.,Linnhoff-Popien,C.,&Frank,K.(2003).Cool:Acontextontologylanguagetoenablecontextualinteroperability.In DAISLecture
+notesincomputerscience(Vol.2893,pp.236–247).Springer.
+Tufekci, Z. (2014). Big questions for social media big data: Representativeness, validity and other methodological pitfalls. In ICWSM. The
+AAAIPress.
+Turner,R.M.,Spiegelhalter,D.J.,Smith,G.C.S.,&Thompson,S.G.(2009).Biasmodellinginevidencesynthesis.Journalofofthe Royal
+Statistical Society A,172(1),21–47.
+Ustun,B.,&Rudin,C.(2016).Supersparselinearintegermodelsforoptimizedmedicalscoringsystems.Machine Learning,102(3),349–391.
+Veale,M.,Binns,R.,&Edwards,L.(2018).Algorithmsthatremember:Modelinversionattacksanddataprotectionlaw.Philosophical Trans-
+actionsofthe Royal Society A:Mathematical,Physicaland Engineering Sciences,376(2133),20180083.
+Verma,S.,&Rubin,J.(2018).Fairnessdefinitionsexplained.In Fair Ware@ICSE(pp.1–7).ACM.
+Xu,D.,Yuan,S.,Zhang,L.,&Wu,X.(2018).Fair GAN:Fairness-awaregenerativeadversarialnetworks.In Big Data(pp.570–575).IEEE.
+Yu,H.,Shen,Z.,Miao,C.,Leung,C.,Lesser,V.R.,&Yang,Q.(2018).Buildingethicsintoartificialintelligence.In IJCAI(pp.5527–5533).
+AAAIPress.
+Zafar,M.B.,Valera,I.,Gomez-Rodriguez,M.,&Gummadi,K.P.(2017).Fairnessbeyonddisparatetreatment&disparateimpact:Learning
+classificationwithoutdisparatemistreatment.In WWW(pp.1171–1180).ACM.
+Zhang,Q.,Wu,Y.N.,&Zhu,S.(2018).Interpretableconvolutionalneuralnetworks.In CVPR(pp.8827–8836).IEEEComputer Society.
+Zliobaite,I.(2017).Measuringdiscriminationinalgorithmicdecisionmaking.Data Miningand Knowledge Discovery,31(4),1060–1089.
+Zliobaite,I.,&Custers,B.(2016).Usingsensitivepersonaldatamaybenecessaryforavoidingdiscriminationindata-drivendecisionmodels.
+Artifical Intelligenceand Law,24(2),183–201.
+Zuiderveen Borgesius,F.(2018).Discrimination,artificialintelligence,andalgorithmicdecision-making.
+Howtocitethisarticle:Ntoutsi E,Fafalios P,Gadiraju U,etal.Biasindata-drivenartificialintelligence
+systems—Anintroductorysurvey.WIREs Data Mining Knowl Discov.2020;e 1356.https://doi.org/10.1002/
+widm.1356

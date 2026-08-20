@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\linear_algebra\\02de2e03aa08",
+  "run_id": "linear_algebra-02de2e03aa08",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:19.282180+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "90990978445ee96a508d0086f9825923f4ccd9a506ba0f8241cc447a99fd8dbc",
+    "stage2a_topics_hybrid.json": "40e8709573c123afdcb59f531a180ccf46f17804cd5657c7f537537d04172d59",
+    "stage2c_similarity_edges.json": "854fcd461244e34c33bc79f43aecf33c696b29150374ebb94c8961c6676d4526",
+    "stage3_topics_with_summary.json": "025fed81f463840bf105a419653567c17ddb9e0de63b7e7a31e8313476e07563"
+  },
+  "old_relation_count": 7,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

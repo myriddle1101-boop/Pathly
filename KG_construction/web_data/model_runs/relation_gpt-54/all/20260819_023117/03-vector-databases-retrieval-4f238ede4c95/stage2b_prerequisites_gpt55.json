@@ -1,0 +1,26 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 3,
+  "prerequisites": [
+    {
+      "from": "Embeddings",
+      "to": "Vector Databases",
+      "relation_type": "strong_prerequisite",
+      "reason": "Vector databases are specifically designed to store and retrieve embeddings, so understanding embeddings is necessary first."
+    },
+    {
+      "from": "Embeddings",
+      "to": "Cosine Similarity",
+      "relation_type": "strong_prerequisite",
+      "reason": "Cosine similarity compares vectors, so understanding embeddings as vector representations is necessary before applying it in this context."
+    },
+    {
+      "from": "Artificial Neural Networks",
+      "to": "Embeddings",
+      "relation_type": "strong_prerequisite",
+      "reason": "Embeddings in machine learning are commonly learned vector representations produced by neural models, so foundational understanding of neural networks is necessary first."
+    }
+  ]
+}

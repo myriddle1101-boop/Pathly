@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-22">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Techniques and metrics for assessing model performance." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Print Result&quot;, &quot;description&quot;: &quot;Function to display model results.&quot;}, {&quot;name&quot;: &quot;Statistics&quot;, &quot;description&quot;: &quot;Metrics used to evaluate model performance.&quot;}, {&quot;name&quot;: &quot;Error Handling&quot;, &quot;description&quot;: &quot;Methods for managing and reporting errors.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;ROC Curve&quot;, &quot;AUC&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern during evaluation.&quot;]" />
+          <attvalue for="8" value="[&quot;Comparing different models&quot;, &quot;Tuning hyperparameters&quot;, &quot;Selecting the best model for deployment&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Text Processing" label="Text Processing">
+        <attvalues>
+          <attvalue for="0" value="Methods for handling and manipulating text data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Chunk Text&quot;, &quot;description&quot;: &quot;Dividing text into manageable segments.&quot;}, {&quot;name&quot;: &quot;Document Loader&quot;, &quot;description&quot;: &quot;Tools for importing and managing documents.&quot;}, {&quot;name&quot;: &quot;Metadata Management&quot;, &quot;description&quot;: &quot;Handling metadata associated with text.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and familiarity with data structures." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Text normalization&quot;, &quot;Stop word removal&quot;, &quot;Stemming and lemmatization&quot;]" />
+          <attvalue for="7" value="[&quot;Text processing is only about removing punctuation.&quot;, &quot;All text processing techniques are applicable to every language.&quot;]" />
+          <attvalue for="8" value="[&quot;Sentiment analysis&quot;, &quot;Chatbot development&quot;, &quot;Search engine optimization&quot;, &quot;Text classification&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Fundamental concepts and architectures of neural networks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;LLM Model&quot;, &quot;description&quot;: &quot;Large language models and their applications.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine neuron output.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;Algorithm for training neural networks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;, &quot;Loss Functions&quot;, &quot;Overfitting and Regularization&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="RAG Systems" label="RAG Systems">
+        <attvalues>
+          <attvalue for="0" value="Retrieval-Augmented Generation systems for enhanced responses." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;RAG Query&quot;, &quot;description&quot;: &quot;Methods for querying RAG systems.&quot;}, {&quot;name&quot;: &quot;Document Management&quot;, &quot;description&quot;: &quot;Handling documents in RAG systems.&quot;}, {&quot;name&quot;: &quot;Sources Management&quot;, &quot;description&quot;: &quot;Managing sources for RAG systems.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and natural language processing." />
+          <attvalue for="6" value="[&quot;Information Retrieval&quot;, &quot;Natural Language Generation&quot;]" />
+          <attvalue for="7" value="[&quot;RAG systems only generate text without context.&quot;, &quot;They are the same as traditional chatbots.&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support automation&quot;, &quot;Content generation for marketing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Configuration Management" label="Configuration Management">
+        <attvalues>
+          <attvalue for="0" value="Settings and parameters for model and system configurations." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Chunk Size&quot;, &quot;description&quot;: &quot;Configuration for text chunking.&quot;}, {&quot;name&quot;: &quot;Embedding Model&quot;, &quot;description&quot;: &quot;Settings for embedding models.&quot;}, {&quot;name&quot;: &quot;Chunk Overlap&quot;, &quot;description&quot;: &quot;Configuration for overlapping text chunks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and programming." />
+          <attvalue for="6" value="[&quot;Model parameters&quot;, &quot;System settings&quot;, &quot;Version control&quot;, &quot;Environment management&quot;]" />
+          <attvalue for="7" value="[&quot;Configuration management is only for deployment&quot;, &quot;All settings are equally important&quot;]" />
+          <attvalue for="8" value="[&quot;Managing model hyperparameters&quot;, &quot;Ensuring reproducibility in experiments&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Query Handling" label="Query Handling">
+        <attvalues>
+          <attvalue for="0" value="Techniques for processing and managing queries." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Query Self&quot;, &quot;description&quot;: &quot;Self-referential queries in models.&quot;}, {&quot;name&quot;: &quot;Generate Answer&quot;, &quot;description&quot;: &quot;Methods for generating answers from queries.&quot;}, {&quot;name&quot;: &quot;Return Sources&quot;, &quot;description&quot;: &quot;Returning sources used for generating answers.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of databases and SQL." />
+          <attvalue for="6" value="[&quot;Query Optimization&quot;, &quot;Indexing Techniques&quot;]" />
+          <attvalue for="7" value="[&quot;All queries are equally efficient&quot;, &quot;Indexes always improve performance&quot;]" />
+          <attvalue for="8" value="[&quot;Database management systems&quot;, &quot;Search engines&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Error Analysis" label="Error Analysis">
+        <attvalues>
+          <attvalue for="0" value="Identifying and analyzing errors in models and systems." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Hallucinations&quot;, &quot;description&quot;: &quot;False information generated by models.&quot;}, {&quot;name&quot;: &quot;Issues and Solutions&quot;, &quot;description&quot;: &quot;Common issues and their resolutions.&quot;}, {&quot;name&quot;: &quot;Attribution&quot;, &quot;description&quot;: &quot;Attributing errors to their causes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and model evaluation metrics." />
+          <attvalue for="6" value="[&quot;Types of errors (bias vs. variance)&quot;, &quot;Error metrics (accuracy, precision, recall)&quot;]" />
+          <attvalue for="7" value="[&quot;All errors are equally important&quot;, &quot;Error analysis is only for model evaluation&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model performance&quot;, &quot;Identifying data quality issues&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods and strategies for training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Regression&quot;, &quot;description&quot;: &quot;Techniques for predicting continuous outcomes.&quot;}, {&quot;name&quot;: &quot;Classification&quot;, &quot;description&quot;: &quot;Methods for categorizing data into classes.&quot;}, {&quot;name&quot;: &quot;Linear Separability&quot;, &quot;description&quot;: &quot;Concept of separating data with linear boundaries.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting and Underfitting&quot;, &quot;Cross-Validation&quot;, &quot;Hyperparameter Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Training and testing data can be mixed&quot;, &quot;Complex models are always better&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Predictive analytics&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Python Integration" label="Python Integration">
+        <attvalues>
+          <attvalue for="0" value="Using Python for machine learning and data processing." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Python CLI&quot;, &quot;description&quot;: &quot;Command-line interface for Python applications.&quot;}, {&quot;name&quot;: &quot;Static Methods&quot;, &quot;description&quot;: &quot;Using static methods in Python classes.&quot;}, {&quot;name&quot;: &quot;Exception Handling&quot;, &quot;description&quot;: &quot;Managing exceptions in Python code.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python programming and familiarity with data structures." />
+          <attvalue for="6" value="[&quot;Data manipulation with Pandas&quot;, &quot;Visualization with Matplotlib&quot;]" />
+          <attvalue for="7" value="[&quot;Python is only for web development&quot;, &quot;Machine learning requires complex languages&quot;]" />
+          <attvalue for="8" value="[&quot;Data analysis and visualization&quot;, &quot;Building machine learning models using libraries like Scikit-learn&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Model Evaluation" target="Error Analysis" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Evaluating models is necessary to identify and analyze errors." />
+        </attvalues>
+      </edge>
+      <edge source="Text Processing" target="Query Handling" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Query handling often requires text processing techniques." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Training Techniques" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding neural networks is essential for applying training techniques." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="RAG Systems" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Knowledge of neural networks is fundamental for understanding RAG systems." />
+        </attvalues>
+      </edge>
+      <edge source="Configuration Management" target="Training Techniques" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Proper configuration management is crucial for effective training of models." />
+        </attvalues>
+      </edge>
+      <edge source="Python Integration" target="Text Processing" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Python is commonly used for implementing text processing methods." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

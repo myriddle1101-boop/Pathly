@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-22">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Vector Databases" label="Vector Databases">
+        <attvalues>
+          <attvalue for="0" value="Databases optimized for storing and retrieving vector embeddings." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Fast Retrieval&quot;, &quot;description&quot;: &quot;Techniques to quickly access data from vector databases.&quot;}, {&quot;name&quot;: &quot;Memory Efficiency&quot;, &quot;description&quot;: &quot;Strategies to minimize memory usage in vector storage.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and data structures." />
+          <attvalue for="6" value="[&quot;Vector embeddings&quot;, &quot;Similarity search&quot;, &quot;Indexing techniques&quot;]" />
+          <attvalue for="7" value="[&quot;Vector databases are the same as traditional databases&quot;, &quot;Only numerical data can be stored in vector databases&quot;]" />
+          <attvalue for="8" value="[&quot;Recommendation systems&quot;, &quot;Image and text retrieval&quot;, &quot;Natural language processing tasks&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Text Chunking" label="Text Chunking">
+        <attvalues>
+          <attvalue for="0" value="The process of dividing text into manageable pieces for analysis." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Chunk Size&quot;, &quot;description&quot;: &quot;Determining the optimal size for text chunks.&quot;}, {&quot;name&quot;: &quot;Chunk Text&quot;, &quot;description&quot;: &quot;Methods for processing and analyzing text chunks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and regular expressions." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Named Entity Recognition&quot;]" />
+          <attvalue for="7" value="[&quot;Text chunking is the same as tokenization&quot;, &quot;Chunking is only for English text&quot;]" />
+          <attvalue for="8" value="[&quot;Information extraction&quot;, &quot;Text summarization&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Cosine Similarity" label="Cosine Similarity">
+        <attvalues>
+          <attvalue for="0" value="A metric used to measure the similarity between two vectors." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Query Embedding&quot;, &quot;description&quot;: &quot;Embedding representation of a query for similarity comparison.&quot;}, {&quot;name&quot;: &quot;Search Embeddings&quot;, &quot;description&quot;: &quot;Using embeddings to perform searches based on similarity.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and vector operations." />
+          <attvalue for="6" value="[&quot;Dot Product&quot;, &quot;Magnitude of Vectors&quot;]" />
+          <attvalue for="7" value="[&quot;Cosine similarity measures distance, not similarity.&quot;, &quot;It only applies to two-dimensional vectors.&quot;]" />
+          <attvalue for="8" value="[&quot;Text similarity in Natural Language Processing&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Document Management" label="Document Management">
+        <attvalues>
+          <attvalue for="0" value="Techniques for handling and organizing documents in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Metadata Handling&quot;, &quot;description&quot;: &quot;Managing additional information associated with documents.&quot;}, {&quot;name&quot;: &quot;Adding Documents&quot;, &quot;description&quot;: &quot;Methods for incorporating new documents into a system.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and data structures." />
+          <attvalue for="6" value="[&quot;Document Classification&quot;, &quot;Information Retrieval&quot;]" />
+          <attvalue for="7" value="[&quot;Document management is only about storage.&quot;, &quot;All documents can be processed the same way.&quot;]" />
+          <attvalue for="8" value="[&quot;Automated email sorting&quot;, &quot;Content-based recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Retrieval Strategies" label="Retrieval Strategies">
+        <attvalues>
+          <attvalue for="0" value="Approaches to efficiently retrieve relevant information from datasets." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Quality of Retrieval&quot;, &quot;description&quot;: &quot;Evaluating the effectiveness of information retrieval methods.&quot;}, {&quot;name&quot;: &quot;Affecting Retrieval&quot;, &quot;description&quot;: &quot;Factors that influence the success of retrieval processes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data structures and algorithms, familiarity with databases." />
+          <attvalue for="6" value="[&quot;Information Retrieval&quot;, &quot;Query Optimization&quot;]" />
+          <attvalue for="7" value="[&quot;Retrieval is the same as storage&quot;, &quot;All retrieval methods are equally efficient&quot;]" />
+          <attvalue for="8" value="[&quot;Search engines&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Large Datasets" label="Large Datasets">
+        <attvalues>
+          <attvalue for="0" value="Handling and processing extensive collections of data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Storing Vectors&quot;, &quot;description&quot;: &quot;Techniques for efficiently storing large vector datasets.&quot;}, {&quot;name&quot;: &quot;Memory Considerations&quot;, &quot;description&quot;: &quot;Strategies to manage memory when working with large datasets.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data structures and algorithms, familiarity with Python or R." />
+          <attvalue for="6" value="[&quot;Data storage solutions&quot;, &quot;Data preprocessing techniques&quot;, &quot;Batch processing vs. stream processing&quot;]" />
+          <attvalue for="7" value="[&quot;Large datasets always require complex algorithms&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Big data analytics&quot;, &quot;Machine learning model training&quot;, &quot;Data visualization&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Artificial Neural Networks" label="Artificial Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain for processing data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;A method for training neural networks by minimizing error.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Regression and Classification" label="Regression and Classification">
+        <attvalues>
+          <attvalue for="0" value="Techniques for predicting outcomes based on input data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Separation&quot;, &quot;description&quot;: &quot;The ability to separate classes using linear boundaries.&quot;}, {&quot;name&quot;: &quot;Training Models&quot;, &quot;description&quot;: &quot;The process of teaching models to make predictions.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Linear Regression&quot;, &quot;Logistic Regression&quot;]" />
+          <attvalue for="7" value="[&quot;Regression is only for continuous outcomes.&quot;, &quot;Classification is only for binary outcomes.&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting house prices&quot;, &quot;Email spam detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Embeddings" label="Embeddings">
+        <attvalues>
+          <attvalue for="0" value="Representations of data in a continuous vector space." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Search Techniques&quot;, &quot;description&quot;: &quot;Methods for searching through embeddings.&quot;}, {&quot;name&quot;: &quot;Learning Vectors&quot;, &quot;description&quot;: &quot;The process of training models to generate embeddings.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and machine learning concepts." />
+          <attvalue for="6" value="[&quot;Word Embeddings&quot;, &quot;Image Embeddings&quot;]" />
+          <attvalue for="7" value="[&quot;Embeddings are only for text data&quot;, &quot;All embeddings are the same dimensionality&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Recommendation Systems&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Document Management" target="Retrieval Strategies" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Effective document management is essential for implementing retrieval strategies." />
+        </attvalues>
+      </edge>
+      <edge source="Large Datasets" target="Retrieval Strategies" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Handling large datasets requires efficient retrieval strategies." />
+        </attvalues>
+      </edge>
+      <edge source="Artificial Neural Networks" target="Regression and Classification" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding neural networks is crucial for applying regression and classification techniques." />
+        </attvalues>
+      </edge>
+      <edge source="Embeddings" target="Cosine Similarity" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Cosine Similarity measures similarity between vector representations (embeddings)." />
+        </attvalues>
+      </edge>
+      <edge source="Embeddings" target="Vector Databases" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Vector Databases store and retrieve embeddings." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

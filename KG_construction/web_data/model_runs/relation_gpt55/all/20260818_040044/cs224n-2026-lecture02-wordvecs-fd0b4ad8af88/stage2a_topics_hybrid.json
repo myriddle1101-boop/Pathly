@@ -1,0 +1,848 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 15,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "word vectors",
+      "avg_score": 0.5914,
+      "frequency": 4,
+      "chunk_ids": [
+        1,
+        5,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "word vec",
+      "avg_score": 0.5622,
+      "frequency": 3,
+      "chunk_ids": [
+        1,
+        5,
+        7
+      ]
+    },
+    {
+      "name": "representing words",
+      "avg_score": 0.5722,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "evaluating word",
+      "avg_score": 0.5434,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        15
+      ]
+    },
+    {
+      "name": "word vector",
+      "avg_score": 0.5388,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "name": "words context",
+      "avg_score": 0.6663,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "discrete symbols",
+      "avg_score": 0.665,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "overview word",
+      "avg_score": 0.6598,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "model optimize",
+      "avg_score": 0.6362,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "semantics word",
+      "avg_score": 0.6313,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "model parameters",
+      "avg_score": 0.6269,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "words discrete",
+      "avg_score": 0.6263,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "called word",
+      "avg_score": 0.6173,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "word meaning",
+      "avg_score": 0.6155,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "words represent",
+      "avg_score": 0.6123,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "similarity intrinsic",
+      "avg_score": 0.6095,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "model negative",
+      "avg_score": 0.6087,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "learning word",
+      "avg_score": 0.6072,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "meanings words",
+      "avg_score": 0.6052,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "negative sampling",
+      "avg_score": 0.6029,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "likelihood variables",
+      "avg_score": 0.6004,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "sampling sparse",
+      "avg_score": 0.5994,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "word context",
+      "avg_score": 0.5989,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "vectors easier",
+      "avg_score": 0.5986,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.5977,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "dense vector",
+      "avg_score": 0.5972,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "negative samples",
+      "avg_score": 0.5962,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "minimize probability",
+      "avg_score": 0.5929,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "dimensional vectors",
+      "avg_score": 0.5912,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "word net",
+      "avg_score": 0.5861,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "use word",
+      "avg_score": 0.5805,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "like word",
+      "avg_score": 0.5791,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "word probabilities",
+      "avg_score": 0.5788,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "position predict",
+      "avg_score": 0.5747,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "synonyms",
+      "avg_score": 0.5724,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "vector differences",
+      "avg_score": 0.5697,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "contexts word",
+      "avg_score": 0.5692,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "meaning similarity",
+      "avg_score": 0.5686,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "symbols words",
+      "avg_score": 0.5681,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "optimize parameters",
+      "avg_score": 0.5653,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "data likelihood",
+      "avg_score": 0.5633,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "similarity",
+      "avg_score": 0.5627,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "minimize gradient",
+      "avg_score": 0.5588,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "model gradually",
+      "avg_score": 0.5565,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "dimensionality reduction",
+      "avg_score": 0.555,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "vector usually",
+      "avg_score": 0.5537,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "vector word",
+      "avg_score": 0.5534,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "optimization gradient",
+      "avg_score": 0.5527,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "vector analogies",
+      "avg_score": 0.5515,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "reduce dimensionality",
+      "avg_score": 0.5489,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "words word",
+      "avg_score": 0.5487,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "scaled vectors",
+      "avg_score": 0.5478,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "predictive",
+      "avg_score": 0.543,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "symbols hotel",
+      "avg_score": 0.5387,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "predict",
+      "avg_score": 0.5362,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "stochastic gradient",
+      "avg_score": 0.5324,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "objective function",
+      "avg_score": 0.5294,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "iterating corpus",
+      "avg_score": 0.5292,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "symbols example",
+      "avg_score": 0.527,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5173,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "solution stochastic",
+      "avg_score": 0.5137,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "expensive compute",
+      "avg_score": 0.5093,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "natural language",
+      "avg_score": 0.5086,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "vec algorithm",
+      "avg_score": 0.5078,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "easier optimization",
+      "avg_score": 0.5075,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "details vectors",
+      "avg_score": 0.5046,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "vectors related",
+      "avg_score": 0.4982,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "stochastic",
+      "avg_score": 0.492,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "context words",
+      "avg_score": 0.4801,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "vectors",
+      "avg_score": 0.4797,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "occurrence counts",
+      "avg_score": 0.477,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "components vector",
+      "avg_score": 0.4743,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "words window",
+      "avg_score": 0.4735,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "𝑖𝑛𝑡𝑜 problems",
+      "avg_score": 0.4638,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "𝑖𝑛𝑡𝑜 𝑝𝑟𝑜𝑏𝑙𝑒𝑚𝑠",
+      "avg_score": 0.4638,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "compute",
+      "avg_score": 0.4611,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "computations",
+      "avg_score": 0.4598,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "accumulate statistics",
+      "avg_score": 0.4581,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "counts directly",
+      "avg_score": 0.4546,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "counts like",
+      "avg_score": 0.449,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Word Vectors",
+      "description": "Mathematical representations of words in a continuous vector space.",
+      "sub_topics": [
+        {
+          "name": "Word Context",
+          "description": "The surrounding words that provide meaning to a target word."
+        },
+        {
+          "name": "Negative Sampling",
+          "description": "A technique to efficiently train word embeddings by sampling negative examples."
+        },
+        {
+          "name": "Dimensionality Reduction",
+          "description": "Methods to reduce the number of features in word vector representations."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Activation Function",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing the loss function."
+        },
+        {
+          "name": "Artificial Neural Network",
+          "description": "A network of interconnected nodes that processes information in layers."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Stochastic Gradient Descent",
+          "description": "An optimization algorithm for minimizing the loss function."
+        },
+        {
+          "name": "Model Parameters",
+          "description": "Variables in a model that are adjusted during training."
+        },
+        {
+          "name": "Loss Function",
+          "description": "A function that measures the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Similarity Measures",
+      "description": "Techniques to quantify how similar two items are.",
+      "sub_topics": [
+        {
+          "name": "Cosine Similarity",
+          "description": "A measure of similarity between two non-zero vectors."
+        },
+        {
+          "name": "Semantic Similarity",
+          "description": "Quantifying how similar the meanings of two words are."
+        },
+        {
+          "name": "Vector Differences",
+          "description": "Calculating the difference between word vectors to find relationships."
+        }
+      ]
+    },
+    {
+      "name": "Natural Language Processing",
+      "description": "The field of study focused on the interaction between computers and human language.",
+      "sub_topics": [
+        {
+          "name": "Language Models",
+          "description": "Statistical models that predict the next word in a sequence."
+        },
+        {
+          "name": "Tokenization",
+          "description": "The process of breaking text into individual words or phrases."
+        },
+        {
+          "name": "Word Embeddings",
+          "description": "Dense vector representations of words that capture semantic meaning."
+        }
+      ]
+    },
+    {
+      "name": "Data Representation",
+      "description": "Methods for structuring and encoding data for machine learning.",
+      "sub_topics": [
+        {
+          "name": "Discrete Symbols",
+          "description": "Distinct units of data used in various algorithms."
+        },
+        {
+          "name": "Sparse Representations",
+          "description": "Data structures that efficiently store high-dimensional data."
+        },
+        {
+          "name": "Occurrence Counts",
+          "description": "The frequency of terms in a dataset used for analysis."
+        }
+      ]
+    },
+    {
+      "name": "Optimization Techniques",
+      "description": "Methods for improving the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Gradient Descent",
+          "description": "An iterative optimization algorithm for minimizing functions."
+        },
+        {
+          "name": "Objective Function",
+          "description": "A function that the optimization algorithm seeks to minimize or maximize."
+        },
+        {
+          "name": "Hyperparameter Tuning",
+          "description": "The process of optimizing the parameters that govern the training process."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Cross-Validation",
+          "description": "A technique for assessing how the results of a statistical analysis will generalize."
+        },
+        {
+          "name": "Performance Metrics",
+          "description": "Quantitative measures used to evaluate the quality of a model."
+        },
+        {
+          "name": "Training vs. Testing",
+          "description": "The distinction between data used to train a model and data used to evaluate it."
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "description": "A subset of machine learning that uses neural networks with many layers.",
+      "sub_topics": [
+        {
+          "name": "Convolutional Neural Networks",
+          "description": "A class of deep neural networks primarily used for image processing."
+        },
+        {
+          "name": "Recurrent Neural Networks",
+          "description": "Neural networks designed for sequential data processing."
+        },
+        {
+          "name": "Transfer Learning",
+          "description": "A technique where a pre-trained model is adapted for a new task."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 25.9352,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

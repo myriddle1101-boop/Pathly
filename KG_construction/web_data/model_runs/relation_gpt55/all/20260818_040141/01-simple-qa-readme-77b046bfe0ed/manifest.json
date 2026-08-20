@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "01-simple-qa-readme-77b046bfe0ed",
+  "created_at": "2026-07-22T04:19:27+08:00",
+  "updated_at": "2026-07-22T04:21:21+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "01-simple-qa-README.pdf",
+    "doc_name": "01-simple-qa-README",
+    "sha256": "77b046bfe0ed2527136ad23871b2934f8e7cbc705e43e045313db8cd6a03b31d",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\01-simple-qa-README.pdf",
+    "pdf_size_bytes": 8793
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 114.062
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:19:27+08:00",
+      "ended_at": "2026-07-22T04:19:31+08:00",
+      "duration_seconds": 4.269,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\01-simple-qa-README.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 323\n[2] 清洗后词数: 329\n[3] 文档类型识别: paper_book\n[4] 分块数（过滤前）: 3\n[5] 分块数（过滤后）: 3\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=78\nExample 1: Simple Question Answering A minimal RAG system demonstrating the core concepts. What It Does (cid:127) Loads a small knowledge base (facts) (cid:127) Embeds and stores them in Chroma DB (cid:127) Answers quest...\n\n[Chunk 2] words=140\n# Run python simple_qa.py Without Open AI (Free, Simple Answers) # Just run it - will use basic fallback python simple_qa.py Example Output ============================================================== Simple Question A...\n\n[Chunk 3] words=111\n2. Storage: Vectors are stored in Chroma DB 3. Retrieval: Similar vectors are found using cosine similarity 4. Generation: Answer is generated from retrieved facts Code Structure class Simple QA: def add_knowledge(facts)...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:19:31+08:00",
+      "ended_at": "2026-07-22T04:20:16+08:00",
+      "duration_seconds": 44.7278,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：3\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/3 ...\n[KeyBERT] chunk 2/3 ...\n[KeyBERT] chunk 3/3 ...\n[2] KeyBERT候选数：18\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Python Basics\n02. Vector Databases\n03. Knowledge Base\n04. Question Answering\n05. Machine Learning Concepts\n06. Training Techniques\n07. Fallback Mechanisms\n08. Data Storage\n09. Retrieval Techniques\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 7388.52it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:20:16+08:00",
+      "ended_at": "2026-07-22T04:20:23+08:00",
+      "duration_seconds": 6.6189,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Python Basics -> Machine Learning Concepts | Python is essential for implementing machine learning algorithms.\n02. Machine Learning Concepts -> Training Techniques | Understanding machine learning concepts is necessary to apply training techniques.\n03. Knowledge Base -> Question Answering | A knowledge base is required to perform question answering.\n04. Data Storage -> Vector Databases | Understanding data storage is necessary for working with vector databases.\n05. Vector Databases -> Retrieval Techniques | Knowledge of vector databases is needed to effectively use retrieval techniques.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:20:23+08:00",
+      "ended_at": "2026-07-22T04:20:53+08:00",
+      "duration_seconds": 30.7098,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 1 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Machine Learning Concepts <-> Training Techniques | sim=0.8363\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 11108.00it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:20:53+08:00",
+      "ended_at": "2026-07-22T04:21:19+08:00",
+      "duration_seconds": 25.9222,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Python Basics\n[LLM] 2/9 Vector Databases\n[LLM] 3/9 Knowledge Base\n[LLM] 4/9 Question Answering\n[LLM] 5/9 Machine Learning Concepts\n[LLM] 6/9 Training Techniques\n[LLM] 7/9 Fallback Mechanisms\n[LLM] 8/9 Data Storage\n[LLM] 9/9 Retrieval Techniques\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:21:19+08:00",
+      "ended_at": "2026-07-22T04:21:21+08:00",
+      "duration_seconds": 1.7176,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output missing"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 5\n[3] Similarity edges: 1\n[4] Graph nodes=9, edges=5\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-22T04:19:27+08:00"
+}

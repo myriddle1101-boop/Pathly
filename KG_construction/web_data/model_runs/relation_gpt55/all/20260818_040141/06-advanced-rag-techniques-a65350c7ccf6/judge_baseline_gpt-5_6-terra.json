@@ -1,0 +1,117 @@
+{
+  "created_at": "2026-08-18T18:41:16.595078+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-06-advanced-rag-techniques-a65350c7ccf6",
+  "file_name": "06-advanced-rag-techniques-a65350c7ccf6",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 13,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 5,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Text Chunking",
+      "Query Processing",
+      "Results Management",
+      "Semantic Processing",
+      "Hybrid Search",
+      "Document Compression",
+      "Performance Optimization",
+      "Query Variations"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Network Concepts",
+        "reason": "The lesson uses embedding and cross-encoder models but does not teach neural-network concepts themselves."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Re-ranking",
+        "reason": "A dedicated section explains cross-encoder re-ranking of retrieved documents."
+      },
+      {
+        "name": "Multi-query Retrieval",
+        "reason": "The source teaches decomposition of complex questions into sub-queries and combining their retrieval results."
+      },
+      {
+        "name": "Self-querying",
+        "reason": "The source teaches extracting structured metadata filters from natural-language queries."
+      },
+      {
+        "name": "Parent-Child Chunking",
+        "reason": "The lesson explicitly covers retrieval over small child chunks while returning larger parent context."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Network Concepts",
+        "to": "Performance Optimization",
+        "reason": "Neural-network knowledge is neither taught as a prerequisite nor required for the caching, async, and monitoring optimizations presented."
+      },
+      {
+        "from": "Query Processing",
+        "to": "Query Variations",
+        "reason": "Query expansion generates variations, but the source does not establish broad query processing as a necessary learning prerequisite."
+      },
+      {
+        "from": "Query Processing",
+        "to": "Results Management",
+        "reason": "The source presents retrieval, deduplication, and ranking workflows, not a directional dependency from these broad categories."
+      },
+      {
+        "from": "Text Chunking",
+        "to": "Semantic Processing",
+        "reason": "Semantic chunking uses sentence embeddings and similarity, but generic text chunking is not established as a necessary prerequisite for the broad semantic-processing topic."
+      },
+      {
+        "from": "Hybrid Search",
+        "to": "Query Processing",
+        "reason": "Hybrid search is itself a retrieval/query-processing technique; the stated direction is unsupported."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Semantic Search",
+        "to": "Hybrid Search",
+        "reason": "Hybrid search explicitly combines semantic-search scores with keyword-search scores."
+      },
+      {
+        "from": "BM25 Keyword Search",
+        "to": "Hybrid Search",
+        "reason": "The hybrid retriever requires BM25 keyword retrieval as one of its two combined retrieval methods."
+      },
+      {
+        "from": "Initial Retrieval",
+        "to": "Re-ranking",
+        "reason": "The re-ranking pipeline first retrieves candidate documents and then re-orders those retrieved results."
+      },
+      {
+        "from": "Query Decomposition",
+        "to": "Multi-query Retrieval",
+        "reason": "Multi-query retrieval first breaks a complex query into sub-queries before retrieving for each one."
+      }
+    ],
+    "overall_note": "Most predicted topics are supported as broad labels, but none of the proposed prerequisite links expresses a clearly supported directional learning dependency."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-06-advanced-rag-techniques-a65350c7ccf6.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-06-advanced-rag-techniques-a65350c7ccf6.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-06-advanced-rag-techniques-a65350c7ccf6_ledger.csv"
+  }
+}

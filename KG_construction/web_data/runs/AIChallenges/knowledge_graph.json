@@ -1,0 +1,162 @@
+{
+  "nodes": [
+    {
+      "id": "Artificial Intelligence",
+      "description": "The study and development of intelligent agents and systems.",
+      "sub_topics": "[{\"name\": \"AI Technologies\", \"description\": \"Various technologies that enable artificial intelligence.\"}, {\"name\": \"AI Systems\", \"description\": \"Frameworks and architectures for implementing AI.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and mathematics, particularly statistics.",
+      "key_sub_concepts": "[\"Machine Learning\", \"Natural Language Processing\"]",
+      "common_misconceptions": "[\"AI can think like a human\", \"AI will replace all jobs\"]",
+      "practical_applications": "[\"Virtual assistants\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain's network of neurons.",
+      "sub_topics": "[{\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of neural network nodes.\"}, {\"name\": \"Backpropagation\", \"description\": \"A method for training neural networks through gradient descent.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\", \"Loss Functions\", \"Overfitting and Regularization\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image and speech recognition\", \"Natural language processing\", \"Game playing AI\", \"Medical diagnosis\"]"
+    },
+    {
+      "id": "Machine Learning",
+      "description": "A subset of AI focused on algorithms that learn from data.",
+      "sub_topics": "[{\"name\": \"Regression\", \"description\": \"Techniques for predicting continuous outcomes.\"}, {\"name\": \"Classification\", \"description\": \"Methods for categorizing data into discrete classes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Reinforcement Learning\", \"Neural Networks\"]",
+      "common_misconceptions": "[\"Machine learning can solve any problem\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Recommendation systems\", \"Fraud detection\"]"
+    },
+    {
+      "id": "Challenges in AI",
+      "description": "Key obstacles and issues faced in the development of AI systems.",
+      "sub_topics": "[{\"name\": \"Security\", \"description\": \"Concerns related to the safety and integrity of AI systems.\"}, {\"name\": \"Ethical Considerations\", \"description\": \"Moral implications of AI deployment and usage.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and programming concepts.",
+      "key_sub_concepts": "[\"Data bias\", \"Ethical considerations\", \"Scalability issues\", \"Interpretability of models\"]",
+      "common_misconceptions": "[\"AI can think like a human\", \"More data always leads to better models\", \"AI systems are infallible\"]",
+      "practical_applications": "[\"Bias detection in hiring algorithms\", \"Ethical AI frameworks in healthcare\", \"Scalable AI solutions in finance\"]"
+    },
+    {
+      "id": "Data in AI",
+      "description": "The role of data in training and evaluating AI models.",
+      "sub_topics": "[{\"name\": \"Data Quality\", \"description\": \"The importance of high-quality data for effective learning.\"}, {\"name\": \"Data Processing\", \"description\": \"Techniques for preparing data for machine learning.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Data Collection\", \"Data Preprocessing\", \"Data Annotation\", \"Data Augmentation\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Data quality is less important than quantity\"]",
+      "practical_applications": "[\"Training machine learning models\", \"Evaluating model performance\", \"Improving model accuracy through data refinement\"]"
+    },
+    {
+      "id": "Robotics and Automation",
+      "description": "The integration of AI in robotic systems for automation.",
+      "sub_topics": "[{\"name\": \"Cloud Robotics\", \"description\": \"Robotic systems that leverage cloud computing resources.\"}, {\"name\": \"Automation Science\", \"description\": \"The study of automated systems and their applications.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and introductory AI concepts.",
+      "key_sub_concepts": "[\"Robot kinematics\", \"Sensor integration\", \"Machine learning algorithms\", \"Control systems\"]",
+      "common_misconceptions": "[\"Robots can think independently\", \"Automation will replace all human jobs\"]",
+      "practical_applications": "[\"Manufacturing automation\", \"Autonomous vehicles\", \"Warehouse robotics\", \"Healthcare robots\"]"
+    },
+    {
+      "id": "Atari Games",
+      "description": "The use of Atari games as benchmarks for AI research.",
+      "sub_topics": "[{\"name\": \"Game AI\", \"description\": \"AI techniques applied to game environments.\"}, {\"name\": \"Reinforcement Learning\", \"description\": \"Learning strategies based on rewards and penalties in games.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and reinforcement learning concepts.",
+      "key_sub_concepts": "[\"Reinforcement Learning\", \"Deep Q-Networks (DQN)\"]",
+      "common_misconceptions": "[\"Atari games are only for entertainment and not useful for AI research.\", \"All AI can easily master Atari games without training.\"]",
+      "practical_applications": "[\"Benchmarking AI algorithms\", \"Developing generalizable AI agents\"]"
+    },
+    {
+      "id": "Machine Teaching",
+      "description": "The process of teaching machines to learn effectively.",
+      "sub_topics": "[{\"name\": \"Learning Strategies\", \"description\": \"Approaches to enhance machine learning efficiency.\"}, {\"name\": \"Human-AI Interaction\", \"description\": \"The dynamics of how humans teach and interact with AI.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning principles and algorithms.",
+      "key_sub_concepts": "[\"Instructional Design\", \"Feedback Mechanisms\"]",
+      "common_misconceptions": "[\"Machine teaching is the same as traditional teaching.\", \"Only experts can perform machine teaching.\"]",
+      "practical_applications": "[\"Personalized learning systems\", \"Automated tutoring systems\"]"
+    },
+    {
+      "id": "Systems Challenges",
+      "description": "Technical difficulties encountered in AI system design and implementation.",
+      "sub_topics": "[{\"name\": \"Scalability\", \"description\": \"The ability of AI systems to handle increasing amounts of data.\"}, {\"name\": \"Integration\", \"description\": \"Challenges in combining AI with existing systems.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning principles and programming skills.",
+      "key_sub_concepts": "[\"Data Quality Issues\", \"Model Deployment Challenges\"]",
+      "common_misconceptions": "[\"AI systems are infallible\", \"All data is useful for training\"]",
+      "practical_applications": "[\"Real-time data processing\", \"Scalable model deployment\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Artificial Intelligence",
+      "to": "Machine Learning",
+      "relation": "prerequisite",
+      "reason": "Machine Learning is a subset of AI."
+    },
+    {
+      "from": "Artificial Intelligence",
+      "to": "Challenges in AI",
+      "relation": "prerequisite",
+      "reason": "Understanding AI is necessary to grasp its challenges."
+    },
+    {
+      "from": "Artificial Intelligence",
+      "to": "Robotics and Automation",
+      "relation": "prerequisite",
+      "reason": "AI principles are foundational for Robotics and Automation."
+    },
+    {
+      "from": "Artificial Intelligence",
+      "to": "Systems Challenges",
+      "relation": "prerequisite",
+      "reason": "AI systems face unique technical challenges."
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Neural Networks are a common model used in Machine Learning."
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Data in AI",
+      "relation": "prerequisite",
+      "reason": "Data is essential for training Machine Learning models."
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Machine Teaching",
+      "relation": "prerequisite",
+      "reason": "Machine Teaching involves methods to improve Machine Learning."
+    },
+    {
+      "from": "Challenges in AI",
+      "to": "Systems Challenges",
+      "relation": "similarity",
+      "score": 0.9038
+    }
+  ]
+}

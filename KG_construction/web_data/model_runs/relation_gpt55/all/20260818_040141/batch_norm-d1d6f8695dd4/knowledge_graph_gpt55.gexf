@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Accuracy Metrics" label="Accuracy Metrics">
+        <attvalues>
+          <attvalue for="0" value="Measures of model performance in classification tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Max Accuracy&quot;, &quot;description&quot;: &quot;The highest accuracy achieved by a model.&quot;}, {&quot;name&quot;: &quot;Accuracy Inception&quot;, &quot;description&quot;: &quot;Accuracy metrics related to Inception models.&quot;}, {&quot;name&quot;: &quot;Accuracy LSVRC&quot;, &quot;description&quot;: &quot;Accuracy metrics specific to the Large Scale Visual Recognition Challenge.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of classification algorithms and statistics." />
+          <attvalue for="6" value="[&quot;Precision&quot;, &quot;Recall&quot;, &quot;F1 Score&quot;, &quot;Confusion Matrix&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric to consider.&quot;, &quot;High accuracy always indicates a good model.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating spam detection systems&quot;, &quot;Assessing medical diagnosis models&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Normalization Techniques" label="Normalization Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods to adjust and scale data for better model performance." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Batch Normalization&quot;, &quot;description&quot;: &quot;A technique to normalize inputs of each layer in a neural network.&quot;}, {&quot;name&quot;: &quot;Normalization Max&quot;, &quot;description&quot;: &quot;Normalization techniques focusing on maximum values.&quot;}, {&quot;name&quot;: &quot;Normalization Accelerating&quot;, &quot;description&quot;: &quot;Normalization methods that speed up training.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Min-Max Scaling&quot;, &quot;Z-Score Normalization&quot;, &quot;Robust Scaling&quot;, &quot;Log Transformation&quot;]" />
+          <attvalue for="7" value="[&quot;Normalization is the same as standardization.&quot;, &quot;Normalization is only necessary for neural networks.&quot;]" />
+          <attvalue for="8" value="[&quot;Improving convergence in gradient descent&quot;, &quot;Enhancing model performance in clustering algorithms&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Artificial Neural Network&quot;, &quot;description&quot;: &quot;A network of interconnected neurons used for various tasks.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neuron.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing error.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;, &quot;Loss Functions&quot;, &quot;Overfitting and Regularization&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Loss Functions" label="Loss Functions">
+        <attvalues>
+          <attvalue for="0" value="Functions that measure the difference between predicted and actual values." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Regression Loss&quot;, &quot;description&quot;: &quot;Loss functions used for regression tasks.&quot;}, {&quot;name&quot;: &quot;Classification Loss&quot;, &quot;description&quot;: &quot;Loss functions used for classification tasks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Mean Squared Error&quot;, &quot;Cross-Entropy Loss&quot;]" />
+          <attvalue for="7" value="[&quot;Loss functions only apply to regression problems.&quot;, &quot;Lower loss always means better model.&quot;]" />
+          <attvalue for="8" value="[&quot;Training machine learning models&quot;, &quot;Evaluating model performance&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods and strategies for training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Batch Training&quot;, &quot;description&quot;: &quot;Training models using batches of data.&quot;}, {&quot;name&quot;: &quot;Epochs and Iterations&quot;, &quot;description&quot;: &quot;Concepts related to the number of passes through the training dataset.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;, &quot;Transfer Learning&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Overfitting only occurs with complex models&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Game AI&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Processes for assessing the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Validation Techniques&quot;, &quot;description&quot;: &quot;Methods for validating model performance.&quot;}, {&quot;name&quot;: &quot;Cross-Validation&quot;, &quot;description&quot;: &quot;A technique for assessing how the results of a statistical analysis will generalize.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;ROC Curve&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern during evaluation.&quot;]" />
+          <attvalue for="8" value="[&quot;Model selection and comparison&quot;, &quot;Hyperparameter tuning&quot;, &quot;Performance reporting in production systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Linear Separability" label="Linear Separability">
+        <attvalues>
+          <attvalue for="0" value="The ability to separate classes in a dataset using a linear boundary." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Classifiers&quot;, &quot;description&quot;: &quot;Models that classify data points using linear decision boundaries.&quot;}, {&quot;name&quot;: &quot;Non-linear Separation&quot;, &quot;description&quot;: &quot;Methods for separating classes that are not linearly separable.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and introductory statistics." />
+          <attvalue for="6" value="[&quot;Hyperplanes&quot;, &quot;Support Vector Machines&quot;]" />
+          <attvalue for="7" value="[&quot;All datasets are linearly separable&quot;, &quot;Linear separability guarantees perfect classification&quot;]" />
+          <attvalue for="8" value="[&quot;Binary classification tasks&quot;, &quot;Image recognition&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Maximization Techniques" label="Maximization Techniques">
+        <attvalues>
+          <attvalue for="0" value="Strategies for maximizing performance metrics in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Maximum Accuracy&quot;, &quot;description&quot;: &quot;Techniques aimed at achieving the highest accuracy.&quot;}, {&quot;name&quot;: &quot;Optimization Algorithms&quot;, &quot;description&quot;: &quot;Algorithms used to optimize model parameters.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning algorithms and performance metrics." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Bayesian Optimization&quot;]" />
+          <attvalue for="7" value="[&quot;Maximization always leads to better models&quot;, &quot;All metrics need to be maximized equally&quot;]" />
+          <attvalue for="8" value="[&quot;Hyperparameter tuning&quot;, &quot;Feature selection&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Accuracy Metrics" target="Maximization Techniques">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Techniques for maximizing classification performance require understanding the metrics being maximized." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Loss Functions" target="Training Techniques">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training techniques typically optimize a loss, so understanding loss functions is necessary." />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Model Evaluation" target="Maximization Techniques">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Maximizing performance requires knowing how model performance is evaluated." />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Model Evaluation" target="Training Techniques">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7699" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

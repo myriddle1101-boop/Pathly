@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-history\\5845dce2ddc2\\cs224n-2026-lecture01-history.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-history\\5845dce2ddc2\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-history\\5845dce2ddc2\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 7.4184,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 2881\n[2] 清洗后词数: 2923\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 13\n[5] 分块数（过滤后）: 11\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-history\\5845dce2ddc2\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-history\\5845dce2ddc2\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=195\nHistory of Natural Language Processing CS 224 N/Ling 284 Christopher Manning Lecture 1 Christopher D. Manning: Human Language Understanding & Reasoning Four eras of NLP  1940–1969: Early Explorations  1970–1992: Hand-b...\n\n[Chunk 2] words=269\n“When I look at an article in Russian, I say: Weaver was a mathematician & ‘This is really written in English, but it has engineer known for his work as a science funder at the Rockefeller been coded in some strange symb...\n\n[Chunk 3] words=259\nEarly AI Hype! New York Times July 8, 1958 NEW NAVY DEVICE LEARNS BY DOING Psychologist Shows Embryo of Computer Designed to Read and Grow Wiser The Navy revealed the embryo of an electronic computer today that it expect...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

@@ -1,0 +1,888 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 28,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "subword tokenization",
+      "avg_score": 0.6619,
+      "frequency": 15,
+      "chunk_ids": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "name": "tokenization byte",
+      "avg_score": 0.5621,
+      "frequency": 15,
+      "chunk_ids": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        28
+      ]
+    },
+    {
+      "name": "encoding bpe",
+      "avg_score": 0.5511,
+      "frequency": 14,
+      "chunk_ids": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "name": "encoding",
+      "avg_score": 0.5519,
+      "frequency": 13,
+      "chunk_ids": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "name": "subword",
+      "avg_score": 0.525,
+      "frequency": 9,
+      "chunk_ids": [
+        7,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "name": "tokenization",
+      "avg_score": 0.5329,
+      "frequency": 7,
+      "chunk_ids": [
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ]
+    },
+    {
+      "name": "vocab _p",
+      "avg_score": 0.5166,
+      "frequency": 4,
+      "chunk_ids": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "name": "language models",
+      "avg_score": 0.6299,
+      "frequency": 3,
+      "chunk_ids": [
+        3,
+        4,
+        25
+      ]
+    },
+    {
+      "name": "lingual transfer",
+      "avg_score": 0.6938,
+      "frequency": 2,
+      "chunk_ids": [
+        25,
+        26
+      ]
+    },
+    {
+      "name": "multilingual language",
+      "avg_score": 0.6758,
+      "frequency": 2,
+      "chunk_ids": [
+        24,
+        25
+      ]
+    },
+    {
+      "name": "multilinguality",
+      "avg_score": 0.6662,
+      "frequency": 2,
+      "chunk_ids": [
+        24,
+        26
+      ]
+    },
+    {
+      "name": "byte tokenization",
+      "avg_score": 0.6391,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        28
+      ]
+    },
+    {
+      "name": "language model",
+      "avg_score": 0.5972,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "merge token",
+      "avg_score": 0.5141,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        12
+      ]
+    },
+    {
+      "name": "pair encoding",
+      "avg_score": 0.4962,
+      "frequency": 2,
+      "chunk_ids": [
+        15,
+        16
+      ]
+    },
+    {
+      "name": "frequency merge",
+      "avg_score": 0.4804,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "name": "word tokenization",
+      "avg_score": 0.7798,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "linguistic diversity",
+      "avg_score": 0.7416,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "characters subword",
+      "avg_score": 0.7401,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "multilinguality matters",
+      "avg_score": 0.7099,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "words characters",
+      "avg_score": 0.6982,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "multilinguality cross",
+      "avg_score": 0.6894,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "language abundant",
+      "avg_score": 0.6857,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "transfer multilingual",
+      "avg_score": 0.6831,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "cross lingual",
+      "avg_score": 0.6782,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "language tokens",
+      "avg_score": 0.676,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "tokenization tokenization",
+      "avg_score": 0.6652,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "byte character",
+      "avg_score": 0.6641,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "multilinguality adding",
+      "avg_score": 0.6641,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "curse multilinguality",
+      "avg_score": 0.6634,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "character bytes",
+      "avg_score": 0.6609,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "bytes character",
+      "avg_score": 0.6601,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "character byte",
+      "avg_score": 0.657,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "characters",
+      "avg_score": 0.6546,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "64 multilinguality",
+      "avg_score": 0.6526,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "language disparities",
+      "avg_score": 0.6517,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "tokens language",
+      "avg_score": 0.6492,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "guest lecture",
+      "avg_score": 0.6472,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "language modeling",
+      "avg_score": 0.6472,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "lecture taking",
+      "avg_score": 0.6419,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "lecture introduced",
+      "avg_score": 0.6365,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "units language",
+      "avg_score": 0.6356,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "bytes characters",
+      "avg_score": 0.6319,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "lecture learned",
+      "avg_score": 0.6299,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "tokenizer training",
+      "avg_score": 0.6287,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "word words",
+      "avg_score": 0.623,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "tokenizers trained",
+      "avg_score": 0.6148,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "tokens vocabulary",
+      "avg_score": 0.5998,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "lecture attendance",
+      "avg_score": 0.5983,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "words lecture",
+      "avg_score": 0.5966,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "words sentence",
+      "avg_score": 0.5934,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "spelling models",
+      "avg_score": 0.5899,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "words",
+      "avg_score": 0.5762,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "unfairness languages",
+      "avg_score": 0.5744,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "characters model",
+      "avg_score": 0.574,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "tokenization bpe",
+      "avg_score": 0.566,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "tokenization multilinguality",
+      "avg_score": 0.5517,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "words looked",
+      "avg_score": 0.5464,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "superword tokenization",
+      "avg_score": 0.5422,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "tokens whitespace",
+      "avg_score": 0.5419,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "words vocabulary",
+      "avg_score": 0.5417,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "phrases",
+      "avg_score": 0.5384,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "tokenization scheme",
+      "avg_score": 0.5354,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "words important",
+      "avg_score": 0.5338,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "subwords characters",
+      "avg_score": 0.5245,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "training corpus",
+      "avg_score": 0.5209,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "tokens tokenizer",
+      "avg_score": 0.5187,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "subword models",
+      "avg_score": 0.5184,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "characters gpt",
+      "avg_score": 0.518,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "models subword",
+      "avg_score": 0.5148,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "model language",
+      "avg_score": 0.5126,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "text looked",
+      "avg_score": 0.5108,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "tokens prevalent",
+      "avg_score": 0.5078,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "way encode",
+      "avg_score": 0.5041,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "important tokenization",
+      "avg_score": 0.5033,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "tokenizer language",
+      "avg_score": 0.5031,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "latent transformer",
+      "avg_score": 0.5022,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "_p vocab",
+      "avg_score": 0.5019,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "represented tokenizer",
+      "avg_score": 0.5012,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "languages problem",
+      "avg_score": 0.5,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Tokenization",
+      "description": "The process of converting text into smaller units for processing.",
+      "sub_topics": [
+        {
+          "name": "Subword Tokenization",
+          "description": "A method that breaks words into smaller subword units."
+        },
+        {
+          "name": "Byte Tokenization",
+          "description": "A technique that encodes text at the byte level."
+        },
+        {
+          "name": "Word Tokenization",
+          "description": "The process of splitting text into individual words."
+        }
+      ]
+    },
+    {
+      "name": "Encoding Techniques",
+      "description": "Methods used to represent text data in a numerical format.",
+      "sub_topics": [
+        {
+          "name": "BPE Encoding",
+          "description": "Byte Pair Encoding, a compression technique used in tokenization."
+        },
+        {
+          "name": "Character Encoding",
+          "description": "Representing characters in a numerical format for processing."
+        }
+      ]
+    },
+    {
+      "name": "Language Models",
+      "description": "Statistical models that predict the likelihood of sequences of words.",
+      "sub_topics": [
+        {
+          "name": "Multilingual Language Models",
+          "description": "Models designed to work across multiple languages."
+        },
+        {
+          "name": "Transfer Learning in Language Models",
+          "description": "Using knowledge from one language model to improve another."
+        }
+      ]
+    },
+    {
+      "name": "Linguistic Diversity",
+      "description": "The variety of languages and dialects in a given context.",
+      "sub_topics": [
+        {
+          "name": "Multilinguality",
+          "description": "The ability to use or understand multiple languages."
+        },
+        {
+          "name": "Language Disparities",
+          "description": "Differences in language use and access among populations."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Tokenizers Training",
+          "description": "The process of training models to effectively tokenize text."
+        },
+        {
+          "name": "Training Corpus",
+          "description": "The dataset used to train machine learning models."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain's network of neurons.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing error."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual values."
+        },
+        {
+          "name": "Regression and Classification",
+          "description": "Types of problems that models can solve."
+        }
+      ]
+    },
+    {
+      "name": "Text Representation",
+      "description": "Methods for converting text into a format suitable for machine learning.",
+      "sub_topics": [
+        {
+          "name": "Tokens and Vocabulary",
+          "description": "The basic units of text and the set of unique tokens used."
+        },
+        {
+          "name": "Character and Word Representation",
+          "description": "Different approaches to represent text data."
+        }
+      ]
+    },
+    {
+      "name": "Cross-Lingual Techniques",
+      "description": "Methods that facilitate understanding and processing across different languages.",
+      "sub_topics": [
+        {
+          "name": "Cross-Lingual Transfer",
+          "description": "Transferring knowledge from one language to another."
+        },
+        {
+          "name": "Multilinguality Matters",
+          "description": "The importance of considering multiple languages in models."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 31.3307,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

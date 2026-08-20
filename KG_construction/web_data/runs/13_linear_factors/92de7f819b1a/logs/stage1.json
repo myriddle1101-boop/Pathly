@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\13_linear_factors.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 4.7042,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 2243\n[2] 清洗后词数: 2280\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 13\n[5] 分块数（过滤后）: 12\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=270\nCHAPTER 13. LINEAR FACTOR MODELS sample from. Next we sample the real-valued observable variables given the factors: x = W h + b + noise (13.2) where the noise is typically Gaussian and diagonal (independent across dimen...\n\n[Chunk 2] words=52\n> 1 2 n The role of the latent variables is thus to capture the dependencies between x x the different observed variables . Indeed, it can easily be shown that is just a i multivariate normal random variable, with x (x; ...\n\n[Chunk 3] words=132\nProbabilistic PCA and Factor Analysis  Linear factor model  Gaussian prior  Extends PCA  Given an input, yields a distribution over codes, rather than a single code  Estimates a probability density function  Can ge...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

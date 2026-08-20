@@ -1,0 +1,522 @@
+Machine Learning For Design
+Engineers
+Week 1: Introduction
+Pietro Ferraro
+
+Table of 1 Whoweare
+2 Logisticsofthecourse
+3 Whatis Machine Learning
+Content
+4 Whatis Deep Learning
+5 Howwillthecoursebedelivered?
+Thiscourseisdividedintotwoparts.
+Thefirstonewillgooverthebasic
+theoreticalideasof Deep Learning,
+thesecondonewillgooverthemain
+applications.
+Imperial College London Machine Learning For Design Engineers
+
+Whoweare
+Module Leaders
+l Iamalecturerin Artificial
+Intelligenceatthe Dyson Schoolof
+Design Engineeringandat I-X.My
+researchinterestsincludecontrol
+theoryappliedtothesharing
+economydomainand Reinforcement
+Learning(RL).
+l Email: p.ferraro@imperial.ac.uk
+Imperial College London Machine Learning For Design Engineers
+
+Whoweare
+Module Leaders
+l Professor Robert Shorten,Co-leader
+l Amelia Bryant,GTA
+l Haozhe Tian,GTA
+l Abigail Langbridge,GTA
+l Micheal Vitali,GTA
+l Felixwieberneit,GTA
+Imperial College London Machine Learning For Design Engineers
+
+Logisticsofthecourse
+l Thecoursewillbedeliveredon Tuesdaysfrom 16:00 to 18:00
+l On Thursdays,from 11:00 to 13:00 youhaveaonlinetutorialwhereyouwillbe
+dividedintogroupsandwillhavethechancetoaskthe GTAsandthemodule
+leadersaboutthecontentoftheclassandaboutthelabs.
+l Draftsof Lecturesand Labswillbeavailableon Blackboardinadvance.
+Imperial College London Machine Learning For Design Engineers
+
+What is Machine Learning?
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Machine Learning?
+Accordingtothe IBMwebsite:
+‘Machinelearning(ML)isabranchofartificialintelligence(AI)andcomputer
+sciencethatfocusesontheusingdatatoenablealgorithmstoimitatethe
+waythathumanslearn,graduallyimprovingitsaccuracy.’
+Accordingtothe Oxforddictionary:
+‘Theuseanddevelopmentofcomputersystemsthatareabletolearnand
+adaptwithoutfollowingexplicitinstructions,byusingalgorithmsand
+statisticalmodelstoanalyseanddrawinferencesfrompatternsindata.’
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Machine Learning?
+Ifthesedefinitionsappearbroadandvague,itisbecausetheyare.
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Machine Learning?
+Ifthesedefinitionsappearbroadandvague,itisbecausetheyare.
+Topicsthatfallunderthisdefinition:
+l Regression
+l Clustering
+l Statisticalinference
+l Deep Learning
+l Reinforcement Learning
+l Data Science
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Machine Learning?
+Ingeneralonecanthinkofa MLmodelassomethinglikethis(broadly)
+l Asetofdata,called Training Data,isusedtotrainamodel.
+l Themodellearnspatternsinthedata.
+l Theperformanceofthemodelisevaluatedand,basedonthisperformance,the
+cyclerepeats
+Thiswillkeepgoinguntiladesiredlevelofperformanceisreached(ifpossible).
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Machine Learning?
+Ingeneralonecanthinkofa MLmodelassomethinglikethis(broadly)
+Data ML Model Learning Evaluation
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Machine Learning?
+Thiscoursewillfocusonseveralareasof ML,called Deep Learning(DL).
+l Regression
+l Clustering
+l Statisticalinference
+l Deep Learning
+l Reinforcement Learning
+l Data Science
+Imperial College London Machine Learning For Design Engineers
+
+What is Deep Learning?
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Deep Learning?
+Abriefhistory-Inventionof Neural Networks
+Deeplearning(DL)isasubsetof
+machinelearningthatusesmultilayered
+neuralnetworks(NN),calleddeep
+neuralnetworks,tosimulatethe
+complexdecision-makingpowerofthe
+humanbrain.
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Deep Learning?
+Abriefhistory-Inventionof Neural Networks
+Theemergenceof DLasafieldstarts
+approximatelyin 1943,when Warren
+Mc Cullochandmathematician Walter
+Pittswroteapaperonhowneurons
+mightwork. Inordertotodoso,they
+modeledasimpleneuralnetworkusing
+electricalcircuits.
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Deep Learning?
+Abriefhistory-Pivotalmoments
+l 1950 s Advancementofcomputers
+l 1959 Bernard Widrowand Marcian Hoffof Stanforddevelopedneuronscalled
+”ADALINE”. Thiswasthefirstneuralnetwork(NN)applicationtoarealworld
+problem,whoseaimwastoeliminateechoesonphonelines.
+l 1986 Back-Propagationisformalisedbythreedifferentresearchgroups,
+simultaneously.
+l Early 2000 Developmentofmassivecomputationalpowerand GPUsbrings
+neuralnetworksbackfromtheirslumber.
+l 2010 Apaperfrom Nairand Hintonpupularizestheuseof Re Luasanactivation
+function.
+l 2012 Paperon Image Netpopularizes Convolutional Neural Networks(CNNs).
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Deep Learning?
+Problemswhere DLmakesadifference
+Deep Learningisgreatat:
+l Predictionproblems;
+l Patternrecognitionproblems;
+l Problemsthatinvolvesequentialdecisionmaking;
+l Generatingdatawithsimilarpropertiestothetrainingdataset
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Deep Learning?
+Predictionproblems
+Makingpredictionsabouthowacertain
+variablewillevolvewithtime
+Examples:
+l Predictingweather
+l Predictingstockmarket
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Deep Learning?
+Patternrecognition
+Identifyingobjectsinimages
+Examples:
+l Identifyplug-invehiclesfromimages
+l Segmentimages
+l Distinguishbetweenelectricvehicles
+andinternalcombustionones
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Deep Learning?
+Sequentialdecisionmaking
+Learnasequenceofactionstoachieve
+adesiredresultinanenvironment.
+Examples:
+l Playchessor Goorthe Atarigames
+l Learnhowtosynthesizeproteins
+l Controlthemagneticfieldofa
+nuclearfusionreactor
+Imperial College London Machine Learning For Design Engineers
+
+Whatis Deep Learning?
+Generative AI
+Generatingdatawithsimilarproperties
+tothetrainingdataset.
+Examples:
+l LLMs,likechat GPTor Gemini
+l Imagegenerationsystems,like
+Midjourney
+Imperial College London Machine Learning For Design Engineers
+
+How will the course be delivered?
+Imperial College London Machine Learning For Design Engineers
+
+Howwillthecoursebedelivered?
+Listoftopics
+Thecourseisdividedintotwosections. Thefirstonewillcoverthefollowingtopics:
+l Neuronsandtheirproperties
+l Neural Networksasuniversalapproximators
+l Trainingandback-propagation
+l Activationfunctionsandlossfunctions
+l Convolutional Neural Networksandimagerecognition
+Imperial College London Machine Learning For Design Engineers
+
+Howwillthecoursebedelivered?
+Listoftopics
+Thesecondpartwilldelveintomoreadvancedtopicsandwillbetaughtbyguest
+lecturers:
+l Markov Chains
+l MDPsand Reinforcement Learning
+l Transformersand LLMs
+l Optimal Transportormaybeanothertopic(GNNs? Review?)
+Imperial College London Machine Learning For Design Engineers
+
+Howwillthecoursebedelivered?
+Prerequisites
+Whilethecoursehasnoformalprerequisitesthereareanumberoftopicsthatyou
+willneedtobefamiliarwith,inordertoengagesuccessfullywiththematerial:
+l Basicsofcalculus(inparticular,derivativesandthechainrule).
+l Basicsoflinearalgebra(inparticularoperationswithmatricesandvectors)
+l Programming(knowinghowtousevariables,forloops,if/then/else,etc.,
+knowledgeof OOPisnotrequired)
+Wewillnotgooverthesetopicsinthecoursebutwewillprovideplentyofmaterials
+andreferenceson Blackboardforyoutoconsultandstudy.
+Imperial College London Machine Learning For Design Engineers
+
+Howwillthecoursebedelivered?
+Lecturesand Laboratories
+Lectureswillbedeliveredinpersonon Tuesdaysandfromweek 3 wewillstartthe
+laboratories:
+l Thelaboratoriesaredesignedtomakeyouapplythetopicsthatyoulearntin
+class.
+l Eachlabisself-containedandyouwillcompleteitathome.
+Imperial College London Machine Learning For Design Engineers
+
+Howwillthecoursebedelivered?
+Lecturesand Laboratories
+l Software: Python 3.11 andabove.
+l Youcanuseany Pythondistributionyouprefer. Theonewerecommendisvisual
+studiocodehttps://code.visualstudio.com
+l Requiredlibraries: Numpy,Torch,Torchvision. For Torchand Torchvision,please
+usethefollowinglinkhttps://pytorch.org/(select Condaor Pip,dependingon
+whichoneyouareusingandfor”computeplatform”select CPU.)
+l Please,makesurethatalltherequiredsoftwareisinstalledbefore Labs
+start
+Imperial College London Machine Learning For Design Engineers
+
+Howwillthecoursebedelivered?
+The Clinics
+Tutorialswillbeheldonline. Thewaytheywillworkisthatyouwillreceivethelab
+instructionsandyouwillbeassignedtoa Teamsroomwitha TA.Duringthetwo
+hoursyouwillbeabletoaskthe TAquestionsaboutthelabinstructionsand/or
+clarificationsaboutthetheorycoveredinclassuptothatpoint.
+Imperial College London Machine Learning For Design Engineers
+
+Howwillthecoursebedelivered?
+Examsand Assignments
+Assessmentwillhavethreecomponents.
+-Anendoftermexamwhichwillconstitute 70%ofthefinalgrade. Thiswillbea
+30 minutesviva.
+-Ashortoralexaminationbasedonthecompletedlabs. Thiswillconstitute 15%
+ofthefinalgrade. Thiswillbea 5-10 minutesviva.
+-Oral Presentation. Thiswillconstitute 15%ofthefinalgrade. Thiswillbea 10
+minutesviva.
+Imperial College London Machine Learning For Design Engineers
+
+References
+Howwillthecoursebedelivered?
+1. Thehundred-pagemachinelearningbook,A.Burkov
+2. Hands-onmachinelearningwith Sci Kit-learn,Kerasand Tensor Flow,A.Geron
+3. Decisionmakingunderuncertainty,M.Kovhendorfer
+4. Google’spagerankandbeyond,A.Langville,C.Meyer
+5. Mathematicsfor Machine Learning,M.Diesenrothet. al.
+Imperial College London Machine Learning For Design Engineers
+
+Howwillthecoursebedelivered?
+Studyingmaterialandfeedback
+Allthematerialwillbeprovidedon Blackboard.
+l Youwillhaveaccesstothelectureoftheweekandthelab,on Mondayofthe
+sameweek,through Blackboard(althoughnoticethatuntilthedayofthelecture
+theremightbechangestotheslides).
+l Eachweekyouwillbeprovidedwithsupplementarymaterialinordertofurther
+explorethetopicscoveredduringlectures.
+Wewillmakeuseof Menti,toregularlycollectfeedbackonthecourseandtoadjust
+ourteachingstyle.
+Imperial College London Machine Learning For Design Engineers
+
+Howwillthecoursebedelivered?
+Contacts
+Youcanalwayscontactus,on Teamsandviaemail. Please,bemindfulthatitmight
+takemorethanonedaytoreplytoyou(especiallyifyoucontactusoutsideof
+workinghoursandintheweekend!).
+l p.ferraro@imperial.ac.uk
+l r.shorten@imperial.ac.uk
+Imperial College London Machine Learning For Design Engineers
+
+What is Machine Learning?
+Imperial College London Machine Learning For Design Engineers
+
+Whatismachinelearning?
+Machinelearningisaboutmodelbuilding. Modelsarejustcompactmathematical
+representationsofdata. Allmodelsarewrong,butsomeareuseful(George Box).
+Inmachinelearningwebuildamodeltosolveaproblem:
+l bygatheringsomerealdata;
+l andthenbuildamathematicalmodelofsomephenomenabasedonthegathered
+data.
+MLalgorithmsareoftenclassifiedaccordingtothemannerinwhichthemodelis
+built(supervisedlearning,unsupervisedlearning,reinforcementlearning,graph
+basedalgorithms)
+Imperial College London Machine Learning For Design Engineers
+
+Types of machine learning
+Imperial College London Machine Learning For Design Engineers
+
+Supervisedlearning
+Insupervisedlearning,thedatasetisacollectionoflabelledexamples(x(i),y(i)),
+i ∈ 1,..,N. Eachelementx(i)iscalledafeaturevector,andeachy(i)isalabel.
+Typically,thex(i),y(i)couldbevectors.
+Thegoalofasupervisedlearningalgorithmistoproduceanalgorithmsuchthat
+givenafeaturevectorx,wecanproducealabely. Typically,wehavetwotypesof
+problemsinsupervisedlearning:
+l Classification
+l Regression
+Imperial College London Machine Learning For Design Engineers
+
+Supervisedlearning: classification
+Forexample,supposethatx(i)wasavectorthatrecordedageandweightofan
+individual,andy(i)recordedwhetherthisindividualwasdiabetic. Couldwepredict
+diabetesgivenanx(i)?
+Imperial College London Machine Learning For Design Engineers
+
+Supervisedlearning: regression
+Supposenowthatx(i)wasavectorthatrecordedtimeanindividualstudied,and
+y(i)recordedthefinalgradein ML.Couldwepredictsuccessin MLclassgivenan
+x(i)?
+Imperial College London Machine Learning For Design Engineers
+
+Un-supervisedlearning
+Inunsupervisedlearningthetrainingdataisnotlabeled. Herethesystemtriesto
+learnwithouta(explicit)teacher.
+Addinglabelstodataisveryexpensive. Usuallyhumanshavetodoit. Thinkof
+takingpicturestomonitoramachine.
+Unsuperviseddata-setsarebyfarlessexpensivethansupervisedones.
+Imperial College London Machine Learning For Design Engineers
+
+Un-supervisedlearning
+Usedinclusteringapplications;anomalydetection;densityestimationapplications.
+Imperial College London Machine Learning For Design Engineers
+
+Semi-supervisedlearning
+Insemi-supervisedlearning,thedatasetcontainsbothlabeledandun-labeled
+examples. Thegoalofthesemi-supervisedlearningisthesameasinsupervised
+learning.
+Anexampleofun-supervisedlearningisservicessuchas Googlephoto.
+Imagesareclusteredaccordingtofacesappearingintheimage. Thisisthe
+unsupervisedpartofthealgorithm.
+Someimagesarelabeled-thisis Bob Shorten. Anyclusterwith Bob Shortenthen
+hasanidentifier.
+Imperial College London Machine Learning For Design Engineers
+
+Reinforcementlearning
+Acompletelydifferent MLsystemiscalledreinforcementlearning.
+Reinforcementlearningisreallyusefulin Roboticapplications,orintraffic
+applications.
+Herethelearningsystemactivelyprobestheenvironment,andisrewarded,or
+punished,basedontheoutcome.
+Theobjectiveisthentofindstrategy,orpolicy,thatmaximizesthereward.
+Imperial College London Machine Learning For Design Engineers
+
+Reinforcementlearning
+Imagineanautomomousvehicle,tryingtofindthebestroutetoadestination. The
+routewiththeshortestpathmaximizesthereward.
+Imperial College London Machine Learning For Design Engineers
+
+Reinforcementlearning
+Reinforcementlearninghasbeenamazinglysuccessfulinmanyapplications.
+l Robotics
+l Games-Chess,Go.
+l Controlofcomplexdynamicalsystems.
+Imperial College London Machine Learning For Design Engineers
+
+Mathematics of Machine Learning
+Imperial College London Machine Learning For Design Engineers
+
+Mathematicalbackground
+Sowhatsneededtodosome ML?MLisbuiltonfourareasofmathematics.
+1 Optimization
+2 Probabilty
+3 Linearalgebra
+4 Calculus(derivatives,chainrule)
+5 Markovchains
+Wewillspendalittlebitoftimegoingover[1]. For[2],[3]and[4]wewillprovide
+someextrareadingmaterialtorevisethebasicconcepts. [5]isrequiredfor
+Reinforcement Learning,whichwewillnotcoverinthiscourse.
+Imperial College London Machine Learning For Design Engineers
+
+Notation
+Firstsomenotation. Wewilltrytokeeptothefollowingconvention.
+l Matricesvariablesaredenotedincapitalletters-forexample,thematrix P.
+l Vectorsaredenotedinlowercase,withasubscriptdenotingtheelementofa
+matrix-forexamplew T = (w ,...,w ).
+1 n
+l Sometimesvectorsareindexed,usingforexample,time. Wedenotethisby:
+w(i)T = (w (i),...,w (i))meaningthevectorwattimeindexi.
+1 n
+Inoutcontext,onecanthinkofsubscriptsdenotingvariables,andparentheses
+denotingmeasureddatapoints.
+Imperial College London Machine Learning For Design Engineers
+
+Optimization
+In Deep Learningweareofteninterestedinfindingthebestparametersinorderto
+achieveacertaingoal. Thisisusuallyexpressedasanoptimizationproblem
+minimize f(x)
+Wheref : Rd → R. Thegoalhereistofindthevaluex ∗ suchthat
+f(x ∗ ) = min{f(x),x ∈ Rd}
+Thenecessaryconditionforˆxtobeaminimumisthat
+∇f(ˆx) = 0
+Thisisnotsufficienttoconcludethatˆx = x ∗ .
+Imperial College London Machine Learning For Design Engineers
+
+Optimization
+Thenotionofagradientiscentraltomanyaspectsofmachinelearning(necessary
+conditionforminimum/maximum).
+Imperial College London Machine Learning For Design Engineers
+
+Gradient Descent
+Probablythemostfamousnumericalalgorithm(andcertainlytheonethathasthe
+mostinfluenced DL)iscalledgradientdescent.
+Imperial College London Machine Learning For Design Engineers
+
+Gradient Descent
+Imagineaballatpointx . Theballwillstartrollinginthedirectionoppositetowhere
+0
+thegradientsignispointingat.
+Imperial College London Machine Learning For Design Engineers
+
+Gradient Descent
+Thisintuitionleadstothefollowingexpression(whichcanbeproventofinda
+stationarypoint):
+x = x −η∇f(x )
+k+1 k k
+Imperial College London Machine Learning For Design Engineers
+
+Gradient Descent
+Imperial College London Machine Learning For Design Engineers
+
+Gradient Descent-drawbacks
+Imperial College London Machine Learning For Design Engineers
+
+Gradient Descent-alternatives
+Therearemanyalternativestogradientdescent. Acommonone,whendealingwith
+badlyconditionedfunctions(almostthetotalityoffunctionsin DLarebadly
+conditioned),usedtobetoaddanextraterm,calledmomentum:
+x = x −η∇f(x )+α∆x
+k+1 k k k
+∆x
+k
+= α∆x
+k−1
+−η∇f(x
+k−1
+)
+Other,moremodern,approachesare:
+l RMSprop
+l Adam
+Imperial College London Machine Learning For Design Engineers
+
+Probabilitytheory
+Randomvariable: Avariablewhoseoutcomeisdeterminedbyarandomevent.
+Therearetwotypesofrandomvariable-discreteandcontinuous.
+Adiscreterandomvariabletakesonacountablesetofvaluessuchasred,blue,....
+Theprobabilitydistributionofadiscreterandomvariableisdescribedbyalistof
+probabilities,allofwhichsumto 1. Sometimesthisfunctioniscalledaprobability
+massfunction.
+Imperial College London Machine Learning For Design Engineers
+
+Probabilitytheory
+Acontinuousrandomvariable(CRV)takesonaninfinitenumberofvaluesin
+someinterval. Theprobabilitydensityfunctionofa CRVisdescribedbya
+probabilitydensityfunction.
+Imperial College London Machine Learning For Design Engineers
+
+Somebasicconcepts
+Forthediscreterandomvariable X:
+∑
+Expectati(on: E(X) =) k x(i)p(x(i)). E(X)isoftendenotedµ. Variance:
+i=1
+var(x) = E (X−µ)2 . var(x)isoftendenotedbyσ2.
+Forthecontinuousrandomvariable X:
+∫
+∞
+Expectation: E(X) = xf(x)dx. (X)isoftendenotedµ. Variance: Asbefore
+( ) −∞
+var(x) = E (X−µ)2 . var(x)isoftendenotedbyσ2.
+Imperial College London Machine Learning For Design Engineers
+
+Jargon busting
+Imperial College London Machine Learning For Design Engineers
+
+Jargonbusting
+Regression: Predictingarealvaluegivensomeinformation
+Classification: Attachinglabelstothings.
+Models: Acompactdescriptionofadataset.
+Parametricmodels: Amodelswithclassparameters-y = mx+c.
+Non-parametricmodels: Modelswithnoparameters-y = mean(x +x +...).
+1 2
+Imperial College London Machine Learning For Design Engineers
+
+Jargonbusting
+Bias: Modelsthatfavouragroup(don’tgeneralisewell)
+Bias-variancetrade-off: Tradeoffbetweengeneralisationandrepresenting
+trainingset.
+Trainingandtestset: Datausedtotrainandtestthe MLtool.
+Regularisation: Constrainingamodelwithsomepriorinformation.
+Over-fitting: Learningthedata-settoowell. (Question-canyouguesswhythisisa
+problem?)
+Imperial College London Machine Learning For Design Engineers
+
+Jargonbusting
+Supervisedlearning: Usingdata-labelsaspartoflearningscheme
+Unsupervisedlearning: Learningwithoutdata-labels.
+Semi-supervisedlearning: Somedata-pointshavelabels. Othersdonot.
+Reinforcementlearning: Learninghowtomakesequencesofdecisions.
+Imperial College London Machine Learning For Design Engineers

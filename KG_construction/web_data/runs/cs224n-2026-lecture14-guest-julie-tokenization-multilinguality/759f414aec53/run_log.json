@@ -1,0 +1,161 @@
+{
+  "run_id": "cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53",
+  "events": [
+    {
+      "time": "2026-07-07T20:07:56+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "cs224n-2026-lecture14-guest-julie-tokenization-multilinguality.pdf",
+        "sha256": "759f414aec53e37653eab4d034f278b5bc7cfec754ee30c067474bffc3e9c846",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53",
+        "resume_from_stage": "stage1",
+        "run_attempts": 1
+      }
+    },
+    {
+      "time": "2026-07-07T20:07:56+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:08:08+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 11.5416,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:08:08+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:09:22+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 73.5964,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:09:22+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:09:31+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 9.7545,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:09:31+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:10:11+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 39.3373,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:10:11+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:10:40+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 28.9507,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:10:40+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53"
+      }
+    },
+    {
+      "time": "2026-07-07T20:10:41+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 1.5436,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:10:42+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline completed",
+      "data": {
+        "completed_stages": [
+          "stage1",
+          "stage2a",
+          "stage2b",
+          "stage2c",
+          "stage3",
+          "stage4"
+        ]
+      }
+    }
+  ],
+  "updated_at": "2026-07-07T20:10:42+08:00"
+}

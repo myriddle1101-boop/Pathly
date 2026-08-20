@@ -1,0 +1,32 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 8,
+  "prerequisite_count": 4,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning studies neural networks with many layers, so core neural network concepts are needed first."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Neural Computation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural computation analyzes how neural networks process information and learn."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Applications of Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding neural networks is necessary before studying their real-world applications."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Neural Network Evaluation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Evaluating neural networks requires knowing what neural networks are and how they behave."
+    }
+  ]
+}

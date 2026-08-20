@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Reinforcement Learning",
+      "to": "Policy Distillation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Policy distillation transfers behavior between policies, which requires understanding policies and their role in reinforcement learning."
+    }
+  ]
+}

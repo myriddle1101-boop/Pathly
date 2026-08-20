@@ -1,0 +1,38 @@
+[
+  {
+    "chunk_id": 1,
+    "word_count": 123,
+    "doc_type": "paper_book",
+    "text": "RAG Glossary\nCommon terms and acronyms used in RAG systems.\nA\nANN (Approximate Nearest Neighbor)\nAlgorithm that finds similar vectors quickly by trading perfect accuracy for speed. Essential for scaling\nvector search to millions of documents.\nAugmentation\nThe process of adding retrieved context to a prompt before sending it to an LLM.\nC\nChunk/Chunking\nSplitting documents into smaller pieces for embedding and retrieval. Common sizes: 200-1000\ncharacters.\nChroma DB\nOpen-source vector database designed for AI applications. Easy to use, runs locally.\nCosine Similarity\nMetric for measuring how similar two vectors are. Range: -1 (opposite) to 1 (identical). Commonly used\nin RAG retrieval.\nContext Window\nMaximum number of tokens an LLM can process at once (input + output). GPT-3.5: 16 K, GPT-4: 128 K,"
+  },
+  {
+    "chunk_id": 2,
+    "word_count": 220,
+    "doc_type": "paper_book",
+    "text": "Claude 3: 200 K.\nCross-Encoder\nModel that scores query-document pairs directly for re-ranking. More accurate but slower than\nembeddings.\nE\nEmbedding\nVector (list of numbers) representing text in high-dimensional space. Captures semantic meaning.\nEmbedding Model\nNeural network that converts text to embeddings. Examples: text-embedding-ada-002,\nall-Mini LM-L 6-v 2.\nF\nFaiss\nFacebook AI Similarity Search. High-performance library for vector search, especially at scale.\nFew-Shot Prompting\nProviding examples in the prompt to guide the LLM's response style.\nFine-Tuning\nTraining a model on specific data to specialize it. Alternative to RAG but more expensive to update.\nG\n\nGeneration\nThe \"G\" in RAG. Using an LLM to create text based on retrieved context.\nGPT\nGenerative Pre-trained Transformer. Family of LLMs by Open AI (GPT-3.5, GPT-4).\nH\nHallucination\nWhen an LLM generates plausible-sounding but false information. RAG reduces this by grounding\nresponses in retrieved facts.\nHNSW (Hierarchical Navigable Small World)\nGraph-based ANN algorithm. Very fast queries, high accuracy. Used by Chroma DB, Weaviate, Qdrant.\nHybrid Search\nCombining semantic search (embeddings) with keyword search (BM 25) for better results.\nI\nIndexing\nProcess of preparing documents for retrieval: chunking, embedding, and storing in vector database.\nInference\nUsing a trained model to make predictions (generate text, create embeddings, etc.).\nIVF (Inverted File Index)\nANN algorithm that clusters vectors into regions for faster search. More memory efficient than HNSW."
+  },
+  {
+    "chunk_id": 3,
+    "word_count": 91,
+    "doc_type": "paper_book",
+    "text": "K\nKnowledge Base\nCollection of documents/data that a RAG system retrieves from.\nK-NN (K-Nearest Neighbors)\nFinding the K most similar items. In RAG: finding K most relevant document chunks.\nL\nLLM (Large Language Model)\nNeural network trained on massive text to understand and generate language. Examples: GPT-4,\nClaude, Llama.\nM\nMetadata\nInformation about documents (source, date, author, etc.). Used for filtering in RAG.\nMMR (Maximum Marginal Relevance)\nRetrieval strategy that balances relevance with diversity to avoid redundant results.\nO\nOllama\nTool for running open-source LLMs locally. Useful for private/offline RAG systems."
+  },
+  {
+    "chunk_id": 4,
+    "word_count": 192,
+    "doc_type": "paper_book",
+    "text": "P\nPinecone\nManaged vector database service. Fully serverless, scales automatically.\nPrompt Engineering\nArt/science of crafting effective prompts to get desired LLM outputs.\nPrompt Template\nReusable pattern for creating prompts. Example: \"Context: {context}\\n Question: {question}\\n Answer:\"\nQ\nQuery\nUser's question or search term in a RAG system.\nQuery Expansion\nGenerating variations of a query to retrieve more comprehensive results.\nR\nRAG (Retrieval-Augmented Generation)\nTechnique combining information retrieval with LLM generation for grounded, accurate responses.\nRe-ranking\nRe-ordering retrieved results using a more sophisticated model (often cross-encoder) for better\nrelevance.\n\nRetrieval\nThe \"R\" in RAG. Finding relevant documents/chunks from a knowledge base.\nS\nSemantic Search\nFinding information based on meaning rather than exact keywords. Enabled by embeddings.\nSentence Transformers\nLibrary and collection of models for creating embeddings. Popular for open-source RAG.\nSimilarity Score\nNumerical measure of how related two pieces of text are. Higher = more similar.\nT\nTemperature\nLLM parameter controlling randomness. 0 = deterministic, 1 = creative. For RAG, typically 0.3-0.7.\nToken\nSmallest unit of text for LLMs. Roughly 4 characters or 3/4 of a word. \"Hello world\" » 2-3 tokens.\nTop-K\nRetrieving the K highest-scoring results. Common in RAG: K=3-5 chunks.\nV"
+  },
+  {
+    "chunk_id": 5,
+    "word_count": 93,
+    "doc_type": "paper_book",
+    "text": "Vector\nList of numbers representing data in mathematical space. Text embeddings are vectors.\nVector Database\nSpecialized database for storing and searching vectors efficiently. Examples: Chroma DB, Pinecone,\nWeaviate.\nVector Search\nFinding similar vectors using distance/similarity metrics. Core of RAG retrieval.\nCommon Abbreviations\nAbbreviation Meaning\nAI Artificial Intelligence\nANN Approximate Nearest Neighbor\nAPI Application Programming Interface\nBM 25 Best Matching 25 (keyword search algorithm)\nDB Database\nFAISS Facebook AI Similarity Search\nGPT Generative Pre-trained Transformer\nHNSW Hierarchical Navigable Small World\nIVF Inverted File Index\nK-NN K-Nearest Neighbors\nLLM Large Language Model\nML Machine Learning"
+  },
+  {
+    "chunk_id": 6,
+    "word_count": 113,
+    "doc_type": "paper_book",
+    "text": "MMR Maximum Marginal Relevance\nNLP Natural Language Processing\nRAG Retrieval-Augmented Generation\nQuick Reference\nSimilarity Scores\n(cid:127) 1.0 = Identical\n(cid:127) 0.8-1.0 = Very similar\n(cid:127) 0.5-0.8 = Somewhat similar\n(cid:127) 0.0-0.5 = Not very similar\n(cid:127) -1.0 = Opposite (rare)\nTypical RAG Parameters\n(cid:127) Chunk size: 500-1000 characters\n(cid:127) Chunk overlap: 50-200 characters\n(cid:127) Top-K retrieval: 3-5 chunks\n\n(cid:127) Temperature: 0.3-0.7\n(cid:127) Embedding dimensions: 384-1536\nModel Comparison\nModel Type Speed Quality Cost\nGPT-3.5 Fast Good Low\nGPT-4 Slow Excellent High\nClaude 3 Haiku Fast Good Low\nClaude 3 Opus Slow Excellent High\nLlama 3 (local) Fast* Good Free**\nDepends on hardware\n*Hosting costs only\nNeed more help? Check the lessons for detailed explanations!"
+  }
+]

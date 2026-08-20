@@ -1,0 +1,26 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 3,
+  "prerequisites": [
+    {
+      "from": "Embeddings",
+      "to": "Sentence Transformers",
+      "relation_type": "strong_prerequisite",
+      "reason": "Sentence Transformers are learned as models that produce sentence embeddings, so understanding embeddings is necessary."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Sentence Transformers",
+      "relation_type": "strong_prerequisite",
+      "reason": "Sentence Transformers are neural network models, so neural network fundamentals are required."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Model Training",
+      "relation_type": "strong_prerequisite",
+      "reason": "Model training relies on loss functions to quantify error and guide optimization."
+    }
+  ]
+}

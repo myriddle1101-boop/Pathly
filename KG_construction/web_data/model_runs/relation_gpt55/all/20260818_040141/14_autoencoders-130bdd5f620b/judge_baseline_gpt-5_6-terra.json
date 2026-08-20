@@ -1,0 +1,114 @@
+{
+  "created_at": "2026-08-18T18:45:13.772743+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-14_autoencoders-130bdd5f620b",
+  "file_name": "14_autoencoders-130bdd5f620b",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 20,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.7273,
+    "f1": 0.8,
+    "tp": 8,
+    "fp": 1,
+    "fn": 3
+  },
+  "prerequisite_metrics": {
+    "precision": 0.3333,
+    "recall": 0.4,
+    "f1": 0.3636,
+    "tp": 2,
+    "fp": 4,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Autoencoders",
+      "Manifold Learning",
+      "Learning Algorithms",
+      "Neural Network Components",
+      "Training Techniques",
+      "Data Reconstruction",
+      "Autoencoder Variants",
+      "Coordinate Systems"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Model Evaluation",
+        "reason": "The text discusses training losses and reconstruction criteria but does not present model evaluation as a learning topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Undercomplete Autoencoders",
+        "reason": "The source explicitly defines undercomplete codes and explains their relationship to salient features and PCA."
+      },
+      {
+        "name": "Denoising Autoencoders",
+        "reason": "A substantial portion of the source covers corruption processes, clean reconstruction, and denoising objectives."
+      },
+      {
+        "name": "Contractive Autoencoders",
+        "reason": "The source explicitly introduces Jacobian-based contractive regularization and its relation to denoising autoencoders."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Network Components",
+        "to": "Autoencoders",
+        "reason": "Autoencoders are defined through encoder, decoder, hidden-code, and reconstruction components."
+      },
+      {
+        "from": "Autoencoders",
+        "to": "Autoencoder Variants",
+        "reason": "The variants presented, including undercomplete, denoising, sparse, and contractive autoencoders, build on the basic autoencoder architecture."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Learning Algorithms",
+        "to": "Training Techniques",
+        "reason": "These are broad, overlapping topics; the source does not establish a specific directional prerequisite between them."
+      },
+      {
+        "from": "Autoencoders",
+        "to": "Data Reconstruction",
+        "reason": "Reconstruction is the task/objective performed by an autoencoder, not a distinct downstream concept requiring autoencoders as a prerequisite."
+      },
+      {
+        "from": "Manifold Learning",
+        "to": "Coordinate Systems",
+        "reason": "The source describes coordinate systems as outputs or representations used in manifold-learning procedures, not as a concept that depends on manifold learning."
+      },
+      {
+        "from": "Training Techniques",
+        "to": "Model Evaluation",
+        "reason": "Model evaluation is not substantively covered, and training procedures are not presented as a prerequisite for a separate evaluation topic."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Autoencoders",
+        "to": "Undercomplete Autoencoders",
+        "reason": "Undercomplete autoencoders are defined as autoencoders whose code dimension is smaller than the input dimension."
+      },
+      {
+        "from": "Autoencoders",
+        "to": "Denoising Autoencoders",
+        "reason": "A denoising autoencoder is introduced as an autoencoder trained to reconstruct clean inputs from corrupted inputs."
+      },
+      {
+        "from": "Autoencoders",
+        "to": "Contractive Autoencoders",
+        "reason": "Contractive autoencoders extend the encoder-decoder model with a Jacobian-based regularization penalty."
+      }
+    ],
+    "overall_note": "The predictions capture the chapter's broad themes, but several labels are overly generic and omit the central named autoencoder variants."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-14_autoencoders-130bdd5f620b.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-14_autoencoders-130bdd5f620b.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-14_autoencoders-130bdd5f620b_ledger.csv"
+  }
+}

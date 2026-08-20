@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Final_Lecture___Design_Engineering\\e751bcf4b967",
+  "run_id": "dl___final_lecture___design_engineering-e751bcf4b967",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:14.127088+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "8aa132547dbb6ffe7f89612ed7cbaf8774cd0aa36227336b970b36fe24452bae",
+    "stage2a_topics_hybrid.json": "6f4bea972af53ba5eca571c36fe89776145d26c240a3ea9c5971bfff8d9c7371",
+    "stage2c_similarity_edges.json": "d774a7e3f54417e73842cbca5ade9f695255496e20f46b9e78aa55aba7e32735",
+    "stage3_topics_with_summary.json": "6d0a533d3ca5b51658f6da701a05200793f992136d2965ac0d10e04b75317738"
+  },
+  "old_relation_count": 7,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4\\cs224n-2026-lecture11-evaluation.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.7828,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 4340\n[2] 清洗后词数: 4409\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 20\n[5] 分块数（过滤后）: 20\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=237\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Yejin Choi Lecture 11: Evaluation Lecture Plan Explosive proliferation & shrinking shelf-lives of benchmarks The recent SAGA of LLM Benchmarks Humans are n...\n\n[Chunk 2] words=190\nGLUE and Super GLUE A collection of existing benchmarks standardized or reformatted, covering a wide range of intuitive-level NLU capabilities Super BLUE was \"stickier” :  Bool Q, Multi RC (reading texts)  CB, RTE (en...\n\n[Chunk 3] words=222\nLecture Plan Explosive proliferation & shrinking shelf-lives of benchmarks The recent SAGA of LLM Benchmarks Humans are no longer performance ceilings Desiderata of high-impact benchmarks and common pitfalls Deep dives o...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

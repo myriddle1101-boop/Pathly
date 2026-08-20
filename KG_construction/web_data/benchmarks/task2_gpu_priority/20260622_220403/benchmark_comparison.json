@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-06-22T22:06:44",
+  "artifact_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task2_gpu_priority\\20260622_220403",
+  "sample_input": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage1_chunks.json",
+  "true_gpu_verified": false,
+  "cpu_run": {
+    "run_label": "cpu",
+    "requested_device": "cpu",
+    "stage2a": {
+      "duration_seconds": 43.146,
+      "requested_device": "cpu",
+      "selected_device": "cpu",
+      "fallback_applied": false,
+      "fallback_reason": "",
+      "batch_size": 8,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task2_gpu_priority\\20260622_220403\\cpu\\stage2a_topics_hybrid.json"
+    },
+    "stage2c": {
+      "duration_seconds": 8.961,
+      "requested_device": "cpu",
+      "selected_device": "cpu",
+      "fallback_applied": false,
+      "fallback_reason": "",
+      "batch_size": 8,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task2_gpu_priority\\20260622_220403\\cpu\\stage2c_similarity_edges.json"
+    },
+    "rag": {
+      "duration_seconds": 9.7312,
+      "requested_device": "cpu",
+      "selected_device": "cpu",
+      "fallback_applied": false,
+      "fallback_reason": "",
+      "batch_size": 8,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task2_gpu_priority\\20260622_220403\\cpu\\rag_ingestion_report.json",
+      "inserted": 49
+    }
+  },
+  "gpu_attempt_run": {
+    "run_label": "cuda_requested",
+    "requested_device": "cuda",
+    "stage2a": {
+      "duration_seconds": 27.4535,
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "batch_size": 8,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task2_gpu_priority\\20260622_220403\\cuda_requested\\stage2a_topics_hybrid.json"
+    },
+    "stage2c": {
+      "duration_seconds": 9.0618,
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "batch_size": 8,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task2_gpu_priority\\20260622_220403\\cuda_requested\\stage2c_similarity_edges.json"
+    },
+    "rag": {
+      "duration_seconds": 12.6108,
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "batch_size": 8,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task2_gpu_priority\\20260622_220403\\cuda_requested\\rag_ingestion_report.json",
+      "inserted": 49
+    }
+  }
+}

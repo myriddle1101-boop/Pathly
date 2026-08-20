@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "id": "Machine Learning",
+      "description": "The study of algorithms that improve automatically through experience.",
+      "sub_topics": "[{\"name\": \"Learning Algorithms\", \"description\": \"Methods used to train models on data.\"}, {\"name\": \"Training Data\", \"description\": \"Data used to train machine learning models.\"}, {\"name\": \"Training Set\", \"description\": \"A subset of data used for training.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\"]",
+      "common_misconceptions": "[\"Machine learning can solve any problem\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": "[{\"name\": \"Activation Function\", \"description\": \"Functions that determine the output of a neural network node.\"}, {\"name\": \"Backpropagation\", \"description\": \"A method for training neural networks by minimizing error.\"}, {\"name\": \"Loss Function\", \"description\": \"A function that measures the difference between predicted and actual outcomes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus.",
+      "key_sub_concepts": "[\"Neurons\", \"Activation Functions\", \"Layers\", \"Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game playing\", \"Medical diagnosis\"]"
+    },
+    {
+      "id": "Training Process",
+      "description": "The methodology of training machine learning models.",
+      "sub_topics": "[{\"name\": \"Learning Curves\", \"description\": \"Graphs that show the model's performance over time.\"}, {\"name\": \"Training Error\", \"description\": \"The error rate of the model on the training data.\"}, {\"name\": \"Optimization\", \"description\": \"The process of adjusting model parameters to minimize error.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Data Preparation\", \"Model Selection\", \"Training Algorithms\", \"Overfitting and Underfitting\"]",
+      "common_misconceptions": "[\"Training is the same as testing\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Predictive analytics\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Error Analysis\", \"description\": \"The process of identifying and understanding errors in model predictions.\"}, {\"name\": \"Accuracy\", \"description\": \"A measure of how often the model makes correct predictions.\"}, {\"name\": \"Bias-Variance Tradeoff\", \"description\": \"The balance between model complexity and generalization.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and statistics.",
+      "key_sub_concepts": "[\"Confusion Matrix\", \"ROC Curve\", \"Precision and Recall\", \"F1 Score\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Accuracy is the only metric that matters.\", \"Overfitting is not a concern if the model performs well on training data.\"]",
+      "practical_applications": "[\"Evaluating classification models in healthcare.\", \"Assessing predictive models in finance.\", \"Benchmarking algorithms in competitions.\"]"
+    },
+    {
+      "id": "Data Management",
+      "description": "Handling and processing data for machine learning.",
+      "sub_topics": "[{\"name\": \"Training Set vs. Test Set\", \"description\": \"The distinction between data used for training and data used for evaluation.\"}, {\"name\": \"Data Mismatch\", \"description\": \"Discrepancies between training data and real-world data.\"}, {\"name\": \"Mislabeled Data\", \"description\": \"Data points that are incorrectly labeled.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and statistics.",
+      "key_sub_concepts": "[\"Data Collection\", \"Data Cleaning\", \"Data Transformation\", \"Data Storage\"]",
+      "common_misconceptions": "[\"Data management is only about storage.\", \"Cleaning data is not necessary if the dataset is large.\"]",
+      "practical_applications": "[\"Preparing datasets for model training\", \"Ensuring data quality for analysis\"]"
+    },
+    {
+      "id": "Performance Metrics",
+      "description": "Quantitative measures used to evaluate model performance.",
+      "sub_topics": "[{\"name\": \"Classifier Precision\", \"description\": \"The ratio of true positive predictions to the total predicted positives.\"}, {\"name\": \"Error Rate\", \"description\": \"The proportion of incorrect predictions made by the model.\"}, {\"name\": \"Satisficing Metric\", \"description\": \"A metric used to determine acceptable performance.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and machine learning concepts.",
+      "key_sub_concepts": "[\"Accuracy\", \"Precision\", \"Recall\", \"F1 Score\", \"ROC-AUC\"]",
+      "common_misconceptions": "[\"Higher accuracy always means a better model.\", \"Precision and recall are the same metric.\"]",
+      "practical_applications": "[\"Evaluating classification models\", \"Comparing different algorithms\", \"Tuning model parameters\"]"
+    },
+    {
+      "id": "Pipeline Design",
+      "description": "The architecture and components of a machine learning workflow.",
+      "sub_topics": "[{\"name\": \"Pipeline Components\", \"description\": \"The individual parts that make up a machine learning pipeline.\"}, {\"name\": \"Choosing Pipeline\", \"description\": \"The process of selecting the appropriate components for a pipeline.\"}, {\"name\": \"Redesign Pipeline\", \"description\": \"Modifying the pipeline to improve performance.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and programming skills in Python.",
+      "key_sub_concepts": "[\"Data Preprocessing\", \"Model Training\", \"Model Evaluation\", \"Hyperparameter Tuning\"]",
+      "common_misconceptions": "[\"Pipelines are only for large datasets\", \"All steps in a pipeline must be automated\"]",
+      "practical_applications": "[\"Automating data workflows\", \"Ensuring reproducibility in experiments\", \"Streamlining model deployment\"]"
+    },
+    {
+      "id": "Overfitting and Generalization",
+      "description": "Concepts related to model performance on unseen data.",
+      "sub_topics": "[{\"name\": \"Overfitting\", \"description\": \"When a model learns noise in the training data.\"}, {\"name\": \"Variance Learning\", \"description\": \"The sensitivity of the model to fluctuations in the training data.\"}, {\"name\": \"Reducing Variance\", \"description\": \"Techniques to improve model generalization.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and statistics.",
+      "key_sub_concepts": "[\"Bias-Variance Tradeoff\", \"Regularization Techniques\"]",
+      "common_misconceptions": "[\"Overfitting only occurs with complex models\", \"A model with high accuracy on training data is always good\"]",
+      "practical_applications": "[\"Model selection and evaluation\", \"Improving predictive performance on unseen data\"]"
+    },
+    {
+      "id": "Specialized Applications",
+      "description": "Specific use cases of machine learning techniques.",
+      "sub_topics": "[{\"name\": \"Cat Detector\", \"description\": \"A model specifically trained to identify cats in images.\"}, {\"name\": \"Speech Recognition\", \"description\": \"The ability of a machine to identify and process human speech.\"}, {\"name\": \"Image Classification\", \"description\": \"The task of assigning labels to images based on their content.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning principles and algorithms.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Reinforcement Learning\", \"Natural Language Processing\", \"Computer Vision\"]",
+      "common_misconceptions": "[\"Machine learning can solve all problems\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image recognition in healthcare\", \"Predictive maintenance in manufacturing\", \"Fraud detection in finance\", \"Personalized recommendations in e-commerce\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Machine Learning",
+      "to": "Specialized Applications",
+      "relation": "similarity",
+      "score": 0.756
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Training Process",
+      "relation": "similarity",
+      "score": 0.7509
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Training Process",
+      "relation": "prerequisite",
+      "reason": "Neural networks require a specific training process."
+    },
+    {
+      "from": "Training Process",
+      "to": "Model Evaluation",
+      "relation": "prerequisite",
+      "reason": "Models need to be evaluated after training."
+    },
+    {
+      "from": "Training Process",
+      "to": "Overfitting and Generalization",
+      "relation": "prerequisite",
+      "reason": "Understanding training is key to addressing overfitting."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Performance Metrics",
+      "relation": "prerequisite",
+      "reason": "Performance metrics are used in model evaluation."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Training Process",
+      "relation": "similarity",
+      "score": 0.7926
+    },
+    {
+      "from": "Data Management",
+      "to": "Training Process",
+      "relation": "prerequisite",
+      "reason": "Data is essential for training models."
+    },
+    {
+      "from": "Pipeline Design",
+      "to": "Training Process",
+      "relation": "prerequisite",
+      "reason": "Pipeline design includes the training process."
+    },
+    {
+      "from": "Pipeline Design",
+      "to": "Data Management",
+      "relation": "prerequisite",
+      "reason": "Data management is a component of pipeline design."
+    },
+    {
+      "from": "Specialized Applications",
+      "to": "Machine Learning",
+      "relation": "prerequisite",
+      "reason": "Specialized applications are based on machine learning principles."
+    }
+  ]
+}

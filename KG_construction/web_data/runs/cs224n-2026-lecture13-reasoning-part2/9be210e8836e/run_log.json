@@ -1,0 +1,161 @@
+{
+  "run_id": "cs224n-2026-lecture13-reasoning-part2-9be210e8836e",
+  "events": [
+    {
+      "time": "2026-07-07T20:05:11+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "cs224n-2026-lecture13-reasoning-part2.pdf",
+        "sha256": "9be210e8836e9758c570ddb82c79953d06ed3486d9cb4eb4b7772c39ce2ad7dc",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture13-reasoning-part2\\9be210e8836e",
+        "resume_from_stage": "stage1",
+        "run_attempts": 1
+      }
+    },
+    {
+      "time": "2026-07-07T20:05:11+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:05:17+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 6.22,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:05:17+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:06:27+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 69.8984,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:06:27+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:06:34+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 7.5462,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:06:34+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:07:14+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 39.8839,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:07:14+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:07:49+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 34.4978,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:07:49+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture13-reasoning-part2\\9be210e8836e"
+      }
+    },
+    {
+      "time": "2026-07-07T20:07:51+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 1.6017,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:07:51+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline completed",
+      "data": {
+        "completed_stages": [
+          "stage1",
+          "stage2a",
+          "stage2b",
+          "stage2c",
+          "stage3",
+          "stage4"
+        ]
+      }
+    }
+  ],
+  "updated_at": "2026-07-07T20:07:51+08:00"
+}

@@ -1,0 +1,142 @@
+{
+  "created_at": "2026-08-18T18:59:38.454989+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-dl___lecture_6___design_engineering-fb7c77f387de",
+  "file_name": "dl___lecture_6___design_engineering-fb7c77f387de",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 7,
+  "topic_metrics": {
+    "precision": 0.6875,
+    "recall": 0.7333,
+    "f1": 0.7097,
+    "tp": 11,
+    "fp": 5,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.4286,
+    "recall": 0.5,
+    "f1": 0.4615,
+    "tp": 3,
+    "fp": 4,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "convolutional kernels in image processing",
+      "deep learning architectures and applications",
+      "feature selection techniques in learning models",
+      "neural networks and their training methodologies",
+      "groups of neurons and their functional roles",
+      "learning pooling strategies in convolutional networks",
+      "convolutional layer design and optimization",
+      "practical comments on implementing learning algorithms",
+      "kernels example in machine learning contexts",
+      "foundational concepts in learning theory",
+      "analyzing image data with LNNs and potential losses"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "learning whynotusea in neural networks",
+        "reason": "\"Whynotusea\" is an OCR-corrupted heading rather than a meaningful concept."
+      },
+      {
+        "name": "whynotusea in the context of LNNs",
+        "reason": "\"Whynotusea\" is not a valid concept name; the source discusses disadvantages of linear neural networks for images."
+      },
+      {
+        "name": "specific examples of learning applications",
+        "reason": "This is too vague and does not identify a distinct learning concept from the source."
+      },
+      {
+        "name": "learning lectures on advanced neural network topics",
+        "reason": "This describes the lecture format rather than a learning concept."
+      },
+      {
+        "name": "whynotusea as a critique of existing models",
+        "reason": "\"Whynotusea\" is an OCR artifact, not a source-supported concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Data normalization",
+        "reason": "The source explains rescaling numerical features to standard ranges to avoid differing scales and numerical issues."
+      },
+      {
+        "name": "Train-validation-test split",
+        "reason": "The source explicitly distinguishes training, validation, and test sets and their roles."
+      },
+      {
+        "name": "Overfitting and the bias-variance tradeoff",
+        "reason": "The source directly discusses overfitting, underfitting, high variance, high bias, and their tradeoff."
+      },
+      {
+        "name": "Regularization and dropout",
+        "reason": "The source presents L1/L2 regularization and dropout as methods to reduce overfitting."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "foundational concepts in learning theory",
+        "to": "neural networks and their training methodologies",
+        "reason": "Understanding learning objectives, loss minimization, and generalization is a substantive foundation for neural-network training."
+      },
+      {
+        "from": "neural networks and their training methodologies",
+        "to": "deep learning architectures and applications",
+        "reason": "The presented deep-learning architectures are neural networks and rely on neural-network training concepts."
+      },
+      {
+        "from": "convolutional kernels in image processing",
+        "to": "convolutional layer design and optimization",
+        "reason": "Convolutional layers are defined through kernels, local receptive fields, and shared kernel weights."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "neural networks and their training methodologies",
+        "to": "convolutional layer design and optimization",
+        "reason": "General training methodology is relevant but is not a necessary prerequisite for understanding convolutional-layer structure and hyperparameters."
+      },
+      {
+        "from": "convolutional layer design and optimization",
+        "to": "learning pooling strategies in convolutional networks",
+        "reason": "The source places pooling after convolution in an architecture, but this sequencing alone does not establish a strong learning dependency."
+      },
+      {
+        "from": "neural networks and their training methodologies",
+        "to": "learning lectures on advanced neural network topics",
+        "reason": "The target is not a valid learning concept."
+      },
+      {
+        "from": "neural networks and their training methodologies",
+        "to": "whynotusea as a critique of existing models",
+        "reason": "The target is an OCR-corrupted, unsupported concept."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Overfitting and the bias-variance tradeoff",
+        "to": "Regularization and dropout",
+        "reason": "Regularization and dropout are introduced specifically as methods for mitigating overfitting."
+      },
+      {
+        "from": "Convolutional kernels",
+        "to": "Convolutional layers",
+        "reason": "The source introduces convolutional layers by connecting kernels and feature detection to neurons with shared weights and receptive fields."
+      },
+      {
+        "from": "Train-validation-test split",
+        "to": "Overfitting and the bias-variance tradeoff",
+        "reason": "The validation and test sets are presented as the means to assess generalization and detect overfitting."
+      }
+    ],
+    "overall_note": "The predictions capture several CNN themes, but include multiple vague labels and OCR-corrupted \"whynotusea\" entries while omitting central practical topics on data preparation and overfitting control."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___lecture_6___design_engineering-fb7c77f387de.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___lecture_6___design_engineering-fb7c77f387de.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___lecture_6___design_engineering-fb7c77f387de_ledger.csv"
+  }
+}

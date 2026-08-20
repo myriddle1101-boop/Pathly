@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 8,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Statistical Models",
+      "to": "Factor Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Factor models are a specific kind of statistical model, so understanding statistical modeling is necessary first."
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Learning neural networks requires understanding how models are trained using learning algorithms."
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Regression and Classification",
+      "relation_type": "strong_prerequisite",
+      "reason": "Studying regression and classification as machine learning methods requires prior understanding of how learning algorithms fit models from data."
+    },
+    {
+      "from": "Statistical Models",
+      "to": "Regression and Classification",
+      "relation_type": "strong_prerequisite",
+      "reason": "Regression and classification rely on core statistical modeling concepts such as variables, uncertainty, and model fitting."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Learning Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding learning algorithms depends on knowing how model performance is assessed during training and selection."
+    }
+  ]
+}

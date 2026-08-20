@@ -1,0 +1,254 @@
+{
+  "nodes": [
+    {
+      "id": "softmax and probability in neural networks",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and probability theory.",
+      "key_sub_concepts": "[\"Softmax function\", \"Probability distribution\"]",
+      "common_misconceptions": "[\"Softmax outputs are binary\", \"Softmax is only used in classification tasks\"]",
+      "practical_applications": "[\"Multi-class classification\", \"Natural language processing\"]"
+    },
+    {
+      "id": "softmax function applications in machine learning",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and probability theory.",
+      "key_sub_concepts": "[\"Probability distribution\", \"Neural networks\"]",
+      "common_misconceptions": "[\"Softmax outputs are probabilities for all classes\", \"Softmax can be used for regression tasks\"]",
+      "practical_applications": "[\"Multi-class classification problems\", \"Output layer of neural networks\"]"
+    },
+    {
+      "id": "LU activation function in deep learning",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and activation functions.",
+      "key_sub_concepts": "[\"Linear Units\", \"Non-linearity in neural networks\"]",
+      "common_misconceptions": "[\"LU activation is the same as ReLU\", \"LU activation is only applicable in specific architectures\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\"]"
+    },
+    {
+      "id": "engineers' lecture series on machine learning",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and statistics.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\"]",
+      "common_misconceptions": "[\"Machine learning is the same as artificial intelligence.\", \"More data always leads to better models.\"]",
+      "practical_applications": "[\"Predictive analytics in business\", \"Image recognition in technology\"]"
+    },
+    {
+      "id": "machine learning for predictive modeling",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming in Python or R.",
+      "key_sub_concepts": "[\"Supervised learning\", \"Regression analysis\", \"Classification techniques\", \"Model evaluation metrics\"]",
+      "common_misconceptions": "[\"Predictive modeling guarantees accurate predictions\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Sales forecasting\", \"Customer churn prediction\", \"Risk assessment in finance\", \"Healthcare outcome predictions\"]"
+    },
+    {
+      "id": "learning for design in AI applications",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of AI and design principles.",
+      "key_sub_concepts": "[\"User-centered design\", \"Iterative prototyping\", \"Feedback loops\", \"Ethical considerations in AI design\"]",
+      "common_misconceptions": "[\"AI can design without human input\", \"Design is only about aesthetics\", \"All AI applications require complex algorithms\"]",
+      "practical_applications": "[\"Creating user-friendly interfaces\", \"Developing AI-driven design tools\", \"Enhancing user experience in applications\"]"
+    },
+    {
+      "id": "LU activation function variations and their impact",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and activation functions.",
+      "key_sub_concepts": "[\"LU activation function\", \"Variations of LU activation\", \"Impact on model performance\"]",
+      "common_misconceptions": "[\"LU activation is the same as ReLU\", \"All activation functions perform equally well\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\"]"
+    },
+    {
+      "id": "learning design principles in machine learning",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"User-centered design\", \"Iterative design process\", \"Feedback loops\", \"Evaluation metrics\"]",
+      "common_misconceptions": "[\"Learning design is only about aesthetics\", \"Machine learning models do not require user input\"]",
+      "practical_applications": "[\"Designing user-friendly ML interfaces\", \"Creating effective training datasets\", \"Improving model interpretability\"]"
+    },
+    {
+      "id": "LU max function and its computational efficiency",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and matrix operations.",
+      "key_sub_concepts": "[\"LU decomposition\", \"Max function properties\"]",
+      "common_misconceptions": "[\"LU max function is the same as standard max function\", \"LU decomposition is only applicable to square matrices\"]",
+      "practical_applications": "[\"Solving linear systems efficiently\", \"Optimization problems in machine learning\"]"
+    },
+    {
+      "id": "engineers' approach to backpropagation in neural networks",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of calculus, linear algebra, and introductory machine learning concepts.",
+      "key_sub_concepts": "[\"Gradient Descent\", \"Chain Rule\", \"Loss Function\", \"Activation Functions\"]",
+      "common_misconceptions": "[\"Backpropagation is the same as training a neural network\", \"Only the output layer is updated during backpropagation\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game AI\", \"Predictive analytics\"]"
+    },
+    {
+      "id": "machine learning techniques for data analysis",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Data Preprocessing\", \"Model Evaluation\"]",
+      "common_misconceptions": "[\"Machine learning can replace human intuition entirely.\", \"More data always leads to better models.\"]",
+      "practical_applications": "[\"Customer segmentation\", \"Predictive maintenance\", \"Sentiment analysis\", \"Fraud detection\"]"
+    },
+    {
+      "id": "definition and properties of LU decomposition",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra, including matrices and matrix operations.",
+      "key_sub_concepts": "[\"Matrix factorization\", \"Solving linear systems\"]",
+      "common_misconceptions": "[\"LU decomposition can be applied to any matrix\", \"LU decomposition is unique for a given matrix\"]",
+      "practical_applications": "[\"Solving systems of linear equations\", \"Computational efficiency in numerical methods\"]"
+    },
+    {
+      "id": "softmax and its role in classification tasks",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and probability theory.",
+      "key_sub_concepts": "[\"Exponential function\", \"Normalization\", \"Probability distribution\"]",
+      "common_misconceptions": "[\"Softmax outputs are probabilities for binary classification only\", \"Softmax can be used for regression tasks\"]",
+      "practical_applications": "[\"Multi-class classification problems\", \"Neural network output layer for classification\"]"
+    },
+    {
+      "id": "activation functions in neural network architectures",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and calculus.",
+      "key_sub_concepts": "[\"Sigmoid function\", \"ReLU (Rectified Linear Unit)\", \"Tanh function\", \"Softmax function\"]",
+      "common_misconceptions": "[\"Activation functions are only used in the output layer.\", \"All activation functions are equivalent.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game AI\", \"Financial forecasting\"]"
+    },
+    {
+      "id": "designing machine learning systems for engineers",
+      "description": "",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and statistics.",
+      "key_sub_concepts": "[\"Data preprocessing\", \"Model selection\", \"Evaluation metrics\", \"Overfitting and underfitting\"]",
+      "common_misconceptions": "[\"Machine learning requires extensive math knowledge\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Predictive maintenance in engineering\", \"Quality control in manufacturing\", \"Optimization of resource allocation\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "softmax and probability in neural networks",
+      "to": "softmax and its role in classification tasks",
+      "relation": "prerequisite",
+      "reason": "understanding softmax requires knowledge of probability in neural networks"
+    },
+    {
+      "from": "LU activation function in deep learning",
+      "to": "LU activation function variations and their impact",
+      "relation": "prerequisite",
+      "reason": "understanding the LU activation function is necessary to explore its variations"
+    },
+    {
+      "from": "engineers' lecture series on machine learning",
+      "to": "designing machine learning systems for engineers",
+      "relation": "prerequisite",
+      "reason": "lecture series provides foundational knowledge for system design"
+    },
+    {
+      "from": "machine learning for predictive modeling",
+      "to": "machine learning techniques for data analysis",
+      "relation": "prerequisite",
+      "reason": "predictive modeling relies on data analysis techniques",
+      "similarity": 0.771
+    },
+    {
+      "from": "LU activation function variations and their impact",
+      "to": "LU max function and its computational efficiency",
+      "relation": "prerequisite",
+      "reason": "variations of LU activation lead to understanding specific functions like LU max"
+    },
+    {
+      "from": "learning design principles in machine learning",
+      "to": "learning for design in AI applications",
+      "relation": "prerequisite",
+      "reason": "design principles are foundational for applying learning in AI"
+    },
+    {
+      "from": "engineers' approach to backpropagation in neural networks",
+      "to": "activation functions in neural network architectures",
+      "relation": "prerequisite",
+      "reason": "backpropagation requires understanding of activation functions"
+    },
+    {
+      "from": "softmax and its role in classification tasks",
+      "to": "softmax function applications in machine learning",
+      "relation": "prerequisite",
+      "reason": "applications of softmax depend on its role in classification",
+      "similarity": 0.7387
+    },
+    {
+      "from": "designing machine learning systems for engineers",
+      "to": "learning design principles in machine learning",
+      "relation": "similarity",
+      "score": 0.8479
+    },
+    {
+      "from": "designing machine learning systems for engineers",
+      "to": "engineers' lecture series on machine learning",
+      "relation": "similarity",
+      "score": 0.8164
+    },
+    {
+      "from": "designing machine learning systems for engineers",
+      "to": "machine learning for predictive modeling",
+      "relation": "similarity",
+      "score": 0.7206
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "created_at": "2026-08-18T18:41:52.974635+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-06_mlp-01e27d8d0770",
+  "file_name": "06_mlp-01e27d8d0770",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 34,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6923,
+    "f1": 0.8182,
+    "tp": 9,
+    "fp": 0,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.6667,
+    "recall": 0.6667,
+    "f1": 0.6667,
+    "tp": 2,
+    "fp": 1,
+    "fn": 1
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Feedforward Networks",
+      "Activation Functions",
+      "Loss Functions",
+      "Backpropagation",
+      "Neural Network Models",
+      "Computational Graphs",
+      "Model Generalization",
+      "Linear Separability",
+      "Gradient Descent"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Rectified Linear Units",
+        "reason": "The source identifies ReLU as the default recommended activation and discusses its piecewise-linear properties."
+      },
+      {
+        "name": "Hidden Units",
+        "reason": "The source has a dedicated discussion of choosing hidden-unit types in feedforward networks."
+      },
+      {
+        "name": "Chain Rule",
+        "reason": "The source explicitly presents the chain rule as the mathematical basis of back-propagation."
+      },
+      {
+        "name": "XOR Problem",
+        "reason": "The source uses solving XOR as a central example motivating learned nonlinear representations."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Loss Functions",
+        "to": "Gradient Descent",
+        "reason": "The source specifies a model and cost, then minimizes that cost using gradient descent or related methods."
+      },
+      {
+        "from": "Computational Graphs",
+        "to": "Backpropagation",
+        "reason": "The source defines back-propagation as performing Jacobian-gradient products for operations in a computational graph."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Gradient Descent",
+        "to": "Backpropagation",
+        "reason": "Gradient descent uses gradients that back-propagation can compute, but understanding gradient descent is not a necessary conceptual prerequisite for understanding the back-propagation algorithm itself."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Chain Rule",
+        "to": "Backpropagation",
+        "reason": "The source explicitly derives back-propagation from the chain rule and its vector/Jacobian generalization."
+      }
+    ],
+    "overall_note": "The predictions are well supported; the main omitted foundation is the chain rule underlying back-propagation."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-06_mlp-01e27d8d0770.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-06_mlp-01e27d8d0770.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-06_mlp-01e27d8d0770_ledger.csv"
+  }
+}

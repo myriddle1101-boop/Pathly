@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="similarity" type="double" />
+      <attribute id="12" title="score" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Machine Learning" label="Machine Learning">
+        <attvalues>
+          <attvalue for="0" value="The study of algorithms that improve automatically through experience." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Learning Algorithms&quot;, &quot;description&quot;: &quot;Methods used to train models on data.&quot;}, {&quot;name&quot;: &quot;Training Data&quot;, &quot;description&quot;: &quot;Data used to train machine learning models.&quot;}, {&quot;name&quot;: &quot;Training Set&quot;, &quot;description&quot;: &quot;A subset of data used for training.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning can solve any problem&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;A method for training neural networks by minimizing error.&quot;}, {&quot;name&quot;: &quot;Loss Function&quot;, &quot;description&quot;: &quot;A function that measures the difference between predicted and actual outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus." />
+          <attvalue for="6" value="[&quot;Neurons&quot;, &quot;Activation Functions&quot;, &quot;Layers&quot;, &quot;Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Process" label="Training Process">
+        <attvalues>
+          <attvalue for="0" value="The methodology of training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Learning Curves&quot;, &quot;description&quot;: &quot;Graphs that show the model's performance over time.&quot;}, {&quot;name&quot;: &quot;Training Error&quot;, &quot;description&quot;: &quot;The error rate of the model on the training data.&quot;}, {&quot;name&quot;: &quot;Optimization&quot;, &quot;description&quot;: &quot;The process of adjusting model parameters to minimize error.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Data Preparation&quot;, &quot;Model Selection&quot;, &quot;Training Algorithms&quot;, &quot;Overfitting and Underfitting&quot;]" />
+          <attvalue for="7" value="[&quot;Training is the same as testing&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Predictive analytics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Techniques for assessing the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Error Analysis&quot;, &quot;description&quot;: &quot;The process of identifying and understanding errors in model predictions.&quot;}, {&quot;name&quot;: &quot;Accuracy&quot;, &quot;description&quot;: &quot;A measure of how often the model makes correct predictions.&quot;}, {&quot;name&quot;: &quot;Bias-Variance Tradeoff&quot;, &quot;description&quot;: &quot;The balance between model complexity and generalization.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;ROC Curve&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern if the model performs well on training data.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating classification models in healthcare.&quot;, &quot;Assessing predictive models in finance.&quot;, &quot;Benchmarking algorithms in competitions.&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Management" label="Data Management">
+        <attvalues>
+          <attvalue for="0" value="Handling and processing data for machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Training Set vs. Test Set&quot;, &quot;description&quot;: &quot;The distinction between data used for training and data used for evaluation.&quot;}, {&quot;name&quot;: &quot;Data Mismatch&quot;, &quot;description&quot;: &quot;Discrepancies between training data and real-world data.&quot;}, {&quot;name&quot;: &quot;Mislabeled Data&quot;, &quot;description&quot;: &quot;Data points that are incorrectly labeled.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Data Collection&quot;, &quot;Data Cleaning&quot;, &quot;Data Transformation&quot;, &quot;Data Storage&quot;]" />
+          <attvalue for="7" value="[&quot;Data management is only about storage.&quot;, &quot;Cleaning data is not necessary if the dataset is large.&quot;]" />
+          <attvalue for="8" value="[&quot;Preparing datasets for model training&quot;, &quot;Ensuring data quality for analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Performance Metrics" label="Performance Metrics">
+        <attvalues>
+          <attvalue for="0" value="Quantitative measures used to evaluate model performance." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Classifier Precision&quot;, &quot;description&quot;: &quot;The ratio of true positive predictions to the total predicted positives.&quot;}, {&quot;name&quot;: &quot;Error Rate&quot;, &quot;description&quot;: &quot;The proportion of incorrect predictions made by the model.&quot;}, {&quot;name&quot;: &quot;Satisficing Metric&quot;, &quot;description&quot;: &quot;A metric used to determine acceptable performance.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and machine learning concepts." />
+          <attvalue for="6" value="[&quot;Accuracy&quot;, &quot;Precision&quot;, &quot;Recall&quot;, &quot;F1 Score&quot;, &quot;ROC-AUC&quot;]" />
+          <attvalue for="7" value="[&quot;Higher accuracy always means a better model.&quot;, &quot;Precision and recall are the same metric.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating classification models&quot;, &quot;Comparing different algorithms&quot;, &quot;Tuning model parameters&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Pipeline Design" label="Pipeline Design">
+        <attvalues>
+          <attvalue for="0" value="The architecture and components of a machine learning workflow." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Pipeline Components&quot;, &quot;description&quot;: &quot;The individual parts that make up a machine learning pipeline.&quot;}, {&quot;name&quot;: &quot;Choosing Pipeline&quot;, &quot;description&quot;: &quot;The process of selecting the appropriate components for a pipeline.&quot;}, {&quot;name&quot;: &quot;Redesign Pipeline&quot;, &quot;description&quot;: &quot;Modifying the pipeline to improve performance.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and programming skills in Python." />
+          <attvalue for="6" value="[&quot;Data Preprocessing&quot;, &quot;Model Training&quot;, &quot;Model Evaluation&quot;, &quot;Hyperparameter Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;Pipelines are only for large datasets&quot;, &quot;All steps in a pipeline must be automated&quot;]" />
+          <attvalue for="8" value="[&quot;Automating data workflows&quot;, &quot;Ensuring reproducibility in experiments&quot;, &quot;Streamlining model deployment&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Overfitting and Generalization" label="Overfitting and Generalization">
+        <attvalues>
+          <attvalue for="0" value="Concepts related to model performance on unseen data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Overfitting&quot;, &quot;description&quot;: &quot;When a model learns noise in the training data.&quot;}, {&quot;name&quot;: &quot;Variance Learning&quot;, &quot;description&quot;: &quot;The sensitivity of the model to fluctuations in the training data.&quot;}, {&quot;name&quot;: &quot;Reducing Variance&quot;, &quot;description&quot;: &quot;Techniques to improve model generalization.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and statistics." />
+          <attvalue for="6" value="[&quot;Bias-Variance Tradeoff&quot;, &quot;Regularization Techniques&quot;]" />
+          <attvalue for="7" value="[&quot;Overfitting only occurs with complex models&quot;, &quot;A model with high accuracy on training data is always good&quot;]" />
+          <attvalue for="8" value="[&quot;Model selection and evaluation&quot;, &quot;Improving predictive performance on unseen data&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Specialized Applications" label="Specialized Applications">
+        <attvalues>
+          <attvalue for="0" value="Specific use cases of machine learning techniques." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Cat Detector&quot;, &quot;description&quot;: &quot;A model specifically trained to identify cats in images.&quot;}, {&quot;name&quot;: &quot;Speech Recognition&quot;, &quot;description&quot;: &quot;The ability of a machine to identify and process human speech.&quot;}, {&quot;name&quot;: &quot;Image Classification&quot;, &quot;description&quot;: &quot;The task of assigning labels to images based on their content.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning principles and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;, &quot;Natural Language Processing&quot;, &quot;Computer Vision&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning can solve all problems&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition in healthcare&quot;, &quot;Predictive maintenance in manufacturing&quot;, &quot;Fraud detection in finance&quot;, &quot;Personalized recommendations in e-commerce&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Machine Learning" target="Neural Networks">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Neural networks are a machine learning model class, so core machine learning concepts are needed first." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Machine Learning" target="Training Process">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training methodology assumes understanding of what machine learning models are and how they learn from data." />
+          <attvalue for="11" value="0.7509" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Machine Learning" target="Model Evaluation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Evaluating models requires prior understanding of machine learning models and learning objectives." />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Machine Learning" target="Data Management">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Data handling for machine learning depends on understanding how data is used by learning algorithms." />
+        </attvalues>
+      </edge>
+      <edge id="4" source="Machine Learning" target="Specialized Applications">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Specialized applications require foundational knowledge of machine learning methods and concepts." />
+          <attvalue for="11" value="0.756" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="Training Process" target="Model Evaluation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Evaluation is performed on trained models, so the training process must be understood first." />
+        </attvalues>
+      </edge>
+      <edge id="6" source="Training Process" target="Pipeline Design">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Pipeline design includes organizing model training as a core workflow component." />
+        </attvalues>
+      </edge>
+      <edge id="7" source="Model Evaluation" target="Overfitting and Generalization">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding overfitting and generalization requires comparing model performance across training and unseen data." />
+        </attvalues>
+      </edge>
+      <edge id="8" source="Model Evaluation" target="Pipeline Design">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Pipeline design must include evaluation stages to assess trained models." />
+        </attvalues>
+      </edge>
+      <edge id="9" source="Model Evaluation" target="Training Process">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.7926" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="Data Management" target="Training Process">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training requires prepared and properly managed data." />
+        </attvalues>
+      </edge>
+      <edge id="11" source="Data Management" target="Pipeline Design">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Machine learning pipelines depend on data ingestion, preparation, and processing stages." />
+        </attvalues>
+      </edge>
+      <edge id="12" source="Performance Metrics" target="Model Evaluation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Model evaluation relies on quantitative metrics to assess performance." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Data Representation",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding how inputs and outputs are encoded is necessary before learning how neural networks process data."
+    },
+    {
+      "from": "Probabilistic Models",
+      "to": "Likelihood Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Likelihood is a core concept within probabilistic modeling and depends on understanding probabilistic model structure."
+    },
+    {
+      "from": "Likelihood Models",
+      "to": "Training Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Many training algorithms are defined by optimizing likelihood-based objectives, so likelihood concepts are needed first."
+    },
+    {
+      "from": "Algorithm Optimization",
+      "to": "Training Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training algorithms rely on optimization principles and methods for fitting model parameters."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Regression and Classification",
+      "relation_type": "strong_prerequisite",
+      "reason": "Regression and classification require understanding how features and targets are represented before learning the predictive tasks."
+    }
+  ]
+}

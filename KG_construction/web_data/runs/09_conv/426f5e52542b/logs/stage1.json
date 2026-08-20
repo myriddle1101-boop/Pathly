@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\09_conv.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 7.2077,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 7177\n[2] 清洗后词数: 7321\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 38\n[5] 分块数（过滤后）: 36\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=86\nConvolutional Networks Lecture slides for Chapter 9 of Deep Learning Ian Goodfellow 2016-09-12 Convolutional Networks Scale up neural networks to process very large images /  video sequences Sparse connections  Paramet...\n\n[Chunk 2] words=279\nCHAPTER 2. LINEAR ALGEBRA CHAPTER 2. LINEAR ALGEBRA define a vector by writing out its elements in the text inline as a row matrix, define a vector by writing out its elements in the text inline as a row matrix, then usi...\n\n[Chunk 3] words=211\ni,j i,j i,j i,j · · In the context of deep learning, we also use some less conventional notation. In the context of deep learning, we also use some less conventional notation. We allow the addition of matrix and a vector...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

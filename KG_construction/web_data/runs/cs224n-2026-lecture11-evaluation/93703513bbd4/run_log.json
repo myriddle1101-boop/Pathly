@@ -1,0 +1,161 @@
+{
+  "run_id": "cs224n-2026-lecture11-evaluation-93703513bbd4",
+  "events": [
+    {
+      "time": "2026-07-07T19:59:42+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "cs224n-2026-lecture11-evaluation.pdf",
+        "sha256": "93703513bbd445f9545f6ed83044917cd209b315fe29b25e3acb63af1d616844",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4",
+        "resume_from_stage": "stage1",
+        "run_attempts": 1
+      }
+    },
+    {
+      "time": "2026-07-07T19:59:42+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T19:59:49+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 6.7828,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T19:59:49+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:01:01+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 72.4081,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:01:01+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:01:09+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 8.3309,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:01:09+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:01:49+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 39.2516,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:01:49+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T20:02:21+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 32.2374,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:02:21+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4"
+      }
+    },
+    {
+      "time": "2026-07-07T20:02:22+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 1.4109,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T20:02:22+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline completed",
+      "data": {
+        "completed_stages": [
+          "stage1",
+          "stage2a",
+          "stage2b",
+          "stage2c",
+          "stage3",
+          "stage4"
+        ]
+      }
+    }
+  ],
+  "updated_at": "2026-07-07T20:02:22+08:00"
+}

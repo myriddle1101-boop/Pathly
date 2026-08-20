@@ -1,0 +1,663 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 11,
+  "candidate_count": 62,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "speech recognition",
+      "avg_score": 0.6297,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        8
+      ]
+    },
+    {
+      "name": "natural language",
+      "avg_score": 0.4995,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        6
+      ]
+    },
+    {
+      "name": "language understanding",
+      "avg_score": 0.4808,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        6
+      ]
+    },
+    {
+      "name": "embryo computer",
+      "avg_score": 0.6918,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "embryo electronic",
+      "avg_score": 0.6607,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "language models",
+      "avg_score": 0.6568,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "gpt outperform",
+      "avg_score": 0.6507,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "weaver mathematician",
+      "avg_score": 0.6468,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "language model",
+      "avg_score": 0.6448,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "knowledge representation",
+      "avg_score": 0.5939,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "machine learning",
+      "avg_score": 0.5886,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "learning speech",
+      "avg_score": 0.5796,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "knowledge",
+      "avg_score": 0.5741,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "recognition speech",
+      "avg_score": 0.5703,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "nlp knowledge",
+      "avg_score": 0.5673,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "1950 origins",
+      "avg_score": 0.566,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.5651,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "say weaver",
+      "avg_score": 0.5645,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "history computational",
+      "avg_score": 0.5635,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "formalization 1970",
+      "avg_score": 0.5625,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "human language",
+      "avg_score": 0.5563,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "fresno linguistics",
+      "avg_score": 0.555,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "weaver",
+      "avg_score": 0.5525,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "computational linguistics",
+      "avg_score": 0.5502,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.5465,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "neural network",
+      "avg_score": 0.5441,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "linguistics grad",
+      "avg_score": 0.542,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5377,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "improved performance",
+      "avg_score": 0.5376,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "outperform",
+      "avg_score": 0.5284,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "language coded",
+      "avg_score": 0.5205,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "large language",
+      "avg_score": 0.5179,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "consultants using",
+      "avg_score": 0.5147,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "powerful machines",
+      "avg_score": 0.512,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "based language",
+      "avg_score": 0.5119,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "probabilistic language",
+      "avg_score": 0.5108,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "knowledge base",
+      "avg_score": 0.5085,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "representation norvig",
+      "avg_score": 0.5037,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "navy device",
+      "avg_score": 0.5036,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "existence embryo",
+      "avg_score": 0.5012,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "users consultants",
+      "avg_score": 0.5009,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "use gpt",
+      "avg_score": 0.5004,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "artificial intelligence",
+      "avg_score": 0.4983,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "machine translation",
+      "avg_score": 0.4981,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "approachable weaver",
+      "avg_score": 0.4978,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "brains computers",
+      "avg_score": 0.4931,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "linguistics knowing",
+      "avg_score": 0.4916,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "embryo",
+      "avg_score": 0.4897,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "machines",
+      "avg_score": 0.4893,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "mathematician",
+      "avg_score": 0.4843,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "weaver march",
+      "avg_score": 0.4805,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "recognition acoustic",
+      "avg_score": 0.4706,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "recognition stochastic",
+      "avg_score": 0.4629,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "en wmt",
+      "avg_score": 0.457,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "wmt newstest",
+      "avg_score": 0.4448,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "models noisy",
+      "avg_score": 0.4421,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "theory communication",
+      "avg_score": 0.4406,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "wmt",
+      "avg_score": 0.44,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "vocabulary speech",
+      "avg_score": 0.4335,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "based smt",
+      "avg_score": 0.4316,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "nmt 2015",
+      "avg_score": 0.4277,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "neural mt",
+      "avg_score": 0.4237,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Speech Recognition",
+      "description": "The process of converting spoken language into text.",
+      "sub_topics": [
+        {
+          "name": "Acoustic Recognition",
+          "description": "Techniques for identifying speech sounds."
+        },
+        {
+          "name": "Language Processing",
+          "description": "Methods for understanding and interpreting spoken language."
+        }
+      ]
+    },
+    {
+      "name": "Natural Language Processing",
+      "description": "The field focused on the interaction between computers and human language.",
+      "sub_topics": [
+        {
+          "name": "Language Models",
+          "description": "Statistical models that predict the likelihood of sequences of words."
+        },
+        {
+          "name": "Machine Translation",
+          "description": "Automated translation of text from one language to another."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain's network of neurons.",
+      "sub_topics": [
+        {
+          "name": "Deep Learning",
+          "description": "A subset of machine learning using multi-layered neural networks."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning Techniques",
+      "description": "Methods and algorithms used to enable machines to learn from data.",
+      "sub_topics": [
+        {
+          "name": "Regression",
+          "description": "A technique for predicting continuous outcomes."
+        },
+        {
+          "name": "Classification",
+          "description": "A method for categorizing data into predefined classes."
+        }
+      ]
+    },
+    {
+      "name": "Knowledge Representation",
+      "description": "The way information and knowledge are structured for processing.",
+      "sub_topics": [
+        {
+          "name": "Probabilistic Models",
+          "description": "Models that incorporate uncertainty in knowledge representation."
+        },
+        {
+          "name": "Knowledge Bases",
+          "description": "Databases that store complex structured and unstructured information."
+        }
+      ]
+    },
+    {
+      "name": "GPT and Language Models",
+      "description": "Generative Pre-trained Transformers and their applications in language tasks.",
+      "sub_topics": [
+        {
+          "name": "Performance Improvement",
+          "description": "Techniques to enhance the effectiveness of language models."
+        },
+        {
+          "name": "Large Language Models",
+          "description": "Extensive models trained on vast datasets for language understanding."
+        }
+      ]
+    },
+    {
+      "name": "Computational Linguistics",
+      "description": "The study of using computational methods to analyze and model language.",
+      "sub_topics": [
+        {
+          "name": "Linguistic Theory",
+          "description": "Theoretical frameworks for understanding language structure."
+        },
+        {
+          "name": "NLP Applications",
+          "description": "Practical uses of computational linguistics in technology."
+        }
+      ]
+    },
+    {
+      "name": "History of AI",
+      "description": "The evolution and milestones in the field of artificial intelligence.",
+      "sub_topics": [
+        {
+          "name": "Origins of AI",
+          "description": "The foundational concepts and early developments in AI."
+        },
+        {
+          "name": "Key Figures",
+          "description": "Influential individuals who shaped the field of AI."
+        }
+      ]
+    },
+    {
+      "name": "Embryonic Concepts",
+      "description": "Early ideas and theories that laid the groundwork for modern computing.",
+      "sub_topics": [
+        {
+          "name": "Embryo Computer",
+          "description": "Initial concepts of computing machines."
+        },
+        {
+          "name": "Embryo Electronic",
+          "description": "Foundational electronic principles in computing."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 26.553,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

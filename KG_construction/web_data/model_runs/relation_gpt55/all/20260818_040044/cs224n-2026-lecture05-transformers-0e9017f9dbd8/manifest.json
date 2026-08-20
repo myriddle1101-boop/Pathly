@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "cs224n-2026-lecture05-transformers-0e9017f9dbd8",
+  "created_at": "2026-07-07T19:44:22+08:00",
+  "updated_at": "2026-07-07T19:46:57+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "cs224n-2026-lecture05-transformers.pdf",
+    "doc_name": "cs224n-2026-lecture05-transformers",
+    "sha256": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\cs224n-2026-lecture05-transformers.pdf",
+    "pdf_size_bytes": 2370926
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 155.4046
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:44:22+08:00",
+      "ended_at": "2026-07-07T19:44:34+08:00",
+      "duration_seconds": 12.0167,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\cs224n-2026-lecture05-transformers.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 5291\n[2] 清洗后词数: 5325\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 23\n[5] 分块数（过滤后）: 22\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=198\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang Lecture 5: Attention and Transformers Lecture Plan Lecture 5: Attention and Transformers 1. Vanishing gradients (10 mins) 2. Machine translation ...\n\n[Chunk 2] words=271\nEffect of vanishing gradient on RNN-LM  LM task: When she tried to print her tickets, she found that the printer was out of toner. She went to the stationery store to buy more toner. It was very overpriced. After instal...\n\n[Chunk 3] words=201\nHow to fix the vanishing gradient problem?  The main problem is that it’s too difficult for the RNN to learn to preserve information over many timesteps.  In a vanilla RNN, the hidden state is constantly being rewritte...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:44:34+08:00",
+      "ended_at": "2026-07-07T19:45:41+08:00",
+      "duration_seconds": 66.9387,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：22\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/22 ...\n[KeyBERT] chunk 2/22 ...\n[KeyBERT] chunk 3/22 ...\n[KeyBERT] chunk 4/22 ...\n[KeyBERT] chunk 5/22 ...\n[KeyBERT] chunk 6/22 ...\n[KeyBERT] chunk 7/22 ...\n[KeyBERT] chunk 8/22 ...\n[KeyBERT] chunk 9/22 ...\n[KeyBERT] chunk 10/22 ...\n[KeyBERT] chunk 11/22 ...\n[KeyBERT] chunk 12/22 ...\n[KeyBERT] chunk 13/22 ...\n[KeyBERT] chunk 14/22 ...\n[KeyBERT] chunk 15/22 ...\n[KeyBERT] chunk 16/22 ...\n[KeyBERT] chunk 17/22 ...\n[KeyBERT] chunk 18/22 ...\n[KeyBERT] chunk 19/22 ...\n[KeyBERT] chunk 20/22 ...\n[KeyBERT] chunk 21/22 ...\n[KeyBERT] chunk 22/22 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Attention Mechanisms\n02. Transformers\n03. Sequence Processing\n04. Neural Networks\n05. Training Techniques\n06. Dimensionality Reduction\n07. Attention Variants\n08. Language Models\n09. Output Generation\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4768.35it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:45:41+08:00",
+      "ended_at": "2026-07-07T19:45:48+08:00",
+      "duration_seconds": 6.9993,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Neural Networks -> Transformers | Transformers are a type of neural network architecture.\n02. Attention Mechanisms -> Transformers | Transformers rely heavily on attention mechanisms.\n03. Sequence Processing -> Language Models | Language models require techniques for handling sequential data.\n04. Attention Mechanisms -> Attention Variants | Understanding attention mechanisms is necessary to learn about their variants.\n05. Neural Networks -> Attention Mechanisms | Attention mechanisms are often implemented within neural network frameworks.\n06. Training Techniques -> Output Generation | Optimizing models during training is essential for effective output generation.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:45:48+08:00",
+      "ended_at": "2026-07-07T19:46:27+08:00",
+      "duration_seconds": 38.8189,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 1 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Attention Mechanisms <-> Attention Variants | sim=0.8418\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4343.01it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:46:27+08:00",
+      "ended_at": "2026-07-07T19:46:56+08:00",
+      "duration_seconds": 28.8563,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Attention Mechanisms\n[LLM] 2/9 Transformers\n[LLM] 3/9 Sequence Processing\n[LLM] 4/9 Neural Networks\n[LLM] 5/9 Training Techniques\n[LLM] 6/9 Dimensionality Reduction\n[LLM] 7/9 Attention Variants\n[LLM] 8/9 Language Models\n[LLM] 9/9 Output Generation\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:46:56+08:00",
+      "ended_at": "2026-07-07T19:46:57+08:00",
+      "duration_seconds": 1.4074,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: 可选输出存在",
+          "kg_similarity.png: 可选输出缺失"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 6\n[3] Similarity edges: 1\n[4] Graph nodes=9, edges=6\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-07T19:44:22+08:00"
+}

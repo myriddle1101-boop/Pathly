@@ -1,0 +1,26 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 3,
+  "prerequisites": [
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training machine learning models requires understanding core machine learning principles and terminology."
+    },
+    {
+      "from": "Knowledge Base",
+      "to": "Question Answering",
+      "relation_type": "strong_prerequisite",
+      "reason": "Question answering over a knowledge base requires understanding what a knowledge base stores and how it represents information."
+    },
+    {
+      "from": "Retrieval Techniques",
+      "to": "Question Answering",
+      "relation_type": "strong_prerequisite",
+      "reason": "Retrieving answers from a knowledge base depends on understanding methods for retrieving relevant information."
+    }
+  ]
+}

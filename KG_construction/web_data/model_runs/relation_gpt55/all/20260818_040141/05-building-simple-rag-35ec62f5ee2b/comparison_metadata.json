@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b",
+  "run_id": "05-building-simple-rag-35ec62f5ee2b",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:04:01.681974+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "52b38a66c42e04dda5e2606a6d7e73f29e8d49c0fd3f687dc08556af224b3f4d",
+    "stage2a_topics_hybrid.json": "e896b19d93b1b2f897ed9a1f57908bbab142c51f2750f07d8d94b63e1973d21d",
+    "stage2c_similarity_edges.json": "318983316b845a467c12d7e85322f43cc2f70b0ed9f58a1d8da1d7d750605a72",
+    "stage3_topics_with_summary.json": "790f5af846805c28957230f05b024eb8878586b833ac6d102b28984dcdd79865"
+  },
+  "old_relation_count": 6,
+  "new_relation_count": 4,
+  "new_node_count": 9,
+  "new_edge_count": 4,
+  "golden_path_resource": false
+}

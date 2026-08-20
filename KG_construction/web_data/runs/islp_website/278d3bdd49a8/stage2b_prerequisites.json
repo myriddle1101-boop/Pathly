@@ -1,0 +1,58 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 10,
+  "prerequisites": [
+    {
+      "from": "Statistical Learning",
+      "to": "Regression",
+      "reason": "Regression is a statistical method that falls under the framework of statistical learning."
+    },
+    {
+      "from": "Statistical Learning",
+      "to": "Support Vector Machines",
+      "reason": "Support Vector Machines are based on statistical learning principles."
+    },
+    {
+      "from": "Statistical Learning",
+      "to": "Neural Networks",
+      "reason": "Neural Networks are a part of the statistical learning framework."
+    },
+    {
+      "from": "Statistical Learning",
+      "to": "Clustering",
+      "reason": "Clustering techniques are derived from statistical learning methods."
+    },
+    {
+      "from": "Regression",
+      "to": "Regression Trees",
+      "reason": "Regression Trees are a specific application of regression techniques."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Regression",
+      "reason": "Model evaluation is necessary to assess the performance of regression models."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Support Vector Machines",
+      "reason": "Model evaluation is necessary to assess the performance of SVM models."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Neural Networks",
+      "reason": "Model evaluation is necessary to assess the performance of neural network models."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Clustering",
+      "reason": "Model evaluation is necessary to assess the performance of clustering methods."
+    },
+    {
+      "from": "Survival Analysis",
+      "to": "Model Evaluation",
+      "reason": "Model evaluation is necessary to assess the performance of survival analysis models."
+    }
+  ]
+}

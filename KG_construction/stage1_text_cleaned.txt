@@ -1,0 +1,843 @@
+17 March 2021
+Markov Chains
+Spectral Graph Theory
+Reinforcement Learning
+
+A few comments
+I now want to talk a little bit about Markov chains. I will do this
+for two reasons.
+They are genuinely useful for machine learning algorithms on
+graphs.
+The word Markov will come up in the next few lectures when
+we talk about Reinforcement Learning. And I don’t want
+people to be scared of the term.
+
+A few comments
+Markov chains are really good at understanding macroscopic
+behaviour for systems that evolve on graphs.
+In other words, they can be used to understand interactions
+that take place on graphs.
+They also give us a lot of tools that can be used to redesign
+networks predict the effect of disturbances on networks.
+
+A few comments
+Lets start by thinking about a shared infrastructure.
+Road network.
+Public transport.
+Shared bikes and scooters.
+
+A few comments
+How do we study these things?
+Simulation.
+Agent based models (cellular automata).
+Equation based models (differential equations)
+
+A few comments
+Existing models have some defects. For example, in road networks:
+congestion;
+average travel times;
+community detection;
+are all hard to capture using existing models.
+
+Markov chains
+Really interesting way to model macroscopic behaviour is to use
+Markov chains. This has been used in many applications to
+capture macroscopic behaviour.
+molecular dynamics;
+planetary motion;
+flows of ocean currents.
+Such models are built from real data.
+
+17 March 2021
+A Primer on Markov Chains
+
+Background
+A Markov chain is a special type of dynamic system that evolves
+probabilistically.
+The defining characteristic of Markov chains is that they have no
+memory.
+They are really useful in modelling things like the evolution of the
+weather from day to day.
+They are also finding new application is modelling and
+characterising network behaviour. We are interested in this latter
+application of Markov chains.
+
+Background
+The operation of a Markov chain describes a process where a
+system can be in a finite number of states.
+For example, the weather can be ”hot”, ”cold”, ”rainy”, ”icy”, and
+so on.
+The transition from one state to another is probabilistic, rather
+than deterministic. For example, if its ”rainy” today, we can say
+with probability p that it will be rainy tomorrow.
+R
+Tomorrows weather cannot be determined with certainty, but we
+can assign probabilities to the various possible weather conditions
+conditioned on todays weather.
+
+Example
+The weather in a certain city is ”sunny”, ”cloudy” or ”rainy”. If it
+is sunny one day then sun or clouds are equally likely the next day.
+If it is cloudy there is a fifty percent chance of sun, a twenty five
+percent chance of continued clouds, and a twenty five percent
+change of rain.
+If it is raining, it will not be sunny, but continued rain or clouds are
+equally likely.
+Draw the state transition diagram representing this chain.
+
+Finite Markov Chains
+A finite Markov chain is a discrete time process that at any step
+can be in a finite number of states.
+As each step of the chain, the chain may change from one state to
+the other.
+The change from one state to the other is determined
+probabilistically, according to a set of transition probabilities.
+A chain where these probabilities do not change in time is called a
+homogeneous or stationary chain.
+
+Finite Markov Chains
+Formally speaking: a stochastic process {X : n = 0,1,...,k} is
+n
+discrete time with a finite state space {S ,...,S } is a Markov chain
+1 n
+with stationary probabilities if it satisfies the following properties.
+(i) The Markov property
+P(X = S |X = S ,....,X = S ) = P(X = S |X = S ) (1)
+k+1 j k i o l k+1 j k i
+(ii) Stationarity
+P(X = S |X = S )is constant for all k (2)
+k+1 j k i
+
+Finite Markov Chains
+It is convenient to denote the transition probabilities p :
+ij
+p = P(X = S |X = S ) (3)
+ij k+1 j k i
+Thus, for an n-state chain, one may gather together all these
+probabilities in matrix form by defining a transition matrix P as
+P(i,j) = p = P(X = S |X = S ). (4)
+ij k+1 j k i
+The matrix P is clearly non-negative and row stochastic (why?).
+Sometimes we are interested in the n-step transition probabilities
+(n)
+p . This is the probability that the chain goes from state S to S
+ij i j
+in n steps:
+(n)
+p = P(X = S |X = S ) (5)
+ij k+n j k i
+
+Finite Markov chains: Lighter definition
+Definition
+A n-th order Markov chain is a process determined by a set of n
+states {S ,...,S } and a set of transition probabilities p ,
+1 n ij
+i = 1,,.,n, j = 1,...,n. The process can be in only one state at
+any instant of time. If at time k, the process is in state S , then at
+i
+time k +1 it will be in state S with probability p .
+j ij
+
+Background
+Therefore, the evolution of a Markov process is governed by the
+evolution of a vector of probabilities (representing the occurrence
+of a state).
+For the most basic form of Markov chain, the evolution of this
+vector is defined by a linear system.
+X(k +1)T = X(k)TP (6)
+Since X(k) is a vector of probabilities, the matrix P is a
+nonnegative matrix. Ideas from non-negative matrices (such a the
+Frobenius-Perron theorem) play an important role in the study of
+Markov chains. Hint : Revise these properties.
+
+Stochastic matrices and probability vectors
+The transitions associated with a Markov chain are most
+conveniently associated as the elements of a matrix.
+ 
+p p ··· p
+11 12 1 n
+ p 21 p 22 ··· p 2 n 
+P =  .  (7)
+ . 
+ . 
+p p ··· p
+n 1 12 nn
+Since the p’s are probabilities describing transitions out of states,
+then each row of this matrix must sum to one.
+This matrix describes the evolution of a density as the chain
+evolves; at each step of the chain the density describes the most
+likely states that the chain will be in.
+
+Background
+Suppose that we start in state S . Then the probabilistic
+1
+description of this is x(0)T = [1,0,0,...,0]. (Why?)
+After on step of the chain:
+x(1)T = x(0)TP (8)
+and after k steps we have
+x(k)T = x(0)TPk (9)
+where x(k) now describes the probability of finding the chain in a
+particular state give that we start in state x(0).
+
+Analytics
+The evolution of the probability vector can be viewed as a linear
+dynamical system with a nonnegative system matrix.
+Thus, non-negative matrices play a strong role in the study of
+Markov chains.
+We shall be interested in using these matrices to answer questions
+such as:
+(i) the long term statistical distribution of the chain;
+(ii) the average number of steps to go from one state to another;
+and other related questions.
+
+Regular Markov chains
+The simplest transition matrices are associated with regular Markov
+chains (sometimes called irreducible and primitive Markov chains).
+Definition
+A Markov chain is said to be regular if there exists a finite m such
+that Pm > 0 (all entries are positive).
+Note that not all chains are regular, but many important ones are.
+However, the theory is a little more elegant for regular chains.
+The main theorem for regular chains is stated in the next slide.
+
+Regular Markov chains
+Theorem
+Let P be the transition matrix of a regular chain. Then.
+(i) Corresponding to the matrix P, there is a single eigenvalue
+λ = 1. All other eigenvalues are smaller in magnitude than
+this eigenvalue.
+(ii) There is a unique positive vector such that p T = p TP.
+(iii) The limit of Pm as m → ∞ is a rank-1 matrix whose rows are
+equal to p.
+
+Example 1: Weather
+
+17 March 2021
+Ordering states according to
+importance - the Page Rank
+algorithm
+
+Graphs and Markov Chains
+What have graphs got to do with Markov chains? Well, think of
+fleas?
+Figure 1: A flea hopping between positions with different probabilities
+
+Graphs and Markov chains
+Situation is really unbiquitous:
+A person browsing the web.
+Aggregated traffic in a road
+network.
+Virus infecting agents in a
+community.
+Figure 2: A directed graph Many others?
+
+Graphs and Markov chains
+Also really useful for determining:
+(a) The existence of communities.
+(b) The importance of nodes.
+(c) The importance of links.
+Can you think how?
+One of the most important applications of this idea underpins the
+company Google - the Page Rank algorithm. Before discussing this
+- a little revision on Markov chains!
+
+So how does Google rank pages?
+Figure 3: Which pages are more important than others?
+S 3 looks like it might be the most important since it has the
+highest in-degree. But this not need be the case. Why?
+
+The Google model
+Consider the following scenario. Three webpages
+{Bob,Alice,Mary}. Each web page links the others.
+On average someone viewing Bob’s page will visit Alice’s web-page
+next with probability 0.2, and Mary’s web page with probability 0.8.
+On average someone viewing Alice’s web-page will visit Bob’s page
+next with probability 0.8 and Mary with 0.2.
+On average someone viewing Mary’s web-page will visit Bob’s page
+next with probability 0.5 and that of Alice with 0.5.
+
+The Google model
+One can think of a random walker moving from page to page. One
+way to measure the importance of each page is to see how often a
+walker lands on a particular page in the long run.
+
+The Google model
+Another option is to use Math. We can write down the transition
+matrix for this system. Let us start by defining the states
+associated with each web-page. Define the probability of being
+each state using the vector: x T = (x ,x ,x ).
+b a m
+ 
+0 0.2 0.8
+P =  0.8 0 0.2 
+0.5 0.5 0
+
+The Google model
+Suppose a random walker starts on Bob’s web page. That is
+x(0)T = (1,0,0). After one step, the probability that the walker is
+in any of the other pages is given by
+x(1)T = x(0)TP
+= (0,0.2,0.8)
+This means that there is an 80% chance that the walker is on the
+web page of Alice and 20% on the webpage of Mary. After two
+time steps we have:
+x(2)T = x(1)TP
+= x(0)TP 2
+= (0.56,0.4,0.04) (10)
+
+The Google model
+More generally we have
+x(k)T = x(k −1)TP
+= x(0)TPk
+= (0.3846, 0.2564, 0.3590) (11)
+for k large enough. And this is independent of initial condition as
+long as x (0)+x (0)+x (0) = 1. Two questions:
+b a m
+(a) Why is this true?
+(b) What does this mean?
+
+Why is it true?
+We have
+x(k)T = x(k −1)TP
+= x(0)TPk
+= x(0)T(MDM−1)k
+= x(0)TMDk M−1
+= x(0)Trs T
+(12)
+where r and s are vectors. This follows from all the eigenvalues of
+the matrix having a magnitude less than one. Also, s is the
+(Perron) eigenvector associated with the eigenvalue 1.
+
+What does it mean?
+The above argument holds as long as there is only one eigenvalue
+with magnitude equal to one.
+What happens if we have more than one eigenvalue equal to one?
+The dynamical system propagates a probability vector. It says in
+the long run, for large k, we have:
+x(k)T = (0.3846, 0.2564, 0.3590)
+So our random walker will be found 38% of the time on Bob’s
+page; 36% of the time on Mary’s page and 26% of the time on the
+web-page of Alice.
+
+17 March 2021
+Back to fleas hopping around
+networks
+
+Background
+In the last lecture we saw how Google ranks webpages. This has
+been used in many places.
+Road networks.
+Covid-19 contact tracing.
+Bike neworks.
+Economic networks.
+In each case to find the most influential node in the network. We
+also saw how to get a feeling for the number of communities in a
+network.
+
+Background
+Sometimes we are interested in links between and in the
+communities themselves.
+Figure 4: Typical graph visualisation Figure 5: Untangled graph
+Visualising graphs can be very difficult and consequently it is
+important to be able to develop techniques to find critical links, or
+bridges, between communities.
+
+Finding bridges - an idea
+How do we find communities and bridges?
+Figure 6: A bridge between communities
+Suppose we could measure the average time taken by a random
+walker from any one node to another? What would happen if we
+remove a bridge? This average time would increase to infinity?
+
+Finding bridges and communities
+To formalise the idea in the previous slide we need to introduce
+two new notions for Markov chains.
+The mean first passage times.
+The Kemeny constant.
+
+The mean first passage time (MFPT)
+What have graphs got to do with Markov chains? Well, think of
+fleas?
+Lets say we are interested in finding the number of steps it takes
+our flea to hop from state i to j.
+Of course, this makes no sense since this is a random variable and
+depends on the realisation. But we can find the expected value of
+this quantity. Lets call this m .
+ij
+
+The mean first passage time (MFPT)
+Calculating m is not trivial. But we know that it must satisfy the
+ij
+following equation:
+(cid:88)
+m = 1+ p m (13)
+ij jk kj
+k
+This equation just says that the flea must jump somewhere, for
+example to state k, and from there somehow it finds it way to
+eventually i. So the average time is 1 plus the expected time from
+all intermediate states. Since by definition m = 0, the above
+jj
+equation is usually written:
+(cid:88)
+m = 1+ p m (14)
+ij jk kj
+k(cid:54)=j
+
+The mean first passage time (MFPT)
+The equation
+(cid:88)
+m = 1+ p m (15)
+ij jk kj
+k(cid:54)=j
+can be used to define a set of equations that can be solved from
+the m .
+ij
+Note that for each i there is a mean first passage time to every
+other state. These m ’s can be written compactly in matrix form:
+ij
+M where M(i,j) = m .
+ij
+There are many ways to calculate M - we won’t worry about that
+here.
+
+The Kemeny constant
+The MFPT’s are useful in quantifying how well a state is
+connected to the rest of the graph.
+A natural question arises as to how well connected the graph is in
+general.
+Amazingly, it is possible to answer this question because of the
+existence of a number known as the Kemeny constant.
+
+The Kemeny constant
+What is the Kemeny constant? The Kemeny constant is defined as:
+n
+(cid:88)
+K = π m (16)
+i j ij
+j=1
+Amazingly, it turns out that the right hand side of this equation is
+independent of i and we can write:
+n
+(cid:88)
+K = π m (17)
+i j ij
+j=1
+
+The Kemeny constant
+The Kemeny constant, K, can be interpreted as the expected
+duration of the average trip in a network.
+n
+(cid:88)
+K = π m (18)
+j ij
+j=1
+As such it can be viewed as an efficiency indicator of a network.
+For example, imagine two graphs with the same set of nodes, and
+that differ only in one link, or even in the transition probabilities. If
+one of them has a smaller Kemeny constant, it means the average
+trip is shorter, and one structure is more efficient than the other.
+
+The Kemeny constant
+One could teach a whole course on the Kemeny constant. One
+could e even teach a course on the formula that exist for the
+Kemeny constant.
+A nice formula for the Kemeny constant which we shall mention
+here relates the eigenvalues of P to K. More formally, if the
+transition matrix P has eigenvalues 1,λ ,....,λ , then another way
+2 n
+of computing K is:
+n
+(cid:88) 1
+K = (19)
+1−λ
+j
+j=2
+
+17 March 2021
+Example - Covid 19 testing
+
+Example - Covid 19 testing
+Use contact tracing app to record:
+contacts
+probability of infection
+Use this to construct the transition matrix P and from it calculate:
+The eigenvalues λ ,...,λ . Lets also calculate the eigenvectors
+2 n
+as we will need them as well.
+The matrix M.
+the Kemeny constant K.
+
+Example - Covid 19 testing
+Figure 7: Perron Figure 8: Kemeny
+
+Example - Covid 19 testing
+Figure 9: Perron Figure 10: Kemeny
+
+Example - Covid 19 testing
+Figure 11: Perron Figure 12: Kemeny
+
+17 March 2021
+Detecting communities
+
+Identifying communities
+So we now know how to:
+Find important nodes.
+Find important links.
+What about the number of communities and their membership?
+Remarkably, the eigenvalues of P reveal the number of
+communities, and the eigenvector associated with the second
+largest eigenvalue λ (provided it is real), tells us what nodes
+2
+belong to which communities.
+
+Identifying communities
+The rationale behind the clustering properties of the eigenvector
+associated with the eigenvalue of second largest modulus of P is
+now explained through an illustrative example.
+Suppose that we have two irreducible stochastic matrices P ,P of
+1 2
+orders k and n−k, respectively. Assume for simplicity that the
+last column of P and the first column of P are both positive.
+1 2
+(cid:20) (cid:21)
+P 000
+Consider also the matrix A = 1 ; note that A has 1 as an
+000 P
+2
+eigenvalue of multiplicity two.
+
+Example - Covid 19 testing
+Figure 13: Clustering property of second eigenvector
+
+17 March 2021
+More examples
+
+Spectrum of the transition matrix
+Stationary vector : Most congested parts of the network. This is
+the Perron eigenvector.
+πTP = πT
+Mean First Passage Times : Units expended between origin and
+destinations.
+(cid:88)
+m = p + p (m +1)
+ij ij jk kj
+k(cid:54)=j
+All these quantities are easy to compute and have meaning for
+humans.
+
+Spectrum of the transition matrix
+Second eigenvector : This reveals communities in the network.
+Kemeny constant : Indicator of network efficiency. This is
+determined by all the eigenvalues of the graph.
+n
+(cid:88)
+K = m π
+ij j
+j=1
+All these quantities are easy to compute and have meaning for
+humans.
+
+17 March 2021
+Markov chains and road
+networks
+
+Markov chains and road networks
+Figure 14: Useful things for road planners
+
+Transition matrix and graphs
+The first step to pass from a road network to a Markov chain is to
+transform the primal map into a dual one, where the nodes of the
+graph are represented by roads.
+
+Predicting congestion
+π
+SUMO
+0.08
+0.06
+0.04
+0.02
+AB AC BA BC CA CB CD DC DE ED EF EG FE FG GE GF
+Road
+ytisne D
+0.08
+0.06
+0.04
+0.02
+AB AC BA BC CA CB CD DC DE ED EF EG FE FG GE GF
+Road
+ytisne D
+π
+MC
+Figure 15: Comparison between the stationary distribution of cars
+estimated from the Markov chain approach (below) and computed from
+the simulation (above).
+
+Mean First Passage Times
+70
+60
+50
+40
+30
+20
+10
+GF 0
+GEFGFEEGEFEDDEDCCDCBCABCBAACAB
+ABACBABCCACBCDDCDEEDEFEGFEFGGEGF
+)s(
+emi T
+70
+60
+50
+40
+30
+20
+10
+GF 0
+GEFGFEEGEFEDDEDCCDCBCABCBAACAB
+ABACBABCCACBCDDCDEEDEFEGFEFGGEGF
+Figure 16: Measurements
+)s(
+emi T
+Figure 17: From transition matrix
+
+Mean First Passage Times
+GF GF
+GE GE
+FG FG
+FE FE
+EG EG
+EF EF
+ED ED
+DE DE
+DC DC
+CD CD
+CB CB
+CA CA
+BC BC
+BA BA
+AC AC
+ABAB AC BA BC CA CB CD DC DE ED EF EG FE FG GE GF ABAB AC BA BC CA CB CD DC DE ED EF EG FE FG GE GF
+Figure 18: Measurements Figure 19: From matrix
+
+Second eigenvector
+0.4
+0.3
+0.2
+0.1
+0
+−0.1
+−0.2
+−0.3
+−0.4 AB AC BA BC CA CB CD DCRoad DE ED EF EG FE FG GE GF
+rotcevnegie
+dnoces
+eht
+fo
+seirtn E
+Figure 20: The second eigenvector clearly separates the first 6 roads
+belonging to the first cluster A-B-C, the last 6 roads of cluster E-F-G and
+the four roads that connect the two clusters (CD, DC, DE, ED).
+
+Second eigenvector
+
+Kemeny Constant
+40
+38
+36
+34
+32
+30
+28
+26
+24
+22
+20 AB AC BA BC CA CB CD DCRoad DE ED EF EG FE FG GE GF
+)s(
+tnatsnoc
+yneme K
+Figure 21: The Kemeny constant computes the average time required to
+go from one source road to a random destination chosen according to the
+stationary distribution. Surprisingly, this quantity does not depend on the
+starting road, and is a global parameter of the road network.
+
+Large scale example
+Real cars
+Rules of road
+Traffic lights
+Driver behaviour
+Figure 22: Real network
+
+Comparing theory with measurements
+4 x 10−3
+3.5
+3
+2.5
+2
+1.5
+1
+0.5
+0
+0 10 20 30 40 50 60 70 80 90 100
+Road ID
+ytisne D
+Figure 23: Comparison between the actual density of cars as computed in
+SUMO and the entries of the left Perron eigenvector.
+
+Finding Important Roads
+Figure 24: A new example of road network where connectivity is
+preserved if any one of the roads is closed to traffic.
+
+Finding Important Roads
+51
+50
+49
+48
+47
+46
+45
+44 ABAIBABCBICBCDCIDCDEDGEDEFEGFEFGFMGEGFGHHCHIIRAoa Id BIHIJJIJKJPKJKLKPLKLMLNMFMLMNNLNMNOOKONOPPJPKPO
+ytilacitir C
+Figure 25: Values of the Kemeny constant as each road of the original
+road network is closed. In accordance to common sense and visual
+inspection of Figure 28 the most critical roads are IJ, MF, FM, GH and
+JI.
+
+17 March 2021
+Markov chains and bike sharing
+
+A few comments
+How many bikes and where should we put them?
+How should we relocate the bikes?
+Should a new station be built? And where?
+Advertising?
+
+Bike sharing
+
+Bike sharing (Boston data)
+Figure 26: 70000 trips in 2011. Overall, 53 bike stations and 569 bikes
+were effectively used in the period.
+
+Bike sharing
+Figure 27: 70000 trips in 2011. Overall, 53 bike stations and 569 bikes
+were effectively used in the period.
+
+Bike sharing
+Figure 28: 70000 trips in 2011. Overall, 53 bike stations and 569 bikes
+were effectively used in the period.
+
+17 March 2021
+Markov chains and multi-modal
+networks
+
+A few comments
+Understanding multi-modal transport
+Is the network fair
+The effect of disruption to the network
+Advertising?
+
+Multi-modal network
+5 4 27
+2 5 24 23 7 28
+9 10 11 6 3 2 1
+12
+20 19 17 13 14 16
+18 8 15
+Tube line
+26
+Bus line
+22
+Walk line
+21 Tube station
+Bus stop
+Figure 29: Subgraph of London transportation network, consisting of two
+bus lines and two tube lines.
+
+Multimodal network
+Figure 30: Data from TFL
+
+Multimodal network
+Figure 31: Data from the simulation match data from the Markov chain
+model.
+
+Multimodal network
+0.25
+0.2
+0.15
+rotcevnegie
+dnoces
+eht
+fo
+seirtn E -0
+0
+.
+.
+0
+0
+0
+.
+5
+5
+0
+1
+-0.1
+-0.15
+-0.2
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+ID of the Bus/Tube Stop
+Figure 32: The entries of the second (real) eigenvector distinguish tube
+stops (positive red circles) and bus stops (negative blue squares).
+
+Fair access to resources
+It is clear that in any functioning city some critical spots like
+hospitals should be easily accessible for all citizens. That is,
+they should be well-connected to all the neighbourhoods of
+the city, and accessible from any origin point.
+One way to ensure that hospitals are well-connected is to
+balance the average travel times from any point to the
+hospital.
+Here we suggest that MFPTs can be used as an indicator of
+accessibility to some given areas.
+
+Fair access to resources
+(a)
+Hospital
+pot S
+su B
+nigir O
+eht
+fo
+DI
+(b)
+5500
+5000
+4500
+4000
+3500
+3000
+2500
+2000
+1500
+1000
+500
+Hospital
+pot S
+su B
+nigir O
+eht
+fo
+DI
+(c)
+Hospital
+pot S
+su B
+nigir O
+eht
+fo
+DI
+Figure 33: In this example, the MFPTs to the hospital (a) are compared
+to the distances to the hospital (b). We say that the hospital is fairly
+connected if the two vectors have the same (normalised) values. We later
+try to improve the fairness of bus stops 5, 7 and 12 by supporting the bus
+network with two new lines of specific shuttle buses, obtaining a fairer
+result (c).

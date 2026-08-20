@@ -1,0 +1,491 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 7,
+  "candidate_count": 39,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "gradient descent",
+      "avg_score": 0.5217,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "name": "gradient",
+      "avg_score": 0.468,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "name": "saddle points",
+      "avg_score": 0.4604,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "neural nets",
+      "avg_score": 0.6661,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "neural network",
+      "avg_score": 0.6301,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.6285,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "optimization neural",
+      "avg_score": 0.6079,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "optimization slow",
+      "avg_score": 0.5878,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "gradient based",
+      "avg_score": 0.536,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "use gradient",
+      "avg_score": 0.5345,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "point sgd",
+      "avg_score": 0.5319,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "downhill sgd",
+      "avg_score": 0.5312,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "sgd difficult",
+      "avg_score": 0.5239,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "difficult sgd",
+      "avg_score": 0.5196,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "nets saddle",
+      "avg_score": 0.5194,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "does gradient",
+      "avg_score": 0.5132,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "experiments neural",
+      "avg_score": 0.5121,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "conditioning gradient",
+      "avg_score": 0.5103,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "gradient hessian",
+      "avg_score": 0.5096,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "gradient step",
+      "avg_score": 0.5096,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "heads eigenvalue",
+      "avg_score": 0.5094,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "points sgd",
+      "avg_score": 0.5012,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "gradient goodfellow",
+      "avg_score": 0.4997,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "curvature gradient",
+      "avg_score": 0.4995,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "poorly neural",
+      "avg_score": 0.4984,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "neural",
+      "avg_score": 0.4814,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "slow fail",
+      "avg_score": 0.4807,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "sgd eventually",
+      "avg_score": 0.4739,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "local updates",
+      "avg_score": 0.4684,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "convergence happen",
+      "avg_score": 0.4644,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "heads minimum",
+      "avg_score": 0.4545,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "exploiting local",
+      "avg_score": 0.4527,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "poor conditioning",
+      "avg_score": 0.4526,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "gradient noise",
+      "avg_score": 0.4493,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "slow",
+      "avg_score": 0.4461,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "points local",
+      "avg_score": 0.4234,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "sgd stuck",
+      "avg_score": 0.4204,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "eigenvalue flip",
+      "avg_score": 0.4162,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "coin heads",
+      "avg_score": 0.4094,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Neural Networks",
+      "description": "Fundamental structures in machine learning that mimic the human brain.",
+      "sub_topics": [
+        {
+          "name": "Neural Nets",
+          "description": "A specific type of neural network architecture."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neuron."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "A method for training neural networks by minimizing error."
+        }
+      ]
+    },
+    {
+      "name": "Gradient Descent",
+      "description": "An optimization algorithm used to minimize the loss function.",
+      "sub_topics": [
+        {
+          "name": "SGD (Stochastic Gradient Descent)",
+          "description": "A variant of gradient descent that updates parameters using a subset of data."
+        },
+        {
+          "name": "Gradient Step",
+          "description": "The adjustment made to parameters during optimization."
+        },
+        {
+          "name": "Convergence",
+          "description": "The process of reaching a minimum loss value."
+        }
+      ]
+    },
+    {
+      "name": "Optimization Techniques",
+      "description": "Methods used to improve the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Slow Convergence",
+          "description": "A challenge where the optimization process takes a long time to reach a solution."
+        },
+        {
+          "name": "Poor Conditioning",
+          "description": "A situation where small changes in input can lead to large changes in output."
+        },
+        {
+          "name": "Saddle Points",
+          "description": "Points in the loss landscape that are neither minima nor maxima."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Functions that measure the difference between predicted and actual values.",
+      "sub_topics": [
+        {
+          "name": "Regression Loss",
+          "description": "Loss functions used for regression tasks."
+        },
+        {
+          "name": "Classification Loss",
+          "description": "Loss functions used for classification tasks."
+        }
+      ]
+    },
+    {
+      "name": "Training Dynamics",
+      "description": "The processes and challenges involved in training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Local Updates",
+          "description": "Parameter updates that occur based on local data."
+        },
+        {
+          "name": "Stuck in Local Minima",
+          "description": "A situation where the optimization process fails to escape a local minimum."
+        }
+      ]
+    },
+    {
+      "name": "Neural Network Architecture",
+      "description": "The design and structure of neural networks.",
+      "sub_topics": [
+        {
+          "name": "Layer Types",
+          "description": "Different types of layers used in neural networks, such as convolutional and fully connected."
+        },
+        {
+          "name": "Network Depth",
+          "description": "The number of layers in a neural network, affecting its capacity."
+        }
+      ]
+    },
+    {
+      "name": "Gradient Noise",
+      "description": "Variability in gradient estimates that can affect optimization.",
+      "sub_topics": [
+        {
+          "name": "Impact on Training",
+          "description": "How gradient noise can influence convergence and performance."
+        },
+        {
+          "name": "Mitigation Strategies",
+          "description": "Techniques to reduce the effects of gradient noise."
+        }
+      ]
+    },
+    {
+      "name": "Eigenvalues in Optimization",
+      "description": "Mathematical properties that influence the behavior of optimization algorithms.",
+      "sub_topics": [
+        {
+          "name": "Curvature Analysis",
+          "description": "Examining the curvature of the loss surface to understand optimization dynamics."
+        },
+        {
+          "name": "Eigenvalue Flipping",
+          "description": "A phenomenon that can affect convergence in optimization."
+        }
+      ]
+    },
+    {
+      "name": "Experimental Techniques",
+      "description": "Methods for evaluating and improving machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Hyperparameter Tuning",
+          "description": "The process of optimizing model parameters to improve performance."
+        },
+        {
+          "name": "Model Evaluation",
+          "description": "Techniques for assessing the performance of machine learning models."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 19.1576,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

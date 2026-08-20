@@ -1,0 +1,44 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Mathematical Foundations",
+      "to": "Learning Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Learning algorithms rely on core mathematical concepts and operations."
+    },
+    {
+      "from": "Mathematical Foundations",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural networks require mathematical concepts such as linear operations, optimization, and functions."
+    },
+    {
+      "from": "Matrices",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural networks use matrix-based representations and computations for inputs, weights, and layer operations."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Convolutional Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Convolutional networks are specialized neural networks, so core neural network concepts are needed first."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Network Architecture",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding neural networks is needed before studying their layer designs and connection structures."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Learning Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Learning algorithms require data to be structured and formatted before training or prediction."
+    }
+  ]
+}

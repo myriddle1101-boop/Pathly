@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-29">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Deep Learning" label="Deep Learning">
+        <attvalues>
+          <attvalue for="0" value="A subset of machine learning focused on neural networks with many layers." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Artificial Neural Networks&quot;, &quot;description&quot;: &quot;Computational models inspired by the human brain's network of neurons.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Metrics used to measure the difference between predicted and actual outcomes.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, calculus, and programming in Python." />
+          <attvalue for="6" value="[&quot;Neural Networks&quot;, &quot;Backpropagation&quot;, &quot;Convolutional Neural Networks (CNNs)&quot;, &quot;Recurrent Neural Networks (RNNs)&quot;]" />
+          <attvalue for="7" value="[&quot;Deep learning is the same as machine learning.&quot;, &quot;More layers always lead to better performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Speech recognition&quot;, &quot;Game playing (e.g., AlphaGo)&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Probabilistic Models" label="Probabilistic Models">
+        <attvalues>
+          <attvalue for="0" value="Models that incorporate uncertainty and randomness in predictions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Probability Distributions&quot;, &quot;description&quot;: &quot;Functions that describe the likelihood of different outcomes.&quot;}, {&quot;name&quot;: &quot;Conditional Distributions&quot;, &quot;description&quot;: &quot;Distributions that specify the probability of an event given another event.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and probability theory." />
+          <attvalue for="6" value="[&quot;Bayesian Inference&quot;, &quot;Markov Models&quot;]" />
+          <attvalue for="7" value="[&quot;Probabilistic models are only for complex problems&quot;, &quot;They always require large datasets&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Medical Diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Graph Models" label="Graph Models">
+        <attvalues>
+          <attvalue for="0" value="Models that represent relationships and dependencies using graph structures." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Factor Graphs&quot;, &quot;description&quot;: &quot;Graphs that represent the factorization of a probability distribution.&quot;}, {&quot;name&quot;: &quot;Undirected Graphs&quot;, &quot;description&quot;: &quot;Graphs where edges have no direction, representing symmetric relationships.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of graph theory and introductory machine learning concepts." />
+          <attvalue for="6" value="[&quot;Graph representation&quot;, &quot;Graph traversal algorithms&quot;, &quot;Node and edge features&quot;, &quot;Graph neural networks&quot;]" />
+          <attvalue for="7" value="[&quot;Graphs can only represent static relationships&quot;, &quot;Graph models are only for social networks&quot;]" />
+          <attvalue for="8" value="[&quot;Social network analysis&quot;, &quot;Recommendation systems&quot;, &quot;Biological network modeling&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Structured Modeling" label="Structured Modeling">
+        <attvalues>
+          <attvalue for="0" value="Modeling techniques that leverage the structure of data for better predictions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Structured Probabilistic Models&quot;, &quot;description&quot;: &quot;Models that combine structured data with probabilistic reasoning.&quot;}, {&quot;name&quot;: &quot;Model Structure&quot;, &quot;description&quot;: &quot;The arrangement and relationships of variables in a model.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and introductory machine learning concepts." />
+          <attvalue for="6" value="[&quot;Graphical Models&quot;, &quot;Hierarchical Models&quot;]" />
+          <attvalue for="7" value="[&quot;Structured modeling is only for complex data&quot;, &quot;It requires advanced programming skills&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Recommendation Systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Graph Theory" label="Graph Theory">
+        <attvalues>
+          <attvalue for="0" value="The study of graphs and their properties, crucial for understanding complex networks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Directed Graphs&quot;, &quot;description&quot;: &quot;Graphs where edges have a direction, indicating a one-way relationship.&quot;}, {&quot;name&quot;: &quot;Complete Graphs&quot;, &quot;description&quot;: &quot;Graphs in which every pair of vertices is connected by an edge.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of discrete mathematics and familiarity with sets and functions." />
+          <attvalue for="6" value="[&quot;Vertices and edges&quot;, &quot;Graph types (directed, undirected, weighted, unweighted)&quot;, &quot;Graph traversal algorithms (BFS, DFS)&quot;, &quot;Graph connectivity&quot;, &quot;Graph representations (adjacency list, adjacency matrix)&quot;]" />
+          <attvalue for="7" value="[&quot;All graphs are trees&quot;, &quot;Graphs can only represent linear relationships&quot;, &quot;Graph theory is only applicable in computer science&quot;]" />
+          <attvalue for="8" value="[&quot;Social network analysis&quot;, &quot;Routing algorithms in networks&quot;, &quot;Recommendation systems&quot;, &quot;Biological network modeling&quot;, &quot;Urban planning and transportation networks&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Sampling Techniques" label="Sampling Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods for selecting a subset of data from a larger dataset for analysis." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Example Sampling&quot;, &quot;description&quot;: &quot;Selecting representative examples from a dataset.&quot;}, {&quot;name&quot;: &quot;Sampling Tasks&quot;, &quot;description&quot;: &quot;Specific objectives or goals related to data sampling.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and data analysis." />
+          <attvalue for="6" value="[&quot;Random Sampling&quot;, &quot;Stratified Sampling&quot;, &quot;Systematic Sampling&quot;, &quot;Cluster Sampling&quot;]" />
+          <attvalue for="7" value="[&quot;Sampling is always random&quot;, &quot;Larger samples are always better&quot;]" />
+          <attvalue for="8" value="[&quot;Survey research&quot;, &quot;A/B testing&quot;, &quot;Market research&quot;, &quot;Quality control&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Algorithms" label="Training Algorithms">
+        <attvalues>
+          <attvalue for="0" value="Algorithms used to optimize models based on training data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;A method for updating weights in neural networks based on error gradients.&quot;}, {&quot;name&quot;: &quot;Linear Separation&quot;, &quot;description&quot;: &quot;The ability to separate classes in a dataset using a linear boundary.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Batch Learning&quot;, &quot;Online Learning&quot;]" />
+          <attvalue for="7" value="[&quot;All algorithms converge to the same solution&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Financial forecasting&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Techniques for assessing the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Regression Analysis&quot;, &quot;description&quot;: &quot;A statistical method for predicting continuous outcomes.&quot;}, {&quot;name&quot;: &quot;Classification Metrics&quot;, &quot;description&quot;: &quot;Metrics used to evaluate the accuracy of classification models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;ROC Curve&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern if the model performs well on training data.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating classification models in healthcare.&quot;, &quot;Assessing predictive models in finance.&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Graph Representations" label="Graph Representations">
+        <attvalues>
+          <attvalue for="0" value="Different ways to represent data and relationships using graphs." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Graph Probability&quot;, &quot;description&quot;: &quot;The use of graphs to represent probabilistic relationships.&quot;}, {&quot;name&quot;: &quot;Graph Ambiguity&quot;, &quot;description&quot;: &quot;Challenges in interpreting graphs due to multiple possible interpretations.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data structures and algorithms." />
+          <attvalue for="6" value="[&quot;Adjacency Matrix&quot;, &quot;Adjacency List&quot;, &quot;Edge List&quot;, &quot;Graph Traversal&quot;]" />
+          <attvalue for="7" value="[&quot;Graphs can only represent linear relationships.&quot;, &quot;All graphs are undirected.&quot;]" />
+          <attvalue for="8" value="[&quot;Social network analysis&quot;, &quot;Recommendation systems&quot;, &quot;Routing algorithms&quot;, &quot;Biological network modeling&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Graph Models" target="Structured Modeling" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Graph models provide a structured approach to modeling relationships." />
+        </attvalues>
+      </edge>
+      <edge source="Graph Models" target="Graph Representations" id="1">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.8252" />
+        </attvalues>
+      </edge>
+      <edge source="Graph Models" target="Graph Theory" id="2">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7619" />
+        </attvalues>
+      </edge>
+      <edge source="Graph Theory" target="Graph Models" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding graph properties is essential for modeling relationships." />
+        </attvalues>
+      </edge>
+      <edge source="Graph Theory" target="Graph Representations" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Knowledge of graph properties is necessary to represent data using graphs." />
+        </attvalues>
+      </edge>
+      <edge source="Sampling Techniques" target="Model Evaluation" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Effective evaluation often requires understanding sampling methods." />
+        </attvalues>
+      </edge>
+      <edge source="Training Algorithms" target="Model Evaluation" id="6">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Evaluating models is crucial to understanding the effectiveness of training algorithms." />
+        </attvalues>
+      </edge>
+      <edge source="Graph Representations" target="Graph Theory" id="7">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7622" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

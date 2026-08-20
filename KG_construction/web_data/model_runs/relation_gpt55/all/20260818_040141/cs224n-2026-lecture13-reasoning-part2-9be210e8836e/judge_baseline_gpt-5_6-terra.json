@@ -1,0 +1,117 @@
+{
+  "created_at": "2026-08-18T18:55:07.055655+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-cs224n-2026-lecture13-reasoning-part2-9be210e8836e",
+  "file_name": "cs224n-2026-lecture13-reasoning-part2-9be210e8836e",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 13,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 6,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Decoding Techniques",
+      "Positional Embeddings",
+      "Policy Distillation",
+      "Scaling Techniques",
+      "Natural Language Processing",
+      "Training Methods",
+      "Reinforcement Learning",
+      "Model Optimization"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Contextual Learning",
+        "reason": "The source discusses context windows and long-context modeling, but does not present contextual learning as a distinct learning concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Speculative Decoding",
+        "reason": "A major lecture section covers draft-target generation, rejection sampling, and dynamic/universal speculative decoding."
+      },
+      {
+        "name": "On-Policy Distillation",
+        "reason": "The source explicitly contrasts on-policy distillation with standard knowledge distillation and RL."
+      },
+      {
+        "name": "Long-Context Extension",
+        "reason": "The source covers long-context limitations and extension practices, including RoPE scaling and staged training."
+      },
+      {
+        "name": "Test-Time Compute Scaling",
+        "reason": "The source presents inference-time scaling strategies such as best-of-N, revisions, beam search, and verifiers."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Natural Language Processing",
+        "to": "Contextual Learning",
+        "reason": "The target concept is not distinctly supported, and NLP is not established as a direct prerequisite for it."
+      },
+      {
+        "from": "Reinforcement Learning",
+        "to": "Policy Distillation",
+        "reason": "The lecture compares on-policy distillation with RL, but does not establish RL as a necessary prerequisite for understanding distillation."
+      },
+      {
+        "from": "Training Methods",
+        "to": "Model Optimization",
+        "reason": "This is a broad association rather than a specific, directional learning dependency supported by the source."
+      },
+      {
+        "from": "Scaling Techniques",
+        "to": "Model Optimization",
+        "reason": "Scaling is discussed as an approach to performance improvement, not as a prerequisite for model optimization as a concept."
+      },
+      {
+        "from": "Decoding Techniques",
+        "to": "Natural Language Processing",
+        "reason": "Decoding is an NLP-related technique, but using it does not constitute a prerequisite for learning NLP generally."
+      },
+      {
+        "from": "Positional Embeddings",
+        "to": "Natural Language Processing",
+        "reason": "Positional embeddings are a component used in language models, not a prerequisite for the broader field of NLP."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Rejection Sampling",
+        "to": "Speculative Decoding",
+        "reason": "The source explicitly states that speculative sampling is a form of rejection sampling."
+      },
+      {
+        "from": "KL Divergence",
+        "to": "On-Policy Distillation",
+        "reason": "On-policy distillation is explained through reverse KL and contrasted with forward-KL distillation objectives."
+      },
+      {
+        "from": "Rotary Position Embedding",
+        "to": "Long-Context Extension",
+        "reason": "RoPE scaling, position interpolation, NTK scaling, and YaRN are presented as central long-context extension methods."
+      }
+    ],
+    "overall_note": "The predictions capture several broad lecture areas, but omit the central named methods and propose only weak or reversed prerequisite relations."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture13-reasoning-part2-9be210e8836e.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture13-reasoning-part2-9be210e8836e.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture13-reasoning-part2-9be210e8836e_ledger.csv"
+  }
+}

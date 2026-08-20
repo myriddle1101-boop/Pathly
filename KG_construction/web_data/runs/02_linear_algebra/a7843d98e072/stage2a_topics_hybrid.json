@@ -1,0 +1,907 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 52,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "linear algebra",
+      "avg_score": 0.626,
+      "frequency": 16,
+      "chunk_ids": [
+        1,
+        2,
+        6,
+        13,
+        17,
+        20,
+        21,
+        23,
+        25,
+        29,
+        30,
+        36,
+        44,
+        47,
+        49,
+        52
+      ]
+    },
+    {
+      "name": "matrices",
+      "avg_score": 0.6578,
+      "frequency": 12,
+      "chunk_ids": [
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12,
+        16,
+        31,
+        34,
+        36,
+        43
+      ]
+    },
+    {
+      "name": "matrix",
+      "avg_score": 0.6706,
+      "frequency": 9,
+      "chunk_ids": [
+        4,
+        8,
+        9,
+        10,
+        12,
+        16,
+        18,
+        22,
+        31
+      ]
+    },
+    {
+      "name": "algebra",
+      "avg_score": 0.5468,
+      "frequency": 6,
+      "chunk_ids": [
+        1,
+        2,
+        11,
+        20,
+        30,
+        52
+      ]
+    },
+    {
+      "name": "identity matrix",
+      "avg_score": 0.7385,
+      "frequency": 4,
+      "chunk_ids": [
+        17,
+        18,
+        21,
+        22
+      ]
+    },
+    {
+      "name": "matrix inversion",
+      "avg_score": 0.7441,
+      "frequency": 3,
+      "chunk_ids": [
+        23,
+        25,
+        43
+      ]
+    },
+    {
+      "name": "matrix identity",
+      "avg_score": 0.7368,
+      "frequency": 3,
+      "chunk_ids": [
+        17,
+        18,
+        21
+      ]
+    },
+    {
+      "name": "matrix matrix",
+      "avg_score": 0.708,
+      "frequency": 3,
+      "chunk_ids": [
+        18,
+        22,
+        31
+      ]
+    },
+    {
+      "name": "matrix denote",
+      "avg_score": 0.7046,
+      "frequency": 3,
+      "chunk_ids": [
+        17,
+        18,
+        22
+      ]
+    },
+    {
+      "name": "eigenvectors",
+      "avg_score": 0.7006,
+      "frequency": 3,
+      "chunk_ids": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "name": "usually matrices",
+      "avg_score": 0.6766,
+      "frequency": 3,
+      "chunk_ids": [
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "name": "example matrix",
+      "avg_score": 0.6654,
+      "frequency": 3,
+      "chunk_ids": [
+        9,
+        19,
+        42
+      ]
+    },
+    {
+      "name": "matrix defined",
+      "avg_score": 0.6589,
+      "frequency": 3,
+      "chunk_ids": [
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "name": "matrix product",
+      "avg_score": 0.6533,
+      "frequency": 3,
+      "chunk_ids": [
+        16,
+        19,
+        20
+      ]
+    },
+    {
+      "name": "square matrix",
+      "avg_score": 0.6164,
+      "frequency": 3,
+      "chunk_ids": [
+        29,
+        34,
+        51
+      ]
+    },
+    {
+      "name": "equation solution",
+      "avg_score": 0.5808,
+      "frequency": 3,
+      "chunk_ids": [
+        44,
+        47,
+        49
+      ]
+    },
+    {
+      "name": "defined matrix",
+      "avg_score": 0.7466,
+      "frequency": 2,
+      "chunk_ids": [
+        18,
+        22
+      ]
+    },
+    {
+      "name": "matrix inverses",
+      "avg_score": 0.7434,
+      "frequency": 2,
+      "chunk_ids": [
+        23,
+        25
+      ]
+    },
+    {
+      "name": "matrix diagonal",
+      "avg_score": 0.731,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        29
+      ]
+    },
+    {
+      "name": "diagonal matrices",
+      "avg_score": 0.7226,
+      "frequency": 2,
+      "chunk_ids": [
+        29,
+        31
+      ]
+    },
+    {
+      "name": "algebra matrix",
+      "avg_score": 0.7183,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        19
+      ]
+    },
+    {
+      "name": "symmetric matrix",
+      "avg_score": 0.7149,
+      "frequency": 2,
+      "chunk_ids": [
+        31,
+        32
+      ]
+    },
+    {
+      "name": "matrices upper",
+      "avg_score": 0.7134,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "orthogonal matrices",
+      "avg_score": 0.7086,
+      "frequency": 2,
+      "chunk_ids": [
+        33,
+        36
+      ]
+    },
+    {
+      "name": "inverses multiplied",
+      "avg_score": 0.6892,
+      "frequency": 2,
+      "chunk_ids": [
+        23,
+        25
+      ]
+    },
+    {
+      "name": "norm vector",
+      "avg_score": 0.6826,
+      "frequency": 2,
+      "chunk_ids": [
+        27,
+        28
+      ]
+    },
+    {
+      "name": "decompose matrix",
+      "avg_score": 0.6813,
+      "frequency": 2,
+      "chunk_ids": [
+        37,
+        40
+      ]
+    },
+    {
+      "name": "valued matrix",
+      "avg_score": 0.6804,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "matrices convenient",
+      "avg_score": 0.6719,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        19
+      ]
+    },
+    {
+      "name": "inverse multiplied",
+      "avg_score": 0.6556,
+      "frequency": 2,
+      "chunk_ids": [
+        23,
+        25
+      ]
+    },
+    {
+      "name": "eigenvalues",
+      "avg_score": 0.6506,
+      "frequency": 2,
+      "chunk_ids": [
+        41,
+        42
+      ]
+    },
+    {
+      "name": "inversion solution",
+      "avg_score": 0.6482,
+      "frequency": 2,
+      "chunk_ids": [
+        23,
+        25
+      ]
+    },
+    {
+      "name": "matrix eigenvectors",
+      "avg_score": 0.6457,
+      "frequency": 2,
+      "chunk_ids": [
+        40,
+        42
+      ]
+    },
+    {
+      "name": "vector norm",
+      "avg_score": 0.6415,
+      "frequency": 2,
+      "chunk_ids": [
+        26,
+        27
+      ]
+    },
+    {
+      "name": "vectors orthogonal",
+      "avg_score": 0.6393,
+      "frequency": 2,
+      "chunk_ids": [
+        32,
+        33
+      ]
+    },
+    {
+      "name": "euclidean",
+      "avg_score": 0.6226,
+      "frequency": 2,
+      "chunk_ids": [
+        28,
+        47
+      ]
+    },
+    {
+      "name": "solving linear",
+      "avg_score": 0.6186,
+      "frequency": 2,
+      "chunk_ids": [
+        47,
+        49
+      ]
+    },
+    {
+      "name": "euclidean norm",
+      "avg_score": 0.607,
+      "frequency": 2,
+      "chunk_ids": [
+        28,
+        48
+      ]
+    },
+    {
+      "name": "matrix height",
+      "avg_score": 0.6044,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "name": "computationally norm",
+      "avg_score": 0.5998,
+      "frequency": 2,
+      "chunk_ids": [
+        24,
+        28
+      ]
+    },
+    {
+      "name": "algebra notation",
+      "avg_score": 0.5968,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        20
+      ]
+    },
+    {
+      "name": "operator trace",
+      "avg_score": 0.5847,
+      "frequency": 2,
+      "chunk_ids": [
+        48,
+        50
+      ]
+    },
+    {
+      "name": "linear equation",
+      "avg_score": 0.5846,
+      "frequency": 2,
+      "chunk_ids": [
+        47,
+        49
+      ]
+    },
+    {
+      "name": "possible equation",
+      "avg_score": 0.5831,
+      "frequency": 2,
+      "chunk_ids": [
+        44,
+        47
+      ]
+    },
+    {
+      "name": "vector",
+      "avg_score": 0.5821,
+      "frequency": 2,
+      "chunk_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "name": "trace operator",
+      "avg_score": 0.5809,
+      "frequency": 2,
+      "chunk_ids": [
+        48,
+        50
+      ]
+    },
+    {
+      "name": "shape matrix",
+      "avg_score": 0.5664,
+      "frequency": 2,
+      "chunk_ids": [
+        8,
+        15
+      ]
+    },
+    {
+      "name": "scalar vectors",
+      "avg_score": 0.5612,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        6
+      ]
+    },
+    {
+      "name": "algebra example",
+      "avg_score": 0.5578,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        6
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5459,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        14
+      ]
+    },
+    {
+      "name": "matrix vector",
+      "avg_score": 0.5343,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        52
+      ]
+    },
+    {
+      "name": "decomposition svd",
+      "avg_score": 0.7876,
+      "frequency": 1,
+      "chunk_ids": [
+        40
+      ]
+    },
+    {
+      "name": "sv eigenvalue",
+      "avg_score": 0.7817,
+      "frequency": 1,
+      "chunk_ids": [
+        35
+      ]
+    },
+    {
+      "name": "eigenvalue decomposition",
+      "avg_score": 0.7546,
+      "frequency": 1,
+      "chunk_ids": [
+        42
+      ]
+    },
+    {
+      "name": "eigenvectors eigendecomposition",
+      "avg_score": 0.749,
+      "frequency": 1,
+      "chunk_ids": [
+        38
+      ]
+    },
+    {
+      "name": "vector identified",
+      "avg_score": 0.7453,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "matrices identity",
+      "avg_score": 0.7437,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "eigendecomposition svd",
+      "avg_score": 0.7419,
+      "frequency": 1,
+      "chunk_ids": [
+        40
+      ]
+    },
+    {
+      "name": "eigenvalues eigenvectors",
+      "avg_score": 0.7403,
+      "frequency": 1,
+      "chunk_ids": [
+        38
+      ]
+    },
+    {
+      "name": "effect eigenvalues",
+      "avg_score": 0.7402,
+      "frequency": 1,
+      "chunk_ids": [
+        41
+      ]
+    },
+    {
+      "name": "matrices matrix",
+      "avg_score": 0.7388,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "vectors identifying",
+      "avg_score": 0.7381,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "matrix equal",
+      "avg_score": 0.7364,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "likewise eigenvalues",
+      "avg_score": 0.7328,
+      "frequency": 1,
+      "chunk_ids": [
+        39
+      ]
+    },
+    {
+      "name": "right eigenvectors",
+      "avg_score": 0.7303,
+      "frequency": 1,
+      "chunk_ids": [
+        38
+      ]
+    },
+    {
+      "name": "eigenvalues tors",
+      "avg_score": 0.7283,
+      "frequency": 1,
+      "chunk_ids": [
+        38
+      ]
+    },
+    {
+      "name": "composed eigenvectors",
+      "avg_score": 0.7282,
+      "frequency": 1,
+      "chunk_ids": [
+        38
+      ]
+    },
+    {
+      "name": "eigenvectors instead",
+      "avg_score": 0.7213,
+      "frequency": 1,
+      "chunk_ids": [
+        39
+      ]
+    },
+    {
+      "name": "matrix transpose",
+      "avg_score": 0.7197,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "known euclidean",
+      "avg_score": 0.7186,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "define vector",
+      "avg_score": 0.7185,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "corresponding eigenvalue",
+      "avg_score": 0.7173,
+      "frequency": 1,
+      "chunk_ids": [
+        39
+      ]
+    },
+    {
+      "name": "elements matrices",
+      "avg_score": 0.7171,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "diagonal matrix",
+      "avg_score": 0.7168,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "unique eigenvectors",
+      "avg_score": 0.7167,
+      "frequency": 1,
+      "chunk_ids": [
+        39
+      ]
+    },
+    {
+      "name": "using eigenvectors",
+      "avg_score": 0.7149,
+      "frequency": 1,
+      "chunk_ids": [
+        39
+      ]
+    },
+    {
+      "name": "vector elements",
+      "avg_score": 0.7104,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "product matrices",
+      "avg_score": 0.7085,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "vector element",
+      "avg_score": 0.7064,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "eigenvectors matrix",
+      "avg_score": 0.7063,
+      "frequency": 1,
+      "chunk_ids": [
+        37
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Linear Algebra",
+      "description": "The mathematical foundation for many machine learning algorithms.",
+      "sub_topics": [
+        {
+          "name": "Matrices",
+          "description": "Rectangular arrays of numbers essential for data representation."
+        },
+        {
+          "name": "Matrix Operations",
+          "description": "Fundamental operations including addition, multiplication, and inversion."
+        },
+        {
+          "name": "Eigenvalues and Eigenvectors",
+          "description": "Key concepts for understanding transformations and dimensionality reduction."
+        }
+      ]
+    },
+    {
+      "name": "Matrix Inversion",
+      "description": "The process of finding the inverse of a matrix, crucial for solving linear equations.",
+      "sub_topics": [
+        {
+          "name": "Identity Matrix",
+          "description": "A special matrix that acts as a multiplicative identity."
+        },
+        {
+          "name": "Matrix Inverses",
+          "description": "Understanding the conditions under which a matrix can be inverted."
+        }
+      ]
+    },
+    {
+      "name": "Matrix Decomposition",
+      "description": "Techniques for breaking down matrices into simpler components.",
+      "sub_topics": [
+        {
+          "name": "Singular Value Decomposition (SVD)",
+          "description": "A method for decomposing a matrix into its constituent parts."
+        },
+        {
+          "name": "Eigendecomposition",
+          "description": "Decomposing a matrix into its eigenvalues and eigenvectors."
+        }
+      ]
+    },
+    {
+      "name": "Vector Norms",
+      "description": "Measures of vector length that are important in optimization and machine learning.",
+      "sub_topics": [
+        {
+          "name": "Euclidean Norm",
+          "description": "The most common norm, representing the geometric length of a vector."
+        },
+        {
+          "name": "Norm Properties",
+          "description": "Understanding the properties and applications of different norms."
+        }
+      ]
+    },
+    {
+      "name": "Linear Equations",
+      "description": "Equations that represent linear relationships, foundational in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Equation Solutions",
+          "description": "Methods for finding solutions to linear equations."
+        },
+        {
+          "name": "Linear Separability",
+          "description": "The ability to separate classes in a dataset using a linear boundary."
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": [
+        {
+          "name": "Artificial Neural Networks",
+          "description": "Computational models inspired by the human brain."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        }
+      ]
+    },
+    {
+      "name": "Training Algorithms",
+      "description": "Methods used to optimize machine learning models during training.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing error."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Matrix Properties",
+      "description": "Characteristics of matrices that influence their behavior in computations.",
+      "sub_topics": [
+        {
+          "name": "Symmetric Matrices",
+          "description": "Matrices that are equal to their transpose."
+        },
+        {
+          "name": "Diagonal Matrices",
+          "description": "Matrices where non-diagonal elements are zero."
+        }
+      ]
+    },
+    {
+      "name": "Matrix Products",
+      "description": "Operations that combine matrices to produce new matrices.",
+      "sub_topics": [
+        {
+          "name": "Matrix Multiplication",
+          "description": "A fundamental operation for combining matrices."
+        },
+        {
+          "name": "Outer and Inner Products",
+          "description": "Specific types of matrix products with distinct applications."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 33.3908,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

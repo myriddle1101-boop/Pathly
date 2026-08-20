@@ -1,0 +1,15 @@
+{
+  "run_id": "islp_website-278d3bdd49a8",
+  "can_resume": false,
+  "last_failed_stage": null,
+  "next_resume_stage": null,
+  "completed_stages": [
+    "stage1",
+    "stage2a",
+    "stage2b",
+    "stage2c",
+    "stage3",
+    "stage4"
+  ],
+  "updated_at": "2026-07-29T13:10:16+08:00"
+}

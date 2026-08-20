@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Partial Derivatives",
+      "to": "Gradient Descent",
+      "reason": "Gradient Descent relies on understanding how to compute gradients."
+    },
+    {
+      "from": "Matrix Operations",
+      "to": "Eigenvalues and Eigenvectors",
+      "reason": "Eigenvalues and Eigenvectors are derived from matrix operations."
+    },
+    {
+      "from": "Eigenvalues and Eigenvectors",
+      "to": "Optimization Techniques",
+      "reason": "Many optimization techniques utilize concepts from linear algebra, including eigenvalues and eigenvectors."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Training Neural Networks",
+      "reason": "Gradient Descent is a key method used in training neural networks."
+    },
+    {
+      "from": "Training Neural Networks",
+      "to": "Training Process",
+      "reason": "Training Neural Networks is a critical part of the overall Training Process."
+    },
+    {
+      "from": "Regression and Classification",
+      "to": "Training Process",
+      "reason": "Regression and Classification are tasks that are part of the Training Process."
+    }
+  ]
+}

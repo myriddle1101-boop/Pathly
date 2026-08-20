@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Backpropagation",
+      "reason": "Backpropagation is a training algorithm specifically for neural networks."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Backpropagation",
+      "reason": "Backpropagation computes gradients of the loss to reduce prediction error."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Backpropagation",
+      "reason": "Backpropagation supports parameter updates used in gradient descent-based training."
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Backpropagation",
+      "reason": "Backpropagation requires derivatives through activation functions."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Gradient Descent",
+      "reason": "Gradient descent minimizes a loss function."
+    },
+    {
+      "from": "Shape and Parameters",
+      "to": "Backpropagation",
+      "reason": "Backpropagation requires understanding network parameters and compatible tensor shapes."
+    }
+  ]
+}

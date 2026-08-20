@@ -1,0 +1,32 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 4,
+  "prerequisites": [
+    {
+      "from": "Model Evaluation",
+      "to": "Error Analysis",
+      "relation_type": "strong_prerequisite",
+      "reason": "Error analysis depends on first measuring model performance and identifying evaluation failures."
+    },
+    {
+      "from": "Text Processing",
+      "to": "Query Handling",
+      "relation_type": "strong_prerequisite",
+      "reason": "Handling natural-language queries requires basic text parsing, normalization, and manipulation skills."
+    },
+    {
+      "from": "Text Processing",
+      "to": "RAG Systems",
+      "relation_type": "strong_prerequisite",
+      "reason": "RAG systems require processing text documents and queries for chunking, retrieval, and generation."
+    },
+    {
+      "from": "Query Handling",
+      "to": "RAG Systems",
+      "relation_type": "strong_prerequisite",
+      "reason": "RAG systems depend on processing user queries before retrieval and response generation."
+    }
+  ]
+}

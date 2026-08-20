@@ -1,0 +1,161 @@
+{
+  "run_id": "01-simple-qa-readme-77b046bfe0ed",
+  "events": [
+    {
+      "time": "2026-07-22T04:19:27+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "01-simple-qa-README.pdf",
+        "sha256": "77b046bfe0ed2527136ad23871b2934f8e7cbc705e43e045313db8cd6a03b31d",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed",
+        "resume_from_stage": "stage1",
+        "run_attempts": 1
+      }
+    },
+    {
+      "time": "2026-07-22T04:19:27+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-22T04:19:31+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 4.269,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-22T04:19:31+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-22T04:20:16+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 44.7278,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-22T04:20:16+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-22T04:20:23+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 6.6189,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-22T04:20:23+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-22T04:20:53+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 30.7098,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-22T04:20:53+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-22T04:21:19+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 25.9222,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-22T04:21:19+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed"
+      }
+    },
+    {
+      "time": "2026-07-22T04:21:21+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 1.7176,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-22T04:21:21+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline completed",
+      "data": {
+        "completed_stages": [
+          "stage1",
+          "stage2a",
+          "stage2b",
+          "stage2c",
+          "stage3",
+          "stage4"
+        ]
+      }
+    }
+  ],
+  "updated_at": "2026-07-22T04:21:21+08:00"
+}

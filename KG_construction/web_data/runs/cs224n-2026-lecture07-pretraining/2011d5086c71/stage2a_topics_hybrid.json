@@ -1,0 +1,829 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 15,
+  "candidate_count": 77,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "model pretraining",
+      "avg_score": 0.598,
+      "frequency": 3,
+      "chunk_ids": [
+        1,
+        5,
+        15
+      ]
+    },
+    {
+      "name": "pretraining decoders",
+      "avg_score": 0.6824,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "decoders",
+      "avg_score": 0.6373,
+      "frequency": 2,
+      "chunk_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "pretraining teaching",
+      "avg_score": 0.6315,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        15
+      ]
+    },
+    {
+      "name": "subword modeling",
+      "avg_score": 0.6053,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        5
+      ]
+    },
+    {
+      "name": "decoder",
+      "avg_score": 0.6009,
+      "frequency": 2,
+      "chunk_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "pretraining",
+      "avg_score": 0.5973,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        15
+      ]
+    },
+    {
+      "name": "future encoders",
+      "avg_score": 0.5629,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        11
+      ]
+    },
+    {
+      "name": "pretrained decoders",
+      "avg_score": 0.5541,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        13
+      ]
+    },
+    {
+      "name": "architectures neural",
+      "avg_score": 0.5474,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        11
+      ]
+    },
+    {
+      "name": "pretraining types",
+      "avg_score": 0.5038,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        11
+      ]
+    },
+    {
+      "name": "representations transformers",
+      "avg_score": 0.4726,
+      "frequency": 2,
+      "chunk_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "name": "pretraining encoder",
+      "avg_score": 0.7785,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "pretraining decoder",
+      "avg_score": 0.7533,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "pretrain decoders",
+      "avg_score": 0.7435,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "decoders pretraining",
+      "avg_score": 0.7391,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "decoders language",
+      "avg_score": 0.7362,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "language modeling",
+      "avg_score": 0.7226,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "subword models",
+      "avg_score": 0.7015,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "pretraining teach",
+      "avg_score": 0.6967,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "word contextual",
+      "avg_score": 0.6965,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "predicted encoder",
+      "avg_score": 0.695,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "encoder decoders",
+      "avg_score": 0.6804,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "pretraining models",
+      "avg_score": 0.6774,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "use encoder",
+      "avg_score": 0.6742,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "encoder predicted",
+      "avg_score": 0.67,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "algorithm subword",
+      "avg_score": 0.6589,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "pretraining language",
+      "avg_score": 0.6484,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "motivating word",
+      "avg_score": 0.6438,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "subwords byte",
+      "avg_score": 0.6423,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "initialized pretraining",
+      "avg_score": 0.6335,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "pretraining encoders",
+      "avg_score": 0.6329,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "does pretraining",
+      "avg_score": 0.631,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "encoders pretraining",
+      "avg_score": 0.6245,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "think pretraining",
+      "avg_score": 0.621,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "pretraining methods",
+      "avg_score": 0.6192,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "semantics motivated",
+      "avg_score": 0.613,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "encoding algorithm",
+      "avg_score": 0.6045,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "word structure",
+      "avg_score": 0.6,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "motivated word",
+      "avg_score": 0.5993,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "pretrain language",
+      "avg_score": 0.5962,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "contextual",
+      "avg_score": 0.5956,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "meaning context",
+      "avg_score": 0.5953,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "decoders used",
+      "avg_score": 0.5948,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "inputs decoder",
+      "avg_score": 0.5895,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "lecture pretraining",
+      "avg_score": 0.5813,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "pretraining lecture",
+      "avg_score": 0.5791,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "gpt context",
+      "avg_score": 0.5771,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "pretraining pretraining",
+      "avg_score": 0.5769,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "model pretrained",
+      "avg_score": 0.5669,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "language models",
+      "avg_score": 0.5613,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "models pretraining",
+      "avg_score": 0.553,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "decoder finetuning",
+      "avg_score": 0.5498,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.5325,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "pretraining word",
+      "avg_score": 0.5319,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "context learning",
+      "avg_score": 0.5316,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "masked lm",
+      "avg_score": 0.5305,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "context examples",
+      "avg_score": 0.53,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "models decoders",
+      "avg_score": 0.5147,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "neural architecture",
+      "avg_score": 0.5093,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "decoder context",
+      "avg_score": 0.4793,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "words masks",
+      "avg_score": 0.4737,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "transformer model",
+      "avg_score": 0.468,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "time encoder",
+      "avg_score": 0.4603,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "masked words",
+      "avg_score": 0.4588,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "contexts",
+      "avg_score": 0.4574,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "extensions bert",
+      "avg_score": 0.4491,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "transformers details",
+      "avg_score": 0.4439,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "bert variants",
+      "avg_score": 0.4337,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "transformers bert",
+      "avg_score": 0.4156,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "bidirectional encoder",
+      "avg_score": 0.412,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "transformers",
+      "avg_score": 0.4072,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "extensions",
+      "avg_score": 0.3933,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "12 layers",
+      "avg_score": 0.3792,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "variants",
+      "avg_score": 0.3696,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "variants like",
+      "avg_score": 0.3628,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "bert generally",
+      "avg_score": 0.3442,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Pretraining Techniques",
+      "description": "Methods for initializing models before fine-tuning on specific tasks.",
+      "sub_topics": [
+        {
+          "name": "Model Pretraining",
+          "description": "The process of training a model on a large dataset before task-specific training."
+        },
+        {
+          "name": "Pretraining Types",
+          "description": "Different approaches to pretraining models, including supervised and unsupervised methods."
+        },
+        {
+          "name": "Pretraining Methods",
+          "description": "Various strategies and algorithms used in the pretraining phase."
+        }
+      ]
+    },
+    {
+      "name": "Decoders",
+      "description": "Components of models that generate outputs from encoded representations.",
+      "sub_topics": [
+        {
+          "name": "Pretrained Decoders",
+          "description": "Decoders that have been trained on large datasets before fine-tuning."
+        },
+        {
+          "name": "Decoder Context",
+          "description": "The role of context in the functioning of decoders."
+        },
+        {
+          "name": "Decoder Finetuning",
+          "description": "The process of adjusting a decoder's parameters for specific tasks."
+        }
+      ]
+    },
+    {
+      "name": "Encoders",
+      "description": "Components that transform input data into a format suitable for processing.",
+      "sub_topics": [
+        {
+          "name": "Pretraining Encoders",
+          "description": "Encoders that undergo pretraining to learn general representations."
+        },
+        {
+          "name": "Bidirectional Encoder",
+          "description": "Encoders that process input data in both forward and backward directions."
+        },
+        {
+          "name": "Encoder Decoders",
+          "description": "Models that combine both encoding and decoding processes."
+        }
+      ]
+    },
+    {
+      "name": "Language Modeling",
+      "description": "Techniques for predicting the next word in a sequence based on context.",
+      "sub_topics": [
+        {
+          "name": "Masked Language Modeling",
+          "description": "A technique where certain words are masked and predicted based on context."
+        },
+        {
+          "name": "Subword Modeling",
+          "description": "Approaches that break down words into smaller units for better representation."
+        },
+        {
+          "name": "Contextual Language Models",
+          "description": "Models that use context to improve language understanding and generation."
+        }
+      ]
+    },
+    {
+      "name": "Neural Architectures",
+      "description": "Frameworks and structures used to build neural networks.",
+      "sub_topics": [
+        {
+          "name": "Transformers",
+          "description": "A type of neural network architecture that uses self-attention mechanisms."
+        },
+        {
+          "name": "Neural Networks",
+          "description": "Computational models inspired by the human brain's network of neurons."
+        },
+        {
+          "name": "Architectures Neural",
+          "description": "Different designs and configurations of neural networks."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing error."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual outcomes."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neuron in a neural network."
+        }
+      ]
+    },
+    {
+      "name": "Word Representations",
+      "description": "Techniques for representing words in a numerical format for processing.",
+      "sub_topics": [
+        {
+          "name": "Subword Models",
+          "description": "Models that represent words as combinations of subword units."
+        },
+        {
+          "name": "Word Contextualization",
+          "description": "Methods for understanding words based on their surrounding context."
+        },
+        {
+          "name": "Semantic Representations",
+          "description": "Representations that capture the meaning of words in context."
+        }
+      ]
+    },
+    {
+      "name": "Contextual Learning",
+      "description": "Learning approaches that leverage context to improve model performance.",
+      "sub_topics": [
+        {
+          "name": "Context Examples",
+          "description": "Illustrations of how context influences learning and predictions."
+        },
+        {
+          "name": "Meaning Context",
+          "description": "The significance of context in understanding word meanings."
+        },
+        {
+          "name": "Contextual Models",
+          "description": "Models designed to incorporate context into their learning processes."
+        }
+      ]
+    },
+    {
+      "name": "Future Directions",
+      "description": "Emerging trends and potential advancements in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Future Encoders",
+          "description": "Innovative encoder designs that may shape future models."
+        },
+        {
+          "name": "Extensions of BERT",
+          "description": "New variations and improvements on the BERT architecture."
+        },
+        {
+          "name": "Variants of Transformers",
+          "description": "Different adaptations and modifications of the transformer architecture."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 27.2348,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

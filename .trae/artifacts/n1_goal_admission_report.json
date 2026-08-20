@@ -1,0 +1,352 @@
+{
+  "admission_version": "full-experience-admission-v1",
+  "generated_at": "2026-08-15T08:19:10.851664+00:00",
+  "read_only": true,
+  "purpose": "N1 protocol baseline; this report does not create users, plans, or lectures.",
+  "results": [
+    {
+      "goal_id": "xor",
+      "admission_version": "full-experience-admission-v1",
+      "goal": "Explain how neural networks learn to solve XOR.",
+      "status": "planning_only",
+      "eligible_for_full_experience": false,
+      "target_concept": "Gradient Descent",
+      "checks": {
+        "goal_mapping": {
+          "name": "goal_mapping",
+          "passed": true,
+          "reason": "Goal matches the existing verified neural-foundations chain.",
+          "details": {
+            "target_concept": "Gradient Descent",
+            "canonical_path": [
+              "Linear Separability",
+              "XOR",
+              "Neural Networks",
+              "Activation Functions",
+              "Gradient Descent"
+            ],
+            "mapping_method": "verified_golden_registry",
+            "source_registry_version": "source-grounded-golden-s2-v1"
+          }
+        },
+        "kg_path": {
+          "name": "kg_path",
+          "passed": true,
+          "reason": "The existing verified chain has a fixed acyclic prerequisite order.",
+          "details": {
+            "ordered_concepts": [
+              "Linear Separability",
+              "XOR",
+              "Neural Networks",
+              "Activation Functions",
+              "Gradient Descent"
+            ],
+            "acyclic": true,
+            "path_provenance": "verified_golden_registry"
+          }
+        },
+        "resource_coverage": {
+          "name": "resource_coverage",
+          "passed": true,
+          "reason": "Every controlled golden node has a reviewed source manifest; fresh page/chunk resolution is still required at run time.",
+          "details": {
+            "covered_concepts": [
+              "Linear Separability",
+              "XOR",
+              "Neural Networks",
+              "Activation Functions",
+              "Gradient Descent"
+            ],
+            "source_registry_version": "source-grounded-golden-s2-v1"
+          }
+        },
+        "content_generation": {
+          "name": "content_generation",
+          "passed": false,
+          "reason": "No uncached live generation probe has been run for this admission decision.",
+          "details": {
+            "generation_mode": null,
+            "cache_status": "not_checked",
+            "fallback_accepted": false
+          }
+        },
+        "grounding": {
+          "name": "grounding",
+          "passed": false,
+          "reason": "No fresh schema and page/chunk grounding probe has been run for this admission decision.",
+          "details": {
+            "source_refs": [],
+            "cache_status": "not_checked"
+          }
+        }
+      },
+      "failure_reasons": [
+        {
+          "code": "generation_failure",
+          "check": "content_generation",
+          "reason": "No uncached live generation probe has been run for this admission decision."
+        },
+        {
+          "code": "grounding_failure",
+          "check": "grounding",
+          "reason": "No fresh schema and page/chunk grounding probe has been run for this admission decision."
+        }
+      ],
+      "generated_at": "2026-08-15T08:19:10.839583+00:00"
+    },
+    {
+      "goal_id": "word_embeddings",
+      "admission_version": "full-experience-admission-v1",
+      "goal": "Understand how word embeddings represent semantic similarity.",
+      "status": "planning_only",
+      "eligible_for_full_experience": false,
+      "target_concept": "experience:semantic-similarity",
+      "checks": {
+        "goal_mapping": {
+          "name": "goal_mapping",
+          "passed": true,
+          "reason": "Goal matches an approved goal-scoped canonical chain.",
+          "details": {
+            "target_concept": "experience:semantic-similarity",
+            "canonical_path": [
+              "experience:text-representation",
+              "experience:word-embeddings",
+              "experience:cosine-similarity",
+              "experience:semantic-similarity"
+            ],
+            "mapping_method": "goal_chain_catalog",
+            "catalog_version": "full-experience-goal-catalog-v1"
+          }
+        },
+        "kg_path": {
+          "name": "kg_path",
+          "passed": true,
+          "reason": "Approved catalog path is ordered and acyclic.",
+          "details": {
+            "ordered_concepts": [
+              "experience:text-representation",
+              "experience:word-embeddings",
+              "experience:cosine-similarity",
+              "experience:semantic-similarity"
+            ],
+            "acyclic": true,
+            "path_provenance": "goal_chain_catalog"
+          }
+        },
+        "resource_coverage": {
+          "name": "resource_coverage",
+          "passed": true,
+          "reason": "Approved page-level source and scoped teaching-asset bundle are available.",
+          "details": {
+            "source_id": "source:word-embeddings:cs224n-2026-wordvecs",
+            "page_count": 5,
+            "asset_manifest": "word_embeddings-assets-v1"
+          }
+        },
+        "content_generation": {
+          "name": "content_generation",
+          "passed": false,
+          "reason": "No uncached live generation probe has been run for this admission decision.",
+          "details": {
+            "generation_mode": null,
+            "cache_status": "not_checked",
+            "fallback_accepted": false
+          }
+        },
+        "grounding": {
+          "name": "grounding",
+          "passed": false,
+          "reason": "No fresh schema and page/chunk grounding probe has been run for this admission decision.",
+          "details": {
+            "source_refs": [],
+            "cache_status": "not_checked"
+          }
+        }
+      },
+      "failure_reasons": [
+        {
+          "code": "generation_failure",
+          "check": "content_generation",
+          "reason": "No uncached live generation probe has been run for this admission decision."
+        },
+        {
+          "code": "grounding_failure",
+          "check": "grounding",
+          "reason": "No fresh schema and page/chunk grounding probe has been run for this admission decision."
+        }
+      ],
+      "generated_at": "2026-08-15T08:19:10.844567+00:00"
+    },
+    {
+      "goal_id": "self_attention",
+      "admission_version": "full-experience-admission-v1",
+      "goal": "Understand how self-attention enables transformers to model context.",
+      "status": "planning_only",
+      "eligible_for_full_experience": false,
+      "target_concept": "experience:contextual-representations",
+      "checks": {
+        "goal_mapping": {
+          "name": "goal_mapping",
+          "passed": true,
+          "reason": "Goal matches an approved goal-scoped canonical chain.",
+          "details": {
+            "target_concept": "experience:contextual-representations",
+            "canonical_path": [
+              "experience:token-representations",
+              "experience:query-key-value",
+              "experience:self-attention",
+              "experience:contextual-representations"
+            ],
+            "mapping_method": "goal_chain_catalog",
+            "catalog_version": "full-experience-goal-catalog-v1"
+          }
+        },
+        "kg_path": {
+          "name": "kg_path",
+          "passed": true,
+          "reason": "Approved catalog path is ordered and acyclic.",
+          "details": {
+            "ordered_concepts": [
+              "experience:token-representations",
+              "experience:query-key-value",
+              "experience:self-attention",
+              "experience:contextual-representations"
+            ],
+            "acyclic": true,
+            "path_provenance": "goal_chain_catalog"
+          }
+        },
+        "resource_coverage": {
+          "name": "resource_coverage",
+          "passed": true,
+          "reason": "Approved page-level source and scoped teaching-asset bundle are available.",
+          "details": {
+            "source_id": "source:self-attention:cs224n-2026-transformers",
+            "page_count": 4,
+            "asset_manifest": "self_attention-assets-v1"
+          }
+        },
+        "content_generation": {
+          "name": "content_generation",
+          "passed": false,
+          "reason": "No uncached live generation probe has been run for this admission decision.",
+          "details": {
+            "generation_mode": null,
+            "cache_status": "not_checked",
+            "fallback_accepted": false
+          }
+        },
+        "grounding": {
+          "name": "grounding",
+          "passed": false,
+          "reason": "No fresh schema and page/chunk grounding probe has been run for this admission decision.",
+          "details": {
+            "source_refs": [],
+            "cache_status": "not_checked"
+          }
+        }
+      },
+      "failure_reasons": [
+        {
+          "code": "generation_failure",
+          "check": "content_generation",
+          "reason": "No uncached live generation probe has been run for this admission decision."
+        },
+        {
+          "code": "grounding_failure",
+          "check": "grounding",
+          "reason": "No fresh schema and page/chunk grounding probe has been run for this admission decision."
+        }
+      ],
+      "generated_at": "2026-08-15T08:19:10.847588+00:00"
+    },
+    {
+      "goal_id": "rag",
+      "admission_version": "full-experience-admission-v1",
+      "goal": "Understand how retrieval-augmented generation uses retrieved evidence to answer a query.",
+      "status": "planning_only",
+      "eligible_for_full_experience": false,
+      "target_concept": "experience:retrieval-augmented-generation",
+      "checks": {
+        "goal_mapping": {
+          "name": "goal_mapping",
+          "passed": true,
+          "reason": "Goal matches an approved goal-scoped canonical chain.",
+          "details": {
+            "target_concept": "experience:retrieval-augmented-generation",
+            "canonical_path": [
+              "experience:document-collection",
+              "experience:retrieval",
+              "experience:retrieved-evidence",
+              "experience:retrieval-augmented-generation"
+            ],
+            "mapping_method": "goal_chain_catalog",
+            "catalog_version": "full-experience-goal-catalog-v1"
+          }
+        },
+        "kg_path": {
+          "name": "kg_path",
+          "passed": true,
+          "reason": "Approved catalog path is ordered and acyclic.",
+          "details": {
+            "ordered_concepts": [
+              "experience:document-collection",
+              "experience:retrieval",
+              "experience:retrieved-evidence",
+              "experience:retrieval-augmented-generation"
+            ],
+            "acyclic": true,
+            "path_provenance": "goal_chain_catalog"
+          }
+        },
+        "resource_coverage": {
+          "name": "resource_coverage",
+          "passed": true,
+          "reason": "Approved page-level source and scoped teaching-asset bundle are available.",
+          "details": {
+            "source_id": "source:rag:cs224n-2026-rag-agents",
+            "page_count": 4,
+            "asset_manifest": "rag-assets-v1"
+          }
+        },
+        "content_generation": {
+          "name": "content_generation",
+          "passed": false,
+          "reason": "No uncached live generation probe has been run for this admission decision.",
+          "details": {
+            "generation_mode": null,
+            "cache_status": "not_checked",
+            "fallback_accepted": false
+          }
+        },
+        "grounding": {
+          "name": "grounding",
+          "passed": false,
+          "reason": "No fresh schema and page/chunk grounding probe has been run for this admission decision.",
+          "details": {
+            "source_refs": [],
+            "cache_status": "not_checked"
+          }
+        }
+      },
+      "failure_reasons": [
+        {
+          "code": "generation_failure",
+          "check": "content_generation",
+          "reason": "No uncached live generation probe has been run for this admission decision."
+        },
+        {
+          "code": "grounding_failure",
+          "check": "grounding",
+          "reason": "No fresh schema and page/chunk grounding probe has been run for this admission decision."
+        }
+      ],
+      "generated_at": "2026-08-15T08:19:10.851664+00:00"
+    }
+  ],
+  "summary": {
+    "blocked": 0,
+    "eligible_for_full_experience": 0,
+    "planning_only": 4
+  }
+}

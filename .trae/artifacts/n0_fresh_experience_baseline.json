@@ -1,0 +1,127 @@
+{
+  "baseline_version": "fresh-experience-n0-v1",
+  "generated_at": "2026-08-15T07:50:37.142936+00:00",
+  "read_only": true,
+  "scope": {
+    "existing_benchmark_preserved": true,
+    "fresh_user_created": false,
+    "plan_created": false,
+    "content_cache_created": false
+  },
+  "existing_verified_path": {
+    "concepts": [
+      "Linear Separability",
+      "XOR",
+      "Neural Networks",
+      "Activation Functions",
+      "Gradient Descent"
+    ],
+    "version": "source-grounded-golden-s2-v1",
+    "scope": "neural-foundations only"
+  },
+  "fresh_user_baseline": {
+    "anonymous_sessions_exist": true,
+    "first_time_onboarding_exists": true,
+    "onboarding_generates_profile": true,
+    "demo_profiles_exist": [
+      "Foundation Learner",
+      "Advanced Learner"
+    ],
+    "gap": "No explicit product entry yet guarantees a new empty user and prevents demo fixture reuse."
+  },
+  "current_version_matrix": [
+    {
+      "current_id": "v1",
+      "current_name": "Study Blocks View v1",
+      "contract": "daily-content-v2",
+      "generator": "content-agent-v7",
+      "profile": true,
+      "kg_or_retrieval_context": true,
+      "source_grounding": "bounded retrieved evidence when available; not a page-level source contract",
+      "teaching_assets": false,
+      "model_dependency": "live model with existing fallback path",
+      "is_controlled_ablation": false
+    },
+    {
+      "current_id": "v2",
+      "current_name": "Annotated Source View v2",
+      "contract": "annotated-session-v1",
+      "generator": "content-agent-v2-source-first-a8-related-page-sequence",
+      "profile": true,
+      "kg_or_retrieval_context": true,
+      "source_grounding": "source-first annotated readings and citations",
+      "teaching_assets": false,
+      "model_dependency": "session generator",
+      "is_controlled_ablation": false
+    },
+    {
+      "current_id": "v3",
+      "current_name": "Full Lecture View v3",
+      "contract": "full-lecture-v3",
+      "generator": "deterministic transformation of the v2 annotated session",
+      "profile": "inherits upstream session rather than being an isolated treatment",
+      "kg_or_retrieval_context": "inherits upstream session",
+      "source_grounding": "preserves v2 citations",
+      "teaching_assets": false,
+      "model_dependency": "no direct model dependency in the v3 generator",
+      "is_controlled_ablation": false
+    },
+    {
+      "current_id": "v4",
+      "current_name": "Source-Grounded Lecture View v4",
+      "contract": "source-grounded-lecture-v4",
+      "generator": "source-grounded-v4-live-assets-v3",
+      "profile": true,
+      "kg_or_retrieval_context": true,
+      "source_grounding": "page-level verified/public source links",
+      "teaching_assets": true,
+      "model_dependency": "live model with approved asset-backed completion/fallback",
+      "is_controlled_ablation": false
+    }
+  ],
+  "goal_probes": [
+    {
+      "id": "xor",
+      "goal": "Explain how neural networks learn to solve XOR.",
+      "expected_domain": "neural_foundations",
+      "baseline_status": "candidate_for_revalidation",
+      "certified_canonical_path": [
+        "Linear Separability",
+        "XOR",
+        "Neural Networks",
+        "Activation Functions",
+        "Gradient Descent"
+      ],
+      "certified_path_version": "source-grounded-golden-s2-v1",
+      "reason": "Matches the existing neural-foundations verified path; N1 must still run the new admission checks."
+    },
+    {
+      "id": "word_embeddings",
+      "goal": "Understand how word embeddings represent semantic similarity.",
+      "expected_domain": "representation_learning",
+      "baseline_status": "not_certified_for_full_experience",
+      "certified_canonical_path": [],
+      "certified_path_version": null,
+      "reason": "No current verified full-experience path is registered for this goal; do not reuse the XOR chain or fallback as evidence of success."
+    },
+    {
+      "id": "self_attention",
+      "goal": "Understand how self-attention enables transformers to model context.",
+      "expected_domain": "transformers",
+      "baseline_status": "not_certified_for_full_experience",
+      "certified_canonical_path": [],
+      "certified_path_version": null,
+      "reason": "No current verified full-experience path is registered for this goal; do not reuse the XOR chain or fallback as evidence of success."
+    },
+    {
+      "id": "rag",
+      "goal": "Understand how retrieval-augmented generation uses retrieved evidence to answer a query.",
+      "expected_domain": "retrieval_augmented_generation",
+      "baseline_status": "not_certified_for_full_experience",
+      "certified_canonical_path": [],
+      "certified_path_version": null,
+      "reason": "No current verified full-experience path is registered for this goal; do not reuse the XOR chain or fallback as evidence of success."
+    }
+  ],
+  "required_next_step": "N1 admission validation; baseline statuses are not eligibility decisions."
+}

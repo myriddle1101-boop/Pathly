@@ -1,0 +1,693 @@
+Natural Language Processing
+with Deep Learning
+CS 224 N/Ling 284
+Diyi Yang
+Lecture 9: Efficient Adaptation
+
+Overview
+• Introducing DPO (15 mins)
+• Human preferences data (5 mins)
+1. Prompting (15 mins)
+2. Introduction to PEFT (5 min)
+3. Pruning / subnetwork (10 mins)
+4. Lo RA (15 mins)
+5. Prompt-tuning (5 mins)
+6. Adapters (10 mins)
+7. Other adaptation methods (5 mins)
+Project update; assignment 3 due this Thur; stop by office hours!
+
+RL (PPO) can be quite complex!!!
+• RL optimization can be
+computationally
+expensive and tricky
+• Fitting a value function
+• Online sampling is slow
+• Performance can be Secrets of RLHF / PPO workflow [Zheng et al., 2023]
+sensitive to
+hyperparameters
+[Shao et al., 2024]
+
+Removing the ‘RL’ from RLHF --- DPO
+Recall we want to maximize the following objective in RLHF
+𝑅𝐿
+𝑝 𝑦ො|𝑥
+𝜃
+𝔼 [𝑅𝑀 (𝑥, 𝑦ො) − 𝛽 log ]
+𝑅𝐿 𝑦ො 𝑥 𝜙
+𝑦ො∼𝑝 𝑝𝑃𝑇 𝑦ො|𝑥
+𝜃
+There is a closed form solution to this:
+1 1
+∗ 𝑃𝑇
+𝑝 𝑦ො 𝑥 = 𝑝 𝑦ො|𝑥 exp( 𝑅𝑀 𝑥, 𝑦ො )
+𝑍(𝑥) 𝛽
+• Rearrange this via a log transformation
+∗
+𝑝 𝑦ො|𝑥
+∗ 𝑃𝑇
+𝑅𝑀 𝑥, 𝑦ො = 𝛽 (log 𝑝 𝑦ො 𝑥 − log 𝑝 𝑦ො|𝑥 ) + 𝛽 log 𝑍 𝑥 = 𝛽 log + 𝛽 log 𝑍(𝑥)
+𝑝𝑃𝑇 𝑦ො|𝑥
+• This holds true for any arbitrary LMs, thus
+𝑅𝐿
+𝑝 𝑦ො|𝑥
+𝜃
+𝑅𝑀 𝑥, 𝑦ො = 𝛽 log + 𝛽 log 𝑍(𝑥)
+𝜃
+𝑝𝑃𝑇 𝑦ො|𝑥
+
+Putting it together for DPO
+𝑅𝐿
+𝑝 𝑦ො|𝑥
+𝜃
+• Derived reward model: 𝑅𝑀 𝑥, 𝑦ො = 𝛽 log + 𝛽 log 𝑍(𝑥)
+𝜃
+𝑝𝑃𝑇 𝑦ො|𝑥
+Log Z term
+• Final DPO loss via the Bradley-Terry model of human preferences:
+cancels as
+the loss only
+measures
+𝐽 𝜃 = −𝔼 log 𝜎(𝑅𝑀 𝑥, 𝑦 − 𝑅𝑀 (𝑥, 𝑦 ))
+differences
+𝐷𝑃𝑂 𝑥,𝑦 ,𝑦 ~𝐷 𝜃 𝑤 𝜃 𝑙
+𝑤 𝑙
+in rewards
+𝑅𝐿 𝑅𝐿
+𝑝 𝑦 |𝑥 𝑝 𝑦 |𝑥
+= −𝔼 log 𝜎(𝛽 log 𝜃 𝑤 − 𝛽 log 𝜃 𝑙 )
+𝑥,𝑦 ,𝑦 ~𝐷
+𝑤 𝑙 𝑝 𝑃𝑇 𝑦 |𝑥 𝑝 𝑃𝑇 𝑦 |𝑥
+𝑤 𝑙
+Reward for
+Reward for
+winning sample
+losing sample
+[Rafailov+ 2023]
+
+DPO outperforms prior methods
+• You can replace the complex RL part with a
+very simple weighted MLE objective
+• Other variants (KTO, IPO) now emerging too
+• TL;DR summarization win rates vs. human-
+written summaries (GPT-4 as a judge)
+
+Open source RLHF is now mostly (not RL)
+• Open source LLMs now almost all just use DPO (and it works well!)
+
+Improving the “RL” from RLHF --- GRPO
+Shao, et al., "Deepseekmath: Pushing the limits of mathematical reasoning in open language models." ar Xiv:2402.03300 (2024).
+
+Where does the RLHF data come from?
+• RLHF labels are often obtained from overseas, low-wage workers
+
+Where does the label come from?
+‘Base’ language models
+[Santurkar+ 2023, Opinion QA]
+• We also need to be quite careful about how annotator biases might creep into LMs
+
+Preference tuning might produce unintended impact
+User: Where are you from?
+AI Assistant: I am from {country}
+Starling 7 B Reward Model
+[Ryan et al., 2024]
+12
+
+What’s next for RLHF?
+• RLHF is still a very underexplored and fast-moving area!
+• RLHF gets you further than instruction finetuning, but is (still!) data expensive.
+• Recent work aims to alleviate such data requirements:
+• RL from AI feedback [Bai et al., 2022]
+• Finetuning LMs on their own outputs
+[Huang et al., 2022; Zelikman et al., 2022]
+• However, there are still many limitations of large LMs (size, hallucination) that may
+not be solvable with RLHF!
+13
+
+Emergent abilities of large language models: GPT (2018)
+Decoder
+Let’s revisit the Generative Pretrained Transformer (GPT)
+models from Open AI as an example:
+GPT (117 M parameters; Radford et al., 2018)
+• Transformer decoder with 12 layers.
+• Trained on Books Corpus: over 7000 unique books (4.6 GB text).
+Showed that language modeling at scale can be an effective pretraining technique for
+downstream tasks like natural language inference.
+entailment
+[START] The man is in the doorway [DELIM] The person is near the door [EXTRACT]
+14
+
+Emergent abilities of large language models: GPT-2 (2019)
+Let’s revisit the Generative Pretrained Transformer (GPT)
+models from Open AI as an example:
+GPT-2 (1.5 B parameters; Radford et al., 2019)
+• Same architecture as GPT, just bigger (117 M -> 1.5 B)
+• But trained on much more data: 4 GB -> 40 GB of internet text data (Web Text)
+• Scrape links posted on Reddit w/ at least 3 upvotes (rough proxy of human quality)
+117 M 1.5 B
+GPT GPT-2
+(2018) (2019)
+15
+
+Emergent zero-shot learning
+One key emergent ability in GPT-2 [Radford et al., 2019] is zero-shot learning: the ability to do
+many tasks with no examples, and no gradient updates, by simply:
+• Specifying the right sequence prediction problem (e.g. question answering):
+Passage: Tom Brady... Q: Where was Tom Brady born? A: ...
+• Comparing probabilities of sequences (e.g. Winograd Schema Challenge [Levesque, 2011]):
+The cat couldn’t fit into the hat because it was too big.
+Does it = the cat or the hat?
+≡ Is P(...because the cat was too big) >=
+P(...because the hat was too big)?
+16
+
+Emergent zero-shot learning
+GPT-2 beats So TA on language modeling benchmarks with no task-specific fine-tuning
+You can get interesting zero-shot behavior if you’re creative enough with how you specify
+your task!
+Summarization on CNN/Daily Mail dataset [See et al., 2017]:
+SAN FRANCISCO, ROUGE
+California (CNN) --
+A magnitude 4.2
+earthquake shook 2018 So TA
+the San Francisco
+Supervised (287 K)
+...
+overturn unstable
+Select from article
+o bject s . TL;DR:
+“Too Long, Didn’t Read”
+“Prompting”?
+17
+
+Emergent abilities of large language models: GPT-3 (2020)
+GPT-3 (175 B parameters; Brown et al., 2020)
+• Another increase in size (1.5 B -> 175 B)
+• and data (40 GB -> over 600 GB)
+175 B
+117 M 1.5 B
+GPT GPT-2 GPT-3
+(2018) (2019) (2020)
+18
+
+Emergent few-shot learning
+[Brown et al., 2020]
+• Specify a task by simply prepending examples of the task before your example
+• Also called in-context learning, to stress that no gradient updates are performed when
+learning a new task
+(there is a separate literature on few-shot learning with gradient updates)
+19
+
+Emergent few-shot learning
+Zero-shot
+20
+
+Emergent few-shot learning
+One-shot
+21
+
+Emergent few-shot learning
+Few-shot
+22
+
+Few-shot learning is an emergent property of model scale
+Synthetic “word unscrambling” tasks, 100-shot
+Cycle letters:
+pleap ->
+apple
+Random insertion:
+a.p!p/l!e ->
+apple
+Reversed words:
+elppa ->
+apple
+[Brown et al., 2020]
+23
+
+1. Prompting
+Traditional fine-tuning
+Zero/few-shot prompting
+24
+
+Limits of prompting for harder tasks?
+Some tasks seem too hard for even large LMs to learn through prompting alone.
+Especially tasks involving richer, multi-step reasoning.
+(Humans struggle at these tasks too!)
+19583 + 29534 = 49117
+98394 + 49384 = 147778
+29382 + 12347 = 41729
+93847 + 39299 = ?
+Solution: change the prompt!
+25
+
+Chain-of-thought prompting
+[Wei et al., 2022; also see Nye et al., 2021]
+26
+
+Chain-of-thought prompting is an emergent property of model scale
+Middle school
+math word
+problems
+[Wei et al., 2022; also see Nye et al., 2021]
+27
+
+Chain-of-thought prompting
+Do we even need
+examples of reasoning?
+Can we just ask the model
+to reason through things?
+[Wei et al., 2022; also see Nye et al., 2021]
+28
+
+Zero-shot chain-of-thought prompting
+Q: A juggler can juggle 16 balls. Half of
+the balls are golf balls, and half of the golf
+balls are blue. How many blue golf balls
+are there?
+A: Let’s think step by step. There are 16
+balls in total. Half of the balls are golf
+balls. That means there are 8 golf balls.
+Half of the golf balls are blue. That means
+there are 4 blue golf balls.
+[Kojima et al., 2022]
+29
+
+Zero-shot chain-of-thought prompting
+Greatly outperforms
+zero-shot
+Manual Co T
+still better
+[Kojima et al., 2022]
+30
+
+Zero-shot chain-of-thought prompting
+LM-Designed
+[Zhou et al., 2022; Kojima et al., 2022]
+31
+
+Sensitivity and inconsistency in prompting
+Random demonstrations in classification
+Inconsistent output
+and multiple-choices (Moore at al., 2024)
+(Min et al., 2022)
+
+The new dark art of “prompt engineering”?
+Asking a model for reasoning
+“Jailbreaking” LMs
+https://twitter.com/goodside/status/1569128808308957185/photo/1
+On Second Thought, Let's Not Think Step by Step! Bias and
+Use Google code header to generate more “professional” code?
+Toxicity in Zero-Shot Reasoning (Shaikh et al., 2023)
+
+The new dark art of “prompt engineering”?
+34
+
+Downside of prompt–based learning
+Inefficiency: The prompt needs to be processed every time the model makes a
+1.
+prediction.
+Poor performance: Prompting generally performs worse than fine-tuning [Brown et
+2.
+al., 2020].
+Sensitivity to the wording of the prompt [Webson & Pavlick, 2022], order of examples
+3.
+[Zhao et al., 2021; Lu et al., 2022], etc.
+Lack of clarity regarding what the model learns from the prompt. Even random labels
+4.
+work [Zhang et al., 2022; Min et al., 2022]!
+35
+
+2. From fine-tuning to parameter efficient fine-tuning (PEFT)
+Why fine-tuning only some
+parameters?
+Fine-tuning all parameters is
+1.
+impractical with large models
+State-of-the-art models are
+2.
+massively over-
+parameterized
+→ Parameter-efficient fine-
+Full Fine-tuning Parameter-efficient Fine-tuning
+tuning matches performance
+Update all model Update a small subset of model
+of full fine-tuning
+parameters parameters
+36
+
+Why do we need efficient adaptation?
+● Emphasis on accuracy over efficiency in
+current AI paradigm
+● Hidden environmental costs of training
+(and fine tuning) LLMs
+● As costs of training go up, AI
+development becomes concentrated in
+well-funded organizations, especially in
+AI papers tend to target accuracy rather than efficiency.
+industry
+The figure shows the proportion of papers that target
+accuracy, efficiency, both or other from a sample of 60
+papers from top AI conferences (Green AI)
+Slides credit to Benji Xie and Regina Wang
+
+Even the impact of a class like ours
+“At Stanford, for example, more than 200 students in a class on reinforcement learning
+were asked to implement common algorithms for a homework assignment. Though two
+of the algorithms performed equally well, one used far more power.
+If all the students had used the more efficient algorithm, the researchers estimated they
+would have reduced their collective power consumption by 880 kilowatt-hours — about
+what a typical American household uses in a month.”
+An example using CS 234 in Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning.
+Slides credit to Benji Xie and Regina Wang
+
+2. Different perspectives to think about PEFT
+Parameter Input Function
+Some slides and examples adapted from Ruder, Sebastian, Jonas Pfeiffer, and Ivan Vulić on their EMNLP 2022 Tutorial on "Modular and Parameter-
+Efficient Fine-Tuning for NLP Models”. For details, check out: https://www.modulardeeplearning.com/
+39
+
+A Parameter Perspective of Adaptation
+• Sparse Subnetworks
+• Low-rank Composition
+40
+
+3. Sparse subnetworks
+A common inductive bias on the module parameters is sparsity
+●
+Most common sparsity method: pruning
+●
+𝜃
+Pruning can be seen as applying a binary mask 𝐛 ∈ 0, 1 that selectively keeps or
+●
+removes each connection in a model and produces a subnetwork.
+[Han et al., 2017]
+Most common pruning criterion: weight magnitude [Han et al., 2017]
+●
+41
+
+Pruning
+• During pruning, a fraction of the lowest-magnitude weights are removed
+• The non-pruned weights are re-trained
+• Pruning for multiple iterations is more common (Frankle & Carbin, 2019)
+Initial Re-training Re-training
+training
+…
+Pruning Pruning
+One-shot pruning
+Iterative pruning
+42
+
+Pruning and Binary Mask
+• We can also view pruning as adding a task-specific vector 𝜙 to the parameters of an
+′
+existing model 𝑓 = 𝑓 where 𝜙 = 0 if 𝑏 = 0
+𝜃 𝜃+𝜙 𝑖 𝑖
+• If the final model should be sparse, we can multiply the existing weights with the binary
+′
+mask to set the pruned weights to 0: 𝑓 = 𝑓 . These weight values were moving to
+𝜃 𝜃∘𝒃+𝜙
+[Zhou et al., 2019]
+0 anyway [Zhou et al., 2019]
+Element-wise product (Hadamard product)
+• Diff pruning: we can perform pruning only based on the magnitude of the module
+parameters 𝜙 rather than the updated 𝜃 + 𝜙 parameters [ [ Gu G o et a u l., 2 o 021] et al., 2021]
+43
+
+The Lottery Ticket Hypothesis
+Dense, randomly-initialized models contain subnetworks (“winning tickets”) that—
+●
+when trained in isolation—reach test accuracy comparable to the original network in a
+similar number of iterations [Frankle & Carbin, 2019]
+Has also been verified in RL and NLP [Yu et al., 2020] and for larger models in computer
+●
+vision [Frankle et al., 2020]
+Prior work [Chen et al., 2020; Prasanna et al., 2020] has found winning tickets in pre-
+●
+trained models such as BERT
+Sparsity ratios: from 40% (SQu AD) to 90% (QQP and WNLI)
+●
+Subnetworks trained on a general task like masked language modelling transfer best
+●
+44
+
+A Parameter Perspective of Adaptation
+✓ Sparse Subnetworks
+• Low-rank Composition
+45
+
+4. Revisit the full fine-tuning
+• Assume we have a pre-trained autoregressive language model 𝑃 (𝑦|𝑥)
+𝜙
+• E.g., GPT based on Transformer
+• Adapt this pretrained model to downstream tasks (e.g., summarization, QA)
+• Training dataset of context-target pairs 𝑥 , 𝑦
+𝑖 𝑖 𝑖=1,…,𝑁
+• During full fine-tuning, we update 𝜙 to 𝜙 + Δ𝜙 by following the gradient to
+𝑜 𝑜
+maximize the conditional language modeling objective
+|𝑦|
+max ෍ ෍ log(𝑃 (𝑦 |𝑥, 𝑦 ))
+𝜙 𝑡 <𝑡
+𝜙
+𝑡=1
+(𝑥,𝑦)
+46
+
+Lo RA: low rank adaptation (Hu et al., 2021)
+• For each downstream task, we learn a different set of parameters Δ𝜙
+• |Δ𝜙| = 𝜙
+𝑜
+• GPT-3 has a | 𝜙 | of 175 billion
+𝑜
+• Expensive and challenging for storing and deploying many independent instances
+• Can we do better?
+47
+
+Lo RA: low rank adaptation (Hu et al., 2021)
+• For each downstream task, we learn a different set of parameters Δ𝜙
+• |Δ𝜙| = |𝜙 |
+𝑜
+• GPT-3 has a | 𝜙 | of 175 billion
+𝑜
+• Expensive and challenging for storing and deploying many independent instances
+• Key idea: encode the task-specific parameter increment Δ𝜙 = Δ𝜙(Θ) by a smaller-
+sized set of parameters 𝚯, Θ ≪ |𝜙 |
+𝑜
+• The task of finding Δ𝜙 becomes optimizing over Θ
+|𝑦|
+max ෍ ෍ log(𝑃 (𝑦 |𝑥, 𝑦 ))
+𝜙 +Δ𝜙(Θ) 𝑡 <𝑡
+𝑜
+Θ
+𝑡=1
+(𝑥,𝑦)
+48
+
+Low-rank-parameterized update matrices
+• Updates to the weights have a low “intrinsic
+rank” during adaptation (Aghajanyan et al. 2020)
+𝑑×𝑘
+• 𝑊 ∈ ℝ : a pretrained weight matrix
+0
+• Constrain its update with a low-rank
+decomposition:
+𝑊 + Δ𝑊 = 𝑊 + 𝛼𝐵𝐴
+𝑑×𝑘
+0 0 𝑊 ∈ ℝ
+𝑑×𝑟 𝑟×𝑘
+where 𝐵 ∈ ℝ , 𝐴 ∈ ℝ , 𝑟 ≪ min(𝑑, 𝑘)
+• 𝛼 is the tradeoff between pre-trained
+“knowledge” and task-specific “knowledge”
+• Only A and B contain trainable parameters
+49
+
+Low-rank-parameterized update matrices
+• As one increase the number of trainable
+parameters, training Lo RA converges to training
+the original model
+• No additional inference latency: when switching
+to a different task, recover 𝑊 by subtracting 𝐵𝐴
+0
+′ ′
+and adding a different 𝐵 𝐴 𝑑×𝑘
+𝑊 ∈ ℝ
+• Often Lo RA is applied to the weight matrices in
+the self-attention module
+50
+
+Example implementation of Lo RA
+Credit to https://lightning.ai/pages/community/article/lora-llm/
+51
+
+Lo RA in practice: scaling up to GPT-3 175 B
+Lo RA matches or
+exceeds the fine-
+tuning baseline on
+all three datasets
+Lo RA exhibits better
+scalability and task
+performance
+52
+
+Understanding low-rank adaptation
+53
+
+From Lo RA to QLo RA
+• QLORA improves over Lo RA by
+quantizing the transformer model to 4-
+bit precision and using paged
+optimizer to handle memory
+• 4-bit Normal Float (NF 4)
+• A new data type that is information
+theoretically optimal for normally
+distributed weights
+Dettmers, Tim, Artidoro Pagnoni, Ari Holtzman, and Luke Zettlemoyer. "Qlora: Efficient finetuning of quantized llms." ar Xiv preprint ar Xiv:2305.14314 (2023).
+54
+
+Lo RA matches full finetuning for RL, even with rank as low as 1
+Lo RA shows a wider range of performant learning rates and Deep Math with Qwen 3-8 b-base. The learning
+arrives at the same peak performance as Full FT curve for different ranks and full fine-tuning
+55 https://thinkingmachines.ai/blog/lora/
+
+5. An input perspective of adaptation
+☺/
+(Transformer, LSTM, ++ )
+… the movie was …
+Learnable prefix
+parameters
+[Li and Liang, 2021; Lester et al., 2021]
+56
+
+Prefix-Tuning
+(Li and Liang, 2021)
+• Prefix-Tuning adds a prefix of
+parameters and freezes all
+pretrained parameters.
+• The prefix is a sequence of
+continuous task-specific vector
+and is processed by the model
+just like real words would be,
+i.e., “virtual tokens”.
+• Advantage: each element of a
+batch at inference could run a
+different tuned model.
+57
+
+Prompt-Tuning
+(Lester et al., 2021)
+• Learning “soft prompts” to condition frozen LMs to perform downstream tasks
+• Prepend virtual tokens to input, and learn embeddings of these special tokens only
+58
+
+Prompt tuning only works well at scale
+• Standard model tuning
+achieves strong
+performances but requires
+scoring separate copies of
+model for each end task
+• Prompt tuning matches the
+quality of model tuning as
+size increases
+Lester, Brian, Rami Al-Rfou, and Noah Constant. "The power of scale for parameter-efficient prompt tuning." ar Xiv preprint ar Xiv:2104.08691 (2021).
+59
+
+6. A functional perspective of adaptation
+• Function composition augments a model’s functions
+with new task-specific functions:
+• Most commonly used in multi-task learning where
+Function
+modules of different tasks are composed.
+Composition
+60
+
+Adapter
+(Houlsby et al. 2019) +
+• Insert a new function f between layers of a pre-
+𝜙
+trained model to adapt to a downstream task ---
+Feedforward
+known as “adapters”
+up-projection
+• An adapter in a Transformer layer consists of:
+Nonlinearity
+𝐷 𝑘×𝑑
+• A feed-forward down-projection 𝑊 ∈ 𝑅
+𝑈 𝑑×𝑘
+• A feed-forward up-projection 𝑊 ∈ 𝑅
+Feedforward
+down-projection
+𝑈 𝐷
+• 𝑓 𝒙 = 𝑊 (𝜎 𝑊 𝒙 )
+𝜙
+61
+
+Adapter (Houlsby et al. 2019)
+The adapter is
+●
+usually placed after
+the multi-head
+attention and/or
+after the feed-
+forward layer
+Most approaches
+●
+have used this
+bottleneck design
+with linear layers
+62
+
+Trade-off btw accuracy and # of trained task specific parameters
+The curves show the 20 th, 50 th, and 80 th
+performance percentiles across nine tasks
+from the GLUE benchmark.
+Adapter based tuning attains a
+similar performance to full
+finetuning with two orders of
+magnitude fewer trained
+parameters
+63
+
+Language adapters? Task knowledge ~= language knowledge
+Adapters learn transformations that make the
+●
+underlying model more suited to a task or language.
+MLM MLM
+(English) (Quechuan) Using masked language modelling (MLM), we can
+●
+learn language-specific transformations for e.g.
+English and Quechua.
+=
+~
+64
+
+Using adapters for English dialect adaptation
+Task Adapters
+Dialect Adapters
+Pre-Trained Language Model on
+Standard American English
+Adapting LLMs trained on Standard American English to different English dialects
+(Held et al., 2023; Liu et al., 2023)
+65
+
+Unifying View
+• H H e et e al. [2 0 e 22] t al. [2022] show that Lo RA, prefix tuning, and adapters can be expressed with a
+similar functional form
+• All methods can be expressed as modifying a model’s hidden representation 𝒉
+• Sparsity, structure, low-rank approximations, rescaling, and other properties can also
+be applied and combined in many settings
+66
+
+Performance comparison
+Prompt tuning Adapter
+underperforms achieves better
+the other performance
+methods due but add more
+to limited parameters
+capacity
+67
+
+7. Other variants of (efficient) adaptation
+• Knowledge distillation to obtain smaller models
+Shridhar et al., 2023
+The generic teacher-student framework for knowledge distillation (Gou et al., )
+• Also check out: Gist tokens (Wu et al., 2024), Re FT(Wu et al, 2024), etc
+68

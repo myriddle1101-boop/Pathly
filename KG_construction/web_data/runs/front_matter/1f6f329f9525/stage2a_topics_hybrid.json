@@ -1,0 +1,940 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 99,
+  "candidate_count": 80,
+  "topics_count": 8,
+  "candidates": [
+    {
+      "name": "neural networks",
+      "avg_score": 0.5984,
+      "frequency": 24,
+      "chunk_ids": [
+        6,
+        8,
+        10,
+        15,
+        19,
+        20,
+        22,
+        26,
+        27,
+        30,
+        32,
+        34,
+        37,
+        41,
+        42,
+        43,
+        57,
+        70,
+        79,
+        80,
+        81,
+        88,
+        89,
+        99
+      ]
+    },
+    {
+      "name": "machine learning",
+      "avg_score": 0.5419,
+      "frequency": 14,
+      "chunk_ids": [
+        12,
+        21,
+        22,
+        30,
+        31,
+        36,
+        37,
+        62,
+        64,
+        67,
+        69,
+        90,
+        91,
+        97
+      ]
+    },
+    {
+      "name": "advances neural",
+      "avg_score": 0.5667,
+      "frequency": 12,
+      "chunk_ids": [
+        4,
+        27,
+        32,
+        55,
+        57,
+        67,
+        68,
+        70,
+        79,
+        81,
+        83,
+        95
+      ]
+    },
+    {
+      "name": "neural information",
+      "avg_score": 0.5667,
+      "frequency": 11,
+      "chunk_ids": [
+        4,
+        32,
+        42,
+        55,
+        57,
+        67,
+        68,
+        79,
+        81,
+        83,
+        95
+      ]
+    },
+    {
+      "name": "neural computation",
+      "avg_score": 0.5891,
+      "frequency": 10,
+      "chunk_ids": [
+        4,
+        8,
+        20,
+        21,
+        42,
+        55,
+        80,
+        81,
+        92,
+        94
+      ]
+    },
+    {
+      "name": "neural network",
+      "avg_score": 0.5849,
+      "frequency": 9,
+      "chunk_ids": [
+        6,
+        8,
+        20,
+        34,
+        37,
+        42,
+        57,
+        94,
+        99
+      ]
+    },
+    {
+      "name": "neural",
+      "avg_score": 0.5343,
+      "frequency": 6,
+      "chunk_ids": [
+        9,
+        10,
+        55,
+        67,
+        73,
+        89
+      ]
+    },
+    {
+      "name": "divergence",
+      "avg_score": 0.5544,
+      "frequency": 4,
+      "chunk_ids": [
+        11,
+        16,
+        88,
+        91
+      ]
+    },
+    {
+      "name": "recognition",
+      "avg_score": 0.4743,
+      "frequency": 4,
+      "chunk_ids": [
+        15,
+        47,
+        90,
+        92
+      ]
+    },
+    {
+      "name": "contrastive divergence",
+      "avg_score": 0.6067,
+      "frequency": 3,
+      "chunk_ids": [
+        11,
+        16,
+        91
+      ]
+    },
+    {
+      "name": "neural nets",
+      "avg_score": 0.606,
+      "frequency": 3,
+      "chunk_ids": [
+        9,
+        20,
+        42
+      ]
+    },
+    {
+      "name": "artificial intelligence",
+      "avg_score": 0.5801,
+      "frequency": 3,
+      "chunk_ids": [
+        30,
+        60,
+        62
+      ]
+    },
+    {
+      "name": "learning representations",
+      "avg_score": 0.5288,
+      "frequency": 3,
+      "chunk_ids": [
+        7,
+        22,
+        63
+      ]
+    },
+    {
+      "name": "recurrent neural",
+      "avg_score": 0.5262,
+      "frequency": 3,
+      "chunk_ids": [
+        14,
+        19,
+        34
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5212,
+      "frequency": 3,
+      "chunk_ids": [
+        7,
+        28,
+        63
+      ]
+    },
+    {
+      "name": "learning",
+      "avg_score": 0.486,
+      "frequency": 3,
+      "chunk_ids": [
+        28,
+        58,
+        63
+      ]
+    },
+    {
+      "name": "bibliography",
+      "avg_score": 0.4662,
+      "frequency": 3,
+      "chunk_ids": [
+        3,
+        13,
+        33
+      ]
+    },
+    {
+      "name": "speech recognition",
+      "avg_score": 0.6445,
+      "frequency": 2,
+      "chunk_ids": [
+        15,
+        46
+      ]
+    },
+    {
+      "name": "autoencoders",
+      "avg_score": 0.6224,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        94
+      ]
+    },
+    {
+      "name": "gaussian processes",
+      "avg_score": 0.5926,
+      "frequency": 2,
+      "chunk_ids": [
+        79,
+        98
+      ]
+    },
+    {
+      "name": "image statistics",
+      "avg_score": 0.5817,
+      "frequency": 2,
+      "chunk_ids": [
+        45,
+        51
+      ]
+    },
+    {
+      "name": "neural probabilistic",
+      "avg_score": 0.5706,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        64
+      ]
+    },
+    {
+      "name": "learning theory",
+      "avg_score": 0.5592,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        31
+      ]
+    },
+    {
+      "name": "gradient",
+      "avg_score": 0.5453,
+      "frequency": 2,
+      "chunk_ids": [
+        27,
+        74
+      ]
+    },
+    {
+      "name": "acoustics speech",
+      "avg_score": 0.5425,
+      "frequency": 2,
+      "chunk_ids": [
+        46,
+        69
+      ]
+    },
+    {
+      "name": "stochastic gradient",
+      "avg_score": 0.5409,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        74
+      ]
+    },
+    {
+      "name": "statistical language",
+      "avg_score": 0.5379,
+      "frequency": 2,
+      "chunk_ids": [
+        7,
+        64
+      ]
+    },
+    {
+      "name": "models icml",
+      "avg_score": 0.537,
+      "frequency": 2,
+      "chunk_ids": [
+        60,
+        75
+      ]
+    },
+    {
+      "name": "transactions neural",
+      "avg_score": 0.5281,
+      "frequency": 2,
+      "chunk_ids": [
+        27,
+        44
+      ]
+    },
+    {
+      "name": "generative models",
+      "avg_score": 0.5277,
+      "frequency": 2,
+      "chunk_ids": [
+        40,
+        75
+      ]
+    },
+    {
+      "name": "intelligence statistics",
+      "avg_score": 0.5096,
+      "frequency": 2,
+      "chunk_ids": [
+        16,
+        60
+      ]
+    },
+    {
+      "name": "deep generative",
+      "avg_score": 0.5082,
+      "frequency": 2,
+      "chunk_ids": [
+        25,
+        75
+      ]
+    },
+    {
+      "name": "theory pages",
+      "avg_score": 0.4869,
+      "frequency": 2,
+      "chunk_ids": [
+        13,
+        31
+      ]
+    },
+    {
+      "name": "circuits systems",
+      "avg_score": 0.4688,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        72
+      ]
+    },
+    {
+      "name": "autoencoders 522",
+      "avg_score": 0.7117,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "autoencoders 518",
+      "avg_score": 0.7085,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "www deeplearningbook",
+      "avg_score": 0.6915,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "paced learning",
+      "avg_score": 0.6824,
+      "frequency": 1,
+      "chunk_ids": [
+        87
+      ]
+    },
+    {
+      "name": "2003 neural",
+      "avg_score": 0.6812,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "neural networksandtheir",
+      "avg_score": 0.681,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "networks neural",
+      "avg_score": 0.6801,
+      "frequency": 1,
+      "chunk_ids": [
+        43
+      ]
+    },
+    {
+      "name": "divergence bottou",
+      "avg_score": 0.6777,
+      "frequency": 1,
+      "chunk_ids": [
+        91
+      ]
+    },
+    {
+      "name": "contractive autoencoders",
+      "avg_score": 0.6757,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "teaching classification",
+      "avg_score": 0.6747,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "divergence learning",
+      "avg_score": 0.6742,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "speech soundwaves",
+      "avg_score": 0.6739,
+      "frequency": 1,
+      "chunk_ids": [
+        46
+      ]
+    },
+    {
+      "name": "deeplearningbook org",
+      "avg_score": 0.672,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "statistical learning",
+      "avg_score": 0.6697,
+      "frequency": 1,
+      "chunk_ids": [
+        93
+      ]
+    },
+    {
+      "name": "hessian eigenmaps",
+      "avg_score": 0.6692,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "deeplearningbook",
+      "avg_score": 0.645,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "divergence neural",
+      "avg_score": 0.6439,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "deterministic estimators",
+      "avg_score": 0.6432,
+      "frequency": 1,
+      "chunk_ids": [
+        61
+      ]
+    },
+    {
+      "name": "2010 hallucinations",
+      "avg_score": 0.6409,
+      "frequency": 1,
+      "chunk_ids": [
+        83
+      ]
+    },
+    {
+      "name": "theory probability",
+      "avg_score": 0.6392,
+      "frequency": 1,
+      "chunk_ids": [
+        93
+      ]
+    },
+    {
+      "name": "mixture svms",
+      "avg_score": 0.6367,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "2001 neural",
+      "avg_score": 0.6365,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "learning stochastic",
+      "avg_score": 0.6362,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "2011 neural",
+      "avg_score": 0.6318,
+      "frequency": 1,
+      "chunk_ids": [
+        55
+      ]
+    },
+    {
+      "name": "linear neural",
+      "avg_score": 0.6315,
+      "frequency": 1,
+      "chunk_ids": [
+        80
+      ]
+    },
+    {
+      "name": "statistical parser",
+      "avg_score": 0.6314,
+      "frequency": 1,
+      "chunk_ids": [
+        39
+      ]
+    },
+    {
+      "name": "probabilities theory",
+      "avg_score": 0.631,
+      "frequency": 1,
+      "chunk_ids": [
+        93
+      ]
+    },
+    {
+      "name": "statistical parsing",
+      "avg_score": 0.6281,
+      "frequency": 1,
+      "chunk_ids": [
+        39
+      ]
+    },
+    {
+      "name": "autoencoders neural",
+      "avg_score": 0.626,
+      "frequency": 1,
+      "chunk_ids": [
+        94
+      ]
+    },
+    {
+      "name": "neural abstraction",
+      "avg_score": 0.6229,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "dynamics learning",
+      "avg_score": 0.6218,
+      "frequency": 1,
+      "chunk_ids": [
+        80
+      ]
+    },
+    {
+      "name": "inference neural",
+      "avg_score": 0.6196,
+      "frequency": 1,
+      "chunk_ids": [
+        34
+      ]
+    },
+    {
+      "name": "audio classification",
+      "avg_score": 0.6195,
+      "frequency": 1,
+      "chunk_ids": [
+        38
+      ]
+    },
+    {
+      "name": "classification neural",
+      "avg_score": 0.6166,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "electronic neural",
+      "avg_score": 0.6157,
+      "frequency": 1,
+      "chunk_ids": [
+        34
+      ]
+    },
+    {
+      "name": "applications autoencoders",
+      "avg_score": 0.6154,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "properties neural",
+      "avg_score": 0.6148,
+      "frequency": 1,
+      "chunk_ids": [
+        89
+      ]
+    },
+    {
+      "name": "speech signal",
+      "avg_score": 0.6138,
+      "frequency": 1,
+      "chunk_ids": [
+        46
+      ]
+    },
+    {
+      "name": "game theory",
+      "avg_score": 0.6137,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "nonlinear dimensionality",
+      "avg_score": 0.6137,
+      "frequency": 1,
+      "chunk_ids": [
+        76
+      ]
+    },
+    {
+      "name": "algorithm machine",
+      "avg_score": 0.6136,
+      "frequency": 1,
+      "chunk_ids": [
+        30
+      ]
+    },
+    {
+      "name": "speech transcription",
+      "avg_score": 0.6129,
+      "frequency": 1,
+      "chunk_ids": [
+        82
+      ]
+    },
+    {
+      "name": "solution netflix",
+      "avg_score": 0.6102,
+      "frequency": 1,
+      "chunk_ids": [
+        52
+      ]
+    },
+    {
+      "name": "nets neural",
+      "avg_score": 0.6098,
+      "frequency": 1,
+      "chunk_ids": [
+        42
+      ]
+    },
+    {
+      "name": "neural net",
+      "avg_score": 0.6092,
+      "frequency": 1,
+      "chunk_ids": [
+        81
+      ]
+    },
+    {
+      "name": "netflix grand",
+      "avg_score": 0.609,
+      "frequency": 1,
+      "chunk_ids": [
+        52
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Neural Networks",
+      "description": "A class of models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Neural Network Types",
+          "description": "Different architectures of neural networks, including feedforward and recurrent."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Metrics used to evaluate the performance of a neural network during training."
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": [
+        {
+          "name": "Convolutional Neural Networks",
+          "description": "Neural networks designed for processing structured grid data like images."
+        },
+        {
+          "name": "Recurrent Neural Networks",
+          "description": "Neural networks that are particularly suited for sequential data."
+        },
+        {
+          "name": "Autoencoders",
+          "description": "Neural networks used for unsupervised learning of efficient codings."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models effectively.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing the loss function."
+        },
+        {
+          "name": "Stochastic Gradient Descent",
+          "description": "An optimization algorithm used to minimize the loss function."
+        },
+        {
+          "name": "Contrastive Divergence",
+          "description": "A method for training models like Restricted Boltzmann Machines."
+        }
+      ]
+    },
+    {
+      "name": "Learning Representations",
+      "description": "Techniques for transforming input data into a format suitable for machine learning.",
+      "sub_topics": [
+        {
+          "name": "Feature Learning",
+          "description": "Automatically discovering the representations needed for feature detection."
+        },
+        {
+          "name": "Dimensionality Reduction",
+          "description": "Techniques for reducing the number of features in a dataset."
+        },
+        {
+          "name": "Generative Models",
+          "description": "Models that can generate new data points from learned distributions."
+        }
+      ]
+    },
+    {
+      "name": "Statistical Learning",
+      "description": "A framework for understanding and applying statistical methods in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Gaussian Processes",
+          "description": "A probabilistic model used for regression and classification tasks."
+        },
+        {
+          "name": "Learning Theory",
+          "description": "The study of the principles and algorithms of machine learning."
+        },
+        {
+          "name": "Statistical Language Models",
+          "description": "Models that predict the probability of sequences of words."
+        }
+      ]
+    },
+    {
+      "name": "Neural Computation",
+      "description": "The study of how neural networks process information and learn from data.",
+      "sub_topics": [
+        {
+          "name": "Neural Dynamics",
+          "description": "The study of how neural networks evolve over time during learning."
+        },
+        {
+          "name": "Probabilistic Neural Models",
+          "description": "Models that incorporate uncertainty in their predictions."
+        },
+        {
+          "name": "Neural Abstraction",
+          "description": "The process of simplifying complex neural network structures."
+        }
+      ]
+    },
+    {
+      "name": "Applications of Neural Networks",
+      "description": "Real-world use cases where neural networks are applied.",
+      "sub_topics": [
+        {
+          "name": "Speech Recognition",
+          "description": "Using neural networks to convert spoken language into text."
+        },
+        {
+          "name": "Image Classification",
+          "description": "Identifying objects within images using neural networks."
+        },
+        {
+          "name": "Audio Classification",
+          "description": "Categorizing audio signals using machine learning techniques."
+        }
+      ]
+    },
+    {
+      "name": "Neural Network Evaluation",
+      "description": "Methods for assessing the performance of neural networks.",
+      "sub_topics": [
+        {
+          "name": "Model Validation",
+          "description": "Techniques for ensuring that a model generalizes well to unseen data."
+        },
+        {
+          "name": "Performance Metrics",
+          "description": "Quantitative measures used to evaluate model accuracy and efficiency."
+        },
+        {
+          "name": "Hyperparameter Tuning",
+          "description": "The process of optimizing the parameters that govern the training process."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 58.5414,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

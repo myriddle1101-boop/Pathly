@@ -1,0 +1,123 @@
+{
+  "created_at": "2026-08-18T18:42:38.877032+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-09_conv-426f5e52542b",
+  "file_name": "09_conv-426f5e52542b",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 36,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6429,
+    "f1": 0.7826,
+    "tp": 9,
+    "fp": 0,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.1667,
+    "recall": 0.2,
+    "f1": 0.1818,
+    "tp": 1,
+    "fp": 5,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Convolutional Networks",
+      "Matrices",
+      "Neural Networks",
+      "Learning Algorithms",
+      "Feature Learning",
+      "Training Techniques",
+      "Data Representation",
+      "Network Architecture",
+      "Mathematical Foundations"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Convolution",
+        "reason": "The central operation replacing matrix multiplication in convolutional networks."
+      },
+      {
+        "name": "Sparse Connectivity",
+        "reason": "Presented as a key principle of convolutional networks and contrasted with dense connectivity."
+      },
+      {
+        "name": "Parameter Sharing",
+        "reason": "Presented as a core convolutional-network principle that improves storage and statistical efficiency."
+      },
+      {
+        "name": "Pooling",
+        "reason": "Covered as a standard convolutional-network component providing invariance and downsampling."
+      },
+      {
+        "name": "Receptive Fields",
+        "reason": "Explicitly defined as the input units affecting an output unit and discussed across network depth."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Convolutional Networks",
+        "reason": "The slides present convolutional networks as neural networks in which matrix multiplication is replaced by convolution."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Mathematical Foundations",
+        "to": "Learning Algorithms",
+        "reason": "The source includes mathematical material and learning algorithms, but does not establish this broad directional dependency."
+      },
+      {
+        "from": "Mathematical Foundations",
+        "to": "Data Representation",
+        "reason": "Tensors and grid-structured inputs are discussed, but the source does not state that general mathematical foundations are a prerequisite for data representation."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Network Architecture",
+        "reason": "Network architecture is a structural concept rather than a learning dependency that requires prior neural-network knowledge."
+      },
+      {
+        "from": "Learning Algorithms",
+        "to": "Training Techniques",
+        "reason": "This is a broad association; the source mentions back-propagation and maximum likelihood but does not support the stated prerequisite relation."
+      },
+      {
+        "from": "Feature Learning",
+        "to": "Learning Algorithms",
+        "reason": "The source says learning algorithms can learn features, which does not support feature learning as a prerequisite for learning algorithms."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Matrix Multiplication",
+        "to": "Convolution",
+        "reason": "Convolution is introduced as an operation like, and replacing, matrix multiplication in neural networks."
+      },
+      {
+        "from": "Convolution",
+        "to": "Convolutional Networks",
+        "reason": "The source identifies convolution as the defining operation of convolutional networks."
+      },
+      {
+        "from": "Sparse Connectivity",
+        "to": "Convolutional Networks",
+        "reason": "Sparse connectivity is presented as one of the key ideas underlying convolutional networks."
+      },
+      {
+        "from": "Parameter Sharing",
+        "to": "Convolutional Networks",
+        "reason": "Parameter sharing is presented as a defining convolutional-network principle."
+      }
+    ],
+    "overall_note": "The predicted topics are broadly supported, but they omit the specific convolutional-network mechanisms that form the main instructional content."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-09_conv-426f5e52542b.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-09_conv-426f5e52542b.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-09_conv-426f5e52542b_ledger.csv"
+  }
+}

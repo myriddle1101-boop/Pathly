@@ -1,0 +1,22 @@
+{
+  "topics": [
+    {
+      "name": "Machine Learning Fundamentals"
+    },
+    {
+      "name": "Model Training"
+    },
+    {
+      "name": "Model Evaluation"
+    },
+    {
+      "name": "Adversarial Machine Learning"
+    },
+    {
+      "name": "Model Vulnerability"
+    },
+    {
+      "name": "Privacy in Machine Learning"
+    }
+  ]
+}

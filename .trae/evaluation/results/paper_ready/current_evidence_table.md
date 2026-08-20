@@ -1,0 +1,9 @@
+# Current evaluation evidence
+
+| evaluation_component | sample | result | claim_boundary |
+|---|---|---|---|
+| KG corpus structural/provenance health | 57 persisted pipeline runs | 517 topic instances; 347 prerequisite edges; 0 runs with dangling edges; 0 with cycles | Structural/provenance health only; not semantic correctness. |
+| Live verified neural-foundations chain | 5 canonical concepts in live Neo4j/Chroma | 5/5 verified overall | Only the reviewed five-concept source-grounded scope. |
+| Planning automatic checks | 5 controlled goal phrasings x 2 profiles = 10 plans | 10/10 generated; time constraint handled 100%; direct daily-limit compliance 0% | Plans issue a warning when an individual topic exceeds the daily budget; human quality scoring remains required. |
+| Content V4 | Controlled dual-profile golden path | Engineering gates and prior dual-profile artifact exist; no new independent human/LLM quality scores in this pack. | Do not claim educational superiority until blinded ratings are completed. |
+| Adaptation | Prototype candidate retrieval | Implementation/test inventory only | Treated as future work; no effectiveness claim. |

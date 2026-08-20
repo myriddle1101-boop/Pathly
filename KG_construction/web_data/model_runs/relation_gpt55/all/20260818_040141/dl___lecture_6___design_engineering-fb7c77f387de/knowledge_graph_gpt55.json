@@ -1,0 +1,258 @@
+{
+  "nodes": [
+    {
+      "id": "convolutional kernels in image processing",
+      "description": "Auto-generated topic: convolutional kernels in image processing",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and image processing concepts.",
+      "key_sub_concepts": "[\"Convolution operation\", \"Kernel size and shape\", \"Feature extraction\", \"Stride and padding\"]",
+      "common_misconceptions": "[\"Kernels only detect edges\", \"Convolution is the same as correlation\"]",
+      "practical_applications": "[\"Image filtering\", \"Object detection\", \"Image classification\", \"Facial recognition\"]"
+    },
+    {
+      "id": "deep learning architectures and applications",
+      "description": "Auto-generated topic: deep learning architectures and applications",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and neural networks.",
+      "key_sub_concepts": "[\"Convolutional Neural Networks (CNNs)\", \"Recurrent Neural Networks (RNNs)\"]",
+      "common_misconceptions": "[\"Deep learning is the same as machine learning.\", \"More layers always mean better performance.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "learning whynotusea in neural networks",
+      "description": "Auto-generated topic: learning whynotusea in neural networks",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and machine learning principles.",
+      "key_sub_concepts": "[\"Activation functions\", \"Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks always require large datasets\", \"More layers always improve performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "feature selection techniques in learning models",
+      "description": "Auto-generated topic: feature selection techniques in learning models",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and statistics.",
+      "key_sub_concepts": "[\"Filter methods\", \"Wrapper methods\", \"Embedded methods\"]",
+      "common_misconceptions": "[\"Feature selection is the same as feature extraction\", \"More features always lead to better model performance\"]",
+      "practical_applications": "[\"Improving model accuracy\", \"Reducing overfitting\", \"Enhancing model interpretability\"]"
+    },
+    {
+      "id": "neural networks and their training methodologies",
+      "description": "Auto-generated topic: neural networks and their training methodologies",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and activation functions\", \"Backpropagation and optimization algorithms\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "groups of neurons and their functional roles",
+      "description": "Auto-generated topic: groups of neurons and their functional roles",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and biological neuron functions.",
+      "key_sub_concepts": "[\"Neuron types (excitatory, inhibitory)\", \"Neural circuits and their roles in processing information\"]",
+      "common_misconceptions": "[\"All neurons function the same way\", \"Groups of neurons do not interact with each other\"]",
+      "practical_applications": "[\"Neural network design in AI\", \"Understanding brain functions in neuroscience\"]"
+    },
+    {
+      "id": "learning pooling strategies in convolutional networks",
+      "description": "Auto-generated topic: learning pooling strategies in convolutional networks",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and convolutional layers.",
+      "key_sub_concepts": "[\"Max Pooling\", \"Average Pooling\", \"Global Pooling\", \"Strided Convolutions\"]",
+      "common_misconceptions": "[\"Pooling layers reduce the amount of information too much.\", \"Pooling is only used for downsampling.\"]",
+      "practical_applications": "[\"Image classification\", \"Object detection\", \"Feature extraction in CNNs\"]"
+    },
+    {
+      "id": "convolutional layer design and optimization",
+      "description": "Auto-generated topic: convolutional layer design and optimization",
+      "sub_topics": "[]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and linear algebra.",
+      "key_sub_concepts": "[\"Filter design\", \"Stride and padding\", \"Activation functions\", \"Pooling layers\"]",
+      "common_misconceptions": "[\"Convolutional layers only detect edges\", \"More filters always improve performance\"]",
+      "practical_applications": "[\"Image classification\", \"Object detection\", \"Facial recognition\", \"Medical image analysis\"]"
+    },
+    {
+      "id": "whynotusea in the context of LNNs",
+      "description": "Auto-generated topic: whynotusea in the context of LNNs",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and logic programming.",
+      "key_sub_concepts": "[\"Logic Neural Networks (LNNs)\", \"Reasoning with LNNs\"]",
+      "common_misconceptions": "[\"LNNs are the same as traditional neural networks\", \"LNNs cannot handle uncertainty\"]",
+      "practical_applications": "[\"Automated reasoning systems\", \"Knowledge representation in AI\"]"
+    },
+    {
+      "id": "specific examples of learning applications",
+      "description": "Auto-generated topic: specific examples of learning applications",
+      "sub_topics": "[]",
+      "difficulty_level": 1,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning principles and terminology.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\"]",
+      "common_misconceptions": "[\"Machine learning can solve any problem without data.\", \"More data always leads to better models.\"]",
+      "practical_applications": "[\"Image recognition in social media platforms\", \"Recommendation systems in e-commerce\"]"
+    },
+    {
+      "id": "learning lectures on advanced neural network topics",
+      "description": "Auto-generated topic: learning lectures on advanced neural network topics",
+      "sub_topics": "[]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and machine learning principles.",
+      "key_sub_concepts": "[\"Convolutional Neural Networks (CNNs)\", \"Recurrent Neural Networks (RNNs)\", \"Transfer Learning\", \"Generative Adversarial Networks (GANs)\"]",
+      "common_misconceptions": "[\"Neural networks always require large datasets\", \"More layers always lead to better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Autonomous vehicles\", \"Game AI\"]"
+    },
+    {
+      "id": "practical comments on implementing learning algorithms",
+      "description": "Auto-generated topic: practical comments on implementing learning algorithms",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and programming skills in Python.",
+      "key_sub_concepts": "[\"Hyperparameter tuning\", \"Model evaluation techniques\"]",
+      "common_misconceptions": "[\"More complex models always perform better\", \"Overfitting is only a problem for large datasets\"]",
+      "practical_applications": "[\"Predictive modeling in business\", \"Image classification tasks\"]"
+    },
+    {
+      "id": "kernels example in machine learning contexts",
+      "description": "Auto-generated topic: kernels example in machine learning contexts",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and introductory machine learning concepts.",
+      "key_sub_concepts": "[\"Kernel functions\", \"Support Vector Machines (SVM)\", \"Gaussian Processes\", \"Feature space transformation\"]",
+      "common_misconceptions": "[\"Kernels only apply to SVMs\", \"Kernels are only for non-linear problems\", \"All kernels are the same\"]",
+      "practical_applications": "[\"Image classification\", \"Text classification\", \"Anomaly detection\", \"Regression tasks\"]"
+    },
+    {
+      "id": "foundational concepts in learning theory",
+      "description": "Auto-generated topic: foundational concepts in learning theory",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Overfitting\", \"Bias-Variance Tradeoff\"]",
+      "common_misconceptions": "[\"Learning theory is only about algorithms.\", \"More data always leads to better models.\"]",
+      "practical_applications": "[\"Model evaluation and selection\", \"Understanding generalization in machine learning\"]"
+    },
+    {
+      "id": "analyzing image data with LNNs and potential losses",
+      "description": "Auto-generated topic: analyzing image data with LNNs and potential losses",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and neural networks, familiarity with image processing concepts.",
+      "key_sub_concepts": "[\"Local Neural Networks (LNNs)\", \"Loss functions for image data\"]",
+      "common_misconceptions": "[\"LNNs are the same as CNNs\", \"Loss functions only measure accuracy\"]",
+      "practical_applications": "[\"Image classification\", \"Object detection in images\"]"
+    },
+    {
+      "id": "whynotusea as a critique of existing models",
+      "description": "Auto-generated topic: whynotusea as a critique of existing models",
+      "sub_topics": "[]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and model evaluation.",
+      "key_sub_concepts": "[\"Model evaluation metrics\", \"Bias-variance tradeoff\"]",
+      "common_misconceptions": "[\"All models are equally valid\", \"Critiquing a model means it is unusable\"]",
+      "practical_applications": "[\"Improving existing models\", \"Identifying gaps in model performance\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "convolutional kernels in image processing",
+      "to": "convolutional layer design and optimization",
+      "relation": "prerequisite",
+      "reason": "Convolutional layer design depends on understanding kernels and how they operate on images."
+    },
+    {
+      "from": "learning whynotusea in neural networks",
+      "to": "neural networks and their training methodologies",
+      "relation": "similarity",
+      "score": 0.744
+    },
+    {
+      "from": "neural networks and their training methodologies",
+      "to": "deep learning architectures and applications",
+      "relation": "prerequisite",
+      "reason": "Deep learning architectures build on neural network structure and training methods."
+    },
+    {
+      "from": "neural networks and their training methodologies",
+      "to": "convolutional layer design and optimization",
+      "relation": "prerequisite",
+      "reason": "Convolutional layers are neural network components whose design requires knowledge of network training principles."
+    },
+    {
+      "from": "neural networks and their training methodologies",
+      "to": "learning lectures on advanced neural network topics",
+      "relation": "prerequisite",
+      "reason": "Advanced neural network topics require prior understanding of basic network training methodologies."
+    },
+    {
+      "from": "neural networks and their training methodologies",
+      "to": "whynotusea as a critique of existing models",
+      "relation": "prerequisite",
+      "reason": "Critiquing neural network models requires understanding how those models work and are trained."
+    },
+    {
+      "from": "convolutional layer design and optimization",
+      "to": "learning pooling strategies in convolutional networks",
+      "relation": "prerequisite",
+      "reason": "Pooling strategies are typically understood in the context of convolutional network layer design."
+    },
+    {
+      "from": "learning lectures on advanced neural network topics",
+      "to": "neural networks and their training methodologies",
+      "relation": "similarity",
+      "score": 0.7752
+    },
+    {
+      "from": "learning lectures on advanced neural network topics",
+      "to": "learning whynotusea in neural networks",
+      "relation": "similarity",
+      "score": 0.7358
+    },
+    {
+      "from": "foundational concepts in learning theory",
+      "to": "neural networks and their training methodologies",
+      "relation": "prerequisite",
+      "reason": "Core learning concepts are needed to understand how neural networks are trained."
+    }
+  ]
+}

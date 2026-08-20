@@ -1,0 +1,258 @@
+{
+  "run_id": "cs224n-2026-lecture01-intro-f9a723b011b2",
+  "events": [
+    {
+      "time": "2026-07-07T19:33:03+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "cs224n-2026-lecture01-intro.pdf",
+        "sha256": "f9a723b011b2e55efe11f2eb52665b1c3ca2b0071162b0eaa76dd4dd6202ef6d",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2",
+        "resume_from_stage": "stage1",
+        "run_attempts": 1
+      }
+    },
+    {
+      "time": "2026-07-07T19:33:03+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T19:33:08+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 4.4198,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T19:33:08+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T19:34:03+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 55.8545,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T19:34:03+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T19:34:12+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 8.0343,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T19:34:12+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T19:34:56+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 44.0182,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T19:34:56+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-07T19:35:20+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 24.7576,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T19:35:20+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2"
+      }
+    },
+    {
+      "time": "2026-07-07T19:35:22+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 1.3857,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-07T19:35:22+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline completed",
+      "data": {
+        "completed_stages": [
+          "stage1",
+          "stage2a",
+          "stage2b",
+          "stage2c",
+          "stage3",
+          "stage4"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-07T19:36:20+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "cs224n-2026-lecture01-intro.pdf",
+        "sha256": "f9a723b011b2e55efe11f2eb52665b1c3ca2b0071162b0eaa76dd4dd6202ef6d",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2",
+        "resume_from_stage": null,
+        "run_attempts": 2
+      }
+    },
+    {
+      "time": "2026-07-07T19:36:20+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage1_chunks.json",
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage1_text_cleaned.txt"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-07T19:36:20+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2a_topics_hybrid.json"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-07T19:36:20+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2b_prerequisites.json"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-07T19:36:20+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2c_similarity_edges.json"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-07T19:36:20+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage3_topics_with_summary.json"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-07T19:36:20+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\knowledge_graph.json",
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\knowledge_graph.gexf"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-07T19:36:20+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline completed",
+      "data": {
+        "completed_stages": [
+          "stage1",
+          "stage2a",
+          "stage2b",
+          "stage2c",
+          "stage3",
+          "stage4"
+        ]
+      }
+    }
+  ],
+  "updated_at": "2026-07-07T19:36:20+08:00"
+}

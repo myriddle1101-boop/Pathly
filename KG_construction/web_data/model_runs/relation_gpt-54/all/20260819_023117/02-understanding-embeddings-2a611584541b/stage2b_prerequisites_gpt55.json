@@ -1,0 +1,32 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 4,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Sentence Transformers",
+      "relation_type": "strong_prerequisite",
+      "reason": "Sentence Transformers are a specific neural-network-based model family, so understanding neural networks is necessary first."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Model Training",
+      "relation_type": "strong_prerequisite",
+      "reason": "Model training fundamentally relies on optimizing a loss function, so loss functions must be understood first."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Model Training",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training neural models requires prior understanding of what neural networks are and how their parameters are adjusted."
+    },
+    {
+      "from": "Regression and Classification",
+      "to": "Loss Functions",
+      "relation_type": "strong_prerequisite",
+      "reason": "Loss functions are defined relative to prediction tasks such as regression and classification, so those task types should be understood first."
+    }
+  ]
+}

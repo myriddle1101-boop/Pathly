@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dls_2016\\562b4445509a",
+  "run_id": "dls_2016-562b4445509a",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:13.532479+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "da9157528e32bf4bbb20d93c88a6fb7893768feed3d712ed8da7ea91bb6ab5f6",
+    "stage2a_topics_hybrid.json": "c11a997171aa18c912945ea7ba175eba68dcd58d70703d165f8dc62f79710ee4",
+    "stage2c_similarity_edges.json": "c22536f3b2d6bee87f3ab5fccad991fecf095ba5f00612b6be1634e18bfe7660",
+    "stage3_topics_with_summary.json": "245c8cf27bd76d11bb8d7d806357d8bd24a3dce9a070a00cbd7de3ecb6f02797"
+  },
+  "old_relation_count": 9,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

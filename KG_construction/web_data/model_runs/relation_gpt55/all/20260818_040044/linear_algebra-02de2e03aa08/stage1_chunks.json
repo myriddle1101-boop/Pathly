@@ -1,0 +1,8 @@
+[
+  {
+    "chunk_id": 1,
+    "word_count": 178,
+    "doc_type": "paper_book",
+    "text": "Exercises for Chapter 2: Linear Algebra\nJuly 13, 2016\nExercises\n1. Theexpressionαuforα∈Randunitvectoru∈Rndefinesalineofpoints\nthat may be obtained by varying the value of α. Derive an expression for\nthepointy thatliesonthislinethatisascloseaspossibletoanarbitrary\npoint x∈Rn. This operation of replacing a point by its nearest member\nwithin some set is called projection.\nExercise contributed by Ian Goodfellow\nSolutions\n1. We begin by defining the distance from y to x. We would like to find the\ny that minimizes this distance:\n||x−y||2. (1)\nNext, we need to enforce the constraint that y lies on the line defined by\nαu. We can do this simply by defining y to be αu.\n||x−αu||2. (2)\nNext, we expand the expression:\n||x−αu||2 (3)\n=(x−αu)(cid:62)(x−αu) (4)\n=x(cid:62)x−2αx(cid:62)u+α2 u(cid:62)u (5)\n=x(cid:62)x−2αx(cid:62)u+α2. (6)\nIn the last line, we used the fact that u is a unit vector to make the\nsimplification u(cid:62)u=1.\nWe can minimize this distance by taking the derivative with respect to α\nand setting it to zero:\n−2 x(cid:62)u+2α=0 (7)\n⇒α=x(cid:62)u. (8)\n1\n\nRecalling that y =αu, we can conclude that y =x(cid:62)uu.\nSolution contributed by Ian Goodfellow\n2"
+  }
+]

@@ -1,0 +1,24 @@
+Example 2: Document Chat System
+An interactive chat system that lets you ask questions about your documents with conversation history.
+Features
+(cid:127) n Load text documents from files or directories
+(cid:127) n Smart text chunking with overlap
+(cid:127) n Conversational interface with history
+(cid:127) n Source attribution for answers
+(cid:127) n Multi-turn conversations
+Setup
+cd examples/02-document-chat
+# Set API key
+export OPENAI_API_KEY="your-key-here"
+# Run
+python document_chat.py
+Usage
+
+The system will: 1. Create sample documents about AI and RAG 2. Load and chunk them 3. Start an
+interactive chat session
+Chat Commands
+(cid:127) Type your question and press Enter
+(cid:127) Type stats to see system statistics
+(cid:127) Type quit to exit
+Example Conversation
+``` You: What is machine learning?

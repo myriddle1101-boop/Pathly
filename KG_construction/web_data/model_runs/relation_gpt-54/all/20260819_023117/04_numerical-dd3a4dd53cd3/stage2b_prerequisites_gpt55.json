@@ -1,0 +1,50 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 7,
+  "prerequisites": [
+    {
+      "from": "Partial Derivatives",
+      "to": "Gradient Descent",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding gradients requires partial derivatives, which are necessary to learn gradient descent."
+    },
+    {
+      "from": "Partial Derivatives",
+      "to": "Optimization Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Many optimization methods rely on derivatives to analyze and update parameters."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Training Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training neural networks commonly depends on gradient-based optimization, especially gradient descent."
+    },
+    {
+      "from": "Optimization Techniques",
+      "to": "Training Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training neural networks requires understanding how model parameters are optimized."
+    },
+    {
+      "from": "Matrix Operations",
+      "to": "Eigenvalues and Eigenvectors",
+      "relation_type": "strong_prerequisite",
+      "reason": "Eigenvalues and eigenvectors are defined through matrix algebra, so matrix operations are necessary first."
+    },
+    {
+      "from": "Matrix Operations",
+      "to": "Training Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural network computations and parameter updates rely heavily on matrix operations."
+    },
+    {
+      "from": "Training Process",
+      "to": "Training Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training neural networks is a specific instance of the broader training process for machine learning models."
+    }
+  ]
+}

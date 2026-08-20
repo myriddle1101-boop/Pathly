@@ -1,0 +1,62 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 9,
+  "prerequisites": [
+    {
+      "from": "Mathematical Functions",
+      "to": "Probability Distributions",
+      "relation_type": "strong_prerequisite",
+      "reason": "Probability distributions are functions describing likelihoods over outcomes."
+    },
+    {
+      "from": "Random Variables",
+      "to": "Probability Distributions",
+      "relation_type": "strong_prerequisite",
+      "reason": "Distributions describe the behavior of random variables."
+    },
+    {
+      "from": "Random Variables",
+      "to": "Covariance",
+      "relation_type": "strong_prerequisite",
+      "reason": "Covariance is defined between two random variables."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Covariance",
+      "relation_type": "strong_prerequisite",
+      "reason": "Computing covariance requires understanding distributions and expected values."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Information Theory",
+      "relation_type": "strong_prerequisite",
+      "reason": "Core information-theoretic quantities such as entropy are defined using probability distributions."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Statistical Inference",
+      "relation_type": "strong_prerequisite",
+      "reason": "Statistical inference relies on probability distributions to model samples and uncertainty."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Probabilistic Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Probabilistic models represent uncertainty using probability distributions."
+    },
+    {
+      "from": "Random Variables",
+      "to": "Probabilistic Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Probabilistic models are built around random variables and their dependencies."
+    },
+    {
+      "from": "Mathematical Functions",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural networks are composed of mathematical functions mapping inputs to outputs."
+    }
+  ]
+}

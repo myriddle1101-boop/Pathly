@@ -1,0 +1,113 @@
+{
+  "stage": "2c",
+  "method": "sbert_cosine",
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "topic_count": 15,
+  "similarity_count": 15,
+  "threshold": 0.72,
+  "top_k_per_topic": 5,
+  "similarity_edges": [
+    {
+      "from": "learning methodologies in lectures",
+      "to": "lecture-based learning strategies",
+      "similarity": 0.9141
+    },
+    {
+      "from": "autonomous drone applications in logistics",
+      "to": "autonomous drone navigation",
+      "similarity": 0.8542
+    },
+    {
+      "from": "autonomous drone applications in logistics",
+      "to": "drone delivery systems",
+      "similarity": 0.8291
+    },
+    {
+      "from": "drone delivery systems",
+      "to": "drone fleet management",
+      "similarity": 0.8213
+    },
+    {
+      "from": "drone delivery systems",
+      "to": "drone technology advancements",
+      "similarity": 0.8192
+    },
+    {
+      "from": "adaptive learning systems in AI",
+      "to": "learning agents in AI",
+      "similarity": 0.8169
+    },
+    {
+      "from": "drone fleet management",
+      "to": "drone technology advancements",
+      "similarity": 0.801
+    },
+    {
+      "from": "autonomous drone applications in logistics",
+      "to": "drone fleet management",
+      "similarity": 0.7952
+    },
+    {
+      "from": "adaptive learning systems in AI",
+      "to": "reinforcement learning for autonomous systems",
+      "similarity": 0.7759
+    },
+    {
+      "from": "autonomous drone navigation",
+      "to": "drone technology advancements",
+      "similarity": 0.7658
+    },
+    {
+      "from": "autonomous drone applications in logistics",
+      "to": "drone technology advancements",
+      "similarity": 0.7576
+    },
+    {
+      "from": "autonomous drone navigation",
+      "to": "drone fleet management",
+      "similarity": 0.7538
+    },
+    {
+      "from": "autonomous drone navigation",
+      "to": "drone delivery systems",
+      "similarity": 0.7484
+    },
+    {
+      "from": "learning assignments in education",
+      "to": "lecture-based learning strategies",
+      "similarity": 0.7268
+    },
+    {
+      "from": "deep learning for image recognition in drones",
+      "to": "real-time data processing for drones",
+      "similarity": 0.7252
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 10.0113,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2c.similarity",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-08-18T19:00:47.905684+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-dl___week_2___design_engineering-a7ff94af9bad",
+  "file_name": "dl___week_2___design_engineering-a7ff94af9bad",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 6,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6923,
+    "f1": 0.8182,
+    "tp": 9,
+    "fp": 0,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1": 0.4,
+    "tp": 1,
+    "fp": 0,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Artificial Neural Networks",
+      "Backpropagation",
+      "Linear Separation",
+      "Training Techniques",
+      "Neural Networks",
+      "Regression Analysis",
+      "Classification Techniques",
+      "Model Evaluation",
+      "Optimization Algorithms"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Activation Functions",
+        "reason": "The source explicitly introduces sigmoid and ReLU functions and explains their role in neural networks."
+      },
+      {
+        "name": "Loss Functions",
+        "reason": "The training section explicitly defines loss functions and uses Least Squared Error."
+      },
+      {
+        "name": "Gradient Descent",
+        "reason": "Gradient descent is derived for regression and then used to update neural-network weights."
+      },
+      {
+        "name": "Universal Approximation Theorem",
+        "reason": "The source explicitly presents the theorem and its implications for ANN function approximation."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Artificial Neural Networks",
+        "to": "Backpropagation",
+        "reason": "Backpropagation calculates gradients and updates parameters of a multi-layer neural network, requiring understanding of the network architecture and its weights."
+      }
+    ],
+    "rejected_prerequisites": [],
+    "missing_prerequisites": [
+      {
+        "from": "Loss Functions",
+        "to": "Gradient Descent",
+        "reason": "The source defines training as selecting a loss function and applying gradient descent to minimize it."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Backpropagation",
+        "reason": "Backpropagation is introduced as the algorithm for calculating the derivatives needed to implement gradient-descent weight updates in multi-layer networks."
+      },
+      {
+        "from": "Chain Rule",
+        "to": "Backpropagation",
+        "reason": "The backpropagation derivative calculations are explicitly derived by repeated application of the chain rule."
+      }
+    ],
+    "overall_note": "The predicted topics are broadly supported, but key instructional concepts—activation functions, loss functions, gradient descent, and the universal approximation theorem—are absent."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___week_2___design_engineering-a7ff94af9bad.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___week_2___design_engineering-a7ff94af9bad.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___week_2___design_engineering-a7ff94af9bad_ledger.csv"
+  }
+}

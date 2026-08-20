@@ -1,0 +1,29 @@
+{
+  "stage": "stage2c",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2c_similarity.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2c_similarity.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\stage2c_similarity_edges.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 33.4474,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2c_similarity_edges.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 8\n[2] 相似关系数量: 3 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Neural Computation <-> Neural Networks | sim=0.8316\n02. Neural Computation <-> Neural Network Evaluation | sim=0.777\n03. Deep Learning <-> Neural Networks | sim=0.7399\n\n Stage 2c 完成\n",
+  "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6357.09it/s]\n"
+}

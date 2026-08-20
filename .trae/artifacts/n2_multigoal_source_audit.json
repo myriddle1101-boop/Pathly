@@ -1,0 +1,194 @@
+{
+  "audit_version": "n2-multigoal-source-audit-v1",
+  "generated_at": "2026-08-15T08:00:07.673965+00:00",
+  "read_only": true,
+  "goals": [
+    {
+      "goal_id": "word_embeddings",
+      "target_concept_candidate": "Word Vectors",
+      "candidate_sources": [
+        {
+          "run": "02-understanding-embeddings",
+          "digest": "2a611584541b",
+          "available": true,
+          "pipeline_status": "success",
+          "resource_id": "2a611584541beb27fa2667ea00074e6362e236cbbf8855464a3873eea74bec2e",
+          "document_name": "02-understanding-embeddings.pdf",
+          "pdf_path_exists": true,
+          "chunk_count": 4,
+          "chunk_id_examples": [
+            "1",
+            "2",
+            "3"
+          ],
+          "chunks_with_page_metadata": 0,
+          "page_level_grounding_ready": false,
+          "stage1_output_verified": true,
+          "license_or_review_status": "not_recorded",
+          "reason": "Candidate source is present, but its stage-1 chunks lack page metadata and no review/license approval is recorded."
+        },
+        {
+          "run": "cs224n-2026-lecture02-wordvecs",
+          "digest": "fd0b4ad8af88",
+          "available": true,
+          "pipeline_status": "success",
+          "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+          "document_name": "cs224n-2026-lecture02-wordvecs.pdf",
+          "pdf_path_exists": true,
+          "chunk_count": 15,
+          "chunk_id_examples": [
+            "1",
+            "2",
+            "3"
+          ],
+          "chunks_with_page_metadata": 0,
+          "page_level_grounding_ready": false,
+          "stage1_output_verified": true,
+          "license_or_review_status": "not_recorded",
+          "reason": "Candidate source is present, but its stage-1 chunks lack page metadata and no review/license approval is recorded."
+        }
+      ],
+      "admission_readiness": "ready_for_curation",
+      "eligible_source_coverage": false,
+      "blocking_gaps": [
+        "page_chunk_backfill_required",
+        "human_source_review_required",
+        "canonical_prerequisite_chain_required",
+        "teaching_assets_required"
+      ]
+    },
+    {
+      "goal_id": "self_attention",
+      "target_concept_candidate": "Attention Mechanisms",
+      "candidate_sources": [
+        {
+          "run": "cs224n-2026-lecture05-transformers",
+          "digest": "0e9017f9dbd8",
+          "available": true,
+          "pipeline_status": "success",
+          "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+          "document_name": "cs224n-2026-lecture05-transformers.pdf",
+          "pdf_path_exists": true,
+          "chunk_count": 22,
+          "chunk_id_examples": [
+            "1",
+            "2",
+            "3"
+          ],
+          "chunks_with_page_metadata": 0,
+          "page_level_grounding_ready": false,
+          "stage1_output_verified": true,
+          "license_or_review_status": "not_recorded",
+          "reason": "Candidate source is present, but its stage-1 chunks lack page metadata and no review/license approval is recorded."
+        }
+      ],
+      "admission_readiness": "ready_for_curation",
+      "eligible_source_coverage": false,
+      "blocking_gaps": [
+        "page_chunk_backfill_required",
+        "human_source_review_required",
+        "canonical_prerequisite_chain_required",
+        "teaching_assets_required"
+      ]
+    },
+    {
+      "goal_id": "rag",
+      "target_concept_candidate": "Retrieval-Augmented Generation (RAG)",
+      "candidate_sources": [
+        {
+          "run": "cs224n-2026-lecture10-rag-agents",
+          "digest": "2e97edb678d2",
+          "available": true,
+          "pipeline_status": "success",
+          "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+          "document_name": "cs224n-2026-lecture10-rag-agents.pdf",
+          "pdf_path_exists": true,
+          "chunk_count": 13,
+          "chunk_id_examples": [
+            "1",
+            "2",
+            "3"
+          ],
+          "chunks_with_page_metadata": 0,
+          "page_level_grounding_ready": false,
+          "stage1_output_verified": true,
+          "license_or_review_status": "not_recorded",
+          "reason": "Candidate source is present, but its stage-1 chunks lack page metadata and no review/license approval is recorded."
+        },
+        {
+          "run": "01-introduction-to-rag",
+          "digest": "7cfd7fd31611",
+          "available": true,
+          "pipeline_status": "success",
+          "resource_id": "7cfd7fd316117255ab11718aa1e83a6c03b9d0edc4490e8699fe63ebdbeec833",
+          "document_name": "01-introduction-to-rag.pdf",
+          "pdf_path_exists": true,
+          "chunk_count": 5,
+          "chunk_id_examples": [
+            "1",
+            "2",
+            "3"
+          ],
+          "chunks_with_page_metadata": 0,
+          "page_level_grounding_ready": false,
+          "stage1_output_verified": true,
+          "license_or_review_status": "not_recorded",
+          "reason": "Candidate source is present, but its stage-1 chunks lack page metadata and no review/license approval is recorded."
+        },
+        {
+          "run": "05-building-simple-rag",
+          "digest": "35ec62f5ee2b",
+          "available": true,
+          "pipeline_status": "success",
+          "resource_id": "35ec62f5ee2b5b76fb8c40725f638949b72d9b584ee2f8d77dfd3fe051af777d",
+          "document_name": "05-building-simple-rag.pdf",
+          "pdf_path_exists": true,
+          "chunk_count": 12,
+          "chunk_id_examples": [
+            "1",
+            "2",
+            "3"
+          ],
+          "chunks_with_page_metadata": 0,
+          "page_level_grounding_ready": false,
+          "stage1_output_verified": true,
+          "license_or_review_status": "not_recorded",
+          "reason": "Candidate source is present, but its stage-1 chunks lack page metadata and no review/license approval is recorded."
+        },
+        {
+          "run": "06-advanced-rag-techniques",
+          "digest": "a65350c7ccf6",
+          "available": true,
+          "pipeline_status": "success",
+          "resource_id": "a65350c7ccf69c097cdf31e91557343e55c158cc55979ea6eaf7d667915c9002",
+          "document_name": "06-advanced-rag-techniques.pdf",
+          "pdf_path_exists": true,
+          "chunk_count": 13,
+          "chunk_id_examples": [
+            "1",
+            "2",
+            "3"
+          ],
+          "chunks_with_page_metadata": 0,
+          "page_level_grounding_ready": false,
+          "stage1_output_verified": true,
+          "license_or_review_status": "not_recorded",
+          "reason": "Candidate source is present, but its stage-1 chunks lack page metadata and no review/license approval is recorded."
+        }
+      ],
+      "admission_readiness": "ready_for_curation",
+      "eligible_source_coverage": false,
+      "blocking_gaps": [
+        "page_chunk_backfill_required",
+        "human_source_review_required",
+        "canonical_prerequisite_chain_required",
+        "teaching_assets_required"
+      ]
+    }
+  ],
+  "summary": {
+    "candidate_goals": 3,
+    "candidate_sources": 7,
+    "page_grounding_ready_sources": 0
+  }
+}

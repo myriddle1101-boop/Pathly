@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "sgd_and_cost_structure-84a4549929c0",
+  "created_at": "2026-07-29T14:24:53+08:00",
+  "updated_at": "2026-07-29T14:26:44+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "sgd_and_cost_structure.pdf",
+    "doc_name": "sgd_and_cost_structure",
+    "sha256": "84a4549929c00ccaf513e1228c07b4fac6f3d313a24d0f2546c7e4abc58b5bc6",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\sgd_and_cost_structure.pdf",
+    "pdf_size_bytes": 3580728
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 111.485
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:24:53+08:00",
+      "ended_at": "2026-07-29T14:24:57+08:00",
+      "duration_seconds": 4.5861,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\sgd_and_cost_structure.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 930\n[2] 清洗后词数: 932\n[3] 文档类型识别: paper_book\n[4] 分块数（过滤前）: 8\n[5] 分块数（过滤后）: 7\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=118\nGradient Descent and the Structure of Neural Network Cost Functions presentation by Ian Goodfellow adapted for www.deeplearningbook.org from a presentation to the CIFAR Deep Learning summer school on August 9, 2015  Opti...\n\n[Chunk 2] words=56\nDerivatives and Second Derivatives (Goodfellow 2015)  Directional Curvature (Goodfellow 2015)  Taylor series approximation Baseline Correction Linear from change directional due to curvature gradient (Goodfellow 2015)  H...\n\n[Chunk 3] words=150\nNewton’s method (Goodfellow 2015)  Newton’s method’s failure mode (Goodfellow 2015)  The old view of SGD as difficult - SGD usually moves downhill - SGD eventually encounters a critical point - Usually this is a minimum ...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:24:57+08:00",
+      "ended_at": "2026-07-29T14:25:42+08:00",
+      "duration_seconds": 44.751,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：7\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/7 ...\n[KeyBERT] chunk 2/7 ...\n[KeyBERT] chunk 3/7 ...\n[KeyBERT] chunk 4/7 ...\n[KeyBERT] chunk 5/7 ...\n[KeyBERT] chunk 6/7 ...\n[KeyBERT] chunk 7/7 ...\n[2] KeyBERT候选数：39\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Neural Networks\n02. Gradient Descent\n03. Optimization Techniques\n04. Loss Functions\n05. Training Dynamics\n06. Neural Network Architecture\n07. Gradient Noise\n08. Eigenvalues in Optimization\n09. Experimental Techniques\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6196.85it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:25:42+08:00",
+      "ended_at": "2026-07-29T14:25:49+08:00",
+      "duration_seconds": 7.069,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Loss Functions -> Gradient Descent | Gradient Descent minimizes the loss function.\n02. Neural Networks -> Neural Network Architecture | Understanding Neural Networks is essential for grasping their architecture.\n03. Gradient Descent -> Training Dynamics | Training Dynamics involves the optimization process, which includes Gradient Descent.\n04. Gradient Descent -> Gradient Noise | Gradient Noise affects the performance of Gradient Descent.\n05. Optimization Techniques -> Eigenvalues in Optimization | Eigenvalues are important for understanding optimization methods.\n06. Training Dynamics -> Experimental Techniques | Experimental Techniques are used to evaluate training dynamics.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:25:49+08:00",
+      "ended_at": "2026-07-29T14:26:21+08:00",
+      "duration_seconds": 31.5974,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 2 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Experimental Techniques <-> Optimization Techniques | sim=0.8478\n02. Experimental Techniques <-> Training Dynamics | sim=0.7766\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5957.86it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:26:21+08:00",
+      "ended_at": "2026-07-29T14:26:42+08:00",
+      "duration_seconds": 21.5337,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Neural Networks\n[LLM] 2/9 Gradient Descent\n[LLM] 3/9 Optimization Techniques\n[LLM] 4/9 Loss Functions\n[LLM] 5/9 Training Dynamics\n[LLM] 6/9 Neural Network Architecture\n[LLM] 7/9 Gradient Noise\n[LLM] 8/9 Eigenvalues in Optimization\n[LLM] 9/9 Experimental Techniques\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:26:42+08:00",
+      "ended_at": "2026-07-29T14:26:44+08:00",
+      "duration_seconds": 1.8557,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output present"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 6\n[3] Similarity edges: 2\n[4] Graph nodes=9, edges=8\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T14:24:53+08:00"
+}

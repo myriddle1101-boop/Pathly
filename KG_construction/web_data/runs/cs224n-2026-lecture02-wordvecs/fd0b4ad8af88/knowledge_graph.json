@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "id": "Word Vectors",
+      "description": "Mathematical representations of words in a continuous vector space.",
+      "sub_topics": "[{\"name\": \"Word Context\", \"description\": \"The surrounding words that provide meaning to a target word.\"}, {\"name\": \"Negative Sampling\", \"description\": \"A technique to efficiently train word embeddings by sampling negative examples.\"}, {\"name\": \"Dimensionality Reduction\", \"description\": \"Methods to reduce the number of features in word vector representations.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and familiarity with natural language processing concepts.",
+      "key_sub_concepts": "[\"Word Embeddings\", \"Cosine Similarity\"]",
+      "common_misconceptions": "[\"Word vectors are the same as one-hot encoding\", \"All words have equal importance in vector space\"]",
+      "practical_applications": "[\"Sentiment Analysis\", \"Machine Translation\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": "[{\"name\": \"Activation Function\", \"description\": \"Functions that determine the output of a neural network node.\"}, {\"name\": \"Backpropagation\", \"description\": \"An algorithm for training neural networks by minimizing the loss function.\"}, {\"name\": \"Artificial Neural Network\", \"description\": \"A network of interconnected nodes that processes information in layers.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": "[{\"name\": \"Stochastic Gradient Descent\", \"description\": \"An optimization algorithm for minimizing the loss function.\"}, {\"name\": \"Model Parameters\", \"description\": \"Variables in a model that are adjusted during training.\"}, {\"name\": \"Loss Function\", \"description\": \"A function that measures the difference between predicted and actual outcomes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Overfitting and Underfitting\", \"Cross-Validation\", \"Hyperparameter Tuning\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Training and testing data can be mixed\", \"Complex models are always better\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Predictive analytics\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Similarity Measures",
+      "description": "Techniques to quantify how similar two items are.",
+      "sub_topics": "[{\"name\": \"Cosine Similarity\", \"description\": \"A measure of similarity between two non-zero vectors.\"}, {\"name\": \"Semantic Similarity\", \"description\": \"Quantifying how similar the meanings of two words are.\"}, {\"name\": \"Vector Differences\", \"description\": \"Calculating the difference between word vectors to find relationships.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Euclidean Distance\", \"Cosine Similarity\", \"Jaccard Index\", \"Manhattan Distance\"]",
+      "common_misconceptions": "[\"All similarity measures are the same.\", \"Higher similarity always indicates better performance.\"]",
+      "practical_applications": "[\"Recommendation systems\", \"Image retrieval\", \"Natural language processing\", \"Clustering algorithms\"]"
+    },
+    {
+      "id": "Natural Language Processing",
+      "description": "The field of study focused on the interaction between computers and human language.",
+      "sub_topics": "[{\"name\": \"Language Models\", \"description\": \"Statistical models that predict the next word in a sequence.\"}, {\"name\": \"Tokenization\", \"description\": \"The process of breaking text into individual words or phrases.\"}, {\"name\": \"Word Embeddings\", \"description\": \"Dense vector representations of words that capture semantic meaning.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and statistics.",
+      "key_sub_concepts": "[\"Tokenization\", \"Sentiment Analysis\", \"Named Entity Recognition\", \"Language Modeling\"]",
+      "common_misconceptions": "[\"NLP can understand language like humans do\", \"NLP is only about text processing\"]",
+      "practical_applications": "[\"Chatbots\", \"Text summarization\", \"Machine translation\", \"Sentiment analysis in social media\"]"
+    },
+    {
+      "id": "Data Representation",
+      "description": "Methods for structuring and encoding data for machine learning.",
+      "sub_topics": "[{\"name\": \"Discrete Symbols\", \"description\": \"Distinct units of data used in various algorithms.\"}, {\"name\": \"Sparse Representations\", \"description\": \"Data structures that efficiently store high-dimensional data.\"}, {\"name\": \"Occurrence Counts\", \"description\": \"The frequency of terms in a dataset used for analysis.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Feature Encoding\", \"Data Normalization\", \"Dimensionality Reduction\"]",
+      "common_misconceptions": "[\"Data representation is only about numerical data.\", \"More features always lead to better models.\"]",
+      "practical_applications": "[\"Image processing\", \"Natural language processing\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Optimization Techniques",
+      "description": "Methods for improving the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Gradient Descent\", \"description\": \"An iterative optimization algorithm for minimizing functions.\"}, {\"name\": \"Objective Function\", \"description\": \"A function that the optimization algorithm seeks to minimize or maximize.\"}, {\"name\": \"Hyperparameter Tuning\", \"description\": \"The process of optimizing the parameters that govern the training process.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of calculus and linear algebra, familiarity with machine learning concepts.",
+      "key_sub_concepts": "[\"Gradient Descent\", \"Stochastic Gradient Descent\", \"Adam Optimizer\", \"Learning Rate Scheduling\"]",
+      "common_misconceptions": "[\"Optimization is only about finding the minimum loss\", \"All optimization techniques work equally well for all models\"]",
+      "practical_applications": "[\"Training neural networks\", \"Tuning hyperparameters\", \"Improving convergence speed in algorithms\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Cross-Validation\", \"description\": \"A technique for assessing how the results of a statistical analysis will generalize.\"}, {\"name\": \"Performance Metrics\", \"description\": \"Quantitative measures used to evaluate the quality of a model.\"}, {\"name\": \"Training vs. Testing\", \"description\": \"The distinction between data used to train a model and data used to evaluate it.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and statistics.",
+      "key_sub_concepts": "[\"Confusion Matrix\", \"Precision and Recall\", \"F1 Score\", \"ROC Curve\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Accuracy is the only metric that matters.\", \"Overfitting is not a concern if the accuracy is high.\"]",
+      "practical_applications": "[\"Evaluating classification models in healthcare.\", \"Assessing predictive models in finance.\"]"
+    },
+    {
+      "id": "Deep Learning",
+      "description": "A subset of machine learning that uses neural networks with many layers.",
+      "sub_topics": "[{\"name\": \"Convolutional Neural Networks\", \"description\": \"A class of deep neural networks primarily used for image processing.\"}, {\"name\": \"Recurrent Neural Networks\", \"description\": \"Neural networks designed for sequential data processing.\"}, {\"name\": \"Transfer Learning\", \"description\": \"A technique where a pre-trained model is adapted for a new task.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra, calculus, and programming in Python.",
+      "key_sub_concepts": "[\"Neural Networks\", \"Backpropagation\", \"Convolutional Neural Networks (CNNs)\", \"Recurrent Neural Networks (RNNs)\"]",
+      "common_misconceptions": "[\"Deep learning is the same as machine learning.\", \"More layers always lead to better performance.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Speech recognition\", \"Game playing (e.g., AlphaGo)\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Word Vectors",
+      "to": "Natural Language Processing",
+      "relation": "prerequisite",
+      "reason": "Word vectors are fundamental for representing words in NLP tasks."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Deep Learning",
+      "relation": "prerequisite",
+      "reason": "Deep learning is based on neural networks with multiple layers."
+    },
+    {
+      "from": "Training Techniques",
+      "to": "Model Evaluation",
+      "relation": "prerequisite",
+      "reason": "Effective training techniques are essential for evaluating model performance."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Word Vectors",
+      "relation": "prerequisite",
+      "reason": "Understanding data representation is crucial for creating word vectors."
+    },
+    {
+      "from": "Optimization Techniques",
+      "to": "Training Techniques",
+      "relation": "prerequisite",
+      "reason": "Optimization techniques are often used to improve training methods.",
+      "similarity": 0.7644
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Optimization Techniques",
+      "relation": "similarity",
+      "score": 0.8266
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Training Techniques",
+      "relation": "similarity",
+      "score": 0.774
+    }
+  ]
+}

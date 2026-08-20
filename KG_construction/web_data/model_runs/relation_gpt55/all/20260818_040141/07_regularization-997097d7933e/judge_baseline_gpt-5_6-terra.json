@@ -1,0 +1,117 @@
+{
+  "created_at": "2026-08-18T18:42:08.539066+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-07_regularization-997097d7933e",
+  "file_name": "07_regularization-997097d7933e",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 18,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6154,
+    "f1": 0.7273,
+    "tp": 8,
+    "fp": 1,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.2,
+    "recall": 0.25,
+    "f1": 0.2222,
+    "tp": 1,
+    "fp": 4,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Neural Networks",
+      "Learning Algorithms",
+      "Loss Functions",
+      "Regularization Techniques",
+      "Model Evaluation",
+      "Tangent Classifiers",
+      "Regression Techniques",
+      "Unsupervised Learning"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Data Handling",
+        "reason": "The source discusses specific procedures such as dataset augmentation and resampling, but does not establish broad data handling as a learning concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Weight Decay (L2 Regularization)",
+        "reason": "The source gives a detailed treatment of L2 weight decay and its optimization effects."
+      },
+      {
+        "name": "Early Stopping",
+        "reason": "The source explicitly describes stopping at the point of lowest validation-set error."
+      },
+      {
+        "name": "Dropout",
+        "reason": "The source explicitly presents dropout as training an ensemble of subnetworks."
+      },
+      {
+        "name": "Bagging",
+        "reason": "The source explains bagging through resampled datasets and model averaging."
+      },
+      {
+        "name": "Adversarial Training",
+        "reason": "The source describes training on adversarial examples to encourage local constancy and improve robustness."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Learning Algorithms",
+        "to": "Regularization Techniques",
+        "reason": "Regularization is defined as a modification to a learning algorithm, so understanding the learning algorithm precedes understanding its regularization."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Learning Algorithms",
+        "to": "Loss Functions",
+        "reason": "Loss functions may guide many learning procedures, but the source does not establish a general directional prerequisite from learning algorithms to loss functions."
+      },
+      {
+        "from": "Data Handling",
+        "to": "Model Evaluation",
+        "reason": "This is a general practical association rather than a strong learning dependency supported by the source."
+      },
+      {
+        "from": "Regression Techniques",
+        "to": "Model Evaluation",
+        "reason": "Evaluating regression is an application practice, not a prerequisite relationship established in the text."
+      },
+      {
+        "from": "Unsupervised Learning",
+        "to": "Model Evaluation",
+        "reason": "The source does not present model evaluation as depending on unsupervised learning."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Validation Set Performance",
+        "to": "Early Stopping",
+        "reason": "Early stopping is based on retaining parameters from the point with the lowest validation-set error."
+      },
+      {
+        "from": "L1 Norm Penalty",
+        "to": "Sparse Representations",
+        "reason": "The source explicitly states that an L1 penalty on representation elements induces representational sparsity."
+      },
+      {
+        "from": "Autoencoders",
+        "to": "Manifold Tangent Classifier",
+        "reason": "The manifold tangent classifier estimates manifold tangent directions by training an autoencoder."
+      }
+    ],
+    "overall_note": "The predictions capture broad chapter themes but omit several central regularization methods; most proposed prerequisite links are evaluation or workflow associations rather than directional learning dependencies."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-07_regularization-997097d7933e.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-07_regularization-997097d7933e.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-07_regularization-997097d7933e_ledger.csv"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Tokenization",
+      "to": "Encoding Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Encoding text typically operates on tokens or units produced by tokenization."
+    },
+    {
+      "from": "Encoding Techniques",
+      "to": "Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Language models require text to be converted into numerical representations before sequences can be modeled computationally."
+    }
+  ]
+}

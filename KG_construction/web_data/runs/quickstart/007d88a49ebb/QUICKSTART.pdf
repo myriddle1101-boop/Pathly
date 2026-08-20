@@ -1,0 +1,204 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 7 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/Contents 25 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 24 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/Contents 26 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 24 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /ZapfDingbats /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+8 0 obj
+<<
+/Contents 27 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 24 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Outlines 11 0 R /PageMode /UseNone /Pages 24 0 R /Type /Catalog
+>>
+endobj
+10 0 obj
+<<
+/Author () /CreationDate (D:20260722034539+08'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260722034539+08'00') /Producer (xhtml2pdf <https://github.com/xhtml2pdf/xhtml2pdf/>) 
+  /Subject () /Title (QUICKSTART.md) /Trapped /False
+>>
+endobj
+11 0 obj
+<<
+/Count 4 /First 12 0 R /Last 12 0 R /Type /Outlines
+>>
+endobj
+12 0 obj
+<<
+/Count -5 /Dest [ 5 0 R /Fit ] /First 13 0 R /Last 23 0 R /Parent 11 0 R /Title (Quick Start Guide)
+>>
+endobj
+13 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 14 0 R /Parent 12 0 R /Title (Prerequisites)
+>>
+endobj
+14 0 obj
+<<
+/Count -4 /Dest [ 5 0 R /Fit ] /First 15 0 R /Last 18 0 R /Next 19 0 R /Parent 12 0 R 
+  /Prev 13 0 R /Title (Installation)
+>>
+endobj
+15 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 16 0 R /Parent 14 0 R /Title (1. Clone or Navigate to Repository)
+>>
+endobj
+16 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 17 0 R /Parent 14 0 R /Prev 15 0 R /Title (2. Create Virtual Environment)
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 5 0 R /Fit ] /Next 18 0 R /Parent 14 0 R /Prev 16 0 R /Title (3. Install Dependencies)
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Parent 14 0 R /Prev 17 0 R /Title (4. Set Up Environment Variables \(Optional\))
+>>
+endobj
+19 0 obj
+<<
+/Count -2 /Dest [ 6 0 R /Fit ] /First 20 0 R /Last 21 0 R /Next 22 0 R /Parent 12 0 R 
+  /Prev 14 0 R /Title (Running Examples)
+>>
+endobj
+20 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 21 0 R /Parent 19 0 R /Title (Example 1: Simple QA \(No API Key Required\))
+>>
+endobj
+21 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Parent 19 0 R /Prev 20 0 R /Title (Example 2: Document Chat \(Requires API Key\))
+>>
+endobj
+22 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 23 0 R /Parent 12 0 R /Prev 19 0 R /Title (Testing Your Setup)
+>>
+endobj
+23 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Parent 12 0 R /Prev 22 0 R /Title (Learning Path)
+>>
+endobj
+24 0 obj
+<<
+/Count 3 /Kids [ 5 0 R 6 0 R 8 0 R ] /Type /Pages
+>>
+endobj
+25 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1146
+>>
+stream
+Gb!Sk95iNL&AI`dVWrk7b2RhpmG?8m'WGhRW4c<5>hHhMY]e8P;>tuVD*p!(J^CEP#4TKSAp1nVDoWLu!PW5i*R+WA%:Sa_!bF'u!@inUiFhpFm/?3TieKGG/0\>P+p91qM$3!T]69ZuE/^D]`^gXr$26UT9NR\i7cFDrc[ea+r#UJd$s9nfT`L-?]!b'/Nu8WFk[0WfF:6\Q/KC:HAuq&$p_/C#I#++hLa7dCVBf?M=<J$h"K,M@eS1'W+,?tMR"OH3OV(Oe@g:PEFU):kEUVj(J<U2,DF$gM$CF=S'a\Z/BLjY,XEf.`VqOG)6YaY<Ph$a7JU?FSE-61.`e&lSZ),p-<un58KhV#@r-ZSVE4I)7XhnXi)(tMM527M`lD)*BFJ42LAmmC3DD<?6hjAhd?ClQo),XZfZ1kXmo0h:SdnP*^Z1YIgJ%)%HV(+;-ATr\-+s]d8j'B(,G];-U!_6um<l!3YVRflAm<Hn%Xr>J++S7lj9Q"mle'W"nd4e?J/dJ4A#Y!g(Pa8+pSi`.hFI!o_H*6PV)4Xs%_6&0:)^Ncu>@"%2j.L5a1Y?5RWrc@mW#a.OYB?!a]5["NejAu[)@6oWM0C(N1fE/0E?`9(65/;N9/O:N,GU&$7,ab6Lk_s,-sE=<"Q%H[X8OdQP2;Tul86!ZY&p7DYKVlZIG6cGn_,4R`/7+u_rb,rRZ+?=_&:'c1u,`Xq5qt0F_u0X?]@(`a)[,_W">P\[5Eed2_S:fLfS%ub9D!QG)*o/EJ:_0oeOTe2]]DE:o'<DY/EGiFB75O.!LJs$9$L2on+0[YP]G"CL!9G,\g*cc$fn%n'>)Sj5fhc)9\,HL%[A%C'n%>1\bYP9Te#=[VfHX`Z^H]1jpfU,DM3=Kk/0b`'%6`gHsJWAf0G?iG$Pg*L\1ha/\_/o6EKh>,BhLd14.WM;m8H>BNjfeoQlcot#:=lB8PCGBN^b1;-Q-V*+#&f]I;QOS\LR-)ekMQ3]ttSfFk-DEmTi*7*AJ@14^g=\68]b"E].aiKm^9m"B<DS!p3@\gV2#=".fUt_u?V7k3#477%,NjJW%gTKEZ\K2J4GDd_\GsAZ[<NQ4qhXqKlc$fn%n)(bHMgF^ks.FRU!mUK?+#K!L@r4_JbPrgd$GG=o`_:[~>endstream
+endobj
+26 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1404
+>>
+stream
+Gb!TV=`<=Y&BE]".0f0tG6'GXTdrAMgoWL@[b+i&JH>iR7A=:8D+Tk#BDq3ZU*[kP&]s_^"mT<eiK2R5s5sst)kU)Z7T4hELN*6\!bF&*!>S#<n95]XcX+n7nP*e;jqB@PiIW"f_?B$](/L.0@u^h&o/hFc9Ctc1qo&#mL[f5u+dXnZBESg$kCBBnF[TI@53qa';F1IJ79tWQol(O_1qf?\!R@H'ICI2EG=YPUg+@ap-X9/PD4[n)]]IpcT#+k&LG?Q_P<8Gd>'J9EE^,eGD,8A.>pUIRLeV;;`B=gBb4GFA%b.X::K[S<T:u#N#8mFL4]m/=,t/\H-AF*EF(lJ#RE6_?8Yfmj/MR).]hE!lQeE%ob)O;D^<BP/V_T\/;LU9#_/qq`A](c&%)]."#[U;On[9]!Jn=@bS>XgiIPQim]t'*Ee6HQ)QJkbEaG1;^+r@a0]K"=ho.VU_Bg.f-Yq_6.505cba`GieC5UV*<#]78)b[lW)&gQE1mX?n;j:d+`g`6.U<<-c,;!f@W/:!&_h65&]?<")bAdiBBiU([#8=W912'+=C?u.&3eh<[4FXpt\#m^,mU7A^LfcC;3DEe`n@c1@7f@1T$;Q9?<W^7:q+H:5r4*TAmJ&jY-rHH=%&M*0=*R^1<=l[,-2`nA+IT8m9e,hOT4+n>Vhlt_Tm*&m.S[cOSbD`PmFd01!YQIRHCkf4:sQ7@]*i&Z;;2H>#.8;s%;6VtS%A\QUH;p'H1Y@cn%kOmP\(<@+MW]\CgqF.UhYN_DIhalaCJ%hNN,ad#LYo>b2!.<6^YgSEGQ[Ld[>rKCLgBDatWL,bi<V^Yn'/3]s"EGUABAUS9:$<Lh%7f\q]O`3sJctW_]A>+VF#8NZR!s<Pim7*P@H5Xn(V+\5g;"Qu\YlB%8#`.Gn^H&40MBBN=;K;srmj^RHMUrk6.@cH-iZOEo%$Oh9QQ$En#"58:d':4QZd^!aZ5qbYfq@'.<_\U_<'CqG=d='H+D#Hn]W3u#?./lQkG?[J,rlOdF\(WAIiH>ZZ^d+?]l$.h5[76+*VZ_u5XO"VZu(+4rC?b)B=I7T$;^8"2BQNQjK0>'^`2Q(@q%[;4H(-(uU*7?>(RlRPgE2YPtYA+!<J6.G]R["F2=p)ijr#%jQV^_?!H!"N?U+m+$rC_rECl1%8oXh,U@9(_T6K7>5IS6H(m]8U3_\-NeCV+8uhHf0+]#6`uj!Q]cXVu,H/&p<23=fu0W7uL1]Aa4UiV<SE/*r>SmoT3?-Z=uG?G,*Q,-J4.2a^p/%)2G=*\l%%Qbd%D/<)m-9kRm*$h'tRqO(>N[MO_CMX.j[,-8D#Ok=nB<h?3unc.>73509UkeE(q/5PFY7QMXu(#JoP@8s8;KISiP_^LJ>js=!g!DW.Y^_"fj!F@F-/-~>endstream
+endobj
+27 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1364
+>>
+stream
+Gau`SgMYb*&:O:S9_TiN;)@3#'X^1J2Vk/^.BlC&"cBl>'T#Sle]"R^;uce+.EOL8Zq>smiu9.^L,8!$LGPgciLAQY3!VF2_snTJb$_pd.YrWN3LnABs%Y3997(BM#T$B0#\62Ri#Hl`QDoNTI_.W"_qbI)V&N'4&8;R6^jI>cJ`AOuPgC]GP[o=UKX+FI&7L/h*^FiMe%)WN[((YtAR!!9DVEW6R/[9[=2r&alQB'OI4jDO873tbenbg[=2\/k^kW?$HLX?b*[PP(O2i\2^a(<74H#%#""%!C()-!u#/is"`a>B).+"4J<EJF*%3!90F)/SIQ.;5tpB+g\nQ,j,GN1=_"6PLQp;cHqVdVpoA!Bfg1b;uo)i'0TRJlLj0^i>?;+e\:Q_ZIZ3c,LMbHiEb_iSg^af-0l<K[JS2"\d5"$rlJ*#4]_k_pXZUS:(tOI0KeU0Ml/B]'Q]+-U<LK/MopP%mik3C[#I3`slRj'VUFWaO%u^cPBQP1&Xr1%,/4Ok'bkMYeD>cGq%^et9WC3@>CV?<W6?6tAY/Ekm=3T85!k\?`>q2MH%9`QmL^FtdVi>ukP)XOXmqF:mib9beE9ZE/(PeW*%dYKEkbVQP6Aq,V-DiZ@pj(<o=jog["0Y,\jB(=T&M1.q&UE&;ZcXcnCj]M*E:#WZ)$gtK)uNnBgUB@1CWA[D,FOe0=[S]f\fk%m&&AnR.M6r3[kLahd/q#3TunoXBXA^Xh?34WhI1"Y"\8*@"Nma%)Fe8^cuXrkG#3%&XHjC7CfQW^3G-J^aBHTP=u&m%,/o]N=`H>9V]U\ctq;3EK-8K"utC=dAfG/BkX]8%jj/+i&S;ptY(H;IY&SKqsEl_rB!'o0c&fN.*.U9npAl[%5r0:[;=im)UE\]0`EAF7StV=U)=W,fdpq8YQUf\6PcBb2Q(!n\S*q?=(+Oeu9+JC72>OmeXi#Au7uI(]Hrq]+QdU;Hr0D`]n?1;1q>;02Wq/K;a]M]G.K3gg#nGC$Z6O%)-q"[o_%,(@0cV8Qh/+QGVY:P(jie3)FK&(uC0i?b(BBPo\<Qo/GPpUNA1153)cZ:]63)X8ZLCdWT:2Rcs%+;5e*,nOF@^r'%F?E!51rI2d.SRK*1A^]:ZB@`<R._6dK1.5`_lg7dVb*4+@3S7uZLAeQbjQg_]^-]gLfZ0Ssef*N\/*!Y/9f/S]6250fYc%,bK0?qWO+b5HP/I94gFe64KMMbZ+pLqQS$pdo4XKKnhcBMB-m'r10&cM?Ruk!OR\e7IQ>L%:\(pFP2A.F!LU\oNp=p>Lq+>cfN.-3QW%_)fM0P%7M-k;E:YIWu?u>m3QZpCLj&edE?It1^?Ta?#r1>mOFYSHhJ!aWdhu~>endstream
+endobj
+xref
+0 28
+0000000000 65535 f 
+0000000061 00000 n 
+0000000122 00000 n 
+0000000229 00000 n 
+0000000341 00000 n 
+0000000446 00000 n 
+0000000651 00000 n 
+0000000856 00000 n 
+0000000939 00000 n 
+0000001144 00000 n 
+0000001230 00000 n 
+0000001496 00000 n 
+0000001570 00000 n 
+0000001692 00000 n 
+0000001786 00000 n 
+0000001932 00000 n 
+0000002047 00000 n 
+0000002170 00000 n 
+0000002287 00000 n 
+0000002412 00000 n 
+0000002562 00000 n 
+0000002687 00000 n 
+0000002813 00000 n 
+0000002925 00000 n 
+0000003019 00000 n 
+0000003091 00000 n 
+0000004329 00000 n 
+0000005825 00000 n 
+trailer
+<<
+/ID 
+[<2d9b7db7d3ff92d7e56afbae609d4350><2d9b7db7d3ff92d7e56afbae609d4350>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 10 0 R
+/Root 9 0 R
+/Size 28
+>>
+startxref
+7281
+%%EOF

@@ -1,0 +1,141 @@
+{
+  "created_at": "2026-08-18T18:43:11.195646+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-10_rnn-9b582c970ecc",
+  "file_name": "10_rnn-9b582c970ecc",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 22,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.5714,
+    "f1": 0.6957,
+    "tp": 8,
+    "fp": 1,
+    "fn": 6
+  },
+  "prerequisite_metrics": {
+    "precision": 0.1429,
+    "recall": 0.1667,
+    "f1": 0.1538,
+    "tp": 1,
+    "fp": 6,
+    "fn": 5
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Recurrent Neural Networks",
+      "Neural Networks",
+      "Computational Graphs",
+      "Training Techniques",
+      "Sequence Prediction",
+      "Gradient Methods",
+      "Memory Models",
+      "Dynamical Systems"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Statistical Language Processing",
+        "reason": "The source mentions statistical language modeling as an example, but does not present statistical language processing as a topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Unfolding Computational Graphs",
+        "reason": "Section 10.1 explicitly develops unfolding recurrent computations into time-unfolded computational graphs with parameter sharing."
+      },
+      {
+        "name": "Teacher Forcing",
+        "reason": "The source explicitly defines and illustrates teacher forcing for RNNs with output-to-hidden feedback."
+      },
+      {
+        "name": "Bidirectional RNNs",
+        "reason": "The source has a dedicated section describing forward and backward recurrent states for using past and future context."
+      },
+      {
+        "name": "Encoder-Decoder Sequence-to-Sequence Architectures",
+        "reason": "The source explicitly introduces encoder and decoder RNNs for input and output sequences of potentially different lengths."
+      },
+      {
+        "name": "Long Short-Term Memory",
+        "reason": "The source describes the LSTM cell, including input, forget, and output gates."
+      },
+      {
+        "name": "Gradient Clipping",
+        "reason": "The source explicitly presents gradient clipping as a solution for steep gradients in recurrent-network training."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Recurrent Neural Networks",
+        "reason": "RNNs are neural-network architectures with recurrent hidden-state connections."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Computational Graphs",
+        "reason": "The source presents computational graphs as a formalism for computations, not as a topic that depends on neural networks."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Training Techniques",
+        "reason": "This is a broad association; the source does not establish neural networks as a directional prerequisite for training techniques."
+      },
+      {
+        "from": "Sequence Prediction",
+        "to": "Recurrent Neural Networks",
+        "reason": "Sequence prediction is an application of RNNs, not a required conceptual prerequisite for learning RNNs."
+      },
+      {
+        "from": "Gradient Methods",
+        "to": "Training Techniques",
+        "reason": "Gradient methods are one component of optimization, but the broad training-techniques topic also includes procedures such as teacher forcing; the dependency is not sufficiently specific."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Memory Models",
+        "reason": "The source discusses explicit-memory networks, but does not establish the broad topic of neural networks as a direct prerequisite for the predicted Memory Models topic."
+      },
+      {
+        "from": "Statistical Language Processing",
+        "to": "Neural Networks",
+        "reason": "Language modeling is presented as an example application of an RNN, not as a prerequisite for neural networks."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Computational Graphs",
+        "to": "Unfolding Computational Graphs",
+        "reason": "The source introduces unfolding as a transformation of recurrent or recursive computations into repetitive computational graphs."
+      },
+      {
+        "from": "Recurrent Neural Networks",
+        "to": "Bidirectional RNNs",
+        "reason": "Bidirectional RNNs are introduced as recurrent networks with separate forward- and backward-time recurrences."
+      },
+      {
+        "from": "Recurrent Neural Networks",
+        "to": "Encoder-Decoder Sequence-to-Sequence Architectures",
+        "reason": "The encoder-decoder architecture is explicitly composed of an encoder RNN and a decoder RNN."
+      },
+      {
+        "from": "Recurrent Neural Networks",
+        "to": "Long Short-Term Memory",
+        "reason": "LSTM cells replace ordinary recurrent hidden units in a recurrent network."
+      },
+      {
+        "from": "Gradient Methods",
+        "to": "Gradient Clipping",
+        "reason": "Gradient clipping is defined as clipping a parameter gradient or its norm before the parameter update."
+      }
+    ],
+    "overall_note": "The predictions capture the chapter's broad RNN and optimization themes, but omit several central RNN architectures and training mechanisms."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-10_rnn-9b582c970ecc.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-10_rnn-9b582c970ecc.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-10_rnn-9b582c970ecc_ledger.csv"
+  }
+}

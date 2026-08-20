@@ -1,0 +1,26 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 3,
+  "prerequisites": [
+    {
+      "from": "Neural Network Components",
+      "to": "Autoencoders",
+      "relation_type": "strong_prerequisite",
+      "reason": "Autoencoders are neural networks, so their layers, activations, and connections must be understood first."
+    },
+    {
+      "from": "Neural Network Components",
+      "to": "Autoencoder Variants",
+      "relation_type": "strong_prerequisite",
+      "reason": "Autoencoder variants are implemented as neural network architectures requiring core neural network concepts."
+    },
+    {
+      "from": "Coordinate Systems",
+      "to": "Manifold Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Manifold learning depends on representing high-dimensional data and low-dimensional embeddings in coordinate spaces."
+    }
+  ]
+}

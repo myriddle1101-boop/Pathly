@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="score" type="double" />
+      <attribute id="11" title="reason" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Likelihood Models" label="Likelihood Models">
+        <attvalues>
+          <attvalue for="0" value="Concepts related to likelihood in statistical modeling." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Maximum Likelihood&quot;, &quot;description&quot;: &quot;A method for estimating the parameters of a statistical model.&quot;}, {&quot;name&quot;: &quot;Log Likelihood&quot;, &quot;description&quot;: &quot;The logarithm of the likelihood function, often used for optimization.&quot;}, {&quot;name&quot;: &quot;Likelihood Gradient&quot;, &quot;description&quot;: &quot;The gradient of the likelihood function, used in optimization algorithms.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of probability and statistics, familiarity with random variables and distributions." />
+          <attvalue for="6" value="[&quot;Maximum Likelihood Estimation (MLE)&quot;, &quot;Likelihood Ratio Tests&quot;]" />
+          <attvalue for="7" value="[&quot;Likelihood is the same as probability&quot;, &quot;Higher likelihood always indicates a better model&quot;]" />
+          <attvalue for="8" value="[&quot;Parameter estimation in statistical models&quot;, &quot;Hypothesis testing in various fields such as biology and economics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Probabilistic Models" label="Probabilistic Models">
+        <attvalues>
+          <attvalue for="0" value="Models that incorporate randomness and uncertainty in predictions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Undirected Models&quot;, &quot;description&quot;: &quot;Models that do not have a directed relationship between variables.&quot;}, {&quot;name&quot;: &quot;Energy Function&quot;, &quot;description&quot;: &quot;A function that represents the energy of a system in probabilistic models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and probability theory." />
+          <attvalue for="6" value="[&quot;Bayesian Inference&quot;, &quot;Markov Models&quot;]" />
+          <attvalue for="7" value="[&quot;Probabilistic models are only for complex problems&quot;, &quot;They always require large datasets&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Financial Forecasting&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Algorithms" label="Training Algorithms">
+        <attvalues>
+          <attvalue for="0" value="Algorithms used to train machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Learning Algorithm&quot;, &quot;description&quot;: &quot;A method for adjusting model parameters based on data.&quot;}, {&quot;name&quot;: &quot;MCMC Algorithm&quot;, &quot;description&quot;: &quot;Markov Chain Monte Carlo, a method for sampling from probability distributions.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and statistics." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Batch Learning&quot;, &quot;Online Learning&quot;]" />
+          <attvalue for="7" value="[&quot;All algorithms converge to the same solution&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Predictive analytics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Sampling" label="Model Sampling">
+        <attvalues>
+          <attvalue for="0" value="Techniques for generating samples from a model." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Positive Phase&quot;, &quot;description&quot;: &quot;The phase in sampling where positive samples are generated.&quot;}, {&quot;name&quot;: &quot;Negative Phase&quot;, &quot;description&quot;: &quot;The phase in sampling where negative samples are generated.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of probability and statistics, familiarity with machine learning concepts." />
+          <attvalue for="6" value="[&quot;Random Sampling&quot;, &quot;Importance Sampling&quot;, &quot;Markov Chain Monte Carlo (MCMC)&quot;, &quot;Variational Inference&quot;]" />
+          <attvalue for="7" value="[&quot;Sampling is only for generating data&quot;, &quot;All sampling methods are equally effective&quot;, &quot;Sampling does not affect model performance&quot;]" />
+          <attvalue for="8" value="[&quot;Generating synthetic data for training&quot;, &quot;Estimating model parameters&quot;, &quot;Improving model robustness&quot;, &quot;Simulating complex systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Methods for assessing the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Loss Function&quot;, &quot;description&quot;: &quot;A function that quantifies the difference between predicted and actual values.&quot;}, {&quot;name&quot;: &quot;Regularity Conditions&quot;, &quot;description&quot;: &quot;Conditions that ensure the stability and convergence of algorithms.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;ROC Curve&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern during evaluation.&quot;]" />
+          <attvalue for="8" value="[&quot;Model selection and comparison&quot;, &quot;Hyperparameter tuning&quot;, &quot;Performance monitoring in production&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Representation" label="Data Representation">
+        <attvalues>
+          <attvalue for="0" value="Ways to represent data for machine learning tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Probability Distribution&quot;, &quot;description&quot;: &quot;A function that describes the likelihood of different outcomes.&quot;}, {&quot;name&quot;: &quot;Model Distribution&quot;, &quot;description&quot;: &quot;The distribution of data as represented by a model.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Feature Scaling&quot;, &quot;One-Hot Encoding&quot;, &quot;Dimensionality Reduction&quot;, &quot;Data Normalization&quot;]" />
+          <attvalue for="7" value="[&quot;Data representation is only about numerical data.&quot;, &quot;All data needs to be normalized.&quot;]" />
+          <attvalue for="8" value="[&quot;Image processing for computer vision tasks&quot;, &quot;Text representation in natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;A function that determines the output of a neuron.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing the loss function.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;, &quot;Loss Functions&quot;, &quot;Overfitting and Regularization&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Regression and Classification" label="Regression and Classification">
+        <attvalues>
+          <attvalue for="0" value="Techniques for predicting continuous and categorical outcomes." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Separation&quot;, &quot;description&quot;: &quot;The ability to separate classes using a linear boundary.&quot;}, {&quot;name&quot;: &quot;Model Data&quot;, &quot;description&quot;: &quot;The process of fitting a model to data for prediction.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Linear Regression&quot;, &quot;Logistic Regression&quot;]" />
+          <attvalue for="7" value="[&quot;Regression is only for continuous outcomes&quot;, &quot;Classification is only for binary outcomes&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting house prices&quot;, &quot;Email spam detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Algorithm Optimization" label="Algorithm Optimization">
+        <attvalues>
+          <attvalue for="0" value="Techniques for improving the performance of algorithms." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Gradient Descent&quot;, &quot;description&quot;: &quot;An optimization algorithm used to minimize the loss function.&quot;}, {&quot;name&quot;: &quot;Burned Gradient&quot;, &quot;description&quot;: &quot;A technique related to gradient optimization in training.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algorithms and data structures, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Hyperparameter Tuning&quot;, &quot;Regularization&quot;, &quot;Gradient Descent&quot;, &quot;Model Selection&quot;]" />
+          <attvalue for="7" value="[&quot;Optimization only applies to machine learning models&quot;, &quot;More complex algorithms are always better&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model accuracy&quot;, &quot;Reducing training time&quot;, &quot;Enhancing algorithm efficiency in real-time systems&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Likelihood Models" target="Probabilistic Models">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.8098" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Probabilistic Models" target="Likelihood Models">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Likelihood is defined from a probabilistic model of observed data given parameters." />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Probabilistic Models" target="Model Sampling">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Sampling from a model requires understanding distributions and randomness represented by probabilistic models." />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Data Representation" target="Regression and Classification">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Supervised prediction methods require understanding how inputs, features, and labels are represented." />
+        </attvalues>
+      </edge>
+      <edge id="4" source="Data Representation" target="Neural Networks">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Neural networks require data to be encoded as numerical vectors, tensors, or other structured representations." />
+        </attvalues>
+      </edge>
+      <edge id="5" source="Algorithm Optimization" target="Training Algorithms">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Training algorithms commonly rely on optimization concepts to adjust model parameters and minimize objectives." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

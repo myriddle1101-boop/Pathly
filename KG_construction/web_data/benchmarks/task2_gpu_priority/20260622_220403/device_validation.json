@@ -1,0 +1,44 @@
+{
+  "created_at": "2026-06-22T22:04:03",
+  "project_dir": "D:\\ic\\master project\\project_code\\KG_construction",
+  "sample_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime",
+  "torch_probe_cpu": {
+    "requested_device": "cpu",
+    "selected_device": "cpu",
+    "device": "cpu",
+    "fallback_applied": false,
+    "fallback_reason": "",
+    "probe_success": true,
+    "probe_summary": "按请求使用 CPU。",
+    "torch_version": "2.12.0+cpu",
+    "torch_cuda_build": null,
+    "cuda_available": false,
+    "cuda_device_count": 0,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.9",
+    "force_device_env": ""
+  },
+  "torch_probe_cuda_preferred": {
+    "requested_device": "cuda",
+    "selected_device": "cpu",
+    "device": "cpu",
+    "fallback_applied": true,
+    "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+    "probe_success": true,
+    "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+    "torch_version": "2.12.0+cpu",
+    "torch_cuda_build": null,
+    "cuda_available": false,
+    "cuda_device_count": 0,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.9",
+    "force_device_env": ""
+  },
+  "nvidia_smi": {
+    "command": "nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader",
+    "return_code": 0,
+    "stdout": "NVIDIA GeForce RTX 5060 Laptop GPU, 582.05, 8151 MiB",
+    "stderr": "",
+    "success": true
+  }
+}

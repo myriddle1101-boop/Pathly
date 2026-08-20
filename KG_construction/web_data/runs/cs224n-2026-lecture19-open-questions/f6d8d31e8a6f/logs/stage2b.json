@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture19-open-questions\\f6d8d31e8a6f\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture19-open-questions\\f6d8d31e8a6f\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.7216,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture19-open-questions\\f6d8d31e8a6f\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Neural Networks -> Model Training | Neural networks are often the models being trained.\n02. Model Training -> Data Pretraining | Data pretraining is a specific type of model training.\n03. Optimization Techniques -> Model Training | Optimization techniques are essential for improving model training.\n04. Predictive Modeling -> Model Training | Predictive modeling relies on trained models to make predictions.\n05. Reinforcement Learning -> Model Training | Reinforcement learning involves training agents to make decisions.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

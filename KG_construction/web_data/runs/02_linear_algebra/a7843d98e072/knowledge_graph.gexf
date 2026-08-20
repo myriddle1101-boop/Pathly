@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-29">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="similarity" type="double" />
+      <attribute id="12" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Linear Algebra" label="Linear Algebra">
+        <attvalues>
+          <attvalue for="0" value="The mathematical foundation for many machine learning algorithms." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Matrices&quot;, &quot;description&quot;: &quot;Rectangular arrays of numbers essential for data representation.&quot;}, {&quot;name&quot;: &quot;Matrix Operations&quot;, &quot;description&quot;: &quot;Fundamental operations including addition, multiplication, and inversion.&quot;}, {&quot;name&quot;: &quot;Eigenvalues and Eigenvectors&quot;, &quot;description&quot;: &quot;Key concepts for understanding transformations and dimensionality reduction.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algebra and familiarity with mathematical notation." />
+          <attvalue for="6" value="[&quot;Vectors&quot;, &quot;Matrices&quot;, &quot;Matrix Operations&quot;, &quot;Eigenvalues and Eigenvectors&quot;]" />
+          <attvalue for="7" value="[&quot;Linear algebra is only about solving equations&quot;, &quot;Vectors can only represent physical quantities&quot;]" />
+          <attvalue for="8" value="[&quot;Data representation in machine learning&quot;, &quot;Dimensionality reduction techniques like PCA&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Matrix Inversion" label="Matrix Inversion">
+        <attvalues>
+          <attvalue for="0" value="The process of finding the inverse of a matrix, crucial for solving linear equations." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Identity Matrix&quot;, &quot;description&quot;: &quot;A special matrix that acts as a multiplicative identity.&quot;}, {&quot;name&quot;: &quot;Matrix Inverses&quot;, &quot;description&quot;: &quot;Understanding the conditions under which a matrix can be inverted.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, including matrix operations and determinants." />
+          <attvalue for="6" value="[&quot;Determinants&quot;, &quot;Adjugate Matrix&quot;, &quot;Gaussian Elimination&quot;]" />
+          <attvalue for="7" value="[&quot;All matrices have inverses&quot;, &quot;Matrix inversion is always computationally efficient&quot;]" />
+          <attvalue for="8" value="[&quot;Solving systems of linear equations&quot;, &quot;Computer graphics transformations&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Matrix Decomposition" label="Matrix Decomposition">
+        <attvalues>
+          <attvalue for="0" value="Techniques for breaking down matrices into simpler components." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Singular Value Decomposition (SVD)&quot;, &quot;description&quot;: &quot;A method for decomposing a matrix into its constituent parts.&quot;}, {&quot;name&quot;: &quot;Eigendecomposition&quot;, &quot;description&quot;: &quot;Decomposing a matrix into its eigenvalues and eigenvectors.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, including matrix operations and eigenvalues." />
+          <attvalue for="6" value="[&quot;Singular Value Decomposition (SVD)&quot;, &quot;Principal Component Analysis (PCA)&quot;]" />
+          <attvalue for="7" value="[&quot;Matrix decomposition is only for square matrices.&quot;, &quot;Decomposed matrices always have the same dimensions as the original.&quot;]" />
+          <attvalue for="8" value="[&quot;Data compression&quot;, &quot;Image processing&quot;, &quot;Recommendation systems&quot;, &quot;Dimensionality reduction&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Vector Norms" label="Vector Norms">
+        <attvalues>
+          <attvalue for="0" value="Measures of vector length that are important in optimization and machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Euclidean Norm&quot;, &quot;description&quot;: &quot;The most common norm, representing the geometric length of a vector.&quot;}, {&quot;name&quot;: &quot;Norm Properties&quot;, &quot;description&quot;: &quot;Understanding the properties and applications of different norms.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and vector operations." />
+          <attvalue for="6" value="[&quot;L2 Norm (Euclidean)&quot;, &quot;L1 Norm (Manhattan)&quot;, &quot;Infinity Norm&quot;, &quot;Norm Properties&quot;]" />
+          <attvalue for="7" value="[&quot;All norms measure the same thing&quot;, &quot;Norms are only used in optimization&quot;]" />
+          <attvalue for="8" value="[&quot;Regularization in machine learning&quot;, &quot;Distance measurement in clustering algorithms&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Linear Equations" label="Linear Equations">
+        <attvalues>
+          <attvalue for="0" value="Equations that represent linear relationships, foundational in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Equation Solutions&quot;, &quot;description&quot;: &quot;Methods for finding solutions to linear equations.&quot;}, {&quot;name&quot;: &quot;Linear Separability&quot;, &quot;description&quot;: &quot;The ability to separate classes in a dataset using a linear boundary.&quot;}]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic algebra and understanding of functions." />
+          <attvalue for="6" value="[&quot;Slope-intercept form&quot;, &quot;Standard form&quot;, &quot;Graphing linear equations&quot;]" />
+          <attvalue for="7" value="[&quot;Linear equations can only have two variables&quot;, &quot;All linear equations are represented in the same form&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting outcomes in regression analysis&quot;, &quot;Modeling relationships in data science&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Deep Learning" label="Deep Learning">
+        <attvalues>
+          <attvalue for="0" value="A subset of machine learning focused on neural networks with many layers." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Artificial Neural Networks&quot;, &quot;description&quot;: &quot;Computational models inspired by the human brain.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, calculus, and programming in Python." />
+          <attvalue for="6" value="[&quot;Neural Networks&quot;, &quot;Backpropagation&quot;, &quot;Convolutional Neural Networks (CNNs)&quot;, &quot;Recurrent Neural Networks (RNNs)&quot;]" />
+          <attvalue for="7" value="[&quot;Deep learning is the same as machine learning.&quot;, &quot;More layers always lead to better performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Speech recognition&quot;, &quot;Game playing (e.g., AlphaGo)&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Algorithms" label="Training Algorithms">
+        <attvalues>
+          <attvalue for="0" value="Methods used to optimize machine learning models during training." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing error.&quot;}, {&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and linear algebra." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Mini-batch Gradient Descent&quot;, &quot;Adam Optimizer&quot;]" />
+          <attvalue for="7" value="[&quot;All algorithms converge to the same solution&quot;, &quot;More iterations always lead to better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Optimizing regression models&quot;, &quot;Fine-tuning hyperparameters&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Matrix Properties" label="Matrix Properties">
+        <attvalues>
+          <attvalue for="0" value="Characteristics of matrices that influence their behavior in computations." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Symmetric Matrices&quot;, &quot;description&quot;: &quot;Matrices that are equal to their transpose.&quot;}, {&quot;name&quot;: &quot;Diagonal Matrices&quot;, &quot;description&quot;: &quot;Matrices where non-diagonal elements are zero.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and matrix operations." />
+          <attvalue for="6" value="[&quot;Matrix addition and multiplication&quot;, &quot;Determinants and inverses&quot;]" />
+          <attvalue for="7" value="[&quot;All matrices can be inverted&quot;, &quot;Matrix multiplication is commutative&quot;]" />
+          <attvalue for="8" value="[&quot;Solving systems of linear equations&quot;, &quot;Computer graphics transformations&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Matrix Products" label="Matrix Products">
+        <attvalues>
+          <attvalue for="0" value="Operations that combine matrices to produce new matrices." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Matrix Multiplication&quot;, &quot;description&quot;: &quot;A fundamental operation for combining matrices.&quot;}, {&quot;name&quot;: &quot;Outer and Inner Products&quot;, &quot;description&quot;: &quot;Specific types of matrix products with distinct applications.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, including vectors and matrices." />
+          <attvalue for="6" value="[&quot;Matrix Addition&quot;, &quot;Matrix Multiplication&quot;, &quot;Dot Product&quot;, &quot;Transpose of a Matrix&quot;]" />
+          <attvalue for="7" value="[&quot;Matrix multiplication is commutative.&quot;, &quot;All matrices can be multiplied regardless of their dimensions.&quot;]" />
+          <attvalue for="8" value="[&quot;Computer graphics transformations&quot;, &quot;Solving systems of linear equations&quot;, &quot;Data representation in machine learning&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Linear Algebra" target="Matrix Inversion" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Matrix inversion relies on understanding linear algebra concepts." />
+        </attvalues>
+      </edge>
+      <edge source="Linear Algebra" target="Matrix Decomposition" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Matrix decomposition techniques are based on linear algebra principles." />
+        </attvalues>
+      </edge>
+      <edge source="Linear Algebra" target="Vector Norms" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Vector norms are defined using linear algebra." />
+        </attvalues>
+      </edge>
+      <edge source="Linear Algebra" target="Linear Equations" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Linear equations are a fundamental concept in linear algebra." />
+          <attvalue for="11" value="0.7816" />
+        </attvalues>
+      </edge>
+      <edge source="Matrix Inversion" target="Training Algorithms" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training algorithms often require solving linear equations, which may involve matrix inversion." />
+        </attvalues>
+      </edge>
+      <edge source="Deep Learning" target="Training Algorithms" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training algorithms are crucial for optimizing deep learning models." />
+        </attvalues>
+      </edge>
+      <edge source="Matrix Properties" target="Matrix Products" id="6">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding matrix properties is essential for performing matrix products." />
+        </attvalues>
+      </edge>
+      <edge source="Matrix Products" target="Matrix Properties" id="7">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.7502" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

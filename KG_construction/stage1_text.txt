@@ -1,0 +1,430 @@
+Machine Learning for Design
+Engineers
+Networks
+Pietro Ferraro
+Table of
+1. The Neuron
+2. Artificial Neural Networks
+Content 3. Activation Functions
+4. Lossfunctionandtraining
+5. Backpropagation
+Imperial College London Machine Learningfor Design Engineers
+The Neuron
+Imperial College London Machine Learningfor Design Engineers
+Background
+Theterm Artificial Neural Networkmeansanyarchitecturethathasmassively
+parallelinterconnectionsofsimpleelements.
+Sometimessucharchitecturesaremotivatedbysimilaritiestorealneuralnetworks.
+Wewon’tconcernourselveswithsuchjustifications,andjustnotethatsuch
+architecturesareextremelyusefullearningtosolvebothregressionand
+classificationtasks.
+Thebestknownsuchnetworkisthe Multi-layer Perceptron(MLP).
+Imperial College London Machine Learningfor Design Engineers
+Theneuron
+Thebuildingblockfor Deep Learningistheneuron
+∑D
+y = f( wx +w ) = f(w Tx+w )
+i i 0 0
+i=1
+Wherew = [w ,w ,...,w ]T andx = [x ,x ,...,x ]T andf(·)isanon-linearfunction.
+1 2 D 1 2 N
+Imperial College London Machine Learningfor Design Engineers
+Theneuron
+Thebuildingblockfor Deep Learningistheneuron
+∑D
+y = f( wx +w ) = f(w Tx+w )
+i i 0 0
+i=1
+Whythisstructure? Andwhyshouldf(·)benonlinear?
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Consideronespecificationoff(·)
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Data-setsinwhichclassmembershipcanbedeterminedusingaline,ormore
+generally,ahyperplane,aresaidtobelinearlyseparable. Inthiscase,thelearning
+taskistofindaseparatinghyperplaneoftheformw x +w x +w = 0 withthe
+1 1 2 2 0
+propertythatforanappropriatefunctionf(·)
+f(w x +w x +w ) = y (1)
+1 1 2 2 0
+wherey = 1 forallw x +w x +w > 0 andy = −1 otherwise(thelabelsforeach
+1 1 2 2 0
+classis−1 and 1 respectively).
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Linearlyseperable:
+f(w x +w x +w ) = y (2)
+1 1 2 2 0
+wherey = 1 forallw x +w x +w > 0 andy = −1 otherwise(thelabelsforeach
+1 1 2 2 0
+classis−1 and 1 respectively).
+Recallthatahyperplanesplitstheplaneintotwoparts: thesetofpointsx = (x ,x )
+1 2
+satisfyingw x +w x +w > 0 andw x +w x +w < 0.
+1 1 2 2 0 1 1 2 2 0
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Nowconsideramorecomplicatedpatternrecognitionproblem. Letsnotconcern
+ourselveswithalgorithmstofindtheparametersofthenetwork;ratherletsthink
+aboutwhattypesofproblemsthisnetworkcansolve?
+Imperial College London Machine Learningfor Design Engineers
+Figure:An XORtypeclassificationscenario
+Linearseparation
+Figure:Cannotseparatetheclasses Figure:Cannotseparatetheclasses
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Nowletusconsideraslightlymorecomplicatedarchitecture.
+Imperial College London Machine Learningfor De Fsiiggnu Enrgein:ee Arsmulti-layerarchitecturewithtwoinputs
+Linearseparation
+Thefirstlayerofthearchitecturehastwoinputsandtwooutputs.
+f(w x +w x +w ) = y (3)
+11 1 12 2 10 1
+f(w x +w x +w ) = y (4)
+21 1 22 2 20 2
+Inthesecondlayertherearealsotwoinputsandtheoutputis
+f(w y +w y +w ) = y (5)
+1 1 2 2 0
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Wecanimmediatelyseethatthisisamuchricherarchitecture.
+Thefirstlayerconstructstwoclassifiersandseparatesclasseslinearlyasbefore.
+Thesecondlayertheconstructsahyperplanetoclassifytheoutputofthese
+classifiers.
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Imperial College London Machine Learningfor Design Engineers
+Linearseparation
+Bymovingtoahigherdimensionalspacewemakelineardiscriminationpossible.
+Infactitisknownthatpattensclassifiedasusingnonlinearfunctions,canbe
+separatedlinearlyinahigherdimensionalspace.
+Thepriceofdoingthisisthatlearningbecomesmoredifficult.
+Imperial College London Machine Learningfor Design Engineers
+Moregeneralpatternrecognitionproblems
+Wecanalreadyseethepowerofthisarchitecture. Nowconsideramore
+complicatedpatternrecognitiontask.
+Imperial College London Machine Learningfor Design Engineers
+Moregeneralpatternrecognitionproblems
+Wecanuselineardiscriminatorstoconstructadecisionboundary.
+Imperial College London Machine Learningfor Design Engineers
+Moregeneralpatternrecognitionproblems
+Wecanuselineardiscriminatorstoconstructadecisionboundary.
+Imperial College London Machine Learningfor Design Engineers
+Moregeneralpatternrecognitionproblems
+Wecanevenhandlereallycomplicatedsituations.
+Imperial College London Machine Learningfor Design Engineers
+Moregeneralpatternrecognitionproblems
+Andthiscanberealisedusingamulti-layerarchitecture.
+Imperial College London Machine Learningfor Design Engineers
+Artificial Neuralnetworks
+Thegeneralversionofthisarchitectureisan Artificial Neural Network(ANN).
+Figure:Source
+Imperial College London Machine Learningfor Design Engineers
+Activation Functions
+Usualchoicesforf(·)areasfollows:
+Figure:Source
+Imperial College London Machine Learningfor Design Engineers
+Universal Approximation Theorem
+Thereason ANNsaresopowerfulandtheyareabletoachievetheresultsthatwe
+haveseenovertheyearsismostlyduetothefactthat ANNsare Universal
+Approximators:
+l Neuralnetworkscanapproximateanycontinuousfunctiontoanarbitrarydegree
+ofaccuracy.
+l Requiressufficientneuronsandlayers.
+l Activationfunctionsplayakeyrole.
+Imperial College London Machine Learningfor Design Engineers
+Universal Approximation Theorem
+Aclassicalresultfrom Cybenko,inhisseminalpaperfrom 1989 isthatgivena
+continuousfunctionf : Rd → R,(youwilloftenseethiswrittenasf ∈ C 0(Rd)),fora
+givenaccuracyϵ ,thereexistsanumberofneuronsn,suchthat:
+n
+∑n
+NN(x) = h(w Tx+b)
+i=1
+||f−NN||
+∞
+≤ ϵ
+n
+Imperial College London Machine Learningfor Design Engineers
+Commentsonthemulti-layerarchitecture
+l Aswehaveseen,themulti-layerarchitectureisverypowerful.
+l However,thereareproblems. Theprincipledifficultyisdevelopingtechniquesto
+findtheparametersofthenetwork.
+l Anotherproblemisdetermining,a-priori,nowmanynodesandlayersthatthe
+networkshouldhavetobeabletosolveagivenproblem.
+Imperial College London Machine Learningfor Design Engineers
+Learning
+Imperial College London Machine Learningfor Design Engineers
+Recap
+Wehaveseen ANNsareverypowerfulinsolvingcomplexpatternrecognition(and
+regression)problems. Howdowetrainthemthough?
+Imperial College London Machine Learningfor Design Engineers
+Convention
+Eachlayerhasacertainamountofneuronsandeachneuronwillhaveacertain
+amountofinputs.
+Wecall W and B thematrixofweightsandthevectorofbiasesforlayerk.
+k k
+   
+w w ··· w b
+k 11 k 12 k 1 n k 1
+ w w ··· w   b 
+ k 21 k 22 k 2 n  k 2
+W k =  . .
+.
+. .
+.
+... . .
+.
+, B k =  . .
+.
+
+w w ··· w b
+km 1 km 2 kmn km
+Withthisconvention,callingy theoutputoflayerk(withy = x),the”forward”
+k 0
+operationforeachlayerisgoingtobe
+y k = f k (W k y k−1 +B k )
+Imperial College London Machine Learningfor Design Engineers
+Activation Functions
+Inwhatfollowswewillnotusethesign(x)functionasanactivationfunction.
+Reasonbeing,sign(x)isnon-continuous.
+Wewillconsidermostlythesigmoidfunction:
+1
+σ(x) =
+1+e−x
+Andthe Re LUfunction
+Re LU(x) = max(0,x)
+Eventhoughthe Re LUisnotdifferentiableperse,therearealotoftricksthatcan
+bedonetofixit(e.g.,subgradients).
+Imperial College London Machine Learningfor Design Engineers
+Howdoweevaluateperformance?
+Wehavetwoproblemsnow:
+l Howdoweselectappropriateweights?
+l Howdoweevaluatetheperformanceofournetwork?
+Thesetwoproblemsarestronglyinterconnectedtooneanother. Infactyoucan
+showthattheycanbeformalisedas:
+minimize J(W)
+W
+Where J(W)issomeappropriatecostfunction.
+Imperial College London Machine Learningfor Design Engineers
+Gradientdescentfor Regression
+Considerthefollowingregression
+problem. Wehaveabunchofdataand
+wewanttofindthelinesuchthat,the
+averagedistancefromallofthesepoints
+tothelineisminimal.
+Inotherwords,wewanttominimisethe
+followingcostfunction
+( )
+1
+J(m,c) = d 2 +d 2 +...+d 2
+n 1 2 n
+Imperial College London Machine Learningfor Design Engineers
+Gradientdescentfor Regression
+Forthisspecificproblem,givenndatapoints,weformthecostfunction
+∑n
+1
+J(m,c) = (mx(i)+c−y(i))2
+n
+i=1
+Weseektominimize J(m,c)tofindthelinethatbestrepresentsthegivendata.
+Imperial College London Machine Learningfor Design Engineers
+Gradientdescent
+Gradientdescentstartsbycalculatingthepartialderivativeofeveryparameter.
+∑n
+∂J(m,c) 1
+= −2 x(i)(y(i)−(mx(i)+c)) (6)
+∂m n
+i=1
+∑n
+∂J(m,c) 1
+= −2(y(i)−(mx(i)+c))
+∂c n
+i=1
+Thevectorof(∂J(m,c), ∂J(m,c))isknownasthegradient,andusuallydenoted∇J(θ)
+∂m ∂c
+whereθistheparametervector(m,c).
+Imperial College London Machine Learningfor Design Engineers
+Lossfunctions
+Thetrainingprocessinvolvestwosteps:
+l Selectingalossfunction
+l Applyinggradientdescentandfindingtheparametersthatminimizetheloss
+function
+Alossfunction J(W)issimplyafunctionthatindicateshowwellyourmodel
+managedtolearnthegivendata.
+Inthespecificcaseofaneuralnetwork,theparametersofthenetworkthatweare
+tryingtofind,aretheweightsofeachneuron.
+Todaywearegoingtousethe Least Squared Error(LSE)butwewillseeatleastone
+morenextweek.
+Imperial College London Machine Learningfor Design Engineers
+Single-layerarchitecture
+Forasimplearchitecture,gradientdescentisfairlystraightforward.
+∑n
+1
+J((w ,w ,w )) = (NN(x(i))−y(i))2
+0 1 2
+n
+i=1
+Imperial College London Machine Learningfor Design Engineers
+Multi-layerarchitecture
+Whataboutthisone?
+Imperial College London Machine Learningfor Design Engineers
+Multi-layerarchitecture
+Andwhataboutthisone?
+Imperial College London Machine Learningfor Design Engineers
+Multi-layerarchitecture
+Asinthecaseoffittingdatatoalinearmodel,wewishtouse∇J(W)toadjustthe
+parametersofthenetworkusingthepartialderivatives ∂J :
+∂w
+ijk
+∂J
+wm+1 ← wm −ϵ (7)
+kij kij ∂w
+kij
+Thus,themainproblemistofindaconvenientwaytocalculatethepartial
+derivativesformulti-layerarchitectures.
+Imperial College London Machine Learningfor Design Engineers
+Automaticdifferentiation
+Averycommontechniqueusedin MLis Automaticdifferentiation.
+Basicideaistouseelementarycomputationsandcleveralgorithmstobuildup
+partialderivatives,forexampleusingthechainruleforpartialderivatives
+multi-variatefunctions.
+Imperial College London Machine Learningfor Design Engineers
+Back-propagation(AD)
+Thealgorithmforadjustingtheweightstoimplementgradientdescentisknownas
+thebackpropagationalgorithm.
+Inregressionproblemstheobjectiveofthealgorithmistofindtheparametersof
+theneuralnetworksothatthefollowingquantityisminimized∥ f(x)−NN(x) ∥.
+Inpatternrecognitionproblemsweseektofindadecisionboundary NN(x) = 0,
+separatingseveralclasses,suchthatthenumberofmisclassificationsare
+minimised.
+Imperial College London Machine Learningfor Design Engineers
+Multi-layerarchitecture
+Tounderstandtheback-propagationalgorithm,letsconsideroneofthesimplest
+multi-layerarchitecturewecanthinkof. Thenetworkhastwoinputs,andone
+output. Ithas 2 hiddenlayers,2 inputsand 2 outputinputs.
+Imperial College London Machine Learningfor Design Engineers
+Multi-layerarchitecture
+Intheabovediagram,wehavenotedtheoutputofeachactivationfunction(y,z,v)
+andtheirinputs(¯y,¯z,¯y)inred. Forexample:
+¯y = w z +w z +b . (8)
+1 3,21 2 3,11 1 3,1
+Imperial College London Machine Learningfor Design Engineers
+Backpropagation
+Letusconsiderthecasewheredataarrivessamplebysample. Supposewehavean
+input(x (i),x (i)),anoutputoftheneuralnetworky = NN(x (i),x (i))andsome
+1 2 1 1 2
+desiredoutputy (i). Letusalsodefinetheinstantaneouscostfunction
+1
+J(θ) = 1(y −y (i))2 + 1(y −y (i))2.
+2 1 1 2 2 2
+Howdowecalculatethepartialderivativeswithrespecttoalltheparameters? Lets
+startwiththepartialwithrespecttow .
+3,22
+∂J ∂J ∂y
+1
+= (9)
+∂w ∂y ∂w
+3,11 1 3,11
+Thisfollowsdirectlyfromthechainrule.
+Imperial College London Machine Learningfor Design Engineers
+Backpropagation
+Nowwecanalsoapplythechainruleagain.
+∂J ∂J ∂y ∂¯y
+1 1
+= (10)
+∂w ∂y ∂¯y ∂w
+3,11 1 1 3,11
+Thisfollowsdirectlyfromthechainrule. Everythingherecanbecalculated.
+∂J ∂y ∂¯y
+= y −y (i); 1 = f ′ (¯y ); = z . (11)
+∂y 1 1 ∂¯y 1 ∂w 1
+1 3,11
+Imperial College London Machine Learningfor Design Engineers
+Backpropagation
+Thusitfollowsthat
+∂J
+= (y −y (i))f ′ (¯y )z (12)
+1 1 1 1
+∂w
+3,11
+And
+∂J
+= (y −y (i))f ′ (¯y ) (13)
+1 1 1
+∂b
+3,1
+Imperial College London Machine Learningfor Design Engineers
+Backpropagation
+Whataboutweightsinthesecondhiddenlayer?
+Calculatingthepartialderivativesforthesecondlayerisverysimilartowhatwedid
+before. Caution: wenowneedtobeverycarefulwithnotation.
+Morespecifically,wejustneedtobecarefulinusingthechainruleforpartial
+derivatives.
+Ifinditreallyhelpstolookatthenetworkdiagramwhendoingthisstep.
+Imperial College London Machine Learningfor Design Engineers
+Backpropagation
+Soasbefore(letspickw )forourcalculation:
+2,11
+∂J ∂J ∂¯z
+1
+= (14)
+∂w ∂¯z ∂w
+2,11 1 2,11
+∂J ∂z ∂¯z
+1 1
+= (15)
+∂z ∂¯z ∂w
+1 1 2,11
+∂J
+= f ′ (¯z )v (16)
+1 1
+∂z
+( 1 )
+∂J ∂¯y ∂J ∂¯y
+= 1 + 2 f ′ (¯z )v (17)
+∂¯y ∂z ∂¯y ∂z 1 1
+1 1 2 1
+(18)
+Imperial College London Machine Learningfor Design Engineers
+Backpropagation
+Asbeforeeverythingisknown
+( )
+∂J ∂¯y ∂J ∂¯y
+= 1 + 2 f ′ (¯z )v (19)
+∂¯y ∂z ∂¯y ∂z 1 1
+( 1 1 2 1 )
+= (y −y (i))f ′ (¯y )w +(y −y (i))f ′ (¯y )w f ′ (¯z )v
+1 1 1 3,11 2 2 2 3,12 1 1
+Imperial College London Machine Learningfor Design Engineers
+Backpropagation
+Allotherparametersinthesecondlayercanbecalculatedinthismanner.
+Whataboutthefirstlayer?
+Imperial College London Machine Learningfor Design Engineers
+Backpropagation
+Sinceallremainpartialderivativeshavealreadybeencalculatedinthecalculations
+inlayer 2,wearenowinapositiontoupdatetheweightsofthenetworkaccording
+to:
+∂J
+w ← w −α (20)
+kij kij ∂w
+kij
+Sinceweupdatethegradienteverytimeweseeanewsample,wecandothisstep
+asweprocesseachsample.
+Orwecancalculatethegradientforeachparameterforeverysample,andaverage
+thesevaluesovertheentirebatch. Thisiscalledbatchgradientdescent,and
+correspondstowhatwedidbefore.
+Imperial College London Machine Learningfor Design Engineers
+Thanks for your attention! Any
+questions?
+Imperial College London Machine Learningfor Design Engineers

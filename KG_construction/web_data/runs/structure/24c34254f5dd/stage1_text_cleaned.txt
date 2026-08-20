@@ -1,0 +1,176 @@
+Repository Structure
+Complete overview of the RAG tutorial repository.
+n
+Directory Layout
+rag_tutorial/
+n
+nnn n README.md # Main introduction and navigation
+nnn n QUICKSTART.md # 5-minute setup guide
+nnn n requirements.txt # Python dependencies
+nnn n .env.example # Environment variables template
+nnn n demo.py # Quick demonstration script
+n
+nnn n lessons/ # Step-by-step tutorials
+n nnn 01-introduction-to-rag.md
+n nnn 02-understanding-embeddings.md
+n nnn 03-vector-databases-retrieval.md
+n nnn 04-language-models-generation.md
+n nnn 05-building-simple-rag.md
+n nnn 06-advanced-rag-techniques.md
+n
+nnn n examples/ # Working code examples
+n nnn 01-simple-qa/
+n n nnn simple_qa.py
+n n nnn README.md
+n nnn 02-document-chat/
+n nnn document_chat.py
+n nnn README.md
+n
+nnn nn utils/ # Reusable utility functions
+n nnn __init__.py
+n nnn embeddings.py # Embedding operations
+n nnn retrieval.py # Vector search
+n nnn generation.py # LLM generation
+n
+nnn n data/ # Sample data for testing
+nnn sample_rag_article.txt
+n
+Learning Path
+For Complete Beginners
+
+1. Start Here: Read README.md for overview
+2. Quick Setup: Follow QUICKSTART.md
+3. Run Demo: Execute python demo.py to see RAG in action
+4. Learn Concepts: Read lessons 1-4 in order
+5. Build System: Follow lesson 5 to build your first RAG system
+6. Try Example: Run examples/01-simple-qa/simple_qa.py
+7. Go Advanced: Study lesson 6 for production techniques
+For Experienced Developers
+1. Skim: README.md and QUICKSTART.md
+2. Setup: pip install -r requirements.txt
+3. Review: Lessons 3-4 for implementation details
+4. Code: Study examples/ and utils/ code
+5. Advanced: Jump to lesson 6 for techniques
+6. Build: Create your own system using utilities
+
+n
+Lesson Summaries
+Lesson 1: Introduction to RAG
+(cid:127) What RAG is and why it matters
+(cid:127) Problems it solves (hallucinations, knowledge cutoff)
+(cid:127) Three-step process: Index, Retrieve, Generate
+(cid:127) Real-world applications
+Lesson 2: Understanding Embeddings
+(cid:127) What embeddings are (numerical text representations)
+(cid:127) How they capture semantic meaning
+(cid:127) Popular embedding models
+(cid:127) Cosine similarity for measuring relevance
+Lesson 3: Vector Databases & Retrieval
+(cid:127) Why specialized databases are needed
+
+(cid:127) Approximate nearest neighbor (ANN) algorithms
+(cid:127) Popular vector databases (Chroma, Pinecone, etc.)
+(cid:127) Document chunking strategies
+(cid:127) Retrieval techniques
+Lesson 4: Language Models & Generation
+(cid:127) How LLMs work at a high level
+(cid:127) Effective prompting for RAG
+(cid:127) Choosing and using LLMs
+(cid:127) Handling common issues
+Lesson 5: Building a Simple RAG System
+(cid:127) Complete implementation walkthrough
+(cid:127) Document loading and chunking
+(cid:127) Building the RAG pipeline
+
+(cid:127) Command-line interface
+(cid:127) Testing and evaluation
+Lesson 6: Advanced RAG Techniques
+(cid:127) Semantic chunking
+(cid:127) Hybrid search (semantic + keyword)
+(cid:127) Re-ranking for better results
+(cid:127) Query expansion and multi-query
+(cid:127) Production optimizations
+n
+Example Summaries
+Example 1: Simple QA
+File: examples/01-simple-qa/simple_qa.py
+Minimal RAG system that: - Loads facts into vector database - Answers questions using retrieval -
+Works without Open AI API key - Perfect for understanding basics
+
+Run: python examples/01-simple-qa/simple_qa.py
+Example 2: Document Chat
+File: examples/02-document-chat/document_chat.py
+Interactive chat system that: - Loads text documents - Chunks them intelligently - Maintains
+conversation history - Cites sources in answers - Requires Open AI API key
+Run: python examples/02-document-chat/document_chat.py
+nn
+Utility Modules
+utils/embeddings.py
+(cid:127) Embedding Manager: Manage embedding models
+(cid:127) embed_text(): Convert text to vectors
+(cid:127) compute_similarity(): Calculate text similarity
+Example:
+from utils import Embedding Manager
+embedder = Embedding Manager()
+vector = embedder.embed("Hello world")
+
+utils/retrieval.py
+(cid:127) Retriever: Basic vector search
+(cid:127) Hybrid Retriever: Advanced retrieval with filtering
+(cid:127) Search with thresholds and MMR
+Example:
+from utils import Retriever
+retriever = Retriever()
+retriever.add_documents(["doc 1", "doc 2"])
+results = retriever.search("query")
+utils/generation.py
+(cid:127) Generator: LLM text generation
+(cid:127) Prompt Template: Reusable prompt templates
+(cid:127) RAG-specific generation helpers
+Example:
+from utils import Generator
+generator = Generator(api_key="...")
+answer = generator.generate_with_context(query, context)
+
+n
+Sample Data
+data/sample_rag_article.txt
+Comprehensive article about RAG covering: - Introduction and motivation - How RAG works - Key
+components - Best practices - Applications - Challenges
+Use this for testing your RAG systems!
+n
+Quick Start Commands
+# Setup
+source .venv/bin/activate
+pip install -r requirements.txt
+# Run demo
+python demo.py
+# Run example 1 (no API key)
+python examples/01-simple-qa/simple_qa.py
+# Run example 2 (needs API key)
+export OPENAI_API_KEY="your-key"
+python examples/02-document-chat/document_chat.py
+# Test utilities
+python utils/embeddings.py
+python utils/retrieval.py
+n
+File Purposes
+File Purpose
+README.md Main entry point, overview
+QUICKSTART.md Fast setup guide
+requirements.txt Python dependencies
+
+.env.example Environment variable template
+demo.py Quick demonstration
+lessons/*.md Educational content
+examples/*/ Working code samples
+utils/*.py Reusable utilities
+data/*.txt Sample documents
+n
+Where to Go Next
+(cid:127) New to RAG? fi Start with Lesson 1
+(cid:127) Want to code? fi Run demo.py and examples
+(cid:127) Need utilities? fi Check utils/ modules
+(cid:127) Building app? fi Study Lesson 5
+(cid:127) Production ready? fi Read Lesson 6
+Happy Learning! n

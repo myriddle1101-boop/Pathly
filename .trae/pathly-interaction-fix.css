@@ -1,0 +1,3 @@
+/* Keep the loading status visible without blocking v3/v4 navigation. */
+.pathly-busy-overlay { pointer-events: none; }
+.pathly-busy-card { pointer-events: auto; }

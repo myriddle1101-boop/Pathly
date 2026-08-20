@@ -1,0 +1,58 @@
+{
+  "created_at": "2026-06-22T22:39:59",
+  "sample_name": "security_privacy_in_ml",
+  "run_mode": "stage1_to_stage2c_cli",
+  "selected_stages": [
+    "stage1",
+    "stage2a",
+    "stage2b",
+    "stage2c"
+  ],
+  "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\Security and Privacy in ML.pdf",
+  "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark",
+  "artifacts": {
+    "benchmark_json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\kg_benchmark.json",
+    "benchmark_summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\kg_benchmark_summary.csv",
+    "stage1_chunks": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage1_chunks.json",
+    "stage2a_topics": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2a_topics_hybrid.json",
+    "stage2b_prerequisites": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2b_prerequisites.json",
+    "stage2c_similarity_edges": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2c_similarity_edges.json"
+  },
+  "stages": [
+    {
+      "stage": "stage1",
+      "script": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+      "duration_seconds": 7.002,
+      "return_code": 0,
+      "success": true,
+      "log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage1_benchmark.log"
+    },
+    {
+      "stage": "stage2a",
+      "script": "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py",
+      "duration_seconds": 74.437,
+      "return_code": 0,
+      "success": true,
+      "log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2a_benchmark.log"
+    },
+    {
+      "stage": "stage2b",
+      "script": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+      "duration_seconds": 10.688,
+      "return_code": 0,
+      "success": true,
+      "log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2b_benchmark.log"
+    },
+    {
+      "stage": "stage2c",
+      "script": "D:\\ic\\master project\\project_code\\KG_construction\\stage2c_similarity.py",
+      "duration_seconds": 38.305,
+      "return_code": 0,
+      "success": true,
+      "log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2c_benchmark.log"
+    }
+  ],
+  "success": true,
+  "completed_stage_count": 4,
+  "total_seconds": 130.432
+}

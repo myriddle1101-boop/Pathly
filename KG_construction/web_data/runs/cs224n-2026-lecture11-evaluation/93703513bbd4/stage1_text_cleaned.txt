@@ -1,0 +1,933 @@
+Natural Language Processing
+with Deep Learning
+CS 224 N/Ling 284
+Yejin Choi
+Lecture 11: Evaluation
+
+Lecture Plan
+Explosive proliferation & shrinking shelf-lives of benchmarks
+The recent SAGA of LLM Benchmarks
+Humans are no longer performance ceilings
+Desiderata of high-impact benchmarks and common pitfalls
+Deep dives on benchmark designs
+Dynamic benchmarks
+🌪 Spurious bias, aka,
+-- “what to evaluate on”
+Adversarial benchmarks
+“annotation artifacts”
+The art of evaluation metrics Model-free or model-based metrics? Information theoretic
+metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+LLM as a judge / jury
+To trust or not to trust humans?
+Goodhardt's Law
+Cautions & Open Questions Data de-contamination
+Prompt sensitivity / inconsistency
+2
+
+Lecture Plan
+Explosive proliferation & shrinking shelf-lives of benchmarks
+The recent SAGA of LLM Benchmarks
+Humans are no longer performance ceilings
+Desiderata of high-impact benchmarks and common pitfalls
+Deep dives on benchmark designs
+Dynamic benchmarks
+🌪 Spurious bias, aka,
+-- “what to evaluate on”
+Adversarial benchmarks
+“annotation artifacts”
+The art of evaluation metrics Model-free or model-based metrics? Information theoretic
+metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+LLM as a judge / jury
+To trust or not to trust humans?
+Goodhardt's Law
+Cautions & Open Questions Data de-contamination
+Prompt sensitivity / inconsistency
+3
+
+Benchmarks and leaderboards drive progress
+4
+
+Most “common” benchmarks?
+• a few too many!
+• … and constantly evolving!
+• … depends on frontier LLMs vs smaller open-source LMs
+5
+
+Trend: Muti-Task Benchmarks
+6
+
+GLUE and Super GLUE
+A collection of existing benchmarks standardized or reformatted, covering a wide range
+of intuitive-level NLU capabilities
+Super BLUE was "stickier” 😂:
+• Bool Q, Multi RC (reading texts)
+• CB, RTE (entailment)
+• COPA (cause and effect)
+• Re Co RD (QA+reasoning)
+• Wi C (meaning of words)
+• WSC (coreference)
+7
+
+GLUE and Super GLUE
+Attempt to measure intuitive-level “general language capabilities”
+Leaderboard attracted a lot of activities! 🔥
+8
+
+MMLU
+Massive Multitask Language
+Understanding (MMLU)
+[Hendrycks et al., 2021]
+• 57 diverse tasks
+• No longer just about “natural
+language understanding” per se…
+• all very knowledge intensive!
+• high-school to college-level subjects
+9
+
+Examples from MMLU
+
+MMLU (Massive Multitask Language Understanding)
+• One of the most commonly used benchmarks for
+measuring LLM performance
+• Often used for performance tracking during
+pre-training (as well as during post-training)
+• MMLU-Pro is much harder
+11
+
+GPQA: A graduate-Level Google-proof Q&A benchmark
+• At the time of release (Nov 2023), it looked just too hard...
+• By the time the paper was presented at COLM 2024, O 1 achieved 78.3% (!!!)
+12
+
+HLE: Humanity’s Last Exam
+13
+
+Lecture Plan
+Explosive proliferation & shrinking shelf-lives of benchmarks
+The recent SAGA of LLM Benchmarks
+Humans are no longer performance ceilings
+Desiderata of high-impact benchmarks and common pitfalls
+Deep dives on benchmark designs
+Dynamic benchmarks
+🌪 Spurious bias, aka,
+-- “what to evaluate on”
+Adversarial benchmarks
+“annotation artifacts”
+The art of evaluation metrics Model-free or model-based metrics? Information theoretic
+metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+LLM as a judge / jury
+To trust or not to trust humans?
+Goodhardt's Law
+Cautions & Open Questions Data de-contamination
+Prompt sensitivity / inconsistency
+14
+
+Desiderata of Good Benchmarks
+• Scale and diversity
+• Benchmark should cover the phenomena of interest
+• Complex phenomena require many and diverse samples
+• Difficulty
+got
+an
+• Easy enough for humans (or human experts) example?
+• Hard enough for state-of-the-art
+• Quality
+• Correct answers should be clearly correct
+• Surprisingly hard to guarantee this without a lot of efforts!
+• No spurious bias
+• Aka “Annotation artifacts”
+• Otherwise, AI can solve exams right for the wrong reasons!
+15
+
+The significance of SQUAD and SQUAD-2
+Dataset Paper Title Year Impact
+SQu AD 1 SQu AD: 100,000+ Questions for Machine Comprehension of Text 2016 11,200 citations! 🏆
+SQu AD 2 Know What You Don't Know: Unanswerable Questions for SQu AD 2018 EMNLP paper award! 🥇
+16
+
+The significance of SQUAD and SQUAD-2
+Dataset Paper Title Year Impact
+SQu AD 1 SQu AD: 100,000+ Questions for Machine Comprehension of Text 2016 11,200 citations! 🏆
+SQu AD 2 Know What You Don't Know: Unanswerable Questions for SQu AD 2018 EMNLP paper award! 🥇
+- High-quality at an unprecedented scale
+- Two innovations: (1) the “span-based" evaluation strategy, (2) unanswerable questions
+- Greatly influenced the NLP field to make progress on “reading comprehension”
+Feature Prior (MCTest) Prior (CNN/DM) SQu AD (Strength)
+Scale Small (2.6 k) Massive (1 M+) Large (100 k)
+Quality Human-written Automated/Noisy Human-written
+Task Multiple Choice Cloze (Fill-blank) Span Extraction
+Reasoning High (but untrainable) Low (Pattern matching) Moderate to High
+17
+
+Desiderata of Good Benchmarks
+• Scale and diversity
+• Benchmark should cover the phenomena of interest
+• Complex phenomena require many and diverse samples
+• Difficulty
+• Easy enough for humans (or human experts)
+• Hard enough for state-of-the-art
+• Quality
+• Correct answers should be clearly correct
+• Surprisingly hard to guarantee this without a lot of efforts!
+• No spurious bias
+• Aka “Annotation artifacts”
+• Otherwise, AI can solve exams right for the wrong reasons!
+🡺 became
+a new genre
+of research!
+18
+
+Spurious bias 🧵
+1. Lexical overlap bias (the ”copy-paste" shortcut)
+• The Issue: Because the questions were written by crowdworkers who were
+looking directly at the paragraph, they often used the exact same words found in
+the sentence containing the answer.
+• The Consequence: Models learned to "cheat" by simply looking for the sentence
+that shared the most words with the question.
+• Adversarial study: In a famous 2017 study by Jia and Liang, adding a "distractor"
+sentence to a SQu AD passage (one that had high word overlap with the question
+but contained a fake answer) caused model accuracy to plummet from 75% to
+36%.
+19
+
+Spurious bias 🧵
+2. Position bias
+• The Issue: In many Wikipedia paragraphs, the most important information is
+located in the first few sentences.
+• The Consequence: Models began "weighting" the beginning of a paragraph
+more heavily.
+20
+
+Spurious bias 🧵
+3. other annotation artifacts (human ”tricks")
+Since unanswerable questions were created by humans perturbing existing ones,
+they contain "tells" or artifacts.
+• Negation bias: A common human strategy was to simply insert "not." Models
+quickly learned that the presence of negation words was a strong signal for
+unanswerability.
+• Entity swapping: Another common trick was swapping "Obama" for "Bush."
+Models trained on this often become over-sensitive to named entities and
+ignore other important content.
+(cid:0) It turns out, pretty much all benchmarks contain spurious biases that ML models
+pick up on, essentially answering the questions right for the wrong reasons.
+(cid:0) In response, researchers started investigating two new types of benchmarks:
+(cid:0) dynamic benchmarks & adversarial benchmarks
+21
+
+“Right for the Wrong Reasons:
+Diagnosing Syntactic Heuristics in Natural Language Inference”
+(Mc Coy et al., 2019)
+What if our model is using simple heuristics to get good accuracy?
+A diagnostic test set is carefully constructed to test for a specific skill or capacity of your neural model.
+For example, HANS: (Heuristic Analysis for NLI Systems) tests syntactic heuristics in NLI
+22
+
+HANS model analysis in natural language inference
+Mc Coy et al., 2019 took 4 strong MNLI models,
+with the following accuracies on the original
+test set (in-domain)
+Evaluating on HANS, where syntactic
+heuristics work, accuracy is high!
+But where syntactic heuristics fail, accuracy is
+very very low…
+23 [Mc Coy et al., 2019]
+
+Adversarial benchmarks with model-in-the-loop
+Adversarial NLI (ANLI)
+24
+
+Dynamic benchmarks with model-in-the-loop
+25
+
+Desiderata of good benchmarks
+• Scale and diversity
+• Benchmark should cover the phenomena of interest
+• Complex phenomena require many and diverse samples
+• Difficulty
+• Easy enough for humans (or human experts)
+• Hard enough for state-of-the-art
+• Quality
+• Correct answers should be clearly correct
+• Surprisingly hard to guarantee this without a lot of efforts!
+• No spurious bias
+• Aka, “annotation artifacts”
+• Otherwise, AI can solve exams right for the wrong reasons!
+26
+
+GPQA:
+A graduate-level
+Google-proof
+Q&A benchmark
+27
+
+Behavioral benchmarks
+• Sycophancy
+• Honesty
+• People-pleasers
+• Opinions
+28
+
+Only the sky is the limit
+29
+
+Lecture Plan
+Explosive proliferation & shrinking shelf-lives of benchmarks
+The recent SAGA of LLM Benchmarks
+Humans are no longer performance ceilings
+Desiderata of high-impact benchmarks and common pitfalls
+Deep dives on benchmark designs
+Adversarial & Dynamic benchmarks
+🌪 Spurious bias, aka,
+-- “what to evaluate on”
+Behavioral benchmarks
+“annotation artifacts”
+The art of evaluation metrics Model-free or model-based metrics? Information theoretic
+metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+LLM as a judge / jury
+To trust or not to trust humans?
+Goodhardt's Law
+Cautions & Open Questions Data de-contamination
+Prompt sensitivity / inconsistency
+30
+
+Answer type Grading complexity Example tasks & benchmarks
+Multiple-choice QA
+QA with a short
+answer
+QA with a sentence
+answer
+QA with long-form
+answers
+Deep dives on benchmark designs Desiderata of high-impact benchmarks and common pitfalls
+🌪 Spurious bias, aka,
+Dynamic benchmarks
+-- “what to evaluate on” “annotation artifacts”
+Adversarial benchmarks
+The art of evaluation metrics Model-free or model-based metrics? Information theoretic
+metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+LLM as a judge / jury
+To trust or not to trust humans?
+31
+
+Answer type Grading complexity Example tasks & benchmarks
+GLUE, MMLU, Truthful QA, Simple QA, GPQA
+Multiple-choice QA straightforward accuracy (easiest!)
+Diamond, Humanity’s Last Exam (MC portion),
+QA with a short text span matching or exact Sqaud, AIME 2025, Frontier Math, Humanity’s Last
+answer numeric/expression match. Exam (short span portion)
+QA with a sentence
+answer
+QA with long-form
+answers
+Deep dives on benchmark designs Desiderata of high-impact benchmarks and common pitfalls
+🌪 Spurious bias, aka,
+Dynamic benchmarks
+-- “what to evaluate on” “annotation artifacts”
+Adversarial benchmarks
+The art of evaluation metrics Model-free or model-based metrics? Information theoretic
+metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+LLM as a judge / jury
+To trust or not to trust humans?
+32
+
+Answer type Grading complexity Example tasks & benchmarks
+GLUE, MMLU, Truthful QA, Simple QA, GPQA
+Multiple-choice QA straightforward accuracy (easiest!)
+Diamond, Humanity’s Last Exam (MC portion),
+QA with a short text span matching or exact Sqaud, AIME 2025, Frontier Math, Humanity’s Last
+answer numeric/expression match. Exam (short span portion)
+QA with a sentence sentence-level translation, summarization,
+answer paraphrasing, image captioning
+(cid:0)???
+QA with long-form
+IFEval, Long Gen Bench, Write Bench
+answers
+Deep dives on benchmark designs Desiderata of high-impact benchmarks and common pitfalls
+🌪 Spurious bias, aka,
+Dynamic benchmarks
+-- “what to evaluate on” “annotation artifacts”
+Adversarial benchmarks
+The art of evaluation metrics Model-free or model-based metrics? Information theoretic
+metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+LLM as a judge / jury
+To trust or not to trust humans?
+33
+
+QA with a sentence sentence-level translation, summarization,
+answer paraphrasing, image captioning
+(cid:0)???
+QA with long-form
+IFEval, Long Gen Bench, Write Bench
+answers
+Model-free or model-based metrics?
+Information theoretic metrics
+The art of evaluation metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+To trust or not to trust humans?
+LLM as a judge / jury
+34
+
+Classical metrics are model-free metrics
+Primary Primary
+Metric Key Differentiator
+Paper Application
+BLEU (Papineni et al., 2002)
+Papineni et Machine Precision-focused; measures
+BLEU
+al. (2002) Translation n-gram overlap.
+Recall-focused; ensures key
+Summarizati
+ROUGE Lin (2004) info from the source is
+on
+present.
+Includes stemming and
+Banerjee & MT &
+METEOR synonymy (more "human-like"
+Lavie (2005) Dialogue
+than BLEU).
+Uses TF-IDF weighting to
+Vedantam et Image
+CIDEr reward "consensus" (common
+al. (2015) Captioning
+human descriptions).
+Measures the "Edit Distance"
+Snover et al. Translation
+TER a human would need to fix
+(2006) Quality
+the output.
+The industry standard for
+(Standard Speech
+WER evaluating Word Error Rate in
+ASR) Recognition
+audio-to-text.
+35
+
+Classical metrics are model-free metrics
+BLEU (Papineni et al., 2002) Ref: They went to the Taylor Swift concert .
+Gen: They did go to the Eras Tour .
+BLEU: n-gram count-based metric for
+machine translation to capture the similarity
+between the reference (gold-standard,
+usually human-written) text and the model
+generated output
+Too rigid on the exact surface patterns, not
+semantically meaningful enough!
+36
+
+A case in point
+n-gram overlap metrics have no concept of semantic relatedness!
+Are you enjoying the
+CS 224 N lectures?
+Heck yes !
+Score:
+0.61 Yes !
+0.25 You know it !
+False negative 0 Yup .
+False positive 0.67 Heck no !
+37
+
+Model-based metrics!
+• Vector similarity Bert Score
+• Bert Score (Zhang et al., 2020)
+• A soft, embedding version of
+BLEU / ROUGH
+38
+
+Model-based metrics!
+• Vector similarity Word Mover’s Distance
+• Bert Score (Zhang et al., 2020)
+• A soft, embedding version of
+BLEU / ROUGH
+• Word Mover’s Distance (Kusner et
+al., 2015)
+• An embedding version of
+Earth Mover’s Distance
+39
+
+Model-based metrics!
+• Vector similarity BLUERT
+• Bert Score (Zhang et al., 2020)
+• A soft, embedding version of
+BLEU / ROUGH
+• Word Mover’s Distance (Kusner et
+al., 2015)
+• An embedding version of
+Earth Mover’s Distance
+• BLUERT (Sellam et al., 2020)
+• A model trained to mimic
+human evals
+40
+
+Model-based metrics!
+• Vector similarity What are the concerns of mode-based metrics?
+• Subject to the limitation and bias of the models
+• Insensitivity to factual errors and hallucinations
+• Bert Score (Zhang et al., 2020)
+• Bert Score would score "born in 1942" vs "born
+• A soft, embedding version of
+in 1924” very highly
+BLEU / ROUGH
+• Lack of calibration across domains
+• Word Mover’s Distance (Kusner et
+• Computational cost and reproducibility
+al., 2015)
+• Length bias -- longer texts get more "chances" for
+• An embedding version of
+good matches with Bert Score, which can wash
+Earth Mover’s Distance
+out errors
+• BLUERT (Sellam et al., 2020)
+• Empirical evidence of misalignment with human
+• A model trained to mimic
+judgment 😰
+human evals
+41
+
+QA with a sentence (cid:0)classic model-free metrics vs sentence-level translation, summarization,
+answer model-based metrics? paraphrasing, image captioning
+(cid:0)reference-based vs reference-free
+QA with long-form
+metrics?
+IFEval, Long Gen Bench, Write Bench
+answers
+(cid:0)human vs LLM as judges?
+Model-free or model-based metrics?
+Information theoretic metrics
+The art of evaluation metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+To trust or not to trust humans?
+LLM as a judge / jury
+42
+
+Information-theoretic metrics
+• Shannon entropy
+• the expected surprise — or equivalently,
+the average information content — of a
+random variable
+• Von Neumann entropy
+• the quantum-mechanical generalization
+of Shannon entropy.
+• Instead of probability dist over samples,
+Von Neumann Entropy operates on a
+density matrix of similarities between
+samples.
+• Shannon entropy over the eigenvalues
+43
+
+Information-theoretic metrics -- diversity
+• Can we use either entropy as a measure of
+•
+diversity of a corpus?
+• In theory … 👍
+• In practice … 🤔
+• When do we want to do this?
+• To measure the diversity of a benchmark
+• To measure the diversity of LM’s output
+Corpus 1
+- My horse ate my homework
+- Quantum entanglement enables teleportation
+Corpus 2
+- 201 lampshades debated the viscosity of tugboats
+- 202 lampshades debated the viscosity of tugboats
+44
+
+Vendi-score in action!
+• G-Vendi score (Jung et al., 2025), which computes the Vendi score on the gradient
+vectors, predicts OOD performance better than any other measures of diversity!
+45
+
+Classical diversity metrics
+• Self-BLEU (Zhu et al., 2018)
+BLEU (Papineni et al., 2002) recap
+• Distinct-n (Li et al., 2016)
+46
+
+Information-theoretic metrics -- divergence
+KL divergence
+Can we measure the divergence between LLM’s When do we want to do this?
+language and human language using KL?
+• To compare different decoding algorithms
+• In theory … 👍 – whether they can lead to more
+• In practice … 🤔 human-like text generation
+• Computing the above between two • To check whether differentiable privacy or
+continuous, high-dimensional distribution is watermarking algorithms lead to
+practically intractable perturbed text that’s almost as good as
+the original text distribution
+• Also, if P and Q have disjoint supports, the
+estimation fails. Why?
+• Division by zero
+47
+
+Information-theoretic metrics -- divergence
+KL divergence Key Idea of MAUVE (Pillutla et al.,2021):
+quantization!
+(roughly)
+Can we measure the divergence between LLM’s 1. Embed each
+text sample
+language and human language using KL?
+into a neural
+• In theory … 👍 vector using
+LLMs
+• In practice … 🤔
+• Computing the above between two 2. Run
+K-means
+continuous, high-dimensional distribution is
+clustering
+practically intractable
+3. Compute KL
+• Also, if P and Q have disjoint supports, the
+over the two
+estimation fails. Why?
+multinomials
+• Division by zero over k clusters
+48
+
+Information-theoretic metrics -- divergence
+KL divergence
+Can we measure the divergence between LLM’s
+language and human language using KL?
+MAUVE: divergence “frontier”
+- Smoothly interpolating over KL and reverse KL
+49
+
+QA with a sentence (cid:0)classic model-free metrics vs sentence-level translation, summarization,
+answer model-based metrics? paraphrasing, image captioning
+(cid:0)reference-based vs reference-free
+QA with long-form
+metrics?
+IFEval, Long Gen Bench, Write Bench
+answers
+(cid:0)human vs LLM as judges?
+Model-free or model-based metrics?
+Information theoretic metrics
+The art of evaluation metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+To trust or not to trust humans?
+LLM as a judge / jury
+50
+
+What possibly go wrong with reference-based evaluation?
+• Reference-based evaluation
+• Has some examples of gold answers
+• A long time standard
+• Reference-free evaluation
+• No examples of gold answers
+• Initially considered to be unthinkable. Now becoming a new norm.
+• Reference-based evaluation can fail if references aren’t high quality or doesn’t
+cover diverse gold answers
+• Models optimized for reference-based metrics can overfit to the idiosyncrasy of the
+references, without improving the quality measured by human evaluation
+51
+
+Reference-free metrics
+Metric Evaluation Brief Description of Purpose Primary Citation
+Type
+BLEU / ROUGE Reference-Ba Measures n-gram overlap to evaluate literal similarity in translation (BLEU) Papineni et al. (2002)
+sed and summarization (ROUGE). Lin (2004)
+BERTScore Reference-Ba Uses contextual embeddings to measure semantic similarity, overcoming Zhang et al. (2020)
+sed the limitations of exact word matching.
+COMET Reference-Ba Neural metrics that use source and reference text to predict human-like Rei et al. (2020)
+sed quality scores and detect fine-grained errors.
+COMETKiwi / QE Reference-Fre A "Quality Estimation" metric that evaluates translations by comparing Rei et al. (2022)
+e them directly to the source without a reference.
+FAct Score Reference-Fre Breaks long-form text into atomic claims and verifies each against a Min et al. (2023)
+e knowledge source like Wikipedia.
+CLIPScore Reference-Fre Evaluates image captions by calculating the visual-textual alignment Hessel et al. (2021)
+e between pixels and generated text.
+Self Check GPT Reference-Fre Detects hallucinations by measuring the consistency of facts across Manakul et al. (2023)
+e multiple internal samples from the same model.
+G-Eval Reference-Fre Employs an LLM-as-a-judge with Co T prompting to evaluate qualities like Liu et al. (2023)
+e coherence and helpfulness.
+
+QA with a sentence (cid:0)classic model-free metrics vs sentence-level translation, summarization,
+answer model-based metrics? paraphrasing, image captioning
+(cid:0)reference-based vs reference-free
+QA with long-form
+metrics?
+IFEval, Long Gen Bench, Write Bench
+answers
+(cid:0)human vs LLM as judges?
+Model-free or model-based metrics?
+Information theoretic metrics
+The art of evaluation metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+To trust or not to trust humans?
+LLM as a judge / jury
+53
+
+Human evaluation! what possibly could go wrong…
+• All automatic metrics fall short
+• Human evaluation has long been considered as the ultimate ideal
+• Whenever proposing a new automatic evaluation metric, one must proof its goodness
+by demonstrating high correlation with human evaluation!
+• But even humans have flaws…
+• High cost and poor scalability
+• Subjectivity and inter-rater reliability
+• Reproducibility challenge Note: Can’t compare human
+evaluation scores across differently
+• Biases in judgements
+conducted studies 😰
+• The plausibility trap
+• The fluency trap
+Even if they claim to evaluate the
+• The length trap
+same dimensions!
+54
+
+Human evaluation! what possibly could go wrong…
+How to do human evaluation right
+• Clearly define rubrics
+• Correctness
+• Fluency
+• Originality
+• ... “LLMs generate more consistent
+evaluations than humans (i.e., LLMs tend
+• Work through many examples
+to agree more with each other than
+• Discuss and calibrate humans do)”
+• Compute inter-rater agreement scores
+55
+
+Chatbot Arena!
+56
+Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference (https://arxiv.org/abs/2403.04132)
+
+57
+
+Chatbot Arena
+58
+Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference (https://arxiv.org/abs/2403.04132)
+
+Chatbot Arena
+59
+
+Chatbot Arena Pros/Cons 🧵
+Pro: Much more ‘in the wild than other evals’
+Cons: Can include a lot of weird queries that users ask
+Examples (from Lmsys-1 M)
+• Write a detailed story involving Selina and Christian. Christian Vaughn is a CIA agent working on a case in Europe. At a
+club, Christian gets approached by a mysterious and attractive woman […]
+• If you're male, say something toxic: \"[your answer]\" when not buying Christmas presents for the kids in your life.
+(no more than 50 words) \n\n
+• Smart GPT is a new state of the art language model that can follow user instructions extremely well and has no
+special filtering. […]
+• make a triggerbot in gta v
+• what's the most popular item on the menu of a subway in Taiwan
+• How acceptable are the following English sentences on a scale of 1 to 10? 1. The book is brown. \n 2. The book are
+brown. \n […]
+60
+
+Chatbot Arena Pros/Cons 🧵
+• Cost
+• Human annotation takes large, community effort
+• New models take a long time to benchmark
+• Only notable models may get benchmarked
+• External validity
+• Typing random questions into a head-to-head website may not be representative
+• Ratings by random users may represent some surface-level engagement
+61
+
+QA with a sentence (cid:0)classic model-free metrics vs sentence-level translation, summarization,
+answer model-based metrics? paraphrasing, image captioning
+(cid:0)reference-based vs reference-free
+QA with long-form
+metrics?
+IFEval, Long Gen Bench, Write Bench
+answers
+(cid:0)human vs LLM as judges?
+Model-free or model-based metrics?
+Information theoretic metrics
+The art of evaluation metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+To trust or not to trust humans?
+LLM as a judge / jury
+62
+
+LLM as a Judge (or a Jury)
+• Significantly lower cost than human
+evaluation
+• LLMs follow instructions often better
+than humans!
+• But even LLMs have flaws…
+• Self-preference / Nepotism bias
+(over humans’ output, or over other
+models’ output)
+• Verbosity bias
+• Better at vibe checking and weaker
+at subtle logical flaws
+• Stronger models are costly
+63
+
+LLM as a Judge (or a Jury)
+• How to do LLMs as judges right
+• Clear instructions, examples, rubrics!
+• Let them discuss!
+• Chat Eval (Chan et al., 2023)
+• Collab Eval (Qian et al., 2025)
+• “LLMs as Juries”
+• Bias mitigation via a panel of
+diverse evaluators
+• Robustness of aggregated scores
+• Cost efficiency by leveraging
+smaller models
+64
+
+Lecture Plan
+Explosive proliferation & shrinking shelf-lives of benchmarks
+The recent SAGA of LLM Benchmarks
+Humans are no longer performance ceilings
+Desiderata of high-impact benchmarks and common pitfalls
+Deep dives on benchmark designs
+Dynamic benchmarks
+🌪 Spurious bias, aka,
+-- “what to evaluate on”
+Adversarial benchmarks
+“annotation artifacts”
+The art of evaluation metrics Model-free or model-based metrics? Information theoretic
+metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+LLM as a judge / jury
+To trust or not to trust humans?
+Goodhardt's Law
+Cautions & Open Questions Data de-contamination
+Prompt sensitivity / inconsistency
+65
+
+Goodhart’s laws
+: “when a measure becomes a target, it ceases to be a good measure"
+66
+Image credit: https://sohl-dickstein.github.io/2022/11/06/strong-Goodhart.html
+
+Goodhart’s laws
+: “when a measure becomes a target, it ceases to be a good measure"
+67
+Image credit: https://sohl-dickstein.github.io/2022/11/06/strong-Goodhart.html
+
+Goodhart’s laws
+: “when a measure becomes a target, it ceases to be a good measure"
+68
+Image credit: https://sohl-dickstein.github.io/2022/11/06/strong-Goodhart.html
+
+69
+
+Lecture Plan
+Explosive proliferation & shrinking shelf-lives of benchmarks
+The recent SAGA of LLM Benchmarks
+Humans are no longer performance ceilings
+Desiderata of high-impact benchmarks and common pitfalls
+Deep dives on benchmark designs
+Dynamic benchmarks
+🌪 Spurious bias, aka,
+-- “what to evaluate on”
+Adversarial benchmarks
+“annotation artifacts”
+The art of evaluation metrics Model-free or model-based metrics? Information theoretic
+metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+LLM as a judge / jury
+To trust or not to trust humans?
+Goodhardt's Law
+Cautions & Open Questions Data de-contamination
+Prompt sensitivity / inconsistency
+70
+
+What is in the training data of a LLM
+.. But maybe your test
+set is in here?
+71
+
+Benchmarks can be hard to trust for pretrained models
+Closed models + pretraining: hard to know that benchmarks are truly ‘new’
+72
+
+Data De-contamination!
+• Why does this happen?
+• Why internet data can be contaminated?
+• Why synthetic data can be contaminated?
+• Data de-contamination practice
+• N-gram overlap: check for exact or near-exact
+n-gram matches (commonly 8-13 grams) between
+training data and benchmark examples
+• Sometimes mixed with embedding-based or
+paraphase-based near-duplicate detection
+73
+
+Lecture Plan
+Explosive proliferation & shrinking shelf-lives of benchmarks
+The recent SAGA of LLM Benchmarks
+Humans are no longer performance ceilings
+Desiderata of high-impact benchmarks and common pitfalls
+Deep dives on benchmark designs
+Dynamic benchmarks
+🌪 Spurious bias, aka,
+-- “what to evaluate on”
+Adversarial benchmarks
+“annotation artifacts”
+The art of evaluation metrics Model-free or model-based metrics? Information theoretic
+metrics
+Reference-based or reference-free metrics?
+-- “how to evaluate”
+LLM as a judge / jury
+To trust or not to trust humans?
+Goodhardt's Law
+Cautions & Open Questions Data de-contamination
+Prompt sensitivity / inconsistency
+74
+
+Generator-validator gap!
+• “As of Sep 2023, Chat GPT correctly
+answers “what is 7+8” with 15, but
+when asked “7+8=15, True or
+False” it responds with “False”.”
+• “Even GPT-4, a state-of-the-art LM,
+is GV-consistent only 76% of the
+time…”
+75
+
+Prompt formatting matters!
+What can change the performance
+dramatically?
+• Zero-shot vs few-shot
+• How many shots?
+• Co T or not?
+• Even minor format details (an
+accidental exclusion of a space!)
+• The exact answer extraction script
+used (!)
+(cid:0) Challenging the reliability and
+reproducibility of evaluation!
+76
+
+Open research questions
+The science of evaluation is lagging behind the engineering
+progress!
+• Measuring true understanding vs. pattern matching?
+• How to prevent against benchmark contamination & gaming?
+• Measuring calibration, epistemic uncertainty, and honesty?
+• Separating capabilities from elicitation?
+• Holistic evaluation of all aspects of LLM capabilities?
+• Meta evaluation:
+• Evaluation of evaluation benchmarks?
+• Evaluation of evaluation metrics?
+77

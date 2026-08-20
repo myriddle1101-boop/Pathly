@@ -1,0 +1,831 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 32,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "machine learning",
+      "avg_score": 0.5071,
+      "frequency": 4,
+      "chunk_ids": [
+        3,
+        5,
+        27,
+        29
+      ]
+    },
+    {
+      "name": "symposium security",
+      "avg_score": 0.6239,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        28
+      ]
+    },
+    {
+      "name": "trained model",
+      "avg_score": 0.5633,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        17
+      ]
+    },
+    {
+      "name": "model trained",
+      "avg_score": 0.5433,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        17
+      ]
+    },
+    {
+      "name": "training inference",
+      "avg_score": 0.5086,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        11
+      ]
+    },
+    {
+      "name": "threat model",
+      "avg_score": 0.7827,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "model vulnerability",
+      "avg_score": 0.7333,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "adversary attacks",
+      "avg_score": 0.705,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "distinguish attacks",
+      "avg_score": 0.6903,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "theadversary threat",
+      "avg_score": 0.6894,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "threat",
+      "avg_score": 0.6752,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "security model",
+      "avg_score": 0.6697,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "poisoning learning",
+      "avg_score": 0.6624,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "cryptographie militaire",
+      "avg_score": 0.6569,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "mlmodelismostsensitive limitations",
+      "avg_score": 0.6525,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "adversary model",
+      "avg_score": 0.6495,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "genetic algorithm",
+      "avg_score": 0.6447,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "privacy machine",
+      "avg_score": 0.6425,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "trainingdata misprediction",
+      "avg_score": 0.6424,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "learning security",
+      "avg_score": 0.6389,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "privacy instructive",
+      "avg_score": 0.6385,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "variants predicts",
+      "avg_score": 0.6372,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "privacy",
+      "avg_score": 0.6347,
+      "frequency": 1,
+      "chunk_ids": [
+        32
+      ]
+    },
+    {
+      "name": "security privacy",
+      "avg_score": 0.6316,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "privacy security",
+      "avg_score": 0.6306,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "modelssolvingthesame mltaskwithcomparableper",
+      "avg_score": 0.6169,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "targeting model",
+      "avg_score": 0.6141,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "meta classifier",
+      "avg_score": 0.6104,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "domains rithmthatminimizesthe",
+      "avg_score": 0.6088,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "machine teaching",
+      "avg_score": 0.6073,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "szepesvari learning",
+      "avg_score": 0.6065,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "adversarial samples",
+      "avg_score": 0.6045,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "apply genetic",
+      "avg_score": 0.5969,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "social biases",
+      "avg_score": 0.5941,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "stages training",
+      "avg_score": 0.5898,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "desirable security",
+      "avg_score": 0.5891,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "modelssolvingthesame",
+      "avg_score": 0.5881,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "adversarial examples",
+      "avg_score": 0.5855,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "models behaviors",
+      "avg_score": 0.5829,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "behavior availability",
+      "avg_score": 0.5825,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "learning adversary",
+      "avg_score": 0.5824,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "targeting learning",
+      "avg_score": 0.5823,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "secure computation",
+      "avg_score": 0.5806,
+      "frequency": 1,
+      "chunk_ids": [
+        32
+      ]
+    },
+    {
+      "name": "genetic variants",
+      "avg_score": 0.5797,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "learning theory",
+      "avg_score": 0.5785,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "security environment",
+      "avg_score": 0.5744,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "limitations performance",
+      "avg_score": 0.5741,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "model victim",
+      "avg_score": 0.5734,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "example attacks",
+      "avg_score": 0.5727,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "defending gradient",
+      "avg_score": 0.5719,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "learning inputs",
+      "avg_score": 0.5714,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "victim example",
+      "avg_score": 0.5697,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "adversarial manipulations",
+      "avg_score": 0.5696,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "activation maximization",
+      "avg_score": 0.5689,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "cybernetics",
+      "avg_score": 0.5648,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "bias learning",
+      "avg_score": 0.5633,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "asimplelearningmodel workshopon",
+      "avg_score": 0.5632,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "integrity privacy",
+      "avg_score": 0.5614,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "adversary use",
+      "avg_score": 0.5613,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "xandoutputh trainingdata",
+      "avg_score": 0.5586,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "privacy knowledge",
+      "avg_score": 0.5582,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "learning techniques",
+      "avg_score": 0.5581,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "trainingdataor mlalgorithm",
+      "avg_score": 0.5543,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "maximization synthesizes",
+      "avg_score": 0.5529,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "militaires pp",
+      "avg_score": 0.5521,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "restricted activation",
+      "avg_score": 0.5517,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "intelligence vol",
+      "avg_score": 0.5496,
+      "frequency": 1,
+      "chunk_ids": [
+        30
+      ]
+    },
+    {
+      "name": "la cryptographie",
+      "avg_score": 0.5495,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "inference adversary",
+      "avg_score": 0.5494,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "indirect perturbations",
+      "avg_score": 0.5474,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "pattern representation",
+      "avg_score": 0.5464,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "outliers model",
+      "avg_score": 0.5424,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "objective perturbation",
+      "avg_score": 0.5407,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "consider lifecycle",
+      "avg_score": 0.5384,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "indirect poisoning",
+      "avg_score": 0.5362,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "training distribution",
+      "avg_score": 0.5359,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "usenixsecurity symposium",
+      "avg_score": 0.535,
+      "frequency": 1,
+      "chunk_ids": [
+        30
+      ]
+    },
+    {
+      "name": "model vulnerable",
+      "avg_score": 0.5345,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "gummadi militaires",
+      "avg_score": 0.5343,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "detection model",
+      "avg_score": 0.5334,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Machine Learning Fundamentals",
+      "description": "Core concepts and techniques in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Training Inference",
+          "description": "The process of making predictions based on a trained model."
+        },
+        {
+          "name": "Model Training",
+          "description": "The methodology for training machine learning models."
+        },
+        {
+          "name": "Loss Function",
+          "description": "A function that measures the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Architectures and components of artificial neural networks.",
+      "sub_topics": [
+        {
+          "name": "Activation Function",
+          "description": "Functions that determine the output of a neuron."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing error."
+        },
+        {
+          "name": "Linear Separability",
+          "description": "The ability to separate classes with a linear boundary."
+        }
+      ]
+    },
+    {
+      "name": "Adversarial Machine Learning",
+      "description": "Techniques and challenges related to adversarial attacks on models.",
+      "sub_topics": [
+        {
+          "name": "Adversarial Examples",
+          "description": "Inputs designed to deceive machine learning models."
+        },
+        {
+          "name": "Threat Model",
+          "description": "A framework for understanding potential adversarial threats."
+        },
+        {
+          "name": "Model Vulnerability",
+          "description": "The susceptibility of models to adversarial attacks."
+        }
+      ]
+    },
+    {
+      "name": "Security in Machine Learning",
+      "description": "Security considerations and methodologies in machine learning applications.",
+      "sub_topics": [
+        {
+          "name": "Privacy Security",
+          "description": "Ensuring data privacy while maintaining model performance."
+        },
+        {
+          "name": "Poisoning Learning",
+          "description": "Attacks that manipulate training data to degrade model performance."
+        },
+        {
+          "name": "Secure Computation",
+          "description": "Techniques to perform computations securely in machine learning."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Methods for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Training Data",
+          "description": "Data used to train machine learning models."
+        },
+        {
+          "name": "Misprediction",
+          "description": "Instances where the model's predictions are incorrect."
+        },
+        {
+          "name": "Performance Limitations",
+          "description": "Constraints that affect model accuracy and efficiency."
+        }
+      ]
+    },
+    {
+      "name": "Genetic Algorithms",
+      "description": "Optimization techniques inspired by natural selection.",
+      "sub_topics": [
+        {
+          "name": "Genetic Variants",
+          "description": "Different configurations of genetic algorithms."
+        },
+        {
+          "name": "Apply Genetic",
+          "description": "Utilizing genetic algorithms for problem-solving."
+        }
+      ]
+    },
+    {
+      "name": "Learning Techniques",
+      "description": "Various methodologies and strategies for machine learning.",
+      "sub_topics": [
+        {
+          "name": "Machine Teaching",
+          "description": "A paradigm where the focus is on teaching models effectively."
+        },
+        {
+          "name": "Learning Theory",
+          "description": "Theoretical foundations that underpin learning algorithms."
+        }
+      ]
+    },
+    {
+      "name": "Bias in Machine Learning",
+      "description": "Understanding and mitigating biases in machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Social Biases",
+          "description": "Biases that arise from societal influences in data."
+        },
+        {
+          "name": "Bias Learning",
+          "description": "The study of how biases affect learning outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Cybersecurity and ML",
+      "description": "Intersection of cybersecurity principles and machine learning.",
+      "sub_topics": [
+        {
+          "name": "Threat Detection",
+          "description": "Identifying potential security threats using machine learning."
+        },
+        {
+          "name": "Adversary Attacks",
+          "description": "Strategies employed by adversaries to compromise models."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 38.3902,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125\\cs224n-2026-lecture03-neuralnets.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 28.5682,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3250\n[2] 清洗后词数: 3291\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 13\n[5] 分块数（过滤后）: 13\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=269\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang Lecture 3: Neural Network Foundations Lecture Plan Lecture 2: Neural Network Foundations 1. Course logistics (3 mins) + Word 2 vec evaluation (7 ...\n\n[Chunk 2] words=265\nIntrinsic word vector evaluation  Word Vector Analogies a:b :: c:? man:woman :: king:?  Evaluate word vectors by how well their cosine king distance after addition captures intuitive semantic and syntactic analogy ques...\n\n[Chunk 3] words=199\nSimple NER: Window classification using binary logistic classifier  Idea: classify each word in its context window of neighboring words  Train logistic classifier on hand-labeled data to classify center word {yes/no} f...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

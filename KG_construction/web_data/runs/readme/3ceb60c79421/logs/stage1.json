@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\README.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 4.8878,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 694\n[2] 清洗后词数: 697\n[3] 文档类型识别: paper_book\n[4] 分块数（过滤前）: 4\n[5] 分块数（过滤后）: 4\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=163\nRetrieval-Augmented Generation (RAG) Tutorial A comprehensive, hands-on tutorial that takes you from the basics through to building production-ready RAG systems. n What You'll Learn By the end of this tutorial, you'll un...\n\n[Chunk 2] words=208\n15. Prompting techniques 16. Integrating retrieved context Part 2: Building RAG Systems 1. Building Your First RAG System 2. Step-by-step implementation 3. Working code example Testing and evaluation Advanced RAG Techniq...\n\n[Chunk 3] words=127\nn Learning Tips (cid:127) Take your time: RAG combines multiple complex concepts (cid:127) Run every code example: Hands-on practice is crucial (cid:127) Experiment: Modify parameters and see what happens (cid:127) Build...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

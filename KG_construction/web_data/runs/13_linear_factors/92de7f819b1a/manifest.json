@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "13_linear_factors-92de7f819b1a",
+  "created_at": "2026-07-29T14:02:29+08:00",
+  "updated_at": "2026-07-29T14:04:25+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "13_linear_factors.pdf",
+    "doc_name": "13_linear_factors",
+    "sha256": "92de7f819b1aa57206582f6fa9d0179706012976becc2387dfbd9ebab9fe7985",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\13_linear_factors.pdf",
+    "pdf_size_bytes": 3817370
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 115.9493
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:02:29+08:00",
+      "ended_at": "2026-07-29T14:02:33+08:00",
+      "duration_seconds": 4.7042,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\13_linear_factors.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 2243\n[2] 清洗后词数: 2280\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 13\n[5] 分块数（过滤后）: 12\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=270\nCHAPTER 13. LINEAR FACTOR MODELS sample from. Next we sample the real-valued observable variables given the factors: x = W h + b + noise (13.2) where the noise is typically Gaussian and diagonal (independent across dimen...\n\n[Chunk 2] words=52\n> 1 2 n The role of the latent variables is thus to capture the dependencies between x x the different observed variables . Indeed, it can easily be shown that is just a i multivariate normal random variable, with x (x; ...\n\n[Chunk 3] words=132\nProbabilistic PCA and Factor Analysis  Linear factor model  Gaussian prior  Extends PCA  Given an input, yields a distribution over codes, rather than a single code  Estimates a probability density function  Can ge...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:02:33+08:00",
+      "ended_at": "2026-07-29T14:03:22+08:00",
+      "duration_seconds": 48.7558,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：12\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/12 ...\n[KeyBERT] chunk 2/12 ...\n[KeyBERT] chunk 3/12 ...\n[KeyBERT] chunk 4/12 ...\n[KeyBERT] chunk 5/12 ...\n[KeyBERT] chunk 6/12 ...\n[KeyBERT] chunk 7/12 ...\n[KeyBERT] chunk 8/12 ...\n[KeyBERT] chunk 9/12 ...\n[KeyBERT] chunk 10/12 ...\n[KeyBERT] chunk 11/12 ...\n[KeyBERT] chunk 12/12 ...\n[2] KeyBERT候选数：66\n[3] LLM精修完成\n[4] 最终Topic数：8，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Factor Models\n02. Coding Techniques\n03. Neural Networks\n04. Regression and Classification\n05. Dimensionality Reduction\n06. Statistical Models\n07. Learning Algorithms\n08. Model Evaluation\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4338.86it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:03:22+08:00",
+      "ended_at": "2026-07-29T14:03:29+08:00",
+      "duration_seconds": 6.3148,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 8\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Statistical Models -> Factor Models | Factor Models are a type of Statistical Model.\n02. Statistical Models -> Regression and Classification | Regression and Classification are based on Statistical Models.\n03. Learning Algorithms -> Neural Networks | Neural Networks require understanding of Learning Algorithms.\n04. Regression and Classification -> Model Evaluation | Model Evaluation is necessary to assess Regression and Classification outcomes.\n05. Dimensionality Reduction -> Model Evaluation | Model Evaluation is important to assess the impact of Dimensionality Reduction.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:03:29+08:00",
+      "ended_at": "2026-07-29T14:04:01+08:00",
+      "duration_seconds": 32.5747,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 8\n[2] 相似关系数量: 1 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Coding Techniques <-> Learning Algorithms | sim=0.7316\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 10465.38it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:04:01+08:00",
+      "ended_at": "2026-07-29T14:04:23+08:00",
+      "duration_seconds": 21.5813,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 8\n[LLM] 1/8 Factor Models\n[LLM] 2/8 Coding Techniques\n[LLM] 3/8 Neural Networks\n[LLM] 4/8 Regression and Classification\n[LLM] 5/8 Dimensionality Reduction\n[LLM] 6/8 Statistical Models\n[LLM] 7/8 Learning Algorithms\n[LLM] 8/8 Model Evaluation\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:04:23+08:00",
+      "ended_at": "2026-07-29T14:04:25+08:00",
+      "duration_seconds": 1.9162,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output present"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 8\n[2] Prerequisites: 5\n[3] Similarity edges: 1\n[4] Graph nodes=8, edges=6\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T14:02:29+08:00"
+}

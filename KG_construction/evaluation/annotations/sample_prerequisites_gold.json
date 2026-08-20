@@ -1,0 +1,12 @@
+{
+  "prerequisites": [
+    {
+      "from": "Linear Algebra",
+      "to": "Backpropagation"
+    },
+    {
+      "from": "Backpropagation",
+      "to": "Neural Networks"
+    }
+  ]
+}

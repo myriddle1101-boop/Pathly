@@ -1,0 +1,44 @@
+[
+  {
+    "chunk_id": 1,
+    "word_count": 118,
+    "doc_type": "paper_book",
+    "text": "Gradient Descent and the\nStructure of Neural Network\nCost Functions\npresentation by Ian Goodfellow\nadapted for www.deeplearningbook.org\nfrom a presentation to the\nCIFAR Deep Learning summer school on August 9, 2015\n\nOptimization\n-Exhaustive search\n-Random search (genetic algorithms)\n-Analytical solution\n-Model-based search (e.g. Bayesian optimization)\n-Neural nets usually use gradient-based search\n(Goodfellow 2015)\n\nIn this presentation….\n- “Exact Solutions to the Nonlinear Dynamics of\nLearning in Deep Linear Neural Networks.” Saxe et al,\nICLR 2014\n- “Identifying and attacking the saddle point problem in\nhigh-dimensional non-convex optimization.” Dauphin et\nal, NIPS 2014\n- “The Loss Surfaces of Multilayer Networks.”\nChoromanska et al, AISTATS 2015\n- “Qualitatively characterizing neural network\noptimization problems.” Goodfellow et al, ICLR 2015\n(Goodfellow 2015)"
+  },
+  {
+    "chunk_id": 2,
+    "word_count": 56,
+    "doc_type": "paper_book",
+    "text": "Derivatives and Second Derivatives\n(Goodfellow 2015)\n\nDirectional Curvature\n(Goodfellow 2015)\n\nTaylor series approximation\nBaseline Correction\nLinear\nfrom\nchange\ndirectional\ndue to\ncurvature\ngradient\n(Goodfellow 2015)\n\nHow much does a gradient step\nreduce the cost?\n(Goodfellow 2015)\n\nCritical points\nZero gradient, and Hessian with…\nSome positive\nAll positive eigenvalues All negative eigenvalues\nand some negative\n(Goodfellow 2015)"
+  },
+  {
+    "chunk_id": 3,
+    "word_count": 150,
+    "doc_type": "paper_book",
+    "text": "Newton’s method\n(Goodfellow 2015)\n\nNewton’s method’s failure mode\n(Goodfellow 2015)\n\nThe old view of SGD as difficult\n- SGD usually moves downhill\n- SGD eventually encounters a critical point\n- Usually this is a minimum\n- However, it is a local minimum\n- J has a high value at this critical point\n- Some global minimum is the real target, and has a\nmuch lower value of J\n(Goodfellow 2015)\n\nThe new view: does SGD get stuck\non saddle points?\n- SGD usually moves downhill\n- SGD eventually encounters a critical point\n- Usually this is a saddle point\n- SGD is stuck, and the main reason it is stuck is that it\nfails to exploit negative curvature\n(as we will see, this happens to Newton’s method,\nbut not very much to SGD)\n(Goodfellow 2015)\n\nSome functions lack critical points\n(Goodfellow 2015)\n\nSGD may not encounter critical\npoints\n(Goodfellow 2015)"
+  },
+  {
+    "chunk_id": 4,
+    "word_count": 79,
+    "doc_type": "paper_book",
+    "text": "Gradient descent flees saddle points\n(Goodfellow 2015)\n(Goodfellow 2015)\n\nPoor conditioning\n(Goodfellow 2015)\n\nPoor conditioning\n(Goodfellow 2015)\n\nWhy convergence may not happen\n- Never stop if function doesn’t have a local minimum\n- Get “stuck,” possibly still moving but not improving\n- Too bad of conditioning\n- Too much gradient noise\n- Overfitting\n- Other?\n- Usually we get “stuck” before finding a critical point\n- Only Newton’s method and related techniques are\nattracted to saddle points\n(Goodfellow 2015)"
+  },
+  {
+    "chunk_id": 5,
+    "word_count": 87,
+    "doc_type": "paper_book",
+    "text": "Are saddle points or local minima\nmore common?\n- Imagine for each eigenvalue, you flip a coin\n- If heads, the eigenvalue is positive, if tails, negative\n- Need to get all heads to have a minimum\n- Higher dimensions -> exponentially less likely to get\nall heads\n- Random matrix theory:\n- The coin is weighted; the lower J is, the more likely to\nbe heads\n- So most local minima have low J!\n- Most critical points with high J are saddle points!\n(Goodfellow 2015)"
+  },
+  {
+    "chunk_id": 6,
+    "word_count": 151,
+    "doc_type": "paper_book",
+    "text": "Do neural nets have saddle points?\n- Dauphin et al 2014: Experiments show neural nets do\nhave as many saddle points as random matrix theory\npredicts\n- Choromanska et al 2015: Theoretical argument for\nwhy this should happen\n- Major implication: most minima are good, and\nthis is more true for big models.\n- Minor implication: the reason that Newton’s method\nworks poorly for neural nets is its attraction to the\nubiquitous saddle points.\n(Goodfellow 2015)\n\nThe state of modern optimization\n- We can optimize most classifiers, autoencoders, or\nrecurrent nets if they are based on linear layers\n- Especially true of LSTM, Re LU, maxout\n- It may be much slower than we want\n- Even depth does not prevent success, Sussillo 14\nreached 1,000 layers\n- We may not be able to optimize more exotic models\n- Optimization benchmarks are usually not done on the\nexotic models\n(Goodfellow 2015)"
+  },
+  {
+    "chunk_id": 7,
+    "word_count": 254,
+    "doc_type": "paper_book",
+    "text": "Why is optimization so slow?\nWe can fail to compute good local updates (get “stuck”).\nOr local information can disagree with global information,\neven when there are not any non-global minima,\neven when there are not any minima of any kind\n(Goodfellow 2015)\n\nQuestions for visualization\n- Does SGD get stuck in local minima?\n- Does SGD get stuck on saddle points?\n- Does SGD waste time navigating around global\nobstacles despite properly exploiting local information?\n- Does SGD wind between multiple local bumpy\nobstacles?\n- Does SGD thread a twisting canyon?\n(Goodfellow 2015)\n\nHistory written by the winners\n- Visualize trajectories of (near) SOTA results\n- Selection bias: looking at success\n- Failure is interesting, but hard to attribute to\noptimization\n- Careful with interpretation: SGD never encounters X,\nor SGD fails if it encounters X?\n(Goodfellow 2015)\n\n2 D Subspace Visualization\n(Goodfellow 2015)\n\nA Special 1-D Subspace\n(Goodfellow 2015)\n\nMaxout / MNIST experiment\n(Goodfellow 2015)\n\nOther activation functions\n(Goodfellow 2015)\n\nConvolutional network\nThe “wrong side of the\nmountain” effect\n(Goodfellow 2015)\n\nSequence model (LSTM)\n(Goodfellow 2015)\n\nGenerative model (MP-DBM)\n(Goodfellow 2015)\n\n3-D Visualization\n(Goodfellow 2015)\n\n3-D Visualization of MP-DBM\n(Goodfellow 2015)\n\nRandom walk control experiment\n(Goodfellow 2015)\n\n3-D plots without obstacles\n(Goodfellow 2015)\n\n3-D plot of adversarial maxout\n(Goodfellow 2015)\n\nLessons from visualizations\n•For most problems, there exists a linear subspace of\nmonotonically decreasing values\n• For some problems, there are obstacles between this subspace\nthe SGD path\n• Factored linear models capture many qualitative aspects of\ndeep network training\n(Goodfellow 2015)"
+  }
+]

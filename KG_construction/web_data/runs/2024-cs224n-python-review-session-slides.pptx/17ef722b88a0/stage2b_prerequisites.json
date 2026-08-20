@@ -1,0 +1,43 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 7,
+  "prerequisites": [
+    {
+      "from": "Python Basics",
+      "to": "Python Functions",
+      "reason": "Functions are a fundamental concept built on basic syntax."
+    },
+    {
+      "from": "Python Basics",
+      "to": "Operators in Python",
+      "reason": "Understanding basic syntax is necessary to use operators."
+    },
+    {
+      "from": "Python Basics",
+      "to": "Data Manipulation",
+      "reason": "Basic knowledge of Python is required to manipulate data."
+    },
+    {
+      "from": "Python Basics",
+      "to": "Python Packages",
+      "reason": "Basic syntax is needed to manage and utilize packages."
+    },
+    {
+      "from": "Python Environment",
+      "to": "Python Notebooks",
+      "reason": "Setting up an environment is necessary to use notebooks."
+    },
+    {
+      "from": "Python Functions",
+      "to": "Debugging Techniques",
+      "reason": "Understanding functions is essential for effective debugging."
+    },
+    {
+      "from": "Data Manipulation",
+      "to": "Advanced Python Concepts",
+      "reason": "Advanced concepts often build on data manipulation techniques."
+    }
+  ]
+}

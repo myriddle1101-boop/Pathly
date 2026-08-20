@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Language Models" label="Language Models">
+        <attvalues>
+          <attvalue for="0" value="Models designed to understand and generate human language." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;GPT Models&quot;, &quot;description&quot;: &quot;Generative Pre-trained Transformers used for various language tasks.&quot;}, {&quot;name&quot;: &quot;LLMs&quot;, &quot;description&quot;: &quot;Large Language Models that process and generate text.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and machine learning principles." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Word Embeddings&quot;, &quot;Transformers&quot;, &quot;Attention Mechanism&quot;]" />
+          <attvalue for="7" value="[&quot;Language models can understand context like humans&quot;, &quot;All language models are the same&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots&quot;, &quot;Text generation&quot;, &quot;Sentiment analysis&quot;, &quot;Machine translation&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Contextual Understanding" label="Contextual Understanding">
+        <attvalues>
+          <attvalue for="0" value="The ability of models to interpret and utilize context in language processing." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Context Issues&quot;, &quot;description&quot;: &quot;Challenges related to understanding context in language.&quot;}, {&quot;name&quot;: &quot;Context Retrieval&quot;, &quot;description&quot;: &quot;Methods for retrieving relevant context for generating responses.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and machine learning principles." />
+          <attvalue for="6" value="[&quot;Word embeddings&quot;, &quot;Attention mechanisms&quot;]" />
+          <attvalue for="7" value="[&quot;Context is only about the surrounding words&quot;, &quot;Models can understand context without training on diverse datasets&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots and virtual assistants&quot;, &quot;Sentiment analysis in social media&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Self History" label="Self History">
+        <attvalues>
+          <attvalue for="0" value="The concept of maintaining a history of interactions for improved responses." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Messages Role&quot;, &quot;description&quot;: &quot;The function of messages in shaping the model's understanding.&quot;}, {&quot;name&quot;: &quot;Generate History&quot;, &quot;description&quot;: &quot;Techniques for generating and utilizing historical data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and data structures." />
+          <attvalue for="6" value="[&quot;User Interaction Tracking&quot;, &quot;Contextual Response Generation&quot;]" />
+          <attvalue for="7" value="[&quot;Self History is only about storing data&quot;, &quot;It guarantees perfect responses every time&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots&quot;, &quot;Personalized Recommendations&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Answer Generation" label="Answer Generation">
+        <attvalues>
+          <attvalue for="0" value="The process of creating responses based on input queries and context." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Context Answers&quot;, &quot;description&quot;: &quot;Responses generated with consideration of the surrounding context.&quot;}, {&quot;name&quot;: &quot;User Message Generation&quot;, &quot;description&quot;: &quot;Techniques for generating responses to user inputs.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and machine learning principles." />
+          <attvalue for="6" value="[&quot;Natural Language Understanding&quot;, &quot;Contextual Relevance&quot;]" />
+          <attvalue for="7" value="[&quot;Answer generation is the same as simple retrieval.&quot;, &quot;It only requires keyword matching.&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots and virtual assistants&quot;, &quot;Customer support automation&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Quality Assessment" label="Quality Assessment">
+        <attvalues>
+          <attvalue for="0" value="Evaluating the performance and reliability of language models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Quality of GPT&quot;, &quot;description&quot;: &quot;Metrics and methods for assessing the quality of GPT models.&quot;}, {&quot;name&quot;: &quot;Cost Recommendations&quot;, &quot;description&quot;: &quot;Guidelines for optimizing costs associated with model usage.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and natural language processing concepts." />
+          <attvalue for="6" value="[&quot;Evaluation metrics (e.g., accuracy, F1 score)&quot;, &quot;Bias and fairness in language models&quot;]" />
+          <attvalue for="7" value="[&quot;Quality assessment is only about accuracy&quot;, &quot;All language models are equally reliable&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model performance&quot;, &quot;Ensuring ethical AI deployment&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods and strategies for training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;A key algorithm for training neural networks.&quot;}, {&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions used to measure the error of predictions.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting and Underfitting&quot;, &quot;Cross-Validation&quot;, &quot;Hyperparameter Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Training and testing data can be mixed&quot;, &quot;Complex models are always better&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Predictive analytics&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Artificial Neural Networks&quot;, &quot;description&quot;: &quot;Networks composed of interconnected nodes for processing data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Management" label="Data Management">
+        <attvalues>
+          <attvalue for="0" value="Strategies for handling and processing data in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Data Costs&quot;, &quot;description&quot;: &quot;Considerations regarding the costs associated with data usage.&quot;}, {&quot;name&quot;: &quot;Speed Optimization&quot;, &quot;description&quot;: &quot;Techniques for improving the speed of data processing.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data structures and programming." />
+          <attvalue for="6" value="[&quot;Data Collection&quot;, &quot;Data Cleaning&quot;, &quot;Data Transformation&quot;, &quot;Data Storage&quot;]" />
+          <attvalue for="7" value="[&quot;Data management is only about storage.&quot;, &quot;Cleaning data is not necessary if the dataset is large.&quot;]" />
+          <attvalue for="8" value="[&quot;Preparing datasets for model training&quot;, &quot;Ensuring data quality for analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Assessing the performance and effectiveness of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Regression Techniques&quot;, &quot;description&quot;: &quot;Methods for predicting continuous outcomes.&quot;}, {&quot;name&quot;: &quot;Classification Techniques&quot;, &quot;description&quot;: &quot;Methods for categorizing data into discrete classes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Accuracy&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;ROC Curve&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Higher accuracy always means a better model&quot;, &quot;Overfitting is not a concern if the model performs well on training data&quot;]" />
+          <attvalue for="8" value="[&quot;Comparing different models&quot;, &quot;Tuning hyperparameters&quot;, &quot;Selecting the best model for deployment&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Language Models" target="Answer Generation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Answer generation relies on understanding how language models produce text responses." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Contextual Understanding" target="Answer Generation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Generating appropriate answers requires interpreting the query and its surrounding context." />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Neural Networks" target="Language Models">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Modern language models are typically built using neural network architectures." />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Data Management" target="Training Techniques">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training models requires properly prepared, processed, and managed data." />
+        </attvalues>
+      </edge>
+      <edge id="4" source="Model Evaluation" target="Training Techniques">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7689" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,633 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 11,
+  "candidate_count": 57,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "assisted creativity",
+      "avg_score": 0.4769,
+      "frequency": 4,
+      "chunk_ids": [
+        1,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "name": "language models",
+      "avg_score": 0.4701,
+      "frequency": 3,
+      "chunk_ids": [
+        1,
+        4,
+        10
+      ]
+    },
+    {
+      "name": "calibrated confidence",
+      "avg_score": 0.6933,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        6
+      ]
+    },
+    {
+      "name": "model calibrated",
+      "avg_score": 0.6644,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        6
+      ]
+    },
+    {
+      "name": "models hallucinate",
+      "avg_score": 0.5275,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "creativity",
+      "avg_score": 0.4684,
+      "frequency": 2,
+      "chunk_ids": [
+        8,
+        10
+      ]
+    },
+    {
+      "name": "calibrated model",
+      "avg_score": 0.6362,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "ciphers statistical",
+      "avg_score": 0.6251,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "human feedback",
+      "avg_score": 0.6203,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "model confidence",
+      "avg_score": 0.619,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "statistical cipher",
+      "avg_score": 0.6183,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "creativity cognition",
+      "avg_score": 0.6112,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "calibrated answer",
+      "avg_score": 0.61,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "calibrated uncertainty",
+      "avg_score": 0.6092,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "probability confidence",
+      "avg_score": 0.6092,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "undermine honesty",
+      "avg_score": 0.5972,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "accuracy findings",
+      "avg_score": 0.5949,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "calibration model",
+      "avg_score": 0.5915,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "calibrated language",
+      "avg_score": 0.5859,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "feedback critiquing",
+      "avg_score": 0.585,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "responses humans",
+      "avg_score": 0.576,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "rlhf undermine",
+      "avg_score": 0.5694,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "creativity creativity",
+      "avg_score": 0.5686,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "feedback systematically",
+      "avg_score": 0.5664,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "cipher analysis",
+      "avg_score": 0.5635,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "creativity 2024",
+      "avg_score": 0.5618,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "enigma ciphers",
+      "avg_score": 0.5572,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "ideation people",
+      "avg_score": 0.5415,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "promote hallucination",
+      "avg_score": 0.5389,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "generates feedback",
+      "avg_score": 0.5322,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "hypotheses lms",
+      "avg_score": 0.5319,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "feedback altogether",
+      "avg_score": 0.5221,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "ciphers",
+      "avg_score": 0.522,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "maps ai",
+      "avg_score": 0.5183,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "cipher",
+      "avg_score": 0.5076,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "writers benefited",
+      "avg_score": 0.5043,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "honesty promote",
+      "avg_score": 0.5024,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "ai tools",
+      "avg_score": 0.5019,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "honesty",
+      "avg_score": 0.5006,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.5001,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "outdated facts",
+      "avg_score": 0.5,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "creativity iclr",
+      "avg_score": 0.489,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "usefulness creative",
+      "avg_score": 0.485,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "ai assisted",
+      "avg_score": 0.4833,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "previous hypotheses",
+      "avg_score": 0.4782,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "hypotheses",
+      "avg_score": 0.4741,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "creative writers",
+      "avg_score": 0.4609,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.4578,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "humanity lecture",
+      "avg_score": 0.4565,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "natural language",
+      "avg_score": 0.4541,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "assisted research",
+      "avg_score": 0.4507,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "writer benefits",
+      "avg_score": 0.4377,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "locations hike",
+      "avg_score": 0.4203,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "maps",
+      "avg_score": 0.4095,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "workforce challenges",
+      "avg_score": 0.403,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "impact workforce",
+      "avg_score": 0.4014,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "creativity ai",
+      "avg_score": 0.3749,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Language Models",
+      "description": "Models designed to understand and generate human language.",
+      "sub_topics": [
+        {
+          "name": "Natural Language Processing",
+          "description": "Techniques for processing and analyzing human language."
+        },
+        {
+          "name": "Model Hallucination",
+          "description": "Phenomenon where models generate incorrect or nonsensical outputs."
+        },
+        {
+          "name": "Human Feedback",
+          "description": "Incorporating user input to improve model performance."
+        }
+      ]
+    },
+    {
+      "name": "Calibrated Models",
+      "description": "Models that provide reliable confidence estimates for their predictions.",
+      "sub_topics": [
+        {
+          "name": "Calibrated Confidence",
+          "description": "The accuracy of a model's confidence in its predictions."
+        },
+        {
+          "name": "Calibration Techniques",
+          "description": "Methods to adjust model outputs for better reliability."
+        }
+      ]
+    },
+    {
+      "name": "Creativity in AI",
+      "description": "Exploration of how AI can assist and enhance creative processes.",
+      "sub_topics": [
+        {
+          "name": "Assisted Creativity",
+          "description": "Using AI tools to support creative endeavors."
+        },
+        {
+          "name": "Creative Writing",
+          "description": "The role of AI in generating and enhancing written content."
+        }
+      ]
+    },
+    {
+      "name": "Statistical Ciphers",
+      "description": "Techniques for encoding and decoding information using statistical methods.",
+      "sub_topics": [
+        {
+          "name": "Cipher Analysis",
+          "description": "Methods for breaking down and understanding ciphers."
+        },
+        {
+          "name": "Enigma Ciphers",
+          "description": "Historical ciphers and their significance in cryptography."
+        }
+      ]
+    },
+    {
+      "name": "Feedback Mechanisms",
+      "description": "Systems for providing and utilizing feedback to improve models.",
+      "sub_topics": [
+        {
+          "name": "Feedback Critiquing",
+          "description": "Evaluating and improving model outputs based on feedback."
+        },
+        {
+          "name": "Systematic Feedback",
+          "description": "Structured approaches to gather and implement user feedback."
+        }
+      ]
+    },
+    {
+      "name": "Hypothesis Generation",
+      "description": "The process of forming and testing hypotheses in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Previous Hypotheses",
+          "description": "Reviewing past hypotheses to inform current research."
+        },
+        {
+          "name": "RLHF Techniques",
+          "description": "Reinforcement Learning from Human Feedback methods."
+        }
+      ]
+    },
+    {
+      "name": "Model Training",
+      "description": "The process of teaching a model to make predictions based on data.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "A method for training neural networks through gradient descent."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Metrics used to evaluate the performance of a model."
+        }
+      ]
+    },
+    {
+      "name": "AI Tools",
+      "description": "Technological resources that assist in various tasks using AI.",
+      "sub_topics": [
+        {
+          "name": "Assisted Research",
+          "description": "Using AI to enhance research capabilities."
+        },
+        {
+          "name": "Creative AI Tools",
+          "description": "AI applications specifically designed for creative tasks."
+        }
+      ]
+    },
+    {
+      "name": "Workforce Impact",
+      "description": "The effects of AI and machine learning on employment and job markets.",
+      "sub_topics": [
+        {
+          "name": "Workforce Challenges",
+          "description": "Issues arising from the integration of AI in the workforce."
+        },
+        {
+          "name": "Impact on Jobs",
+          "description": "How AI technologies are reshaping job roles and requirements."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 25.4758,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

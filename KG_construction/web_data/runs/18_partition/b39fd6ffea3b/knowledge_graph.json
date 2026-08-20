@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "id": "Likelihood Models",
+      "description": "Concepts related to likelihood in statistical modeling.",
+      "sub_topics": "[{\"name\": \"Maximum Likelihood\", \"description\": \"A method for estimating the parameters of a statistical model.\"}, {\"name\": \"Log Likelihood\", \"description\": \"The logarithm of the likelihood function, often used for optimization.\"}, {\"name\": \"Likelihood Gradient\", \"description\": \"The gradient of the likelihood function, used in optimization algorithms.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of probability and statistics, familiarity with random variables and distributions.",
+      "key_sub_concepts": "[\"Maximum Likelihood Estimation (MLE)\", \"Likelihood Ratio Tests\"]",
+      "common_misconceptions": "[\"Likelihood is the same as probability\", \"Higher likelihood always indicates a better model\"]",
+      "practical_applications": "[\"Parameter estimation in statistical models\", \"Hypothesis testing in various fields such as biology and economics\"]"
+    },
+    {
+      "id": "Probabilistic Models",
+      "description": "Models that incorporate randomness and uncertainty in predictions.",
+      "sub_topics": "[{\"name\": \"Undirected Models\", \"description\": \"Models that do not have a directed relationship between variables.\"}, {\"name\": \"Energy Function\", \"description\": \"A function that represents the energy of a system in probabilistic models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and probability theory.",
+      "key_sub_concepts": "[\"Bayesian Inference\", \"Markov Models\"]",
+      "common_misconceptions": "[\"Probabilistic models are only for complex problems\", \"They always require large datasets\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Financial Forecasting\"]"
+    },
+    {
+      "id": "Training Algorithms",
+      "description": "Algorithms used to train machine learning models.",
+      "sub_topics": "[{\"name\": \"Learning Algorithm\", \"description\": \"A method for adjusting model parameters based on data.\"}, {\"name\": \"MCMC Algorithm\", \"description\": \"Markov Chain Monte Carlo, a method for sampling from probability distributions.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and statistics.",
+      "key_sub_concepts": "[\"Gradient Descent\", \"Stochastic Gradient Descent\", \"Batch Learning\", \"Online Learning\"]",
+      "common_misconceptions": "[\"All algorithms converge to the same solution\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Recommendation systems\", \"Predictive analytics\"]"
+    },
+    {
+      "id": "Model Sampling",
+      "description": "Techniques for generating samples from a model.",
+      "sub_topics": "[{\"name\": \"Positive Phase\", \"description\": \"The phase in sampling where positive samples are generated.\"}, {\"name\": \"Negative Phase\", \"description\": \"The phase in sampling where negative samples are generated.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of probability and statistics, familiarity with machine learning concepts.",
+      "key_sub_concepts": "[\"Random Sampling\", \"Importance Sampling\", \"Markov Chain Monte Carlo (MCMC)\", \"Variational Inference\"]",
+      "common_misconceptions": "[\"Sampling is only for generating data\", \"All sampling methods are equally effective\", \"Sampling does not affect model performance\"]",
+      "practical_applications": "[\"Generating synthetic data for training\", \"Estimating model parameters\", \"Improving model robustness\", \"Simulating complex systems\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "Methods for assessing the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Loss Function\", \"description\": \"A function that quantifies the difference between predicted and actual values.\"}, {\"name\": \"Regularity Conditions\", \"description\": \"Conditions that ensure the stability and convergence of algorithms.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and statistics.",
+      "key_sub_concepts": "[\"Confusion Matrix\", \"ROC Curve\", \"Precision and Recall\", \"F1 Score\"]",
+      "common_misconceptions": "[\"Accuracy is the only metric that matters.\", \"Overfitting is not a concern during evaluation.\"]",
+      "practical_applications": "[\"Model selection and comparison\", \"Hyperparameter tuning\", \"Performance monitoring in production\"]"
+    },
+    {
+      "id": "Data Representation",
+      "description": "Ways to represent data for machine learning tasks.",
+      "sub_topics": "[{\"name\": \"Probability Distribution\", \"description\": \"A function that describes the likelihood of different outcomes.\"}, {\"name\": \"Model Distribution\", \"description\": \"The distribution of data as represented by a model.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Feature Scaling\", \"One-Hot Encoding\", \"Dimensionality Reduction\", \"Data Normalization\"]",
+      "common_misconceptions": "[\"Data representation is only about numerical data.\", \"All data needs to be normalized.\"]",
+      "practical_applications": "[\"Image processing for computer vision tasks\", \"Text representation in natural language processing\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": "[{\"name\": \"Activation Function\", \"description\": \"A function that determines the output of a neuron.\"}, {\"name\": \"Backpropagation\", \"description\": \"An algorithm for training neural networks by minimizing the loss function.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\", \"Loss Functions\", \"Overfitting and Regularization\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image and speech recognition\", \"Natural language processing\", \"Game playing AI\", \"Medical diagnosis\"]"
+    },
+    {
+      "id": "Regression and Classification",
+      "description": "Techniques for predicting continuous and categorical outcomes.",
+      "sub_topics": "[{\"name\": \"Linear Separation\", \"description\": \"The ability to separate classes using a linear boundary.\"}, {\"name\": \"Model Data\", \"description\": \"The process of fitting a model to data for prediction.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Linear Regression\", \"Logistic Regression\"]",
+      "common_misconceptions": "[\"Regression is only for continuous outcomes\", \"Classification is only for binary outcomes\"]",
+      "practical_applications": "[\"Predicting house prices\", \"Email spam detection\"]"
+    },
+    {
+      "id": "Algorithm Optimization",
+      "description": "Techniques for improving the performance of algorithms.",
+      "sub_topics": "[{\"name\": \"Gradient Descent\", \"description\": \"An optimization algorithm used to minimize the loss function.\"}, {\"name\": \"Burned Gradient\", \"description\": \"A technique related to gradient optimization in training.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of algorithms and data structures, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Hyperparameter Tuning\", \"Regularization\", \"Gradient Descent\", \"Model Selection\"]",
+      "common_misconceptions": "[\"Optimization only applies to machine learning models\", \"More complex algorithms are always better\"]",
+      "practical_applications": "[\"Improving model accuracy\", \"Reducing training time\", \"Enhancing algorithm efficiency in real-time systems\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Likelihood Models",
+      "to": "Probabilistic Models",
+      "relation": "prerequisite",
+      "reason": "Likelihood is a fundamental concept in probabilistic modeling.",
+      "similarity": 0.8098
+    },
+    {
+      "from": "Probabilistic Models",
+      "to": "Model Sampling",
+      "relation": "prerequisite",
+      "reason": "Understanding probabilistic models is essential for sampling from them."
+    },
+    {
+      "from": "Training Algorithms",
+      "to": "Algorithm Optimization",
+      "relation": "prerequisite",
+      "reason": "Optimizing algorithms is necessary for improving training processes."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Training Algorithms",
+      "relation": "prerequisite",
+      "reason": "Evaluating models requires knowledge of how they are trained."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Effective data representation is crucial for training neural networks."
+    },
+    {
+      "from": "Regression and Classification",
+      "to": "Training Algorithms",
+      "relation": "prerequisite",
+      "reason": "Training algorithms are needed to implement regression and classification techniques."
+    }
+  ]
+}

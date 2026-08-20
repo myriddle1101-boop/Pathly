@@ -1,0 +1,92 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 14,
+  "prerequisites": [
+    {
+      "from": "Linear Algebra",
+      "to": "Matrix Inversion",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding matrices and linear algebra operations is necessary before learning matrix inversion."
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "Matrix Decomposition",
+      "relation_type": "strong_prerequisite",
+      "reason": "Matrix decomposition relies on core linear algebra concepts such as matrices, vectors, and linear transformations."
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "Vector Norms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Vector norms are defined on vectors and require basic linear algebra knowledge."
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "Linear Equations",
+      "relation_type": "strong_prerequisite",
+      "reason": "Learning linear equations in this context requires understanding linear algebraic representations and operations."
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "Matrix Properties",
+      "relation_type": "strong_prerequisite",
+      "reason": "Matrix properties are studied using foundational linear algebra concepts."
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "Matrix Products",
+      "relation_type": "strong_prerequisite",
+      "reason": "Matrix products require prior understanding of matrices and linear algebra operations."
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning depends on linear algebra for representing data, parameters, and computations in neural networks."
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "Training Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training algorithms for machine learning rely on linear algebraic representations and computations."
+    },
+    {
+      "from": "Matrix Properties",
+      "to": "Matrix Inversion",
+      "relation_type": "strong_prerequisite",
+      "reason": "To learn matrix inversion, one must understand properties such as invertibility and determinant-related behavior."
+    },
+    {
+      "from": "Matrix Products",
+      "to": "Matrix Inversion",
+      "relation_type": "strong_prerequisite",
+      "reason": "Matrix inversion is defined through the identity involving matrix multiplication, so matrix products are necessary first."
+    },
+    {
+      "from": "Matrix Products",
+      "to": "Matrix Decomposition",
+      "relation_type": "strong_prerequisite",
+      "reason": "Matrix decomposition methods are expressed and understood through matrix multiplication of simpler factors."
+    },
+    {
+      "from": "Linear Equations",
+      "to": "Matrix Inversion",
+      "relation_type": "strong_prerequisite",
+      "reason": "Matrix inversion is commonly introduced as a method for solving systems of linear equations."
+    },
+    {
+      "from": "Vector Norms",
+      "to": "Training Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training algorithms use norms to measure errors, distances, and regularization objectives."
+    },
+    {
+      "from": "Training Algorithms",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding how deep learning models are learned requires prior knowledge of training algorithms."
+    }
+  ]
+}

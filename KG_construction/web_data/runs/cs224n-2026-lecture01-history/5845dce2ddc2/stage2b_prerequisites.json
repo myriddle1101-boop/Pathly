@@ -1,0 +1,33 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Machine Learning Techniques",
+      "reason": "Neural networks are a fundamental method used in machine learning."
+    },
+    {
+      "from": "Natural Language Processing",
+      "to": "Speech Recognition",
+      "reason": "Speech recognition is a specific application within natural language processing."
+    },
+    {
+      "from": "Natural Language Processing",
+      "to": "GPT and Language Models",
+      "reason": "GPT and language models are advanced techniques in natural language processing."
+    },
+    {
+      "from": "Computational Linguistics",
+      "to": "Natural Language Processing",
+      "reason": "Computational linguistics provides the foundational methods for natural language processing."
+    },
+    {
+      "from": "Embryonic Concepts",
+      "to": "History of AI",
+      "reason": "Embryonic concepts are foundational ideas that precede the history of AI."
+    }
+  ]
+}

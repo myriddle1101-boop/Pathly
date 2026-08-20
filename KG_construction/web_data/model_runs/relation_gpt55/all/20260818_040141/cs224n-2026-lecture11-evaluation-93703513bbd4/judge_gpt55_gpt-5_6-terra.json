@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-08-18T18:54:25.452274+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-cs224n-2026-lecture11-evaluation-93703513bbd4",
+  "file_name": "cs224n-2026-lecture11-evaluation-93703513bbd4",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 20,
+  "topic_metrics": {
+    "precision": 0.7778,
+    "recall": 0.6364,
+    "f1": 0.7,
+    "tp": 7,
+    "fp": 2,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.5,
+    "recall": 0.3333,
+    "f1": 0.4,
+    "tp": 1,
+    "fp": 1,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Evaluation Metrics",
+      "Bias in Machine Learning",
+      "Benchmarking",
+      "Divergence Metrics",
+      "Natural Language Understanding",
+      "Complexity in Evaluation",
+      "Adversarial Testing"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "Neural models are mentioned incidentally, but neural-network architecture or learning is not substantively covered."
+      },
+      {
+        "name": "Model Training",
+        "reason": "Pretraining and trained evaluation models are mentioned, but model training is not developed as a learning topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Dynamic Benchmarks",
+        "reason": "The lecture explicitly presents dynamic benchmarks, including model-in-the-loop construction, as a response to benchmark artifacts."
+      },
+      {
+        "name": "Reference-Based and Reference-Free Evaluation",
+        "reason": "The source directly contrasts these evaluation paradigms and discusses their respective limitations and metrics."
+      },
+      {
+        "name": "Human Evaluation",
+        "reason": "The lecture covers human-evaluation limitations, rubric design, calibration, and inter-rater agreement."
+      },
+      {
+        "name": "Data De-contamination",
+        "reason": "The source discusses benchmark contamination in pretrained models and n-gram and near-duplicate de-contamination practices."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Evaluation Metrics",
+        "to": "Benchmarking",
+        "reason": "Benchmarking compares model performance, and the lecture treats evaluation metrics as the means for measuring that performance."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Evaluation Metrics",
+        "to": "Complexity in Evaluation",
+        "reason": "Evaluation complexity also arises from answer types, human judgment, prompt sensitivity, contamination, and benchmark design; it does not strongly require prior mastery of metrics alone."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "KL Divergence",
+        "to": "MAUVE",
+        "reason": "MAUVE is introduced as a divergence-based metric that quantizes embedded text samples and computes KL divergences over cluster distributions."
+      },
+      {
+        "from": "Shannon Entropy",
+        "to": "Information-Theoretic Metrics",
+        "reason": "The information-theoretic-metrics section defines Shannon entropy as expected surprise and uses entropy as a basis for corpus and output diversity measurement."
+      }
+    ],
+    "overall_note": "The predictions cover the lecture's broad benchmarking and metric themes, but omit several central evaluation paradigms and reliability concerns."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture11-evaluation-93703513bbd4.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture11-evaluation-93703513bbd4.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture11-evaluation-93703513bbd4_ledger.csv"
+  }
+}

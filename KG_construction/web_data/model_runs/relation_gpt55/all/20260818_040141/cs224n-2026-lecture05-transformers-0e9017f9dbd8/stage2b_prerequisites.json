@@ -1,0 +1,32 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 4,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Attention Mechanisms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Attention mechanisms are typically implemented within neural network models and require understanding neural network representations."
+    },
+    {
+      "from": "Attention Mechanisms",
+      "to": "Transformers",
+      "relation_type": "strong_prerequisite",
+      "reason": "Transformers rely heavily on attention, especially self-attention, as a core architectural component."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Transformers",
+      "relation_type": "strong_prerequisite",
+      "reason": "Transformers are neural network architectures, so neural network fundamentals are needed to understand their structure and training."
+    },
+    {
+      "from": "Attention Mechanisms",
+      "to": "Attention Variants",
+      "relation_type": "strong_prerequisite",
+      "reason": "Attention variants require understanding the basic attention mechanism before studying specialized forms."
+    }
+  ]
+}

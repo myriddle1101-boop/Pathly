@@ -1,0 +1,835 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 14,
+  "candidate_count": 79,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "instruction finetuning",
+      "avg_score": 0.6562,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "policy gradient",
+      "avg_score": 0.6303,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "name": "gradient",
+      "avg_score": 0.6051,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "name": "pretraining improve",
+      "avg_score": 0.7109,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "paradigm pretraining",
+      "avg_score": 0.6991,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "limitations instruction",
+      "avg_score": 0.6929,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "rlhf 𝑅𝐿",
+      "avg_score": 0.6739,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "limitation instruction",
+      "avg_score": 0.6698,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "lm reward",
+      "avg_score": 0.6548,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "rl reward",
+      "avg_score": 0.6513,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "1992 gradient",
+      "avg_score": 0.6471,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "𝑅𝐿 𝑅𝐿",
+      "avg_score": 0.6465,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "rewards lm",
+      "avg_score": 0.6445,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "reward rl",
+      "avg_score": 0.6414,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "pretraining usually",
+      "avg_score": 0.6369,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "pretraining",
+      "avg_score": 0.6337,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "gradient log",
+      "avg_score": 0.6297,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "worse instruction",
+      "avg_score": 0.627,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "dpo outperforms",
+      "avg_score": 0.625,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "reward rlhf",
+      "avg_score": 0.622,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "reinforcement learning",
+      "avg_score": 0.6157,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "𝑅𝐿 derived",
+      "avg_score": 0.6132,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "finetuning performance",
+      "avg_score": 0.613,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "chatbots rewarded",
+      "avg_score": 0.6127,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "human preferences",
+      "avg_score": 0.611,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "lm parameters",
+      "avg_score": 0.6061,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "policy optimization",
+      "avg_score": 0.6015,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "𝑅𝐿 𝑅𝑀",
+      "avg_score": 0.5976,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "human judgments",
+      "avg_score": 0.5937,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "gradient steps",
+      "avg_score": 0.5934,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "finetuning pretraining",
+      "avg_score": 0.5924,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "log 𝑅𝐿",
+      "avg_score": 0.5904,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "taking gradient",
+      "avg_score": 0.59,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "gradient want",
+      "avg_score": 0.5882,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "reward hacking",
+      "avg_score": 0.5835,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "subtler limitations",
+      "avg_score": 0.5812,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "learning rescue",
+      "avg_score": 0.5771,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "instruction tuning",
+      "avg_score": 0.5697,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "gains instruction",
+      "avg_score": 0.569,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "linearity gradient",
+      "avg_score": 0.5653,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "gpt chat",
+      "avg_score": 0.5651,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "unreliable reward",
+      "avg_score": 0.563,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "optimization ppo",
+      "avg_score": 0.5608,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "expectation approximate",
+      "avg_score": 0.5599,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "finetuning limitation",
+      "avg_score": 0.5593,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "learning rl",
+      "avg_score": 0.5577,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "optimization dpo",
+      "avg_score": 0.5538,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.5526,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "gradient inside",
+      "avg_score": 0.5509,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "gpt instruction",
+      "avg_score": 0.5509,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "resurgence rl",
+      "avg_score": 0.5505,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "chat gpt",
+      "avg_score": 0.549,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "learning human",
+      "avg_score": 0.5484,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "gpt training",
+      "avg_score": 0.5379,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "update ppo",
+      "avg_score": 0.5375,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "language models",
+      "avg_score": 0.5367,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "19 instruction",
+      "avg_score": 0.5358,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "rl reinforce",
+      "avg_score": 0.5324,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "18 instruction",
+      "avg_score": 0.5314,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "improve nlp",
+      "avg_score": 0.5293,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "language modeling",
+      "avg_score": 0.5288,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "model human",
+      "avg_score": 0.5263,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "ppo problems",
+      "avg_score": 0.525,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "reinforcement",
+      "avg_score": 0.523,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "training lecture",
+      "avg_score": 0.5194,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5124,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "proximal policy",
+      "avg_score": 0.5118,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "dialog agents",
+      "avg_score": 0.505,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "instruct gpt",
+      "avg_score": 0.493,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "improving rl",
+      "avg_score": 0.4888,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "dpo works",
+      "avg_score": 0.4856,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "preferences problem",
+      "avg_score": 0.4845,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "use dpo",
+      "avg_score": 0.4844,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "outperforms",
+      "avg_score": 0.4785,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "judgments noisy",
+      "avg_score": 0.4712,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "rl chatbots",
+      "avg_score": 0.4675,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "reward modeling",
+      "avg_score": 0.4598,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "modeling reward",
+      "avg_score": 0.4581,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "preferences",
+      "avg_score": 0.4574,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Reinforcement Learning",
+      "description": "A type of machine learning focused on training agents to make decisions through rewards and penalties.",
+      "sub_topics": [
+        {
+          "name": "Policy Gradient",
+          "description": "A method in reinforcement learning that optimizes the policy directly."
+        },
+        {
+          "name": "Reward Modeling",
+          "description": "The process of designing reward functions to guide agent behavior."
+        },
+        {
+          "name": "Human Preferences",
+          "description": "Incorporating human feedback to improve reinforcement learning outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Pretraining Techniques",
+      "description": "Methods used to initialize models before fine-tuning on specific tasks.",
+      "sub_topics": [
+        {
+          "name": "Instruction Tuning",
+          "description": "Fine-tuning models using specific instructions to improve performance."
+        },
+        {
+          "name": "Pretraining Improvement",
+          "description": "Strategies to enhance the effectiveness of pretraining."
+        },
+        {
+          "name": "Limitations of Pretraining",
+          "description": "Challenges and drawbacks associated with pretraining models."
+        }
+      ]
+    },
+    {
+      "name": "Fine-tuning Methods",
+      "description": "Techniques for adapting pretrained models to specific tasks.",
+      "sub_topics": [
+        {
+          "name": "Instruction Fine-tuning",
+          "description": "Refining models based on specific task instructions."
+        },
+        {
+          "name": "Performance Gains",
+          "description": "Improvements in model performance through fine-tuning."
+        },
+        {
+          "name": "Limitations of Fine-tuning",
+          "description": "Challenges faced when fine-tuning models."
+        }
+      ]
+    },
+    {
+      "name": "Gradient Methods",
+      "description": "Techniques that utilize gradients for optimization in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm that minimizes loss by iteratively moving in the direction of the steepest descent."
+        },
+        {
+          "name": "Taking Gradient",
+          "description": "The process of calculating gradients for optimization."
+        },
+        {
+          "name": "Gradient Steps",
+          "description": "The incremental updates made to model parameters during training."
+        }
+      ]
+    },
+    {
+      "name": "Language Models",
+      "description": "Models designed to understand and generate human language.",
+      "sub_topics": [
+        {
+          "name": "GPT Models",
+          "description": "Generative Pre-trained Transformers used for various language tasks."
+        },
+        {
+          "name": "Language Processing",
+          "description": "Techniques for analyzing and generating human language."
+        },
+        {
+          "name": "Model Parameters",
+          "description": "The variables within a model that are adjusted during training."
+        }
+      ]
+    },
+    {
+      "name": "Optimization Techniques",
+      "description": "Methods used to improve the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Proximal Policy Optimization (PPO)",
+          "description": "An advanced reinforcement learning algorithm for optimizing policies."
+        },
+        {
+          "name": "DPO (Direct Preference Optimization)",
+          "description": "A method that directly optimizes for user preferences."
+        },
+        {
+          "name": "Policy Optimization",
+          "description": "Strategies for improving the decision-making policy of agents."
+        }
+      ]
+    },
+    {
+      "name": "Human Feedback",
+      "description": "Incorporating human input to enhance machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Chatbot Rewards",
+          "description": "Using human feedback to reward chatbot interactions."
+        },
+        {
+          "name": "Judgments and Preferences",
+          "description": "Understanding human judgments to refine model outputs."
+        },
+        {
+          "name": "Noisy Judgments",
+          "description": "Challenges posed by inconsistent human feedback."
+        }
+      ]
+    },
+    {
+      "name": "Limitations in Learning",
+      "description": "Challenges and constraints faced in machine learning methodologies.",
+      "sub_topics": [
+        {
+          "name": "Subtler Limitations",
+          "description": "Less obvious challenges that can affect model performance."
+        },
+        {
+          "name": "Unreliable Rewards",
+          "description": "Issues arising from inconsistent or misleading reward signals."
+        },
+        {
+          "name": "Problems with PPO",
+          "description": "Specific challenges encountered when using Proximal Policy Optimization."
+        }
+      ]
+    },
+    {
+      "name": "Dialog Systems",
+      "description": "Systems designed to engage in conversation with users.",
+      "sub_topics": [
+        {
+          "name": "Chatbots",
+          "description": "Automated systems that simulate conversation with users."
+        },
+        {
+          "name": "Instruct GPT",
+          "description": "Using GPT models specifically for instruction-based tasks."
+        },
+        {
+          "name": "RL Chatbots",
+          "description": "Chatbots that utilize reinforcement learning for improved interactions."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 30.8735,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

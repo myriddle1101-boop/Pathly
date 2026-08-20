@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1",
+  "run_id": "16_graphical_models-26ce146b38e1",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:07:26.273154+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "ef9e56450e8534a2bfc551db7aa469f2b89653d5f47cab1bcdac8d6249b6b665",
+    "stage2a_topics_hybrid.json": "426f9e087174689e1440f8f5ac470ae7a32ddf0e2177953d8fac476fb87815ec",
+    "stage2c_similarity_edges.json": "45ee14890e444c2c03febb8224a0f28c2cae524fd5dcb1340a6d1bed919613c4",
+    "stage3_topics_with_summary.json": "dd29ea1ffb418b3567b08719fe446d2b8346bac041ea7156b93a1a531e9a8ed3"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 4,
+  "new_node_count": 9,
+  "new_edge_count": 7,
+  "golden_path_resource": false
+}

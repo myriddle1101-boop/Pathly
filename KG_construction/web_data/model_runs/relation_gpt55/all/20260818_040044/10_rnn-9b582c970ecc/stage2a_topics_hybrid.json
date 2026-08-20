@@ -1,0 +1,847 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 22,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "modeling recurrent",
+      "avg_score": 0.6323,
+      "frequency": 11,
+      "chunk_ids": [
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        15,
+        16,
+        19,
+        22
+      ]
+    },
+    {
+      "name": "sequence modeling",
+      "avg_score": 0.5691,
+      "frequency": 10,
+      "chunk_ids": [
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        19,
+        22
+      ]
+    },
+    {
+      "name": "recurrent network",
+      "avg_score": 0.5852,
+      "frequency": 4,
+      "chunk_ids": [
+        3,
+        5,
+        16,
+        19
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.6133,
+      "frequency": 3,
+      "chunk_ids": [
+        3,
+        5,
+        16
+      ]
+    },
+    {
+      "name": "recurrent neural",
+      "avg_score": 0.5431,
+      "frequency": 3,
+      "chunk_ids": [
+        3,
+        5,
+        15
+      ]
+    },
+    {
+      "name": "10 sequence",
+      "avg_score": 0.5263,
+      "frequency": 3,
+      "chunk_ids": [
+        6,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "model sequence",
+      "avg_score": 0.633,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "name": "recurrent networks",
+      "avg_score": 0.6156,
+      "frequency": 2,
+      "chunk_ids": [
+        16,
+        19
+      ]
+    },
+    {
+      "name": "graphical model",
+      "avg_score": 0.6069,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "name": "model indicate",
+      "avg_score": 0.5981,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "name": "neural network",
+      "avg_score": 0.5978,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        15
+      ]
+    },
+    {
+      "name": "model rnn",
+      "avg_score": 0.5712,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "name": "hidden recurrent",
+      "avg_score": 0.5349,
+      "frequency": 2,
+      "chunk_ids": [
+        7,
+        15
+      ]
+    },
+    {
+      "name": "computational graphs",
+      "avg_score": 0.7716,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "graphs computational",
+      "avg_score": 0.7714,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "computational graph",
+      "avg_score": 0.7655,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "unfolding graph",
+      "avg_score": 0.7339,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "graph repetitive",
+      "avg_score": 0.7125,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "unfolding computational",
+      "avg_score": 0.7101,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "memory model",
+      "avg_score": 0.702,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "parameter gradient",
+      "avg_score": 0.6901,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "classical dynamical",
+      "avg_score": 0.6807,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "sequence restriction",
+      "avg_score": 0.6712,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "dynamical described",
+      "avg_score": 0.6429,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "recursive network",
+      "avg_score": 0.6279,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "network computational",
+      "avg_score": 0.6251,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "predict word",
+      "avg_score": 0.6186,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "clipping gradient",
+      "avg_score": 0.618,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "landscape gradient",
+      "avg_score": 0.6135,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "model trained",
+      "avg_score": 0.6122,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "dynamical",
+      "avg_score": 0.6076,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "consider dynamical",
+      "avg_score": 0.6068,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "gradient clipping",
+      "avg_score": 0.6021,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "rnn sequence",
+      "avg_score": 0.6014,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "gradient minibatch",
+      "avg_score": 0.5992,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "training model",
+      "avg_score": 0.5871,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "statistical language",
+      "avg_score": 0.5831,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "networks recurrent",
+      "avg_score": 0.5798,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "sequence rnn",
+      "avg_score": 0.5796,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "vector sequence",
+      "avg_score": 0.5782,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "power method",
+      "avg_score": 0.5782,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "criterion training",
+      "avg_score": 0.5781,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "net memory",
+      "avg_score": 0.5711,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "predictions recurrent",
+      "avg_score": 0.5705,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "norm gradient",
+      "avg_score": 0.5704,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "dynamical driven",
+      "avg_score": 0.5626,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "language modeling",
+      "avg_score": 0.5595,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "length sequences",
+      "avg_score": 0.5585,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "sequences values",
+      "avg_score": 0.5556,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "sequences loss",
+      "avg_score": 0.5551,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "rnn map",
+      "avg_score": 0.5546,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "linear landscape",
+      "avg_score": 0.5529,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "model task",
+      "avg_score": 0.5499,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "nonlinear functions",
+      "avg_score": 0.5486,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "memory cells",
+      "avg_score": 0.5486,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "sequence tt",
+      "avg_score": 0.5467,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "sequence values",
+      "avg_score": 0.5422,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "13 recurrent",
+      "avg_score": 0.5422,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "sequence network",
+      "avg_score": 0.5396,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "example simulate",
+      "avg_score": 0.5394,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "coordinate goodfellow",
+      "avg_score": 0.5382,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "10 computational",
+      "avg_score": 0.5379,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "gradient",
+      "avg_score": 0.5376,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "exploding gradients",
+      "avg_score": 0.5355,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "landscape step",
+      "avg_score": 0.535,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "function plots",
+      "avg_score": 0.533,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "hidden recurrence",
+      "avg_score": 0.5292,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "diagram lstm",
+      "avg_score": 0.5286,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "hh tt",
+      "avg_score": 0.5281,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "gradient descent",
+      "avg_score": 0.5259,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "vector",
+      "avg_score": 0.5223,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "rnn architecture",
+      "avg_score": 0.5216,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "models recurrent",
+      "avg_score": 0.5204,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "networks input",
+      "avg_score": 0.5197,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "leading model",
+      "avg_score": 0.5178,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "rnn recurrence",
+      "avg_score": 0.517,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "tt hh",
+      "avg_score": 0.5155,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "recurrence relation",
+      "avg_score": 0.5153,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "tt 11",
+      "avg_score": 0.5126,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "tt tt",
+      "avg_score": 0.5116,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Recurrent Neural Networks",
+      "description": "A class of neural networks designed for sequence prediction tasks.",
+      "sub_topics": [
+        {
+          "name": "Sequence Modeling",
+          "description": "Techniques for modeling sequential data."
+        },
+        {
+          "name": "RNN Architecture",
+          "description": "The structural design of recurrent neural networks."
+        },
+        {
+          "name": "Gradient Clipping",
+          "description": "A technique to prevent exploding gradients during training."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various tasks.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Metrics used to evaluate the performance of a model."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks through gradient descent."
+        }
+      ]
+    },
+    {
+      "name": "Computational Graphs",
+      "description": "Graphical representations of mathematical computations in neural networks.",
+      "sub_topics": [
+        {
+          "name": "Graphical Models",
+          "description": "Models that use graphs to represent dependencies among variables."
+        },
+        {
+          "name": "Unfolding Graphs",
+          "description": "Techniques to visualize recurrent networks over time."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies for effectively training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Minibatch Gradient Descent",
+          "description": "A variant of gradient descent that uses small batches of data."
+        },
+        {
+          "name": "Model Training",
+          "description": "The process of optimizing a model's parameters."
+        }
+      ]
+    },
+    {
+      "name": "Sequence Prediction",
+      "description": "The task of predicting future elements in a sequence based on past data.",
+      "sub_topics": [
+        {
+          "name": "Language Modeling",
+          "description": "Predicting the next word in a sequence of text."
+        },
+        {
+          "name": "Predictive Modeling",
+          "description": "Using historical data to make predictions about future events."
+        }
+      ]
+    },
+    {
+      "name": "Gradient Methods",
+      "description": "Techniques that utilize gradients for optimization in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm for minimizing loss functions."
+        },
+        {
+          "name": "Norm Gradient",
+          "description": "Techniques for normalizing gradients during training."
+        }
+      ]
+    },
+    {
+      "name": "Memory Models",
+      "description": "Models that incorporate memory mechanisms to enhance learning.",
+      "sub_topics": [
+        {
+          "name": "Memory Cells",
+          "description": "Components that store information in recurrent networks."
+        },
+        {
+          "name": "Hidden States",
+          "description": "Internal representations of data in RNNs."
+        }
+      ]
+    },
+    {
+      "name": "Statistical Language Processing",
+      "description": "The application of statistical methods to analyze and generate language.",
+      "sub_topics": [
+        {
+          "name": "Statistical Language Models",
+          "description": "Models that predict the probability of sequences of words."
+        },
+        {
+          "name": "Sequence Restrictions",
+          "description": "Constraints applied to sequences in language tasks."
+        }
+      ]
+    },
+    {
+      "name": "Dynamical Systems",
+      "description": "Mathematical models that describe the behavior of complex systems over time.",
+      "sub_topics": [
+        {
+          "name": "Classical Dynamical Systems",
+          "description": "Traditional models used to study dynamic behavior."
+        },
+        {
+          "name": "Dynamical Descriptions",
+          "description": "Methods for characterizing the evolution of systems."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 24.5097,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

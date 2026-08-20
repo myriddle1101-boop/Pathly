@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-29">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Machine Learning" label="Machine Learning">
+        <attvalues>
+          <attvalue for="0" value="The study of algorithms that improve automatically through experience." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Learning Algorithms&quot;, &quot;description&quot;: &quot;Methods used to create models from data.&quot;}, {&quot;name&quot;: &quot;Training Error&quot;, &quot;description&quot;: &quot;The error rate of a model on the training dataset.&quot;}, {&quot;name&quot;: &quot;Generalization&quot;, &quot;description&quot;: &quot;The ability of a model to perform well on unseen data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning is the same as artificial intelligence.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Regression" label="Regression">
+        <attvalues>
+          <attvalue for="0" value="A statistical method for modeling the relationship between variables." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Regression&quot;, &quot;description&quot;: &quot;A method for modeling the relationship between a scalar response and one or more explanatory variables.&quot;}, {&quot;name&quot;: &quot;Regression Model&quot;, &quot;description&quot;: &quot;A mathematical representation of the relationship between input and output variables.&quot;}, {&quot;name&quot;: &quot;Regression Problem&quot;, &quot;description&quot;: &quot;The task of predicting a continuous output variable.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and algebra." />
+          <attvalue for="6" value="[&quot;Linear Regression&quot;, &quot;Multiple Regression&quot;]" />
+          <attvalue for="7" value="[&quot;Regression implies causation&quot;, &quot;Only linear relationships can be modeled&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting sales based on advertising spend&quot;, &quot;Estimating housing prices based on features&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Dimensionality Reduction" label="Dimensionality Reduction">
+        <attvalues>
+          <attvalue for="0" value="Techniques for reducing the number of features in a dataset." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;PCA Representation&quot;, &quot;description&quot;: &quot;Principal Component Analysis, a method for reducing dimensionality while preserving variance.&quot;}, {&quot;name&quot;: &quot;Manifold Learning&quot;, &quot;description&quot;: &quot;A type of non-linear dimensionality reduction.&quot;}, {&quot;name&quot;: &quot;Dimensionality Statistical&quot;, &quot;description&quot;: &quot;Statistical methods for analyzing high-dimensional data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and statistics." />
+          <attvalue for="6" value="[&quot;Principal Component Analysis (PCA)&quot;, &quot;t-Distributed Stochastic Neighbor Embedding (t-SNE)&quot;]" />
+          <attvalue for="7" value="[&quot;Dimensionality reduction always improves model performance.&quot;, &quot;It is only applicable to high-dimensional data.&quot;]" />
+          <attvalue for="8" value="[&quot;Data visualization&quot;, &quot;Noise reduction in datasets&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Data" label="Training Data">
+        <attvalues>
+          <attvalue for="0" value="The dataset used to train machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Training Set&quot;, &quot;description&quot;: &quot;A subset of data used to fit the model.&quot;}, {&quot;name&quot;: &quot;Training Examples&quot;, &quot;description&quot;: &quot;Individual instances in the training dataset.&quot;}, {&quot;name&quot;: &quot;Training Size&quot;, &quot;description&quot;: &quot;The number of examples in the training dataset.&quot;}]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data structures and statistics." />
+          <attvalue for="6" value="[&quot;Data Quality&quot;, &quot;Data Preprocessing&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Training data and test data are the same&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Error Metrics" label="Error Metrics">
+        <attvalues>
+          <attvalue for="0" value="Quantitative measures used to assess the performance of models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;MSE Measures&quot;, &quot;description&quot;: &quot;Mean Squared Error, a common metric for regression tasks.&quot;}, {&quot;name&quot;: &quot;Error Generalization&quot;, &quot;description&quot;: &quot;The difference between training error and validation error.&quot;}, {&quot;name&quot;: &quot;Estimators Bias&quot;, &quot;description&quot;: &quot;The difference between the expected prediction of the model and the true value.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and machine learning concepts." />
+          <attvalue for="6" value="[&quot;Mean Absolute Error (MAE)&quot;, &quot;Root Mean Squared Error (RMSE)&quot;, &quot;Accuracy&quot;, &quot;F1 Score&quot;]" />
+          <attvalue for="7" value="[&quot;Lower error always means a better model&quot;, &quot;All metrics are applicable to every problem&quot;]" />
+          <attvalue for="8" value="[&quot;Model evaluation in supervised learning&quot;, &quot;Hyperparameter tuning&quot;, &quot;Comparing different models&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain's network of neurons." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;A function that determines the output of a neuron.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing error.&quot;}, {&quot;name&quot;: &quot;Artificial Neural Network&quot;, &quot;description&quot;: &quot;A network of interconnected neurons used for various tasks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Classification" label="Classification">
+        <attvalues>
+          <attvalue for="0" value="The task of predicting categorical labels for data points." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Separation&quot;, &quot;description&quot;: &quot;The ability to separate classes using a linear boundary.&quot;}, {&quot;name&quot;: &quot;Classification Algorithms&quot;, &quot;description&quot;: &quot;Methods used to classify data into categories.&quot;}, {&quot;name&quot;: &quot;Decision Trees&quot;, &quot;description&quot;: &quot;A model that uses a tree-like graph of decisions.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Binary Classification&quot;, &quot;Multi-class Classification&quot;, &quot;Evaluation Metrics&quot;, &quot;Overfitting and Underfitting&quot;]" />
+          <attvalue for="7" value="[&quot;Classification is only for binary outcomes.&quot;, &quot;More features always improve classification accuracy.&quot;]" />
+          <attvalue for="8" value="[&quot;Email spam detection&quot;, &quot;Image recognition&quot;, &quot;Sentiment analysis&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Techniques for assessing the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Cross-Validation&quot;, &quot;description&quot;: &quot;A technique for assessing how the results of a statistical analysis will generalize to an independent dataset.&quot;}, {&quot;name&quot;: &quot;Hyperparameter Tuning&quot;, &quot;description&quot;: &quot;The process of optimizing model parameters to improve performance.&quot;}, {&quot;name&quot;: &quot;Performance Metrics&quot;, &quot;description&quot;: &quot;Quantitative measures used to evaluate model accuracy.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;ROC Curve&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern if the model performs well on training data.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating classification models in healthcare.&quot;, &quot;Assessing predictive models in finance.&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Distance Metrics" label="Distance Metrics">
+        <attvalues>
+          <attvalue for="0" value="Measures used to quantify the distance between data points." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Euclidean Distance&quot;, &quot;description&quot;: &quot;The straight-line distance between two points in Euclidean space.&quot;}, {&quot;name&quot;: &quot;Manhattan Distance&quot;, &quot;description&quot;: &quot;The distance between two points measured along axes at right angles.&quot;}, {&quot;name&quot;: &quot;Generalized Distance&quot;, &quot;description&quot;: &quot;A broader concept of distance that can include various metrics.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and statistics." />
+          <attvalue for="6" value="[&quot;Euclidean Distance&quot;, &quot;Manhattan Distance&quot;, &quot;Cosine Similarity&quot;, &quot;Minkowski Distance&quot;]" />
+          <attvalue for="7" value="[&quot;All distance metrics are the same.&quot;, &quot;Distance metrics can only be used in 2D space.&quot;]" />
+          <attvalue for="8" value="[&quot;Clustering algorithms (e.g., K-means)&quot;, &quot;Recommendation systems&quot;, &quot;Anomaly detection&quot;, &quot;Image recognition&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Regression" target="Classification" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding regression is foundational for grasping classification techniques." />
+        </attvalues>
+      </edge>
+      <edge source="Dimensionality Reduction" target="Distance Metrics" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Dimensionality reduction often relies on distance metrics for feature selection." />
+        </attvalues>
+      </edge>
+      <edge source="Training Data" target="Model Evaluation" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Model evaluation requires a dataset to assess performance." />
+        </attvalues>
+      </edge>
+      <edge source="Error Metrics" target="Model Evaluation" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Error metrics are essential for evaluating model performance." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Training Data" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Neural networks require training data to learn from." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

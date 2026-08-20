@@ -1,0 +1,62 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 9,
+  "prerequisites": [
+    {
+      "from": "Neurons",
+      "to": "Artificial Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding neurons is necessary to understand how artificial neural networks are constructed and function."
+    },
+    {
+      "from": "Artificial Neural Networks",
+      "to": "Autoencoders",
+      "relation_type": "strong_prerequisite",
+      "reason": "Autoencoders are a specific type of neural network, so understanding artificial neural networks is necessary first."
+    },
+    {
+      "from": "Artificial Neural Networks",
+      "to": "Computational Graphs",
+      "relation_type": "strong_prerequisite",
+      "reason": "Computational graphs in this course context are used to represent neural network computations, so understanding neural networks is necessary before studying them in depth."
+    },
+    {
+      "from": "Artificial Neural Networks",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training techniques are applied to neural network models, so understanding the models is necessary before learning how to optimize them."
+    },
+    {
+      "from": "Artificial Neural Networks",
+      "to": "Visual Recognition",
+      "relation_type": "strong_prerequisite",
+      "reason": "Visual recognition with machine learning commonly relies on neural network models, so understanding artificial neural networks is necessary first."
+    },
+    {
+      "from": "Datasets",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training techniques depend on data being available and understood, making datasets necessary before learning model training in practice."
+    },
+    {
+      "from": "Datasets",
+      "to": "Learning Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Learning algorithms operate on data, so understanding datasets is necessary before learning how algorithms train and predict."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Datasets",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding how data is structured and formatted is necessary before working with datasets."
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training techniques are specific methods for optimizing models within the broader framework of learning algorithms."
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "cs224n-2026-lecture02-wordvecs-fd0b4ad8af88",
+  "created_at": "2026-07-07T19:35:28+08:00",
+  "updated_at": "2026-07-07T19:38:47+08:00",
+  "status": "success",
+  "run_attempts": 2,
+  "document": {
+    "file_name": "cs224n-2026-lecture02-wordvecs.pdf",
+    "doc_name": "cs224n-2026-lecture02-wordvecs",
+    "sha256": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\cs224n-2026-lecture02-wordvecs.pdf",
+    "pdf_size_bytes": 2816749
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage2a",
+    "duration_seconds": 141.0139
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:35:28+08:00",
+      "ended_at": "2026-07-07T19:35:54+08:00",
+      "duration_seconds": 26.3658,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\cs224n-2026-lecture02-wordvecs.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3283\n[2] 清洗后词数: 3345\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 15\n[5] 分块数（过滤后）: 15\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=266\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang Lecture 2: Word Vectors Lecture Plan Lecture 2: Word Vectors 1. Course organization (3 mins) 2. Word 2 vec introduction (15 mins) 3. Word 2 vec o...\n\n[Chunk 2] words=234\nHow do we have usable meaning in a computer? Previously commonest NLP solution: Use, e.g., Word Net, a thesaurus containing lists of synonym sets and hypernyms (“is a” relationships) e.g., synonym sets containing “good”:...\n\n[Chunk 3] words=197\nRepresenting words as discrete symbols In traditional NLP, we regard words as discrete symbols: hotel, conference, motel – a localist representation Means one 1, the rest 0 s Such symbols for words can be represented by ...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:36:26+08:00",
+      "ended_at": "2026-07-07T19:37:33+08:00",
+      "duration_seconds": 67.1267,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：15\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/15 ...\n[KeyBERT] chunk 2/15 ...\n[KeyBERT] chunk 3/15 ...\n[KeyBERT] chunk 4/15 ...\n[KeyBERT] chunk 5/15 ...\n[KeyBERT] chunk 6/15 ...\n[KeyBERT] chunk 7/15 ...\n[KeyBERT] chunk 8/15 ...\n[KeyBERT] chunk 9/15 ...\n[KeyBERT] chunk 10/15 ...\n[KeyBERT] chunk 11/15 ...\n[KeyBERT] chunk 12/15 ...\n[KeyBERT] chunk 13/15 ...\n[KeyBERT] chunk 14/15 ...\n[KeyBERT] chunk 15/15 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Word Vectors\n02. Neural Networks\n03. Training Techniques\n04. Similarity Measures\n05. Natural Language Processing\n06. Data Representation\n07. Optimization Techniques\n08. Model Evaluation\n09. Deep Learning\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4958.69it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:37:33+08:00",
+      "ended_at": "2026-07-07T19:37:39+08:00",
+      "duration_seconds": 6.3481,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Word Vectors -> Natural Language Processing | Word vectors are fundamental for representing words in NLP tasks.\n02. Neural Networks -> Deep Learning | Deep learning is based on neural networks with multiple layers.\n03. Training Techniques -> Model Evaluation | Effective training techniques are essential for evaluating model performance.\n04. Data Representation -> Word Vectors | Understanding data representation is crucial for creating word vectors.\n05. Optimization Techniques -> Training Techniques | Optimization techniques are often used to improve training methods.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:37:39+08:00",
+      "ended_at": "2026-07-07T19:38:19+08:00",
+      "duration_seconds": 39.1543,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 3 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Model Evaluation <-> Optimization Techniques | sim=0.8266\n02. Model Evaluation <-> Training Techniques | sim=0.774\n03. Optimization Techniques <-> Training Techniques | sim=0.7644\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4782.31it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:38:19+08:00",
+      "ended_at": "2026-07-07T19:38:45+08:00",
+      "duration_seconds": 26.5266,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Word Vectors\n[LLM] 2/9 Neural Networks\n[LLM] 3/9 Training Techniques\n[LLM] 4/9 Similarity Measures\n[LLM] 5/9 Natural Language Processing\n[LLM] 6/9 Data Representation\n[LLM] 7/9 Optimization Techniques\n[LLM] 8/9 Model Evaluation\n[LLM] 9/9 Deep Learning\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:38:45+08:00",
+      "ended_at": "2026-07-07T19:38:47+08:00",
+      "duration_seconds": 1.5341,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: 可选输出存在",
+          "kg_similarity.png: 可选输出存在"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 5\n[3] Similarity edges: 3\n[4] Graph nodes=9, edges=7\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-07T19:36:26+08:00"
+}

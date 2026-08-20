@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Tokenization" label="Tokenization">
+        <attvalues>
+          <attvalue for="0" value="The process of converting text into smaller units for processing." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Subword Tokenization&quot;, &quot;description&quot;: &quot;A method that breaks words into smaller subword units.&quot;}, {&quot;name&quot;: &quot;Byte Tokenization&quot;, &quot;description&quot;: &quot;A technique that encodes text at the byte level.&quot;}, {&quot;name&quot;: &quot;Word Tokenization&quot;, &quot;description&quot;: &quot;The process of splitting text into individual words.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and programming." />
+          <attvalue for="6" value="[&quot;Word Tokenization&quot;, &quot;Subword Tokenization&quot;]" />
+          <attvalue for="7" value="[&quot;Tokenization only splits by spaces&quot;, &quot;All tokenization methods are the same&quot;]" />
+          <attvalue for="8" value="[&quot;Text preprocessing for machine learning&quot;, &quot;Input preparation for NLP models&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Encoding Techniques" label="Encoding Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods used to represent text data in a numerical format." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;BPE Encoding&quot;, &quot;description&quot;: &quot;Byte Pair Encoding, a compression technique used in tokenization.&quot;}, {&quot;name&quot;: &quot;Character Encoding&quot;, &quot;description&quot;: &quot;Representing characters in a numerical format for processing.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;One-Hot Encoding&quot;, &quot;Label Encoding&quot;, &quot;TF-IDF&quot;, &quot;Word Embeddings&quot;]" />
+          <attvalue for="7" value="[&quot;Encoding is only for categorical data&quot;, &quot;All encoding techniques are equally effective&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Sentiment Analysis&quot;, &quot;Text Classification&quot;, &quot;Recommendation Systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Language Models" label="Language Models">
+        <attvalues>
+          <attvalue for="0" value="Statistical models that predict the likelihood of sequences of words." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Multilingual Language Models&quot;, &quot;description&quot;: &quot;Models designed to work across multiple languages.&quot;}, {&quot;name&quot;: &quot;Transfer Learning in Language Models&quot;, &quot;description&quot;: &quot;Using knowledge from one language model to improve another.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of probability and statistics, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;N-grams&quot;, &quot;Neural Language Models&quot;]" />
+          <attvalue for="7" value="[&quot;Language models understand language like humans do.&quot;, &quot;All language models are based on deep learning.&quot;]" />
+          <attvalue for="8" value="[&quot;Text generation&quot;, &quot;Sentiment analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Linguistic Diversity" label="Linguistic Diversity">
+        <attvalues>
+          <attvalue for="0" value="The variety of languages and dialects in a given context." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Multilinguality&quot;, &quot;description&quot;: &quot;The ability to use or understand multiple languages.&quot;}, {&quot;name&quot;: &quot;Language Disparities&quot;, &quot;description&quot;: &quot;Differences in language use and access among populations.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linguistics and language structure." />
+          <attvalue for="6" value="[&quot;Language families&quot;, &quot;Dialectal variation&quot;]" />
+          <attvalue for="7" value="[&quot;All languages are equally complex&quot;, &quot;Dialects are inferior to standard languages&quot;]" />
+          <attvalue for="8" value="[&quot;Natural language processing&quot;, &quot;Cross-cultural communication&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods and strategies for training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Tokenizers Training&quot;, &quot;description&quot;: &quot;The process of training models to effectively tokenize text.&quot;}, {&quot;name&quot;: &quot;Training Corpus&quot;, &quot;description&quot;: &quot;The dataset used to train machine learning models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting and Underfitting&quot;, &quot;Cross-Validation&quot;, &quot;Hyperparameter Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Training and testing data can be mixed&quot;, &quot;Complex models are always better&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Predictive analytics&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain's network of neurons." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing error.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Techniques for assessing the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual values.&quot;}, {&quot;name&quot;: &quot;Regression and Classification&quot;, &quot;description&quot;: &quot;Types of problems that models can solve.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;ROC Curve&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern if the model performs well on training data.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating classification models in healthcare.&quot;, &quot;Assessing regression models in finance.&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Text Representation" label="Text Representation">
+        <attvalues>
+          <attvalue for="0" value="Methods for converting text into a format suitable for machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Tokens and Vocabulary&quot;, &quot;description&quot;: &quot;The basic units of text and the set of unique tokens used.&quot;}, {&quot;name&quot;: &quot;Character and Word Representation&quot;, &quot;description&quot;: &quot;Different approaches to represent text data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and familiarity with machine learning concepts." />
+          <attvalue for="6" value="[&quot;Bag of Words&quot;, &quot;TF-IDF&quot;, &quot;Word Embeddings&quot;]" />
+          <attvalue for="7" value="[&quot;Text representation is only about counting words.&quot;, &quot;All text representations are equally effective for all tasks.&quot;]" />
+          <attvalue for="8" value="[&quot;Sentiment analysis&quot;, &quot;Document classification&quot;, &quot;Chatbot development&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Cross-Lingual Techniques" label="Cross-Lingual Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods that facilitate understanding and processing across different languages." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Cross-Lingual Transfer&quot;, &quot;description&quot;: &quot;Transferring knowledge from one language to another.&quot;}, {&quot;name&quot;: &quot;Multilinguality Matters&quot;, &quot;description&quot;: &quot;The importance of considering multiple languages in models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and machine learning principles." />
+          <attvalue for="6" value="[&quot;Machine Translation&quot;, &quot;Cross-Lingual Embeddings&quot;]" />
+          <attvalue for="7" value="[&quot;Cross-lingual techniques only apply to translation tasks.&quot;, &quot;All languages can be treated equally in cross-lingual models.&quot;]" />
+          <attvalue for="8" value="[&quot;Multilingual chatbots&quot;, &quot;Information retrieval across languages&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Tokenization" target="Encoding Techniques">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Encoding text typically operates on tokens or units produced by tokenization." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Encoding Techniques" target="Language Models">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Language models require text to be converted into numerical representations before sequences can be modeled computationally." />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Model Evaluation" target="Training Techniques">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.774" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

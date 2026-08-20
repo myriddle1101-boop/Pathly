@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\linear_algebra\\02de2e03aa08\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\linear_algebra\\02de2e03aa08\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 8.8123,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 8\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 7 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\linear_algebra\\02de2e03aa08\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Linear Algebra -> Artificial Neural Networks | Linear Algebra is essential for understanding the mathematical operations in neural networks.\n02. Machine Learning Fundamentals -> Loss Functions | Understanding core principles is necessary to grasp how loss functions evaluate model performance.\n03. Machine Learning Fundamentals -> Regression | Core principles provide the foundation for understanding regression techniques.\n04. Machine Learning Fundamentals -> Classification | Core principles are necessary to understand classification methods.\n05. Machine Learning Fundamentals -> Training Techniques | Understanding core principles is necessary to learn effective training methods.\n06. Loss Functions -> Training Techniques | Knowledge of loss functions is crucial for applying training techniques effectively.\n07. Exercises -> Machine Learning Fundamentals | Exercises reinforce the understanding of core principles in machine learning.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

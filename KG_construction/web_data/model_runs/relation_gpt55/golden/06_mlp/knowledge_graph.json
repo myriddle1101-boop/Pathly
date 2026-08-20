@@ -1,0 +1,150 @@
+{
+  "nodes": [
+    {
+      "id": "Feedforward Networks",
+      "description": "A type of artificial neural network where connections between nodes do not form cycles.",
+      "sub_topics": "[{\"name\": \"Feedforward Network\", \"description\": \"A specific architecture of feedforward networks.\"}, {\"name\": \"XOR Problem\", \"description\": \"A classic problem demonstrating the limitations of simple linear models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and activation functions\", \"Layers and architecture\", \"Forward propagation\", \"Loss functions and optimization\"]",
+      "common_misconceptions": "[\"Feedforward networks can learn any function without limitations\", \"More layers always lead to better performance\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Regression tasks\", \"Time series prediction\"]"
+    },
+    {
+      "id": "Activation Functions",
+      "description": "Functions that determine the output of a neural network node given an input or set of inputs.",
+      "sub_topics": "[{\"name\": \"Linear Activation\", \"description\": \"An activation function that outputs the input directly.\"}, {\"name\": \"Rectified Linear\", \"description\": \"An activation function that outputs zero for negative inputs and the input itself for positive inputs.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and calculus.",
+      "key_sub_concepts": "[\"Sigmoid Function\", \"ReLU (Rectified Linear Unit)\", \"Tanh Function\", \"Softmax Function\"]",
+      "common_misconceptions": "[\"Activation functions are only used in the output layer.\", \"All activation functions are the same.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game AI\", \"Financial forecasting\"]"
+    },
+    {
+      "id": "Loss Functions",
+      "description": "Functions used to measure how well a machine learning model performs.",
+      "sub_topics": "[{\"name\": \"Entropy Loss\", \"description\": \"A loss function based on the concept of entropy, often used in classification tasks.\"}, {\"name\": \"MSE Loss\", \"description\": \"Mean Squared Error loss, commonly used in regression tasks.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Mean Squared Error\", \"Cross-Entropy Loss\"]",
+      "common_misconceptions": "[\"Loss functions only measure accuracy\", \"All loss functions are the same\"]",
+      "practical_applications": "[\"Training neural networks\", \"Evaluating regression models\"]"
+    },
+    {
+      "id": "Backpropagation",
+      "description": "An algorithm for training neural networks by calculating gradients for weight updates.",
+      "sub_topics": "[{\"name\": \"Gradient Computation\", \"description\": \"The process of calculating the gradient of the loss function.\"}, {\"name\": \"Derivatives\", \"description\": \"Mathematical tools used to compute gradients in backpropagation.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of calculus, linear algebra, and neural networks.",
+      "key_sub_concepts": "[\"Gradient Descent\", \"Chain Rule\", \"Loss Function\"]",
+      "common_misconceptions": "[\"Backpropagation is the same as training a neural network.\", \"Backpropagation can only be used with feedforward networks.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Neural Network Models",
+      "description": "Different architectures and configurations of neural networks used for various tasks.",
+      "sub_topics": "[{\"name\": \"Deep Models\", \"description\": \"Neural networks with multiple layers that can learn complex patterns.\"}, {\"name\": \"Shallow Models\", \"description\": \"Neural networks with fewer layers, often simpler and faster to train.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra, calculus, and programming.",
+      "key_sub_concepts": "[\"Feedforward Neural Networks\", \"Convolutional Neural Networks\", \"Recurrent Neural Networks\", \"Activation Functions\", \"Loss Functions\"]",
+      "common_misconceptions": "[\"Neural networks can learn anything without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game playing\", \"Medical diagnosis\", \"Financial forecasting\"]"
+    },
+    {
+      "id": "Computational Graphs",
+      "description": "A representation of the computations performed by a neural network.",
+      "sub_topics": "[{\"name\": \"Computational Graph\", \"description\": \"A directed graph that represents the operations and dependencies in a neural network.\"}, {\"name\": \"Graph Results\", \"description\": \"The outcomes derived from analyzing computational graphs.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with neural networks.",
+      "key_sub_concepts": "[\"Nodes\", \"Edges\", \"Forward propagation\", \"Backward propagation\"]",
+      "common_misconceptions": "[\"Computational graphs are only for deep learning\", \"They are too complex to understand\"]",
+      "practical_applications": "[\"Visualizing neural network operations\", \"Optimizing training processes\", \"Debugging model architectures\"]"
+    },
+    {
+      "id": "Model Generalization",
+      "description": "The ability of a model to perform well on unseen data.",
+      "sub_topics": "[{\"name\": \"Overfitting\", \"description\": \"When a model learns noise in the training data instead of the underlying pattern.\"}, {\"name\": \"Model Parameters\", \"description\": \"The variables in a model that are learned from the training data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Overfitting\", \"Underfitting\", \"Cross-validation\", \"Bias-variance tradeoff\"]",
+      "common_misconceptions": "[\"A model that performs well on training data will perform well on unseen data.\", \"Generalization is only about accuracy.\"]",
+      "practical_applications": "[\"Evaluating model performance on test datasets\", \"Selecting models based on generalization capabilities\", \"Improving model robustness in real-world scenarios\"]"
+    },
+    {
+      "id": "Linear Separability",
+      "description": "The ability to separate data points using a linear boundary.",
+      "sub_topics": "[{\"name\": \"Linear Functions\", \"description\": \"Mathematical functions that create a straight line when graphed.\"}, {\"name\": \"Complicated Systems\", \"description\": \"Systems that may not be linearly separable and require more complex models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and introductory statistics.",
+      "key_sub_concepts": "[\"Hyperplanes\", \"Support Vector Machines\"]",
+      "common_misconceptions": "[\"All datasets are linearly separable\", \"Linear separability guarantees model accuracy\"]",
+      "practical_applications": "[\"Binary classification tasks\", \"Image recognition\"]"
+    },
+    {
+      "id": "Gradient Descent",
+      "description": "An optimization algorithm used to minimize the loss function by iteratively adjusting model parameters.",
+      "sub_topics": "[{\"name\": \"Inner Gradient\", \"description\": \"The gradient computed for a specific layer in a neural network.\"}, {\"name\": \"Outer Gradient\", \"description\": \"The gradient computed for the overall model output.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of calculus and linear algebra.",
+      "key_sub_concepts": "[\"Learning Rate\", \"Convergence\", \"Stochastic Gradient Descent\", \"Batch Gradient Descent\"]",
+      "common_misconceptions": "[\"Gradient descent always finds the global minimum.\", \"A smaller learning rate is always better.\"]",
+      "practical_applications": "[\"Training neural networks\", \"Linear regression optimization\", \"Support vector machines\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Feedforward Networks",
+      "to": "Backpropagation",
+      "relation": "prerequisite",
+      "reason": "Backpropagation is commonly defined over neural network computations such as feedforward networks."
+    },
+    {
+      "from": "Feedforward Networks",
+      "to": "Neural Network Models",
+      "relation": "prerequisite",
+      "reason": "Feedforward networks are a foundational neural network architecture."
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Feedforward Networks",
+      "relation": "prerequisite",
+      "reason": "Feedforward network nodes rely on activation functions to produce outputs."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Gradient Descent",
+      "relation": "prerequisite",
+      "reason": "Gradient descent minimizes an objective such as a loss function."
+    },
+    {
+      "from": "Computational Graphs",
+      "to": "Backpropagation",
+      "relation": "prerequisite",
+      "reason": "Backpropagation applies the chain rule through a computational graph."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Backpropagation",
+      "relation": "prerequisite",
+      "reason": "Backpropagation computes gradients used for gradient-based weight updates."
+    }
+  ]
+}

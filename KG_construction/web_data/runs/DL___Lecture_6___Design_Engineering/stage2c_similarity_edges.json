@@ -1,0 +1,26 @@
+{
+  "stage": "2c",
+  "method": "sbert_cosine",
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "topic_count": 9,
+  "similarity_count": 3,
+  "threshold": 0.72,
+  "top_k_per_topic": 5,
+  "similarity_edges": [
+    {
+      "from": "Learning Challenges",
+      "to": "Learning Models",
+      "similarity": 0.7771
+    },
+    {
+      "from": "Learning Challenges",
+      "to": "Practical Learning",
+      "similarity": 0.7695
+    },
+    {
+      "from": "Learning Models",
+      "to": "Practical Learning",
+      "similarity": 0.7238
+    }
+  ]
+}

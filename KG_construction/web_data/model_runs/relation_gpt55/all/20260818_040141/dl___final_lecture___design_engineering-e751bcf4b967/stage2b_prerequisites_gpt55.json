@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 15,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "learning agents in AI",
+      "to": "reinforcement learning for autonomous systems",
+      "relation_type": "strong_prerequisite",
+      "reason": "Reinforcement learning requires understanding agents that learn through interaction with an environment."
+    },
+    {
+      "from": "deep learning algorithms",
+      "to": "deep learning for image recognition in drones",
+      "relation_type": "strong_prerequisite",
+      "reason": "Drone image recognition with deep learning depends on first understanding deep learning algorithms."
+    },
+    {
+      "from": "real-time data processing for drones",
+      "to": "autonomous drone navigation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Autonomous drone navigation requires processing sensor and environmental data in real time."
+    },
+    {
+      "from": "autonomous drone navigation",
+      "to": "autonomous drone applications in logistics",
+      "relation_type": "strong_prerequisite",
+      "reason": "Autonomous logistics applications require drones to navigate routes and avoid obstacles independently."
+    },
+    {
+      "from": "autonomous drone navigation",
+      "to": "drone delivery systems",
+      "relation_type": "strong_prerequisite",
+      "reason": "Drone delivery systems depend on autonomous navigation for route following, obstacle avoidance, and safe delivery."
+    }
+  ]
+}

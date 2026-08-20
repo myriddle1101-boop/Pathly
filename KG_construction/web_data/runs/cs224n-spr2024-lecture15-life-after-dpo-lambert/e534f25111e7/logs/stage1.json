@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-spr2024-lecture15-life-after-dpo-lambert\\e534f25111e7\\cs224n-spr2024-lecture15-life-after-dpo-lambert.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-spr2024-lecture15-life-after-dpo-lambert\\e534f25111e7\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-spr2024-lecture15-life-after-dpo-lambert\\e534f25111e7\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.3963,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3886\n[2] 清洗后词数: 4078\n[3] 文档类型识别: lecture_notes\n[4] 分块数（过滤前）: 10\n[5] 分块数（过滤后）: 10\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-spr2024-lecture15-life-after-dpo-lambert\\e534f25111e7\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-spr2024-lecture15-life-after-dpo-lambert\\e534f25111e7\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=368\nLife after DPO Nathan Lambert || Allen Institute for AI || @natolambert Stanford CS 224 N: Natural Language Processing with Deep Learning 21 May 2024 A heavily abbreviated history of language models (LMs) Life after DPO ...\n\n[Chunk 2] words=434\nSome definitions for “alignment” of models ● Instruction fine-tuning (IFT): Training a model to follow use instructions (usually via autoregressive LM loss) ● Supervised fine-tuning (SFT): Training a model to learn task-...\n\n[Chunk 3] words=359\nDPO characteristics 1. Extremely simple to implement 2. Scales nicely with existing distributed training libraries 3. Trains an implicit reward function (can still be used as a reward model, see Reward Bench) The first 2...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

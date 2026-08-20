@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Language Models" label="Language Models">
+        <attvalues>
+          <attvalue for="0" value="Techniques for modeling and generating human language." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Word Embeddings&quot;, &quot;description&quot;: &quot;Representations of words in continuous vector space.&quot;}, {&quot;name&quot;: &quot;Trigram Model&quot;, &quot;description&quot;: &quot;A statistical language model that uses three-word sequences.&quot;}, {&quot;name&quot;: &quot;Conditional Probabilities&quot;, &quot;description&quot;: &quot;Probabilities that depend on the occurrence of previous events.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Neural Networks&quot;, &quot;Transformers&quot;, &quot;Word Embeddings&quot;]" />
+          <attvalue for="7" value="[&quot;Language models understand language like humans do.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots&quot;, &quot;Text generation&quot;, &quot;Sentiment analysis&quot;, &quot;Machine translation&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Natural Language Processing" label="Natural Language Processing">
+        <attvalues>
+          <attvalue for="0" value="Field focused on the interaction between computers and human language." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Machine Translation&quot;, &quot;description&quot;: &quot;Automated translation of text from one language to another.&quot;}, {&quot;name&quot;: &quot;Speech Recognition&quot;, &quot;description&quot;: &quot;Converting spoken language into text.&quot;}, {&quot;name&quot;: &quot;Language Applications&quot;, &quot;description&quot;: &quot;Practical uses of NLP techniques in various domains.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Sentiment Analysis&quot;, &quot;Named Entity Recognition&quot;, &quot;Language Modeling&quot;]" />
+          <attvalue for="7" value="[&quot;NLP is only about chatbots&quot;, &quot;NLP can understand context perfectly&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots and virtual assistants&quot;, &quot;Text classification&quot;, &quot;Machine translation&quot;, &quot;Sentiment analysis in social media&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Deep Learning" label="Deep Learning">
+        <attvalues>
+          <attvalue for="0" value="A subset of machine learning using neural networks with many layers." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Neural Networks&quot;, &quot;description&quot;: &quot;Computational models inspired by the human brain.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;Algorithm for training neural networks by minimizing error.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, calculus, and programming in Python." />
+          <attvalue for="6" value="[&quot;Neural Networks&quot;, &quot;Backpropagation&quot;, &quot;Convolutional Neural Networks (CNNs)&quot;, &quot;Recurrent Neural Networks (RNNs)&quot;]" />
+          <attvalue for="7" value="[&quot;Deep learning is the same as machine learning.&quot;, &quot;More layers always lead to better performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Autonomous vehicles&quot;, &quot;Game playing (e.g., AlphaGo)&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Attention Mechanism" label="Attention Mechanism">
+        <attvalues>
+          <attvalue for="0" value="A technique that allows models to focus on specific parts of the input." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Encoder-Decoder Architecture&quot;, &quot;description&quot;: &quot;A model structure that uses separate components for input and output.&quot;}, {&quot;name&quot;: &quot;Contextual Attention&quot;, &quot;description&quot;: &quot;Attention that considers the context of the input data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and sequence data." />
+          <attvalue for="6" value="[&quot;Self-Attention&quot;, &quot;Multi-Head Attention&quot;]" />
+          <attvalue for="7" value="[&quot;Attention is only for NLP tasks&quot;, &quot;Attention replaces RNNs completely&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Computer Vision&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Probabilities" label="Probabilities">
+        <attvalues>
+          <attvalue for="0" value="Mathematical framework for quantifying uncertainty." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Probability Decomposition&quot;, &quot;description&quot;: &quot;Breaking down complex probabilities into simpler components.&quot;}, {&quot;name&quot;: &quot;Value Probability&quot;, &quot;description&quot;: &quot;The likelihood of a specific outcome occurring.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algebra and introductory statistics." />
+          <attvalue for="6" value="[&quot;Random variables&quot;, &quot;Probability distributions&quot;]" />
+          <attvalue for="7" value="[&quot;Probabilities must always add up to 1 in all scenarios&quot;, &quot;A higher probability guarantees an event will occur&quot;]" />
+          <attvalue for="8" value="[&quot;Risk assessment in finance&quot;, &quot;Machine learning model evaluation&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Optimization Techniques" label="Optimization Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods for improving the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Gradient Descent&quot;, &quot;description&quot;: &quot;An optimization algorithm for minimizing loss functions.&quot;}, {&quot;name&quot;: &quot;Speedup Techniques&quot;, &quot;description&quot;: &quot;Methods to enhance computational efficiency.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning algorithms and linear algebra." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Learning Rate&quot;, &quot;Regularization&quot;]" />
+          <attvalue for="7" value="[&quot;Optimization is only about finding the minimum loss.&quot;, &quot;All optimization techniques work equally well for all models.&quot;]" />
+          <attvalue for="8" value="[&quot;Tuning hyperparameters in neural networks&quot;, &quot;Improving convergence speed in training algorithms&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Representation" label="Data Representation">
+        <attvalues>
+          <attvalue for="0" value="Ways to encode and structure data for machine learning tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Semantic Representation&quot;, &quot;description&quot;: &quot;Encoding meaning in a way that machines can understand.&quot;}, {&quot;name&quot;: &quot;Hierarchical Structures&quot;, &quot;description&quot;: &quot;Organizing data in a tree-like format for better processing.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data types and statistics." />
+          <attvalue for="6" value="[&quot;Feature Encoding&quot;, &quot;Data Normalization&quot;]" />
+          <attvalue for="7" value="[&quot;All data can be used as-is&quot;, &quot;Data representation is not important&quot;]" />
+          <attvalue for="8" value="[&quot;Image processing&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Models" label="Training Models">
+        <attvalues>
+          <attvalue for="0" value="Processes involved in teaching models to make predictions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual outcomes.&quot;}, {&quot;name&quot;: &quot;Regression and Classification&quot;, &quot;description&quot;: &quot;Types of predictive modeling techniques.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Training a model means it will always perform well on new data.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting house prices&quot;, &quot;Classifying emails as spam or not&quot;, &quot;Image recognition&quot;, &quot;Recommender systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Implementation Techniques" label="Implementation Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods for efficiently executing machine learning algorithms." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Fast Implementations&quot;, &quot;description&quot;: &quot;Optimized code for quicker execution of algorithms.&quot;}, {&quot;name&quot;: &quot;CPU Optimization&quot;, &quot;description&quot;: &quot;Techniques to enhance performance on CPU architectures.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning algorithms and programming skills in Python or R." />
+          <attvalue for="6" value="[&quot;Algorithm optimization&quot;, &quot;Parallel processing&quot;, &quot;Model deployment&quot;, &quot;Resource management&quot;]" />
+          <attvalue for="7" value="[&quot;Implementation is the same as theory&quot;, &quot;More complex algorithms always yield better results&quot;, &quot;Optimization is only about speed&quot;]" />
+          <attvalue for="8" value="[&quot;Real-time data processing&quot;, &quot;Scalable web applications&quot;, &quot;Automated machine learning pipelines&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Deep Learning" target="Attention Mechanism">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Attention is typically learned as a component within neural network architectures." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Probabilities" target="Language Models">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Language models assign and use probability distributions over language sequences." />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Optimization Techniques" target="Training Models">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training models requires optimizing parameters to improve predictive performance." />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Optimization Techniques" target="Deep Learning">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Deep learning relies on optimization methods to learn neural network parameters." />
+        </attvalues>
+      </edge>
+      <edge id="4" source="Data Representation" target="Training Models">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Models must receive data in an encoded, structured form before they can be trained." />
+        </attvalues>
+      </edge>
+      <edge id="5" source="Implementation Techniques" target="Optimization Techniques">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.8404" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

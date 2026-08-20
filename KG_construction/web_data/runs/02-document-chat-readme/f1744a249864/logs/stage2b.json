@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 8.7692,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 15\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 9 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. document_chat library usage in Python -> python document_chat implementation | Understanding library usage is essential for implementation.\n02. python document_chat implementation -> document chat functionality in Python | Implementation knowledge is required to understand functionality.\n03. document chat functionality in Python -> document_chat API integration | Knowledge of functionality is necessary for API integration.\n04. conversation machine learning models -> conversation machine architecture | Understanding models is crucial for architecture design.\n05. documents conversation analysis techniques -> documents conversation data processing | Analysis techniques are needed for effective data processing.\n06. document chat user interface design -> real-time document chat applications | UI design is fundamental for developing real-time applications.\n07. document chat performance optimization -> real-time document chat applications | Performance optimization is critical for real-time applications.\n08. document chat security considerations -> document chat use cases in business | Security considerations are vital for business applications.\n09. conversation machine training datasets -> conversation machine learning models | Training datasets are necessary for developing models.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 7.7626,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Neural Networks -> Language Models | Language models often utilize neural networks for their implementation.\n02. Neural Networks -> Machine Translation | Machine translation systems frequently rely on neural network architectures.\n03. Sequence Models -> Language Models | Language models are a type of sequence model focused on word sequences.\n04. Training Techniques -> Model Evaluation | Effective training techniques are essential for proper model evaluation.\n05. Neural Networks -> Gradient Issues | Understanding neural networks is crucial to address gradient issues.\n06. Language Processing -> Machine Translation | Language processing techniques are foundational for machine translation.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

@@ -1,0 +1,144 @@
+{
+  "nodes": [
+    {
+      "id": "Technical Debt",
+      "description": "Challenges in software development that hinder progress and maintainability.",
+      "sub_topics": "[{\"name\": \"Reproducibility Debt\", \"description\": \"Issues that arise when experiments cannot be reliably reproduced.\"}, {\"name\": \"Glue Code\", \"description\": \"Code that connects different software components but may reduce clarity.\"}, {\"name\": \"Common Smells\", \"description\": \"Indicators of potential problems in software design and implementation.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of software development and project management.",
+      "key_sub_concepts": "[\"Code Quality\", \"Refactoring\", \"Technical Debt Types\", \"Impact on Development\"]",
+      "common_misconceptions": "[\"Technical debt is only about code quality.\", \"Paying off technical debt is always a bad idea.\"]",
+      "practical_applications": "[\"Improving software maintainability\", \"Prioritizing development tasks\", \"Enhancing team communication about project challenges\"]"
+    },
+    {
+      "id": "Abstraction Boundaries",
+      "description": "Concepts that define the limits of abstraction in software systems.",
+      "sub_topics": "[{\"name\": \"Strict Abstraction\", \"description\": \"Clear separation of concerns in software architecture.\"}, {\"name\": \"Strong Abstraction\", \"description\": \"High-level representations that simplify complex systems.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of software engineering principles and object-oriented programming.",
+      "key_sub_concepts": "[\"Encapsulation\", \"Modularity\", \"Information Hiding\"]",
+      "common_misconceptions": "[\"Abstraction means hiding all details\", \"All systems must have the same level of abstraction\"]",
+      "practical_applications": "[\"Designing software architectures\", \"Creating APIs\", \"Developing user interfaces\"]"
+    },
+    {
+      "id": "Machine Learning Smells",
+      "description": "Common pitfalls and issues in machine learning projects.",
+      "sub_topics": "[{\"name\": \"Prototype Smell\", \"description\": \"Indicators that a machine learning model is not well-structured.\"}, {\"name\": \"ML Systems Composition\", \"description\": \"Understanding how different components of ML systems interact.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Overfitting\", \"Data Leakage\", \"Model Interpretability\", \"Bias-Variance Tradeoff\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Complex models are always better\", \"Training accuracy is the only metric that matters\"]",
+      "practical_applications": "[\"Improving model performance\", \"Ensuring ethical AI practices\", \"Enhancing model robustness\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": "[{\"name\": \"Activation Function\", \"description\": \"Functions that determine the output of a neural network node.\"}, {\"name\": \"Backpropagation\", \"description\": \"Algorithm for training neural networks by minimizing error.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image and speech recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Loss Functions",
+      "description": "Metrics used to evaluate the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Regression Loss\", \"description\": \"Loss functions used for regression tasks.\"}, {\"name\": \"Classification Loss\", \"description\": \"Loss functions used for classification tasks.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Mean Squared Error (MSE)\", \"Cross-Entropy Loss\"]",
+      "common_misconceptions": "[\"Loss functions only measure accuracy.\", \"All loss functions are the same.\"]",
+      "practical_applications": "[\"Training neural networks\", \"Evaluating regression models\"]"
+    },
+    {
+      "id": "Linear Separability",
+      "description": "The ability to separate classes in a dataset using a linear boundary.",
+      "sub_topics": "[{\"name\": \"Linear Regression\", \"description\": \"A method for modeling the relationship between variables.\"}, {\"name\": \"Classification Techniques\", \"description\": \"Methods for categorizing data points into classes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and introductory statistics.",
+      "key_sub_concepts": "[\"Hyperplanes\", \"Support Vector Machines\"]",
+      "common_misconceptions": "[\"All datasets are linearly separable\", \"Linear separability guarantees perfect classification\"]",
+      "practical_applications": "[\"Binary classification tasks\", \"Image recognition\"]"
+    },
+    {
+      "id": "Research References",
+      "description": "Key studies and papers in the field of machine learning.",
+      "sub_topics": "[{\"name\": \"Ananthanarayanan Reference\", \"description\": \"Notable work by Ananthanarayanan in machine learning.\"}, {\"name\": \"Kalyanaraman Project Adam\", \"description\": \"Significant project in the development of machine learning systems.\"}]",
+      "difficulty_level": 1,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and terminology.",
+      "key_sub_concepts": "[\"Foundational papers in machine learning\", \"Influential algorithms and models\"]",
+      "common_misconceptions": "[\"All important research is recent\", \"Only complex papers are valuable\"]",
+      "practical_applications": "[\"Guiding future research directions\", \"Improving existing algorithms based on past findings\"]"
+    },
+    {
+      "id": "Software Engineering Smells",
+      "description": "Indicators of poor software design and implementation practices.",
+      "sub_topics": "[{\"name\": \"In Software Engineering\", \"description\": \"Common issues faced in software engineering practices.\"}, {\"name\": \"Debt for Scientists\", \"description\": \"Challenges specific to scientists working with software.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of software development and design principles.",
+      "key_sub_concepts": "[\"Code Smells\", \"Refactoring Techniques\"]",
+      "common_misconceptions": "[\"All code smells are critical issues\", \"Code smells are only related to performance\"]",
+      "practical_applications": "[\"Improving code maintainability\", \"Enhancing team collaboration and communication\"]"
+    },
+    {
+      "id": "Packages and Glue",
+      "description": "The role of software packages in connecting different components.",
+      "sub_topics": "[{\"name\": \"Glue Code Packages\", \"description\": \"Packages that facilitate integration between software components.\"}, {\"name\": \"95 Glue Code\", \"description\": \"Specific instances of glue code in software projects.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and software development concepts.",
+      "key_sub_concepts": "[\"Software packages\", \"Dependency management\", \"APIs\", \"Modularity\"]",
+      "common_misconceptions": "[\"Packages are only for large projects\", \"All packages are equally reliable\"]",
+      "practical_applications": "[\"Integrating libraries in data science\", \"Building web applications with frameworks\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Machine Learning Smells",
+      "to": "Loss Functions",
+      "relation": "prerequisite",
+      "reason": "Recognizing machine learning smells often involves evaluating loss functions."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Loss Functions",
+      "relation": "prerequisite",
+      "reason": "Loss functions are essential for training neural networks."
+    },
+    {
+      "from": "Linear Separability",
+      "to": "Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Understanding linear separability is fundamental for grasping how neural networks can classify data."
+    },
+    {
+      "from": "Software Engineering Smells",
+      "to": "Technical Debt",
+      "relation": "prerequisite",
+      "reason": "Identifying software engineering smells helps in understanding and managing technical debt."
+    },
+    {
+      "from": "Packages and Glue",
+      "to": "Abstraction Boundaries",
+      "relation": "prerequisite",
+      "reason": "Understanding how packages connect components requires knowledge of abstraction boundaries."
+    }
+  ]
+}

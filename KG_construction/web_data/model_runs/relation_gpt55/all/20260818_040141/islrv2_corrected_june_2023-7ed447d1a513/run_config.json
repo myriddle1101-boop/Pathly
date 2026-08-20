@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islrv2_corrected_june_2023\\7ed447d1a513",
+  "run_id": "islrv2_corrected_june_2023-7ed447d1a513",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:16:17.015129+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "1d7fe78cb965485eff8f3e77af526d60e29dcd5dcac913884b7595387486f99e",
+    "stage2a_topics_hybrid.json": "bf85baec611668778805b0dc38ae89fe30adf804da9fc889c9e5ad4d50f3a3aa",
+    "stage2c_similarity_edges.json": "ace3b973841d359d846cfd597ec3ad8467666de469604f6095a027f4c5ecc63f",
+    "stage3_topics_with_summary.json": "ba260d551c0b1bbf7b4180b16bfa5574c4d9259380257bb14c2a7ceafae10c20"
+  },
+  "old_relation_count": 7,
+  "new_relation_count": 1,
+  "new_node_count": 9,
+  "new_edge_count": 1,
+  "golden_path_resource": false
+}

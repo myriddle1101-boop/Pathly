@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Embeddings",
+      "to": "Vector Databases",
+      "relation_type": "strong_prerequisite",
+      "reason": "Vector databases store and retrieve vector embeddings, so embeddings must be understood first."
+    },
+    {
+      "from": "Similarity Scores",
+      "to": "Vector Databases",
+      "relation_type": "strong_prerequisite",
+      "reason": "Vector databases rely on similarity metrics to compare embeddings during retrieval."
+    }
+  ]
+}

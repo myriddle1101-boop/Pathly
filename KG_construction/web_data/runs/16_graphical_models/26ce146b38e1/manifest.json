@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "16_graphical_models-26ce146b38e1",
+  "created_at": "2026-07-29T14:08:55+08:00",
+  "updated_at": "2026-07-29T14:11:08+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "16_graphical_models.pdf",
+    "doc_name": "16_graphical_models",
+    "sha256": "26ce146b38e1c1f2f118f14cbcecff26aae98df67f61985095882b84bc028271",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\16_graphical_models.pdf",
+    "pdf_size_bytes": 12068863
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 132.7711
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:08:55+08:00",
+      "ended_at": "2026-07-29T14:09:02+08:00",
+      "duration_seconds": 6.6328,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\16_graphical_models.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 8617\n[2] 清洗后词数: 8743\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 40\n[5] 分块数（过滤后）: 38\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=115\nStructured Probabilistic Models for Deep Learning Lecture slides for Chapter 16 of Deep Learning www.deeplearningbook.org Ian Goodfellow 2016-10-04 Roadmap  Challenges of Unstructured Modeling  Using Graphs to Describe...\n\n[Chunk 2] words=275\nCHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING x Density estimation: Given an input , the machine learning system  p(x) returns an estimate of the true density under the data-generating distribution. This...\n\n[Chunk 3] words=247\nFor an example of a sampling task using small natural images, see figure 16.1. Mo deling a rich distribution over thousands or millions of random variables is a challenging task, b oth computationally and statistically. ...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:09:02+08:00",
+      "ended_at": "2026-07-29T14:10:01+08:00",
+      "duration_seconds": 58.6242,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：38\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/38 ...\n[KeyBERT] chunk 2/38 ...\n[KeyBERT] chunk 3/38 ...\n[KeyBERT] chunk 4/38 ...\n[KeyBERT] chunk 5/38 ...\n[KeyBERT] chunk 6/38 ...\n[KeyBERT] chunk 7/38 ...\n[KeyBERT] chunk 8/38 ...\n[KeyBERT] chunk 9/38 ...\n[KeyBERT] chunk 10/38 ...\n[KeyBERT] chunk 11/38 ...\n[KeyBERT] chunk 12/38 ...\n[KeyBERT] chunk 13/38 ...\n[KeyBERT] chunk 14/38 ...\n[KeyBERT] chunk 15/38 ...\n[KeyBERT] chunk 16/38 ...\n[KeyBERT] chunk 17/38 ...\n[KeyBERT] chunk 18/38 ...\n[KeyBERT] chunk 19/38 ...\n[KeyBERT] chunk 20/38 ...\n[KeyBERT] chunk 21/38 ...\n[KeyBERT] chunk 22/38 ...\n[KeyBERT] chunk 23/38 ...\n[KeyBERT] chunk 24/38 ...\n[KeyBERT] chunk 25/38 ...\n[KeyBERT] chunk 26/38 ...\n[KeyBERT] chunk 27/38 ...\n[KeyBERT] chunk 28/38 ...\n[KeyBERT] chunk 29/38 ...\n[KeyBERT] chunk 30/38 ...\n[KeyBERT] chunk 31/38 ...\n[KeyBERT] chunk 32/38 ...\n[KeyBERT] chunk 33/38 ...\n[KeyBERT] chunk 34/38 ...\n[KeyBERT] chunk 35/38 ...\n[KeyBERT] chunk 36/38 ...\n[KeyBERT] chunk 37/38 ...\n[KeyBERT] chunk 38/38 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Deep Learning\n02. Probabilistic Models\n03. Graph Models\n04. Structured Modeling\n05. Graph Theory\n06. Sampling Techniques\n07. Training Algorithms\n08. Model Evaluation\n09. Graph Representations\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6529.30it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:10:01+08:00",
+      "ended_at": "2026-07-29T14:10:08+08:00",
+      "duration_seconds": 6.7416,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Graph Theory -> Graph Models | Understanding graph properties is essential for modeling relationships.\n02. Graph Theory -> Graph Representations | Knowledge of graph properties is necessary to represent data using graphs.\n03. Graph Models -> Structured Modeling | Graph models provide a structured approach to modeling relationships.\n04. Sampling Techniques -> Model Evaluation | Effective evaluation often requires understanding sampling methods.\n05. Training Algorithms -> Model Evaluation | Evaluating models is crucial to understanding the effectiveness of training algorithms.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:10:08+08:00",
+      "ended_at": "2026-07-29T14:10:39+08:00",
+      "duration_seconds": 31.8454,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 3 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Graph Models <-> Graph Representations | sim=0.8252\n02. Graph Representations <-> Graph Theory | sim=0.7622\n03. Graph Models <-> Graph Theory | sim=0.7619\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5379.25it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:10:39+08:00",
+      "ended_at": "2026-07-29T14:11:06+08:00",
+      "duration_seconds": 26.9669,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Deep Learning\n[LLM] 2/9 Probabilistic Models\n[LLM] 3/9 Graph Models\n[LLM] 4/9 Structured Modeling\n[LLM] 5/9 Graph Theory\n[LLM] 6/9 Sampling Techniques\n[LLM] 7/9 Training Algorithms\n[LLM] 8/9 Model Evaluation\n[LLM] 9/9 Graph Representations\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:11:06+08:00",
+      "ended_at": "2026-07-29T14:11:08+08:00",
+      "duration_seconds": 1.8538,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output present"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 5\n[3] Similarity edges: 3\n[4] Graph nodes=9, edges=8\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T14:08:55+08:00"
+}

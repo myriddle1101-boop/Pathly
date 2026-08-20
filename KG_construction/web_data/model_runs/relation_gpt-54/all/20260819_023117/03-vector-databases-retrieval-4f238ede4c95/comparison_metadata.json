@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95",
+  "run_id": "03-vector-databases-retrieval-4f238ede4c95",
+  "model": "gpt-5.4",
+  "created_at": "2026-08-18T18:32:21.154404+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "4a554bee9aeb19f8fa78529f94b02d4998a45cc704d202450dbb1ff5b2098135",
+    "stage2a_topics_hybrid.json": "7f8ef6e5514c02e8dd63135bb2ec4b324bbfbda4be0112d1ae69cb78fb8b55c1",
+    "stage2c_similarity_edges.json": "b5881332714493d6201ae32bbae36b9019c14a2fdb369da50305fe045c65a8d2",
+    "stage3_topics_with_summary.json": "b940e6633b859b2f919f93ea3247f7de552db041639eb3dd7fb92e6a51d82e7c"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 3,
+  "new_node_count": 9,
+  "new_edge_count": 3,
+  "golden_path_resource": false
+}

@@ -1,0 +1,50 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 16,
+  "prerequisite_count": 7,
+  "prerequisites": [
+    {
+      "from": "foundational concepts in learning theory",
+      "to": "neural networks and their training methodologies",
+      "relation_type": "strong_prerequisite",
+      "reason": "Core learning concepts are needed to understand how neural networks are trained."
+    },
+    {
+      "from": "neural networks and their training methodologies",
+      "to": "deep learning architectures and applications",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning architectures build on neural network structure and training methods."
+    },
+    {
+      "from": "convolutional kernels in image processing",
+      "to": "convolutional layer design and optimization",
+      "relation_type": "strong_prerequisite",
+      "reason": "Convolutional layer design depends on understanding kernels and how they operate on images."
+    },
+    {
+      "from": "neural networks and their training methodologies",
+      "to": "convolutional layer design and optimization",
+      "relation_type": "strong_prerequisite",
+      "reason": "Convolutional layers are neural network components whose design requires knowledge of network training principles."
+    },
+    {
+      "from": "convolutional layer design and optimization",
+      "to": "learning pooling strategies in convolutional networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Pooling strategies are typically understood in the context of convolutional network layer design."
+    },
+    {
+      "from": "neural networks and their training methodologies",
+      "to": "learning lectures on advanced neural network topics",
+      "relation_type": "strong_prerequisite",
+      "reason": "Advanced neural network topics require prior understanding of basic network training methodologies."
+    },
+    {
+      "from": "neural networks and their training methodologies",
+      "to": "whynotusea as a critique of existing models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Critiquing neural network models requires understanding how those models work and are trained."
+    }
+  ]
+}

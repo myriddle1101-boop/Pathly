@@ -1,0 +1,48 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 15,
+  "prerequisite_count": 8,
+  "prerequisites": [
+    {
+      "from": "softmax and probability in neural networks",
+      "to": "softmax and its role in classification tasks",
+      "reason": "understanding softmax requires knowledge of probability in neural networks"
+    },
+    {
+      "from": "softmax and its role in classification tasks",
+      "to": "softmax function applications in machine learning",
+      "reason": "applications of softmax depend on its role in classification"
+    },
+    {
+      "from": "LU activation function in deep learning",
+      "to": "LU activation function variations and their impact",
+      "reason": "understanding the LU activation function is necessary to explore its variations"
+    },
+    {
+      "from": "LU activation function variations and their impact",
+      "to": "LU max function and its computational efficiency",
+      "reason": "variations of LU activation lead to understanding specific functions like LU max"
+    },
+    {
+      "from": "engineers' lecture series on machine learning",
+      "to": "designing machine learning systems for engineers",
+      "reason": "lecture series provides foundational knowledge for system design"
+    },
+    {
+      "from": "machine learning for predictive modeling",
+      "to": "machine learning techniques for data analysis",
+      "reason": "predictive modeling relies on data analysis techniques"
+    },
+    {
+      "from": "learning design principles in machine learning",
+      "to": "learning for design in AI applications",
+      "reason": "design principles are foundational for applying learning in AI"
+    },
+    {
+      "from": "engineers' approach to backpropagation in neural networks",
+      "to": "activation functions in neural network architectures",
+      "reason": "backpropagation requires understanding of activation functions"
+    }
+  ]
+}

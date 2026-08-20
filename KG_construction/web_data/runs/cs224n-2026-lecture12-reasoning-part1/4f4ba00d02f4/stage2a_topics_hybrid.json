@@ -1,0 +1,821 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 16,
+  "candidate_count": 75,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "reasoning works",
+      "avg_score": 0.6809,
+      "frequency": 4,
+      "chunk_ids": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "reasoning",
+      "avg_score": 0.6544,
+      "frequency": 4,
+      "chunk_ids": [
+        12,
+        13,
+        15,
+        16
+      ]
+    },
+    {
+      "name": "complexity ppo",
+      "avg_score": 0.5689,
+      "frequency": 3,
+      "chunk_ids": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "name": "mins decoding",
+      "avg_score": 0.5636,
+      "frequency": 3,
+      "chunk_ids": [
+        1,
+        4,
+        7
+      ]
+    },
+    {
+      "name": "decoding techniques",
+      "avg_score": 0.5256,
+      "frequency": 3,
+      "chunk_ids": [
+        1,
+        4,
+        7
+      ]
+    },
+    {
+      "name": "complexity",
+      "avg_score": 0.4748,
+      "frequency": 3,
+      "chunk_ids": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "name": "reasoning prompting",
+      "avg_score": 0.6818,
+      "frequency": 2,
+      "chunk_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "reasoning paths",
+      "avg_score": 0.6512,
+      "frequency": 2,
+      "chunk_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "reasoning models",
+      "avg_score": 0.6456,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        16
+      ]
+    },
+    {
+      "name": "models reasoning",
+      "avg_score": 0.6446,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        16
+      ]
+    },
+    {
+      "name": "ppo complexity",
+      "avg_score": 0.5882,
+      "frequency": 2,
+      "chunk_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "name": "implication reasoning",
+      "avg_score": 0.5557,
+      "frequency": 2,
+      "chunk_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "dissecting complexity",
+      "avg_score": 0.5274,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        7
+      ]
+    },
+    {
+      "name": "grpo objective",
+      "avg_score": 0.7233,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "model reasoning",
+      "avg_score": 0.7179,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "variables reasoning",
+      "avg_score": 0.7137,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "reasoning hints",
+      "avg_score": 0.7019,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "samples reasoning",
+      "avg_score": 0.6951,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "responses grpo",
+      "avg_score": 0.687,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "reasoning behavior",
+      "avg_score": 0.687,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "reasoning monitored",
+      "avg_score": 0.6755,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "reasoning emerges",
+      "avg_score": 0.666,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "reasoning patterns",
+      "avg_score": 0.6463,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "available reasoning",
+      "avg_score": 0.6435,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "data reasoning",
+      "avg_score": 0.6416,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.6286,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "proper reasoning",
+      "avg_score": 0.6263,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "temperature sampling",
+      "avg_score": 0.6245,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "complexity training",
+      "avg_score": 0.6218,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "substantial reasoning",
+      "avg_score": 0.6212,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "neural language",
+      "avg_score": 0.6152,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "looping likely",
+      "avg_score": 0.6114,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "term grpo",
+      "avg_score": 0.5909,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "nucleus sampling",
+      "avg_score": 0.5843,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "sampling methods",
+      "avg_score": 0.5837,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "models limited",
+      "avg_score": 0.5795,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "grpo sample",
+      "avg_score": 0.5702,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "processing deep",
+      "avg_score": 0.5698,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "distillation reasoning",
+      "avg_score": 0.565,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "2025 looping",
+      "avg_score": 0.5623,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "temperature hyperparameter",
+      "avg_score": 0.5623,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "reasoners kojima",
+      "avg_score": 0.5622,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "use sampling",
+      "avg_score": 0.5598,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "looping reasoning",
+      "avg_score": 0.5558,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "training value",
+      "avg_score": 0.5545,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "decoding limitation",
+      "avg_score": 0.5539,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "poor readability",
+      "avg_score": 0.5526,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "sampling use",
+      "avg_score": 0.5471,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "ppo objective",
+      "avg_score": 0.542,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "grpo models",
+      "avg_score": 0.5413,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "thought reasoning",
+      "avg_score": 0.5293,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "models outperform",
+      "avg_score": 0.5253,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "models viable",
+      "avg_score": 0.5245,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "importance sampling",
+      "avg_score": 0.5244,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "level dapo",
+      "avg_score": 0.5189,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "rl zero",
+      "avg_score": 0.5184,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "temps looping",
+      "avg_score": 0.5178,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "loss response",
+      "avg_score": 0.5175,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "times looping",
+      "avg_score": 0.5157,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "level loss",
+      "avg_score": 0.515,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "averaging grpo",
+      "avg_score": 0.5143,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "readability code",
+      "avg_score": 0.5069,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "objective ppo",
+      "avg_score": 0.5054,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "vs grpo",
+      "avg_score": 0.5046,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "switches reasoning",
+      "avg_score": 0.5043,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "loss motivation",
+      "avg_score": 0.5039,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "rl works",
+      "avg_score": 0.4998,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "readability",
+      "avg_score": 0.4982,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "ppo training",
+      "avg_score": 0.497,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "2015 looping",
+      "avg_score": 0.4952,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "prm deep",
+      "avg_score": 0.4739,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "policy value",
+      "avg_score": 0.4583,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "ppo vs",
+      "avg_score": 0.4546,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "model opting",
+      "avg_score": 0.45,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "models memory",
+      "avg_score": 0.4403,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Reasoning Techniques",
+      "description": "Explores various methods and models for reasoning in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Reasoning Models",
+          "description": "Different models used for reasoning tasks."
+        },
+        {
+          "name": "Reasoning Paths",
+          "description": "Paths taken by models to arrive at conclusions."
+        },
+        {
+          "name": "Reasoning Behavior",
+          "description": "How models exhibit reasoning in their outputs."
+        }
+      ]
+    },
+    {
+      "name": "Complexity Analysis",
+      "description": "Examines the complexity of algorithms and models in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Complexity PPO",
+          "description": "Complexity considerations in Proximal Policy Optimization."
+        },
+        {
+          "name": "Dissecting Complexity",
+          "description": "Breaking down complexity into manageable components."
+        },
+        {
+          "name": "Training Complexity",
+          "description": "Complexity involved in the training process."
+        }
+      ]
+    },
+    {
+      "name": "Decoding Techniques",
+      "description": "Methods for decoding outputs from machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Temperature Sampling",
+          "description": "Sampling methods that use temperature as a parameter."
+        },
+        {
+          "name": "Nucleus Sampling",
+          "description": "A technique for sampling from a probability distribution."
+        },
+        {
+          "name": "Decoding Limitations",
+          "description": "Challenges and limitations in decoding outputs."
+        }
+      ]
+    },
+    {
+      "name": "Training Strategies",
+      "description": "Strategies and techniques for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "PPO Training",
+          "description": "Training methods specific to Proximal Policy Optimization."
+        },
+        {
+          "name": "Importance Sampling",
+          "description": "A technique to improve training efficiency."
+        },
+        {
+          "name": "Training Value",
+          "description": "Evaluating the value of different training approaches."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Fundamental concepts and architectures of neural networks.",
+      "sub_topics": [
+        {
+          "name": "Artificial Neural Networks",
+          "description": "Models inspired by biological neural networks."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of neural network nodes."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "A method for training neural networks through gradient descent."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Techniques for evaluating the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual values."
+        },
+        {
+          "name": "Readability",
+          "description": "Assessing the clarity and interpretability of model outputs."
+        },
+        {
+          "name": "Performance Metrics",
+          "description": "Metrics used to evaluate model performance."
+        }
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "description": "Principles and techniques in reinforcement learning.",
+      "sub_topics": [
+        {
+          "name": "RL Zero",
+          "description": "A concept in reinforcement learning focusing on zero-shot learning."
+        },
+        {
+          "name": "Policy Value",
+          "description": "Evaluating the value of different policies in reinforcement learning."
+        },
+        {
+          "name": "GRPO Objective",
+          "description": "Objectives specific to Generalized Proximal Policy Optimization."
+        }
+      ]
+    },
+    {
+      "name": "Sampling Methods",
+      "description": "Various methods for sampling in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Use Sampling",
+          "description": "Techniques for effectively utilizing sampling in models."
+        },
+        {
+          "name": "Averaging GRPO",
+          "description": "Averaging techniques in the context of GRPO."
+        },
+        {
+          "name": "Sampling Use Cases",
+          "description": "Practical applications of different sampling methods."
+        }
+      ]
+    },
+    {
+      "name": "Reasoning in Language Processing",
+      "description": "Explores reasoning techniques applied in natural language processing.",
+      "sub_topics": [
+        {
+          "name": "Language Processing",
+          "description": "Techniques for processing and understanding human language."
+        },
+        {
+          "name": "Variables Reasoning",
+          "description": "How variables influence reasoning in language models."
+        },
+        {
+          "name": "Thought Reasoning",
+          "description": "Cognitive aspects of reasoning in language tasks."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 27.921,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

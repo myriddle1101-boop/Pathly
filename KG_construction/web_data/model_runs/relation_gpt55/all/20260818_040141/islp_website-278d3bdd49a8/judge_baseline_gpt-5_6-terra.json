@@ -1,0 +1,128 @@
+{
+  "created_at": "2026-08-18T19:02:06.577947+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-islp_website-278d3bdd49a8",
+  "file_name": "islp_website-278d3bdd49a8",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 958,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6923,
+    "f1": 0.8182,
+    "tp": 9,
+    "fp": 0,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 10,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Regression",
+      "Statistical Learning",
+      "Neural Networks",
+      "Support Vector Machines",
+      "Clustering",
+      "Model Evaluation",
+      "Survival Analysis",
+      "Regression Trees",
+      "Predictors"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Supervised Learning",
+        "reason": "The source explicitly distinguishes supervised statistical learning, in which outputs are predicted from inputs."
+      },
+      {
+        "name": "Classification",
+        "reason": "The source explicitly presents classification as prediction of a categorical output and discusses multiple classification methods."
+      },
+      {
+        "name": "Linear Regression",
+        "reason": "The source identifies linear regression as a fundamental regression method and devotes Chapter 3 to it."
+      },
+      {
+        "name": "Cross-Validation",
+        "reason": "The source explicitly introduces cross-validation for estimating method accuracy and choosing among methods."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Statistical Learning",
+        "to": "Regression",
+        "reason": "Regression is a type of statistical learning, but this is a taxonomy relationship rather than a strong learning prerequisite."
+      },
+      {
+        "from": "Statistical Learning",
+        "to": "Support Vector Machines",
+        "reason": "Support vector machines are included within statistical learning, but membership in a field is not a directional prerequisite."
+      },
+      {
+        "from": "Statistical Learning",
+        "to": "Neural Networks",
+        "reason": "Neural networks are presented as a statistical learning approach, not as requiring statistical learning as a discrete prerequisite concept."
+      },
+      {
+        "from": "Statistical Learning",
+        "to": "Clustering",
+        "reason": "Clustering is an unsupervised statistical learning method; this is a category-method relation, not a prerequisite."
+      },
+      {
+        "from": "Regression",
+        "to": "Regression Trees",
+        "reason": "Regression trees are a tree-based method applicable to regression, but general regression is not established as a necessary prerequisite for learning them."
+      },
+      {
+        "from": "Model Evaluation",
+        "to": "Regression",
+        "reason": "Model evaluation assesses regression methods after they are fit; it is not a prerequisite for learning regression."
+      },
+      {
+        "from": "Model Evaluation",
+        "to": "Support Vector Machines",
+        "reason": "Evaluation can be applied to support vector machines, but it is not a prerequisite for understanding the method."
+      },
+      {
+        "from": "Model Evaluation",
+        "to": "Neural Networks",
+        "reason": "Evaluation is used to assess neural-network performance rather than serving as a prerequisite for neural networks."
+      },
+      {
+        "from": "Model Evaluation",
+        "to": "Clustering",
+        "reason": "Evaluation may be applied to clustering results, but the source does not establish it as a required prior concept."
+      },
+      {
+        "from": "Survival Analysis",
+        "to": "Model Evaluation",
+        "reason": "Survival analysis is a specialized regression setting; it does not provide a directional prerequisite for model evaluation."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Predictors",
+        "to": "Regression",
+        "reason": "The source defines regression as predicting a continuous output from input variables, termed predictors."
+      },
+      {
+        "from": "Response Variable",
+        "to": "Regression",
+        "reason": "The source characterizes regression problems by a quantitative response/output variable to be predicted."
+      }
+    ],
+    "overall_note": "All predicted topics are supported, but the proposed relations primarily express method membership or evaluation usage rather than strong directional learning dependencies."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-islp_website-278d3bdd49a8.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-islp_website-278d3bdd49a8.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-islp_website-278d3bdd49a8_ledger.csv"
+  }
+}

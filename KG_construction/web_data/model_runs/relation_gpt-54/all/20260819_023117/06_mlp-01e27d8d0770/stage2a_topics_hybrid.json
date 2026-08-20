@@ -1,0 +1,831 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 34,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "feedforward networks",
+      "avg_score": 0.6634,
+      "frequency": 3,
+      "chunk_ids": [
+        3,
+        14,
+        25
+      ]
+    },
+    {
+      "name": "feedforward network",
+      "avg_score": 0.6512,
+      "frequency": 3,
+      "chunk_ids": [
+        3,
+        14,
+        25
+      ]
+    },
+    {
+      "name": "computational graph",
+      "avg_score": 0.6176,
+      "frequency": 3,
+      "chunk_ids": [
+        27,
+        28,
+        32
+      ]
+    },
+    {
+      "name": "network drawn",
+      "avg_score": 0.5841,
+      "frequency": 3,
+      "chunk_ids": [
+        3,
+        14,
+        25
+      ]
+    },
+    {
+      "name": "unambiguous networks",
+      "avg_score": 0.5499,
+      "frequency": 3,
+      "chunk_ids": [
+        3,
+        14,
+        25
+      ]
+    },
+    {
+      "name": "xor problem",
+      "avg_score": 0.509,
+      "frequency": 3,
+      "chunk_ids": [
+        1,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "derivatives",
+      "avg_score": 0.6293,
+      "frequency": 2,
+      "chunk_ids": [
+        31,
+        33
+      ]
+    },
+    {
+      "name": "xor function",
+      "avg_score": 0.5953,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        7
+      ]
+    },
+    {
+      "name": "using gradient",
+      "avg_score": 0.593,
+      "frequency": 2,
+      "chunk_ids": [
+        8,
+        34
+      ]
+    },
+    {
+      "name": "networks yy",
+      "avg_score": 0.5806,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        25
+      ]
+    },
+    {
+      "name": "computational",
+      "avg_score": 0.5721,
+      "frequency": 2,
+      "chunk_ids": [
+        28,
+        32
+      ]
+    },
+    {
+      "name": "deep rectifier",
+      "avg_score": 0.5627,
+      "frequency": 2,
+      "chunk_ids": [
+        17,
+        18
+      ]
+    },
+    {
+      "name": "solving xor",
+      "avg_score": 0.5608,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        7
+      ]
+    },
+    {
+      "name": "depth network",
+      "avg_score": 0.5478,
+      "frequency": 2,
+      "chunk_ids": [
+        17,
+        20
+      ]
+    },
+    {
+      "name": "entropy loss",
+      "avg_score": 0.5363,
+      "frequency": 2,
+      "chunk_ids": [
+        13,
+        32
+      ]
+    },
+    {
+      "name": "model",
+      "avg_score": 0.5184,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        10
+      ]
+    },
+    {
+      "name": "complicated systems",
+      "avg_score": 0.5172,
+      "frequency": 2,
+      "chunk_ids": [
+        15,
+        26
+      ]
+    },
+    {
+      "name": "models generalize",
+      "avg_score": 0.5167,
+      "frequency": 2,
+      "chunk_ids": [
+        15,
+        26
+      ]
+    },
+    {
+      "name": "rectified linear",
+      "avg_score": 0.5165,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        15
+      ]
+    },
+    {
+      "name": "principle computer",
+      "avg_score": 0.5161,
+      "frequency": 2,
+      "chunk_ids": [
+        15,
+        26
+      ]
+    },
+    {
+      "name": "model solve",
+      "avg_score": 0.4968,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        7
+      ]
+    },
+    {
+      "name": "network diagrams",
+      "avg_score": 0.7455,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "approach derivatives",
+      "avg_score": 0.7453,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "differentiating derivatives",
+      "avg_score": 0.7337,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "gradient expression",
+      "avg_score": 0.7245,
+      "frequency": 1,
+      "chunk_ids": [
+        34
+      ]
+    },
+    {
+      "name": "derivatives computation",
+      "avg_score": 0.7217,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "derivatives described",
+      "avg_score": 0.7201,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "linear activation",
+      "avg_score": 0.717,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "transformation vector",
+      "avg_score": 0.697,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "computation graph",
+      "avg_score": 0.691,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "expression derivatives",
+      "avg_score": 0.6858,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "function activation",
+      "avg_score": 0.682,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "gradient function",
+      "avg_score": 0.6812,
+      "frequency": 1,
+      "chunk_ids": [
+        34
+      ]
+    },
+    {
+      "name": "derivatives deep",
+      "avg_score": 0.6797,
+      "frequency": 1,
+      "chunk_ids": [
+        33
+      ]
+    },
+    {
+      "name": "mixture density",
+      "avg_score": 0.6714,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "rectifier networks",
+      "avg_score": 0.6689,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "computation graphs",
+      "avg_score": 0.6682,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "activation function",
+      "avg_score": 0.6662,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "computational graphs",
+      "avg_score": 0.6582,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "11 computational",
+      "avg_score": 0.6578,
+      "frequency": 1,
+      "chunk_ids": [
+        32
+      ]
+    },
+    {
+      "name": "shallow models",
+      "avg_score": 0.6562,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "function linear",
+      "avg_score": 0.6542,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "tensor rearranged",
+      "avg_score": 0.6524,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "linear function",
+      "avg_score": 0.6499,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "linear functions",
+      "avg_score": 0.6494,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "parametric models",
+      "avg_score": 0.6493,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "derivatives software",
+      "avg_score": 0.6488,
+      "frequency": 1,
+      "chunk_ids": [
+        33
+      ]
+    },
+    {
+      "name": "parameters mixture",
+      "avg_score": 0.6461,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "density outputs",
+      "avg_score": 0.6435,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "model parameters",
+      "avg_score": 0.6432,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "outer gradient",
+      "avg_score": 0.6432,
+      "frequency": 1,
+      "chunk_ids": [
+        34
+      ]
+    },
+    {
+      "name": "inner gradient",
+      "avg_score": 0.6392,
+      "frequency": 1,
+      "chunk_ids": [
+        34
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.6285,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "density output",
+      "avg_score": 0.628,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "mse loss",
+      "avg_score": 0.6256,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "derivatives context",
+      "avg_score": 0.6256,
+      "frequency": 1,
+      "chunk_ids": [
+        33
+      ]
+    },
+    {
+      "name": "roadmap example",
+      "avg_score": 0.625,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "theorem hidden",
+      "avg_score": 0.6241,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "expansion equation",
+      "avg_score": 0.6232,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "networks mixture",
+      "avg_score": 0.6217,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "derivatives use",
+      "avg_score": 0.6201,
+      "frequency": 1,
+      "chunk_ids": [
+        33
+      ]
+    },
+    {
+      "name": "gradient",
+      "avg_score": 0.6198,
+      "frequency": 1,
+      "chunk_ids": [
+        34
+      ]
+    },
+    {
+      "name": "parametric model",
+      "avg_score": 0.6196,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "entropy discrete",
+      "avg_score": 0.6165,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "mixture component",
+      "avg_score": 0.6141,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "model distribution",
+      "avg_score": 0.6137,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "symbol approach",
+      "avg_score": 0.613,
+      "frequency": 1,
+      "chunk_ids": [
+        30
+      ]
+    },
+    {
+      "name": "graphs yyˆˆ",
+      "avg_score": 0.6091,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "deep model",
+      "avg_score": 0.6089,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "loss mse",
+      "avg_score": 0.6086,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "model yields",
+      "avg_score": 0.6047,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "linear regions",
+      "avg_score": 0.604,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "models overfit",
+      "avg_score": 0.6033,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "graph logistic",
+      "avg_score": 0.6008,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "graph results",
+      "avg_score": 0.6006,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "entropy gaussian",
+      "avg_score": 0.6001,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "integer indices",
+      "avg_score": 0.5993,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "affine transformation",
+      "avg_score": 0.5983,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "sigmoid entropy",
+      "avg_score": 0.5961,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "algorithm tensors",
+      "avg_score": 0.5952,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Feedforward Networks",
+      "description": "A type of artificial neural network where connections between nodes do not form cycles.",
+      "sub_topics": [
+        {
+          "name": "Feedforward Network",
+          "description": "A specific architecture of feedforward networks."
+        },
+        {
+          "name": "XOR Problem",
+          "description": "A classic problem demonstrating the limitations of simple linear models."
+        }
+      ]
+    },
+    {
+      "name": "Activation Functions",
+      "description": "Functions that determine the output of a neural network node given an input or set of inputs.",
+      "sub_topics": [
+        {
+          "name": "Linear Activation",
+          "description": "An activation function that outputs the input directly."
+        },
+        {
+          "name": "Rectified Linear",
+          "description": "An activation function that outputs zero for negative inputs and the input itself for positive inputs."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Functions used to measure how well a machine learning model performs.",
+      "sub_topics": [
+        {
+          "name": "Entropy Loss",
+          "description": "A loss function based on the concept of entropy, often used in classification tasks."
+        },
+        {
+          "name": "MSE Loss",
+          "description": "Mean Squared Error loss, commonly used in regression tasks."
+        }
+      ]
+    },
+    {
+      "name": "Backpropagation",
+      "description": "An algorithm for training neural networks by calculating gradients for weight updates.",
+      "sub_topics": [
+        {
+          "name": "Gradient Computation",
+          "description": "The process of calculating the gradient of the loss function."
+        },
+        {
+          "name": "Derivatives",
+          "description": "Mathematical tools used to compute gradients in backpropagation."
+        }
+      ]
+    },
+    {
+      "name": "Neural Network Models",
+      "description": "Different architectures and configurations of neural networks used for various tasks.",
+      "sub_topics": [
+        {
+          "name": "Deep Models",
+          "description": "Neural networks with multiple layers that can learn complex patterns."
+        },
+        {
+          "name": "Shallow Models",
+          "description": "Neural networks with fewer layers, often simpler and faster to train."
+        }
+      ]
+    },
+    {
+      "name": "Computational Graphs",
+      "description": "A representation of the computations performed by a neural network.",
+      "sub_topics": [
+        {
+          "name": "Computational Graph",
+          "description": "A directed graph that represents the operations and dependencies in a neural network."
+        },
+        {
+          "name": "Graph Results",
+          "description": "The outcomes derived from analyzing computational graphs."
+        }
+      ]
+    },
+    {
+      "name": "Model Generalization",
+      "description": "The ability of a model to perform well on unseen data.",
+      "sub_topics": [
+        {
+          "name": "Overfitting",
+          "description": "When a model learns noise in the training data instead of the underlying pattern."
+        },
+        {
+          "name": "Model Parameters",
+          "description": "The variables in a model that are learned from the training data."
+        }
+      ]
+    },
+    {
+      "name": "Linear Separability",
+      "description": "The ability to separate data points using a linear boundary.",
+      "sub_topics": [
+        {
+          "name": "Linear Functions",
+          "description": "Mathematical functions that create a straight line when graphed."
+        },
+        {
+          "name": "Complicated Systems",
+          "description": "Systems that may not be linearly separable and require more complex models."
+        }
+      ]
+    },
+    {
+      "name": "Gradient Descent",
+      "description": "An optimization algorithm used to minimize the loss function by iteratively adjusting model parameters.",
+      "sub_topics": [
+        {
+          "name": "Inner Gradient",
+          "description": "The gradient computed for a specific layer in a neural network."
+        },
+        {
+          "name": "Outer Gradient",
+          "description": "The gradient computed for the overall model output."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 26.427,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

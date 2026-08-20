@@ -1,0 +1,817 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 20,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "autoencoders",
+      "avg_score": 0.6315,
+      "frequency": 4,
+      "chunk_ids": [
+        4,
+        8,
+        11,
+        17
+      ]
+    },
+    {
+      "name": "14 autoencoders",
+      "avg_score": 0.6434,
+      "frequency": 3,
+      "chunk_ids": [
+        4,
+        8,
+        11
+      ]
+    },
+    {
+      "name": "autoencoders denoising",
+      "avg_score": 0.6767,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "name": "manifold learning",
+      "avg_score": 0.6333,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "name": "score matching",
+      "avg_score": 0.5927,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "name": "decoder",
+      "avg_score": 0.5607,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        7
+      ]
+    },
+    {
+      "name": "contractive autoencoders",
+      "avg_score": 0.7573,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "tangent hyperplane",
+      "avg_score": 0.754,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "autoencoders contractive",
+      "avg_score": 0.7517,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "autoencoder contractive",
+      "avg_score": 0.715,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "contractive autoencoder",
+      "avg_score": 0.7131,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "hyperplane manifold",
+      "avg_score": 0.7053,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "autoencoders learn",
+      "avg_score": 0.7041,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "undercomplete autoencoders",
+      "avg_score": 0.6921,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "learning algorithms",
+      "avg_score": 0.6902,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "autoencoder learns",
+      "avg_score": 0.689,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "overcomplete autoencoders",
+      "avg_score": 0.6846,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "denoising autoencoders",
+      "avg_score": 0.6833,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "autoencoders copying",
+      "avg_score": 0.6778,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "autoencoders 14",
+      "avg_score": 0.6768,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "vector autoencoder",
+      "avg_score": 0.6681,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "structure autoencoder",
+      "avg_score": 0.662,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "autoencoder xx",
+      "avg_score": 0.654,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "score data",
+      "avg_score": 0.6519,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "input reconstruction",
+      "avg_score": 0.6496,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "tangent plane",
+      "avg_score": 0.6485,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "input recirculation",
+      "avg_score": 0.6464,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "model score",
+      "avg_score": 0.6464,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "hyperplane create",
+      "avg_score": 0.6456,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "autoencoders limit",
+      "avg_score": 0.6426,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "reconstructed input",
+      "avg_score": 0.6393,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "autoencoders sparse",
+      "avg_score": 0.6381,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "estimating score",
+      "avg_score": 0.6376,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "log decoder",
+      "avg_score": 0.6373,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "regularized score",
+      "avg_score": 0.6345,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "stochastic autoencoders",
+      "avg_score": 0.634,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "weight matrix",
+      "avg_score": 0.6321,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "coordinate locally",
+      "avg_score": 0.6303,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "sparse autoencoders",
+      "avg_score": 0.6286,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "decoder log",
+      "avg_score": 0.6279,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "classification accuracy",
+      "avg_score": 0.6258,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "pˆ decoder",
+      "avg_score": 0.6202,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "autoencoder biologically",
+      "avg_score": 0.62,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "manifolds reconstruction",
+      "avg_score": 0.6185,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "autoencoders coordinate",
+      "avg_score": 0.6157,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "euclidean coordinate",
+      "avg_score": 0.6134,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "estimates score",
+      "avg_score": 0.613,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "manifold representation",
+      "avg_score": 0.6115,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "hyperplane",
+      "avg_score": 0.6078,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "likelihood score",
+      "avg_score": 0.6053,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "coordinate systems",
+      "avg_score": 0.605,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "decoder data",
+      "avg_score": 0.6029,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "autoencoder points",
+      "avg_score": 0.6023,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "denoising autoencoder",
+      "avg_score": 0.602,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "pairs reconstruct",
+      "avg_score": 0.6019,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "probability autoencoder",
+      "avg_score": 0.6012,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "autoencoder",
+      "avg_score": 0.5999,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "global coordinate",
+      "avg_score": 0.5994,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "neighbor graphs",
+      "avg_score": 0.5918,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "autoencoders tangent",
+      "avg_score": 0.5898,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "linear operators",
+      "avg_score": 0.5886,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "consistent estimator",
+      "avg_score": 0.5875,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "captures manifold",
+      "avg_score": 0.586,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "operators linear",
+      "avg_score": 0.5849,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "linear operator",
+      "avg_score": 0.5841,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "learn embedding",
+      "avg_score": 0.5831,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "reconstruct decoder",
+      "avg_score": 0.5813,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "operators",
+      "avg_score": 0.5812,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "reconstruc",
+      "avg_score": 0.5798,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "cae trained",
+      "avg_score": 0.5797,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "autoencoders lower",
+      "avg_score": 0.5796,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "autoencoders correlations",
+      "avg_score": 0.5773,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "defining coordinate",
+      "avg_score": 0.5757,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "stochastic autoencoder",
+      "avg_score": 0.573,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "data manifold",
+      "avg_score": 0.5719,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "unsupervised learning",
+      "avg_score": 0.5713,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "encoder deterministic",
+      "avg_score": 0.5685,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "algorithms discussed",
+      "avg_score": 0.5674,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "operator",
+      "avg_score": 0.5651,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "autoencoders training",
+      "avg_score": 0.565,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Autoencoders",
+      "description": "A type of artificial neural network used for unsupervised learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Denoising Autoencoders",
+          "description": "Autoencoders designed to remove noise from input data."
+        },
+        {
+          "name": "Contractive Autoencoders",
+          "description": "Autoencoders that enforce a contractive penalty on the learned representation."
+        },
+        {
+          "name": "Sparse Autoencoders",
+          "description": "Autoencoders that impose sparsity constraints on the hidden layer."
+        }
+      ]
+    },
+    {
+      "name": "Manifold Learning",
+      "description": "A set of techniques for learning low-dimensional representations of high-dimensional data.",
+      "sub_topics": [
+        {
+          "name": "Tangent Hyperplane",
+          "description": "A linear approximation of a manifold at a given point."
+        },
+        {
+          "name": "Manifold Representation",
+          "description": "The representation of data points in a lower-dimensional manifold."
+        }
+      ]
+    },
+    {
+      "name": "Learning Algorithms",
+      "description": "Methods and techniques used to train models in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Stochastic Autoencoders",
+          "description": "Autoencoders that incorporate stochastic elements in their architecture."
+        },
+        {
+          "name": "Score Matching",
+          "description": "A technique for estimating the parameters of probabilistic models."
+        }
+      ]
+    },
+    {
+      "name": "Neural Network Components",
+      "description": "Key elements that make up neural networks and their functionality.",
+      "sub_topics": [
+        {
+          "name": "Decoder",
+          "description": "The part of an autoencoder that reconstructs the input from the encoded representation."
+        },
+        {
+          "name": "Activation Function",
+          "description": "Functions that determine the output of a neuron given an input."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods used to optimize the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing the loss function."
+        },
+        {
+          "name": "Loss Function",
+          "description": "A function that quantifies the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Data Reconstruction",
+      "description": "The process of reconstructing original data from its compressed representation.",
+      "sub_topics": [
+        {
+          "name": "Input Reconstruction",
+          "description": "The task of reconstructing the original input from the encoded representation."
+        },
+        {
+          "name": "Reconstructed Input",
+          "description": "The output generated by the decoder in an autoencoder."
+        }
+      ]
+    },
+    {
+      "name": "Autoencoder Variants",
+      "description": "Different types of autoencoders designed for specific tasks.",
+      "sub_topics": [
+        {
+          "name": "Overcomplete Autoencoders",
+          "description": "Autoencoders with more hidden units than input dimensions."
+        },
+        {
+          "name": "Undercomplete Autoencoders",
+          "description": "Autoencoders with fewer hidden units than input dimensions."
+        }
+      ]
+    },
+    {
+      "name": "Coordinate Systems",
+      "description": "Frameworks for representing data points in a multi-dimensional space.",
+      "sub_topics": [
+        {
+          "name": "Global Coordinate",
+          "description": "A coordinate system that encompasses the entire data space."
+        },
+        {
+          "name": "Euclidean Coordinate",
+          "description": "A standard coordinate system based on Euclidean geometry."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Classification Accuracy",
+          "description": "A metric that measures the proportion of correct predictions."
+        },
+        {
+          "name": "Likelihood Score",
+          "description": "A measure of how well a model explains the observed data."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 23.3826,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

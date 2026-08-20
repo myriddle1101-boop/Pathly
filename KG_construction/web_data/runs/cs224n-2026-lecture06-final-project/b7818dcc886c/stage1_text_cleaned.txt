@@ -1,0 +1,584 @@
+Natural Language Processing
+with Deep Learning
+CS 224 N/Ling 284
+Diyi Yang
+Lecture 6: Final Projects & Practical Tips
+
+Lecture Plan
+Quick summary of Lecture 5: Transformers (15 mins)
+Lecture 6: Final Projects – practical tips! (30 mins)
+1. Final projects types and details; assessment revisited
+2. Finding research topics and sources of data
+3. Q&A
+• Assignment 3 is out today
+• Get started early! It’s bigger – and harder coding-wise – than the previous
+assignments
+2
+
+The Transformer Decoder
+• The Transformer Decoder is a stack
+of Transformer Decoder Blocks.
+• Each Block consists of:
+• Self-attention
+• Add & Norm
+• Feed-Forward
+• Add & Norm
+Transformer Decoder
+3
+
+The Transformer Encoder
+• The Transformer Decoder
+constrains to unidirectional
+context, as for language
+models.
+• What if we want bidirectional
+context, like in a bidirectional
+RNN?
+• This is the Transformer
+Encoder. The only difference is
+that we remove the masking
+in the self-attention.
+No Masking!
+Transformer Decoder
+4
+
+The Transformer Encoder-Decoder
+• Recall that in machine
+translation, we processed the
+source sentence with a
+bidirectional model and
+generated the target with a
+unidirectional model.
+• For this kind of seq 2 seq
+format, we often use a
+Transformer Encoder-Decoder.
+• We use a normal Transformer
+Encoder.
+• Our Transformer Decoder is
+modified to perform cross-
+attention to the output of the
+Encoder.
+5
+
+Cross-attention (details)
+• We saw that self-attention is when keys,
+queries, and values come from the same
+source.
+ℎ , … , ℎ
+• In the decoder, we have attention that 1 𝑛
+looks more like what we saw last week.
+• Let ℎ , … , ℎ be output vectors from the
+1 𝑛
+𝑑
+Transformer encoder; 𝑥 ∈ ℝ
+𝑧 , … , 𝑧
+𝑖
+1 𝑛
+• Let 𝑧 , … , 𝑧 be input vectors from the
+1 𝑛
+𝑑
+Transformer decoder, 𝑧 ∈ ℝ
+𝑖
+• Then keys and values are drawn from the
+encoder (like a memory):
+• 𝑘 = 𝐾ℎ , 𝑣 = 𝑉ℎ .
+𝑖 𝑖 𝑖 𝑖
+• And the queries are drawn from the
+decoder, 𝑞 = 𝑄𝑧 .
+𝑖 𝑖
+6
+
+6. Great Results with Transformers
+First, Machine Translation from the original Transformers paper!
+Not just better Machine Also more efficient to
+Translation BLEU scores train!
+[Vaswani et al., 2017]
+[Test sets: WMT 2014 English-German and English-French]
+7
+
+Great Results with Transformers
+Next, document generation!
+The old standard
+Transformers all the way down.
+[Liu et al., 2018]; Wiki Sum dataset
+8
+
+What would we like to fix about the Transformer?
+• Quadratic compute in self-attention (today):
+• Computing all pairs of interactions means our computation grows
+quadratically with the sequence length!
+• What if the seq length 𝒏 ≥ 𝟓𝟎, 𝟎𝟎𝟎? E.g., to work on long documents
+• Position representations:
+• Are simple absolute indices the best we can do to represent position?
+[Shaw et al., 2018]
+• Relative linear position attention [Shaw et al., 2018]
+[Wang et al., 2019]
+• Dependency syntax-based position [Wang et al., 2019]
+Su et al., 2021
+• Rotary position embedding [Su et al., 2021]
+Xiong et al., 2026
+• Denosing rotary position embedding [Xiong et al., 2026]
+9
+
+Do we even need to remove the quadratic cost of attention?
+• As Transformers grow larger, a larger and larger percent of compute is outside
+the self-attention portion, despite the quadratic cost.
+• In practice, almost no large Transformer language models use anything but the
+quadratic cost attention we’ve presented here.
+• The cheaper methods tend not to work as well at scale.
+• So, is there no point in trying to design cheaper alternatives to self-attention?
+• Or would we unlock much better models with much longer contexts (>100 k
+tokens?) if we were to do it right?
+10
+
+Lecture Plan
+Quick summary of Lecture 5: Transformers (15 mins)
+Lecture 6: Final Projects – practical tips! (30 mins)
+1. Final projects types and details; assessment revisited
+2. Finding research topics and sources of data
+3. Q&A
+11
+
+Course work and grading policy
+• 4 x 1.5-week Assignments: 6% + 3 x 14%: 48%
+• Final Default or Custom Course Project (1–3 people): 49%
+• Project proposal: 8%, milestone: 6%, poster or web summary: 3%, report: 32%
+• Participation: 3%
+• Guest lecture reactions, Ed, course evals, karma – see website!
+• Late day policy
+• 6 free late days; afterwards, 1% off course grade per day late; max 3 late days per assignment
+• Collaboration policy: Read the website and the Honor Code!
+• For projects: It’s okay to use existing code/resources, but you must document it, and
+• You will be graded on your value-add
+• If multi-person: Include a brief statement on the work of each team-mate
+• In almost all cases, each team member gets the same score, but we reserve the right to
+differentiate in egregious cases
+12
+
+The Final Project
+• For FP, you either
+• Do the default project, which is a small GPT and Downstream Tasks
+• Open-ended but an easier start; a good choice for most
+• Propose a custom final project, which we must approve
+• You will receive feedback from a mentor (TA/prof/postdoc/Ph D)
+• You can work in teams of 1–3. Being in a team is encouraged.
+• A larger team project or a project used for multiple classes should be larger and
+often involves exploring more models or tasks. You need to document this and get
+approval from other courses as well.
+• You can use any language/framework for your project
+• Though we expect nearly all of you to keep using Py Torch
+13
+
+Custom Final Project
+We’re very happy to talk to
+people about final projects,
+but the slight problem is that
+….
+Look at TA expertise for
+custom final projects:
+http://web.stanford.edu
+/class/cs 224 n/office_hou
+rs.html#staff
+14
+
+The Default Final Project
+• The 2026 final project handouts will be on the website on Thursday!
+• New !: Building and experimenting with a GPT model (a very, very small one)
+• Provided starter code in Py Torch. ☺
+• We have discussed transformer models and will cover more in the next 2 lectures
+• What you do:
+• Finish writing an implementation of GPT-2 (attention, transformer block)
+• Fine-tune it to do Sentiment analysis
+• Rotten Tomatoes: Light, silly, photographed with colour and depth, and rather a good time.
+Sentiment: 4 (Positive)
+• Extend and improve it in various ways of your choice:
+• Paraphrasing
+• Sonnet generation
+• Hardware efficiency
+15
+
+Why Choose The Default Final Project?
+• If you:
+• Have limited experience with research, don’t have any clear idea of what you want
+to do, or want guidance and a goal, … and a leaderboard, even
+• Then:
+• Do the default final project!
+• Many people should do it! (Past statistics: about half of people do DFP.)
+16
+
+Why Choose The Custom Final Project?
+• If you:
+• Have some research project that you’re excited about (and are possibly already
+working on)
+• You want to try to do something different on your own
+• You want to see more of the process of defining a research goal, finding data and
+tools, and working out something you could do that is interesting, and how to
+evaluate it
+• Then:
+• Do the custom final project!
+• But note: The final project for cs 224 n must substantively involves
+both human language and neural networks (the topics of this class)!
+17
+
+Gamesmanship
+• The default final project is more guided, but it should be the same amount of work
+• It’s just that you can focus on a given problem rather than coming up with your own
+• The default final project is also an open-ended project where you can explore different
+approaches, but to a given problem. Strong default final projects do new things.
+• There are great default final projects and great custom final projects … and there are
+weak default final projects and weak custom final projects.
+• The path to success is not to do something that looks kinda weak/ill-considered
+compared to what you could have done with the DFP.
+• Neither option is the easy way to a good grade; we give Best Project Awards to both
+18
+
+Project Proposal – from every team 8%
+1. Find a relevant (key) research paper for your topic
+• For DFP, we provide some suggestions, but you might look elsewhere for interesting QA/reading
+comprehension work
+2. Write a summary of that research paper and what you took away from it as key ideas
+that you hope to use
+3. Write what you plan to work on and how you can innovate in your final project work
+• Suggest a good milestone to have achieved as a halfway point
+4. Describe as needed, especially for Custom projects:
+• A project plan, relevant existing literature, the kind(s) of models you will use/explore; the data you
+will use (and how it is obtained), and how you will evaluate success
+3–4 pages, due Feb 10 on Gradescope
+19
+
+Project Proposal – from every team 8%
+Skill: How to think critically about a research paper
+• What were the main novel contributions or points?
+• Is what makes it work something general and reusable or a special case?
+• Are there flaws or neat details in what they did?
+• How does it fit with other papers on similar topics?
+• Does it provoke good questions on further or different things to try?
+• Grading of research paper review is primarily summative
+How to do a good job on your project plan
+• You need to have an overall sensible idea (!)
+• But most project plans that are lacking are lacking in nuts-and-bolts ways:
+• Do you have appropriate data or a realistic plant to be able to collect it in a short period of time
+• Do you have a realistic way to evaluate your work
+• Do you have appropriate baselines or proposed ablation studies for comparisons
+• Grading of project proposal is primarily formative
+20
+
+Project Milestone – from everyone 6%
+• This is a progress report
+• You should be more than halfway done!
+• Describe the experiments you have run
+• Describe the preliminary results you have obtained
+• Describe how you plan to spend the rest of your time
+You are expected to have implemented some system and to have some initial
+experimental results to show by this date (except for certain unusual kinds of projects)
+Due Feb 24 on Gradescope
+21
+
+Project writeup
+• Writeup quality is very important to your grade!!!
+• Look at recent years’ prize winners for examples
+Abstract Prior related
+Model Model
+Introduction work
+Analysis &
+Data Experiments Results
+Conclusion
+22
+
+Finding Research Topics
+Two basic starting points, for all of science:
+• [Nails] Start with a (domain) problem of interest and try to find good/better ways to
+address it than are currently known/used
+• [Hammers] Start with a technical method/approach of interest, and work out good
+ways to extend it, improve it, understand it, or find new ways to apply it
+23
+
+Project types
+This is not an exhaustive list, but most projects are one of
+1. Find an application/task of interest and explore how to approach/solve it effectively,
+often with an existing model
+• Could be a task in the wild or some existing Kaggle/bake-off/shared task
+2. Implement a complex neural architecture and demonstrate its performance on some
+data
+3. Come up with a new or variant neural network model or approach and explore its
+empirical success
+• All the above are expected to have experiments with numbers and ablations ☺
+4. Analysis project. Analyze the behavior of a model: how it represents linguistic
+knowledge or what kinds of phenomena it can handle or errors that it makes
+5. Rare theoretical or linguistic project: Show some interesting, non-trivial properties of
+a model type, data, or a data representation
+
+Stanley Xie, Ruchir Rastogi and Max Chang
+25
+
+26
+
+27
+
+Merge of the work of two CS 224 N project teams, published at EMNLP 2022
+28
+
+29
+
+30
+
+4. How to find an interesting place to start?
+• Look at ACL anthology for NLP papers:
+• https://aclanthology.org/
+• Also look at the online proceedings of major ML conferences:
+• Neur IPS https://papers.nips.cc, ICML, ICLR https://openreview.net/group?id=ICLR.cc
+• Look at past cs 224 n projects
+• http://cs 224 n.stanford.edu/
+• Look at online preprint servers, especially:
+• https://arxiv.org
+• Even better: look for an interesting problem in the world!
+• Hal Varian: How to Build an Economic Model in Your Spare Time
+https://people.ischool.berkeley.edu/~hal/Papers/how.pdf
+31
+
+Want to beat the state
+of the art on something?
+Great new sites that try to collate
+info on the state of the art
+• Not always correct, though
+https://huggingface.co/papers/trending
+https://nlpprogress.com/
+Specific tasks/topics. Many, e.g.:
+https://gluebenchmark.com/leaderboard/
+https://www.conll.org/previous-tasks/
+32
+
+Finding a topic
+• Turing award winner and Stanford CS emeritus professor Ed Feigenbaum says to follow
+the advice of his advisor, AI pioneer, and Turing and Nobel prize winner Herb Simon:
+• “If you see a research area where many people are working, go somewhere else.”
+• But where to go? Wayne Gretzky:
+• “I skate to where the puck is going, not where it has been.”
+33
+
+Old Deep Learning (NLP), new Deep Learning NLP
+• In the early days of the Deep Learning revival (2010-2018), most of the work was in
+defining and exploring better deep learning architectures
+• Typical paper:
+• I can improve a summarization system by not only using attention standardly, but
+allowing copying attention – where you use additional attention calculations and an
+additional probabilistic gate to simply copy a word from the input to the output
+• That’s what a lot of good CS 224 N projects did too
+• In 2019–2024, that approach is dead
+• Well, that’s too strong, but it’s difficult and much rarer
+• Most work downloads a big pre-trained model (which fixes the architecture)
+• Action is in fine-tuning, or domain adaptation followed by fine-tuning, etc., etc.
+34
+
+2026 NLP … recommended for all your practical projects ☺
+pip install transformers # By Huggingface Tutorial: Fri Feb 6, 1:30-2:50 pm
+# not quite runnable code but gives the general idea….
+from transformers import Bert For Sequence Classification, Auto Tokenizer
+model = Bert For Sequence Classification.from_pretrained('bert-base-uncased’)
+model.train()
+tokenizer = Auto Tokenizer.from_pretrained('bert-base-uncased’)
+fine_tuner = Trainer( model=model, args=training_args, train_dataset=train_dataset,
+eval_dataset=test_dataset )
+fine_tuner.train()
+eval_dataset = load_and_cache_examples(args, eval_task, tokenizer, evaluate=True)
+results = evaluate(model, tokenizer, eval_dataset, args)
+35
+
+Exciting areas 2026
+A lot of what is exciting now is problems that work within or around this world
+• Evaluating and improving models for something other than accuracy
+• Adaptation when there is domain shift
+• Evaluating the robustness of models in general
+• Doing empirical work looking at what large pre-trained models have learned
+• Working out how to get knowledge and good task performance from large models for
+particular tasks without much data (transfer learning, etc.)
+• Looking at the bias, trustworthiness, and explainability of large models
+• Looking at low resource languages or problems
+• Improving performance on the long tail situations
+• New topics in LLMs (e.g., agents, sycophancy, hallucination, factuality, reasoning)
+36
+
+Exciting areas 2026
+• Scaling models up and down
+• Building big models is BIG: GPT-3+ … but just not possible for a cs 224 n project – do
+also be realistic about the scale of compute you can do!
+• Building small, performant models is also BIG. This could be a great project
+• Model pruning, e.g.:
+https://papers.nips.cc/paper/2020/file/eae 15 aabaa 768 ae 4 a 5993 a 8 a 4 f 4 fa 6 e 4-Paper.pdf
+• Model quantization, e.g.: https://arxiv.org/pdf/2004.07320.pdf
+• How well can you do QA in 6 GB or 500 MB? https://efficientqa.github.io
+• Looking to achieve more advanced functionalities
+• E.g., compositionality, systematic generalization, fast learning (e.g., meta-learning)
+on smaller problems and amounts of data, and more quickly
+• COGS: https://github.com/najoungkim/COGS
+• g SCAN: https://arxiv.org/abs/2003.05161
+37
+
+Can I use train GPT-2 or use Chat GPT to do my final project?
+• You need to be very cognizant of how large a model you can train
+• You just don’t have the resources to train your own GPT-2 model
+• You probably don’t have the resources to even load T 5 11 B
+• You are welcome to use GPT-3 or Chat GPT in your final project
+• Though we can’t fund your API use bills
+• There are almost certainly interesting projects that you can do using them
+• Analysis projects
+• Learning good prompts
+• Chain of thought reasoning
+• But be careful to remember that you will be evaluated based on what you have done –
+and not on the amazing Chat GPT output that you show us (“look, it works zero shot”)
+38
+
+5. Finding data for your projects
+• Some people collect their own data for a project – we like that, but it’s trick to do fast!
+• You may have a project that uses “unsupervised” data
+• You can annotate a small amount of data
+• You can find a website that effectively provides annotations, such as likes, stars,
+ratings, responses, etc.
+• This let’s you learn about real word challenges of applying ML/NLP!
+• But be careful on scoping things so that this doesn’t take most of your time!!!
+• Some people have existing data from a research project or company
+• Fine to use providing you can provide data samples for submission, report, etc.
+• Most people make use of an existing, curated dataset built by previous researchers
+• You get a fast start and there is obvious prior work and baselines
+39
+
+Linguistic Data Consortium
+• https://catalog.ldc.upenn.edu/
+• Stanford licenses this data; you can get access. Sign up/ask questions at:
+https://linguistics.stanford.edu/resources/resources-corpora
+• Treebanks, named entities, coreference data, lots of clean newswire text, lots of
+speech with transcription, parallel MT data, etc.
+• Look at their catalog
+• Don’t use for non-
+Stanford purposes!
+40
+
+Huggingface Datasets
+• https://huggingface.co/
+datasets
+41
+
+Machine translation
+• http://statmt.org
+• Look in particular at the various WMT shared tasks
+43
+
+Different types of datasets
+SWE-bench (Jimenez et al., 2024)
+Truthful QA (Lin et al., 2022)
+Egonormia (Rezaei et al., 2025) Web Arena (Zhou et al., 2023)
+
+Many, many more
+• There are now many other datasets available online for all sorts of purposes
+• Look at Kaggle
+• Look at research papers to see what data they use
+• Look at lists of datasets
+• https://machinelearningmastery.com/datasets-natural-language-processing/
+• https://github.com/niderhoff/nlp-datasets
+• Lots of particular things:
+• https://gluebenchmark.com/tasks
+• https://nlp.stanford.edu/sentiment/
+• https://research.fb.com/downloads/babi/ (Facebook b Ab I-related)
+• Ask on Ed or talk to course staff
+46
+
+6. Care with datasets and in model development
+• Many publicly available datasets are released with a train/dev/test structure.
+• We're all on the honor system to do test-set runs only when development is
+complete.
+• Splits like this presuppose a fairly large dataset.
+• If there is no dev set or you want a separate tune set, then you create one by splitting
+the training data
+• We have to weigh the usefulness of it being a certain size against the reduction in
+train-set size.
+• Cross-validation is a technique for maximizing data when you don’t have much
+• Having a fixed test set ensures that all systems are assessed against the same gold data.
+This is generally good, but it is problematic when the test set turns out to have unusual
+properties that distort progress on the task.
+47
+
+Training models and pots of data
+• When training, models overfit to what you are training on
+• The model correctly describes what happened to occur in particular data you trained
+on, but the patterns are not general enough patterns to be likely to apply to new
+data
+• The way to monitor and avoid problematic overfitting is using independent validation
+and test sets …
+48
+
+Training models and pots of data
+• You build (estimate/train) a model on a training set.
+• Often, you then set further hyperparameters on another, independent set of data, the
+tuning set
+• The tuning set is the training set for the hyperparameters!
+• You measure progress as you go on a dev set (development test set or validation set)
+• If you do that a lot you overfit to the dev set so it can be good to have a second dev
+set, the dev 2 set
+• Only at the end, you evaluate and present final numbers on a test set
+• Use the final test set extremely few times … ideally only once
+49
+
+Training models and pots of data
+• The train, tune, dev, and test sets need to be completely distinct
+• It is invalid to give results testing on material you have trained on
+• You will get a falsely good performance.
+• We almost always overfit on train
+• You need an independent tuning set
+• The hyperparameters won’t be set right if tune is same as train
+• If you keep running on the same evaluation set, you begin to overfit to that evaluation
+set
+• Effectively you are “training” on the evaluation set … you are learning things that do and don’t work
+on that particular eval set and using the info
+• To get a valid measure of system performance you need another untrained on,
+independent test set … hence dev 2 and final test
+50
+
+Getting your neural network to train
+• Start with a positive attitude!
+• Neural networks want to learn ☺
+• If the network isn’t learning, you’re doing something to prevent it from learning successfully
+• Realize the grim reality:
+• There are lots of things that can cause neural nets to not learn at all or to not learn
+very well
+• Finding and fixing them (“debugging and tuning”) can often take more time than implementing
+your model
+• It’s hard to work out what these things are
+• But experience, experimental care, and rules of thumb help!
+51
+
+Experimental strategy
+• Work incrementally!
+• Start with a very simple model and get it to work!
+• It’s hard to fix a complex but broken model
+• Add bells and whistles one-by-one and get the model working with each of them (or
+abandon them)
+• Initially run on a tiny amount of data
+• You will see bugs much more easily on a tiny dataset … and they train really quickly
+• Something like 4–8 examples is good
+• Often synthetic data is useful for this
+• Make sure you can get 100% on this data (testing on train)
+• Otherwise your model is definitely either not powerful enough or it is broken
+52
+
+Experimental strategy
+• Train and run your model on a large dataset
+• It should still score close to 100% on the training data after optimization
+• Otherwise, you probably want to consider a more powerful model!
+• Overfitting to training data is not something to fear when doing deep learning
+• These models are usually good at generalizing because of the way distributed representations
+share statistical strength regardless of overfitting to training data
+• But, still, you now want good generalization performance:
+• Regularize your model until it doesn’t overfit on dev data
+• Strategies like L 2 regularization can be useful
+• But normally generous dropout is the secret to success
+53
+
+Details matter!
+• Look at your data, collect summary statistics
+• Look at your model’s outputs, do error analysis
+• Tuning hyperparameters, learning rates, getting initialization right, etc. is
+often important to the successes of neural nets
+54
+
+Good luck with your projects!
+55

@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "cs224n-2026-lecture01-intro-f9a723b011b2",
+  "created_at": "2026-07-07T19:33:03+08:00",
+  "updated_at": "2026-07-07T19:36:20+08:00",
+  "status": "success",
+  "run_attempts": 2,
+  "document": {
+    "file_name": "cs224n-2026-lecture01-intro.pdf",
+    "doc_name": "cs224n-2026-lecture01-intro",
+    "sha256": "f9a723b011b2e55efe11f2eb52665b1c3ca2b0071162b0eaa76dd4dd6202ef6d",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\cs224n-2026-lecture01-intro.pdf",
+    "pdf_size_bytes": 6149747
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": null,
+    "duration_seconds": 0.1677
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:33:03+08:00",
+      "ended_at": "2026-07-07T19:33:08+08:00",
+      "duration_seconds": 4.4198,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\cs224n-2026-lecture01-intro.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 807\n[2] 清洗后词数: 831\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 4\n[5] 分块数（过滤后）: 4\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=280\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang & Yejin Choi Lecture 1: Introduction and the History of NLP Lecture Plan Lecture 1: Introduction and the History of NLP 1. The course (10 mins) 2...\n\n[Chunk 2] words=228\nCourse work and grading policy  4 x 1.5-week Assignments: 6% + 3 x 14%: 48%  HW 1 is released today! Due next Tuesday! At 4:30 p.m.  Submitted to Gradescope in Canvas (i.e., using @stanford.edu email for your Gradesco...\n\n[Chunk 3] words=219\nHigh-Level Plan for Assignments (to be completed individually!)  Hw 1 is hopefully an easy on ramp – a Jupyter/IPython Notebook  Hw 2 covers neural network foundations and calculating tensor derivatives, and you build ...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:33:08+08:00",
+      "ended_at": "2026-07-07T19:34:03+08:00",
+      "duration_seconds": 55.8545,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：4\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/4 ...\n[KeyBERT] chunk 2/4 ...\n[KeyBERT] chunk 3/4 ...\n[KeyBERT] chunk 4/4 ...\n[2] KeyBERT候选数：22\n[3] LLM精修完成\n[4] 最终Topic数：8，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Lecture Structure\n02. Grading Policy\n03. Homework Assignments\n04. Natural Language Processing\n05. Machine Learning Concepts\n06. Neural Networks\n07. Learning Techniques\n08. Course Projects\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6613.58it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:34:03+08:00",
+      "ended_at": "2026-07-07T19:34:11+08:00",
+      "duration_seconds": 8.0343,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 8\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Machine Learning Concepts -> Natural Language Processing | NLP relies on foundational ML principles.\n02. Machine Learning Concepts -> Neural Networks | Neural networks are a key technique in ML.\n03. Machine Learning Concepts -> Learning Techniques | Understanding ML concepts is essential for learning techniques.\n04. Neural Networks -> Learning Techniques | Training neural networks requires specific learning strategies.\n05. Machine Learning Concepts -> Course Projects | Projects apply ML concepts learned in the course.\n06. Machine Learning Concepts -> Homework Assignments | Assignments reinforce ML concepts.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:34:12+08:00",
+      "ended_at": "2026-07-07T19:34:56+08:00",
+      "duration_seconds": 44.0182,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 8\n[2] 相似关系数量: 0 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 3715.33it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:34:56+08:00",
+      "ended_at": "2026-07-07T19:35:20+08:00",
+      "duration_seconds": 24.7576,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 8\n[LLM] 1/8 Lecture Structure\n[LLM] 2/8 Grading Policy\n[LLM] 3/8 Homework Assignments\n[LLM] 4/8 Natural Language Processing\n[LLM] 5/8 Machine Learning Concepts\n[LLM] 6/8 Neural Networks\n[LLM] 7/8 Learning Techniques\n[LLM] 8/8 Course Projects\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:35:20+08:00",
+      "ended_at": "2026-07-07T19:35:22+08:00",
+      "duration_seconds": 1.3857,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: 可选输出存在",
+          "kg_similarity.png: 可选输出缺失"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 8\n[2] Prerequisites: 6\n[3] Similarity edges: 0\n[4] Graph nodes=8, edges=6\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-07T19:36:20+08:00"
+}

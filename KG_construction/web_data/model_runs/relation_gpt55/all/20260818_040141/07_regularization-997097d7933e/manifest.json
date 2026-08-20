@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "07_regularization-997097d7933e",
+  "created_at": "2026-07-29T13:50:52+08:00",
+  "updated_at": "2026-07-29T13:53:01+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "07_regularization.pdf",
+    "doc_name": "07_regularization",
+    "sha256": "997097d7933e27001ae81f533cedcc36197bcee6d3b669d361df7364dd833a13",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\07_regularization.pdf",
+    "pdf_size_bytes": 8774275
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 128.7254
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:50:52+08:00",
+      "ended_at": "2026-07-29T13:51:00+08:00",
+      "duration_seconds": 8.5121,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\07_regularization.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3307\n[2] 清洗后词数: 3330\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 19\n[5] 分块数（过滤后）: 18\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=43\nRegularization for Deep Learning Lecture slides for Chapter 7 of Deep Learning www.deeplearningbook.org Ian Goodfellow 2016-09-27 Definition “Regularization is any modification we make to a  learning algorithm that is i...\n\n[Chunk 2] words=274\nWeight Decay as Constrained CHAPTER 7. REGULARIZATION FOR DEEP LEARNING Optimization w 1 (Goodfellow 2016) w 2 w  w Figure 7.1 2 Figure 7.1: An illustration of the effect of L (or weight decay) regularization on the va...\n\n[Chunk 3] words=69\nWe can find out by studying linear regression, a model for which the true cost function is quadratic and therefore amenable to the same kind of analysis we have used so far. Applying the analysis again, we will be able t...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:51:00+08:00",
+      "ended_at": "2026-07-29T13:51:54+08:00",
+      "duration_seconds": 53.7772,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：18\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/18 ...\n[KeyBERT] chunk 2/18 ...\n[KeyBERT] chunk 3/18 ...\n[KeyBERT] chunk 4/18 ...\n[KeyBERT] chunk 5/18 ...\n[KeyBERT] chunk 6/18 ...\n[KeyBERT] chunk 7/18 ...\n[KeyBERT] chunk 8/18 ...\n[KeyBERT] chunk 9/18 ...\n[KeyBERT] chunk 10/18 ...\n[KeyBERT] chunk 11/18 ...\n[KeyBERT] chunk 12/18 ...\n[KeyBERT] chunk 13/18 ...\n[KeyBERT] chunk 14/18 ...\n[KeyBERT] chunk 15/18 ...\n[KeyBERT] chunk 16/18 ...\n[KeyBERT] chunk 17/18 ...\n[KeyBERT] chunk 18/18 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Neural Networks\n02. Learning Algorithms\n03. Loss Functions\n04. Regularization Techniques\n05. Data Handling\n06. Model Evaluation\n07. Tangent Classifiers\n08. Regression Techniques\n09. Unsupervised Learning\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6443.21it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:51:54+08:00",
+      "ended_at": "2026-07-29T13:52:01+08:00",
+      "duration_seconds": 6.7151,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Learning Algorithms -> Loss Functions | Loss functions are essential for training algorithms.\n02. Learning Algorithms -> Regularization Techniques | Regularization techniques are applied during the training process.\n03. Data Handling -> Model Evaluation | Effective data handling is crucial for accurate model evaluation.\n04. Regression Techniques -> Model Evaluation | Model evaluation is necessary to assess regression techniques.\n05. Unsupervised Learning -> Model Evaluation | Model evaluation is needed to assess unsupervised learning outcomes.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:52:01+08:00",
+      "ended_at": "2026-07-29T13:52:34+08:00",
+      "duration_seconds": 33.4398,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 0 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5336.30it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:52:34+08:00",
+      "ended_at": "2026-07-29T13:52:59+08:00",
+      "duration_seconds": 24.537,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Neural Networks\n[LLM] 2/9 Learning Algorithms\n[LLM] 3/9 Loss Functions\n[LLM] 4/9 Regularization Techniques\n[LLM] 5/9 Data Handling\n[LLM] 6/9 Model Evaluation\n[LLM] 7/9 Tangent Classifiers\n[LLM] 8/9 Regression Techniques\n[LLM] 9/9 Unsupervised Learning\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:52:59+08:00",
+      "ended_at": "2026-07-29T13:53:01+08:00",
+      "duration_seconds": 1.655,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output missing"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 5\n[3] Similarity edges: 0\n[4] Graph nodes=9, edges=5\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T13:50:52+08:00"
+}

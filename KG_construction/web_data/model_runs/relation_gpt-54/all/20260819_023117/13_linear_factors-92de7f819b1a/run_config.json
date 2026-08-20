@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a",
+  "run_id": "13_linear_factors-92de7f819b1a",
+  "model": "gpt-5.4",
+  "created_at": "2026-08-18T18:33:59.693850+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "705141e3a2c7e12b2c72cd8e2a2e7a2cd462289ac92e4483573a03a99baae4d6",
+    "stage2a_topics_hybrid.json": "6a2eee9073d5c2a2cc65bb9826fb8c24d4c966b0d2ee5416e804a5ba67d2ef25",
+    "stage2c_similarity_edges.json": "1e59ecad33ca54bb0c19995524db2ab664368ed326cd74dea4ae01c2cad7c39e",
+    "stage3_topics_with_summary.json": "9a24ce506843c0de7770c548661c407eace9de9bba5560a14bc0eb008450653f"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 5,
+  "new_node_count": 8,
+  "new_edge_count": 6,
+  "golden_path_resource": false
+}

@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-29">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Regression" label="Regression">
+        <attvalues>
+          <attvalue for="0" value="A statistical method for modeling the relationship between a dependent variable and one or more independent variables." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Regression&quot;, &quot;description&quot;: &quot;A type of regression that models the relationship using a linear equation.&quot;}, {&quot;name&quot;: &quot;Logistic Regression&quot;, &quot;description&quot;: &quot;A regression model used for binary classification tasks.&quot;}, {&quot;name&quot;: &quot;Ridge Regression&quot;, &quot;description&quot;: &quot;A technique that applies L2 regularization to linear regression.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and algebra." />
+          <attvalue for="6" value="[&quot;Linear Regression&quot;, &quot;Multiple Regression&quot;]" />
+          <attvalue for="7" value="[&quot;Regression implies causation&quot;, &quot;Only linear relationships can be modeled&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting sales based on advertising spend&quot;, &quot;Estimating housing prices based on features&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain, used for various machine learning tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Artificial Neural Network&quot;, &quot;description&quot;: &quot;A network of interconnected neurons used to approximate complex functions.&quot;}, {&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;A function that determines the output of a neuron.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing the loss function.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Statistical Learning" label="Statistical Learning">
+        <attvalues>
+          <attvalue for="0" value="A framework for understanding and applying statistical methods to learn from data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Model Selection&quot;, &quot;description&quot;: &quot;The process of choosing the best model from a set of candidates.&quot;}, {&quot;name&quot;: &quot;Hypothesis Testing&quot;, &quot;description&quot;: &quot;A method for making inferences about populations based on sample data.&quot;}, {&quot;name&quot;: &quot;Confidence Interval&quot;, &quot;description&quot;: &quot;A range of values that is likely to contain the population parameter.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and probability." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;]" />
+          <attvalue for="7" value="[&quot;Statistical learning is only about regression.&quot;, &quot;All statistical methods are applicable to all types of data.&quot;]" />
+          <attvalue for="8" value="[&quot;Predictive modeling in finance&quot;, &quot;Customer segmentation in marketing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Clustering" label="Clustering">
+        <attvalues>
+          <attvalue for="0" value="A technique for grouping similar data points into clusters." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Hierarchical Clustering&quot;, &quot;description&quot;: &quot;A method that builds a hierarchy of clusters.&quot;}, {&quot;name&quot;: &quot;K-Means Clustering&quot;, &quot;description&quot;: &quot;A popular algorithm that partitions data into K distinct clusters.&quot;}, {&quot;name&quot;: &quot;Clustering Methods&quot;, &quot;description&quot;: &quot;Various techniques used to perform clustering.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;K-means clustering&quot;, &quot;Hierarchical clustering&quot;]" />
+          <attvalue for="7" value="[&quot;Clustering is the same as classification&quot;, &quot;All clusters must have the same size&quot;]" />
+          <attvalue for="8" value="[&quot;Customer segmentation&quot;, &quot;Image compression&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="The process of assessing the performance of a machine learning model." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Error Rate&quot;, &quot;description&quot;: &quot;The proportion of incorrect predictions made by a model.&quot;}, {&quot;name&quot;: &quot;Training Error&quot;, &quot;description&quot;: &quot;The error rate calculated on the training dataset.&quot;}, {&quot;name&quot;: &quot;Validation Set&quot;, &quot;description&quot;: &quot;A subset of data used to tune model parameters.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;ROC Curve&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern during evaluation.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating classification models&quot;, &quot;Comparing different models&quot;, &quot;Hyperparameter tuning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Support Vector Machines" label="Support Vector Machines">
+        <attvalues>
+          <attvalue for="0" value="A supervised learning model used for classification and regression tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Support Vector Classifier&quot;, &quot;description&quot;: &quot;A type of SVM used for binary classification.&quot;}, {&quot;name&quot;: &quot;Hyperplane&quot;, &quot;description&quot;: &quot;A decision boundary that separates different classes in SVM.&quot;}, {&quot;name&quot;: &quot;Kernel Trick&quot;, &quot;description&quot;: &quot;A method to transform data into a higher-dimensional space for better separation.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and statistics." />
+          <attvalue for="6" value="[&quot;Hyperplanes&quot;, &quot;Kernel functions&quot;]" />
+          <attvalue for="7" value="[&quot;SVMs can only be used for linear classification&quot;, &quot;More support vectors always lead to better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Text categorization&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Survival Analysis" label="Survival Analysis">
+        <attvalues>
+          <attvalue for="0" value="A set of statistical approaches for analyzing time-to-event data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Survival Curve&quot;, &quot;description&quot;: &quot;A graphical representation of survival probabilities over time.&quot;}, {&quot;name&quot;: &quot;Cox Proportional Hazards Model&quot;, &quot;description&quot;: &quot;A regression model used to explore the relationship between the survival time and one or more predictor variables.&quot;}, {&quot;name&quot;: &quot;Survival Data&quot;, &quot;description&quot;: &quot;Data that includes the time until an event occurs.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and probability, familiarity with regression analysis." />
+          <attvalue for="6" value="[&quot;Censoring&quot;, &quot;Kaplan-Meier Estimator&quot;, &quot;Cox Proportional Hazards Model&quot;]" />
+          <attvalue for="7" value="[&quot;Survival analysis is only for medical data&quot;, &quot;Time-to-event data must be normally distributed&quot;]" />
+          <attvalue for="8" value="[&quot;Clinical trials&quot;, &quot;Reliability engineering&quot;, &quot;Customer churn analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Dimensionality Reduction" label="Dimensionality Reduction">
+        <attvalues>
+          <attvalue for="0" value="Techniques used to reduce the number of features in a dataset while preserving important information." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Principal Component Analysis&quot;, &quot;description&quot;: &quot;A method that transforms data into a lower-dimensional space.&quot;}, {&quot;name&quot;: &quot;Cubic Spline&quot;, &quot;description&quot;: &quot;A piecewise polynomial function used for interpolation.&quot;}, {&quot;name&quot;: &quot;Feature Selection&quot;, &quot;description&quot;: &quot;The process of selecting a subset of relevant features for model training.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and statistics." />
+          <attvalue for="6" value="[&quot;Principal Component Analysis (PCA)&quot;, &quot;t-Distributed Stochastic Neighbor Embedding (t-SNE)&quot;]" />
+          <attvalue for="7" value="[&quot;Dimensionality reduction always improves model performance.&quot;, &quot;It is only applicable to high-dimensional data.&quot;]" />
+          <attvalue for="8" value="[&quot;Data visualization&quot;, &quot;Noise reduction in datasets&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Regression Trees" label="Regression Trees">
+        <attvalues>
+          <attvalue for="0" value="A decision tree that predicts continuous values based on input features." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Decision Trees&quot;, &quot;description&quot;: &quot;A model that splits data into branches to make predictions.&quot;}, {&quot;name&quot;: &quot;Random Forests&quot;, &quot;description&quot;: &quot;An ensemble method that uses multiple decision trees for improved accuracy.&quot;}, {&quot;name&quot;: &quot;Tree-Based Models&quot;, &quot;description&quot;: &quot;Models that use tree structures for making predictions.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and decision trees." />
+          <attvalue for="6" value="[&quot;Splitting criteria&quot;, &quot;Overfitting and pruning&quot;]" />
+          <attvalue for="7" value="[&quot;Regression trees can only predict linear relationships&quot;, &quot;They are not suitable for large datasets&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting house prices&quot;, &quot;Forecasting sales&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Regression" target="Regression Trees" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Regression trees are a specific application of regression techniques." />
+        </attvalues>
+      </edge>
+      <edge source="Statistical Learning" target="Regression" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Regression is a statistical method that falls under the framework of statistical learning." />
+        </attvalues>
+      </edge>
+      <edge source="Statistical Learning" target="Clustering" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Clustering techniques are part of the statistical learning framework." />
+        </attvalues>
+      </edge>
+      <edge source="Statistical Learning" target="Survival Analysis" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Survival analysis is a statistical approach that requires understanding statistical learning." />
+        </attvalues>
+      </edge>
+      <edge source="Statistical Learning" target="Dimensionality Reduction" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Dimensionality reduction techniques are based on statistical learning principles." />
+        </attvalues>
+      </edge>
+      <edge source="Model Evaluation" target="Support Vector Machines" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Model evaluation is necessary to assess the performance of support vector machines." />
+        </attvalues>
+      </edge>
+      <edge source="Model Evaluation" target="Neural Networks" id="6">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Model evaluation is necessary to assess the performance of neural networks." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

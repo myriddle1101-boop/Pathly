@@ -1,0 +1,844 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 19,
+  "candidate_count": 80,
+  "topics_count": 11,
+  "candidates": [
+    {
+      "name": "sum integral",
+      "avg_score": 0.5865,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "reduced cost",
+      "avg_score": 0.5507,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        8
+      ]
+    },
+    {
+      "name": "training cost",
+      "avg_score": 0.5434,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        8
+      ]
+    },
+    {
+      "name": "methods reduced",
+      "avg_score": 0.5432,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        8
+      ]
+    },
+    {
+      "name": "empirical average",
+      "avg_score": 0.7315,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "variance var",
+      "avg_score": 0.7084,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "importance sampling",
+      "avg_score": 0.7004,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "problem optimal",
+      "avg_score": 0.6903,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "variance divide",
+      "avg_score": 0.6705,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "increases variance",
+      "avg_score": 0.6697,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "variance sˆ",
+      "avg_score": 0.6657,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "determining optimal",
+      "avg_score": 0.6629,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "average approximate",
+      "avg_score": 0.655,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "variance number",
+      "avg_score": 0.6534,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "variance",
+      "avg_score": 0.6486,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "called optimal",
+      "avg_score": 0.6338,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "integrals sum",
+      "avg_score": 0.6322,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "sums integrals",
+      "avg_score": 0.6304,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "optimal requires",
+      "avg_score": 0.6214,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "choice decomposition",
+      "avg_score": 0.6213,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "optimal choice",
+      "avg_score": 0.6206,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "probability integrand",
+      "avg_score": 0.6165,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "inactive paths",
+      "avg_score": 0.6107,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "approximation justified",
+      "avg_score": 0.6062,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "probabilistic models",
+      "avg_score": 0.604,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "sample training",
+      "avg_score": 0.5981,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "active paths",
+      "avg_score": 0.5951,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "integral estimate",
+      "avg_score": 0.5948,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "paths undirected",
+      "avg_score": 0.5941,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "chain equilibrium",
+      "avg_score": 0.5926,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "use importance",
+      "avg_score": 0.5907,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "samples equilibrium",
+      "avg_score": 0.5791,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "training distribution",
+      "avg_score": 0.5776,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "forming empirical",
+      "avg_score": 0.5766,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "unbiased expected",
+      "avg_score": 0.5726,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "path separated",
+      "avg_score": 0.5713,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "separated path",
+      "avg_score": 0.5704,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "approximation",
+      "avg_score": 0.5698,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "average",
+      "avg_score": 0.5696,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "subsample training",
+      "avg_score": 0.5662,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "sampling example",
+      "avg_score": 0.5646,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "sample sets",
+      "avg_score": 0.5631,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "samples random",
+      "avg_score": 0.5627,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "equilibrium running",
+      "avg_score": 0.5627,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "low variance",
+      "avg_score": 0.5609,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "example sum",
+      "avg_score": 0.5601,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "justification unbiased",
+      "avg_score": 0.5585,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "integral computed",
+      "avg_score": 0.5533,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "average sˆ",
+      "avg_score": 0.5513,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "models",
+      "avg_score": 0.5512,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "active path",
+      "avg_score": 0.5512,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "sum estimating",
+      "avg_score": 0.5503,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "equilibrium distribution",
+      "avg_score": 0.5491,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "empirical",
+      "avg_score": 0.5474,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "speedup costly",
+      "avg_score": 0.5471,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "average converges",
+      "avg_score": 0.5441,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "equilibrium usually",
+      "avg_score": 0.5383,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "sampling unbiased",
+      "avg_score": 0.5378,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "minimizes variance",
+      "avg_score": 0.5373,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "samples integral",
+      "avg_score": 0.5357,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "repetitions sample",
+      "avg_score": 0.5346,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "models sampling",
+      "avg_score": 0.5336,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "equilibrium know",
+      "avg_score": 0.5316,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "different sample",
+      "avg_score": 0.5312,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "decomposition integrand",
+      "avg_score": 0.5305,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "variable approximate",
+      "avg_score": 0.5245,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "approximate reduced",
+      "avg_score": 0.5236,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "structured probabilistic",
+      "avg_score": 0.5212,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "2017 approximation",
+      "avg_score": 0.521,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "model tell",
+      "avg_score": 0.521,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "estimate importance",
+      "avg_score": 0.5186,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "models statistical",
+      "avg_score": 0.5156,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "probability distributio",
+      "avg_score": 0.5152,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "sum probability",
+      "avg_score": 0.5138,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "distribution techniques",
+      "avg_score": 0.512,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "pf sample",
+      "avg_score": 0.5113,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "minimum variance",
+      "avg_score": 0.5107,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "models difficult",
+      "avg_score": 0.5075,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "large numbers",
+      "avg_score": 0.5064,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "samples xi",
+      "avg_score": 0.5064,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Variance",
+      "description": "Key concept in statistics and machine learning that measures the spread of data points.",
+      "sub_topics": [
+        {
+          "name": "Variance Reduction",
+          "description": "Techniques aimed at minimizing variance in model predictions."
+        },
+        {
+          "name": "Low Variance",
+          "description": "Strategies to achieve low variance in model training."
+        },
+        {
+          "name": "Variance Estimation",
+          "description": "Methods for estimating variance in datasets."
+        }
+      ]
+    },
+    {
+      "name": "Sampling Techniques",
+      "description": "Methods used to select a subset of data for analysis in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Importance Sampling",
+          "description": "A technique that improves the efficiency of sampling."
+        },
+        {
+          "name": "Unbiased Sampling",
+          "description": "Sampling methods that ensure unbiased representation of the population."
+        },
+        {
+          "name": "Subsampling",
+          "description": "Selecting a smaller subset from a larger dataset."
+        }
+      ]
+    },
+    {
+      "name": "Training Cost",
+      "description": "The computational expense associated with training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Training Distribution",
+          "description": "The distribution of data used during the training phase."
+        },
+        {
+          "name": "Cost Reduction Methods",
+          "description": "Strategies to reduce the cost of training models."
+        }
+      ]
+    },
+    {
+      "name": "Empirical Methods",
+      "description": "Approaches based on observation and experience rather than theory.",
+      "sub_topics": [
+        {
+          "name": "Empirical Average",
+          "description": "The average calculated from observed data."
+        },
+        {
+          "name": "Empirical Justification",
+          "description": "Providing evidence for a method based on empirical results."
+        }
+      ]
+    },
+    {
+      "name": "Optimization",
+      "description": "The process of making a system as effective or functional as possible.",
+      "sub_topics": [
+        {
+          "name": "Optimal Solutions",
+          "description": "Finding the best solution among many possible options."
+        },
+        {
+          "name": "Determining Optimal Parameters",
+          "description": "Methods for identifying the best parameters for models."
+        }
+      ]
+    },
+    {
+      "name": "Integrals",
+      "description": "Mathematical concepts used to calculate areas under curves and other applications.",
+      "sub_topics": [
+        {
+          "name": "Integral Estimation",
+          "description": "Methods for estimating the value of integrals."
+        },
+        {
+          "name": "Sum of Integrals",
+          "description": "Calculating the total of multiple integrals."
+        }
+      ]
+    },
+    {
+      "name": "Probabilistic Models",
+      "description": "Models that incorporate randomness and uncertainty in predictions.",
+      "sub_topics": [
+        {
+          "name": "Statistical Models",
+          "description": "Models that use statistical methods to make predictions."
+        },
+        {
+          "name": "Probabilistic Inference",
+          "description": "Drawing conclusions from probabilistic models."
+        }
+      ]
+    },
+    {
+      "name": "Path Analysis",
+      "description": "Techniques for analyzing paths in probabilistic models.",
+      "sub_topics": [
+        {
+          "name": "Active Paths",
+          "description": "Paths that contribute to the outcome in a model."
+        },
+        {
+          "name": "Inactive Paths",
+          "description": "Paths that do not contribute to the outcome."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Assessing the performance and effectiveness of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Expected Value",
+          "description": "The average outcome of a random variable."
+        },
+        {
+          "name": "Justification of Models",
+          "description": "Providing reasons for the effectiveness of a model."
+        }
+      ]
+    },
+    {
+      "name": "Artificial Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various tasks.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neuron."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "A method for training neural networks by minimizing error."
+        }
+      ]
+    },
+    {
+      "name": "Regression and Classification",
+      "description": "Techniques for predicting outcomes based on input data.",
+      "sub_topics": [
+        {
+          "name": "Linear Regression",
+          "description": "A method for modeling the relationship between variables."
+        },
+        {
+          "name": "Classification Techniques",
+          "description": "Methods for categorizing data into classes."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 23.8636,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

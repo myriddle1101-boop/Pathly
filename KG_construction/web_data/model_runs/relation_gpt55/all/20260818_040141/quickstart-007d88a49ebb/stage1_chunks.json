@@ -1,0 +1,20 @@
+[
+  {
+    "chunk_id": 1,
+    "word_count": 67,
+    "doc_type": "paper_book",
+    "text": "Quick Start Guide\nGet up and running with RAG in 5 minutes!\nPrerequisites\n(cid:127) Python 3.10 or higher\n(cid:127) pip package manager\n(cid:127) (Optional) Open AI API key for generation\nInstallation\n1. Clone or Navigate to Repository\ncd /path/to/rag_tutorial\n2. Create Virtual Environment\n# Create virtual environment (tested with Python 3.13)\npython -m venv .venv\n# Activate it\nsource .venv/bin/activate # On Windows: .venv\\Scripts\\activate\n3. Install Dependencies"
+  },
+  {
+    "chunk_id": 2,
+    "word_count": 114,
+    "doc_type": "paper_book",
+    "text": "# Install core dependencies\npip install -r requirements.txt\n# This will install:\n# - chromadb (vector database)\n# - sentence-transformers (embeddings)\n# - openai (for GPT models)\n# - other utilities\n4. Set Up Environment Variables (Optional)\n# Copy example file\ncp .env.example .env\n# Edit .env and add your Open AI API key\n# (Not required for basic examples)\nRunning Examples\nExample 1: Simple QA (No API Key Required)\ncd examples/01-simple-qa\npython simple_qa.py\nThis example works without an API key and demonstrates basic RAG concepts.\nExample 2: Document Chat (Requires API Key)\n# Set your API key first\nexport OPENAI_API_KEY=\"your-key-here\"\ncd examples/02-document-chat\npython document_chat.py\nThis provides an interactive chat interface with your documents."
+  },
+  {
+    "chunk_id": 3,
+    "word_count": 91,
+    "doc_type": "paper_book",
+    "text": "Testing Your Setup\nQuick test to verify everything works:\npython -c \"\nfrom sentence_transformers import Sentence Transformer\nimport chromadb\nprint('Loading embedding model...')\nmodel = Sentence Transformer('all-Mini LM-L 6-v 2')\nprint('3 Embeddings working')\nprint('Testing Chroma DB...')\nclient = chromadb.Client()\ncollection = client.create_collection('test')\ncollection.add(documents=['test'], ids=['1'])\nprint('3 Vector database working')\nprint('\\n Setup successful! You are ready to learn RAG.')\n\"\nLearning Path\n1. Read the lessons in order, starting with lessons/01-introduction-to-rag.md\n2. Run the examples to see concepts in action\n3. Experiment with the utility functions in utils/\n4. Build your own RAG system!"
+  }
+]

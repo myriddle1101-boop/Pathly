@@ -1,0 +1,1112 @@
+{
+  "run_id": "20260818_040141",
+  "total_discovered": 61,
+  "eligible": 58,
+  "succeeded": 57,
+  "failed": 1,
+  "excluded": 3,
+  "results": [
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611",
+      "run_id": "01-introduction-to-rag-7cfd7fd31611",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-17T20:02:07.619388+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "598c3f3213adf7cc2a43dd2d1f0e327513f7ba22c944b7a3141e0ae7a44d8806",
+        "stage2a_topics_hybrid.json": "59c2ab252731cc7c78da97ce18c72f92d67e170e15bcbc3a2b68e3e053d6fe12",
+        "stage2c_similarity_edges.json": "7a1049af7517de9ea8aa5b2ecad4f5e5de45f898a0b17f08d355c7cebb0bf31d",
+        "stage3_topics_with_summary.json": "78780d8b71cbd21dc1c69538835fece093ba9b85d43a9cec71f779bc4401e544"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 3,
+      "new_node_count": 9,
+      "new_edge_count": 4,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed",
+      "run_id": "01-simple-qa-readme-77b046bfe0ed",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-17T20:02:23.171620+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "ef99cc1b60ef24d816b06b6381c1f3242e179d5ebe9a60452ff88fa06128c13c",
+        "stage2a_topics_hybrid.json": "fd479014cac6955dedccbde5579dbb8955bd90ec75d31a4fd37a7e943d0b874f",
+        "stage2c_similarity_edges.json": "b11a2fa5aab988e5d3c1bc326ed94e991a83ef636e7497c4143eeac3e2df82b1",
+        "stage3_topics_with_summary.json": "d32c8e79c1f1c39dbf51d02984e8d7bfb8ec059b4bfe2f71e5819ae97746f96a"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 3,
+      "new_node_count": 9,
+      "new_edge_count": 3,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01_intro\\d3a9f91a36eb",
+      "run_id": "01_intro-d3a9f91a36eb",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-17T20:02:39.950817+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "8d4d22e56a8416bbbf5487a1caa594923409a8f2a2740de395cb4319a2925ec3",
+        "stage2a_topics_hybrid.json": "6f8dd88847d9cea5fd94c8c7bee1a8daf2986d0c999542d400a88cf99b85ce03",
+        "stage2c_similarity_edges.json": "f047c121932bbe4d196aafc2ee41c00c70c2ab58f713093b7865f5376acce051",
+        "stage3_topics_with_summary.json": "bd8b4f2e86a6ffe61758ea197edff4fc38b0de6cd2c0dca35195ec359ec58c13"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 4,
+      "new_node_count": 9,
+      "new_edge_count": 7,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864",
+      "run_id": "02-document-chat-readme-f1744a249864",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-17T20:03:09.724412+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "3cf4e5a44a530e1b4b656f7b9941e4d151e9130ddb44c686d389380226f1e0db",
+        "stage2a_topics_hybrid.json": "8a170793b35222615a453e0de54a2533dff4b80d7023192f91e404c1105f96db",
+        "stage2c_similarity_edges.json": "bfc13fee0ec51f433dbe13eccc11fd8a97bcbea81e5b389466dbe16e112459eb",
+        "stage3_topics_with_summary.json": "7c7ea81104a16742af4b307493c6bdbd47ab539894171a01ac1c64aa59c5d5ae"
+      },
+      "old_relation_count": 9,
+      "new_relation_count": 6,
+      "new_node_count": 15,
+      "new_edge_count": 16,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-understanding-embeddings\\2a611584541b",
+      "run_id": "02-understanding-embeddings-2a611584541b",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-17T20:03:25.027018+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "8fd74b02a142b7fab395271f98798502529f1eaeac0af33e5f990f4a7685f406",
+        "stage2a_topics_hybrid.json": "d82629b0f32fd3291b767e78da2a0c84d5b417a34a4e9f01c290d1df138e5ce8",
+        "stage2c_similarity_edges.json": "21f9498731e7842fe3d4ef91ea3b4294d465298ffcb785213814755c33792b38",
+        "stage3_topics_with_summary.json": "e90d7c9b7900b81a5bf0fc9f94eda91268b73f53338860b0e250d3021efec4d2"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 3,
+      "new_node_count": 9,
+      "new_edge_count": 3,
+      "golden_path_resource": false
+    },
+    {
+      "status": "failed",
+      "reason": "model_fallback:rules_fallback",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072",
+      "run_id": "02_linear_algebra-a7843d98e072",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T04:56:55.289009+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "fab361fbddeab1c91a272110c86413da78f267b3635beabac55311cf391f5dd3",
+        "stage2a_topics_hybrid.json": "5987333d6a904375495169cb6e1a4a2d8ec0aa2cd0a2c420eb9e39b47ab3e555",
+        "stage2c_similarity_edges.json": "9b7794d6534ddcfd6c4f7e48b8e3b0a18cff7567f58d5619b57c6097754fad3b",
+        "stage3_topics_with_summary.json": "84027a08e511a4fd74dc67d25afc7b4f10019eb7c5327ad6f0f948cd204f424f"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 0,
+      "new_node_count": 0,
+      "new_edge_count": 0,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95",
+      "run_id": "03-vector-databases-retrieval-4f238ede4c95",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T04:58:32.282804+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "4a554bee9aeb19f8fa78529f94b02d4998a45cc704d202450dbb1ff5b2098135",
+        "stage2a_topics_hybrid.json": "7f8ef6e5514c02e8dd63135bb2ec4b324bbfbda4be0112d1ae69cb78fb8b55c1",
+        "stage2c_similarity_edges.json": "b5881332714493d6201ae32bbae36b9019c14a2fdb369da50305fe045c65a8d2",
+        "stage3_topics_with_summary.json": "b940e6633b859b2f919f93ea3247f7de552db041639eb3dd7fb92e6a51d82e7c"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 1,
+      "new_node_count": 9,
+      "new_edge_count": 1,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6",
+      "run_id": "03_prob-20e52d6d8bb6",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:01:20.567415+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "a2adfbe076682dad1051b50a6b89dcf807ebd30bceb5661ad7d43b6a93a869f5",
+        "stage2a_topics_hybrid.json": "f47b940deeaf18040fd2e3b68e66644dfed90f8717eed530cc8856e6642666c1",
+        "stage2c_similarity_edges.json": "c7e561a1e6d5c073114b0ffcdda8584e092ce82964de8ea8882f61da07560134",
+        "stage3_topics_with_summary.json": "35f95366d9a274b69f28cafff1094967bfd694a59d8114a082a1410e780c51a1"
+      },
+      "old_relation_count": 8,
+      "new_relation_count": 9,
+      "new_node_count": 9,
+      "new_edge_count": 10,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04-language-models-generation\\fd2b5b9f4415",
+      "run_id": "04-language-models-generation-fd2b5b9f4415",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:01:45.030333+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "f84307d21859c680520510e9abd8db49d863197eff2db09fb3c70f511bf16f58",
+        "stage2a_topics_hybrid.json": "17f210d978101f2e16d9ba3a1c590976f212db474e6326378ac881fe2a7484cb",
+        "stage2c_similarity_edges.json": "682642be2a886df05a9d7cf50cc461ea843e1518f29f43988046a9ec6608ea96",
+        "stage3_topics_with_summary.json": "2060cf5b761adbb112e67496426847b2123011f395406abe98a11231770727b9"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 4,
+      "new_node_count": 9,
+      "new_edge_count": 5,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3",
+      "run_id": "04_numerical-dd3a4dd53cd3",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:03:29.144862+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "96cbc6ef9e8e9c400abae872c271e24f38e65e6ee76a011534c4e4a9f37ba4fb",
+        "stage2a_topics_hybrid.json": "b8eec83bd3edcfb515e8dc4dfd1319d73a5f4ef34b8e657083919c5782fd9581",
+        "stage2c_similarity_edges.json": "e062541a2f770c56177e2d4daec875c6307af13e9a243b256143eb5c93d2d090",
+        "stage3_topics_with_summary.json": "7cb6f3cece7f41061d2e7859736890c7f0bd1f9c0eb509e817f8bdad95cb1047"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 8,
+      "new_node_count": 9,
+      "new_edge_count": 8,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b",
+      "run_id": "05-building-simple-rag-35ec62f5ee2b",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:04:01.681974+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "52b38a66c42e04dda5e2606a6d7e73f29e8d49c0fd3f687dc08556af224b3f4d",
+        "stage2a_topics_hybrid.json": "e896b19d93b1b2f897ed9a1f57908bbab142c51f2750f07d8d94b63e1973d21d",
+        "stage2c_similarity_edges.json": "318983316b845a467c12d7e85322f43cc2f70b0ed9f58a1d8da1d7d750605a72",
+        "stage3_topics_with_summary.json": "790f5af846805c28957230f05b024eb8878586b833ac6d102b28984dcdd79865"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 4,
+      "new_node_count": 9,
+      "new_edge_count": 4,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05_ml\\f11d16937e75",
+      "run_id": "05_ml-f11d16937e75",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:04:17.666398+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "c07ab549842f364f373e386b09429e7f7bd764621404f9ae74f7e2d1d2145bd6",
+        "stage2a_topics_hybrid.json": "e85d246894891b8b2820b5da61c8225c25aff93ea0570c976cef4e236ec0420a",
+        "stage2c_similarity_edges.json": "2803f1505a56d65f4e7f4162418dc5ccb21c6888ac448e96cb3bbbd9adc22c85",
+        "stage3_topics_with_summary.json": "b5a4f53f9c473fa4925f661bc1109323403647785992a51496285208138fc15c"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 4,
+      "new_node_count": 9,
+      "new_edge_count": 4,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6",
+      "run_id": "06-advanced-rag-techniques-a65350c7ccf6",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:04:30.444825+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "79336e8aa44b2c87833c57f8578106068d440dffc4fa06a24c207ad6b7d56927",
+        "stage2a_topics_hybrid.json": "1b309ca8d37cf5126c26e5ddc7f00b6287318d8d18576cc860db7248073f57ea",
+        "stage2c_similarity_edges.json": "1de509d9f404caa26244821c4997abfb457416235186119785a6d22230c042d8",
+        "stage3_topics_with_summary.json": "09f0430e6245ce6a891fb27ea1399b778a7487d7e3886ae93296e85244a7b16c"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 1,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06_mlp\\01e27d8d0770",
+      "run_id": "06_mlp-01e27d8d0770",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:04:43.818107+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "051a16942262835f28d3256395363687210ea1d66673285bb665a9f8d02a462d",
+        "stage2a_topics_hybrid.json": "39314ca0c70ee6b0891a71b5137a4a757b62db729cedd1c256825b5bc064d110",
+        "stage2c_similarity_edges.json": "be732ccc38706f78a0e920f388796680553a878df92ac84b2478d3ab6298a352",
+        "stage3_topics_with_summary.json": "986edcda72ea293c575538521df087c4fd45bb6cfc60bbbb7aaefb04deb4aa6e"
+      },
+      "old_relation_count": 8,
+      "new_relation_count": 3,
+      "new_node_count": 9,
+      "new_edge_count": 3,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e",
+      "run_id": "07_regularization-997097d7933e",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:04:57.701986+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "b7a6baadb63c19e565ff21f1c1ffa9b0193f7c64d4e6aca155fe86fa2528d90b",
+        "stage2a_topics_hybrid.json": "93a1a375fca5cb533885d1e0f6abf946ef273701a70c54ef558bb8b920ed9678",
+        "stage2c_similarity_edges.json": "330d230eeed201841ea9382b6812e79f9bf9c387a7a70e3bb43afba23862417e",
+        "stage3_topics_with_summary.json": "05253fe35bcc7a3f61bdc1263979bfb7245a0b3dbd8e0e83ceae2c9086973c26"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 3,
+      "new_node_count": 9,
+      "new_edge_count": 3,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b",
+      "run_id": "09_conv-426f5e52542b",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:05:12.360230+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "4f72b3d4ecf5e7432ad39175b7aecd413e2619a1b093ed21c6bfc063eee1b1f2",
+        "stage2a_topics_hybrid.json": "7068cf0214e16285a5a63647cff26a8990d31b0d08d381c7f13244117917f2eb",
+        "stage2c_similarity_edges.json": "071f51442af540c1b2afcfcbe06b4e20631ab2886a12dc7935437103e6625a4f",
+        "stage3_topics_with_summary.json": "2a538803fa6217f136265bee1930edf9519740854863ecb2034b56da707e7e46"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 6,
+      "new_node_count": 9,
+      "new_edge_count": 7,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\10_rnn\\9b582c970ecc",
+      "run_id": "10_rnn-9b582c970ecc",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:05:45.868123+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "e6c01c60e2e6b41a557e36d7bfedeff9cd78d9e2730976a567e97989010af138",
+        "stage2a_topics_hybrid.json": "2adaadbcd600a54806ff71067cf41b251c13097d16ffcca183fa16651e946960",
+        "stage2c_similarity_edges.json": "a9fc449bd1f3d0c1f127b5dbf3da5c5fcc8f2fa0586465691196f88aafa6b096",
+        "stage3_topics_with_summary.json": "554f726264e7810614f3393feb2754d609cf383c0a5b50e42e85b7f0df76b783"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 2,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226",
+      "run_id": "11_practical-a68993be7226",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:05:59.877837+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "52ac0200d67c1d9b40ad9db47d644662a255e96667a1c811e4b5fee16b3e3d5b",
+        "stage2a_topics_hybrid.json": "f88156c79a6ec4610e837a44c1036aff85f33cbca6cbe7c080954e9c66b2d2d8",
+        "stage2c_similarity_edges.json": "ccdd0592a6237e8200f3c9dfe228e009cd2d35fa1f678e00ddbf11b7f8590506",
+        "stage3_topics_with_summary.json": "703dee5655c396afca30a9a4755ed8da5d392473898550424738e21ee00f56f9"
+      },
+      "old_relation_count": 8,
+      "new_relation_count": 5,
+      "new_node_count": 11,
+      "new_edge_count": 6,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\12_applications\\138e122a8bdc",
+      "run_id": "12_applications-138e122a8bdc",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:06:14.041039+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "f405329606e1f1ce1222c801b37675c371d8366fcca5f9892488127df7a028d7",
+        "stage2a_topics_hybrid.json": "519183eafc57ea02e5309ff2eeb64978212938760901c280f11495347140044a",
+        "stage2c_similarity_edges.json": "d8ddcc93c7e5d4f3fa3da3c489901b0fcf1c724e803795441b103049b09ab899",
+        "stage3_topics_with_summary.json": "450d4fb7b6ea29687be718f994d404dc9c58d115f466405400050bfca5b5b26e"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 5,
+      "new_node_count": 9,
+      "new_edge_count": 6,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a",
+      "run_id": "13_linear_factors-92de7f819b1a",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:06:27.250865+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "705141e3a2c7e12b2c72cd8e2a2e7a2cd462289ac92e4483573a03a99baae4d6",
+        "stage2a_topics_hybrid.json": "6a2eee9073d5c2a2cc65bb9826fb8c24d4c966b0d2ee5416e804a5ba67d2ef25",
+        "stage2c_similarity_edges.json": "1e59ecad33ca54bb0c19995524db2ab664368ed326cd74dea4ae01c2cad7c39e",
+        "stage3_topics_with_summary.json": "9a24ce506843c0de7770c548661c407eace9de9bba5560a14bc0eb008450653f"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 1,
+      "new_node_count": 8,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b",
+      "run_id": "14_autoencoders-130bdd5f620b",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:06:59.331370+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "67d9c3927803e1e0037a6db778d255f87c2bde0cbcd42a7fa6d396162bcb1839",
+        "stage2a_topics_hybrid.json": "71cb00a1accbfed0a8490044666e90fc388f580fd6929a948068cf8c8b396e30",
+        "stage2c_similarity_edges.json": "72b686b39b0a051123ec1498587c6931ebb52e30985b27042bb0f32657da27ad",
+        "stage3_topics_with_summary.json": "89b56a7450c3386c7589d3ed8d099e3a5bb1b1ba5228c6e814510b4b6e210845"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 3,
+      "new_node_count": 9,
+      "new_edge_count": 6,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\15_representation\\4d0c1e4d0bc5",
+      "run_id": "15_representation-4d0c1e4d0bc5",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:07:13.031878+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "1f472a8179020d61b7acc364a95d880410283c12e65d343177c20add37c3fe73",
+        "stage2a_topics_hybrid.json": "1bbfcc20a126a13afd70bc14d64d2ab501d112c31d6e8d331ea31962e94729a7",
+        "stage2c_similarity_edges.json": "e09143c474bb6d17c8ee1b8c1984b6d52b88a363381bc09af0326abf924b7f6e",
+        "stage3_topics_with_summary.json": "0600f9d8b4eadfe6475266ee66764a79df36525b7631af96165ba700cdda67c3"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 3,
+      "new_node_count": 9,
+      "new_edge_count": 3,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1",
+      "run_id": "16_graphical_models-26ce146b38e1",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:07:26.273154+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "ef9e56450e8534a2bfc551db7aa469f2b89653d5f47cab1bcdac8d6249b6b665",
+        "stage2a_topics_hybrid.json": "426f9e087174689e1440f8f5ac470ae7a32ddf0e2177953d8fac476fb87815ec",
+        "stage2c_similarity_edges.json": "45ee14890e444c2c03febb8224a0f28c2cae524fd5dcb1340a6d1bed919613c4",
+        "stage3_topics_with_summary.json": "dd29ea1ffb418b3567b08719fe446d2b8346bac041ea7156b93a1a531e9a8ed3"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 4,
+      "new_node_count": 9,
+      "new_edge_count": 7,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c",
+      "run_id": "17_monte_carlo-ff4d1de5355c",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:07:39.288558+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "1b9bf51d0c85b43ceb3de258f03c2610fd1720617660bc249b6f3a34e0c03c35",
+        "stage2a_topics_hybrid.json": "82c84284153588153b7b2e7e99efaa5f9f2cf3593ed9ffd1d077789c443a072c",
+        "stage2c_similarity_edges.json": "886c0937368916f923346102ce6430810767d13e6b9b751ddcc51a3d41944246",
+        "stage3_topics_with_summary.json": "7546fdb02fab264cc63a787f0bf179dd10dcf1736bc8f5956bf3a81d75368e8f"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 2,
+      "new_node_count": 11,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b",
+      "run_id": "18_partition-b39fd6ffea3b",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:08:05.349389+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "798eb0934597a7ddf6eafe892d47048c0f28548342eda49105f99a34b22ca4b8",
+        "stage2a_topics_hybrid.json": "2ceb8b7db9f482873e071995cc35ea8fee11617bc74e95b3c478c1021c316734",
+        "stage2c_similarity_edges.json": "fcd70b9e71fe77ba753aa212a63dc99991beefa5cae22ca4a7c96aabb29e5f46",
+        "stage3_topics_with_summary.json": "b84ac31b00fc9ed0a7e30d11dcbada4b40936a807abf898906f68d87ff4045ad"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 5,
+      "new_node_count": 9,
+      "new_edge_count": 6,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0",
+      "run_id": "2024-cs224n-python-review-session-slides.pptx-17ef722b88a0",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:08:22.082084+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "d9a8a748ddd98f62bca0d342e9300347f384a7bc8a39313ccca43d40c897b7f1",
+        "stage2a_topics_hybrid.json": "4859982a5fbf046a262f87670e5168e9b8dc03e665635911962916518492b31f",
+        "stage2c_similarity_edges.json": "f10443e2823667977335722b526c0fd097c36cd7d008193af4df3f63a00e9557",
+        "stage3_topics_with_summary.json": "79389240f642cd8d3eea334120f2bc876bfa951db85d03de16a531dd24d48a74"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 8,
+      "new_node_count": 9,
+      "new_edge_count": 10,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34",
+      "run_id": "andrew-ng-machine-learning-yearning-7e40402fdf34",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:08:40.166033+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "6a8793e0357cf1975c1a95185bb2f52fa575e82741db6b1efe0359fdd81950d0",
+        "stage2a_topics_hybrid.json": "f39a872a9c19557a8571c1dca35e90dfc84b5e105294573ca70f9d4153c760e2",
+        "stage2c_similarity_edges.json": "fe2d82b394d297021b02fbb01025662ad1b6f5003def8690475491be972071d3",
+        "stage3_topics_with_summary.json": "a66b893d89a4e7203bd1a03b89d74ccde0adb23e9aee38dd6a06cd58f36f320d"
+      },
+      "old_relation_count": 8,
+      "new_relation_count": 12,
+      "new_node_count": 9,
+      "new_edge_count": 13,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\batch_norm\\d1d6f8695dd4",
+      "run_id": "batch_norm-d1d6f8695dd4",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:08:57.440462+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "ab0aac4e82811e2f41d4ae8caac4b4cd58a6096d615b5d211c3c05f42344977f",
+        "stage2a_topics_hybrid.json": "f43544a25b84c8f9a72f4579335436fc50f35bf9423c89159074ad53718d00d1",
+        "stage2c_similarity_edges.json": "5c065728ae178a9794bc8e8dfdccc3f61dee02238d06de958d4521907844c887",
+        "stage3_topics_with_summary.json": "9cb51622ddda2a88a291130bf29df9423b3c278d2427c1b2c6479358b3b1c7fb"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 3,
+      "new_node_count": 8,
+      "new_edge_count": 4,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-history\\5845dce2ddc2",
+      "run_id": "cs224n-2026-lecture01-history-5845dce2ddc2",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:09:12.082473+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "beb1e2ebd5439cc1a5ebb175e41f2419d2c95fbdb9e908930a85a33cc93c57a6",
+        "stage2a_topics_hybrid.json": "f0436c4f388cba91f61158ecc375a693961c69044636aa34f1d1a404364bdece",
+        "stage2c_similarity_edges.json": "bdd441f31e1808c22e6f7bf28ff9fdc712c8fd58a74f071362ee9a33798a6659",
+        "stage3_topics_with_summary.json": "cf114732fd886c4002769a88f610f6dc3d277727f4dd37aaf6fa95aa0a397c38"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 2,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2",
+      "run_id": "cs224n-2026-lecture01-intro-f9a723b011b2",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:09:25.743349+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "7b1809f717e3b951b7208c3609cb156b6e6cb6dd7142561a4b3b719cea355659",
+        "stage2a_topics_hybrid.json": "c4a3173b071514f967366ca89122b2bb5804545efd3d81c8710d6f6f71c13e57",
+        "stage2c_similarity_edges.json": "0e6737edb7e40b565aba64d76f5e1751fea0eaff2c86eaccc7d29133e6b88b68",
+        "stage3_topics_with_summary.json": "00e00f2479cf5aac88c51c15e753868e72ed4cab60648b0e4489699f230614cb"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 2,
+      "new_node_count": 8,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88",
+      "run_id": "cs224n-2026-lecture02-wordvecs-fd0b4ad8af88",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:09:40.643138+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "e44bbf9cdb3a92e3876619ccdddac4feb0d97a8d447e5027baed314b28c8dce6",
+        "stage2a_topics_hybrid.json": "f08c20c3157eccc0c84fbd06066a06a8f9e8fbd9a3a2331abda52fa4ec1bdb31",
+        "stage2c_similarity_edges.json": "2406f4120583e040601889304d471e93c4c0f8cf69359e7b0bbd95edee510169",
+        "stage3_topics_with_summary.json": "2df948e394f7134aa817e8c19d1f76e4bcd4318c61caca5a1c159fce3eac39cd"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 3,
+      "new_node_count": 9,
+      "new_edge_count": 6,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125",
+      "run_id": "cs224n-2026-lecture03-neuralnets-8aae94ed0125",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:09:54.426536+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "7b997af9018d1ef396a95cd3df5237f835042b8640ed86dadaeaf19d99e2fe57",
+        "stage2a_topics_hybrid.json": "899f646159475bb3dc3da7a930ee44d36ee223534f1c417821eb0541fe8c1cc1",
+        "stage2c_similarity_edges.json": "37868f81f0f6839c5c861ace7142bdd7950ed18bb1f80e4748175ecfcd42b5a1",
+        "stage3_topics_with_summary.json": "f5d098aefb03b1155181b051cd248958688dc6c481d5811853a11f2ea6e1f4df"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 5,
+      "new_node_count": 9,
+      "new_edge_count": 6,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee",
+      "run_id": "cs224n-2026-lecture04-rnnlm-590f0f50aaee",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:10:07.985177+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "eded83f079eca280f2a4c442af64ff4b2286c3fc24946dc0b9fcdceac2a0a482",
+        "stage2a_topics_hybrid.json": "1ad5848908d3326959ecb708f2f67e9d49e01201a6fabebeb0b45d1a6fb6adc1",
+        "stage2c_similarity_edges.json": "cdb1438a59f4423eb15465d98cb50a3483e56111c594b47f2b6a120fd82c8185",
+        "stage3_topics_with_summary.json": "ff335b65712bd9ff0a7c57d6332e43bb6dc625b59c89bc8a79cc2011a5f66a54"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 1,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8",
+      "run_id": "cs224n-2026-lecture05-transformers-0e9017f9dbd8",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:10:30.552304+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "8e79b60611bf1aa49adb7fa8daf5d4081aaa2b877aaf785c0b57dcc46352c678",
+        "stage2a_topics_hybrid.json": "c870aa0d187cb9454f71c54c75ce3c6d9dfcc482ef275949c20020ce750b5eb0",
+        "stage2c_similarity_edges.json": "55f81a8796f9398b2ebdfd067a8513da6b60b9ea496e835dcf9130be3f88eead",
+        "stage3_topics_with_summary.json": "e78e809ae0efcdc0f7e3f231ff0947aa47306f6bdbe075d14a640a1bf01480e3"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 4,
+      "new_node_count": 9,
+      "new_edge_count": 4,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c",
+      "run_id": "cs224n-2026-lecture06-final-project-b7818dcc886c",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:10:47.289556+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "5f8dc1144f482f4d1420a803f3eb454ecf1a3b6b921d8816ebc0e7c03cb1b644",
+        "stage2a_topics_hybrid.json": "0f0e54323f1718d59b63d8e1e256a42ba48ca7b6797a53e0cd1a132a039e8364",
+        "stage2c_similarity_edges.json": "ed6b078af96cf064eebcb07f13e3bc569002f24454053e83a426c3b8c1b127f4",
+        "stage3_topics_with_summary.json": "5e7ca2475cff60d45df9f8a1357d837a3617a8d880b787b5a951d4c6a776b99e"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 5,
+      "new_node_count": 9,
+      "new_edge_count": 7,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture08-posttraining\\f71e4c3743c8",
+      "run_id": "cs224n-2026-lecture08-posttraining-f71e4c3743c8",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:11:13.794013+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "a152b78cde3cf92fc88451c160c4d4683db9be69899ebf60e5d5943b34eeec61",
+        "stage2a_topics_hybrid.json": "d4f8841b9f26c6ea79e1f9d6d69f9501c57104234f7c2e62bb8226d30a495c14",
+        "stage2c_similarity_edges.json": "d22c16f1c76c7a9f6257684e389d313fa86ff2b7faf826a7158eee19bc60fcf0",
+        "stage3_topics_with_summary.json": "7e28c41a69d38fba686543361354e520f05489fcaf48c9a34d1485fc6e3ad62d"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 1,
+      "new_node_count": 9,
+      "new_edge_count": 3,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5",
+      "run_id": "cs224n-2026-lecture09-peft-c94167e219b5",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:11:27.566337+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "c84c045b559ac31d62e54ff734884c34ce733d8599c198c2728b3a8d14ccb4e1",
+        "stage2a_topics_hybrid.json": "596a4bb8d334ee8b871821559325baf7d03009e54496282dcfcf50d6bebb1d50",
+        "stage2c_similarity_edges.json": "686f7467f75ed8c864f72d1a2b9d8980b57b5c93eea1b12239ed8cd2852f55ee",
+        "stage3_topics_with_summary.json": "2057b157e289f3fd5b25d12244bd77908e4c9c91517d63c2c0d1befa96ea81bb"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 2,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture10-rag-agents\\2e97edb678d2",
+      "run_id": "cs224n-2026-lecture10-rag-agents-2e97edb678d2",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:11:41.456425+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "e5cba5eddc54630e021502dd0bf43c2dc7767f90703a22c55d634d284915d335",
+        "stage2a_topics_hybrid.json": "288c1cf3e0079eb50242c8fc8ed953dcc457f8620c45e0c17f8ace47704fd69a",
+        "stage2c_similarity_edges.json": "526c7c31cdb1a64ca7d0e32d333d5422b3be544f23d0cdfc4e3c604089ac7469",
+        "stage3_topics_with_summary.json": "2ab1ae5c8c6424cb96062aadf9faab55b18532bd78536883563741de08c0540a"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 1,
+      "new_node_count": 9,
+      "new_edge_count": 1,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4",
+      "run_id": "cs224n-2026-lecture11-evaluation-93703513bbd4",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:11:56.030144+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "c5a30fdae12f5daca335c78bb7079148e5cf757aaedfee7bfe36a5d9dc0e5316",
+        "stage2a_topics_hybrid.json": "64cbb15762e5f4f6a163a633ff0904c41e33d9187598da56d88146365d93b788",
+        "stage2c_similarity_edges.json": "19fbe888a3a6ae2685167e186e8ffcf720d980f934c49707658d21ef1c4950eb",
+        "stage3_topics_with_summary.json": "8d917f6ae3946791a35bfc8d720d0b5aea8b7fb5e8556b07d323c6a1b1e5dd07"
+      },
+      "old_relation_count": 8,
+      "new_relation_count": 2,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture12-reasoning-part1\\4f4ba00d02f4",
+      "run_id": "cs224n-2026-lecture12-reasoning-part1-4f4ba00d02f4",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:12:10.314127+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "8d1babd73f4faaed67f6319be5b1f9faf7970bccd097adbb42366cb6dd833c21",
+        "stage2a_topics_hybrid.json": "1388cb2e6434e47d283283114b99a2b8b28a894f67c1f29cfbb05e60b1233fce",
+        "stage2c_similarity_edges.json": "15b5093237647616b4447fc5c343b98440d1384df67d21ee255431dbf9687043",
+        "stage3_topics_with_summary.json": "d6d9c1ba94ae5c413ed6bd075a87a68ab4417f262c268f6b265c4c9345ac2045"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 1,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture13-reasoning-part2\\9be210e8836e",
+      "run_id": "cs224n-2026-lecture13-reasoning-part2-9be210e8836e",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:12:23.069262+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "a58f0242a39f4babcd6b51652edea34efab3075e00b908b417be2b4ec184cbad",
+        "stage2a_topics_hybrid.json": "0e52ecee44c3b53033aa3d9810f117d932befa6de3732e447d093534f169a026",
+        "stage2c_similarity_edges.json": "f0096a53f614f43591ef584fdd41900c7de7300dd8bdc4c7ce2feab1888d75a3",
+        "stage3_topics_with_summary.json": "ace49e3ee459994d06ddbced5b0a92c71f9b681c1efe8bbf015976cf5a907e57"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 1,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53",
+      "run_id": "cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:12:35.812226+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "8ab005736b57c099bddc413166279bafa95cd2301c5195622c3291b8dd72301d",
+        "stage2a_topics_hybrid.json": "37778ac6b5acd6b91ee2a575f23e4bd333294c6c113685fbb5f040dc53ae46dc",
+        "stage2c_similarity_edges.json": "491f26edf81134af36eb0d44cc9e0d718065c41c448ad20bf41d9b59be3e2251",
+        "stage3_topics_with_summary.json": "c5d719b7a8fc17d86154bb895b8369278608202de78873699d40838ddf84bca1"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 2,
+      "new_node_count": 9,
+      "new_edge_count": 3,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture16-impact-on-humanity\\1b2803f69d2c",
+      "run_id": "cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:12:50.775091+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "88e55248616a7e9c4bcdfdccbe409dd69f5c336bd322573e699bb4d04e821a75",
+        "stage2a_topics_hybrid.json": "87e8ae15196c3dae04e178f8604c95f1ad652b15a4c3a4544fea315cb6389e94",
+        "stage2c_similarity_edges.json": "6f9003f58f7072a7c749035bd3590d3d94c5e06ffdf916decc6088001420a2c1",
+        "stage3_topics_with_summary.json": "63ab8e7d00388683afdc7acafd6cebc1ddc52e0d608c87e69602cf5ee2075a04"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 2,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture19-open-questions\\f6d8d31e8a6f",
+      "run_id": "cs224n-2026-lecture19-open-questions-f6d8d31e8a6f",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:13:03.333024+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "992226d2965d6df4e1f70e3ebbe92cebb9ee3b72529fdf31e41142e010b11a4b",
+        "stage2a_topics_hybrid.json": "48e80718d61c5f366eef781bd6f17ccd3f0f080d5abafd2aaf78c25833a4d56f",
+        "stage2c_similarity_edges.json": "e6b3e9b89454710db86cbe42eaef94d7a64321f4d0e331de12ca9b1cd5e102ea",
+        "stage3_topics_with_summary.json": "6ca99a93d67b372a582a2c59dfc1b7c601a02a89eac0615cc2e8ac8dab822523"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 1,
+      "new_node_count": 9,
+      "new_edge_count": 1,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-spr2024-lecture15-life-after-dpo-lambert\\e534f25111e7",
+      "run_id": "cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:13:17.136598+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "32d5e508dbcd9b74617d17b04d442bd141c5b948c51b4478100372815146906f",
+        "stage2a_topics_hybrid.json": "e5c69e877258582dcbe323e449ca4dbbc95a86950df7307c350e8ef113f99c00",
+        "stage2c_similarity_edges.json": "1583fcb44b919d6258a6678c6a2418964b35e62ebc4d544b76d4ddd19cc057d2",
+        "stage3_topics_with_summary.json": "f5b44f35d338f8a48bb7b17f8199c72b772a78aee6aeafdd8eea08d49aa29734"
+      },
+      "old_relation_count": 4,
+      "new_relation_count": 1,
+      "new_node_count": 9,
+      "new_edge_count": 7,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dls_2016\\562b4445509a",
+      "run_id": "dls_2016-562b4445509a",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:14:15.240669+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "da9157528e32bf4bbb20d93c88a6fb7893768feed3d712ed8da7ea91bb6ab5f6",
+        "stage2a_topics_hybrid.json": "c11a997171aa18c912945ea7ba175eba68dcd58d70703d165f8dc62f79710ee4",
+        "stage2c_similarity_edges.json": "c22536f3b2d6bee87f3ab5fccad991fecf095ba5f00612b6be1634e18bfe7660",
+        "stage3_topics_with_summary.json": "245c8cf27bd76d11bb8d7d806357d8bd24a3dce9a070a00cbd7de3ecb6f02797"
+      },
+      "old_relation_count": 9,
+      "new_relation_count": 9,
+      "new_node_count": 11,
+      "new_edge_count": 13,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Final_Lecture___Design_Engineering\\e751bcf4b967",
+      "run_id": "dl___final_lecture___design_engineering-e751bcf4b967",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:14:35.868874+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "8aa132547dbb6ffe7f89612ed7cbaf8774cd0aa36227336b970b36fe24452bae",
+        "stage2a_topics_hybrid.json": "6f4bea972af53ba5eca571c36fe89776145d26c240a3ea9c5971bfff8d9c7371",
+        "stage2c_similarity_edges.json": "d774a7e3f54417e73842cbca5ade9f695255496e20f46b9e78aa55aba7e32735",
+        "stage3_topics_with_summary.json": "6d0a533d3ca5b51658f6da701a05200793f992136d2965ac0d10e04b75317738"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 5,
+      "new_node_count": 15,
+      "new_edge_count": 19,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\fb7c77f387de",
+      "run_id": "dl___lecture_6___design_engineering-fb7c77f387de",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:14:50.726341+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "d6c942513e87a192adfef13e818d369ded79feb37c3374c4ccf4a241d023bc49",
+        "stage2a_topics_hybrid.json": "f17f049c36f6d13f2d1f1e2b52b861bb2af39c6974dec234e01391159403edfa",
+        "stage2c_similarity_edges.json": "9e8231fed3e4249560227977cce43829ee5ed8ee0b7d1596f05a71fc1e40477f",
+        "stage3_topics_with_summary.json": "33edc4578d9993ff78f56d31b4a3f1046f928adff601734afd7d7a8ccc0ef8c3"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 7,
+      "new_node_count": 16,
+      "new_edge_count": 10,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_1___design_engineering-2\\4b5a4de9201e",
+      "run_id": "dl___week_1___design_engineering-2-4b5a4de9201e",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:15:04.002898+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "826afdae84759a52f6a40cdfd211f1ce31792b20430cade6854314240f4296ea",
+        "stage2a_topics_hybrid.json": "d359c5e6a4bed440d9542aa8246ffb9b5a9efa82a97534553ea795b7df5cd967",
+        "stage2c_similarity_edges.json": "9437f9131fb205478a2933b28092329193e9c2025c296f1aa64391fa33ee55ab",
+        "stage3_topics_with_summary.json": "e19337ed06130dff5077b70024b04511fe5f1f98acb54b50e90355cb6d9c346a"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 2,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_2___Design_Engineering\\a7ff94af9bad",
+      "run_id": "dl___week_2___design_engineering-a7ff94af9bad",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:15:17.694966+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "98b5153fc8b4e01a2f86db154fcf20db108128dccd70595bff8d5ce335a6c31a",
+        "stage2a_topics_hybrid.json": "0aa19b213ee4a851f55dc2737aa3a17617ad3a6cc7b75090cbf590b45a0e1751",
+        "stage2c_similarity_edges.json": "1a265f8e78963f3dd8eb4797791dc70b3c34bf86a74ca8c9a0ff02c4d14783e2",
+        "stage3_topics_with_summary.json": "ced5c34a263339e56fc82c16b544146be624849299c45909094cb8b4c51f03e0"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 1,
+      "new_node_count": 9,
+      "new_edge_count": 3,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525",
+      "run_id": "front_matter-1f6f329f9525",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:15:34.171384+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "ab65347a02b8855d229e954670620cf4d0906d546884cfbfcb194298dbe352e8",
+        "stage2a_topics_hybrid.json": "e2f1b955276e0debabea1f514d2b5f3cbb4703a3684b91e65df7b2b2704aea4a",
+        "stage2c_similarity_edges.json": "98990ed1b1a6f5971ed6691523f0643c1ea2b3fb22d3a30de3921a54d15e2aa3",
+        "stage3_topics_with_summary.json": "106ed1dd832fd910f895c640125863fee88a692f1688d895bd08e270cf373598"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 4,
+      "new_node_count": 8,
+      "new_edge_count": 7,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\glossary\\c9772e6502e2",
+      "run_id": "glossary-c9772e6502e2",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:15:47.965998+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "74aaf24db9f968a104d573b77b80db9d3bec9e36007aa3b4533409444cd6d156",
+        "stage2a_topics_hybrid.json": "a8b0fb90a70e4af7c3aab5571738d324731fe007cdc9094cb118858cd874dda9",
+        "stage2c_similarity_edges.json": "879ee0ade6139ce0cb35dd89558afebbc164feb5a3a4f5007c199503d777fefc",
+        "stage3_topics_with_summary.json": "0ff23f6ba4da940e82a88a536354538e137e658800366ae21737652d223c9109"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 2,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8",
+      "run_id": "islp_website-278d3bdd49a8",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:16:02.576836+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "2a450acf99587d4a652fba6eb8aa9e78cbb8bcb9c435631908e7c5816b7e1ffe",
+        "stage2a_topics_hybrid.json": "7fd705460d703ea96ea2922ccb7cdbedc8ffb27675d7d28e1a0f6b29654a47b3",
+        "stage2c_similarity_edges.json": "d9f131f9a4a9e521f5dad05f8146dd0b238c7638472e3a858a96bcafbe8e35e1",
+        "stage3_topics_with_summary.json": "9fe6ae6d04aa614cd1e8952d9e2f0896f18b3ef40158f0a86396e4a6b44abb90"
+      },
+      "old_relation_count": 10,
+      "new_relation_count": 2,
+      "new_node_count": 9,
+      "new_edge_count": 2,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islrv2_corrected_june_2023\\7ed447d1a513",
+      "run_id": "islrv2_corrected_june_2023-7ed447d1a513",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:16:17.015129+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "1d7fe78cb965485eff8f3e77af526d60e29dcd5dcac913884b7595387486f99e",
+        "stage2a_topics_hybrid.json": "bf85baec611668778805b0dc38ae89fe30adf804da9fc889c9e5ad4d50f3a3aa",
+        "stage2c_similarity_edges.json": "ace3b973841d359d846cfd597ec3ad8467666de469604f6095a027f4c5ecc63f",
+        "stage3_topics_with_summary.json": "ba260d551c0b1bbf7b4180b16bfa5574c4d9259380257bb14c2a7ceafae10c20"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 1,
+      "new_node_count": 9,
+      "new_edge_count": 1,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\linear_algebra\\02de2e03aa08",
+      "run_id": "linear_algebra-02de2e03aa08",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:16:33.243460+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "90990978445ee96a508d0086f9825923f4ccd9a506ba0f8241cc447a99fd8dbc",
+        "stage2a_topics_hybrid.json": "40e8709573c123afdcb59f531a180ccf46f17804cd5657c7f537537d04172d59",
+        "stage2c_similarity_edges.json": "854fcd461244e34c33bc79f43aecf33c696b29150374ebb94c8961c6676d4526",
+        "stage3_topics_with_summary.json": "025fed81f463840bf105a419653567c17ddb9e0de63b7e7a31e8313476e07563"
+      },
+      "old_relation_count": 7,
+      "new_relation_count": 8,
+      "new_node_count": 8,
+      "new_edge_count": 8,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\quickstart\\007d88a49ebb",
+      "run_id": "quickstart-007d88a49ebb",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:16:52.876660+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "8c744d9efae583630bce94b8ee601546fb770d67acc45081ff20a7f6e73e6d46",
+        "stage2a_topics_hybrid.json": "d565ac8cd0def0faec118c07f0c26bbe91f58f5e235b8b4eb55bef7868e1c1b7",
+        "stage2c_similarity_edges.json": "004b9af722332b2c6404f3f9f5f9e8cde59b5ce10a246479c55282fdc83114e8",
+        "stage3_topics_with_summary.json": "7c4febec64e034b5bf81713e22fbb1c5c645f81852c19dab8dea011f395761fb"
+      },
+      "old_relation_count": 9,
+      "new_relation_count": 6,
+      "new_node_count": 17,
+      "new_edge_count": 8,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421",
+      "run_id": "readme-3ceb60c79421",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:17:05.961509+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "122df9d5b69b2c3c75aeba0613bb1a5c66d705b8b5843c2147dbc0a1156b91e2",
+        "stage2a_topics_hybrid.json": "4d315f240827af98589ceed7595142dec3dc8d91ab3e6271f76e05511a158414",
+        "stage2c_similarity_edges.json": "de66719b02bc255ee6974775e308fbd1909dda92d518b289098d931a9a3d413e",
+        "stage3_topics_with_summary.json": "687f29aa06f181c3e701c0a24cb897188263c9b1494d13f40b9451ecf1e64746"
+      },
+      "old_relation_count": 5,
+      "new_relation_count": 1,
+      "new_node_count": 8,
+      "new_edge_count": 3,
+      "golden_path_resource": false
+    },
+    {
+      "status": "success",
+      "reason": "",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0",
+      "run_id": "sgd_and_cost_structure-84a4549929c0",
+      "model": "gpt-5.5",
+      "created_at": "2026-08-18T05:17:21.873746+00:00",
+      "source_hashes": {
+        "stage1_chunks.json": "49ebfa1b3a71fd46e45662fa00397d1f45191171730f0c0a532830f2d55c88f6",
+        "stage2a_topics_hybrid.json": "7748b64e14f1171da9a8ff4a467423b6cb8e9c66527e54dd24c98546affc9fed",
+        "stage2c_similarity_edges.json": "4599a5c926a64dab94318c928f9627e2b333fe510274e65394e23c1b815ff868",
+        "stage3_topics_with_summary.json": "32056f9865841c75e431f75cca6cdeee3848ef691eff0e7ea970539ab5f66835"
+      },
+      "old_relation_count": 6,
+      "new_relation_count": 6,
+      "new_node_count": 9,
+      "new_edge_count": 8,
+      "golden_path_resource": false
+    }
+  ]
+}

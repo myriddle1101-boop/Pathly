@@ -1,0 +1,20 @@
+{
+  "prerequisites": [
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Model Training"
+    },
+    {
+      "from": "Model Training",
+      "to": "Model Evaluation"
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Model Vulnerability"
+    },
+    {
+      "from": "Model Vulnerability",
+      "to": "Adversarial Machine Learning"
+    }
+  ]
+}

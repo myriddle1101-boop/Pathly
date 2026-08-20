@@ -1,0 +1,92 @@
+[
+  {
+    "time": "2026-06-17 14:21:09",
+    "file_name": "AIChallenges.pdf",
+    "sha256": "3a1ca615166ecdc44b784038d9758a689d7438db97012692baccd4ee77b90d45",
+    "status": "done",
+    "nodes_after_merge": 39,
+    "edges_after_merge": 35,
+    "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges"
+  },
+  {
+    "time": "2026-06-17 14:23:11",
+    "file_name": "AlgorithmicBias.pdf",
+    "sha256": "6bc189c9007e83c9343104a14d8ff578ba3d4b689ee5560f3dbc191d8a1daf92",
+    "status": "done",
+    "nodes_after_merge": 47,
+    "edges_after_merge": 41,
+    "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias"
+  },
+  {
+    "time": "2026-06-17 14:23:17",
+    "file_name": "Crime.pdf",
+    "sha256": "3adb6e2cdccd96817d19b7575386e7f14d39c78b69d26638b5504aaa15827d43",
+    "status": "failed_stage1"
+  },
+  {
+    "time": "2026-06-17 14:23:24",
+    "file_name": "Dreamer.pdf",
+    "sha256": "318891d59ba0065f57eb0e735735700e5eb528f53bf08b81c773437385586c64",
+    "status": "failed_stage1"
+  },
+  {
+    "time": "2026-06-17 14:25:12",
+    "file_name": "HiddenCosts.pdf",
+    "sha256": "1a67da09a8bd5ba9a3577176e30aa2fbd88534e6baf0bc31522b4999f643d2a1",
+    "status": "done",
+    "nodes_after_merge": 53,
+    "edges_after_merge": 46,
+    "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts"
+  },
+  {
+    "time": "2026-06-17 14:25:18",
+    "file_name": "Security and Privacy in ML.pdf",
+    "sha256": "c5106c61be69b06451a466ab0926c328b2b8a47f4970d33bfe0189231814c81f",
+    "status": "failed_stage1"
+  },
+  {
+    "time": "2026-06-17 18:58:58",
+    "file_name": "Crime.pdf",
+    "sha256": "3adb6e2cdccd96817d19b7575386e7f14d39c78b69d26638b5504aaa15827d43",
+    "status": "failed_stage4"
+  },
+  {
+    "time": "2026-06-17 19:02:54",
+    "file_name": "Dreamer.pdf",
+    "sha256": "318891d59ba0065f57eb0e735735700e5eb528f53bf08b81c773437385586c64",
+    "status": "failed_stage4"
+  },
+  {
+    "time": "2026-06-17 19:08:13",
+    "file_name": "Security and Privacy in ML.pdf",
+    "sha256": "c5106c61be69b06451a466ab0926c328b2b8a47f4970d33bfe0189231814c81f",
+    "status": "failed_stage4"
+  },
+  {
+    "time": "2026-06-21 16:07:43",
+    "file_name": "Crime.pdf",
+    "sha256": "3adb6e2cdccd96817d19b7575386e7f14d39c78b69d26638b5504aaa15827d43",
+    "status": "done",
+    "nodes_after_merge": 61,
+    "edges_after_merge": 52,
+    "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime"
+  },
+  {
+    "time": "2026-06-21 16:12:02",
+    "file_name": "Dreamer.pdf",
+    "sha256": "318891d59ba0065f57eb0e735735700e5eb528f53bf08b81c773437385586c64",
+    "status": "done",
+    "nodes_after_merge": 68,
+    "edges_after_merge": 58,
+    "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer"
+  },
+  {
+    "time": "2026-06-21 16:16:00",
+    "file_name": "Security and Privacy in ML.pdf",
+    "sha256": "c5106c61be69b06451a466ab0926c328b2b8a47f4970d33bfe0189231814c81f",
+    "status": "done",
+    "nodes_after_merge": 76,
+    "edges_after_merge": 68,
+    "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML"
+  }
+]

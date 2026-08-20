@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0",
+  "run_id": "2024-cs224n-python-review-session-slides.pptx-17ef722b88a0",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:01.435360+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "d9a8a748ddd98f62bca0d342e9300347f384a7bc8a39313ccca43d40c897b7f1",
+    "stage2a_topics_hybrid.json": "4859982a5fbf046a262f87670e5168e9b8dc03e665635911962916518492b31f",
+    "stage2c_similarity_edges.json": "f10443e2823667977335722b526c0fd097c36cd7d008193af4df3f63a00e9557",
+    "stage3_topics_with_summary.json": "79389240f642cd8d3eea334120f2bc876bfa951db85d03de16a531dd24d48a74"
+  },
+  "old_relation_count": 7,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

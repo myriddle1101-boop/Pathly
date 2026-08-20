@@ -1,0 +1,876 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 20,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "benchmarks spurious",
+      "avg_score": 0.5981,
+      "frequency": 5,
+      "chunk_ids": [
+        1,
+        3,
+        7,
+        18,
+        19
+      ]
+    },
+    {
+      "name": "benchmarks",
+      "avg_score": 0.5958,
+      "frequency": 5,
+      "chunk_ids": [
+        2,
+        3,
+        7,
+        18,
+        19
+      ]
+    },
+    {
+      "name": "metrics reference",
+      "avg_score": 0.5362,
+      "frequency": 5,
+      "chunk_ids": [
+        9,
+        11,
+        13,
+        14,
+        17
+      ]
+    },
+    {
+      "name": "based metrics",
+      "avg_score": 0.5332,
+      "frequency": 5,
+      "chunk_ids": [
+        9,
+        10,
+        11,
+        13,
+        17
+      ]
+    },
+    {
+      "name": "benchmarks humans",
+      "avg_score": 0.6161,
+      "frequency": 4,
+      "chunk_ids": [
+        1,
+        3,
+        7,
+        18
+      ]
+    },
+    {
+      "name": "llm benchmarks",
+      "avg_score": 0.6095,
+      "frequency": 4,
+      "chunk_ids": [
+        1,
+        3,
+        7,
+        18
+      ]
+    },
+    {
+      "name": "benchmarks recent",
+      "avg_score": 0.5873,
+      "frequency": 4,
+      "chunk_ids": [
+        3,
+        7,
+        18,
+        19
+      ]
+    },
+    {
+      "name": "theoretic metrics",
+      "avg_score": 0.5112,
+      "frequency": 4,
+      "chunk_ids": [
+        9,
+        11,
+        13,
+        17
+      ]
+    },
+    {
+      "name": "metrics vs",
+      "avg_score": 0.5614,
+      "frequency": 3,
+      "chunk_ids": [
+        11,
+        13,
+        17
+      ]
+    },
+    {
+      "name": "benchmarks common",
+      "avg_score": 0.526,
+      "frequency": 3,
+      "chunk_ids": [
+        8,
+        18,
+        19
+      ]
+    },
+    {
+      "name": "metrics paraphrasing",
+      "avg_score": 0.4648,
+      "frequency": 3,
+      "chunk_ids": [
+        11,
+        13,
+        17
+      ]
+    },
+    {
+      "name": "metrics ifeval",
+      "avg_score": 0.4637,
+      "frequency": 3,
+      "chunk_ids": [
+        11,
+        13,
+        17
+      ]
+    },
+    {
+      "name": "bias lexical",
+      "avg_score": 0.7431,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "spurious biases",
+      "avg_score": 0.7306,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "spurious bias",
+      "avg_score": 0.7265,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "bias issue",
+      "avg_score": 0.6918,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "bias common",
+      "avg_score": 0.669,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "bias annotation",
+      "avg_score": 0.6613,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "science evaluation",
+      "avg_score": 0.6556,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "benchmarks scale",
+      "avg_score": 0.6402,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "evaluations humans",
+      "avg_score": 0.6294,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "grading complexity",
+      "avg_score": 0.6248,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "reference ba",
+      "avg_score": 0.6131,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "data benchmark",
+      "avg_score": 0.6105,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "reference based",
+      "avg_score": 0.609,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "metrics divergence",
+      "avg_score": 0.6042,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "behavioral benchmarks",
+      "avg_score": 0.6036,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "evaluation humans",
+      "avg_score": 0.5991,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "capabilities super",
+      "avg_score": 0.5963,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "based reference",
+      "avg_score": 0.5951,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "language inference",
+      "avg_score": 0.5948,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "kl divergence",
+      "avg_score": 0.5904,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "human evaluation",
+      "avg_score": 0.5895,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "benchmarks standardized",
+      "avg_score": 0.5869,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "semantic similarity",
+      "avg_score": 0.5864,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "used benchmarks",
+      "avg_score": 0.5856,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "divergence llm",
+      "avg_score": 0.5802,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "divergence kl",
+      "avg_score": 0.5788,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "evaluation aspects",
+      "avg_score": 0.5727,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "tests syntactic",
+      "avg_score": 0.5703,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "benchmark examples",
+      "avg_score": 0.5648,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "reference fact",
+      "avg_score": 0.5604,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "metrics model",
+      "avg_score": 0.5582,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "measure divergence",
+      "avg_score": 0.5569,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "divergence measure",
+      "avg_score": 0.5539,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "metrics concept",
+      "avg_score": 0.5512,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "evaluation evaluation",
+      "avg_score": 0.5484,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "existing benchmarks",
+      "avg_score": 0.5476,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "syntactic heuristics",
+      "avg_score": 0.5454,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "metrics subject",
+      "avg_score": 0.5428,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "evaluation metric",
+      "avg_score": 0.5413,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "evaluation benchmarks",
+      "avg_score": 0.5406,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "complexity example",
+      "avg_score": 0.5349,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "metrics vector",
+      "avg_score": 0.5285,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "inconsistency benchmarks",
+      "avg_score": 0.5278,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "metrics",
+      "avg_score": 0.5244,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "evaluation scores",
+      "avg_score": 0.5231,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "nlu capabilities",
+      "avg_score": 0.5166,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "metrics information",
+      "avg_score": 0.5166,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "humans flaws",
+      "avg_score": 0.5119,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "evaluation lagging",
+      "avg_score": 0.5116,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "adversarial benchmarks",
+      "avg_score": 0.5065,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5038,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "type grading",
+      "avg_score": 0.4995,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "chatbot arena",
+      "avg_score": 0.4977,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "complexity",
+      "avg_score": 0.4973,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "benchmarks evaluation",
+      "avg_score": 0.4968,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "heuristic analysis",
+      "avg_score": 0.4874,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "text 2016",
+      "avg_score": 0.4854,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "heuristics natural",
+      "avg_score": 0.4748,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "dataset paper",
+      "avg_score": 0.4723,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "model based",
+      "avg_score": 0.469,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "accuracy easiest",
+      "avg_score": 0.4656,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "questions squ",
+      "avg_score": 0.4634,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "vector similarity",
+      "avg_score": 0.4626,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "heuristics good",
+      "avg_score": 0.4609,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "chatbot",
+      "avg_score": 0.4464,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "impact squ",
+      "avg_score": 0.4373,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "paper award",
+      "avg_score": 0.4259,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "weird queries",
+      "avg_score": 0.4242,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Evaluation Metrics",
+      "description": "Key measures used to assess the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Benchmarks",
+          "description": "Standardized tests used to compare model performance."
+        },
+        {
+          "name": "Metrics Reference",
+          "description": "Guidelines for selecting and interpreting evaluation metrics."
+        },
+        {
+          "name": "Human Evaluation",
+          "description": "Assessment of model outputs by human judges."
+        }
+      ]
+    },
+    {
+      "name": "Bias in Machine Learning",
+      "description": "Issues related to unfairness and inaccuracies in model predictions.",
+      "sub_topics": [
+        {
+          "name": "Spurious Bias",
+          "description": "Bias arising from irrelevant correlations in training data."
+        },
+        {
+          "name": "Bias Annotation",
+          "description": "Labeling data to identify and mitigate bias."
+        },
+        {
+          "name": "Common Bias Issues",
+          "description": "Frequent types of bias encountered in machine learning."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various tasks.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "Algorithm for training neural networks by minimizing error."
+        },
+        {
+          "name": "Artificial Neural Networks",
+          "description": "Networks composed of interconnected nodes or neurons."
+        }
+      ]
+    },
+    {
+      "name": "Model Training",
+      "description": "Processes involved in teaching a model to make predictions.",
+      "sub_topics": [
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual values."
+        },
+        {
+          "name": "Regression Techniques",
+          "description": "Methods for predicting continuous outcomes."
+        },
+        {
+          "name": "Classification Techniques",
+          "description": "Methods for categorizing data into discrete classes."
+        }
+      ]
+    },
+    {
+      "name": "Benchmarking",
+      "description": "The practice of comparing model performance against established standards.",
+      "sub_topics": [
+        {
+          "name": "Recent Benchmarks",
+          "description": "Latest standards and tests for evaluating models."
+        },
+        {
+          "name": "Standardized Benchmarks",
+          "description": "Uniform tests applied across different models for fair comparison."
+        },
+        {
+          "name": "Behavioral Benchmarks",
+          "description": "Tests that assess model behavior in real-world scenarios."
+        }
+      ]
+    },
+    {
+      "name": "Divergence Metrics",
+      "description": "Measures used to quantify the difference between probability distributions.",
+      "sub_topics": [
+        {
+          "name": "KL Divergence",
+          "description": "A measure of how one probability distribution diverges from a second."
+        },
+        {
+          "name": "Divergence Measures",
+          "description": "General methods for assessing differences between distributions."
+        },
+        {
+          "name": "Semantic Similarity",
+          "description": "Quantifying how similar two pieces of text are in meaning."
+        }
+      ]
+    },
+    {
+      "name": "Natural Language Understanding",
+      "description": "The ability of machines to comprehend and interpret human language.",
+      "sub_topics": [
+        {
+          "name": "Language Inference",
+          "description": "Drawing conclusions from text based on its meaning."
+        },
+        {
+          "name": "Syntactic Heuristics",
+          "description": "Rules for analyzing the structure of sentences."
+        },
+        {
+          "name": "Vector Similarity",
+          "description": "Measuring similarity between text representations in vector space."
+        }
+      ]
+    },
+    {
+      "name": "Complexity in Evaluation",
+      "description": "Challenges and intricacies involved in assessing model performance.",
+      "sub_topics": [
+        {
+          "name": "Grading Complexity",
+          "description": "Difficulties in assigning scores to model outputs."
+        },
+        {
+          "name": "Evaluation Aspects",
+          "description": "Different factors that influence the evaluation process."
+        },
+        {
+          "name": "Inconsistency in Benchmarks",
+          "description": "Variability in benchmark results across different contexts."
+        }
+      ]
+    },
+    {
+      "name": "Adversarial Testing",
+      "description": "Evaluating model robustness against malicious inputs.",
+      "sub_topics": [
+        {
+          "name": "Adversarial Benchmarks",
+          "description": "Tests designed to assess model vulnerability to attacks."
+        },
+        {
+          "name": "Impact of Adversarial Examples",
+          "description": "Effects of misleading inputs on model performance."
+        },
+        {
+          "name": "Chatbot Evaluation",
+          "description": "Assessing the effectiveness of conversational agents."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 29.8041,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

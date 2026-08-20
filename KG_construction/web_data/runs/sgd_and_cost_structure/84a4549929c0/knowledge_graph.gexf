@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-29">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Fundamental structures in machine learning that mimic the human brain." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Neural Nets&quot;, &quot;description&quot;: &quot;A specific type of neural network architecture.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neuron.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;A method for training neural networks by minimizing error.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus." />
+          <attvalue for="6" value="[&quot;Neurons&quot;, &quot;Activation Functions&quot;, &quot;Layers&quot;, &quot;Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Gradient Descent" label="Gradient Descent">
+        <attvalues>
+          <attvalue for="0" value="An optimization algorithm used to minimize the loss function." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;SGD (Stochastic Gradient Descent)&quot;, &quot;description&quot;: &quot;A variant of gradient descent that updates parameters using a subset of data.&quot;}, {&quot;name&quot;: &quot;Gradient Step&quot;, &quot;description&quot;: &quot;The adjustment made to parameters during optimization.&quot;}, {&quot;name&quot;: &quot;Convergence&quot;, &quot;description&quot;: &quot;The process of reaching a minimum loss value.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and linear algebra." />
+          <attvalue for="6" value="[&quot;Learning Rate&quot;, &quot;Convergence&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Batch Gradient Descent&quot;]" />
+          <attvalue for="7" value="[&quot;Gradient descent always finds the global minimum.&quot;, &quot;A smaller learning rate is always better.&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Linear regression optimization&quot;, &quot;Logistic regression&quot;, &quot;Support vector machines&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Optimization Techniques" label="Optimization Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods used to improve the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Slow Convergence&quot;, &quot;description&quot;: &quot;A challenge where the optimization process takes a long time to reach a solution.&quot;}, {&quot;name&quot;: &quot;Poor Conditioning&quot;, &quot;description&quot;: &quot;A situation where small changes in input can lead to large changes in output.&quot;}, {&quot;name&quot;: &quot;Saddle Points&quot;, &quot;description&quot;: &quot;Points in the loss landscape that are neither minima nor maxima.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and linear algebra, familiarity with machine learning concepts." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Adam Optimizer&quot;, &quot;Learning Rate Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;Optimization is only about finding the minimum&quot;, &quot;All optimization techniques work equally well for all problems&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Tuning hyperparameters&quot;, &quot;Improving model accuracy&quot;, &quot;Reducing training time&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Loss Functions" label="Loss Functions">
+        <attvalues>
+          <attvalue for="0" value="Functions that measure the difference between predicted and actual values." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Regression Loss&quot;, &quot;description&quot;: &quot;Loss functions used for regression tasks.&quot;}, {&quot;name&quot;: &quot;Classification Loss&quot;, &quot;description&quot;: &quot;Loss functions used for classification tasks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Mean Squared Error&quot;, &quot;Cross-Entropy Loss&quot;]" />
+          <attvalue for="7" value="[&quot;Loss functions only apply to regression problems.&quot;, &quot;Lower loss always means better model.&quot;]" />
+          <attvalue for="8" value="[&quot;Training machine learning models&quot;, &quot;Evaluating model performance&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Dynamics" label="Training Dynamics">
+        <attvalues>
+          <attvalue for="0" value="The processes and challenges involved in training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Local Updates&quot;, &quot;description&quot;: &quot;Parameter updates that occur based on local data.&quot;}, {&quot;name&quot;: &quot;Stuck in Local Minima&quot;, &quot;description&quot;: &quot;A situation where the optimization process fails to escape a local minimum.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Overfitting&quot;, &quot;Underfitting&quot;, &quot;Learning Rate&quot;, &quot;Batch Size&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Longer training times guarantee better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Network Architecture" label="Neural Network Architecture">
+        <attvalues>
+          <attvalue for="0" value="The design and structure of neural networks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Layer Types&quot;, &quot;description&quot;: &quot;Different types of layers used in neural networks, such as convolutional and fully connected.&quot;}, {&quot;name&quot;: &quot;Network Depth&quot;, &quot;description&quot;: &quot;The number of layers in a neural network, affecting its capacity.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Layers (Input, Hidden, Output)&quot;, &quot;Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;, &quot;Loss Functions&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data.&quot;, &quot;More layers always mean better performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Gradient Noise" label="Gradient Noise">
+        <attvalues>
+          <attvalue for="0" value="Variability in gradient estimates that can affect optimization." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Impact on Training&quot;, &quot;description&quot;: &quot;How gradient noise can influence convergence and performance.&quot;}, {&quot;name&quot;: &quot;Mitigation Strategies&quot;, &quot;description&quot;: &quot;Techniques to reduce the effects of gradient noise.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and optimization techniques." />
+          <attvalue for="6" value="[&quot;Stochastic Gradient Descent&quot;, &quot;Variance in Gradient Estimates&quot;]" />
+          <attvalue for="7" value="[&quot;Gradient noise is always detrimental to optimization.&quot;, &quot;All optimization algorithms are equally affected by gradient noise.&quot;]" />
+          <attvalue for="8" value="[&quot;Training deep learning models&quot;, &quot;Improving convergence in optimization problems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Eigenvalues in Optimization" label="Eigenvalues in Optimization">
+        <attvalues>
+          <attvalue for="0" value="Mathematical properties that influence the behavior of optimization algorithms." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Curvature Analysis&quot;, &quot;description&quot;: &quot;Examining the curvature of the loss surface to understand optimization dynamics.&quot;}, {&quot;name&quot;: &quot;Eigenvalue Flipping&quot;, &quot;description&quot;: &quot;A phenomenon that can affect convergence in optimization.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus." />
+          <attvalue for="6" value="[&quot;Matrix decomposition&quot;, &quot;Quadratic forms&quot;]" />
+          <attvalue for="7" value="[&quot;Eigenvalues are always positive&quot;, &quot;Only square matrices have eigenvalues&quot;]" />
+          <attvalue for="8" value="[&quot;Principal Component Analysis (PCA)&quot;, &quot;Convergence analysis of optimization algorithms&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Experimental Techniques" label="Experimental Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods for evaluating and improving machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Hyperparameter Tuning&quot;, &quot;description&quot;: &quot;The process of optimizing model parameters to improve performance.&quot;}, {&quot;name&quot;: &quot;Model Evaluation&quot;, &quot;description&quot;: &quot;Techniques for assessing the performance of machine learning models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Cross-validation&quot;, &quot;Hyperparameter tuning&quot;, &quot;A/B testing&quot;, &quot;Performance metrics&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Overfitting is only a problem with complex models&quot;]" />
+          <attvalue for="8" value="[&quot;Model selection&quot;, &quot;Improving model accuracy&quot;, &quot;Comparing different algorithms&quot;, &quot;Real-world A/B testing scenarios&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Neural Networks" target="Neural Network Architecture" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding Neural Networks is essential for grasping their architecture." />
+        </attvalues>
+      </edge>
+      <edge source="Gradient Descent" target="Training Dynamics" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training Dynamics involves the optimization process, which includes Gradient Descent." />
+        </attvalues>
+      </edge>
+      <edge source="Gradient Descent" target="Gradient Noise" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Gradient Noise affects the performance of Gradient Descent." />
+        </attvalues>
+      </edge>
+      <edge source="Optimization Techniques" target="Eigenvalues in Optimization" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Eigenvalues are important for understanding optimization methods." />
+        </attvalues>
+      </edge>
+      <edge source="Loss Functions" target="Gradient Descent" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Gradient Descent minimizes the loss function." />
+        </attvalues>
+      </edge>
+      <edge source="Training Dynamics" target="Experimental Techniques" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Experimental Techniques are used to evaluate training dynamics." />
+        </attvalues>
+      </edge>
+      <edge source="Experimental Techniques" target="Optimization Techniques" id="6">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.8478" />
+        </attvalues>
+      </edge>
+      <edge source="Experimental Techniques" target="Training Dynamics" id="7">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7766" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,445 @@
+Hidden Technical Debt in Machine Learning Systems
+D.Sculley,Gary Holt,Daniel Golovin,Eugene Davydov,Todd Phillips
+{dsculley,gholt,dgg,edavydov,toddphillips}@google.com
+Google,Inc.
+Dietmar Ebner,Vinay Chaudhary,Michael Young,Jean-Franc¸ois Crespo,Dan Dennison
+{ebner,vchaudhary,mwyoung,jfcrespo,dennison}@google.com
+Google,Inc.
+Abstract
+Machinelearningoffersafantasticallypowerfultoolkitforbuildingusefulcom-
+plex prediction systems quickly. This paper argues it is dangerous to think of
+thesequick winsas coming forfree. Usingthesoftwareengineering framework
+of technical debt, we find it is common to incur massive ongoing maintenance
+costs in real-world ML systems. We explore several ML-specific risk factors to
+account for in system design. These include boundary erosion, entanglement,
+hidden feedback loops, undeclared consumers, data dependencies, configuration
+issues,changesintheexternalworld,andavarietyofsystem-levelanti-patterns.
+1 Introduction
+As the machine learning (ML) community continues to accumulate years of experience with live
+systems, awide-spreadanduncomfortabletrendhasemerged: developinganddeploying MLsys-
+temsisrelativelyfastandcheap,butmaintainingthemovertimeisdifficultandexpensive.
+This dichotomy can be understood through the lens of technical debt, a metaphor introduced by
+Ward Cunninghamin 1992 tohelpreasonaboutthelongtermcostsincurredbymovingquicklyin
+softwareengineering.Aswithfiscaldebt,thereareoftensoundstrategicreasonstotakeontechnical
+debt. Not all debt is bad, but all debt needs to be serviced. Technical debt may be paid down
+by refactoring code, improving unit tests, deleting dead code, reducing dependencies, tightening
+APIs, and improving documentation [8]. The goal is not to add new functionality, but to enable
+futureimprovements,reduceerrors,andimprovemaintainability. Deferringsuchpaymentsresults
+incompoundingcosts. Hiddendebtisdangerousbecauseitcompoundssilently.
+Inthispaper,wearguethat MLsystemshaveaspecialcapacityforincurringtechnicaldebt,because
+theyhaveallofthemaintenanceproblemsoftraditionalcodeplusanadditionalsetof ML-specific
+issues. Thisdebtmaybedifficulttodetectbecauseitexistsatthesystemlevelratherthanthecode
+level. Traditionalabstractionsandboundariesmaybesubtlycorruptedorinvalidatedbythefactthat
+datainfluences MLsystembehavior. Typicalmethodsforpayingdowncodeleveltechnicaldebtare
+notsufficienttoaddress ML-specifictechnicaldebtatthesystemlevel.
+Thispaperdoesnotoffernovel MLalgorithms,butinsteadseekstoincreasethecommunity’saware-
+ness of the difficult tradeoffs that must be considered in practice over the long term. We focus on
+system-levelinteractionsandinterfacesasanareawhere MLtechnicaldebtmayrapidlyaccumulate.
+Atasystem-level,an MLmodelmaysilentlyerodeabstractionboundaries. Thetemptingre-useor
+chainingofinputsignalsmayunintentionallycoupleotherwisedisjointsystems. MLpackagesmay
+betreatedasblackboxes,resultinginlargemassesof“gluecode”orcalibrationlayersthatcanlock
+inassumptions. Changesintheexternalworldmayinfluencesystembehaviorinunintendedways.
+Evenmonitoring MLsystembehaviormayprovedifficultwithoutcarefuldesign.
+1
+
+2 Complex Models Erode Boundaries
+Traditional software engineering practice has shown that strong abstraction boundaries using en-
+capsulationandmodulardesignhelpcreatemaintainablecodeinwhichitiseasytomakeisolated
+changes and improvements. Strict abstraction boundaries help express the invariants and logical
+consistencyoftheinformationinputsandoutputsfromangivencomponent[8].
+Unfortunately, it is difficult to enforce strict abstraction boundaries for machine learning systems
+byprescribingspecificintendedbehavior. Indeed, MLisrequiredinexactlythosecaseswhenthe
+desiredbehaviorcannotbeeffectivelyexpressedinsoftwarelogicwithoutdependencyonexternal
+data. The real world does not fit into tidy encapsulation. Here we examine several ways that the
+resultingerosionofboundariesmaysignificantlyincreasetechnicaldebtin MLsystems.
+Entanglement. Machinelearningsystemsmixsignalstogether,entanglingthemandmakingiso-
+lation of improvements impossible. For instance, consider a system that uses features x ,...x in
+1 n
+a model. If we change the input distribution of values in x , the importance, weights, or use of
+1
+theremainingn−1 featuresmayallchange. Thisistruewhetherthemodelisretrainedfullyina
+batchstyleorallowedtoadaptinanonlinefashion. Addinganewfeaturex cancausesimilar
+n+1
+changes,ascanremovinganyfeaturex .Noinputsareeverreallyindependent.Werefertothishere
+j
+asthe CACEprinciple: Changing Anything Changes Everything. CACEappliesnotonlytoinput
+signals,butalsotohyper-parameters,learningsettings,samplingmethods,convergencethresholds,
+dataselection,andessentiallyeveryotherpossibletweak.
+Onepossiblemitigationstrategyistoisolatemodelsandserveensembles. Thisapproachisuseful
+insituationsinwhichsub-problemsdecomposenaturallysuchasindisjointmulti-classsettingslike
+[14]. However,inmanycasesensemblesworkwellbecausetheerrorsinthecomponentmodelsare
+uncorrelated. Relying on the combination creates a strong entanglement: improving an individual
+component model may actually make the system accuracy worse if the remaining errors are more
+stronglycorrelatedwiththeothercomponents.
+A second possible strategy is to focus on detecting changes in prediction behavior as they occur.
+Onesuchmethodwasproposedin[12],inwhichahigh-dimensionalvisualizationtoolwasusedto
+allowresearcherstoquicklyseeeffectsacrossmanydimensionsandslicings. Metricsthatoperate
+onaslice-by-slicebasismayalsobeextremelyuseful.
+Correction Cascades. Thereareoftensituationsinwhichmodelm forproblem Aexists,buta
+a
+solution for a slightly different problem A′ is required. In this case, it can be tempting to learn a
+modelm′ thattakesm asinputandlearnsasmallcorrectionasafastwaytosolvetheproblem.
+a a
+However,thiscorrectionmodelhascreatedanewsystemdependencyonm ,makingitsignificantly
+a
+more expensive to analyze improvements to that model in the future. The cost increases when
+correction models are cascaded, with a model for problem A′′ learned on top of m′, and so on,
+a
+for several slightly different test distributions. Once in place, a correction cascade can create an
+improvement deadlock, as improving the accuracy of any individual component actually leads to
+system-level detriments. Mitigation strategies are to augment m to learn the corrections directly
+a
+within the same model by adding features to distinguish among the cases, or to accept the cost of
+creatingaseparatemodelfor A′.
+Undeclared Consumers. Oftentimes, a prediction from a machine learning model m is made
+a
+widely accessible, either at runtime or by writing to files or logs that may later be consumed by
+othersystems. Withoutaccesscontrols,someoftheseconsumersmaybeundeclared,silentlyusing
+theoutputofagivenmodelasaninputtoanothersystem. Inmoreclassicalsoftwareengineering,
+theseissuesarereferredtoasvisibilitydebt[13].
+Undeclared consumers areexpensive atbestanddangerous atworst, because theycreateahidden
+tightcouplingofmodelm tootherpartsofthestack. Changestom willverylikelyimpactthese
+a a
+otherparts,potentiallyinwaysthatareunintended,poorlyunderstood,anddetrimental. Inpractice,
+thistightcouplingcanradicallyincreasethecostanddifficultyofmakinganychangestom atall,
+a
+even if they are improvements. Furthermore, undeclared consumers may create hidden feedback
+loops,whicharedescribedmoreindetailinsection 4.
+2
+
+Undeclaredconsumersmaybedifficulttodetectunlessthesystemisspecificallydesignedtoguard
+againstthiscase,forexamplewithaccessrestrictionsorstrictservice-levelagreements(SLAs). In
+theabsenceofbarriers, engineerswillnaturallyusethemostconvenientsignalathand, especially
+whenworkingagainstdeadlinepressures.
+3 Data Dependencies Cost Morethan Code Dependencies
+In [13], dependency debt is noted as a key contributor to code complexity and technical debt in
+classicalsoftwareengineeringsettings. Wehavefoundthatdatadependenciesin MLsystemscarry
+asimilarcapacityforbuildingdebt,butmaybemoredifficulttodetect. Codedependenciescanbe
+identifiedviastaticanalysisbycompilersandlinkers.Withoutsimilartoolingfordatadependencies,
+itcanbeinappropriatelyeasytobuildlargedatadependencychainsthatcanbedifficulttountangle.
+Unstable Data Dependencies. Tomovequickly,itisoftenconvenienttoconsumesignalsasinput
+features that are produced by other systems. However, some input signals are unstable, meaning
+that they qualitatively or quantitatively change behavior over time. This can happen implicitly,
+when the input signal comes from another machine learning model itself that updates over time,
+or a data-dependent lookup table, such as for computing TF/IDF scores or semantic mappings. It
+canalsohappenexplicitly,whentheengineeringownershipoftheinputsignalisseparatefromthe
+engineering ownership of the model that consumes it. In such cases, updates to the input signal
+may be made at any time. This is dangerous because even “improvements” to input signals may
+havearbitrarydetrimentaleffectsintheconsumingsystemthatarecostlytodiagnoseandaddress.
+Forexample,considerthecaseinwhichaninputsignalwaspreviouslymis-calibrated. Themodel
+consumingitlikelyfittothesemis-calibrations,andasilentupdatethatcorrectsthesignalwillhave
+suddenramificationsforthemodel.
+Onecommonmitigationstrategyforunstabledatadependencies istocreateaversionedcopyofa
+given signal. For example, rather than allowing a semantic mapping of words to topic clusters to
+changeovertime,itmightbereasonabletocreateafrozenversionofthismappinganduseituntil
+suchatimeasanupdatedversionhasbeenfullyvetted. Versioningcarriesitsowncosts,however,
+suchaspotentialstalenessandthecosttomaintainmultipleversionsofthesamesignalovertime.
+Underutilized Data Dependencies. In code, underutilized dependencies are packages that are
+mostly unneeded [13]. Similarly, underutilized data dependencies are input signals that provide
+little incremental modeling benefit. These can make an ML system unnecessarily vulnerable to
+change,sometimescatastrophicallyso,eventhoughtheycouldberemovedwithnodetriment.
+As an example, suppose that to ease the transition from an old product numbering scheme to new
+product numbers, both schemes are left in the system as features. New products get only a new
+number, but old products may have both and the model continues to rely on the old numbers for
+some products. A year later, the code that stops populating the database with the old numbers is
+deleted. Thiswillnotbeagooddayforthemaintainersofthe MLsystem.
+Underutilizeddatadependenciescancreepintoamodelinseveralways.
+• Legacy Features.Themostcommoncaseisthatafeature F isincludedinamodelearlyin
+itsdevelopment. Overtime,F ismaderedundantbynewfeaturesbutthisgoesundetected.
+• Bundled Features. Sometimes,agroupoffeaturesisevaluatedandfoundtobebeneficial.
+Becauseofdeadlinepressuresorsimilareffects,allthefeaturesinthebundleareaddedto
+themodeltogether,possiblyincludingfeaturesthataddlittleornovalue.
+• ǫ-Features. As machine learning researchers, it is tempting to improve model accuracy
+evenwhentheaccuracygainisverysmallorwhenthecomplexityoverheadmightbehigh.
+• Correlated Features. Oftentwofeaturesarestronglycorrelated,butoneismoredirectly
+causal.Many MLmethodshavedifficultydetectingthisandcreditthetwofeaturesequally,
+or may even pick the non-causal one. This results in brittleness if world behavior later
+changesthecorrelations.
+Underutilizeddependenciescanbedetectedviaexhaustiveleave-one-feature-outevaluations. These
+shouldberunregularlytoidentifyandremoveunnecessaryfeatures.
+3
+
+Figure 1: Onlyasmallfractionofreal-world MLsystemsiscomposedofthe MLcode, asshown
+bythesmallblackboxinthemiddle. Therequiredsurroundinginfrastructureisvastandcomplex.
+Static Analysisof Data Dependencies. Intraditionalcode,compilersandbuildsystemsperform
+static analysis of dependency graphs. Tools for static analysis of data dependencies are far less
+common, but are essential for error checking, tracking down consumers, and enforcing migration
+andupdates. Onesuchtoolistheautomatedfeaturemanagementsystemdescribedin[12], which
+enablesdatasourcesandfeaturestobeannotated. Automatedcheckscanthenberuntoensurethat
+alldependencieshavetheappropriateannotations,anddependencytreescanbefullyresolved. This
+kindoftoolingcanmakemigrationanddeletionmuchsaferinpractice.
+4 Feedback Loops
+Oneofthekeyfeaturesoflive MLsystemsisthattheyoftenendupinfluencingtheirownbehavior
+iftheyupdateovertime. Thisleadstoaformofanalysisdebt,inwhichitisdifficulttopredictthe
+behaviorofagivenmodelbeforeitisreleased. Thesefeedbackloopscantakedifferentforms,but
+theyareallmoredifficulttodetectandaddressiftheyoccurgraduallyovertime,asmaybethecase
+whenmodelsareupdatedinfrequently.
+Direct Feedback Loops. Amodelmaydirectlyinfluencetheselectionofitsownfuturetraining
+data. Itiscommonpracticetousestandardsupervisedalgorithms,althoughthetheoreticallycorrect
+solution would be to use bandit algorithms. The problem here is that bandit algorithms (such as
+contextualbandits[9])donotnecessarilyscalewelltothesizeofactionspacestypicallyrequiredfor
+real-worldproblems. Itispossibletomitigatetheseeffectsbyusingsomeamountofrandomization
+[3],orbyisolatingcertainpartsofdatafrombeinginfluencedbyagivenmodel.
+Hidden Feedback Loops. Direct feedback loops are costly to analyze, but at least they pose a
+statisticalchallengethat MLresearchersmayfindnaturaltoinvestigate[3]. Amoredifficultcaseis
+hiddenfeedbackloops,inwhichtwosystemsinfluenceeachotherindirectlythroughtheworld.
+Oneexampleofthismaybeiftwosystemsindependentlydeterminefacetsofawebpage,suchas
+one selecting products to show and another selecting related reviews. Improving one system may
+leadtochangesinbehaviorintheother,asusersbeginclickingmoreorlessontheothercomponents
+in reaction to the changes. Note that these hidden loops may exist between completely disjoint
+systems. Consider the case of two stock-market prediction models from two different investment
+companies. Improvements (or, more scarily, bugs) in one may influence the bidding and buying
+behavioroftheother.
+5 ML-System Anti-Patterns
+It may be surprising to the academic community to know that only a tiny fraction of the code in
+many ML systems is actually devoted to learning or prediction – see Figure 1. In the language of
+Linand Ryaboy,muchoftheremaindermaybedescribedas“plumbing”[11].
+Itisunfortunatelycommonforsystemsthatincorporatemachinelearningmethodstoendupwith
+high-debtdesignpatterns. Inthissection, weexamineseveralsystem-designanti-patterns[4]that
+cansurfaceinmachinelearningsystemsandwhichshouldbeavoidedorrefactoredwherepossible.
+4
+
+Glue Code. MLresearcherstendtodevelopgeneralpurposesolutionsasself-containedpackages.
+Awidevarietyoftheseareavailableasopen-sourcepackagesatplaceslikemloss.org,orfrom
+in-housecode,proprietarypackages,andcloud-basedplatforms.
+Using generic packages often results in a glue code system design pattern, in which a massive
+amount of supporting code is written to get data into and out of general-purpose packages. Glue
+code iscostlyinthelongtermbecause ittendstofreezeasystemtothepeculiarities ofaspecific
+package; testing alternatives may become prohibitively expensive. In this way, using a generic
+packagecaninhibitimprovements,becauseitmakesithardertotakeadvantageofdomain-specific
+properties or to tweak the objective function to achieve a domain-specific goal. Because a mature
+systemmightendupbeing(atmost)5%machinelearningcodeand(atleast)95%gluecode,itmay
+belesscostlytocreateacleannativesolutionratherthanre-useagenericpackage.
+Animportantstrategyforcombatingglue-codeistowrapblack-boxpackagesintocommon API’s.
+Thisallowssupportinginfrastructuretobemorereusableandreducesthecostofchangingpackages.
+Pipeline Jungles. As a special case of glue code, pipeline jungles often appear in data prepara-
+tion. Thesecanevolveorganically,asnewsignalsareidentifiedandnewinformationsourcesadded
+incrementally. Withoutcare,theresultingsystemforpreparingdatainan ML-friendlyformatmay
+become a jungle of scrapes, joins, and sampling steps, often with intermediate files output. Man-
+aging these pipelines, detecting errors and recovering from failures are all difficult and costly [1].
+Testing such pipelines often requires expensive end-to-end integration tests. All of this adds to
+technicaldebtofasystemandmakesfurtherinnovationmorecostly.
+Pipeline jungles can only be avoided by thinking holistically about data collection and feature ex-
+traction. Theclean-slateapproachofscrappingapipelinejungleandredesigningfromtheground
+upisindeedamajorinvestmentofengineeringeffort,butonethatcandramaticallyreduceongoing
+costsandspeedfurtherinnovation.
+Gluecodeandpipelinejunglesaresymptomaticofintegrationissuesthatmayhavearootcausein
+overlyseparated“research”and“engineering”roles. When MLpackagesaredevelopedinanivory-
+towersetting,theresultmayappearlikeblackboxestotheteamsthatemploytheminpractice. A
+hybridresearchapproachwhereengineersandresearchersareembeddedtogetheronthesameteams
+(andindeed,areoftenthesamepeople)canhelpreducethissourceoffrictionsignificantly[16].
+Dead Experimental Codepaths. Acommonconsequenceofgluecodeorpipelinejunglesisthat
+itbecomesincreasinglyattractiveintheshorttermtoperformexperimentswithalternativemethods
+byimplementingexperimentalcodepathsasconditionalbrancheswithinthemainproductioncode.
+Foranyindividualchange,thecostofexperimentinginthismannerisrelativelylow—noneofthe
+surroundinginfrastructureneedstobereworked. However,overtime,theseaccumulatedcodepaths
+cancreateagrowingdebtduetotheincreasingdifficultiesofmaintainingbackwardcompatibility
+and an exponential increase in cyclomatic complexity. Testing all possible interactions between
+codepaths becomes difficult or impossible. A famous example of the dangers here was Knight
+Capital’s system losing $465 million in 45 minutes, apparently because of unexpected behavior
+fromobsoleteexperimentalcodepaths[15].
+As with the case of dead flags in traditional software [13], it is often beneficial to periodically re-
+examineeachexperimentalbranchtoseewhatcanberippedout. Oftenonlyasmallsubsetofthe
+possiblebranchesisactuallyused;manyothersmayhavebeentestedonceandabandoned.
+Abstraction Debt. The above issues highlight the fact that there is a distinct lack of strong ab-
+stractionstosupport MLsystems. Zhengrecentlymadeacompellingcomparisonofthestate ML
+abstractionstothestateofdatabasetechnology[17],makingthepointthatnothinginthemachine
+learningliteraturecomesclosetothesuccessoftherelationaldatabaseasabasicabstraction. What
+istherightinterfacetodescribeastreamofdata,oramodel,oraprediction?
+Fordistributedlearninginparticular,thereremainsalackofwidelyacceptedabstractions. Itcould
+be argued that the widespread use of Map-Reduce in machine learning was driven by the void of
+strongdistributedlearningabstractions. Indeed,oneofthefewareasofbroadagreementinrecent
+yearsappearstobethat Map-Reduceisapoorabstractionforiterative MLalgorithms.
+5
+
+Theparameter-serverabstractionseemsmuchmorerobust,buttherearemultiplecompetingspeci-
+ficationsofthisbasicidea[5,10]. Thelackofstandardabstractionsmakesitalltooeasytoblurthe
+linesbetweencomponents.
+Common Smells. Insoftwareengineering,adesignsmellmayindicateanunderlyingproblemin
+a component or system [7]. We identify a few ML system smells, not hard-and-fast rules, but as
+subjectiveindicators.
+• Plain-Old-Data Type Smell. Therichinformationusedandproducedby MLsystemsis
+alltooftenencodedwithplaindatatypeslikerawfloatsandintegers. Inarobustsystem,
+amodelparametershouldknowifitisalog-oddsmultiplieroradecisionthreshold,anda
+predictionshouldknowvariouspiecesofinformationaboutthemodelthatproduceditand
+howitshouldbeconsumed.
+• Multiple-Language Smell. Itisoftentemptingtowriteaparticularpieceofasystemin
+agivenlanguage,especiallywhenthatlanguagehasaconvenientlibraryorsyntaxforthe
+taskathand.However,usingmultiplelanguagesoftenincreasesthecostofeffectivetesting
+andcanincreasethedifficultyoftransferringownershiptootherindividuals.
+• Prototype Smell. It is convenient to test new ideas in small scale via prototypes. How-
+ever,regularlyrelyingonaprototypingenvironmentmaybeanindicatorthatthefull-scale
+systemisbrittle,difficulttochange,orcouldbenefitfromimprovedabstractionsandinter-
+faces.Maintainingaprototypingenvironmentcarriesitsowncost,andthereisasignificant
+dangerthattimepressuresmayencourageaprototypingsystemtobeusedasaproduction
+solution. Additionally,resultsfoundatsmallscalerarelyreflecttherealityatfullscale.
+6 Configuration Debt
+Another potentially surprising area where debt can accumulate is in the configuration of machine
+learning systems. Any large system has a wide range of configurable options, including which
+featuresareused,howdataisselected,awidevarietyofalgorithm-specificlearningsettings,poten-
+tialpre-orpost-processing,verificationmethods,etc. Wehaveobservedthatbothresearchersand
+engineersmaytreatconfiguration(andextensionofconfiguration)asanafterthought. Indeed,veri-
+ficationortestingofconfigurationsmaynotevenbeseenasimportant. Inamaturesystemwhichis
+beingactivelydeveloped,thenumberoflinesofconfigurationcanfarexceedthenumberoflinesof
+thetraditionalcode. Eachconfigurationlinehasapotentialformistakes.
+Considerthefollowingexamples. Feature Awasincorrectlyloggedfrom 9/14 to 9/17. Feature Bis
+notavailableondatabefore 10/7. Thecodeusedtocomputefeature C hastochangefordatabefore
+andafter 11/1 becauseofchangestotheloggingformat. Feature Disnotavailableinproduction,so
+asubstitutefeatures D′ and D′′ mustbeusedwhenqueryingthemodelinalivesetting. Iffeature
+Z isused,thenjobsfortrainingmustbegivenextramemoryduetolookuptablesortheywilltrain
+inefficiently. Feature Qprecludestheuseoffeature Rbecauseoflatencyconstraints.
+All this messiness makes configuration hard to modify correctly, and hard to reason about. How-
+ever, mistakes in configuration can be costly, leading to serious loss of time, waste of computing
+resources,orproductionissues. Thisleadsustoarticulatethefollowingprinciplesofgoodconfigu-
+rationsystems:
+• Itshouldbeeasytospecifyaconfigurationasasmallchangefromapreviousconfiguration.
+• Itshouldbehardtomakemanualerrors,omissions,oroversights.
+• Itshouldbeeasytosee,visually,thedifferenceinconfigurationbetweentwomodels.
+• It should be easy to automatically assert and verify basic facts about the configuration:
+numberoffeaturesused,transitiveclosureofdatadependencies,etc.
+• Itshouldbepossibletodetectunusedorredundantsettings.
+• Configurationsshouldundergoafullcodereviewandbecheckedintoarepository.
+6
+
+7 Dealingwith Changesinthe External World
+Oneofthethingsthatmakes MLsystemssofascinatingisthattheyofteninteractdirectlywiththe
+externalworld. Experiencehasshownthattheexternalworldisrarelystable. Thisbackgroundrate
+ofchangecreatesongoingmaintenancecost.
+Fixed Thresholds in Dynamic Systems. It is often necessary to pick a decision threshold for a
+givenmodeltoperformsomeaction: topredicttrueorfalse,tomarkanemailasspamornotspam,
+toshowornotshowagivenad. Oneclassicapproachinmachinelearningistochooseathreshold
+fromasetofpossiblethresholds,inordertogetgoodtradeoffsoncertainmetrics,suchasprecision
+andrecall. However,suchthresholdsareoftenmanuallyset. Thusifamodelupdatesonnewdata,
+the old manually set threshold may be invalid. Manually updating many thresholds across many
+modelsistime-consumingandbrittle. Onemitigationstrategyforthiskindofproblemappearsin
+[14],inwhichthresholdsarelearnedviasimpleevaluationonheldoutvalidationdata.
+Monitoring and Testing. Unittestingofindividual components andend-to-end testsofrunning
+systems are valuable, but in the face of a changing world such tests are not sufficient to provide
+evidencethatasystemisworkingasintended. Comprehensivelivemonitoringofsystembehavior
+inrealtimecombinedwithautomatedresponseiscriticalforlong-termsystemreliability.
+Thekeyquestionis: whattomonitor? Testableinvariantsarenotalwaysobviousgiventhatmany
+MLsystemsareintendedtoadaptovertime. Weofferthefollowingstartingpoints.
+• Prediction Bias. Inasystemthatisworkingasintended,itshouldusuallybethecasethat
+the distribution of predicted labels is equal to the distribution of observed labels. This is
+by no means a comprehensive test, as it can be met by a null model that simply predicts
+average values of label occurrences without regard to the input features. However, it is a
+surprisingly useful diagnostic, and changes in metrics such as this are often indicative of
+anissuethatrequiresattention. Forexample,thismethodcanhelptodetectcasesinwhich
+theworldbehaviorsuddenlychanges,makingtrainingdistributionsdrawnfromhistorical
+data no longer reflective of current reality. Slicing prediction bias by various dimensions
+isolateissuesquickly,andcanalsobeusedforautomatedalerting.
+• Action Limits. Insystemsthatareusedtotakeactionsintherealworld,suchasbidding
+onitemsormarkingmessagesasspam,itcanbeusefultosetandenforceactionlimitsasa
+sanitycheck. Theselimitsshouldbebroadenoughnottotriggerspuriously. Ifthesystem
+hitsalimitforagivenaction,automatedalertsshouldfireandtriggermanualintervention
+orinvestigation.
+• Up-Stream Producers. Data is often fed through to a learning system from various up-
+streamproducers. Theseup-streamprocessesshouldbethoroughlymonitored,tested,and
+routinely meet a service level objective that takes the downstream ML system needs into
+account. Further any up-stream alerts must be propagated to the control plane of an ML
+systemtoensureitsaccuracy. Similarly,anyfailureofthe MLsystemtomeetestablished
+service level objectives be also propagated down-stream to allconsumers, and directly to
+theircontrolplanesifatallpossible.
+Becauseexternalchangesoccurinreal-time,responsemustalsooccurinreal-timeaswell. Relying
+onhumaninterventioninresponsetoalertpagesisonestrategy,butcanbebrittlefortime-sensitive
+issues.Creatingsystemstothatallowautomatedresponsewithoutdirecthumaninterventionisoften
+wellworththeinvestment.
+8 Other Areasof ML-related Debt
+Wenowbrieflyhighlightsomeadditionalareaswhere ML-relatedtechnicaldebtmayaccrue.
+Data Testing Debt. Ifdatareplacescodein MLsystems,andcodeshouldbetested,thenitseems
+clearthatsomeamountoftestingofinputdataiscriticaltoawell-functioningsystem. Basicsanity
+checksareuseful,asmoresophisticatedteststhatmonitorchangesininputdistributions.
+7
+
+Reproducibility Debt. Asscientists,itisimportantthatwecanre-runexperimentsandgetsimilar
+results,butdesigningreal-worldsystemstoallowforstrictreproducibilityisataskmadedifficultby
+randomizedalgorithms,non-determinisminherentinparallellearning,relianceoninitialconditions,
+andinteractionswiththeexternalworld.
+Process Management Debt. Mostoftheusecasesdescribedinthispaperhavetalkedaboutthe
+cost of maintaining a single model, but mature systems may have dozens or hundreds of models
+running simultaneously [14, 6]. This raises a wide range of important problems, including the
+problemofupdatingmanyconfigurationsformanysimilarmodelssafelyandautomatically,howto
+manageandassignresourcesamongmodelswithdifferentbusinesspriorities,andhowtovisualize
+anddetectblockagesintheflowofdatainaproductionpipeline. Developingtoolingtoaidrecovery
+from production incidents is also critical. An important system-level smell to avoid are common
+processeswithmanymanualsteps.
+Cultural Debt. There is sometimes a hard line between ML research and engineering, but this
+canbecounter-productive forlong-termsystemhealth. Itisimportanttocreateteamculturesthat
+rewarddeletionoffeatures,reductionofcomplexity,improvementsinreproducibility,stability,and
+monitoringtothesamedegreethatimprovementsinaccuracyarevalued. Inourexperience,thisis
+mostlikelytooccurwithinheterogeneousteamswithstrengthsinboth MLresearchandengineering.
+9 Conclusions: Measuring Debtand Payingit Off
+Technicaldebtisausefulmetaphor,butitunfortunatelydoesnotprovideastrictmetricthatcanbe
+trackedovertime.Howarewetomeasuretechnicaldebtinasystem,ortoassessthefullcostofthis
+debt? Simplynotingthatateamisstillabletomovequicklyisnotinitselfevidenceoflowdebtor
+goodpractices,sincethefullcostofdebtbecomesapparentonlyovertime. Indeed,movingquickly
+oftenintroducestechnicaldebt. Afewusefulquestionstoconsiderare:
+• Howeasilycananentirelynewalgorithmicapproachbetestedatfullscale?
+• Whatisthetransitiveclosureofalldatadependencies?
+• Howpreciselycantheimpactofanewchangetothesystembemeasured?
+• Doesimprovingonemodelorsignaldegradeothers?
+• Howquicklycannewmembersoftheteambebroughtuptospeed?
+Wehopethatthispapermayservetoencourageadditionaldevelopmentintheareasofmaintainable
+ML, including better abstractions, testing methodologies, and design patterns. Perhaps the most
+importantinsighttobegainedisthattechnicaldebtisanissuethatengineersandresearchersboth
+needtobeawareof. Researchsolutionsthatprovideatinyaccuracybenefitatthecostofmassive
+increasesinsystemcomplexityarerarelywisepractice. Eventheadditionofoneortwoseemingly
+innocuousdatadependenciescanslowfurtherprogress.
+Paying down ML-related technical debt requires a specific commitment, which can often only be
+achievedbyashiftinteamculture. Recognizing,prioritizing,andrewardingthiseffortisimportant
+forthelongtermhealthofsuccessful MLteams.
+Acknowledgments
+This paper owes much to the important lessons learned day to day in a culture that values both
+innovative ML research and strong engineering practice. Many colleagues have helped shape our
+thoughts here, and the benefit of accumulated folk wisdom cannot be overstated. We would like
+tospecificallyrecognizethefollowing: Roberto Bayardo,Luis Cobo,Sharat Chikkerur,Jeff Dean,
+Philip Henderson, Arnar Mar Hrafnkelsson, Ankur Jain, Joe Kovac, Jeremy Kubica, H. Brendan
+Mc Mahan,Satyaki Mahalanabis,Lan Nie,Michael Pohl,Abdul Salem,Sajid Siddiqi,Ricky Shan,
+Alan Skelly,Cory Williams,and Andrew Young.
+Ashortversionofthispaperwaspresentedatthe SE 4 MLworkshopin 2014 in Montreal,Canada.
+8
+
+References
+[1] R. Ananthanarayanan, V. Basker, S. Das, A. Gupta, H. Jiang, T. Qiu, A. Reznichenko, D. Ryabkov,
+M.Singh,and S.Venkataraman. Photon: Fault-tolerantandscalablejoiningofcontinuousdatastreams.
+In SIGMOD’13: Proceedingsofthe 2013 internationalconferenceon Managementofdata,pages 577–
+588,New York,NY,USA,2013.
+[2] A. Anonymous. Machine learning: The high-interest credit card of technical debt. SE 4 ML: Software
+Engineeringfor Machine Learning(NIPS 2014 Workshop).
+[3] L. Bottou, J. Peters, J. Quin˜onero Candela, D. X. Charles, D. M. Chickering, E. Portugaly, D. Ray,
+P.Simard,and E.Snelson.Counterfactualreasoningandlearningsystems:Theexampleofcomputational
+advertising. Journalof Machine Learning Research,14(Nov),2013.
+[4] W.J.Brown,H.W.Mc Cormick,T.J.Mowbray,and R.C.Malveau. Antipatterns: refactoringsoftware,
+architectures,andprojectsincrisis. 1998.
+[5] T.M.Chilimbi, Y.Suzue, J.Apacible, and K.Kalyanaraman. Projectadam: Buildinganefficientand
+scalabledeeplearningtrainingsystem. In 11 th USENIXSymposiumon Operating Systems Designand
+Implementation,OSDI’14,Broomfield,CO,USA,October 6-8,2014.,pages 571–582,2014.
+[6] B. Dalessandro, D. Chen, T. Raeder, C. Perlich, M. Han Williams, and F. Provost. Scalable hands-
+free transfer learning for online advertising. In Proceedings of the 20 th ACM SIGKDD international
+conferenceon Knowledgediscoveryanddatamining,pages 1573–1582.ACM,2014.
+[7] M.Fowler. Codesmells. http://http://martinfowler.com/bliki/Code Smell.html.
+[8] M.Fowler. Refactoring:improvingthedesignofexistingcode. Pearson Education India,1999.
+[9] J.Langfordand T.Zhang.Theepoch-greedyalgorithmformulti-armedbanditswithsideinformation.In
+Advancesinneuralinformationprocessingsystems,pages 817–824,2008.
+[10] M. Li, D. G. Andersen, J. W. Park, A. J. Smola, A. Ahmed, V. Josifovski, J. Long, E. J. Shekita, and
+B.Su. Scalingdistributedmachinelearningwiththeparameterserver. In 11 th USENIXSymposiumon
+Operating Systems Design and Implementation, OSDI ’14, Broomfield, CO, USA, October 6-8, 2014.,
+pages 583–598,2014.
+[11] J. Lin and D. Ryaboy. Scaling big data mining infrastructure: the twitter experience. ACM SIGKDD
+Explorations Newsletter,14(2):6–19,2013.
+[12] H. B. Mc Mahan, G. Holt, D. Sculley, M. Young, D. Ebner, J. Grady, L. Nie, T. Phillips, E. Davydov,
+D.Golovin,S.Chikkerur,D.Liu,M.Wattenberg,A.M.Hrafnkelsson,T.Boulos,and J.Kubica.Adclick
+prediction:aviewfromthetrenches.In The 19 th ACMSIGKDDInternational Conferenceon Knowledge
+Discoveryand Data Mining,KDD 2013,Chicago,IL,USA,August 11-14,2013,2013.
+[13] J. D. Morgenthaler, M. Gridnev, R. Sauciuc, and S. Bhansali. Searching for build debt: Experiences
+managing technical debt at google. In Proceedings of the Third International Workshop on Managing
+Technical Debt,2012.
+[14] D.Sculley,M.E.Otey,M.Pohl,B.Spitznagel,J.Hainsworth,and Y.Zhou. Detectingadversarialadver-
+tisementsinthewild. In Proceedingsofthe 17 th ACMSIGKDDInternational Conferenceon Knowledge
+Discoveryand Data Mining,San Diego,CA,USA,August 21-24,2011,2011.
+[15] Securitiesand E.Commission.SECCharges Knight Capital With Violationsof Market Access Rule,2013.
+[16] A.Spector,P.Norvig,and S.Petrov.Google’shybridapproachtoresearch.Communicationsofthe ACM,
+55 Issue 7,2012.
+[17] A.Zheng.Thechallengesofbuildingmachinelearningtoolsforthemasses.SE 4 ML:Software Engineer-
+ingfor Machine Learning(NIPS 2014 Workshop).
+9

@@ -1,0 +1,11 @@
+﻿case_id,goal_id,tier,status,has_nonempty_plan,within_daily_limit,has_feasibility_status,time_constraint_handled,per_item_limit_warning,known_or_mastered_not_repeated,target_mapping_present,day_count,max_daily_minutes_observed
+G1-foundation,G1,foundation,generated,True,False,True,True,True,True,True,14,112
+G1-advanced,G1,advanced,generated,True,False,True,True,True,True,True,14,98
+G2-foundation,G2,foundation,generated,True,False,True,True,True,True,True,14,112
+G2-advanced,G2,advanced,generated,True,False,True,True,True,True,True,14,98
+G3-foundation,G3,foundation,generated,True,False,True,True,True,True,True,14,112
+G3-advanced,G3,advanced,generated,True,False,True,True,True,True,True,14,98
+G4-foundation,G4,foundation,generated,True,False,True,True,True,True,True,14,112
+G4-advanced,G4,advanced,generated,True,False,True,True,True,True,True,14,98
+G5-foundation,G5,foundation,generated,True,False,True,True,True,True,True,14,112
+G5-advanced,G5,advanced,generated,True,False,True,True,True,True,True,14,98

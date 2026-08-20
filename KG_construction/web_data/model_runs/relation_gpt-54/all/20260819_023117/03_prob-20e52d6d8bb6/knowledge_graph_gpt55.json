@@ -1,0 +1,198 @@
+{
+  "nodes": [
+    {
+      "id": "Probability Theory",
+      "description": "The mathematical framework for quantifying uncertainty.",
+      "sub_topics": "[{\"name\": \"Probability\", \"description\": \"The measure of the likelihood of an event.\"}, {\"name\": \"Conditional Probability\", \"description\": \"The probability of an event given that another event has occurred.\"}, {\"name\": \"Marginal Probability\", \"description\": \"The probability of an event irrespective of other events.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of algebra and calculus.",
+      "key_sub_concepts": "[\"Random Variables\", \"Probability Distributions\", \"Bayes' Theorem\", \"Law of Large Numbers\"]",
+      "common_misconceptions": "[\"Probability is the same as chance\", \"Independent events cannot affect each other\"]",
+      "practical_applications": "[\"Statistical inference\", \"Machine learning algorithms\", \"Risk assessment\", \"Game theory\"]"
+    },
+    {
+      "id": "Probability Distributions",
+      "description": "Functions that describe the likelihood of different outcomes in a random variable.",
+      "sub_topics": "[{\"name\": \"Probability Density Function\", \"description\": \"A function that describes the relative likelihood for a continuous random variable.\"}, {\"name\": \"Probability Mass Function\", \"description\": \"A function that gives the probability of discrete outcomes.\"}, {\"name\": \"Normal Distribution\", \"description\": \"A continuous probability distribution characterized by a bell-shaped curve.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and algebra.",
+      "key_sub_concepts": "[\"Discrete Probability Distributions\", \"Continuous Probability Distributions\"]",
+      "common_misconceptions": "[\"All distributions are normal\", \"Probability distributions only apply to large datasets\"]",
+      "practical_applications": "[\"Risk assessment in finance\", \"Machine learning model evaluation\"]"
+    },
+    {
+      "id": "Information Theory",
+      "description": "The study of quantification, storage, and communication of information.",
+      "sub_topics": "[{\"name\": \"Entropy\", \"description\": \"A measure of uncertainty or randomness in a probability distribution.\"}, {\"name\": \"KL Divergence\", \"description\": \"A measure of how one probability distribution diverges from a second expected probability distribution.\"}, {\"name\": \"Shannon Entropy\", \"description\": \"A specific measure of entropy used in information theory.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of probability and statistics.",
+      "key_sub_concepts": "[\"Entropy\", \"Mutual Information\"]",
+      "common_misconceptions": "[\"Information is the same as data\", \"Higher entropy means more useful information\"]",
+      "practical_applications": "[\"Data compression\", \"Error correction in communication systems\"]"
+    },
+    {
+      "id": "Covariance",
+      "description": "A measure of how much two random variables change together.",
+      "sub_topics": "[{\"name\": \"Covariance Matrix\", \"description\": \"A matrix that contains the covariances between pairs of variables.\"}, {\"name\": \"Covariance Example\", \"description\": \"Illustrative examples demonstrating the concept of covariance.\"}, {\"name\": \"Covariance Dependent\", \"description\": \"Situations where covariance is influenced by other variables.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and probability.",
+      "key_sub_concepts": "[\"Variance\", \"Correlation\"]",
+      "common_misconceptions": "[\"Covariance indicates the strength of a relationship\", \"Covariance is always a positive value\"]",
+      "practical_applications": "[\"Portfolio optimization in finance\", \"Feature selection in machine learning\"]"
+    },
+    {
+      "id": "Random Variables",
+      "description": "Variables whose values depend on the outcomes of a random phenomenon.",
+      "sub_topics": "[{\"name\": \"Discrete Variables\", \"description\": \"Random variables that can take on a countable number of values.\"}, {\"name\": \"Continuous Variables\", \"description\": \"Random variables that can take on an infinite number of values within a given range.\"}, {\"name\": \"Mixture Distributions\", \"description\": \"Probability distributions that are a combination of two or more distributions.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of probability and statistics.",
+      "key_sub_concepts": "[\"Discrete Random Variables\", \"Continuous Random Variables\"]",
+      "common_misconceptions": "[\"Random variables are the same as regular variables\", \"All random variables are uniformly distributed\"]",
+      "practical_applications": "[\"Statistical modeling\", \"Risk assessment in finance\"]"
+    },
+    {
+      "id": "Probabilistic Models",
+      "description": "Models that incorporate randomness and uncertainty in their predictions.",
+      "sub_topics": "[{\"name\": \"Multinomial Distribution\", \"description\": \"A generalization of the binomial distribution for outcomes with more than two categories.\"}, {\"name\": \"Probabilistic Relationships\", \"description\": \"Relationships that express dependencies between random variables.\"}, {\"name\": \"Structured Probabilistic Models\", \"description\": \"Models that represent complex dependencies among random variables.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and probability theory.",
+      "key_sub_concepts": "[\"Bayesian Inference\", \"Markov Models\"]",
+      "common_misconceptions": "[\"Probabilistic models are only for complex problems.\", \"All predictions from probabilistic models are uncertain.\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Financial Forecasting\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": "[{\"name\": \"Activation Function\", \"description\": \"Functions that determine the output of a neural network node.\"}, {\"name\": \"Loss Function\", \"description\": \"A function that quantifies the difference between predicted and actual outcomes.\"}, {\"name\": \"Backpropagation\", \"description\": \"An algorithm for training neural networks by minimizing the loss function.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Statistical Inference",
+      "description": "The process of drawing conclusions about populations based on sample data.",
+      "sub_topics": "[{\"name\": \"Hypothesis Testing\", \"description\": \"A method for testing a claim or hypothesis about a parameter.\"}, {\"name\": \"Confidence Intervals\", \"description\": \"Ranges of values that are likely to contain a population parameter.\"}, {\"name\": \"Regression Analysis\", \"description\": \"A statistical method for modeling the relationship between variables.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and probability.",
+      "key_sub_concepts": "[\"Hypothesis Testing\", \"Confidence Intervals\"]",
+      "common_misconceptions": "[\"Statistical significance implies practical significance.\", \"A larger sample size always guarantees accurate results.\"]",
+      "practical_applications": "[\"Market research analysis\", \"Clinical trial evaluations\"]"
+    },
+    {
+      "id": "Mathematical Functions",
+      "description": "Functions that describe relationships between variables in mathematical terms.",
+      "sub_topics": "[{\"name\": \"Generalized Functions\", \"description\": \"Functions that extend the concept of traditional functions.\"}, {\"name\": \"Density Functions\", \"description\": \"Functions that describe the distribution of probabilities.\"}, {\"name\": \"Softplus Function\", \"description\": \"A smooth approximation of the ReLU activation function.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of algebra and calculus.",
+      "key_sub_concepts": "[\"Linear Functions\", \"Non-linear Functions\"]",
+      "common_misconceptions": "[\"Functions can have multiple outputs for a single input.\", \"All functions are linear.\"]",
+      "practical_applications": "[\"Modeling real-world phenomena\", \"Data analysis and predictions\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Probability Theory",
+      "to": "Probability Distributions",
+      "relation": "prerequisite",
+      "reason": "Probability distributions are a core concept built from the foundations of probability theory."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Covariance",
+      "relation": "prerequisite",
+      "reason": "Covariance depends on probabilistic concepts such as expectation and joint behavior of random variables."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Statistical Inference",
+      "relation": "prerequisite",
+      "reason": "Statistical inference is grounded in probabilistic reasoning about sampling, likelihood, and uncertainty."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Information Theory",
+      "relation": "prerequisite",
+      "reason": "Information theory builds on probabilistic definitions of uncertainty, entropy, and events."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Probabilistic Models",
+      "relation": "prerequisite",
+      "reason": "Probabilistic models require foundational understanding of uncertainty and probabilistic reasoning."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Statistical Inference",
+      "relation": "prerequisite",
+      "reason": "Statistical inference requires understanding distributions of data, estimators, and sampling behavior."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Information Theory",
+      "relation": "prerequisite",
+      "reason": "Information-theoretic quantities are defined from probability distributions over outcomes."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Probabilistic Models",
+      "relation": "prerequisite",
+      "reason": "Probabilistic models are specified using distributions over variables and outcomes."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Random Variables",
+      "relation": "similarity",
+      "score": 0.7682
+    },
+    {
+      "from": "Random Variables",
+      "to": "Probability Distributions",
+      "relation": "prerequisite",
+      "reason": "A probability distribution is defined over a random variable, so the concept of random variables must come first."
+    },
+    {
+      "from": "Random Variables",
+      "to": "Covariance",
+      "relation": "prerequisite",
+      "reason": "Covariance measures joint variation between random variables, so understanding random variables is necessary first."
+    },
+    {
+      "from": "Random Variables",
+      "to": "Probabilistic Models",
+      "relation": "prerequisite",
+      "reason": "Probabilistic models represent uncertain quantities as random variables, so that concept is necessary first."
+    },
+    {
+      "from": "Mathematical Functions",
+      "to": "Probability Theory",
+      "relation": "prerequisite",
+      "reason": "Probability theory relies on function-based mathematical relationships such as mappings, densities, and transformations."
+    },
+    {
+      "from": "Mathematical Functions",
+      "to": "Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Neural networks are built from compositions of mathematical functions such as linear maps and activations."
+    }
+  ]
+}

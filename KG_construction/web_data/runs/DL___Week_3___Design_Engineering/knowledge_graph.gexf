@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-06-17">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="similarity" type="double" />
+      <attribute id="12" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="softmax and probability in neural networks" label="softmax and probability in neural networks">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and probability theory." />
+          <attvalue for="6" value="[&quot;Softmax function&quot;, &quot;Probability distribution&quot;]" />
+          <attvalue for="7" value="[&quot;Softmax outputs are binary&quot;, &quot;Softmax is only used in classification tasks&quot;]" />
+          <attvalue for="8" value="[&quot;Multi-class classification&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="softmax function applications in machine learning" label="softmax function applications in machine learning">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and probability theory." />
+          <attvalue for="6" value="[&quot;Probability distribution&quot;, &quot;Neural networks&quot;]" />
+          <attvalue for="7" value="[&quot;Softmax outputs are probabilities for all classes&quot;, &quot;Softmax can be used for regression tasks&quot;]" />
+          <attvalue for="8" value="[&quot;Multi-class classification problems&quot;, &quot;Output layer of neural networks&quot;]" />
+        </attvalues>
+      </node>
+      <node id="LU activation function in deep learning" label="LU activation function in deep learning">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and activation functions." />
+          <attvalue for="6" value="[&quot;Linear Units&quot;, &quot;Non-linearity in neural networks&quot;]" />
+          <attvalue for="7" value="[&quot;LU activation is the same as ReLU&quot;, &quot;LU activation is only applicable in specific architectures&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="engineers' lecture series on machine learning" label="engineers' lecture series on machine learning">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning is the same as artificial intelligence.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Predictive analytics in business&quot;, &quot;Image recognition in technology&quot;]" />
+        </attvalues>
+      </node>
+      <node id="machine learning for predictive modeling" label="machine learning for predictive modeling">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming in Python or R." />
+          <attvalue for="6" value="[&quot;Supervised learning&quot;, &quot;Regression analysis&quot;, &quot;Classification techniques&quot;, &quot;Model evaluation metrics&quot;]" />
+          <attvalue for="7" value="[&quot;Predictive modeling guarantees accurate predictions&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Sales forecasting&quot;, &quot;Customer churn prediction&quot;, &quot;Risk assessment in finance&quot;, &quot;Healthcare outcome predictions&quot;]" />
+        </attvalues>
+      </node>
+      <node id="learning for design in AI applications" label="learning for design in AI applications">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of AI and design principles." />
+          <attvalue for="6" value="[&quot;User-centered design&quot;, &quot;Iterative prototyping&quot;, &quot;Feedback loops&quot;, &quot;Ethical considerations in AI design&quot;]" />
+          <attvalue for="7" value="[&quot;AI can design without human input&quot;, &quot;Design is only about aesthetics&quot;, &quot;All AI applications require complex algorithms&quot;]" />
+          <attvalue for="8" value="[&quot;Creating user-friendly interfaces&quot;, &quot;Developing AI-driven design tools&quot;, &quot;Enhancing user experience in applications&quot;]" />
+        </attvalues>
+      </node>
+      <node id="LU activation function variations and their impact" label="LU activation function variations and their impact">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and activation functions." />
+          <attvalue for="6" value="[&quot;LU activation function&quot;, &quot;Variations of LU activation&quot;, &quot;Impact on model performance&quot;]" />
+          <attvalue for="7" value="[&quot;LU activation is the same as ReLU&quot;, &quot;All activation functions perform equally well&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="learning design principles in machine learning" label="learning design principles in machine learning">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;User-centered design&quot;, &quot;Iterative design process&quot;, &quot;Feedback loops&quot;, &quot;Evaluation metrics&quot;]" />
+          <attvalue for="7" value="[&quot;Learning design is only about aesthetics&quot;, &quot;Machine learning models do not require user input&quot;]" />
+          <attvalue for="8" value="[&quot;Designing user-friendly ML interfaces&quot;, &quot;Creating effective training datasets&quot;, &quot;Improving model interpretability&quot;]" />
+        </attvalues>
+      </node>
+      <node id="LU max function and its computational efficiency" label="LU max function and its computational efficiency">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and matrix operations." />
+          <attvalue for="6" value="[&quot;LU decomposition&quot;, &quot;Max function properties&quot;]" />
+          <attvalue for="7" value="[&quot;LU max function is the same as standard max function&quot;, &quot;LU decomposition is only applicable to square matrices&quot;]" />
+          <attvalue for="8" value="[&quot;Solving linear systems efficiently&quot;, &quot;Optimization problems in machine learning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="engineers' approach to backpropagation in neural networks" label="engineers' approach to backpropagation in neural networks">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus, linear algebra, and introductory machine learning concepts." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Chain Rule&quot;, &quot;Loss Function&quot;, &quot;Activation Functions&quot;]" />
+          <attvalue for="7" value="[&quot;Backpropagation is the same as training a neural network&quot;, &quot;Only the output layer is updated during backpropagation&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game AI&quot;, &quot;Predictive analytics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="machine learning techniques for data analysis" label="machine learning techniques for data analysis">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Data Preprocessing&quot;, &quot;Model Evaluation&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning can replace human intuition entirely.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Customer segmentation&quot;, &quot;Predictive maintenance&quot;, &quot;Sentiment analysis&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="definition and properties of LU decomposition" label="definition and properties of LU decomposition">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, including matrices and matrix operations." />
+          <attvalue for="6" value="[&quot;Matrix factorization&quot;, &quot;Solving linear systems&quot;]" />
+          <attvalue for="7" value="[&quot;LU decomposition can be applied to any matrix&quot;, &quot;LU decomposition is unique for a given matrix&quot;]" />
+          <attvalue for="8" value="[&quot;Solving systems of linear equations&quot;, &quot;Computational efficiency in numerical methods&quot;]" />
+        </attvalues>
+      </node>
+      <node id="softmax and its role in classification tasks" label="softmax and its role in classification tasks">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and probability theory." />
+          <attvalue for="6" value="[&quot;Exponential function&quot;, &quot;Normalization&quot;, &quot;Probability distribution&quot;]" />
+          <attvalue for="7" value="[&quot;Softmax outputs are probabilities for binary classification only&quot;, &quot;Softmax can be used for regression tasks&quot;]" />
+          <attvalue for="8" value="[&quot;Multi-class classification problems&quot;, &quot;Neural network output layer for classification&quot;]" />
+        </attvalues>
+      </node>
+      <node id="activation functions in neural network architectures" label="activation functions in neural network architectures">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and calculus." />
+          <attvalue for="6" value="[&quot;Sigmoid function&quot;, &quot;ReLU (Rectified Linear Unit)&quot;, &quot;Tanh function&quot;, &quot;Softmax function&quot;]" />
+          <attvalue for="7" value="[&quot;Activation functions are only used in the output layer.&quot;, &quot;All activation functions are equivalent.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game AI&quot;, &quot;Financial forecasting&quot;]" />
+        </attvalues>
+      </node>
+      <node id="designing machine learning systems for engineers" label="designing machine learning systems for engineers">
+        <attvalues>
+          <attvalue for="0" value="" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Data preprocessing&quot;, &quot;Model selection&quot;, &quot;Evaluation metrics&quot;, &quot;Overfitting and underfitting&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning requires extensive math knowledge&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Predictive maintenance in engineering&quot;, &quot;Quality control in manufacturing&quot;, &quot;Optimization of resource allocation&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="softmax and probability in neural networks" target="softmax and its role in classification tasks" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="understanding softmax requires knowledge of probability in neural networks" />
+        </attvalues>
+      </edge>
+      <edge source="LU activation function in deep learning" target="LU activation function variations and their impact" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="understanding the LU activation function is necessary to explore its variations" />
+        </attvalues>
+      </edge>
+      <edge source="engineers' lecture series on machine learning" target="designing machine learning systems for engineers" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="lecture series provides foundational knowledge for system design" />
+        </attvalues>
+      </edge>
+      <edge source="machine learning for predictive modeling" target="machine learning techniques for data analysis" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="predictive modeling relies on data analysis techniques" />
+          <attvalue for="11" value="0.771" />
+        </attvalues>
+      </edge>
+      <edge source="LU activation function variations and their impact" target="LU max function and its computational efficiency" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="variations of LU activation lead to understanding specific functions like LU max" />
+        </attvalues>
+      </edge>
+      <edge source="learning design principles in machine learning" target="learning for design in AI applications" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="design principles are foundational for applying learning in AI" />
+        </attvalues>
+      </edge>
+      <edge source="engineers' approach to backpropagation in neural networks" target="activation functions in neural network architectures" id="6">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="backpropagation requires understanding of activation functions" />
+        </attvalues>
+      </edge>
+      <edge source="softmax and its role in classification tasks" target="softmax function applications in machine learning" id="7">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="applications of softmax depend on its role in classification" />
+          <attvalue for="11" value="0.7387" />
+        </attvalues>
+      </edge>
+      <edge source="designing machine learning systems for engineers" target="learning design principles in machine learning" id="8">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.8479" />
+        </attvalues>
+      </edge>
+      <edge source="designing machine learning systems for engineers" target="engineers' lecture series on machine learning" id="9">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.8164" />
+        </attvalues>
+      </edge>
+      <edge source="designing machine learning systems for engineers" target="machine learning for predictive modeling" id="10">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.7206" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

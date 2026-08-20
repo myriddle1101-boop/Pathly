@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 11.5416,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 6508\n[2] 清洗后词数: 6578\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 28\n[5] 分块数（过滤后）: 28\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=228\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Guest Lecture: Julie Kallini Lecture 14: Tokenization and Multilinguality Announcements Today is the first guest lecture. We will be taking attendance for ...\n\n[Chunk 2] words=197\nWhat is a word? How many words are in this sentence? 17 whitespace-separated words + 2 punctuation marks WWee’’dd ssaatt bbaacckk oonn tthhee ggrraassss,, aanndd ttiimmee fflleeww bbyy aass wwee llooookkeedd aatt tthhee ...\n\n[Chunk 3] words=245\nHow do language models see text? For a language model: The fundamental units of language are tokens  Tokenization is the process of breaking text into tokens  A tokenizer translates between text and a sequence of token...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

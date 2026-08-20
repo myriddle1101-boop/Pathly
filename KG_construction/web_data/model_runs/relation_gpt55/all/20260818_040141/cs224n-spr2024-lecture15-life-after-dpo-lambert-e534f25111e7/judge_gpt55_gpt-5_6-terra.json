@@ -1,0 +1,107 @@
+{
+  "created_at": "2026-08-18T18:57:23.098165+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7",
+  "file_name": "cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 10,
+  "topic_metrics": {
+    "precision": 0.6667,
+    "recall": 0.5455,
+    "f1": 0.6,
+    "tp": 6,
+    "fp": 3,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 1.0,
+    "recall": 0.2,
+    "f1": 0.3333,
+    "tp": 1,
+    "fp": 0,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "DPO Models",
+      "Reward Models",
+      "Language Models",
+      "Model Evaluation",
+      "Assistant Conversations",
+      "Sampling Techniques"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Training Models",
+        "reason": "Too generic to represent a distinct learning concept; the source discusses specific training methods instead."
+      },
+      {
+        "name": "Model Characteristics",
+        "reason": "A generic category rather than a substantive concept, despite the source listing characteristics of DPO."
+      },
+      {
+        "name": "Model Discussions",
+        "reason": "Not a meaningful technical learning concept in the source."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Reinforcement Learning from Human Feedback (RLHF)",
+        "reason": "A central technical method discussed throughout, including its objective, data, and use in major chat models."
+      },
+      {
+        "name": "Instruction Fine-Tuning (IFT)",
+        "reason": "Explicitly defined and presented as a key step for adapting base language models to instruction/chat formats."
+      },
+      {
+        "name": "Preference Fine-Tuning",
+        "reason": "Explicitly defined as fine-tuning language models using labeled preference data, including with RL or DPO."
+      },
+      {
+        "name": "Proximal Policy Optimization (PPO)",
+        "reason": "A major RL optimizer repeatedly contrasted with DPO and used in RLHF experiments."
+      },
+      {
+        "name": "Pairwise Preferences",
+        "reason": "The source identifies pairwise preference labels as effective training data for preference/reward modeling and DPO."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Language Models",
+        "to": "DPO Models",
+        "reason": "DPO is presented as optimization of an LLM policy using preference data, so understanding language models is a necessary foundation."
+      }
+    ],
+    "rejected_prerequisites": [],
+    "missing_prerequisites": [
+      {
+        "from": "Instruction Fine-Tuning (IFT)",
+        "to": "Reinforcement Learning from Human Feedback (RLHF)",
+        "reason": "The presentation treats instruction/SFT-trained models as the starting point before subsequent RLHF-style post-training."
+      },
+      {
+        "from": "Pairwise Preferences",
+        "to": "Reward Models",
+        "reason": "Reward modeling is described as estimating whether a pairwise preference is true and training rewards to separate chosen from rejected completions."
+      },
+      {
+        "from": "Pairwise Preferences",
+        "to": "DPO Models",
+        "reason": "DPO is explicitly described as learning directly from preferences."
+      },
+      {
+        "from": "Reward Models",
+        "to": "Proximal Policy Optimization (PPO)",
+        "reason": "PPO-based RLHF uses a reward model to score generated outputs during optimization."
+      }
+    ],
+    "overall_note": "The predictions capture DPO, reward modeling, and evaluation, but omit the core RLHF, IFT, preference-data, and PPO concepts that structure the presentation."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7_ledger.csv"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 4,
+  "prerequisites": [
+    {
+      "from": "Learning Algorithms",
+      "to": "Autoencoders",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding how models are trained is necessary before learning autoencoders as trainable neural models."
+    },
+    {
+      "from": "Neural Network Components",
+      "to": "Autoencoders",
+      "relation_type": "strong_prerequisite",
+      "reason": "Autoencoders are neural networks, so core neural network elements must be understood first."
+    },
+    {
+      "from": "Training Techniques",
+      "to": "Autoencoders",
+      "relation_type": "strong_prerequisite",
+      "reason": "Learning autoencoders requires understanding optimization and training methods used to fit them."
+    },
+    {
+      "from": "Autoencoders",
+      "to": "Autoencoder Variants",
+      "relation_type": "strong_prerequisite",
+      "reason": "Variants build directly on the basic autoencoder concept."
+    }
+  ]
+}

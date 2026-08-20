@@ -1,0 +1,161 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 1,
+  "candidate_count": 6,
+  "topics_count": 15,
+  "candidates": [
+    {
+      "name": "python document_chat",
+      "avg_score": 0.6489,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "document chat",
+      "avg_score": 0.6308,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "document_chat py",
+      "avg_score": 0.626,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "document_chat",
+      "avg_score": 0.6171,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "conversation machine",
+      "avg_score": 0.5421,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "documents conversation",
+      "avg_score": 0.5363,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "python document_chat implementation",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "document chat functionality in Python",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "document_chat library usage in Python",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "document_chat API integration",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "conversation machine learning models",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "documents conversation analysis techniques",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "real-time document chat applications",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "document chat user interface design",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "document chat performance optimization",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "conversation machine architecture",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "documents conversation data processing",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "document chat security considerations",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "python document_chat error handling",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "document chat use cases in business",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "conversation machine training datasets",
+      "description": "",
+      "sub_topics": []
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 16.8231,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

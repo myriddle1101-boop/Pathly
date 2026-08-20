@@ -1,0 +1,28 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 4,
+  "prerequisites": [
+    {
+      "from": "Training Models",
+      "to": "Model Evaluation",
+      "reason": "Model evaluation requires understanding the training process."
+    },
+    {
+      "from": "Language Models",
+      "to": "Assistant Conversations",
+      "reason": "Assistant conversations rely on language models for generating responses."
+    },
+    {
+      "from": "Model Characteristics",
+      "to": "Model Evaluation",
+      "reason": "Understanding model characteristics is essential for effective evaluation."
+    },
+    {
+      "from": "Sampling Techniques",
+      "to": "Training Models",
+      "reason": "Sampling techniques are necessary for selecting data for training models."
+    }
+  ]
+}

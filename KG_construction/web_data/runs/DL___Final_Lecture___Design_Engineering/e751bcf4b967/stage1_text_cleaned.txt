@@ -1,0 +1,172 @@
+Deep Learning
+Lecture 8: Design an Agent
+Pietro Ferraro
+
+Table of 1. Instructions
+Content
+Imperial College London Deep Learning
+
+What Have We Learned?
+Core Topics:
+l Neuralnetworksanddeeplearning
+l Convolutionalneuralnetworks
+l Markovchains
+l Markov Decision Processes
+l Reinforcementlearning
+l Transformersandlargelanguagemodels
+Imperial College London Deep Learning
+
+From Modelsto Agents
+An AIagentisasystemthat:
+1. Observesitsenvironment
+2. Buildsaninternalrepresentationoftheworld
+3. Takesactionstoachieveagoal
+Imperial College London Deep Learning
+
+Agent Architecture
+Figure:Source:Medium,Sudarshan Poudel
+Imperial College London Deep Learning
+
+Today's Activity
+Todayyouwilldesignan AIagenttosolveatask.
+Youwillworkinsmallgroups.
+Yourgoalisnotonlytodescribetheidea,buttoformulatethewholelearning
+pipeline,fromwhere Icollectthedatatohow Itraineachcomponent.
+Importantthingstoconsider
+l Wheredo Ifindtrainingdata?
+l Can Isharemydata?
+l Howdoesthissystemmakedecisions?
+l Isitsafe?
+l Whathappensifitinteractswithotheragents? Andwhataboutotheragentsand
+people?
+Imperial College London Deep Learning
+
+For Your Assigned Problem,Definethe Following
+Foryouragent,yourgroupshoulddefine:
+1. thestatespace S,
+2. theactionspace A,
+3. therewardfunction R,
+4. thelearningmethod,
+5. thesensors,
+6. thememory,
+7. thehardesttechnicalchallenge.
+Beasconcreteaspossible.
+Donotjustdescribetheapplicationinahand-wavy: formulatethewhole
+architecturewithasmuchdetailaspossible.
+Imperial College London Deep Learning
+
+Autonomous Taxi Agent
+Designan AIagentthatcontrolsanautonomoustaxiinacity.
+Theagentmust:
+l navigatethroughurbantraffic
+l obeyroadrules
+l avoidcollisions
+l deliverpassengersefficiently
+Possibleobservations:
+l vehiclepositionandvelocity
+l nearbyvehiclesandpedestrians
+l trafficlightsandroadsigns
+l mapinformation
+Imperial College London Deep Learning
+
+Autonomous Taxi Agent: Additional Complication
+Duringheavyrain,severalsensorsbecomeunreliable.
+Examples:
+l camerasmayfailtodetectlanemarkings
+l pedestriansmayappearsuddenly
+l GPSmaybecomeinaccurateindenseareas
+Howshouldtheagentbehavewhenitsobservationsareuncertain?
+Imperial College London Deep Learning
+
+Aircraft Co-Pilot Agent
+Designan AIagentthatassistsahumanpilotduringaflight.
+Thesystemmayhelpwith:
+l monitoringinstruments
+l detectinganomalies
+l suggestingcontrolactions
+l assistingduringdifficultflightconditions
+Possibleobservations:
+l altitude,speed,heading
+l enginestatus
+l weatherconditions
+l pilotinputs
+Imperial College London Deep Learning
+
+Aircraft Co-Pilot Agent: Additional Complication
+Duringastorm,oneoftheaircraftsensorsstartsreportingincorrectdata.
+Theagentreceivesconflictinginformationfromdifferentinstruments.
+l altitudereadingsdisagree
+l airspeedmeasurementsfluctuate
+l weatherconditionsaredeteriorating
+Howshouldthesystemreasonunderconflictingobservations?
+Imperial College London Deep Learning
+
+Autonomous Cargo Ship Agent
+Designan AIagentthatcontrolsacargoshiptravellingbetweenports.
+Thesystemmust:
+l followaplannedroute
+l avoidcollisionswithothervessels
+l adapttoweatherconditions
+l optimisetraveltimeandfuelusage
+Possibleobservations:
+l GPSposition
+l radarsignals
+l nearbyvesselinformation
+l weatherforecasts
+Imperial College London Deep Learning
+
+Autonomous Cargo Ship Agent: Additional Complication
+Innarrowshippingchannels,manyshipsarepresentsimultaneously.
+Othervesselsmaybehaveunpredictably.
+l somevesselsdonotfollowexpectednavigationrules
+l radarsignalsmaybenoisy
+l congestioncreatesdelayedconsequencesforactions
+Howshouldtheagentplanundertheseconditions?
+Imperial College London Deep Learning
+
+Autonomous Drone Delivery Agent
+Designan AIagentthatcontrolsadronedeliveringpackagesinanurban
+environment.
+Theagentmust:
+l navigatetodeliverylocationsavoidingbuildings,trees,andotherdrones
+l adapttochangingweatherconditions
+l managelimitedbatterylife
+Possibleobservations:
+l GPSpositionandvelocity,IMU
+l onboardcameraorlidardata
+l batterylevel
+l mapinformation
+Imperial College London Deep Learning
+
+Autonomous Drone Delivery Agent: Additional Complication
+Duringpartoftheroute,thedronelosesreliable GPSsignal.
+Atthesametime:
+l windconditionsbecomeunstable
+l batteryisrunninglow
+l anotherdroneisapproachingthesamedeliveryarea
+Howshouldtheagentbehavewhenlocalisationandplanningbecomeuncertain?
+Imperial College London Deep Learning
+
+Final Question
+Afterdesigningyoursystem,thinkaboutwhatisthehardesttechnicalchallenge?
+Examples:
+l exploration
+l safety
+l partialobservability
+l rewarddesign
+l datalimitations
+Imperial College London Deep Learning
+
+Closing Thought
+Whathappenswhenmillionsof AIagentsinteract?
+Examples:
+l financialmarkets
+l trafficsystems
+l energygrids
+l onlineplatforms
+Understandingtheemergentdynamicsofthesesystemsisanopenresearch
+problem.
+Imperial College London Deep Learning
+
+Any questions?
+Imperial College London Deep Learning

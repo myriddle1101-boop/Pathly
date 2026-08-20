@@ -1,0 +1,146 @@
+{
+  "created_at": "2026-08-18T18:59:19.968603+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-dl___lecture_6___design_engineering-fb7c77f387de",
+  "file_name": "dl___lecture_6___design_engineering-fb7c77f387de",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 7,
+  "topic_metrics": {
+    "precision": 0.6875,
+    "recall": 0.6875,
+    "f1": 0.6875,
+    "tp": 11,
+    "fp": 5,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.3333,
+    "recall": 0.3333,
+    "f1": 0.3333,
+    "tp": 2,
+    "fp": 4,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "convolutional kernels in image processing",
+      "deep learning architectures and applications",
+      "feature selection techniques in learning models",
+      "neural networks and their training methodologies",
+      "groups of neurons and their functional roles",
+      "learning pooling strategies in convolutional networks",
+      "convolutional layer design and optimization",
+      "practical comments on implementing learning algorithms",
+      "kernels example in machine learning contexts",
+      "foundational concepts in learning theory",
+      "analyzing image data with LNNs and potential losses"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "learning whynotusea in neural networks",
+        "reason": "\"whynotusea\" is an OCR artifact from the question \"Why not use a LNN?\", not a learning concept."
+      },
+      {
+        "name": "whynotusea in the context of LNNs",
+        "reason": "\"whynotusea\" is not a valid concept name; the source instead discusses drawbacks of linear neural networks for images."
+      },
+      {
+        "name": "specific examples of learning applications",
+        "reason": "This is too vague to identify a distinct learning concept in the source."
+      },
+      {
+        "name": "learning lectures on advanced neural network topics",
+        "reason": "This describes the format or metadata of the resource rather than a learning concept."
+      },
+      {
+        "name": "whynotusea as a critique of existing models",
+        "reason": "\"whynotusea\" is an OCR artifact and does not denote a source concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Data normalization",
+        "reason": "The source explicitly explains scaling numerical features to standard ranges to avoid scale-related numerical and learning-parameter problems."
+      },
+      {
+        "name": "Train-validation-test split",
+        "reason": "The source distinguishes training, validation, and test sets and gives their respective purposes."
+      },
+      {
+        "name": "Overfitting and the bias-variance tradeoff",
+        "reason": "The source directly contrasts overfitting/high variance and underfitting/high bias."
+      },
+      {
+        "name": "Regularization and dropout",
+        "reason": "The source presents L1/L2 regularization and dropout as methods to reduce overfitting."
+      },
+      {
+        "name": "Weight sharing and receptive fields",
+        "reason": "The convolutional-layer discussion explicitly defines local receptive fields and shared kernel weights."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "neural networks and their training methodologies",
+        "to": "deep learning architectures and applications",
+        "reason": "The CNN architecture builds on neural-network layers, training, and classification outputs introduced in the recap."
+      },
+      {
+        "from": "convolutional kernels in image processing",
+        "to": "convolutional layer design and optimization",
+        "reason": "Convolutional layers are defined through kernels, local receptive fields, shared weights, and kernel hyperparameters."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "foundational concepts in learning theory",
+        "to": "feature selection techniques in learning models",
+        "reason": "The source discusses feature/model selection using prior problem information, but does not establish a strong directional dependency from this broad topic."
+      },
+      {
+        "from": "learning pooling strategies in convolutional networks",
+        "to": "convolutional layer design and optimization",
+        "reason": "Pooling follows convolutional layers in the presented architecture; it is not a prerequisite for understanding convolutional-layer design."
+      },
+      {
+        "from": "analyzing image data with LNNs and potential losses",
+        "to": "deep learning architectures and applications",
+        "reason": "The LNN discussion motivates CNNs for images, but is not a necessary prerequisite for the broad topic of deep-learning architectures and applications."
+      },
+      {
+        "from": "whynotusea in the context of LNNs",
+        "to": "whynotusea as a critique of existing models",
+        "reason": "Both endpoints are malformed OCR-artifact concepts and therefore cannot form a valid prerequisite relation."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Overfitting and the bias-variance tradeoff",
+        "to": "Regularization and dropout",
+        "reason": "The source introduces regularization and dropout specifically as solutions for reducing overfitting."
+      },
+      {
+        "from": "Spatial features in images",
+        "to": "Convolutional kernels",
+        "reason": "The motivation for convolutional kernels is that linear networks lose spatial structure such as edges, curves, and hierarchical image features."
+      },
+      {
+        "from": "Convolutional kernels",
+        "to": "Convolutional layers",
+        "reason": "The source first explains kernel operations and then defines convolutional-layer neurons using those kernels."
+      },
+      {
+        "from": "Convolutional layers",
+        "to": "Pooling layers",
+        "reason": "Pooling is explained as operating on convolutional outputs to reduce their dimensions and aggregate larger image regions."
+      }
+    ],
+    "overall_note": "The predictions capture several CNN themes, but include multiple malformed OCR-derived labels and omit core practical deep-learning topics such as data splitting, normalization, and overfitting control."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dl___lecture_6___design_engineering-fb7c77f387de.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dl___lecture_6___design_engineering-fb7c77f387de.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dl___lecture_6___design_engineering-fb7c77f387de_ledger.csv"
+  }
+}

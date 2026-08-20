@@ -1,0 +1,56 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 8,
+  "prerequisites": [
+    {
+      "from": "Matrix Operations",
+      "to": "Eigenvalues and Eigenvectors",
+      "relation_type": "strong_prerequisite",
+      "reason": "Eigenvalues and eigenvectors are defined through matrix operations."
+    },
+    {
+      "from": "Partial Derivatives",
+      "to": "Gradient Descent",
+      "relation_type": "strong_prerequisite",
+      "reason": "Gradient descent uses gradients, which are built from partial derivatives."
+    },
+    {
+      "from": "Partial Derivatives",
+      "to": "Curvature Analysis",
+      "relation_type": "strong_prerequisite",
+      "reason": "Curvature analysis relies on first and second partial derivatives."
+    },
+    {
+      "from": "Matrix Operations",
+      "to": "Curvature Analysis",
+      "relation_type": "strong_prerequisite",
+      "reason": "Multivariate curvature analysis uses Hessian matrices and related matrix operations."
+    },
+    {
+      "from": "Eigenvalues and Eigenvectors",
+      "to": "Curvature Analysis",
+      "relation_type": "strong_prerequisite",
+      "reason": "Hessian eigenvalues are used to characterize local curvature."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Training Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural network training commonly depends on gradient-based optimization."
+    },
+    {
+      "from": "Partial Derivatives",
+      "to": "Training Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation requires computing partial derivatives of the loss with respect to weights."
+    },
+    {
+      "from": "Matrix Operations",
+      "to": "Training Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural network forward and backward computations are expressed using matrix operations."
+    }
+  ]
+}

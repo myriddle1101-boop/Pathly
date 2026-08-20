@@ -1,0 +1,800 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 13,
+  "candidate_count": 77,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "def chunk_text",
+      "avg_score": 0.7567,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "parent_text child_start",
+      "avg_score": 0.7512,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "child_start child_end",
+      "avg_score": 0.744,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "unique_results combined",
+      "avg_score": 0.7288,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "async_rag batch_query",
+      "avg_score": 0.7211,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "results unique_results",
+      "avg_score": 0.7145,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "parent_text child_end",
+      "avg_score": 0.7103,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "query variations",
+      "avg_score": 0.7027,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "query_async queries",
+      "avg_score": 0.7009,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "chunks def",
+      "avg_score": 0.6987,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "child_start len",
+      "avg_score": 0.6969,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "chunk_text self",
+      "avg_score": 0.6911,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "unique_results",
+      "avg_score": 0.6901,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "query expansion",
+      "avg_score": 0.6898,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "child_end parent_id",
+      "avg_score": 0.6869,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "parent_id start",
+      "avg_score": 0.6857,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "variations query",
+      "avg_score": 0.6857,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "query_async",
+      "avg_score": 0.6851,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "final_results sorted",
+      "avg_score": 0.6738,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "expand_query query",
+      "avg_score": 0.6703,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "self chunk_size",
+      "avg_score": 0.663,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "expanded queries",
+      "avg_score": 0.6564,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "chunker split_text",
+      "avg_score": 0.656,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "reranked_results query",
+      "avg_score": 0.6542,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "chunk_size self",
+      "avg_score": 0.6452,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "await async_rag",
+      "avg_score": 0.6359,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "search_query line",
+      "avg_score": 0.6294,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "self query_async",
+      "avg_score": 0.6259,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "def batch_query",
+      "avg_score": 0.6157,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "unique_results append",
+      "avg_score": 0.612,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "semantic_results self",
+      "avg_score": 0.6059,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "__init__ self",
+      "avg_score": 0.5951,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "keyword self",
+      "avg_score": 0.5939,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "retrieve_multi_query",
+      "avg_score": 0.5894,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "filter_str line",
+      "avg_score": 0.5893,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "result sort",
+      "avg_score": 0.5849,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "measure impact",
+      "avg_score": 0.5803,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "alpha semantic_scores",
+      "avg_score": 0.58,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "results hybrid",
+      "avg_score": 0.5763,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "compressed_doc response",
+      "avg_score": 0.5741,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "chunks usage",
+      "avg_score": 0.5693,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "impact test",
+      "avg_score": 0.5689,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "reranked_results",
+      "avg_score": 0.5679,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "self vector_db",
+      "avg_score": 0.567,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "hybrid search",
+      "avg_score": 0.5648,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "optimize use",
+      "avg_score": 0.5616,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "final_results top_k",
+      "avg_score": 0.561,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "strategies rank",
+      "avg_score": 0.5546,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "usage hybrid",
+      "avg_score": 0.5531,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "sub_queries results",
+      "avg_score": 0.549,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "query_texts parsed",
+      "avg_score": 0.5483,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "reranked_results reranker",
+      "avg_score": 0.5432,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "chunk_text",
+      "avg_score": 0.5407,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "query filters",
+      "avg_score": 0.5399,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "chunker threshold",
+      "avg_score": 0.5394,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "hybrid",
+      "avg_score": 0.5394,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "final_results",
+      "avg_score": 0.5384,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "split sub_queries",
+      "avg_score": 0.5377,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "cosine_similarity current_embedding",
+      "avg_score": 0.5351,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "chunks current_chunk",
+      "avg_score": 0.5341,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "chunker semantic",
+      "avg_score": 0.5337,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "query parsed",
+      "avg_score": 0.533,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "startswith filters",
+      "avg_score": 0.5266,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "semantic_scores min",
+      "avg_score": 0.5242,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "quality improvement",
+      "avg_score": 0.5193,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "optimize",
+      "avg_score": 0.512,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "compressed_doc return",
+      "avg_score": 0.4909,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "compressed_doc",
+      "avg_score": 0.4883,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "document doc",
+      "avg_score": 0.4812,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "compressed_docs",
+      "avg_score": 0.4791,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "compressed_doc compressed",
+      "avg_score": 0.4674,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "better context",
+      "avg_score": 0.4561,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "relevance handle",
+      "avg_score": 0.4477,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "metadata better",
+      "avg_score": 0.428,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "combine semantic",
+      "avg_score": 0.4272,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "keyword improve",
+      "avg_score": 0.424,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "context semantic",
+      "avg_score": 0.4064,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Text Chunking",
+      "description": "Techniques for dividing text into manageable pieces for processing.",
+      "sub_topics": [
+        {
+          "name": "Chunk Text Function",
+          "description": "A function to define how text is chunked."
+        },
+        {
+          "name": "Chunk Size",
+          "description": "The size of each text chunk."
+        },
+        {
+          "name": "Chunker Threshold",
+          "description": "The criteria for determining chunk boundaries."
+        }
+      ]
+    },
+    {
+      "name": "Query Processing",
+      "description": "Methods for handling and optimizing queries in machine learning systems.",
+      "sub_topics": [
+        {
+          "name": "Query Expansion",
+          "description": "Techniques to enhance queries for better results."
+        },
+        {
+          "name": "Async Queries",
+          "description": "Handling queries asynchronously for efficiency."
+        },
+        {
+          "name": "Query Filters",
+          "description": "Criteria applied to refine query results."
+        }
+      ]
+    },
+    {
+      "name": "Results Management",
+      "description": "Strategies for managing and optimizing results from queries.",
+      "sub_topics": [
+        {
+          "name": "Unique Results",
+          "description": "Ensuring results are distinct and non-redundant."
+        },
+        {
+          "name": "Reranked Results",
+          "description": "Reordering results based on relevance."
+        },
+        {
+          "name": "Final Results",
+          "description": "The final output after processing and ranking."
+        }
+      ]
+    },
+    {
+      "name": "Semantic Processing",
+      "description": "Techniques for understanding and processing the meaning of text.",
+      "sub_topics": [
+        {
+          "name": "Semantic Scores",
+          "description": "Scores that quantify the relevance of results."
+        },
+        {
+          "name": "Contextual Relevance",
+          "description": "Assessing the relevance of results based on context."
+        },
+        {
+          "name": "Combine Semantic",
+          "description": "Merging semantic information for improved understanding."
+        }
+      ]
+    },
+    {
+      "name": "Hybrid Search",
+      "description": "Combining different search techniques for improved results.",
+      "sub_topics": [
+        {
+          "name": "Hybrid Results",
+          "description": "Results obtained from multiple search methods."
+        },
+        {
+          "name": "Usage of Hybrid",
+          "description": "Strategies for effectively using hybrid search."
+        }
+      ]
+    },
+    {
+      "name": "Document Compression",
+      "description": "Methods for reducing the size of documents while preserving information.",
+      "sub_topics": [
+        {
+          "name": "Compressed Document",
+          "description": "A document that has been reduced in size."
+        },
+        {
+          "name": "Compressed Docs Return",
+          "description": "Returning compressed documents for processing."
+        }
+      ]
+    },
+    {
+      "name": "Neural Network Concepts",
+      "description": "Fundamental concepts related to artificial neural networks.",
+      "sub_topics": [
+        {
+          "name": "Activation Function",
+          "description": "Functions that determine the output of a neuron."
+        },
+        {
+          "name": "Loss Function",
+          "description": "A function that measures the difference between predicted and actual outcomes."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "A method for training neural networks by updating weights."
+        }
+      ]
+    },
+    {
+      "name": "Performance Optimization",
+      "description": "Techniques for improving the efficiency and effectiveness of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Optimize Use",
+          "description": "Strategies for maximizing resource utilization."
+        },
+        {
+          "name": "Quality Improvement",
+          "description": "Methods for enhancing the quality of results."
+        }
+      ]
+    },
+    {
+      "name": "Query Variations",
+      "description": "Different forms and structures of queries used in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Query Texts Parsed",
+          "description": "Analyzing and interpreting different query formats."
+        },
+        {
+          "name": "Sub-Queries Results",
+          "description": "Results obtained from smaller, component queries."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 21.6396,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

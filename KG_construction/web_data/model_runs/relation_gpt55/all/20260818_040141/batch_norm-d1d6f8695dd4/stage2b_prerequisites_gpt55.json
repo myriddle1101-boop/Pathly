@@ -1,0 +1,26 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 8,
+  "prerequisite_count": 3,
+  "prerequisites": [
+    {
+      "from": "Loss Functions",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training techniques typically optimize a loss, so understanding loss functions is necessary."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Maximization Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Maximizing performance requires knowing how model performance is evaluated."
+    },
+    {
+      "from": "Accuracy Metrics",
+      "to": "Maximization Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Techniques for maximizing classification performance require understanding the metrics being maximized."
+    }
+  ]
+}

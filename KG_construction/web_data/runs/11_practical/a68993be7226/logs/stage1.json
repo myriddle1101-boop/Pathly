@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226\\11_practical.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 5.409,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 1434\n[2] 清洗后词数: 1447\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 7\n[5] 分块数（过滤后）: 7\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=269\nPractical Methodology Lecture slides for Chapter 11 of Deep Learning www.deeplearningbook.org Ian Goodfellow 2016-09-26 What drives success in ML? What drives success in ML? Arcane knowledge Knowing how Mountains of doze...\n\n[Chunk 2] words=276\nFully connected baseline Fully Connected Baseline  2-3 hidden layer feedforward network 2-3 hidden layer feed-forward neural network   AKA “multilayer perceptron”  AKA “multilayer perceptron”  Rectified linear units...\n\n[Chunk 3] words=72\nIncreasing Training Set Size Increasing training set size 6 5 4 3 2 1 0 0 1 2 3 4 5 10 10 10 10 10 10 # train examples (Goodfellow 2016) )ESM( rorr E 20 Bayes error Train (quadratic) Test (quadratic) Test (optimal capaci...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

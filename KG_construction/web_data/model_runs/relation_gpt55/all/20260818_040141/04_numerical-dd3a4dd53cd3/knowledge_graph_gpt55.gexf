@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Gradient Descent" label="Gradient Descent">
+        <attvalues>
+          <attvalue for="0" value="A fundamental optimization algorithm used to minimize functions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Negative Gradient&quot;, &quot;description&quot;: &quot;The direction of steepest descent in optimization.&quot;}, {&quot;name&quot;: &quot;Curvature Function&quot;, &quot;description&quot;: &quot;Measures the curvature of the loss function.&quot;}, {&quot;name&quot;: &quot;Learning Rate&quot;, &quot;description&quot;: &quot;Controls the step size during optimization.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and linear algebra." />
+          <attvalue for="6" value="[&quot;Learning Rate&quot;, &quot;Convergence&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Batch Gradient Descent&quot;]" />
+          <attvalue for="7" value="[&quot;Gradient descent always finds the global minimum.&quot;, &quot;A smaller learning rate is always better.&quot;]" />
+          <attvalue for="8" value="[&quot;Training machine learning models&quot;, &quot;Optimizing neural networks&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Eigenvalues and Eigenvectors" label="Eigenvalues and Eigenvectors">
+        <attvalues>
+          <attvalue for="0" value="Key concepts in linear algebra used in various machine learning algorithms." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Eigendecomposition&quot;, &quot;description&quot;: &quot;The process of decomposing a matrix into its eigenvalues and eigenvectors.&quot;}, {&quot;name&quot;: &quot;Covariance Matrix&quot;, &quot;description&quot;: &quot;A matrix that describes the variance and correlation between variables.&quot;}, {&quot;name&quot;: &quot;Principal Component Analysis&quot;, &quot;description&quot;: &quot;A technique that uses eigenvalues and eigenvectors for dimensionality reduction.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, including matrices and vectors." />
+          <attvalue for="6" value="[&quot;Matrix decomposition&quot;, &quot;Spectral theorem&quot;]" />
+          <attvalue for="7" value="[&quot;Eigenvalues are always positive&quot;, &quot;Eigenvectors are unique&quot;]" />
+          <attvalue for="8" value="[&quot;Principal Component Analysis (PCA)&quot;, &quot;Dimensionality reduction&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Optimization Techniques" label="Optimization Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods used to find the best parameters for machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Minimization&quot;, &quot;description&quot;: &quot;The process of finding the minimum value of a function.&quot;}, {&quot;name&quot;: &quot;Maximization&quot;, &quot;description&quot;: &quot;The process of finding the maximum value of a function.&quot;}, {&quot;name&quot;: &quot;Convergence Criteria&quot;, &quot;description&quot;: &quot;Conditions that determine when an optimization algorithm should stop.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and linear algebra, familiarity with machine learning concepts." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Newton's Method&quot;, &quot;Regularization Techniques&quot;]" />
+          <attvalue for="7" value="[&quot;Optimization guarantees the best model performance&quot;, &quot;All optimization techniques are equally effective for every problem&quot;]" />
+          <attvalue for="8" value="[&quot;Tuning hyperparameters in neural networks&quot;, &quot;Improving convergence in logistic regression&quot;, &quot;Feature selection in supervised learning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Curvature Analysis" label="Curvature Analysis">
+        <attvalues>
+          <attvalue for="0" value="The study of the curvature of functions to understand optimization landscapes." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Negative Curvature&quot;, &quot;description&quot;: &quot;Indicates a local maximum in the optimization landscape.&quot;}, {&quot;name&quot;: &quot;Curvature Gradient&quot;, &quot;description&quot;: &quot;The gradient of the curvature function.&quot;}, {&quot;name&quot;: &quot;Stationary Points&quot;, &quot;description&quot;: &quot;Points where the gradient is zero, indicating potential minima or maxima.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and optimization techniques." />
+          <attvalue for="6" value="[&quot;Hessian matrix&quot;, &quot;Second derivative test&quot;]" />
+          <attvalue for="7" value="[&quot;Curvature only applies to convex functions&quot;, &quot;Curvature analysis is not relevant for non-convex optimization&quot;]" />
+          <attvalue for="8" value="[&quot;Improving convergence in optimization algorithms&quot;, &quot;Analyzing the stability of critical points in machine learning models&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Partial Derivatives" label="Partial Derivatives">
+        <attvalues>
+          <attvalue for="0" value="Derivatives of functions with respect to one variable while keeping others constant." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Gradient Vector&quot;, &quot;description&quot;: &quot;A vector of partial derivatives indicating the direction of steepest ascent.&quot;}, {&quot;name&quot;: &quot;Critical Points&quot;, &quot;description&quot;: &quot;Points where the gradient is zero or undefined.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and multivariable functions." />
+          <attvalue for="6" value="[&quot;Multivariable functions&quot;, &quot;Gradient vector&quot;]" />
+          <attvalue for="7" value="[&quot;Partial derivatives can be used for all types of functions&quot;, &quot;Partial derivatives are the same as total derivatives&quot;]" />
+          <attvalue for="8" value="[&quot;Optimization problems in machine learning&quot;, &quot;Sensitivity analysis in engineering&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Neural Networks" label="Training Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="The process of adjusting the weights of a neural network to minimize loss." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by propagating errors backward.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that introduce non-linearity into neural networks.&quot;}, {&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual values.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, calculus, and programming in Python." />
+          <attvalue for="6" value="[&quot;Forward Propagation&quot;, &quot;Backpropagation&quot;, &quot;Loss Functions&quot;, &quot;Gradient Descent&quot;]" />
+          <attvalue for="7" value="[&quot;Training a neural network is just about feeding data.&quot;, &quot;More layers always lead to better performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Regression and Classification" label="Regression and Classification">
+        <attvalues>
+          <attvalue for="0" value="Supervised learning tasks that involve predicting continuous or categorical outcomes." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Regression&quot;, &quot;description&quot;: &quot;A method for modeling the relationship between a dependent variable and one or more independent variables.&quot;}, {&quot;name&quot;: &quot;Logistic Regression&quot;, &quot;description&quot;: &quot;A statistical method for binary classification.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Linear Regression&quot;, &quot;Logistic Regression&quot;]" />
+          <attvalue for="7" value="[&quot;Regression is only for continuous outcomes&quot;, &quot;Classification cannot be used for ordinal data&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting house prices&quot;, &quot;Email spam detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Matrix Operations" label="Matrix Operations">
+        <attvalues>
+          <attvalue for="0" value="Fundamental operations involving matrices used in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Matrix Multiplication&quot;, &quot;description&quot;: &quot;An operation that produces a new matrix from two matrices.&quot;}, {&quot;name&quot;: &quot;Covariance Calculation&quot;, &quot;description&quot;: &quot;The process of calculating the covariance between variables.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algebra and linear equations." />
+          <attvalue for="6" value="[&quot;Matrix Addition&quot;, &quot;Matrix Multiplication&quot;, &quot;Transpose of a Matrix&quot;, &quot;Determinants&quot;, &quot;Inverse of a Matrix&quot;]" />
+          <attvalue for="7" value="[&quot;Matrix multiplication is commutative&quot;, &quot;All matrices can be inverted&quot;, &quot;Matrix addition requires equal dimensions&quot;]" />
+          <attvalue for="8" value="[&quot;Data transformation in machine learning algorithms&quot;, &quot;Representation of datasets&quot;, &quot;Feature extraction and dimensionality reduction&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Process" label="Training Process">
+        <attvalues>
+          <attvalue for="0" value="The overall procedure of training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Training Time&quot;, &quot;description&quot;: &quot;The duration required to train a model.&quot;}, {&quot;name&quot;: &quot;Overfitting&quot;, &quot;description&quot;: &quot;A scenario where a model learns noise instead of the underlying pattern.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Data Preparation&quot;, &quot;Model Selection&quot;, &quot;Training Algorithms&quot;, &quot;Evaluation Metrics&quot;]" />
+          <attvalue for="7" value="[&quot;Training is the same as testing&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image Classification&quot;, &quot;Natural Language Processing&quot;, &quot;Predictive Analytics&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Gradient Descent" target="Training Neural Networks">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Neural network training commonly depends on gradient-based optimization." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Eigenvalues and Eigenvectors" target="Curvature Analysis">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Hessian eigenvalues are used to characterize local curvature." />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Partial Derivatives" target="Gradient Descent">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Gradient descent uses gradients, which are built from partial derivatives." />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Partial Derivatives" target="Curvature Analysis">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Curvature analysis relies on first and second partial derivatives." />
+        </attvalues>
+      </edge>
+      <edge id="4" source="Partial Derivatives" target="Training Neural Networks">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Backpropagation requires computing partial derivatives of the loss with respect to weights." />
+        </attvalues>
+      </edge>
+      <edge id="5" source="Matrix Operations" target="Eigenvalues and Eigenvectors">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Eigenvalues and eigenvectors are defined through matrix operations." />
+        </attvalues>
+      </edge>
+      <edge id="6" source="Matrix Operations" target="Curvature Analysis">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Multivariate curvature analysis uses Hessian matrices and related matrix operations." />
+        </attvalues>
+      </edge>
+      <edge id="7" source="Matrix Operations" target="Training Neural Networks">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Neural network forward and backward computations are expressed using matrix operations." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

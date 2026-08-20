@@ -1,0 +1,29 @@
+{
+  "experiment_id": "task4_evaluable_release_paper_ready_v1",
+  "version": "paper_ready_v1",
+  "benchmark": {
+    "sample_name": "security_privacy_in_ml",
+    "run_mode": "stage1_to_stage2c_cli",
+    "stage_names": ["stage1", "stage2a", "stage2b", "stage2c"],
+    "pdf_path": "web_data/baselines/current_kg_baseline/snapshot/runs/Security and Privacy in ML/Security and Privacy in ML.pdf",
+    "output_dir": "web_data/benchmarks/task4_evaluable_release/paper_ready_v1/benchmark"
+  },
+  "quality_eval": {
+    "sample_name": "security_privacy_in_ml_small_gold",
+    "metric_protocol": "set_precision_recall_f1",
+    "predicted_topics_path": "web_data/benchmarks/task4_evaluable_release/paper_ready_v1/benchmark/stage2a_topics_hybrid.json",
+    "predicted_prereq_path": "web_data/benchmarks/task4_evaluable_release/paper_ready_v1/benchmark/stage2b_prerequisites.json",
+    "predicted_similarity_path": "web_data/benchmarks/task4_evaluable_release/paper_ready_v1/benchmark/stage2c_similarity_edges.json",
+    "gold_topics_path": "evaluation/annotations/task4_security_privacy_topics_gold.json",
+    "gold_prereq_path": "evaluation/annotations/task4_security_privacy_prerequisites_gold.json",
+    "gold_similarity_path": "evaluation/annotations/task4_security_privacy_similarity_gold.json",
+    "output_path": "web_data/benchmarks/task4_evaluable_release/paper_ready_v1/quality_eval/kg_quality_eval.json"
+  },
+  "paper_tables": {
+    "output_dir": "web_data/benchmarks/task4_evaluable_release/paper_ready_v1/paper_tables",
+    "experiment_table_draft_csv": "web_data/benchmarks/task4_evaluable_release/paper_ready_v1/paper_tables/experiment_table_draft.csv",
+    "benchmark_table_csv": "web_data/benchmarks/task4_evaluable_release/paper_ready_v1/paper_tables/benchmark_table.csv",
+    "quality_table_csv": "web_data/benchmarks/task4_evaluable_release/paper_ready_v1/paper_tables/quality_table.csv"
+  },
+  "artifact_index_path": "web_data/benchmarks/task4_evaluable_release/paper_ready_v1/artifacts_index.json"
+}

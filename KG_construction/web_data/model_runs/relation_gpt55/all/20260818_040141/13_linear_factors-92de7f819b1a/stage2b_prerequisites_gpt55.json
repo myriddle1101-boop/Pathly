@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 8,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Statistical Models",
+      "to": "Factor Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Factor models rely on statistical modeling concepts such as latent variables, randomness, and uncertainty."
+    }
+  ]
+}

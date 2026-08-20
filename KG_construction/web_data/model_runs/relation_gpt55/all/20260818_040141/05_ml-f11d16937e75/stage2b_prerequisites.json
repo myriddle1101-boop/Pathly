@@ -1,0 +1,32 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 4,
+  "prerequisites": [
+    {
+      "from": "Training Data",
+      "to": "Regression",
+      "relation_type": "strong_prerequisite",
+      "reason": "Regression models are learned from data, so understanding training data is necessary before learning regression in a machine learning context."
+    },
+    {
+      "from": "Training Data",
+      "to": "Classification",
+      "relation_type": "strong_prerequisite",
+      "reason": "Classification models require labeled training data, so the concept of training data is necessary first."
+    },
+    {
+      "from": "Training Data",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural networks are trained from data, so understanding training data is necessary before learning how they work."
+    },
+    {
+      "from": "Error Metrics",
+      "to": "Model Evaluation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Model evaluation depends on quantitative metrics to assess model performance."
+    }
+  ]
+}

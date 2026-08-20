@@ -1,0 +1,1183 @@
+Structured Probabilistic
+Models for Deep Learning
+Lecture slides for Chapter 16 of Deep Learning
+www.deeplearningbook.org
+Ian Goodfellow
+2016-10-04
+
+Roadmap
+• Challenges of Unstructured Modeling
+• Using Graphs to Describe Model Structure
+• Sampling from Graphical Models
+• Advantages of Structured Modeling
+• Structure Learning and Latent Variables
+• Inference and Approximate Inference
+• The Deep Learning Approach to Structured Probabilistic Modeling
+(Goodfellow 2017)
+
+Tasks for Generative Models
+Density estimation
+•
+• Denoising
+Sample generation
+•
+Missing value imputation
+•
+• Conditional sample generation
+Conditional density estimation
+•
+(Goodfellow 2017)
+
+Samples from a BEGAN
+(Berthelot et al, 2017)
+Images are 128 pixels wide, 128 pixels tall
+R, G, and B pixel at each location.
+(Goodfellow 2017)
+
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+x
+Density estimation: Given an input , the machine learning system
+•
+p(x)
+returns an estimate of the true density under the data-generating
+distribution. This requires only a single output, but it also requires a
+complete understanding of the entire input. If even one element of the vector
+is unusual, the system must assign it a low probability.
+x˜
+Denoising: Given a damaged or incorrectly observed input , the machine
+•
+x
+learning system returns an estimate of the original or correct . For example,
+the machine learning system might b e asked to remove dust or scratches
+from an old photograph. This requires multiple outputs (every element of the
+x
+estimated clean example ) and an understanding of the entire input (since
+even one damaged area will still reveal the final estimate as b eing damaged).
+x
+Missing value imputation: Given the observations of some elements of ,
+•
+the mo del is asked to return estimates of or a probability distribution over
+x
+some or all of the unobserved elements of . This requires multiple outputs.
+x
+Because the mo del could b e asked to restore any of the elements of , it
+must understand the entire input.
+p(x)
+Sampling: The mo del generates new samples from the distribution .
+•
+Applications include sp eech synthesis, that is, pro ducing new waveforms that
+sound like natural human sp eech. This requires multiple output values and a
+go o d mo del of the entire input. If the samples have even one element drawn
+from the wrong distribution, then the sampling pro cess is wrong.
+For an example of a sampling task using small natural images, see figure 16.1.
+Mo deling a rich distribution over thousands or millions of random variables is
+a challenging task, b oth computationally and statistically. Supp ose we wanted to
+mo del only binary variables. This is the simplest p ossible case, and yet already it
+3072
+32 32 2
+seems overwhelming. For a small pixel color (RGB) image, there are
+⇥
+800
+10
+p ossible binary images of this form. This numb er is over times larger than
+the estimated numb er of atoms in the universe.
+x
+In general, if we wish to mo del a distribution over a random vector containing
+n k
+discrete variables capable of taking on values each, then the naive approach of
+P (x)
+representing by storing a lo okup table with one probability value p er p ossible
+Cost of Tabular Approach
+n
+k
+outcome requires p Naumbrer oaf varmiables eters!
+For BEGAN faces:
+128 128 = 16384
+⇥
+Number of values per variable
+For BEGAN faces: 256
+This is not feasible for several reasons:
+There are roughly ten to the power of forty thousand
+times more points in the discretized domain of the BEGAN
+face model than there are atoms in the universe.
+(Goodfellow 2017)
+Memory—the cost of storing the representation: For all but very small values
+•
+n k
+of and , representing the distribution as a table will require to o many
+values to store.
+557
+
+Tabular Approach is Infeasible
+• Memory: cannot store that many parameters
+• Runtime: inference and sampling are both slow
+• Statistical efficiency: extremely high number of
+parameters requires extremely high number of
+training examples
+(Goodfellow 2017)
+
+Roadmap
+• Challenges of Unstructured Modeling
+• Using Graphs to Describe Model Structure
+• Sampling from Graphical Models
+• Advantages of Structured Modeling
+• Structure Learning and Latent Variables
+• Inference and Approximate Inference
+• The Deep Learning Approach to Structured Probabilistic Modeling
+(Goodfellow 2017)
+
+Insight of Model Structure
+• Most variables influence each other
+• Most variables do not influence each other directly
+• Describe influence with a graph
+• Edges represent direct influence
+• Paths represent indirect influence
+• Computational and statistical savings come from omissions
+of edges
+(Goodfellow 2017)
+
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+Alice Bob Carol
+Alice Bob Carol
+tt tt tt
+tt 00 tt 11 tt 22
+00 11 22
+Figure 16.2: A directed graphical model depicting the relay race example. Alice’s finishing
+Figure 16.2: A directed graphical model depicting the relay race example. Alice’s finishing
+time t influences Bob’s finishing time t , because Bob does not get to start running until
+0 1
+time t influences Bob’s finishing time t , because Bob does not get to start running until
+0 1
+Alice finishes. Likewise, Carol only gets to start running after Bob finishes, so Bob’s
+Alice finishes. Likewise, Carol only gets to start running after Bob finishes, so Bob’s
+finishing time t directly influences Carol’s finishing time t .
+1 2
+finishing time t directly influences Carol’s finishing time t .
+1 2
+bar. In other words, the distribution over b depends on the value of a.
+bar. In other words, the distribution over b depends on the value of a.
+Continuing with the relay race example from section 16.1, suppose we name
+Continuing with the relay race example from section 16.1, suppose we name
+Alice’s finishing time t , Bob’s finishing time t , and Carol’s finishing time t .
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+0 1 2
+Alice’s finishing time t , Bob’s finishing time t , and Carol’s finishing time t .
+As we saw earlier, our estimate of t depends on t . Our estimate of t depends
+0 1 1 0 2 2
+Directed Models
+As we sdaiwrecetlayrloinert, obuurt eosntliyminadteireocftlty odnetpe.n Wdse ocanntdr.aw Outhrisesrteilmatiaotneshoifptin daedpireencdtesd
+1 1 0 0 2
+graphical model, illustrated in figure 16.2.
+directly on t but only indirectly on t . We can draw this relationship in a directed
+1 0
+graphical m Fo o r d m e a l, ll i y l , lu a st d r i a r t e e c d ted in g fi ra g p u h re ica 1 l 6. m 2. odel defined on variables x is defined by a
+Alice Bob Carol
+directed acyclic graph whose vertices are the random variables in the model, and
+Formally, a directed graphical model defined on variables x is defined by a
+G
+a set of local conditional probability distributions p(x P a (x )), where
+tt tt tt
+i i
+directed acyclic graph whose vertices are the random variables in the model, and
+00 11 22
+|
+G
+G
+P a (x ) gives the parents of x in . The probability distribution over x is given
+i i
+a set of local conditional probability distributions p(x P a (x )), where
+G
+G i i
+by |
+G
+P a (x ) gives the parents of x in . The probability distribution over x is given
+i i Figure 16.2
+p( G x) = ⇧ p(x P a (x )). (16.1)
+G i i i
+by |
+Figure 16.2: A directed graphical model depictin G g the relay race example. Alice’s finishing
+In our relay race exapm(xp)le=, th⇧ispm(xeans Pthaat(,xus)i)n.g the graph drawn in figu(r 1 e 61.16.)2,
+time t influences Bob’s finishing timie ti , becaui se Bob does not get to start running until
+0 1 |
+G
+Alice finishes. Likewise, Ca p r ( otl , ton , tly ) = ge p( tts )p t ( ot stta ) r p t (t rutn ) n . ing after Bo(b 16.fi 2)nishes, so Bob’s
+In our relay race example, th 0 is 1 me 2 ans tha 0 t, us 1 ing 0 the g 2 rap 1 h drawn in figure 16.2,
+| |
+finishing time t directly influences Carol’s finishing time t .
+Directed models work best when influence
+1 2
+This is our fipr(stt t,itm,etse)e=ingp(at s)tpru(tcturted)pp(rtobabt il)i.stic model in actio(n 1.6.W 2)e
+0 1 2 0 1 0 2 1
+| |
+clearly flows in one direction
+can examine the cost of using it, to observe how structured modeling has many
+(Goodfellow 2017)
+Thiasdivsanotuargefisrsretlattimivee tsoeeuinnsgtruactsutrruedctmuroeddelipnrgo.babilistic model in action. We
+bar. In other words, the distribution over b depends on the value of a.
+can examine the cost of using it, to observe how structured modeling has many
+Suppose we represented time by discretizing time ranging from minute 0 to
+advantages relative to unstructured modeling.
+minute 10 into 6-second chunks. This would make t , t and t each be a discrete
+0 1 2
+Continuing with the relay race example from section 16.1, suppose we name
+variable with 100 possible values. If we attempted to represent p(t , t , t ) with a
+Suppose we represented time by discretizing time ranging from 0 m 1 inu 2 te 0 to
+Alice’s finishing time t , Bob’s finishing time t , and Carol’s finishing time t .
+table, it would need to store 999,999 values (100 values of t 100 values of t
+0 1 0 1 2
+minute 10 into 6-second chunks. This would make t , t and t each be a discrete
+0 1 2 ⇥ ⇥
+100 values of t , minus 1, since the probability of one of the configurations is made
+As we
+va
+s
+r
+a
+ia
+w
+ble
+e
+w
+a
+i
+r
+th
+li
+1
+e
+0
+r
+0
+,
+p
+o
+o
+u 2
+ss
+r
+ib
+e
+le
+st
+va
+im
+lue
+a
+s.
+te
+If
+o
+w
+f
+e a
+t
+tte
+d
+m
+e
+p
+p
+te
+e
+d
+n
+t
+d
+o
+s
+rep
+o
+r
+n
+ese
+t
+nt
+.p(O
+t
+u,
+t
+r ,e
+t
+s)t
+w
+im
+ith
+at
+a
+e of t depends
+1 0 0 1 2 2
+redundant by the constraint that the sum of the probabilities be 1). If instead, we
+table, it would need to store 999,999 values (100 values of t 100 values of t
+directly on t but only indirectly on t . We can dra 0 w this relation 1 ship in a directed
+ma 1 ke a table only for each of the con 0 ditional probability ⇥distributions, then t⇥he
+100 values of t , minus 1, since the probability of one of the configurations is made
+2
+distribution over t requires 99 values, the table defining t given t requires 9,900
+graphical model, illustr 0 ated in figure 16.2. 1 0
+redundant by the constraint that the sum of the probabilities be 1). If instead, we
+values, and so does the table defining t given t . This comes to a total of 19,899
+2 1
+make a table only for each of the conditional probability distributions, then the
+x
+Formalvlayl,ueas. Tdhiirsemcetaends thgart auspinhgitchae ldirmecotedd egrlapdheicfialnmeoddelorneduvceadroiuarbnluemsber oif s defined by a
+distribution over t requires 99 values, the table defining t given t requires 9,900
+parameters 0 by a factor of more than 50! 1 0
+directed acyclic graph whose vertices are the random variables in the model, and
+values, and so does the table defining t given t . This comes to a total of 19,899
+2 1
+G
+561
+p( P a ( ))
+a set voalfuelso. c Tahils mceoannsdtihtaitounsinaglthpe rdoirbecatebd iglriatpyhicadl imsotdreilbreudtucieodnosur nuxmber of x , where
+i i
+|
+G
+parameters by a factor of more than 50!
+P a ( ) x
+x gives the parents of x in . The probability distribution over is given
+i i
+G
+G
+561
+by
+p(x) = ⇧ p( P a ( )).
+x x (16.1)
+i i i
+|
+G
+In our relay race example, this means that, using the graph drawn in figure 16.2,
+p( , , ) = p( )p( )p( ).
+t t t t t t t t (16.2)
+0 1 2 0 1 0 2 1
+| |
+This is our first time seeing a structured probabilistic model in action. We
+can examine the cost of using it, to observe how structured modeling has many
+advantages relative to unstructured modeling.
+Suppose we represented time by discretizing time ranging from minute 0 to
+minute 10 into 6-second chunks. This would make t , t and t each be a discrete
+0 1 2
+p( , , )
+variable with 100 possible values. If we attempted to represent t t t with a
+0 1 2
+table, it would need to store 999,999 values (100 values of t 100 values of t
+0 1
+⇥ ⇥
+100 values of t , minus 1, since the probability of one of the configurations is made
+2
+redundant by the constraint that the sum of the probabilities be 1). If instead, we
+make a table only for each of the conditional probability distributions, then the
+distribution over t requires 99 values, the table defining t given t requires 9,900
+0 1 0
+values, and so does the table defining t given t . This comes to a total of 19,899
+2 1
+values. This means that using the directed graphical model reduced our number of
+parameters by a factor of more than 50!
+561
+
+Undirected Models
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+Undirected models work best when influence
+has no clear direction or is best modeled as
+flowing in both directions
+hh hh hh
+rr yy cc
+Does your
+Does your work
+Figure 16.3: An undirected graph representing how your roommate’s health h , your
+r
+roommate have a
+colleague have a
+health h , and your work colleague’s Dhoe ayoltuh hahve aa ffcoeldc?t each other. You and your roommate
+y cold? c
+cold?
+might infect each other with a cold, and you and your work colleague might do the same,
+(Goodfellow 2017)
+but assuming that your roommate and your colleague do not know each other, they can
+only infect each other indirectly via you.
+3
+ ( )
+defined on an undirected graph . For each clique in the graph, a factor
+G C C
+(also called a clique potential) measures the affinity of the variables in that clique
+for being in each of their possible joint states. The factors are constrained to be
+nonnegative. Together they define an unnormalized probability distribution
+p˜(x) = ⇧  ( ).
+(16.3)
+C
+C 2 G
+The unnormalized probability distribution is efficient to work with so long as
+all the cliques are small. It encodes the idea that states with higher affinity are
+more likely. However, unlike in a Bayesian network, there is little structure to the
+definition of the cliques, so there is nothing to guarantee that multiplying them
+together will yield a valid probability distribution. See figure 16.4 for an example
+of reading factorization information from an undirected graph.
+Our example of the cold spreading between you, your roommate, and your
+colleague contains two cliques. One clique contains h and h . The factor for this
+y c
+clique can be defined by a table and might have values resembling these:
+= 0 = 1
+h h
+y y
+= 0
+h 2 1
+c
+= 1
+h 1 10
+c
+A state of 1 indicates good health, while a state of 0 indicates poor health
+(having been infected with a cold). Both of you are usually healthy, so the
+corresponding state has the highest affinity. The state where only one of you is
+sick has the lowest affinity, because this is a rare state. The state where both of
+you are sick (because one of you has infected the other) is a higher affinity state,
+though still not as common as the state where both are healthy.
+3
+A clique of the graph is a subset of nodes that are all connected to each other by an edge of
+the graph.
+564
+
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+a b c
+a b c
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+d e f
+d e f
+hh hh hh
+rr yy cc
+Figure 16.4: This graph implies that p(a, b, c, d, e, f) can be written as
+1
+  (a, b)  (b, c)  (a, d)  (b, e)  (e, f) for an appropriate choice of the   func-
+Fiag,ubre 16.b 4,c: Thais,d graphb,e impliese,f that p(a, b, c, d, e, f) can be written as
+Z Figure 16.3: An undirected graph representing how your roommate’s health h , your
+r
+tio 1 ns.
+  (a, b)  (b, c)  (a, d)  (b, e)  (e, f) for an appropriate choice of the   func-
+health h , and your work colleague’s health h affect each other. You and your roommate
+a,b b,c a,d b,e e,f
+Z y c
+tions.
+might infect each other with a cold, and you and your work colleague might do the same,
+but assuming that your roommate and your colleague do not know each other, they can
+To complete the model, we would need to also define a similar factor for the
+only infect each other indirectly via you.
+To complete the model, we would need to also define a similar factor for the
+clique containing h and h .
+y r
+clique containing h and h .
+y r
+3
+defined on an undirected graph . For each clique in the graph, a factor  ( )
+G Undire Ccted Models C
+16.2.3 The Partition Function
+(also called a clique potential) measures the affinity of the variables in that clique
+16.2.3 The Partition Function
+for being in each of their possible joint states. The factors are constrained to be
+While the unnormalized probability distribution is guaranteed to be nonnegative
+Unnormalized probability
+nonnegative. Together they define an unnormalized probability distribution
+While the unnormalized probability distribution is guaranteed to be nonnegative
+everywhere, it is not guaranteed to sum or integrate to 1. To obtain a valid
+everywhere, it is not guaranteed to sum or integrate to 1. To obtain a valid
+probability distribution, we must use the corresponding normalized probability
+p˜(x) = ⇧  ( ). (16.3)
+probability distribution, we must use the corresponding normalized probability
+4
+distribution C
+C 2 G
+4
+1
+distribution
+The unnormalized probabilityp(dxi)st=rib 1 utp˜io(xn)i,s efficient to work with so lon(g 16 a.s 4)
+p(x) = Z p˜(x),
+(16.4)
+all the cliques are small. It encodes the idea that states with higher affinity are
+Z
+Z
+where is the value that results in the probability distribution summing or
+more likely. However, unlike in a Bayesian network, there is little structure to the
+Z
+where is the value that results in the probability distribution summing or
+Partition function
+integrating to 1:
+definition of the cliques, so there is nothing to guarantee that multiplying them
+integrating to 1:
+together will yield a valid probability distribution. See figure 16.4 for an example
+Z = p˜(x)dx.
+(16.5)
+Z = p˜(x)dx.
+(16.5)
+of reading factorization information from an undirected graph.
+Z
+Z
+(Goodfellow 2017)
+Z  
+You can think of as a constant when the functions are held constant. Note
+Our example of the cold spreading between you, your roommate, and your
+Z  
+You can think of as a constant when the functions are held constant. Note
+  Z
+that if the functions have parameters, then is a function of those parameters.
+colleague contains two cliques. One clique contains h and h . The factor for this
+  Z
+that if the functions have parameters, then is a fyunctionc of those parameters.
+Z
+It cisliqcoume cmaonnbiendtehfienleidtebraytuarteabtolewarnidtemigwhtithhaivtes vaargluuems ernestesmobmliinttgedthteoses:ave space.
+Z
+It is common in the literature to write with its arguments omitted to save space.
+The normalizing constant Z is known as the partition function, a term borrowed
+The normalizing constant Z is known as the partition function, a term borrowed
+from statistical physics.
+from statistical physics.
+h = 0 h = 1
+y y
+Z x
+Since is an integral or sum over all possible joint assignments of the state ,
+Z x
+Since is an integral or sum over all possible joint assignments of the state ,
+h = 0 2 1
+c
+it is often intractable to compute. To be able to obtain the normalized probability
+it is often intractable to compute. To be able to obtain the normalized probability
+h = 1 1 10
+c
+didsitsrtirbibuutitoionnoof faannuunnddiirreecctteedd mmooddeell,, tthhee mmooddeell ssttrruuccttuurree aannddtthheeddeefifinnitiitoionns sofofthtehe
+   fufunnc Atcitosiontanstsemmouufsst 1 tbibenedccioconantddeuusccgiivvoeeodttoohcceooammlthpp,uuttwiinnhggile ZZaeeffisffitaccitieeenntotlflyy.0. Ii Innndtthicheaetcecosonntpetoxeoxtrtohfoefdadelteehpep
+lelae( rah nrani v niing ng, g,Zb Ze i e sinsuus insuuf a eal c llt ylyed iinnt wtrri aat c hcttaaa bbllc eeo ..ld BB) e .eccaa Buu oss tee hoofo f ftthh yee ouiinnta trr raa ecctu taa sbu bialiil lti l tyy yoh ofe fca colt omh m yp, puutsio tningt g h Ze Z
+corresponding state has the highest affinity. The state where only one of you is
+4
+4 A distribution defined by normalizing a product of clique potentials is also called a Gibbs
+A distribution defined by normalizing a product of clique potentials is also called a Gibbs
+sick has the lowest affinity, because this is a rare state. The state where both of
+distribution.
+distribution.
+you are sick (because one of you has infected the other) is a higher affinity state,
+though still not as common as the state where both are healthy.
+565
+565
+3
+A clique of the graph is a subset of nodes that are all connected to each other by an edge of
+the graph.
+564
+
+Separation
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+a s b a s b
+(a) (b)
+When s is observed,
+When s is not observed,
+it blocks the flow of
+influence can flow from a
+Figure 16.6: (a) The path between random variable a and random variable b through s is
+influence between a
+to b and vice versa through s.
+active, because s is not observed. This means that a and b are not separated. (b) Here s
+and b: they are
+is shaded in, to indicate that it is observed. Because the only path between a and b is
+through s, and that path is inactive, we can conclude thseaptaaraatnedd b are separated given s.
+16.2.5 Separation and D-Separation
+(Goodfellow 2017)
+The edges in a graphical model tell us which variables directly interact. We often
+need to know which variables indirectly interact. Some of these indirect interactions
+can be enabled or disabled by observing other variables. More formally, we would
+like to know which subsets of variables are conditionally independent from each
+other, given the values of other subsets of variables.
+Identifying the conditional independences in a graph is simple for undirected
+models. In this case, conditional independence implied by the graph is called
+separation. We say that a set of variables is separated from another set of
+A
+variables given a third set of variables if the graph structure implies that
+B S A
+is independent from given . If two variables a and b are connected by a path
+B S
+involving only unobserved variables, then those variables are not separated. If no
+path exists between them, or all paths contain an observed variable, then they are
+separated. We refer to paths involving only unobserved variables as “active” and
+paths including an observed variable as “inactive.”
+When we draw a graph, we can indicate observed variables by shading them in.
+See figure 16.6 for a depiction of how active and inactive paths in an undirected
+model look when drawn in this way. See figure 16.7 for an example of reading
+separation from an undirected graph.
+Similar concepts apply to directed models, except that in the context of
+directed models, these concepts are referred to as d-separation. The “d” stands
+for “dependence.” D-separation for directed graphs is defined the same as separation
+for undirected graphs: We say that a set of variables is d-separated from another
+A
+set of variables given a third set of variables if the graph structure implies
+B S
+that is independent from given .
+A B S
+As with undirected models, we can examine the independences implied by the
+graph by looking at what active paths exist in the graph. As before, two variables
+are dependent if there is an active path between them and d-separated if no such
+569
+
+CHAPTER 16. SSTe RUp CTa URr EDa Pt ROi Bo An BIL ISe TICx Ma ODm ELSp FOl Re DEEP LEARNING
+a
+b c
+d
+Figure 16.7: An example of reading separation properties from an undirected graph. Here
+The nodes a and c are separated
+b is shaded to indicate that it is observed. Because observing b blocks the only path from
+a to c, we say that a and c are separated from each other given b. The observation of b
+One path between a and d is still active,
+also blocks one path between a and d, but there is a second, active path between them.
+though the other path is blocked, so these
+Therefore, a and d are not separated given b.
+two nodes are not separated.
+(Goodfellow 2017)
+path exists. In directed nets, determining whether a path is active is somewhat
+more complicated. See figure 16.8 for a guide to identifying active paths in a
+directed model. See figure 16.9 for an example of reading some properties from a
+graph.
+It is important to remember that separation and d-separation tell us only
+about those conditional independences that are implied by the graph. There is no
+requirement that the graph imply all independences that are present. In particular,
+it is always legitimate to use the complete graph (the graph with all possible edges)
+to represent any distribution. In fact, some distributions contain independences
+that are not possible to represent with existing graphical notation. Context-
+specific independences are independences that are present dependent on the
+value of some variables in the network. For example, consider a model of three
+binary variables: a, b and c. Suppose that when a is 0, b and c are independent,
+but when a is 1, b is deterministically equal to c. Encoding the behavior when
+a = 1 requires an edge connecting b and c. The graph then fails to indicate that b
+and c are independent when a = 0.
+In general, a graph will never imply that an independence exists when it does
+not. However, a graph may fail to encode an independence.
+16.2.6 Converting between Undirected and Directed Graphs
+We often refer to a specific machine learning model as being undirected or directed.
+For example, we typically refer to RBMs as undirected and sparse coding as directed.
+This choice of wording can be somewhat misleading, because no probabilistic model
+is inherently directed or undirected. Instead, some models are most easily described
+using a directed graph, or most easily described using an undirected graph.
+570
+
+d-separation
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+The flow of influence is more complicated for directed models
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+a s b
+The path between a and b is active for all of these graphs:
+a s b
+a s b
+a s a b s b a s b
+a s b a s b
+(a) (b)
+a s b a s b
+a s b a s b
+a (a) b a (bs) b
+(a) (b)
+(a) (b)
+a b a s b
+a b a s b
+a b a s b
+s c
+s(c) (dc)
+s c
+Figure 16.8: All the kinds of active paths of length two that can exist between random
+s c
+(c) (d)
+variables a and b. (a) Any path with arrows proceeding directly from a to b or vice versa.
+(c) (d)
+This kind of path becomes blocked if s is observed. We have already seen this kind of
+Figure 16.8: All the kinds of active paths of length two that can exist between random
+path in the relay race example. (b) Variables a and b are connected by a common cause (s G.oodfellow 2017)
+(c) (d)
+Figure 16.8: Avllartihaeblkeisndasaonfdacbt.iv(ea)pa Atnhys opfaltehngwtihthtwaorrtohwastpcraonceeexdisitngbedtiwreecetnlyrafnrodmoma to b or vice versa.
+For example, suppose s is a variable indicating whether or not there is a hurricane, and a
+variables a and Tbh.is(ak)in Adnyopf aptahthwibthecaormrowess bplroocckeeeddinifg sdiirsecotblysefrrovmed.a t Wo ebhoarvveicaelrveearsday. seen this kind of
+and b measure the wind speed at two different nearby weather monitoring outposts. If we
+Figure 16.8: All the kinds of active paths of length two that can exist between random
+This kind of path becomes blocked if s is observed. We have already seen this kind of
+path in the relay race example. (b) Variables a and b are connected by a common cause s.
+observe very high winds at station a, we might expect to also see high winds at b. This
+path invatrhieabrelleasyaraacne dexbam. p(ale). A(bn)y Vapraiatbhlews iathanadrrboawrse cpornonceecetdedinbgydairceocmtmlyonfrocamusae st.o b or vice versa.
+Forkienxdamofpplea,thsucpapnobsee sblioscakevdarbiyabolbesienrdviicnagtisn.g Ifwwheetahlreeraodrynkontotwhetrheeries ias hauhrurircraicnaen, ea,nwdea
+For example, suppose s is a variable indicating whether or not there is a hurricane, and a
+This kinanddex obp f emp ct aetat h osus breee ecthho ieg m hwe wisnidn b d lso spc aek teedb d ,artif etgws aroi d sdle oisffb ses oreef rnw vth end aet .airs Wboye bws h eer aav vtehe dera a t lmr a eo. an A dityolors wine e egr notuh t athpn ios esxtksp i.n ec Id tfewo d fe
+and b measure the wind speed at two different nearby weather monitoring outposts. If we
+path inotbhsweeirnrvedelaavytearrya(fchoerigeahxhawumirnrpidclsaen.aet()bsw)toa Vutilaodrninaoabt,lecwhseaanmgaiegnohdutrbeexxappreeecctctaottnoionanelscootfewsdeienbdhysigaahtcbwom(inkmdnosownaitncgba.tuh Tseerheiss.
+observe very high winds at station a, we might expect to also see high winds at b. This
+For exakminpisdleao, fhsuuprpartpichoasnceae)ns. b Hiseoawbelvovacerkri,eadifbslbeyisionnbdostiecoravbtisinenrggvesw.d,h Iftehtwehneeraaloraernadndboytakrtnehoedwreeptehinsedraeenhitsu, air.rehi.c,uatrhnreiec,paaantneh,dwisae
+kind of path can be blocked by observing s. If we already know there is a hurricane, we
+expaecctitveto. (sce)e Vhaigrihabwleinsdasaantdbb, raergeabrodtlehsspaorfenwthsaotf iss. o Tbhsiesrvisedcaallteda.a AVl-oswtreurctthuarne,exopretchteed
+and b measure the wind speed at two different nearby weather monitoring outposts. If we
+expect to see high winds at b, regardless of what is observed at a. A lower than expected
+collider case. The V-structure causes a and b to be related by the explaining away
+wind at a (for a hurricane) would not change our expectation of winds at b (knowing there
+observe very high winds at station a, we might expect to also see high winds at b. This
+wind at a (for a hurricane) would not change our expectation of winds at b (knowing there
+effect. In this case, the path is actually active when s is observed. For example, suppose
+is a hurricane). However, if s is not observed, then a and b are dependent, i.e., the path is
+is a hukrrinicdanoe)f.p Haotwhevcearn, ifbseibs lnooctkoebdsebrvyedo,btsheernvainagnds.b Iafrwe edeaplernedaednyt, ki.en.o, wthethpeatrhe iiss a hurricane, we
+s is a variable indicating that your colleague is not at work. The variable a represents
+active. (c) Variables a and b are both parents of s. This is called a V-structure, or the
+active.ex(cp)e Vctartiaobsleeseahaignhd bwainredsboatth bp,arreengtasrodflse.ss Tohfiswishcaatlleisd oab Vse-rsvtreudcatut rae., o Ar tlohweer than expected
+her being sick, while b represents her being on vacation. If you observe that she is not
+collider case. The V-structure causes a and b to be related by the explaining away
+collider case. The V-structure causes a and b to be related by the explaining away
+wind at a (for a hurricane) would not change our expectation of winds at b (knowing there
+at work, you can presume she is probably sick or on vacation, but it is not especially
+effect. In this case, the path is actually active when s is observed. For example, suppose
+effect. In this case, the path is actually active when s is observed. For example, suppose
+is a hurriclaikneely).t Hhaotwbeovtehr,haifves hisapnpoetneodbsaetrtvheeds,atmheentima ea.n Idf ybouarfienddeopuetntdheantts,hie.ei.s,otnhevapcaattihoni,s
+s is a variable indicating that your colleague is not at work. The variable a represents
+s is a variable indicating that your colleague is not at work. The variable a represents
+active. (c)th Visafraiactbliesssuaffiacniedntbtoareexpblaoitnhhpearraebnstesncoef.s Y. o Tuhciasnisincfearlltehdatas Vhe-sistrpurocbtaubrlye,nootr atlhsoe
+her being sick,hwerhibleeibngrespirceks,enwthsihleerbbreeipnrgesoennvtsachaetriobn.ei Infgyooun ovbasceartvieont.ha Itf syhoeuisobnsoetrve that she is not
+sick. (d) The explaining away effect happens even if any descendant of s is observed! For
+collider case. The V-structure causes a and b to be related by the explaining away
+at work, you caatnwporerksu,myoeushceanis pprreosbuambley sshicekisorpornobvaabclaytisoinc,kbourt oitnisvancoattieosnp,ecbiualtlyit is not especially
+example, suppose that c is a variable representing whether you have received a report
+effect. In this case, the path is actually active when s is observed. For example, suppose
+likely that bothlikhealvyethhaaptpbeontehd hatavtehehsaapmpeenteimdea.t Itfhyeousafimned toiumtet.ha Ift ysohue ifisnodn ovuatcatthioant,she is on vacation,
+from your colleague. If you notice that you have not received the report, this increases
+this fasctisisasuvffiathcriiieasnbftaletcotienisxdpsilucaaffiintcihnieegnrttahtbosaetenxcypeol.au Yirnocuhoeclralenaabignsuefenercietsh. an Ytoostuheactaisnwpiornorfbkear.btl Thyahnteostvhaaelrsiiosabprleobaabrleypnreosteanltsso
+your estimate of the probability that she is not at work today, which in turn makes it
+sick. (hd)er Tbheeiens x igp ck las. iinc(ki d n,) gw T aw hhe ailyeex ebff p e lra cei t nph irn aeg pspea enw nta ssy ehv e eeff nrec ibf tea hinna y pgp doe e snn c s evn ead vca ean nttiif oofna s n. y i Isfd o eyb sos c eue r n vod edba ! nset Fro ovr festihsaotbssehreveids!n Footr
+more likely that she is either sick or on vacation. The only way to block a path through a
+example, suppose that c is a variable representing whether you have received a report
+at worke,xaymouplcea, nsupprpeossuemtheasthceisisapvraorbiaabblleyrespicrkeseonrtionng vwahceatthieorn,yobuuthaivteisrenceoitveedspaerceipalolryt
+V-structure is to observe none of the descendants of the shared child.
+from your colleague. If you notice that you have not received the report, this increases
+from your colleague. If you notice that you have not received the report, this increases
+likely that both have happened at the same time. If you find out that she is on vacation,
+your estimate of the probability that she is not at work today, which in turn makes it
+your estimate of the probability that she is not at work today, which in turn makes it
+this fact is sufficient to explain her absence. You can infer that she is probably not also
+571
+more likely that she is either sick or on vacation. The only way to block a path through a
+more likely that she is either sick or on vacation. The only way to block a path through a
+sick. (d) The explaining away effect happens even if any descendant of s is observed! For
+V-structure is to observe none of the descendants of the shared child.
+V-structure is to observe none of the descendants of the shared child.
+example, suppose that c is a variable representing whether you have received a report
+from your colleague. If you notice that you have not received the report, this increases
+571
+571
+your estimate of the probability that she is not at work today, which in turn makes it
+more likely that she is either sick or on vacation. The only way to block a path through a
+V-structure is to observe none of the descendants of the shared child.
+571
+
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+a b
+a b
+c
+c
+d-separation example
+d e
+Figure 16.9: From this graph, we can read out several d-separation properties. Examples
+d e
+include:
+a b
+a and b are d-separated given the empty set
+•
+Figure 16.9: From this graph, we can read out several d-separation properties. Examples
+a and e are d-separated given c
+include:
+•
+c
+d and e are d-separated given c
+• a and b are d-separated given the empty set
+•
+We can also see that some variables are no longer d-separated when we observe some
+a and e are d-separated given c
+variables:
+d e
+•
+adanadndb aerearneotd-ds-eseppaarraatteedd ggiivveenncc
+••
+Figure 16.9: From this graph, we can read out several d-separation properties. Examples
+a and b are not d-separated given d
+We can also see that some variables are no longer d-separated when we observe some
+include:
+Observing variables can• activate paths!
+variables:
+a and b are d-separated given the empty set
+•
+a and b are not d-separated given c
+a and e are d-separated given c
+•
+•
+d and e are d-separated given c a and b are not d-separated given d
+•
+•
+We can also see that some variables are no longer d-separated when we observe some
+variables: (Goodfellow 2017)
+a and b are not d-separated given c
+•
+a and b are not d-separated given d
+•
+572
+572
+572
+
+A complete graph can represent
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+any probability distribution
+Figure 16.10: Examples of complete graphs, which can describe any probability distribution.
+The benefits of graphical models come from omitting edges
+Here we show examples with four random variables. (Left) The complete undirected graph.
+In the undirected case, the complete graph is unique. (Right) A complete directed graph.
+In the directed case, there is not a unique complete graph. We choose an ordering of the
+variables and draw an arc from each variable to every variable that comes after it in the
+(Goodfellow 2017)
+ordering. There are thus a factorial number of complete graphs for every set of random
+variables. In this example, we order the variables from left to right, top to bottom.
+Directed models and undirected models both have their advantages and disad-
+vantages. Neither approach is clearly superior and universally preferred. Instead,
+we should choose which language to use for each task. This choice will partially
+depend on which probability distribution we wish to describe. We may choose to
+use either directed modeling or undirected modeling based on which approach can
+capture the most independences in the probability distribution or which approach
+uses the fewest edges to describe the distribution. Other factors can affect the
+decision of which language to use. Even while working with a single probabil-
+ity distribution, we may sometimes switch between different modeling languages.
+Sometimes a different language becomes more appropriate if we observe a certain
+subset of variables, or if we wish to perform a different computational task. For
+example, the directed model description often provides a straightforward approach
+to efficiently draw samples from the model (described in section 16.3), while the
+undirected model formulation is often useful for deriving approximate inference
+procedures (as we will see in chapter 19, where the role of undirected models is
+highlighted in equation 19.56).
+Every probability distribution can be represented by either a directed model or
+an undirected model. In the worst case, one can always represent any distribution
+by using a “complete graph.” For a directed model, the complete graph is any
+directed acyclic graph in which we impose some ordering on the random variables,
+and each variable has all other variables that precede it in the ordering as its
+ancestors in the graph. For an undirected model, the complete graph is simply a
+graph containing a single clique encompassing all the variables. See figure 16.10
+for an example.
+573
+
+Converting between graphs
+• Any specific probability distribution can be
+represented by either an undirected or a directed
+graph
+• Some probability distributions have conditional
+independences that one kind of graph fails to imply
+(the distribution is simpler than the graph
+describes; need to know the conditional probability
+distributions to see the independences)
+(Goodfellow 2017)
+
+Converting directed to
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+undirected
+a
+a b hh hh hh
+11 22 33
+b
+c vv 11 vv 22 vv 33
+c Must add an edge between
+unconnected coparents
+a
+a b hh hh hh
+11 22 33
+b
+c vv 11 vv 22 vv 33
+c
+Figure 16.11: Examples of converting directed models (top row) to undirected models (Goodfellow 2017)
+(bottom row) by constructing moralized graphs. (Left) This simple chain can be converted
+to a moralized graph merely by replacing its directed edges with undirected edges. The
+resulting undirected model implies exactly the same set of independences and conditional
+independences. (Center) This graph is the simplest directed model that cannot be
+converted to an undirected model without losing some independences. This graph consists
+entirely of a single immorality. Because a and b are parents of c, they are connected by an
+active path when c is observed. To capture this dependence, the undirected model must
+include a clique encompassing all three variables. This clique fails to encode the fact that
+a b. (Right) In general, moralization may add many edges to the graph, thus losing many
+?
+implied independences. For example, this sparse coding graph requires adding moralizing
+edges between every pair of hidden units, thus introducing a quadratic number of new
+direct dependences.
+575
+
+Converting undirected to
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+directed
+a b a b a b
+d c d c d c
+Assign
+No loops of
+Figure 16.12: Converting an undirecte Addmdo deedlgteos atod irected model. (Left) This undirected
+directions to
+length
+model cannot be converted to a directed model because it has a loop of length four with
+triangulate
+edges. No
+no chords. Spegcriefiactaellry ,ththaenu ndirected model encodes two different independences that
+long loops
+no directed model can capture simultaneously: a c b d, d irec a t n e d d b cy d cles a, c . (Center)
+three allowed!
+? | { } ? | { }
+To convert the undirected model to a directed model, we must triangulate the graph,
+allowed.
+by ensuring that all loops of greater than length three have a chord. To do so, we can
+(Goodfellow 2017)
+either add an edge connecting a and c or we can add an edge connecting b and d. In this
+example, we choose to add the edge connecting a and c. (Right) To finish the conversion
+process, we must assign a direction to each edge. When doing so, we must not create any
+directed cycles. One way to avoid directed cycles is to impose an ordering over the nodes,
+and always point each edge from the node that comes earlier in the ordering to the node
+that comes later in the ordering. In this example, we use the variable names to impose
+alphabetical order.
+point each edge from the node that comes earlier in the ordering to the node that
+comes later in the ordering. See figure 16.12 for a demonstration.
+16.2.7 Factor Graphs
+Factor graphs are another way of drawing undirected models that resolve an
+ambiguity in the graphical representation of standard undirected model syntax. In
+an undirected model, the scope of every   function must be a subset of some clique
+in the graph. Ambiguity arises because it is not clear if each clique actually has
+a corresponding factor whose scope encompasses the entire clique—for example,
+a clique containing three nodes may correspond to a factor over all three nodes,
+or may correspond to three factors that each contain only a pair of the nodes.
+Factor graphs resolve this ambiguity by explicitly representing the scope of each  
+function. Specifically, a factor graph is a graphical representation of an undirected
+model that consists of a bipartite undirected graph. Some of the nodes are drawn
+as circles. These nodes correspond to random variables, as in a standard undirected
+model. The rest of the nodes are drawn as squares. These nodes correspond to
+the factors   of the unnormalized probability distribution. Variables and factors
+may be connected with undirected edges. A variable and a factor are connected
+576
+
+Factor graphs are less
+ambiguous
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+a b a ff b
+22
+ff
+11
+a b
+ff ff
+11 33
+c c c
+Undirected graph: is
+Factor graphs
+Figure 16.13: An example of how a factor graph can resolve ambiguity in the interpretation
+this three pairwise
+of undirected networks. (Left) An undirecdtiesdanmetbwiogruk awtieth bay clique involving three
+variables: a, b and c. (Center) A factor graph corresponding to the same undirected
+potentials or one
+placing each potential
+model. This factor graph has one factor over all three variables. (Right) Another valid
+potential over three
+factor graph for the same undirected model. i Tnh itshfaec tgorr agprahph has three factors, each
+over only two variables. Representation, inference, and learning are all asymptotically
+variables?
+cheaper in this factor graph than in the factor graph depicted in the center, even(Gotodhfeollowu 2 g 01 h 7)
+both require the same undirected graph to represent.
+in the graph if and only if the variable is one of the arguments to the factor in
+the unnormalized probability distribution. No factor may be connected to another
+factor in the graph, nor can a variable be connected to a variable. See figure 16.13
+for an example of how factor graphs can resolve ambiguity in the interpretation of
+undirected networks.
+16.3 Sampling from Graphical Models
+Graphical models also facilitate the task of drawing samples from a model.
+One advantage of directed graphical models is that a simple and efficient proce-
+dure called ancestral sampling can produce a sample from the joint distribution
+represented by the model.
+The basic idea is to sort the variables x in the graph into a topological ordering,
+i
+so that for all i and j, j is greater than i if x is a parent of x . The variables
+i j
+can then be sampled in this order. In other words, we first sample x P (x ),
+1 1
+⇠
+then sample P (x P a (x )), and so on, until finally we sample P (x P a (x )).
+2 2 n n
+| |
+G G
+So long as each conditional distribution p(x P a (x )) is easy to sample from,
+i i
+|
+G
+then the whole model is easy to sample from. The topological sorting operation
+guarantees that we can read the conditional distributions in equation 16.1 and
+sample from them in order. Without the topological sorting, we might attempt to
+sample a variable before its parents are available.
+577
+
+Roadmap
+• Challenges of Unstructured Modeling
+• Using Graphs to Describe Model Structure
+• Sampling from Graphical Models
+• Advantages of Structured Modeling
+• Structure Learning and Latent Variables
+• Inference and Approximate Inference
+• The Deep Learning Approach to Structured Probabilistic Modeling
+(Goodfellow 2017)
+
+Sampling from directed models
+• Easy and fast to draw fair samples from the whole
+model
+• Ancestral sampling: pass through the graph in
+topological order. Sample each node given its
+parents.
+• Harder to sample some nodes given other nodes,
+unless the observed nodes are at the start of the
+topology
+(Goodfellow 2017)
+
+Sampling from undirected
+models
+• Usually requires Markov chains
+• Usually cannot be done exactly
+• Usually requires multiple iterations even to
+approximate
+• Described in Chapter 17
+(Goodfellow 2017)
+
+Roadmap
+• Challenges of Unstructured Modeling
+• Using Graphs to Describe Model Structure
+• Sampling from Graphical Models
+• Advantages of Structured Modeling
+• Structure Learning and Latent Variables
+• Inference and Approximate Inference
+• The Deep Learning Approach to Structured Probabilistic Modeling
+(Goodfellow 2017)
+
+Tabular Case
+• Assume each node has a tabular distribution given its parents
+• Memory, sampling, inference are now exponential in number of
+variables in factor with largest scope
+• For many interesting models, this is very small
+• e.g., RBMs: all factor scopes are size 2 or 1
+• Previously, these costs were exponential in total number of nodes
+• Statistically, much easier to estimate this manageable number of
+parameters
+(Goodfellow 2017)
+
+Roadmap
+• Challenges of Unstructured Modeling
+• Using Graphs to Describe Model Structure
+• Sampling from Graphical Models
+• Advantages of Structured Modeling
+• Structure Learning and Latent Variables
+• Inference and Approximate Inference
+• The Deep Learning Approach to Structured Probabilistic Modeling
+(Goodfellow 2017)
+
+Learning about dependencies
+• Suppose we have thousands of variables
+• Maybe gene expression data
+• Some interact
+• Some do not
+• We do not know which ahead of time
+(Goodfellow 2017)
+
+Structure learning strategy
+• Try out several graphs
+• See which graph does best job of some criterion
+• Fitting training set with small model complexity
+• Fitting validation set
+• Iterative search, propose new graphs similar to best
+graph so far (remove edge / add edge / flip edge)
+(Goodfellow 2017)
+
+Latent variable strategy
+Use one graph structure
+•
+Many latent variables
+•
+Dense connections of latent variables to observed variables
+•
+Parameters learn that each latent variable interacts
+•
+strongly with only a small subset of observed variables
+Trainable just with gradient descent; no discrete search
+•
+over graphs
+(Goodfellow 2017)
+
+Roadmap
+• Challenges of Unstructured Modeling
+• Using Graphs to Describe Model Structure
+• Sampling from Graphical Models
+• Advantages of Structured Modeling
+• Structure Learning and Latent Variables
+• Inference and Approximate Inference
+• The Deep Learning Approach to Structured Probabilistic Modeling
+(Goodfellow 2017)
+
+Inference and Approximate
+Inference
+Inferring marginal distribution over some nodes or
+•
+conditional distribution of some nodes given other nodes
+is #P hard
+NP-hardness describes decision problems. #P-
+•
+hardness describes counting problems, e.g., how many
+solutions are there to a problem where finding one
+solution is NP-hard
+We usually rely on approximate inference, described in
+•
+chapter 19
+(Goodfellow 2017)
+
+Roadmap
+• Challenges of Unstructured Modeling
+• Using Graphs to Describe Model Structure
+• Sampling from Graphical Models
+• Advantages of Structured Modeling
+• Structure Learning and Latent Variables
+• Inference and Approximate Inference
+• The Deep Learning Approach to Structured Probabilistic Modeling
+(Goodfellow 2017)
+
+Deep Learning Stylistic
+Tendencies
+• Nodes organized into layers
+• High amount of connectivity between layers
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+• Examples: RBMs, DBMs, GANs, VAEs
+hh hh hh hh
+11 22 33 44
+vv vv vv
+11 22 33
+Figure 16.14: An RBM drawn as a Markov network.
+(Goodfellow 2017)
+16.7.1 Example: The Restricted Boltzmann Machine
+The restricted Boltzmann machine (RBM) (Smolensky, 1986), or harmo-
+nium, is the quintessential example of how graphical models are used for deep
+learning. The RBM is not itself a deep model. Instead, it has a single layer
+of latent variables that may be used to learn a representation for the input. In
+chapter 20, we will see how RBMs can be used to build many deeper models. Here,
+we show how the RBM exemplifies many of the practices used in a wide variety of
+deep graphical models: its units are organized into large groups called layers, the
+connectivity between layers is described by a matrix, the connectivity is relatively
+dense, the model is designed to allow efficient Gibbs sampling, and the emphasis
+of the model design is on freeing the training algorithm to learn latent variables
+whose semantics were not specified by the designer. In section 20.2, we revisit the
+RBM in more detail.
+The canonical RBM is an energy-based model with binary visible and hidden
+units. Its energy function is
+E(v, h) = b v c h v W h, (16.10)
+> > >
+     
+where b, c, and W are unconstrained, real valued, learnable parameters. We can
+see that the model is divided into two groups of units: v and h, and the interaction
+between them is described by a matrix W . The model is depicted graphically in
+figure 16.14. As this figure makes clear, an important aspect of this model is that
+there are no direct interactions between any two visible units or between any two
+hidden units (hence “restricted”; a general Boltzmann machine may have arbitrary
+connections).
+The restrictions on the RBM structure yield the nice properties
+p(h v) = ⇧ p(h v) (16.11)
+i i
+| |
+and
+p(v h) = ⇧ p(v h). (16.12)
+i i
+| |
+584
+
+For more information…
+(Goodfellow 2017)

@@ -1,0 +1,31 @@
+{
+  "stage": "rag_ingestion",
+  "collection_name": "kg_chunks_task2_cuda_requested_1782137191",
+  "input_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage1_chunks.json",
+  "row_count": 49,
+  "inserted": 49,
+  "batch_size": 8,
+  "device_info": {
+    "requested_device": "cuda",
+    "selected_device": "cpu",
+    "device": "cpu",
+    "fallback_applied": true,
+    "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+    "probe_success": true,
+    "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+    "torch_version": "2.12.0+cpu",
+    "torch_cuda_build": null,
+    "cuda_available": false,
+    "cuda_device_count": 0,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.9",
+    "force_device_env": "",
+    "component": "rag.embedding",
+    "attempts": [
+      {
+        "device": "cpu",
+        "success": true
+      }
+    ]
+  }
+}

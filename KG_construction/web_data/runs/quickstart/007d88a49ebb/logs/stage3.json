@@ -1,0 +1,29 @@
+{
+  "stage": "stage3",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage3_node_summary_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage3_node_summary_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\quickstart\\007d88a49ebb\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\quickstart\\007d88a49ebb\\stage3_topics_with_summary.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 44.8728,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage3_topics_with_summary.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 17\n[LLM] 1/17 core dependencies management\n[LLM] 2/17 pip dependencies installation\n[LLM] 3/17 general dependencies overview\n[LLM] 4/17 print testing methodology\n[LLM] 5/17 installing requirements from requirements.txt\n[LLM] 6/17 installing core packages\n[LLM] 7/17 testing environment setup\n[LLM] 8/17 create_collection unit test\n[LLM] 9/17 verify functionality of components\n[LLM] 10/17 test collection implementation\n[LLM] 11/17 requirements.txt file structure\n[LLM] 12/17 using Python sentence_transformers library\n[LLM] 13/17 creating a virtual environment\n[LLM] 14/17 quick start guide for setup\n[LLM] 15/17 activating virtual environment via bin/activate\n[LLM] 16/17 start guide for new users\n[LLM] 17/17 rag_tutorial for creating collections\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\quickstart\\007d88a49ebb\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+  "stderr_tail": ""
+}

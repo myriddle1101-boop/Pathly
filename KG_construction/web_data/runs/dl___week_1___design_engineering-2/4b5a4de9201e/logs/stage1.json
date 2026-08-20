@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_1___design_engineering-2\\4b5a4de9201e\\DL___Week_1___Design_Engineering (2).pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_1___design_engineering-2\\4b5a4de9201e\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_1___design_engineering-2\\4b5a4de9201e\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.83,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 784\n[2] 清洗后词数: 1342\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 5\n[5] 分块数（过滤后）: 5\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_1___design_engineering-2\\4b5a4de9201e\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_1___design_engineering-2\\4b5a4de9201e\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=273\nMachine Learning For Design Engineers Week 1: Introduction Pietro Ferraro Table of 1 Whoweare 2 Logisticsofthecourse 3 Whatis Machine Learning Content 4 Whatis Deep Learning 5 Howwillthecoursebedelivered? Thiscourseisdiv...\n\n[Chunk 2] words=260\nWhat is Deep Learning? Imperial College London Machine Learning For Design Engineers Whatis Deep Learning? Abriefhistory-Inventionof Neural Networks Deeplearning(DL)isasubsetof machinelearningthatusesmultilayered neuraln...\n\n[Chunk 3] words=273\nHowwillthecoursebedelivered? Listoftopics Thesecondpartwilldelveintomoreadvancedtopicsandwillbetaughtbyguest lecturers: l Markov Chains l MDPsand Reinforcement Learning l Transformersand LLMs l Optimal Transportormaybean...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

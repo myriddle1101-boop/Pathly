@@ -1,0 +1,86 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 13,
+  "prerequisites": [
+    {
+      "from": "Mathematical Functions",
+      "to": "Probability Theory",
+      "relation_type": "strong_prerequisite",
+      "reason": "Probability theory relies on function-based mathematical relationships such as mappings, densities, and transformations."
+    },
+    {
+      "from": "Random Variables",
+      "to": "Probability Distributions",
+      "relation_type": "strong_prerequisite",
+      "reason": "A probability distribution is defined over a random variable, so the concept of random variables must come first."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Probability Distributions",
+      "relation_type": "strong_prerequisite",
+      "reason": "Probability distributions are a core concept built from the foundations of probability theory."
+    },
+    {
+      "from": "Random Variables",
+      "to": "Covariance",
+      "relation_type": "strong_prerequisite",
+      "reason": "Covariance measures joint variation between random variables, so understanding random variables is necessary first."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Covariance",
+      "relation_type": "strong_prerequisite",
+      "reason": "Covariance depends on probabilistic concepts such as expectation and joint behavior of random variables."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Statistical Inference",
+      "relation_type": "strong_prerequisite",
+      "reason": "Statistical inference is grounded in probabilistic reasoning about sampling, likelihood, and uncertainty."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Statistical Inference",
+      "relation_type": "strong_prerequisite",
+      "reason": "Statistical inference requires understanding distributions of data, estimators, and sampling behavior."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Information Theory",
+      "relation_type": "strong_prerequisite",
+      "reason": "Information theory builds on probabilistic definitions of uncertainty, entropy, and events."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Information Theory",
+      "relation_type": "strong_prerequisite",
+      "reason": "Information-theoretic quantities are defined from probability distributions over outcomes."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Probabilistic Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Probabilistic models require foundational understanding of uncertainty and probabilistic reasoning."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Probabilistic Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Probabilistic models are specified using distributions over variables and outcomes."
+    },
+    {
+      "from": "Random Variables",
+      "to": "Probabilistic Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Probabilistic models represent uncertain quantities as random variables, so that concept is necessary first."
+    },
+    {
+      "from": "Mathematical Functions",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural networks are built from compositions of mathematical functions such as linear maps and activations."
+    }
+  ]
+}

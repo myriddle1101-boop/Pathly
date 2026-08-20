@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53",
+  "run_id": "cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:11.163375+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "8ab005736b57c099bddc413166279bafa95cd2301c5195622c3291b8dd72301d",
+    "stage2a_topics_hybrid.json": "37778ac6b5acd6b91ee2a575f23e4bd333294c6c113685fbb5f040dc53ae46dc",
+    "stage2c_similarity_edges.json": "491f26edf81134af36eb0d44cc9e0d718065c41c448ad20bf41d9b59be3e2251",
+    "stage3_topics_with_summary.json": "c5d719b7a8fc17d86154bb895b8369278608202de78873699d40838ddf84bca1"
+  },
+  "old_relation_count": 6,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

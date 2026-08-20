@@ -1,0 +1,15 @@
+{
+  "run_id": "09_conv-426f5e52542b",
+  "can_resume": false,
+  "last_failed_stage": null,
+  "next_resume_stage": null,
+  "completed_stages": [
+    "stage1",
+    "stage2a",
+    "stage2b",
+    "stage2c",
+    "stage3",
+    "stage4"
+  ],
+  "updated_at": "2026-07-29T13:55:23+08:00"
+}

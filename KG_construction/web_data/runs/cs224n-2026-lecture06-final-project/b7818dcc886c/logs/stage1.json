@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\cs224n-2026-lecture06-final-project.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.6516,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3891\n[2] 清洗后词数: 3956\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 18\n[5] 分块数（过滤后）: 18\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=227\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang Lecture 6: Final Projects & Practical Tips Lecture Plan Quick summary of Lecture 5: Transformers (15 mins) Lecture 6: Final Projects – practical ...\n\n[Chunk 2] words=192\nCross-attention (details)  We saw that self-attention is when keys, queries, and values come from the same source.  , … ,   In the decoder, we have attention that 1  looks more like what we saw last week.  Let  , ...\n\n[Chunk 3] words=251\nWhat would we like to fix about the Transformer?  Quadratic compute in self-attention (today):  Computing all pairs of interactions means our computation grows quadratically with the sequence length!  What if the seq ...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

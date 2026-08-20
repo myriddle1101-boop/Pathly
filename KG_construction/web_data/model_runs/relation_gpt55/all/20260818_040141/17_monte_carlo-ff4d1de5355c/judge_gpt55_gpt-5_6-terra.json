@@ -1,0 +1,111 @@
+{
+  "created_at": "2026-08-18T18:46:56.903609+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-17_monte_carlo-ff4d1de5355c",
+  "file_name": "17_monte_carlo-ff4d1de5355c",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 19,
+  "topic_metrics": {
+    "precision": 0.5455,
+    "recall": 0.6,
+    "f1": 0.5714,
+    "tp": 6,
+    "fp": 5,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 2,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Variance",
+      "Sampling Techniques",
+      "Training Cost",
+      "Integrals",
+      "Probabilistic Models",
+      "Path Analysis"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Empirical Methods",
+        "reason": "The source uses empirical averages and empirical variance, but does not present empirical methods as a distinct learning topic."
+      },
+      {
+        "name": "Optimization",
+        "reason": "Variance minimization for an importance distribution is discussed, but optimization is not a substantive topic of the material."
+      },
+      {
+        "name": "Model Evaluation",
+        "reason": "Confidence intervals and estimator uncertainty are mentioned, but general model evaluation is not covered."
+      },
+      {
+        "name": "Artificial Neural Networks",
+        "reason": "The source discusses deep-learning applications and GANs but does not teach artificial neural networks."
+      },
+      {
+        "name": "Regression and Classification",
+        "reason": "Neither regression nor classification is discussed."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Monte Carlo Sampling",
+        "reason": "The central topic is estimating sums, integrals, and expectations using sample averages."
+      },
+      {
+        "name": "Importance Sampling",
+        "reason": "The source explicitly derives importance sampling estimators and discusses proposal distributions and variance."
+      },
+      {
+        "name": "Markov Chains",
+        "reason": "The source introduces Markov chains as a method for sampling when direct sampling is difficult."
+      },
+      {
+        "name": "Gibbs Sampling",
+        "reason": "A Gibbs sampling procedure and its use of Markov blankets are explicitly presented."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Optimization",
+        "to": "Artificial Neural Networks",
+        "reason": "This general dependency is not taught or established by the source, which does not cover neural-network training."
+      },
+      {
+        "from": "Probabilistic Models",
+        "to": "Path Analysis",
+        "reason": "The source discusses active paths and separation in graphical models, but does not establish the broad concept of Path Analysis as a prerequisite dependency."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Probability Distributions",
+        "to": "Monte Carlo Sampling",
+        "reason": "Monte Carlo estimation is formulated by rewriting a sum or integral as an expectation under a probability distribution."
+      },
+      {
+        "from": "Monte Carlo Sampling",
+        "to": "Importance Sampling",
+        "reason": "Importance sampling is derived by transforming a standard Monte Carlo estimator to sample from an alternative distribution q."
+      },
+      {
+        "from": "Markov Chains",
+        "to": "Gibbs Sampling",
+        "reason": "Gibbs sampling is introduced as a simple Markov-chain sampling algorithm."
+      }
+    ],
+    "overall_note": "The predictions capture a few broad supporting ideas, but omit the chapter's primary Monte Carlo, importance-sampling, and Markov-chain concepts."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-17_monte_carlo-ff4d1de5355c.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-17_monte_carlo-ff4d1de5355c.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-17_monte_carlo-ff4d1de5355c_ledger.csv"
+  }
+}

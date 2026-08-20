@@ -1,0 +1,342 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 4,
+  "candidate_count": 22,
+  "topics_count": 8,
+  "candidates": [
+    {
+      "name": "lecture plan",
+      "avg_score": 0.7088,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "lecture introduction",
+      "avg_score": 0.6735,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "grading policy",
+      "avg_score": 0.6412,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "plan lecture",
+      "avg_score": 0.6374,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "guest lecture",
+      "avg_score": 0.6215,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "individually hw",
+      "avg_score": 0.606,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "lecture",
+      "avg_score": 0.6029,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "work grading",
+      "avg_score": 0.6001,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "grading",
+      "avg_score": 0.5872,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "hw focuses",
+      "avg_score": 0.5753,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "hw coding",
+      "avg_score": 0.5705,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "lecture prof",
+      "avg_score": 0.5699,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "course grade",
+      "avg_score": 0.564,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.56,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "nlp lecture",
+      "avg_score": 0.5481,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "natural language",
+      "avg_score": 0.5362,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "course project",
+      "avg_score": 0.5344,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "notebook hw",
+      "avg_score": 0.5337,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "parsing hw",
+      "avg_score": 0.5206,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "learning",
+      "avg_score": 0.5117,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "choi lecture",
+      "avg_score": 0.5059,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "language computation",
+      "avg_score": 0.5042,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Lecture Structure",
+      "description": "Framework for organizing course content and delivery.",
+      "sub_topics": [
+        {
+          "name": "Lecture Plan",
+          "description": "Detailed outline of topics to be covered in lectures."
+        },
+        {
+          "name": "Guest Lecture",
+          "description": "Special sessions featuring external experts."
+        },
+        {
+          "name": "Lecture Introduction",
+          "description": "Overview and objectives presented at the start of each lecture."
+        }
+      ]
+    },
+    {
+      "name": "Grading Policy",
+      "description": "Criteria and methods for evaluating student performance.",
+      "sub_topics": [
+        {
+          "name": "Work Grading",
+          "description": "Assessment methods for assignments and projects."
+        },
+        {
+          "name": "Course Grade",
+          "description": "Final evaluation based on cumulative performance."
+        }
+      ]
+    },
+    {
+      "name": "Homework Assignments",
+      "description": "Tasks assigned to reinforce learning outside of lectures.",
+      "sub_topics": [
+        {
+          "name": "Individually HW",
+          "description": "Assignments completed by students independently."
+        },
+        {
+          "name": "Notebook HW",
+          "description": "Homework involving coding and documentation in notebooks."
+        },
+        {
+          "name": "Parsing HW",
+          "description": "Assignments focused on syntactic analysis of language."
+        }
+      ]
+    },
+    {
+      "name": "Natural Language Processing",
+      "description": "Field of study focused on the interaction between computers and human language.",
+      "sub_topics": [
+        {
+          "name": "NLP Lecture",
+          "description": "Sessions dedicated to concepts and techniques in NLP."
+        },
+        {
+          "name": "Language Processing",
+          "description": "Techniques for analyzing and understanding human language."
+        },
+        {
+          "name": "Language Computation",
+          "description": "Computational methods for processing language data."
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning Concepts",
+      "description": "Fundamental principles and techniques in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Activation Function",
+          "description": "Functions that determine the output of neural network nodes."
+        },
+        {
+          "name": "Loss Function",
+          "description": "Measures the difference between predicted and actual outcomes."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "Algorithm for training neural networks by minimizing loss."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": [
+        {
+          "name": "Artificial Neural Network",
+          "description": "Network of interconnected nodes that simulate brain functions."
+        },
+        {
+          "name": "Linear Separation",
+          "description": "Concept of dividing data points using linear boundaries."
+        }
+      ]
+    },
+    {
+      "name": "Learning Techniques",
+      "description": "Methods and strategies for training models.",
+      "sub_topics": [
+        {
+          "name": "Regression",
+          "description": "Predictive modeling technique for continuous outcomes."
+        },
+        {
+          "name": "Classification",
+          "description": "Method for categorizing data into distinct classes."
+        }
+      ]
+    },
+    {
+      "name": "Course Projects",
+      "description": "Hands-on assignments that apply learned concepts.",
+      "sub_topics": [
+        {
+          "name": "Project Guidelines",
+          "description": "Instructions and expectations for course projects."
+        },
+        {
+          "name": "Team Collaboration",
+          "description": "Working in groups to complete projects."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 20.8618,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

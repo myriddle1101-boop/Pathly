@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 7.0716,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Neural Network Components -> Autoencoders | Understanding neural network components is essential to grasp how autoencoders function.\n02. Learning Algorithms -> Training Techniques | Knowledge of learning algorithms is necessary to apply training techniques effectively.\n03. Autoencoders -> Data Reconstruction | Autoencoders are specifically designed for the task of data reconstruction.\n04. Autoencoders -> Autoencoder Variants | Understanding basic autoencoders is required to learn about their variants.\n05. Manifold Learning -> Coordinate Systems | Manifold learning techniques often involve understanding coordinate systems for data representation.\n06. Training Techniques -> Model Evaluation | Effective training techniques are necessary to evaluate model performance accurately.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

@@ -1,0 +1,817 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 19,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "distributed representation",
+      "avg_score": 0.6411,
+      "frequency": 4,
+      "chunk_ids": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "name": "classifier distributed",
+      "avg_score": 0.6649,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        16
+      ]
+    },
+    {
+      "name": "distributed representations",
+      "avg_score": 0.6237,
+      "frequency": 2,
+      "chunk_ids": [
+        13,
+        15
+      ]
+    },
+    {
+      "name": "binary distributed",
+      "avg_score": 0.5777,
+      "frequency": 2,
+      "chunk_ids": [
+        13,
+        15
+      ]
+    },
+    {
+      "name": "representations divide",
+      "avg_score": 0.5468,
+      "frequency": 2,
+      "chunk_ids": [
+        13,
+        15
+      ]
+    },
+    {
+      "name": "representation divides",
+      "avg_score": 0.5454,
+      "frequency": 2,
+      "chunk_ids": [
+        13,
+        15
+      ]
+    },
+    {
+      "name": "representation features",
+      "avg_score": 0.5392,
+      "frequency": 2,
+      "chunk_ids": [
+        13,
+        15
+      ]
+    },
+    {
+      "name": "distributed",
+      "avg_score": 0.5289,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        16
+      ]
+    },
+    {
+      "name": "representation layer",
+      "avg_score": 0.4835,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        16
+      ]
+    },
+    {
+      "name": "linear classifier",
+      "avg_score": 0.459,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        16
+      ]
+    },
+    {
+      "name": "classes linearly",
+      "avg_score": 0.4491,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        16
+      ]
+    },
+    {
+      "name": "mixture modeling",
+      "avg_score": 0.7413,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "mixture model",
+      "avg_score": 0.7275,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "causal mechanisms",
+      "avg_score": 0.6658,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "learn vector",
+      "avg_score": 0.6379,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "learning features",
+      "avg_score": 0.6359,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "mixture component",
+      "avg_score": 0.6282,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "multilayer perceptrons",
+      "avg_score": 0.6188,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "factor mixture",
+      "avg_score": 0.6112,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "dnns trained",
+      "avg_score": 0.6076,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "mixture components",
+      "avg_score": 0.6058,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "causal",
+      "avg_score": 0.6017,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "multitask transfer",
+      "avg_score": 0.6015,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "cause modeling",
+      "avg_score": 0.598,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "generative adversarial",
+      "avg_score": 0.5965,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "dnns pretraining",
+      "avg_score": 0.5948,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning pretraining",
+      "avg_score": 0.5936,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "concept drift",
+      "avg_score": 0.5929,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "predictive generative",
+      "avg_score": 0.5889,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "representation hh",
+      "avg_score": 0.5832,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "learning nearest",
+      "avg_score": 0.5813,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "learning trajectories",
+      "avg_score": 0.581,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "vector representing",
+      "avg_score": 0.5808,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "example predictive",
+      "avg_score": 0.5786,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "15 predictive",
+      "avg_score": 0.5729,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "causal 543",
+      "avg_score": 0.5707,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "multiple training",
+      "avg_score": 0.5697,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "regions nearest",
+      "avg_score": 0.5693,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "representation learning",
+      "avg_score": 0.5692,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "dnn trained",
+      "avg_score": 0.5675,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "dnn pretraining",
+      "avg_score": 0.5659,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "representation sharing",
+      "avg_score": 0.563,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "neighbor algorithm",
+      "avg_score": 0.5622,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "representation vectors",
+      "avg_score": 0.56,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "pretraining nonoverlapping",
+      "avg_score": 0.5583,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "gans learn",
+      "avg_score": 0.5537,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "trained predict",
+      "avg_score": 0.5534,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "vector",
+      "avg_score": 0.5466,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "shallow networks",
+      "avg_score": 0.5441,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "training sets",
+      "avg_score": 0.5437,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "dnns using",
+      "avg_score": 0.5432,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "trained multiple",
+      "avg_score": 0.5399,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "generate ears",
+      "avg_score": 0.5399,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "learning underlying",
+      "avg_score": 0.539,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "pretraining point",
+      "avg_score": 0.5367,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "cause effect",
+      "avg_score": 0.5367,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "indicate pretraining",
+      "avg_score": 0.5364,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "trained data",
+      "avg_score": 0.5346,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "adversarial network",
+      "avg_score": 0.5342,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "projection learning",
+      "avg_score": 0.5341,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "trained adversarial",
+      "avg_score": 0.5334,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "representations test",
+      "avg_score": 0.5332,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "dnns better",
+      "avg_score": 0.532,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "adaptation glorot",
+      "avg_score": 0.5318,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "pretraining respectively",
+      "avg_score": 0.5281,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "training joint",
+      "avg_score": 0.5245,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "generative model",
+      "avg_score": 0.5239,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "ears trained",
+      "avg_score": 0.5227,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "multitask",
+      "avg_score": 0.5211,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "pretraining denoising",
+      "avg_score": 0.5201,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "architecture multitask",
+      "avg_score": 0.5183,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "perceptrons universal",
+      "avg_score": 0.516,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "domain adaptation",
+      "avg_score": 0.5145,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "nearest neighbor",
+      "avg_score": 0.5094,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "deep networks",
+      "avg_score": 0.5071,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "error robotics",
+      "avg_score": 0.507,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "regions separate",
+      "avg_score": 0.5067,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "encoder function",
+      "avg_score": 0.5054,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "image representations",
+      "avg_score": 0.5005,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "neighbor divides",
+      "avg_score": 0.4973,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Distributed Representation",
+      "description": "Techniques for representing data in a distributed manner across multiple dimensions.",
+      "sub_topics": [
+        {
+          "name": "Binary Distributed",
+          "description": "A specific type of distributed representation using binary values."
+        },
+        {
+          "name": "Representation Learning",
+          "description": "Learning representations of data that capture its underlying structure."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Deep Networks",
+          "description": "Neural networks with multiple layers that can learn complex patterns."
+        },
+        {
+          "name": "Multilayer Perceptrons",
+          "description": "A type of neural network consisting of multiple layers of neurons."
+        }
+      ]
+    },
+    {
+      "name": "Classification Techniques",
+      "description": "Methods used to categorize data into predefined classes.",
+      "sub_topics": [
+        {
+          "name": "Linear Classifier",
+          "description": "A classifier that makes predictions based on a linear predictor function."
+        },
+        {
+          "name": "Causal Mechanisms",
+          "description": "Understanding the cause-effect relationships in classification tasks."
+        }
+      ]
+    },
+    {
+      "name": "Training Methods",
+      "description": "Approaches for training machine learning models to improve their performance.",
+      "sub_topics": [
+        {
+          "name": "Pretraining",
+          "description": "Initial training phase to learn general features before fine-tuning."
+        },
+        {
+          "name": "Denoising Pretraining",
+          "description": "A technique to improve model robustness by training on corrupted data."
+        }
+      ]
+    },
+    {
+      "name": "Generative Models",
+      "description": "Models that can generate new data points from learned distributions.",
+      "sub_topics": [
+        {
+          "name": "Generative Adversarial Networks",
+          "description": "A framework where two networks compete to improve data generation."
+        },
+        {
+          "name": "Mixture Models",
+          "description": "Statistical models that represent data as a mixture of multiple distributions."
+        }
+      ]
+    },
+    {
+      "name": "Transfer Learning",
+      "description": "A technique where knowledge gained from one task is applied to a different but related task.",
+      "sub_topics": [
+        {
+          "name": "Multitask Learning",
+          "description": "Simultaneously training on multiple tasks to improve generalization."
+        },
+        {
+          "name": "Domain Adaptation",
+          "description": "Adapting a model trained on one domain to work in another domain."
+        }
+      ]
+    },
+    {
+      "name": "Error Analysis",
+      "description": "Techniques for analyzing and understanding errors in model predictions.",
+      "sub_topics": [
+        {
+          "name": "Concept Drift",
+          "description": "The change in the statistical properties of the target variable over time."
+        },
+        {
+          "name": "Training Sets",
+          "description": "The datasets used to train machine learning models."
+        }
+      ]
+    },
+    {
+      "name": "Activation Functions",
+      "description": "Functions that determine the output of a neuron in a neural network.",
+      "sub_topics": [
+        {
+          "name": "Linear Activation",
+          "description": "An activation function that outputs the input directly."
+        },
+        {
+          "name": "Non-linear Activation",
+          "description": "Activation functions that introduce non-linearity into the model."
+        }
+      ]
+    },
+    {
+      "name": "Backpropagation",
+      "description": "An algorithm for training neural networks by minimizing the loss function.",
+      "sub_topics": [
+        {
+          "name": "Loss Function",
+          "description": "A function that measures the difference between predicted and actual values."
+        },
+        {
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm used to minimize the loss function."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 20.965,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

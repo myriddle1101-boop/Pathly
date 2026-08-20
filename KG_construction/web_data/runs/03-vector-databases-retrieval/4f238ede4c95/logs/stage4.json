@@ -1,0 +1,37 @@
+{
+  "stage": "stage4",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage4_build_and_visualize_kg.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage4_build_and_visualize_kg.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage3_topics_with_summary.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2b_prerequisites.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2c_similarity_edges.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\knowledge_graph.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\knowledge_graph.gexf"
+  ],
+  "optional_output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\kg_prerequisite.png",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\kg_similarity.png"
+  ],
+  "return_code": 0,
+  "duration_seconds": 1.8203,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "knowledge_graph.json: OK",
+      "kg_prerequisite.png: optional output present",
+      "kg_similarity.png: optional output missing"
+    ]
+  },
+  "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 5\n[3] Similarity edges: 0\n[4] Graph nodes=9, edges=5\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+  "stderr_tail": ""
+}

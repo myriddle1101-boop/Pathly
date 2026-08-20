@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.3148,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 8\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Statistical Models -> Factor Models | Factor Models are a type of Statistical Model.\n02. Statistical Models -> Regression and Classification | Regression and Classification are based on Statistical Models.\n03. Learning Algorithms -> Neural Networks | Neural Networks require understanding of Learning Algorithms.\n04. Regression and Classification -> Model Evaluation | Model Evaluation is necessary to assess Regression and Classification outcomes.\n05. Dimensionality Reduction -> Model Evaluation | Model Evaluation is important to assess the impact of Dimensionality Reduction.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

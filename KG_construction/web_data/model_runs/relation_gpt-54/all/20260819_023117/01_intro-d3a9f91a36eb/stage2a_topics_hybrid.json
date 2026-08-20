@@ -1,0 +1,774 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 14,
+  "candidate_count": 76,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "neurons",
+      "avg_score": 0.6302,
+      "frequency": 2,
+      "chunk_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "dataset",
+      "avg_score": 0.5247,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "name": "computational graphs",
+      "avg_score": 0.7887,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "connections neuron",
+      "avg_score": 0.7729,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "connections neurons",
+      "avg_score": 0.7639,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "neurons 11",
+      "avg_score": 0.7168,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "autoencoders trained",
+      "avg_score": 0.7155,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "kinds autoencoders",
+      "avg_score": 0.7153,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "graphs output",
+      "avg_score": 0.7078,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "graphs",
+      "avg_score": 0.696,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "number neurons",
+      "avg_score": 0.6922,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "10 neurons",
+      "avg_score": 0.6879,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "graphs chapter",
+      "avg_score": 0.6807,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "computation depicted",
+      "avg_score": 0.6788,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "machine learning",
+      "avg_score": 0.6787,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "graphs mapping",
+      "avg_score": 0.6782,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "autoencoders",
+      "avg_score": 0.6712,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "hidden layer",
+      "avg_score": 0.6666,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "cartesian coordinates",
+      "avg_score": 0.6576,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "recognition challenge",
+      "avg_score": 0.6537,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "contours hidden",
+      "avg_score": 0.65,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "net dataset",
+      "avg_score": 0.6296,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "historical waves",
+      "avg_score": 0.6289,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "coordinates polar",
+      "avg_score": 0.6287,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "neuron 10",
+      "avg_score": 0.6274,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "neuron cat",
+      "avg_score": 0.6267,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "polar coordinates",
+      "avg_score": 0.6228,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "biological neural",
+      "avg_score": 0.6099,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "data polar",
+      "avg_score": 0.6098,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "mnist dataset",
+      "avg_score": 0.6095,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "datasets included",
+      "avg_score": 0.6057,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "datasets",
+      "avg_score": 0.6001,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "cybernetics 1940",
+      "avg_score": 0.5962,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "learning machine",
+      "avg_score": 0.5953,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "layer detect",
+      "avg_score": 0.595,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "steps flowchart",
+      "avg_score": 0.5896,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "flow chart",
+      "avg_score": 0.5829,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "neural",
+      "avg_score": 0.578,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "coordinates",
+      "avg_score": 0.5778,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "models learning",
+      "avg_score": 0.5754,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "historical trends",
+      "avg_score": 0.5732,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "datasets translated",
+      "avg_score": 0.5669,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "path flow",
+      "avg_score": 0.5595,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "autoencoders aim",
+      "avg_score": 0.5582,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "recognition 30",
+      "avg_score": 0.5579,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "ject recognition",
+      "avg_score": 0.556,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "numbers dataset",
+      "avg_score": 0.5546,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "second hidden",
+      "avg_score": 0.5539,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "recognition",
+      "avg_score": 0.5523,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "1900 statisticians",
+      "avg_score": 0.5506,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "contours recognizable",
+      "avg_score": 0.5503,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "images visualizations",
+      "avg_score": 0.5492,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "visual recognition",
+      "avg_score": 0.5473,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "longest path",
+      "avg_score": 0.5462,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "feature represented",
+      "avg_score": 0.5461,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "2016 waves",
+      "avg_score": 0.5461,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "recurrent neural",
+      "avg_score": 0.5412,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "trends growing",
+      "avg_score": 0.5374,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "trends",
+      "avg_score": 0.5367,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "dataset nist",
+      "avg_score": 0.5367,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "autoencoders models",
+      "avg_score": 0.535,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "visualizations kind",
+      "avg_score": 0.5333,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5331,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "growing datasets",
+      "avg_score": 0.5303,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "image represented",
+      "avg_score": 0.5266,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "flowchart",
+      "avg_score": 0.5255,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "flowchart different",
+      "avg_score": 0.5241,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "image layers",
+      "avg_score": 0.5166,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "layer description",
+      "avg_score": 0.5063,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "10 dataset",
+      "avg_score": 0.5057,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "hidden",
+      "avg_score": 0.5052,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "decoder trained",
+      "avg_score": 0.4909,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "solving ob",
+      "avg_score": 0.4632,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "dataset consists",
+      "avg_score": 0.4625,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "data",
+      "avg_score": 0.4555,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "algorithms learning",
+      "avg_score": 0.4301,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Neurons",
+      "description": "Fundamental units of artificial neural networks that process information.",
+      "sub_topics": [
+        {
+          "name": "Connections",
+          "description": "The links between neurons that facilitate information transfer."
+        },
+        {
+          "name": "Types of Neurons",
+          "description": "Different neuron configurations used in various architectures."
+        }
+      ]
+    },
+    {
+      "name": "Artificial Neural Networks",
+      "description": "Computational models inspired by the human brain's network of neurons.",
+      "sub_topics": [
+        {
+          "name": "Hidden Layers",
+          "description": "Intermediate layers in a neural network that process inputs."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neuron."
+        }
+      ]
+    },
+    {
+      "name": "Autoencoders",
+      "description": "Neural networks designed to learn efficient representations of data.",
+      "sub_topics": [
+        {
+          "name": "Training Autoencoders",
+          "description": "The process of optimizing autoencoders to minimize reconstruction error."
+        },
+        {
+          "name": "Types of Autoencoders",
+          "description": "Different architectures and purposes of autoencoders."
+        }
+      ]
+    },
+    {
+      "name": "Datasets",
+      "description": "Collections of data used for training and evaluating machine learning models.",
+      "sub_topics": [
+        {
+          "name": "MNIST Dataset",
+          "description": "A widely used dataset for handwritten digit recognition."
+        },
+        {
+          "name": "Dataset Characteristics",
+          "description": "Key features and properties of datasets used in machine learning."
+        }
+      ]
+    },
+    {
+      "name": "Computational Graphs",
+      "description": "Graphical representations of mathematical computations in neural networks.",
+      "sub_topics": [
+        {
+          "name": "Graph Structure",
+          "description": "The arrangement of nodes and edges representing operations and data."
+        },
+        {
+          "name": "Graph Output",
+          "description": "The final results produced by traversing the computational graph."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods used to optimize machine learning models during training.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing error."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Learning Algorithms",
+      "description": "Procedures used to train models and make predictions based on data.",
+      "sub_topics": [
+        {
+          "name": "Supervised Learning",
+          "description": "Learning from labeled data to make predictions."
+        },
+        {
+          "name": "Unsupervised Learning",
+          "description": "Learning from unlabeled data to find patterns."
+        }
+      ]
+    },
+    {
+      "name": "Visual Recognition",
+      "description": "The ability of models to identify and classify objects in images.",
+      "sub_topics": [
+        {
+          "name": "Image Representations",
+          "description": "How images are encoded for processing by neural networks."
+        },
+        {
+          "name": "Recognition Challenges",
+          "description": "Difficulties faced in accurately identifying objects in images."
+        }
+      ]
+    },
+    {
+      "name": "Data Representation",
+      "description": "The way data is structured and formatted for analysis.",
+      "sub_topics": [
+        {
+          "name": "Polar Coordinates",
+          "description": "A coordinate system used to represent data points in a circular format."
+        },
+        {
+          "name": "Cartesian Coordinates",
+          "description": "A coordinate system that uses perpendicular axes to represent data."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 20.9993,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

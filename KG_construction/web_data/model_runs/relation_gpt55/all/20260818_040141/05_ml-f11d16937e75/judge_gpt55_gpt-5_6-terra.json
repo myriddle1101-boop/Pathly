@@ -1,0 +1,112 @@
+{
+  "created_at": "2026-08-18T18:41:01.047732+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-05_ml-f11d16937e75",
+  "file_name": "05_ml-f11d16937e75",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 21,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6154,
+    "f1": 0.7273,
+    "tp": 8,
+    "fp": 1,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.75,
+    "recall": 0.5,
+    "f1": 0.6,
+    "tp": 3,
+    "fp": 1,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Machine Learning",
+      "Regression",
+      "Dimensionality Reduction",
+      "Training Data",
+      "Error Metrics",
+      "Classification",
+      "Model Evaluation",
+      "Distance Metrics"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "The provided text does not discuss neural networks."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Linear Regression",
+        "reason": "The text explicitly develops linear regression, including normal equations, intercepts, and mean squared error."
+      },
+      {
+        "name": "Generalization",
+        "reason": "Generalization error and the distinction between training and test error are central to the excerpt."
+      },
+      {
+        "name": "Model Capacity",
+        "reason": "The text explicitly defines representational capacity and relates it to fitting behavior."
+      },
+      {
+        "name": "Overfitting and Underfitting",
+        "reason": "These are repeatedly explained through polynomial regression, capacity, and weight decay."
+      },
+      {
+        "name": "Principal Components Analysis",
+        "reason": "PCA is explicitly presented as a linear projection and dimensionality-reduction method."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Training Data",
+        "to": "Regression",
+        "reason": "The regression formulations and learning algorithms in the text fit parameters using training examples and targets."
+      },
+      {
+        "from": "Training Data",
+        "to": "Classification",
+        "reason": "The nearest-neighbor and decision-tree discussions define classification behavior using stored training examples."
+      },
+      {
+        "from": "Error Metrics",
+        "to": "Model Evaluation",
+        "reason": "Training, test, generalization, and mean squared errors are used to assess model performance."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Training Data",
+        "to": "Neural Networks",
+        "reason": "Neural networks are not covered in the source, so this dependency cannot be supported."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Model Capacity",
+        "to": "Overfitting and Underfitting",
+        "reason": "The text explains underfitting and overfitting as consequences of capacity being respectively too low or too high."
+      },
+      {
+        "from": "Mean Squared Error",
+        "to": "Linear Regression",
+        "reason": "The linear-regression learning objective is explicitly formulated as minimizing training-set mean squared error."
+      },
+      {
+        "from": "Principal Components Analysis",
+        "to": "Dimensionality Reduction",
+        "reason": "The text presents PCA as a method for learning a lower-dimensional representation."
+      }
+    ],
+    "overall_note": "The predictions capture several broad themes, but omit the excerpt's central treatment of linear regression, capacity, and generalization."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-05_ml-f11d16937e75.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-05_ml-f11d16937e75.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-05_ml-f11d16937e75_ledger.csv"
+  }
+}

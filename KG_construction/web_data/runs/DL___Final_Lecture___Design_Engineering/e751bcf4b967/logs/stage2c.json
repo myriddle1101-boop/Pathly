@@ -1,0 +1,29 @@
+{
+  "stage": "stage2c",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2c_similarity.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2c_similarity.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___final_lecture___design_engineering\\e751bcf4b967\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___final_lecture___design_engineering\\e751bcf4b967\\stage2c_similarity_edges.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 29.4306,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2c_similarity_edges.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 15\n[2] 相似关系数量: 15 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___final_lecture___design_engineering\\e751bcf4b967\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. learning methodologies in lectures <-> lecture-based learning strategies | sim=0.9141\n02. autonomous drone applications in logistics <-> autonomous drone navigation | sim=0.8542\n03. autonomous drone applications in logistics <-> drone delivery systems | sim=0.8291\n04. drone delivery systems <-> drone fleet management | sim=0.8213\n05. drone delivery systems <-> drone technology advancements | sim=0.8192\n06. adaptive learning systems in AI <-> learning agents in AI | sim=0.8169\n07. drone fleet management <-> drone technology advancements | sim=0.801\n08. autonomous drone applications in logistics <-> drone fleet management | sim=0.7952\n09. adaptive learning systems in AI <-> reinforcement learning for autonomous systems | sim=0.7759\n10. autonomous drone navigation <-> drone technology advancements | sim=0.7658\n11. autonomous drone applications in logistics <-> drone technology advancements | sim=0.7576\n12. autonomous drone navigation <-> drone fleet management | sim=0.7538\n13. autonomous drone navigation <-> drone delivery systems | sim=0.7484\n14. learning assignments in education <-> lecture-based learning strategies | sim=0.7268\n15. deep learning for image recognition in drones <-> real-time data processing for drones | sim=0.7252\n\n Stage 2c 完成\n",
+  "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4334.20it/s]\n"
+}

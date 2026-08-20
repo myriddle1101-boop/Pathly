@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Embeddings",
+      "to": "Vector Databases",
+      "relation_type": "strong_prerequisite",
+      "reason": "Vector databases store and retrieve vector embeddings, so understanding embeddings is necessary to understand their core purpose and operations."
+    }
+  ]
+}

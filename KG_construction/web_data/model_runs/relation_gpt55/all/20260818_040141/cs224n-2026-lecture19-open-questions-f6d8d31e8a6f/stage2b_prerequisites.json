@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Model Training",
+      "to": "Data Pretraining",
+      "relation_type": "strong_prerequisite",
+      "reason": "Data pretraining is a specialized training stage, so understanding general model training is necessary first."
+    }
+  ]
+}

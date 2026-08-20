@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Evaluation Metrics",
+      "to": "Benchmarking",
+      "relation_type": "strong_prerequisite",
+      "reason": "Benchmarking requires understanding performance measures used to compare models against standards."
+    },
+    {
+      "from": "Evaluation Metrics",
+      "to": "Complexity in Evaluation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding evaluation challenges requires prior knowledge of the metrics being used to assess performance."
+    }
+  ]
+}

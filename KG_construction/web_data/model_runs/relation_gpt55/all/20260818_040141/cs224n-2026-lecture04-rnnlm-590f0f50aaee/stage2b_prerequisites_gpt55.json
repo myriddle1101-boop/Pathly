@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Gradient Issues",
+      "relation_type": "strong_prerequisite",
+      "reason": "Gradient issues are specifically challenges in computing and propagating gradients in neural networks, so neural network fundamentals are needed first."
+    }
+  ]
+}

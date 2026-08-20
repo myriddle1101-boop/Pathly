@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "04_numerical-dd3a4dd53cd3",
+  "created_at": "2026-07-29T13:44:09+08:00",
+  "updated_at": "2026-07-29T13:46:15+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "04_numerical.pdf",
+    "doc_name": "04_numerical",
+    "sha256": "dd3a4dd53cd3c82a250f47305f44f4d4066b36ef2443397723055de4ed45a9a4",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\04_numerical.pdf",
+    "pdf_size_bytes": 7119011
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 126.103
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:44:09+08:00",
+      "ended_at": "2026-07-29T13:44:17+08:00",
+      "duration_seconds": 7.5068,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\04_numerical.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 6137\n[2] 清洗后词数: 6170\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 32\n[5] 分块数（过滤后）: 29\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=129\nNumerical Computation for Deep Learning Lecture slides for Chapter 4 of Deep Learning www.deeplearningbook.org Ian Goodfellow Last modified 2017-10-14 Thanks to Justin Gilmer and Jacob Buckman for helpful discussions Num...\n\n[Chunk 2] words=280\nCHAPTER 4 G. NUMr ERa ICAd L COi Me PUn TATt ION Descent 2.0 1.5 Global minimum at x = 0. Since f (x) = 0, gradient 0 descent halts here. 1.0 0.5 0.0 For x < 0, we have f (x) < 0, For x > 0, we have f (x) > 0, 0 0 so we ...\n\n[Chunk 3] words=111\nWe can 0 \u0000 thus reduce f(x) by moving x in small steps with opposite sign of the derivative. This technique is called gradient descent (Cauchy, 1847). See figure 4.1 for an example of this technique. When f (x) = 0, the ...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:44:17+08:00",
+      "ended_at": "2026-07-29T13:45:09+08:00",
+      "duration_seconds": 52.0797,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：29\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/29 ...\n[KeyBERT] chunk 2/29 ...\n[KeyBERT] chunk 3/29 ...\n[KeyBERT] chunk 4/29 ...\n[KeyBERT] chunk 5/29 ...\n[KeyBERT] chunk 6/29 ...\n[KeyBERT] chunk 7/29 ...\n[KeyBERT] chunk 8/29 ...\n[KeyBERT] chunk 9/29 ...\n[KeyBERT] chunk 10/29 ...\n[KeyBERT] chunk 11/29 ...\n[KeyBERT] chunk 12/29 ...\n[KeyBERT] chunk 13/29 ...\n[KeyBERT] chunk 14/29 ...\n[KeyBERT] chunk 15/29 ...\n[KeyBERT] chunk 16/29 ...\n[KeyBERT] chunk 17/29 ...\n[KeyBERT] chunk 18/29 ...\n[KeyBERT] chunk 19/29 ...\n[KeyBERT] chunk 20/29 ...\n[KeyBERT] chunk 21/29 ...\n[KeyBERT] chunk 22/29 ...\n[KeyBERT] chunk 23/29 ...\n[KeyBERT] chunk 24/29 ...\n[KeyBERT] chunk 25/29 ...\n[KeyBERT] chunk 26/29 ...\n[KeyBERT] chunk 27/29 ...\n[KeyBERT] chunk 28/29 ...\n[KeyBERT] chunk 29/29 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Gradient Descent\n02. Eigenvalues and Eigenvectors\n03. Optimization Techniques\n04. Curvature Analysis\n05. Partial Derivatives\n06. Training Neural Networks\n07. Regression and Classification\n08. Matrix Operations\n09. Training Process\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5601.71it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:45:09+08:00",
+      "ended_at": "2026-07-29T13:45:16+08:00",
+      "duration_seconds": 7.4025,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Partial Derivatives -> Gradient Descent | Gradient Descent relies on understanding how to compute gradients.\n02. Matrix Operations -> Eigenvalues and Eigenvectors | Eigenvalues and Eigenvectors are derived from matrix operations.\n03. Eigenvalues and Eigenvectors -> Optimization Techniques | Many optimization techniques utilize concepts from linear algebra, including eigenvalues and eigenvectors.\n04. Gradient Descent -> Training Neural Networks | Gradient Descent is a key method used in training neural networks.\n05. Training Neural Networks -> Training Process | Training Neural Networks is a critical part of the overall Training Process.\n06. Regression and Classification -> Training Process | Regression and Classification are tasks that are part of the Training Process.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:45:16+08:00",
+      "ended_at": "2026-07-29T13:45:49+08:00",
+      "duration_seconds": 32.8667,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 0 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6063.29it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:45:49+08:00",
+      "ended_at": "2026-07-29T13:46:14+08:00",
+      "duration_seconds": 24.5152,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Gradient Descent\n[LLM] 2/9 Eigenvalues and Eigenvectors\n[LLM] 3/9 Optimization Techniques\n[LLM] 4/9 Curvature Analysis\n[LLM] 5/9 Partial Derivatives\n[LLM] 6/9 Training Neural Networks\n[LLM] 7/9 Regression and Classification\n[LLM] 8/9 Matrix Operations\n[LLM] 9/9 Training Process\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:46:14+08:00",
+      "ended_at": "2026-07-29T13:46:15+08:00",
+      "duration_seconds": 1.6393,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output missing"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 6\n[3] Similarity edges: 0\n[4] Graph nodes=9, edges=6\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T13:44:09+08:00"
+}

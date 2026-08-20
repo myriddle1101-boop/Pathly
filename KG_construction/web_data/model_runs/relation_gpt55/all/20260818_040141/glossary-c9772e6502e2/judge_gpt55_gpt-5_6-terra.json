@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-08-18T19:01:51.290246+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-glossary-c9772e6502e2",
+  "file_name": "glossary-c9772e6502e2",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 6,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.8571,
+    "tp": 9,
+    "fp": 0,
+    "fn": 3
+  },
+  "prerequisite_metrics": {
+    "precision": 0.5,
+    "recall": 0.25,
+    "f1": 0.3333,
+    "tp": 1,
+    "fp": 1,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Vector Databases",
+      "Embeddings",
+      "Retrieval Strategies",
+      "Neural Networks",
+      "Training Techniques",
+      "Prompt Engineering",
+      "Similarity Scores",
+      "Search Techniques",
+      "Document Collections"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "RAG (Retrieval-Augmented Generation)",
+        "reason": "The central technique defined as combining retrieval with LLM generation."
+      },
+      {
+        "name": "Chunking",
+        "reason": "Documents are split into chunks for embedding and retrieval."
+      },
+      {
+        "name": "Vector Search",
+        "reason": "Explicitly described as finding similar vectors and as core to RAG retrieval."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Embeddings",
+        "to": "Vector Databases",
+        "reason": "Vector databases store and efficiently search vectors, including text embeddings; embeddings are a foundational representation for this use."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Similarity Scores",
+        "to": "Vector Databases",
+        "reason": "Similarity scoring is important for vector search, but understanding similarity scores is not a necessary prerequisite for the broader concept of a vector database."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Chunking",
+        "to": "Indexing",
+        "reason": "The source defines indexing as preparing documents through chunking, embedding, and storage."
+      },
+      {
+        "from": "Embeddings",
+        "to": "Vector Search",
+        "reason": "Vector search finds similar vectors, and text embeddings are the vectors used for semantic retrieval."
+      },
+      {
+        "from": "Retrieval",
+        "to": "RAG (Retrieval-Augmented Generation)",
+        "reason": "RAG is explicitly defined as combining information retrieval with LLM generation."
+      }
+    ],
+    "overall_note": "The predicted topics are broadly supported, though several are higher-level labels rather than the glossary's exact term names."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-glossary-c9772e6502e2.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-glossary-c9772e6502e2.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-glossary-c9772e6502e2_ledger.csv"
+  }
+}

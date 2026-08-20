@@ -1,0 +1,37 @@
+{
+  "run_id": "harness_2026-07-08_140122",
+  "status": "success",
+  "created_at": "2026-07-08T14:01:23",
+  "graph_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+  "live_neo4j": false,
+  "rag_collection": "kg_chunks",
+  "rag_resource_id": null,
+  "planning_goal": "learn neural networks",
+  "planning_target_concepts": [
+    "Neural Networks"
+  ],
+  "stages": {
+    "rag": {
+      "status": "success",
+      "started_at": "2026-07-08T14:01:22",
+      "ended_at": "2026-07-08T14:01:23",
+      "result": {
+        "collection_name": "kg_chunks",
+        "chroma_path": "D:\\ic\\master project\\project_code\\KG_construction\\data\\chroma",
+        "resource_id": null,
+        "min_chunks": 1,
+        "passed": true,
+        "checks": [
+          {
+            "name": "collection_has_chunks",
+            "actual": 424,
+            "passed": true
+          }
+        ],
+        "total_count": 424,
+        "status": "success"
+      }
+    }
+  },
+  "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\manifests\\harness_2026-07-08_140122.json"
+}

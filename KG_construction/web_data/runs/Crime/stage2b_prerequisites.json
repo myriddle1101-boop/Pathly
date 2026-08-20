@@ -1,0 +1,33 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Artificial Intelligence",
+      "to": "AI Ethics",
+      "reason": "Understanding AI is necessary to discuss its ethical implications."
+    },
+    {
+      "from": "Cybersecurity",
+      "to": "Crime Facilitation",
+      "reason": "Knowledge of cybersecurity is essential to understand how technologies can enable crime."
+    },
+    {
+      "from": "Surveillance Technologies",
+      "to": "Policing Technologies",
+      "reason": "Understanding surveillance technologies is crucial for grasping their application in policing."
+    },
+    {
+      "from": "Intelligence in Crime",
+      "to": "Crime Facilitation",
+      "reason": "Knowledge of intelligence analysis is necessary to understand factors that enable crime."
+    },
+    {
+      "from": "Technological Dystopia",
+      "to": "AI Ethics",
+      "reason": "Understanding potential negative consequences of technology is important for discussing ethical responsibilities."
+    }
+  ]
+}

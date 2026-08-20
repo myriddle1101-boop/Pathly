@@ -1,0 +1,33 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Probabilities in AI",
+      "to": "AI Algorithms",
+      "reason": "Understanding probabilities is essential for grasping algorithmic decision-making."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Model Evaluation",
+      "reason": "Effective model evaluation relies on understanding how data is represented."
+    },
+    {
+      "from": "AI Algorithms",
+      "to": "Neural Networks",
+      "reason": "Knowledge of algorithms is necessary to understand the functioning of neural networks."
+    },
+    {
+      "from": "Bias in AI",
+      "to": "Fairness in AI",
+      "reason": "Understanding bias is crucial for discussing fairness in AI systems."
+    },
+    {
+      "from": "Ethics in AI",
+      "to": "Fairness in AI",
+      "reason": "Ethical considerations are foundational for evaluating fairness in AI."
+    }
+  ]
+}

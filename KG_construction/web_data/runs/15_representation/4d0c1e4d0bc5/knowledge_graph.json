@@ -1,0 +1,144 @@
+{
+  "nodes": [
+    {
+      "id": "Distributed Representation",
+      "description": "Techniques for representing data in a distributed manner across multiple dimensions.",
+      "sub_topics": "[{\"name\": \"Binary Distributed\", \"description\": \"A specific type of distributed representation using binary values.\"}, {\"name\": \"Representation Learning\", \"description\": \"Learning representations of data that capture its underlying structure.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and statistics.",
+      "key_sub_concepts": "[\"Word Embeddings\", \"Autoencoders\"]",
+      "common_misconceptions": "[\"Distributed representation is only for text data.\", \"It requires complex neural networks.\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Image Recognition\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": "[{\"name\": \"Deep Networks\", \"description\": \"Neural networks with multiple layers that can learn complex patterns.\"}, {\"name\": \"Multilayer Perceptrons\", \"description\": \"A type of neural network consisting of multiple layers of neurons.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Classification Techniques",
+      "description": "Methods used to categorize data into predefined classes.",
+      "sub_topics": "[{\"name\": \"Linear Classifier\", \"description\": \"A classifier that makes predictions based on a linear predictor function.\"}, {\"name\": \"Causal Mechanisms\", \"description\": \"Understanding the cause-effect relationships in classification tasks.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Binary Classification\", \"Multi-class Classification\", \"Evaluation Metrics\", \"Overfitting and Underfitting\"]",
+      "common_misconceptions": "[\"Classification is only for binary outcomes\", \"More features always improve model performance\"]",
+      "practical_applications": "[\"Email spam detection\", \"Image recognition\", \"Sentiment analysis\", \"Medical diagnosis\"]"
+    },
+    {
+      "id": "Training Methods",
+      "description": "Approaches for training machine learning models to improve their performance.",
+      "sub_topics": "[{\"name\": \"Pretraining\", \"description\": \"Initial training phase to learn general features before fine-tuning.\"}, {\"name\": \"Denoising Pretraining\", \"description\": \"A technique to improve model robustness by training on corrupted data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Reinforcement Learning\", \"Transfer Learning\"]",
+      "common_misconceptions": "[\"All models require the same amount of training data\", \"More complex models always perform better\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Recommendation systems\", \"Game AI\"]"
+    },
+    {
+      "id": "Generative Models",
+      "description": "Models that can generate new data points from learned distributions.",
+      "sub_topics": "[{\"name\": \"Generative Adversarial Networks\", \"description\": \"A framework where two networks compete to improve data generation.\"}, {\"name\": \"Mixture Models\", \"description\": \"Statistical models that represent data as a mixture of multiple distributions.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of probability, statistics, and machine learning fundamentals.",
+      "key_sub_concepts": "[\"Variational Autoencoders\", \"Generative Adversarial Networks\"]",
+      "common_misconceptions": "[\"Generative models only work with images\", \"They cannot produce high-quality data\"]",
+      "practical_applications": "[\"Image synthesis\", \"Text generation\"]"
+    },
+    {
+      "id": "Transfer Learning",
+      "description": "A technique where knowledge gained from one task is applied to a different but related task.",
+      "sub_topics": "[{\"name\": \"Multitask Learning\", \"description\": \"Simultaneously training on multiple tasks to improve generalization.\"}, {\"name\": \"Domain Adaptation\", \"description\": \"Adapting a model trained on one domain to work in another domain.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and neural networks.",
+      "key_sub_concepts": "[\"Fine-tuning\", \"Feature extraction\"]",
+      "common_misconceptions": "[\"Transfer learning only works for similar tasks\", \"Pre-trained models are always better than training from scratch\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Error Analysis",
+      "description": "Techniques for analyzing and understanding errors in model predictions.",
+      "sub_topics": "[{\"name\": \"Concept Drift\", \"description\": \"The change in the statistical properties of the target variable over time.\"}, {\"name\": \"Training Sets\", \"description\": \"The datasets used to train machine learning models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and model evaluation metrics.",
+      "key_sub_concepts": "[\"Types of errors (false positives, false negatives)\", \"Confusion matrix\", \"Error distribution analysis\", \"Bias-variance tradeoff\"]",
+      "common_misconceptions": "[\"All errors are equally important\", \"Error analysis is only for classification problems\", \"Improving accuracy always means reducing errors\"]",
+      "practical_applications": "[\"Improving model performance\", \"Identifying data quality issues\", \"Guiding feature engineering\", \"Enhancing model interpretability\"]"
+    },
+    {
+      "id": "Activation Functions",
+      "description": "Functions that determine the output of a neuron in a neural network.",
+      "sub_topics": "[{\"name\": \"Linear Activation\", \"description\": \"An activation function that outputs the input directly.\"}, {\"name\": \"Non-linear Activation\", \"description\": \"Activation functions that introduce non-linearity into the model.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and calculus.",
+      "key_sub_concepts": "[\"Sigmoid Function\", \"ReLU (Rectified Linear Unit)\", \"Tanh Function\", \"Softmax Function\"]",
+      "common_misconceptions": "[\"Activation functions are only used in the output layer.\", \"All activation functions are equally effective.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game AI\", \"Financial forecasting\"]"
+    },
+    {
+      "id": "Backpropagation",
+      "description": "An algorithm for training neural networks by minimizing the loss function.",
+      "sub_topics": "[{\"name\": \"Loss Function\", \"description\": \"A function that measures the difference between predicted and actual values.\"}, {\"name\": \"Gradient Descent\", \"description\": \"An optimization algorithm used to minimize the loss function.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of calculus, linear algebra, and neural networks.",
+      "key_sub_concepts": "[\"Gradient Descent\", \"Chain Rule\", \"Loss Function\"]",
+      "common_misconceptions": "[\"Backpropagation is the same as training a neural network.\", \"It only works for feedforward networks.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Neural Networks",
+      "to": "Backpropagation",
+      "relation": "prerequisite",
+      "reason": "Backpropagation is a training algorithm specifically for neural networks."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Activation Functions",
+      "relation": "prerequisite",
+      "reason": "Activation functions are essential components of neural networks."
+    },
+    {
+      "from": "Classification Techniques",
+      "to": "Error Analysis",
+      "relation": "prerequisite",
+      "reason": "Error analysis helps in understanding the performance of classification techniques."
+    },
+    {
+      "from": "Training Methods",
+      "to": "Error Analysis",
+      "relation": "prerequisite",
+      "reason": "Error analysis is crucial for improving training methods."
+    },
+    {
+      "from": "Generative Models",
+      "to": "Transfer Learning",
+      "relation": "prerequisite",
+      "reason": "Transfer learning often relies on generative models for knowledge transfer."
+    }
+  ]
+}

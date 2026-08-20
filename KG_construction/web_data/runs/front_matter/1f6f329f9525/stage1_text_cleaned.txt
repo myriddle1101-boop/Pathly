@@ -1,0 +1,2347 @@
+Deep Learning
+Ian Goodfellow
+Yoshua Bengio
+Aaron Courville
+
+Contents
+Website viii
+Acknowledgments ix
+Notation xiii
+1 Introduction 1
+1.1 Who Should Read This Book? . . . . . . . . . . . . . . . . . . . . 8
+1.2 Historical Trends in Deep Learning . . . . . . . . . . . . . . . . . 12
+I Applied Math and Machine Learning Basics 27
+2 Linear Algebra 29
+2.1 Scalars, Vectors, Matrices and Tensors . . . . . . . . . . . . . . . 29
+2.2 Multiplying Matrices and Vectors . . . . . . . . . . . . . . . . . . 32
+2.3 Identity and Inverse Matrices . . . . . . . . . . . . . . . . . . . . 34
+2.4 Linear Dependence and Span . . . . . . . . . . . . . . . . . . . . 35
+2.5 Norms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+2.6 Special Kinds of Matrices and Vectors . . . . . . . . . . . . . . . 38
+2.7 Eigendecomposition . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+2.8 Singular Value Decomposition . . . . . . . . . . . . . . . . . . . . 42
+2.9 The Moore-Penrose Pseudoinverse . . . . . . . . . . . . . . . . . . 43
+2.10 The Trace Operator . . . . . . . . . . . . . . . . . . . . . . . . . 44
+2.11 The Determinant . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+2.12 Example: Principal Components Analysis . . . . . . . . . . . . . 45
+3 Probability and Information Theory 51
+3.1 Why Probability? . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+i
+
+CONTENTS
+3.2 Random Variables . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+3.3 Probability Distributions . . . . . . . . . . . . . . . . . . . . . . . 54
+3.4 Marginal Probability . . . . . . . . . . . . . . . . . . . . . . . . . 56
+3.5 Conditional Probability . . . . . . . . . . . . . . . . . . . . . . . 57
+3.6 The Chain Rule of Conditional Probabilities . . . . . . . . . . . . 57
+3.7 Independence and Conditional Independence . . . . . . . . . . . . 58
+3.8 Expectation, Variance and Covariance . . . . . . . . . . . . . . . 58
+3.9 Common Probability Distributions . . . . . . . . . . . . . . . . . 60
+3.10 Useful Properties of Common Functions . . . . . . . . . . . . . . 65
+3.11 Bayes’ Rule . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+3.12 Technical Details of Continuous Variables . . . . . . . . . . . . . 69
+3.13 Information Theory . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+3.14 Structured Probabilistic Models . . . . . . . . . . . . . . . . . . . 73
+4 Numerical Computation 78
+4.1 Overflow and Underflow . . . . . . . . . . . . . . . . . . . . . . . 78
+4.2 Poor Conditioning . . . . . . . . . . . . . . . . . . . . . . . . . . 80
+4.3 Gradient-Based Optimization . . . . . . . . . . . . . . . . . . . . 80
+4.4 Constrained Optimization . . . . . . . . . . . . . . . . . . . . . . 91
+4.5 Example: Linear Least Squares . . . . . . . . . . . . . . . . . . . 94
+5 Machine Learning Basics 96
+5.1 Learning Algorithms . . . . . . . . . . . . . . . . . . . . . . . . . 97
+5.2 Capacity, Overfitting and Underfitting . . . . . . . . . . . . . . . 108
+5.3 Hyperparameters and Validation Sets . . . . . . . . . . . . . . . . 118
+5.4 Estimators, Bias and Variance . . . . . . . . . . . . . . . . . . . . 120
+5.5 Maximum Likelihood Estimation . . . . . . . . . . . . . . . . . . 129
+5.6 Bayesian Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+5.7 Supervised Learning Algorithms . . . . . . . . . . . . . . . . . . . 137
+5.8 Unsupervised Learning Algorithms . . . . . . . . . . . . . . . . . 142
+5.9 Stochastic Gradient Descent . . . . . . . . . . . . . . . . . . . . . 149
+5.10 Building a Machine Learning Algorithm . . . . . . . . . . . . . . 151
+5.11 Challenges Motivating Deep Learning . . . . . . . . . . . . . . . . 152
+II Deep Networks: Modern Practices 162
+6 Deep Feedforward Networks 164
+6.1 Example: Learning XOR . . . . . . . . . . . . . . . . . . . . . . . 167
+6.2 Gradient-Based Learning . . . . . . . . . . . . . . . . . . . . . . . 172
+ii
+
+CONTENTS
+6.3 Hidden Units . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 187
+6.4 Architecture Design . . . . . . . . . . . . . . . . . . . . . . . . . . 193
+6.5 Back-Propagation and Other Differentiation
+Algorithms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 200
+6.6 Historical Notes . . . . . . . . . . . . . . . . . . . . . . . . . . . . 220
+7 Regularization for Deep Learning 224
+7.1 Parameter Norm Penalties . . . . . . . . . . . . . . . . . . . . . . 226
+7.2 Norm Penalties as Constrained Optimization. . . . . . . . . . . . 233
+7.3 Regularization and Under-Constrained Problems . . . . . . . . . 235
+7.4 Dataset Augmentation . . . . . . . . . . . . . . . . . . . . . . . . 236
+7.5 Noise Robustness . . . . . . . . . . . . . . . . . . . . . . . . . . . 238
+7.6 Semi-Supervised Learning . . . . . . . . . . . . . . . . . . . . . . 240
+7.7 Multitask Learning . . . . . . . . . . . . . . . . . . . . . . . . . . 241
+7.8 Early Stopping . . . . . . . . . . . . . . . . . . . . . . . . . . . . 241
+7.9 Parameter Tying and Parameter Sharing . . . . . . . . . . . . . . 249
+7.10 Sparse Representations . . . . . . . . . . . . . . . . . . . . . . . . 251
+7.11 Bagging and Other Ensemble Methods . . . . . . . . . . . . . . . 253
+7.12 Dropout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 255
+7.13 Adversarial Training . . . . . . . . . . . . . . . . . . . . . . . . . 265
+7.14 Tangent Distance, Tangent Prop and Manifold
+Tangent Classifier . . . . . . . . . . . . . . . . . . . . . . . . . . . 267
+8 Optimization for Training Deep Models 271
+8.1 How Learning Differs from Pure Optimization . . . . . . . . . . . 272
+8.2 Challenges in Neural Network Optimization . . . . . . . . . . . . 279
+8.3 Basic Algorithms . . . . . . . . . . . . . . . . . . . . . . . . . . . 290
+8.4 Parameter Initialization Strategies . . . . . . . . . . . . . . . . . 296
+8.5 Algorithms with Adaptive Learning Rates . . . . . . . . . . . . . 302
+8.6 Approximate Second-Order Methods . . . . . . . . . . . . . . . . 307
+8.7 Optimization Strategies and Meta-Algorithms . . . . . . . . . . . 313
+9 Convolutional Networks 326
+9.1 The Convolution Operation . . . . . . . . . . . . . . . . . . . . . 327
+9.2 Motivation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 329
+9.3 Pooling. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 335
+9.4 Convolution and Pooling as an Infinitely Strong Prior . . . . . . . 339
+9.5 Variants of the Basic Convolution Function . . . . . . . . . . . . 342
+9.6 Structured Outputs . . . . . . . . . . . . . . . . . . . . . . . . . . 352
+9.7 Data Types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 354
+iii
+
+CONTENTS
+9.8 Efficient Convolution Algorithms . . . . . . . . . . . . . . . . . . 356
+9.9 Random or Unsupervised Features . . . . . . . . . . . . . . . . . 356
+9.10 The Neuroscientific Basis for Convolutional
+Networks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 358
+9.11 Convolutional Networks and the History of Deep Learning . . . . 365
+10 Sequence Modeling: Recurrent and Recursive Nets 367
+10.1 Unfolding Computational Graphs . . . . . . . . . . . . . . . . . . 369
+10.2 Recurrent Neural Networks . . . . . . . . . . . . . . . . . . . . . 372
+10.3 Bidirectional RNNs . . . . . . . . . . . . . . . . . . . . . . . . . . 388
+10.4 Encoder-Decoder Sequence-to-Sequence
+Architectures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 390
+10.5 Deep Recurrent Networks . . . . . . . . . . . . . . . . . . . . . . 392
+10.6 Recursive Neural Networks . . . . . . . . . . . . . . . . . . . . . . 394
+10.7 The Challenge of Long-Term Dependencies . . . . . . . . . . . . . 396
+10.8 Echo State Networks . . . . . . . . . . . . . . . . . . . . . . . . . 399
+10.9 Leaky Units and Other Strategies for Multiple
+Time Scales . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402
+10.10 The Long Short-Term Memory and Other Gated RNNs . . . . . . 404
+10.11 Optimization for Long-Term Dependencies . . . . . . . . . . . . . 408
+10.12 Explicit Memory . . . . . . . . . . . . . . . . . . . . . . . . . . . 412
+11 Practical Methodology 416
+11.1 Performance Metrics . . . . . . . . . . . . . . . . . . . . . . . . . 417
+11.2 Default Baseline Models . . . . . . . . . . . . . . . . . . . . . . . 420
+11.3 Determining Whether to Gather More Data . . . . . . . . . . . . 421
+11.4 Selecting Hyperparameters . . . . . . . . . . . . . . . . . . . . . . 422
+11.5 Debugging Strategies . . . . . . . . . . . . . . . . . . . . . . . . . 431
+11.6 Example: Multi-Digit Number Recognition . . . . . . . . . . . . . 435
+12 Applications 438
+12.1 Large-Scale Deep Learning . . . . . . . . . . . . . . . . . . . . . . 438
+12.2 Computer Vision . . . . . . . . . . . . . . . . . . . . . . . . . . . 447
+12.3 Speech Recognition . . . . . . . . . . . . . . . . . . . . . . . . . . 453
+12.4 Natural Language Processing . . . . . . . . . . . . . . . . . . . . 456
+12.5 Other Applications . . . . . . . . . . . . . . . . . . . . . . . . . . 473
+iv
+
+CONTENTS
+III Deep Learning Research 482
+13 Linear Factor Models 485
+13.1 Probabilistic PCA and Factor Analysis . . . . . . . . . . . . . . . 486
+13.2 Independent Component Analysis (ICA) . . . . . . . . . . . . . . 487
+13.3 Slow Feature Analysis . . . . . . . . . . . . . . . . . . . . . . . . 489
+13.4 Sparse Coding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 492
+13.5 Manifold Interpretation of PCA . . . . . . . . . . . . . . . . . . . 496
+14 Autoencoders 499
+14.1 Undercomplete Autoencoders . . . . . . . . . . . . . . . . . . . . 500
+14.2 Regularized Autoencoders . . . . . . . . . . . . . . . . . . . . . . 501
+14.3 Representational Power, Layer Size and Depth . . . . . . . . . . . 505
+14.4 Stochastic Encoders and Decoders. . . . . . . . . . . . . . . . . . 506
+14.5 Denoising Autoencoders . . . . . . . . . . . . . . . . . . . . . . . 507
+14.6 Learning Manifolds with Autoencoders . . . . . . . . . . . . . . . 513
+14.7 Contractive Autoencoders . . . . . . . . . . . . . . . . . . . . . . 518
+14.8 Predictive Sparse Decomposition . . . . . . . . . . . . . . . . . . 521
+14.9 Applications of Autoencoders . . . . . . . . . . . . . . . . . . . . 522
+15 Representation Learning 524
+15.1 Greedy Layer-Wise Unsupervised Pretraining . . . . . . . . . . . 526
+15.2 Transfer Learning and Domain Adaptation . . . . . . . . . . . . . 534
+15.3 Semi-Supervised Disentangling of Causal Factors . . . . . . . . . 539
+15.4 Distributed Representation. . . . . . . . . . . . . . . . . . . . . . 544
+15.5 Exponential Gains from Depth . . . . . . . . . . . . . . . . . . . 550
+15.6 Providing Clues to Discover Underlying Causes . . . . . . . . . . 552
+16 Structured Probabilistic Models for Deep Learning 555
+16.1 The Challenge of Unstructured Modeling . . . . . . . . . . . . . . 556
+16.2 Using Graphs to Describe Model Structure . . . . . . . . . . . . . 560
+16.3 Sampling from Graphical Models . . . . . . . . . . . . . . . . . . 577
+16.4 Advantages of Structured Modeling . . . . . . . . . . . . . . . . . 579
+16.5 Learning about Dependencies . . . . . . . . . . . . . . . . . . . . 579
+16.6 Inference and Approximate Inference . . . . . . . . . . . . . . . . 580
+16.7 The Deep Learning Approach to Structured
+Probabilistic Models . . . . . . . . . . . . . . . . . . . . . . . . . 581
+17 Monte Carlo Methods 587
+17.1 Sampling and Monte Carlo Methods . . . . . . . . . . . . . . . . 587
+v
+
+CONTENTS
+17.2 Importance Sampling . . . . . . . . . . . . . . . . . . . . . . . . . 589
+17.3 Markov Chain Monte Carlo Methods . . . . . . . . . . . . . . . . 592
+17.4 Gibbs Sampling . . . . . . . . . . . . . . . . . . . . . . . . . . . . 596
+17.5 The Challenge of Mixing between Separated
+Modes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 597
+18 Confronting the Partition Function 603
+18.1 The Log-Likelihood Gradient . . . . . . . . . . . . . . . . . . . . 604
+18.2 Stochastic Maximum Likelihood and Contrastive Divergence . . . 605
+18.3 Pseudolikelihood . . . . . . . . . . . . . . . . . . . . . . . . . . . 613
+18.4 Score Matching and Ratio Matching . . . . . . . . . . . . . . . . 615
+18.5 Denoising Score Matching . . . . . . . . . . . . . . . . . . . . . . 617
+18.6 Noise-Contrastive Estimation . . . . . . . . . . . . . . . . . . . . 618
+18.7 Estimating the Partition Function . . . . . . . . . . . . . . . . . . 621
+19 Approximate Inference 629
+19.1 Inference as Optimization . . . . . . . . . . . . . . . . . . . . . . 631
+19.2 Expectation Maximization . . . . . . . . . . . . . . . . . . . . . . 632
+19.3 MAP Inference and Sparse Coding . . . . . . . . . . . . . . . . . 633
+19.4 Variational Inference and Learning . . . . . . . . . . . . . . . . . 636
+19.5 Learned Approximate Inference . . . . . . . . . . . . . . . . . . . 648
+20 Deep Generative Models 651
+20.1 Boltzmann Machines . . . . . . . . . . . . . . . . . . . . . . . . . 651
+20.2 Restricted Boltzmann Machines . . . . . . . . . . . . . . . . . . . 653
+20.3 Deep Belief Networks . . . . . . . . . . . . . . . . . . . . . . . . . 657
+20.4 Deep Boltzmann Machines . . . . . . . . . . . . . . . . . . . . . . 660
+20.5 Boltzmann Machines for Real-Valued Data . . . . . . . . . . . . . 673
+20.6 Convolutional Boltzmann Machines . . . . . . . . . . . . . . . . . 679
+20.7 Boltzmann Machines for Structured or Sequential Outputs . . . . 681
+20.8 Other Boltzmann Machines . . . . . . . . . . . . . . . . . . . . . 683
+20.9 Back-Propagation through Random Operations . . . . . . . . . . 684
+20.10 Directed Generative Nets . . . . . . . . . . . . . . . . . . . . . . . 688
+20.11 Drawing Samples from Autoencoders . . . . . . . . . . . . . . . . 707
+20.12 Generative Stochastic Networks . . . . . . . . . . . . . . . . . . . 710
+20.13 Other Generation Schemes . . . . . . . . . . . . . . . . . . . . . . 712
+20.14 Evaluating Generative Models . . . . . . . . . . . . . . . . . . . . 713
+20.15 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 716
+Bibliography 717
+vi
+
+CONTENTS
+Index 773
+vii
+
+Website
+www.deeplearningbook.org
+This book is accompanied by the above website. The website provides a
+variety of supplementary material, including exercises, lecture slides, corrections of
+mistakes, and other resources that should be useful to both readers and instructors.
+viii
+
+Bibliography
+Abadi,M.,Agarwal,A.,Barham,P.,Brevdo,E.,Chen,Z.,Citro,C.,Corrado,G.S.,Davis,
+A., Dean, J., Devin, M., Ghemawat, S., Goodfellow, I., Harp, A., Irving, G., Isard, M.,
+Jia, Y., Jozefowicz, R., Kaiser, L., Kudlur, M., Levenberg, J., Mané, D., Monga, R.,
+Moore, S., Murray, D., Olah, C., Schuster, M., Shlens, J., Steiner, B., Sutskever, I.,
+Talwar, K., Tucker, P., Vanhoucke, V., Vasudevan, V., Viégas, F., Vinyals, O., Warden,
+P., Wattenberg, M., Wicke, M., Yu, Y., and Zheng, X. (2015). Tensor Flow: Large-scale
+machine learning on heterogeneous systems. Software available from tensorflow.org. 25,
+210, 441
+Ackley, D. H., Hinton, G. E., and Sejnowski, T. J. (1985). A learning algorithm for
+Boltzmann machines. Cognitive Science, 9, 147–169. 567, 651
+Alain, G. and Bengio, Y. (2013). What regularized auto-encoders learn from the data
+generating distribution. In ICLR’2013, ar Xiv:1211.4246. 504, 509, 512, 518
+Alain,G.,Bengio,Y.,Yao,L.,Éric Thibodeau-Laufer,Yosinski,J.,and Vincent,P.(2015).
+GSNs: Generative stochastic networks. ar Xiv:1503.05571. 507, 709
+Allen, R. B. (1987). Several studies on natural language and back-propagation. In IEEE
+First International Conference on Neural Networks, volume 2, pages 335–341, San
+Diego. 468
+Anderson, E. (1935). The Irises of the Gaspé Peninsula. Bulletin of the American Iris
+Society, 59, 2–5. 19
+Ba, J., Mnih, V., and Kavukcuoglu, K. (2014). Multiple object recognition with visual
+attention. ar Xiv:1412.7755. 688
+Bachman, P. and Precup, D. (2015). Variational generative stochastic networks with
+collaborative shaping. In Proceedings of the 32 nd International Conference on Machine
+Learning, ICML 2015, Lille, France, 6-11 July 2015, pages 1964–1972. 713
+Bacon, P.-L., Bengio, E., Pineau, J., and Precup, D. (2015). Conditional computation in
+neuralnetworksusingadecision-theoreticapproach.In 2 nd Multidisciplinary Conference
+on Reinforcement Learning and Decision Making (RLDM 2015). 445
+717
+
+BIBLIOGRAPHY
+Bagnell, J. A. and Bradley, D. M. (2009). Differentiable sparse coding. In D. Koller,
+D. Schuurmans, Y. Bengio, and L. Bottou, editors, Advances in Neural Information
+Processing Systems 21 (NIPS’08), pages 113–120. 494
+Bahdanau, D., Cho, K., and Bengio, Y. (2015). Neural machine translation by jointly
+learning to align and translate. In ICLR’2015, ar Xiv:1409.0473. 25, 99, 392, 412, 415,
+459, 470, 471
+Bahl, L. R., Brown, P., de Souza, P. V., and Mercer, R. L. (1987). Speech recognition
+with continuous-parameter hidden Markov models. Computer, Speech and Language, 2,
+219–234. 453
+Baldi, P. and Hornik, K. (1989). Neural networks and principal component analysis:
+Learning from examples without local minima. Neural Networks, 2, 53–58. 283
+Baldi, P., Brunak, S., Frasconi, P., Soda, G., and Pollastri, G. (1999). Exploiting the
+past and the future in protein secondary structure prediction. Bioinformatics, 15(11),
+937–946. 388
+Baldi, P., Sadowski, P., and Whiteson, D. (2014). Searching for exotic particles in
+high-energy physics with deep learning. Nature communications, 5. 26
+Ballard, D. H., Hinton, G. E., and Sejnowski, T. J. (1983). Parallel vision computation.
+Nature. 447
+Barlow, H. B. (1989). Unsupervised learning. Neural Computation, 1, 295–311. 144
+Barron, A. E. (1993). Universal approximation bounds for superpositions of a sigmoidal
+function. IEEE Trans. on Information Theory, 39, 930–945. 195
+Bartholomew, D. J. (1987). Latent variable models and factor analysis. Oxford University
+Press. 486
+Basilevsky, A. (1994). Statistical Factor Analysis and Related Methods: Theory and
+Applications. Wiley. 486
+Bastien, F., Lamblin, P., Pascanu, R., Bergstra, J., Goodfellow, I. J., Bergeron, A.,
+Bouchard, N., and Bengio, Y. (2012). Theano: new features and speed improvements.
+Deep Learning and Unsupervised Feature Learning NIPS 2012 Workshop. 25, 80, 210,
+218, 441
+Basu, S. and Christensen, J. (2013). Teaching classification boundaries to humans. In
+AAAI’2013. 325
+Baxter,J.(1995). Learninginternalrepresentations. In Proceedingsofthe 8 th International
+Conference on Computational Learning Theory (COLT’95), pages 311–320, Santa Cruz,
+California. ACM Press. 241
+718
+
+BIBLIOGRAPHY
+Bayer, J. and Osendorfer, C. (2014). Learning stochastic recurrent networks. Ar Xiv
+e-prints. 262
+Becker, S. and Hinton, G. (1992). A self-organizing neural network that discovers surfaces
+in random-dot stereograms. Nature, 355, 161–163. 539
+Behnke, S. (2001). Learning iterative image reconstruction in the neural abstraction
+pyramid. Int. J. Computational Intelligence and Applications, 1(4), 427–438. 511
+Beiu, V., Quintana, J. M., and Avedillo, M. J. (2003). VLSI implementations of threshold
+logic-a comprehensive survey. Neural Networks, IEEE Transactions on, 14(5), 1217–
+1243. 446
+Belkin, M. and Niyogi, P. (2002). Laplacian eigenmaps and spectral techniques for
+embedding and clustering. In T. Dietterich, S. Becker, and Z. Ghahramani, editors,
+Advances in Neural Information Processing Systems 14 (NIPS’01), Cambridge, MA.
+MIT Press. 240
+Belkin, M. and Niyogi, P. (2003). Laplacian eigenmaps for dimensionality reduction and
+data representation. Neural Computation, 15(6), 1373–1396. 160, 516
+Bengio, E., Bacon, P.-L., Pineau, J., and Precup, D. (2015 a). Conditional computation in
+neural networks for faster models. ar Xiv:1511.06297. 445
+Bengio, S. and Bengio, Y. (2000 a). Taking on the curse of dimensionality in joint
+distributions using neural networks. IEEE Transactions on Neural Networks, special
+issue on Data Mining and Knowledge Discovery, 11(3), 550–557. 703
+Bengio, S., Vinyals, O., Jaitly, N., and Shazeer, N. (2015 b). Scheduled sampling for
+sequence prediction with recurrent neural networks. Technical report, ar Xiv:1506.03099.
+378
+Bengio,Y.(1991).Artificial Neural Networksandtheir Applicationto Sequence Recognition.
+Ph.D. thesis, Mc Gill University, (Computer Science), Montreal, Canada. 402
+Bengio, Y. (2000). Gradient-based optimization of hyperparameters. Neural Computation,
+12(8), 1889–1900. 430
+Bengio, Y. (2002). New distributed probabilistic language models. Technical Report 1215,
+Dept. IRO, Université de Montréal. 462
+Bengio, Y. (2009). Learning deep architectures for AI. Now Publishers. 197, 621
+Bengio, Y. (2013). Deep learning of representations: looking forward. In Statistical
+Language and Speech Processing, volume 7978 of Lecture Notes in Computer Science,
+pages 1–37. Springer, also in ar Xiv at http://arxiv.org/abs/1305.0445. 443
+Bengio, Y.(2015). Earlyinferenceinenergy-basedmodelsapproximatesback-propagation.
+Technical Report ar Xiv:1510.02777, Universite de Montreal. 653
+719
+
+BIBLIOGRAPHY
+Bengio, Y. and Bengio, S. (2000 b). Modeling high-dimensional discrete data with multi-
+layer neural networks. In NIPS 12, pages 400–406. MIT Press. 702, 703, 705, 707
+Bengio, Y. and Delalleau, O. (2009). Justifying and generalizing contrastive divergence.
+Neural Computation, 21(6), 1601–1621. 509, 609
+Bengio, Y. and Grandvalet, Y. (2004). No unbiased estimator of the variance of k-fold
+cross-validation. In S. Thrun, L. Saul, and B. Schölkopf, editors, Advances in Neural
+Information Processing Systems 16 (NIPS’03), Cambridge, MA.MITPress, Cambridge.
+120
+Bengio, Y. and Le Cun, Y. (2007). Scaling learning algorithms towards AI. In Large Scale
+Kernel Machines. 18
+Bengio, Y. and Monperrus, M. (2005). Non-local manifold tangent learning. In L. Saul,
+Y. Weiss, and L. Bottou, editors, Advances in Neural Information Processing Systems
+17 (NIPS’04), pages 129–136. MIT Press. 157, 518
+Bengio, Y. and Sénécal, J.-S. (2003). Quick training of probabilistic neural nets by
+importance sampling. In Proceedings of AISTATS 2003. 465
+Bengio, Y. and Sénécal, J.-S. (2008). Adaptive importance sampling to accelerate training
+ofaneuralprobabilisticlanguagemodel. IEEE Trans. Neural Networks,19(4),713–722.
+465
+Bengio, Y., De Mori, R., Flammia, G., and Kompe, R. (1991). Phonetically motivated
+acoustic parameters for continuous speech recognition using artificial neural networks.
+In Proceedings of Euro Speech’91. 23, 454
+Bengio, Y., De Mori, R., Flammia, G., and Kompe, R. (1992). Neural network-Gaussian
+mixture hybrid for speech recognition or density estimation. In NIPS 4, pages 175–182.
+Morgan Kaufmann. 454
+Bengio, Y., Frasconi, P., and Simard, P. (1993). The problem of learning long-term
+dependencies in recurrent networks. In IEEE International Conference on Neural
+Networks, pages 1183–1195, San Francisco. IEEE Press. (invited paper). 398
+Bengio, Y., Simard, P., and Frasconi, P. (1994). Learning long-term dependencies with
+gradient descent is difficult. IEEE Tr. Neural Nets. 17, 396, 398, 399, 407
+Bengio, Y., Latendresse, S., and Dugas, C. (1999). Gradient-based learning of hyper-
+parameters. Learning Conference, Snowbird. 430
+Bengio, Y., Ducharme, R., and Vincent, P. (2001). A neural probabilistic language model.
+In T. K. Leen, T. G. Dietterich, and V. Tresp, editors, NIPS’2000, pages 932–938. MIT
+Press. 17, 442, 458, 461, 467, 472, 477
+Bengio, Y., Ducharme, R., Vincent, P., and Jauvin, C. (2003). A neural probabilistic
+language model. JMLR, 3, 1137–1155. 461, 467
+720
+
+BIBLIOGRAPHY
+Bengio, Y., Le Roux, N., Vincent, P., Delalleau, O., and Marcotte, P. (2006 a). Convex
+neural networks. In NIPS’2005, pages 123–130. 255
+Bengio, Y., Delalleau, O., and Le Roux, N.(2006 b). Thecurseofhighlyvariablefunctions
+for local kernel machines. In NIPS’2005. 155
+Bengio, Y., Larochelle, H., and Vincent, P. (2006 c). Non-local manifold Parzen windows.
+In NIPS’2005. MIT Press. 157, 517
+Bengio, Y., Lamblin, P., Popovici, D., and Larochelle, H. (2007). Greedy layer-wise
+training of deep networks. In NIPS’2006. 13, 18, 197, 319, 320, 526, 528
+Bengio, Y., Louradour, J., Collobert, R., and Weston, J. (2009). Curriculum learning. In
+ICML’09. 324
+Bengio, Y., Mesnil, G., Dauphin, Y., and Rifai, S. (2013 a). Better mixing via deep
+representations. In ICML’2013. 601
+Bengio, Y., Léonard, N., and Courville, A. (2013 b). Estimating or propagating gradients
+through stochastic neurons for conditional computation. ar Xiv:1308.3432. 443, 445,
+685, 688
+Bengio, Y., Yao, L., Alain, G., and Vincent, P. (2013 c). Generalized denoising auto-
+encoders as generative models. In NIPS’2013. 504, 708, 709
+Bengio, Y., Courville, A., and Vincent, P. (2013 d). Representation learning: A review and
+new perspectives. IEEE Trans. Pattern Analysis and Machine Intelligence (PAMI),
+35(8), 1798–1828. 552
+Bengio, Y., Thibodeau-Laufer, E., Alain, G., and Yosinski, J. (2014). Deep generative
+stochastic networks trainable by backprop. In ICML’2014. 708, 709, 710, 711
+Bennett, C. (1976). Efficient estimation of free energy differences from Monte Carlo data.
+Journal of Computational Physics, 22(2), 245–268. 627
+Bennett, J. and Lanning, S. (2007). The Netflix prize. 475
+Berger, A. L., Della Pietra, V. J., and Della Pietra, S. A. (1996). A maximum entropy
+approach to natural language processing. Computational Linguistics, 22, 39–71. 468
+Berglund, M. and Raiko, T. (2013). Stochastic gradient estimate variance in contrastive
+divergence and persistent contrastive divergence. Co RR, abs/1312.6002. 612
+Bergstra, J. (2011). Incorporating Complex Cells into Neural Networks for Pattern
+Classification. Ph.D. thesis, Université de Montréal. 252
+Bergstra, J. and Bengio, Y. (2009). Slow, decorrelated features for pretraining complex
+cell-like networks. In NIPS’2009. 490
+721
+
+BIBLIOGRAPHY
+Bergstra, J. and Bengio, Y. (2012). Random search for hyper-parameter optimization. J.
+Machine Learning Res., 13, 281–305. 428, 429
+Bergstra, J., Breuleux, O., Bastien, F., Lamblin, P., Pascanu, R., Desjardins, G., Turian,
+J.,Warde-Farley,D.,and Bengio,Y.(2010). Theano: a CPUand GPUmathexpression
+compiler. In Proc. Sci Py. 25, 80, 210, 218, 441
+Bergstra,J.,Bardenet,R.,Bengio,Y.,and Kégl,B.(2011).Algorithmsforhyper-parameter
+optimization. In NIPS’2011. 430
+Berkes, P.and Wiskott, L.(2005). Slowfeatureanalysisyieldsarichrepertoireofcomplex
+cell properties. Journal of Vision, 5(6), 579–602. 491
+Bertsekas, D.P.and Tsitsiklis, J.(1996). Neuro-Dynamic Programming. Athena Scientific.
+104
+Besag, J. (1975). Statistical analysis of non-lattice data. The Statistician, 24(3), 179–195.
+613
+Bishop, C. M. (1994). Mixture density networks. 185
+Bishop, C. M. (1995 a). Regularization and complexity control in feed-forward networks.
+In Proceedings International Conference on Artificial Neural Networks ICANN’95,
+volume 1, page 141–148. 238, 247
+Bishop, C. M. (1995 b). Training with noise is equivalent to Tikhonov regularization.
+Neural Computation, 7(1), 108–116. 238
+Bishop, C. M. (2006). Pattern Recognition and Machine Learning. Springer. 96, 142
+Blum, A. L. and Rivest, R. L. (1992). Training a 3-node neural network is NP-complete.
+289
+Blumer, A., Ehrenfeucht, A., Haussler, D., and Warmuth, M. K. (1989). Learnability and
+the Vapnik–Chervonenkis dimension. Journal of the ACM, 36(4), 929––865. 112
+Bonnet, G. (1964). Transformations des signaux aléatoires à travers les systèmes non
+linéaires sans mémoire. Annales des Télécommunications, 19(9–10), 203–220. 685
+Bordes, A., Weston, J., Collobert, R., and Bengio, Y. (2011). Learning structured
+embeddings of knowledge bases. In AAAI 2011. 479
+Bordes, A., Glorot, X., Weston, J., and Bengio, Y. (2012). Joint learning of words and
+meaning representations for open-text semantic parsing. AISTATS’2012. 396, 479, 480
+Bordes, A., Glorot, X., Weston, J., and Bengio, Y. (2013 a). A semantic matching energy
+function for learning with multi-relational data. Machine Learning: Special Issue on
+Learning Semantics. 479
+722
+
+BIBLIOGRAPHY
+Bordes, A., Usunier, N., Garcia-Duran, A., Weston, J., and Yakhnenko, O. (2013 b).
+Translating embeddings for modeling multi-relational data. In C. Burges, L. Bottou,
+M.Welling,Z.Ghahramani,and K.Weinberger,editors,Advancesin Neural Information
+Processing Systems 26, pages 2787–2795. Curran Associates, Inc. 479
+Bornschein, J. and Bengio, Y. (2015). Reweighted wake-sleep. In ICLR’2015,
+ar Xiv:1406.2751. 690
+Bornschein, J., Shabanian, S., Fischer, A., and Bengio, Y. (2015). Training bidirectional
+Helmholtz machines. Technical report, ar Xiv:1506.03877. 690
+Boser, B. E., Guyon, I. M., and Vapnik, V. N. (1992). A training algorithm for opti-
+mal margin classifiers. In COLT ’92: Proceedings of the fifth annual workshop on
+Computational learning theory, pages 144–152, New York, NY, USA. ACM. 17, 139
+Bottou, L. (1998). Online algorithms and stochastic approximations. In D. Saad, editor,
+Online Learning in Neural Networks. Cambridge University Press, Cambridge, UK. 292
+Bottou, L. (2011). From machine learning to machine reasoning. Technical report,
+ar Xiv.1102.1808. 394, 396
+Bottou, L. (2015). Multilayer neural networks. Deep Learning Summer School. 434
+Bottou, L. and Bousquet, O. (2008). The tradeoffs of large scale learning. In NIPS’2008.
+279, 292
+Boulanger-Lewandowski, N., Bengio, Y., and Vincent, P. (2012). Modeling temporal
+dependenciesinhigh-dimensionalsequences: Applicationtopolyphonicmusicgeneration
+and transcription. In ICML’12. 682
+Boureau, Y., Ponce, J., and Le Cun, Y. (2010). A theoretical analysis of feature pooling in
+vision algorithms. In Proc. International Conference on Machine learning (ICML’10).
+339
+Boureau, Y., Le Roux, N., Bach, F., Ponce, J., and Le Cun, Y. (2011). Ask the locals:
+multi-way local pooling for image recognition. In Proc. International Conference on
+Computer Vision (ICCV’11). IEEE. 339
+Bourlard, H. and Kamp, Y. (1988). Auto-association by multilayer perceptrons and
+singular value decomposition. Biological Cybernetics, 59, 291–294. 499
+Bourlard, H. and Wellekens, C. (1989). Speech pattern discrimination and multi-layered
+perceptrons. Computer Speech and Language, 3, 1–19. 454
+Boyd, S. and Vandenberghe, L. (2004). Convex Optimization. Cambridge University
+Press, New York, NY, USA. 91
+723
+
+BIBLIOGRAPHY
+Brady, M. L., Raghavan, R., and Slawny, J. (1989). Back-propagation fails to separate
+where perceptrons succeed. IEEE Transactions on Circuits and Systems, 36, 665–674.
+282
+Brakel, P., Stroobandt, D., and Schrauwen, B. (2013). Training energy-based models for
+time-series imputation. Journal of Machine Learning Research, 14, 2771–2797. 671,
+695
+Brand, M. (2003). Charting a manifold. In NIPS’2002, pages 961–968. MIT Press. 160,
+516
+Breiman, L. (1994). Bagging predictors. Machine Learning, 24(2), 123–140. 253
+Breiman, L., Friedman, J. H., Olshen, R. A., and Stone, C. J. (1984). Classification and
+Regression Trees. Wadsworth International Group, Belmont, CA. 142
+Bridle, J. S. (1990). Alphanets: a recurrent ‘neural’ network architecture with a hidden
+Markov model interpretation. Speech Communication, 9(1), 83–92. 182
+Briggman, K., Denk, W., Seung, S., Helmstaedter, M. N., and Turaga, S. C. (2009).
+Maximin affinity learning of image segmentation. In NIPS’2009, pages 1865–1873. 353
+Brown, P. F., Cocke, J., Pietra, S. A. D., Pietra, V. J. D., Jelinek, F., Lafferty, J. D.,
+Mercer, R. L., and Roossin, P. S. (1990). A statistical approach to machine translation.
+Computational linguistics, 16(2), 79–85. 19
+Brown, P. F., Pietra, V. J. D., De Souza, P. V., Lai, J. C., and Mercer, R. L. (1992). Class-
+based n-gram models of natural language. Computational Linguistics, 18, 467–479.
+458
+Bryson, A. and Ho, Y. (1969). Applied optimal control: optimization, estimation, and
+control. Blaisdell Pub. Co. 221
+Bryson, Jr., A. E. and Denham, W. F. (1961). A steepest-ascent method for solving
+optimum programming problems. Technical Report BR-1303, Raytheon Company,
+Missle and Space Division. 221
+Buciluˇa, C., Caruana, R., and Niculescu-Mizil, A. (2006). Model compression. In
+Proceedings of the 12 th ACM SIGKDD international conference on Knowledge discovery
+and data mining, pages 535–541. ACM. 443
+Burda, Y., Grosse, R., and Salakhutdinov, R. (2015). Importance weighted autoencoders.
+ar Xiv preprint ar Xiv:1509.00519. 695
+Cai, M., Shi, Y., and Liu, J. (2013). Deep maxout neural networks for speech recognition.
+In Automatic Speech Recognition and Understanding (ASRU), 2013 IEEE Workshop
+on, pages 291–296. IEEE. 190
+724
+
+BIBLIOGRAPHY
+Carreira-Perpiñan, M. A. and Hinton, G. E. (2005). On contrastive divergence learning.
+In R. G. Cowell and Z. Ghahramani, editors, Proceedings of the Tenth International
+Workshop on Artificial Intelligence and Statistics (AISTATS’05), pages 33–40. Society
+for Artificial Intelligence and Statistics. 609
+Caruana, R. (1993). Multitask connectionist learning. In Proc. 1993 Connectionist Models
+Summer School, pages 372–379. 241
+Cauchy, A. (1847). Méthode générale pour la résolution de systèmes d’équations simul-
+tanées. In Compte rendu des séances de l’académie des sciences, pages 536–538. 81,
+221
+Cayton, L. (2005). Algorithms for manifold learning. Technical Report CS 2008-0923,
+UCSD. 160
+Chandola, V., Banerjee, A., and Kumar, V. (2009). Anomaly detection: A survey. ACM
+computing surveys (CSUR), 41(3), 15. 100
+Chapelle, O., Weston, J., and Schölkopf, B. (2003). Cluster kernels for semi-supervised
+learning. In S. Becker, S. Thrun, and K. Obermayer, editors, Advances in Neural
+Information Processing Systems 15 (NIPS’02), pages 585–592, Cambridge, MA. MIT
+Press. 240
+Chapelle, O., Schölkopf, B., and Zien, A., editors (2006). Semi-Supervised Learning. MIT
+Press, Cambridge, MA. 240, 539
+Chellapilla, K., Puri, S., and Simard, P. (2006). High Performance Convolutional Neural
+Networks for Document Processing. In Guy Lorette, editor, Tenth International
+Workshop on Frontiers in Handwriting Recognition, La Baule (France). Université de
+Rennes 1, Suvisoft. http://www.suvisoft.com. 22, 23, 440
+Chen, B., Ting, J.-A., Marlin, B. M., and de Freitas, N. (2010). Deep learning of invariant
+spatio-temporal features from video. NIPS*2010 Deep Learning and Unsupervised
+Feature Learning Workshop. 354
+Chen, S. F. and Goodman, J. T. (1999). An empirical study of smoothing techniques for
+language modeling. Computer, Speech and Language, 13(4), 359–393. 457, 468
+Chen, T., Du, Z., Sun, N., Wang, J., Wu, C., Chen, Y., and Temam, O.(2014 a). Dian Nao:
+A small-footprint high-throughput accelerator for ubiquitous machine-learning. In Pro-
+ceedings of the 19 th international conference on Architectural support for programming
+languages and operating systems, pages 269–284. ACM. 446
+Chen, T., Li, M., Li, Y., Lin, M., Wang, N., Wang, M., Xiao, T., Xu, B., Zhang, C.,
+and Zhang, Z. (2015). MXNet: A flexible and efficient machine learning library for
+heterogeneous distributed systems. ar Xiv preprint ar Xiv:1512.01274. 25
+725
+
+BIBLIOGRAPHY
+Chen, Y., Luo, T., Liu, S., Zhang, S., He, L., Wang, J., Li, L., Chen, T., Xu, Z., Sun, N.,
+et al. (2014 b). Da Dian Nao: A machine-learning supercomputer. In Microarchitecture
+(MICRO), 2014 47 th Annual IEEE/ACM International Symposium on, pages 609–622.
+IEEE. 446
+Chilimbi, T., Suzue, Y., Apacible, J., and Kalyanaraman, K. (2014). Project Adam:
+Building an efficient and scalable deep learning training system. In 11 th USENIX
+Symposium on Operating Systems Design and Implementation (OSDI’14). 442
+Cho,K.,Raiko,T.,and Ilin,A.(2010). Paralleltemperingisefficientforlearningrestricted
+Boltzmann machines. In IJCNN’2010. 601, 612
+Cho, K., Raiko, T., and Ilin, A. (2011). Enhanced gradient and adaptive learning rate for
+training restricted Boltzmann machines. In ICML’2011, pages 105–112. 670
+Cho, K., van Merriënboer, B., Gulcehre, C., Bougares, F., Schwenk, H., and Bengio, Y.
+(2014 a). Learning phrase representations using RNN encoder-decoder for statistical
+machine translation. In Proceedings of the Empiricial Methods in Natural Language
+Processing (EMNLP 2014). 390, 469, 470
+Cho, K., Van Merriënboer, B., Bahdanau, D., and Bengio, Y. (2014 b). On the prop-
+erties of neural machine translation: Encoder-decoder approaches. Ar Xiv e-prints,
+abs/1409.1259. 407
+Choromanska, A., Henaff, M., Mathieu, M., Arous, G. B., and Le Cun, Y. (2014). The
+loss surface of multilayer networks. 282, 283
+Chorowski, J., Bahdanau, D., Cho, K., and Bengio, Y. (2014). End-to-end continuous
+speech recognition using attention-based recurrent NN: First results. ar Xiv:1412.1602.
+455
+Chrisman, L. (1991). Learning recursive distributed representations for holistic computa-
+tion. Connection Science, 3(4), 345–366. 468
+Christianson, B. (1992). Automatic Hessians by reverse accumulation. IMA Journal of
+Numerical Analysis, 12(2), 135–150. 220
+Chrupala, G., Kadar, A., and Alishahi, A. (2015). Learning language through pictures.
+ar Xiv 1506.03694. 407
+Chung, J., Gulcehre, C., Cho, K., and Bengio, Y. (2014). Empirical evaluation of gated
+recurrent neural networks on sequence modeling. NIPS’2014 Deep Learning workshop,
+ar Xiv 1412.3555. 407, 455
+Chung, J., Gülçehre, Ç., Cho, K., and Bengio, Y. (2015 a). Gated feedback recurrent
+neural networks. In ICML’15. 407
+Chung, J., Kastner, K., Dinh, L., Goel, K., Courville, A., and Bengio, Y. (2015 b). A
+recurrent latent variable model for sequential data. In NIPS’2015. 694
+726
+
+BIBLIOGRAPHY
+Ciresan, D., Meier, U., Masci, J., and Schmidhuber, J. (2012). Multi-column deep neural
+network for traffic sign classification. Neural Networks, 32, 333–338. 24, 197
+Ciresan, D. C., Meier, U., Gambardella, L. M., and Schmidhuber, J. (2010). Deep big
+simple neural nets for handwritten digit recognition. Neural Computation, 22, 1–14.
+22, 23, 441
+Coates, A. and Ng, A. Y. (2011). The importance of encoding versus training with sparse
+coding and vector quantization. In ICML’2011. 23, 252, 494
+Coates, A., Lee, H., and Ng, A. Y. (2011). An analysis of single-layer networks in
+unsupervisedfeaturelearning. In Proceedingsofthe Thirteenth International Conference
+on Artificial Intelligence and Statistics (AISTATS 2011). 357, 450
+Coates, A., Huval, B., Wang, T., Wu, D., Catanzaro, B., and Andrew, N. (2013).
+Deep learning with COTS HPC systems. In S. Dasgupta and D. Mc Allester, editors,
+Proceedings of the 30 th International Conference on Machine Learning (ICML-13),
+volume 28 (3), pages 1337–1345. JMLR Workshop and Conference Proceedings. 22, 23,
+358, 442
+Cohen, N., Sharir, O., and Shashua, A. (2015). On the expressive power of deep learning:
+A tensor analysis. ar Xiv:1509.05009. 552
+Collobert, R. (2004). Large Scale Machine Learning. Ph.D. thesis, Université de Paris VI,
+LIP 6. 193
+Collobert, R. (2011). Deep learning for efficient discriminative parsing. In AISTATS’2011.
+99, 473
+Collobert,R.and Weston,J.(2008 a).Aunifiedarchitecturefornaturallanguageprocessing:
+Deep neural networks with multitask learning. In ICML’2008. 466, 473
+Collobert, R. and Weston, J. (2008 b). A unified architecture for natural language
+processing: Deep neural networks with multitask learning. In ICML’2008. 533
+Collobert, R., Bengio, S., and Bengio, Y. (2001). A parallel mixture of SVMs for very
+large scale problems. Technical Report IDIAP-RR-01-12, IDIAP. 445
+Collobert, R., Bengio, S., and Bengio, Y. (2002). Parallel mixture of SVMs for very large
+scale problems. Neural Computation, 14(5), 1105–1114. 445
+Collobert,R.,Weston,J.,Bottou,L.,Karlen,M.,Kavukcuoglu,K.,and Kuksa,P.(2011 a).
+Natural language processing (almost) from scratch. The Journal of Machine Learning
+Research, 12, 2493–2537. 324, 473, 533, 534
+Collobert, R., Kavukcuoglu, K., and Farabet, C. (2011 b). Torch 7: A Matlab-like environ-
+ment for machine learning. In Big Learn, NIPS Workshop. 25, 209, 441
+727
+
+BIBLIOGRAPHY
+Comon, P. (1994). Independent component analysis - a new concept? Signal Processing,
+36, 287–314. 487
+Cortes, C. and Vapnik, V. (1995). Support vector networks. Machine Learning, 20,
+273–297. 17, 139
+Couprie,C.,Farabet,C.,Najman,L.,and Le Cun,Y.(2013).Indoorsemanticsegmentation
+using depth information. In International Conference on Learning Representations
+(ICLR 2013). 24, 197
+Courbariaux, M., Bengio, Y., and David, J.-P. (2015). Low precision arithmetic for deep
+learning. In Arxiv:1412.7024, ICLR’2015 Workshop. 447
+Courville, A., Bergstra, J., and Bengio, Y. (2011). Unsupervised models of images by
+spike-and-slab RBMs. In ICML’11. 558, 677
+Courville, A., Desjardins, G., Bergstra, J., and Bengio, Y. (2014). The spike-and-slab
+RBM and extensions to discrete and sparse data distributions. Pattern Analysis and
+Machine Intelligence, IEEE Transactions on, 36(9), 1874–1887. 679
+Cover, T. M. and Thomas, J. A. (2006). Elements of Information Theory, 2 nd Edition.
+Wiley-Interscience. 71
+Cox, D. and Pinto, N. (2011). Beyond simple features: A large-scale feature search
+approach to unconstrained face recognition. In Automatic Face & Gesture Recognition
+and Workshops (FG 2011), 2011 IEEE International Conference on, pages 8–15. IEEE.
+357
+Cramér, H. (1946). Mathematical methods of statistics. Princeton University Press. 133,
+292
+Crick, F. H. C. and Mitchison, G. (1983). The function of dream sleep. Nature, 304,
+111–114. 607
+Cybenko,G.(1989).Approximationbysuperpositionsofasigmoidalfunction.Mathematics
+of Control, Signals, and Systems, 2, 303–314. 194
+Dahl, G. E., Ranzato, M., Mohamed, A., and Hinton, G. E. (2010). Phone recognition
+with the mean-covariance restricted Boltzmann machine. In NIPS’2010. 24
+Dahl, G. E., Yu, D., Deng, L., and Acero, A. (2012). Context-dependent pre-trained deep
+neural networks for large vocabulary speech recognition. IEEE Transactions on Audio,
+Speech, and Language Processing, 20(1), 33–42. 454
+Dahl, G. E., Sainath, T. N., and Hinton, G. E. (2013). Improving deep neural networks
+for LVCSR using rectified linear units and dropout. In ICASSP’2013. 454
+Dahl, G. E., Jaitly, N., and Salakhutdinov, R. (2014). Multi-task neural networks for
+QSAR predictions. ar Xiv:1406.1231. 26
+728
+
+BIBLIOGRAPHY
+Dauphin, Y. and Bengio, Y. (2013). Stochastic ratio matching of RBMs for sparse
+high-dimensional inputs. In NIPS 26. NIPS Foundation. 617
+Dauphin, Y., Glorot, X., and Bengio, Y. (2011). Large-scale learning of embeddings with
+reconstruction sampling. In ICML’2011. 466
+Dauphin, Y., Pascanu, R., Gulcehre, C., Cho, K., Ganguli, S., and Bengio, Y. (2014).
+Identifying and attacking the saddle point problem in high-dimensional non-convex
+optimization. In NIPS’2014. 282, 283, 284
+Davis, A., Rubinstein, M., Wadhwa, N., Mysore, G., Durand, F., and Freeman, W. T.
+(2014). Thevisualmicrophone: Passiverecoveryofsoundfromvideo. ACMTransactions
+on Graphics (Proc. SIGGRAPH), 33(4), 79:1–79:10. 447
+Dayan, P. (1990). Reinforcement comparison. In Connectionist Models: Proceedings of
+the 1990 Connectionist Summer School, San Mateo, CA. 688
+Dayan, P. and Hinton, G. E. (1996). Varieties of Helmholtz machine. Neural Networks,
+9(8), 1385–1403. 690
+Dayan, P., Hinton, G. E., Neal, R. M., and Zemel, R. S. (1995). The Helmholtz machine.
+Neural computation, 7(5), 889–904. 690
+Dean, J., Corrado, G., Monga, R., Chen, K., Devin, M., Le, Q., Mao, M., Ranzato, M.,
+Senior, A., Tucker, P., Yang, K., and Ng, A. Y. (2012). Large scale distributed deep
+networks. In NIPS’2012. 25, 442
+Dean,T.and Kanazawa,K.(1989). Amodelforreasoningaboutpersistenceandcausation.
+Computational Intelligence, 5(3), 142–150. 659
+Deerwester, S., Dumais, S. T., Furnas, G. W., Landauer, T. K., and Harshman, R. (1990).
+Indexing by latent semantic analysis. Journal of the American Society for Information
+Science, 41(6), 391–407. 472, 477
+Delalleau, O. and Bengio, Y. (2011). Shallow vs. deep sum-product networks. In NIPS.
+18, 551
+Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., and Fei-Fei, L. (2009). Image Net: A
+Large-Scale Hierarchical Image Database. In CVPR 09. 19
+Deng, J., Berg, A. C., Li, K., and Fei-Fei, L. (2010 a). What does classifying more than
+10,000 image categories tell us? In Proceedings of the 11 th European Conference on
+Computer Vision: Part V, ECCV’10, pages 71–84, Berlin, Heidelberg. Springer-Verlag.
+19
+Deng, L. and Yu, D. (2014). Deep learning – methods and applications. Foundations and
+Trends in Signal Processing. 455
+729
+
+BIBLIOGRAPHY
+Deng, L., Seltzer, M., Yu, D., Acero, A., Mohamed, A., and Hinton, G. (2010 b). Binary
+codingofspeechspectrogramsusingadeepauto-encoder.In Interspeech 2010,Makuhari,
+Chiba, Japan. 24
+Denil,M.,Bazzani,L.,Larochelle,H.,andde Freitas,N.(2012). Learningwheretoattend
+with deep architectures for image tracking. Neural Computation, 24(8), 2151–2184. 361
+Denton, E., Chintala, S., Szlam, A., and Fergus, R. (2015). Deep generative image models
+using a Laplacian pyramid of adversarial networks. NIPS. 698, 699, 714
+Desjardins, G. and Bengio, Y. (2008). Empirical evaluation of convolutional RBMs for
+vision. Technical Report 1327, Département d’Informatique et de Recherche Opéra-
+tionnelle, Université de Montréal. 679
+Desjardins, G., Courville, A. C., Bengio, Y., Vincent, P., and Delalleau, O. (2010).
+Tempered Markov chain Monte Carlo for training of restricted Boltzmann machines. In
+International Conference on Artificial Intelligence and Statistics, pages 145–152. 601,
+612
+Desjardins, G., Courville, A., and Bengio, Y. (2011). On tracking the partition function.
+In NIPS’2011. 628
+Desjardins, G., Simonyan, K., Pascanu, R., et al. (2015). Natural neural networks. In
+Advances in Neural Information Processing Systems, pages 2062–2070. 316
+Devlin, J., Zbib, R., Huang, Z., Lamar, T., Schwartz, R., and Makhoul, J. (2014). Fast
+and robust neural network joint models for statistical machine translation. In Proc.
+ACL’2014. 468
+Devroye, L. (2013). Non-Uniform Random Variate Generation. Springer Link : Bücher.
+Springer New York. 691
+Di Carlo, J. J. (2013). Mechanisms underlying visual object recognition: Humans vs.
+neurons vs. machines. NIPS Tutorial. 25, 360
+Dinh, L., Krueger, D., and Bengio, Y. (2014). NICE: Non-linear independent components
+estimation. ar Xiv:1410.8516. 489
+Donahue, J., Hendricks, L. A., Guadarrama, S., Rohrbach, M., Venugopalan, S., Saenko,
+K., and Darrell, T. (2014). Long-term recurrent convolutional networks for visual
+recognition and description. ar Xiv:1411.4389. 100
+Donoho, D. L. and Grimes, C. (2003). Hessian eigenmaps: new locally linear embedding
+techniques for high-dimensional data. Technical Report 2003-08, Dept. Statistics,
+Stanford University. 160, 516
+Dosovitskiy,A.,Springenberg,J.T.,and Brox,T.(2015). Learningtogeneratechairswith
+convolutional neural networks. In Proceedings of the IEEE Conference on Computer
+Vision and Pattern Recognition, pages 1538–1546. 692, 701
+730
+
+BIBLIOGRAPHY
+Doya, K. (1993). Bifurcations of recurrent neural networks in gradient descent learning.
+IEEE Transactions on Neural Networks, 1, 75–80. 396, 399
+Dreyfus, S. E. (1962). The numerical solution of variational problems. Journal of
+Mathematical Analysis and Applications, 5(1), 30–45. 221
+Dreyfus, S. E. (1973). The computational solution of optimal control problems with time
+lag. IEEE Transactions on Automatic Control, 18(4), 383–385. 221
+Drucker, H. and Le Cun, Y. (1992). Improving generalisation performance using double
+back-propagation. IEEE Transactions on Neural Networks, 3(6), 991–997. 269
+Duchi, J., Hazan, E., and Singer, Y. (2011). Adaptive subgradient methods for online
+learning and stochastic optimization. Journal of Machine Learning Research. 303
+Dudik, M., Langford, J., and Li, L. (2011). Doubly robust policy evaluation and learning.
+In Proceedings of the 28 th International Conference on Machine learning, ICML ’11.
+477
+Dugas, C., Bengio, Y., Bélisle, F., and Nadeau, C. (2001). Incorporating second-order
+functional knowledge for better option pricing. In T. Leen, T. Dietterich, and V. Tresp,
+editors, Advances in Neural Information Processing Systems 13 (NIPS’00), pages
+472–478. MIT Press. 66, 193
+Dziugaite, G. K., Roy, D. M., and Ghahramani, Z. (2015). Training generative neural net-
+works via maximum mean discrepancy optimization. ar Xiv preprint ar Xiv:1505.03906.
+699
+El Hihi, S. and Bengio, Y. (1996). Hierarchical recurrent neural networks for long-term
+dependencies. In NIPS’1995. 394, 403
+Elkahky, A. M., Song, Y., and He, X. (2015). A multi-view deep learning approach for
+cross domain user modeling in recommendation systems. In Proceedings of the 24 th
+International Conference on World Wide Web, pages 278–288. 475
+Elman, J. L. (1993). Learning and development in neural networks: The importance of
+starting small. Cognition, 48, 781–799. 324
+Erhan, D., Manzagol, P.-A., Bengio, Y., Bengio, S., and Vincent, P. (2009). The difficulty
+oftrainingdeeparchitecturesandtheeffectofunsupervisedpre-training. In Proceedings
+of AISTATS’2009. 197
+Erhan, D., Bengio, Y., Courville, A., Manzagol, P., Vincent, P., and Bengio, S. (2010).
+Why does unsupervised pre-training help deep learning? J. Machine Learning Res.
+527, 531, 532
+Fahlman,S.E.,Hinton,G.E.,and Sejnowski,T.J.(1983). Massivelyparallelarchitectures
+for AI: NETL, thistle, and Boltzmann machines. In Proceedings of the National
+Conference on Artificial Intelligence AAAI-83. 567, 651
+731
+
+BIBLIOGRAPHY
+Fang, H., Gupta, S., Iandola, F., Srivastava, R., Deng, L., Dollár, P., Gao, J., He, X.,
+Mitchell, M., Platt, J. C., Zitnick, C. L., and Zweig, G. (2015). From captions to visual
+concepts and back. ar Xiv:1411.4952. 100
+Farabet, C., Le Cun, Y., Kavukcuoglu, K., Culurciello, E., Martini, B., Akselrod, P., and
+Talay, S. (2011). Large-scale FPGA-based convolutional networks. In R. Bekkerman,
+M. Bilenko, and J. Langford, editors, Scaling up Machine Learning: Parallel and
+Distributed Approaches. Cambridge University Press. 521
+Farabet,C.,Couprie,C.,Najman,L.,and Le Cun,Y.(2013). Learninghierarchicalfeatures
+for scene labeling. IEEE Transactions on Pattern Analysis and Machine Intelligence,
+35(8), 1915–1929. 24, 197, 353
+Fei-Fei, L., Fergus, R., and Perona, P. (2006). One-shot learning of object categories.
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 28(4), 594–611. 536
+Finn, C., Tan, X. Y., Duan, Y., Darrell, T., Levine, S., and Abbeel, P. (2015). Learning
+visual feature spaces for robotic manipulation with deep spatial autoencoders. ar Xiv
+preprint ar Xiv:1509.06113. 25
+Fisher, R. A. (1936). The use of multiple measurements in taxonomic problems. Annals
+of Eugenics, 7, 179–188. 19, 103
+Földiák,P.(1989). Adaptivenetworkforoptimallinearfeatureextraction. In International
+Joint Conference on Neural Networks (IJCNN), volume 1, pages 401–405, Washington
+1989. IEEE, New York. 490
+Forcada, M. and Ñeco, R. (1997). Learning recursive distributed representations for
+holistic computation. In Biological and Artificial Computation: From Neuroscience to
+Technology, pages 453–462. 468
+Franzius, M., Sprekeler, H., and Wiskott, L.(2007). Slownessandsparsenessleadtoplace,
+head-direction, and spatial-view cells. 491
+Franzius, M., Wilbert, N., and Wiskott, L. (2008). Invariant object recognition with slow
+feature analysis. In Artificial Neural Networks-ICANN 2008, pages 961–970. Springer.
+492
+Frasconi, P., Gori, M., and Sperduti, A. (1997). On the efficient classification of data
+structures by neural networks. In Proc. Int. Joint Conf. on Artificial Intelligence. 394,
+396
+Frasconi, P., Gori, M., and Sperduti, A. (1998). A general framework for adaptive
+processing of data structures. IEEE Transactions on Neural Networks, 9(5), 768–786.
+394, 396
+Freund, Y. and Schapire, R. E. (1996 a). Experiments with a new boosting algorithm. In
+Machine Learning: Proceedings of Thirteenth International Conference, pages 148–156,
+USA. ACM. 255
+732
+
+BIBLIOGRAPHY
+Freund, Y. and Schapire, R. E. (1996 b). Game theory, on-line prediction and boosting. In
+Proceedings of the Ninth Annual Conference on Computational Learning Theory, pages
+325–332. 255
+Frey, B. J. (1998). Graphical models for machine learning and digital communication.
+MIT Press. 702
+Frey,B.J.,Hinton,G.E.,and Dayan,P.(1996). Doesthewake-sleepalgorithmlearngood
+density estimators? In D. Touretzky, M. Mozer, and M. Hasselmo, editors, Advances
+in Neural Information Processing Systems 8 (NIPS’95), pages 661–670. MIT Press,
+Cambridge, MA. 649
+Frobenius, G. (1908). Über matrizen aus positiven elementen, s. B. Preuss. Akad. Wiss.
+Berlin, Germany. 594
+Fukushima,K.(1975).Cognitron: Aself-organizingmultilayeredneuralnetwork.Biological
+Cybernetics, 20, 121–136. 15, 222, 526
+Fukushima, K. (1980). Neocognitron: A self-organizing neural network model for a
+mechanismofpatternrecognitionunaffectedbyshiftinposition. Biological Cybernetics,
+36, 193–202. 15, 22, 23, 222, 361
+Gal,Y.and Ghahramani,Z.(2015). Bayesianconvolutionalneuralnetworkswith Bernoulli
+approximate variational inference. ar Xiv preprint ar Xiv:1506.02158. 261
+Gallinari,P.,Le Cun,Y.,Thiria,S.,and Fogelman-Soulie,F.(1987). Memoiresassociatives
+distribuees. In Proceedings of COGNITIVA 87, Paris, La Villette. 511
+Garcia-Duran, A., Bordes, A., Usunier, N., and Grandvalet, Y. (2015). Combining two
+andthree-wayembeddingsmodelsforlinkpredictioninknowledgebases. ar Xiv preprint
+ar Xiv:1506.00999. 479
+Garofolo, J. S., Lamel, L. F., Fisher, W. M., Fiscus, J. G., and Pallett, D. S. (1993).
+Darpa timit acoustic-phonetic continous speech corpus cd-rom. nist speech disc 1-1.1.
+NASA STI/Recon Technical Report N, 93, 27403. 454
+Garson, J. (1900). The metric system of identification of criminals, as used in Great
+Britain and Ireland. The Journal of the Anthropological Institute of Great Britain and
+Ireland, (2), 177–227. 19
+Gers, F. A., Schmidhuber, J., and Cummins, F. (2000). Learning to forget: Continual
+prediction with LSTM. Neural computation, 12(10), 2451–2471. 404, 408
+Ghahramani, Z. and Hinton, G. E. (1996). The EM algorithm for mixtures of factor
+analyzers. Technical Report CRG-TR-96-1, Dpt. of Comp. Sci., Univ. of Toronto. 485
+Gillick, D., Brunk, C., Vinyals, O., and Subramanya, A. (2015). Multilingual language
+processing from bytes. ar Xiv preprint ar Xiv:1512.00103. 472
+733
+
+BIBLIOGRAPHY
+Girshick, R., Donahue, J., Darrell, T., and Malik, J. (2015). Region-based convolutional
+networks for accurate object detection and segmentation. 421
+Giudice, M. D., Manera, V., and Keysers, C. (2009). Programmed to learn? The ontogeny
+of mirror neurons. Dev. Sci., 12(2), 350––363. 653
+Glorot,X.and Bengio,Y.(2010). Understandingthedifficultyoftrainingdeepfeedforward
+neural networks. In AISTATS’2010. 299
+Glorot, X., Bordes, A., and Bengio, Y. (2011 a). Deep sparse rectifier neural networks. In
+AISTATS’2011. 15, 171, 193, 222
+Glorot, X., Bordes, A., and Bengio, Y. (2011 b). Domain adaptation for large-scale
+sentiment classification: A deep learning approach. In ICML’2011. 504, 535
+Goldberger, J., Roweis, S., Hinton, G. E., and Salakhutdinov, R. (2005). Neighbourhood
+components analysis. In L. Saul, Y. Weiss, and L. Bottou, editors, Advances in Neural
+Information Processing Systems 17 (NIPS’04). MIT Press. 113
+Gong, S., Mc Kenna, S., and Psarrou, A. (2000). Dynamic Vision: From Images to Face
+Recognition. Imperial College Press. 161, 516
+Goodfellow, I., Le, Q., Saxe, A., and Ng, A. (2009). Measuring invariances in deep
+networks. In NIPS’2009, pages 646–654. 252
+Goodfellow,I.,Koenig,N.,Muja,M.,Pantofaru,C.,Sorokin,A.,and Takayama,L.(2010).
+Help me help you: Interfaces for personal robots. In Proc. of Human Robot Interaction
+(HRI), Osaka, Japan. ACM Press, ACM Press. 98
+Goodfellow, I. J. (2010). Technical report: Multidimensional, downsampled convolution
+for autoencoders. Technical report, Université de Montréal. 350
+Goodfellow, I. J. (2014). On distinguishability criteria for estimating generative models.
+In International Conference on Learning Representations, Workshops Track. 620, 697
+Goodfellow, I. J., Courville, A., and Bengio, Y. (2011). Spike-and-slab sparse coding
+for unsupervised feature discovery. In NIPS Workshop on Challenges in Learning
+Hierarchical Models. 530, 536
+Goodfellow, I. J., Warde-Farley, D., Mirza, M., Courville, A., and Bengio, Y. (2013 a).
+Maxout networks. In S. Dasgupta and D. Mc Allester, editors, ICML’13, pages 1319–
+1327. 190, 261, 338, 359, 450
+Goodfellow, I. J., Mirza, M., Courville, A., and Bengio, Y. (2013 b). Multi-prediction deep
+Boltzmann machines. In NIPS 26. NIPS Foundation. 98, 615, 668, 669, 670, 671, 672,
+695
+734
+
+BIBLIOGRAPHY
+Goodfellow, I. J., Warde-Farley, D., Lamblin, P., Dumoulin, V., Mirza, M., Pascanu, R.,
+Bergstra,J.,Bastien,F.,and Bengio,Y.(2013 c). Pylearn 2: amachinelearningresearch
+library. ar Xiv preprint ar Xiv:1308.4214. 25, 441
+Goodfellow, I. J., Courville, A., and Bengio, Y. (2013 d). Scaling up spike-and-slab models
+forunsupervisedfeaturelearning. IEEE Transactions on Pattern Analysis and Machine
+Intelligence, 35(8), 1902–1914. 493, 494, 495, 647, 679
+Goodfellow,I.J.,Mirza,M.,Xiao,D.,Courville,A.,and Bengio,Y.(2014 a). Anempirical
+investigationofcatastrophicforgetingingradient-basedneuralnetworks. In ICLR’2014.
+191
+Goodfellow, I. J., Shlens, J., and Szegedy, C. (2014 b). Explaining and harnessing adver-
+sarial examples. Co RR, abs/1412.6572. 265, 266, 269, 553, 554
+Goodfellow, I. J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S.,
+Courville, A., and Bengio, Y. (2014 c). Generative adversarial networks. In NIPS’2014.
+542, 685, 696, 698, 701
+Goodfellow, I. J., Bulatov, Y., Ibarz, J., Arnoud, S., and Shet, V. (2014 d). Multi-digit
+numberrecognitionfrom Street Viewimageryusingdeepconvolutionalneuralnetworks.
+In International Conference on Learning Representations. 25, 99, 197, 198, 199, 385,
+417, 444
+Goodfellow, I. J., Vinyals, O., and Saxe, A. M. (2015). Qualitatively characterizing neural
+network optimization problems. In International Conference on Learning Representa-
+tions. 282, 283, 284, 287
+Goodman, J. (2001). Classes for fast maximum entropy training. In International
+Conference on Acoustics, Speech and Signal Processing (ICASSP), Utah. 462
+Gori, M. and Tesi, A. (1992). On the problem of local minima in backpropagation. IEEE
+Transactions on Pattern Analysis and Machine Intelligence, PAMI-14(1), 76–86. 282
+Gosset, W. S. (1908). The probable error of a mean. Biometrika, 6(1), 1–25. Originally
+published under the pseudonym “Student”. 19
+Gouws, S., Bengio, Y., and Corrado, G. (2014). Bil BOWA: Fast bilingual distributed
+representations without word alignments. Technical report, ar Xiv:1410.2455. 472, 537
+Graf, H. P. and Jackel, L. D. (1989). Analog electronic neural network circuits. Circuits
+and Devices Magazine, IEEE, 5(4), 44–49. 446
+Graves, A. (2011). Practical variational inference for neural networks. In NIPS’2011. 238
+Graves, A.(2012). Supervised Sequence Labelling with Recurrent Neural Networks. Studies
+in Computational Intelligence. Springer. 368, 388, 407, 455
+735
+
+BIBLIOGRAPHY
+Graves, A.(2013). Generatingsequenceswithrecurrentneuralnetworks. Technicalreport,
+ar Xiv:1308.0850. 186, 404, 411, 415
+Graves, A. and Jaitly, N. (2014). Towards end-to-end speech recognition with recurrent
+neural networks. In ICML’2014. 404
+Graves, A. and Schmidhuber, J. (2005). Framewise phoneme classification with bidirec-
+tional LSTM and other neural network architectures. Neural Networks, 18(5), 602–610.
+388
+Graves, A. and Schmidhuber, J. (2009). Offline handwriting recognition with multidi-
+mensional recurrent neural networks. In D. Koller, D. Schuurmans, Y. Bengio, and
+L. Bottou, editors, NIPS’2008, pages 545–552. 388
+Graves,A.,Fernández,S.,Gomez,F.,and Schmidhuber,J.(2006). Connectionisttemporal
+classification: Labelling unsegmented sequence data with recurrent neural networks. In
+ICML’2006, pages 369–376, Pittsburgh, USA. 455
+Graves, A., Liwicki, M., Bunke, H., Schmidhuber, J., and Fernández, S. (2008). Uncon-
+strained on-line handwriting recognition with recurrent neural networks. In J. Platt,
+D. Koller, Y. Singer, and S. Roweis, editors, NIPS’2007, pages 577–584. 388
+Graves, A., Liwicki, M., Fernández, S., Bertolami, R., Bunke, H., and Schmidhuber, J.
+(2009). Anovelconnectionistsystemforunconstrainedhandwritingrecognition. Pattern
+Analysis and Machine Intelligence, IEEE Transactions on, 31(5), 855–868. 404
+Graves, A., Mohamed, A., and Hinton, G. (2013). Speech recognition with deep recurrent
+neural networks. In ICASSP’2013, pages 6645–6649. 388, 393, 394, 404, 406, 407, 455
+Graves,A.,Wayne,G.,and Danihelka,I.(2014). Neural Turingmachines. ar Xiv:1410.5401.
+25, 412
+Grefenstette, E., Hermann, K. M., Suleyman, M., and Blunsom, P. (2015). Learning to
+transduce with unbounded memory. In NIPS’2015. 412
+Greff, K., Srivastava, R. K., Koutník, J., Steunebrink, B. R., and Schmidhuber, J. (2015).
+LSTM: a search space odyssey. ar Xiv preprint ar Xiv:1503.04069. 408
+Gregor, K. and Le Cun, Y. (2010 a). Emergence of complex-like cells in a temporal product
+network with local receptive fields. Technical report, ar Xiv:1006.0448. 346
+Gregor, K. and Le Cun, Y. (2010 b). Learning fast approximations of sparse coding. In
+L. Bottou and M. Littman, editors, Proceedings of the Twenty-seventh International
+Conference on Machine Learning (ICML-10). ACM. 650
+Gregor, K., Danihelka, I., Mnih, A., Blundell, C., and Wierstra, D. (2014). Deep
+autoregressivenetworks.In International Conferenceon Machine Learning(ICML’2014).
+690
+736
+
+BIBLIOGRAPHY
+Gregor,K.,Danihelka,I.,Graves,A.,and Wierstra,D.(2015). DRAW:Arecurrentneural
+network for image generation. ar Xiv preprint ar Xiv:1502.04623. 694
+Gretton, A., Borgwardt, K. M., Rasch, M. J., Schölkopf, B., and Smola, A. (2012). A
+kernel two-sample test. The Journal of Machine Learning Research, 13(1), 723–773.
+700
+Gülçehre, Ç. and Bengio, Y. (2013). Knowledge matters: Importance of prior information
+foroptimization. In International Conferenceon Learning Representations(ICLR’2013).
+25
+Guo, H. and Gelfand, S. B. (1992). Classification trees with neural network feature
+extraction. Neural Networks, IEEE Transactions on, 3(6), 923–933. 445
+Gupta, S., Agrawal, A., Gopalakrishnan, K., and Narayanan, P. (2015). Deep learning
+with limited numerical precision. Co RR, abs/1502.02551. 447
+Gutmann, M. and Hyvarinen, A. (2010). Noise-contrastive estimation: A new estima-
+tion principle for unnormalized statistical models. In Proceedings of The Thirteenth
+International Conference on Artificial Intelligence and Statistics (AISTATS’10). 618
+Hadsell, R., Sermanet, P., Ben, J., Erkan, A., Han, J., Muller, U., and Le Cun, Y.
+(2007). Online learning for offroad robots: Spatial label propagation to learn long-range
+traversability. In Proceedings of Robotics: Science and Systems, Atlanta, GA,USA. 448
+Hajnal, A., Maass, W., Pudlak, P., Szegedy, M., and Turan, G. (1993). Threshold circuits
+of bounded depth. J. Comput. System. Sci., 46, 129–154. 196
+Håstad, J. (1986). Almost optimal lower bounds for small depth circuits. In Proceedings
+of the 18 th annual ACM Symposium on Theory of Computing, pages 6–20, Berkeley,
+California. ACM Press. 196
+Håstad, J. and Goldmann, M. (1991). On the power of small-depth threshold circuits.
+Computational Complexity, 1, 113–129. 196
+Hastie, T., Tibshirani, R., and Friedman, J. (2001). The elements of statistical learning:
+data mining, inference and prediction. Springer Series in Statistics. Springer Verlag.
+142
+He, K., Zhang, X., Ren, S., and Sun, J. (2015). Delving deep into rectifiers: Surpassing
+human-level performance on Image Net classification. ar Xiv preprint ar Xiv:1502.01852.
+24, 190
+Hebb, D. O. (1949). The Organization of Behavior. Wiley, New York. 13, 16, 653
+Henaff, M., Jarrett, K., Kavukcuoglu, K., and Le Cun, Y. (2011). Unsupervised learning
+of sparse features for scalable audio classification. In ISMIR’11. 521
+737
+
+BIBLIOGRAPHY
+Henderson, J. (2003). Inducing history representations for broad coverage statistical
+parsing. In HLT-NAACL, pages 103–110. 473
+Henderson, J. (2004). Discriminative training of a neural network statistical parser. In
+Proceedings of the 42 nd Annual Meeting on Association for Computational Linguistics,
+page 95. 473
+Henniges, M., Puertas, G., Bornschein, J., Eggert, J., and Lücke, J. (2010). Binary sparse
+coding. In Latent Variable Analysis and Signal Separation, pages 450–457. Springer.
+638
+Herault, J. and Ans, B. (1984). Circuits neuronaux à synapses modifiables: Décodage de
+messages composites par apprentissage non supervisé. Comptes Rendus de l’Académie
+des Sciences, 299(III-13), 525––528. 487
+Hinton, G. (2012). Neural networks for machine learning. Coursera, video lectures. 303
+Hinton, G., Deng, L., Dahl, G. E., Mohamed, A., Jaitly, N., Senior, A., Vanhoucke, V.,
+Nguyen, P., Sainath, T., and Kingsbury, B. (2012 a). Deep neural networks for acoustic
+modeling in speech recognition. IEEE Signal Processing Magazine, 29(6), 82–97. 24,
+454
+Hinton, G., Vinyals, O., and Dean, J. (2015). Distilling the knowledge in a neural network.
+ar Xiv preprint ar Xiv:1503.02531. 443
+Hinton, G. E. (1989). Connectionist learning procedures. Artificial Intelligence, 40,
+185–234. 490
+Hinton,G.E.(1990).Mappingpart-wholehierarchiesintoconnectionistnetworks.Artificial
+Intelligence, 46(1), 47–75. 412
+Hinton, G. E. (1999). Products of experts. In ICANN’1999. 567
+Hinton, G. E. (2000). Training products of experts by minimizing contrastive divergence.
+Technical Report GCNU TR 2000-004, Gatsby Unit, University College London. 608,
+673
+Hinton,G.E.(2006). Torecognizeshapes,firstlearntogenerateimages. Technical Report
+UTML TR 2006-003, University of Toronto. 526, 592
+Hinton, G. E. (2007 a). How to do backpropagation in a brain. Invited talk at the
+NIPS’2007 Deep Learning Workshop. 653
+Hinton, G. E. (2007 b). Learning multiple layers of representation. Trends in cognitive
+sciences, 11(10), 428–434. 657
+Hinton, G. E. (2010). A practical guide to training restricted Boltzmann machines.
+Technical Report UTML TR 2010-003, Department of Computer Science, University of
+Toronto. 608
+738
+
+BIBLIOGRAPHY
+Hinton, G. E. and Ghahramani, Z. (1997). Generative models for discovering sparse
+distributed representations. Philosophical Transactions of the Royal Society of London.
+144
+Hinton, G. E. and Mc Clelland, J. L. (1988). Learning representations by recirculation. In
+NIPS’1987, pages 358–366. 499
+Hinton, G. E. and Roweis, S. (2003). Stochastic neighbor embedding. In NIPS’2002. 516
+Hinton, G. E. and Salakhutdinov, R. (2006). Reducing the dimensionality of data with
+neural networks. Science, 313(5786), 504–507. 506, 522, 526, 527, 531
+Hinton,G.E.and Sejnowski,T.J.(1986). Learningandrelearningin Boltzmannmachines.
+In D. E. Rumelhart and J. L. Mc Clelland, editors, Parallel Distributed Processing,
+volume 1, chapter 7, pages 282–317. MIT Press, Cambridge. 567, 651
+Hinton, G. E. and Sejnowski, T. J. (1999). Unsupervised learning: foundations of neural
+computation. MIT press. 539
+Hinton, G. E. and Shallice, T. (1991). Lesioning an attractor network: investigations of
+acquired dyslexia. Psychological review, 98(1), 74. 13
+Hinton, G. E. and Zemel, R. S. (1994). Autoencoders, minimum description length, and
+Helmholtz free energy. In NIPS’1993. 499
+Hinton,G.E.,Sejnowski,T.J.,and Ackley,D.H.(1984). Boltzmannmachines: Constraint
+satisfactionnetworksthatlearn.Technical Report TR-CMU-CS-84-119,Carnegie-Mellon
+University, Dept. of Computer Science. 567, 651
+Hinton, G. E., Mc Clelland, J., and Rumelhart, D. (1986). Distributed representations.
+In D. E. Rumelhart and J. L. Mc Clelland, editors, Parallel Distributed Processing:
+Explorations in the Microstructure of Cognition, volume 1, pages 77–109. MIT Press,
+Cambridge. 16, 221, 524
+Hinton, G. E., Revow, M., and Dayan, P. (1995 a). Recognizing handwritten digits using
+mixtures of linear models. In G. Tesauro, D. Touretzky, and T. Leen, editors, Advances
+in Neural Information Processing Systems 7 (NIPS’94), pages 1015–1022. MIT Press,
+Cambridge, MA. 485
+Hinton, G. E., Dayan, P., Frey, B. J., and Neal, R. M. (1995 b). The wake-sleep algorithm
+for unsupervised neural networks. Science, 268, 1558–1161. 501, 649
+Hinton, G. E., Dayan, P., and Revow, M. (1997). Modelling the manifolds of images of
+handwritten digits. IEEE Transactions on Neural Networks, 8, 65–74. 496
+Hinton, G. E., Welling, M., Teh, Y. W., and Osindero, S. (2001). A new view of ICA. In
+Proceedings of 3 rd International Conference on Independent Component Analysis and
+Blind Signal Separation (ICA’01), pages 746–751, San Diego, CA. 487
+739
+
+BIBLIOGRAPHY
+Hinton, G. E., Osindero, S., and Teh, Y. (2006). A fast learning algorithm for deep belief
+nets. Neural Computation, 18, 1527–1554. 13, 18, 23, 141, 526, 527, 657, 658
+Hinton, G. E., Deng, L., Yu, D., Dahl, G. E., Mohamed, A., Jaitly, N., Senior, A.,
+Vanhoucke, V., Nguyen, P., Sainath, T. N., and Kingsbury, B. (2012 b). Deep neural
+networks for acoustic modeling in speech recognition: The shared views of four research
+groups. IEEE Signal Process. Mag., 29(6), 82–97. 99
+Hinton,G.E.,Srivastava,N.,Krizhevsky,A.,Sutskever,I.,and Salakhutdinov,R.(2012 c).
+Improving neural networks by preventing co-adaptation of feature detectors. Technical
+report, ar Xiv:1207.0580. 235, 260, 264
+Hinton, G. E., Vinyals, O., and Dean, J. (2014). Dark knowledge. Invited talk at the
+Bay Learn Bay Area Machine Learning Symposium. 443
+Hochreiter, S. (1991). Untersuchungen zu dynamischen neuronalen Netzen. Diploma
+thesis, T.U. München. 17, 396, 398
+Hochreiter, S. and Schmidhuber, J. (1995). Simplifying neural nets by discovering flat
+minima. In Advances in Neural Information Processing Systems 7, pages 529–536. MIT
+Press. 239
+Hochreiter,S.and Schmidhuber,J.(1997). Longshort-termmemory. Neural Computation,
+9(8), 1735–1780. 17, 404, 407
+Hochreiter, S., Bengio, Y., and Frasconi, P. (2001). Gradient flow in recurrent nets: the
+difficulty of learning long-term dependencies. In J. Kolen and S. Kremer, editors, Field
+Guide to Dynamical Recurrent Networks. IEEE Press. 407
+Holi, J. L. and Hwang, J.-N. (1993). Finite precision error analysis of neural network
+hardware implementations. Computers, IEEE Transactions on, 42(3), 281–290. 446
+Holt, J. L. and Baker, T. E. (1991). Back propagation simulations using limited preci-
+sion calculations. In Neural Networks, 1991., IJCNN-91-Seattle International Joint
+Conference on, volume 2, pages 121–126. IEEE. 446
+Hornik, K., Stinchcombe, M., and White, H. (1989). Multilayer feedforward networks are
+universal approximators. Neural Networks, 2, 359–366. 194
+Hornik, K., Stinchcombe, M., and White, H. (1990). Universal approximation of an
+unknown mapping and its derivatives using multilayer feedforward networks. Neural
+networks, 3(5), 551–560. 194
+Hsu, F.-H. (2002). Behind Deep Blue: Building the Computer That Defeated the World
+Chess Champion. Princeton University Press, Princeton, NJ, USA. 2
+Huang, F. and Ogata, Y. (2002). Generalized pseudo-likelihood estimates for Markov
+random fields on lattice. Annals of the Institute of Statistical Mathematics, 54(1), 1–18.
+614
+740
+
+BIBLIOGRAPHY
+Huang, P.-S., He, X., Gao, J., Deng, L., Acero, A., and Heck, L. (2013). Learning deep
+structured semantic models for web search using clickthrough data. In Proceedings of
+the 22 nd ACM international conference on Conference on information & knowledge
+management, pages 2333–2338. ACM. 475
+Hubel, D. and Wiesel, T. (1968). Receptive fields and functional architecture of monkey
+striate cortex. Journal of Physiology (London), 195, 215–243. 358
+Hubel, D. H. and Wiesel, T. N. (1959). Receptive fields of single neurons in the cat’s
+striate cortex. Journal of Physiology, 148, 574–591. 358
+Hubel, D. H. and Wiesel, T. N. (1962). Receptive fields, binocular interaction, and
+functional architecture in the cat’s visual cortex. Journal of Physiology (London), 160,
+106–154. 358
+Huszar,F.(2015). How(not)totrainyourgenerativemodel: schedulesampling,likelihood,
+adversary? ar Xiv:1511.05101. 694
+Hutter, F., Hoos, H., and Leyton-Brown, K. (2011). Sequential model-based optimization
+for general algorithm configuration. In LION-5. Extended version as UBC Tech report
+TR-2010-10. 430
+Hyotyniemi, H.(1996). Turingmachinesarerecurrentneuralnetworks. In STe P’96, pages
+13–24. 372
+Hyvärinen, A. (1999). Survey on independent component analysis. Neural Computing
+Surveys, 2, 94–128. 487
+Hyvärinen,A.(2005).Estimationofnon-normalizedstatisticalmodelsusingscorematching.
+Journal of Machine Learning Research, 6, 695–709. 509, 615
+Hyvärinen, A. (2007 a). Connections between score matching, contrastive divergence,
+and pseudolikelihood for continuous-valued variables. IEEE Transactions on Neural
+Networks, 18, 1529–1531. 616
+Hyvärinen, A. (2007 b). Some extensions of score matching. Computational Statistics and
+Data Analysis, 51, 2499–2512. 616
+Hyvärinen, A. and Hoyer, P. O. (1999). Emergence of topography and complex cell
+properties from natural images using extensions of ica. In NIPS, pages 827–833. 489
+Hyvärinen, A. and Pajunen, P. (1999). Nonlinear independent component analysis:
+Existence and uniqueness results. Neural Networks, 12(3), 429–439. 489
+Hyvärinen, A., Karhunen, J., and Oja, E. (2001 a). Independent Component Analysis.
+Wiley-Interscience. 487
+Hyvärinen,A.,Hoyer,P.O.,and Inki,M.O.(2001 b). Topographicindependentcomponent
+analysis. Neural Computation, 13(7), 1527–1558. 489
+741
+
+BIBLIOGRAPHY
+Hyvärinen,A.,Hurri,J.,and Hoyer,P.O.(2009). Natural Image Statistics: A probabilistic
+approach to early computational vision. Springer-Verlag. 364
+Iba,Y.(2001). Extendedensemble Monte Carlo. International Journal of Modern Physics,
+C 12, 623–656. 601
+Inayoshi, H. and Kurita, T. (2005). Improved generalization by adding both auto-
+association and hidden-layer noise to neural-network-based-classifiers. IEEE Workshop
+on Machine Learning for Signal Processing, pages 141—-146. 511
+Ioffe, S. and Szegedy, C. (2015). Batch normalization: Accelerating deep network training
+by reducing internal covariate shift. 98, 313, 316
+Jacobs, R. A. (1988). Increased rates of convergence through learning rate adaptation.
+Neural networks, 1(4), 295–307. 303
+Jacobs, R. A., Jordan, M. I., Nowlan, S. J., and Hinton, G. E. (1991). Adaptive mixtures
+of local experts. Neural Computation, 3, 79–87. 185, 445
+Jaeger, H. (2003). Adaptive nonlinear system identification with echo state networks. In
+Advances in Neural Information Processing Systems 15. 399
+Jaeger, H. (2007 a). Discovering multiscale dynamical features with hierarchical echo state
+networks. Technical report, Jacobs University. 394
+Jaeger, H. (2007 b). Echo state network. Scholarpedia, 2(9), 2330. 399
+Jaeger,H.(2012). Longshort-termmemoryinechostatenetworks: Detailsofasimulation
+study. Technical report, Technical report, Jacobs University Bremen. 400
+Jaeger, H. and Haas, H. (2004). Harnessing nonlinearity: Predicting chaotic systems and
+saving energy in wireless communication. Science, 304(5667), 78–80. 23, 399
+Jaeger, H., Lukosevicius, M., Popovici, D., and Siewert, U. (2007). Optimization and
+applications of echo state networks with leaky- integrator neurons. Neural Networks,
+20(3), 335–352. 403
+Jain, V., Murray, J. F., Roth, F., Turaga, S., Zhigulin, V., Briggman, K. L., Helmstaedter,
+M. N., Denk, W., and Seung, H. S. (2007). Supervised learning of image restoration
+with convolutional networks. In Computer Vision, 2007. ICCV 2007. IEEE 11 th
+International Conference on, pages 1–8. IEEE. 352
+Jaitly, N. and Hinton, G. (2011). Learning a better representation of speech soundwaves
+using restricted Boltzmann machines. In Acoustics, Speech and Signal Processing
+(ICASSP), 2011 IEEE International Conference on, pages 5884–5887. IEEE. 453
+Jaitly, N. and Hinton, G. E. (2013). Vocal tract length perturbation (VTLP) improves
+speech recognition. In ICML’2013. 237
+742
+
+BIBLIOGRAPHY
+Jarrett, K., Kavukcuoglu, K., Ranzato, M., and Le Cun, Y. (2009). What is the best
+multi-stage architecture for object recognition? In ICCV’09. 15, 22, 23, 171, 190, 222,
+357, 358, 521
+Jarzynski, C. (1997). Nonequilibrium equality for free energy differences. Phys. Rev. Lett.,
+78, 2690–2693. 623, 626
+Jaynes, E. T. (2003). Probability Theory: The Logic of Science. Cambridge University
+Press. 51
+Jean, S., Cho, K., Memisevic, R., and Bengio, Y. (2014). On using very large target
+vocabulary for neural machine translation. ar Xiv:1412.2007. 469, 470
+Jelinek,F.and Mercer,R.L.(1980). Interpolatedestimationof Markovsourceparameters
+from sparse data. In E. S. Gelsema and L. N. Kanal, editors, Pattern Recognition in
+Practice. North-Holland, Amsterdam. 457, 468
+Jia,Y.(2013). Caffe: Anopensourceconvolutionalarchitectureforfastfeatureembedding.
+http://caffe.berkeleyvision.org/. 25, 209
+Jia, Y., Huang, C., and Darrell, T. (2012). Beyond spatial pyramids: Receptive field
+learning for pooled image features. In Computer Vision and Pattern Recognition
+(CVPR), 2012 IEEE Conference on, pages 3370–3377. IEEE. 339
+Jim, K.-C., Giles, C. L., and Horne, B. G. (1996). An analysis of noise in recurrent neural
+networks: convergence and generalization. IEEE Transactions on Neural Networks,
+7(6), 1424–1438. 238
+Jordan, M. I. (1998). Learning in Graphical Models. Kluwer, Dordrecht, Netherlands. 17
+Joulin, A. and Mikolov, T. (2015). Inferring algorithmic patterns with stack-augmented
+recurrent nets. ar Xiv preprint ar Xiv:1503.01007. 412
+Jozefowicz,R.,Zaremba,W.,and Sutskever,I.(2015). Anempiricalevaluationofrecurrent
+network architectures. In ICML’2015. 302, 407, 408
+Judd, J. S. (1989). Neural Network Design and the Complexity of Learning. MIT press.
+289
+Jutten, C. and Herault, J. (1991). Blind separation of sources, part I: an adaptive
+algorithm based on neuromimetic architecture. Signal Processing, 24, 1–10. 487
+Kahou, S.E., Pal, C., Bouthillier, X., Froumenty, P., Gülçehre, c., Memisevic, R., Vincent,
+P.,Courville,A.,Bengio,Y.,Ferrari,R.C.,Mirza,M.,Jean,S.,Carrier,P.L.,Dauphin,
+Y., Boulanger-Lewandowski, N., Aggarwal, A., Zumer, J., Lamblin, P., Raymond,
+J.-P., Desjardins, G., Pascanu, R., Warde-Farley, D., Torabi, A., Sharma, A., Bengio,
+E., Côté, M., Konda, K. R., and Wu, Z. (2013). Combining modality specific deep
+neural networks for emotion recognition in video. In Proceedings of the 15 th ACM on
+International Conference on Multimodal Interaction. 197
+743
+
+BIBLIOGRAPHY
+Kalchbrenner, N. and Blunsom, P. (2013). Recurrent continuous translation models. In
+EMNLP’2013. 469, 470
+Kalchbrenner, N., Danihelka, I., and Graves, A. (2015). Grid long short-term memory.
+ar Xiv preprint ar Xiv:1507.01526. 390
+Kamyshanska, H. and Memisevic, R. (2015). The potential energy of an autoencoder.
+IEEE Transactions on Pattern Analysis and Machine Intelligence. 511
+Karpathy, A. and Li, F.-F. (2015). Deep visual-semantic alignments for generating image
+descriptions. In CVPR’2015. ar Xiv:1412.2306. 100
+Karpathy, A., Toderici, G., Shetty, S., Leung, T., Sukthankar, R., and Fei-Fei, L. (2014).
+Large-scale video classification with convolutional neural networks. In CVPR. 19
+Karush, W. (1939). Minima of Functions of Several Variables with Inequalities as Side
+Constraints. Master’s thesis, Dept. of Mathematics, Univ. of Chicago. 93
+Katz, S. M. (1987). Estimation of probabilities from sparse data for the language model
+component of a speech recognizer. IEEE Transactions on Acoustics, Speech, and Signal
+Processing, ASSP-35(3), 400–401. 457, 468
+Kavukcuoglu, K., Ranzato, M., and Le Cun, Y. (2008). Fast inference in sparse coding
+algorithmswithapplicationstoobjectrecognition. Technicalreport,Computationaland
+Biological Learning Lab, Courant Institute, NYU. Tech Report CBLL-TR-2008-12-01.
+521
+Kavukcuoglu, K., Ranzato, M.-A., Fergus, R., and Le Cun, Y. (2009). Learning invariant
+features through topographic filter maps. In CVPR’2009. 521
+Kavukcuoglu, K., Sermanet, P., Boureau, Y.-L., Gregor, K., Mathieu, M., and Le Cun, Y.
+(2010). Learning convolutional feature hierarchies for visual recognition. In NIPS’2010.
+358, 521
+Kelley, H. J. (1960). Gradient theory of optimal flight paths. ARS Journal, 30(10),
+947–954. 221
+Khan, F., Zhu, X., and Mutlu, B. (2011). How do humans teach: On curriculum learning
+and teaching dimension. In Advances in Neural Information Processing Systems 24
+(NIPS’11), pages 1449–1457. 324
+Kim, S. K., Mc Afee, L. C., Mc Mahon, P. L., and Olukotun, K. (2009). A highly scalable
+restricted Boltzmann machine FPGA implementation. In Field Programmable Logic
+and Applications, 2009. FPL 2009. International Conference on, pages 367–372. IEEE.
+446
+Kindermann, R. (1980). Markov Random Fields and Their Applications (Contemporary
+Mathematics ; V. 1). American Mathematical Society. 563
+744
+
+BIBLIOGRAPHY
+Kingma, D. and Ba, J. (2014). Adam: A method for stochastic optimization. ar Xiv
+preprint ar Xiv:1412.6980. 305
+Kingma, D. and Le Cun, Y. (2010). Regularized estimation of image statistics by score
+matching. In NIPS’2010. 509, 618
+Kingma, D., Rezende, D., Mohamed, S., and Welling, M.(2014). Semi-supervisedlearning
+with deep generative models. In NIPS’2014. 421
+Kingma, D. P. (2013). Fast gradient-based inference with continuous latent variable
+models in auxiliary form. Technical report, arxiv:1306.0733. 650, 685, 693
+Kingma, D. P. and Welling, M. (2014 a). Auto-encoding variational bayes. In Proceedings
+of the International Conference on Learning Representations (ICLR). 685, 696
+Kingma, D. P. and Welling, M. (2014 b). Efficient gradient-based inference through
+transformations between bayes nets and neural nets. Technical report, arxiv:1402.0480.
+685
+Kirkpatrick, S., Jr., C. D. G., , and Vecchi, M. P. (1983). Optimization by simulated
+annealing. Science, 220, 671–680. 323
+Kiros, R., Salakhutdinov, R., and Zemel, R. (2014 a). Multimodal neural language models.
+In ICML’2014. 100
+Kiros,R.,Salakhutdinov,R.,and Zemel,R.(2014 b). Unifyingvisual-semanticembeddings
+with multimodal neural language models. ar Xiv:1411.2539 [cs.LG]. 100, 404
+Klementiev, A., Titov, I., and Bhattarai, B. (2012). Inducing crosslingual distributed
+representations of words. In Proceedings of COLING 2012. 472, 537
+Knowles-Barley, S., Jones, T. R., Morgan, J., Lee, D., Kasthuri, N., Lichtman, J. W., and
+Pfister, H. (2014). Deep learning for the connectome. GPU Technology Conference. 26
+Koller, D. and Friedman, N. (2009). Probabilistic Graphical Models: Principles and
+Techniques. MIT Press. 580, 592, 643
+Konig, Y., Bourlard, H., and Morgan, N. (1996). REMAP: Recursive estimation and
+maximizationofaposterioriprobabilities–applicationtotransition-basedconnectionist
+speech recognition. In D. Touretzky, M. Mozer, and M. Hasselmo, editors, Advances in
+Neural Information Processing Systems 8 (NIPS’95). MIT Press, Cambridge, MA. 454
+Koren, Y. (2009). The Bell Kor solution to the Netflix grand prize. 255, 475
+Kotzias, D., Denil, M., de Freitas, N., and Smyth, P. (2015). From group to individual
+labels using deep features. In ACM SIGKDD. 104
+Koutnik, J., Greff, K., Gomez, F., and Schmidhuber, J. (2014). A clockwork RNN. In
+ICML’2014. 403
+745
+
+BIBLIOGRAPHY
+Kočiský, T., Hermann, K. M., and Blunsom, P. (2014). Learning Bilingual Word Repre-
+sentations by Marginalizing Alignments. In Proceedings of ACL. 470
+Krause, O., Fischer, A., Glasmachers, T., and Igel, C. (2013). Approximation properties
+of DBNs with binary hidden units and real-valued visible units. In ICML’2013. 551
+Krizhevsky, A.(2010). Convolutionaldeepbeliefnetworkson CIFAR-10. Technicalreport,
+University of Toronto. Unpublished Manuscript: http://www.cs.utoronto.ca/ kriz/conv-
+cifar 10-aug 2010.pdf. 441
+Krizhevsky, A. and Hinton, G. (2009). Learning multiple layers of features from tiny
+images. Technical report, University of Toronto. 19, 558
+Krizhevsky, A. and Hinton, G. E. (2011). Using very deep autoencoders for content-based
+image retrieval. In ESANN. 523
+Krizhevsky, A., Sutskever, I., and Hinton, G. (2012). Image Net classification with deep
+convolutional neural networks. In NIPS’2012. 22, 23, 24, 98, 197, 365, 449, 453
+Krueger, K. A. and Dayan, P. (2009). Flexible shaping: how learning in small steps helps.
+Cognition, 110, 380–394. 324
+Kuhn, H. W. and Tucker, A. W. (1951). Nonlinear programming. In Proceedings of the
+Second Berkeley Symposium on Mathematical Statistics and Probability, pages 481–492,
+Berkeley, Calif. University of California Press. 93
+Kumar, A., Irsoy, O., Su, J., Bradbury, J., English, R., Pierce, B., Ondruska, P., Iyyer,
+M., Gulrajani, I., and Socher, R. (2015). Ask me anything: Dynamic memory networks
+for natural language processing. ar Xiv:1506.07285. 412, 480
+Kumar, M. P., Packer, B., and Koller, D. (2010). Self-paced learning for latent variable
+models. In NIPS’2010. 324
+Lang, K. J. and Hinton, G. E. (1988). The development of the time-delay neural network
+architectureforspeechrecognition. Technical Report CMU-CS-88-152,Carnegie-Mellon
+University. 361, 368, 402
+Lang, K. J., Waibel, A. H., and Hinton, G. E. (1990). A time-delay neural network
+architecture for isolated word recognition. Neural networks, 3(1), 23–43. 368
+Langford,J.and Zhang,T.(2008). Theepoch-greedyalgorithmforcontextualmulti-armed
+bandits. In NIPS’2008, pages 1096––1103. 476
+Lappalainen, H., Giannakopoulos, X., Honkela, A., and Karhunen, J. (2000). Nonlinear
+independent component analysis using ensemble learning: Experiments and discussion.
+In Proc. ICA. Citeseer. 489
+Larochelle, H. and Bengio, Y. (2008). Classification using discriminative restricted
+Boltzmann machines. In ICML’2008. 240, 252, 528, 683, 712
+746
+
+BIBLIOGRAPHY
+Larochelle, H. and Hinton, G. E. (2010). Learning to combine foveal glimpses with a
+third-order Boltzmannmachine. In Advances in Neural Information Processing Systems
+23, pages 1243–1251. 361
+Larochelle, H. and Murray, I. (2011). The Neural Autoregressive Distribution Estimator.
+In AISTATS’2011. 702, 705, 706
+Larochelle, H., Erhan, D., and Bengio, Y. (2008). Zero-data learning of new tasks. In
+AAAI Conference on Artificial Intelligence. 537
+Larochelle, H., Bengio, Y., Louradour, J., and Lamblin, P. (2009). Exploring strategies for
+training deep neural networks. Journal of Machine Learning Research, 10, 1–40. 533
+Lasserre,J.A.,Bishop,C.M.,and Minka,T.P.(2006).Principledhybridsofgenerativeand
+discriminative models. In Proceedings of the Computer Vision and Pattern Recognition
+Conference (CVPR’06), pages 87–94, Washington, DC, USA. IEEE Computer Society.
+240, 250
+Le, Q., Ngiam, J., Chen, Z., hao Chia, D. J., Koh, P. W., and Ng, A. (2010). Tiled
+convolutional neural networks. In J. Lafferty, C. K. I. Williams, J. Shawe-Taylor,
+R. Zemel, and A. Culotta, editors, Advances in Neural Information Processing Systems
+23 (NIPS’10), pages 1279–1287. 346
+Le,Q.,Ngiam,J.,Coates,A.,Lahiri,A.,Prochnow,B.,and Ng,A.(2011).Onoptimization
+methods for deep learning. In Proc. ICML’2011. ACM. 312
+Le, Q., Ranzato, M., Monga, R., Devin, M., Corrado, G., Chen, K., Dean, J., and Ng,
+A. (2012). Building high-level features using large scale unsupervised learning. In
+ICML’2012. 22, 23
+Le Roux, N. and Bengio, Y. (2008). Representational power of restricted Boltzmann
+machines and deep belief networks. Neural Computation, 20(6), 1631–1649. 551, 652
+Le Roux, N. and Bengio, Y. (2010). Deep belief networks are compact universal approxi-
+mators. Neural Computation, 22(8), 2192–2207. 551
+Le Cun, Y. (1985). Une procédure d’apprentissage pour Réseau à seuil assymétrique. In
+Cognitiva 85: Ala Frontièredel’Intelligence Artificielle,des Sciencesdela Connaissance
+et des Neurosciences, pages 599–604, Paris 1985. CESTA, Paris. 221
+Le Cun,Y.(1986). Learningprocessesinanasymmetricthresholdnetwork. In F.Fogelman-
+Soulié, E. Bienenstock, and G. Weisbuch, editors, Disordered Systems and Biological
+Organization, pages 233–240. Springer-Verlag, Les Houches, France. 345
+Le Cun, Y. (1987). Modèles connexionistes de l’apprentissage. Ph.D. thesis, Université de
+Paris VI. 17, 499, 511
+Le Cun, Y. (1989). Generalization and network design strategies. Technical Report
+CRG-TR-89-4, University of Toronto. 326, 345
+747
+
+BIBLIOGRAPHY
+Le Cun, Y., Jackel, L. D., Boser, B., Denker, J. S., Graf, H. P., Guyon, I., Henderson, D.,
+Howard, R. E., and Hubbard, W. (1989). Handwritten digit recognition: Applications
+of neural network chips and automatic learning. IEEE Communications Magazine,
+27(11), 41–46. 362
+Le Cun, Y., Bottou, L., Orr, G. B., and Müller, K.-R. (1998 a). Efficient backprop. In
+Neural Networks, Tricks of the Trade, Lecture Notes in Computer Science LNCS 1524.
+Springer Verlag. 307, 424
+Le Cun, Y., Bottou, L., Bengio, Y., and Haffner, P. (1998 b). Gradient based learning
+applied to document recognition. Proc. IEEE. 15, 17, 19, 23, 365, 453, 455
+Le Cun, Y., Kavukcuoglu, K., and Farabet, C. (2010). Convolutional networks and
+applications in vision. In Circuits and Systems (ISCAS), Proceedings of 2010 IEEE
+International Symposium on, pages 253–256. IEEE. 365
+L’Ecuyer, P. (1994). Efficiency improvement and variance reduction. In Proceedings of
+the 1994 Winter Simulation Conference, pages 122––132. 687
+Lee, C.-Y., Xie, S., Gallagher, P., Zhang, Z., and Tu, Z. (2014). Deeply-supervised nets.
+ar Xiv preprint ar Xiv:1409.5185. 322
+Lee, H., Battle, A., Raina, R., and Ng, A. (2007). Efficient sparse coding algorithms.
+In B. Schölkopf, J. Platt, and T. Hoffman, editors, Advances in Neural Information
+Processing Systems 19 (NIPS’06), pages 801–808. MIT Press. 635
+Lee, H., Ekanadham, C., and Ng, A. (2008). Sparse deep belief net model for visual area
+V 2. In NIPS’07. 252
+Lee, H., Grosse, R., Ranganath, R., and Ng, A. Y. (2009). Convolutional deep belief
+networksforscalableunsupervisedlearningofhierarchicalrepresentations. In L.Bottou
+and M. Littman, editors, Proceedings of the Twenty-sixth International Conference on
+Machine Learning (ICML’09). ACM, Montreal, Canada. 357, 680, 681
+Lee, Y. J. and Grauman, K. (2011). Learning the easy things first: self-paced visual
+category discovery. In CVPR’2011. 324
+Leibniz, G. W. (1676). Memoir using the chain rule. (Cited in TMME 7:2&3 p 321-332,
+2010). 220
+Lenat, D. B. and Guha, R. V. (1989). Building large knowledge-based systems; representa-
+tion and inference in the Cyc project. Addison-Wesley Longman Publishing Co., Inc.
+2
+Leshno, M., Lin, V. Y., Pinkus, A., and Schocken, S. (1993). Multilayer feedforward
+networks with a nonpolynomial activation function can approximate any function.
+Neural Networks, 6, 861––867. 195, 196
+748
+
+BIBLIOGRAPHY
+Levenberg, K. (1944). A method for the solution of certain non-linear problems in least
+squares. Quarterly Journal of Applied Mathematics, II(2), 164–168. 308
+L’Hôpital, G. F. A. (1696). Analyse des infiniment petits, pour l’intelligence des lignes
+courbes. Paris: L’Imprimerie Royale. 220
+Li, Y., Swersky, K., and Zemel, R. S. (2015). Generative moment matching networks.
+Co RR, abs/1502.02761. 699
+Lin, T., Horne, B. G., Tino, P., and Giles, C. L. (1996). Learning long-term dependencies
+is not as difficult with NARX recurrent neural networks. IEEE Transactions on Neural
+Networks, 7(6), 1329–1338. 402
+Lin, Y., Liu, Z., Sun, M., Liu, Y., and Zhu, X. (2015). Learning entity and relation
+embeddings for knowledge graph completion. In Proc. AAAI’15. 479
+Linde,N.(1992). Themachinethatchangedtheworld,episode 4. Documentaryminiseries.
+2
+Lindsey, C. and Lindblad, T. (1994). Review of hardware neural networks: a user’s
+perspective. In Proc. Third Workshop on Neural Networks: From Biology to High
+Energy Physics, pages 195––202, Isola d’Elba, Italy. 446
+Linnainmaa, S. (1976). Taylor expansion of the accumulated rounding error. BIT
+Numerical Mathematics, 16(2), 146–160. 221
+Long, P. M. and Servedio, R. A. (2010). Restricted Boltzmann machines are hard to
+approximatelyevaluateorsimulate. In Proceedings of the 27 th International Conference
+on Machine Learning (ICML’10). 655
+Lotter, W., Kreiman, G., and Cox, D. (2015). Unsupervised learning of visual structure
+using predictive generative networks. ar Xiv preprint ar Xiv:1511.06380. 542, 543
+Lovelace, A. (1842). Notes upon L. F. Menabrea’s “Sketch of the Analytical Engine
+invented by Charles Babbage”. 1
+Lu,L.,Zhang,X.,Cho,K.,and Renals,S.(2015). Astudyoftherecurrentneuralnetwork
+encoder-decoder for large vocabulary speech recognition. In Proc. Interspeech. 455
+Lu, T., Pál, D., and Pál, M. (2010). Contextual multi-armed bandits. In International
+Conference on Artificial Intelligence and Statistics, pages 485–492. 476
+Luenberger, D. G. (1984). Linear and Nonlinear Programming. Addison Wesley. 312
+Lukoševičius, M. and Jaeger, H. (2009). Reservoir computing approaches to recurrent
+neural network training. Computer Science Review, 3(3), 127–149. 399
+749
+
+BIBLIOGRAPHY
+Luo, H., Shen, R., Niu, C., and Ullrich, C. (2011). Learning class-relevant features and
+class-irrelevant features via a hybrid third-order RBM. In International Conference on
+Artificial Intelligence and Statistics, pages 470–478. 683
+Luo, H., Carrier, P. L., Courville, A., and Bengio, Y. (2013). Texture modeling with
+convolutional spike-and-slab RBMs and deep extensions. In AISTATS’2013. 100
+Lyu, S. (2009). Interpretation and generalization of score matching. In Proceedings of the
+Twenty-fifth Conference in Uncertainty in Artificial Intelligence (UAI’09). 616
+Ma, J., Sheridan, R. P., Liaw, A., Dahl, G. E., and Svetnik, V. (2015). Deep neural nets
+as a method for quantitative structure – activity relationships. J. Chemical information
+and modeling. 528
+Maas, A. L., Hannun, A. Y., and Ng, A. Y. (2013). Rectifier nonlinearities improve neural
+network acoustic models. In ICML Workshop on Deep Learning for Audio, Speech, and
+Language Processing. 190
+Maass, W. (1992). Bounds for the computational power and learning complexity of analog
+neuralnets(extendedabstract). In Proc. of the 25 th ACM Symp. Theory of Computing,
+pages 335–344. 196
+Maass, W., Schnitger, G., and Sontag, E. D. (1994). A comparison of the computational
+power of sigmoid and Boolean threshold circuits. Theoretical Advances in Neural
+Computation and Learning, pages 127–151. 196
+Maass, W., Natschlaeger, T., and Markram, H. (2002). Real-time computing without
+stable states: A new framework for neural computation based on perturbations. Neural
+Computation, 14(11), 2531–2560. 399
+Mac Kay, D. (2003). Information Theory, Inference and Learning Algorithms. Cambridge
+University Press. 71
+Maclaurin, D., Duvenaud, D., and Adams, R. P. (2015). Gradient-based hyperparameter
+optimization through reversible learning. ar Xiv preprint ar Xiv:1502.03492. 430
+Mao,J.,Xu,W.,Yang,Y.,Wang,J.,Huang,Z.,and Yuille,A.L.(2015). Deepcaptioning
+with multimodal recurrent neural networks. In ICLR’2015. ar Xiv:1410.1090. 100
+Marcotte, P. and Savard, G. (1992). Novel approaches to the discrimination problem.
+Zeitschrift für Operations Research (Theory), 36, 517–545. 273
+Marlin, B. and de Freitas, N. (2011). Asymptotic efficiency of deterministic estimators for
+discrete energy-based models: Ratio matching and pseudolikelihood. In UAI’2011. 615,
+617
+750
+
+BIBLIOGRAPHY
+Marlin, B., Swersky, K., Chen, B., and de Freitas, N. (2010). Inductive principles for
+restricted Boltzmann machine learning. In Proceedings of The Thirteenth International
+Conference on Artificial Intelligence and Statistics (AISTATS’10), volume 9, pages
+509–516. 611, 616, 617
+Marquardt, D. W. (1963). An algorithm for least-squares estimation of non-linear param-
+eters. Journal of the Society of Industrial and Applied Mathematics, 11(2), 431–441.
+308
+Marr, D. and Poggio, T. (1976). Cooperative computation of stereo disparity. Science,
+194. 361
+Martens, J. (2010). Deep learning via Hessian-free optimization. In L. Bottou and
+M. Littman, editors, Proceedings of the Twenty-seventh International Conference on
+Machine Learning (ICML-10), pages 735–742. ACM. 300
+Martens, J. and Medabalimi, V. (2014). On the expressive efficiency of sum product
+networks. ar Xiv:1411.7717. 551
+Martens,J.and Sutskever,I.(2011). Learningrecurrentneuralnetworkswith Hessian-free
+optimization. In Proc. ICML’2011. ACM. 408
+Mase, S. (1995). Consistency of the maximum pseudo-likelihood estimator of continuous
+state space Gibbsian processes. The Annals of Applied Probability, 5(3), pp. 603–612.
+614
+Mc Clelland, J., Rumelhart, D., and Hinton, G. (1995). The appeal of parallel distributed
+processing. In Computation & intelligence, pages 305–341. American Association for
+Artificial Intelligence. 16
+Mc Culloch, W. S. and Pitts, W. (1943). A logical calculus of ideas immanent in nervous
+activity. Bulletin of Mathematical Biophysics, 5, 115–133. 13, 14
+Mead,C.and Ismail,M.(2012).Analog VLSIimplementationofneuralsystems,volume 80.
+Springer Science & Business Media. 446
+Melchior, J., Fischer, A., and Wiskott, L. (2013). How to center binary deep Boltzmann
+machines. ar Xiv preprint ar Xiv:1311.1354. 670
+Memisevic, R. and Hinton, G. E. (2007). Unsupervised learning of image transformations.
+In Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR’07).
+683
+Memisevic, R. and Hinton, G. E. (2010). Learning to represent spatial transformations
+withfactoredhigher-order Boltzmannmachines. Neural Computation,22(6),1473–1492.
+683
+751
+
+BIBLIOGRAPHY
+Mesnil, G., Dauphin, Y., Glorot, X., Rifai, S., Bengio, Y., Goodfellow, I., Lavoie, E.,
+Muller, X., Desjardins, G., Warde-Farley, D., Vincent, P., Courville, A., and Bergstra,
+J. (2011). Unsupervised and transfer learning challenge: a deep learning approach. In
+JMLR W&CP: Proc. Unsupervised and Transfer Learning, volume 7. 197, 530, 536
+Mesnil, G., Rifai, S., Dauphin, Y., Bengio, Y., and Vincent, P. (2012). Surfing on the
+manifold. Learning Workshop, Snowbird. 707
+Miikkulainen, R. and Dyer, M. G. (1991). Natural language processing with modular
+PDP networks and distributed lexicon. Cognitive Science, 15, 343–399. 472
+Mikolov, T. (2012). Statistical Language Models based on Neural Networks. Ph.D. thesis,
+Brno University of Technology. 410
+Mikolov, T., Deoras, A., Kombrink, S., Burget, L., and Cernocky, J. (2011 a). Empirical
+evaluationandcombinationofadvancedlanguagemodelingtechniques. In Proc.12 than-
+nualconferenceoftheinternationalspeechcommunicationassociation(INTERSPEECH
+2011). 467
+Mikolov, T., Deoras, A., Povey, D., Burget, L., and Cernocky, J. (2011 b). Strategies for
+training large scale neural network language models. In Proc. ASRU’2011. 324, 467
+Mikolov,T.,Chen,K.,Corrado,G.,and Dean,J.(2013 a). Efficientestimationofwordrep-
+resentations in vector space. In International Conference on Learning Representations:
+Workshops Track. 534
+Mikolov, T., Le, Q. V., and Sutskever, I. (2013 b). Exploiting similarities among languages
+for machine translation. Technical report, ar Xiv:1309.4168. 537
+Minka,T.(2005).Divergencemeasuresandmessagepassing.Microsoft Research Cambridge
+UK Tech Rep MSRTR 2005173, 72(TR-2005-173). 623
+Minsky, M. L. and Papert, S. A. (1969). Perceptrons. MIT Press, Cambridge. 14
+Mirza,M.and Osindero,S.(2014). Conditionalgenerativeadversarialnets. ar Xiv preprint
+ar Xiv:1411.1784. 698
+Mishkin, D. and Matas, J. (2015). All you need is a good init. ar Xiv preprint
+ar Xiv:1511.06422. 301
+Misra, J. and Saha, I. (2010). Artificial neural networks in hardware: A survey of two
+decades of progress. Neurocomputing, 74(1), 239–255. 446
+Mitchell, T. M. (1997). Machine Learning. Mc Graw-Hill, New York. 97
+Miyato, T., Maeda, S., Koyama, M., Nakae, K., and Ishii, S. (2015). Distributional
+smoothing with virtual adversarial training. In ICLR. Preprint: ar Xiv:1507.00677. 266
+752
+
+BIBLIOGRAPHY
+Mnih, A. and Gregor, K. (2014). Neural variational inference and learning in belief
+networks. In ICML’2014. 688, 690
+Mnih, A. and Hinton, G. E. (2007). Three new graphical models for statistical language
+modelling. In Z. Ghahramani, editor, Proceedings of the Twenty-fourth International
+Conference on Machine Learning (ICML’07), pages 641–648. ACM. 460
+Mnih, A. and Hinton, G. E. (2009). A scalable hierarchical distributed language model.
+In D. Koller, D. Schuurmans, Y. Bengio, and L. Bottou, editors, Advances in Neural
+Information Processing Systems 21 (NIPS’08), pages 1081–1088. 462
+Mnih, A. and Kavukcuoglu, K. (2013). Learning word embeddings efficiently with noise-
+contrastive estimation. In C. Burges, L. Bottou, M. Welling, Z. Ghahramani, and
+K. Weinberger, editors, Advances in Neural Information Processing Systems 26, pages
+2265–2273. Curran Associates, Inc. 467, 620
+Mnih, A. and Teh, Y. W. (2012). A fast and simple algorithm for training neural
+probabilistic language models. In ICML’2012, pages 1751–1758. 467
+Mnih, V. and Hinton, G. (2010). Learning to detect roads in high-resolution aerial images.
+In Proceedings of the 11 th European Conference on Computer Vision (ECCV). 100
+Mnih, V., Larochelle, H., and Hinton, G. (2011). Conditional restricted Boltzmann
+machines for structure output prediction. In Proc. Conf. on Uncertainty in Artificial
+Intelligence (UAI). 682
+Mnih,V.,Kavukcuoglo,K.,Silver,D.,Graves,A.,Antonoglou,I.,and Wierstra,D.(2013).
+Playing Atari with deep reinforcement learning. Technical report, ar Xiv:1312.5602. 104
+Mnih, V., Heess, N., Graves, A., and Kavukcuoglu, K. (2014). Recurrent models of visual
+attention. In Z. Ghahramani, M. Welling, C. Cortes, N. Lawrence, and K. Weinberger,
+editors, NIPS’2014, pages 2204–2212. 688
+Mnih, V., Kavukcuoglo, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., Graves,
+A., Riedmiller, M., Fidgeland, A. K., Ostrovski, G., Petersen, S., Beattie, C., Sadik, A.,
+Antonoglou, I., King, H., Kumaran, D., Wierstra, D., Legg, S., and Hassabis, D. (2015).
+Human-level control through deep reinforcement learning. Nature, 518, 529–533. 25
+Mobahi, H. and Fisher, III, J. W. (2015). A theoretical analysis of optimization by
+Gaussian continuation. In AAAI’2015. 323
+Mobahi, H., Collobert, R., and Weston, J. (2009). Deep learning from temporal coherence
+in video. In L. Bottou and M. Littman, editors, Proceedings of the 26 th International
+Conference on Machine Learning, pages 737–744, Montreal. Omnipress. 490
+Mohamed,A.,Dahl,G.,and Hinton,G.(2009). Deepbeliefnetworksforphonerecognition.
+454
+753
+
+BIBLIOGRAPHY
+Mohamed, A., Sainath, T. N., Dahl, G., Ramabhadran, B., Hinton, G. E., and Picheny,
+M.A.(2011).Deepbeliefnetworksusingdiscriminativefeaturesforphonerecognition.In
+Acoustics,Speechand Signal Processing(ICASSP),2011 IEEEInternational Conference
+on, pages 5060–5063. IEEE. 454
+Mohamed, A., Dahl, G., and Hinton, G. (2012 a). Acoustic modeling using deep belief
+networks. IEEE Trans. on Audio, Speech and Language Processing, 20(1), 14–22. 454
+Mohamed, A., Hinton, G., and Penn, G.(2012 b). Understandinghowdeepbeliefnetworks
+perform acoustic modelling. In Acoustics, Speech and Signal Processing (ICASSP),
+2012 IEEE International Conference on, pages 4273–4276. IEEE. 454
+Moller, M. F. (1993). A scaled conjugate gradient algorithm for fast supervised learning.
+Neural Networks, 6, 525–533. 312
+Montavon, G. and Muller, K.-R. (2012). Deep Boltzmann machines and the centering
+trick. In G. Montavon, G. Orr, and K.-R. Müller, editors, Neural Networks: Tricks of
+the Trade, volume 7700 of Lecture Notes in Computer Science, pages 621–637. Preprint:
+http://arxiv.org/abs/1203.3783. 670
+Montúfar, G. (2014). Universal approximation depth and errors of narrow belief networks
+with discrete units. Neural Computation, 26. 551
+Montúfar, G. and Ay, N. (2011). Refinements of universal approximation results for
+deep belief networks and restricted Boltzmann machines. Neural Computation, 23(5),
+1306–1319. 551
+Montufar, G. F., Pascanu, R., Cho, K., and Bengio, Y. (2014). On the number of linear
+regions of deep neural networks. In NIPS’2014. 18, 196, 197
+Mor-Yosef, S., Samueloff, A., Modan, B., Navot, D., and Schenker, J. G. (1990). Ranking
+the risk factors for cesarean: logistic regression analysis of a nationwide study. Obstet
+Gynecol, 75(6), 944–7. 3
+Morin, F. and Bengio, Y. (2005). Hierarchical probabilistic neural network language
+model. In AISTATS’2005. 462, 464
+Mozer, M. C. (1992). The induction of multiscale temporal structure. In J. M. S. Hanson
+and R. Lippmann, editors, Advances in Neural Information Processing Systems 4
+(NIPS’91), pages 275–282, San Mateo, CA. Morgan Kaufmann. 403
+Murphy, K. P. (2012). Machine Learning: a Probabilistic Perspective. MIT Press,
+Cambridge, MA, USA. 60, 96, 142
+Nair, V. and Hinton, G. (2010). Rectified linear units improve restricted Boltzmann
+machines. In ICML’2010. 15, 171, 193
+754
+
+BIBLIOGRAPHY
+Nair,V.and Hinton,G.E.(2009). 3 dobjectrecognitionwithdeepbeliefnets. In Y.Bengio,
+D. Schuurmans, J. D. Lafferty, C. K. I. Williams, and A. Culotta, editors, Advances in
+Neural Information Processing Systems 22, pages 1339–1347. Curran Associates, Inc.
+683
+Narayanan,H.and Mitter,S.(2010). Samplecomplexityoftestingthemanifoldhypothesis.
+In NIPS’2010. 160
+Naumann, U. (2008). Optimal Jacobian accumulation is NP-complete. Mathematical
+Programming, 112(2), 427–441. 218
+Navigli, R. and Velardi, P. (2005). Structural semantic interconnections: a knowledge-
+based approach to word sense disambiguation. IEEE Trans. Pattern Analysis and
+Machine Intelligence, 27(7), 1075––1086. 480
+Neal, R. and Hinton, G. (1999). A view of the EM algorithm that justifies incremental,
+sparse, and other variants. In M. I. Jordan, editor, Learning in Graphical Models. MIT
+Press, Cambridge, MA. 632
+Neal, R. M. (1990). Learning stochastic feedforward networks. Technical report. 689
+Neal, R. M. (1993). Probabilistic inference using Markov chain Monte-Carlo methods.
+Technical Report CRG-TR-93-1, Dept.of Computer Science, Universityof Toronto. 676
+Neal, R. M. (1994). Sampling from multimodal distributions using tempered transitions.
+Technical Report 9421, Dept. of Statistics, University of Toronto. 601
+Neal, R. M. (1996). Bayesian Learning for Neural Networks. Lecture Notes in Statistics.
+Springer. 262
+Neal, R. M. (2001). Annealed importance sampling. Statistics and Computing, 11(2),
+125–139. 623, 625, 626, 627
+Neal, R. M. (2005). Estimating ratios of normalizing constants using linked importance
+sampling. 627
+Nesterov,Y.(1983). Amethodofsolvingaconvexprogrammingproblemwithconvergence
+rate O(1/k 2). Soviet Mathematics Doklady, 27, 372–376. 296
+Nesterov,Y.(2004). Introductorylecturesonconvexoptimization: abasiccourse. Applied
+optimization. Kluwer Academic Publ., Boston, Dordrecht, London. 296
+Netzer, Y., Wang, T., Coates, A., Bissacco, A., Wu, B., and Ng, A. Y. (2011). Reading
+digits in natural images with unsupervised feature learning. Deep Learning and
+Unsupervised Feature Learning Workshop, NIPS. 19
+Ney, H. and Kneser, R. (1993). Improved clustering techniques for class-based statistical
+languagemodelling. In European Conference on Speech Communication and Technology
+(Eurospeech), pages 973–976, Berlin. 458
+755
+
+BIBLIOGRAPHY
+Ng, A. (2015). Advice for applying machine learning.
+https://see.stanford.edu/materials/aimlcs 229/ML-advice.pdf. 416
+Niesler, T. R., Whittaker, E. W. D., and Woodland, P. C. (1998). Comparison of part-of-
+speechandautomaticallyderivedcategory-basedlanguagemodelsforspeechrecognition.
+In International Conference on Acoustics, Speech and Signal Processing (ICASSP),
+pages 177–180. 458
+Ning, F., Delhomme, D., Le Cun, Y., Piano, F., Bottou, L., and Barbano, P. E. (2005).
+Toward automatic phenotyping of developing embryos from videos. Image Processing,
+IEEE Transactions on, 14(9), 1360–1371. 353
+Nocedal, J. and Wright, S. (2006). Numerical Optimization. Springer. 90, 93
+Norouzi, M. and Fleet, D. J. (2011). Minimal loss hashing for compact binary codes. In
+ICML’2011. 523
+Nowlan, S. J. (1990). Competing experts: An experimental investigation of associative
+mixture models. Technical Report CRG-TR-90-5, University of Toronto. 445
+Nowlan,S.J.and Hinton,G.E.(1992). Simplifyingneuralnetworksbysoftweight-sharing.
+Neural Computation, 4(4), 473–493. 137
+Olshausen, B. and Field, D. J. (2005). How close are we to understanding V 1? Neural
+Computation, 17, 1665–1699. 15
+Olshausen,B.A.and Field,D.J.(1996). Emergenceofsimple-cellreceptivefieldproperties
+by learning a sparse code for natural images. Nature, 381, 607–609. 144, 252, 364, 492
+Olshausen, B. A., Anderson, C. H., and Van Essen, D. C. (1993). A neurobiological
+model of visual attention and invariant pattern recognition based on dynamic routing
+of information. J. Neurosci., 13(11), 4700–4719. 445
+Opper, M. and Archambeau, C. (2009). The variational Gaussian approximation revisited.
+Neural computation, 21(3), 786–792. 685
+Oquab,M.,Bottou,L.,Laptev,I.,and Sivic,J.(2014). Learningandtransferringmid-level
+image representations using convolutional neural networks. In Computer Vision and
+Pattern Recognition (CVPR), 2014 IEEE Conference on, pages 1717–1724. IEEE. 534
+Osindero, S. and Hinton, G. E. (2008). Modeling image patches with a directed hierarchy
+of Markov random fields. In J. Platt, D. Koller, Y. Singer, and S. Roweis, editors,
+Advances in Neural Information Processing Systems 20 (NIPS’07), pages 1121–1128,
+Cambridge, MA. MIT Press. 630
+Ovid and Martin, C. (2004). Metamorphoses. W.W. Norton. 1
+756
+
+BIBLIOGRAPHY
+Paccanaro,A.and Hinton,G.E.(2000). Extractingdistributedrepresentationsofconcepts
+andrelationsfrompositiveandnegativepropositions. In International Joint Conference
+on Neural Networks (IJCNN), Como, Italy. IEEE, New York. 479
+Paine,T.L.,Khorrami,P.,Han,W.,and Huang,T.S.(2014). Ananalysisofunsupervised
+pre-training in light of recent advances. ar Xiv preprint ar Xiv:1412.6597. 530
+Palatucci, M., Pomerleau, D., Hinton, G. E., and Mitchell, T. M. (2009). Zero-shot
+learning with semantic output codes. In Y. Bengio, D. Schuurmans, J. D. Lafferty,
+C. K. I. Williams, and A. Culotta, editors, Advances in Neural Information Processing
+Systems 22, pages 1410–1418. Curran Associates, Inc. 537
+Parker, D.B.(1985). Learning-logic. Technical Report TR-47, Centerfor Comp.Research
+in Economics and Management Sci., MIT. 221
+Pascanu, R., Mikolov, T., and Bengio, Y. (2013). On the difficulty of training recurrent
+neural networks. In ICML’2013. 285, 396, 399, 403, 409, 410, 411
+Pascanu, R., Gülçehre, Ç., Cho, K., and Bengio, Y. (2014 a). How to construct deep
+recurrent neural networks. In ICLR’2014. 18, 262, 393, 394, 406, 455
+Pascanu, R., Montufar, G., and Bengio, Y. (2014 b). On the number of inference regions
+of deep feed forward networks with piece-wise linear activations. In ICLR’2014. 548
+Pati, Y., Rezaiifar, R., and Krishnaprasad, P. (1993). Orthogonal matching pursuit:
+Recursive function approximation with applications to wavelet decomposition. In Pro-
+ceedings of the 27 th Annual Asilomar Conference on Signals, Systems, and Computers,
+pages 40–44. 252
+Pearl, J. (1985). Bayesian networks: A model of self-activated memory for evidential
+reasoning. In Proceedings of the 7 th Conference of the Cognitive Science Society,
+University of California, Irvine, pages 329–334. 560
+Pearl, J. (1988). Probabilistic Reasoning in Intelligent Systems: Networks of Plausible
+Inference. Morgan Kaufmann. 52
+Perron, O.(1907). Zurtheoriedermatrices. Mathematische Annalen, 64(2), 248–263. 594
+Petersen, K. B. and Pedersen, M. S. (2006). The matrix cookbook. Version 20051003. 29
+Peterson, G. B. (2004). A day of great illumination: B. F. Skinner’s discovery of shaping.
+Journal of the Experimental Analysis of Behavior, 82(3), 317–328. 324
+Pham, D.-T., Garat, P., and Jutten, C. (1992). Separation of a mixture of independent
+sources through a maximum likelihood approach. In EUSIPCO, pages 771–774. 487
+757
+
+BIBLIOGRAPHY
+Pham, P.-H., Jelaca, D., Farabet, C., Martini, B., Le Cun, Y., and Culurciello, E. (2012).
+Neu Flow: dataflow vision processing system-on-a-chip. In Circuits and Systems (MWS-
+CAS), 2012 IEEE 55 th International Midwest Symposium on, pages 1044–1047. IEEE.
+446
+Pinheiro, P. H. O. and Collobert, R. (2014). Recurrent convolutional neural networks for
+scene labeling. In ICML’2014. 352, 353
+Pinheiro, P. H. O. and Collobert, R. (2015). From image-level to pixel-level labeling with
+convolutional networks. In Conference on Computer Vision and Pattern Recognition
+(CVPR). 352, 353
+Pinto,N.,Cox,D.D.,and Di Carlo,J.J.(2008). Whyisreal-worldvisualobjectrecognition
+hard? PLo S Comput Biol, 4. 451
+Pinto, N., Stone, Z., Zickler, T., and Cox, D. (2011). Scaling up biologically-inspired
+computer vision: A case study in unconstrained face recognition on facebook. In
+Computer Vision and Pattern Recognition Workshops (CVPRW), 2011 IEEE Computer
+Society Conference on, pages 35–42. IEEE. 357
+Pollack, J. B. (1990). Recursive distributed representations. Artificial Intelligence, 46(1),
+77–105. 394
+Polyak, B.and Juditsky, A.(1992). Accelerationofstochasticapproximationbyaveraging.
+SIAM J. Control and Optimization, 30(4), 838–855. 318
+Polyak, B. T. (1964). Some methods of speeding up the convergence of iteration methods.
+USSR Computational Mathematics and Mathematical Physics, 4(5), 1–17. 292
+Poole, B., Sohl-Dickstein, J., and Ganguli, S. (2014). Analyzing noise in autoencoders
+and deep networks. Co RR, abs/1406.1831. 237
+Poon, H. and Domingos, P. (2011). Sum-product networks: A new deep architecture. In
+Proceedings of the Twenty-seventh Conference in Uncertainty in Artificial Intelligence
+(UAI), Barcelona, Spain. 551
+Presley, R. K. and Haggard, R. L. (1994). A fixed point implementation of the backpropa-
+gation learning algorithm. In Southeastcon’94. Creative Technology Transfer-A Global
+Affair., Proceedings of the 1994 IEEE, pages 136–138. IEEE. 446
+Price, R. (1958). A useful theorem for nonlinear devices having Gaussian inputs. IEEE
+Transactions on Information Theory, 4(2), 69–72. 685
+Quiroga, R. Q., Reddy, L., Kreiman, G., Koch, C., and Fried, I. (2005). Invariant visual
+representation by single neurons in the human brain. Nature, 435(7045), 1102–1107.
+360
+758
+
+BIBLIOGRAPHY
+Radford, A., Metz, L., and Chintala, S. (2015). Unsupervised representation learning with
+deep convolutional generative adversarial networks. ar Xiv preprint ar Xiv:1511.06434.
+549, 550, 698, 699
+Raiko, T., Yao, L., Cho, K., and Bengio, Y. (2014). Iterative neural autoregressive
+distribution estimator (NADE-k). Technical report, ar Xiv:1406.1485. 671, 706
+Raina, R., Madhavan, A., and Ng, A. Y. (2009). Large-scale deep unsupervised learning
+using graphics processors. In L. Bottou and M. Littman, editors, Proceedings of the
+Twenty-sixth International Conference on Machine Learning (ICML’09), pages 873–880,
+New York, NY, USA. ACM. 23, 441
+Ramsey,F.P.(1926). Truthandprobability. In R.B.Braithwaite,editor,The Foundations
+of Mathematicsandother Logical Essays,chapter 7,pages 156–198.Mc Master University
+Archive for the History of Economic Thought. 54
+Ranzato, M. and Hinton, G. H. (2010). Modeling pixel means and covariances using
+factorized third-order Boltzmann machines. In CVPR’2010, pages 2551–2558. 676
+Ranzato, M., Poultney, C., Chopra, S., and Le Cun, Y.(2007 a). Efficientlearningofsparse
+representations with an energy-based model. In NIPS’2006. 13, 18, 504, 526, 528
+Ranzato, M., Huang, F., Boureau, Y., and Le Cun, Y. (2007 b). Unsupervised learning of
+invariant feature hierarchies with applications to object recognition. In Proceedings of
+the Computer Vision and Pattern Recognition Conference (CVPR’07). IEEE Press. 358
+Ranzato, M., Boureau, Y., and Le Cun, Y. (2008). Sparse feature learning for deep belief
+networks. In NIPS’2007. 504
+Ranzato, M., Krizhevsky, A., and Hinton, G. E. (2010 a). Factored 3-way restricted
+Boltzmann machines for modeling natural images. In Proceedings of AISTATS 2010.
+675
+Ranzato, M., Mnih, V., and Hinton, G. (2010 b). Generating more realistic images using
+gated MRFs. In NIPS’2010. 677
+Rao, C. (1945). Information and the accuracy attainable in the estimation of statistical
+parameters. Bulletin of the Calcutta Mathematical Society, 37, 81–89. 133, 292
+Rasmus,A.,Valpola,H.,Honkala,M.,Berglund,M.,and Raiko,T.(2015).Semi-supervised
+learning with ladder network. ar Xiv preprint ar Xiv:1507.02672. 421, 528
+Recht, B., Re, C., Wright, S., and Niu, F. (2011). Hogwild: A lock-free approach to
+parallelizing stochastic gradient descent. In NIPS’2011. 442
+Reichert, D. P., Seriès, P., and Storkey, A. J. (2011). Neuronal adaptation for sampling-
+basedprobabilisticinferenceinperceptualbistability.In Advancesin Neural Information
+Processing Systems, pages 2357–2365. 663
+759
+
+BIBLIOGRAPHY
+Rezende, D. J., Mohamed, S., and Wierstra, D. (2014). Stochastic backpropagation
+and approximate inference in deep generative models. In ICML’2014. Preprint:
+ar Xiv:1401.4082. 650, 685, 693
+Rifai, S., Vincent, P., Muller, X., Glorot, X., and Bengio, Y. (2011 a). Contractive auto-
+encoders: Explicit invariance during feature extraction. In ICML’2011. 518, 519, 520,
+521
+Rifai, S., Mesnil, G., Vincent, P., Muller, X., Bengio, Y., Dauphin, Y., and Glorot, X.
+(2011 b). Higher order contractive auto-encoder. In ECML PKDD. 518, 519
+Rifai, S., Dauphin, Y., Vincent, P., Bengio, Y., and Muller, X. (2011 c). The manifold
+tangent classifier. In NIPS’2011. 268, 269, 520
+Rifai, S., Bengio, Y., Dauphin, Y., and Vincent, P. (2012). A generative process for
+sampling contractive auto-encoders. In ICML’2012. 707
+Ringach, D. and Shapley, R. (2004). Reverse correlation in neurophysiology. Cognitive
+Science, 28(2), 147–166. 362
+Roberts, S. and Everson, R. (2001). Independent component analysis: principles and
+practice. Cambridge University Press. 489
+Robinson, A. J. and Fallside, F. (1991). A recurrent error propagation network speech
+recognition system. Computer Speech and Language, 5(3), 259–274. 23, 454
+Rockafellar, R. T. (1997). Convex analysis. princeton landmarks in mathematics. 91
+Romero, A., Ballas, N., Ebrahimi Kahou, S., Chassang, A., Gatta, C., and Bengio, Y.
+(2015). Fitnets: Hints for thin deep nets. In ICLR’2015, ar Xiv:1412.6550. 321
+Rosen, J. B. (1960). The gradient projection method for nonlinear programming. part i.
+linear constraints. Journal of the Society for Industrial and Applied Mathematics, 8(1),
+pp. 181–217. 91
+Rosenblatt, F. (1958). The perceptron: A probabilistic model for information storage and
+organization in the brain. Psychological Review, 65, 386–408. 13, 14, 23
+Rosenblatt, F. (1962). Principles of Neurodynamics. Spartan, New York. 14, 23
+Roweis, S. and Saul, L. K. (2000). Nonlinear dimensionality reduction by locally linear
+embedding. Science, 290(5500). 160, 516
+Roweis, S., Saul, L., and Hinton, G. (2002). Global coordination of local linear models. In
+T. Dietterich, S. Becker, and Z. Ghahramani, editors, Advances in Neural Information
+Processing Systems 14 (NIPS’01), Cambridge, MA. MIT Press. 485
+Rubin, D. B. et al. (1984). Bayesianly justifiable and relevant frequency calculations for
+the applied statistician. The Annals of Statistics, 12(4), 1151–1172. 712
+760
+
+BIBLIOGRAPHY
+Rumelhart, D., Hinton, G., and Williams, R. (1986 a). Learning representations by
+back-propagating errors. Nature, 323, 533–536. 13, 17, 22, 200, 221, 367, 472, 477
+Rumelhart, D. E., Hinton, G. E., and Williams, R. J. (1986 b). Learning internal represen-
+tationsbyerrorpropagation. In D.E.Rumelhartand J.L.Mc Clelland,editors,Parallel
+Distributed Processing, volume 1, chapter 8, pages 318–362. MIT Press, Cambridge. 19,
+23, 221
+Rumelhart, D. E., Mc Clelland, J. L., and the PDP Research Group (1986 c). Parallel
+Distributed Processing: Explorations in the Microstructure of Cognition. MIT Press,
+Cambridge. 16
+Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z., Karpathy,
+A., Khosla, A., Bernstein, M., Berg, A. C., and Fei-Fei, L. (2014 a). Image Net Large
+Scale Visual Recognition Challenge. 19
+Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z., Karpathy,
+A., Khosla, A., Bernstein, M., et al. (2014 b). Imagenet large scale visual recognition
+challenge. ar Xiv preprint ar Xiv:1409.0575. 24
+Russel, S. J. and Norvig, P. (2003). Artificial Intelligence: a Modern Approach. Prentice
+Hall. 84
+Rust, N., Schwartz, O., Movshon, J. A., and Simoncelli, E. (2005). Spatiotemporal
+elements of macaque V 1 receptive fields. Neuron, 46(6), 945–956. 361
+Sainath, T., Mohamed, A., Kingsbury, B., and Ramabhadran, B. (2013). Deep convolu-
+tional neural networks for LVCSR. In ICASSP 2013. 455
+Salakhutdinov,R.(2010). Learningin Markovrandomfieldsusingtemperedtransitions. In
+Y. Bengio, D. Schuurmans, C. Williams, J. Lafferty, and A. Culotta, editors, Advances
+in Neural Information Processing Systems 22 (NIPS’09). 601
+Salakhutdinov, R. and Hinton, G. (2009 a). Deep Boltzmann machines. In Proceedings of
+the International Conference on Artificial Intelligence and Statistics, volume 5, pages
+448–455. 22, 23, 527, 660, 663, 668, 669
+Salakhutdinov, R. and Hinton, G. (2009 b). Semantic hashing. In International Journal of
+Approximate Reasoning. 522
+Salakhutdinov, R. and Hinton, G. E. (2007 a). Learning a nonlinear embedding by
+preserving class neighbourhood structure. In Proceedings of the Eleventh International
+Conference on Artificial Intelligence and Statistics (AISTATS’07), San Juan, Porto
+Rico. Omnipress. 525
+Salakhutdinov, R. and Hinton, G. E. (2007 b). Semantic hashing. In SIGIR’2007. 522
+761
+
+BIBLIOGRAPHY
+Salakhutdinov, R. and Hinton, G. E. (2008). Using deep belief nets to learn covariance
+kernels for Gaussian processes. In J. Platt, D. Koller, Y. Singer, and S. Roweis, editors,
+Advances in Neural Information Processing Systems 20 (NIPS’07), pages 1249–1256,
+Cambridge, MA. MIT Press. 240
+Salakhutdinov,R.and Larochelle,H.(2010).Efficientlearningofdeep Boltzmannmachines.
+In Proceedings of the Thirteenth International Conference on Artificial Intelligence and
+Statistics (AISTATS 2010), JMLR W&CP, volume 9, pages 693–700. 650
+Salakhutdinov, R. and Mnih, A. (2008). Probabilistic matrix factorization. In NIPS’2008.
+475
+Salakhutdinov, R. and Murray, I. (2008). On the quantitative analysis of deep belief
+networks. In W. W. Cohen, A. Mc Callum, and S. T. Roweis, editors, Proceedings of
+the Twenty-fifth International Conference on Machine Learning (ICML’08), volume 25,
+pages 872–879. ACM. 626, 659
+Salakhutdinov, R., Mnih, A., and Hinton, G. (2007). Restricted Boltzmann machines for
+collaborative filtering. In ICML. 475
+Sanger, T. D. (1994). Neural network learning control of robot manipulators using
+gradually increasing task difficulty. IEEE Transactions on Robotics and Automation,
+10(3). 324
+Saul, L. K. and Jordan, M. I. (1996). Exploiting tractable substructures in intractable
+networks. In D. Touretzky, M. Mozer, and M. Hasselmo, editors, Advances in Neural
+Information Processing Systems 8 (NIPS’95). MIT Press, Cambridge, MA. 636
+Saul, L. K., Jaakkola, T., and Jordan, M. I. (1996). Mean field theory for sigmoid belief
+networks. Journal of Artificial Intelligence Research, 4, 61–76. 23, 689
+Savich,A.W.,Moussa,M.,and Areibi,S.(2007). Theimpactofarithmeticrepresentation
+on implementing mlp-bp on fpgas: A study. Neural Networks, IEEE Transactions on,
+18(1), 240–252. 446
+Saxe, A.M., Koh, P.W., Chen, Z., Bhand, M., Suresh, B., and Ng, A.(2011). Onrandom
+weights and unsupervised feature learning. In Proc. ICML’2011. ACM. 357
+Saxe, A. M., Mc Clelland, J. L., and Ganguli, S. (2013). Exact solutions to the nonlinear
+dynamics of learning in deep linear neural networks. In ICLR. 282, 283, 299
+Schaul, T., Antonoglou, I., and Silver, D. (2014). Unit tests for stochastic optimization.
+In International Conference on Learning Representations. 306
+Schmidhuber, J. (1992). Learning complex, extended sequences using the principle of
+history compression. Neural Computation, 4(2), 234–242. 394
+Schmidhuber, J. (2012). Self-delimiting neural networks. ar Xiv preprint ar Xiv:1210.0118.
+384
+762
+
+BIBLIOGRAPHY
+Schmidhuber, J. and Heil, S. (1996). Sequential neural text compression. IEEE Transac-
+tions on Neural Networks, 7(1), 142–146. 472
+Schölkopf, B. and Smola, A. J. (2002). Learning with kernels: Support vector machines,
+regularization, optimization, and beyond. MIT press. 700
+Schölkopf, B., Smola, A., and Müller, K.-R. (1998). Nonlinear component analysis as a
+kernel eigenvalue problem. Neural Computation, 10, 1299–1319. 160, 516
+Schölkopf, B., Burges, C. J. C., and Smola, A. J. (1999). Advances in Kernel Methods —
+Support Vector Learning. MIT Press, Cambridge, MA. 17, 140
+Schölkopf, B., Janzing, D., Peters, J., Sgouritsa, E., Zhang, K., and Mooij, J. (2012). On
+causal and anticausal learning. In ICML’2012, pages 1255–1262. 543
+Schuster, M. (1999). On supervised learning from sequential data with applications for
+speech recognition. 186
+Schuster, M. and Paliwal, K. (1997). Bidirectional recurrent neural networks. IEEE
+Transactions on Signal Processing, 45(11), 2673–2681. 388
+Schwenk, H. (2007). Continuous space language models. Computer speech and language,
+21, 492–518. 461
+Schwenk, H. (2010). Continuous space language models for statistical machine translation.
+The Prague Bulletin of Mathematical Linguistics, 93, 137–146. 468
+Schwenk, H. (2014). Cleaned subset of WMT ’14 dataset. 19
+Schwenk, H. and Bengio, Y. (1998). Training methods for adaptive boosting of neural net-
+works. In M. Jordan, M. Kearns, and S. Solla, editors, Advances in Neural Information
+Processing Systems 10 (NIPS’97), pages 647–653. MIT Press. 255
+Schwenk, H. and Gauvain, J.-L. (2002). Connectionist language modeling for large
+vocabulary continuous speech recognition. In International Conference on Acoustics,
+Speech and Signal Processing (ICASSP), pages 765–768, Orlando, Florida. 461
+Schwenk, H., Costa-jussà, M. R., and Fonollosa, J. A. R. (2006). Continuous space
+language models for the IWSLT 2006 task. In International Workshop on Spoken
+Language Translation, pages 166–173. 468
+Seide, F., Li, G., and Yu, D. (2011). Conversational speech transcription using context-
+dependent deep neural networks. In Interspeech 2011, pages 437–440. 24
+Sejnowski, T. (1987). Higher-order Boltzmann machines. In AIP Conference Proceedings
+151 on Neural Networks for Computing, pages 398–403. American Institute of Physics
+Inc. 683
+763
+
+BIBLIOGRAPHY
+Series, P., Reichert, D. P., and Storkey, A. J. (2010). Hallucinations in Charles Bonnet
+syndrome induced by homeostasis: a deep Boltzmann machine model. In Advances in
+Neural Information Processing Systems, pages 2020–2028. 663
+Sermanet, P., Chintala, S., and Le Cun, Y. (2012). Convolutional neural networks applied
+to house numbers digit classification. Co RR, abs/1204.3968. 452
+Sermanet, P., Kavukcuoglu, K., Chintala, S., and Le Cun, Y. (2013). Pedestrian detection
+with unsupervised multi-stage feature learning. In Proc. International Conference on
+Computer Vision and Pattern Recognition (CVPR’13). IEEE. 24, 197
+Shilov,G.(1977). Linear Algebra. Dover Bookson Mathematics Series.Dover Publications.
+29
+Siegelmann, H. (1995). Computation beyond the Turing limit. Science, 268(5210),
+545–548. 372
+Siegelmann, H. and Sontag, E. (1991). Turing computability with neural nets. Applied
+Mathematics Letters, 4(6), 77–80. 372
+Siegelmann, H. T. and Sontag, E. D. (1995). On the computational power of neural nets.
+Journal of Computer and Systems Sciences, 50(1), 132–150. 372, 399
+Sietsma,J.and Dow,R.(1991). Creatingartificialneuralnetworksthatgeneralize. Neural
+Networks, 4(1), 67–79. 237
+Simard, D., Steinkraus, P. Y., and Platt, J. C. (2003). Best practices for convolutional
+neural networks. In ICDAR’2003. 365
+Simard, P. and Graf, H. P. (1994). Backpropagation without multiplication. In Advances
+in Neural Information Processing Systems, pages 232–239. 446
+Simard, P., Victorri, B., Le Cun, Y., and Denker, J. (1992). Tangent prop - A formalism
+for specifying selected invariances in an adaptive network. In NIPS’1991. 267, 268, 269,
+350
+Simard, P. Y., Le Cun, Y., and Denker, J. (1993). Efficient pattern recognition using a
+new transformation distance. In NIPS’92. 267
+Simard, P. Y., Le Cun, Y. A., Denker, J. S., and Victorri, B. (1998). Transformation
+invariance in pattern recognition — tangent distance and tangent propagation. Lecture
+Notes in Computer Science, 1524. 267
+Simons, D. J. and Levin, D. T. (1998). Failure to detect changes to people during a
+real-world interaction. Psychonomic Bulletin & Review, 5(4), 644–649. 541
+Simonyan, K. and Zisserman, A. (2015). Very deep convolutional networks for large-scale
+image recognition. In ICLR. 319
+764
+
+BIBLIOGRAPHY
+Sjöberg,J.and Ljung,L.(1995). Overtraining,regularizationandsearchingforaminimum,
+withapplicationtoneuralnetworks. International Journal of Control,62(6),1391–1407.
+247
+Skinner, B. F. (1958). Reinforcement today. American Psychologist, 13, 94–99. 324
+Smolensky, P. (1986). Information processing in dynamical systems: Foundations of
+harmony theory. In D. E. Rumelhart and J. L. Mc Clelland, editors, Parallel Distributed
+Processing, volume 1, chapter 6, pages 194–281. MIT Press, Cambridge. 568, 584, 653
+Snoek, J., Larochelle, H., and Adams, R. P. (2012). Practical Bayesian optimization of
+machine learning algorithms. In NIPS’2012. 430
+Socher,R.,Huang,E.H.,Pennington,J.,Ng,A.Y.,and Manning,C.D.(2011 a). Dynamic
+pooling and unfolding recursive autoencoders for paraphrase detection. In NIPS’2011.
+394, 396
+Socher, R., Manning, C., and Ng, A. Y. (2011 b). Parsing natural scenes and natural lan-
+guagewithrecursiveneuralnetworks. In Proceedings of the Twenty-Eighth International
+Conference on Machine Learning (ICML’2011). 394
+Socher, R., Pennington, J., Huang, E. H., Ng, A. Y., and Manning, C. D. (2011 c).
+Semi-supervised recursive autoencoders for predicting sentiment distributions. In
+EMNLP’2011. 394
+Socher, R., Perelygin, A., Wu, J. Y., Chuang, J., Manning, C. D., Ng, A. Y., and Potts,
+C. (2013 a). Recursive deep models for semantic compositionality over a sentiment
+treebank. In EMNLP’2013. 394, 396
+Socher,R.,Ganjoo,M.,Manning,C.D.,and Ng,A.Y.(2013 b).Zero-shotlearningthrough
+cross-modal transfer. In 27 th Annual Conference on Neural Information Processing
+Systems (NIPS 2013). 537
+Sohl-Dickstein, J., Weiss, E. A., Maheswaranathan, N., and Ganguli, S. (2015). Deep
+unsupervised learning using nonequilibrium thermodynamics. 712
+Sohn, K., Zhou, G., and Lee, H. (2013). Learning and selecting features jointly with
+point-wise gated Boltzmann machines. In ICML’2013. 683
+Solomonoff, R. J. (1989). A system for incremental learning based on algorithmic proba-
+bility. 324
+Sontag, E. D. (1998). VC dimension of neural networks. NATO ASI Series F Computer
+and Systems Sciences, 168, 69–96. 545, 549
+Sontag, E. D. and Sussman, H. J. (1989). Backpropagation can give rise to spurious local
+minima even for networks without hidden layers. Complex Systems, 3, 91–106. 281
+765
+
+BIBLIOGRAPHY
+Sparkes, B. (1996). The Red and the Black: Studies in Greek Pottery. Routledge. 1
+Spitkovsky, V. I., Alshawi, H., and Jurafsky, D. (2010). From baby steps to leapfrog: how
+“less is more” in unsupervised dependency parsing. In HLT’10. 324
+Squire, W. and Trapp, G. (1998). Using complex variables to estimate derivatives of real
+functions. SIAM Rev., 40(1), 110––112. 434
+Srebro, N. and Shraibman, A. (2005). Rank, trace-norm and max-norm. In Proceedings of
+the 18 th Annual Conference on Learning Theory, pages 545–560. Springer-Verlag. 235
+Srivastava, N. (2013). Improving Neural Networks With Dropout. Master’s thesis, U.
+Toronto. 533
+Srivastava, N. and Salakhutdinov, R. (2012). Multimodal learning with deep Boltzmann
+machines. In NIPS’2012. 539
+Srivastava, N., Salakhutdinov, R. R., and Hinton, G. E. (2013). Modeling documents with
+deep Boltzmann machines. ar Xiv preprint ar Xiv:1309.6865. 660
+Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I., and Salakhutdinov, R. (2014).
+Dropout: Asimplewaytopreventneuralnetworksfromoverfitting. Journal of Machine
+Learning Research, 15, 1929–1958. 255, 261, 262, 264, 669
+Srivastava, R. K., Greff, K., and Schmidhuber, J. (2015). Highway networks.
+ar Xiv:1505.00387. 322
+Steinkrau, D., Simard, P. Y., and Buck, I. (2005). Using GPUs for machine learning
+algorithms. 2013 12 th International Conference on Document Analysis and Recognition,
+0, 1115–1119. 440
+Stoyanov, V., Ropson, A., and Eisner, J. (2011). Empirical risk minimization of graphical
+model parameters given approximate inference, decoding, and model structure. In
+Proceedings of the 14 th International Conference on Artificial Intelligence and Statistics
+(AISTATS), volume 15 of JMLR Workshop and Conference Proceedings, pages 725–733,
+Fort Lauderdale. Supplementary material (4 pages) also available. 671, 695
+Sukhbaatar, S., Szlam, A., Weston, J., and Fergus, R. (2015). Weakly supervised memory
+networks. ar Xiv preprint ar Xiv:1503.08895. 412
+Supancic, J. and Ramanan, D. (2013). Self-paced learning for long-term tracking. In
+CVPR’2013. 324
+Sussillo, D. (2014). Random walks: Training very deep nonlinear feed-forward networks
+with smart initialization. Co RR, abs/1412.6558. 287, 300, 302, 398
+Sutskever, I. (2012). Training Recurrent Neural Networks. Ph.D. thesis, Department of
+computer science, University of Toronto. 401, 408
+766
+
+BIBLIOGRAPHY
+Sutskever, I. and Hinton, G. E. (2008). Deep narrow sigmoid belief networks are universal
+approximators. Neural Computation, 20(11), 2629–2636. 689
+Sutskever, I. and Tieleman, T. (2010). On the Convergence Properties of Contrastive
+Divergence. In Y. W. Teh and M. Titterington, editors, Proc. of the International
+Conferenceon Artificial Intelligenceand Statistics(AISTATS),volume 9,pages 789–795.
+610
+Sutskever, I., Hinton, G., and Taylor, G. (2009). The recurrent temporal restricted
+Boltzmann machine. In NIPS’2008. 682
+Sutskever, I., Martens, J., and Hinton, G. E. (2011). Generating text with recurrent
+neural networks. In ICML’2011, pages 1017–1024. 472
+Sutskever, I., Martens, J., Dahl, G., and Hinton, G. (2013). On the importance of
+initialization and momentum in deep learning. In ICML. 296, 401, 408
+Sutskever, I., Vinyals, O., and Le, Q. V. (2014). Sequence to sequence learning with
+neural networks. In NIPS’2014, ar Xiv:1409.3215. 25, 99, 390, 404, 407, 469, 470
+Sutton, R. and Barto, A. (1998). Reinforcement Learning: An Introduction. MIT Press.
+104
+Sutton, R. S., Mcallester, D., Singh, S., and Mansour, Y. (2000). Policy gradient methods
+for reinforcement learning with function approximation. In NIPS’1999, pages 1057–
+–1063. MIT Press. 688
+Swersky, K., Ranzato, M., Buchman, D., Marlin, B., and de Freitas, N. (2011). On
+autoencoders and score matching for energy based models. In ICML’2011. ACM. 509
+Swersky, K., Snoek, J., and Adams, R. P. (2014). Freeze-thaw Bayesian optimization.
+ar Xiv preprint ar Xiv:1406.3896. 431
+Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan, D., Vanhoucke,
+V., and Rabinovich, A. (2014 a). Going deeper with convolutions. Technical report,
+ar Xiv:1409.4842. 22, 23, 197, 255, 265, 322, 341
+Szegedy, C., Zaremba, W., Sutskever, I., Bruna, J., Erhan, D., Goodfellow, I. J., and
+Fergus, R. (2014 b). Intriguing properties of neural networks. ICLR, abs/1312.6199.
+265, 266, 269
+Szegedy, C., Vanhoucke, V., Ioffe, S., Shlens, J., and Wojna, Z. (2015). Rethinking the
+Inception Architecture for Computer Vision. Ar Xiv e-prints. 240, 318
+Taigman, Y., Yang, M., Ranzato, M., and Wolf, L. (2014). Deep Face: Closing the gap to
+human-level performance in face verification. In CVPR’2014. 98
+Tandy, D. W. (1997). Works and Days: A Translation and Commentary for the Social
+Sciences. University of California Press. 1
+767
+
+BIBLIOGRAPHY
+Tang, Y. and Eliasmith, C. (2010). Deep networks for robust visual recognition. In
+Proceedings of the 27 th International Conference on Machine Learning, June 21-24,
+2010, Haifa, Israel. 237
+Tang, Y., Salakhutdinov, R., and Hinton, G. (2012). Deep mixtures of factor analysers.
+ar Xiv preprint ar Xiv:1206.4635. 485
+Taylor, G. and Hinton, G. (2009). Factored conditional restricted Boltzmann machines
+for modeling motion style. In L. Bottou and M. Littman, editors, Proceedings of
+the Twenty-sixth International Conference on Machine Learning (ICML’09), pages
+1025–1032, Montreal, Quebec, Canada. ACM. 682
+Taylor, G., Hinton, G. E., and Roweis, S. (2007). Modeling human motion using binary
+latent variables. In B. Schölkopf, J. Platt, and T. Hoffman, editors, Advances in Neural
+Information Processing Systems 19(NIPS’06),pages 1345–1352.MITPress,Cambridge,
+MA. 682
+Teh, Y., Welling, M., Osindero, S., and Hinton, G. E. (2003). Energy-based models
+for sparse overcomplete representations. Journal of Machine Learning Research, 4,
+1235–1260. 487
+Tenenbaum, J., de Silva, V., and Langford, J. C. (2000). A global geometric framework
+for nonlinear dimensionality reduction. Science, 290(5500), 2319–2323. 160, 516, 532
+Theis,L.,vanden Oord,A.,and Bethge,M.(2015). Anoteontheevaluationofgenerative
+models. ar Xiv:1511.01844. 694, 715
+Thompson,J.,Jain,A.,Le Cun,Y.,and Bregler,C.(2014).Jointtrainingofaconvolutional
+network and a graphical model for human pose estimation. In NIPS’2014. 353
+Thrun, S. (1995). Learning to play the game of chess. In NIPS’1994. 269
+Tibshirani, R. J. (1995). Regression shrinkage and selection via the lasso. Journal of the
+Royal Statistical Society B, 58, 267–288. 233
+Tieleman, T. (2008). Training restricted Boltzmann machines using approximations to
+the likelihood gradient. In W. W. Cohen, A. Mc Callum, and S. T. Roweis, editors, Pro-
+ceedings of the Twenty-fifth International Conference on Machine Learning (ICML’08),
+pages 1064–1071. ACM. 610
+Tieleman, T. and Hinton, G. (2009). Using fast weights to improve persistent contrastive
+divergence. In L. Bottou and M. Littman, editors, Proceedings of the Twenty-sixth
+International Conference on Machine Learning (ICML’09), pages 1033–1040. ACM.
+612
+Tipping, M. E. and Bishop, C. M. (1999). Probabilistic principal components analysis.
+Journal of the Royal Statistical Society B, 61(3), 611–622. 487
+768
+
+BIBLIOGRAPHY
+Torralba, A., Fergus, R., and Weiss, Y. (2008). Small codes and large databases for
+recognition. In Proceedings of the Computer Vision and Pattern Recognition Conference
+(CVPR’08), pages 1–8. 522, 523
+Touretzky, D. S. and Minton, G. E. (1985). Symbols among the neurons: Details of
+a connectionist inference architecture. In Proceedings of the 9 th International Joint
+Conferenceon Artificial Intelligence-Volume 1,IJCAI’85,pages 238–243,San Francisco,
+CA, USA. Morgan Kaufmann Publishers Inc. 16
+Tu, K. and Honavar, V. (2011). On the utility of curricula in unsupervised learning of
+probabilistic grammars. In IJCAI’2011. 324
+Turaga, S. C., Murray, J. F., Jain, V., Roth, F., Helmstaedter, M., Briggman, K., Denk,
+W., and Seung, H. S. (2010). Convolutional networks can learn to generate affinity
+graphs for image segmentation. Neural Computation, 22(2), 511–538. 353
+Turian, J., Ratinov, L., and Bengio, Y. (2010). Word representations: A simple and
+general method for semi-supervised learning. In Proc. ACL’2010, pages 384–394. 533
+Töscher, A., Jahrer, M., and Bell, R. M. (2009). The Big Chaos solution to the Netflix
+grand prize. 475
+Uria, B., Murray, I., and Larochelle, H. (2013). Rnade: The real-valued neural autoregres-
+sive density-estimator. In NIPS’2013. 706
+Uria, B., Murray, I., and Larochelle, H. (2014). A deep and tractable density estimator.
+In ICML’2014. 186, 706, 707
+van den Oörd, A., Dieleman, S., and Schrauwen, B. (2013). Deep content-based music
+recommendation. In NIPS’2013. 475
+van der Maaten, L. and Hinton, G. E. (2008). Visualizing data using t-SNE. J. Machine
+Learning Res., 9. 473, 516
+Vanhoucke,V.,Senior,A.,and Mao,M.Z.(2011). Improvingthespeedofneuralnetworks
+on CPUs. In Proc. Deep Learning and Unsupervised Feature Learning NIPS Workshop.
+439, 447
+Vapnik, V. N. (1982). Estimation of Dependences Based on Empirical Data. Springer-
+Verlag, Berlin. 112
+Vapnik, V. N. (1995). The Nature of Statistical Learning Theory. Springer, New York.
+112
+Vapnik, V. N. and Chervonenkis, A. Y. (1971). On the uniform convergence of relative
+frequencies of events to their probabilities. Theory of Probability and Its Applications,
+16, 264–280. 112
+769
+
+BIBLIOGRAPHY
+Vincent, P. (2011). A connection between score matching and denoising autoencoders.
+Neural Computation, 23(7). 509, 511, 708
+Vincent, P. and Bengio, Y. (2003). Manifold Parzen windows. In NIPS’2002. MIT Press.
+517
+Vincent, P., Larochelle, H., Bengio, Y., and Manzagol, P.-A. (2008). Extracting and
+composing robust features with denoising autoencoders. In ICML 2008. 237, 511
+Vincent, P., Larochelle, H., Lajoie, I., Bengio, Y., and Manzagol, P.-A. (2010). Stacked
+denoising autoencoders: Learning useful representations in a deep network with a local
+denoising criterion. J. Machine Learning Res., 11. 511
+Vincent, P., de Brébisson, A., and Bouthillier, X. (2015). Efficient exact gradient update
+for training deep networks with very large sparse targets. In C. Cortes, N. D. Lawrence,
+D. D. Lee, M. Sugiyama, and R. Garnett, editors, Advances in Neural Information
+Processing Systems 28, pages 1108–1116. Curran Associates, Inc. 460
+Vinyals, O., Kaiser, L., Koo, T., Petrov, S., Sutskever, I., and Hinton, G. (2014 a).
+Grammar as a foreign language. Technical report, ar Xiv:1412.7449. 404
+Vinyals, O., Toshev, A., Bengio, S., and Erhan, D. (2014 b). Show and tell: a neural image
+caption generator. ar Xiv 1411.4555. 404
+Vinyals, O., Fortunato, M., and Jaitly, N. (2015 a). Pointer networks. ar Xiv preprint
+ar Xiv:1506.03134. 412
+Vinyals, O., Toshev, A., Bengio, S., and Erhan, D. (2015 b). Show and tell: a neural image
+caption generator. In CVPR’2015. ar Xiv:1411.4555. 100
+Viola, P. and Jones, M. (2001). Robust real-time object detection. In International
+Journal of Computer Vision. 444
+Visin, F., Kastner, K., Cho, K., Matteucci, M., Courville, A., and Bengio, Y. (2015).
+Re Net: A recurrent neural network based alternative to convolutional networks. ar Xiv
+preprint ar Xiv:1505.00393. 390
+Von Melchner, L., Pallas, S. L., and Sur, M. (2000). Visual behaviour mediated by retinal
+projections directed to the auditory pathway. Nature, 404(6780), 871–876. 15
+Wager, S., Wang, S., and Liang, P. (2013). Dropout training as adaptive regularization.
+In Advances in Neural Information Processing Systems 26, pages 351–359. 262
+Waibel, A., Hanazawa, T., Hinton, G. E., Shikano, K., and Lang, K. (1989). Phoneme
+recognition using time-delay neural networks. IEEE Transactions on Acoustics, Speech,
+and Signal Processing, 37, 328–339. 368, 448, 454
+Wan, L., Zeiler, M., Zhang, S., Le Cun, Y., and Fergus, R.(2013). Regularizationofneural
+networks using dropconnect. In ICML’2013. 263
+770
+
+BIBLIOGRAPHY
+Wang, S. and Manning, C. (2013). Fast dropout training. In ICML’2013. 263
+Wang, Z., Zhang, J., Feng, J., and Chen, Z. (2014 a). Knowledge graph and text jointly
+embedding. In Proc. EMNLP’2014. 479
+Wang, Z., Zhang, J., Feng, J., and Chen, Z. (2014 b). Knowledge graph embedding by
+translating on hyperplanes. In Proc. AAAI’2014. 479
+Warde-Farley, D., Goodfellow, I. J., Courville, A., and Bengio, Y. (2014). An empirical
+analysis of dropout in piecewise linear networks. In ICLR’2014. 259, 263, 264
+Wawrzynek, J., Asanovic, K., Kingsbury, B., Johnson, D., Beck, J., and Morgan, N.
+(1996). Spert-II: A vector microprocessor system. Computer, 29(3), 79–86. 446
+Weaver, L. and Tao, N. (2001). The optimal reward baseline for gradient-based reinforce-
+ment learning. In Proc. UAI’2001, pages 538–545. 688
+Weinberger, K. Q. and Saul, L. K. (2004). Unsupervised learning of image manifolds by
+semidefinite programming. In CVPR’2004, pages 988–995. 160, 516
+Weiss, Y., Torralba, A., and Fergus, R. (2008). Spectral hashing. In NIPS, pages
+1753–1760. 523
+Welling,M.,Zemel,R.S.,and Hinton,G.E.(2002). Selfsupervisedboosting. In Advances
+in Neural Information Processing Systems, pages 665–672. 699
+Welling, M., Hinton, G. E., and Osindero, S. (2003 a). Learning sparse topographic
+representations with products of Student-t distributions. In NIPS’2002. 677
+Welling, M., Zemel, R., and Hinton, G. E. (2003 b). Self-supervised boosting. In S. Becker,
+S. Thrun, and K. Obermayer, editors, Advances in Neural Information Processing
+Systems 15 (NIPS’02), pages 665–672. MIT Press. 621
+Welling, M., Rosen-Zvi, M., and Hinton, G. E. (2005). Exponential family harmoniums
+with an application to information retrieval. In L. Saul, Y. Weiss, and L. Bottou,
+editors, Advances in Neural Information Processing Systems 17 (NIPS’04), volume 17,
+Cambridge, MA. MIT Press. 673
+Werbos, P. J. (1981). Applications of advances in nonlinear sensitivity analysis. In
+Proceedings of the 10 th IFIP Conference, 31.8 - 4.9, NYC, pages 762–770. 221
+Weston, J., Bengio, S., and Usunier, N. (2010). Large scale image annotation: learning to
+rank with joint word-image embeddings. Machine Learning, 81(1), 21–35. 396
+Weston, J., Chopra, S., and Bordes, A. (2014). Memory networks. ar Xiv preprint
+ar Xiv:1410.3916. 412, 480
+Widrow, B. and Hoff, M. E. (1960). Adaptive switching circuits. In 1960 IRE WESCON
+Convention Record, volume 4, pages 96–104. IRE, New York. 14, 19, 22, 23
+771
+
+BIBLIOGRAPHY
+Wikipedia(2015).Listofanimalsbynumberofneurons—Wikipedia,thefreeencyclopedia.
+[Online; accessed 4-March-2015]. 22, 23
+Williams, C. K. I. and Agakov, F. V. (2002). Products of Gaussians and Probabilistic
+Minor Component Analysis. Neural Computation, 14(5), 1169–1182. 679
+Williams, C. K. I. and Rasmussen, C. E. (1996). Gaussian processes for regression. In
+D. Touretzky, M. Mozer, and M. Hasselmo, editors, Advances in Neural Information
+Processing Systems 8 (NIPS’95), pages 514–520. MIT Press, Cambridge, MA. 140
+Williams, R. J. (1992). Simple statistical gradient-following algorithms connectionist
+reinforcement learning. Machine Learning, 8, 229–256. 685, 686
+Williams, R. J. and Zipser, D. (1989). A learning algorithm for continually running fully
+recurrent neural networks. Neural Computation, 1, 270–280. 219
+Wilson, D. R. and Martinez, T. R. (2003). The general inefficiency of batch training for
+gradient descent learning. Neural Networks, 16(10), 1429–1451. 276
+Wilson, J. R. (1984). Variance reduction techniques for digital simulation. American
+Journal of Mathematical and Management Sciences, 4(3), 277––312. 687
+Wiskott, L. and Sejnowski, T. J. (2002). Slow feature analysis: Unsupervised learning of
+invariances. Neural Computation, 14(4), 715–770. 489, 490
+Wolpert, D. and Mac Ready, W. (1997). No free lunch theorems for optimization. IEEE
+Transactions on Evolutionary Computation, 1, 67–82. 289
+Wolpert,D.H.(1996). Thelackofaprioridistinctionbetweenlearningalgorithms. Neural
+Computation, 8(7), 1341–1390. 114
+Wu, R., Yan, S., Shan, Y., Dang, Q., and Sun, G. (2015). Deep image: Scaling up image
+recognition. ar Xiv:1501.02876. 442
+Wu, Z. (1997). Global continuation for distance geometry problems. SIAM Journal of
+Optimization, 7, 814–836. 323
+Xiong, H. Y., Barash, Y., and Frey, B. J. (2011). Bayesian prediction of tissue-regulated
+splicing using RNA sequence and cellular context. Bioinformatics, 27(18), 2554–2562.
+262
+Xu, K., Ba, J. L., Kiros, R., Cho, K., Courville, A., Salakhutdinov, R., Zemel, R. S., and
+Bengio, Y. (2015). Show, attend and tell: Neural image caption generation with visual
+attention. In ICML’2015, ar Xiv:1502.03044. 100, 404, 688
+Yildiz, I. B., Jaeger, H., and Kiebel, S. J. (2012). Re-visiting the echo state property.
+Neural networks, 35, 1–9. 400
+772
+
+BIBLIOGRAPHY
+Yosinski, J., Clune, J., Bengio, Y., and Lipson, H. (2014). How transferable are features
+in deep neural networks? In NIPS’2014. 321, 534
+Younes, L. (1998). On the convergence of Markovian stochastic algorithms with rapidly
+decreasing ergodicity rates. In Stochastics and Stochastics Models, pages 177–228. 610
+Yu, D., Wang, S., and Deng, L. (2010). Sequential labeling using deep-structured
+conditional random fields. IEEE Journal of Selected Topics in Signal Processing. 319
+Zaremba, W. and Sutskever, I. (2014). Learning to execute. ar Xiv 1410.4615. 325
+Zaremba, W. and Sutskever, I. (2015). Reinforcement learning neural Turing machines.
+ar Xiv:1505.00521. 415
+Zaslavsky, T. (1975). Facing Up to Arrangements: Face-Count Formulas for Partitions
+of Space by Hyperplanes. Number no. 154 in Memoirs of the American Mathematical
+Society. American Mathematical Society. 548
+Zeiler,M.D.and Fergus,R.(2014). Visualizingandunderstandingconvolutionalnetworks.
+In ECCV’14. 6
+Zeiler, M. D., Ranzato, M., Monga, R., Mao, M., Yang, K., Le, Q., Nguyen, P., Senior,
+A., Vanhoucke, V., Dean, J., and Hinton, G. E. (2013). On rectified linear units for
+speech processing. In ICASSP 2013. 454
+Zhou, B., Khosla, A., Lapedriza, A., Oliva, A., and Torralba, A. (2015). Object detectors
+emerge in deep scene CNNs. ICLR’2015, ar Xiv:1412.6856. 549
+Zhou, J. and Troyanskaya, O. G. (2014). Deep supervised and convolutional generative
+stochastic network for protein secondary structure prediction. In ICML’2014. 711
+Zhou, Y. and Chellappa, R. (1988). Computation of optical flow using a neural network.
+In Neural Networks, 1988., IEEE International Conference on, pages 71–78. IEEE. 335
+Zöhrer, M. and Pernkopf, F. (2014). General stochastic networks for classification. In
+NIPS’2014. 711
+773

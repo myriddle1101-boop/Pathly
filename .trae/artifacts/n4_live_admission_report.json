@@ -1,0 +1,2267 @@
+{
+  "probe_version": "n4-live-admission-v1",
+  "generated_at": "2026-08-15T08:48:27.687630+00:00",
+  "cache_policy": "direct generator invocation; no store reads or writes",
+  "fallback_is_success": false,
+  "results": [
+    {
+      "goal_id": "xor",
+      "run_id": "admission-xor-e75e75267eef",
+      "admission_version": "full-experience-admission-v1",
+      "goal": "Explain how neural networks learn to solve XOR.",
+      "status": "eligible_for_full_experience",
+      "eligible_for_full_experience": true,
+      "target_concept": "Gradient Descent",
+      "checks": {
+        "goal_mapping": {
+          "name": "goal_mapping",
+          "passed": true,
+          "reason": "Goal matches the existing verified neural-foundations chain.",
+          "details": {
+            "target_concept": "Gradient Descent",
+            "canonical_path": [
+              "Linear Separability",
+              "XOR",
+              "Neural Networks",
+              "Activation Functions",
+              "Gradient Descent"
+            ],
+            "mapping_method": "verified_golden_registry",
+            "source_registry_version": "source-grounded-golden-s2-v1"
+          }
+        },
+        "kg_path": {
+          "name": "kg_path",
+          "passed": true,
+          "reason": "The existing verified chain has a fixed acyclic prerequisite order.",
+          "details": {
+            "ordered_concepts": [
+              "Linear Separability",
+              "XOR",
+              "Neural Networks",
+              "Activation Functions",
+              "Gradient Descent"
+            ],
+            "acyclic": true,
+            "path_provenance": "verified_golden_registry"
+          }
+        },
+        "resource_coverage": {
+          "name": "resource_coverage",
+          "passed": true,
+          "reason": "Every controlled golden node has a reviewed source manifest; fresh page/chunk resolution is still required at run time.",
+          "details": {
+            "covered_concepts": [
+              "Linear Separability",
+              "XOR",
+              "Neural Networks",
+              "Activation Functions",
+              "Gradient Descent"
+            ],
+            "source_registry_version": "source-grounded-golden-s2-v1"
+          }
+        },
+        "content_generation": {
+          "name": "content_generation",
+          "passed": true,
+          "reason": "Uncached live lecture and live exercise generation completed.",
+          "details": {
+            "generation_mode": "live_augmented",
+            "cache_status": "miss",
+            "fallback_accepted": false,
+            "run_id": "admission-xor-e75e75267eef",
+            "failure_code": null,
+            "failure_reason": null,
+            "fallback_reason": null,
+            "exercise_generation_mode": "live",
+            "exercise_generation_reason": null
+          }
+        },
+        "grounding": {
+          "name": "grounding",
+          "passed": true,
+          "reason": "Schema and page/chunk provenance checks passed.",
+          "details": {
+            "source_refs": [
+              {
+                "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "page_number": 2,
+                "chunk_id": null,
+                "evidence_locator": "page:2"
+              },
+              {
+                "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "page_number": 3,
+                "chunk_id": null,
+                "evidence_locator": "page:3"
+              },
+              {
+                "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "page_number": 4,
+                "chunk_id": null,
+                "evidence_locator": "page:4"
+              },
+              {
+                "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "page_number": 5,
+                "chunk_id": null,
+                "evidence_locator": "page:5"
+              },
+              {
+                "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "page_number": 6,
+                "chunk_id": null,
+                "evidence_locator": "page:6"
+              },
+              {
+                "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+                "page_number": 7,
+                "chunk_id": null,
+                "evidence_locator": "page:7"
+              }
+            ],
+            "cache_status": "miss",
+            "errors": []
+          }
+        }
+      },
+      "failure_reasons": [],
+      "generated_at": "2026-08-15T08:46:30.982339+00:00",
+      "run_artifact": {
+        "selected_system_version": "v4",
+        "cache_status": "miss",
+        "generation_metadata": {
+          "generator_version": "source-grounded-v4-live-assets-v3",
+          "generation_mode": "live",
+          "prompt_version": "ml-education-expert-v2",
+          "content_model": "gpt-4.1-mini",
+          "live_timeout_seconds": 90.0,
+          "treatment_version": "dual-user-treatment-v1",
+          "generated_for_user_id": "evaluation-ccaee308-b997-42c5-8605-e5820fe4eca7",
+          "profile_version": 1,
+          "source_link_version": "source-grounded-golden-s2-v1",
+          "source_link_status": "indexed",
+          "isolated_from_v3": true,
+          "asset_manifest_version": "ta-golden-v2",
+          "asset_selection_count": 8,
+          "ready_sections": 1,
+          "total_sections": 1
+        },
+        "source_refs": [
+          {
+            "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "page_number": 2,
+            "chunk_id": null,
+            "evidence_locator": "page:2"
+          },
+          {
+            "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "page_number": 3,
+            "chunk_id": null,
+            "evidence_locator": "page:3"
+          },
+          {
+            "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "page_number": 4,
+            "chunk_id": null,
+            "evidence_locator": "page:4"
+          },
+          {
+            "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "page_number": 5,
+            "chunk_id": null,
+            "evidence_locator": "page:5"
+          },
+          {
+            "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "page_number": 6,
+            "chunk_id": null,
+            "evidence_locator": "page:6"
+          },
+          {
+            "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "page_number": 7,
+            "chunk_id": null,
+            "evidence_locator": "page:7"
+          }
+        ],
+        "core_content_output": {
+          "section_id": "admission-xor-e75e75267eef:core",
+          "concept_id": "XOR",
+          "concept_name": "XOR",
+          "title": "XOR",
+          "estimated_minutes": 15,
+          "source_links": [
+            {
+              "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "document_title": "06_mlp.pdf",
+              "source_scope": "public",
+              "page_sequence": [
+                {
+                  "page_number": 2,
+                  "role": "introduction",
+                  "chunk_ids": []
+                },
+                {
+                  "page_number": 3,
+                  "role": "problem",
+                  "chunk_ids": []
+                },
+                {
+                  "page_number": 4,
+                  "role": "nonlinearity",
+                  "chunk_ids": []
+                },
+                {
+                  "page_number": 5,
+                  "role": "architecture",
+                  "chunk_ids": []
+                },
+                {
+                  "page_number": 6,
+                  "role": "mechanism",
+                  "chunk_ids": []
+                },
+                {
+                  "page_number": 7,
+                  "role": "worked_example",
+                  "chunk_ids": []
+                }
+              ],
+              "chunk_ids": [],
+              "relevance_score": 1.0,
+              "coverage_score": 1.0,
+              "match_method": "s2_verified_golden_source",
+              "match_reason": "Pages 2-7 form a continuous worked sequence from the XOR problem through a learned nonlinear representation.",
+              "review_status": "verified",
+              "source_readiness": "offline_kg_resource",
+              "golden_path_version": "source-grounded-golden-s2-v1",
+              "golden_path_position": 2,
+              "concept_id": "XOR",
+              "concept_name": "XOR",
+              "source_version": "source-grounded-golden-s2-v1",
+              "link_role": "primary"
+            }
+          ],
+          "source_pages": [
+            {
+              "page_number": 2,
+              "role": "introduction",
+              "text": "Roadmap • Example: Learning XOR • Gradient-Based Learning • Hidden Units • Architecture Design • Back-Propagation (Goodfellow 2017)",
+              "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "document_title": "06_mlp.pdf",
+              "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": null
+            },
+            {
+              "page_number": 3,
+              "role": "problem",
+              "text": "CHAPTER 6. DEEP FEEDFORWARD NETWORKS XOR is not linearly separable 1 0 0 1 x 1 (Goodfellow 2017) x 2 Original x space 1 0 0 1 2 h 1 h 2 Learned h space Figure 6.1, left Figure 6.1: Solving the XOR problem by learning a representation. The bold numbers printed on the plot indicate the value that the learned function must output at each point. (Left) A linear model applied directly to the original input cannot implement the XOR function. When x = 0, the model’s output must increase as x increases. When x = 1, 1 2 1 the model’s output must decrease as x increases. A linear model must apply a fixed 2 coefficient w to x . The linear model therefore cannot use the value of x to change 2 2 1 the coefficient on x and cannot solve this problem. (Right) In the transformed space 2 represented by the features extracted by a neural network, a linear model can now solve the problem. In our example solution, the two points that must have output 1 have been collapsed into a single point in feature space. In other words, the nonlinear features have mapped both x = [1, 0] and x = [0, 1] to a single point in feature space, h = [1, 0] . > > > The linear model can now describe the function as increasing in h and decreasing in h . 1 2 In this example, the motivation for learning the feature space is only to make the model capacity greater so that it can fit the training set. In more realistic applications, learned representations can also help the model to generalize. 169",
+              "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "document_title": "06_mlp.pdf",
+              "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": null
+            },
+            {
+              "page_number": 4,
+              "role": "nonlinearity",
+              "text": "CHAPTER 6. DEEP FEEDFORWARD NETWORKS Rectified Linear Activation 0 0 z (Goodfellow 2017) z ,0 xam = )z(g } { Figure 6.3 Figure 6.3: The rectified linear activation function. This activation function is the default activation function recommended for use with most feedforward neural networks. Applying this function to the output of a linear transformation yields a nonlinear transformation. However, the function remains very close to linear, in the sense that is a piecewise linear function with two linear pieces. Because rectified linear units are nearly linear, they preserve many of the properties that make linear models easy to optimize with gradient- based methods. They also preserve many of the properties that make linear models generalize well. A common principle throughout computer science is that we can build complicated systems from minimal components. Much as a Turing machine’s memory needs only to be able to store 0 or 1 states, we can build a universal function approximator from rectified linear functions. 175",
+              "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "document_title": "06_mlp.pdf",
+              "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": null
+            },
+            {
+              "page_number": 5,
+              "role": "architecture",
+              "text": "CHAPTER 6. DEEP FEEDFORWARD NETWORKS Network Diagrams yy yy w hh hh hh 11 22 W xx xx xx 11 22 Figure 6.2 Figure 6.2: An example of a feedforward network, drawn in two different styles. Specifically, (Goodfellow 2017) this is the feedforward network we use to solve the XOR example. It has a single hidden layer containing two units. (Left)In this style, we draw every unit as a node in the graph. This style is very explicit and unambiguous but for networks larger than this example it can consume too much space. (Right)In this style, we draw a node in the graph for each entire vector representing a layer’s activations. This style is much more compact. Sometimes we annotate the edges in this graph with the name of the parameters that describe the relationship between two layers. Here, we indicate that a matrix W describes the mapping from x to h, and a vector w describes the mapping from h to y. We typically omit the intercept parameters associated with each layer when labeling this kind of drawing. model, we used a vector of weights and a scalar bias parameter to describe an affine transformation from an input vector to an output scalar. Now, we describe an affine transformation from a vector x to a vector h, so an entire vector of bias parameters is needed. The activation function g is typically chosen to be a function that is applied element-wise, with h = g(x W + c ). In modern neural networks, i > :,i i the default recommendation is to use the rectified linear unit or ReLU (Jarrett et al., 2009; Nair and Hinton, 2010; Glorot et al., 2011a) defined by the activation function g(z) = max 0, z depicted in figure 6.3. { } We can now specify our complete network as f (x; W , c, w, b) = w max 0, W x + c + b. (6.3) > > { } We can now specify a solution to the XOR problem. Let",
+              "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "document_title": "06_mlp.pdf",
+              "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": null
+            },
+            {
+              "page_number": 6,
+              "role": "mechanism",
+              "text": "CHAPTER 6. DEEP FEEDFORWARD NETWORKS CHAPTER 6. DEEP FEEDFORWARD NETWORKS affine transformation from an input vector to an output scalar. Now, we describe affine transformation from an input vector to an output scalar. Now, we describe an affine transformation from a vector x to a vector h, so an entire vector of bias an affine transformation from a vector x to a vector h, so an entire vector of bias parameters is needed. The activation function g is typically chosen to be a function parameters is needed. The activation function g is typically chosen to be a function that is applied element-wise, with h = g(x W + c ). In modern neural networks, that is applied element-wise, with i h = g>(x W:,i +i c ). In modern neural networks, i > :,i i the default recommendation is to use the rectified linear unit, or ReLU (Jarrett the default recommendation is to use the rectified linear unit, or ReLU (Jarrett Solving XOR et al., 2009; Nair and Hinton, 2010; Glorot et al., 2011a), defined by the activation et al., 2009; Nair and Hinton, 2010; Glorot et al., 2011a), defined by the activation function g(z) = max 0, z , depicted in figure 6.3. function g(z) = max 0, z , depicted in figure 6.3. { } { } We can now specify our complete network as We can now specify our complete network as f (x;fW(x;, Wc, w, c,,bw) ,=b)w= wmamxax0, W0, Wx x++c c ++b.b. ((66..33)) > > > > { { } } We can then specify a solution to the XOR problem. Let We can then specify a solution to the XOR problem. Let 1 1 1 1 W = , (6.4) W = , (6.4) 1 1 1 1  \u0000  \u0000 0 0 c = , (6.5) c = 1 , (6.5) 1  \u0000 \u0000  \u0000 \u0000 1 w = 1 , (6.6) 2 w = , (6.6)  2\u0000 \u0000  \u0000 \u0000 and b = 0. and b = 0. We can now walk through how the model processes a batch of inputs. Let X (Goodfellow 2017) We can now walk through how the model processes a batch of",
+              "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "document_title": "06_mlp.pdf",
+              "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": null
+            },
+            {
+              "page_number": 7,
+              "role": "worked_example",
+              "text": "CHAPTER 6. DEEP FEEDFORWARD NETWORKS Solving XOR 1 0 0 1 x 1 (Goodfellow 2017) x 2 Original x space 1 0 0 1 2 h 1 h 2 Learned h space Figure 6.1 Figure 6.1: Solving the XOR problem by learning a representation. The bold numbers printed on the plot indicate the value that the learned function must output at each point. (Left)A linear model applied directly to the original input cannot implement the XOR function. When x = 0, the model’s output must increase as x increases. When x = 1, 1 2 1 the model’s output must decrease as x increases. A linear model must apply a fixed 2 coefficient w to x . The linear model therefore cannot use the value of x to change 2 2 1 the coefficient on x and cannot solve this problem. (Right)In the transformed space 2 represented by the features extracted by a neural network, a linear model can now solve the problem. In our example solution, the two points that must have output 1 have been collapsed into a single point in feature space. In other words, the nonlinear features have mapped both x = [1, 0] and x = [0, 1] to a single point in feature space, h = [1, 0] . > > > The linear model can now describe the function as increasing in h and decreasing in h . 1 2 In this example, the motivation for learning the feature space is only to make the model capacity greater so that it can fit the training set. In more realistic applications, learned representations can also help the model to generalize. 173",
+              "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "document_title": "06_mlp.pdf",
+              "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": null
+            }
+          ],
+          "retry_attempts": 0,
+          "max_retry_attempts": 3,
+          "teaching_asset_ids": [
+            "xor-advanced_derivation-v1",
+            "xor-advanced_worked_example-v1",
+            "xor-code_exercise-v1",
+            "xor-contextual_example_variant-v1",
+            "xor-formula_explanation-v1",
+            "xor-transfer_challenge-v1",
+            "xor-visual_or_coordinate_description-v1",
+            "xor-foundation_intuition-v1"
+          ],
+          "asset_manifest_version": "ta-golden-v2",
+          "v4_status": "ready",
+          "generation_mode": "live_augmented",
+          "lecture_content": {
+            "concept_introduction": {
+              "hook": "Imagine you have two yes-or-no questions, like two switches, and you want to know if exactly one of them is on. This is the exclusive or, or XOR, problem.",
+              "explanation": "XOR is a logical operation that outputs 1 if exactly one of its two binary inputs is 1, and outputs 0 if both inputs are the same. Formally, for inputs x₁ and x₂, XOR(x₁, x₂) = 1 when x₁ ≠ x₂, and 0 otherwise. This creates a pattern where the positive outputs lie on opposite corners of a square defined by the inputs, making it impossible to separate the positive cases from the negative ones with a single straight line in the original input space. However, by transforming the inputs through a nonlinear hidden layer, we can map these inputs into a new feature space where a linear boundary can separate the classes. This nonlinear transformation is essential; simply stacking more linear layers without nonlinear activation functions does not increase the representational power to solve XOR.",
+              "mechanism": [
+                "Start with inputs x mapped to a hidden layer h via an affine transformation h = g(xW + c), where g is a nonlinear activation function like ReLU.",
+                "The nonlinear activation changes the coordinates of the inputs, creating new features that combine the original inputs in a way that separates the XOR classes.",
+                "The output layer then applies a linear boundary to these transformed features, successfully distinguishing the positive XOR cases from the negative ones."
+              ],
+              "boundaries": "Adding more linear layers without nonlinear activations does not solve the XOR problem because compositions of linear functions remain linear. The key limitation is the lack of nonlinearity, which is necessary to create a feature space where XOR is linearly separable."
+            },
+            "prerequisite_recap": {
+              "title": "Linear Separability and Its Limits",
+              "explanation": "Linear separability means that a single straight line (or hyperplane) can separate positive and negative examples in the input space. XOR is a classic example where this fails because the positive examples lie diagonally opposite each other, so no single line can separate them from the negatives.",
+              "example": "Consider two binary inputs representing two switches. The positive outputs occur when exactly one switch is on, which places these positives on opposite corners of a square, making them inseparable by one line."
+            },
+            "intuition": "Visualize the four input pairs as corners of a square: (0,0), (0,1), (1,0), and (1,1). The XOR outputs 1 only for (0,1) and (1,0), which are diagonally opposite corners. Since these positive points are separated by negative points on the other diagonal, no single straight line can isolate them. However, if you imagine bending or folding the square through a nonlinear transformation, you can bring these positive points closer together in a new space where a straight line can separate them easily",
+            "common_mistake": "Adding more linear layers without nonlinear activations does not solve the XOR problem because compositions of linear functions remain linear. The key limitation is the lack of nonlinearity, which is necessary to create a feature space where XOR is linearly separable",
+            "math": {
+              "inline_math": [
+                "0 XOR 0 = 0",
+                "0 XOR 1 = 1",
+                "1 XOR 0 = 1",
+                "1 XOR 1 = 0"
+              ],
+              "display_math": [
+                {
+                  "latex": "y = x_1 \\oplus x_2",
+                  "text": "y equals x one XOR x two",
+                  "label": "XOR rule"
+                }
+              ],
+              "matrix": {
+                "rows": [
+                  [
+                    "x1",
+                    "x2",
+                    "y"
+                  ],
+                  [
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  [
+                    "0",
+                    "1",
+                    "1"
+                  ],
+                  [
+                    "1",
+                    "0",
+                    "1"
+                  ],
+                  [
+                    "1",
+                    "1",
+                    "0"
+                  ]
+                ],
+                "label": "XOR truth table"
+              },
+              "derivation_steps": [
+                "List the four possible binary inputs.",
+                "Mark opposite corners as the positive class.",
+                "Notice that one straight boundary cannot separate alternating corners."
+              ]
+            },
+            "objective_exercise": {
+              "instructions": "Answer the following questions about the XOR problem and its solution using neural network representations. Each question tests your understanding of the mechanism, common misconceptions, or application boundaries of XOR in neural networks.",
+              "questions": [
+                {
+                  "question_id": "q1",
+                  "type": "single_choice",
+                  "question_type": "mechanism",
+                  "assessment_target_id": "xor-mechanism",
+                  "prompt": "Consider a neural network trying to solve the XOR problem with two binary inputs representing two switches. Why is a nonlinear activation function in the hidden layer essential for correctly classifying XOR outputs?",
+                  "correct_reasoning": "The nonlinear activation transforms the input coordinates into a new feature space where the XOR positive cases become linearly separable, enabling the output layer to separate them with a linear boundary.",
+                  "source_refs": [
+                    "page:4",
+                    "page:5",
+                    "page:6",
+                    "page:7"
+                  ],
+                  "explanation": "Without a nonlinear activation, the network's hidden layers perform only linear transformations, which cannot separate the XOR's alternating positive corners. The nonlinearity creates features that rearrange the input space, making the XOR classes separable by a linear decision boundary.",
+                  "options": [
+                    {
+                      "id": "a",
+                      "text": "It creates new features by changing input coordinates nonlinearly, allowing a linear output layer to separate XOR classes.",
+                      "correct": true,
+                      "feedback": "Correct. The nonlinear activation changes the feature representation, enabling linear separation of XOR outputs."
+                    },
+                    {
+                      "id": "b",
+                      "text": "It increases the network depth, which alone is sufficient to solve XOR without changing the input representation.",
+                      "correct": false,
+                      "feedback": "Incorrect. Increasing depth without nonlinearity does not change the linear nature of transformations and cannot solve XOR."
+                    },
+                    {
+                      "id": "c",
+                      "text": "It reduces the number of positive XOR cases to one, simplifying the classification.",
+                      "correct": false,
+                      "feedback": "Incorrect. The number of positive cases remains the same; nonlinearity does not reduce positive examples but changes their representation."
+                    }
+                  ],
+                  "concept_id": "XOR",
+                  "section_id": "admission-xor-e75e75267eef:core",
+                  "page_references": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                },
+                {
+                  "question_id": "q2",
+                  "type": "single_choice",
+                  "question_type": "misconception_discrimination",
+                  "assessment_target_id": "xor-boundary",
+                  "prompt": "A student claims that adding more linear layers to a neural network will enable it to solve the XOR problem because deeper networks are always more powerful. What is the flaw in this reasoning?",
+                  "correct_reasoning": "Composing linear layers results in a single linear transformation, so depth alone without nonlinear activations does not increase representational power to solve XOR.",
+                  "source_refs": [
+                    "page:4",
+                    "page:5",
+                    "page:6"
+                  ],
+                  "explanation": "The key limitation is the absence of nonlinear activation functions. Without them, multiple linear layers collapse into one linear map, which cannot separate the XOR pattern due to its geometric arrangement.",
+                  "options": [
+                    {
+                      "id": "b",
+                      "text": "Adding layers always increases the number of positive XOR outputs, which confuses the network.",
+                      "correct": false,
+                      "feedback": "Incorrect. Adding layers does not change the XOR outputs; it only changes how inputs are transformed."
+                    },
+                    {
+                      "id": "a",
+                      "text": "More linear layers without nonlinear activations still represent a single linear transformation, insufficient for XOR separation.",
+                      "correct": true,
+                      "feedback": "Correct. Depth alone does not add representational power without nonlinearity."
+                    },
+                    {
+                      "id": "c",
+                      "text": "Deeper networks require fewer training examples, so the student is wrong about needing more data.",
+                      "correct": false,
+                      "feedback": "Incorrect. The issue is representational capacity, not data quantity."
+                    }
+                  ],
+                  "concept_id": "XOR",
+                  "section_id": "admission-xor-e75e75267eef:core",
+                  "page_references": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                },
+                {
+                  "question_id": "q3",
+                  "type": "single_choice",
+                  "question_type": "application_or_boundary",
+                  "assessment_target_id": "xor-boundary",
+                  "prompt": "You have a network with multiple hidden layers but no nonlinear activation functions. You want to solve the XOR problem on two binary inputs representing two switches. Which modification will effectively enable the network to classify XOR correctly?",
+                  "correct_reasoning": "Introducing nonlinear activation functions in the hidden layers creates a feature space where XOR classes become linearly separable, overcoming the representational limitation of purely linear layers.",
+                  "source_refs": [
+                    "page:4",
+                    "page:5",
+                    "page:6",
+                    "page:7"
+                  ],
+                  "explanation": "Simply adding more linear layers does not help because the overall transformation remains linear. Nonlinear activations are necessary to transform the input space to separate XOR outputs with a linear boundary at the output.",
+                  "options": [
+                    {
+                      "id": "b",
+                      "text": "Increase the number of linear layers without changing activations to deepen the network.",
+                      "correct": false,
+                      "feedback": "Incorrect. More linear layers alone cannot solve XOR due to linearity limitations."
+                    },
+                    {
+                      "id": "c",
+                      "text": "Remove the output layer and use only hidden layers to classify XOR.",
+                      "correct": false,
+                      "feedback": "Incorrect. The output layer is needed to apply the linear boundary after the nonlinear transformation."
+                    },
+                    {
+                      "id": "a",
+                      "text": "Add nonlinear activation functions like ReLU in the hidden layers to create a nonlinear representation.",
+                      "correct": true,
+                      "feedback": "Correct. Nonlinear activations enable the network to solve XOR by changing the representation."
+                    }
+                  ],
+                  "concept_id": "XOR",
+                  "section_id": "admission-xor-e75e75267eef:core",
+                  "page_references": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                }
+              ]
+            },
+            "learner_adaptation": {
+              "treatment_version": "dual-user-treatment-v1",
+              "profile_tier": "advanced",
+              "prior_knowledge_level": "advanced",
+              "explanation_density": "concise",
+              "example_mode": "balanced",
+              "practice_style": "independent",
+              "terminology_depth": "advanced",
+              "interest_usage": "scenario_only",
+              "example_context": "an everyday yes-or-no decision",
+              "preferred_examples": [],
+              "learning_style": "balanced",
+              "formula_support": "compact",
+              "checkpoint_density": "standard"
+            },
+            "page_walkthrough": [
+              {
+                "page_number": 2,
+                "what_to_notice": "XOR outputs one when exactly one of two binary inputs is one, and outputs zero when the inputs match.",
+                "explanation": "XOR outputs one when exactly one of two binary inputs is one, and outputs zero when the inputs match. The boundary to retain is: Adding more linear layers without nonlinear activations does not solve the representational limitation. Relate the representation directly to the stated boundary condition.",
+                "connection_to_previous": "The definition establishes the representation being considered."
+              },
+              {
+                "page_number": 3,
+                "what_to_notice": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate.",
+                "explanation": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate. The boundary to retain is: Adding more linear layers without nonlinear activations does not solve the representational limitation. Relate the representation directly to the stated boundary condition.",
+                "connection_to_previous": "This extends the idea established on page 2."
+              },
+              {
+                "page_number": 4,
+                "what_to_notice": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate.",
+                "explanation": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate. The boundary to retain is: Adding more linear layers without nonlinear activations does not solve the representational limitation. Relate the representation directly to the stated boundary condition.",
+                "connection_to_previous": "This extends the idea established on page 3."
+              },
+              {
+                "page_number": 5,
+                "what_to_notice": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate.",
+                "explanation": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate. The boundary to retain is: Adding more linear layers without nonlinear activations does not solve the representational limitation. Relate the representation directly to the stated boundary condition.",
+                "connection_to_previous": "This extends the idea established on page 4."
+              },
+              {
+                "page_number": 6,
+                "what_to_notice": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate.",
+                "explanation": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate. The boundary to retain is: Adding more linear layers without nonlinear activations does not solve the representational limitation. Relate the representation directly to the stated boundary condition.",
+                "connection_to_previous": "This extends the idea established on page 5."
+              },
+              {
+                "page_number": 7,
+                "what_to_notice": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate.",
+                "explanation": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate. The boundary to retain is: Adding more linear layers without nonlinear activations does not solve the representational limitation. Relate the representation directly to the stated boundary condition.",
+                "connection_to_previous": "This extends the idea established on page 6."
+              }
+            ],
+            "key_terms": [
+              {
+                "term": "XOR",
+                "definition": "XOR outputs one when exactly one of two binary inputs is one, and outputs zero when the inputs match."
+              },
+              {
+                "term": "Mechanism",
+                "definition": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate."
+              },
+              {
+                "term": "Boundary",
+                "definition": "Adding more linear layers without nonlinear activations does not solve the representational limitation."
+              }
+            ],
+            "worked_example": {
+              "problem": "Explain an XOR network as representation construction.",
+              "steps": [
+                "Identify the two alternating positive corners.",
+                "Choose hidden features that respond to useful half-spaces.",
+                "Apply a nonlinearity so their combination is not reducible to one linear map.",
+                "Use the output layer to separate the transformed features."
+              ],
+              "solution": "Start from the working example: The inputs (0,1) and (1,0) are positive while (0,0) and (1,1) are negative. Then test it against the counterexample: One straight boundary in the original input plane cannot isolate both positive XOR corners. The mechanism is: A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate. The conclusion must preserve the stated boundary: Adding more linear layers without nonlinear activations does not solve the representational limitation. State which assumption fails before proposing a richer representation or update. The worked case is checked through these steps: Identify the two alternating positive corners. Choose hidden features that respond to useful half-spaces. Apply a nonlinearity so their combination is not reducible to one linear map. Use the output layer to separate the transformed features.",
+              "why_it_works": "The conclusion follows because the representation, mechanism, counterexample, and boundary are checked in one reasoning chain."
+            },
+            "summary_connection": {
+              "summary": "XOR outputs one when exactly one of two binary inputs is one, and outputs zero when the inputs match. A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate. Remember the boundary: Adding more linear layers without nonlinear activations does not solve the representational limitation.",
+              "next_concept_bridge": "The next concept builds on this mechanism by changing the representation, transformation, or update being studied."
+            }
+          },
+          "retryable": true,
+          "repair_pass_used": false,
+          "live_asset_repairs": [
+            "page_walkthrough",
+            "key_terms",
+            "worked_example",
+            "objective_exercise",
+            "summary_connection"
+          ],
+          "exercise_generation_mode": "live",
+          "exercise_generation_reason": null
+        }
+      }
+    },
+    {
+      "goal_id": "word_embeddings",
+      "run_id": "admission-word_embeddings-446846a24f2d",
+      "admission_version": "full-experience-admission-v1",
+      "goal": "Understand how word embeddings represent semantic similarity.",
+      "status": "eligible_for_full_experience",
+      "eligible_for_full_experience": true,
+      "target_concept": "experience:semantic-similarity",
+      "checks": {
+        "goal_mapping": {
+          "name": "goal_mapping",
+          "passed": true,
+          "reason": "Goal matches an approved goal-scoped canonical chain.",
+          "details": {
+            "target_concept": "experience:semantic-similarity",
+            "canonical_path": [
+              "experience:text-representation",
+              "experience:word-embeddings",
+              "experience:cosine-similarity",
+              "experience:semantic-similarity"
+            ],
+            "mapping_method": "goal_chain_catalog",
+            "catalog_version": "full-experience-goal-catalog-v1"
+          }
+        },
+        "kg_path": {
+          "name": "kg_path",
+          "passed": true,
+          "reason": "Approved catalog path is ordered and acyclic.",
+          "details": {
+            "ordered_concepts": [
+              "experience:text-representation",
+              "experience:word-embeddings",
+              "experience:cosine-similarity",
+              "experience:semantic-similarity"
+            ],
+            "acyclic": true,
+            "path_provenance": "goal_chain_catalog"
+          }
+        },
+        "resource_coverage": {
+          "name": "resource_coverage",
+          "passed": true,
+          "reason": "Approved page-level source and scoped teaching-asset bundle are available.",
+          "details": {
+            "source_id": "source:word-embeddings:cs224n-2026-wordvecs",
+            "page_count": 5,
+            "asset_manifest": "word_embeddings-assets-v1"
+          }
+        },
+        "content_generation": {
+          "name": "content_generation",
+          "passed": true,
+          "reason": "Uncached live lecture and live exercise generation completed.",
+          "details": {
+            "generation_mode": "live_augmented",
+            "cache_status": "miss",
+            "fallback_accepted": false,
+            "run_id": "admission-word_embeddings-446846a24f2d",
+            "failure_code": null,
+            "failure_reason": null,
+            "fallback_reason": null,
+            "exercise_generation_mode": "live",
+            "exercise_generation_reason": null
+          }
+        },
+        "grounding": {
+          "name": "grounding",
+          "passed": true,
+          "reason": "Schema and page/chunk provenance checks passed.",
+          "details": {
+            "source_refs": [
+              {
+                "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+                "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+                "page_number": 8,
+                "chunk_id": "we-wordvecs-p8",
+                "evidence_locator": "we-wordvecs-p8"
+              },
+              {
+                "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+                "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+                "page_number": 10,
+                "chunk_id": "we-wordvecs-p10",
+                "evidence_locator": "we-wordvecs-p10"
+              },
+              {
+                "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+                "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+                "page_number": 17,
+                "chunk_id": "we-wordvecs-p17",
+                "evidence_locator": "we-wordvecs-p17"
+              },
+              {
+                "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+                "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+                "page_number": 24,
+                "chunk_id": "we-wordvecs-p24",
+                "evidence_locator": "we-wordvecs-p24"
+              },
+              {
+                "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+                "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+                "page_number": 41,
+                "chunk_id": "we-wordvecs-p41",
+                "evidence_locator": "we-wordvecs-p41"
+              }
+            ],
+            "cache_status": "miss",
+            "errors": []
+          }
+        }
+      },
+      "failure_reasons": [],
+      "generated_at": "2026-08-15T08:47:02.229380+00:00",
+      "run_artifact": {
+        "selected_system_version": "v4",
+        "cache_status": "miss",
+        "generation_metadata": {
+          "generator_version": "source-grounded-v4-live-assets-v3",
+          "generation_mode": "live",
+          "prompt_version": "ml-education-expert-v2",
+          "content_model": "gpt-4.1-mini",
+          "live_timeout_seconds": 90.0,
+          "treatment_version": "dual-user-treatment-v1",
+          "generated_for_user_id": "evaluation-2ca5de95-0a13-4fd5-878a-48def367ab03",
+          "profile_version": 1,
+          "source_link_version": "word-embeddings-source-v1",
+          "source_link_status": "indexed",
+          "isolated_from_v3": true,
+          "asset_manifest_version": "word_embeddings-assets-v1",
+          "asset_selection_count": 3,
+          "ready_sections": 1,
+          "total_sections": 1
+        },
+        "source_refs": [
+          {
+            "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "page_number": 8,
+            "chunk_id": "we-wordvecs-p8",
+            "evidence_locator": "we-wordvecs-p8"
+          },
+          {
+            "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "page_number": 10,
+            "chunk_id": "we-wordvecs-p10",
+            "evidence_locator": "we-wordvecs-p10"
+          },
+          {
+            "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "page_number": 17,
+            "chunk_id": "we-wordvecs-p17",
+            "evidence_locator": "we-wordvecs-p17"
+          },
+          {
+            "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "page_number": 24,
+            "chunk_id": "we-wordvecs-p24",
+            "evidence_locator": "we-wordvecs-p24"
+          },
+          {
+            "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "page_number": 41,
+            "chunk_id": "we-wordvecs-p41",
+            "evidence_locator": "we-wordvecs-p41"
+          }
+        ],
+        "core_content_output": {
+          "section_id": "admission-word_embeddings-446846a24f2d:core",
+          "concept_id": "experience:semantic-similarity",
+          "concept_name": "Semantic Similarity",
+          "title": "Semantic Similarity",
+          "estimated_minutes": 15,
+          "source_links": [
+            {
+              "link_id": "admission:word_embeddings",
+              "concept_id": "experience:semantic-similarity",
+              "concept_name": "Semantic Similarity",
+              "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "document_title": "CS224N Lecture 2: Word Vectors",
+              "source_scope": "public",
+              "page_sequence": [
+                {
+                  "page_number": 8,
+                  "role": "motivation",
+                  "chunk_ids": [
+                    "we-wordvecs-p8"
+                  ]
+                },
+                {
+                  "page_number": 10,
+                  "role": "definition_and_distributional_mechanism",
+                  "chunk_ids": [
+                    "we-wordvecs-p10"
+                  ]
+                },
+                {
+                  "page_number": 17,
+                  "role": "similarity_scoring_mechanism",
+                  "chunk_ids": [
+                    "we-wordvecs-p17"
+                  ]
+                },
+                {
+                  "page_number": 24,
+                  "role": "geometric_consequence",
+                  "chunk_ids": [
+                    "we-wordvecs-p24"
+                  ]
+                },
+                {
+                  "page_number": 41,
+                  "role": "semantic_similarity_evaluation",
+                  "chunk_ids": [
+                    "we-wordvecs-p41"
+                  ]
+                }
+              ],
+              "chunk_ids": [
+                "we-wordvecs-p8",
+                "we-wordvecs-p10",
+                "we-wordvecs-p17",
+                "we-wordvecs-p24",
+                "we-wordvecs-p41"
+              ],
+              "review_status": "verified",
+              "source_version": "word-embeddings-source-v1",
+              "link_role": "primary",
+              "asset_concept_id": "experience:semantic-similarity",
+              "asset_manifest_version": "word_embeddings-assets-v1"
+            }
+          ],
+          "source_pages": [
+            {
+              "page_number": 8,
+              "role": "motivation",
+              "text": "Sec. 9.2.2 Problem with words as discrete symbols Example: in web search, if a user searches for “Seattle motel”, we would like to match documents containing “Seattle hotel” motel = [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0] hotel = [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0] But these two vectors are orthogonal There is no natural notion of similarity for one-hot vectors! Solution: • Could try to rely on WordNet’s list of synonyms to get similarity? • But it is well-known to fail badly: incompleteness, etc. • Instead: learn to encode similarity in the vectors themselves 8",
+              "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "document_title": "CS224N Lecture 2: Word Vectors",
+              "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:word_embeddings"
+            },
+            {
+              "page_number": 10,
+              "role": "definition_and_distributional_mechanism",
+              "text": "Word vectors We will build a dense vector for each word, chosen so that it is similar to vectors of words that appear in similar contexts, measuring similarity as the vector dot (scalar) product 0.286 0.413 0.792 0.582 −0.177 −0.007 banking = monetary = −0.107 0.247 0.109 0.216 −0.542 −0.718 0.349 0.147 0.271 0.051 Note: word vectors are also called (word) embeddings or (neural) word representations They are a distributed representation 10",
+              "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "document_title": "CS224N Lecture 2: Word Vectors",
+              "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:word_embeddings"
+            },
+            {
+              "page_number": 17,
+              "role": "similarity_scoring_mechanism",
+              "text": "Word2Vec: prediction function ② Exponentiation makes anything positive ① Dot product compares similarity of o and c. 𝑢𝑇𝑣 = 𝑢 ⋅ 𝑣 = σ𝑛 𝑢 𝑣 exp(𝑢 𝑇 𝑣 ) 𝑖=1 𝑖 𝑖 𝑜 𝑐 Larger dot product = larger probability 𝑃 𝑜 𝑐 = σ exp(𝑢𝑇 𝑣 ) 𝑤∈𝑉 𝑤 𝑐 ③ Normalize over entire vocabulary to give probability distribution 𝑛 𝑛 • This is an example of the softmax function ℝ → (0,1) Open region exp(𝑥 ) 𝑖 softmax 𝑥 = = 𝑝 𝑖 𝑛 𝑖 σ exp(𝑥 ) 𝑗=1 𝑗 • The softmax function maps arbitrary values 𝑥 to a probability distribution 𝑝 𝑖 𝑖 • “max” because amplifies probability of largest 𝑥 𝑖 But sort of a weird name • “soft” because still assigns some probability to smaller 𝑥 𝑖 because it returns a distribution! • Frequently used in Deep Learning 17",
+              "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "document_title": "CS224N Lecture 2: Word Vectors",
+              "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:word_embeddings"
+            },
+            {
+              "page_number": 24,
+              "role": "geometric_consequence",
+              "text": "Word2vec maximizes objective function by putting similar words nearby in space 31",
+              "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "document_title": "CS224N Lecture 2: Word Vectors",
+              "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:word_embeddings"
+            },
+            {
+              "page_number": 41,
+              "role": "semantic_similarity_evaluation",
+              "text": "Meaning similarity: Another intrinsic word vector evaluation • Word vector distances and their correlation with human judgments • Example dataset: WordSim353 http://www.cs.technion.ac.il/~gabr/resources/data/wordsim353/ Word 1 Word 2 Human (mean) tiger cat 7.35 tiger tiger 10 book paper 7.46 computer internet 7.58 plane car 5.77 professor doctor 6.62 stock phone 1.62 stock CD 1.31 stock jaguar 0.92 48",
+              "document_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "document_title": "CS224N Lecture 2: Word Vectors",
+              "resource_id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:word_embeddings"
+            }
+          ],
+          "retry_attempts": 0,
+          "max_retry_attempts": 3,
+          "teaching_asset_ids": [
+            "we-semantic-similarity-advanced-worked",
+            "we-semantic-similarity-visual",
+            "we-semantic-similarity-foundation-intuition"
+          ],
+          "asset_manifest_version": "word_embeddings-assets-v1",
+          "v4_status": "ready",
+          "generation_mode": "live_augmented",
+          "lecture_content": {
+            "concept_introduction": {
+              "hook": "How can we measure whether two words or expressions mean something similar, especially when their literal forms differ?",
+              "explanation": "Semantic similarity quantifies how closely two expressions relate in meaning within a specific task or evaluation context. Unlike simple string matching or dictionary synonyms, semantic similarity captures nuanced relationships such as relatedness, synonymy, analogy, or contextual substitutability. To operationalize this, words are represented as dense vectors—called embeddings—where proximity in vector space reflects semantic closeness. We then compare these vectors using measures like the dot product or cosine similarity. The quality of these embeddings is evaluated by how well their similarity rankings align with human judgments or improve downstream tasks. Importantly, semantic similarity is not a single universal score but depends on the precise notion of meaning relevant to the task.",
+              "mechanism": [
+                "Start with discrete word representations (e.g., one-hot vectors) that fail to capture similarity because they are orthogonal for different words.",
+                "Learn dense word vectors (embeddings) so that words appearing in similar contexts have similar vectors, measured by vector dot product or cosine similarity.",
+                "Use a prediction function like Word2Vec’s softmax-based model, where the dot product between word vectors determines the probability of context words, encouraging similar words to be close in embedding space.",
+                "Evaluate semantic similarity by comparing embedding distances to human similarity judgments or task performance, recognizing different similarity types (relatedness, synonymy, analogy) as distinct evaluation targets."
+              ],
+              "boundaries": "Semantic similarity applies when we have a clearly defined task or evaluation setting specifying what kind of meaning relation matters. It fails if we treat all notions of similarity as identical or rely on discrete symbolic representations like one-hot vectors, which lack a natural similarity measure. Also, synonym lists like WordNet are incomplete and insufficient for capturing nuanced semantic similarity."
+            },
+            "prerequisite_recap": {
+              "title": "Word Vectors and Distributed Representations",
+              "explanation": "Words can be represented as dense vectors, called embeddings, learned so that words appearing in similar contexts have similar vectors. This contrasts with one-hot vectors, which are sparse and orthogonal, failing to capture similarity.",
+              "example": "For example, the word 'banking' might have a vector close to 'monetary' because they appear in related contexts, while one-hot vectors for 'motel' and 'hotel' are orthogonal and thus show no similarity."
+            },
+            "intuition": "Imagine each word as a point in a high-dimensional space where closeness means semantic similarity. Words like 'cat' and 'tiger' are near each other, reflecting their related meanings, while unrelated words like 'stock' and 'jaguar' are far apart. This spatial intuition helps us understand semantic similarity as geometric proximity in embedding space, tailored to the specific meaning relation we care about",
+            "worked_example": {
+              "problem": "State the input, transformation, comparison criterion, and boundary for Semantic Similarity.",
+              "steps": [
+                "Input: Two expressions represented as dense word vectors (embeddings).",
+                "Transformation: Compute similarity using the dot product or cosine similarity between their vectors, learned so that similar-context words have similar vectors.",
+                "Comparison criterion: Evaluate whether the similarity scores correlate with human judgments or improve downstream tasks, recognizing different similarity types (relatedness, synonymy, analogy).",
+                "Boundary: Different notions of similarity should not be collapsed into one score; semantic similarity depends on the task and evaluation setting."
+              ],
+              "solution": "Semantic similarity takes two word embeddings as input, transforms them by computing a similarity measure like the dot product, and compares these scores against human judgments or task metrics. It applies only when the notion of similarity is clearly defined and fails if different similarity types are conflated or if discrete symbolic representations are used.",
+              "why_it_works": "This works because embeddings encode semantic information in vector space, allowing continuous similarity measures. The learning process ensures that words with similar meanings appear close together, so their vector similarity reflects semantic similarity relevant to the task."
+            },
+            "common_mistake": "A common mistake is assuming that one similarity score captures all possible notions of meaning similarity. In reality, relatedness, synonymy, analogy, and contextual substitutability are distinct and require separate evaluation. Collapsing them into a single score ignores these differences and leads to misleading conclusions about semantic similarity",
+            "summary_connection": {
+              "summary": "Semantic similarity measures how closely two expressions relate in meaning by representing words as dense vectors and comparing these vectors using similarity functions. This approach overcomes the limitations of discrete symbolic representations and synonym lists by learning embeddings that reflect contextual similarity. However, semantic similarity depends on the specific notion of meaning relevant to the task and should not be treated as a single universal score.",
+              "next_concept_bridge": "Understanding semantic similarity sets the stage for exploring how these embeddings can be used in downstream tasks like text classification or machine translation, where capturing nuanced meaning is crucial."
+            },
+            "math": {
+              "inline_math": [],
+              "display_math": [],
+              "matrix": null,
+              "derivation_steps": []
+            },
+            "objective_exercise": {
+              "instructions": "Answer the following questions about semantic similarity based on the lesson content. Each question tests your understanding of the mechanism, common misconceptions, or application boundaries of semantic similarity in natural language processing.",
+              "questions": [
+                {
+                  "question_id": "q1",
+                  "type": "single_choice",
+                  "question_type": "mechanism",
+                  "assessment_target_id": "target:semantic-similarity:mechanism",
+                  "prompt": "Imagine you have two words, 'car' and 'automobile', represented as dense vectors in an embedding space. According to the semantic similarity mechanism taught, what primarily causes these vectors to be close together?",
+                  "correct_reasoning": "The vectors are close because the embedding learning process encourages words appearing in similar contexts to have similar vectors, measured by dot product or cosine similarity.",
+                  "source_refs": [
+                    "page:8",
+                    "page:10",
+                    "page:24"
+                  ],
+                  "explanation": "Semantic similarity embeddings are learned so that words with similar contextual usage have vectors close in space. This proximity reflects their semantic relatedness, not just surface form or dictionary synonymy.",
+                  "options": [
+                    {
+                      "id": "b",
+                      "text": "They are close because the model learns to maximize the dot product between vectors of words appearing in similar contexts.",
+                      "correct": true,
+                      "feedback": "Correct. The learning objective encourages similar-context words to have similar embeddings, reflected by a high dot product or cosine similarity."
+                    },
+                    {
+                      "id": "a",
+                      "text": "They are close because 'car' and 'automobile' have identical one-hot vector representations.",
+                      "correct": false,
+                      "feedback": "One-hot vectors are orthogonal and do not capture similarity; embeddings are dense vectors learned from context, not discrete one-hot forms."
+                    },
+                    {
+                      "id": "c",
+                      "text": "They are close because 'car' and 'automobile' are listed as synonyms in a dictionary used during training.",
+                      "correct": false,
+                      "feedback": "Synonym lists like dictionaries are incomplete and not directly used to position embeddings; similarity emerges from distributional context, not fixed synonym sets."
+                    }
+                  ],
+                  "concept_id": "experience:semantic-similarity",
+                  "section_id": "admission-word_embeddings-446846a24f2d:core",
+                  "page_references": [
+                    8,
+                    10,
+                    17,
+                    24,
+                    41
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                },
+                {
+                  "question_id": "q2",
+                  "type": "single_choice",
+                  "question_type": "misconception_discrimination",
+                  "assessment_target_id": "target:semantic-similarity:mechanism",
+                  "prompt": "A colleague claims: 'We can represent semantic similarity with a single universal score that covers relatedness, synonymy, analogy, and contextual substitutability equally well.' What is the main flaw in this claim?",
+                  "correct_reasoning": "Different notions of semantic similarity represent distinct relationships and require separate evaluation; collapsing them into one score ignores these differences and leads to misleading conclusions.",
+                  "source_refs": [
+                    "page:17",
+                    "page:41"
+                  ],
+                  "explanation": "Semantic similarity depends on the specific notion of meaning relevant to the task. Relatedness, synonymy, analogy, and substitutability are distinct and should not be conflated into a single score.",
+                  "options": [
+                    {
+                      "id": "a",
+                      "text": "The claim is correct because all semantic relationships can be captured by the same embedding distance metric.",
+                      "correct": false,
+                      "feedback": "Incorrect. A single metric cannot capture all types of semantic relationships equally well because they have different characteristics and evaluation targets."
+                    },
+                    {
+                      "id": "b",
+                      "text": "The claim is flawed because relatedness, synonymy, analogy, and substitutability are distinct notions requiring separate evaluation and cannot be collapsed into one score.",
+                      "correct": true,
+                      "feedback": "Correct. Each similarity type captures different semantic aspects, so conflating them leads to loss of nuance and inaccurate similarity judgments."
+                    },
+                    {
+                      "id": "c",
+                      "text": "The claim is flawed because semantic similarity only applies to synonyms, not other relationships like analogy or relatedness.",
+                      "correct": false,
+                      "feedback": "Incorrect. Semantic similarity encompasses multiple types of meaning relations beyond synonymy, including analogy and relatedness."
+                    }
+                  ],
+                  "concept_id": "experience:semantic-similarity",
+                  "section_id": "admission-word_embeddings-446846a24f2d:core",
+                  "page_references": [
+                    8,
+                    10,
+                    17,
+                    24,
+                    41
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                },
+                {
+                  "question_id": "q3",
+                  "type": "single_choice",
+                  "question_type": "application_or_boundary",
+                  "assessment_target_id": "target:semantic-similarity:mechanism",
+                  "prompt": "You want to use semantic similarity to improve a downstream task like text classification. Which scenario best illustrates a boundary condition where semantic similarity would likely fail or be inappropriate?",
+                  "correct_reasoning": "Semantic similarity fails if the task does not clearly define which notion of meaning similarity matters or if discrete symbolic representations like one-hot vectors are used instead of embeddings.",
+                  "source_refs": [
+                    "page:10",
+                    "page:24",
+                    "page:41"
+                  ],
+                  "explanation": "Semantic similarity requires a clearly defined similarity notion relevant to the task and dense vector representations; using discrete symbolic forms or ignoring task-specific similarity types breaks its applicability.",
+                  "options": [
+                    {
+                      "id": "a",
+                      "text": "Using dense word embeddings and cosine similarity to rank candidate labels for a text classification problem where synonymy is the key similarity notion.",
+                      "correct": false,
+                      "feedback": "This is an appropriate use of semantic similarity, aligning embeddings and similarity measures with the task's similarity notion."
+                    },
+                    {
+                      "id": "c",
+                      "text": "Evaluating embedding similarity rankings by how well they correlate with human judgments on relatedness for a domain-specific vocabulary.",
+                      "correct": false,
+                      "feedback": "This is a valid evaluation approach, respecting the boundary by defining the similarity notion and using embeddings."
+                    },
+                    {
+                      "id": "b",
+                      "text": "Using one-hot encoded vectors and a single similarity score to capture all semantic relations for a sentiment analysis task without specifying which relation matters.",
+                      "correct": true,
+                      "feedback": "Correct. One-hot vectors lack meaningful similarity measures, and collapsing all semantic relations into one score ignores task-specific similarity needs, causing failure."
+                    }
+                  ],
+                  "concept_id": "experience:semantic-similarity",
+                  "section_id": "admission-word_embeddings-446846a24f2d:core",
+                  "page_references": [
+                    8,
+                    10,
+                    17,
+                    24,
+                    41
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                }
+              ]
+            },
+            "learner_adaptation": {
+              "treatment_version": "dual-user-treatment-v1",
+              "profile_tier": "advanced",
+              "prior_knowledge_level": "advanced",
+              "explanation_density": "concise",
+              "example_mode": "balanced",
+              "practice_style": "independent",
+              "terminology_depth": "advanced",
+              "interest_usage": "scenario_only",
+              "example_context": "an everyday yes-or-no decision",
+              "preferred_examples": [],
+              "learning_style": "balanced",
+              "formula_support": "compact",
+              "checkpoint_density": "standard"
+            },
+            "page_walkthrough": [
+              {
+                "page_number": 8,
+                "what_to_notice": "9.2.2 Problem with words as discrete symbols Example: in web search, if a user searches for Seattle motel, we would like to match documents containing Seattle hotel motel = [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0] hotel = [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0] But these two vectors are orthogonal There is no natural notion of similarity for one-hot vectors! Solution: Could try to rely on WordNets list of synonyms to get similarity? But it is well-known to fail badly: incompleteness, etc",
+                "explanation": "9.2.2 Problem with words as discrete symbols Example: in web search, if a user searches for Seattle motel, we would like to match documents containing Seattle hotel motel = [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0] hotel = [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0] But these two vectors are orthogonal There is no natural notion of similarity for one-hot vectors! Solution: Could try to rely on WordNets list of synonyms to get similarity? But it is well-known to fail badly: incompleteness, etc. Instead: learn to encode similarity in the vectors themselves 8",
+                "connection_to_previous": "This evidence establishes the core claim."
+              },
+              {
+                "page_number": 10,
+                "what_to_notice": "Word vectors We will build a dense vector for each word, chosen so that it is similar to vectors of words that appear in similar contexts, measuring similarity as the vector dot (scalar) product 0.286 0.413 0.792 0.582 0.177 0.007 banking = monetary = 0.107 0.247 0.109 0.216 0.542 0.718 0.349 0.147 0.271 0.051 Note: word vectors are also called (word) embeddings or (neural) word representations They are a distributed representation 10",
+                "explanation": "Word vectors We will build a dense vector for each word, chosen so that it is similar to vectors of words that appear in similar contexts, measuring similarity as the vector dot (scalar) product 0.286 0.413 0.792 0.582 0.177 0.007 banking = monetary = 0.107 0.247 0.109 0.216 0.542 0.718 0.349 0.147 0.271 0.051 Note: word vectors are also called (word) embeddings or (neural) word representations They are a distributed representation 10",
+                "connection_to_previous": "This extends the evidence on page 8."
+              },
+              {
+                "page_number": 17,
+                "what_to_notice": "Word2Vec: prediction function Exponentiation makes anything positive Dot product compares similarity of o and c",
+                "explanation": "Word2Vec: prediction function Exponentiation makes anything positive Dot product compares similarity of o and c. = = exp( ) =1 Larger dot product = larger probability = exp( ) Normalize over entire vocabulary to give probability distribution This is an example of the softmax function (0,1) Open region exp( ) softmax = = exp( ) =1 The softmax function maps arbitrary values to a probability distribution max because amplifies probability of largest But sort of a weird name soft because still assigns some probability to smaller because it returns a distribution! Frequently used in Deep Learning 17",
+                "connection_to_previous": "This extends the evidence on page 10."
+              },
+              {
+                "page_number": 24,
+                "what_to_notice": "Word2vec maximizes objective function by putting similar words nearby in space 31",
+                "explanation": "Word2vec maximizes objective function by putting similar words nearby in space 31",
+                "connection_to_previous": "This extends the evidence on page 17."
+              },
+              {
+                "page_number": 41,
+                "what_to_notice": "Meaning similarity: Another intrinsic word vector evaluation Word vector distances and their correlation with human judgments Example dataset: WordSim353 http://www.cs.technion.ac.il/~gabr/resources/data/wordsim353/ Word 1 Word 2 Human (mean) tiger cat 7.35 tiger tiger 10 book paper 7.46 computer internet 7.58 plane car 5.77 professor doctor 6.62 stock phone 1.62 stock CD 1.31 stock jaguar 0.92 48",
+                "explanation": "Meaning similarity: Another intrinsic word vector evaluation Word vector distances and their correlation with human judgments Example dataset: WordSim353 http://www.cs.technion.ac.il/~gabr/resources/data/wordsim353/ Word 1 Word 2 Human (mean) tiger cat 7.35 tiger tiger 10 book paper 7.46 computer internet 7.58 plane car 5.77 professor doctor 6.62 stock phone 1.62 stock CD 1.31 stock jaguar 0.92 48",
+                "connection_to_previous": "This extends the evidence on page 24."
+              }
+            ],
+            "key_terms": [
+              {
+                "term": "Semantic Similarity",
+                "definition": "Semantic similarity is the degree to which two expressions are related in meaning for a stated task or evaluation setting"
+              }
+            ]
+          },
+          "retryable": true,
+          "repair_pass_used": false,
+          "live_asset_repairs": [
+            "page_walkthrough",
+            "key_terms",
+            "objective_exercise"
+          ],
+          "exercise_generation_mode": "live",
+          "exercise_generation_reason": null
+        }
+      }
+    },
+    {
+      "goal_id": "self_attention",
+      "run_id": "admission-self_attention-3ca88033ca9e",
+      "admission_version": "full-experience-admission-v1",
+      "goal": "Understand how self-attention enables transformers to model context.",
+      "status": "eligible_for_full_experience",
+      "eligible_for_full_experience": true,
+      "target_concept": "experience:contextual-representations",
+      "checks": {
+        "goal_mapping": {
+          "name": "goal_mapping",
+          "passed": true,
+          "reason": "Goal matches an approved goal-scoped canonical chain.",
+          "details": {
+            "target_concept": "experience:contextual-representations",
+            "canonical_path": [
+              "experience:token-representations",
+              "experience:query-key-value",
+              "experience:self-attention",
+              "experience:contextual-representations"
+            ],
+            "mapping_method": "goal_chain_catalog",
+            "catalog_version": "full-experience-goal-catalog-v1"
+          }
+        },
+        "kg_path": {
+          "name": "kg_path",
+          "passed": true,
+          "reason": "Approved catalog path is ordered and acyclic.",
+          "details": {
+            "ordered_concepts": [
+              "experience:token-representations",
+              "experience:query-key-value",
+              "experience:self-attention",
+              "experience:contextual-representations"
+            ],
+            "acyclic": true,
+            "path_provenance": "goal_chain_catalog"
+          }
+        },
+        "resource_coverage": {
+          "name": "resource_coverage",
+          "passed": true,
+          "reason": "Approved page-level source and scoped teaching-asset bundle are available.",
+          "details": {
+            "source_id": "source:self-attention:cs224n-2026-transformers",
+            "page_count": 4,
+            "asset_manifest": "self_attention-assets-v1"
+          }
+        },
+        "content_generation": {
+          "name": "content_generation",
+          "passed": true,
+          "reason": "Uncached live lecture and live exercise generation completed.",
+          "details": {
+            "generation_mode": "live",
+            "cache_status": "miss",
+            "fallback_accepted": false,
+            "run_id": "admission-self_attention-3ca88033ca9e",
+            "failure_code": null,
+            "failure_reason": null,
+            "fallback_reason": null,
+            "exercise_generation_mode": "live",
+            "exercise_generation_reason": null
+          }
+        },
+        "grounding": {
+          "name": "grounding",
+          "passed": true,
+          "reason": "Schema and page/chunk provenance checks passed.",
+          "details": {
+            "source_refs": [
+              {
+                "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+                "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+                "page_number": 40,
+                "chunk_id": "sa-transformers-p40",
+                "evidence_locator": "sa-transformers-p40"
+              },
+              {
+                "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+                "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+                "page_number": 42,
+                "chunk_id": "sa-transformers-p42",
+                "evidence_locator": "sa-transformers-p42"
+              },
+              {
+                "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+                "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+                "page_number": 44,
+                "chunk_id": "sa-transformers-p44",
+                "evidence_locator": "sa-transformers-p44"
+              },
+              {
+                "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+                "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+                "page_number": 56,
+                "chunk_id": "sa-transformers-p56",
+                "evidence_locator": "sa-transformers-p56"
+              }
+            ],
+            "cache_status": "miss",
+            "errors": []
+          }
+        }
+      },
+      "failure_reasons": [],
+      "generated_at": "2026-08-15T08:48:01.367756+00:00",
+      "run_artifact": {
+        "selected_system_version": "v4",
+        "cache_status": "miss",
+        "generation_metadata": {
+          "generator_version": "source-grounded-v4-live-assets-v3",
+          "generation_mode": "live",
+          "prompt_version": "ml-education-expert-v2",
+          "content_model": "gpt-4.1-mini",
+          "live_timeout_seconds": 90.0,
+          "treatment_version": "dual-user-treatment-v1",
+          "generated_for_user_id": "evaluation-8e27b5ee-3926-4b63-884e-c89c805b5d96",
+          "profile_version": 1,
+          "source_link_version": "self-attention-source-v1",
+          "source_link_status": "indexed",
+          "isolated_from_v3": true,
+          "asset_manifest_version": "self_attention-assets-v1",
+          "asset_selection_count": 3,
+          "ready_sections": 1,
+          "total_sections": 1
+        },
+        "source_refs": [
+          {
+            "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+            "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+            "page_number": 40,
+            "chunk_id": "sa-transformers-p40",
+            "evidence_locator": "sa-transformers-p40"
+          },
+          {
+            "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+            "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+            "page_number": 42,
+            "chunk_id": "sa-transformers-p42",
+            "evidence_locator": "sa-transformers-p42"
+          },
+          {
+            "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+            "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+            "page_number": 44,
+            "chunk_id": "sa-transformers-p44",
+            "evidence_locator": "sa-transformers-p44"
+          },
+          {
+            "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+            "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+            "page_number": 56,
+            "chunk_id": "sa-transformers-p56",
+            "evidence_locator": "sa-transformers-p56"
+          }
+        ],
+        "core_content_output": {
+          "section_id": "admission-self_attention-3ca88033ca9e:core",
+          "concept_id": "experience:contextual-representations",
+          "concept_name": "Contextual Representations",
+          "title": "Contextual Representations",
+          "estimated_minutes": 15,
+          "source_links": [
+            {
+              "link_id": "admission:self_attention",
+              "concept_id": "experience:contextual-representations",
+              "concept_name": "Contextual Representations",
+              "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+              "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+              "document_title": "CS224N Lecture 5: Attention and Transformers",
+              "source_scope": "public",
+              "page_sequence": [
+                {
+                  "page_number": 40,
+                  "role": "self_attention_overview",
+                  "chunk_ids": [
+                    "sa-transformers-p40"
+                  ]
+                },
+                {
+                  "page_number": 42,
+                  "role": "query_key_value_mechanism",
+                  "chunk_ids": [
+                    "sa-transformers-p42"
+                  ]
+                },
+                {
+                  "page_number": 44,
+                  "role": "position_boundary",
+                  "chunk_ids": [
+                    "sa-transformers-p44"
+                  ]
+                },
+                {
+                  "page_number": 56,
+                  "role": "matrix_computation",
+                  "chunk_ids": [
+                    "sa-transformers-p56"
+                  ]
+                }
+              ],
+              "chunk_ids": [
+                "sa-transformers-p40",
+                "sa-transformers-p42",
+                "sa-transformers-p44",
+                "sa-transformers-p56"
+              ],
+              "review_status": "verified",
+              "source_version": "self-attention-source-v1",
+              "link_role": "primary",
+              "asset_concept_id": "experience:contextual-representations",
+              "asset_manifest_version": "self_attention-assets-v1"
+            }
+          ],
+          "source_pages": [
+            {
+              "page_number": 40,
+              "role": "self_attention_overview",
+              "text": "The building block we need: self attention • What we talked about – Cross attention: paying attention to the input x to generate 𝑦 𝑡 Attention wit output h n o itn e ttA n o itu b irtsid 𝑦ො4 n o itn e ttA se ro c s re dN oN cnR E il a m’ entarté <START> he hit me Source sentence (input) • What we need – Self attention: to generate 𝑦 , we need to pay attention to 𝑦 𝑡 <𝑡 41",
+              "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+              "document_title": "CS224N Lecture 5: Attention and Transformers",
+              "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:self_attention"
+            },
+            {
+              "page_number": 42,
+              "role": "query_key_value_mechanism",
+              "text": "Self-Attention: keys, queries, values from the same sequence Let 𝒘 be a sequence of words in vocabulary 𝑉, like Zuko made his uncle tea. 1:𝑛 𝑑×|𝑉| For each 𝒘 , let 𝒙 = 𝐸𝒘 , where 𝐸 ∈ ℝ is an embedding matrix. 𝑖 𝑖 𝒊 𝑑×𝑑 1. Transform each word embedding with weight matrices Q, K, V , each in ℝ 𝒒 = 𝑄𝒙 (queries) 𝒌 = 𝐾𝒙 (keys) 𝒗 = 𝑉𝒙 (values) 𝑖 𝒊 𝑖 𝒊 𝑖 𝒊 2. Compute pairwise similarities between keys and queries; normalize with softmax exp(𝒆 ) 𝑖𝑗 𝒆 = 𝒒 ⊤ 𝒌 𝜶 = 𝑖𝑗 𝒊 𝒋 𝑖𝑗 σ exp(𝒆 ) ′ 𝑗′ 𝑖𝑗 3. Compute output for each word as weighted sum of values 𝒐 = ෍ 𝜶 𝒗 𝑖 𝑖𝑗 𝒋 𝒋 43",
+              "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+              "document_title": "CS224N Lecture 5: Attention and Transformers",
+              "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:self_attention"
+            },
+            {
+              "page_number": 44,
+              "role": "position_boundary",
+              "text": "Fixing the first self-attention problem: sequence order • Since self-attention doesn’t build in order information, we need to encode the order of the sentence in our keys, queries, and values. • Consider representing each sequence index as a vector 𝑑 𝒑 ∈ ℝ , for 𝑖 ∈ {1,2, … , 𝑛} are position vectors 𝑖 • Don’t worry about what the 𝑝 are made of yet! 𝑖 • Easy to incorporate this info into our self-attention block: just add the 𝒑 to our inputs! 𝑖 • Recall that 𝒙 is the embedding of the word at index 𝑖. The positioned embedding is: 𝑖 In deep self-attention 𝒙෥ = 𝒙 + 𝒑 𝑖 𝑖 𝑖 networks, we do this at the first layer! You could concatenate them as well, but people mostly just add… 45",
+              "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+              "document_title": "CS224N Lecture 5: Attention and Transformers",
+              "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:self_attention"
+            },
+            {
+              "page_number": 56,
+              "role": "matrix_computation",
+              "text": "Sequence-Stacked form of Attention • Let’s look at how key-query-value attention is computed, in matrices. 𝑛×𝑑 • Let 𝑋 = 𝑥 ; … ; 𝑥 ∈ ℝ be the concatenation of input vectors. 1 𝑛 𝑛×𝑑 𝑛×𝑑 𝑛×𝑑 • First, note that 𝑋𝐾 ∈ ℝ , 𝑋𝑄 ∈ ℝ , 𝑋𝑉 ∈ ℝ . ⊤ 𝑛×𝑑 • The output is defined as output = softmax 𝑋𝑄 𝑋𝐾 𝑋𝑉 ∈∈ ℝ . First, take the query-key dot All pairs of products in one matrix = attention scores! 𝑋𝑄 𝑋𝑄𝐾⊤ 𝑋⊤ ⊤ multiplication: 𝑋𝑄 𝑋𝐾 𝐾⊤ 𝑋⊤ 𝑛×𝑛 ∈ ℝ Next, softmax, and compute the weighted softmax 𝑋𝑄𝐾⊤ 𝑋⊤ 𝑋𝑉 = average with another output ∈ ℝ𝑛×𝑑 matrix multiplication. 57",
+              "document_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+              "document_title": "CS224N Lecture 5: Attention and Transformers",
+              "resource_id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:self_attention"
+            }
+          ],
+          "retry_attempts": 0,
+          "max_retry_attempts": 3,
+          "teaching_asset_ids": [
+            "sa-contextual-representations-advanced-worked",
+            "sa-contextual-representations-visual",
+            "sa-contextual-representations-foundation-intuition"
+          ],
+          "asset_manifest_version": "self_attention-assets-v1",
+          "v4_status": "ready",
+          "generation_mode": "live",
+          "lecture_content": {
+            "concept_introduction": {
+              "hook": "How does a model understand the meaning of a word differently depending on the words around it, like deciding if \"bank\" means a riverbank or a financial institution?",
+              "explanation": "Contextual representations are vectors that represent each token in a sequence by incorporating information from other relevant tokens in that same sequence. Unlike static embeddings that assign a fixed vector to a word regardless of context, contextual representations dynamically update each token's vector based on its surroundings. This allows the model to capture nuanced meanings that depend on context, such as distinguishing between different senses of a word or understanding dependencies in a sentence. The core mechanism behind this is self-attention, which computes how much each token should attend to every other token in the sequence, weighting their contributions to form an updated, context-aware representation. These computations are done efficiently using matrix operations that produce attention scores between all tokens simultaneously, normalize these scores with softmax to create weights, and then combine the value vectors accordingly. Importantly, the model respects sequence order by adding positional information to the embeddings, ensuring that the representation reflects the token's position in the sequence. However, contextual representations are bounded by the tokens available and any masking rules applied; they do not have unrestricted access to all future tokens, preserving causality in tasks like language generation.",
+              "mechanism": [
+                "Start with input token embeddings combined with positional vectors to encode order.",
+                "Transform embeddings into queries, keys, and values using learned weight matrices Q, K, V.",
+                "Compute attention scores by taking the dot product of queries with keys for all token pairs.",
+                "Apply softmax to normalize these scores into attention weights for each query.",
+                "Use these weights to compute a weighted sum of the value vectors, producing updated token representations.",
+                "Repeat this process for all tokens in parallel using matrix multiplications, resulting in a contextualized output matrix."
+              ],
+              "boundaries": "Contextual representations rely on the tokens present in the input sequence and the masking applied. They cannot access tokens outside the allowed context, such as future tokens in autoregressive models. If masking or positional information changes, the contextual dependencies and resulting representations also change. Thus, the context is always limited to the visible tokens and their relative positions, preventing the model from seeing unrestricted or future information."
+            },
+            "prerequisite_recap": {
+              "title": "Self-Attention and Positional Encoding",
+              "explanation": "Self-attention computes relationships between tokens in the same sequence by generating queries, keys, and values from token embeddings. It calculates similarity scores between queries and keys, normalizes them with softmax to get attention weights, and uses these weights to combine values into new token representations. Since self-attention alone does not encode token order, positional vectors are added to embeddings to provide sequence order information.",
+              "example": "For example, in the sentence \"She hit him,\" each word embedding is combined with a positional vector indicating its position (first, second, third). Then, queries, keys, and values are computed, and attention weights determine how much each word attends to the others, producing context-aware vectors."
+            },
+            "intuition": "Think of each token as a person in a meeting trying to decide whether to say \"yes\" or \"no.\" Each person listens to others, weighing their opinions based on relevance and position in the conversation. The final opinion of each person (token) is a blend of their own view and the weighted views of others they pay attention to. This dynamic updating of opinions based on context is analogous to how contextual representations are formed through self-attention",
+            "worked_example": {
+              "problem": "State the representation, learned transformation, weighting step, and limitation in Contextual Representations for deciding whether to say \"yes\" or \"no\" based on previous words.",
+              "steps": [
+                "Each token starts as a vector embedding representing its initial meaning.",
+                "Using learned weight matrices Q, K, and V, each token's embedding is transformed into query, key, and value vectors.",
+                "Attention scores are computed by dot products between queries and keys, then normalized with softmax to produce weights.",
+                "Each token's contextual representation is the weighted sum of value vectors from tokens it attends to, reflecting context.",
+                "Masking ensures tokens only attend to allowed positions, e.g., past tokens in autoregressive models, limiting context access."
+              ],
+              "solution": "A contextual representation is a token vector updated by self-attention: queries, keys, and values are computed from embeddings; attention weights are calculated by normalized dot products of queries and keys; these weights weight the values to produce the updated vector. The limitation is that masking restricts which tokens can be attended to, so the representation only reflects accessible context, not the entire sequence freely.",
+              "why_it_works": "This works because the learned transformations Q, K, and V allow the model to project embeddings into spaces where similarity reflects contextual relevance. The softmax normalization ensures attention weights form a probability distribution, focusing on the most relevant tokens. Masking enforces causal or structural constraints, preserving sequence integrity. The weighted sum aggregates contextual information, producing a representation sensitive to the sequence context rather than isolated token meaning."
+            },
+            "common_mistake": "A common misconception is that a contextual representation for a token has unrestricted access to all tokens in the sequence, including future ones. This is false because masking rules, especially in autoregressive models, prevent attending to future tokens. Ignoring this leads to misunderstanding how models generate predictions step-by-step and can cause errors in interpreting attention outputs",
+            "summary_connection": {
+              "summary": "Contextual representations transform static token embeddings into dynamic, context-aware vectors by using self-attention to weight and combine information from relevant tokens in the sequence. This process depends on learned transformations, positional encoding, and masking rules that define the accessible context. Understanding this mechanism clarifies how models capture nuanced meanings and dependencies in language.",
+              "next_concept_bridge": "Next, we will explore how these contextual representations are combined across multiple layers and heads in transformer architectures to build even richer language understanding."
+            },
+            "math": {
+              "inline_math": [],
+              "display_math": [],
+              "matrix": null,
+              "derivation_steps": []
+            },
+            "objective_exercise": {
+              "instructions": "Answer the following questions about contextual representations in language models. Each question tests your understanding of how token vectors are updated using self-attention, the role of masking, and the boundaries of contextual information.",
+              "questions": [
+                {
+                  "question_id": "q1",
+                  "type": "single_choice",
+                  "question_type": "mechanism",
+                  "assessment_target_id": "target:contextual-representations:mechanism",
+                  "prompt": "In a sentence where the word \"bank\" appears, how does the model use self-attention to determine whether \"bank\" refers to a riverbank or a financial institution?",
+                  "correct_reasoning": "The model transforms each token's embedding into queries, keys, and values, then computes attention scores between the query for \"bank\" and keys of surrounding tokens. These scores are normalized to weights that highlight relevant context words (like \"river\" or \"money\"), which weight the value vectors to update the \"bank\" token's representation accordingly.",
+                  "source_refs": [
+                    "page:40",
+                    "page:42"
+                  ],
+                  "explanation": "Self-attention allows the model to weigh context tokens differently for each token. By computing dot products between queries and keys, the model identifies which surrounding words are relevant to \"bank\". The weighted sum of value vectors produces a context-aware vector that captures the appropriate sense of \"bank\".",
+                  "options": [
+                    {
+                      "id": "b",
+                      "text": "It computes attention scores between \"bank\"'s query and all other tokens' keys, normalizes these scores, and uses them to weight value vectors, updating \"bank\"'s vector to reflect context.",
+                      "correct": true,
+                      "feedback": "Correct. This describes the self-attention mechanism that produces context-sensitive token representations."
+                    },
+                    {
+                      "id": "a",
+                      "text": "It assigns a fixed vector to \"bank\" and ignores surrounding words, relying solely on the static embedding.",
+                      "correct": false,
+                      "feedback": "This ignores the core mechanism of contextual representations, which dynamically update token vectors based on context rather than using fixed embeddings."
+                    },
+                    {
+                      "id": "c",
+                      "text": "It averages the embeddings of all tokens in the sentence without weighting, producing a general context vector for \"bank\".",
+                      "correct": false,
+                      "feedback": "Averaging without weighting ignores the selective attention mechanism and fails to capture nuanced contextual relevance."
+                    }
+                  ],
+                  "concept_id": "experience:contextual-representations",
+                  "section_id": "admission-self_attention-3ca88033ca9e:core",
+                  "page_references": [
+                    40,
+                    42,
+                    44,
+                    56
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                },
+                {
+                  "question_id": "q2",
+                  "type": "single_choice",
+                  "question_type": "misconception_discrimination",
+                  "assessment_target_id": "target:contextual-representations:mechanism",
+                  "prompt": "A student claims that the contextual representation of a token always has access to every other token in the entire sequence, including future tokens. Why is this claim incorrect?",
+                  "correct_reasoning": "Masking rules, especially in autoregressive models, prevent tokens from attending to future tokens to preserve causality. Thus, the contextual representation is limited to accessible tokens defined by masking and positional constraints.",
+                  "source_refs": [
+                    "page:44",
+                    "page:56"
+                  ],
+                  "explanation": "Ignoring masking leads to misunderstanding how models generate predictions step-by-step. The model respects sequence order and masking to avoid using future information that would break causality in tasks like language generation.",
+                  "options": [
+                    {
+                      "id": "a",
+                      "text": "Because the model uses static embeddings that never change regardless of context.",
+                      "correct": false,
+                      "feedback": "Static embeddings do not capture context, but the question concerns contextual representations which do update dynamically."
+                    },
+                    {
+                      "id": "b",
+                      "text": "Because masking rules restrict attention so tokens cannot see future tokens, ensuring the representation only reflects allowed context.",
+                      "correct": true,
+                      "feedback": "Correct. Masking enforces causality by limiting accessible tokens during attention computation."
+                    },
+                    {
+                      "id": "c",
+                      "text": "Because the model only attends to tokens within a fixed window of three tokens around the current token.",
+                      "correct": false,
+                      "feedback": "While some models use fixed windows, the primary limitation discussed is masking, not a fixed window size."
+                    }
+                  ],
+                  "concept_id": "experience:contextual-representations",
+                  "section_id": "admission-self_attention-3ca88033ca9e:core",
+                  "page_references": [
+                    40,
+                    42,
+                    44,
+                    56
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                },
+                {
+                  "question_id": "q3",
+                  "type": "single_choice",
+                  "question_type": "application_or_boundary",
+                  "assessment_target_id": "target:contextual-representations:mechanism",
+                  "prompt": "If the positional encoding vectors are altered or removed from the input embeddings before computing self-attention, what is the most likely effect on the contextual representations?",
+                  "correct_reasoning": "Without positional encodings, the model loses information about token order, causing attention to treat tokens as a bag of words and resulting in representations that cannot distinguish sequence structure or dependencies.",
+                  "source_refs": [
+                    "page:42",
+                    "page:56"
+                  ],
+                  "explanation": "Positional information is crucial because self-attention alone is permutation-invariant. Removing it breaks the model's ability to capture order-dependent meanings and relationships, degrading the quality of contextual representations.",
+                  "options": [
+                    {
+                      "id": "a",
+                      "text": "The model will still produce accurate contextual representations because attention scores depend only on token content.",
+                      "correct": false,
+                      "feedback": "Attention scores depend on queries and keys, but without positional encodings, the model cannot differentiate token order, which is essential for context."
+                    },
+                    {
+                      "id": "c",
+                      "text": "The model will attend only to tokens at fixed positions, ignoring all others.",
+                      "correct": false,
+                      "feedback": "This describes a fixed attention pattern, which is unrelated to the absence of positional encodings."
+                    },
+                    {
+                      "id": "b",
+                      "text": "The model will produce representations that ignore token order, causing loss of sequence-dependent meaning and dependencies.",
+                      "correct": true,
+                      "feedback": "Correct. Positional encodings provide order information; without them, the model cannot capture sequence structure."
+                    }
+                  ],
+                  "concept_id": "experience:contextual-representations",
+                  "section_id": "admission-self_attention-3ca88033ca9e:core",
+                  "page_references": [
+                    40,
+                    42,
+                    44,
+                    56
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                }
+              ]
+            },
+            "learner_adaptation": {
+              "treatment_version": "dual-user-treatment-v1",
+              "profile_tier": "advanced",
+              "prior_knowledge_level": "advanced",
+              "explanation_density": "concise",
+              "example_mode": "balanced",
+              "practice_style": "independent",
+              "terminology_depth": "advanced",
+              "interest_usage": "scenario_only",
+              "example_context": "an everyday yes-or-no decision",
+              "preferred_examples": [],
+              "learning_style": "balanced",
+              "formula_support": "compact",
+              "checkpoint_density": "standard"
+            },
+            "page_walkthrough": [
+              {
+                "page_number": 40,
+                "what_to_notice": "The building block we need: self attention What we talked about Cross attention: paying attention to the input x to generate Attention wit output h n o itn e ttA n o itu b irtsid 4 n o itn e ttA se ro c s re dN oN cnR E il a m entart <START> he hit me Source sentence (input) What we need Self attention: to generate , we need to pay attention to < 41",
+                "explanation": "The building block we need: self attention What we talked about Cross attention: paying attention to the input x to generate Attention wit output h n o itn e ttA n o itu b irtsid 4 n o itn e ttA se ro c s re dN oN cnR E il a m entart <START> he hit me Source sentence (input) What we need Self attention: to generate , we need to pay attention to < 41",
+                "connection_to_previous": "This evidence establishes the core claim."
+              },
+              {
+                "page_number": 42,
+                "what_to_notice": "Self-Attention: keys, queries, values from the same sequence Let be a sequence of words in vocabulary , like Zuko made his uncle tea",
+                "explanation": "Self-Attention: keys, queries, values from the same sequence Let be a sequence of words in vocabulary , like Zuko made his uncle tea. 1: || For each , let = , where is an embedding matrix. Transform each word embedding with weight matrices Q, K, V , each in = (queries) = (keys) = (values) 2. Compute pairwise similarities between keys and queries; normalize with softmax exp( ) = = exp( ) 3",
+                "connection_to_previous": "This extends the evidence on page 40."
+              },
+              {
+                "page_number": 44,
+                "what_to_notice": "Fixing the first self-attention problem: sequence order Since self-attention doesnt build in order information, we need to encode the order of the sentence in our keys, queries, and values",
+                "explanation": "Fixing the first self-attention problem: sequence order Since self-attention doesnt build in order information, we need to encode the order of the sentence in our keys, queries, and values. Consider representing each sequence index as a vector , for {1,2, , } are position vectors Dont worry about what the are made of yet! Easy to incorporate this info into our self-attention block: just add the to our inputs! Recall that is the embedding of the word at index",
+                "connection_to_previous": "This extends the evidence on page 42."
+              },
+              {
+                "page_number": 56,
+                "what_to_notice": "Sequence-Stacked form of Attention Lets look at how key-query-value attention is computed, in matrices",
+                "explanation": "Sequence-Stacked form of Attention Lets look at how key-query-value attention is computed, in matrices. Let = ; ; be the concatenation of input vectors. 1 First, note that , , . The output is defined as output = softmax",
+                "connection_to_previous": "This extends the evidence on page 44."
+              }
+            ],
+            "key_terms": [
+              {
+                "term": "Contextual Representations",
+                "definition": "A contextual representation is a token vector updated using information from relevant positions in its sequence"
+              }
+            ]
+          },
+          "retryable": true,
+          "repair_pass_used": true,
+          "live_asset_repairs": [],
+          "exercise_generation_mode": "live",
+          "exercise_generation_reason": null
+        }
+      }
+    },
+    {
+      "goal_id": "rag",
+      "run_id": "admission-rag-189c906cdc7b",
+      "admission_version": "full-experience-admission-v1",
+      "goal": "Understand how retrieval-augmented generation uses retrieved evidence to answer a query.",
+      "status": "eligible_for_full_experience",
+      "eligible_for_full_experience": true,
+      "target_concept": "experience:retrieval-augmented-generation",
+      "checks": {
+        "goal_mapping": {
+          "name": "goal_mapping",
+          "passed": true,
+          "reason": "Goal matches an approved goal-scoped canonical chain.",
+          "details": {
+            "target_concept": "experience:retrieval-augmented-generation",
+            "canonical_path": [
+              "experience:document-collection",
+              "experience:retrieval",
+              "experience:retrieved-evidence",
+              "experience:retrieval-augmented-generation"
+            ],
+            "mapping_method": "goal_chain_catalog",
+            "catalog_version": "full-experience-goal-catalog-v1"
+          }
+        },
+        "kg_path": {
+          "name": "kg_path",
+          "passed": true,
+          "reason": "Approved catalog path is ordered and acyclic.",
+          "details": {
+            "ordered_concepts": [
+              "experience:document-collection",
+              "experience:retrieval",
+              "experience:retrieved-evidence",
+              "experience:retrieval-augmented-generation"
+            ],
+            "acyclic": true,
+            "path_provenance": "goal_chain_catalog"
+          }
+        },
+        "resource_coverage": {
+          "name": "resource_coverage",
+          "passed": true,
+          "reason": "Approved page-level source and scoped teaching-asset bundle are available.",
+          "details": {
+            "source_id": "source:rag:cs224n-2026-rag-agents",
+            "page_count": 4,
+            "asset_manifest": "rag-assets-v1"
+          }
+        },
+        "content_generation": {
+          "name": "content_generation",
+          "passed": true,
+          "reason": "Uncached live lecture and live exercise generation completed.",
+          "details": {
+            "generation_mode": "live_augmented",
+            "cache_status": "miss",
+            "fallback_accepted": false,
+            "run_id": "admission-rag-189c906cdc7b",
+            "failure_code": null,
+            "failure_reason": null,
+            "fallback_reason": null,
+            "exercise_generation_mode": "live",
+            "exercise_generation_reason": null
+          }
+        },
+        "grounding": {
+          "name": "grounding",
+          "passed": true,
+          "reason": "Schema and page/chunk provenance checks passed.",
+          "details": {
+            "source_refs": [
+              {
+                "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+                "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+                "page_number": 13,
+                "chunk_id": "rag-agents-p13",
+                "evidence_locator": "rag-agents-p13"
+              },
+              {
+                "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+                "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+                "page_number": 15,
+                "chunk_id": "rag-agents-p15",
+                "evidence_locator": "rag-agents-p15"
+              },
+              {
+                "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+                "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+                "page_number": 17,
+                "chunk_id": "rag-agents-p17",
+                "evidence_locator": "rag-agents-p17"
+              },
+              {
+                "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+                "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+                "page_number": 21,
+                "chunk_id": "rag-agents-p21",
+                "evidence_locator": "rag-agents-p21"
+              }
+            ],
+            "cache_status": "miss",
+            "errors": []
+          }
+        }
+      },
+      "failure_reasons": [],
+      "generated_at": "2026-08-15T08:48:27.687630+00:00",
+      "run_artifact": {
+        "selected_system_version": "v4",
+        "cache_status": "miss",
+        "generation_metadata": {
+          "generator_version": "source-grounded-v4-live-assets-v3",
+          "generation_mode": "live",
+          "prompt_version": "ml-education-expert-v2",
+          "content_model": "gpt-4.1-mini",
+          "live_timeout_seconds": 90.0,
+          "treatment_version": "dual-user-treatment-v1",
+          "generated_for_user_id": "evaluation-9ec9bebf-6ea4-4088-bce9-70fc5e59c742",
+          "profile_version": 1,
+          "source_link_version": "rag-source-v1",
+          "source_link_status": "indexed",
+          "isolated_from_v3": true,
+          "asset_manifest_version": "rag-assets-v1",
+          "asset_selection_count": 3,
+          "ready_sections": 1,
+          "total_sections": 1
+        },
+        "source_refs": [
+          {
+            "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+            "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+            "page_number": 13,
+            "chunk_id": "rag-agents-p13",
+            "evidence_locator": "rag-agents-p13"
+          },
+          {
+            "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+            "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+            "page_number": 15,
+            "chunk_id": "rag-agents-p15",
+            "evidence_locator": "rag-agents-p15"
+          },
+          {
+            "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+            "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+            "page_number": 17,
+            "chunk_id": "rag-agents-p17",
+            "evidence_locator": "rag-agents-p17"
+          },
+          {
+            "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+            "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+            "page_number": 21,
+            "chunk_id": "rag-agents-p21",
+            "evidence_locator": "rag-agents-p21"
+          }
+        ],
+        "core_content_output": {
+          "section_id": "admission-rag-189c906cdc7b:core",
+          "concept_id": "experience:retrieval-augmented-generation",
+          "concept_name": "Retrieval-Augmented Generation",
+          "title": "Retrieval-Augmented Generation",
+          "estimated_minutes": 15,
+          "source_links": [
+            {
+              "link_id": "admission:rag",
+              "concept_id": "experience:retrieval-augmented-generation",
+              "concept_name": "Retrieval-Augmented Generation",
+              "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+              "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+              "document_title": "CS224N Lecture 10: RAG and Language Agents",
+              "source_scope": "public",
+              "page_sequence": [
+                {
+                  "page_number": 13,
+                  "role": "retrieval_augmentation",
+                  "chunk_ids": [
+                    "rag-agents-p13"
+                  ]
+                },
+                {
+                  "page_number": 15,
+                  "role": "retriever_reader_protocol",
+                  "chunk_ids": [
+                    "rag-agents-p15"
+                  ]
+                },
+                {
+                  "page_number": 17,
+                  "role": "retrieval_method_boundary",
+                  "chunk_ids": [
+                    "rag-agents-p17"
+                  ]
+                },
+                {
+                  "page_number": 21,
+                  "role": "generation_with_retrieved_passages",
+                  "chunk_ids": [
+                    "rag-agents-p21"
+                  ]
+                }
+              ],
+              "chunk_ids": [
+                "rag-agents-p13",
+                "rag-agents-p15",
+                "rag-agents-p17",
+                "rag-agents-p21"
+              ],
+              "review_status": "verified",
+              "source_version": "rag-source-v1",
+              "link_role": "primary",
+              "asset_concept_id": "experience:retrieval-augmented-generation",
+              "asset_manifest_version": "rag-assets-v1"
+            }
+          ],
+          "source_pages": [
+            {
+              "page_number": 13,
+              "role": "retrieval_augmentation",
+              "text": "Retrieval augmentation How many of Warsaw's inhabitants spoke Polish in 1933? Document Document Retriever Reader 833,500 https://github.com/facebookresearch/DrQA Chen et al., 2017. Reading Wikipedia to Answer Open-domain Questions 13",
+              "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+              "document_title": "CS224N Lecture 10: RAG and Language Agents",
+              "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:rag"
+            },
+            {
+              "page_number": 15,
+              "role": "retriever_reader_protocol",
+              "text": "Retriever-Reader framework • Input: a large collection of documents 𝒟 = 𝐷 , 𝐷 , … , 𝐷 and 𝑄 1 2 𝑁 • Output: an answer string 𝐴 Retriever: 𝑓(𝒟, 𝑄) ⟶ 𝑃 , … , 𝑃 K is pre-defined (e.g., 100) 1 𝐾 Reader: 𝑔(𝑄, {𝑃 , … , 𝑃 }) ⟶ 𝐴 A reading comprehension problem! 1 𝐾 Retriever = A standard TF-IDF information-retrieval sparse model (a fixed module) Reader = a neural reading comprehension model • Could be Trained on SQuAD and other distantly-supervised QA datasets • Or a zero-shot LLM (ChatGPT etc)",
+              "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+              "document_title": "CS224N Lecture 10: RAG and Language Agents",
+              "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:rag"
+            },
+            {
+              "page_number": 17,
+              "role": "retrieval_method_boundary",
+              "text": "Different types of retrievers How should we retrieve relevant passages for our retrieval system? ● Word-overlap (BM25) ● Vector retrieval (DPR, Sentence vectors) ● Other, neural systems (ColBERT)",
+              "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+              "document_title": "CS224N Lecture 10: RAG and Language Agents",
+              "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:rag"
+            },
+            {
+              "page_number": 21,
+              "role": "generation_with_retrieved_passages",
+              "text": "Deep retrieval + generative models • Recent work shows that it is beneficial to generate answers instead of to extract answers. Fusion-in-decoder (FID)=DPR+T5 Izacardand Grave 2020. Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering 21",
+              "document_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+              "document_title": "CS224N Lecture 10: RAG and Language Agents",
+              "resource_id": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+              "source_scope": "public",
+              "link_role": "primary",
+              "link_id": "admission:rag"
+            }
+          ],
+          "retry_attempts": 0,
+          "max_retry_attempts": 3,
+          "teaching_asset_ids": [
+            "rag-retrieval-augmented-generation-advanced-worked",
+            "rag-retrieval-augmented-generation-visual",
+            "rag-retrieval-augmented-generation-foundation-intuition"
+          ],
+          "asset_manifest_version": "rag-assets-v1",
+          "v4_status": "ready",
+          "generation_mode": "live_augmented",
+          "lecture_content": {
+            "concept_introduction": {
+              "hook": "Imagine you want to answer a yes-or-no question about a topic you don't fully remember, like whether a certain city had a specific population speaking a language in a given year.",
+              "explanation": "Retrieval-Augmented Generation (RAG) is a method that improves answer accuracy by combining a generative language model with relevant information retrieved from an external document collection. Instead of relying solely on the model's internal knowledge, RAG first retrieves passages related to the query and then generates an answer conditioned on those passages. This approach allows the system to ground its responses in actual evidence, making answers more reliable and traceable. However, the quality of the answer depends on the retrieval step; if the retrieved passages are irrelevant or incomplete, the generated answer may be inaccurate or unverifiable.",
+              "mechanism": [
+                "First, the system receives a query and accesses a large external corpus of documents.",
+                "Next, a retriever module selects a predefined number of passages from the corpus that are most relevant to the query, often using methods like TF-IDF or neural vector similarity.",
+                "Then, a generator module, typically a neural language model, conditions its answer generation on both the query and the retrieved passages, producing a fluent and evidence-grounded response.",
+                "Finally, the generated answer can be traced back to the retrieved passages, allowing verification of the evidence supporting the answer."
+              ],
+              "boundaries": "RAG applies when an external corpus is available and the goal is to generate answers grounded in evidence rather than purely from parametric memory. It fails or weakens when retrieval recall is low, the corpus is incomplete, or the context window for conditioning the generator is too small to include all relevant passages. In such cases, the answer may be fluent but unsupported or incorrect, requiring careful verification against the retrieved text."
+            },
+            "prerequisite_recap": {
+              "title": "Retriever-Reader Framework",
+              "explanation": "Before understanding RAG, you should know the Retriever-Reader framework, where a retriever selects relevant documents from a large collection, and a reader model processes these documents along with the query to produce an answer. The retriever often uses sparse methods like TF-IDF or dense vector retrieval, while the reader is a neural model trained for reading comprehension.",
+              "example": "For example, given a question about Warsaw's population in 1933, the retriever finds Wikipedia passages mentioning Warsaw and Polish speakers, and the reader extracts or generates the answer from those passages."
+            },
+            "intuition": "Think of RAG as a two-step process: first, like searching a library for the most relevant books or articles about your question, and second, like writing an answer based on the information you found. The retriever acts as your librarian, selecting the best sources, and the generator acts as your writer, crafting a coherent answer grounded in those sources. This combination leverages both external knowledge and language generation capabilities",
+            "worked_example": {
+              "problem": "Trace how RAG answers the question: \"Did Warsaw have a majority of Polish speakers in 1933?\" Identify the retrieved evidence, the generation condition, and the failure boundary.",
+              "steps": [
+                "The retriever searches a large document collection and selects passages mentioning Warsaw's demographics in 1933, such as Wikipedia excerpts.",
+                "The generator receives the query and the retrieved passages, then generates an answer conditioned on this evidence, e.g., \"Yes, most inhabitants spoke Polish.\"",
+                "If the retriever misses relevant passages or retrieves unrelated content, the generator might produce an answer not supported by evidence, marking the failure boundary."
+              ],
+              "solution": "RAG answers by first retrieving relevant passages about Warsaw's 1933 population, then generating a response conditioned on those passages. The evidence is the retrieved text, the generation condition is the query plus retrieved passages, and the failure boundary occurs when retrieval fails to find relevant evidence, causing unsupported or incorrect answers.",
+              "why_it_works": "This works because the generator relies on concrete, retrieved information rather than only its internal parameters, enabling traceable and evidence-based answers. The retriever ensures relevant context is available, and the generator integrates this context fluently."
+            },
+            "common_mistake": "A common mistake is to assume that the generator alone produces the answer without considering the retrieval step. This leads to overestimating the model's parametric knowledge and ignoring that the quality and correctness of the answer depend heavily on the retrieved passages. Without relevant retrieval, the generated answer may be fluent but factually incorrect or unverifiable",
+            "summary_connection": {
+              "summary": "Retrieval-Augmented Generation enhances answer quality by combining retrieval of relevant evidence with generative models conditioned on that evidence. It builds on the Retriever-Reader framework by generating answers rather than extracting them, providing traceable and grounded responses. However, its reliability depends on effective retrieval and sufficient context size.",
+              "next_concept_bridge": "Understanding RAG sets the stage for exploring how different retrieval methods, like BM25 or dense vector retrieval, impact the quality and reliability of generated answers."
+            },
+            "math": {
+              "inline_math": [],
+              "display_math": [],
+              "matrix": null,
+              "derivation_steps": []
+            },
+            "objective_exercise": {
+              "instructions": "Answer the following questions about Retrieval-Augmented Generation (RAG) based on the provided lesson. Each question tests your understanding of the mechanism, common misconceptions, and boundary conditions of RAG in realistic scenarios.",
+              "questions": [
+                {
+                  "question_id": "q1",
+                  "type": "single_choice",
+                  "question_type": "mechanism",
+                  "assessment_target_id": "target:retrieval-augmented-generation:mechanism",
+                  "prompt": "Imagine you ask a RAG system, \"Did Warsaw have a majority of Polish speakers in 1933?\" Which step best explains how the system produces its final answer?",
+                  "correct_reasoning": "The system first retrieves relevant passages about Warsaw's demographics in 1933, then the generator conditions its answer on both the query and these passages, producing a grounded response.",
+                  "source_refs": [
+                    "page:13",
+                    "page:15",
+                    "page:17"
+                  ],
+                  "explanation": "RAG relies on retrieving relevant evidence before generating an answer. The retriever finds passages related to the query, and the generator uses those passages plus the query to produce a fluent, evidence-based answer.",
+                  "options": [
+                    {
+                      "id": "b",
+                      "text": "The system first retrieves relevant passages about Warsaw's 1933 population, then the generator creates an answer conditioned on both the query and these passages.",
+                      "correct": true,
+                      "feedback": "Correct. This two-step process—retrieval followed by generation conditioned on evidence—is the core mechanism of RAG."
+                    },
+                    {
+                      "id": "a",
+                      "text": "The generator produces an answer solely from its internal knowledge without using retrieved documents.",
+                      "correct": false,
+                      "feedback": "Incorrect. The generator conditions its answer on retrieved passages, not just internal knowledge, to ensure evidence grounding."
+                    },
+                    {
+                      "id": "c",
+                      "text": "The system generates multiple answers and then selects the one most similar to retrieved passages.",
+                      "correct": false,
+                      "feedback": "Incorrect. RAG generates a single answer conditioned on retrieved passages rather than generating multiple answers and selecting among them."
+                    }
+                  ],
+                  "concept_id": "experience:retrieval-augmented-generation",
+                  "section_id": "admission-rag-189c906cdc7b:core",
+                  "page_references": [
+                    13,
+                    15,
+                    17,
+                    21
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                },
+                {
+                  "question_id": "q2",
+                  "type": "single_choice",
+                  "question_type": "misconception_discrimination",
+                  "assessment_target_id": "target:retrieval-augmented-generation:mechanism",
+                  "prompt": "A colleague claims that the generator alone is responsible for the correctness of RAG's answers because it is a powerful language model. What is the key flaw in this reasoning?",
+                  "correct_reasoning": "The answer's correctness depends heavily on the relevance and completeness of the retrieved passages; the generator cannot compensate for poor or missing retrieval.",
+                  "source_refs": [
+                    "page:13",
+                    "page:21"
+                  ],
+                  "explanation": "While the generator produces fluent answers, it relies on the retrieved evidence to be accurate and relevant. Ignoring the retrieval step leads to overestimating the model's parametric knowledge and risks unsupported or incorrect answers.",
+                  "options": [
+                    {
+                      "id": "a",
+                      "text": "The generator cannot produce fluent answers without retrieval.",
+                      "correct": false,
+                      "feedback": "Incorrect. The generator can produce fluent text, but fluency alone does not guarantee correctness without relevant retrieval."
+                    },
+                    {
+                      "id": "b",
+                      "text": "The generator depends on retrieved passages for evidence; without relevant retrieval, answers may be fluent but factually incorrect or unverifiable.",
+                      "correct": true,
+                      "feedback": "Correct. The retrieval step is essential for grounding answers in evidence, making the generator's output reliable."
+                    },
+                    {
+                      "id": "c",
+                      "text": "The generator can verify the correctness of retrieved passages internally, so retrieval quality is less important.",
+                      "correct": false,
+                      "feedback": "Incorrect. The generator does not verify retrieval correctness internally; it conditions on what is retrieved, so retrieval quality directly impacts answer accuracy."
+                    }
+                  ],
+                  "concept_id": "experience:retrieval-augmented-generation",
+                  "section_id": "admission-rag-189c906cdc7b:core",
+                  "page_references": [
+                    13,
+                    15,
+                    17,
+                    21
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                },
+                {
+                  "question_id": "q3",
+                  "type": "single_choice",
+                  "question_type": "application_or_boundary",
+                  "assessment_target_id": "target:retrieval-augmented-generation:mechanism",
+                  "prompt": "Suppose a RAG system is used to answer a question, but the retrieval module only returns unrelated passages and the context window for the generator is too small to include all relevant evidence. What is the most likely outcome?",
+                  "correct_reasoning": "The generated answer will likely be fluent but unsupported or incorrect because the generator lacks relevant evidence to condition on, demonstrating a failure boundary of RAG.",
+                  "source_refs": [
+                    "page:17",
+                    "page:21"
+                  ],
+                  "explanation": "RAG's reliability depends on effective retrieval and sufficient context size. When retrieval recall is low or context is too limited, the generator cannot ground its answer properly, risking unsupported or inaccurate responses.",
+                  "options": [
+                    {
+                      "id": "a",
+                      "text": "The system will produce a fully accurate and evidence-grounded answer despite missing relevant passages.",
+                      "correct": false,
+                      "feedback": "Incorrect. Without relevant evidence, the answer may be fluent but is unlikely to be accurate or verifiable."
+                    },
+                    {
+                      "id": "c",
+                      "text": "The system will refuse to answer if retrieval fails or context is insufficient.",
+                      "correct": false,
+                      "feedback": "Incorrect. Most RAG systems still generate an answer based on whatever is retrieved, even if irrelevant, rather than refusing to answer."
+                    },
+                    {
+                      "id": "b",
+                      "text": "The generated answer will be fluent but may be unsupported or incorrect due to poor retrieval and limited context size.",
+                      "correct": true,
+                      "feedback": "Correct. This scenario illustrates a failure boundary where RAG cannot guarantee answer correctness without relevant retrieval and sufficient context."
+                    }
+                  ],
+                  "concept_id": "experience:retrieval-augmented-generation",
+                  "section_id": "admission-rag-189c906cdc7b:core",
+                  "page_references": [
+                    13,
+                    15,
+                    17,
+                    21
+                  ],
+                  "generator_version": "source-grounded-v4-live-assets-v3",
+                  "supporting_explanation_ids": [
+                    "core_idea",
+                    "page_walkthrough",
+                    "worked_example"
+                  ]
+                }
+              ]
+            },
+            "learner_adaptation": {
+              "treatment_version": "dual-user-treatment-v1",
+              "profile_tier": "advanced",
+              "prior_knowledge_level": "advanced",
+              "explanation_density": "concise",
+              "example_mode": "balanced",
+              "practice_style": "independent",
+              "terminology_depth": "advanced",
+              "interest_usage": "scenario_only",
+              "example_context": "an everyday yes-or-no decision",
+              "preferred_examples": [],
+              "learning_style": "balanced",
+              "formula_support": "compact",
+              "checkpoint_density": "standard"
+            },
+            "page_walkthrough": [
+              {
+                "page_number": 13,
+                "what_to_notice": "Retrieval augmentation How many of Warsaw's inhabitants spoke Polish in 1933? Document Document Retriever Reader 833,500 https://github.com/facebookresearch/DrQA Chen et al., 2017",
+                "explanation": "Retrieval augmentation How many of Warsaw's inhabitants spoke Polish in 1933? Document Document Retriever Reader 833,500 https://github.com/facebookresearch/DrQA Chen et al., 2017. Reading Wikipedia to Answer Open-domain Questions 13",
+                "connection_to_previous": "This evidence establishes the core claim."
+              },
+              {
+                "page_number": 15,
+                "what_to_notice": "Retriever-Reader framework Input: a large collection of documents = , , , and 1 2 Output: an answer string Retriever: (, ) , , K is pre-defined (e.g., 100) 1 Reader: (, { , , }) A reading comprehension problem! 1 Retriever = A standard TF-IDF information-retrieval sparse model (a fixed module) Reader = a neural reading comprehension model Could be Trained on SQuAD and other distantly-supervised QA datasets Or a zero-shot LLM (ChatGPT etc)",
+                "explanation": "Retriever-Reader framework Input: a large collection of documents = , , , and 1 2 Output: an answer string Retriever: (, ) , , K is pre-defined (e.g., 100) 1 Reader: (, { , , }) A reading comprehension problem! 1 Retriever = A standard TF-IDF information-retrieval sparse model (a fixed module) Reader = a neural reading comprehension model Could be Trained on SQuAD and other distantly-supervised QA datasets Or a zero-shot LLM (ChatGPT etc)",
+                "connection_to_previous": "This extends the evidence on page 13."
+              },
+              {
+                "page_number": 17,
+                "what_to_notice": "Different types of retrievers How should we retrieve relevant passages for our retrieval system? Word-overlap (BM25) Vector retrieval (DPR, Sentence vectors) Other, neural systems (ColBERT)",
+                "explanation": "Different types of retrievers How should we retrieve relevant passages for our retrieval system? Word-overlap (BM25) Vector retrieval (DPR, Sentence vectors) Other, neural systems (ColBERT)",
+                "connection_to_previous": "This extends the evidence on page 15."
+              },
+              {
+                "page_number": 21,
+                "what_to_notice": "Deep retrieval + generative models Recent work shows that it is beneficial to generate answers instead of to extract answers",
+                "explanation": "Deep retrieval + generative models Recent work shows that it is beneficial to generate answers instead of to extract answers. Fusion-in-decoder (FID)=DPR+T5 Izacardand Grave 2020. Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering 21",
+                "connection_to_previous": "This extends the evidence on page 17."
+              }
+            ],
+            "key_terms": [
+              {
+                "term": "Retrieval-Augmented Generation",
+                "definition": "Retrieval-augmented generation answers a query by combining a generator with evidence retrieved from an external corpus"
+              }
+            ]
+          },
+          "retryable": true,
+          "repair_pass_used": false,
+          "live_asset_repairs": [
+            "page_walkthrough",
+            "key_terms",
+            "objective_exercise"
+          ],
+          "exercise_generation_mode": "live",
+          "exercise_generation_reason": null
+        }
+      }
+    }
+  ],
+  "summary": {
+    "eligible_for_full_experience": 4,
+    "planning_only": 0,
+    "blocked": 0
+  }
+}

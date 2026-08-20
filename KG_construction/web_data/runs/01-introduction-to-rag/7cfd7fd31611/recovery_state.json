@@ -1,0 +1,15 @@
+{
+  "run_id": "01-introduction-to-rag-7cfd7fd31611",
+  "can_resume": false,
+  "last_failed_stage": null,
+  "next_resume_stage": null,
+  "completed_stages": [
+    "stage1",
+    "stage2a",
+    "stage2b",
+    "stage2c",
+    "stage3",
+    "stage4"
+  ],
+  "updated_at": "2026-07-22T04:03:56+08:00"
+}

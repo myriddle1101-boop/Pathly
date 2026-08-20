@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Predictors",
+      "to": "Regression",
+      "relation_type": "strong_prerequisite",
+      "reason": "Regression models an outcome using one or more predictor variables."
+    },
+    {
+      "from": "Predictors",
+      "to": "Regression Trees",
+      "relation_type": "strong_prerequisite",
+      "reason": "Regression trees split on input predictors to predict a continuous outcome."
+    }
+  ]
+}

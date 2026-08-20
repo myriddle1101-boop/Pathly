@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-07">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Language Models" label="Language Models">
+        <attvalues>
+          <attvalue for="0" value="Statistical models that predict the probability of sequences of words." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Language Modeling&quot;, &quot;description&quot;: &quot;The process of developing models to understand and generate human language.&quot;}, {&quot;name&quot;: &quot;Neural Language Models&quot;, &quot;description&quot;: &quot;Language models that utilize neural networks for improved performance.&quot;}, {&quot;name&quot;: &quot;Evaluating Language Models&quot;, &quot;description&quot;: &quot;Methods for assessing the effectiveness of language models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of probability and statistics, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;N-grams&quot;, &quot;Neural Language Models&quot;]" />
+          <attvalue for="7" value="[&quot;Language models understand language like humans do.&quot;, &quot;All language models are based on deep learning.&quot;]" />
+          <attvalue for="8" value="[&quot;Text generation&quot;, &quot;Sentiment analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain, used for various machine learning tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Neural Architectures&quot;, &quot;description&quot;: &quot;Different structures and configurations of neural networks.&quot;}, {&quot;name&quot;: &quot;Training Neural Networks&quot;, &quot;description&quot;: &quot;The process of adjusting network weights based on data.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing error.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Machine Translation" label="Machine Translation">
+        <attvalues>
+          <attvalue for="0" value="The task of automatically translating text from one language to another." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Neural Machine Translation&quot;, &quot;description&quot;: &quot;Machine translation that uses neural networks for better accuracy.&quot;}, {&quot;name&quot;: &quot;Translation Evaluation&quot;, &quot;description&quot;: &quot;Metrics and methods for assessing translation quality.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and machine learning principles." />
+          <attvalue for="6" value="[&quot;Neural Machine Translation&quot;, &quot;Statistical Machine Translation&quot;]" />
+          <attvalue for="7" value="[&quot;Machine translation is always accurate.&quot;, &quot;Translation quality is the same for all languages.&quot;]" />
+          <attvalue for="8" value="[&quot;Real-time translation apps&quot;, &quot;Localization of software and websites&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Sequence Models" label="Sequence Models">
+        <attvalues>
+          <attvalue for="0" value="Models designed to handle sequential data, such as time series or text." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Recurrent Neural Networks (RNNs)&quot;, &quot;description&quot;: &quot;A type of neural network specifically designed for sequence prediction.&quot;}, {&quot;name&quot;: &quot;Sequence Generation&quot;, &quot;description&quot;: &quot;The process of creating sequences, such as text or time series.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and linear algebra." />
+          <attvalue for="6" value="[&quot;Recurrent Neural Networks (RNNs)&quot;, &quot;Long Short-Term Memory (LSTM)&quot;, &quot;Gated Recurrent Units (GRUs)&quot;, &quot;Sequence-to-Sequence Models&quot;]" />
+          <attvalue for="7" value="[&quot;Sequence models can only be used for time series data.&quot;, &quot;All sequence models are the same.&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing (NLP)&quot;, &quot;Speech Recognition&quot;, &quot;Stock Price Prediction&quot;, &quot;Video Analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Gradient Issues" label="Gradient Issues">
+        <attvalues>
+          <attvalue for="0" value="Challenges related to the computation of gradients in neural networks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Vanishing Gradient&quot;, &quot;description&quot;: &quot;A problem where gradients become too small for effective learning.&quot;}, {&quot;name&quot;: &quot;Exploding Gradient&quot;, &quot;description&quot;: &quot;A problem where gradients become excessively large, destabilizing training.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and neural networks." />
+          <attvalue for="6" value="[&quot;Vanishing Gradients&quot;, &quot;Exploding Gradients&quot;]" />
+          <attvalue for="7" value="[&quot;Gradients are always positive&quot;, &quot;Gradient issues only occur in deep networks&quot;]" />
+          <attvalue for="8" value="[&quot;Improving training stability&quot;, &quot;Enhancing model performance in deep learning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods and strategies for effectively training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual outcomes.&quot;}, {&quot;name&quot;: &quot;Regularization Techniques&quot;, &quot;description&quot;: &quot;Methods to prevent overfitting during model training.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting and Underfitting&quot;, &quot;Cross-Validation&quot;, &quot;Hyperparameter Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Training and testing data can be mixed&quot;, &quot;Complex models are always better&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Predictive analytics&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Language Processing" label="Language Processing">
+        <attvalues>
+          <attvalue for="0" value="Techniques and methods for analyzing and understanding human language." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Natural Language Processing&quot;, &quot;description&quot;: &quot;The field focused on the interaction between computers and human language.&quot;}, {&quot;name&quot;: &quot;Language Use&quot;, &quot;description&quot;: &quot;The study of how language is utilized in various contexts.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Sentiment Analysis&quot;]" />
+          <attvalue for="7" value="[&quot;Language processing is only about translation.&quot;, &quot;All language processing tasks require deep learning.&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots&quot;, &quot;Text classification&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Techniques for assessing the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Perplexity&quot;, &quot;description&quot;: &quot;A measurement of how well a probability model predicts a sample.&quot;}, {&quot;name&quot;: &quot;Metrics for Language Models&quot;, &quot;description&quot;: &quot;Specific metrics used to evaluate the performance of language models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;ROC Curve&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern if the accuracy is high.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating classification models in healthcare.&quot;, &quot;Assessing predictive models in finance.&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Sparsity Problems" label="Sparsity Problems">
+        <attvalues>
+          <attvalue for="0" value="Challenges related to the sparsity of data or model parameters in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Sparsity in Neural Networks&quot;, &quot;description&quot;: &quot;The issue of having many zero weights in a neural network.&quot;}, {&quot;name&quot;: &quot;Addressing Sparsity&quot;, &quot;description&quot;: &quot;Techniques to mitigate the effects of sparsity in models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and statistics, familiarity with machine learning concepts." />
+          <attvalue for="6" value="[&quot;Sparse Data Representation&quot;, &quot;Regularization Techniques&quot;]" />
+          <attvalue for="7" value="[&quot;Sparsity only refers to data, not model parameters&quot;, &quot;Sparser models are always better&quot;]" />
+          <attvalue for="8" value="[&quot;Feature selection in high-dimensional datasets&quot;, &quot;Compressed sensing in signal processing&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Neural Networks" target="Language Models" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Language models often utilize neural networks for their implementation." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Machine Translation" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Machine translation systems frequently rely on neural network architectures." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Gradient Issues" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding neural networks is crucial to address gradient issues." />
+        </attvalues>
+      </edge>
+      <edge source="Sequence Models" target="Language Models" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Language models are a type of sequence model focused on word sequences." />
+        </attvalues>
+      </edge>
+      <edge source="Training Techniques" target="Model Evaluation" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Effective training techniques are essential for proper model evaluation." />
+        </attvalues>
+      </edge>
+      <edge source="Language Processing" target="Machine Translation" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Language processing techniques are foundational for machine translation." />
+        </attvalues>
+      </edge>
+      <edge source="Model Evaluation" target="Training Techniques" id="6">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7686" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

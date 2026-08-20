@@ -1,0 +1,163 @@
+{
+  "nodes": [
+    {
+      "id": "Convolutional Networks",
+      "description": "A class of deep neural networks primarily used for processing structured grid data such as images.",
+      "sub_topics": "[{\"name\": \"Convolutional Layer\", \"description\": \"The layer in a convolutional network that applies convolution operations to the input.\"}, {\"name\": \"Convolution Kernel\", \"description\": \"A filter used in convolutional layers to extract features from input data.\"}, {\"name\": \"Pooling\", \"description\": \"A down-sampling operation that reduces the spatial dimensions of the input.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and linear algebra.",
+      "key_sub_concepts": "[\"Convolutional layers\", \"Pooling layers\", \"Activation functions\", \"Fully connected layers\"]",
+      "common_misconceptions": "[\"Convolutional networks only work for images\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image classification\", \"Object detection\", \"Facial recognition\", \"Medical image analysis\"]"
+    },
+    {
+      "id": "Matrices",
+      "description": "Mathematical structures used to represent data and perform operations in machine learning.",
+      "sub_topics": "[{\"name\": \"Matrix Multiplication\", \"description\": \"An operation that produces a new matrix from two matrices.\"}, {\"name\": \"Matrix Transpose\", \"description\": \"An operation that flips a matrix over its diagonal.\"}, {\"name\": \"Sparse Matrices\", \"description\": \"Matrices in which most elements are zero, often used in machine learning.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of algebra and functions.",
+      "key_sub_concepts": "[\"Matrix addition and subtraction\", \"Matrix multiplication\", \"Determinants and inverses\", \"Eigenvalues and eigenvectors\"]",
+      "common_misconceptions": "[\"All matrices can be multiplied regardless of their dimensions\", \"Matrix operations are commutative\"]",
+      "practical_applications": "[\"Data representation in machine learning\", \"Transformations in computer graphics\", \"Solving systems of linear equations\", \"Principal Component Analysis (PCA)\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain, consisting of interconnected neurons.",
+      "sub_topics": "[{\"name\": \"Activation Function\", \"description\": \"A function that determines the output of a neuron based on its input.\"}, {\"name\": \"Backpropagation\", \"description\": \"An algorithm for training neural networks by minimizing the error.\"}, {\"name\": \"Deep Learning\", \"description\": \"A subset of machine learning that uses neural networks with many layers.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Learning Algorithms",
+      "description": "Procedures used to train models and make predictions based on data.",
+      "sub_topics": "[{\"name\": \"Supervised Learning\", \"description\": \"A type of learning where the model is trained on labeled data.\"}, {\"name\": \"Unsupervised Learning\", \"description\": \"A type of learning where the model finds patterns in unlabeled data.\"}, {\"name\": \"Reinforcement Learning\", \"description\": \"A type of learning where an agent learns to make decisions by receiving rewards.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\"]",
+      "common_misconceptions": "[\"All algorithms work the same for every problem\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image recognition\", \"Predictive analytics\"]"
+    },
+    {
+      "id": "Feature Learning",
+      "description": "The process of automatically discovering the representations needed for feature detection or classification.",
+      "sub_topics": "[{\"name\": \"Learned Filters\", \"description\": \"Filters that are optimized during training to extract relevant features.\"}, {\"name\": \"Invariances\", \"description\": \"Properties that remain unchanged under certain transformations.\"}, {\"name\": \"Local Connections\", \"description\": \"Connections in neural networks that are limited to a local region of the input.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and linear algebra.",
+      "key_sub_concepts": "[\"Representation Learning\", \"Deep Learning\"]",
+      "common_misconceptions": "[\"Feature learning is only for deep learning models.\", \"Feature learning eliminates the need for domain knowledge.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Training Techniques",
+      "description": "Methods and strategies used to improve the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Loss Function\", \"description\": \"A function that measures the difference between predicted and actual outcomes.\"}, {\"name\": \"Regularization\", \"description\": \"Techniques used to prevent overfitting in machine learning models.\"}, {\"name\": \"Gradient Descent\", \"description\": \"An optimization algorithm used to minimize the loss function.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Cross-validation\", \"Regularization\", \"Hyperparameter tuning\", \"Data augmentation\"]",
+      "common_misconceptions": "[\"More data always leads to better performance\", \"Overfitting only occurs with complex models\"]",
+      "practical_applications": "[\"Improving model accuracy\", \"Reducing overfitting\", \"Enhancing generalization to unseen data\"]"
+    },
+    {
+      "id": "Data Representation",
+      "description": "The way data is structured and formatted for processing in machine learning.",
+      "sub_topics": "[{\"name\": \"Vectors\", \"description\": \"Ordered arrays of numbers used to represent data points.\"}, {\"name\": \"Tensors\", \"description\": \"Generalized arrays that can represent data in multiple dimensions.\"}, {\"name\": \"Pixel Labeling\", \"description\": \"The process of assigning labels to individual pixels in an image.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of data types and structures, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Data types (numerical, categorical)\", \"Data normalization and scaling\", \"Feature encoding (one-hot, label encoding)\", \"Data formats (CSV, JSON, etc.)\"]",
+      "common_misconceptions": "[\"All data can be used directly without preprocessing\", \"Data representation does not affect model performance\"]",
+      "practical_applications": "[\"Preparing datasets for machine learning models\", \"Improving model accuracy through effective feature representation\"]"
+    },
+    {
+      "id": "Network Architecture",
+      "description": "The design and structure of neural networks, including their layers and connections.",
+      "sub_topics": "[{\"name\": \"Layer Types\", \"description\": \"Different types of layers used in neural networks, such as convolutional and fully connected.\"}, {\"name\": \"Network Size\", \"description\": \"The number of layers and neurons in a neural network.\"}, {\"name\": \"Strided Convolution\", \"description\": \"A convolution operation that skips certain input elements to reduce output size.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Layers (input, hidden, output)\", \"Activation functions\", \"Feedforward and backpropagation\", \"Convolutional and recurrent networks\"]",
+      "common_misconceptions": "[\"More layers always mean better performance\", \"Neural networks can learn without sufficient data\", \"All activation functions are equally effective\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game playing AI\", \"Medical diagnosis\"]"
+    },
+    {
+      "id": "Mathematical Foundations",
+      "description": "The mathematical concepts and operations that underpin machine learning algorithms.",
+      "sub_topics": "[{\"name\": \"Linear Algebra\", \"description\": \"The branch of mathematics concerning vector spaces and linear mappings.\"}, {\"name\": \"Algebraic Operations\", \"description\": \"Basic operations such as addition, multiplication, and transposition of matrices.\"}, {\"name\": \"Equations\", \"description\": \"Mathematical statements that express the equality of two expressions.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of algebra and calculus is recommended.",
+      "key_sub_concepts": "[\"Linear Algebra\", \"Probability Theory\", \"Statistics\", \"Calculus\"]",
+      "common_misconceptions": "[\"Mathematics is not necessary for machine learning.\", \"All machine learning problems require advanced mathematics.\"]",
+      "practical_applications": "[\"Data preprocessing and feature scaling\", \"Model evaluation and performance metrics\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Matrices",
+      "to": "Mathematical Foundations",
+      "relation": "prerequisite",
+      "reason": "Matrices are a core mathematical concept needed before broader mathematical foundations used in machine learning can be understood."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Convolutional Networks",
+      "relation": "prerequisite",
+      "reason": "Convolutional networks are a specialized type of neural network, so basic neural network concepts are necessary first."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Network Architecture",
+      "relation": "prerequisite",
+      "reason": "Designing and understanding network architecture presupposes familiarity with neural networks."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Training Techniques",
+      "relation": "prerequisite",
+      "reason": "Training techniques are applied to neural network models, so understanding neural networks is necessary first."
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Training Techniques",
+      "relation": "prerequisite",
+      "reason": "Training techniques are specific methods for training models and build on the broader concept of learning algorithms.",
+      "similarity": 0.741
+    },
+    {
+      "from": "Data Representation",
+      "to": "Feature Learning",
+      "relation": "prerequisite",
+      "reason": "Feature learning depends on having data represented in a form that can be processed by machine learning models."
+    },
+    {
+      "from": "Mathematical Foundations",
+      "to": "Learning Algorithms",
+      "relation": "prerequisite",
+      "reason": "Learning algorithms rely on underlying mathematical concepts and operations."
+    },
+    {
+      "from": "Mathematical Foundations",
+      "to": "Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Understanding neural networks requires mathematical foundations such as linear algebra and related operations."
+    }
+  ]
+}

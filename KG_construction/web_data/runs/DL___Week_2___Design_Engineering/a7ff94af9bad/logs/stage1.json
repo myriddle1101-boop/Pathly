@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_2___design_engineering\\a7ff94af9bad\\DL___Week_2___Design_Engineering.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_2___design_engineering\\a7ff94af9bad\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_2___design_engineering\\a7ff94af9bad\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.6583,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 1009\n[2] 清洗后词数: 1381\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 6\n[5] 分块数（过滤后）: 6\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_2___design_engineering\\a7ff94af9bad\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_2___design_engineering\\a7ff94af9bad\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=221\nMachine Learning for Design Engineers Week 2: Neurons and Artificial Neural Networks Pietro Ferraro Table of 1. The Neuron 2. Artificial Neural Networks Content 3. Activation Functions 4. Lossfunctionandtraining 5. Backp...\n\n[Chunk 2] words=278\nLinearseparation Linearlyseperable: f(w x +w x +w ) = y (2) 1 1 2 2 0 wherey = 1 forallw x +w x +w > 0 andy = 1 otherwise(thelabelsforeach 1 1 2 2 0 classis1 and 1 respectively). Recallthatahyperplanesplitstheplaneinto...\n\n[Chunk 3] words=277\nArtificial Neuralnetworks Thegeneralversionofthisarchitectureisan Artificial Neural Network(ANN). Figure:Source Imperial College London Machine Learningfor Design Engineers Activation Functions Usualchoicesforf(·)areasfo...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

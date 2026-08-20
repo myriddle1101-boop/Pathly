@@ -1,0 +1,120 @@
+{
+  "nodes": [
+    {
+      "id": "Language Models",
+      "description": "Study of models that understand and generate human language.",
+      "sub_topics": "[{\"name\": \"Language Processing\", \"description\": \"Techniques for analyzing and generating natural language.\"}, {\"name\": \"Language Modelling\", \"description\": \"Statistical methods for predicting the next word in a sequence.\"}, {\"name\": \"Toolformer Language\", \"description\": \"A framework for integrating tools with language models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and machine learning principles.",
+      "key_sub_concepts": "[\"Tokenization\", \"Word Embeddings\", \"Transformers\", \"Attention Mechanism\"]",
+      "common_misconceptions": "[\"Language models can understand language like humans do.\", \"All language models are the same.\"]",
+      "practical_applications": "[\"Chatbots\", \"Text generation\", \"Sentiment analysis\", \"Machine translation\"]"
+    },
+    {
+      "id": "Agent Systems",
+      "description": "Exploration of intelligent agents that perform tasks autonomously.",
+      "sub_topics": "[{\"name\": \"Agent Actions\", \"description\": \"The various actions that agents can perform.\"}, {\"name\": \"Agent Evaluation\", \"description\": \"Methods for assessing the performance of agents.\"}, {\"name\": \"Reflexion Agents\", \"description\": \"Agents that utilize reflexive reasoning to improve performance.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and algorithms.",
+      "key_sub_concepts": "[\"Autonomous agents\", \"Reinforcement learning\", \"Multi-agent systems\"]",
+      "common_misconceptions": "[\"Agents always require human intervention\", \"All agents are robots\"]",
+      "practical_applications": "[\"Self-driving cars\", \"Personal assistants (e.g., Siri, Alexa)\"]"
+    },
+    {
+      "id": "Reinforcement Learning",
+      "description": "A type of machine learning where agents learn by interacting with their environment.",
+      "sub_topics": "[{\"name\": \"Feedback Reflexion\", \"description\": \"Using feedback to enhance agent learning.\"}, {\"name\": \"Reflextion Reinforce\", \"description\": \"Techniques for reinforcing learning through reflection.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and probability theory.",
+      "key_sub_concepts": "[\"Markov Decision Processes\", \"Q-Learning\", \"Policy Gradients\", \"Exploration vs. Exploitation\"]",
+      "common_misconceptions": "[\"Reinforcement learning is the same as supervised learning\", \"Agents always learn the optimal policy quickly\"]",
+      "practical_applications": "[\"Game playing (e.g., AlphaGo)\", \"Robotics\", \"Autonomous vehicles\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Retrieval Models",
+      "description": "Models designed to retrieve relevant information from large datasets.",
+      "sub_topics": "[{\"name\": \"Vector Retrieval\", \"description\": \"Using vector representations for efficient information retrieval.\"}, {\"name\": \"Deep Retrieval\", \"description\": \"Advanced techniques for retrieving information using deep learning.\"}, {\"name\": \"Retrieval Augmented\", \"description\": \"Combining retrieval methods with generative models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of data structures and algorithms, familiarity with Python or similar programming languages.",
+      "key_sub_concepts": "[\"Information Retrieval\", \"Vector Space Model\", \"Boolean Retrieval\", \"Relevance Feedback\"]",
+      "common_misconceptions": "[\"Retrieval models only work with text data\", \"All retrieval models are the same\"]",
+      "practical_applications": "[\"Search engines\", \"Recommendation systems\", \"Document retrieval\", \"Question answering systems\"]"
+    },
+    {
+      "id": "Agent Reasoning",
+      "description": "The cognitive processes that agents use to make decisions.",
+      "sub_topics": "[{\"name\": \"Agents Reasoning\", \"description\": \"How agents process information to make decisions.\"}, {\"name\": \"Reasoning Acting\", \"description\": \"The relationship between reasoning and action in agents.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of decision-making processes and introductory knowledge of artificial intelligence.",
+      "key_sub_concepts": "[\"Decision Trees\", \"Reinforcement Learning\"]",
+      "common_misconceptions": "[\"Agents always make optimal decisions\", \"Reasoning is the same as learning\"]",
+      "practical_applications": "[\"Autonomous vehicles\", \"Game AI\"]"
+    },
+    {
+      "id": "Web Environment",
+      "description": "The online context in which agents and models operate.",
+      "sub_topics": "[{\"name\": \"Web App\", \"description\": \"Applications that run in a web environment.\"}, {\"name\": \"Environment Web\", \"description\": \"The structure and dynamics of web-based environments.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and web technologies.",
+      "key_sub_concepts": "[\"Web scraping\", \"API integration\", \"Data privacy\", \"User interaction\"]",
+      "common_misconceptions": "[\"Web environment is only about web scraping\", \"All data from the web is reliable\"]",
+      "practical_applications": "[\"Building web-based ML applications\", \"Real-time data analysis\", \"User behavior prediction\"]"
+    },
+    {
+      "id": "Knowledge Adapters",
+      "description": "Components that allow models to adapt knowledge for specific tasks.",
+      "sub_topics": "[{\"name\": \"Language Adapters\", \"description\": \"Adapters that modify language models for specific applications.\"}, {\"name\": \"Adapters Learn\", \"description\": \"Techniques for training adapters to improve model performance.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and neural networks.",
+      "key_sub_concepts": "[\"Transfer Learning\", \"Fine-tuning\"]",
+      "common_misconceptions": "[\"Knowledge adapters are the same as traditional model fine-tuning.\", \"They can only be used with large models.\"]",
+      "practical_applications": "[\"Domain adaptation in NLP tasks\", \"Customizing models for specific user preferences\"]"
+    },
+    {
+      "id": "Question Answering",
+      "description": "Systems designed to answer questions posed in natural language.",
+      "sub_topics": "[{\"name\": \"Open Domain\", \"description\": \"Question answering systems that can handle a wide range of topics.\"}, {\"name\": \"Answering Question\", \"description\": \"Methods and techniques for generating answers to queries.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and machine learning principles.",
+      "key_sub_concepts": "[\"Natural Language Processing (NLP)\", \"Information Retrieval\", \"Machine Learning Models\", \"Contextual Understanding\"]",
+      "common_misconceptions": "[\"Question answering systems can understand context like humans.\", \"All question answering systems are the same.\"]",
+      "practical_applications": "[\"Customer support chatbots\", \"Search engines\", \"Virtual assistants\", \"Educational tools\"]"
+    },
+    {
+      "id": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": "[{\"name\": \"Artificial Neural Networks\", \"description\": \"Computational models inspired by the human brain.\"}, {\"name\": \"Backpropagation\", \"description\": \"A method for training neural networks through gradient descent.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra, calculus, and programming in Python.",
+      "key_sub_concepts": "[\"Neural Networks\", \"Backpropagation\", \"Convolutional Neural Networks (CNNs)\", \"Recurrent Neural Networks (RNNs)\"]",
+      "common_misconceptions": "[\"Deep learning is the same as machine learning.\", \"More layers always lead to better performance.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Speech recognition\", \"Game playing (e.g., AlphaGo)\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Agent Systems",
+      "to": "Agent Reasoning",
+      "relation": "prerequisite",
+      "reason": "Understanding what agents are and how they operate is necessary before studying their decision-making processes."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 11,
+  "prerequisite_count": 9,
+  "prerequisites": [
+    {
+      "from": "Mapping Functions",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural networks are learned mappings from inputs to outputs."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Layer Structures",
+      "relation_type": "strong_prerequisite",
+      "reason": "Layer configurations require basic understanding of neural network structure."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training methods assume knowledge of what neural networks are and how they operate."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training techniques optimize or respond to a loss signal."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation requires understanding network nodes and layered computation."
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation depends on propagating derivatives through activation functions."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation minimizes a loss function by computing gradients."
+    },
+    {
+      "from": "Layer Structures",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation applies gradients through the network's layer structure."
+    },
+    {
+      "from": "Training Techniques",
+      "to": "Learning Strategies",
+      "relation_type": "strong_prerequisite",
+      "reason": "Learning strategies build on understanding how neural networks are trained."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "created_at": "2026-08-18T18:55:44.741385+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53",
+  "file_name": "cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 28,
+  "topic_metrics": {
+    "precision": 0.7778,
+    "recall": 0.6364,
+    "f1": 0.7,
+    "tp": 7,
+    "fp": 2,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.3333,
+    "recall": 0.3333,
+    "f1": 0.3333,
+    "tp": 2,
+    "fp": 4,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Tokenization",
+      "Encoding Techniques",
+      "Language Models",
+      "Linguistic Diversity",
+      "Training Techniques",
+      "Text Representation",
+      "Cross-Lingual Techniques"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "The lecture mentions Transformers but does not substantively teach neural-network concepts."
+      },
+      {
+        "name": "Model Evaluation",
+        "reason": "Evaluation is mentioned in passing for low-resource NLP and reported results, but no evaluation methods are taught."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Subword Tokenization",
+        "reason": "A central topic contrasting word and character/byte tokenization and motivating vocabulary construction."
+      },
+      {
+        "name": "Byte Pair Encoding (BPE)",
+        "reason": "The lecture gives a detailed BPE training algorithm, worked example, and test-time tokenization procedure."
+      },
+      {
+        "name": "Multilingual Language Modeling",
+        "reason": "The source defines multilingual LMs and discusses their multilingual training data, tokenizer, and objectives."
+      },
+      {
+        "name": "Cross-Lingual Transfer",
+        "reason": "The source explicitly defines and illustrates fine-tuning in one language and zero-shot inference in another."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Encoding Techniques",
+        "to": "Language Models",
+        "reason": "The lecture explains that language models require text to be encoded as token IDs and embeddings rather than raw strings."
+      },
+      {
+        "from": "Language Models",
+        "to": "Cross-Lingual Techniques",
+        "reason": "Cross-lingual transfer is presented as an ability of multilingual language models."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Tokenization",
+        "to": "Text Representation",
+        "reason": "Tokenization is itself one form of text representation, rather than a clearly prior concept to the broader topic."
+      },
+      {
+        "from": "Text Representation",
+        "to": "Encoding Techniques",
+        "reason": "The source relates tokenization, token IDs, and embeddings, but does not establish this broad directional learning dependency."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Training Techniques",
+        "reason": "Neither neural-network training nor a dependency from neural networks to training techniques is taught."
+      },
+      {
+        "from": "Training Techniques",
+        "to": "Model Evaluation",
+        "reason": "The lecture does not teach model-evaluation methodology or establish evaluation as dependent on training techniques."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Tokenization",
+        "to": "Subword Tokenization",
+        "reason": "Subword tokenization is introduced as a tokenization scheme between word-level and character-level approaches."
+      },
+      {
+        "from": "Subword Tokenization",
+        "to": "Byte Pair Encoding (BPE)",
+        "reason": "BPE is presented as a common algorithm for constructing a subword tokenizer."
+      },
+      {
+        "from": "Byte Pair Encoding (BPE) training",
+        "to": "Byte Pair Encoding (BPE) inference",
+        "reason": "Test-time BPE tokenization applies the ordered merge rules learned during training."
+      },
+      {
+        "from": "Multilingual Language Modeling",
+        "to": "Cross-Lingual Transfer",
+        "reason": "The lecture explains cross-lingual transfer through shared representations learned by multilingual language models."
+      }
+    ],
+    "overall_note": "The predictions capture the broad tokenization and multilingual themes but omit the lecture's principal technical focus on subword tokenization and BPE."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53_ledger.csv"
+  }
+}

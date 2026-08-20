@@ -1,0 +1,265 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 7,
+  "candidate_count": 16,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "convolutional kernels",
+      "avg_score": 0.673,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.6032,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning whynotusea",
+      "avg_score": 0.5888,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "learning modelandfeatureselection",
+      "avg_score": 0.5872,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.5826,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "groupsofneurons 111",
+      "avg_score": 0.5799,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "learning pooling",
+      "avg_score": 0.5788,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "convolutional",
+      "avg_score": 0.5768,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "whynotusea lnn",
+      "avg_score": 0.5691,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "forourspecificexample",
+      "avg_score": 0.5658,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "learning lecture",
+      "avg_score": 0.5487,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning practicalcomments",
+      "avg_score": 0.5477,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "kernels example",
+      "avg_score": 0.5322,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "learning",
+      "avg_score": 0.5321,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "lnnwhenanalysinganimage whatarewelosing",
+      "avg_score": 0.5292,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "whynotusea",
+      "avg_score": 0.4774,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Neural Networks",
+      "description": "A computational model inspired by the human brain's network of neurons.",
+      "sub_topics": [
+        {
+          "name": "Convolutional Neural Networks",
+          "description": "A type of neural network particularly effective for image processing."
+        },
+        {
+          "name": "Groups of Neurons",
+          "description": "Clusters of neurons that work together to process information."
+        }
+      ]
+    },
+    {
+      "name": "Convolutional Kernels",
+      "description": "Filters used in convolutional layers to extract features from input data.",
+      "sub_topics": [
+        {
+          "name": "Kernels Example",
+          "description": "Illustrative examples of how kernels operate in convolutional layers."
+        },
+        {
+          "name": "Learning Pooling",
+          "description": "Techniques to reduce dimensionality and retain important features."
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Metrics used to evaluate the performance of a model."
+        }
+      ]
+    },
+    {
+      "name": "Learning Models",
+      "description": "Frameworks and algorithms used to train machine learning systems.",
+      "sub_topics": [
+        {
+          "name": "Feature Selection",
+          "description": "The process of selecting relevant features for model training."
+        },
+        {
+          "name": "Training Techniques",
+          "description": "Methods used to optimize model performance during training."
+        }
+      ]
+    },
+    {
+      "name": "Backpropagation",
+      "description": "An algorithm for training neural networks by minimizing the loss function.",
+      "sub_topics": [
+        {
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm used in backpropagation."
+        },
+        {
+          "name": "Learning Rate",
+          "description": "A hyperparameter that controls how much to change the model in response to the estimated error."
+        }
+      ]
+    },
+    {
+      "name": "Linear Separability",
+      "description": "The ability to separate classes in a dataset using a linear boundary.",
+      "sub_topics": [
+        {
+          "name": "Regression",
+          "description": "A method for predicting continuous outcomes."
+        },
+        {
+          "name": "Classification",
+          "description": "A method for predicting categorical outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Practical Learning",
+      "description": "Hands-on approaches to understanding machine learning concepts.",
+      "sub_topics": [
+        {
+          "name": "Lecture Insights",
+          "description": "Key takeaways from machine learning lectures."
+        },
+        {
+          "name": "Practical Comments",
+          "description": "Real-world applications and considerations in machine learning."
+        }
+      ]
+    },
+    {
+      "name": "Learning Challenges",
+      "description": "Common issues faced when training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Overfitting",
+          "description": "When a model learns noise instead of the underlying pattern."
+        },
+        {
+          "name": "Underfitting",
+          "description": "When a model is too simple to capture the underlying trend."
+        }
+      ]
+    },
+    {
+      "name": "Image Analysis",
+      "description": "Techniques and methods for processing and interpreting images.",
+      "sub_topics": [
+        {
+          "name": "Image Preprocessing",
+          "description": "Steps taken to prepare images for analysis."
+        },
+        {
+          "name": "Feature Extraction",
+          "description": "Identifying and isolating key features from images."
+        }
+      ]
+    }
+  ]
+}

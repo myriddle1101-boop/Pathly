@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 11,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation is an algorithm for training neural networks, so the network structure must be understood first."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation updates weights using error gradients derived from a loss function."
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation requires computing gradients through activation functions."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Hyperparameter Optimization",
+      "relation_type": "strong_prerequisite",
+      "reason": "Hyperparameter optimization depends on evaluating model performance to compare hyperparameter choices."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning builds on neural networks with many layers, requiring core neural network concepts first."
+    }
+  ]
+}

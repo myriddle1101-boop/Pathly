@@ -1,0 +1,148 @@
+{
+  "created_at": "2026-08-18T18:38:41.192371+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-03_prob-20e52d6d8bb6",
+  "file_name": "03_prob-20e52d6d8bb6",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 66,
+  "topic_metrics": {
+    "precision": 0.6667,
+    "recall": 0.5455,
+    "f1": 0.6,
+    "tp": 6,
+    "fp": 3,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.375,
+    "recall": 0.375,
+    "f1": 0.375,
+    "tp": 3,
+    "fp": 5,
+    "fn": 5
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Probability Theory",
+      "Probability Distributions",
+      "Covariance",
+      "Random Variables",
+      "Information Theory",
+      "Mathematical Functions"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Probabilistic Models",
+        "reason": "The text develops probability distributions and random variables but does not present probabilistic models as a learning topic."
+      },
+      {
+        "name": "Neural Networks",
+        "reason": "Neural networks are not discussed; deep learning is mentioned only as context for choosing distributions."
+      },
+      {
+        "name": "Statistical Inference",
+        "reason": "The source does not cover inference procedures or estimation."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Probability Mass Functions",
+        "reason": "The source defines PMFs, their domain, nonnegativity, and normalization requirements."
+      },
+      {
+        "name": "Probability Density Functions",
+        "reason": "The source introduces PDFs for continuous variables and explains integration for probabilities."
+      },
+      {
+        "name": "Conditional Probability",
+        "reason": "A dedicated section defines conditional probability and gives its formula."
+      },
+      {
+        "name": "Marginal Probability",
+        "reason": "A dedicated section explains marginal distributions and the sum/integration rules."
+      },
+      {
+        "name": "Expectation and Variance",
+        "reason": "The source defines expectation, linearity of expectation, variance, and standard deviation."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Probability Theory",
+        "to": "Probability Distributions",
+        "reason": "Probability distributions, including PMFs and PDFs, are defined as core objects of probability theory."
+      },
+      {
+        "from": "Probability Theory",
+        "to": "Random Variables",
+        "reason": "The source formulates probabilities and distributions in terms of random variables."
+      },
+      {
+        "from": "Probability Distributions",
+        "to": "Covariance",
+        "reason": "Covariance is defined through expectations with respect to probability distributions."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Probability Theory",
+        "to": "Statistical Inference",
+        "reason": "Statistical inference is not covered in the source."
+      },
+      {
+        "from": "Random Variables",
+        "to": "Probabilistic Models",
+        "reason": "Probabilistic models are not presented as a topic in the source."
+      },
+      {
+        "from": "Probability Theory",
+        "to": "Information Theory",
+        "reason": "Information theory appears in the chapter title but no information-theoretic material or dependency is developed in the provided text."
+      },
+      {
+        "from": "Statistical Inference",
+        "to": "Neural Networks",
+        "reason": "Neither statistical inference nor neural-network training is covered."
+      },
+      {
+        "from": "Mathematical Functions",
+        "to": "Neural Networks",
+        "reason": "Neural networks are not a source topic, so this dependency is unsupported."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Random Variables",
+        "to": "Probability Mass Functions",
+        "reason": "A PMF is defined as mapping each state of a random variable to its probability."
+      },
+      {
+        "from": "Joint Probability Distributions",
+        "to": "Marginal Probability",
+        "reason": "The source computes a marginal distribution by summing or integrating a joint distribution."
+      },
+      {
+        "from": "Conditional Probability",
+        "to": "Chain Rule of Probability",
+        "reason": "The source explicitly states that the chain rule follows immediately from the definition of conditional probability."
+      },
+      {
+        "from": "Expectation",
+        "to": "Variance",
+        "reason": "Variance is defined using the expected value of a function."
+      },
+      {
+        "from": "Expectation",
+        "to": "Covariance",
+        "reason": "Covariance is defined using expectations and deviations from expected values."
+      }
+    ],
+    "overall_note": "The predictions capture the broad probability focus, but omit several central probability constructs and include unsupported modeling, inference, and neural-network topics."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-03_prob-20e52d6d8bb6.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-03_prob-20e52d6d8bb6.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-03_prob-20e52d6d8bb6_ledger.csv"
+  }
+}

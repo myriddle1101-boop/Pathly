@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Loss Functions",
+      "to": "Learning Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training methods rely on an objective or error metric to optimize, so understanding loss functions is necessary to understand how learning algorithms improve models."
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "To learn neural networks in a meaningful way, one must first understand the training procedures and optimization methods used to fit them."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Model Evaluation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Assessing model performance requires understanding the metrics that quantify prediction error or fit, which is grounded in loss functions."
+    },
+    {
+      "from": "Data Handling",
+      "to": "Unsupervised Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Unsupervised learning depends on preparing and processing unlabeled data appropriately before patterns can be discovered."
+    },
+    {
+      "from": "Regression Techniques",
+      "to": "Tangent Classifiers",
+      "relation_type": "strong_prerequisite",
+      "reason": "Tangent classifiers build on mathematical ideas from predictive modeling and decision boundary formulation that are more foundationally introduced through regression techniques."
+    }
+  ]
+}

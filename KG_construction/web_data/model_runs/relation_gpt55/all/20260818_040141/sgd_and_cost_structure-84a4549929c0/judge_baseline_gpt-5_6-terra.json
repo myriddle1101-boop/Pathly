@@ -1,0 +1,127 @@
+{
+  "created_at": "2026-08-18T19:04:32.047128+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-sgd_and_cost_structure-84a4549929c0",
+  "file_name": "sgd_and_cost_structure-84a4549929c0",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 7,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6154,
+    "f1": 0.7273,
+    "tp": 8,
+    "fp": 1,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.3333,
+    "recall": 0.3333,
+    "f1": 0.3333,
+    "tp": 2,
+    "fp": 4,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Neural Networks",
+      "Gradient Descent",
+      "Optimization Techniques",
+      "Loss Functions",
+      "Training Dynamics",
+      "Gradient Noise",
+      "Eigenvalues in Optimization",
+      "Experimental Techniques"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Network Architecture",
+        "reason": "The source mentions model types and layers but does not present neural-network architecture as a learning topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Stochastic Gradient Descent",
+        "reason": "SGD is a central optimization method discussed throughout the presentation."
+      },
+      {
+        "name": "Saddle Points",
+        "reason": "The source extensively discusses saddle points, their prevalence, and their effects on optimization."
+      },
+      {
+        "name": "Hessian",
+        "reason": "Critical-point types are characterized using Hessian eigenvalues."
+      },
+      {
+        "name": "Newton's Method",
+        "reason": "Newton's method and its failure mode near saddle points are explicitly covered."
+      },
+      {
+        "name": "Conditioning",
+        "reason": "Poor conditioning is identified as a major reason optimization can be slow or fail to converge."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Loss Functions",
+        "to": "Gradient Descent",
+        "reason": "Gradient-based optimization requires an objective/cost function whose value is reduced."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Gradient Noise",
+        "reason": "The source frames gradient noise as a factor affecting gradient-based optimization behavior."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Neural Network Architecture",
+        "reason": "Architecture is not substantively taught in the source, and this is not an established directional dependency here."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Training Dynamics",
+        "reason": "Gradient descent is one subject of the training dynamics discussion, but the source does not establish it as a required prerequisite."
+      },
+      {
+        "from": "Optimization Techniques",
+        "to": "Eigenvalues in Optimization",
+        "reason": "Eigenvalues arise specifically through Hessian-based curvature and critical-point analysis, not as a prerequisite consequence of optimization techniques broadly."
+      },
+      {
+        "from": "Training Dynamics",
+        "to": "Experimental Techniques",
+        "reason": "Visualization and experiments are evaluation approaches, not a strong prerequisite dependency from training dynamics."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Derivatives",
+        "to": "Gradient Descent",
+        "reason": "Gradient descent relies on derivatives/gradients to determine downhill update directions."
+      },
+      {
+        "from": "Hessian",
+        "to": "Saddle Points",
+        "reason": "The source classifies critical points, including saddle points, using positive and negative Hessian eigenvalues."
+      },
+      {
+        "from": "Hessian",
+        "to": "Newton's Method",
+        "reason": "Newton's method depends on second-derivative curvature information represented by the Hessian."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Stochastic Gradient Descent",
+        "reason": "SGD is the stochastic gradient-based optimization method analyzed in the presentation."
+      }
+    ],
+    "overall_note": "The predictions capture the broad optimization theme, but omit the presentation's central Hessian, saddle-point, Newton-method, and SGD content."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-sgd_and_cost_structure-84a4549929c0.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-sgd_and_cost_structure-84a4549929c0.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-sgd_and_cost_structure-84a4549929c0_ledger.csv"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Language Models",
+      "to": "DPO Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "DPO models are typically preference-optimized language models, so understanding language models is needed first."
+    }
+  ]
+}

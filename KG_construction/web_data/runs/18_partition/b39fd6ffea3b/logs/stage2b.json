@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.5882,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Likelihood Models -> Probabilistic Models | Likelihood is a fundamental concept in probabilistic modeling.\n02. Probabilistic Models -> Model Sampling | Understanding probabilistic models is essential for sampling from them.\n03. Model Evaluation -> Training Algorithms | Evaluating models requires knowledge of how they are trained.\n04. Data Representation -> Neural Networks | Effective data representation is crucial for training neural networks.\n05. Regression and Classification -> Training Algorithms | Training algorithms are needed to implement regression and classification techniques.\n06. Training Algorithms -> Algorithm Optimization | Optimizing algorithms is necessary for improving training processes.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

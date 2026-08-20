@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-history\\5845dce2ddc2",
+  "run_id": "cs224n-2026-lecture01-history-5845dce2ddc2",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:03.229049+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "beb1e2ebd5439cc1a5ebb175e41f2419d2c95fbdb9e908930a85a33cc93c57a6",
+    "stage2a_topics_hybrid.json": "f0436c4f388cba91f61158ecc375a693961c69044636aa34f1d1a404364bdece",
+    "stage2c_similarity_edges.json": "bdd441f31e1808c22e6f7bf28ff9fdc712c8fd58a74f071362ee9a33798a6659",
+    "stage3_topics_with_summary.json": "cf114732fd886c4002769a88f610f6dc3d277727f4dd37aaf6fa95aa0a397c38"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

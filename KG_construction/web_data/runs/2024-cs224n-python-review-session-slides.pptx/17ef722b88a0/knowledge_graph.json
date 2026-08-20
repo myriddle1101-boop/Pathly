@@ -1,0 +1,175 @@
+{
+  "nodes": [
+    {
+      "id": "Python Basics",
+      "description": "Fundamental concepts and syntax of the Python programming language.",
+      "sub_topics": "[{\"name\": \"Variables\", \"description\": \"Understanding variable types and declarations.\"}, {\"name\": \"Data Structures\", \"description\": \"Introduction to lists, dictionaries, and sets.\"}, {\"name\": \"Control Structures\", \"description\": \"Using loops and conditional statements in Python.\"}]",
+      "difficulty_level": 1,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of computer science concepts.",
+      "key_sub_concepts": "[\"Data types and variables\", \"Control structures (if, for, while)\", \"Functions and modules\", \"Input and output operations\"]",
+      "common_misconceptions": "[\"Python is only for web development\", \"Indentation is not important in Python\"]",
+      "practical_applications": "[\"Data analysis with libraries like Pandas\", \"Scripting for automation tasks\", \"Web scraping\", \"Basic game development\"]"
+    },
+    {
+      "id": "Python Packages",
+      "description": "Managing and utilizing external libraries in Python.",
+      "sub_topics": "[{\"name\": \"Installing Packages\", \"description\": \"Using pip to install Python packages.\"}, {\"name\": \"Numpy\", \"description\": \"Introduction to the Numpy library for numerical computations.\"}, {\"name\": \"Collections Module\", \"description\": \"Using specialized container datatypes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of Python programming and familiarity with command line interface.",
+      "key_sub_concepts": "[\"Installing packages using pip\", \"Understanding virtual environments\"]",
+      "common_misconceptions": "[\"All libraries are included with Python by default\", \"Packages are only for data science applications\"]",
+      "practical_applications": "[\"Web development with Flask or Django\", \"Data analysis with NumPy and Pandas\"]"
+    },
+    {
+      "id": "Python Environment",
+      "description": "Setting up and managing Python development environments.",
+      "sub_topics": "[{\"name\": \"Virtual Environments\", \"description\": \"Creating isolated Python environments.\"}, {\"name\": \"Text Editors\", \"description\": \"Choosing and configuring text editors for Python.\"}, {\"name\": \"Python Interpreter\", \"description\": \"Understanding how to run Python code.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of Python programming and command line usage.",
+      "key_sub_concepts": "[\"Virtual Environments\", \"Package Management\"]",
+      "common_misconceptions": "[\"Python environments are only for advanced users.\", \"All Python packages are compatible with any environment.\"]",
+      "practical_applications": "[\"Isolating project dependencies\", \"Managing different Python versions\"]"
+    },
+    {
+      "id": "Data Manipulation",
+      "description": "Techniques for manipulating and processing data in Python.",
+      "sub_topics": "[{\"name\": \"Indexing\", \"description\": \"Accessing elements in data structures.\"}, {\"name\": \"Matrix Operations\", \"description\": \"Performing operations on matrices using Numpy.\"}, {\"name\": \"Random Data Generation\", \"description\": \"Creating random matrices and vectors.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of Python programming and familiarity with data structures.",
+      "key_sub_concepts": "[\"Pandas for data manipulation\", \"NumPy for numerical operations\"]",
+      "common_misconceptions": "[\"Data manipulation is only about cleaning data\", \"Pandas is only for tabular data\"]",
+      "practical_applications": "[\"Data cleaning and preprocessing for machine learning\", \"Exploratory data analysis and visualization\"]"
+    },
+    {
+      "id": "Python Functions",
+      "description": "Defining and using functions in Python.",
+      "sub_topics": "[{\"name\": \"Defining Functions\", \"description\": \"Creating reusable code blocks.\"}, {\"name\": \"Lambda Functions\", \"description\": \"Using anonymous functions for short operations.\"}, {\"name\": \"Function Arguments\", \"description\": \"Understanding positional and keyword arguments.\"}]",
+      "difficulty_level": 1,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of Python syntax and programming concepts.",
+      "key_sub_concepts": "[\"Function definition\", \"Function parameters and arguments\", \"Return values\", \"Scope of variables\"]",
+      "common_misconceptions": "[\"Functions must always return a value\", \"Functions cannot have default parameters\", \"Function names cannot include underscores\"]",
+      "practical_applications": "[\"Modularizing code for better organization\", \"Reusing code to avoid duplication\", \"Implementing algorithms in a structured way\"]"
+    },
+    {
+      "id": "Operators in Python",
+      "description": "Understanding and using various operators in Python.",
+      "sub_topics": "[{\"name\": \"Comparison Operators\", \"description\": \"Using operators to compare values.\"}, {\"name\": \"Boolean Operators\", \"description\": \"Combining conditions using logical operators.\"}, {\"name\": \"Arithmetic Operators\", \"description\": \"Performing mathematical operations.\"}]",
+      "difficulty_level": 1,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming concepts and familiarity with Python syntax.",
+      "key_sub_concepts": "[\"Arithmetic Operators\", \"Comparison Operators\", \"Logical Operators\", \"Assignment Operators\", \"Bitwise Operators\"]",
+      "common_misconceptions": "[\"Operators are the same in all programming languages\", \"All operators return the same data type\"]",
+      "practical_applications": "[\"Performing calculations\", \"Making decisions in code\", \"Manipulating data structures\", \"Controlling program flow\"]"
+    },
+    {
+      "id": "Python Notebooks",
+      "description": "Using Jupyter notebooks for interactive coding.",
+      "sub_topics": "[{\"name\": \"Creating Notebooks\", \"description\": \"Setting up and managing Jupyter notebooks.\"}, {\"name\": \"Markdown in Notebooks\", \"description\": \"Using Markdown for documentation.\"}, {\"name\": \"Visualizations\", \"description\": \"Creating plots and visualizations in notebooks.\"}]",
+      "difficulty_level": 1,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of Python programming and familiarity with command line interfaces.",
+      "key_sub_concepts": "[\"Markdown for documentation\", \"Code execution and output visualization\"]",
+      "common_misconceptions": "[\"Not suitable for production code\", \"Only for data science applications\"]",
+      "practical_applications": "[\"Data analysis and visualization\", \"Interactive teaching and presentations\"]"
+    },
+    {
+      "id": "Debugging Techniques",
+      "description": "Methods for identifying and fixing errors in Python code.",
+      "sub_topics": "[{\"name\": \"Print Debugging\", \"description\": \"Using print statements to trace code execution.\"}, {\"name\": \"Using Debuggers\", \"description\": \"Employing debugging tools to step through code.\"}, {\"name\": \"Error Handling\", \"description\": \"Managing exceptions and errors in Python.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of Python programming and familiarity with coding concepts.",
+      "key_sub_concepts": "[\"Print Debugging\", \"Using Debuggers\", \"Unit Testing\", \"Logging\"]",
+      "common_misconceptions": "[\"Debugging is only for beginners\", \"Print statements are the only way to debug\"]",
+      "practical_applications": "[\"Improving code reliability\", \"Enhancing software performance\", \"Facilitating code reviews\"]"
+    },
+    {
+      "id": "Advanced Python Concepts",
+      "description": "Exploring more complex features of Python.",
+      "sub_topics": "[{\"name\": \"Decorators\", \"description\": \"Modifying functions with decorators.\"}, {\"name\": \"Generators\", \"description\": \"Creating iterators using generator functions.\"}, {\"name\": \"Context Managers\", \"description\": \"Managing resources with context managers.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of Python syntax and programming concepts.",
+      "key_sub_concepts": "[\"Decorators\", \"Generators\", \"Context Managers\", \"Metaclasses\"]",
+      "common_misconceptions": "[\"Decorators are only for functions\", \"Generators are just a way to create lists\"]",
+      "practical_applications": "[\"Building reusable code with decorators\", \"Efficient data processing with generators\", \"Resource management with context managers\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Python Basics",
+      "to": "Python Functions",
+      "relation": "prerequisite",
+      "reason": "Functions are a fundamental concept built on basic syntax.",
+      "similarity": 0.7257
+    },
+    {
+      "from": "Python Basics",
+      "to": "Operators in Python",
+      "relation": "prerequisite",
+      "reason": "Understanding basic syntax is necessary to use operators."
+    },
+    {
+      "from": "Python Basics",
+      "to": "Data Manipulation",
+      "relation": "prerequisite",
+      "reason": "Basic knowledge of Python is required to manipulate data."
+    },
+    {
+      "from": "Python Basics",
+      "to": "Python Packages",
+      "relation": "prerequisite",
+      "reason": "Basic syntax is needed to manage and utilize packages."
+    },
+    {
+      "from": "Python Environment",
+      "to": "Python Notebooks",
+      "relation": "prerequisite",
+      "reason": "Setting up an environment is necessary to use notebooks."
+    },
+    {
+      "from": "Python Environment",
+      "to": "Python Packages",
+      "relation": "similarity",
+      "score": 0.7643
+    },
+    {
+      "from": "Data Manipulation",
+      "to": "Advanced Python Concepts",
+      "relation": "prerequisite",
+      "reason": "Advanced concepts often build on data manipulation techniques."
+    },
+    {
+      "from": "Python Functions",
+      "to": "Debugging Techniques",
+      "relation": "prerequisite",
+      "reason": "Understanding functions is essential for effective debugging."
+    },
+    {
+      "from": "Operators in Python",
+      "to": "Python Functions",
+      "relation": "similarity",
+      "score": 0.7696
+    },
+    {
+      "from": "Advanced Python Concepts",
+      "to": "Python Basics",
+      "relation": "similarity",
+      "score": 0.7666
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\16_graphical_models.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.6328,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 8617\n[2] 清洗后词数: 8743\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 40\n[5] 分块数（过滤后）: 38\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=115\nStructured Probabilistic Models for Deep Learning Lecture slides for Chapter 16 of Deep Learning www.deeplearningbook.org Ian Goodfellow 2016-10-04 Roadmap  Challenges of Unstructured Modeling  Using Graphs to Describe...\n\n[Chunk 2] words=275\nCHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING x Density estimation: Given an input , the machine learning system  p(x) returns an estimate of the true density under the data-generating distribution. This...\n\n[Chunk 3] words=247\nFor an example of a sampling task using small natural images, see figure 16.1. Mo deling a rich distribution over thousands or millions of random variables is a challenging task, b oth computationally and statistically. ...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

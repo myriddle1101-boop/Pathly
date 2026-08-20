@@ -1,0 +1,97 @@
+{
+  "created_at": "2026-08-18T18:52:54.776445+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-cs224n-2026-lecture08-posttraining-f71e4c3743c8",
+  "file_name": "cs224n-2026-lecture08-posttraining-f71e4c3743c8",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 14,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6429,
+    "f1": 0.7826,
+    "tp": 9,
+    "fp": 0,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 1.0,
+    "recall": 0.2,
+    "f1": 0.3333,
+    "tp": 1,
+    "fp": 0,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Reinforcement Learning",
+      "Pretraining Techniques",
+      "Fine-tuning Methods",
+      "Gradient Methods",
+      "Language Models",
+      "Optimization Techniques",
+      "Human Feedback",
+      "Limitations in Learning",
+      "Dialog Systems"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Instruction Fine-tuning",
+        "reason": "A central lecture topic: fine-tuning language models on instruction-output pairs across many tasks."
+      },
+      {
+        "name": "Reinforcement Learning from Human Feedback (RLHF)",
+        "reason": "The source explicitly presents the RLHF pipeline combining a pretrained LM, reward model, and RL optimization."
+      },
+      {
+        "name": "Reward Modeling",
+        "reason": "Human preferences are modeled with a reward model trained on pairwise comparison data."
+      },
+      {
+        "name": "Proximal Policy Optimization (PPO)",
+        "reason": "PPO is presented as the principal RL optimization method used for LM/RLHF training."
+      },
+      {
+        "name": "Direct Preference Optimization (DPO)",
+        "reason": "DPO is introduced as an alternative that replaces complex RL optimization with a preference-based objective."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Pretraining Techniques",
+        "to": "Fine-tuning Methods",
+        "reason": "The source presents fine-tuning as adapting a pretrained model, with pretraining providing parameter initialization."
+      }
+    ],
+    "rejected_prerequisites": [],
+    "missing_prerequisites": [
+      {
+        "from": "Human Preference Data",
+        "to": "Reward Modeling",
+        "reason": "The reward model is trained to predict human preferences from annotated, often pairwise-comparison, data."
+      },
+      {
+        "from": "Reward Modeling",
+        "to": "Reinforcement Learning from Human Feedback (RLHF)",
+        "reason": "RLHF requires a reward model that supplies scalar rewards for optimizing the language model."
+      },
+      {
+        "from": "Policy Gradient Methods",
+        "to": "Proximal Policy Optimization (PPO)",
+        "reason": "PPO is introduced as a policy-optimization method addressing instability, variance, and inefficiency in vanilla REINFORCE."
+      },
+      {
+        "from": "Bradley-Terry Model",
+        "to": "Direct Preference Optimization (DPO)",
+        "reason": "The DPO loss is derived using the Bradley-Terry model of pairwise human preferences."
+      }
+    ],
+    "overall_note": "The predictions are broadly supported but omit the lecture's central alignment methods: instruction fine-tuning, RLHF, reward modeling, PPO, and DPO."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture08-posttraining-f71e4c3743c8.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture08-posttraining-f71e4c3743c8.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture08-posttraining-f71e4c3743c8_ledger.csv"
+  }
+}

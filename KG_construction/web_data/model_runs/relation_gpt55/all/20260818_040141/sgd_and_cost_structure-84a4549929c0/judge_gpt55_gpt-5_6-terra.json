@@ -1,0 +1,118 @@
+{
+  "created_at": "2026-08-18T19:04:48.171614+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-sgd_and_cost_structure-84a4549929c0",
+  "file_name": "sgd_and_cost_structure-84a4549929c0",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 7,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.6667,
+    "recall": 0.5714,
+    "f1": 0.6154,
+    "tp": 4,
+    "fp": 2,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Neural Networks",
+      "Gradient Descent",
+      "Optimization Techniques",
+      "Loss Functions",
+      "Training Dynamics",
+      "Gradient Noise",
+      "Eigenvalues in Optimization",
+      "Experimental Techniques"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Network Architecture",
+        "reason": "The source mentions model types and layers, but does not substantively cover architectural design as a learning topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Hessian",
+        "reason": "The source explicitly discusses Hessians, their eigenvalues, and their role at critical points."
+      },
+      {
+        "name": "Saddle Points",
+        "reason": "Saddle points are a central topic, including their prevalence and the behavior of SGD and Newton's method around them."
+      },
+      {
+        "name": "Newton's Method",
+        "reason": "The presentation explicitly introduces Newton's method and discusses its failure mode and attraction to saddle points."
+      },
+      {
+        "name": "Poor Conditioning",
+        "reason": "Poor conditioning is explicitly identified as a reason optimization can be slow or fail to converge."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Loss Functions",
+        "to": "Gradient Descent",
+        "reason": "Gradient descent is presented as a gradient-based method for reducing the cost/loss objective."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Gradient Noise",
+        "reason": "Gradient noise is discussed as a factor affecting convergence of gradient-based optimization."
+      },
+      {
+        "from": "Loss Functions",
+        "to": "Training Dynamics",
+        "reason": "The training and optimization dynamics discussed concern changes in the cost/loss surface."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Training Dynamics",
+        "reason": "The source analyzes how gradient-based updates and SGD trajectories behave during optimization."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Neural Network Architecture",
+        "reason": "This is a broad hierarchical relationship rather than a source-supported directional prerequisite, and architecture is not substantively taught."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Eigenvalues in Optimization",
+        "reason": "The source uses Hessian eigenvalues to analyze curvature and critical points; this does not establish gradient descent as a prerequisite for eigenvalues."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Hessian",
+        "to": "Saddle Points",
+        "reason": "The source characterizes critical points, including saddle points, using the signs of Hessian eigenvalues."
+      },
+      {
+        "from": "Hessian",
+        "to": "Newton's Method",
+        "reason": "Newton's method relies on second-derivative/Hessian information, which is introduced immediately before it."
+      },
+      {
+        "from": "Saddle Points",
+        "to": "Newton's Method",
+        "reason": "Understanding saddle points is necessary for the source's explanation of Newton's method failure through attraction to negative-curvature regions."
+      }
+    ],
+    "overall_note": "The predictions cover the general optimization theme, but omit the source's central second-order and saddle-point concepts."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-sgd_and_cost_structure-84a4549929c0.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-sgd_and_cost_structure-84a4549929c0.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-sgd_and_cost_structure-84a4549929c0_ledger.csv"
+  }
+}

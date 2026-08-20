@@ -1,0 +1,346 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 4,
+  "candidate_count": 24,
+  "topics_count": 8,
+  "candidates": [
+    {
+      "name": "tutorial repository",
+      "avg_score": 0.6868,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "python examples",
+      "avg_score": 0.6251,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "python utils",
+      "avg_score": 0.5915,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "repository structure",
+      "avg_score": 0.5849,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "utilities python",
+      "avg_score": 0.5713,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "run python",
+      "avg_score": 0.5698,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "lesson summaries",
+      "avg_score": 0.563,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "document_chat py",
+      "avg_score": 0.5565,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "summaries lesson",
+      "avg_score": 0.5548,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "python demo",
+      "avg_score": 0.5547,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "tutorials nnn",
+      "avg_score": 0.5494,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "repository directory",
+      "avg_score": 0.5487,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "rag_tutorial nnn",
+      "avg_score": 0.4993,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "repository",
+      "avg_score": 0.4961,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "code samples",
+      "avg_score": 0.4932,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "lesson introduction",
+      "avg_score": 0.4867,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "lesson understanding",
+      "avg_score": 0.457,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "relevance lesson",
+      "avg_score": 0.4534,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "template demo",
+      "avg_score": 0.4491,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "samples utils",
+      "avg_score": 0.4487,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "evaluation lesson",
+      "avg_score": 0.4484,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "demo py",
+      "avg_score": 0.4379,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "utils modules",
+      "avg_score": 0.424,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "environment variable",
+      "avg_score": 0.4224,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Python Utilities",
+      "description": "A collection of useful Python functions and modules for machine learning.",
+      "sub_topics": [
+        {
+          "name": "Python Examples",
+          "description": "Sample code snippets demonstrating machine learning concepts."
+        },
+        {
+          "name": "Utilities Modules",
+          "description": "Modules that provide additional functionalities for Python programming."
+        }
+      ]
+    },
+    {
+      "name": "Tutorial Repository",
+      "description": "A structured collection of tutorials for learning machine learning concepts.",
+      "sub_topics": [
+        {
+          "name": "Lesson Summaries",
+          "description": "Concise overviews of key concepts covered in tutorials."
+        },
+        {
+          "name": "Code Samples",
+          "description": "Examples of code implementations for various machine learning algorithms."
+        }
+      ]
+    },
+    {
+      "name": "Repository Structure",
+      "description": "The organization and layout of files within a machine learning project repository.",
+      "sub_topics": [
+        {
+          "name": "Repository Directory",
+          "description": "The main folder containing all project files and subfolders."
+        },
+        {
+          "name": "Document Chat Py",
+          "description": "Python scripts related to document chat functionalities."
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning Concepts",
+      "description": "Fundamental principles and techniques in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Neural Networks",
+          "description": "Computational models inspired by the human brain."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Metrics used to evaluate the performance of a machine learning model."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing error."
+        },
+        {
+          "name": "Linear Separability",
+          "description": "The ability to separate classes in a dataset using a linear boundary."
+        }
+      ]
+    },
+    {
+      "name": "Evaluation Metrics",
+      "description": "Criteria used to assess the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Regression Metrics",
+          "description": "Metrics for evaluating regression models."
+        },
+        {
+          "name": "Classification Metrics",
+          "description": "Metrics for evaluating classification models."
+        }
+      ]
+    },
+    {
+      "name": "Demo Projects",
+      "description": "Practical implementations showcasing machine learning techniques.",
+      "sub_topics": [
+        {
+          "name": "Template Demos",
+          "description": "Predefined project templates for quick setup."
+        },
+        {
+          "name": "Python Demos",
+          "description": "Demonstrations of machine learning concepts using Python."
+        }
+      ]
+    },
+    {
+      "name": "Learning Resources",
+      "description": "Additional materials for enhancing understanding of machine learning.",
+      "sub_topics": [
+        {
+          "name": "Tutorials NNN",
+          "description": "Specific tutorials focused on advanced machine learning topics."
+        },
+        {
+          "name": "Lesson Introductions",
+          "description": "Introductory materials for each lesson in the course."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 18.2971,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

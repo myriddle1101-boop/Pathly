@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "id": "Language Models",
+      "description": "Models designed to understand and generate human language.",
+      "sub_topics": "[{\"name\": \"Natural Language Processing\", \"description\": \"Techniques for processing and analyzing human language.\"}, {\"name\": \"Model Hallucination\", \"description\": \"Phenomenon where models generate incorrect or nonsensical outputs.\"}, {\"name\": \"Human Feedback\", \"description\": \"Incorporating user input to improve model performance.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and machine learning principles.",
+      "key_sub_concepts": "[\"Tokenization\", \"Word Embeddings\", \"Transformers\", \"Attention Mechanism\"]",
+      "common_misconceptions": "[\"Language models can understand context like humans\", \"All language models are the same\"]",
+      "practical_applications": "[\"Chatbots\", \"Text generation\", \"Sentiment analysis\", \"Machine translation\"]"
+    },
+    {
+      "id": "Calibrated Models",
+      "description": "Models that provide reliable confidence estimates for their predictions.",
+      "sub_topics": "[{\"name\": \"Calibrated Confidence\", \"description\": \"The accuracy of a model's confidence in its predictions.\"}, {\"name\": \"Calibration Techniques\", \"description\": \"Methods to adjust model outputs for better reliability.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts, probability, and statistics.",
+      "key_sub_concepts": "[\"Probability Calibration\", \"Platt Scaling\", \"Isotonic Regression\"]",
+      "common_misconceptions": "[\"Calibrated models are only for classification tasks\", \"Calibration is the same as accuracy\"]",
+      "practical_applications": "[\"Medical diagnosis predictions\", \"Financial risk assessment\", \"Weather forecasting\"]"
+    },
+    {
+      "id": "Creativity in AI",
+      "description": "Exploration of how AI can assist and enhance creative processes.",
+      "sub_topics": "[{\"name\": \"Assisted Creativity\", \"description\": \"Using AI tools to support creative endeavors.\"}, {\"name\": \"Creative Writing\", \"description\": \"The role of AI in generating and enhancing written content.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of AI and creativity concepts.",
+      "key_sub_concepts": "[\"Generative Adversarial Networks (GANs)\", \"Natural Language Processing (NLP) in creative writing\"]",
+      "common_misconceptions": "[\"AI can create art independently without human input\", \"Creativity is solely a human trait\"]",
+      "practical_applications": "[\"AI-assisted music composition\", \"AI-generated visual art\"]"
+    },
+    {
+      "id": "Statistical Ciphers",
+      "description": "Techniques for encoding and decoding information using statistical methods.",
+      "sub_topics": "[{\"name\": \"Cipher Analysis\", \"description\": \"Methods for breaking down and understanding ciphers.\"}, {\"name\": \"Enigma Ciphers\", \"description\": \"Historical ciphers and their significance in cryptography.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of probability and statistics, familiarity with cryptography concepts.",
+      "key_sub_concepts": "[\"Probability distributions\", \"Entropy and information theory\"]",
+      "common_misconceptions": "[\"Statistical ciphers are unbreakable\", \"They only rely on complex algorithms\"]",
+      "practical_applications": "[\"Secure communication\", \"Data encryption in software applications\"]"
+    },
+    {
+      "id": "Feedback Mechanisms",
+      "description": "Systems for providing and utilizing feedback to improve models.",
+      "sub_topics": "[{\"name\": \"Feedback Critiquing\", \"description\": \"Evaluating and improving model outputs based on feedback.\"}, {\"name\": \"Systematic Feedback\", \"description\": \"Structured approaches to gather and implement user feedback.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Reinforcement Learning\"]",
+      "common_misconceptions": "[\"Feedback is only necessary in supervised learning.\", \"More feedback always leads to better models.\"]",
+      "practical_applications": "[\"Model tuning and optimization\", \"Real-time system adjustments in AI applications\"]"
+    },
+    {
+      "id": "Hypothesis Generation",
+      "description": "The process of forming and testing hypotheses in machine learning.",
+      "sub_topics": "[{\"name\": \"Previous Hypotheses\", \"description\": \"Reviewing past hypotheses to inform current research.\"}, {\"name\": \"RLHF Techniques\", \"description\": \"Reinforcement Learning from Human Feedback methods.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and machine learning principles.",
+      "key_sub_concepts": "[\"Hypothesis Testing\", \"Model Evaluation\"]",
+      "common_misconceptions": "[\"Hypotheses are always correct\", \"Hypothesis generation is the same as model training\"]",
+      "practical_applications": "[\"A/B Testing\", \"Feature Selection\"]"
+    },
+    {
+      "id": "Model Training",
+      "description": "The process of teaching a model to make predictions based on data.",
+      "sub_topics": "[{\"name\": \"Backpropagation\", \"description\": \"A method for training neural networks through gradient descent.\"}, {\"name\": \"Loss Functions\", \"description\": \"Metrics used to evaluate the performance of a model.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming, familiarity with data structures.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Loss Functions\", \"Overfitting\", \"Validation Techniques\"]",
+      "common_misconceptions": "[\"Training a model means it will always perform well on unseen data.\", \"More data always leads to better models.\"]",
+      "practical_applications": "[\"Predicting house prices\", \"Classifying emails as spam or not\", \"Image recognition tasks\"]"
+    },
+    {
+      "id": "AI Tools",
+      "description": "Technological resources that assist in various tasks using AI.",
+      "sub_topics": "[{\"name\": \"Assisted Research\", \"description\": \"Using AI to enhance research capabilities.\"}, {\"name\": \"Creative AI Tools\", \"description\": \"AI applications specifically designed for creative tasks.\"}]",
+      "difficulty_level": 1,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of computer science and programming concepts.",
+      "key_sub_concepts": "[\"Machine Learning Frameworks\", \"Natural Language Processing Tools\"]",
+      "common_misconceptions": "[\"AI tools can fully replace human intelligence\", \"All AI tools require extensive programming knowledge\"]",
+      "practical_applications": "[\"Automating data analysis\", \"Enhancing customer service with chatbots\"]"
+    },
+    {
+      "id": "Workforce Impact",
+      "description": "The effects of AI and machine learning on employment and job markets.",
+      "sub_topics": "[{\"name\": \"Workforce Challenges\", \"description\": \"Issues arising from the integration of AI in the workforce.\"}, {\"name\": \"Impact on Jobs\", \"description\": \"How AI technologies are reshaping job roles and requirements.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of AI and machine learning principles.",
+      "key_sub_concepts": "[\"Job displacement\", \"Job creation\", \"Skill transformation\", \"Economic impact\"]",
+      "common_misconceptions": "[\"AI will completely replace human jobs\", \"Only low-skilled jobs are at risk\", \"AI will not create new job opportunities\"]",
+      "practical_applications": "[\"Workforce planning\", \"Upskilling and reskilling programs\", \"Policy development for labor markets\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Model Training",
+      "to": "Calibrated Models",
+      "relation": "prerequisite",
+      "reason": "Calibration evaluates and adjusts confidence estimates of predictive models, which requires understanding how models are trained and make predictions."
+    },
+    {
+      "from": "Model Training",
+      "to": "Language Models",
+      "relation": "prerequisite",
+      "reason": "Understanding language models as ML models requires knowing how models are trained on data to learn predictive patterns."
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Reinforcement Learning" label="Reinforcement Learning">
+        <attvalues>
+          <attvalue for="0" value="A type of machine learning focused on training agents to make decisions through rewards and penalties." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Effortful RL&quot;, &quot;description&quot;: &quot;A method in reinforcement learning that emphasizes the effort required for learning.&quot;}, {&quot;name&quot;: &quot;Reinforcement Learning Practices&quot;, &quot;description&quot;: &quot;Best practices and methodologies for implementing reinforcement learning.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and probability theory." />
+          <attvalue for="6" value="[&quot;Markov Decision Processes&quot;, &quot;Q-Learning&quot;]" />
+          <attvalue for="7" value="[&quot;Reinforcement learning is the same as supervised learning&quot;, &quot;Agents always learn the optimal policy quickly&quot;]" />
+          <attvalue for="8" value="[&quot;Game playing (e.g., AlphaGo)&quot;, &quot;Robotics and autonomous systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Reasoning in AI" label="Reasoning in AI">
+        <attvalues>
+          <attvalue for="0" value="The process of deriving logical conclusions from premises or facts in artificial intelligence." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Thought Reasoning&quot;, &quot;description&quot;: &quot;The cognitive process of reasoning through thoughts in AI.&quot;}, {&quot;name&quot;: &quot;Reasoning Datasets&quot;, &quot;description&quot;: &quot;Datasets specifically designed for training reasoning models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of logic and programming concepts." />
+          <attvalue for="6" value="[&quot;Deductive reasoning&quot;, &quot;Inductive reasoning&quot;]" />
+          <attvalue for="7" value="[&quot;AI can reason like humans&quot;, &quot;Reasoning is only about logical deduction&quot;]" />
+          <attvalue for="8" value="[&quot;Expert systems&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Pretraining" label="Data Pretraining">
+        <attvalues>
+          <attvalue for="0" value="The process of training models on large datasets before fine-tuning on specific tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Reasoning Pretraining&quot;, &quot;description&quot;: &quot;Pretraining models specifically for reasoning tasks.&quot;}, {&quot;name&quot;: &quot;Quality of Data&quot;, &quot;description&quot;: &quot;The importance of data quality in pretraining models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and neural networks." />
+          <attvalue for="6" value="[&quot;Transfer Learning&quot;, &quot;Feature Extraction&quot;]" />
+          <attvalue for="7" value="[&quot;Pretraining is the same as fine-tuning&quot;, &quot;Pretrained models are always better for all tasks&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Computer Vision&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain, used for various machine learning tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Neural Models&quot;, &quot;description&quot;: &quot;Different architectures and types of neural networks.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of neural network nodes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Training" label="Model Training">
+        <attvalues>
+          <attvalue for="0" value="The process of teaching a machine learning model to make predictions or decisions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Training Recipes&quot;, &quot;description&quot;: &quot;Guidelines and strategies for effective model training.&quot;}, {&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming, familiarity with machine learning concepts." />
+          <attvalue for="6" value="[&quot;Overfitting&quot;, &quot;Underfitting&quot;, &quot;Training vs. Testing Data&quot;, &quot;Hyperparameter Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Training accuracy is the only measure of model performance&quot;]" />
+          <attvalue for="8" value="[&quot;Predictive analytics in business&quot;, &quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Scaling Intelligence" label="Scaling Intelligence">
+        <attvalues>
+          <attvalue for="0" value="Techniques for enhancing the capabilities of AI systems as they grow in complexity." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Smart Scaling&quot;, &quot;description&quot;: &quot;Intelligent methods for scaling AI systems.&quot;}, {&quot;name&quot;: &quot;Generative AI&quot;, &quot;description&quot;: &quot;AI systems that can generate new content or data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning principles and algorithms." />
+          <attvalue for="6" value="[&quot;Data normalization&quot;, &quot;Model complexity management&quot;]" />
+          <attvalue for="7" value="[&quot;Scaling is only about data preprocessing&quot;, &quot;More data always leads to better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model performance on large datasets&quot;, &quot;Optimizing resource allocation in AI systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Chinese AI Contributions" label="Chinese AI Contributions">
+        <attvalues>
+          <attvalue for="0" value="The impact and advancements made by Chinese researchers and institutions in AI." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Chinese Labs&quot;, &quot;description&quot;: &quot;Research laboratories in China focused on AI development.&quot;}, {&quot;name&quot;: &quot;Repositories in China&quot;, &quot;description&quot;: &quot;Data and model repositories established by Chinese institutions.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of artificial intelligence and machine learning principles." />
+          <attvalue for="6" value="[&quot;Deep Learning Innovations&quot;, &quot;Natural Language Processing Advances&quot;]" />
+          <attvalue for="7" value="[&quot;China only follows Western AI trends&quot;, &quot;Chinese AI research lacks originality&quot;]" />
+          <attvalue for="8" value="[&quot;Facial recognition technology&quot;, &quot;Smart city infrastructure&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Predictive Modeling" label="Predictive Modeling">
+        <attvalues>
+          <attvalue for="0" value="The use of statistical techniques to predict future outcomes based on historical data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Reasoned Predictors&quot;, &quot;description&quot;: &quot;Models that make predictions based on logical reasoning.&quot;}, {&quot;name&quot;: &quot;Regression and Classification&quot;, &quot;description&quot;: &quot;Techniques for predicting continuous and categorical outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and data analysis." />
+          <attvalue for="6" value="[&quot;Regression Analysis&quot;, &quot;Classification Techniques&quot;]" />
+          <attvalue for="7" value="[&quot;Predictive modeling guarantees accurate predictions.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Sales forecasting&quot;, &quot;Customer behavior analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Optimization Techniques" label="Optimization Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods used to improve the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Entropy Training&quot;, &quot;description&quot;: &quot;A training method that incorporates entropy for better model performance.&quot;}, {&quot;name&quot;: &quot;Specific Tuning&quot;, &quot;description&quot;: &quot;Fine-tuning models for specific tasks or datasets.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and linear algebra, familiarity with machine learning concepts." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Adam Optimizer&quot;, &quot;Learning Rate Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;Optimization is only about finding the minimum&quot;, &quot;All optimization techniques work equally well for all problems&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Tuning hyperparameters&quot;, &quot;Improving model accuracy&quot;, &quot;Reducing training time&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Model Training" target="Data Pretraining">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Data pretraining is a specialized training stage, so understanding general model training is necessary first." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

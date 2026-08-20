@@ -1,0 +1,105 @@
+{
+  "created_at": "2026-08-18T18:36:11.093937+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-01-simple-qa-readme-77b046bfe0ed",
+  "file_name": "01-simple-qa-readme-77b046bfe0ed",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 3,
+  "topic_metrics": {
+    "precision": 0.6667,
+    "recall": 0.6667,
+    "f1": 0.6667,
+    "tp": 6,
+    "fp": 3,
+    "fn": 3
+  },
+  "prerequisite_metrics": {
+    "precision": 0.2,
+    "recall": 0.5,
+    "f1": 0.2857,
+    "tp": 1,
+    "fp": 4,
+    "fn": 1
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Vector Databases",
+      "Knowledge Base",
+      "Question Answering",
+      "Fallback Mechanisms",
+      "Data Storage",
+      "Retrieval Techniques"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Python Basics",
+        "reason": "Python commands and code are shown, but Python fundamentals are not taught as a learning topic."
+      },
+      {
+        "name": "Machine Learning Concepts",
+        "reason": "The source uses embedding models but does not present broad machine-learning concepts."
+      },
+      {
+        "name": "Training Techniques",
+        "reason": "No model training or training methods are discussed."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Vector Embeddings",
+        "reason": "The source explicitly identifies embedding as converting text into vectors using Sentence Transformers."
+      },
+      {
+        "name": "Cosine Similarity",
+        "reason": "Retrieval is explicitly described as finding similar vectors using cosine similarity."
+      },
+      {
+        "name": "Retrieval-Augmented Generation",
+        "reason": "The example is explicitly described as a minimal RAG system, and RAG is defined in the example output."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Knowledge Base",
+        "to": "Question Answering",
+        "reason": "This QA system answers questions by retrieving relevant facts from its knowledge base."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Python Basics",
+        "to": "Machine Learning Concepts",
+        "reason": "Neither Python basics nor general machine-learning concepts is taught, and this dependency is not established by the source."
+      },
+      {
+        "from": "Machine Learning Concepts",
+        "to": "Training Techniques",
+        "reason": "Training techniques are not covered in the source."
+      },
+      {
+        "from": "Data Storage",
+        "to": "Vector Databases",
+        "reason": "The source states that vectors are stored in Chroma DB but does not establish general data storage as a learning prerequisite."
+      },
+      {
+        "from": "Vector Databases",
+        "to": "Retrieval Techniques",
+        "reason": "The example uses a vector database for retrieval, but it does not establish vector-database knowledge as a prerequisite for retrieval techniques generally."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Vector Embeddings",
+        "to": "Cosine Similarity",
+        "reason": "Cosine similarity is used to compare the text vectors produced by embedding."
+      }
+    ],
+    "overall_note": "The source focuses on a small RAG question-answering pipeline, not general Python, machine-learning training, or broad storage instruction."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-01-simple-qa-readme-77b046bfe0ed.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-01-simple-qa-readme-77b046bfe0ed.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-01-simple-qa-readme-77b046bfe0ed_ledger.csv"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 8,
+  "prerequisite_count": 8,
+  "prerequisites": [
+    {
+      "from": "Linear Algebra",
+      "to": "Artificial Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural networks rely on vectors, matrices, and linear transformations."
+    },
+    {
+      "from": "Linear Algebra",
+      "to": "Regression",
+      "relation_type": "strong_prerequisite",
+      "reason": "Regression models commonly use vector and matrix representations for inputs, parameters, and solutions."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Loss Functions",
+      "relation_type": "strong_prerequisite",
+      "reason": "Loss functions require understanding predictions, targets, model evaluation, and learning objectives."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Regression",
+      "relation_type": "strong_prerequisite",
+      "reason": "Regression depends on core machine learning concepts such as features, models, training, and evaluation."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Classification",
+      "relation_type": "strong_prerequisite",
+      "reason": "Classification depends on core machine learning concepts such as features, labels, models, training, and evaluation."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training techniques require understanding how machine learning models learn and are evaluated."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Artificial Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Artificial neural networks are advanced machine learning models that require basic ML concepts first."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training techniques generally optimize or depend on a defined loss objective."
+    }
+  ]
+}

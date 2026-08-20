@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01_intro\\d3a9f91a36eb\\01_intro.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01_intro\\d3a9f91a36eb\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01_intro\\d3a9f91a36eb\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.2973,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 2553\n[2] 清洗后词数: 2617\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 15\n[5] 分块数（过滤后）: 14\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01_intro\\d3a9f91a36eb\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01_intro\\d3a9f91a36eb\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=251\nRepresentations Matter CHAPTER 1. INTRODUCTION x (Goodfellow 2016) y Cartesian coordinates r θ Polar coordinates Figure 1.1: Example of different rep Freigseunrtea t 1 io.n 1 s: suppose we want to separate two categories...\n\n[Chunk 2] words=99\nAutoencoders are trained to preserve as much information as possible when an input is run through the encoder and then the decoder, but are also trained to make the new representation have various nice properties. Differ...\n\n[Chunk 3] words=253\nDe CHp APTt ERh 1. :IN TRRODUe CTp IONeated Composition Output CAR PERSON ANIMAL (object identity) 3 rd hidden layer (object parts) 2 nd hidden layer (corners and contours) 1 st hidden layer (edges) Visible layer (input ...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

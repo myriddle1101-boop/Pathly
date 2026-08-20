@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "id": "Neural Networks",
+      "description": "A computational model inspired by the human brain's network of neurons.",
+      "sub_topics": "[{\"name\": \"Convolutional Neural Networks\", \"description\": \"A type of neural network particularly effective for image processing.\"}, {\"name\": \"Groups of Neurons\", \"description\": \"Clusters of neurons that work together to process information.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Convolutional Kernels",
+      "description": "Filters used in convolutional layers to extract features from input data.",
+      "sub_topics": "[{\"name\": \"Kernels Example\", \"description\": \"Illustrative examples of how kernels operate in convolutional layers.\"}, {\"name\": \"Learning Pooling\", \"description\": \"Techniques to reduce dimensionality and retain important features.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and linear algebra.",
+      "key_sub_concepts": "[\"Filter size\", \"Stride\", \"Padding\", \"Activation functions\"]",
+      "common_misconceptions": "[\"Kernels only detect edges\", \"All kernels are the same size\"]",
+      "practical_applications": "[\"Image recognition\", \"Object detection\", \"Facial recognition\", \"Medical image analysis\"]"
+    },
+    {
+      "id": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": "[{\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of a neural network node.\"}, {\"name\": \"Loss Functions\", \"description\": \"Metrics used to evaluate the performance of a model.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra, calculus, and programming in Python.",
+      "key_sub_concepts": "[\"Neural Networks\", \"Backpropagation\", \"Convolutional Neural Networks (CNNs)\", \"Recurrent Neural Networks (RNNs)\"]",
+      "common_misconceptions": "[\"Deep learning is the same as machine learning.\", \"More layers always lead to better performance.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Speech recognition\", \"Game playing (e.g., AlphaGo)\"]"
+    },
+    {
+      "id": "Learning Models",
+      "description": "Frameworks and algorithms used to train machine learning systems.",
+      "sub_topics": "[{\"name\": \"Feature Selection\", \"description\": \"The process of selecting relevant features for model training.\"}, {\"name\": \"Training Techniques\", \"description\": \"Methods used to optimize model performance during training.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Reinforcement Learning\", \"Model Evaluation\"]",
+      "common_misconceptions": "[\"All models are equally effective\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image Recognition\", \"Natural Language Processing\", \"Recommendation Systems\", \"Predictive Analytics\"]"
+    },
+    {
+      "id": "Backpropagation",
+      "description": "An algorithm for training neural networks by minimizing the loss function.",
+      "sub_topics": "[{\"name\": \"Gradient Descent\", \"description\": \"An optimization algorithm used in backpropagation.\"}, {\"name\": \"Learning Rate\", \"description\": \"A hyperparameter that controls how much to change the model in response to the estimated error.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of calculus, linear algebra, and neural networks.",
+      "key_sub_concepts": "[\"Gradient Descent\", \"Chain Rule\", \"Loss Function\"]",
+      "common_misconceptions": "[\"Backpropagation is the same as training a neural network.\", \"Backpropagation can only be used with specific types of neural networks.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Linear Separability",
+      "description": "The ability to separate classes in a dataset using a linear boundary.",
+      "sub_topics": "[{\"name\": \"Regression\", \"description\": \"A method for predicting continuous outcomes.\"}, {\"name\": \"Classification\", \"description\": \"A method for predicting categorical outcomes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and introductory statistics.",
+      "key_sub_concepts": "[\"Hyperplanes\", \"Support Vector Machines\"]",
+      "common_misconceptions": "[\"All datasets are linearly separable\", \"Linear separability guarantees perfect classification\"]",
+      "practical_applications": "[\"Binary classification tasks\", \"Image recognition\"]"
+    },
+    {
+      "id": "Practical Learning",
+      "description": "Hands-on approaches to understanding machine learning concepts.",
+      "sub_topics": "[{\"name\": \"Lecture Insights\", \"description\": \"Key takeaways from machine learning lectures.\"}, {\"name\": \"Practical Comments\", \"description\": \"Real-world applications and considerations in machine learning.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and statistics.",
+      "key_sub_concepts": "[\"Data preprocessing\", \"Model evaluation techniques\"]",
+      "common_misconceptions": "[\"Machine learning requires extensive math knowledge\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Building simple predictive models\", \"Implementing algorithms using libraries like scikit-learn\"]"
+    },
+    {
+      "id": "Learning Challenges",
+      "description": "Common issues faced when training machine learning models.",
+      "sub_topics": "[{\"name\": \"Overfitting\", \"description\": \"When a model learns noise instead of the underlying pattern.\"}, {\"name\": \"Underfitting\", \"description\": \"When a model is too simple to capture the underlying trend.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning principles and algorithms.",
+      "key_sub_concepts": "[\"Overfitting\", \"Underfitting\", \"Data Imbalance\", \"Feature Selection\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Complex models are always better than simple ones\"]",
+      "practical_applications": "[\"Improving model accuracy\", \"Optimizing training processes\"]"
+    },
+    {
+      "id": "Image Analysis",
+      "description": "Techniques and methods for processing and interpreting images.",
+      "sub_topics": "[{\"name\": \"Image Preprocessing\", \"description\": \"Steps taken to prepare images for analysis.\"}, {\"name\": \"Feature Extraction\", \"description\": \"Identifying and isolating key features from images.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and linear algebra.",
+      "key_sub_concepts": "[\"Image preprocessing\", \"Feature extraction\"]",
+      "common_misconceptions": "[\"Image analysis is only about object detection\", \"All images can be analyzed the same way\"]",
+      "practical_applications": "[\"Medical imaging analysis\", \"Facial recognition systems\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Neural Networks",
+      "to": "Backpropagation",
+      "relation": "prerequisite",
+      "reason": "Backpropagation is an algorithm specifically designed for training neural networks."
+    },
+    {
+      "from": "Convolutional Kernels",
+      "to": "Image Analysis",
+      "relation": "prerequisite",
+      "reason": "Convolutional Kernels are essential for feature extraction in Image Analysis."
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Deep Learning is fundamentally based on the principles of Neural Networks."
+    },
+    {
+      "from": "Learning Models",
+      "to": "Learning Challenges",
+      "relation": "prerequisite",
+      "reason": "Understanding Learning Models is necessary to address Learning Challenges."
+    },
+    {
+      "from": "Learning Models",
+      "to": "Practical Learning",
+      "relation": "similarity",
+      "score": 0.7238
+    },
+    {
+      "from": "Learning Challenges",
+      "to": "Learning Models",
+      "relation": "similarity",
+      "score": 0.7771
+    },
+    {
+      "from": "Learning Challenges",
+      "to": "Practical Learning",
+      "relation": "similarity",
+      "score": 0.7695
+    }
+  ]
+}

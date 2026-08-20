@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-07">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Lecture Structure" label="Lecture Structure">
+        <attvalues>
+          <attvalue for="0" value="Framework for organizing course content and delivery." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Lecture Plan&quot;, &quot;description&quot;: &quot;Detailed outline of topics to be covered in lectures.&quot;}, {&quot;name&quot;: &quot;Guest Lecture&quot;, &quot;description&quot;: &quot;Special sessions featuring external experts.&quot;}, {&quot;name&quot;: &quot;Lecture Introduction&quot;, &quot;description&quot;: &quot;Overview and objectives presented at the start of each lecture.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of course design and pedagogy." />
+          <attvalue for="6" value="[&quot;Course Objectives&quot;, &quot;Content Sequencing&quot;, &quot;Assessment Methods&quot;, &quot;Engagement Strategies&quot;]" />
+          <attvalue for="7" value="[&quot;Lecture structure is only about content delivery&quot;, &quot;All lectures must follow a strict format&quot;]" />
+          <attvalue for="8" value="[&quot;Designing a syllabus&quot;, &quot;Creating engaging presentations&quot;, &quot;Implementing active learning techniques&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Grading Policy" label="Grading Policy">
+        <attvalues>
+          <attvalue for="0" value="Criteria and methods for evaluating student performance." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Work Grading&quot;, &quot;description&quot;: &quot;Assessment methods for assignments and projects.&quot;}, {&quot;name&quot;: &quot;Course Grade&quot;, &quot;description&quot;: &quot;Final evaluation based on cumulative performance.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of educational assessment methods and grading scales." />
+          <attvalue for="6" value="[&quot;Formative Assessment&quot;, &quot;Summative Assessment&quot;]" />
+          <attvalue for="7" value="[&quot;Grading is solely based on exams&quot;, &quot;All assignments carry equal weight&quot;]" />
+          <attvalue for="8" value="[&quot;Designing a grading rubric&quot;, &quot;Implementing peer assessments&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Homework Assignments" label="Homework Assignments">
+        <attvalues>
+          <attvalue for="0" value="Tasks assigned to reinforce learning outside of lectures." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Individually HW&quot;, &quot;description&quot;: &quot;Assignments completed by students independently.&quot;}, {&quot;name&quot;: &quot;Notebook HW&quot;, &quot;description&quot;: &quot;Homework involving coding and documentation in notebooks.&quot;}, {&quot;name&quot;: &quot;Parsing HW&quot;, &quot;description&quot;: &quot;Assignments focused on syntactic analysis of language.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of the subject matter covered in lectures." />
+          <attvalue for="6" value="[&quot;Task completion&quot;, &quot;Time management&quot;]" />
+          <attvalue for="7" value="[&quot;Homework is optional&quot;, &quot;All assignments are equally difficult&quot;]" />
+          <attvalue for="8" value="[&quot;Reinforcing lecture material&quot;, &quot;Developing independent study skills&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Natural Language Processing" label="Natural Language Processing">
+        <attvalues>
+          <attvalue for="0" value="Field of study focused on the interaction between computers and human language." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;NLP Lecture&quot;, &quot;description&quot;: &quot;Sessions dedicated to concepts and techniques in NLP.&quot;}, {&quot;name&quot;: &quot;Language Processing&quot;, &quot;description&quot;: &quot;Techniques for analyzing and understanding human language.&quot;}, {&quot;name&quot;: &quot;Language Computation&quot;, &quot;description&quot;: &quot;Computational methods for processing language data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Sentiment Analysis&quot;, &quot;Named Entity Recognition&quot;, &quot;Language Modeling&quot;]" />
+          <attvalue for="7" value="[&quot;NLP can understand language like humans do&quot;, &quot;NLP is only about text processing&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots&quot;, &quot;Text classification&quot;, &quot;Machine translation&quot;, &quot;Information retrieval&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Machine Learning Concepts" label="Machine Learning Concepts">
+        <attvalues>
+          <attvalue for="0" value="Fundamental principles and techniques in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;Functions that determine the output of neural network nodes.&quot;}, {&quot;name&quot;: &quot;Loss Function&quot;, &quot;description&quot;: &quot;Measures the difference between predicted and actual outcomes.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;Algorithm for training neural networks by minimizing loss.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting&quot;, &quot;Model Evaluation&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning can solve any problem&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Artificial Neural Network&quot;, &quot;description&quot;: &quot;Network of interconnected nodes that simulate brain functions.&quot;}, {&quot;name&quot;: &quot;Linear Separation&quot;, &quot;description&quot;: &quot;Concept of dividing data points using linear boundaries.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;, &quot;Loss Functions&quot;, &quot;Overfitting and Regularization&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Learning Techniques" label="Learning Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods and strategies for training models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Regression&quot;, &quot;description&quot;: &quot;Predictive modeling technique for continuous outcomes.&quot;}, {&quot;name&quot;: &quot;Classification&quot;, &quot;description&quot;: &quot;Method for categorizing data into distinct classes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;, &quot;Transfer Learning&quot;]" />
+          <attvalue for="7" value="[&quot;All models learn the same way&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Game AI&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Course Projects" label="Course Projects">
+        <attvalues>
+          <attvalue for="0" value="Hands-on assignments that apply learned concepts." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Project Guidelines&quot;, &quot;description&quot;: &quot;Instructions and expectations for course projects.&quot;}, {&quot;name&quot;: &quot;Team Collaboration&quot;, &quot;description&quot;: &quot;Working in groups to complete projects.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning principles and programming skills." />
+          <attvalue for="6" value="[&quot;Data preprocessing&quot;, &quot;Model evaluation&quot;]" />
+          <attvalue for="7" value="[&quot;Projects are only for advanced learners&quot;, &quot;Real-world data is always clean&quot;]" />
+          <attvalue for="8" value="[&quot;Building predictive models&quot;, &quot;Analyzing datasets for insights&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Machine Learning Concepts" target="Natural Language Processing" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="NLP relies on foundational ML principles." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning Concepts" target="Neural Networks" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Neural networks are a key technique in ML." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning Concepts" target="Learning Techniques" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding ML concepts is essential for learning techniques." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning Concepts" target="Course Projects" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Projects apply ML concepts learned in the course." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning Concepts" target="Homework Assignments" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Assignments reinforce ML concepts." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Learning Techniques" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training neural networks requires specific learning strategies." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

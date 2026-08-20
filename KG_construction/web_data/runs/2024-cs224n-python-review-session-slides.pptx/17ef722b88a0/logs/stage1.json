@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\2024 CS224N Python Review Session Slides.pptx.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 8.7339,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3571\n[2] 清洗后词数: 3662\n[3] 文档类型识别: paper_book\n[4] 分块数（过滤前）: 25\n[5] 分块数（过滤后）: 23\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=110\nReview Session Python CS 224 N - Winter 25 Stanford University 1  Two entwined snakes, based on Mayan representations. However, named after Monty Python’s Flying Circus  2  Charting a Course 1 2 3 Why Python? Setting Up...\n\n[Chunk 2] words=115\nThe Python Interpreter Ex. Interactive Mode (line-by-line) Ex. Script Mode (.py file) Python code → interpreted into bytecode (.pyc) → compiled by a VM implementation into machine instructions (most commonly using C.) “S...\n\n[Chunk 3] words=84\nLanguage Basics A variable is simply a value or object reference bound to a name. Dynamically Typed Data types of variables are determined at runtime (flexible!) Variables can be def find(required_element, sequence): for...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

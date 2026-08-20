@@ -1,0 +1,32 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 4,
+  "prerequisites": [
+    {
+      "from": "Neurons",
+      "to": "Artificial Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Artificial neural networks are built from neuron-like units, so understanding neurons is necessary to understand their structure."
+    },
+    {
+      "from": "Artificial Neural Networks",
+      "to": "Autoencoders",
+      "relation_type": "strong_prerequisite",
+      "reason": "Autoencoders are neural network architectures, so understanding artificial neural networks is necessary before learning autoencoders."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Autoencoders",
+      "relation_type": "strong_prerequisite",
+      "reason": "Autoencoders learn efficient representations of data, so understanding data representation is necessary."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Visual Recognition",
+      "relation_type": "strong_prerequisite",
+      "reason": "Visual recognition requires understanding how image data is structured and represented for model input."
+    }
+  ]
+}

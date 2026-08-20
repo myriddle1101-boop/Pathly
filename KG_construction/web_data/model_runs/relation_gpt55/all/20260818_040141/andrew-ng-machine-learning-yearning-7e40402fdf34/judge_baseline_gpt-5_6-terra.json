@@ -1,0 +1,119 @@
+{
+  "created_at": "2026-08-18T18:48:21.464903+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-andrew-ng-machine-learning-yearning-7e40402fdf34",
+  "file_name": "andrew-ng-machine-learning-yearning-7e40402fdf34",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 132,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.7273,
+    "f1": 0.8,
+    "tp": 8,
+    "fp": 1,
+    "fn": 3
+  },
+  "prerequisite_metrics": {
+    "precision": 0.25,
+    "recall": 0.5,
+    "f1": 0.3333,
+    "tp": 2,
+    "fp": 6,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Machine Learning",
+      "Neural Networks",
+      "Training Process",
+      "Model Evaluation",
+      "Data Management",
+      "Performance Metrics",
+      "Pipeline Design",
+      "Overfitting and Generalization"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Specialized Applications",
+        "reason": "The source gives application examples, but does not present this as a distinct learning concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Development and test sets",
+        "reason": "The source extensively covers selecting representative dev/test sets, matching their distributions, and choosing their sizes."
+      },
+      {
+        "name": "Error analysis",
+        "reason": "The source explicitly defines error analysis as examining misclassified dev-set examples to identify and prioritize error sources."
+      },
+      {
+        "name": "Data distribution mismatch",
+        "reason": "The source emphasizes failures to generalize when training, dev, test, or deployment distributions differ."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Model Evaluation",
+        "to": "Performance Metrics",
+        "reason": "The source explains that evaluation of classifiers depends on metrics such as accuracy, precision, recall, and F1 score."
+      },
+      {
+        "from": "Training Process",
+        "to": "Overfitting and Generalization",
+        "reason": "The discussion of overfitting and generalization concerns the behavior of trained models across dev, test, and target distributions."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Data Management",
+        "to": "Training Process",
+        "reason": "Data is used for training, but this is a broad operational association rather than a clearly defined instructional prerequisite between these concepts."
+      },
+      {
+        "from": "Training Process",
+        "to": "Model Evaluation",
+        "reason": "Training followed by evaluation is a common workflow order, not a strong learning dependency."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Training Process",
+        "reason": "Neural networks are one model family discussed in the source; knowledge of them is not required for the general concept of training process."
+      },
+      {
+        "from": "Pipeline Design",
+        "to": "Training Process",
+        "reason": "This describes possible system composition rather than a directional prerequisite."
+      },
+      {
+        "from": "Pipeline Design",
+        "to": "Data Management",
+        "reason": "The relation is a weak component/association claim, not a strong learning dependency."
+      },
+      {
+        "from": "Specialized Applications",
+        "to": "Machine Learning",
+        "reason": "The direction is backwards: machine learning principles enable applications, and Specialized Applications is not a supported distinct concept."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Development and test sets",
+        "to": "Error analysis",
+        "reason": "The source defines error analysis around manually examining misclassified examples from the dev set."
+      },
+      {
+        "from": "Performance metrics",
+        "to": "Development and test sets",
+        "reason": "The source explains that dev/test sets are used to measure algorithm performance using a chosen evaluation metric."
+      }
+    ],
+    "overall_note": "The predictions capture broad ML strategy themes, but omit the source's central practical concepts of dev/test-set design, distribution mismatch, and error analysis."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-andrew-ng-machine-learning-yearning-7e40402fdf34.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-andrew-ng-machine-learning-yearning-7e40402fdf34.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-andrew-ng-machine-learning-yearning-7e40402fdf34_ledger.csv"
+  }
+}

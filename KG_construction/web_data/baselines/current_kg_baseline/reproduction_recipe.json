@@ -1,0 +1,70 @@
+{
+  "pipeline_project_dir": "D:\\ic\\master project\\project_code\\KG_construction",
+  "available": true,
+  "primary_representative_run": "Security and Privacy in ML",
+  "sample_pdf": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\Security and Privacy in ML.pdf",
+  "reproduced_output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced",
+  "steps": [
+    {
+      "stage": "stage1",
+      "script": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+      "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+      "inputs": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\Security and Privacy in ML.pdf",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage1_chunks.json"
+      ],
+      "expected_output_sha256": "e9363ea8a74a0e10719c3f5fb6607d9de4f38a4cf3ff2972a12ef6768cb62140"
+    },
+    {
+      "stage": "stage2a",
+      "script": "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py",
+      "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+      "inputs": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2a_topics_hybrid.json"
+      ],
+      "expected_output_sha256": "ab64c5ac3539636dcc9dbc61629abb2ffe61f4d551baf534167cb93360431706"
+    },
+    {
+      "stage": "stage2b",
+      "script": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+      "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+      "inputs": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2a_topics_hybrid.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2b_prerequisites.json"
+      ],
+      "expected_output_sha256": "94b21ba2b7484cf5b215fe8d4327c503a41ad95f54307569498f9f3778af62e0"
+    },
+    {
+      "stage": "stage2c",
+      "script": "D:\\ic\\master project\\project_code\\KG_construction\\stage2c_similarity.py",
+      "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+      "inputs": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2a_topics_hybrid.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2c_similarity_edges.json"
+      ],
+      "expected_output_sha256": "b54be1dc1af40858392eb148f6d811dc4059e3d288b0dd5c441660b67564e8a6"
+    },
+    {
+      "stage": "stage3",
+      "script": "D:\\ic\\master project\\project_code\\KG_construction\\stage3_node_summary_hybrid.py",
+      "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+      "inputs": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2a_topics_hybrid.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage3_topics_with_summary.json"
+      ],
+      "expected_output_sha256": "a30d98b215db5a80dce6d10f84e9a12c9d6854b7e53ed991a18571199bfded27"
+    },
+    {
+      "stage": "stage4",
+      "script": "D:\\ic\\master project\\project_code\\KG_construction\\stage4_build_and_visualize_kg.py",
+      "cwd": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced",
+      "inputs": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2c_similarity_edges.json"
+      ],
+      "expected_output_sha256": "184630a48faa57660157ba7afdee2ada54a31fd8620d50ef20c6b404750c11f6"
+    }
+  ]
+}

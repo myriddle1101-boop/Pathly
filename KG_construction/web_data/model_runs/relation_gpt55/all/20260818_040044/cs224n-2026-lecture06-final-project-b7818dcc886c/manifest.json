@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "cs224n-2026-lecture06-final-project-b7818dcc886c",
+  "created_at": "2026-07-07T19:47:03+08:00",
+  "updated_at": "2026-07-07T19:49:29+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "cs224n-2026-lecture06-final-project.pdf",
+    "doc_name": "cs224n-2026-lecture06-final-project",
+    "sha256": "b7818dcc886c2fb45467bf3b32280deb78ed4b66b36ba70e77011db2bc5197c1",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\cs224n-2026-lecture06-final-project.pdf",
+    "pdf_size_bytes": 3448290
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 145.8519
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:47:03+08:00",
+      "ended_at": "2026-07-07T19:47:09+08:00",
+      "duration_seconds": 6.6516,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\cs224n-2026-lecture06-final-project.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3891\n[2] 清洗后词数: 3956\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 18\n[5] 分块数（过滤后）: 18\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=227\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang Lecture 6: Final Projects & Practical Tips Lecture Plan Quick summary of Lecture 5: Transformers (15 mins) Lecture 6: Final Projects – practical ...\n\n[Chunk 2] words=192\nCross-attention (details)  We saw that self-attention is when keys, queries, and values come from the same source.  , … ,   In the decoder, we have attention that 1  looks more like what we saw last week.  Let  , ...\n\n[Chunk 3] words=251\nWhat would we like to fix about the Transformer?  Quadratic compute in self-attention (today):  Computing all pairs of interactions means our computation grows quadratically with the sequence length!  What if the seq ...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:47:10+08:00",
+      "ended_at": "2026-07-07T19:48:12+08:00",
+      "duration_seconds": 62.2351,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：18\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/18 ...\n[KeyBERT] chunk 2/18 ...\n[KeyBERT] chunk 3/18 ...\n[KeyBERT] chunk 4/18 ...\n[KeyBERT] chunk 5/18 ...\n[KeyBERT] chunk 6/18 ...\n[KeyBERT] chunk 7/18 ...\n[KeyBERT] chunk 8/18 ...\n[KeyBERT] chunk 9/18 ...\n[KeyBERT] chunk 10/18 ...\n[KeyBERT] chunk 11/18 ...\n[KeyBERT] chunk 12/18 ...\n[KeyBERT] chunk 13/18 ...\n[KeyBERT] chunk 14/18 ...\n[KeyBERT] chunk 15/18 ...\n[KeyBERT] chunk 16/18 ...\n[KeyBERT] chunk 17/18 ...\n[KeyBERT] chunk 18/18 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Neural Networks\n02. Deep Learning\n03. Model Training\n04. Project Proposals\n05. Grading Policies\n06. Datasets\n07. Training Models\n08. Attention Mechanisms\n09. Experimental Strategies\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5640.17it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:48:12+08:00",
+      "ended_at": "2026-07-07T19:48:18+08:00",
+      "duration_seconds": 6.1543,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Neural Networks -> Deep Learning | Deep Learning is based on the principles of Neural Networks.\n02. Datasets -> Model Training | Model Training requires data from Datasets.\n03. Model Training -> Training Models | Training Models involves the process of Model Training.\n04. Neural Networks -> Attention Mechanisms | Attention Mechanisms are often used in advanced Neural Network architectures.\n05. Experimental Strategies -> Model Training | Experimental Strategies are essential for effective Model Training.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:48:18+08:00",
+      "ended_at": "2026-07-07T19:48:57+08:00",
+      "duration_seconds": 38.8413,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 3 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Model Training <-> Training Models | sim=0.8841\n02. Experimental Strategies <-> Training Models | sim=0.762\n03. Datasets <-> Model Training | sim=0.7306\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4773.15it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:48:57+08:00",
+      "ended_at": "2026-07-07T19:49:27+08:00",
+      "duration_seconds": 30.0288,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Neural Networks\n[LLM] 2/9 Deep Learning\n[LLM] 3/9 Model Training\n[LLM] 4/9 Project Proposals\n[LLM] 5/9 Grading Policies\n[LLM] 6/9 Datasets\n[LLM] 7/9 Training Models\n[LLM] 8/9 Attention Mechanisms\n[LLM] 9/9 Experimental Strategies\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:49:27+08:00",
+      "ended_at": "2026-07-07T19:49:29+08:00",
+      "duration_seconds": 1.5701,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: 可选输出存在",
+          "kg_similarity.png: 可选输出存在"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 5\n[3] Similarity edges: 3\n[4] Graph nodes=9, edges=6\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-07T19:47:03+08:00"
+}

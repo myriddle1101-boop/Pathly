@@ -1,0 +1,92 @@
+{
+  "created_at": "2026-08-18T18:44:58.238259+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-13_linear_factors-92de7f819b1a",
+  "file_name": "13_linear_factors-92de7f819b1a",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 12,
+  "topic_metrics": {
+    "precision": 0.625,
+    "recall": 0.5556,
+    "f1": 0.5882,
+    "tp": 5,
+    "fp": 3,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 1,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Factor Models",
+      "Coding Techniques",
+      "Dimensionality Reduction",
+      "Statistical Models",
+      "Learning Algorithms"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "The source discusses linear factor models, PCA, sparse coding, and SFA, but not neural networks."
+      },
+      {
+        "name": "Regression and Classification",
+        "reason": "The source does not cover supervised regression or classification tasks."
+      },
+      {
+        "name": "Model Evaluation",
+        "reason": "The source does not present model-evaluation methods or metrics."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Probabilistic PCA",
+        "reason": "Explicitly presented as a linear factor model that extends PCA and yields a distribution over latent codes."
+      },
+      {
+        "name": "Factor Analysis",
+        "reason": "Explicitly defined using a unit-variance Gaussian latent prior and diagonal Gaussian observation noise."
+      },
+      {
+        "name": "Sparse Coding",
+        "reason": "A dedicated section describes sparse coding, sparse priors, MAP inference, and alternating optimization."
+      },
+      {
+        "name": "Independent Component Analysis",
+        "reason": "Explicitly described as using a factorial non-Gaussian prior to learn statistically independent components."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Statistical Models",
+        "to": "Factor Models",
+        "reason": "Factor models are a kind of statistical model, but this is primarily a broad category relationship rather than a specific directional learning dependency established by the source."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Covariance Matrices and Eigenvectors",
+        "to": "Probabilistic PCA",
+        "reason": "The PCA discussion identifies principal eigenvectors of the covariance matrix as the basis underlying the low-dimensional representation."
+      },
+      {
+        "from": "Sparse Priors",
+        "to": "Sparse Coding",
+        "reason": "Sparse coding is defined through latent-variable priors with sharp peaks near zero, such as Laplace, Cauchy, or Student-t priors."
+      }
+    ],
+    "overall_note": "The predictions capture the chapter's broad focus on factor models and dimensionality reduction, but omit its central named methods, especially probabilistic PCA, factor analysis, sparse coding, and ICA."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-13_linear_factors-92de7f819b1a.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-13_linear_factors-92de7f819b1a.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-13_linear_factors-92de7f819b1a_ledger.csv"
+  }
+}

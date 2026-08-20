@@ -1,0 +1,570 @@
+Natural Language Processing
+with Deep Learning
+CS 224 N/Ling 284
+Yejin Choi
+Lecture 13: Reasoning 2/2
+
+Announcement
+• A 4 is due this Thursday. We highly recommend to start working on it now, since it
+involves querying APIs. If everyone is working on it all right before the deadline, we’ll
+get rate limit issues.
+• The Project Milestone instructions are out now, and we will be doing our best to get
+the Project Proposals graded with feedback tonight/tomorrow morning.
+2
+
+Lecture Plan
+Speculative decoding (20 mins)
+Off-policy, on-policy, online RL, off-line RL
+Off-policy drift & on-policy distillation (20 mins) RL infra and off-policy drift
+On-policy distillation
+Long context extension (25 mins)
+Inference-time scaling (15 min)
+3
+
+Speculative decoding
+• Problem: Generating with a large LM takes a long time
+Intuition: Not all tokens are equally hard to generate!
+• Idea: Use a generation from small LM to assist large LM generation
+• Same idea independently proposed from Google Research (Leviathan et al., Nov 2022)
+and Deep Mind (Chen et al., Feb 2023)
+4
+Image credit: https://medium.com/@genai.works/speed-up-llm-inference-with-speculative-decoding-1 fc 79701 e 9 d 6
+
+Speculative decoding
+•
+5
+
+Speculative decoding
+•
+dogs love chasing after cars
+0.8 0.7 0.9 0.8 0.7
+Draft model (1 B)
+0.9 0.8 0.8 0.3 0.8
+Target model (100 B)
+6
+
+Speculative decoding
+•
+dogs love chasing after cars
+0.8 0.7 0.9 0.8 0.7
+Draft model (1 B)
+0.9 0.8 0.8 0.3 0.8
+Target model (100 B)
+Generation after step 1:
+dogs
+7
+
+Speculative decoding
+•
+dogs love chasing after cars
+0.8 0.7 0.9 0.8 0.7
+Draft model (1 B)
+0.9 0.8 0.8 0.3 0.8
+Target model (100 B)
+Generation after step 3:
+dogs love chasing
+(assuming we accepted chasing w/ prob 0.8/09)
+8
+
+Speculative decoding
+•
+dogs love chasing after cars
+0.8 0.7 0.9 0.8 0.7
+Draft model (1 B)
+0.9 0.8 0.8 0.3 0.8
+Target model (100 B)
+9
+
+Speculative decoding
+•
+Case 3
+Case 2
+Case 1
+Note: This sampling procedure,
+though sampling from small LM ( 𝑝_𝑖 ), has
+the same effect as sampling from target LM ( 𝑞_𝑖 ).
+Formal proof in Appendix I of (Chen et al., 2023)
+10
+
+Speculative decoding
+• Speculative sampling is a form of rejection sampling.
+• To sample from an easy-to-sample distribution p (small LM), in order to ample from a
+more complex distribution q (large LM).
+• Using 60 M LM (T 5-small) as a draft model and 11 B (T 5-XXL) LM as a target model,
+we get 2~3 x acceleration with identical outputs!
+11
+
+Dynamic speculative decoding
+• adaptively adjusts the "lookahead” size (the number of candidate tokens) at each iteration
+by using a lightweight classifier or confidence threshold to decide on-the-fly whether the
+draft model should continue drafting or switch to the target model for verification.
+• See more: Mamou et al., 2024 & https://huggingface.co/blog/dynamic_speculation_lookahead
+Universal speculative decoding
+• Original spec decoding requires identical tokenization between draft and target models
+• Models with heterogeneous tokenization can be supported via re-encoding and alignment
+techniques.
+• See more: https://huggingface.co/blog/universal_assisted_generation
+12
+
+Even better speculative decoding algorithms are rapidly developed,
+and all your favorite inference engines support several options!
+HF
+Algorithm v LLM TRT-LLM HF TGI SGLang
+Transformers
+⚠ (Manual
+EAGLE-3 ✅ (Native) ✅ (Opt) ❌ ✅
+head)
+Suffix Decoding ✅ (Arctic) ❌ ❌ ❌ ✅ (Beta)
+Medusa ✅ ✅ ✅ (SOTA) ✅ (Pipeline) ✅
+Draft-Target ✅ ✅ ✅ ✅ (Universal) ✅
+DFlash (2026) ⚠ (Fork) ✅ (Custom) ❌ ❌ ⚠ (Fork)
+
+EAGLE-3 (Extrapolation Algo for Greater LM Efficiency)
+Key ideas:
+Eagle-1: let the draft model
+“read the mind” of the target
+model by sneaking into its
+internal representation
+(“features-level” speculation)
+Eagle-2: context-aware
+dynamic draft trees!
+Eagle-3: “fused features”
+across different layers
+14
+Image credit: https://docs.jarvislabs.ai/blog/speculative-decoding-vllm-faster-llm-inference & nano banana pro
+
+EAGLE-3 (Extrapolation Algo for Greater LM Efficiency)
+15
+
+Suffix Decoding: Extreme Speculative Decoding
+(Oliaro et al., 2025)
+
+Suffix Decoding: Extreme Speculative Decoding
+(Oliaro et al., 2025)
+
+Suffix Decoding vs Eagle-3
+Feature Suffix Decoding (2025/2026) EAGLE-3 (2025/2026)
+Model-Free: Uses a Suffix Tree to Model-Based: Uses a small, trained
+Mechanism cache and match repetitive sequences Transformer head to predict future
+in the prompt and past outputs. hidden features of the target model.
+CPU-Bound: Runs speculation on the GPU-Bound: The draft head runs on
+Compute Location CPU while the GPU handles the target the GPU, sharing VRAM with the main
+model's verification. model.
+Drafting Speed ~20 $\mu$s per token (Ultra-fast). Slower (requires a GPU forward pass).
+Open-ended tasks (Creative writing,
+Highly repetitive tasks (Coding,
+Best Performance general chat, unpredictable
+Agentic loops, RAG, SQL generation).
+reasoning).
+Requires training a small auxiliary
+Zero. It is a "plug-and-play" data
+Training Needs head on the target model’s feature
+structure.
+space.
+
+Even better speculative decoding algorithms are rapidly developed,
+and all your favorite inference engines support several options!
+HF
+Algorithm v LLM TRT-LLM HF TGI SGLang
+Transformers
+⚠ (Manual
+EAGLE-3 ✅ (Native) ✅ (Opt) ❌ ✅
+head)
+Suffix Decoding ✅ (Arctic) ❌ ❌ ❌ ✅ (Beta)
+Medusa ✅ ✅ ✅ (SOTA) ✅ (Pipeline) ✅
+Draft-Target ✅ ✅ ✅ ✅ (Universal) ✅
+DFlash (2026) ⚠ (Fork) ✅ (Custom) ❌ ❌ ⚠ (Fork)
+
+Lecture Plan
+Speculative decoding (20 mins)
+Off-policy, on-policy, online RL, off-line RL
+Off-policy drift & on-policy distillation (20 mins) RL infra and off-policy drift
+On-policy distillation
+Long context extension (25 mins)
+Inference-time scaling (15 min)
+20
+
+Online RL: The agents can interact with the env during training
+Offline RL (Batch RL): Learning happens strictly from a pre-recorded dataset (human logs or
+previous agents). The agent cannot "explore" or test new actions.
+On-Policy RL: The data used for training is generated exactly by the *current* policy. Once the
+policy updates, old data from the old policy is discarded as "stale."
+REINFORCE, PPO, GRPO
+Off-Policy RL: The agent learns from data generated by any policy (older policy, different policy,
+or even humans). It saves experiences in a *Replay Buffer* for repeated use.
+DQN (Deep Q-Network)
+21
+
+Online vs Offline RL:
+whether the agent can interact with the environment
+On-policy vs Off-policy RL:
+whether rollouts for training are from the up-to-date policy
+Offline On-Policy RL? Online Off-Policy RL?
+• no true offline on-policy RL • This is very common. An agent interacts with a
+(unless the interpretation is simulator (Online) but stores everything in a
+somewhat stretched…) replay buffer to learn from later (Off-Policy),
+like DQN.
+• Asynchronous RL
+• PPO with “off-policy drift” due to RL infra
+optimization
+22
+
+Asynchronous RLHF (Noukhovitch et al., 2024)
+• "Why": Classic RLHF is synchronous, which wastes GPU throughput
+23
+
+Pipeline RL: in-flight weight updates 🛫 (Piché et al., 2025)
+• The generation engine receives new model weights mid-generation — briefly pausing,
+loading fresh weights, then continuing in-progress sequences. This creates mixed-policy
+sequences where early tokens are generated by a staler policy and later tokens by a
+fresher one.
+24
+
+Why off-policy situations arise in practice
+• • Why rollouts become ”stale"
+• Deliberate asynchronous RL
+• Multiple gradient steps per batch
+• Large replay buffers
+• Separate generation and training
+clusters (one cluster optimized for
+inference, while another cluster
+optimized for gradient computation)
+require weight transfer between
+clusters, which introduce latency
+25
+
+Off-policy mitigations
+Why off-policy is a problem
+- Biased gradient estimates
+- Importance weight explosion
+• Mitigation strategies
+- Reward hacking amplification
+• PPO clipping
+• KL penalty against the reference policy
+• Algorithms without critiques/advantages
+(reducing the window of off-policy drifts)
+such as GRPO or REINFORCE
+• Less epochs
+• SGLang / v LLM’s continuous batching with
+weight streaming
+• Pipeline RL’s in-flight weight update
+26
+
+Lecture Plan
+Speculative decoding (20 mins)
+Off-policy, on-policy, online RL, off-line RL
+Off-policy drift & on-policy distillation (20 mins) RL infra and off-policy drift
+On-policy distillation
+Long context extension (25 mins)
+Inference-time scaling (15 min)
+27
+
+On-policy distillation (aka, generalized knowledge distillation)
+• First introduced by (Gu et al, 2023) and (Agarwal et al, 2023), and later amplified by
+Qwen 3’s Tech report and Thinking Machine’s blog
+(https://thinkingmachines.ai/blog/on-policy-distillation/)
+• Prior distillation methods were teacher-centric (thus off-policy w.r.t the learner)
+• On-policy distillation is student-centric (thus on-policy w.r.t the learner)
+28
+Gu et al. 2023
+
+KL Divergence: how Q differs from the target P
+Forward KL — "Mean-seeking” or “mass-covering”
+• Weighted by P(x): penalizes Q where P has mass but Q does not
+• Q covers all modes of P → over-estimates support
+• Used in variational inference (ELBO)
+Reverse KL — "Mode-seeking” or “mode-collapsing”
+• Weighted by Q(x): penalizes Q where Q has mass but P does not
+• Q concentrates on one mode of P → under-estimates support
+• Used in RLHF: KL penalty keeps policy close to reference model
+29
+
+On-policy distillation vs standard knowledge distillation
+loss = forward KL
+off-policy
+loss = NLL
+off-policy
+loss = reverse KL
+on-policy
+30
+
+loss context Hard vs soft Learning style
+SFT NLL on gold output Ground-truth context Hard labels
+KD Forward KL Ground-truth context Soft dist Mass-covering
+Seq KD NLL on teacher’s output Teacher-generated context Hard labels Mass-covering
+GKD Reverse KL Student-generated context Soft dist Mode-seeking
+Agarwal et al. 2023
+
+On-policy distillation
+• The implication of reverse-KL: the context
+comes from the student’s own generation.
+• This eliminates train-test mismatch (exposure
+bias): the student learns to recover from its
+own mistakes.
+• The mode-seeking property encourages the
+student to be sharp and confident on its best
+behaviors rather than diffusely covering all of
+the teacher's modes.
+32
+Gu et al. 2023
+
+On policy distillation vs RL
+• On policy distillation can be viewed as the best of both worlds of SFT and RL ---
+sampling Reward signal GPU requirement
+Supervised fine-tuning Off-policy dense light
+Reinforcement learning On-policy sparse heavy
+On-policy distillation On-policy dense light
+33
+
+On-policy distillation for domain-specific adaptation 🥳
+• One very cool use case of on-policy distillation is domain-specific adaptation of OSS
+models, e.g., fine-tuning Qwen-8 B on a domain-specific corpus (i.e., internal documents
+of a company), which can be viewed as a form of midtraining.
+• Doing this in a naïve way (applying midtraining on top of the off-the-shelf OOS model
+which has been already post-trained) will cause degradation of capabilities acquired
+through the previous post-training (e.g., instruction following)
+• On-policy distillation (on an instruction-tuning dataset, 30%) recovers the instruction
+following capability after acquiring the new domain-specific knowledge thru
+mid-training (70%)
+34
+
+Lecture Plan
+Speculative decoding (20 mins)
+Off-policy, on-policy, online RL, off-line RL
+Off-policy drift & on-policy distillation (20 mins) RL infra and off-policy drift
+On-policy distillation
+Long context extension (25 mins)
+Inference-time scaling (15 min)
+35
+
+Scaling reasoning requires scaling long-context
+• When applications require very long-context windows (100 k to 2 million tokens):
+• Software engineering tasks that demand understanding the entire repository
+• Legal analysis that involves careful review of documents spanning hundreds of pages
+• Personalized chat interactions conditioned on prolonged interaction histories
+• Solving extremely challenging math problems that require elaborate sequences of
+trial and error across different problem-solving strategies
+36
+
+Scaling reasoning requires scaling long-context
+What makes long-context challenging for LLMs
+• Data limitation: most internet documents aren’t long enough to support pre-training
+with extremely long context windows
+• Compute/memory limitation: standard attention requires quadratic computation
+• Generalization limitation of positional embeddings: models trained on shorter
+sequences doesn’t generalize well on longer sequences
+37
+
+Typical document lengths of internet data
+Source Type Typical Length (Approx. Tokens) Description
+Includes blog posts, news, and landing pages.
+Common Crawl (Web) 600 – 1,200
+Many "documents" are highly fragmented.
+While some entries are long, the median article is
+Wikipedia 500 – 1,500
+relatively concise.
+These are among the longest "natural" documents
+Scientific Papers (ar Xiv) 5,000 – 10,000+
+in most sets.
+The "long-tail" of the data; rare but critical for
+Books (Project Gutenberg) 50,000 – 100,000+
+long-range dependency.
+Code files vary wildly; many scripts are quite
+Git Hub (Code) 100 – 5,000
+short, while libraries are long.
+38
+
+Sinusoidal positional embeddings (Vaswani et al., 2017)
+•
+39
+
+https://erdem.pl/2021/05/understanding-positional-encoding-in-transformers
+
+Sinusoidal positional embeddings (Vaswani et al., 2017)
+•
+41
+
+Learned positional embeddings
+• Randomly initialized, and then learned via backprop
+• Used broadly in early days of LLMs, such as BERT, Roberta, GPT-2, GPT-3, Albert, Electra,
+BART
+• It is not possible to define the positional embedding for a previously unseen position.
+• Also doesn’t generalize to positions beyond those seen during training.
+• But performance was better when the model learns the positional encoding themselves
+• This became a major bottleneck for long-context extension however, thus no longer used
+in recent LLMs
+42
+
+Ro PE: Rotary Position Embedding (Su et al., 2021)
+• Recall Attention
+After query and key vectors
+are computed, multiply
+them with the rotation
+• Attention with Ro PE
+matrix!
+Rotations are applied to just
+query and key vectors,
+not value vectors!
+43
+
+Ro PE: Rotary Position Embedding (Su et al., 2021)
+The full rotation matrix of Ro PE would then look like this:
+44
+
+Ro PE: Rotary Position Embedding (Su et al., 2021)
+• Ro PE encodes position by *rotating* the query and key vectors in the 2 D plane.
+Recall the rotation matrix:
+45
+
+Ro PE: Rotary Position Embedding (Su et al., 2021)
+•
+46
+
+Ro PE: Rotary Position Embedding (Su et al., 2021)
+• Attention with Ro PE
+“Taylor” and “Swift” at
+position 10 and 11 will get
+the exact same result as
+“Taylor and “Swift” at
+position 100 and 101!
+• Relative distance
+• because the transposed R rotates backward, we have While their corresponding
+rotation matrices are all
+different, by the time q and k
+are multiplied, the rotational
+angle becomes identical!
+😍v
+47
+
+Ro PE: Roterary Positional Embedding (Su et al., 2021)
+Feature Original Sinusoidal (2017) Ro PE (LLa MA, Pa LM, etc.)
+Additive: Added to the input Multiplicative: Applied to $Q$ and $K$ at
+Integration
+embedding before the first layer every attention layer
+Norm Increases the token embedding’s
+Preserves the token embedding’s norm
+preservation norm
+Mathematically captured, but due
+Mathematically captured via the rotation
+Relative to the additive integration, the
+angle and the information is cleanly available
+Distance information gets muddled up by the
+when the QKV attention is computed
+time QKV attention is computed
+Allows for additional long context extension
+Extrapolation Struggles significantly techniques such as "Position Interpolation”,
+"NTK scaling”, and YARN
+48
+
+Long context extension practices 🧵
+1. Position Encoding Modifications
+Ro PE scaling appears to be the most common family of approaches (as of 2026):
+• Linear interpolation (Position Interpolation): Scales position indices down by a factor so the
+model sees familiar relative positions. Introduced by Meta for extending LLa MA from
+2 K→32 K+. Requires light fine-tuning.
+• NTK-aware interpolation: Adjusts the rotary base frequency rather than linearly
+compressing positions. Better preserves high-frequency components. Has "dynamic NTK"
+variants that adapt scaling based on sequence length at inference.
+• Ya RN (Yet another Ro PE extensio N): Combines NTK scaling with an attention temperature
+correction and a ramp function that treats different frequency bands
+differently—interpolating low frequencies while extrapolating high frequencies.
+49
+
+Long context extension practices 🧵
+2. Progressive / Staged Training
+A common recipe (used by Long LLa MA, Long Align, Llama 3.1, etc.):
+• Start from a base model (e.g., 4 K–8 K context).
+• Apply position encoding modification.
+• Continual pretraining on long documents with progressively increasing sequence lengths
+(e.g., 8 K → 32 K → 64 K → 128 K), often with a relatively small amount of data (billions of
+tokens, not trillions).
+• Fine-tune on long-context instruction data.
+• The key insight is that you don't need the full pretraining budget—typically 0.1–1% of
+original pretraining tokens suffices for adaptation.
+50
+
+Long context extension practices 🧵
+3. Data Engineering
+• Upsampling long documents in the continued pretraining mix (books, code repos,
+long-form articles, concatenated related documents).
+• Synthetic long-context tasks: Needle-in-a-haystack retrieval, long-range QA,
+multi-document summarization.
+• Long Align-style instruction tuning with tasks specifically requiring the model to use
+information spread across the full context.
+• Self-instruct for long contexts: Using a capable model to generate long-context
+instruction-response pairs.
+51
+
+Long context extension practices 🧵
+4. Attention Architecture Modifications
+• Sparse / sliding window attention combined with global attention tokens
+(Longformer-style).
+• Flash Attention (and Flash Attention-2/3) to reduce memory from O(n²) to O(n) during
+training.
+• Grouped Query Attention (GQA) or Multi-Query Attention (MQA): Reduces KV cache
+memory, enabling longer contexts at inference.
+52
+
+Lecture Plan
+Speculative decoding (20 mins)
+Off-policy, on-policy, online RL, off-line RL
+Off-policy drift & on-policy distillation (20 mins) RL infra and off-policy drift
+On-policy distillation
+Long context extension (20 mins)
+Inference-time scaling (10 min)
+53
+
+Test time compute scaling 🚀
+• This notion was intensely popularized by Open AI’s O 1 release in Sep 2024
+• Though it was preceded by the GDM paper from Aug 2024
+• And it also appeared less explicitly in the “Let’s verify step by step” paper from May 2023
+54
+
+Test time compute scaling 🚀 Instead of scaling only training time compute,
+what if we scale test time compute?
+
+Instead of training more,
+what if we let the model think more?
+
+Test time compute scaling 🚀
+• This paper challenges the dominant paradigm in LLM development by demonstrating that
+intelligently scaling test-time compute can yield larger performance gains than simply
+scaling model parameters
+• For a fixed inference budget, smaller models using smart test-time compute strategies can
+outperform larger models using standard decoding
+• For compute-optimal allocation, seek an optimal balance between
+• Model size (pretraining FLOPs)
+• Number of generated samples or revision steps (test-time FLOPs)
+56
+
+Test time compute scaling 🚀
+• Test-time compute scaling strategies evaluated:
+• Best-of-N sampling: Generate N independent solutions, select best via verifier
+• Weighted Best-of-N: Sample from compute-optimal temperature distributions
+• Sequential revisions: Iteratively refine single solutions using model self-critique
+• Beam search with PRMs: Maintain multiple solution candidates, pruning based on
+step-level rewards
+• Diverse beam search: Encourage exploration across different solution approaches
+• Verification methods evaluated:
+• Outcome-supervised reward models (ORMs): Trained to predict solution correctness
+• Process-supervised reward models (PRMs): Trained to evaluate correctness at each
+reasoning step
+• Domain-specific verifiers: For problems with checkable solutions (e.g., code execution)
+57
+
+58
+
+Test time compute scaling 🚀
+• Key findings:
+• On MATH-500, a 14 B parameter model with optimized test-time compute matched or
+exceeded the performance of models 4× larger
+• The compute-optimal strategy allocated roughly equal FLOPs to pretraining and
+inference for their experimental setup
+• Sequential revision strategies showed particularly strong scaling on tasks requiring
+refinement and error correction
+• PRMs enabled 4-8× more efficient compute usage compared to ORMs w/ beam search
+• Practical takeaways:
+• Don't default to the largest model!
+• Invest in verification!
+• High-quality reward models, especially PRMs, dramatically improve test-time scaling
+59

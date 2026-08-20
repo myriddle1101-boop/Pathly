@@ -1,0 +1,147 @@
+{
+  "created_at": "2026-08-18T18:58:33.118568+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-dl___final_lecture___design_engineering-e751bcf4b967",
+  "file_name": "dl___final_lecture___design_engineering-e751bcf4b967",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 2,
+  "topic_metrics": {
+    "precision": 0.4,
+    "recall": 0.5455,
+    "f1": 0.4615,
+    "tp": 6,
+    "fp": 9,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.1429,
+    "recall": 0.5,
+    "f1": 0.2222,
+    "tp": 1,
+    "fp": 6,
+    "fn": 1
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "drone delivery systems",
+      "autonomous drone navigation",
+      "learning agents in AI",
+      "deep learning algorithms",
+      "autonomous drone applications in logistics",
+      "reinforcement learning for autonomous systems"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "drone technology advancements",
+        "reason": "The source discusses a drone-delivery agent but does not discuss technological advancements in drones."
+      },
+      {
+        "name": "machine learning models",
+        "reason": "Models are mentioned only in the slide title; machine-learning models are not developed as a learning topic."
+      },
+      {
+        "name": "learning assignments in education",
+        "reason": "The group activity is an instructional format, not a substantive learning concept."
+      },
+      {
+        "name": "learning methodologies in lectures",
+        "reason": "No lecture-learning methodology is presented."
+      },
+      {
+        "name": "drone fleet management",
+        "reason": "The source mentions another approaching drone, but not fleet coordination or fleet management."
+      },
+      {
+        "name": "real-time data processing for drones",
+        "reason": "The source lists sensor observations but does not discuss real-time data-processing methods."
+      },
+      {
+        "name": "deep learning for image recognition in drones",
+        "reason": "Cameras are listed as possible sensors, but drone image recognition is not described."
+      },
+      {
+        "name": "adaptive learning systems in AI",
+        "reason": "The source discusses agent behavior under changing conditions, not adaptive learning systems as a topic."
+      },
+      {
+        "name": "lecture-based learning strategies",
+        "reason": "No learning strategies for attending lectures are discussed."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Markov Decision Processes",
+        "reason": "Explicitly listed among the lecture's core topics and directly relevant to formulating an agent."
+      },
+      {
+        "name": "state space",
+        "reason": "Students are explicitly required to define the agent state space S."
+      },
+      {
+        "name": "action space",
+        "reason": "Students are explicitly required to define the agent action space A."
+      },
+      {
+        "name": "reward function",
+        "reason": "Students are explicitly required to define the reward function R; reward design is also identified as a challenge."
+      },
+      {
+        "name": "partial observability",
+        "reason": "Explicitly identified as a technical challenge, with multiple examples of unreliable, uncertain, or conflicting sensor observations."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "autonomous drone navigation",
+        "to": "autonomous drone applications in logistics",
+        "reason": "The drone-delivery application explicitly requires navigation to delivery locations while avoiding obstacles."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "deep learning algorithms",
+        "to": "deep learning for image recognition in drones",
+        "reason": "The target topic is not supported; the source does not describe drone image recognition."
+      },
+      {
+        "from": "learning agents in AI",
+        "to": "reinforcement learning for autonomous systems",
+        "reason": "Reinforcement learning is a learning method that can be used for agents, not a type of learning agent; this framing is not a strong prerequisite relation."
+      },
+      {
+        "from": "machine learning models",
+        "to": "deep learning algorithms",
+        "reason": "This is a broad taxonomy claim rather than a source-supported directional learning prerequisite."
+      },
+      {
+        "from": "drone technology advancements",
+        "to": "drone delivery systems",
+        "reason": "Drone technology advancements are not discussed in the source."
+      },
+      {
+        "from": "drone fleet management",
+        "to": "autonomous drone applications in logistics",
+        "reason": "Fleet management is not covered, and it is not established as a prerequisite for the delivery-agent task."
+      },
+      {
+        "from": "real-time data processing for drones",
+        "to": "autonomous drone navigation",
+        "reason": "Real-time data processing is not discussed as a concept or established as a learning dependency."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Markov Decision Processes",
+        "to": "Reinforcement Learning",
+        "reason": "Both are core lecture topics, and MDP formulations provide the state, action, and reward framework used to formulate reinforcement-learning problems."
+      }
+    ],
+    "overall_note": "The source is primarily an agent-design exercise centered on MDP/RL-style formulation, uncertainty, and safety, rather than drone-specific deep-learning or fleet-management methods."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dl___final_lecture___design_engineering-e751bcf4b967.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dl___final_lecture___design_engineering-e751bcf4b967.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dl___final_lecture___design_engineering-e751bcf4b967_ledger.csv"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-08-18T18:40:19.764776+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-05-building-simple-rag-35ec62f5ee2b",
+  "file_name": "05-building-simple-rag-35ec62f5ee2b",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 12,
+  "topic_metrics": {
+    "precision": 0.6667,
+    "recall": 0.5,
+    "f1": 0.5714,
+    "tp": 6,
+    "fp": 3,
+    "fn": 6
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 6,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Model Evaluation",
+      "Text Processing",
+      "RAG Systems",
+      "Configuration Management",
+      "Query Handling",
+      "Python Integration"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "The lesson uses embedding models and LLMs but does not teach neural-network concepts."
+      },
+      {
+        "name": "Error Analysis",
+        "reason": "The source includes basic troubleshooting and error handling, not a substantive error-analysis method."
+      },
+      {
+        "name": "Training Techniques",
+        "reason": "The lesson builds and evaluates a RAG application; it does not cover model training techniques."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Document Loading",
+        "reason": "The lesson explicitly implements loading text files, directories, and raw text with metadata."
+      },
+      {
+        "name": "Text Chunking",
+        "reason": "A dedicated component splits cleaned text into overlapping, sentence-aware chunks."
+      },
+      {
+        "name": "Vector Embeddings",
+        "reason": "Embeddings are described as semantic text representations and are used for RAG retrieval."
+      },
+      {
+        "name": "Vector Database",
+        "reason": "The system stores chunks in a Chroma collection and queries the collection for relevant results."
+      },
+      {
+        "name": "Retrieval-Augmented Generation",
+        "reason": "The lesson explicitly defines and implements the indexing, retrieval, and generation RAG pipeline."
+      },
+      {
+        "name": "Source Attribution",
+        "reason": "Generated answers are prompted to cite retrieved sources, and source citation is tested."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Text Processing",
+        "to": "Query Handling",
+        "reason": "Text processing is used to prepare documents, but the source does not establish it as a learning prerequisite for handling queries."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Training Techniques",
+        "reason": "Neither neural-network instruction nor training techniques are covered in the lesson."
+      },
+      {
+        "from": "Model Evaluation",
+        "to": "Error Analysis",
+        "reason": "The source presents evaluation tests and troubleshooting, but does not define error analysis as depending on model evaluation."
+      },
+      {
+        "from": "Configuration Management",
+        "to": "Training Techniques",
+        "reason": "Configuration settings support the application, while model training techniques are not part of the source."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "RAG Systems",
+        "reason": "RAG is implemented using pretrained embedding and language models; neural-network theory is not presented as a required prerequisite."
+      },
+      {
+        "from": "Python Integration",
+        "to": "Text Processing",
+        "reason": "Python is the implementation language, not a stated conceptual prerequisite for text processing."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Document Loading",
+        "to": "Text Chunking",
+        "reason": "Loaded document content is passed to the chunker before it can be indexed."
+      },
+      {
+        "from": "Vector Embeddings",
+        "to": "Semantic Search",
+        "reason": "The source explicitly states that embeddings enable semantic search."
+      },
+      {
+        "from": "Retrieval",
+        "to": "Answer Generation",
+        "reason": "The generation prompt is constructed from retrieved context, and the source defines generation as using that context."
+      }
+    ],
+    "overall_note": "The predictions capture the general RAG implementation context, but omit core concepts such as chunking, embeddings, vector storage, retrieval, and source attribution."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-05-building-simple-rag-35ec62f5ee2b.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-05-building-simple-rag-35ec62f5ee2b.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-05-building-simple-rag-35ec62f5ee2b_ledger.csv"
+  }
+}

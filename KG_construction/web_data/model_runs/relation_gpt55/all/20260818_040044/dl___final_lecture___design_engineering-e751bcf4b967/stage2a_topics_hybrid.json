@@ -1,0 +1,177 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 2,
+  "candidate_count": 8,
+  "topics_count": 15,
+  "candidates": [
+    {
+      "name": "drone delivery",
+      "avg_score": 0.6948,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "autonomous drone",
+      "avg_score": 0.6888,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "drone",
+      "avg_score": 0.6259,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "learning agent",
+      "avg_score": 0.6176,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5473,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning modelsto",
+      "avg_score": 0.5349,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning assigned",
+      "avg_score": 0.5161,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning lecture",
+      "avg_score": 0.5133,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "drone delivery systems",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "autonomous drone navigation",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "drone technology advancements",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "learning agents in AI",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "deep learning algorithms",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "machine learning models",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "learning assignments in education",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "learning methodologies in lectures",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "drone fleet management",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "autonomous drone applications in logistics",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "real-time data processing for drones",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "reinforcement learning for autonomous systems",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "deep learning for image recognition in drones",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "adaptive learning systems in AI",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "lecture-based learning strategies",
+      "description": "",
+      "sub_topics": []
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 14.5728,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

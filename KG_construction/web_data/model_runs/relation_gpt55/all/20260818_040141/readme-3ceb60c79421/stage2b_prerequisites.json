@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 8,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Loss Functions",
+      "to": "Model Training",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training models requires defining and optimizing an objective loss function."
+    }
+  ]
+}

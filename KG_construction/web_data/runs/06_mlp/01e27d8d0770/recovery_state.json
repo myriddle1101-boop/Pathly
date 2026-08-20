@@ -1,0 +1,15 @@
+{
+  "run_id": "06_mlp-01e27d8d0770",
+  "can_resume": false,
+  "last_failed_stage": null,
+  "next_resume_stage": null,
+  "completed_stages": [
+    "stage1",
+    "stage2a",
+    "stage2b",
+    "stage2c",
+    "stage3",
+    "stage4"
+  ],
+  "updated_at": "2026-07-29T13:50:44+08:00"
+}

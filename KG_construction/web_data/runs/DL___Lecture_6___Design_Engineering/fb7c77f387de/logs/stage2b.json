@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 8.0089,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 16\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. foundational concepts in learning theory -> feature selection techniques in learning models | understanding foundational concepts is necessary for grasping feature selection\n02. neural networks and their training methodologies -> deep learning architectures and applications | knowledge of neural networks is essential for understanding deep learning architectures\n03. convolutional kernels in image processing -> convolutional layer design and optimization | understanding convolutional kernels is crucial for designing and optimizing layers\n04. learning pooling strategies in convolutional networks -> convolutional layer design and optimization | pooling strategies are integral to the design and optimization of convolutional layers\n05. analyzing image data with LNNs and potential losses -> deep learning architectures and applications | analyzing image data is a key application of deep learning architectures\n06. whynotusea in the context of LNNs -> whynotusea as a critique of existing models | understanding whynotusea in LNNs is necessary to critique existing models\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

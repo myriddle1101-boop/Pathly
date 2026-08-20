@@ -1,0 +1,650 @@
+Monte Carlo Methods
+Lecture slides for Chapter 17 of Deep Learning
+www.deeplearningbook.org
+Ian Goodfellow
+Last updated 2017-12-29
+
+Roadmap
+• Basics of Monte Carlo methods
+• Importance Sampling
+• Markov Chains
+(Goodfellow 2017)
+
+Randomized Algorithms
+Las Vegas Monte Carlo
+Type of Random amount
+Exact
+Answer of error
+Chosen by user
+Random (until
+Runtime (longer runtime
+answer found)
+gives lesss error)
+(Goodfellow 2017)
+
+CHAPTER 17. MONTE CARLO METHODS
+reduced cost. Sometimes we use this to provide a significant speedup to a costly
+CHAPTER 17. MONTE CARLO METHODS
+but tractable sum, as in the case when we subsample the full training cost with
+CHAPTER 17. MONTE CARLO METHODS
+minibatches. In other cases, our learning algorithm requires us to approximate an
+reduced cost. Sometimes we use this to provide a significant speedup to a costly
+intractable sum or integral, such as the gradient of the log partition function of an
+reduced cost. Sometimes we use this to provide a significant speedup to a costly
+but tractable sum, as in the case when we subsample the full training cost with
+undirected model. In many other cases, sampling is actually our goal, in the sense
+but tractable sum, as in the case when we subsample the full training cost with
+minibatches. In other cases, our learning algorithm requires us to approximate an
+that we want to train a model that can sample from the training distribution.
+minibatches. In other cases, our learning algorithm requires us to approximate an
+intractable sum or integral, such as the gradient of the log partition function of an
+intractable sum or integral, such as the gradient of the log partition function of an
+undirected model. In many other cases, sampling is actually our goal, in the sense
+undirected model. In ma 1 n 7 y.o 1 t.h 2 er ca Bseas,siscams polifng Misoancttueal Cly aorulrogo Sala, min pthliensgense
+that we want to train a model that can sample from the training distribution.
+that we want to train a model that can sample from the training distribution.
+When a sum or an integral cannot be computed exactly (for example, the sum
+17.1.2 Basics of Monte Carlo Sampling
+has an exponential number of terms, and no exact simplification is known), it is
+17.1.2 Basics of Monte Carlo Sampling
+often possible to approximate it using Monte Carlo sampling. The idea is to view
+When a sum or an integral cannot be computed exactly (for example, the sum
+Estimating sums / integrals
+When a sum or an integral cannot be computed exactly (for example, the sum
+the sumhoars iannteegxrpaolnaenstiifalitnuwmebreeraonf etexrpmesc,taantidonnouenxdaecrt ssiommpelifidciasttiroinbuistikonnowannd), titois
+has an exponential number of terms, and no exact simplification is known), it is
+approximoaftteenthpeosesixbpleecttoataioppnrobxyimaactoerirteuspsionngd Minogntaeve Craargloe.sa Lmetpling. The idea is to view
+often possible to approximate it using Monte Carlo sampling. The idea is to view
+the sum or integral aws ifiittwhere asnaexmpectpatiolneusnder some distribution and to
+the sum or integral as if it were an expectation under some distribution and to
+approximate the expsec=tation pb(yxa)fco(rxr)es=pon Edi[nfg(xav)e]rage. Let
+(17.1)
+p
+approximate the expectation by a corresponding average. Let
+x
+X
+s = p(x)f(x) = E [f(x)] (17.1)
+p
+or
+s = p(x)f(x) = E [f(x)] (17.1)
+p x
+X
+x s = p(x)f (x)dx = E [f (x)] (17.2)
+Xor p
+or Z
+s = p(x)f(x)dx = E [f(x)] (17.2)
+p
+be the sum or integral to estimate, rewritten as an expectation, with the constraint
+s = p(x)f(x)dx = E [f(x)] (17.2)
+p Z
+that p is a probability distribution (for the sum) or a probability density (for the
+be the sum or integral to estimate, rewritten as an expectation, with the constraint
+Z
+be the sum or integral toinetsetigmraatl)e t , horva e tewrprirt iat s ena ndp aor smo a b nvaab erx ilip iat eby clt dea i t s xi t o.r n ib , u w t i i t o h n t ( h f e or co th n e st s r u ai m nt ) or a probability density (for the
+that p is a probability distributio
+i
+n
+nt
+(
+e
+f
+g
+o
+r
+r
+a
+t
+l)
+he
+ov
+s
+e
+u
+r
+m
+r
+)
+an
+o
+d
+r
+o
+a
+m
+pr
+v
+o
+a
+b
+ri
+a
+a
+b
+b
+i
+l
+l
+e
+ityx. density (for the
+(1) (n)
+We can approximate s by drawing n samples x , . . . , x from p and then
+integral) over random variable x.
+(1) (n)
+We can approximate s by drawing n samples x , . . . , x from p and then
+forming the empirical average
+(1) (n)
+We can approximate s by drawing n samples x , . . . , x from p and then
+forming the empirical average
+n
+forming the empirical average
+1
+n (i)
+sˆ = 1 f (x ). (17.3)
+n
+(i)
+n nsˆ = f(x ). (17.3)
+1 n
+i=1 n
+(i)
+sˆ = f(x ). X (17.3)
+n i=1
+n X
+i=1
+This approximation is justified by a few different properties. The first trivial
+X
+This approximation is justified by a few different properties. The first trivial
+observation is that the estimator sˆ is unbiased, since
+This approximation is justified
+o
+b
+b
+y
+se
+a
+rv
+f
+a
+ew
+tio
+d
+n
+iff
+is
+er
+t
+e
+h
+n
+a
+t
+t t
+p
+h
+r
+e
+op
+e
+e
+s
+r
+t
+t
+im
+ie
+a
+s.
+tor
+Tsˆhe
+is
+fi
+u
+r
+n
+st
+bi
+t
+a
+r
+s
+i
+e
+v
+d
+ia
+,
+l
+since
+observation is that the estimator sˆ is unbiased, since (Goodfellow 2017)
+n n
+n n
+1 1
+1 1
+(i)
+1 n E 1 [sˆ n n ] = E [sˆ n ] = E [f (x E [f)(]x=(i) )] = s = ss.= s. (17(1.47).4)
+n n n n
+(i)
+E [sˆ ] = E [f(x )] = s = s. (17.4)
+n i=1 i=1 i=1 i=1
+n n X X X X
+i=1 i=1
+X X
+(i)
+But in addition, the law of large numbers states that if the samples(xi) are
+But in addition, the law of large numbers states that if the samples x are
+(i)
+But in addition, the law of large numbers states that if the samples x are
+i.i.d., then the average converges almost surely to the expected value:
+i.i.d., then the average converges almost surely to the expected value:
+i.i.d., then the average converges almost surely to the expected value:
+lim sˆ = s, (17.5)
+n
+lim sˆ = s, (17.5)
+nn
+lim sˆ = s, (17.5)
+n n !1
+n !1
+!1 588
+588
+588
+
+Justification
+• Unbiased:
+• The expected value for finite n is equal to the correct value
+• The value for any specific n samples will have random
+error, but the errors for different sample sets cancel out
+Low variance:
+•
+• Variance is O(1/n)
+• For very large n, the error converges “almost surely” to 0
+(Goodfellow 2017)
+
+Roadmap
+• Basics of Monte Carlo methods
+• Importance Sampling
+• Markov Chains
+(Goodfellow 2017)
+
+CHAPTER 17. MONTE CARLO METHODS
+reduced cost. Sometimes we use this to provide a significant speedup to a costly
+but tractable sum, as in the case when we subsample the full training cost with
+minibatches. In other cases, our learning algorithm requires us to approximate an
+intractable sum or integral, such as the gradient of the log partition function of an
+undirected model. In many other cases, sampling is actually our goal, in the sense
+that we want to train a model that can sample from the training distribution.
+17.1.2 Basics of Monte Carlo Sampling
+When a sum or an integral cannot be computed exactly (for example, the sum
+has an exponential number of terms, and no exact simplification is known), it is
+often possible to approximate it using Monte Carlo sampling. The idea is to view
+the sum or integral as if it were an expectation under some distribution and to
+approximate the expectation by a corresponding average. Let
+s = p(x)f (x) = E [f (x)] (17.1)
+p
+Non-unique decomposition
+x
+X
+or
+s = p(x)f (x)dx = E [f (x)] (17.2)
+p
+Z
+be the sum or integral to estimate, rewritten as an expectation, with the constraint
+Say we want to compute
+that p is a probability distribution (for the sum) or a probability density (for the
+a(x)b(x)c(x)dx.
+integral) over random variable x.
+Which pa Zrt is p? Which part is f ?
+(1) (n)
+We can approximate s by drawing n samples x , . . . , x from p and then
+p=a and f=bc? p=ab and f=c? etc.
+forming the empirical average
+No unique decomposition.
+We can anlways pull part of any p into f.
+1
+(i)
+sˆ = f (x ). (17.3)
+n
+n
+i=1
+X
+(Goodfellow 2017)
+This approximation is justified by a few different properties. The first trivial
+observation is that the estimator sˆ is unbiased, since
+n n
+1 1
+(i)
+[sˆ ] = [f (x )] = s = s. (17.4)
+E E
+n
+n n
+i=1 i=1
+X X
+(i)
+But in addition, the law of large numbers states that if the samples x are
+i.i.d., then the average converges almost surely to the expected value:
+lim sˆ = s, (17.5)
+n
+n
+!1
+588
+
+CHAPTER 17. MONTE CARLO METHODS
+(i)
+provided that the variance of the individual terms, Var[f (x )], is bounded. To see
+this more clearly, consider the variance of sˆ as n increases. The variance Var[sˆ ]
+n n
+(i)
+decreases and converges to 0, so long as Var[f (x )] < :
+1
+n
+1
+Var[sˆ ] = Var[f (x)] (17.6)
+n
+2
+n
+i=1
+X
+Var[f (x)]
+= . (17.7)
+n
+This convenient result also tells us how to estimate the uncertainty in a Monte
+Carlo average or equivalently the amount of expected error of the Monte Carlo
+(i)
+approximation. We compute both the empirical average of the f (x ) and their
+1
+empirical variance, and then divide the estimated variance by the number of
+samples n to obtain an estimator of Var[sˆ ]. The central limit theorem tells
+n
+us that the distribution of the average, sˆ , converges to a normal distribution
+n
+Var[f (x)]
+with mean s and variance . This allows us to estimate confidence intervals
+n
+around the estimate sˆ , using the cumulative distribution of the normal density.
+n
+All this relies on our ability to easily sample from the base distribution p(x),
+but doing so is not always possible. When it is not feasible to sample from p, an
+alternative is to use importance sampling, presented in section 17.2. A more general
+approach is to form a sequence of estimators that converge toward the distribution
+of interest. That is the approach of Monte Carlo Markov chains (section 17.3).
+17.2 Importance Sampling
+An important step in the decomposition of the integrand (or summand) used by the
+Monte Carlo method in equation 17.2 is deciding which part of the integrand should
+play the role of probability p(x) and which part of the integrand should play the
+Importance Sampling
+role of the quantity f (x) whose expected value (under that probability distribution)
+is to be estimated. There is no unique decomposition because p(x)f (x) can always
+be rewritten as
+p(x)f (x)
+p(x)f (x) = q(x) , (17.8)
+q(x)
+pf
+where we now sample from q and average . In many cases, we wish to compute
+q
+an expectation for a given p and an f , and the fact tha Tt htihse raptrioo bisle omuri sneswp efc, ified
+This is our new p,
+from the start as an expectation suggests that this p maneadn f ingw woue lwdilbl eevaalunaatteu ral
+meaning it is the
+it at each sample
+distribution we will draw
+1
+The unbiased estimator of the variance is often preferred, in which the sum of squared
+differences is divided by n 1 instead of nsa. mples from
+ 
+589
+(Goodfellow 2017)
+
+Why use importance sampling?
+• Maybe it is feasible to sample from q but not from p
+• This is how GANs work
+• A good q can reduce the variance of the estimate
+• Importance sampling is still unbiased for every q
+(Goodfellow 2017)
+
+CHAPTER 17. MONTE CARLO METHODS
+choice of decomposition. However, the original specification of the problem may
+not be the the optimal choice in terms of the number of samples required to obtain
+a given level of accuracy. Fortunately, the form of the optimal choice q can be
+⇤
+derived easily. The optimal q corresponds to what is called optimal importance
+⇤
+sampling.
+Because of the identity shown in equation 17.8, any Monte Carlo estimator
+n
+1
+(i)
+sˆ = f (x ) (17.9)
+p
+n
+(i)
+i=1,x p
+X
+⇠
+can be transformed into an importance sampling estimator
+n
+(i) (i)
+1 p(x )f (x )
+sˆ = . (17.10)
+q
+n q(x (i) )
+(i)
+i=1,x q
+X
+⇠
+We see readily that the expected value of the estimator does not depend on q:
+[sˆ ] = [sˆ ] = s. (17.11)
+E E
+q q q p
+The variance of an importance sampling estimator, however, can be greatly sensitive
+to the choice of q. The variance is given by
+p(x)f (x)
+Var[sˆ ] = Var[ ]/n. (17.12)
+q
+q(x)
+Optimal q
+The minimum variance occurs when q is
+p(x) f (x)
+q (x) = | | , (17.13)
+⇤
+Z
+where Z is the normalization constant, chosen so that q (x) sums or integrates to
+⇤
+• Determining the optimal q requires solving the original integral,
+1 as appropriate. Better importance sampling distributions put more weight where
+so not useful in practice
+the integrand is larger. In fact, when f (x) does not change sign, Var[sˆ ] = 0,
+q
+⇤
+meaning that a single sample• is Usseufuffil tco iuenndterwsthanedn intthuietioonp bteimhinadl imdipsotrrtiabncuet siaomnpilisngu sed.
+Of course, this is only because the computation of q has essentially solved the
+⇤
+• This q minimizes the variance
+original problem, so it is usually not practical to use this approach of drawing a
+single sample from the optimal distribution.
+• Places more mass on points where the weighted function is larger
+Any choice of sampling distribution q is valid (in the sense of yielding the
+(Goodfellow 2017)
+correct expected value), and q is the optimal one (in the sense of yielding minimum
+⇤
+variance). Sampling from q is usually infeasible, but other choices of q can be
+⇤
+feasible while still reducing the variance somewhat.
+590
+
+Roadmap
+• Basics of Monte Carlo methods
+• Importance Sampling
+• Markov Chains
+(Goodfellow 2017)
+
+Sampling from p or q
+• So far we have assumed we can sample from p or q
+easily
+• This is true when p or q has a directed graphical
+model representation
+• Use ancestral sampling
+• Sample each node given its parents, moving from
+roots to leaves
+(Goodfellow 2017)
+
+Sampling from undirected
+models
+• Sampling from undirected models is more difficult
+• Can’t get a fair sample in one pass
+• Use a Monte Carlo algorithm that incrementally
+updates samples, comes closer to sampling from the
+right distribution at each step
+• This is called a Markov Chain
+(Goodfellow 2017)
+
+Simple Markov Chain: Gibbs
+sampling
+• Repeatedly cycle through all variables
+• For each variable, randomly sample that variable
+given its Markov blanket
+• For an undirected model, the Markov blanket is
+just the neighbors in the graph
+• Block Gibbs trick: conditionally independent
+variables may be sampled simultaneously
+(Goodfellow 2017)
+
+Gibbs sampling example
+CHAPTER 16. STRUCTURED PROBABILISTIC MODELS FOR DEEP LEARNING
+• Initialize a, s, and b
+a s b a s b
+• For n repetitions
+(a) (b)
+• Sample a F fr ig o u m r e P 1 ( 6 a . | 6 s : ) ( a a n ) d T b h e fr p o a m th P b ( e b t | w s) e en random variable a and random variable b through s is
+active, because s is not observed. This means that a and b are not separated. (b) Here s
+is shaded in, to indicate that it is observed. Because the only path between a and b is
+• Sample s from P(s|a,b)
+through s, and that p Baltohckis Ginibacbtsi vter,icwke lectasn ucso nclude that a and b are separated given s.
+sample a and b in parallel
+16.2.5 Separation and D-Separation
+(Goodfellow 2017)
+The edges in a graphical model tell us which variables directly interact. We often
+need to know which variables indirectly interact. Some of these indirect interactions
+can be enabled or disabled by observing other variables. More formally, we would
+like to know which subsets of variables are conditionally independent from each
+other, given the values of other subsets of variables.
+Identifying the conditional independences in a graph is simple for undirected
+models. In this case, conditional independence implied by the graph is called
+separation. We say that a set of variables is separated from another set of
+A
+variables given a third set of variables if the graph structure implies that
+B S A
+is independent from given . If two variables a and b are connected by a path
+B S
+involving only unobserved variables, then those variables are not separated. If no
+path exists between them, or all paths contain an observed variable, then they are
+separated. We refer to paths involving only unobserved variables as “active” and
+paths including an observed variable as “inactive.”
+When we draw a graph, we can indicate observed variables by shading them in.
+See figure 16.6 for a depiction of how active and inactive paths in an undirected
+model look when drawn in this way. See figure 16.7 for an example of reading
+separation from an undirected graph.
+Similar concepts apply to directed models, except that in the context of
+directed models, these concepts are referred to as d-separation. The “d” stands
+for “dependence.” D-separation for directed graphs is defined the same as separation
+for undirected graphs: We say that a set of variables is d-separated from another
+A
+set of variables given a third set of variables if the graph structure implies
+B S
+that is independent from given .
+A B S
+As with undirected models, we can examine the independences implied by the
+graph by looking at what active paths exist in the graph. As before, two variables
+are dependent if there is an active path between them and d-separated if no such
+569
+
+Equilibrium
+Running a Markov Chain long enough causes it to
+•
+mix
+After mixing, it samples from an equilibrium
+•
+distribution
+Sample before update comes from distribution π(x)
+•
+Sample after update is a different sample, but still
+•
+from distribution π(x)
+(Goodfellow 2017)
+
+Downsides
+Generally infeasible to…
+•
+…know ahead of time how long mixing will take
+•
+…know how far a chain is from equilibrium
+•
+…know whether a chain is at equilibrium
+•
+Usually in deep learning we just run for n steps, for
+•
+some n that we think will be big enough, and hope for
+the best
+(Goodfellow 2017)
+
+Trouble in Practice
+Mixing can take an infeasibly long time
+•
+This is especially true for
+•
+High-dimensional distributions
+•
+Distributions with strong correlations between
+•
+variables
+Distributions with multiple highly separated modes
+•
+(Goodfellow 2017)
+
+CHAPTER 17. MONTE CARLO METHODS
+Difficult Mixing
+Figure 17.1: Paths followed by Gibbs sampling for three distributions, with the Markov
+chain initialized at the mode in both cases. (Left)A multivariate normal distribution
+with two independent variables. Gibbs sampling mixes well because the variables are
+independent. (Center)A multivariate normal distribution with highly correlated variables.
+The correlation between variables makes it difficult for the Markov chain to mix. Because
+the update for each variable must be conditioned on the other variable, the correlation
+reduces the rate at which the Markov chain can move away from the starting point.
+(Right)A mixture of Gaussians with widely separated modes that are not axis aligned.
+Gibbs sampling mixes very slowly because it is difficult to change modes while altering
+only one variable at a time.
+(Goodfellow 2017)
+599
+
+CHAPTER 17. MONTE CARLO METHODS
+17.5.1 Tempering to Mix between Modes
+When a distribution has sharp peaks of high probability surrounded by regions of
+low probability, it is difficult to mix between the different modes of the distribution.
+Several techniques for faster mixing are based on constructing alternative versions
+of the target distribution in which the peaks are not as high and the surrounding
+valleys are not as low. Energy-based models provide a particularly simple way to
+do so. So far, we have described an energy-based model as defining a probability
+distribution
+p(x) exp ( E(x)) . (17.25)
+/  
+Energy-based models may be augmented with an extra parameter   controlling
+how sharply peaked the distribution is:
+Difficult Mixing in Deep
+p (x) exp (  E(x)) . (17.26)
+ 
+/  
+The   parameter is often described as being the reciprocal of the temperature,
+Generative Models
+reflecting the origin of energy-based models in statistical physics. When the
+temperature falls to zero, and   rises to infinity, the energy-based model becomes
+Figure 17.2: An illustration of the slow mixing problem in deep probabilistic models.
+Each panel should be read left to right, top to bottom. (Left)Consecutive samples from
+Gibbs sampling applied to a deep Boltzmann machine trained on the MNIST dataset.
+Consecutive samples are similar to each other. Because the Gibbs sampling is performed
+in a deep graphical model, this similarity is based more on semantic than raw visual
+features, but it is still difficult for the Gibbs chain to transition from one mode of the
+distribution to another, for example, by changing the digit identity. (Right)Consecutive
+ancestral samples from a generative adversarial network. Because ancestral sampling
+generates each sample independently from the others, there is no mixing problem.
+600
+(Goodfellow 2017)
+
+For more information…
+(Goodfellow 2017)

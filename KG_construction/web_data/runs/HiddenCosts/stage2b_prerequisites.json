@@ -1,0 +1,33 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Loss Functions",
+      "reason": "Loss functions are essential for training neural networks."
+    },
+    {
+      "from": "Linear Separability",
+      "to": "Neural Networks",
+      "reason": "Understanding linear separability is fundamental for grasping how neural networks can classify data."
+    },
+    {
+      "from": "Software Engineering Smells",
+      "to": "Technical Debt",
+      "reason": "Identifying software engineering smells helps in understanding and managing technical debt."
+    },
+    {
+      "from": "Machine Learning Smells",
+      "to": "Loss Functions",
+      "reason": "Recognizing machine learning smells often involves evaluating loss functions."
+    },
+    {
+      "from": "Packages and Glue",
+      "to": "Abstraction Boundaries",
+      "reason": "Understanding how packages connect components requires knowledge of abstraction boundaries."
+    }
+  ]
+}

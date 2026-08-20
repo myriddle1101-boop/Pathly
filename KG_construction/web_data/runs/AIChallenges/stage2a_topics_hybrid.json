@@ -1,0 +1,366 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 11,
+  "candidate_count": 28,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "challengesfor ai",
+      "avg_score": 0.5952,
+      "frequency": 4,
+      "chunk_ids": [
+        1,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "name": "systems challengesfor",
+      "avg_score": 0.514,
+      "frequency": 3,
+      "chunk_ids": [
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "name": "data atarigames",
+      "avg_score": 0.6597,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "atarigames 77",
+      "avg_score": 0.6249,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "atarigames",
+      "avg_score": 0.6105,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "aitechnologies",
+      "avg_score": 0.5979,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "security",
+      "avg_score": 0.5859,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "artificial intelligenceand",
+      "avg_score": 0.5844,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "machine learners",
+      "avg_score": 0.5824,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "shieldingapplications security",
+      "avg_score": 0.5781,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "artificial intelligence",
+      "avg_score": 0.5734,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "processingsystemsand aitechnologies",
+      "avg_score": 0.5722,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "cloud roboticsand",
+      "avg_score": 0.5651,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "researchon cloud",
+      "avg_score": 0.5508,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "security acm",
+      "avg_score": 0.55,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "ai systems",
+      "avg_score": 0.5456,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "acmsigsacconferenceon computerand",
+      "avg_score": 0.5441,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "aberkeley viewof",
+      "avg_score": 0.5363,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "machine teachingto",
+      "avg_score": 0.5321,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "aiandmakeitmorecapable understandable",
+      "avg_score": 0.5252,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "automation science",
+      "avg_score": 0.5226,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "ai specific",
+      "avg_score": 0.5177,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "aisystems including",
+      "avg_score": 0.5155,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "neuralnetworks 21",
+      "avg_score": 0.5052,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "roboticsand automation",
+      "avg_score": 0.5016,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "neuralnetworks",
+      "avg_score": 0.4986,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "challengesfor",
+      "avg_score": 0.4623,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "viewof systems",
+      "avg_score": 0.4619,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Artificial Intelligence",
+      "description": "The study and development of intelligent agents and systems.",
+      "sub_topics": [
+        {
+          "name": "AI Technologies",
+          "description": "Various technologies that enable artificial intelligence."
+        },
+        {
+          "name": "AI Systems",
+          "description": "Frameworks and architectures for implementing AI."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain's network of neurons.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of neural network nodes."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "A method for training neural networks through gradient descent."
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "description": "A subset of AI focused on algorithms that learn from data.",
+      "sub_topics": [
+        {
+          "name": "Regression",
+          "description": "Techniques for predicting continuous outcomes."
+        },
+        {
+          "name": "Classification",
+          "description": "Methods for categorizing data into discrete classes."
+        }
+      ]
+    },
+    {
+      "name": "Challenges in AI",
+      "description": "Key obstacles and issues faced in the development of AI systems.",
+      "sub_topics": [
+        {
+          "name": "Security",
+          "description": "Concerns related to the safety and integrity of AI systems."
+        },
+        {
+          "name": "Ethical Considerations",
+          "description": "Moral implications of AI deployment and usage."
+        }
+      ]
+    },
+    {
+      "name": "Data in AI",
+      "description": "The role of data in training and evaluating AI models.",
+      "sub_topics": [
+        {
+          "name": "Data Quality",
+          "description": "The importance of high-quality data for effective learning."
+        },
+        {
+          "name": "Data Processing",
+          "description": "Techniques for preparing data for machine learning."
+        }
+      ]
+    },
+    {
+      "name": "Robotics and Automation",
+      "description": "The integration of AI in robotic systems for automation.",
+      "sub_topics": [
+        {
+          "name": "Cloud Robotics",
+          "description": "Robotic systems that leverage cloud computing resources."
+        },
+        {
+          "name": "Automation Science",
+          "description": "The study of automated systems and their applications."
+        }
+      ]
+    },
+    {
+      "name": "Atari Games",
+      "description": "The use of Atari games as benchmarks for AI research.",
+      "sub_topics": [
+        {
+          "name": "Game AI",
+          "description": "AI techniques applied to game environments."
+        },
+        {
+          "name": "Reinforcement Learning",
+          "description": "Learning strategies based on rewards and penalties in games."
+        }
+      ]
+    },
+    {
+      "name": "Machine Teaching",
+      "description": "The process of teaching machines to learn effectively.",
+      "sub_topics": [
+        {
+          "name": "Learning Strategies",
+          "description": "Approaches to enhance machine learning efficiency."
+        },
+        {
+          "name": "Human-AI Interaction",
+          "description": "The dynamics of how humans teach and interact with AI."
+        }
+      ]
+    },
+    {
+      "name": "Systems Challenges",
+      "description": "Technical difficulties encountered in AI system design and implementation.",
+      "sub_topics": [
+        {
+          "name": "Scalability",
+          "description": "The ability of AI systems to handle increasing amounts of data."
+        },
+        {
+          "name": "Integration",
+          "description": "Challenges in combining AI with existing systems."
+        }
+      ]
+    }
+  ]
+}

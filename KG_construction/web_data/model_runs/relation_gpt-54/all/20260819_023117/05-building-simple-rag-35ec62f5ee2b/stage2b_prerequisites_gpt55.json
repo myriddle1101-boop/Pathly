@@ -1,0 +1,26 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 3,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding neural network structures and components is necessary before learning how to train them effectively."
+    },
+    {
+      "from": "Text Processing",
+      "to": "RAG Systems",
+      "relation_type": "strong_prerequisite",
+      "reason": "RAG systems rely on processing and representing text data for retrieval and generation, so core text handling knowledge is needed first."
+    },
+    {
+      "from": "Query Handling",
+      "to": "RAG Systems",
+      "relation_type": "strong_prerequisite",
+      "reason": "RAG systems depend on interpreting and managing user queries to retrieve relevant information before generation."
+    }
+  ]
+}

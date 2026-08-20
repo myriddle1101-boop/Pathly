@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "03_prob-20e52d6d8bb6",
+  "created_at": "2026-07-29T13:41:33+08:00",
+  "updated_at": "2026-07-29T13:44:01+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "03_prob.pdf",
+    "doc_name": "03_prob",
+    "sha256": "20e52d6d8bb6215b1a95cb6efe928b7dc4cee97a57c84283e905f5b70c9cbfe9",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\03_prob.pdf",
+    "pdf_size_bytes": 19784055
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 148.4296
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:41:33+08:00",
+      "ended_at": "2026-07-29T13:41:41+08:00",
+      "duration_seconds": 8.5213,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\03_prob.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 14012\n[2] 清洗后词数: 14152\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 69\n[5] 分块数（过滤后）: 66\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=265\nCHAPTER 3. PROBABILITY AND INFORMATION THEORY mass function and the reader must infer which probability mass function to use based on the identity of the random variable, rather than the name of the function; P ( ) P ( )...\n\n[Chunk 2] words=278\nThe probability mass function maps from a state of a random variable to the probability of that random variable taking on that state. The probability P The domain of must be the set of all possible states of x. that x = ...\n\n[Chunk 3] words=269\nthe probability of one of many events occurring.  x x, 0 P (x) 1. An impossible event has probability 0 and no state can  8 2   be less probable than that. Likewise, an event that is guaranteed to happen For ehxasapm...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:41:41+08:00",
+      "ended_at": "2026-07-29T13:42:50+08:00",
+      "duration_seconds": 68.6547,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "unk 7/66 ...\n[KeyBERT] chunk 8/66 ...\n[KeyBERT] chunk 9/66 ...\n[KeyBERT] chunk 10/66 ...\n[KeyBERT] chunk 11/66 ...\n[KeyBERT] chunk 12/66 ...\n[KeyBERT] chunk 13/66 ...\n[KeyBERT] chunk 14/66 ...\n[KeyBERT] chunk 15/66 ...\n[KeyBERT] chunk 16/66 ...\n[KeyBERT] chunk 17/66 ...\n[KeyBERT] chunk 18/66 ...\n[KeyBERT] chunk 19/66 ...\n[KeyBERT] chunk 20/66 ...\n[KeyBERT] chunk 21/66 ...\n[KeyBERT] chunk 22/66 ...\n[KeyBERT] chunk 23/66 ...\n[KeyBERT] chunk 24/66 ...\n[KeyBERT] chunk 25/66 ...\n[KeyBERT] chunk 26/66 ...\n[KeyBERT] chunk 27/66 ...\n[KeyBERT] chunk 28/66 ...\n[KeyBERT] chunk 29/66 ...\n[KeyBERT] chunk 30/66 ...\n[KeyBERT] chunk 31/66 ...\n[KeyBERT] chunk 32/66 ...\n[KeyBERT] chunk 33/66 ...\n[KeyBERT] chunk 34/66 ...\n[KeyBERT] chunk 35/66 ...\n[KeyBERT] chunk 36/66 ...\n[KeyBERT] chunk 37/66 ...\n[KeyBERT] chunk 38/66 ...\n[KeyBERT] chunk 39/66 ...\n[KeyBERT] chunk 40/66 ...\n[KeyBERT] chunk 41/66 ...\n[KeyBERT] chunk 42/66 ...\n[KeyBERT] chunk 43/66 ...\n[KeyBERT] chunk 44/66 ...\n[KeyBERT] chunk 45/66 ...\n[KeyBERT] chunk 46/66 ...\n[KeyBERT] chunk 47/66 ...\n[KeyBERT] chunk 48/66 ...\n[KeyBERT] chunk 49/66 ...\n[KeyBERT] chunk 50/66 ...\n[KeyBERT] chunk 51/66 ...\n[KeyBERT] chunk 52/66 ...\n[KeyBERT] chunk 53/66 ...\n[KeyBERT] chunk 54/66 ...\n[KeyBERT] chunk 55/66 ...\n[KeyBERT] chunk 56/66 ...\n[KeyBERT] chunk 57/66 ...\n[KeyBERT] chunk 58/66 ...\n[KeyBERT] chunk 59/66 ...\n[KeyBERT] chunk 60/66 ...\n[KeyBERT] chunk 61/66 ...\n[KeyBERT] chunk 62/66 ...\n[KeyBERT] chunk 63/66 ...\n[KeyBERT] chunk 64/66 ...\n[KeyBERT] chunk 65/66 ...\n[KeyBERT] chunk 66/66 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Probability Theory\n02. Probability Distributions\n03. Information Theory\n04. Covariance\n05. Random Variables\n06. Probabilistic Models\n07. Neural Networks\n08. Statistical Inference\n09. Mathematical Functions\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6410.30it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:42:50+08:00",
+      "ended_at": "2026-07-29T13:42:59+08:00",
+      "duration_seconds": 9.194,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 8 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Probability Theory -> Probability Distributions | Probability distributions are based on the principles of probability theory.\n02. Probability Theory -> Random Variables | Understanding random variables requires knowledge of probability theory.\n03. Probability Distributions -> Covariance | Covariance is defined in terms of probability distributions.\n04. Probability Theory -> Statistical Inference | Statistical inference relies on concepts from probability theory.\n05. Random Variables -> Probabilistic Models | Probabilistic models are built using random variables.\n06. Probability Theory -> Information Theory | Information theory is grounded in probability theory.\n07. Statistical Inference -> Neural Networks | Statistical inference techniques are often used in training neural networks.\n08. Mathematical Functions -> Neural Networks | Neural networks utilize mathematical functions to model relationships.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:42:59+08:00",
+      "ended_at": "2026-07-29T13:43:34+08:00",
+      "duration_seconds": 34.8989,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 1 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Probability Distributions <-> Random Variables | sim=0.7682\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6307.70it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:43:34+08:00",
+      "ended_at": "2026-07-29T13:43:59+08:00",
+      "duration_seconds": 25.2313,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Probability Theory\n[LLM] 2/9 Probability Distributions\n[LLM] 3/9 Information Theory\n[LLM] 4/9 Covariance\n[LLM] 5/9 Random Variables\n[LLM] 6/9 Probabilistic Models\n[LLM] 7/9 Neural Networks\n[LLM] 8/9 Statistical Inference\n[LLM] 9/9 Mathematical Functions\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:43:59+08:00",
+      "ended_at": "2026-07-29T13:44:01+08:00",
+      "duration_seconds": 1.8414,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output present"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 8\n[3] Similarity edges: 1\n[4] Graph nodes=9, edges=9\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T13:41:33+08:00"
+}

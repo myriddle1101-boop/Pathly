@@ -1,0 +1,29 @@
+{
+  "stage": "stage2a",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage1_chunks.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2a_topics_hybrid.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 1509.3753,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2a_topics_hybrid.json: OK"
+    ]
+  },
+  "stdout_tail": "[KeyBERT] chunk 903/958 ...\n[KeyBERT] chunk 904/958 ...\n[KeyBERT] chunk 905/958 ...\n[KeyBERT] chunk 906/958 ...\n[KeyBERT] chunk 907/958 ...\n[KeyBERT] chunk 908/958 ...\n[KeyBERT] chunk 909/958 ...\n[KeyBERT] chunk 910/958 ...\n[KeyBERT] chunk 911/958 ...\n[KeyBERT] chunk 912/958 ...\n[KeyBERT] chunk 913/958 ...\n[KeyBERT] chunk 914/958 ...\n[KeyBERT] chunk 915/958 ...\n[KeyBERT] chunk 916/958 ...\n[KeyBERT] chunk 917/958 ...\n[KeyBERT] chunk 918/958 ...\n[KeyBERT] chunk 919/958 ...\n[KeyBERT] chunk 920/958 ...\n[KeyBERT] chunk 921/958 ...\n[KeyBERT] chunk 922/958 ...\n[KeyBERT] chunk 923/958 ...\n[KeyBERT] chunk 924/958 ...\n[KeyBERT] chunk 925/958 ...\n[KeyBERT] chunk 926/958 ...\n[KeyBERT] chunk 927/958 ...\n[KeyBERT] chunk 928/958 ...\n[KeyBERT] chunk 929/958 ...\n[KeyBERT] chunk 930/958 ...\n[KeyBERT] chunk 931/958 ...\n[KeyBERT] chunk 932/958 ...\n[KeyBERT] chunk 933/958 ...\n[KeyBERT] chunk 934/958 ...\n[KeyBERT] chunk 935/958 ...\n[KeyBERT] chunk 936/958 ...\n[KeyBERT] chunk 937/958 ...\n[KeyBERT] chunk 938/958 ...\n[KeyBERT] chunk 939/958 ...\n[KeyBERT] chunk 940/958 ...\n[KeyBERT] chunk 941/958 ...\n[KeyBERT] chunk 942/958 ...\n[KeyBERT] chunk 943/958 ...\n[KeyBERT] chunk 944/958 ...\n[KeyBERT] chunk 945/958 ...\n[KeyBERT] chunk 946/958 ...\n[KeyBERT] chunk 947/958 ...\n[KeyBERT] chunk 948/958 ...\n[KeyBERT] chunk 949/958 ...\n[KeyBERT] chunk 950/958 ...\n[KeyBERT] chunk 951/958 ...\n[KeyBERT] chunk 952/958 ...\n[KeyBERT] chunk 953/958 ...\n[KeyBERT] chunk 954/958 ...\n[KeyBERT] chunk 955/958 ...\n[KeyBERT] chunk 956/958 ...\n[KeyBERT] chunk 957/958 ...\n[KeyBERT] chunk 958/958 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Regression\n02. Statistical Learning\n03. Neural Networks\n04. Support Vector Machines\n05. Clustering\n06. Model Evaluation\n07. Survival Analysis\n08. Regression Trees\n09. Predictors\n\n Stage 2a 混合版完成\n",
+  "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 2818.69it/s]\n"
+}

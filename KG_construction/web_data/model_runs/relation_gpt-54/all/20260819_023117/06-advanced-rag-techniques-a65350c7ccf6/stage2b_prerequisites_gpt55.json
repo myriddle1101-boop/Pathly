@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Semantic Processing",
+      "to": "Hybrid Search",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding text meaning is a foundational requirement for learning semantic components commonly used within hybrid search systems."
+    },
+    {
+      "from": "Query Processing",
+      "to": "Query Variations",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding how queries are handled provides the necessary foundation before studying different query forms and structures."
+    }
+  ]
+}

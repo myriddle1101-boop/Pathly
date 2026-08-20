@@ -1,0 +1,118 @@
+{
+  "created_at": "2026-08-18T18:47:47.719760+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-2024-cs224n-python-review-session-slides.pptx-17ef722b88a0",
+  "file_name": "2024-cs224n-python-review-session-slides.pptx-17ef722b88a0",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 23,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.2857,
+    "recall": 0.5,
+    "f1": 0.3636,
+    "tp": 2,
+    "fp": 5,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Python Basics",
+      "Python Packages",
+      "Python Environment",
+      "Data Manipulation",
+      "Python Functions",
+      "Operators in Python",
+      "Python Notebooks",
+      "Debugging Techniques"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Advanced Python Concepts",
+        "reason": "Too vague and not a distinct topic represented in the source."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Python Collections",
+        "reason": "The source explicitly covers lists, tuples, dictionaries, slicing, and iteration."
+      },
+      {
+        "name": "NumPy Arrays",
+        "reason": "np.ndarray is identified as the main data type for matrix and vector computation."
+      },
+      {
+        "name": "NumPy Broadcasting",
+        "reason": "Broadcasting rules, examples, and an algorithm are a major dedicated section."
+      },
+      {
+        "name": "Virtual Environments",
+        "reason": "Environment isolation is explicitly taught through venv and Conda."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Python Basics",
+        "to": "Python Functions",
+        "reason": "Function definitions in the source rely on foundational Python syntax, variables, types, indentation, and control flow."
+      },
+      {
+        "from": "Python Basics",
+        "to": "Data Manipulation",
+        "reason": "The collection and NumPy examples build on basic Python values, expressions, indexing, and loops."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Python Basics",
+        "to": "Operators in Python",
+        "reason": "Operators are presented as part of Python language basics rather than as a later concept requiring Python Basics."
+      },
+      {
+        "from": "Python Basics",
+        "to": "Python Packages",
+        "reason": "Package installation and importing are covered as environment and tooling tasks; basic syntax is not established as a necessary learning dependency."
+      },
+      {
+        "from": "Python Environment",
+        "to": "Python Notebooks",
+        "reason": "Google Colab is explicitly described as requiring no setup, so an environment is not required to use notebooks generally."
+      },
+      {
+        "from": "Python Functions",
+        "to": "Debugging Techniques",
+        "reason": "The debugging material applies broadly to variables, syntax, array shapes, types, and interactive testing, not specifically to functions."
+      },
+      {
+        "from": "Data Manipulation",
+        "to": "Advanced Python Concepts",
+        "reason": "The target is not a defined source topic, and the source does not establish this directional dependency."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Python Collections",
+        "to": "List Slicing",
+        "reason": "The list-slicing section directly operates on lists and presupposes understanding list elements and indexing."
+      },
+      {
+        "from": "NumPy Arrays",
+        "to": "NumPy Broadcasting",
+        "reason": "Broadcasting is defined as operations on arrays based on their shapes and dimensions."
+      }
+    ],
+    "overall_note": "The prediction captures the broad Python and tooling coverage, but omits the source's central collections and NumPy-array topics."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-2024-cs224n-python-review-session-slides.pptx-17ef722b88a0.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-2024-cs224n-python-review-session-slides.pptx-17ef722b88a0.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-2024-cs224n-python-review-session-slides.pptx-17ef722b88a0_ledger.csv"
+  }
+}

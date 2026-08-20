@@ -1,0 +1,107 @@
+{
+  "created_at": "2026-08-18T18:50:27.348625+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-cs224n-2026-lecture02-wordvecs-fd0b4ad8af88",
+  "file_name": "cs224n-2026-lecture02-wordvecs-fd0b4ad8af88",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 15,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6154,
+    "f1": 0.7273,
+    "tp": 8,
+    "fp": 1,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.3333,
+    "recall": 0.25,
+    "f1": 0.2857,
+    "tp": 1,
+    "fp": 2,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Word Vectors",
+      "Training Techniques",
+      "Similarity Measures",
+      "Natural Language Processing",
+      "Data Representation",
+      "Optimization Techniques",
+      "Model Evaluation",
+      "Deep Learning"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "Neural networks are mentioned only in passing; the lecture does not substantively teach neural-network architectures or mechanisms."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Word2Vec",
+        "reason": "A central portion of the lecture explains the Word2Vec framework, skip-gram objective, and training."
+      },
+      {
+        "name": "Distributional Semantics",
+        "reason": "The source explicitly presents the principle that word meaning is represented through nearby context words."
+      },
+      {
+        "name": "Softmax",
+        "reason": "The Word2Vec prediction probability is defined using softmax, which is explicitly explained."
+      },
+      {
+        "name": "Negative Sampling",
+        "reason": "The lecture presents skip-gram negative sampling as an efficient Word2Vec training method."
+      },
+      {
+        "name": "Co-occurrence Matrices",
+        "reason": "The lecture contrasts predictive word vectors with count-based window and word-document co-occurrence matrices."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Data Representation",
+        "to": "Word Vectors",
+        "reason": "The lecture introduces word vectors as a dense numerical representation of words, contrasting them with one-hot representations."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Data Representation",
+        "to": "Neural Networks",
+        "reason": "The source does not establish a learning dependency from general data representation to neural networks."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Deep Learning",
+        "reason": "Although deep learning and neural nets are mentioned, their architectural relationship is not taught or developed in the source."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Distributional Semantics",
+        "to": "Word Vectors",
+        "reason": "The source motivates word vectors by the distributional principle that words with similar contexts should have similar representations."
+      },
+      {
+        "from": "Softmax",
+        "to": "Word2Vec",
+        "reason": "The skip-gram Word2Vec model uses softmax to compute context-word probabilities from vector dot products."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Word2Vec",
+        "reason": "Word2Vec training is described as minimizing its loss by adjusting parameters using gradients, including SGD."
+      }
+    ],
+    "overall_note": "The prediction captures the lecture's broad themes, but it omits core Word2Vec-specific concepts and overstates coverage of neural networks."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture02-wordvecs-fd0b4ad8af88.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture02-wordvecs-fd0b4ad8af88.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture02-wordvecs-fd0b4ad8af88_ledger.csv"
+  }
+}

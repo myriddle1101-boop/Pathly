@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture13-reasoning-part2\\9be210e8836e\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture13-reasoning-part2\\9be210e8836e\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 7.5462,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture13-reasoning-part2\\9be210e8836e\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Natural Language Processing -> Contextual Learning | Understanding language processing is essential for utilizing context in learning tasks.\n02. Reinforcement Learning -> Policy Distillation | Knowledge of reinforcement learning is necessary to understand how to transfer policies.\n03. Training Methods -> Model Optimization | Effective training methods are foundational for optimizing model performance.\n04. Scaling Techniques -> Model Optimization | Scaling techniques often require optimization strategies to enhance performance.\n05. Decoding Techniques -> Natural Language Processing | Decoding methods are often applied in the context of processing language data.\n06. Positional Embeddings -> Natural Language Processing | Incorporating position information is crucial for effective language processing.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

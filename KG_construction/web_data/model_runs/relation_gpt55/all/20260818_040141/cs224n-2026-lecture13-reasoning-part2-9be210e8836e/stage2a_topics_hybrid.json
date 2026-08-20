@@ -1,0 +1,754 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 13,
+  "candidate_count": 68,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "speculative decoding",
+      "avg_score": 0.5897,
+      "frequency": 3,
+      "chunk_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "decoding algorithms",
+      "avg_score": 0.6384,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "positional embedding",
+      "avg_score": 0.6108,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "name": "policy distillation",
+      "avg_score": 0.6067,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "name": "long context",
+      "avg_score": 0.5858,
+      "frequency": 2,
+      "chunk_ids": [
+        8,
+        11
+      ]
+    },
+    {
+      "name": "positional",
+      "avg_score": 0.5743,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "name": "compute scaling",
+      "avg_score": 0.5693,
+      "frequency": 2,
+      "chunk_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "decoding",
+      "avg_score": 0.5359,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "lecture plan",
+      "avg_score": 0.5118,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        6
+      ]
+    },
+    {
+      "name": "learned positional",
+      "avg_score": 0.7723,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "learns positional",
+      "avg_score": 0.7493,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "positional embeddings",
+      "avg_score": 0.7258,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "scaling reasoning",
+      "avg_score": 0.7217,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "position embedding",
+      "avg_score": 0.6682,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "requires scaling",
+      "avg_score": 0.6466,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "longer contexts",
+      "avg_score": 0.6449,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "offline rl",
+      "avg_score": 0.6424,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "policy offline",
+      "avg_score": 0.6328,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "offline policy",
+      "avg_score": 0.63,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "vs offline",
+      "avg_score": 0.6192,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "pretraining long",
+      "avg_score": 0.6147,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "decoding dogs",
+      "avg_score": 0.613,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "long contexts",
+      "avg_score": 0.608,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "optimized test",
+      "avg_score": 0.6037,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "distillation policy",
+      "avg_score": 0.6032,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "scaling long",
+      "avg_score": 0.5937,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "distillation implication",
+      "avg_score": 0.587,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "context instruction",
+      "avg_score": 0.5838,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "distillation vs",
+      "avg_score": 0.5805,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "distillation instruction",
+      "avg_score": 0.5779,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.573,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "decoding vllm",
+      "avg_score": 0.5721,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "performance models",
+      "avg_score": 0.5699,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "context extension",
+      "avg_score": 0.5695,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "scaling tasks",
+      "avg_score": 0.569,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "scaling test",
+      "avg_score": 0.5664,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "scaling training",
+      "avg_score": 0.5629,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "time scaling",
+      "avg_score": 0.5625,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "scaling model",
+      "avg_score": 0.5534,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "intelligently scaling",
+      "avg_score": 0.55,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "decoding extreme",
+      "avg_score": 0.5431,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "distillation viewed",
+      "avg_score": 0.5407,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "knowledge distillation",
+      "avg_score": 0.5404,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "model optimized",
+      "avg_score": 0.5397,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "true offline",
+      "avg_score": 0.5379,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "decoding 2025",
+      "avg_score": 0.5283,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "scaling",
+      "avg_score": 0.5255,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "scaling notion",
+      "avg_score": 0.5231,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "suffix decoding",
+      "avg_score": 0.5053,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "offline",
+      "avg_score": 0.5041,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "position indices",
+      "avg_score": 0.501,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "distillation long",
+      "avg_score": 0.4996,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "relative positions",
+      "avg_score": 0.4957,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "relative additive",
+      "avg_score": 0.4818,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "hf algorithm",
+      "avg_score": 0.4775,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "dogs love",
+      "avg_score": 0.4763,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "roterary positional",
+      "avg_score": 0.4759,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "choi lecture",
+      "avg_score": 0.4743,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "policy drift",
+      "avg_score": 0.4719,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "algorithm llm",
+      "avg_score": 0.4711,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "chasing prob",
+      "avg_score": 0.471,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "dogs",
+      "avg_score": 0.4687,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "rl policy",
+      "avg_score": 0.4629,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "reasoning requires",
+      "avg_score": 0.4624,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "natural language",
+      "avg_score": 0.4554,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "decoding speculative",
+      "avg_score": 0.4527,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "lecture 13",
+      "avg_score": 0.4388,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "reasoning announcement",
+      "avg_score": 0.4316,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Decoding Techniques",
+      "description": "Methods and algorithms for decoding in machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Speculative Decoding",
+          "description": "A decoding method that explores multiple potential outputs."
+        },
+        {
+          "name": "Decoding Algorithms",
+          "description": "Various algorithms used for decoding tasks."
+        },
+        {
+          "name": "Suffix Decoding",
+          "description": "A technique focusing on the suffix of sequences during decoding."
+        }
+      ]
+    },
+    {
+      "name": "Positional Embeddings",
+      "description": "Techniques for incorporating position information into models.",
+      "sub_topics": [
+        {
+          "name": "Learned Positional Embedding",
+          "description": "Dynamic embeddings that adapt during training."
+        },
+        {
+          "name": "Rotary Positional Embedding",
+          "description": "A method that uses rotation to encode position."
+        },
+        {
+          "name": "Relative Positioning",
+          "description": "Embedding techniques that consider relative positions."
+        }
+      ]
+    },
+    {
+      "name": "Policy Distillation",
+      "description": "Methods for transferring knowledge from one policy to another.",
+      "sub_topics": [
+        {
+          "name": "Offline Policy",
+          "description": "Policies trained without real-time interaction."
+        },
+        {
+          "name": "Distillation Implications",
+          "description": "Consequences and considerations of policy distillation."
+        },
+        {
+          "name": "Policy Drift",
+          "description": "The phenomenon where policies change over time."
+        }
+      ]
+    },
+    {
+      "name": "Scaling Techniques",
+      "description": "Methods for improving model performance and efficiency at scale.",
+      "sub_topics": [
+        {
+          "name": "Compute Scaling",
+          "description": "Strategies for scaling computational resources."
+        },
+        {
+          "name": "Scaling Reasoning",
+          "description": "Understanding the implications of scaling in models."
+        },
+        {
+          "name": "Intelligently Scaling",
+          "description": "Smart approaches to scaling models effectively."
+        }
+      ]
+    },
+    {
+      "name": "Contextual Learning",
+      "description": "Techniques for handling and utilizing context in learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Long Contexts",
+          "description": "Methods for processing and learning from extended contexts."
+        },
+        {
+          "name": "Context Extension",
+          "description": "Techniques to enhance the context used in models."
+        },
+        {
+          "name": "Context Instruction",
+          "description": "Guidelines for incorporating context into learning."
+        }
+      ]
+    },
+    {
+      "name": "Natural Language Processing",
+      "description": "Techniques and methods for processing human language data.",
+      "sub_topics": [
+        {
+          "name": "Language Processing",
+          "description": "Fundamental techniques for understanding and generating language."
+        },
+        {
+          "name": "Natural Language Understanding",
+          "description": "Methods for comprehending human language."
+        },
+        {
+          "name": "Natural Language Generation",
+          "description": "Techniques for producing human-like text."
+        }
+      ]
+    },
+    {
+      "name": "Training Methods",
+      "description": "Approaches and techniques for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Pretraining",
+          "description": "Initial training phase before fine-tuning on specific tasks."
+        },
+        {
+          "name": "Optimized Training",
+          "description": "Strategies for enhancing training efficiency."
+        },
+        {
+          "name": "Scaling Training",
+          "description": "Methods for scaling training processes."
+        }
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "description": "Learning paradigms based on interactions with an environment.",
+      "sub_topics": [
+        {
+          "name": "Offline Reinforcement Learning",
+          "description": "Reinforcement learning conducted without real-time feedback."
+        },
+        {
+          "name": "RL Policy",
+          "description": "Strategies for decision-making in reinforcement learning."
+        },
+        {
+          "name": "Policy Evaluation",
+          "description": "Assessing the effectiveness of a given policy."
+        }
+      ]
+    },
+    {
+      "name": "Model Optimization",
+      "description": "Techniques for improving model performance and efficiency.",
+      "sub_topics": [
+        {
+          "name": "Knowledge Distillation",
+          "description": "Transferring knowledge from a larger model to a smaller one."
+        },
+        {
+          "name": "Performance Models",
+          "description": "Models designed to optimize specific performance metrics."
+        },
+        {
+          "name": "Algorithm Optimization",
+          "description": "Improving algorithms for better performance."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 28.9202,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

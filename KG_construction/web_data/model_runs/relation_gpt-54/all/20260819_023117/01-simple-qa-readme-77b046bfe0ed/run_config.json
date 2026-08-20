@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed",
+  "run_id": "01-simple-qa-readme-77b046bfe0ed",
+  "model": "gpt-5.4",
+  "created_at": "2026-08-18T18:31:38.137750+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "ef99cc1b60ef24d816b06b6381c1f3242e179d5ebe9a60452ff88fa06128c13c",
+    "stage2a_topics_hybrid.json": "fd479014cac6955dedccbde5579dbb8955bd90ec75d31a4fd37a7e943d0b874f",
+    "stage2c_similarity_edges.json": "b11a2fa5aab988e5d3c1bc326ed94e991a83ef636e7497c4143eeac3e2df82b1",
+    "stage3_topics_with_summary.json": "d32c8e79c1f1c39dbf51d02984e8d7bfb8ec059b4bfe2f71e5819ae97746f96a"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 3,
+  "new_node_count": 9,
+  "new_edge_count": 3,
+  "golden_path_resource": false
+}

@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 9.194,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 8 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Probability Theory -> Probability Distributions | Probability distributions are based on the principles of probability theory.\n02. Probability Theory -> Random Variables | Understanding random variables requires knowledge of probability theory.\n03. Probability Distributions -> Covariance | Covariance is defined in terms of probability distributions.\n04. Probability Theory -> Statistical Inference | Statistical inference relies on concepts from probability theory.\n05. Random Variables -> Probabilistic Models | Probabilistic models are built using random variables.\n06. Probability Theory -> Information Theory | Information theory is grounded in probability theory.\n07. Statistical Inference -> Neural Networks | Statistical inference techniques are often used in training neural networks.\n08. Mathematical Functions -> Neural Networks | Neural networks utilize mathematical functions to model relationships.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

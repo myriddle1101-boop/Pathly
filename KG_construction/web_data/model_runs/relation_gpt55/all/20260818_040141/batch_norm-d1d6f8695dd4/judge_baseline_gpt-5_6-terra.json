@@ -1,0 +1,113 @@
+{
+  "created_at": "2026-08-18T18:48:54.014728+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-batch_norm-d1d6f8695dd4",
+  "file_name": "batch_norm-d1d6f8695dd4",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 2,
+  "topic_metrics": {
+    "precision": 0.625,
+    "recall": 0.5556,
+    "f1": 0.5882,
+    "tp": 5,
+    "fp": 3,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.1667,
+    "recall": 0.5,
+    "f1": 0.25,
+    "tp": 1,
+    "fp": 5,
+    "fn": 1
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Accuracy Metrics",
+      "Normalization Techniques",
+      "Neural Networks",
+      "Training Techniques",
+      "Model Evaluation"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Loss Functions",
+        "reason": "The excerpt discusses accuracy and error metrics but does not present or analyze a loss function."
+      },
+      {
+        "name": "Linear Separability",
+        "reason": "Linear separability is not discussed in the source."
+      },
+      {
+        "name": "Maximization Techniques",
+        "reason": "Maximum accuracy is reported as an experimental outcome, not as an optimization or maximization technique."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Batch Normalization",
+        "reason": "This is the central method, defined through batch-wise centering and variance normalization and evaluated experimentally."
+      },
+      {
+        "name": "Internal Covariate Shift",
+        "reason": "The source identifies reducing internal covariate shift as the premise and motivation for Batch Normalization."
+      },
+      {
+        "name": "Learning Rate",
+        "reason": "The experiments compare substantially increased initial learning rates and their effects on training speed and accuracy."
+      },
+      {
+        "name": "Activation Functions",
+        "reason": "The excerpt explicitly compares ReLU and sigmoid nonlinearities and reports that Batch Normalization enables training with sigmoid."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Accuracy Metrics",
+        "to": "Model Evaluation",
+        "reason": "Validation accuracy, top-5 error, and test error are explicitly used to evaluate and compare model performance."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Loss Functions",
+        "to": "Model Evaluation",
+        "reason": "Loss functions are not covered in the excerpt, which evaluates models using accuracy and error metrics instead."
+      },
+      {
+        "from": "Normalization Techniques",
+        "to": "Training Techniques",
+        "reason": "Batch Normalization is presented as a technique that improves training, but the source does not establish general normalization as a prerequisite for learning training techniques."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Training Techniques",
+        "reason": "Neural networks are the objects being trained, but this broad association is not a specific directional prerequisite established by the source."
+      },
+      {
+        "from": "Linear Separability",
+        "to": "Model Evaluation",
+        "reason": "Linear separability is absent from the source and is not required for the reported evaluation procedure."
+      },
+      {
+        "from": "Maximization Techniques",
+        "to": "Accuracy Metrics",
+        "reason": "The source reports maximum achieved accuracy but does not describe a maximization technique as a prerequisite for accuracy metrics."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Mini-batch Mean and Variance",
+        "to": "Batch Normalization",
+        "reason": "The displayed Batch Normalization computation centers activations using a batch mean and rescales them using batch variance."
+      }
+    ],
+    "overall_note": "The predictions capture broad training and evaluation themes, but omit Batch Normalization itself and include several concepts not supported by the excerpt."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-batch_norm-d1d6f8695dd4.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-batch_norm-d1d6f8695dd4.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-batch_norm-d1d6f8695dd4_ledger.csv"
+  }
+}

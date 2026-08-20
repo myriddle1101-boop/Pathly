@@ -1,0 +1,15 @@
+{
+  "run_id": "2024-cs224n-python-review-session-slides.pptx-17ef722b88a0",
+  "can_resume": false,
+  "last_failed_stage": null,
+  "next_resume_stage": null,
+  "completed_stages": [
+    "stage1",
+    "stage2a",
+    "stage2b",
+    "stage2c",
+    "stage3",
+    "stage4"
+  ],
+  "updated_at": "2026-07-07T19:36:14+08:00"
+}

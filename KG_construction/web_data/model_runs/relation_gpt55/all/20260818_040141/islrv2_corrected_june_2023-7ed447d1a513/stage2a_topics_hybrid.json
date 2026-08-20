@@ -1,0 +1,1759 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 962,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "regression",
+      "avg_score": 0.5618,
+      "frequency": 71,
+      "chunk_ids": [
+        45,
+        46,
+        56,
+        61,
+        65,
+        104,
+        107,
+        110,
+        112,
+        125,
+        126,
+        128,
+        131,
+        139,
+        146,
+        149,
+        161,
+        168,
+        169,
+        171,
+        174,
+        179,
+        187,
+        191,
+        192,
+        193,
+        196,
+        200,
+        206,
+        207,
+        214,
+        216,
+        220,
+        282,
+        290,
+        291,
+        316,
+        323,
+        340,
+        375,
+        376,
+        377,
+        379,
+        380,
+        397,
+        398,
+        402,
+        407,
+        410,
+        414,
+        417,
+        441,
+        442,
+        446,
+        474,
+        476,
+        477,
+        480,
+        505,
+        506,
+        509,
+        515,
+        516,
+        529,
+        537,
+        539,
+        573,
+        579,
+        630,
+        702,
+        888
+      ]
+    },
+    {
+      "name": "linear regression",
+      "avg_score": 0.5898,
+      "frequency": 46,
+      "chunk_ids": [
+        45,
+        46,
+        61,
+        65,
+        104,
+        106,
+        108,
+        110,
+        112,
+        126,
+        128,
+        139,
+        141,
+        146,
+        149,
+        161,
+        162,
+        164,
+        168,
+        171,
+        179,
+        185,
+        187,
+        188,
+        190,
+        191,
+        192,
+        193,
+        196,
+        200,
+        203,
+        206,
+        209,
+        212,
+        220,
+        282,
+        340,
+        423,
+        474,
+        483,
+        509,
+        542,
+        560,
+        701,
+        702,
+        888
+      ]
+    },
+    {
+      "name": "statistical learning",
+      "avg_score": 0.6295,
+      "frequency": 31,
+      "chunk_ids": [
+        4,
+        12,
+        13,
+        14,
+        16,
+        29,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        43,
+        44,
+        46,
+        48,
+        53,
+        54,
+        58,
+        61,
+        64,
+        68,
+        72,
+        77,
+        83,
+        86,
+        90,
+        99,
+        341,
+        821
+      ]
+    },
+    {
+      "name": "predictors",
+      "avg_score": 0.5541,
+      "frequency": 29,
+      "chunk_ids": [
+        34,
+        35,
+        47,
+        69,
+        100,
+        101,
+        130,
+        134,
+        135,
+        142,
+        181,
+        263,
+        267,
+        274,
+        276,
+        289,
+        292,
+        295,
+        381,
+        382,
+        383,
+        387,
+        388,
+        389,
+        394,
+        437,
+        470,
+        471,
+        549
+      ]
+    },
+    {
+      "name": "linear model",
+      "avg_score": 0.5935,
+      "frequency": 27,
+      "chunk_ids": [
+        39,
+        104,
+        160,
+        162,
+        163,
+        203,
+        213,
+        280,
+        283,
+        375,
+        398,
+        415,
+        417,
+        419,
+        428,
+        437,
+        442,
+        445,
+        452,
+        474,
+        477,
+        481,
+        483,
+        486,
+        488,
+        489,
+        560
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.566,
+      "frequency": 26,
+      "chunk_ids": [
+        653,
+        654,
+        657,
+        659,
+        677,
+        678,
+        682,
+        686,
+        690,
+        694,
+        700,
+        703,
+        707,
+        710,
+        713,
+        716,
+        718,
+        721,
+        723,
+        727,
+        730,
+        731,
+        734,
+        735,
+        738,
+        742
+      ]
+    },
+    {
+      "name": "logistic regression",
+      "avg_score": 0.5579,
+      "frequency": 24,
+      "chunk_ids": [
+        225,
+        226,
+        234,
+        235,
+        237,
+        254,
+        268,
+        272,
+        293,
+        296,
+        318,
+        319,
+        323,
+        327,
+        329,
+        340,
+        347,
+        349,
+        380,
+        515,
+        516,
+        630,
+        680,
+        741
+      ]
+    },
+    {
+      "name": "null hypothesis",
+      "avg_score": 0.6131,
+      "frequency": 23,
+      "chunk_ids": [
+        115,
+        150,
+        182,
+        210,
+        215,
+        228,
+        889,
+        891,
+        897,
+        902,
+        905,
+        906,
+        912,
+        916,
+        926,
+        928,
+        932,
+        935,
+        939,
+        952,
+        956,
+        957,
+        958
+      ]
+    },
+    {
+      "name": "regression model",
+      "avg_score": 0.5953,
+      "frequency": 22,
+      "chunk_ids": [
+        139,
+        142,
+        160,
+        162,
+        169,
+        173,
+        177,
+        185,
+        206,
+        209,
+        214,
+        216,
+        223,
+        235,
+        282,
+        287,
+        316,
+        379,
+        423,
+        465,
+        474,
+        509
+      ]
+    },
+    {
+      "name": "survival analysis",
+      "avg_score": 0.6717,
+      "frequency": 21,
+      "chunk_ids": [
+        743,
+        744,
+        751,
+        754,
+        758,
+        762,
+        765,
+        769,
+        771,
+        774,
+        778,
+        779,
+        780,
+        781,
+        783,
+        784,
+        786,
+        788,
+        789,
+        792,
+        795
+      ]
+    },
+    {
+      "name": "vector machines",
+      "avg_score": 0.6213,
+      "frequency": 21,
+      "chunk_ids": [
+        25,
+        597,
+        601,
+        608,
+        611,
+        615,
+        616,
+        617,
+        619,
+        623,
+        624,
+        628,
+        635,
+        637,
+        638,
+        641,
+        642,
+        643,
+        645,
+        648,
+        652
+      ]
+    },
+    {
+      "name": "null hypotheses",
+      "avg_score": 0.604,
+      "frequency": 21,
+      "chunk_ids": [
+        765,
+        900,
+        902,
+        903,
+        906,
+        912,
+        914,
+        916,
+        920,
+        921,
+        923,
+        924,
+        928,
+        935,
+        939,
+        942,
+        955,
+        956,
+        957,
+        958,
+        960
+      ]
+    },
+    {
+      "name": "clustering",
+      "avg_score": 0.5867,
+      "frequency": 21,
+      "chunk_ids": [
+        48,
+        50,
+        829,
+        832,
+        834,
+        835,
+        836,
+        838,
+        841,
+        843,
+        844,
+        845,
+        851,
+        864,
+        877,
+        878,
+        879,
+        881,
+        882,
+        883,
+        885
+      ]
+    },
+    {
+      "name": "ridge regression",
+      "avg_score": 0.6212,
+      "frequency": 20,
+      "chunk_ids": [
+        397,
+        399,
+        401,
+        402,
+        405,
+        407,
+        410,
+        411,
+        415,
+        416,
+        417,
+        418,
+        419,
+        431,
+        461,
+        465,
+        466,
+        475,
+        476,
+        477
+      ]
+    },
+    {
+      "name": "neural network",
+      "avg_score": 0.5807,
+      "frequency": 18,
+      "chunk_ids": [
+        654,
+        656,
+        659,
+        661,
+        662,
+        663,
+        669,
+        678,
+        680,
+        688,
+        698,
+        700,
+        704,
+        706,
+        709,
+        716,
+        717,
+        720
+      ]
+    },
+    {
+      "name": "model selection",
+      "avg_score": 0.5702,
+      "frequency": 18,
+      "chunk_ids": [
+        378,
+        379,
+        382,
+        386,
+        398,
+        410,
+        413,
+        419,
+        425,
+        428,
+        431,
+        435,
+        442,
+        445,
+        456,
+        459,
+        467,
+        480
+      ]
+    },
+    {
+      "name": "support vector",
+      "avg_score": 0.6048,
+      "frequency": 16,
+      "chunk_ids": [
+        25,
+        611,
+        615,
+        616,
+        617,
+        619,
+        621,
+        623,
+        629,
+        633,
+        635,
+        641,
+        643,
+        645,
+        648,
+        652
+      ]
+    },
+    {
+      "name": "vector classifier",
+      "avg_score": 0.5778,
+      "frequency": 16,
+      "chunk_ids": [
+        608,
+        611,
+        615,
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        624,
+        629,
+        631,
+        633,
+        638,
+        648,
+        649
+      ]
+    },
+    {
+      "name": "multiple testing",
+      "avg_score": 0.5705,
+      "frequency": 16,
+      "chunk_ids": [
+        887,
+        895,
+        899,
+        903,
+        911,
+        915,
+        918,
+        921,
+        922,
+        925,
+        929,
+        937,
+        940,
+        951,
+        954,
+        956
+      ]
+    },
+    {
+      "name": "unsupervised learning",
+      "avg_score": 0.5589,
+      "frequency": 15,
+      "chunk_ids": [
+        796,
+        797,
+        801,
+        805,
+        819,
+        826,
+        828,
+        837,
+        854,
+        866,
+        874,
+        876,
+        878,
+        880,
+        884
+      ]
+    },
+    {
+      "name": "coeﬀicient estimates",
+      "avg_score": 0.5572,
+      "frequency": 15,
+      "chunk_ids": [
+        105,
+        107,
+        111,
+        147,
+        176,
+        235,
+        313,
+        314,
+        400,
+        401,
+        421,
+        441,
+        452,
+        477,
+        489
+      ]
+    },
+    {
+      "name": "statistic",
+      "avg_score": 0.5192,
+      "frequency": 15,
+      "chunk_ids": [
+        116,
+        118,
+        121,
+        131,
+        132,
+        155,
+        228,
+        753,
+        754,
+        755,
+        892,
+        894,
+        905,
+        907,
+        953
+      ]
+    },
+    {
+      "name": "linear models",
+      "avg_score": 0.6011,
+      "frequency": 14,
+      "chunk_ids": [
+        280,
+        283,
+        287,
+        375,
+        450,
+        454,
+        457,
+        461,
+        465,
+        468,
+        481,
+        489,
+        538,
+        701
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.5985,
+      "frequency": 14,
+      "chunk_ids": [
+        654,
+        656,
+        661,
+        662,
+        664,
+        669,
+        680,
+        684,
+        688,
+        695,
+        704,
+        716,
+        727,
+        734
+      ]
+    },
+    {
+      "name": "statistical",
+      "avg_score": 0.553,
+      "frequency": 14,
+      "chunk_ids": [
+        29,
+        30,
+        32,
+        34,
+        40,
+        44,
+        48,
+        61,
+        68,
+        72,
+        86,
+        90,
+        92,
+        99
+      ]
+    },
+    {
+      "name": "test statistic",
+      "avg_score": 0.5772,
+      "frequency": 13,
+      "chunk_ids": [
+        753,
+        754,
+        755,
+        781,
+        891,
+        892,
+        894,
+        895,
+        896,
+        933,
+        935,
+        952,
+        953
+      ]
+    },
+    {
+      "name": "principal component",
+      "avg_score": 0.5469,
+      "frequency": 12,
+      "chunk_ids": [
+        426,
+        803,
+        808,
+        810,
+        812,
+        814,
+        817,
+        819,
+        826,
+        854,
+        872,
+        880
+      ]
+    },
+    {
+      "name": "error rate",
+      "avg_score": 0.5466,
+      "frequency": 12,
+      "chunk_ids": [
+        70,
+        251,
+        297,
+        309,
+        347,
+        565,
+        594,
+        905,
+        913,
+        917,
+        918,
+        944
+      ]
+    },
+    {
+      "name": "hierarchical clustering",
+      "avg_score": 0.6361,
+      "frequency": 11,
+      "chunk_ids": [
+        830,
+        836,
+        841,
+        842,
+        843,
+        844,
+        845,
+        864,
+        881,
+        882,
+        885
+      ]
+    },
+    {
+      "name": "11 survival",
+      "avg_score": 0.6209,
+      "frequency": 11,
+      "chunk_ids": [
+        743,
+        744,
+        754,
+        762,
+        769,
+        771,
+        774,
+        780,
+        783,
+        789,
+        792
+      ]
+    },
+    {
+      "name": "squares regression",
+      "avg_score": 0.6067,
+      "frequency": 11,
+      "chunk_ids": [
+        128,
+        171,
+        188,
+        190,
+        209,
+        214,
+        215,
+        380,
+        441,
+        442,
+        507
+      ]
+    },
+    {
+      "name": "principal components",
+      "avg_score": 0.5993,
+      "frequency": 11,
+      "chunk_ids": [
+        429,
+        799,
+        803,
+        807,
+        812,
+        814,
+        817,
+        819,
+        826,
+        871,
+        872
+      ]
+    },
+    {
+      "name": "error statistic",
+      "avg_score": 0.5788,
+      "frequency": 11,
+      "chunk_ids": [
+        124,
+        147,
+        151,
+        155,
+        179,
+        227,
+        229,
+        230,
+        280,
+        285,
+        702
+      ]
+    },
+    {
+      "name": "linearity",
+      "avg_score": 0.5774,
+      "frequency": 10,
+      "chunk_ids": [
+        485,
+        488,
+        497,
+        499,
+        510,
+        514,
+        517,
+        520,
+        528,
+        532
+      ]
+    },
+    {
+      "name": "survival",
+      "avg_score": 0.5759,
+      "frequency": 10,
+      "chunk_ids": [
+        767,
+        769,
+        770,
+        781,
+        783,
+        784,
+        788,
+        789,
+        791,
+        792
+      ]
+    },
+    {
+      "name": "regression lasso",
+      "avg_score": 0.5692,
+      "frequency": 10,
+      "chunk_ids": [
+        407,
+        411,
+        414,
+        417,
+        418,
+        431,
+        442,
+        461,
+        630,
+        701
+      ]
+    },
+    {
+      "name": "training data",
+      "avg_score": 0.5515,
+      "frequency": 10,
+      "chunk_ids": [
+        54,
+        65,
+        71,
+        77,
+        328,
+        329,
+        414,
+        540,
+        652,
+        718
+      ]
+    },
+    {
+      "name": "statistic value",
+      "avg_score": 0.5439,
+      "frequency": 10,
+      "chunk_ids": [
+        116,
+        124,
+        133,
+        147,
+        151,
+        155,
+        227,
+        229,
+        230,
+        907
+      ]
+    },
+    {
+      "name": "linear",
+      "avg_score": 0.5424,
+      "frequency": 10,
+      "chunk_ids": [
+        41,
+        61,
+        192,
+        208,
+        492,
+        500,
+        513,
+        518,
+        528,
+        646
+      ]
+    },
+    {
+      "name": "coeﬀicient",
+      "avg_score": 0.5352,
+      "frequency": 10,
+      "chunk_ids": [
+        107,
+        178,
+        294,
+        314,
+        315,
+        325,
+        423,
+        441,
+        452,
+        888
+      ]
+    },
+    {
+      "name": "survival curve",
+      "avg_score": 0.6542,
+      "frequency": 9,
+      "chunk_ids": [
+        748,
+        749,
+        751,
+        756,
+        763,
+        779,
+        792,
+        793,
+        795
+      ]
+    },
+    {
+      "name": "survival curves",
+      "avg_score": 0.6441,
+      "frequency": 9,
+      "chunk_ids": [
+        751,
+        752,
+        769,
+        770,
+        771,
+        774,
+        779,
+        787,
+        795
+      ]
+    },
+    {
+      "name": "degrees freedom",
+      "avg_score": 0.5901,
+      "frequency": 9,
+      "chunk_ids": [
+        445,
+        496,
+        497,
+        501,
+        502,
+        504,
+        532,
+        713,
+        714
+      ]
+    },
+    {
+      "name": "hyperplane",
+      "avg_score": 0.6277,
+      "frequency": 8,
+      "chunk_ids": [
+        3,
+        599,
+        601,
+        605,
+        606,
+        610,
+        614,
+        645
+      ]
+    },
+    {
+      "name": "random forests",
+      "avg_score": 0.6252,
+      "frequency": 8,
+      "chunk_ids": [
+        566,
+        568,
+        570,
+        572,
+        574,
+        575,
+        579,
+        588
+      ]
+    },
+    {
+      "name": "regression trees",
+      "avg_score": 0.6196,
+      "frequency": 8,
+      "chunk_ids": [
+        543,
+        564,
+        567,
+        573,
+        575,
+        579,
+        588,
+        590
+      ]
+    },
+    {
+      "name": "model",
+      "avg_score": 0.5184,
+      "frequency": 8,
+      "chunk_ids": [
+        74,
+        316,
+        512,
+        516,
+        534,
+        547,
+        703,
+        772
+      ]
+    },
+    {
+      "name": "training observations",
+      "avg_score": 0.5051,
+      "frequency": 8,
+      "chunk_ids": [
+        65,
+        303,
+        337,
+        443,
+        455,
+        556,
+        622,
+        644
+      ]
+    },
+    {
+      "name": "clustering methods",
+      "avg_score": 0.6605,
+      "frequency": 7,
+      "chunk_ids": [
+        50,
+        830,
+        833,
+        836,
+        845,
+        850,
+        851
+      ]
+    },
+    {
+      "name": "separating hyperplane",
+      "avg_score": 0.6601,
+      "frequency": 7,
+      "chunk_ids": [
+        3,
+        600,
+        601,
+        603,
+        604,
+        607,
+        638
+      ]
+    },
+    {
+      "name": "cubic spline",
+      "avg_score": 0.6204,
+      "frequency": 7,
+      "chunk_ids": [
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        502
+      ]
+    },
+    {
+      "name": "models regularization",
+      "avg_score": 0.6137,
+      "frequency": 7,
+      "chunk_ids": [
+        450,
+        454,
+        457,
+        461,
+        465,
+        468,
+        471
+      ]
+    },
+    {
+      "name": "regression line",
+      "avg_score": 0.6136,
+      "frequency": 7,
+      "chunk_ids": [
+        108,
+        109,
+        128,
+        171,
+        209,
+        214,
+        441
+      ]
+    },
+    {
+      "name": "tree based",
+      "avg_score": 0.5892,
+      "frequency": 7,
+      "chunk_ids": [
+        547,
+        551,
+        577,
+        583,
+        586,
+        592,
+        595
+      ]
+    },
+    {
+      "name": "lab linear",
+      "avg_score": 0.5791,
+      "frequency": 7,
+      "chunk_ids": [
+        196,
+        203,
+        450,
+        461,
+        465,
+        468,
+        471
+      ]
+    },
+    {
+      "name": "classification",
+      "avg_score": 0.5402,
+      "frequency": 7,
+      "chunk_ids": [
+        218,
+        243,
+        257,
+        274,
+        276,
+        312,
+        676
+      ]
+    },
+    {
+      "name": "data",
+      "avg_score": 0.4532,
+      "frequency": 7,
+      "chunk_ids": [
+        68,
+        88,
+        90,
+        121,
+        782,
+        825,
+        866
+      ]
+    },
+    {
+      "name": "model accuracy",
+      "avg_score": 0.666,
+      "frequency": 6,
+      "chunk_ids": [
+        56,
+        60,
+        62,
+        66,
+        70,
+        74
+      ]
+    },
+    {
+      "name": "dimension reduction",
+      "avg_score": 0.6525,
+      "frequency": 6,
+      "chunk_ids": [
+        377,
+        422,
+        424,
+        427,
+        430,
+        433
+      ]
+    },
+    {
+      "name": "clusters",
+      "avg_score": 0.6475,
+      "frequency": 6,
+      "chunk_ids": [
+        831,
+        841,
+        862,
+        867,
+        875,
+        881
+      ]
+    },
+    {
+      "name": "regression coeﬀicient",
+      "avg_score": 0.6103,
+      "frequency": 6,
+      "chunk_ids": [
+        126,
+        127,
+        179,
+        212,
+        397,
+        401
+      ]
+    },
+    {
+      "name": "test statistics",
+      "avg_score": 0.6096,
+      "frequency": 6,
+      "chunk_ids": [
+        907,
+        929,
+        933,
+        935,
+        952,
+        953
+      ]
+    },
+    {
+      "name": "models classification",
+      "avg_score": 0.6007,
+      "frequency": 6,
+      "chunk_ids": [
+        240,
+        243,
+        247,
+        254,
+        257,
+        265
+      ]
+    },
+    {
+      "name": "decision trees",
+      "avg_score": 0.5993,
+      "frequency": 6,
+      "chunk_ids": [
+        549,
+        552,
+        561,
+        581,
+        585,
+        589
+      ]
+    },
+    {
+      "name": "validation set",
+      "avg_score": 0.5715,
+      "frequency": 6,
+      "chunk_ids": [
+        333,
+        334,
+        338,
+        345,
+        358,
+        385
+      ]
+    },
+    {
+      "name": "training error",
+      "avg_score": 0.5711,
+      "frequency": 6,
+      "chunk_ids": [
+        77,
+        297,
+        351,
+        578,
+        580,
+        713
+      ]
+    },
+    {
+      "name": "regression tree",
+      "avg_score": 0.5671,
+      "frequency": 6,
+      "chunk_ids": [
+        552,
+        553,
+        554,
+        560,
+        575,
+        592
+      ]
+    },
+    {
+      "name": "variance",
+      "avg_score": 0.5668,
+      "frequency": 6,
+      "chunk_ids": [
+        93,
+        346,
+        484,
+        485,
+        811,
+        818
+      ]
+    },
+    {
+      "name": "testing",
+      "avg_score": 0.5642,
+      "frequency": 6,
+      "chunk_ids": [
+        887,
+        903,
+        925,
+        929,
+        937,
+        954
+      ]
+    },
+    {
+      "name": "advertising data",
+      "avg_score": 0.5477,
+      "frequency": 6,
+      "chunk_ids": [
+        107,
+        116,
+        117,
+        119,
+        141,
+        153
+      ]
+    },
+    {
+      "name": "predict",
+      "avg_score": 0.5445,
+      "frequency": 6,
+      "chunk_ids": [
+        6,
+        222,
+        299,
+        301,
+        693,
+        723
+      ]
+    },
+    {
+      "name": "coeﬀicients",
+      "avg_score": 0.5227,
+      "frequency": 6,
+      "chunk_ids": [
+        39,
+        125,
+        232,
+        398,
+        423,
+        463
+      ]
+    },
+    {
+      "name": "learning",
+      "avg_score": 0.5186,
+      "frequency": 6,
+      "chunk_ids": [
+        677,
+        678,
+        716,
+        718,
+        797,
+        805
+      ]
+    },
+    {
+      "name": "hypothesis",
+      "avg_score": 0.5057,
+      "frequency": 6,
+      "chunk_ids": [
+        115,
+        150,
+        215,
+        228,
+        926,
+        932
+      ]
+    },
+    {
+      "name": "test error",
+      "avg_score": 0.4985,
+      "frequency": 6,
+      "chunk_ids": [
+        347,
+        387,
+        565,
+        591,
+        594,
+        713
+      ]
+    },
+    {
+      "name": "survival data",
+      "avg_score": 0.7241,
+      "frequency": 5,
+      "chunk_ids": [
+        743,
+        756,
+        758,
+        771,
+        784
+      ]
+    },
+    {
+      "name": "models survival",
+      "avg_score": 0.6834,
+      "frequency": 5,
+      "chunk_ids": [
+        756,
+        760,
+        763,
+        767,
+        770
+      ]
+    },
+    {
+      "name": "confidence interval",
+      "avg_score": 0.6743,
+      "frequency": 5,
+      "chunk_ids": [
+        113,
+        114,
+        143,
+        165,
+        184
+      ]
+    },
+    {
+      "name": "polynomial",
+      "avg_score": 0.6379,
+      "frequency": 5,
+      "chunk_ids": [
+        336,
+        339,
+        350,
+        494,
+        535
+      ]
+    },
+    {
+      "name": "hypothesis testing",
+      "avg_score": 0.6366,
+      "frequency": 5,
+      "chunk_ids": [
+        886,
+        889,
+        891,
+        897,
+        951
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Regression",
+      "description": "A statistical method for modeling the relationship between a dependent variable and one or more independent variables.",
+      "sub_topics": [
+        {
+          "name": "Linear Regression",
+          "description": "A type of regression that models the relationship using a linear equation."
+        },
+        {
+          "name": "Logistic Regression",
+          "description": "A regression model used for binary classification tasks."
+        },
+        {
+          "name": "Ridge Regression",
+          "description": "A technique that applies L2 regularization to linear regression."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Artificial Neural Network",
+          "description": "A network of interconnected neurons used to approximate complex functions."
+        },
+        {
+          "name": "Activation Function",
+          "description": "A function that determines the output of a neuron."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing the loss function."
+        }
+      ]
+    },
+    {
+      "name": "Statistical Learning",
+      "description": "A framework for understanding and applying statistical methods to learn from data.",
+      "sub_topics": [
+        {
+          "name": "Model Selection",
+          "description": "The process of choosing the best model from a set of candidates."
+        },
+        {
+          "name": "Hypothesis Testing",
+          "description": "A method for making inferences about populations based on sample data."
+        },
+        {
+          "name": "Confidence Interval",
+          "description": "A range of values that is likely to contain the population parameter."
+        }
+      ]
+    },
+    {
+      "name": "Clustering",
+      "description": "A technique for grouping similar data points into clusters.",
+      "sub_topics": [
+        {
+          "name": "Hierarchical Clustering",
+          "description": "A method that builds a hierarchy of clusters."
+        },
+        {
+          "name": "K-Means Clustering",
+          "description": "A popular algorithm that partitions data into K distinct clusters."
+        },
+        {
+          "name": "Clustering Methods",
+          "description": "Various techniques used to perform clustering."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "The process of assessing the performance of a machine learning model.",
+      "sub_topics": [
+        {
+          "name": "Error Rate",
+          "description": "The proportion of incorrect predictions made by a model."
+        },
+        {
+          "name": "Training Error",
+          "description": "The error rate calculated on the training dataset."
+        },
+        {
+          "name": "Validation Set",
+          "description": "A subset of data used to tune model parameters."
+        }
+      ]
+    },
+    {
+      "name": "Support Vector Machines",
+      "description": "A supervised learning model used for classification and regression tasks.",
+      "sub_topics": [
+        {
+          "name": "Support Vector Classifier",
+          "description": "A type of SVM used for binary classification."
+        },
+        {
+          "name": "Hyperplane",
+          "description": "A decision boundary that separates different classes in SVM."
+        },
+        {
+          "name": "Kernel Trick",
+          "description": "A method to transform data into a higher-dimensional space for better separation."
+        }
+      ]
+    },
+    {
+      "name": "Survival Analysis",
+      "description": "A set of statistical approaches for analyzing time-to-event data.",
+      "sub_topics": [
+        {
+          "name": "Survival Curve",
+          "description": "A graphical representation of survival probabilities over time."
+        },
+        {
+          "name": "Cox Proportional Hazards Model",
+          "description": "A regression model used to explore the relationship between the survival time and one or more predictor variables."
+        },
+        {
+          "name": "Survival Data",
+          "description": "Data that includes the time until an event occurs."
+        }
+      ]
+    },
+    {
+      "name": "Dimensionality Reduction",
+      "description": "Techniques used to reduce the number of features in a dataset while preserving important information.",
+      "sub_topics": [
+        {
+          "name": "Principal Component Analysis",
+          "description": "A method that transforms data into a lower-dimensional space."
+        },
+        {
+          "name": "Cubic Spline",
+          "description": "A piecewise polynomial function used for interpolation."
+        },
+        {
+          "name": "Feature Selection",
+          "description": "The process of selecting a subset of relevant features for model training."
+        }
+      ]
+    },
+    {
+      "name": "Regression Trees",
+      "description": "A decision tree that predicts continuous values based on input features.",
+      "sub_topics": [
+        {
+          "name": "Decision Trees",
+          "description": "A model that splits data into branches to make predictions."
+        },
+        {
+          "name": "Random Forests",
+          "description": "An ensemble method that uses multiple decision trees for improved accuracy."
+        },
+        {
+          "name": "Tree-Based Models",
+          "description": "Models that use tree structures for making predictions."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 335.6028,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

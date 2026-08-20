@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "islp_website-278d3bdd49a8",
+  "created_at": "2026-07-28T02:48:14+08:00",
+  "updated_at": "2026-07-29T13:10:16+08:00",
+  "status": "success",
+  "run_attempts": 2,
+  "document": {
+    "file_name": "ISLP_website.pdf",
+    "doc_name": "ISLP_website",
+    "sha256": "278d3bdd49a8a480c2ff8e03245822caad8a3a48e81afd6d039c52c8fc13ad60",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\ISLP_website.pdf",
+    "pdf_size_bytes": 20053984
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage2b",
+    "duration_seconds": 68.2828
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-28T02:48:14+08:00",
+      "ended_at": "2026-07-28T02:51:21+08:00",
+      "duration_seconds": 186.5093,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\ISLP_website.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 203684\n[2] 清洗后词数: 208772\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 1057\n[5] 分块数（过滤后）: 958\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=245\nPreface Statistical learning refers to a set of tools for making sense of complex datasets.Inrecentyears,wehaveseenastaggeringincreaseinthescaleand scope of data collection across virtually all areas of science and indus...\n\n[Chunk 2] words=252\nviii Preface based alternative to ISLR. Hence, this book, An Introduction to Statistical Learning, With Applications in Python (ISLP), covers the same materials as ISLRbutwithlabsimplementedin Python—afeataccomplishedbyt...\n\n[Chunk 3] words=76\n565 13.3.2 Approaches to Control the Family-Wise Error Rate 567 13.3.3 Trade-Off Between the FWER and Power . . . . . 572 13.4 The False Discovery Rate . . . . . . . . . . . . . . . . . . . 573 13.4.1 Intuition for the F...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-28T02:51:21+08:00",
+      "ended_at": "2026-07-28T03:16:30+08:00",
+      "duration_seconds": 1509.3753,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "[KeyBERT] chunk 903/958 ...\n[KeyBERT] chunk 904/958 ...\n[KeyBERT] chunk 905/958 ...\n[KeyBERT] chunk 906/958 ...\n[KeyBERT] chunk 907/958 ...\n[KeyBERT] chunk 908/958 ...\n[KeyBERT] chunk 909/958 ...\n[KeyBERT] chunk 910/958 ...\n[KeyBERT] chunk 911/958 ...\n[KeyBERT] chunk 912/958 ...\n[KeyBERT] chunk 913/958 ...\n[KeyBERT] chunk 914/958 ...\n[KeyBERT] chunk 915/958 ...\n[KeyBERT] chunk 916/958 ...\n[KeyBERT] chunk 917/958 ...\n[KeyBERT] chunk 918/958 ...\n[KeyBERT] chunk 919/958 ...\n[KeyBERT] chunk 920/958 ...\n[KeyBERT] chunk 921/958 ...\n[KeyBERT] chunk 922/958 ...\n[KeyBERT] chunk 923/958 ...\n[KeyBERT] chunk 924/958 ...\n[KeyBERT] chunk 925/958 ...\n[KeyBERT] chunk 926/958 ...\n[KeyBERT] chunk 927/958 ...\n[KeyBERT] chunk 928/958 ...\n[KeyBERT] chunk 929/958 ...\n[KeyBERT] chunk 930/958 ...\n[KeyBERT] chunk 931/958 ...\n[KeyBERT] chunk 932/958 ...\n[KeyBERT] chunk 933/958 ...\n[KeyBERT] chunk 934/958 ...\n[KeyBERT] chunk 935/958 ...\n[KeyBERT] chunk 936/958 ...\n[KeyBERT] chunk 937/958 ...\n[KeyBERT] chunk 938/958 ...\n[KeyBERT] chunk 939/958 ...\n[KeyBERT] chunk 940/958 ...\n[KeyBERT] chunk 941/958 ...\n[KeyBERT] chunk 942/958 ...\n[KeyBERT] chunk 943/958 ...\n[KeyBERT] chunk 944/958 ...\n[KeyBERT] chunk 945/958 ...\n[KeyBERT] chunk 946/958 ...\n[KeyBERT] chunk 947/958 ...\n[KeyBERT] chunk 948/958 ...\n[KeyBERT] chunk 949/958 ...\n[KeyBERT] chunk 950/958 ...\n[KeyBERT] chunk 951/958 ...\n[KeyBERT] chunk 952/958 ...\n[KeyBERT] chunk 953/958 ...\n[KeyBERT] chunk 954/958 ...\n[KeyBERT] chunk 955/958 ...\n[KeyBERT] chunk 956/958 ...\n[KeyBERT] chunk 957/958 ...\n[KeyBERT] chunk 958/958 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Regression\n02. Statistical Learning\n03. Neural Networks\n04. Support Vector Machines\n05. Clustering\n06. Model Evaluation\n07. Survival Analysis\n08. Regression Trees\n09. Predictors\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 2818.69it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:09:08+08:00",
+      "ended_at": "2026-07-29T13:09:20+08:00",
+      "duration_seconds": 11.6465,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 10 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Statistical Learning -> Regression | Regression is a statistical method that falls under the framework of statistical learning.\n02. Statistical Learning -> Support Vector Machines | Support Vector Machines are based on statistical learning principles.\n03. Statistical Learning -> Neural Networks | Neural Networks are a part of the statistical learning framework.\n04. Statistical Learning -> Clustering | Clustering techniques are derived from statistical learning methods.\n05. Regression -> Regression Trees | Regression Trees are a specific application of regression techniques.\n06. Model Evaluation -> Regression | Model evaluation is necessary to assess the performance of regression models.\n07. Model Evaluation -> Support Vector Machines | Model evaluation is necessary to assess the performance of SVM models.\n08. Model Evaluation -> Neural Networks | Model evaluation is necessary to assess the performance of neural network models.\n09. Model Evaluation -> Clustering | Model evaluation is necessary to assess the performance of clustering methods.\n10. Survival Analysis -> Model Evaluation | Model evaluation is necessary to assess the performance of survival analysis models.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:09:20+08:00",
+      "ended_at": "2026-07-29T13:09:51+08:00",
+      "duration_seconds": 30.9502,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 0 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 3215.24it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:09:51+08:00",
+      "ended_at": "2026-07-29T13:10:15+08:00",
+      "duration_seconds": 23.8044,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Regression\n[LLM] 2/9 Statistical Learning\n[LLM] 3/9 Neural Networks\n[LLM] 4/9 Support Vector Machines\n[LLM] 5/9 Clustering\n[LLM] 6/9 Model Evaluation\n[LLM] 7/9 Survival Analysis\n[LLM] 8/9 Regression Trees\n[LLM] 9/9 Predictors\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:10:15+08:00",
+      "ended_at": "2026-07-29T13:10:16+08:00",
+      "duration_seconds": 1.7652,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output missing"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 10\n[3] Similarity edges: 0\n[4] Graph nodes=9, edges=10\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T13:09:08+08:00"
+}

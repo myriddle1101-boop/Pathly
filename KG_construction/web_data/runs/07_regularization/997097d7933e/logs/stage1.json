@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\07_regularization.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 8.5121,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3307\n[2] 清洗后词数: 3330\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 19\n[5] 分块数（过滤后）: 18\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=43\nRegularization for Deep Learning Lecture slides for Chapter 7 of Deep Learning www.deeplearningbook.org Ian Goodfellow 2016-09-27 Definition “Regularization is any modification we make to a  learning algorithm that is i...\n\n[Chunk 2] words=274\nWeight Decay as Constrained CHAPTER 7. REGULARIZATION FOR DEEP LEARNING Optimization w 1 (Goodfellow 2016) w 2 w  w Figure 7.1 2 Figure 7.1: An illustration of the effect of L (or weight decay) regularization on the va...\n\n[Chunk 3] words=69\nWe can find out by studying linear regression, a model for which the true cost function is quadratic and therefore amenable to the same kind of analysis we have used so far. Applying the analysis again, we will be able t...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

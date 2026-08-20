@@ -1,0 +1,29 @@
+{
+  "stage": "stage2a",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05_ml\\f11d16937e75\\stage1_chunks.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05_ml\\f11d16937e75\\stage2a_topics_hybrid.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 53.3403,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2a_topics_hybrid.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：21\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/21 ...\n[KeyBERT] chunk 2/21 ...\n[KeyBERT] chunk 3/21 ...\n[KeyBERT] chunk 4/21 ...\n[KeyBERT] chunk 5/21 ...\n[KeyBERT] chunk 6/21 ...\n[KeyBERT] chunk 7/21 ...\n[KeyBERT] chunk 8/21 ...\n[KeyBERT] chunk 9/21 ...\n[KeyBERT] chunk 10/21 ...\n[KeyBERT] chunk 11/21 ...\n[KeyBERT] chunk 12/21 ...\n[KeyBERT] chunk 13/21 ...\n[KeyBERT] chunk 14/21 ...\n[KeyBERT] chunk 15/21 ...\n[KeyBERT] chunk 16/21 ...\n[KeyBERT] chunk 17/21 ...\n[KeyBERT] chunk 18/21 ...\n[KeyBERT] chunk 19/21 ...\n[KeyBERT] chunk 20/21 ...\n[KeyBERT] chunk 21/21 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05_ml\\f11d16937e75\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Machine Learning\n02. Regression\n03. Dimensionality Reduction\n04. Training Data\n05. Error Metrics\n06. Neural Networks\n07. Classification\n08. Model Evaluation\n09. Distance Metrics\n\n Stage 2a 混合版完成\n",
+  "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6836.65it/s]\n"
+}

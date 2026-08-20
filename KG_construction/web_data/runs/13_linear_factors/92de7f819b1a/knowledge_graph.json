@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "id": "Factor Models",
+      "description": "Statistical models that describe observed variables as linear combinations of latent factors.",
+      "sub_topics": "[{\"name\": \"Factor Analysis\", \"description\": \"A technique used to identify underlying relationships between variables.\"}, {\"name\": \"Probabilistic PCA\", \"description\": \"A probabilistic approach to principal component analysis that incorporates latent variables.\"}, {\"name\": \"Latent Variables\", \"description\": \"Variables that are not directly observed but are inferred from other variables.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Latent Variables\", \"Principal Component Analysis\", \"Factor Loadings\", \"Exploratory Factor Analysis\"]",
+      "common_misconceptions": "[\"Factor models only apply to financial data.\", \"Latent factors can be directly observed.\"]",
+      "practical_applications": "[\"Market Research\", \"Psychometrics\", \"Recommendation Systems\", \"Genetics\"]"
+    },
+    {
+      "id": "Coding Techniques",
+      "description": "Methods used to represent data in a format suitable for machine learning algorithms.",
+      "sub_topics": "[{\"name\": \"Sparse Coding\", \"description\": \"A representation of data as a linear combination of a small number of basis elements.\"}, {\"name\": \"Autoencoder\", \"description\": \"A type of neural network used to learn efficient representations of data.\"}, {\"name\": \"Linear Autoencoder\", \"description\": \"An autoencoder that uses linear transformations to encode and decode data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and data structures.",
+      "key_sub_concepts": "[\"Data Encoding\", \"Feature Scaling\"]",
+      "common_misconceptions": "[\"All data must be numeric\", \"One-hot encoding is always the best method\"]",
+      "practical_applications": "[\"Preprocessing data for classification tasks\", \"Improving model performance through feature engineering\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": "[{\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of a neural network node.\"}, {\"name\": \"Backpropagation\", \"description\": \"An algorithm for training neural networks by minimizing the loss function.\"}, {\"name\": \"Artificial Neural Networks\", \"description\": \"Networks of interconnected nodes that simulate the way the human brain processes information.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Regression and Classification",
+      "description": "Supervised learning techniques used to predict outcomes based on input data.",
+      "sub_topics": "[{\"name\": \"Linear Regression\", \"description\": \"A method for modeling the relationship between a dependent variable and one or more independent variables.\"}, {\"name\": \"Classification Algorithms\", \"description\": \"Techniques used to categorize data into predefined classes.\"}, {\"name\": \"Loss Functions\", \"description\": \"Functions that measure the difference between predicted and actual outcomes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Linear Regression\", \"Logistic Regression\"]",
+      "common_misconceptions": "[\"Regression is only for continuous outcomes.\", \"Classification is only for binary outcomes.\"]",
+      "practical_applications": "[\"Predicting house prices\", \"Email spam detection\"]"
+    },
+    {
+      "id": "Dimensionality Reduction",
+      "description": "Techniques used to reduce the number of features in a dataset while preserving important information.",
+      "sub_topics": "[{\"name\": \"Principal Component Analysis\", \"description\": \"A method that transforms data into a lower-dimensional space.\"}, {\"name\": \"Multivariate Analysis\", \"description\": \"Statistical techniques used to analyze data that involves multiple variables.\"}, {\"name\": \"Manifold Learning\", \"description\": \"A type of dimensionality reduction that seeks to uncover the underlying structure of data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and statistics.",
+      "key_sub_concepts": "[\"Principal Component Analysis (PCA)\", \"t-Distributed Stochastic Neighbor Embedding (t-SNE)\"]",
+      "common_misconceptions": "[\"Dimensionality reduction always improves model performance.\", \"It is only applicable to high-dimensional data.\"]",
+      "practical_applications": "[\"Data visualization\", \"Noise reduction in datasets\"]"
+    },
+    {
+      "id": "Statistical Models",
+      "description": "Mathematical representations of data that account for randomness and uncertainty.",
+      "sub_topics": "[{\"name\": \"Multivariate Normal Distribution\", \"description\": \"A generalization of the normal distribution to multiple dimensions.\"}, {\"name\": \"Isotropic Precision\", \"description\": \"A property of statistical models where the precision is uniform across all directions.\"}, {\"name\": \"Factorial Analysis\", \"description\": \"A statistical method used to describe variability among observed variables.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and probability.",
+      "key_sub_concepts": "[\"Probability distributions\", \"Regression analysis\"]",
+      "common_misconceptions": "[\"Statistical models always provide accurate predictions\", \"All statistical models are complex and difficult to understand\"]",
+      "practical_applications": "[\"Predicting outcomes in finance\", \"Analyzing trends in social sciences\"]"
+    },
+    {
+      "id": "Learning Algorithms",
+      "description": "Procedures used to train models on data to make predictions or decisions.",
+      "sub_topics": "[{\"name\": \"Training Techniques\", \"description\": \"Methods used to optimize model parameters during the learning process.\"}, {\"name\": \"Sparsity Penalty\", \"description\": \"A regularization technique that encourages simpler models by penalizing complexity.\"}, {\"name\": \"Zero Probability Models\", \"description\": \"Models that account for the likelihood of zero occurrences in data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Reinforcement Learning\"]",
+      "common_misconceptions": "[\"All algorithms are the same\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image recognition\", \"Spam detection\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "Methods used to assess the performance and accuracy of machine learning models.",
+      "sub_topics": "[{\"name\": \"Model Comparison\", \"description\": \"Techniques for comparing the performance of different models.\"}, {\"name\": \"Sample Weights\", \"description\": \"Weights assigned to samples to influence the training process.\"}, {\"name\": \"Observed Variables\", \"description\": \"Variables that are directly measured in a study.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and statistics.",
+      "key_sub_concepts": "[\"Confusion Matrix\", \"ROC Curve\", \"Precision and Recall\", \"F1 Score\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Accuracy is the only metric that matters.\", \"Overfitting is not a concern if the model performs well on training data.\"]",
+      "practical_applications": "[\"Evaluating classification models in healthcare.\", \"Assessing predictive models in finance.\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Coding Techniques",
+      "to": "Learning Algorithms",
+      "relation": "similarity",
+      "score": 0.7316
+    },
+    {
+      "from": "Regression and Classification",
+      "to": "Model Evaluation",
+      "relation": "prerequisite",
+      "reason": "Model Evaluation is necessary to assess Regression and Classification outcomes."
+    },
+    {
+      "from": "Dimensionality Reduction",
+      "to": "Model Evaluation",
+      "relation": "prerequisite",
+      "reason": "Model Evaluation is important to assess the impact of Dimensionality Reduction."
+    },
+    {
+      "from": "Statistical Models",
+      "to": "Factor Models",
+      "relation": "prerequisite",
+      "reason": "Factor Models are a type of Statistical Model."
+    },
+    {
+      "from": "Statistical Models",
+      "to": "Regression and Classification",
+      "relation": "prerequisite",
+      "reason": "Regression and Classification are based on Statistical Models."
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Neural Networks require understanding of Learning Algorithms."
+    }
+  ]
+}

@@ -1,0 +1,810 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 13,
+  "candidate_count": 76,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "efficient adaptation",
+      "avg_score": 0.5538,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        7
+      ]
+    },
+    {
+      "name": "shot learning",
+      "avg_score": 0.5334,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "tuning achieves",
+      "avg_score": 0.7448,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "model tuning",
+      "avg_score": 0.7438,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "tuning works",
+      "avg_score": 0.7409,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "based tuning",
+      "avg_score": 0.7326,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "reward model",
+      "avg_score": 0.6993,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "parameters sparsity",
+      "avg_score": 0.685,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "sparsity method",
+      "avg_score": 0.6628,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "tuning",
+      "avg_score": 0.6518,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "language adapters",
+      "avg_score": 0.6266,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "𝐷𝑃𝑂 rewards",
+      "avg_score": 0.6219,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "common sparsity",
+      "avg_score": 0.62,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "sparsity common",
+      "avg_score": 0.6175,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "rank adaptation",
+      "avg_score": 0.6133,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "adapters dialect",
+      "avg_score": 0.6108,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "ticket hypothesis",
+      "avg_score": 0.6024,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "tuning size",
+      "avg_score": 0.5961,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "dialect adapters",
+      "avg_score": 0.594,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "rewards 𝑅𝐿",
+      "avg_score": 0.5918,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "derived reward",
+      "avg_score": 0.5876,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "pruning criterion",
+      "avg_score": 0.5843,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "learning zero",
+      "avg_score": 0.5837,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "bias module",
+      "avg_score": 0.5813,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "reward",
+      "avg_score": 0.5793,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "reward reward",
+      "avg_score": 0.5787,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "learning shot",
+      "avg_score": 0.5709,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "adaptation emphasis",
+      "avg_score": 0.5708,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "language model",
+      "avg_score": 0.5669,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "rlhf underexplored",
+      "avg_score": 0.5666,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "emergent ability",
+      "avg_score": 0.5651,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "adapting llms",
+      "avg_score": 0.5629,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "learning ability",
+      "avg_score": 0.5621,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "language modelling",
+      "avg_score": 0.562,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.5545,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "datasets lo",
+      "avg_score": 0.5529,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "ability gpt",
+      "avg_score": 0.5525,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "ra quantizing",
+      "avg_score": 0.5522,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "learning gpt",
+      "avg_score": 0.5521,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "adaptation hu",
+      "avg_score": 0.5519,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "learning emergent",
+      "avg_score": 0.5416,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "random demonstrations",
+      "avg_score": 0.5357,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "learn prompting",
+      "avg_score": 0.5343,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "inconsistency prompting",
+      "avg_score": 0.5335,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "mins adaptation",
+      "avg_score": 0.5301,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "δ𝜙 optimizing",
+      "avg_score": 0.5231,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "adaptation sparse",
+      "avg_score": 0.5205,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "learning",
+      "avg_score": 0.5194,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "sensitivity inconsistency",
+      "avg_score": 0.5169,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "implementation lo",
+      "avg_score": 0.5147,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "need efficient",
+      "avg_score": 0.5131,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "parameters training",
+      "avg_score": 0.5122,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "prompting random",
+      "avg_score": 0.5114,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "adaptation",
+      "avg_score": 0.5098,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "rlhf 13",
+      "avg_score": 0.5089,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "accuracy efficiency",
+      "avg_score": 0.5082,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "lottery",
+      "avg_score": 0.5038,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "lottery ticket",
+      "avg_score": 0.5035,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "adaptation aghajanyan",
+      "avg_score": 0.503,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "llms ar",
+      "avg_score": 0.5005,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "inconsistency",
+      "avg_score": 0.4976,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "better scalability",
+      "avg_score": 0.4964,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "rlhf gets",
+      "avg_score": 0.4893,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "model reasoning",
+      "avg_score": 0.4887,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "improves lo",
+      "avg_score": 0.4886,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "accuracy comparable",
+      "avg_score": 0.4878,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "2022 limitations",
+      "avg_score": 0.4815,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "al 2022",
+      "avg_score": 0.4807,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "requirements rl",
+      "avg_score": 0.4806,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "range performant",
+      "avg_score": 0.4798,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "tickets trained",
+      "avg_score": 0.478,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "unscrambling tasks",
+      "avg_score": 0.4745,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "tuning mins",
+      "avg_score": 0.4703,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "hypothesis dense",
+      "avg_score": 0.4674,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "data mins",
+      "avg_score": 0.4472,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "natural language",
+      "avg_score": 0.4443,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Model Tuning",
+      "description": "Techniques for optimizing machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Parameter Tuning",
+          "description": "Adjusting model parameters to improve performance."
+        },
+        {
+          "name": "Tuning Methods",
+          "description": "Various strategies for effective model tuning."
+        },
+        {
+          "name": "Tuning Efficiency",
+          "description": "Maximizing performance with minimal resource usage."
+        }
+      ]
+    },
+    {
+      "name": "Sparsity Techniques",
+      "description": "Methods to reduce model complexity through sparsity.",
+      "sub_topics": [
+        {
+          "name": "Common Sparsity",
+          "description": "Widely used methods for achieving sparsity."
+        },
+        {
+          "name": "Pruning Criteria",
+          "description": "Guidelines for removing unnecessary model components."
+        },
+        {
+          "name": "Sparsity Methods",
+          "description": "Different approaches to implement sparsity in models."
+        }
+      ]
+    },
+    {
+      "name": "Learning Adaptation",
+      "description": "Strategies for adapting models to new tasks or data.",
+      "sub_topics": [
+        {
+          "name": "Efficient Adaptation",
+          "description": "Techniques for quickly adapting models."
+        },
+        {
+          "name": "Rank Adaptation",
+          "description": "Adjusting model ranks for improved performance."
+        },
+        {
+          "name": "Adaptation Methods",
+          "description": "Various approaches to model adaptation."
+        }
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "description": "Learning through interactions with an environment to maximize rewards.",
+      "sub_topics": [
+        {
+          "name": "Reward Models",
+          "description": "Models that predict rewards based on actions."
+        },
+        {
+          "name": "RLHF Techniques",
+          "description": "Reinforcement Learning from Human Feedback methods."
+        },
+        {
+          "name": "Derived Rewards",
+          "description": "Calculating rewards based on model performance."
+        }
+      ]
+    },
+    {
+      "name": "Language Models",
+      "description": "Models designed to understand and generate human language.",
+      "sub_topics": [
+        {
+          "name": "Language Processing",
+          "description": "Techniques for analyzing and understanding language."
+        },
+        {
+          "name": "Language Modelling",
+          "description": "Creating models that predict language sequences."
+        },
+        {
+          "name": "Language Adapters",
+          "description": "Modules that adapt language models to specific tasks."
+        }
+      ]
+    },
+    {
+      "name": "Learning Efficiency",
+      "description": "Maximizing learning outcomes with minimal resources.",
+      "sub_topics": [
+        {
+          "name": "Accuracy Efficiency",
+          "description": "Balancing accuracy and resource usage."
+        },
+        {
+          "name": "Performance Range",
+          "description": "Evaluating model performance across different scenarios."
+        },
+        {
+          "name": "Scalability",
+          "description": "Ensuring models can handle increasing amounts of data."
+        }
+      ]
+    },
+    {
+      "name": "Demonstration Learning",
+      "description": "Learning from examples or demonstrations.",
+      "sub_topics": [
+        {
+          "name": "Random Demonstrations",
+          "description": "Using varied examples to train models."
+        },
+        {
+          "name": "Prompting Techniques",
+          "description": "Methods for guiding model learning through prompts."
+        },
+        {
+          "name": "Inconsistency in Prompting",
+          "description": "Challenges related to inconsistent prompts during training."
+        }
+      ]
+    },
+    {
+      "name": "Neural Network Concepts",
+      "description": "Fundamental principles and components of neural networks.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine neuron output."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Metrics for evaluating model performance."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "Algorithm for training neural networks."
+        }
+      ]
+    },
+    {
+      "name": "Emergent Abilities",
+      "description": "Unexpected capabilities that arise in complex models.",
+      "sub_topics": [
+        {
+          "name": "Learning Emergent",
+          "description": "Understanding how models develop new skills."
+        },
+        {
+          "name": "Emergent Behavior",
+          "description": "Behavior that arises from model interactions."
+        },
+        {
+          "name": "Ability in GPT",
+          "description": "Capabilities specific to Generative Pre-trained Transformers."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 27.207,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Evaluation Metrics" label="Evaluation Metrics">
+        <attvalues>
+          <attvalue for="0" value="Key measures used to assess the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Benchmarks&quot;, &quot;description&quot;: &quot;Standardized tests used to compare model performance.&quot;}, {&quot;name&quot;: &quot;Metrics Reference&quot;, &quot;description&quot;: &quot;Guidelines for selecting and interpreting evaluation metrics.&quot;}, {&quot;name&quot;: &quot;Human Evaluation&quot;, &quot;description&quot;: &quot;Assessment of model outputs by human judges.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Accuracy&quot;, &quot;Precision&quot;, &quot;Recall&quot;, &quot;F1 Score&quot;, &quot;ROC-AUC&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;High accuracy means a model is good.&quot;]" />
+          <attvalue for="8" value="[&quot;Model selection and comparison&quot;, &quot;Hyperparameter tuning&quot;, &quot;Performance reporting in research&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Bias in Machine Learning" label="Bias in Machine Learning">
+        <attvalues>
+          <attvalue for="0" value="Issues related to unfairness and inaccuracies in model predictions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Spurious Bias&quot;, &quot;description&quot;: &quot;Bias arising from irrelevant correlations in training data.&quot;}, {&quot;name&quot;: &quot;Bias Annotation&quot;, &quot;description&quot;: &quot;Labeling data to identify and mitigate bias.&quot;}, {&quot;name&quot;: &quot;Common Bias Issues&quot;, &quot;description&quot;: &quot;Frequent types of bias encountered in machine learning.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Types of bias (e.g., selection bias, confirmation bias)&quot;, &quot;Impact of bias on model performance&quot;]" />
+          <attvalue for="7" value="[&quot;Bias only refers to model accuracy&quot;, &quot;All bias is negative and should be eliminated&quot;]" />
+          <attvalue for="8" value="[&quot;Improving fairness in AI systems&quot;, &quot;Enhancing model robustness and generalization&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain, used for various tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;Algorithm for training neural networks by minimizing error.&quot;}, {&quot;name&quot;: &quot;Artificial Neural Networks&quot;, &quot;description&quot;: &quot;Networks composed of interconnected nodes or neurons.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;, &quot;Loss Functions&quot;, &quot;Overfitting and Regularization&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Training" label="Model Training">
+        <attvalues>
+          <attvalue for="0" value="Processes involved in teaching a model to make predictions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual values.&quot;}, {&quot;name&quot;: &quot;Regression Techniques&quot;, &quot;description&quot;: &quot;Methods for predicting continuous outcomes.&quot;}, {&quot;name&quot;: &quot;Classification Techniques&quot;, &quot;description&quot;: &quot;Methods for categorizing data into discrete classes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming, familiarity with Python and libraries like NumPy and Pandas." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting&quot;, &quot;Underfitting&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Training a model means it will always perform well on unseen data.&quot;, &quot;More data always leads to better model performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting house prices&quot;, &quot;Classifying emails as spam or not&quot;, &quot;Image recognition&quot;, &quot;Customer segmentation&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Benchmarking" label="Benchmarking">
+        <attvalues>
+          <attvalue for="0" value="The practice of comparing model performance against established standards." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Recent Benchmarks&quot;, &quot;description&quot;: &quot;Latest standards and tests for evaluating models.&quot;}, {&quot;name&quot;: &quot;Standardized Benchmarks&quot;, &quot;description&quot;: &quot;Uniform tests applied across different models for fair comparison.&quot;}, {&quot;name&quot;: &quot;Behavioral Benchmarks&quot;, &quot;description&quot;: &quot;Tests that assess model behavior in real-world scenarios.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and model evaluation metrics." />
+          <attvalue for="6" value="[&quot;Performance metrics&quot;, &quot;Baseline models&quot;]" />
+          <attvalue for="7" value="[&quot;Benchmarking is only about accuracy&quot;, &quot;All models can be directly compared without context&quot;]" />
+          <attvalue for="8" value="[&quot;Model selection&quot;, &quot;Hyperparameter tuning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Divergence Metrics" label="Divergence Metrics">
+        <attvalues>
+          <attvalue for="0" value="Measures used to quantify the difference between probability distributions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;KL Divergence&quot;, &quot;description&quot;: &quot;A measure of how one probability distribution diverges from a second.&quot;}, {&quot;name&quot;: &quot;Divergence Measures&quot;, &quot;description&quot;: &quot;General methods for assessing differences between distributions.&quot;}, {&quot;name&quot;: &quot;Semantic Similarity&quot;, &quot;description&quot;: &quot;Quantifying how similar two pieces of text are in meaning.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of probability theory and statistics." />
+          <attvalue for="6" value="[&quot;Kullback-Leibler Divergence&quot;, &quot;Jensen-Shannon Divergence&quot;]" />
+          <attvalue for="7" value="[&quot;Divergence metrics are the same as distance metrics.&quot;, &quot;Higher divergence always indicates a better model.&quot;]" />
+          <attvalue for="8" value="[&quot;Model evaluation in machine learning&quot;, &quot;Anomaly detection in data analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Natural Language Understanding" label="Natural Language Understanding">
+        <attvalues>
+          <attvalue for="0" value="The ability of machines to comprehend and interpret human language." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Language Inference&quot;, &quot;description&quot;: &quot;Drawing conclusions from text based on its meaning.&quot;}, {&quot;name&quot;: &quot;Syntactic Heuristics&quot;, &quot;description&quot;: &quot;Rules for analyzing the structure of sentences.&quot;}, {&quot;name&quot;: &quot;Vector Similarity&quot;, &quot;description&quot;: &quot;Measuring similarity between text representations in vector space.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linguistics and programming." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Sentiment Analysis&quot;, &quot;Named Entity Recognition&quot;, &quot;Part-of-Speech Tagging&quot;]" />
+          <attvalue for="7" value="[&quot;NLP and NLU are the same&quot;, &quot;Machines can fully understand context like humans&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots&quot;, &quot;Sentiment analysis in social media&quot;, &quot;Language translation services&quot;, &quot;Voice-activated assistants&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Complexity in Evaluation" label="Complexity in Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Challenges and intricacies involved in assessing model performance." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Grading Complexity&quot;, &quot;description&quot;: &quot;Difficulties in assigning scores to model outputs.&quot;}, {&quot;name&quot;: &quot;Evaluation Aspects&quot;, &quot;description&quot;: &quot;Different factors that influence the evaluation process.&quot;}, {&quot;name&quot;: &quot;Inconsistency in Benchmarks&quot;, &quot;description&quot;: &quot;Variability in benchmark results across different contexts.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and evaluation metrics." />
+          <attvalue for="6" value="[&quot;Overfitting vs. Underfitting&quot;, &quot;Bias-Variance Tradeoff&quot;, &quot;Cross-Validation&quot;, &quot;Evaluation Metrics (Accuracy, Precision, Recall, F1 Score)&quot;]" />
+          <attvalue for="7" value="[&quot;Higher accuracy always indicates a better model&quot;, &quot;Evaluation metrics are universally applicable across all problems&quot;]" />
+          <attvalue for="8" value="[&quot;Model selection and tuning&quot;, &quot;Performance comparison of different algorithms&quot;, &quot;Real-world deployment assessments&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Adversarial Testing" label="Adversarial Testing">
+        <attvalues>
+          <attvalue for="0" value="Evaluating model robustness against malicious inputs." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Adversarial Benchmarks&quot;, &quot;description&quot;: &quot;Tests designed to assess model vulnerability to attacks.&quot;}, {&quot;name&quot;: &quot;Impact of Adversarial Examples&quot;, &quot;description&quot;: &quot;Effects of misleading inputs on model performance.&quot;}, {&quot;name&quot;: &quot;Chatbot Evaluation&quot;, &quot;description&quot;: &quot;Assessing the effectiveness of conversational agents.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and neural networks." />
+          <attvalue for="6" value="[&quot;Adversarial examples&quot;, &quot;Robustness evaluation&quot;]" />
+          <attvalue for="7" value="[&quot;Adversarial testing is only for deep learning models&quot;, &quot;All models are equally vulnerable to adversarial attacks&quot;]" />
+          <attvalue for="8" value="[&quot;Improving security in AI systems&quot;, &quot;Enhancing model reliability in real-world scenarios&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Evaluation Metrics" target="Benchmarking">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Benchmarking requires understanding performance measures used to compare models against standards." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Evaluation Metrics" target="Complexity in Evaluation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding evaluation challenges requires prior knowledge of the metrics being used to assess performance." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

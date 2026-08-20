@@ -1,0 +1,874 @@
+The Art of Artificial Reasoning
+for (Small) Language Models
+Yejin Choi
+💚
+Stanford & NVIDIA
+The background art created by Jack Hessel, using DALL.E of Open AI
+
+Mission Impossible: Democratizing Generative AI
+by Transcending Scaling Laws
+because (current) scaling laws demand
+extreme-scale compute that only a few can afford
+Isn’t that just impossible?
+
+Circa 2023
+A case in point…
+How can Indian startups create
+foundation models for India? Rajan Anandan
+Sam Altman
+It’s hopeless to compete with Open AI
+
+https://aiworld.eu/story/nvidia-leads-open-source-ai-momentum-as-chinese-labs-close-in
+
+https://aiworld.eu/story/nvidia-leads-open-source-ai-momentum-as-chinese-labs-close-in
+1. Small models are in high demand, with daily downloads
+🔥
+hitting tens of millions (!!! ) for top repositories
+2. China's contribution to the open source ecosystem has skyrocketed,
+😮
+with Alibaba now surpassing Hugging Face
+⭐ 😎
+3. NVIDIA has emerged as a rising star (or a risen star? ),
+💚
+for open-source contributions
+
+David vs. Goliath:
+the Art of Scaling Intelligence
+in the Era of Extreme-Scale Neural Models
+Three components to innovate:
+🔥
+Unconventional data
+🚀
+Unconventional algorithms
+🌏
+Unconventional collaboration
+
+The Era of Brute-Force Scaling is Over
+The Era of Smart Scaling Begins
+-- Ilya Sutskever from his test time award talk at Neur IPS 2024
+
+The Era of Brute-Force Scaling is Over
+The Era of Smart Scaling Begins
+
+The Era of Brute-Force Scaling is Over
+The Era of Smart Scaling Begins
+Three broad ways to cope with data saturation:
+1. Learn better & faster with limited data
+• Alternative architectures
+• Alternative training recipes
+2. Synthesize new data
+• Algorithms to generate the outer space of the internet data
+3. Reason beyond what is in the data
+• Test-time reasoning algorithms
+• Test-time training algorithms
+=> Scaling of “intelligence” continues
+
+David vs. Goliath:
+the Art of Scaling Intelligence
+in the Era of Extreme-Scale Neural Models
+Three components to innovate:
+🔥
+Unconventional data
+🚀
+Unconventional algorithms
+🌏
+Unconventional collaboration
+
+In this talk:
+David vs. Goliath:
+===
+the Art of Scaling Intelligence
+Pro RL: Prolonged RL
+in the Era of Extreme-Scale Neural Models
+Prismatic Synthesis
+RL as Pretraining
+Three components to innovate:
+===
+🔥
+Unconventional data
+“Smaller but Better”
+🚀
+Unconventional algorithms
+“Algorithms for the Win”
+🌏
+Unconventional collaboration
+
+— Neur IPS 2025 —
+Prolonged Reinforcement Learning Expands
+Reasoning Boundaries in Large Language Models
+
+2025: The Rise of LRMs (as opposed to LLMs)
+• Long thought (chain-of-thought)
+• The power of Reinforcement
+Learning
+• Shift from Imitation Learning to
+Exploration Learning
+
+2025: The Rise of LRMs (as opposed to LLMs)
+
+2025: The Rise of LRMs (as opposed to LLMs)
+
+Striking findings against RL
+🏆
+Pass@1 better after RLVR
+Pass@K worse after RLVR
+— compared to the base LLM —
+
+Striking findings against RL
+🏆
+Pass@1 better after RLVR
+Pass@K worse after RLVR
+— compared to the base LLM —
+
+Striking findings against RL
+🏆
+Pass@1 better after RLVR
+Pass@K worse after RLVR
+— compared to the base LLM —
+
+Striking findings against RL
+
+Striking findings against RL
+
+Striking findings against RL
+Chemistry between the base LLM and RL matters
+Conclusions from effortless RL != effortful RL
+
+“Rome wasn't built in a day”
+What if we go for endurance with a small model
+(1.5 B) rather than a sprint with a large model
+— Neur IPS 2025 —
+Prolonged Reinforcement Learning Expands
+Reasoning Boundaries in Large Language Models
+
+Prolonged Reinforcement Learning
+Byte Dance
+Deepseek
+Pro RL is built on top of one of the best practices in RL—Decoupled Clip and Dynamic Sampling
+Policy Optimization (DAPO), a variation of Group Relative Policy Optimization (GRPO).
+
+Prolonged Reinforcement Learning
+Byte Dance
+Deepseek
+Pro RL is built on top of one of the best practices in RL—Decoupled Clip and Dynamic Sampling
+Policy Optimization (DAPO), a variation of Group Relative Policy Optimization (GRPO).
+clip
+ℒ (θ) = 𝔼 min r (τ)A(τ), (r (τ), 1 − ϵ, 1 + ϵ)A(τ)
+( )
+GRPO τ∼π [ θ θ ]
+θ
+• Dynamic Sampling - targets mid-difficulty examples to maintain diverse learning signals
+• Decoupled Clipping - 'clip-higher' uplifts low-probability tokens, encourages broader exploration.
+clip
+(r (τ), 1 − ϵ , 1 + ϵ )
+low high
+θ
+
+Prolonged Reinforcement Learning
+Pro RL is built on top of one of the best practices in RL—Decoupled Clip and Dynamic Sampling
+Policy Optimization (DAPO), a variation of Group Relative Policy Optimization (GRPO).
+Lesson I: Maintain sustainable entropy via clip ratio, balance exploration and exploitation.
+clip(r (τ), 1 − ϵ , 1 + ϵ )
+low high
+θ
+Performance initially increases but
+plateaus after entropy collapse, likely
+due to insufficient exploration.
+Using the default clip ratio ϵ = ϵ = 0.2,
+low high
+entropy collapse prevents prolonged training
+
+Prolonged Reinforcement Learning
+Pro RL is built on top of one of the best practices in RL—Decoupled Clip and Dynamic Sampling
+Policy Optimization (DAPO), a variation of Group Relative Policy Optimization (GRPO).
+Lesson I: Maintain sustainable entropy via clip ratio, balance exploration and exploitation.
+clip(r (τ), 1 − ϵ , 1 + ϵ )
+low high
+θ
+Decreased ϵ & increased ϵ ,
+low high
+Lack of performance improvement, likely due to
+achieve sustainable entropy during
+insufficient exploitation (e.g., insufficient
+suppression of actions with negative advantages)
+
+Prolonged Reinforcement Learning
+Pro RL is built on top of one of the best practices in RL—Decoupled Clip and Dynamic Sampling
+Policy Optimization (DAPO), a variation of Group Relative Policy Optimization (GRPO).
+Lesson I: Maintain sustainable entropy via clip ratio, balance exploration and exploitation.
+clip(r (τ), 1 − ϵ , 1 + ϵ )
+low high
+θ
+Performance keep increasing
+In practice, we dynamically adjust based on
+ϵ
+high
+the entropy trend during training to keep it stable.
+Keep ϵ = 0.2 and increase ϵ , achieve
+low high
+sustainable entropy during training
+
+Prolonged Reinforcement Learning
+Pro RL is built on top of one of the best practices in RL—Decoupled Clip and Dynamic Sampling
+Policy Optimization (DAPO), a variation of Group Relative Policy Optimization (GRPO).
+Lesson III: Dynamically adjust hyper-parameters to keep one hero run alive
+Keep response length under 8 k
+for training efficiency; extend
+Periodically reset the reference
+context length in the final run.
+policy when KL loss is high
+Dynamically adjust to
+ϵ
+high
+maintain sustainable entropy
+
+Evaluated across diverse domains—math, code, STEM, reasoning The gain is particularly large in out-
+gym, and instruction f Tollhowein g S—OPr To ARL r 1 es.u 5 lt Bs i n R siegnaifiscoannt ignaigns Modof-edol main tasks and reasoning gym
+over the base model, Distill-R 1-1.5 B, in all cases. where the base model struggles.
+Log-linear performance improvement
+in both Pass@1 and Pass@16.
+
+The SOTA 1.5 B Reasoning Model
+Our Pro RL-ed model, Nemotron-Reasoning
+-1.5 B, achieves comparable or better
+performance than the 4.5× larger model,
+Deep Seek-R 1-7 B.
+
+Striking findings against RL
+Chemistry between the base LLM and RL matters
+Conclusions from effortless RL != effortful RL
+
+🌹 ☠
+Conclusion ( vs )
+🌹 Conclusions from effortless RL != effortful RL
+🌹 An effortful, proloooooonged RL on 1.5 B model can go faaaaaaaaaaarrrr
+🌹 Pro RL shows that a dynamic control of entropy is critical
+☠
+Can effortful RL succeed on say, GPT 2?
+
+😅 😅
+EPO EPO
+
+Striking findings against RL
+Chemistry between the base LLM and RL matters
+Conclusions from effortless RL != effortful RL
+Conclusions from effortless SFT != effortful SFT
+
+Striking findings against RL
+Conclusions from effortless SFT != effortful SFT
+Why is Qwen’s chemistry so good with RL?
+SFT or SFT-style “mid-training” during pre-training
+
+2025: The Rise of LRMs (as opposed to LLMs)
+Then, SFT cannot generalize?
+It depends…
+Conclusions from effortless SFT != effortful SFT
+
+In this talk:
+David vs. Goliath:
+===
+the Art of Scaling Intelligence
+Pro RL: Prolonged RL
+in the Era of Extreme-Scale Neural Models
+Prismatic Synthesis
+RL as Pretraining
+Three components to innovate:
+===
+🔥
+Unconventional data
+“Smaller but Better”
+🚀
+Unconventional algorithms
+“Algorithms for the Win”
+🌏
+Unconventional collaboration
+
+Prismatic Synthesis:
+Gradient-based Data Diversification
+Boosts Generalization in LLM Reasoning
+— Neur IPS 2025 —
+Jaehun Jung
+Seungju Ximing Skyler David Shrimai Mostafa Mohammad Bryan Yejin
+Han Lu Hallinan Acuna Prabhumoye Patwary Shoeybi Catanzaro Choi
+
+The Era of Brute-Force Scaling is Over
+The Era of Smart Scaling Begins
+-- Ilya Sutskever from his test time award talk at Neur IPS 2024
+
+Synthetic Data to the Rescue!
+Already used in both mid / post-training:
+Sometimes, for the entirety of LLM training…
+Common practice & assumption
+(1) rely on the largest / strongest teacher models
+
+Obvious Concerns: Mode Collapse
+Conclusions from effortless synthetic data
+!= effortful synthetic data
+
+Gradient as Data Representation
+Input 𝒙 Output 𝐲
+Bill walks 0.5 mile south, then 0.75 Bill walked 0.5+0.5 = 1.0 miles south total
+mile east, and finally 0.5 mile south.
+and walked 0.75 miles east in total.
+How many miles is he, in a direct line,
+Therefore, using Pythagorean… the
+from his starting point?
+answer is 1.25 miles.
+Gradient encodes the mapping from
+Use a small reference model to
+x to y;
+𝛁 𝐏(𝐲 | 𝐱)
+compute
+𝛉
+which naturally represents
+for
+Rademacher Projection
+“reasoning”
+dimensionality reduction
+between input and output!
+Sample A
+1024-dim representation of data point
+
+G-Vendi Score
+G-vendi score predicts generalization (i.e.,
+out-of-distribution generalization)!
+
+Sample data
+Prismatic Synthesis
+R 1-32 B
+Overgenerated data
+Filters
+Filtered data
+R 1-7 B
+
+Sample data
+Gradient-based diversity filter
+R 1-32 B
+Overgenerated data
+Filters Filters
+Quality
+filter
+Filtered data
+Discard samples
+based on
+majority votes
+R 1-7 B
+
+Sample data
+Prismatic Synthesis
+R 1-32 B
+Overgenerated data
+Filters
+Filtered data
+R 1-7 B
+
+Prismatic Synthesis improves long-Co T reasoning
+Mathematical Reasoning
+100
+92.6 92.5
+89.91
+78.57
+75
+72.8
+68
+54.66
+Outperforms baselines, while
+50
+(1) using 20 x smaller R 1-32 B as data generator,
+33.3
+(2) relying on zero human-labeled answers, i.e., entirely model generated!
+25
+0
+0 4 5 3 2 h m g
+0 2 2 2 ^ c v
+u
+5 E E C H n A
+n
+H - M M M T B e t i D
+A T A I A I A M A a d P l a O O
+M i -
+p k
+m 8
+M
+y
+O l S
+G
+Open Thinker-7 B Open Thinker 2-7 B R 1-distill-7 B Prism Math-7 B
+
+Concluding Thoughts
+•
+Reasoning requires data that transcends the internet data
+•
+Synthetic data to the rescue
+•
+RL can be viewed as a form of (implicit) synthetic data generation via
+exploration
+•
+RL or not, existing methods often lack the bird eye view on the
+overall diversity
+•
+Systematic diversification (+ quality check) can make a big difference,
+even to overcome 20 x size difference of the R 1 teacher models
+
+In this talk:
+David vs. Goliath:
+===
+the Art of Scaling Intelligence
+Pro RL: Prolonged RL
+in the Era of Extreme-Scale Neural Models
+Prismatic Synthesis
+RL as Pretraining
+Three components to innovate:
+===
+🔥
+Unconventional data
+“Smaller but Better”
+🚀
+Unconventional algorithms
+“Algorithms for the Win”
+🌏
+Unconventional collaboration
+
+RLP
+Reinforcement as a Pretraining Objective
+— ICLR 2026—
+
+The End of Ever More Pretraining
+• Scaling compute is no longer the bottleneck
+• High-quality data is finite and increasingly exhausted
+• The era shifts from scaling data to extracting more value per token
+-- Ilya Sutskever from his test time award talk at Neur IPS 2024
+
+The Problem with Standard LLM Training
+Reasoning is an afterthought — we can do better
+Q 1: Can reasoning be baked in earlier during pretraining — not just added post-hoc?
+Pretraining SFT RLHF/RLVR
+(Gather World Knowledge) = =
+Supervised Finetuning Reinforcement Learning
+(Mimics reasoning format) (Reasoning as an add-on)
+Imitation Learning Exploration Learning
+Q 2: Do gains from early reasoning exposure persist through post-training — or get washed out?
+
+Vanilla Pretraining vs RLP Pretraining
+Same context — but RLP induces reasoning.
+Photosynthesis is the process plants, algae and some bacteria use to make their own food using ____
+R
+LP
+P
+ni
+n
+g
+retraining
+ai
+Pr
+etr
+o
+n)
+nill
+a
+di
+cti
+V a Pr e
+n
+e
+k
+o
+T
+xt
+e
+N
+(
+<think>Photosynthesis relies on solar energy.
+Hence the next token must be sunlight. </think>
+P(next token | context)
+(Pattern Completion)
+P(next token | context, thought)
+(Reasoning driven prediction)
+sunlight
+Key difference: RLP produces an explicit reasoning trace before predicting the token — making the “why” visible
+and trainable, not just the final answer.
+
+From NTP to RLP: Teaching Models to Think First
+Treat Co T as an action; reward by information gain; update only thought tokens.
+How RLP works
+•
+Sample a thought before predicting the next token.
+•
+Compare likelihoods with vs. without the thought
+r(c ) = log p x ∣ x , c − log p¯ x ∣ x
+( ) ( )
+t θ t <t t ϕ t <t
+•
+Verifier-free, position-wise credit at every step.
+
+RLP Framework
+
+Training Recipe
+•
+Single network acts as policy + reasoned predictor.
+• EMA “no-think” teacher with slow lag
+ϕ ← τ ϕ + (1 − τ) θ, τ = 0.999
+•
+Group-relative advantages with inclusive-mean correction
+G
+1 G
+( j) (i) (i)
+r¯ = r c , A = r c − r¯
+( ) ( )
+( )
+∑ t t
+G G − 1
+j=1
+•
+Clipped, per-token surrogate (GRPO-style) on thought tokens only
+1
+(i) (i) (i) (i)
+ℒ = − 𝔼 min ρ A , clip ρ ; 1 − ϵ , 1 + ϵ A
+clip ( )
+( )
+∑ u u ℓ h
+(i)
+[ | c | ]
+t
+u
+with per-token importance ratios
+(i) (i) (i) (i) (i)
+ρ = exp log π ℓ ∣ x , ℓ − log π ℓ ∣ x , ℓ
+( ) ( )
+( )
+u θ u <t θ u <t
+old
+1:u−1 1:u−1
+
+Leverage Early Reasoning with “RLP"
+Can RLP improve the reasoning ability of a base model without any prior task-specific
+Q 1
+tuning? (And better than Base + CPT?)
+Does the gain of RLP survive even after SFT+RLVR?
+Can RLP, when applied to an earlier pre-training checkpoint with 200 B less tokens (to
+Q 2
+match the pretraining FLOPs), match the performance of a fully trained base model?
+Comparison with:
+Comparison with:
+Training Ingredients Training Ingredients
+• Base model
+• FLOP Matched: Base
+‣ BASE
+model (20 T)
+Model: Qwen 3-1.7 B-Base ‣ BASE+POST Model: NVIDIA-Nemotron-Nano-12 B-v 2-Base ‣ BASE
+Checkpoint: Final model Checkpoint: Model trained till 19.8 T tokens
+• Token Matched: NTP- ‣ BASE+POST
+Token Budget: 1 B Tokens Token Budget: 250 M Tokens
+based CPT on base model
+RLP with 200 B
+CPT Data (𝒟): ‣ BASE+CPT CPT Data (𝒟):
+• General Pretraining Corpora (Nemo‣ t B ro A n S - E+CPT+POST • General Pretraining Corpora (Nemotron-
+less tokens!
+Pretraining-Dataset) Pretraining-Dataset)
+
+RLP shows a significant improvement on Qwen 3-1.7 B-Base
+RLP outperforms BASE by +19% and CPT by After identical SFT + RLVR, RLP compounds its
++17% on average across math and science advantage: +8% relative over BASE+Post;
+benchmarks. +7% relative over CPT+Post
+Unlike NPT or continuous pretraining, RLP instills reasoning during pretraining itself
+The early advantages compound through post training, giving models stronger and more robust reasoning capabilities.
+
+RLP shows a significant improvement on Qwen 3-1.7 B-Base
+🧑💻
+Does the improvement sustain under compute equivalent baselines?
+Even with flop matching training, RLP outperforms CPT
+(exposed to 35× more data) by +14% on average!
+T = (n × l × bs × iters) + T
+flop seq inp
+n = rollouts
+bs = batch size
+l = sequence length
+seq
+Training Ingredients
+Model: Qwen 3-1.7 B-Base
+Checkpoint: Final model
+Token Matching (T ): 170 M Tokens
+inp
+Flop Matching (T ): 6 B Tokens
+flop
+CPT Data (𝒟):
+• Nemotron-Cross Think
+
+RLP scales with LLM size (12 B) and frameworks
+RLP, trained on ~200 B fewer tokens, achieves a 35%
+After identical post-training, RLP outperforms
+average gain, with the largest boost in science (+23%
+BASE by +2% absolute margin, which has
+absolute), showing robust cross-domain benefits at
+seen ~200 B more tokens during pretraining.
+scale.
+The benefits of RLP persist and even amplify when scaling to larger models and across architectures.
+Efficiency meets intelligence—proof that reasoning, not sheer scale, drives progress.
+19.8 T
+20 T
+
+RLP: The Core Idea
+Chain-of-thought as an exploratory action during pretraining
+Reward(thought) = log P(next token | context + thought) − log P(next
+token | context alone)
+💡 ⚡ 📈
+Verifier-Free Dense Reward Scalable
+No external judge needed. The Position-wise credit assigned at Works on the same massive
+reward signal comes directly from every token where reasoning helps. pretraining corpora used for
+information gain on the next token Unlike sparse post-training standard training. No specialized
+— applicable to any ordinary rewards, RLP provides continuous datasets required — reasoning
+pretraining text. feedback throughout training. emerges from plain text.
+RLP bridges next-token prediction and the emergence of useful chain-of-thought reasoning — all during pretraining.
+
+Front-Loading Reasoning
+The Synergy between Pretraining and Post-Training Data
+— ICLR 2026 —
+
+Front Loading Reasoning
+FLR systematically injects reasoning-style data at different phases of training—pretraining, SFT, RL
+—while varying its diversity, quantity, and quality.
+RQ 1: Is the inclusion of reasoning data in pretraining beneficial for the base model?
+FLR
+Lesson I: Yes, highly beneficial, and the benefit scales with diversity and quantity!
+Using reasoning data in pretraining yields an Pretraining gains improve with scale
+absolute +16% average improvement over and diversity, driving math, science
+the no-reason baseline. and code improvements!
+
+Front Loading Reasoning
+FLR systematically injects reasoning-style data at different phases of training—pretraining, SFT, RL
+—while varying its diversity, quantity, and quality.
+RQ 3: Can a model with no-reason pretraining "catch up" by getting more SFT compute?
+FLR
+Lesson IV: No! Early reasoning builds an irreplaceable foundation that SFT can’t replicate
+Doubling SFT data for the baseline
+improves performance by +4.09%,
+but it still falls short of even the
+weakest reasoning-pretrained model
+(+3.32%).
+
+Front Loading Reasoning
+FLR systematically injects reasoning-style data at different phases of training—pretraining, SFT, RL
+—while varying its diversity, quantity, and quality.
+RQ 5: Does the gain matter after heavy RLVR?
+FLR
+Lesson VI: Yes! "Front-loading" reasoning data creates a durable, compounding gain
+💡
+Front-loading reasoning data into pretraining creates a durable, compounding advantage.
+💡
+High-quality pretraining data can have a latent effect unlocked by SFT
+💡
+The optimal data strategy is asymmetric: prioritize diversity i Anf tperr eretirnafoinrcienmg eannt dle aqrnuianglit, yth ien SFT.
+Reason-Base model finished with a
+stunning +19% average lead. On the
+most difficult competition math
+problems (AIME), this advantage
+ballooned to a +39.3% gain.
+
+Concluding
+Remarks
+
+David vs. Goliath: the Art of Scaling Intelligence
+in the Era of Extreme-Scale Neural Models
+Three components to innovate:
+🔥
+Unconventional data
+🚀
+Unconventional algorithms
+🌏
+Unconventional collaboration
+-
+implicit: open-science & open-source community
+-
+explicit: cross-institutional, cross-boarder collaborations
+
+The
+Open Thoughts
+Team
+Etash Guha*, Ryan Marten*, Sedrick Keh*, Negin Raoof*, Georgios
+Smyrnis*, Hritik Bansal, Marianna Nezhurina, Jean Mercat, Trung
+Vu, Zayne Sprague, Ashima Suvarna, Benjamin Feuer, Liangyu
+Chen, Zaid Khan, Eric Frankel, Sachin Grover, Caroline Choi, Niklas
+Muennighoff, Shiye Su, Wanjia Zhao, John Yang, Shreyas
+Pimpalgaonkar, Kartik Sharma, Charlie Cheng-Jie Ji, Yichuan
+Deng, Sarah Pratt, Vivek Ramanujan, Jon Saad-Falcon, Stutee
+Acharya, Jeffrey Li, Achal Dave, Alon Albalak, Kushal Arora, Blake
+Wulfe, Chinmay Hegde, Greg Durrett, Sewoong Oh, Mohit
+Bansal, Saadia Gabriel, Aditya Grover, Kai-Wei Chang, Vaishaal
+Shankar, Aaron Gokaslan, Mike A. Merrill, Tatsunori Hashimoto, Yejin
+Choi, Jenia Jitsev, Reinhard Heckel, Maheswaran Sathiamoorthy,
+Alexandros G. Dimakis, Ludwig Schmidt*
+And several others with ongoing contributions
+
+Open Thoughts 3-1 M
+
+Open Thoughts 3 is the SOTA reasoning dataset recipe
+72
+
+Super effortful SFT can win over effortful RL
+
+Unconventional collaboration wins!
+Super effortful SFT can win over effortful RL
+
+Concluding Thoughts
+•
+Nothing is easy in life
+•
+No pain no gain
+Three components to innovate:
+•
+But everything is doable with efforts
+🔥
+Unconventional data
+•
+The power of collaboration
+🚀
+Unconventional algorithms
+•
+Ego is the enemy
+🌏
+Unconventional collaboration
+Chemistry between the base LLM and RL matters
+Conclusions from effortless RL != effortful RL
+Conclusions from effortless SFT != effortful SFT
+
+https://aiworld.eu/story/nvidia-leads-open-source-ai-momentum-as-chinese-labs-close-in
+
+https://aiworld.eu/story/nvidia-leads-open-source-ai-momentum-as-chinese-labs-close-in
+1. Small models are in high demand, with daily downloads
+🔥
+hitting tens of millions (!!! ) for top repositories
+2. China's contribution to the open source ecosystem has skyrocketed,
+😮
+with Alibaba now surpassing Hugging Face
+⭐ 😎
+3. NVIDIA has emerged as a rising star (or a risen star? ),
+💚
+for open-source contributions
+
+LLM 101: How sausages are made
+“Fine-tuning”
+SFT
+RL
+Pre-
+=
+=
+sequential Reinforcem
+training
+ent learning
+fine-tuning
+(On the internet data)
+(On curated exam-style data)
+(On curated exam-style data)
+Imitation learning Exploration learning
+
+LLM 101: How sausages are made
+“Fine-tuning”
+SFT
+RL
+It’s all about data
+Pre-
+Use entirely of= th e internet data =
+Internet data not enough, so ask humans to write exam data
+sequential Reinforcem
+training
+When even that’s not enough, ask AI to synthesize data
+ent learning
+fine-tuning
+(On the internet data)
+=> Make OOD data as in-dist data via brute-force data synth!
+(On curated exam-style data)
+(On curated exam-style data)
+Imitation learning Exploration learning
+
+The Universe of Knowledge
+= The Universe of Synthetic Data
+Knowledge in the
+Knowledge in
+(Conventional)
+the Internet
+Distillation
+Data
+Knowledge in the
+Knowledge in the Knowledge in the
+Human/Experts’
+Extreme Scaling Unconventional
+Annotation
+of Reasoning Simulation
+
+Discovery of new knowledge is the
+The Universe of Knowledge
+act of a scientist, even if the target Many real-world use cases require
+domain is not for scientific fields per the capability to fill in this data gap
+say
+= The Universe of Synthetic Data
+Those with a stronger synthetic data flywheel
+will win. It will be increasingly reasoning &
+compute-heavy, and often not be open.
+Knowledge in the
+Knowledge in
+The Universe of (Synthetic) Data
+(Conventional)
+the Internet
+Distillation
+Data
+Knowledge in the
+Knowledge in the Knowledge in the
+Human/Experts’
+Extreme Scaling Unconventional
+Annotation
+of Reasoning Simulation
+
+David vs. Goliath:
+the Art of Scaling Intelligence
+in the Era of Extreme-Scale Neural Models
+🤖
+
+David vs. Goliath:
+the Art of Scaling Intelligence
+in the Era of Extreme-Scale Neural Models
+👩🚀
+
+👩🚀
+AI mirrors human intelligence:
+•
+Reasoning is often memorized knowledge
+•
+Exploitation vs exploration trade offs
+•
+Diverse examples/experiences enhance learning
+AI diverges from human intelligence:
+•
+More data, compute, and memory
+•
+Less abstraction and conceptualization
+•
+Clear separation between training and testing
+
+How sausages are made:
+•
+Human’s internet data, the artifact of
+👩🚀
+human intelligence
+👩🚀
+•
+Human’s audacity to throw in $$$$$$$
+👩🚀
+•
+Human’s annotations at scale for alignment
+👩🚀•
+Human’s intuitions and insights on a lot of
+engineering details
+
+👩🚀
+Open Research Questions
+•
+New theories of intelligences?
+•
+New theories of knowledge and
+reasoning?
+•
+That humans do not have a context
+window size of 1 M tokens — is this a
+limitation or blessing?
+
+Thanks!

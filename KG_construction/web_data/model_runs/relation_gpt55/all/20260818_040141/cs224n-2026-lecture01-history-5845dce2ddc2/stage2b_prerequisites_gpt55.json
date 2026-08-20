@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "GPT and Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "GPTs are built from neural network architectures, so neural network fundamentals are needed to understand them."
+    },
+    {
+      "from": "Machine Learning Techniques",
+      "to": "GPT and Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Language models are trained using machine learning methods, so ML training concepts are needed first."
+    }
+  ]
+}

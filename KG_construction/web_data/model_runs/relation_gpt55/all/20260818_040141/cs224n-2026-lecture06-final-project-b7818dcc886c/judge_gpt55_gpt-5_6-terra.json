@@ -1,0 +1,114 @@
+{
+  "created_at": "2026-08-18T18:52:30.711360+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-cs224n-2026-lecture06-final-project-b7818dcc886c",
+  "file_name": "cs224n-2026-lecture06-final-project-b7818dcc886c",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 18,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6923,
+    "f1": 0.8182,
+    "tp": 9,
+    "fp": 0,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.6,
+    "recall": 0.4286,
+    "f1": 0.5,
+    "tp": 3,
+    "fp": 2,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Neural Networks",
+      "Deep Learning",
+      "Model Training",
+      "Project Proposals",
+      "Grading Policies",
+      "Datasets",
+      "Training Models",
+      "Attention Mechanisms",
+      "Experimental Strategies"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Transformer Encoder-Decoder",
+        "reason": "The lecture explicitly presents the encoder-decoder Transformer architecture for sequence-to-sequence tasks."
+      },
+      {
+        "name": "Cross-attention",
+        "reason": "The source defines decoder queries and encoder-derived keys and values in cross-attention."
+      },
+      {
+        "name": "Train/Dev/Test Splits",
+        "reason": "The lecture extensively covers distinct training, tuning, development, and test sets."
+      },
+      {
+        "name": "Overfitting",
+        "reason": "The source explains overfitting to training and evaluation data and ways to monitor it."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Deep Learning",
+        "reason": "Deep learning is based on neural-network models, which the source identifies as central to the course and project work."
+      },
+      {
+        "from": "Datasets",
+        "to": "Model Training",
+        "reason": "The source states that models are trained on training sets and evaluated using independent data splits."
+      },
+      {
+        "from": "Datasets",
+        "to": "Training Models",
+        "reason": "Understanding dataset splits and their roles is necessary for the training and evaluation procedure described."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Attention Mechanisms",
+        "reason": "Attention is presented specifically through Transformer self-attention and cross-attention; the source does not establish generic neural-network knowledge as a direct prerequisite."
+      },
+      {
+        "from": "Deep Learning",
+        "to": "Attention Mechanisms",
+        "reason": "The source discusses attention within Transformers, but does not state that general deep-learning knowledge is a required learning dependency for attention."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Self-attention",
+        "to": "Cross-attention",
+        "reason": "Cross-attention is introduced by contrasting it with self-attention: self-attention draws keys, queries, and values from one source, whereas cross-attention uses encoder keys/values and decoder queries."
+      },
+      {
+        "from": "Transformer Encoder",
+        "to": "Transformer Encoder-Decoder",
+        "reason": "The encoder-decoder architecture uses a normal Transformer Encoder to process the source sequence."
+      },
+      {
+        "from": "Transformer Decoder",
+        "to": "Transformer Encoder-Decoder",
+        "reason": "The architecture uses a modified Transformer Decoder that performs cross-attention over encoder outputs."
+      },
+      {
+        "from": "Train/Dev/Test Splits",
+        "to": "Overfitting",
+        "reason": "The source explains that independent validation and test sets are used to monitor and avoid problematic overfitting."
+      }
+    ],
+    "overall_note": "All predicted topics are represented in the lecture, but the attention-related predicted edges are weaker associations than explicit instructional dependencies."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture06-final-project-b7818dcc886c.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture06-final-project-b7818dcc886c.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture06-final-project-b7818dcc886c_ledger.csv"
+  }
+}

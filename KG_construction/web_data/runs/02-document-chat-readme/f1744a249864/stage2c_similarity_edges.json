@@ -1,0 +1,98 @@
+{
+  "stage": "2c",
+  "method": "sbert_cosine",
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "topic_count": 15,
+  "similarity_count": 12,
+  "threshold": 0.72,
+  "top_k_per_topic": 5,
+  "similarity_edges": [
+    {
+      "from": "document chat functionality in Python",
+      "to": "python document_chat implementation",
+      "similarity": 0.9281
+    },
+    {
+      "from": "document_chat library usage in Python",
+      "to": "python document_chat implementation",
+      "similarity": 0.921
+    },
+    {
+      "from": "documents conversation analysis techniques",
+      "to": "documents conversation data processing",
+      "similarity": 0.8942
+    },
+    {
+      "from": "python document_chat error handling",
+      "to": "python document_chat implementation",
+      "similarity": 0.8909
+    },
+    {
+      "from": "document chat functionality in Python",
+      "to": "document_chat library usage in Python",
+      "similarity": 0.8854
+    },
+    {
+      "from": "document_chat library usage in Python",
+      "to": "python document_chat error handling",
+      "similarity": 0.8737
+    },
+    {
+      "from": "conversation machine learning models",
+      "to": "conversation machine training datasets",
+      "similarity": 0.8327
+    },
+    {
+      "from": "document chat functionality in Python",
+      "to": "python document_chat error handling",
+      "similarity": 0.8257
+    },
+    {
+      "from": "conversation machine architecture",
+      "to": "conversation machine learning models",
+      "similarity": 0.8137
+    },
+    {
+      "from": "conversation machine architecture",
+      "to": "conversation machine training datasets",
+      "similarity": 0.7773
+    },
+    {
+      "from": "document chat user interface design",
+      "to": "real-time document chat applications",
+      "similarity": 0.7355
+    },
+    {
+      "from": "document_chat API integration",
+      "to": "python document_chat implementation",
+      "similarity": 0.7266
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 17.7407,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2c.similarity",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

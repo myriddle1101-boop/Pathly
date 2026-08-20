@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-22">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Query Embedding" label="Query Embedding">
+        <attvalues>
+          <attvalue for="0" value="Techniques for representing queries in a vector space for improved retrieval." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Top-k Retrieval&quot;, &quot;description&quot;: &quot;Selecting the top k relevant results based on query embeddings.&quot;}, {&quot;name&quot;: &quot;Search Techniques&quot;, &quot;description&quot;: &quot;Methods for efficiently searching using query embeddings.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and machine learning concepts." />
+          <attvalue for="6" value="[&quot;Vector Space Models&quot;, &quot;Semantic Similarity&quot;]" />
+          <attvalue for="7" value="[&quot;Query embedding is only for text data.&quot;, &quot;All embeddings are the same regardless of context.&quot;]" />
+          <attvalue for="8" value="[&quot;Search engine optimization&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Retrieval-Augmented Generation (RAG)" label="Retrieval-Augmented Generation (RAG)">
+        <attvalues>
+          <attvalue for="0" value="Combining retrieval and generation techniques to enhance information access." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;RAG Systems&quot;, &quot;description&quot;: &quot;Architectures that integrate retrieval with generative models.&quot;}, {&quot;name&quot;: &quot;Challenges in RAG&quot;, &quot;description&quot;: &quot;Issues faced in implementing effective retrieval-augmented systems.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and natural language processing." />
+          <attvalue for="6" value="[&quot;Information Retrieval&quot;, &quot;Natural Language Generation&quot;]" />
+          <attvalue for="7" value="[&quot;RAG is only about retrieval&quot;, &quot;RAG does not require any training&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots&quot;, &quot;Document summarization&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Information Retrieval Quality" label="Information Retrieval Quality">
+        <attvalues>
+          <attvalue for="0" value="Metrics and methods for assessing the effectiveness of information retrieval systems." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Relevance Retrieval&quot;, &quot;description&quot;: &quot;Techniques to ensure retrieved information is relevant to user queries.&quot;}, {&quot;name&quot;: &quot;Quality Metrics&quot;, &quot;description&quot;: &quot;Evaluating the quality of retrieval results.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of information systems and statistics." />
+          <attvalue for="6" value="[&quot;Precision&quot;, &quot;Recall&quot;, &quot;F1 Score&quot;, &quot;Mean Average Precision&quot;, &quot;Normalized Discounted Cumulative Gain&quot;]" />
+          <attvalue for="7" value="[&quot;Higher precision always means better retrieval quality&quot;, &quot;Recall is not important if precision is high&quot;]" />
+          <attvalue for="8" value="[&quot;Search engines&quot;, &quot;Recommendation systems&quot;, &quot;Document retrieval&quot;, &quot;Question answering systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Scalability in Systems" label="Scalability in Systems">
+        <attvalues>
+          <attvalue for="0" value="Strategies for ensuring systems can handle increasing amounts of data and queries." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Context Scalability&quot;, &quot;description&quot;: &quot;Adapting systems to maintain performance as context size grows.&quot;}, {&quot;name&quot;: &quot;System Operation&quot;, &quot;description&quot;: &quot;How systems function under varying loads and data sizes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of computer science principles and data structures." />
+          <attvalue for="6" value="[&quot;Horizontal Scaling&quot;, &quot;Vertical Scaling&quot;, &quot;Load Balancing&quot;, &quot;Data Partitioning&quot;]" />
+          <attvalue for="7" value="[&quot;Scalability only refers to hardware upgrades.&quot;, &quot;All systems can scale indefinitely without issues.&quot;]" />
+          <attvalue for="8" value="[&quot;Web applications handling increased user traffic&quot;, &quot;Big data processing systems managing large datasets&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain for various tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of neural network nodes.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;Algorithm for training neural networks by minimizing error.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods for training machine learning models effectively." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual outcomes.&quot;}, {&quot;name&quot;: &quot;Regression and Classification&quot;, &quot;description&quot;: &quot;Types of supervised learning tasks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting and Underfitting&quot;, &quot;Cross-Validation&quot;, &quot;Hyperparameter Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Training and testing data can be mixed&quot;, &quot;Complex models are always better&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Predictive analytics&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Information Access" label="Information Access">
+        <attvalues>
+          <attvalue for="0" value="Methods and technologies for retrieving and utilizing information." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Accessing Personal Information&quot;, &quot;description&quot;: &quot;Techniques for retrieving user-specific data.&quot;}, {&quot;name&quot;: &quot;Knowledge Retrieval&quot;, &quot;description&quot;: &quot;Strategies for extracting knowledge from large datasets.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data structures and algorithms." />
+          <attvalue for="6" value="[&quot;Information Retrieval&quot;, &quot;Search Algorithms&quot;]" />
+          <attvalue for="7" value="[&quot;Information access is only about search engines.&quot;, &quot;All information retrieval methods are equally effective.&quot;]" />
+          <attvalue for="8" value="[&quot;Web search engines&quot;, &quot;Database querying&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Relevant Information" label="Relevant Information">
+        <attvalues>
+          <attvalue for="0" value="Identifying and utilizing information that is pertinent to user needs." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Relevant Papers&quot;, &quot;description&quot;: &quot;Finding academic papers that are relevant to specific queries.&quot;}, {&quot;name&quot;: &quot;Information Needs&quot;, &quot;description&quot;: &quot;Understanding what information users are seeking.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data analysis and user-centered design principles." />
+          <attvalue for="6" value="[&quot;Information Retrieval&quot;, &quot;User Needs Assessment&quot;]" />
+          <attvalue for="7" value="[&quot;All information is equally relevant&quot;, &quot;User needs are static and do not change&quot;]" />
+          <attvalue for="8" value="[&quot;Personalized recommendations in e-commerce&quot;, &quot;Targeted marketing strategies&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Generative Models" label="Generative Models">
+        <attvalues>
+          <attvalue for="0" value="Models that generate new data instances based on learned patterns." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Generation Techniques&quot;, &quot;description&quot;: &quot;Methods for generating data or responses.&quot;}, {&quot;name&quot;: &quot;LLMs (Large Language Models)&quot;, &quot;description&quot;: &quot;Advanced models for natural language processing tasks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of probability, statistics, and machine learning fundamentals." />
+          <attvalue for="6" value="[&quot;Variational Autoencoders&quot;, &quot;Generative Adversarial Networks&quot;]" />
+          <attvalue for="7" value="[&quot;Generative models only work with images&quot;, &quot;They cannot produce high-quality data&quot;]" />
+          <attvalue for="8" value="[&quot;Image synthesis&quot;, &quot;Text generation&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Retrieval-Augmented Generation (RAG)" target="Generative Models" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="RAG techniques often utilize generative models for data generation." />
+        </attvalues>
+      </edge>
+      <edge source="Information Retrieval Quality" target="Retrieval-Augmented Generation (RAG)" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Assessing retrieval quality is crucial for enhancing retrieval and generation techniques." />
+        </attvalues>
+      </edge>
+      <edge source="Scalability in Systems" target="Information Retrieval Quality" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Scalability impacts the effectiveness of information retrieval systems." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Training Techniques" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding neural networks is essential for effective training methods." />
+        </attvalues>
+      </edge>
+      <edge source="Information Access" target="Relevant Information" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Effective information access requires the ability to identify relevant information." />
+        </attvalues>
+      </edge>
+      <edge source="Information Access" target="Information Retrieval Quality" id="5">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7821" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

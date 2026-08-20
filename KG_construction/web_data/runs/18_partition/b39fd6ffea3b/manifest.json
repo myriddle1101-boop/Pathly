@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "18_partition-b39fd6ffea3b",
+  "created_at": "2026-07-29T14:13:35+08:00",
+  "updated_at": "2026-07-29T14:15:33+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "18_partition.pdf",
+    "doc_name": "18_partition",
+    "sha256": "b39fd6ffea3b937ecf281268343eef963d6f8c333586181b97c21c81b459770c",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\18_partition.pdf",
+    "pdf_size_bytes": 2530945
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 118.1671
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:13:35+08:00",
+      "ended_at": "2026-07-29T14:13:40+08:00",
+      "duration_seconds": 4.8422,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\18_partition.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 1806\n[2] 清洗后词数: 1812\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 12\n[5] 分块数（过滤后）: 9\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=280\nChapter 18 Chapter 18 Confronting the Partition Confronting the Partition Function Function In section 16.2.2 we saw that many probabilistic models (commonly known as undi- In section 16.2.2 we saw that many probabilisti...\n\n[Chunk 2] words=228\nCHAPTER 18. CONFRONTING THE PARTITION FUNCTION 18.1 The Log-Likelihood Gradient What makes learning undirected models by maximum likelihood particularly difficult is that the partition function depends on the parameters....\n\n[Chunk 3] words=277\nCHAPTER 18. CONFRONTING THE PARTITION FUNCTION 18.1 The Log-Likelihood Gradient What makes learning undirected models by maximum likelihood particularly difficult is that the partition function depends on the parameters....\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:13:40+08:00",
+      "ended_at": "2026-07-29T14:14:27+08:00",
+      "duration_seconds": 47.0977,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：9\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/9 ...\n[KeyBERT] chunk 2/9 ...\n[KeyBERT] chunk 3/9 ...\n[KeyBERT] chunk 4/9 ...\n[KeyBERT] chunk 5/9 ...\n[KeyBERT] chunk 6/9 ...\n[KeyBERT] chunk 7/9 ...\n[KeyBERT] chunk 8/9 ...\n[KeyBERT] chunk 9/9 ...\n[2] KeyBERT候选数：42\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Likelihood Models\n02. Probabilistic Models\n03. Training Algorithms\n04. Model Sampling\n05. Model Evaluation\n06. Data Representation\n07. Neural Networks\n08. Regression and Classification\n09. Algorithm Optimization\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6041.35it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:14:27+08:00",
+      "ended_at": "2026-07-29T14:14:34+08:00",
+      "duration_seconds": 6.5882,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Likelihood Models -> Probabilistic Models | Likelihood is a fundamental concept in probabilistic modeling.\n02. Probabilistic Models -> Model Sampling | Understanding probabilistic models is essential for sampling from them.\n03. Model Evaluation -> Training Algorithms | Evaluating models requires knowledge of how they are trained.\n04. Data Representation -> Neural Networks | Effective data representation is crucial for training neural networks.\n05. Regression and Classification -> Training Algorithms | Training algorithms are needed to implement regression and classification techniques.\n06. Training Algorithms -> Algorithm Optimization | Optimizing algorithms is necessary for improving training processes.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:14:34+08:00",
+      "ended_at": "2026-07-29T14:15:07+08:00",
+      "duration_seconds": 33.1048,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 1 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Likelihood Models <-> Probabilistic Models | sim=0.8098\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6201.73it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:15:07+08:00",
+      "ended_at": "2026-07-29T14:15:32+08:00",
+      "duration_seconds": 24.7951,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Likelihood Models\n[LLM] 2/9 Probabilistic Models\n[LLM] 3/9 Training Algorithms\n[LLM] 4/9 Model Sampling\n[LLM] 5/9 Model Evaluation\n[LLM] 6/9 Data Representation\n[LLM] 7/9 Neural Networks\n[LLM] 8/9 Regression and Classification\n[LLM] 9/9 Algorithm Optimization\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:15:32+08:00",
+      "ended_at": "2026-07-29T14:15:33+08:00",
+      "duration_seconds": 1.6364,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output missing"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 6\n[3] Similarity edges: 1\n[4] Graph nodes=9, edges=6\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T14:13:35+08:00"
+}

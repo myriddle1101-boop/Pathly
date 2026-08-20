@@ -1,0 +1,68 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 10,
+  "prerequisites": [
+    {
+      "from": "Activation Functions",
+      "to": "Feedforward Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding how individual neurons produce outputs is necessary to understand how feedforward networks compute layer-wise transformations."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation computes gradients of the loss with respect to network parameters, so the notion of a loss function is required first."
+    },
+    {
+      "from": "Computational Graphs",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation relies on tracing derivatives through composed operations, which is captured by computational graphs."
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "To understand gradient flow through neural networks, one must understand the differentiable node functions used at each unit."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation is used to provide gradients for parameter updates in gradient-based optimization, so understanding gradient descent is necessary context."
+    },
+    {
+      "from": "Feedforward Networks",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation is typically defined over the layered structure and parameters of feedforward neural networks."
+    },
+    {
+      "from": "Feedforward Networks",
+      "to": "Neural Network Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Feedforward networks are a foundational neural network architecture, and understanding them is necessary before broader neural network model families."
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Neural Network Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Activation functions are core building blocks used across neural network architectures."
+    },
+    {
+      "from": "Linear Separability",
+      "to": "Activation Functions",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding the limitation of linear decision boundaries motivates why nonlinear activation functions are needed."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Gradient Descent",
+      "relation_type": "strong_prerequisite",
+      "reason": "Gradient descent minimizes a loss function, so the optimization target must be understood first."
+    }
+  ]
+}

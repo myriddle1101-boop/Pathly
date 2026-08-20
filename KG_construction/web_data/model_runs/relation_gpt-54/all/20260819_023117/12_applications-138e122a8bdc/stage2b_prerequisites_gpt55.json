@@ -1,0 +1,92 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 14,
+  "prerequisites": [
+    {
+      "from": "Probabilities",
+      "to": "Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Language models fundamentally model likelihoods of sequences and require understanding probability."
+    },
+    {
+      "from": "Probabilities",
+      "to": "Natural Language Processing",
+      "relation_type": "strong_prerequisite",
+      "reason": "Core NLP methods rely on probabilistic reasoning for modeling uncertainty and language phenomena."
+    },
+    {
+      "from": "Probabilities",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning training and loss formulations commonly depend on probabilistic concepts."
+    },
+    {
+      "from": "Probabilities",
+      "to": "Attention Mechanism",
+      "relation_type": "strong_prerequisite",
+      "reason": "Attention uses normalized weighting and uncertainty-related concepts that rely on probability foundations."
+    },
+    {
+      "from": "Probabilities",
+      "to": "Training Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training models requires understanding probabilistic objectives, likelihoods, and uncertainty."
+    },
+    {
+      "from": "Optimization Techniques",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning depends on optimization methods to fit neural network parameters."
+    },
+    {
+      "from": "Optimization Techniques",
+      "to": "Training Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training models requires optimization to minimize loss and improve predictions."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning requires data to be encoded into numerical representations suitable for neural networks."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Language models require text to be represented as tokens, embeddings, or similar encodings."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Attention Mechanism",
+      "relation_type": "strong_prerequisite",
+      "reason": "Attention operates over structured vector representations of inputs."
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Attention Mechanism",
+      "relation_type": "strong_prerequisite",
+      "reason": "Attention mechanisms are typically taught as neural network components and require deep learning foundations."
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Modern language models are primarily built using deep learning architectures."
+    },
+    {
+      "from": "Natural Language Processing",
+      "to": "Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Language models are a specialized topic within NLP and require basic understanding of language processing tasks and concepts."
+    },
+    {
+      "from": "Training Models",
+      "to": "Implementation Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Efficient implementation of machine learning algorithms presumes understanding the model training process being executed."
+    }
+  ]
+}

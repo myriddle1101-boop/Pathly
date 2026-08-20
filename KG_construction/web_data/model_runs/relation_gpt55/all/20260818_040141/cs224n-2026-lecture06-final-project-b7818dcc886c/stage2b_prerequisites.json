@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning builds on understanding neural network structures and learning behavior."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Attention Mechanisms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Attention mechanisms are typically implemented within neural network architectures."
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Attention Mechanisms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Attention mechanisms are most commonly studied as techniques in deep learning models."
+    },
+    {
+      "from": "Datasets",
+      "to": "Model Training",
+      "relation_type": "strong_prerequisite",
+      "reason": "Model training requires understanding the data used to teach and evaluate the model."
+    },
+    {
+      "from": "Datasets",
+      "to": "Training Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Developing training methodologies depends on knowing how datasets are used."
+    }
+  ]
+}

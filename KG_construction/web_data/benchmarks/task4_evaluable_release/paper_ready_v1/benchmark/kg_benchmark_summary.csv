@@ -1,0 +1,5 @@
+﻿stage,script,duration_seconds,return_code,success,log_path
+stage1,D:\ic\master project\project_code\KG_construction\stage1_adaptive_chunking.py,7.002,0,True,D:\ic\master project\project_code\KG_construction\web_data\benchmarks\task4_evaluable_release\paper_ready_v1\benchmark\stage1_benchmark.log
+stage2a,D:\ic\master project\project_code\KG_construction\stage2a_hybrid_keybert_llm.py,74.437,0,True,D:\ic\master project\project_code\KG_construction\web_data\benchmarks\task4_evaluable_release\paper_ready_v1\benchmark\stage2a_benchmark.log
+stage2b,D:\ic\master project\project_code\KG_construction\stage2b_prerequisites_hybrid.py,10.688,0,True,D:\ic\master project\project_code\KG_construction\web_data\benchmarks\task4_evaluable_release\paper_ready_v1\benchmark\stage2b_benchmark.log
+stage2c,D:\ic\master project\project_code\KG_construction\stage2c_similarity.py,38.305,0,True,D:\ic\master project\project_code\KG_construction\web_data\benchmarks\task4_evaluable_release\paper_ready_v1\benchmark\stage2c_benchmark.log

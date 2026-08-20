@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 8,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Natural Language Processing",
+      "reason": "NLP relies on foundational ML principles."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Neural Networks",
+      "reason": "Neural networks are a key technique in ML."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Learning Techniques",
+      "reason": "Understanding ML concepts is essential for learning techniques."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Learning Techniques",
+      "reason": "Training neural networks requires specific learning strategies."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Course Projects",
+      "reason": "Projects apply ML concepts learned in the course."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Homework Assignments",
+      "reason": "Assignments reinforce ML concepts."
+    }
+  ]
+}

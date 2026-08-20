@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Recurrent Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Recurrent neural networks are a specialized type of neural network, so understanding basic neural network concepts is necessary first."
+    },
+    {
+      "from": "Gradient Methods",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Many core training techniques rely on gradient-based optimization, so gradient methods are foundational for learning them."
+    }
+  ]
+}

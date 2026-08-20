@@ -1,0 +1,43 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 7,
+  "prerequisites": [
+    {
+      "from": "Deep Learning",
+      "to": "Language Models",
+      "reason": "Language models often utilize deep learning techniques."
+    },
+    {
+      "from": "Reinforcement Learning",
+      "to": "Agent Systems",
+      "reason": "Reinforcement learning is a key approach for developing autonomous agents."
+    },
+    {
+      "from": "Agent Systems",
+      "to": "Agent Reasoning",
+      "reason": "Understanding agent systems is essential for grasping how agents reason."
+    },
+    {
+      "from": "Language Models",
+      "to": "Question Answering",
+      "reason": "Language models are foundational for building question answering systems."
+    },
+    {
+      "from": "Retrieval Models",
+      "to": "Question Answering",
+      "reason": "Retrieval models are often used to fetch information for question answering."
+    },
+    {
+      "from": "Web Environment",
+      "to": "Agent Systems",
+      "reason": "Agents operate within web environments, necessitating understanding of the context."
+    },
+    {
+      "from": "Knowledge Adapters",
+      "to": "Language Models",
+      "reason": "Knowledge adapters enhance language models for specific tasks."
+    }
+  ]
+}

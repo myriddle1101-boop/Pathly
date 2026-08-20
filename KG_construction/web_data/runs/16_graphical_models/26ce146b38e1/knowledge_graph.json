@@ -1,0 +1,162 @@
+{
+  "nodes": [
+    {
+      "id": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": "[{\"name\": \"Artificial Neural Networks\", \"description\": \"Computational models inspired by the human brain's network of neurons.\"}, {\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of a neural network node.\"}, {\"name\": \"Loss Functions\", \"description\": \"Metrics used to measure the difference between predicted and actual outcomes.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra, calculus, and programming in Python.",
+      "key_sub_concepts": "[\"Neural Networks\", \"Backpropagation\", \"Convolutional Neural Networks (CNNs)\", \"Recurrent Neural Networks (RNNs)\"]",
+      "common_misconceptions": "[\"Deep learning is the same as machine learning.\", \"More layers always lead to better performance.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Speech recognition\", \"Game playing (e.g., AlphaGo)\"]"
+    },
+    {
+      "id": "Probabilistic Models",
+      "description": "Models that incorporate uncertainty and randomness in predictions.",
+      "sub_topics": "[{\"name\": \"Probability Distributions\", \"description\": \"Functions that describe the likelihood of different outcomes.\"}, {\"name\": \"Conditional Distributions\", \"description\": \"Distributions that specify the probability of an event given another event.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and probability theory.",
+      "key_sub_concepts": "[\"Bayesian Inference\", \"Markov Models\"]",
+      "common_misconceptions": "[\"Probabilistic models are only for complex problems\", \"They always require large datasets\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Medical Diagnosis\"]"
+    },
+    {
+      "id": "Graph Models",
+      "description": "Models that represent relationships and dependencies using graph structures.",
+      "sub_topics": "[{\"name\": \"Factor Graphs\", \"description\": \"Graphs that represent the factorization of a probability distribution.\"}, {\"name\": \"Undirected Graphs\", \"description\": \"Graphs where edges have no direction, representing symmetric relationships.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of graph theory and introductory machine learning concepts.",
+      "key_sub_concepts": "[\"Graph representation\", \"Graph traversal algorithms\", \"Node and edge features\", \"Graph neural networks\"]",
+      "common_misconceptions": "[\"Graphs can only represent static relationships\", \"Graph models are only for social networks\"]",
+      "practical_applications": "[\"Social network analysis\", \"Recommendation systems\", \"Biological network modeling\", \"Fraud detection\"]"
+    },
+    {
+      "id": "Structured Modeling",
+      "description": "Modeling techniques that leverage the structure of data for better predictions.",
+      "sub_topics": "[{\"name\": \"Structured Probabilistic Models\", \"description\": \"Models that combine structured data with probabilistic reasoning.\"}, {\"name\": \"Model Structure\", \"description\": \"The arrangement and relationships of variables in a model.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and introductory machine learning concepts.",
+      "key_sub_concepts": "[\"Graphical Models\", \"Hierarchical Models\"]",
+      "common_misconceptions": "[\"Structured modeling is only for complex data\", \"It requires advanced programming skills\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Recommendation Systems\"]"
+    },
+    {
+      "id": "Graph Theory",
+      "description": "The study of graphs and their properties, crucial for understanding complex networks.",
+      "sub_topics": "[{\"name\": \"Directed Graphs\", \"description\": \"Graphs where edges have a direction, indicating a one-way relationship.\"}, {\"name\": \"Complete Graphs\", \"description\": \"Graphs in which every pair of vertices is connected by an edge.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of discrete mathematics and familiarity with sets and functions.",
+      "key_sub_concepts": "[\"Vertices and edges\", \"Graph types (directed, undirected, weighted, unweighted)\", \"Graph traversal algorithms (BFS, DFS)\", \"Graph connectivity\", \"Graph representations (adjacency list, adjacency matrix)\"]",
+      "common_misconceptions": "[\"All graphs are trees\", \"Graphs can only represent linear relationships\", \"Graph theory is only applicable in computer science\"]",
+      "practical_applications": "[\"Social network analysis\", \"Routing algorithms in networks\", \"Recommendation systems\", \"Biological network modeling\", \"Urban planning and transportation networks\"]"
+    },
+    {
+      "id": "Sampling Techniques",
+      "description": "Methods for selecting a subset of data from a larger dataset for analysis.",
+      "sub_topics": "[{\"name\": \"Example Sampling\", \"description\": \"Selecting representative examples from a dataset.\"}, {\"name\": \"Sampling Tasks\", \"description\": \"Specific objectives or goals related to data sampling.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and data analysis.",
+      "key_sub_concepts": "[\"Random Sampling\", \"Stratified Sampling\", \"Systematic Sampling\", \"Cluster Sampling\"]",
+      "common_misconceptions": "[\"Sampling is always random\", \"Larger samples are always better\"]",
+      "practical_applications": "[\"Survey research\", \"A/B testing\", \"Market research\", \"Quality control\"]"
+    },
+    {
+      "id": "Training Algorithms",
+      "description": "Algorithms used to optimize models based on training data.",
+      "sub_topics": "[{\"name\": \"Backpropagation\", \"description\": \"A method for updating weights in neural networks based on error gradients.\"}, {\"name\": \"Linear Separation\", \"description\": \"The ability to separate classes in a dataset using a linear boundary.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Gradient Descent\", \"Stochastic Gradient Descent\", \"Batch Learning\", \"Online Learning\"]",
+      "common_misconceptions": "[\"All algorithms converge to the same solution\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Recommendation systems\", \"Financial forecasting\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Regression Analysis\", \"description\": \"A statistical method for predicting continuous outcomes.\"}, {\"name\": \"Classification Metrics\", \"description\": \"Metrics used to evaluate the accuracy of classification models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and statistics.",
+      "key_sub_concepts": "[\"Confusion Matrix\", \"ROC Curve\", \"Precision and Recall\", \"F1 Score\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Accuracy is the only metric that matters.\", \"Overfitting is not a concern if the model performs well on training data.\"]",
+      "practical_applications": "[\"Evaluating classification models in healthcare.\", \"Assessing predictive models in finance.\"]"
+    },
+    {
+      "id": "Graph Representations",
+      "description": "Different ways to represent data and relationships using graphs.",
+      "sub_topics": "[{\"name\": \"Graph Probability\", \"description\": \"The use of graphs to represent probabilistic relationships.\"}, {\"name\": \"Graph Ambiguity\", \"description\": \"Challenges in interpreting graphs due to multiple possible interpretations.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of data structures and algorithms.",
+      "key_sub_concepts": "[\"Adjacency Matrix\", \"Adjacency List\", \"Edge List\", \"Graph Traversal\"]",
+      "common_misconceptions": "[\"Graphs can only represent linear relationships.\", \"All graphs are undirected.\"]",
+      "practical_applications": "[\"Social network analysis\", \"Recommendation systems\", \"Routing algorithms\", \"Biological network modeling\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Graph Models",
+      "to": "Structured Modeling",
+      "relation": "prerequisite",
+      "reason": "Graph models provide a structured approach to modeling relationships."
+    },
+    {
+      "from": "Graph Models",
+      "to": "Graph Representations",
+      "relation": "similarity",
+      "score": 0.8252
+    },
+    {
+      "from": "Graph Models",
+      "to": "Graph Theory",
+      "relation": "similarity",
+      "score": 0.7619
+    },
+    {
+      "from": "Graph Theory",
+      "to": "Graph Models",
+      "relation": "prerequisite",
+      "reason": "Understanding graph properties is essential for modeling relationships."
+    },
+    {
+      "from": "Graph Theory",
+      "to": "Graph Representations",
+      "relation": "prerequisite",
+      "reason": "Knowledge of graph properties is necessary to represent data using graphs."
+    },
+    {
+      "from": "Sampling Techniques",
+      "to": "Model Evaluation",
+      "relation": "prerequisite",
+      "reason": "Effective evaluation often requires understanding sampling methods."
+    },
+    {
+      "from": "Training Algorithms",
+      "to": "Model Evaluation",
+      "relation": "prerequisite",
+      "reason": "Evaluating models is crucial to understanding the effectiveness of training algorithms."
+    },
+    {
+      "from": "Graph Representations",
+      "to": "Graph Theory",
+      "relation": "similarity",
+      "score": 0.7622
+    }
+  ]
+}

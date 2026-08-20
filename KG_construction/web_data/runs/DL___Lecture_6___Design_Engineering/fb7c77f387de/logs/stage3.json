@@ -1,0 +1,29 @@
+{
+  "stage": "stage3",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage3_node_summary_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage3_node_summary_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage3_topics_with_summary.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 39.6248,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage3_topics_with_summary.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 16\n[LLM] 1/16 convolutional kernels in image processing\n[LLM] 2/16 deep learning architectures and applications\n[LLM] 3/16 learning whynotusea in neural networks\n[LLM] 4/16 feature selection techniques in learning models\n[LLM] 5/16 neural networks and their training methodologies\n[LLM] 6/16 groups of neurons and their functional roles\n[LLM] 7/16 learning pooling strategies in convolutional networks\n[LLM] 8/16 convolutional layer design and optimization\n[LLM] 9/16 whynotusea in the context of LNNs\n[LLM] 10/16 specific examples of learning applications\n[LLM] 11/16 learning lectures on advanced neural network topics\n[LLM] 12/16 practical comments on implementing learning algorithms\n[LLM] 13/16 kernels example in machine learning contexts\n[LLM] 14/16 foundational concepts in learning theory\n[LLM] 15/16 analyzing image data with LNNs and potential losses\n[LLM] 16/16 whynotusea as a critique of existing models\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+  "stderr_tail": ""
+}

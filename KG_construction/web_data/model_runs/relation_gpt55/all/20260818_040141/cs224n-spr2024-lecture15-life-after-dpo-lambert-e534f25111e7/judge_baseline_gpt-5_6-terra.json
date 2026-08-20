@@ -1,0 +1,115 @@
+{
+  "created_at": "2026-08-18T18:57:11.962934+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7",
+  "file_name": "cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 10,
+  "topic_metrics": {
+    "precision": 0.7778,
+    "recall": 0.6364,
+    "f1": 0.7,
+    "tp": 7,
+    "fp": 2,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 4,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "DPO Models",
+      "Reward Models",
+      "Training Models",
+      "Language Models",
+      "Model Evaluation",
+      "Assistant Conversations",
+      "Model Characteristics"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Sampling Techniques",
+        "reason": "Rejection sampling is mentioned, but sampling techniques are not developed as a learning topic."
+      },
+      {
+        "name": "Model Discussions",
+        "reason": "The source contains discussion sections, but this is not a substantive ML learning concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Reinforcement Learning from Human Feedback (RLHF)",
+        "reason": "RLHF is defined, motivates the presentation, and is compared extensively with DPO."
+      },
+      {
+        "name": "Instruction Fine-Tuning (IFT)",
+        "reason": "IFT is explicitly defined and presented as adaptation of a base language model to instruction/chat data."
+      },
+      {
+        "name": "Proximal Policy Optimization (PPO)",
+        "reason": "PPO is a central RLHF optimizer and is repeatedly compared with DPO."
+      },
+      {
+        "name": "Preference Modeling",
+        "reason": "The source explains pairwise preference data and Bradley--Terry reward modeling as a key foundation."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Training Models",
+        "to": "Model Evaluation",
+        "reason": "Training and evaluation are related, but understanding model training is not a necessary prerequisite for learning model evaluation."
+      },
+      {
+        "from": "Language Models",
+        "to": "Assistant Conversations",
+        "reason": "Assistant conversations are training/evaluation data artifacts, not a concept that directionally depends on language models."
+      },
+      {
+        "from": "Model Characteristics",
+        "to": "Model Evaluation",
+        "reason": "Model characteristics may inform evaluation, but they are not a strong prerequisite for understanding evaluation."
+      },
+      {
+        "from": "Sampling Techniques",
+        "to": "Training Models",
+        "reason": "The source does not establish sampling techniques as a necessary foundation for model training."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Base Language Models",
+        "to": "Instruction Fine-Tuning (IFT)",
+        "reason": "IFT is explicitly described as continuing training from a base language model using question-answer pairs."
+      },
+      {
+        "from": "Pairwise Preferences",
+        "to": "Preference Modeling",
+        "reason": "The reward-modeling section states that pairwise preferences are collected and used to estimate preference probabilities."
+      },
+      {
+        "from": "Preference Modeling",
+        "to": "Direct Preference Optimization (DPO)",
+        "reason": "DPO is introduced directly after the preference/reward-modeling objective as optimization from preference data."
+      },
+      {
+        "from": "Reward Models",
+        "to": "Proximal Policy Optimization (PPO)",
+        "reason": "The source describes PPO/RLHF as generating responses and scoring them with a reward model."
+      }
+    ],
+    "overall_note": "The predicted set captures several broad themes but misses the core alignment methods—RLHF, IFT, PPO, and preference modeling—and all proposed prerequisite edges are too weak or misdirected."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7_ledger.csv"
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "readme-3ceb60c79421",
+  "created_at": "2026-07-22T04:28:19+08:00",
+  "updated_at": "2026-07-22T04:30:15+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "README.pdf",
+    "doc_name": "README",
+    "sha256": "3ceb60c79421b335d017398a98cbb6891ef3c7a51ba0b7724bc03e134ca8c3d5",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\README.pdf",
+    "pdf_size_bytes": 15568
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 115.3963
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:28:19+08:00",
+      "ended_at": "2026-07-22T04:28:24+08:00",
+      "duration_seconds": 4.8878,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\README.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 694\n[2] 清洗后词数: 697\n[3] 文档类型识别: paper_book\n[4] 分块数（过滤前）: 4\n[5] 分块数（过滤后）: 4\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=163\nRetrieval-Augmented Generation (RAG) Tutorial A comprehensive, hands-on tutorial that takes you from the basics through to building production-ready RAG systems. n What You'll Learn By the end of this tutorial, you'll un...\n\n[Chunk 2] words=208\n15. Prompting techniques 16. Integrating retrieved context Part 2: Building RAG Systems 1. Building Your First RAG System 2. Step-by-step implementation 3. Working code example Testing and evaluation Advanced RAG Techniq...\n\n[Chunk 3] words=127\nn Learning Tips (cid:127) Take your time: RAG combines multiple complex concepts (cid:127) Run every code example: Hands-on practice is crucial (cid:127) Experiment: Modify parameters and see what happens (cid:127) Build...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:28:24+08:00",
+      "ended_at": "2026-07-22T04:29:09+08:00",
+      "duration_seconds": 45.011,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：4\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/4 ...\n[KeyBERT] chunk 2/4 ...\n[KeyBERT] chunk 3/4 ...\n[KeyBERT] chunk 4/4 ...\n[2] KeyBERT候选数：24\n[3] LLM精修完成\n[4] 最终Topic数：8，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Learning Strategies\n02. Contextual Learning\n03. Retrieval-Augmented Generation (RAG)\n04. Chatbots in ML\n05. Neural Networks\n06. Loss Functions\n07. Model Training\n08. Technical Tutorials\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5690.16it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:29:09+08:00",
+      "ended_at": "2026-07-22T04:29:16+08:00",
+      "duration_seconds": 6.5277,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 8\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Neural Networks -> Loss Functions | Understanding neural networks is essential to grasp how loss functions evaluate their performance.\n02. Model Training -> Loss Functions | Model training requires knowledge of loss functions to optimize model performance.\n03. Model Training -> Neural Networks | Training models necessitates a foundational understanding of neural networks.\n04. Retrieval-Augmented Generation (RAG) -> Technical Tutorials | Understanding RAG techniques often involves following technical tutorials.\n05. Chatbots in ML -> Technical Tutorials | Building chatbots typically requires following technical tutorials for implementation.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:29:16+08:00",
+      "ended_at": "2026-07-22T04:29:46+08:00",
+      "duration_seconds": 30.3984,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 8\n[2] 相似关系数量: 2 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Learning Strategies <-> Model Training | sim=0.7753\n02. Learning Strategies <-> Technical Tutorials | sim=0.7586\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4540.65it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:29:46+08:00",
+      "ended_at": "2026-07-22T04:30:13+08:00",
+      "duration_seconds": 26.6768,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 8\n[LLM] 1/8 Learning Strategies\n[LLM] 2/8 Contextual Learning\n[LLM] 3/8 Retrieval-Augmented Generation (RAG)\n[LLM] 4/8 Chatbots in ML\n[LLM] 5/8 Neural Networks\n[LLM] 6/8 Loss Functions\n[LLM] 7/8 Model Training\n[LLM] 8/8 Technical Tutorials\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:30:13+08:00",
+      "ended_at": "2026-07-22T04:30:15+08:00",
+      "duration_seconds": 1.7918,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output present"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 8\n[2] Prerequisites: 5\n[3] Similarity edges: 2\n[4] Graph nodes=8, edges=7\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-22T04:28:19+08:00"
+}

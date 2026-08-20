@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864",
+  "run_id": "02-document-chat-readme-f1744a249864",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:03:09.724412+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "3cf4e5a44a530e1b4b656f7b9941e4d151e9130ddb44c686d389380226f1e0db",
+    "stage2a_topics_hybrid.json": "8a170793b35222615a453e0de54a2533dff4b80d7023192f91e404c1105f96db",
+    "stage2c_similarity_edges.json": "bfc13fee0ec51f433dbe13eccc11fd8a97bcbea81e5b389466dbe16e112459eb",
+    "stage3_topics_with_summary.json": "7c7ea81104a16742af4b307493c6bdbd47ab539894171a01ac1c64aa59c5d5ae"
+  },
+  "old_relation_count": 9,
+  "new_relation_count": 6,
+  "new_node_count": 15,
+  "new_edge_count": 16,
+  "golden_path_resource": false
+}

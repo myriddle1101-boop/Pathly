@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\01-introduction-to-rag.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 13.9246,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 1165\n[2] 清洗后词数: 1167\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 5\n[5] 分块数（过滤后）: 5\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=265\nLesson 1: Introduction to RAG What is Retrieval-Augmented Generation? Retrieval-Augmented Generation (RAG) is a technique that combines the power of large language models (LLMs) with external knowledge retrieval. Think o...\n\n[Chunk 2] words=160\nHow RAG Works: The Three-Step Process RAG systems operate in three main steps: Step 1: Indexing (Done Once) Before the system can retrieve information, you need to prepare your knowledge base: 1. Collect documents (PDFs,...\n\n[Chunk 3] words=267\nExample: # User query query = \"How tall is the Eiffel Tower?\" # Convert to embedding query_embedding = [0.25, -0.43, 0.65, ..., 0.15] # Similar to document # Find most similar chunks similar_chunks = vector_db.search(que...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

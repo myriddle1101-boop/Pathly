@@ -1,0 +1,156 @@
+{
+  "run_id": "harness_2026-07-08_032447",
+  "status": "success",
+  "created_at": "2026-07-08T03:24:50",
+  "graph_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+  "live_neo4j": true,
+  "stages": {
+    "neo4j": {
+      "status": "success",
+      "started_at": "2026-07-08T03:24:47",
+      "ended_at": "2026-07-08T03:24:50",
+      "result": {
+        "graph_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+        "mode": "live",
+        "expected": {
+          "concepts": 183,
+          "prerequisite_edges": 152,
+          "similarity_edges": 26,
+          "skipped_edges": 0,
+          "forbidden_learner_state_nodes": 0,
+          "min_resources": 0,
+          "min_has_resource_edges": 0,
+          "min_topics": 8,
+          "min_belongs_to_edges": 183
+        },
+        "actual": {
+          "total_nodes": 218,
+          "concepts": 183,
+          "prerequisite_edges": 152,
+          "similarity_edges": 26,
+          "forbidden_learner_state_nodes": 0,
+          "forbidden_learner_state_examples": [],
+          "resources": 27,
+          "has_resource_edges": 248,
+          "incomplete_resources": [],
+          "topics": 8,
+          "belongs_to_edges": 183,
+          "topic_distribution": [
+            {
+              "id": "topic_machine_learning_foundations",
+              "name": "Machine Learning Foundations",
+              "concept_count": 112
+            },
+            {
+              "id": "topic_natural_language_processing",
+              "name": "Natural Language Processing",
+              "concept_count": 37
+            },
+            {
+              "id": "topic_deep_learning",
+              "name": "Deep Learning",
+              "concept_count": 15
+            },
+            {
+              "id": "topic_ai_applications",
+              "name": "AI Applications",
+              "concept_count": 5
+            },
+            {
+              "id": "topic_ai_ethics_and_privacy",
+              "name": "AI Ethics and Privacy",
+              "concept_count": 5
+            },
+            {
+              "id": "topic_evaluation_and_generalization",
+              "name": "Evaluation and Generalization",
+              "concept_count": 5
+            },
+            {
+              "id": "topic_computer_vision",
+              "name": "Computer Vision",
+              "concept_count": 2
+            },
+            {
+              "id": "topic_optimization",
+              "name": "Optimization",
+              "concept_count": 2
+            }
+          ]
+        },
+        "passed": true,
+        "checks": [
+          {
+            "name": "total_nodes",
+            "actual": 218,
+            "passed": true
+          },
+          {
+            "name": "concepts",
+            "expected": 183,
+            "actual": 183,
+            "passed": true
+          },
+          {
+            "name": "prerequisite_edges",
+            "expected": 152,
+            "actual": 152,
+            "passed": true
+          },
+          {
+            "name": "similarity_edges",
+            "expected": 26,
+            "actual": 26,
+            "passed": true
+          },
+          {
+            "name": "forbidden_learner_state_nodes",
+            "expected": 0,
+            "actual": 0,
+            "passed": true,
+            "examples": []
+          },
+          {
+            "name": "resources",
+            "minimum": 0,
+            "actual": 27,
+            "passed": true
+          },
+          {
+            "name": "has_resource_edges",
+            "minimum": 0,
+            "actual": 248,
+            "passed": true
+          },
+          {
+            "name": "resource_required_fields",
+            "required_fields": [
+              "id",
+              "title",
+              "filename",
+              "path",
+              "sha256",
+              "doc_type",
+              "source_type"
+            ],
+            "passed": true,
+            "examples": []
+          },
+          {
+            "name": "topics",
+            "minimum": 8,
+            "actual": 8,
+            "passed": true
+          },
+          {
+            "name": "belongs_to_edges",
+            "minimum": 183,
+            "actual": 183,
+            "passed": true
+          }
+        ]
+      }
+    }
+  },
+  "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\manifests\\harness_2026-07-08_032447.json"
+}

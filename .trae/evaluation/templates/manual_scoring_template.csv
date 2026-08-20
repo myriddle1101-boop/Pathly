@@ -1,0 +1,2 @@
+artifact_id,artifact_type,blind_condition,rater_id,goal_coverage_1_5,prerequisite_order_1_5,time_feasibility_1_5,personalisation_1_5,correctness_1_5,grounding_1_5,knowledge_coherence_1_5,teaching_quality_1_5,brief_reason
+example,planning,hidden,R1,,,,,,,,,"Use only fields applicable to the artifact type."

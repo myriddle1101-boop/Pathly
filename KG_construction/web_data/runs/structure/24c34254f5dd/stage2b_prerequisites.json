@@ -1,0 +1,43 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 8,
+  "prerequisite_count": 7,
+  "prerequisites": [
+    {
+      "from": "Python Utilities",
+      "to": "Machine Learning Concepts",
+      "reason": "Understanding Python utilities is essential for implementing machine learning concepts."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Training Techniques",
+      "reason": "Mastering machine learning concepts is necessary to effectively apply training techniques."
+    },
+    {
+      "from": "Training Techniques",
+      "to": "Evaluation Metrics",
+      "reason": "Knowledge of training techniques is required to understand how to evaluate model performance."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Demo Projects",
+      "reason": "A solid grasp of machine learning concepts is needed to create and understand demo projects."
+    },
+    {
+      "from": "Tutorial Repository",
+      "to": "Machine Learning Concepts",
+      "reason": "Tutorials are designed to teach fundamental machine learning concepts."
+    },
+    {
+      "from": "Repository Structure",
+      "to": "Demo Projects",
+      "reason": "Understanding repository structure is crucial for organizing and managing demo projects."
+    },
+    {
+      "from": "Learning Resources",
+      "to": "Machine Learning Concepts",
+      "reason": "Learning resources are intended to enhance understanding of machine learning concepts."
+    }
+  ]
+}

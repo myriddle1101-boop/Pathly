@@ -1,0 +1,12 @@
+{
+  "similarity_edges": [
+    {
+      "from": "Neural Networks",
+      "to": "Deep Learning"
+    },
+    {
+      "from": "Classification",
+      "to": "Regression"
+    }
+  ]
+}

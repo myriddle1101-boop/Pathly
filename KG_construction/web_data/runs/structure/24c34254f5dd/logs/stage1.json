@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\STRUCTURE.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 4.466,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 748\n[2] 清洗后词数: 757\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 4\n[5] 分块数（过滤后）: 4\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=249\nRepository Structure Complete overview of the RAG tutorial repository. n Directory Layout rag_tutorial/ n nnn n README.md # Main introduction and navigation nnn n QUICKSTART.md # 5-minute setup guide nnn n requirements.t...\n\n[Chunk 2] words=210\nn Lesson Summaries Lesson 1: Introduction to RAG (cid:127) What RAG is and why it matters (cid:127) Problems it solves (hallucinations, knowledge cutoff) (cid:127) Three-step process: Index, Retrieve, Generate (cid:127) ...\n\n[Chunk 3] words=231\nRun: python examples/01-simple-qa/simple_qa.py Example 2: Document Chat File: examples/02-document-chat/document_chat.py Interactive chat system that: - Loads text documents - Chunks them intelligently - Maintains conver...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

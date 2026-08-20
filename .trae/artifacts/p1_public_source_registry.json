@@ -1,0 +1,360 @@
+{
+  "status": "rebuilt",
+  "source_version": "public-concept-source-p1-v1",
+  "kg_source": "neo4j",
+  "neo4j_query_verified": true,
+  "concept_count": 5,
+  "verified_count": 5,
+  "missing_neo4j_nodes": [
+    "XOR"
+  ],
+  "records": [
+    {
+      "link_id": "public-source-707d582716136b6f45a6",
+      "canonical_concept_id": "Activation Functions",
+      "canonical_concept_name": "Activation Functions",
+      "resource_id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+      "document_id": "public:8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+      "document_title": "cs224n-2026-lecture03-neuralnets.pdf",
+      "relevance_score": 1.0,
+      "coverage_score": 1.0,
+      "match_method": "neo4j_chroma_reviewed_pages",
+      "match_reason": "Pages 15-17 compare common activation functions and explain why nonlinearity is necessary.",
+      "review_status": "verified",
+      "coverage_status": "verified_pages_and_resource_chunks",
+      "neo4j_node_status": "present",
+      "neo4j_resource_status": "linked",
+      "source_url": null,
+      "license_status": "needs_source_review",
+      "source_version": "public-concept-source-p1-v1",
+      "created_at": "2026-08-11T20:17:36.471979+00:00",
+      "updated_at": "2026-08-11T20:17:36.471979+00:00",
+      "aliases": [
+        "activation function",
+        "nonlinearity",
+        "nonlinear activation"
+      ],
+      "page_sequence": [
+        {
+          "page_number": 15,
+          "role": "introduction",
+          "chunk_ids": []
+        },
+        {
+          "page_number": 16,
+          "role": "examples",
+          "chunk_ids": []
+        },
+        {
+          "page_number": 17,
+          "role": "mechanism",
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": [
+        "8aae94ed0125-1",
+        "8aae94ed0125-2",
+        "8aae94ed0125-3",
+        "8aae94ed0125-4",
+        "8aae94ed0125-5",
+        "8aae94ed0125-6",
+        "8aae94ed0125-7",
+        "8aae94ed0125-8",
+        "8aae94ed0125-9",
+        "8aae94ed0125-10",
+        "8aae94ed0125-11",
+        "8aae94ed0125-12",
+        "8aae94ed0125-13"
+      ],
+      "source_scope": "public",
+      "source_readiness": "public_registry"
+    },
+    {
+      "link_id": "public-source-8c6227570b12f985f865",
+      "canonical_concept_id": "Gradient Descent",
+      "canonical_concept_name": "Gradient Descent",
+      "resource_id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+      "document_id": "public:8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+      "document_title": "cs224n-2026-lecture03-neuralnets.pdf",
+      "relevance_score": 1.0,
+      "coverage_score": 1.0,
+      "match_method": "neo4j_chroma_reviewed_pages",
+      "match_reason": "Pages 18-20 connect the loss objective to the stochastic-gradient update and gradient computation.",
+      "review_status": "verified",
+      "coverage_status": "verified_pages_and_resource_chunks",
+      "neo4j_node_status": "present",
+      "neo4j_resource_status": "linked",
+      "source_url": null,
+      "license_status": "needs_source_review",
+      "source_version": "public-concept-source-p1-v1",
+      "created_at": "2026-08-11T20:17:36.471979+00:00",
+      "updated_at": "2026-08-11T20:17:36.471979+00:00",
+      "aliases": [
+        "gradient optimization",
+        "stochastic gradient descent",
+        "sgd"
+      ],
+      "page_sequence": [
+        {
+          "page_number": 18,
+          "role": "objective",
+          "chunk_ids": []
+        },
+        {
+          "page_number": 19,
+          "role": "update_rule",
+          "chunk_ids": []
+        },
+        {
+          "page_number": 20,
+          "role": "gradient_computation",
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": [
+        "8aae94ed0125-1",
+        "8aae94ed0125-2",
+        "8aae94ed0125-3",
+        "8aae94ed0125-4",
+        "8aae94ed0125-5",
+        "8aae94ed0125-6",
+        "8aae94ed0125-7",
+        "8aae94ed0125-8",
+        "8aae94ed0125-9",
+        "8aae94ed0125-10",
+        "8aae94ed0125-11",
+        "8aae94ed0125-12",
+        "8aae94ed0125-13"
+      ],
+      "source_scope": "public",
+      "source_readiness": "public_registry"
+    },
+    {
+      "link_id": "public-source-921a7fefd7b1c8bcd897",
+      "canonical_concept_id": "Linear Separability",
+      "canonical_concept_name": "Linear Separability",
+      "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+      "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+      "document_title": "06_mlp.pdf",
+      "relevance_score": 1.0,
+      "coverage_score": 1.0,
+      "match_method": "neo4j_chroma_reviewed_pages",
+      "match_reason": "Pages 2-3 introduce the XOR problem and show directly why its classes are not linearly separable.",
+      "review_status": "verified",
+      "coverage_status": "verified_pages_and_resource_chunks",
+      "neo4j_node_status": "present",
+      "neo4j_resource_status": "linked",
+      "source_url": null,
+      "license_status": "needs_source_review",
+      "source_version": "public-concept-source-p1-v1",
+      "created_at": "2026-08-11T20:17:36.471979+00:00",
+      "updated_at": "2026-08-11T20:17:36.471979+00:00",
+      "aliases": [
+        "linear separable",
+        "linearly separable",
+        "linear decision boundary"
+      ],
+      "page_sequence": [
+        {
+          "page_number": 2,
+          "role": "introduction",
+          "chunk_ids": []
+        },
+        {
+          "page_number": 3,
+          "role": "mechanism",
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": [
+        "01e27d8d0770-1",
+        "01e27d8d0770-2",
+        "01e27d8d0770-3",
+        "01e27d8d0770-4",
+        "01e27d8d0770-5",
+        "01e27d8d0770-6",
+        "01e27d8d0770-7",
+        "01e27d8d0770-8",
+        "01e27d8d0770-9",
+        "01e27d8d0770-10",
+        "01e27d8d0770-11",
+        "01e27d8d0770-12",
+        "01e27d8d0770-13",
+        "01e27d8d0770-14",
+        "01e27d8d0770-15",
+        "01e27d8d0770-16",
+        "01e27d8d0770-17",
+        "01e27d8d0770-18",
+        "01e27d8d0770-19",
+        "01e27d8d0770-20",
+        "01e27d8d0770-21",
+        "01e27d8d0770-22",
+        "01e27d8d0770-23",
+        "01e27d8d0770-24",
+        "01e27d8d0770-25",
+        "01e27d8d0770-26",
+        "01e27d8d0770-27",
+        "01e27d8d0770-28",
+        "01e27d8d0770-29",
+        "01e27d8d0770-30",
+        "01e27d8d0770-31",
+        "01e27d8d0770-32",
+        "01e27d8d0770-33",
+        "01e27d8d0770-34"
+      ],
+      "source_scope": "public",
+      "source_readiness": "public_registry"
+    },
+    {
+      "link_id": "public-source-6fa5e381478fa20ac273",
+      "canonical_concept_id": "Neural Networks",
+      "canonical_concept_name": "Neural Networks",
+      "resource_id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+      "document_id": "public:8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+      "document_title": "cs224n-2026-lecture03-neuralnets.pdf",
+      "relevance_score": 1.0,
+      "coverage_score": 1.0,
+      "match_method": "neo4j_chroma_reviewed_pages",
+      "match_reason": "Pages 13-14 contrast a linear classifier with a neural classifier and introduce its nonlinear hidden computation.",
+      "review_status": "verified",
+      "coverage_status": "verified_pages_and_resource_chunks",
+      "neo4j_node_status": "present",
+      "neo4j_resource_status": "linked",
+      "source_url": null,
+      "license_status": "needs_source_review",
+      "source_version": "public-concept-source-p1-v1",
+      "created_at": "2026-08-11T20:17:36.471979+00:00",
+      "updated_at": "2026-08-11T20:17:36.471979+00:00",
+      "aliases": [
+        "neural network",
+        "multilayer perceptron",
+        "mlp"
+      ],
+      "page_sequence": [
+        {
+          "page_number": 13,
+          "role": "introduction",
+          "chunk_ids": []
+        },
+        {
+          "page_number": 14,
+          "role": "mechanism",
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": [
+        "8aae94ed0125-1",
+        "8aae94ed0125-2",
+        "8aae94ed0125-3",
+        "8aae94ed0125-4",
+        "8aae94ed0125-5",
+        "8aae94ed0125-6",
+        "8aae94ed0125-7",
+        "8aae94ed0125-8",
+        "8aae94ed0125-9",
+        "8aae94ed0125-10",
+        "8aae94ed0125-11",
+        "8aae94ed0125-12",
+        "8aae94ed0125-13"
+      ],
+      "source_scope": "public",
+      "source_readiness": "public_registry"
+    },
+    {
+      "link_id": "public-source-4c265c6bc768bc80a766",
+      "canonical_concept_id": "canonical:xor",
+      "canonical_concept_name": "XOR",
+      "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+      "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+      "document_title": "06_mlp.pdf",
+      "relevance_score": 1.0,
+      "coverage_score": 1.0,
+      "match_method": "neo4j_chroma_reviewed_pages",
+      "match_reason": "Pages 2-7 form a continuous worked sequence from the XOR problem through a learned nonlinear representation.",
+      "review_status": "verified",
+      "coverage_status": "verified_pages_and_resource_chunks",
+      "neo4j_node_status": "missing",
+      "neo4j_resource_status": "missing_or_id_mismatch",
+      "source_url": null,
+      "license_status": "needs_source_review",
+      "source_version": "public-concept-source-p1-v1",
+      "created_at": "2026-08-11T20:17:36.471979+00:00",
+      "updated_at": "2026-08-11T20:17:36.471979+00:00",
+      "aliases": [
+        "exclusive or",
+        "xor problem",
+        "xor classification"
+      ],
+      "page_sequence": [
+        {
+          "page_number": 2,
+          "role": "introduction",
+          "chunk_ids": []
+        },
+        {
+          "page_number": 3,
+          "role": "problem",
+          "chunk_ids": []
+        },
+        {
+          "page_number": 4,
+          "role": "nonlinearity",
+          "chunk_ids": []
+        },
+        {
+          "page_number": 5,
+          "role": "architecture",
+          "chunk_ids": []
+        },
+        {
+          "page_number": 6,
+          "role": "mechanism",
+          "chunk_ids": []
+        },
+        {
+          "page_number": 7,
+          "role": "worked_example",
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": [
+        "01e27d8d0770-1",
+        "01e27d8d0770-2",
+        "01e27d8d0770-3",
+        "01e27d8d0770-4",
+        "01e27d8d0770-5",
+        "01e27d8d0770-6",
+        "01e27d8d0770-7",
+        "01e27d8d0770-8",
+        "01e27d8d0770-9",
+        "01e27d8d0770-10",
+        "01e27d8d0770-11",
+        "01e27d8d0770-12",
+        "01e27d8d0770-13",
+        "01e27d8d0770-14",
+        "01e27d8d0770-15",
+        "01e27d8d0770-16",
+        "01e27d8d0770-17",
+        "01e27d8d0770-18",
+        "01e27d8d0770-19",
+        "01e27d8d0770-20",
+        "01e27d8d0770-21",
+        "01e27d8d0770-22",
+        "01e27d8d0770-23",
+        "01e27d8d0770-24",
+        "01e27d8d0770-25",
+        "01e27d8d0770-26",
+        "01e27d8d0770-27",
+        "01e27d8d0770-28",
+        "01e27d8d0770-29",
+        "01e27d8d0770-30",
+        "01e27d8d0770-31",
+        "01e27d8d0770-32",
+        "01e27d8d0770-33",
+        "01e27d8d0770-34"
+      ],
+      "source_scope": "public",
+      "source_readiness": "public_registry"
+    }
+  ]
+}

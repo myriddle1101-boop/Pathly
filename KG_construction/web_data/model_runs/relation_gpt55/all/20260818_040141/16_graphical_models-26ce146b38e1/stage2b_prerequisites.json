@@ -1,0 +1,32 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 4,
+  "prerequisites": [
+    {
+      "from": "Graph Theory",
+      "to": "Graph Representations",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding graph concepts and properties is necessary before learning ways to represent graphs."
+    },
+    {
+      "from": "Graph Theory",
+      "to": "Graph Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Graph models rely on graph structures and dependencies, which require graph theory foundations."
+    },
+    {
+      "from": "Graph Representations",
+      "to": "Graph Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Learning graph-based models requires knowing how graph-structured data and relationships can be represented."
+    },
+    {
+      "from": "Training Algorithms",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning depends on optimization methods for training multi-layer neural networks."
+    }
+  ]
+}

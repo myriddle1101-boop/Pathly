@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "01-introduction-to-rag-7cfd7fd31611",
+  "created_at": "2026-07-22T04:00:20+08:00",
+  "updated_at": "2026-07-22T04:03:56+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "01-introduction-to-rag.pdf",
+    "doc_name": "01-introduction-to-rag",
+    "sha256": "7cfd7fd316117255ab11718aa1e83a6c03b9d0edc4490e8699fe63ebdbeec833",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\01-introduction-to-rag.pdf",
+    "pdf_size_bytes": 22415
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 215.8854
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:00:20+08:00",
+      "ended_at": "2026-07-22T04:00:34+08:00",
+      "duration_seconds": 13.9246,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\01-introduction-to-rag.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 1165\n[2] 清洗后词数: 1167\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 5\n[5] 分块数（过滤后）: 5\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=265\nLesson 1: Introduction to RAG What is Retrieval-Augmented Generation? Retrieval-Augmented Generation (RAG) is a technique that combines the power of large language models (LLMs) with external knowledge retrieval. Think o...\n\n[Chunk 2] words=160\nHow RAG Works: The Three-Step Process RAG systems operate in three main steps: Step 1: Indexing (Done Once) Before the system can retrieve information, you need to prepare your knowledge base: 1. Collect documents (PDFs,...\n\n[Chunk 3] words=267\nExample: # User query query = \"How tall is the Eiffel Tower?\" # Convert to embedding query_embedding = [0.25, -0.43, 0.65, ..., 0.15] # Similar to document # Find most similar chunks similar_chunks = vector_db.search(que...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:00:34+08:00",
+      "ended_at": "2026-07-22T04:01:59+08:00",
+      "duration_seconds": 84.6479,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：5\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/5 ...\n[KeyBERT] chunk 2/5 ...\n[KeyBERT] chunk 3/5 ...\n[KeyBERT] chunk 4/5 ...\n[KeyBERT] chunk 5/5 ...\n[2] KeyBERT候选数：30\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Query Embedding\n02. Retrieval-Augmented Generation (RAG)\n03. Information Retrieval Quality\n04. Scalability in Systems\n05. Neural Networks\n06. Training Techniques\n07. Information Access\n08. Relevant Information\n09. Generative Models\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4102.95it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:01:59+08:00",
+      "ended_at": "2026-07-22T04:02:10+08:00",
+      "duration_seconds": 11.2453,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Neural Networks -> Training Techniques | Understanding neural networks is essential for effective training methods.\n02. Information Retrieval Quality -> Retrieval-Augmented Generation (RAG) | Assessing retrieval quality is crucial for enhancing retrieval and generation techniques.\n03. Information Access -> Relevant Information | Effective information access requires the ability to identify relevant information.\n04. Retrieval-Augmented Generation (RAG) -> Generative Models | RAG techniques often utilize generative models for data generation.\n05. Scalability in Systems -> Information Retrieval Quality | Scalability impacts the effectiveness of information retrieval systems.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:02:10+08:00",
+      "ended_at": "2026-07-22T04:03:12+08:00",
+      "duration_seconds": 61.8376,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 1 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Information Access <-> Information Retrieval Quality | sim=0.7821\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5765.63it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:03:12+08:00",
+      "ended_at": "2026-07-22T04:03:52+08:00",
+      "duration_seconds": 39.8939,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Query Embedding\n[LLM] 2/9 Retrieval-Augmented Generation (RAG)\n[LLM] 3/9 Information Retrieval Quality\n[LLM] 4/9 Scalability in Systems\n[LLM] 5/9 Neural Networks\n[LLM] 6/9 Training Techniques\n[LLM] 7/9 Information Access\n[LLM] 8/9 Relevant Information\n[LLM] 9/9 Generative Models\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:03:52+08:00",
+      "ended_at": "2026-07-22T04:03:56+08:00",
+      "duration_seconds": 4.0478,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output present"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 5\n[3] Similarity edges: 1\n[4] Graph nodes=9, edges=6\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-22T04:00:20+08:00"
+}

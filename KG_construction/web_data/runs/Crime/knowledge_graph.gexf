@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-06-21">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Artificial Intelligence" label="Artificial Intelligence">
+        <attvalues>
+          <attvalue for="0" value="The simulation of human intelligence processes by machines." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Machine Learning&quot;, &quot;description&quot;: &quot;A subset of AI focused on algorithms that learn from data.&quot;}, {&quot;name&quot;: &quot;Deep Learning&quot;, &quot;description&quot;: &quot;A type of machine learning using neural networks with many layers.&quot;}, {&quot;name&quot;: &quot;AI Surveillance&quot;, &quot;description&quot;: &quot;The use of AI technologies for monitoring and data collection.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Machine Learning&quot;, &quot;Natural Language Processing&quot;]" />
+          <attvalue for="7" value="[&quot;AI can think like a human&quot;, &quot;AI will replace all jobs&quot;]" />
+          <attvalue for="8" value="[&quot;Virtual assistants&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Cybersecurity" label="Cybersecurity">
+        <attvalues>
+          <attvalue for="0" value="The practice of protecting systems, networks, and programs from digital attacks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Malware Threats&quot;, &quot;description&quot;: &quot;Software designed to disrupt, damage, or gain unauthorized access.&quot;}, {&quot;name&quot;: &quot;Cybercrime&quot;, &quot;description&quot;: &quot;Criminal activities carried out by means of computers or the internet.&quot;}, {&quot;name&quot;: &quot;Cyberattacks&quot;, &quot;description&quot;: &quot;Deliberate exploitation of computer systems and networks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of computer networks and programming concepts." />
+          <attvalue for="6" value="[&quot;Network Security&quot;, &quot;Application Security&quot;, &quot;Information Security&quot;, &quot;Incident Response&quot;]" />
+          <attvalue for="7" value="[&quot;Cybersecurity is only about antivirus software.&quot;, &quot;Only large organizations need cybersecurity.&quot;]" />
+          <attvalue for="8" value="[&quot;Protecting sensitive data in organizations&quot;, &quot;Securing personal devices and networks&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Surveillance Technologies" label="Surveillance Technologies">
+        <attvalues>
+          <attvalue for="0" value="Tools and systems used for monitoring and collecting data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Drones&quot;, &quot;description&quot;: &quot;Unmanned aerial vehicles used for surveillance and data collection.&quot;}, {&quot;name&quot;: &quot;Gigapixel Cameras&quot;, &quot;description&quot;: &quot;High-resolution cameras used for detailed surveillance.&quot;}, {&quot;name&quot;: &quot;Video Drones&quot;, &quot;description&quot;: &quot;Drones equipped with cameras for real-time video monitoring.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data collection methods and privacy concerns." />
+          <attvalue for="6" value="[&quot;Video surveillance&quot;, &quot;Data analytics&quot;, &quot;Facial recognition&quot;, &quot;IoT devices&quot;]" />
+          <attvalue for="7" value="[&quot;Surveillance is only about cameras&quot;, &quot;All surveillance is invasive&quot;]" />
+          <attvalue for="8" value="[&quot;Public safety monitoring&quot;, &quot;Traffic management&quot;, &quot;Retail analytics&quot;, &quot;Home security systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Policing Technologies" label="Policing Technologies">
+        <attvalues>
+          <attvalue for="0" value="Technological tools used by law enforcement agencies." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Predictive Policing&quot;, &quot;description&quot;: &quot;Using data analysis to predict and prevent crime.&quot;}, {&quot;name&quot;: &quot;Policing Tools&quot;, &quot;description&quot;: &quot;Technologies and methods employed in law enforcement.&quot;}, {&quot;name&quot;: &quot;Smart City Technologies&quot;, &quot;description&quot;: &quot;Integrated technologies for urban management and policing.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of law enforcement practices and introductory technology concepts." />
+          <attvalue for="6" value="[&quot;Surveillance technologies&quot;, &quot;Data analytics in policing&quot;]" />
+          <attvalue for="7" value="[&quot;All policing technologies are invasive&quot;, &quot;Policing technologies eliminate the need for human judgment&quot;]" />
+          <attvalue for="8" value="[&quot;Crime prediction and prevention&quot;, &quot;Traffic monitoring and enforcement&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Crime and Media" label="Crime and Media">
+        <attvalues>
+          <attvalue for="0" value="The intersection of crime narratives and media representation." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Media Culture&quot;, &quot;description&quot;: &quot;The influence of media on public perception of crime.&quot;}, {&quot;name&quot;: &quot;Crime Nexus&quot;, &quot;description&quot;: &quot;The interconnectedness of crime and media portrayal.&quot;}, {&quot;name&quot;: &quot;Deep Fakes&quot;, &quot;description&quot;: &quot;AI-generated synthetic media that can misrepresent reality.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of media studies and criminology." />
+          <attvalue for="6" value="[&quot;Media representation of crime&quot;, &quot;Impact of crime narratives on public perception&quot;]" />
+          <attvalue for="7" value="[&quot;Media accurately reflects crime statistics&quot;, &quot;Crime stories are purely fictional&quot;]" />
+          <attvalue for="8" value="[&quot;Analyzing crime reports in media&quot;, &quot;Developing critical thinking about media consumption&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Intelligence in Crime" label="Intelligence in Crime">
+        <attvalues>
+          <attvalue for="0" value="The role of intelligence analysis in understanding and preventing crime." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Crime Rates&quot;, &quot;description&quot;: &quot;Statistical measures of crime occurrences in a given area.&quot;}, {&quot;name&quot;: &quot;Intelligence Gathering&quot;, &quot;description&quot;: &quot;Collecting information to inform law enforcement strategies.&quot;}, {&quot;name&quot;: &quot;Police Cultures&quot;, &quot;description&quot;: &quot;The shared values and practices within law enforcement agencies.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of crime theories and data analysis." />
+          <attvalue for="6" value="[&quot;Data collection methods&quot;, &quot;Predictive policing&quot;, &quot;Crime mapping&quot;, &quot;Behavioral analysis&quot;]" />
+          <attvalue for="7" value="[&quot;Intelligence analysis is only about data&quot;, &quot;All crime can be predicted accurately&quot;]" />
+          <attvalue for="8" value="[&quot;Crime trend analysis&quot;, &quot;Resource allocation for law enforcement&quot;, &quot;Community safety initiatives&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Technological Dystopia" label="Technological Dystopia">
+        <attvalues>
+          <attvalue for="0" value="The potential negative consequences of advanced technologies on society." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Surveillance Campaigns&quot;, &quot;description&quot;: &quot;Coordinated efforts to monitor populations using technology.&quot;}, {&quot;name&quot;: &quot;Smart Speakers&quot;, &quot;description&quot;: &quot;Voice-activated devices that can collect user data.&quot;}, {&quot;name&quot;: &quot;Social Credit Systems&quot;, &quot;description&quot;: &quot;Systems that evaluate individuals based on their behavior.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of technology and its societal impacts." />
+          <attvalue for="6" value="[&quot;Surveillance capitalism&quot;, &quot;AI ethics&quot;, &quot;Digital divide&quot;, &quot;Job displacement&quot;]" />
+          <attvalue for="7" value="[&quot;Technology always leads to progress&quot;, &quot;Dystopian outcomes are unlikely&quot;, &quot;Only science fiction depicts technological dystopias&quot;]" />
+          <attvalue for="8" value="[&quot;Policy development for technology regulation&quot;, &quot;Ethical guidelines for AI development&quot;, &quot;Awareness campaigns on digital rights&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Crime Facilitation" label="Crime Facilitation">
+        <attvalues>
+          <attvalue for="0" value="Factors and technologies that enable or exacerbate criminal activities." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Tech Crime&quot;, &quot;description&quot;: &quot;Crimes that involve technology as a primary tool.&quot;}, {&quot;name&quot;: &quot;Hacking Surveillance&quot;, &quot;description&quot;: &quot;Unauthorized access to surveillance systems.&quot;}, {&quot;name&quot;: &quot;Criminal Bias&quot;, &quot;description&quot;: &quot;Discriminatory practices in law enforcement and justice.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of criminology and technology." />
+          <attvalue for="6" value="[&quot;Cybercrime&quot;, &quot;Social Engineering&quot;]" />
+          <attvalue for="7" value="[&quot;All technology is inherently good.&quot;, &quot;Crime is solely a social issue.&quot;]" />
+          <attvalue for="8" value="[&quot;Developing crime prevention technologies&quot;, &quot;Analyzing crime patterns using data&quot;]" />
+        </attvalues>
+      </node>
+      <node id="AI Ethics" label="AI Ethics">
+        <attvalues>
+          <attvalue for="0" value="The moral implications and responsibilities of AI technologies." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Bias in AI&quot;, &quot;description&quot;: &quot;The presence of prejudice in AI algorithms and data.&quot;}, {&quot;name&quot;: &quot;Accountability in AI&quot;, &quot;description&quot;: &quot;Determining responsibility for AI-driven decisions.&quot;}, {&quot;name&quot;: &quot;Privacy Concerns&quot;, &quot;description&quot;: &quot;Issues related to data protection and individual rights.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of artificial intelligence and its applications." />
+          <attvalue for="6" value="[&quot;Fairness in AI&quot;, &quot;Accountability in AI systems&quot;]" />
+          <attvalue for="7" value="[&quot;AI is inherently unbiased&quot;, &quot;Ethics in AI is only a technical issue&quot;]" />
+          <attvalue for="8" value="[&quot;Developing ethical AI guidelines&quot;, &quot;Implementing fairness audits in AI systems&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Artificial Intelligence" target="AI Ethics" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding AI is necessary to discuss its ethical implications." />
+        </attvalues>
+      </edge>
+      <edge source="Cybersecurity" target="Crime Facilitation" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Knowledge of cybersecurity is essential to understand how technologies can enable crime." />
+        </attvalues>
+      </edge>
+      <edge source="Surveillance Technologies" target="Policing Technologies" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding surveillance technologies is crucial for grasping their application in policing." />
+        </attvalues>
+      </edge>
+      <edge source="Policing Technologies" target="Surveillance Technologies" id="3">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7228" />
+        </attvalues>
+      </edge>
+      <edge source="Intelligence in Crime" target="Crime Facilitation" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Knowledge of intelligence analysis is necessary to understand factors that enable crime." />
+        </attvalues>
+      </edge>
+      <edge source="Technological Dystopia" target="AI Ethics" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding potential negative consequences of technology is important for discussing ethical responsibilities." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,3 @@
+item_type,source_concept,target_concept,canonical_name,decision,notes
+concept,,,Example Concept,include,"Use one canonical English name; add aliases in notes."
+prerequisite,Prerequisite Concept,Target Concept,,include,"Meaning: source_concept must be understood before target_concept."

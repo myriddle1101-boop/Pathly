@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Artificial Neural Networks" label="Artificial Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="A computational model inspired by the way biological neural networks in the human brain process information." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Neurons&quot;, &quot;description&quot;: &quot;Basic units of artificial neural networks that process input and produce output.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neuron based on its input.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, calculus, and programming." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Backpropagation" label="Backpropagation">
+        <attvalues>
+          <attvalue for="0" value="A supervised learning algorithm used for training artificial neural networks by minimizing the error." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Loss Function&quot;, &quot;description&quot;: &quot;A function that measures the difference between predicted and actual outcomes.&quot;}, {&quot;name&quot;: &quot;Gradient Descent&quot;, &quot;description&quot;: &quot;An optimization algorithm used to minimize the loss function during training.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus, linear algebra, and neural networks." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Chain Rule&quot;, &quot;Loss Function&quot;]" />
+          <attvalue for="7" value="[&quot;Backpropagation is the same as training a neural network.&quot;, &quot;It only works for feedforward networks.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Linear Separation" label="Linear Separation">
+        <attvalues>
+          <attvalue for="0" value="A concept in machine learning where data points can be separated by a linear boundary." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linearly Separable&quot;, &quot;description&quot;: &quot;A condition where two classes can be separated by a straight line.&quot;}, {&quot;name&quot;: &quot;Linear Regression&quot;, &quot;description&quot;: &quot;A statistical method for modeling the relationship between a dependent variable and one or more independent variables.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and statistics." />
+          <attvalue for="6" value="[&quot;Hyperplanes&quot;, &quot;Support Vector Machines&quot;]" />
+          <attvalue for="7" value="[&quot;Linear separation is always possible for any dataset.&quot;, &quot;Only two-dimensional data can be linearly separated.&quot;]" />
+          <attvalue for="8" value="[&quot;Binary classification tasks&quot;, &quot;Image recognition&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods and strategies used to train machine learning models effectively." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Supervised Learning&quot;, &quot;description&quot;: &quot;A type of learning where the model is trained on labeled data.&quot;}, {&quot;name&quot;: &quot;Unsupervised Learning&quot;, &quot;description&quot;: &quot;A type of learning where the model is trained on unlabeled data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting and Underfitting&quot;, &quot;Cross-Validation&quot;, &quot;Hyperparameter Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Training and testing data can be mixed&quot;, &quot;Complex models are always better&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Predictive analytics&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="A collection of algorithms that mimic the operations of a human brain to recognize relationships in data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Deep Learning&quot;, &quot;description&quot;: &quot;A subset of machine learning that uses neural networks with many layers.&quot;}, {&quot;name&quot;: &quot;Convolutional Neural Networks&quot;, &quot;description&quot;: &quot;A type of neural network particularly effective for image processing.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Regression Analysis" label="Regression Analysis">
+        <attvalues>
+          <attvalue for="0" value="A statistical process for estimating the relationships among variables." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Regression&quot;, &quot;description&quot;: &quot;A method for modeling the relationship between a scalar response and one or more explanatory variables.&quot;}, {&quot;name&quot;: &quot;Logistic Regression&quot;, &quot;description&quot;: &quot;A statistical method for predicting binary classes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and algebra." />
+          <attvalue for="6" value="[&quot;Linear Regression&quot;, &quot;Multiple Regression&quot;]" />
+          <attvalue for="7" value="[&quot;Regression implies causation&quot;, &quot;All relationships are linear&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting sales based on advertising spend&quot;, &quot;Estimating housing prices based on features&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Classification Techniques" label="Classification Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods used to categorize data into predefined classes." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Support Vector Machines&quot;, &quot;description&quot;: &quot;A supervised learning model that analyzes data for classification.&quot;}, {&quot;name&quot;: &quot;Decision Trees&quot;, &quot;description&quot;: &quot;A model that uses a tree-like graph of decisions and their possible consequences.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Binary Classification&quot;, &quot;Multi-class Classification&quot;, &quot;Evaluation Metrics&quot;, &quot;Overfitting and Underfitting&quot;]" />
+          <attvalue for="7" value="[&quot;Classification is only for binary outcomes&quot;, &quot;More features always improve model performance&quot;]" />
+          <attvalue for="8" value="[&quot;Email spam detection&quot;, &quot;Image recognition&quot;, &quot;Sentiment analysis&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Techniques used to assess the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Cross-Validation&quot;, &quot;description&quot;: &quot;A technique for assessing how the results of a statistical analysis will generalize to an independent data set.&quot;}, {&quot;name&quot;: &quot;Confusion Matrix&quot;, &quot;description&quot;: &quot;A table used to describe the performance of a classification model.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;ROC Curve&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern if the model performs well on training data.&quot;, &quot;All models should be evaluated the same way.&quot;]" />
+          <attvalue for="8" value="[&quot;Comparing different models for a given dataset.&quot;, &quot;Selecting the best model for deployment.&quot;, &quot;Identifying areas for model improvement.&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Optimization Algorithms" label="Optimization Algorithms">
+        <attvalues>
+          <attvalue for="0" value="Methods used to adjust the parameters of a model to minimize the loss function." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Stochastic Gradient Descent&quot;, &quot;description&quot;: &quot;An iterative method for optimizing an objective function.&quot;}, {&quot;name&quot;: &quot;Adam Optimizer&quot;, &quot;description&quot;: &quot;An optimization algorithm that computes adaptive learning rates for each parameter.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and linear algebra, familiarity with machine learning concepts." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Momentum&quot;, &quot;Adam Optimizer&quot;]" />
+          <attvalue for="7" value="[&quot;Optimization is only about finding the minimum.&quot;, &quot;All optimization algorithms converge at the same rate.&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Tuning hyperparameters in machine learning models&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Artificial Neural Networks" target="Backpropagation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Backpropagation is specifically a training algorithm for artificial neural networks, so the network model must be understood first." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Artificial Neural Networks" target="Neural Networks">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.825" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Model Evaluation" target="Training Techniques">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7627" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

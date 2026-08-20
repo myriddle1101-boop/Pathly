@@ -1,0 +1,29 @@
+{
+  "stage": "stage2a",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\quickstart\\007d88a49ebb\\stage1_chunks.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\quickstart\\007d88a49ebb\\stage2a_topics_hybrid.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 50.8594,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2a_topics_hybrid.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：3\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/3 ...\n[KeyBERT] chunk 2/3 ...\n[KeyBERT] chunk 3/3 ...\n[2] KeyBERT候选数：18\n[3] LLM精修完成\n[4] 最终Topic数：17，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\quickstart\\007d88a49ebb\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. core dependencies management\n02. pip dependencies installation\n03. general dependencies overview\n04. print testing methodology\n05. installing requirements from requirements.txt\n06. installing core packages\n07. testing environment setup\n08. create_collection unit test\n09. verify functionality of components\n10. test collection implementation\n11. requirements.txt file structure\n12. using Python sentence_transformers library\n13. creating a virtual environment\n14. quick start guide for setup\n15. activating virtual environment via bin/activate\n\n Stage 2a 混合版完成\n",
+  "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5323.09it/s]\n"
+}

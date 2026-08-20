@@ -1,0 +1,836 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 29,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "gradient descent",
+      "avg_score": 0.7184,
+      "frequency": 4,
+      "chunk_ids": [
+        2,
+        3,
+        5,
+        20
+      ]
+    },
+    {
+      "name": "gradient",
+      "avg_score": 0.6218,
+      "frequency": 4,
+      "chunk_ids": [
+        2,
+        3,
+        5,
+        21
+      ]
+    },
+    {
+      "name": "weights eigenvectors",
+      "avg_score": 0.7273,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "name": "eigenvectors",
+      "avg_score": 0.6809,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "name": "curvature function",
+      "avg_score": 0.6537,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "eigenvalues",
+      "avg_score": 0.6536,
+      "frequency": 2,
+      "chunk_ids": [
+        13,
+        17
+      ]
+    },
+    {
+      "name": "negative curvature",
+      "avg_score": 0.6252,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "optimization",
+      "avg_score": 0.5312,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "name": "descent gradient",
+      "avg_score": 0.8196,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "matrices eigenvalues",
+      "avg_score": 0.7866,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "eigenvalues matrix",
+      "avg_score": 0.7784,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "covariance mean",
+      "avg_score": 0.7721,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "covariance example",
+      "avg_score": 0.7689,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "algebra eigendecomposition",
+      "avg_score": 0.7656,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "decomposed eigenvalues",
+      "avg_score": 0.7516,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "eigenvectors second",
+      "avg_score": 0.7446,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "given eigenvector",
+      "avg_score": 0.7441,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "eigenvalues example",
+      "avg_score": 0.7382,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "covariance gives",
+      "avg_score": 0.7375,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "curvature gradient",
+      "avg_score": 0.737,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "direction gradient",
+      "avg_score": 0.7351,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "values covariance",
+      "avg_score": 0.7331,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "covariance variables",
+      "avg_score": 0.7325,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "covariance linear",
+      "avg_score": 0.7274,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "partial derivative",
+      "avg_score": 0.725,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "correspondi eigenvalue",
+      "avg_score": 0.7218,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "partial derivatives",
+      "avg_score": 0.7186,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "derivatives partial",
+      "avg_score": 0.7184,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "minimizing function",
+      "avg_score": 0.7157,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "gradient points",
+      "avg_score": 0.7105,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "minimizing maximization",
+      "avg_score": 0.7101,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "criterion minimizing",
+      "avg_score": 0.7077,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "points minimum",
+      "avg_score": 0.7044,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "minimum eigenvalue",
+      "avg_score": 0.704,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "computation curvature",
+      "avg_score": 0.7039,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "maximum eigenvalue",
+      "avg_score": 0.7036,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "points critical",
+      "avg_score": 0.7023,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "derivative measures",
+      "avg_score": 0.7019,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "curvature cost",
+      "avg_score": 0.7013,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "accomplished minimization",
+      "avg_score": 0.7003,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "eigenvector second",
+      "avg_score": 0.6978,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "algorithm minimizing",
+      "avg_score": 0.6977,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "negative gradient",
+      "avg_score": 0.6956,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "minimization",
+      "avg_score": 0.6911,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "determines curvature",
+      "avg_score": 0.6902,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "series approximation",
+      "avg_score": 0.6876,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "computation stabilized",
+      "avg_score": 0.6852,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "training time",
+      "avg_score": 0.6839,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "learning gradient",
+      "avg_score": 0.6829,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "critical points",
+      "avg_score": 0.6759,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "points surrounded",
+      "avg_score": 0.6717,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "point optimal",
+      "avg_score": 0.6692,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "derivative",
+      "avg_score": 0.6683,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "gradient bigger",
+      "avg_score": 0.6673,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "eigenvectors smaller",
+      "avg_score": 0.6628,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "points maxima",
+      "avg_score": 0.6601,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "derivatives denoted",
+      "avg_score": 0.6587,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "gradient large",
+      "avg_score": 0.6556,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "eigenvalue determines",
+      "avg_score": 0.6475,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "learning optimization",
+      "avg_score": 0.6422,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "subspaces rotated",
+      "avg_score": 0.6302,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "underflow log",
+      "avg_score": 0.6302,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "log negative",
+      "avg_score": 0.6289,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "inactive convergence",
+      "avg_score": 0.6269,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "curvature information",
+      "avg_score": 0.6261,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "stationary points",
+      "avg_score": 0.6229,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "large approximation",
+      "avg_score": 0.6216,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "point lower",
+      "avg_score": 0.6211,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "point convergence",
+      "avg_score": 0.6197,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "inf log",
+      "avg_score": 0.6195,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "curvature direction",
+      "avg_score": 0.6152,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "direction curvature",
+      "avg_score": 0.6151,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "precision deep",
+      "avg_score": 0.6113,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "eries approximation",
+      "avg_score": 0.6098,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "logsumexp compute",
+      "avg_score": 0.6094,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "training process",
+      "avg_score": 0.609,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "training deep",
+      "avg_score": 0.6057,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "stationary point",
+      "avg_score": 0.6037,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "safe_logits logits",
+      "avg_score": 0.6033,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "descent elongated",
+      "avg_score": 0.6016,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Gradient Descent",
+      "description": "A fundamental optimization algorithm used to minimize functions.",
+      "sub_topics": [
+        {
+          "name": "Negative Gradient",
+          "description": "The direction of steepest descent in optimization."
+        },
+        {
+          "name": "Curvature Function",
+          "description": "Measures the curvature of the loss function."
+        },
+        {
+          "name": "Learning Rate",
+          "description": "Controls the step size during optimization."
+        }
+      ]
+    },
+    {
+      "name": "Eigenvalues and Eigenvectors",
+      "description": "Key concepts in linear algebra used in various machine learning algorithms.",
+      "sub_topics": [
+        {
+          "name": "Eigendecomposition",
+          "description": "The process of decomposing a matrix into its eigenvalues and eigenvectors."
+        },
+        {
+          "name": "Covariance Matrix",
+          "description": "A matrix that describes the variance and correlation between variables."
+        },
+        {
+          "name": "Principal Component Analysis",
+          "description": "A technique that uses eigenvalues and eigenvectors for dimensionality reduction."
+        }
+      ]
+    },
+    {
+      "name": "Optimization Techniques",
+      "description": "Methods used to find the best parameters for machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Minimization",
+          "description": "The process of finding the minimum value of a function."
+        },
+        {
+          "name": "Maximization",
+          "description": "The process of finding the maximum value of a function."
+        },
+        {
+          "name": "Convergence Criteria",
+          "description": "Conditions that determine when an optimization algorithm should stop."
+        }
+      ]
+    },
+    {
+      "name": "Curvature Analysis",
+      "description": "The study of the curvature of functions to understand optimization landscapes.",
+      "sub_topics": [
+        {
+          "name": "Negative Curvature",
+          "description": "Indicates a local maximum in the optimization landscape."
+        },
+        {
+          "name": "Curvature Gradient",
+          "description": "The gradient of the curvature function."
+        },
+        {
+          "name": "Stationary Points",
+          "description": "Points where the gradient is zero, indicating potential minima or maxima."
+        }
+      ]
+    },
+    {
+      "name": "Partial Derivatives",
+      "description": "Derivatives of functions with respect to one variable while keeping others constant.",
+      "sub_topics": [
+        {
+          "name": "Gradient Vector",
+          "description": "A vector of partial derivatives indicating the direction of steepest ascent."
+        },
+        {
+          "name": "Critical Points",
+          "description": "Points where the gradient is zero or undefined."
+        }
+      ]
+    },
+    {
+      "name": "Training Neural Networks",
+      "description": "The process of adjusting the weights of a neural network to minimize loss.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by propagating errors backward."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that introduce non-linearity into neural networks."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual values."
+        }
+      ]
+    },
+    {
+      "name": "Regression and Classification",
+      "description": "Supervised learning tasks that involve predicting continuous or categorical outcomes.",
+      "sub_topics": [
+        {
+          "name": "Linear Regression",
+          "description": "A method for modeling the relationship between a dependent variable and one or more independent variables."
+        },
+        {
+          "name": "Logistic Regression",
+          "description": "A statistical method for binary classification."
+        }
+      ]
+    },
+    {
+      "name": "Matrix Operations",
+      "description": "Fundamental operations involving matrices used in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Matrix Multiplication",
+          "description": "An operation that produces a new matrix from two matrices."
+        },
+        {
+          "name": "Covariance Calculation",
+          "description": "The process of calculating the covariance between variables."
+        }
+      ]
+    },
+    {
+      "name": "Training Process",
+      "description": "The overall procedure of training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Training Time",
+          "description": "The duration required to train a model."
+        },
+        {
+          "name": "Overfitting",
+          "description": "A scenario where a model learns noise instead of the underlying pattern."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 24.1411,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

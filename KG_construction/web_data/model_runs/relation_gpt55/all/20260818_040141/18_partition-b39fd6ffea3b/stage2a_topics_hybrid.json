@@ -1,0 +1,514 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 9,
+  "candidate_count": 42,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "undirected models",
+      "avg_score": 0.54,
+      "frequency": 3,
+      "chunk_ids": [
+        4,
+        6,
+        9
+      ]
+    },
+    {
+      "name": "log likelihood",
+      "avg_score": 0.6963,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "likelihood gradient",
+      "avg_score": 0.6572,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "likelihood particularly",
+      "avg_score": 0.5909,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "model samples",
+      "avg_score": 0.5868,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        9
+      ]
+    },
+    {
+      "name": "likelihood",
+      "avg_score": 0.583,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "maximum likelihood",
+      "avg_score": 0.569,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "positive phase",
+      "avg_score": 0.5465,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        7
+      ]
+    },
+    {
+      "name": "models",
+      "avg_score": 0.4869,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        9
+      ]
+    },
+    {
+      "name": "likelihood log",
+      "avg_score": 0.6969,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "probabilistic models",
+      "avg_score": 0.668,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning algorithm",
+      "avg_score": 0.5946,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "algorithms positive",
+      "avg_score": 0.5775,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "probabilistic",
+      "avg_score": 0.5769,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "using model",
+      "avg_score": 0.5761,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "unnormalized probability",
+      "avg_score": 0.568,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "negative phase",
+      "avg_score": 0.5633,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "model data",
+      "avg_score": 0.563,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "samples slow",
+      "avg_score": 0.5568,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "generate model",
+      "avg_score": 0.5448,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "regularity conditions",
+      "avg_score": 0.5432,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "phase negative",
+      "avg_score": 0.541,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "energy samples",
+      "avg_score": 0.5391,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "phase sample",
+      "avg_score": 0.532,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "gradient log",
+      "avg_score": 0.5318,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "model distribution",
+      "avg_score": 0.5295,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "model",
+      "avg_score": 0.5219,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "probability states",
+      "avg_score": 0.5216,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "probability distribution",
+      "avg_score": 0.5129,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "burned gradient",
+      "avg_score": 0.5093,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "energy function",
+      "avg_score": 0.4999,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "learning algorithms",
+      "avg_score": 0.4982,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "energy training",
+      "avg_score": 0.486,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "models minibatch",
+      "avg_score": 0.4853,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "machine learning",
+      "avg_score": 0.4845,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "mcmc algorithm",
+      "avg_score": 0.4826,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "challenge model",
+      "avg_score": 0.4638,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "compute burning",
+      "avg_score": 0.4637,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "models usually",
+      "avg_score": 0.4586,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "algorithm cost",
+      "avg_score": 0.4558,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "algorithm 18",
+      "avg_score": 0.4544,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "alternative algorithm",
+      "avg_score": 0.4474,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Likelihood Models",
+      "description": "Concepts related to likelihood in statistical modeling.",
+      "sub_topics": [
+        {
+          "name": "Maximum Likelihood",
+          "description": "A method for estimating the parameters of a statistical model."
+        },
+        {
+          "name": "Log Likelihood",
+          "description": "The logarithm of the likelihood function, often used for optimization."
+        },
+        {
+          "name": "Likelihood Gradient",
+          "description": "The gradient of the likelihood function, used in optimization algorithms."
+        }
+      ]
+    },
+    {
+      "name": "Probabilistic Models",
+      "description": "Models that incorporate randomness and uncertainty in predictions.",
+      "sub_topics": [
+        {
+          "name": "Undirected Models",
+          "description": "Models that do not have a directed relationship between variables."
+        },
+        {
+          "name": "Energy Function",
+          "description": "A function that represents the energy of a system in probabilistic models."
+        }
+      ]
+    },
+    {
+      "name": "Training Algorithms",
+      "description": "Algorithms used to train machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Learning Algorithm",
+          "description": "A method for adjusting model parameters based on data."
+        },
+        {
+          "name": "MCMC Algorithm",
+          "description": "Markov Chain Monte Carlo, a method for sampling from probability distributions."
+        }
+      ]
+    },
+    {
+      "name": "Model Sampling",
+      "description": "Techniques for generating samples from a model.",
+      "sub_topics": [
+        {
+          "name": "Positive Phase",
+          "description": "The phase in sampling where positive samples are generated."
+        },
+        {
+          "name": "Negative Phase",
+          "description": "The phase in sampling where negative samples are generated."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Methods for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Loss Function",
+          "description": "A function that quantifies the difference between predicted and actual values."
+        },
+        {
+          "name": "Regularity Conditions",
+          "description": "Conditions that ensure the stability and convergence of algorithms."
+        }
+      ]
+    },
+    {
+      "name": "Data Representation",
+      "description": "Ways to represent data for machine learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Probability Distribution",
+          "description": "A function that describes the likelihood of different outcomes."
+        },
+        {
+          "name": "Model Distribution",
+          "description": "The distribution of data as represented by a model."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": [
+        {
+          "name": "Activation Function",
+          "description": "A function that determines the output of a neuron."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing the loss function."
+        }
+      ]
+    },
+    {
+      "name": "Regression and Classification",
+      "description": "Techniques for predicting continuous and categorical outcomes.",
+      "sub_topics": [
+        {
+          "name": "Linear Separation",
+          "description": "The ability to separate classes using a linear boundary."
+        },
+        {
+          "name": "Model Data",
+          "description": "The process of fitting a model to data for prediction."
+        }
+      ]
+    },
+    {
+      "name": "Algorithm Optimization",
+      "description": "Techniques for improving the performance of algorithms.",
+      "sub_topics": [
+        {
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm used to minimize the loss function."
+        },
+        {
+          "name": "Burned Gradient",
+          "description": "A technique related to gradient optimization in training."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 20.3329,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

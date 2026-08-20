@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-08-19">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Autoencoders" label="Autoencoders">
+        <attvalues>
+          <attvalue for="0" value="A type of artificial neural network used for unsupervised learning tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Denoising Autoencoders&quot;, &quot;description&quot;: &quot;Autoencoders designed to remove noise from input data.&quot;}, {&quot;name&quot;: &quot;Contractive Autoencoders&quot;, &quot;description&quot;: &quot;Autoencoders that enforce a contractive penalty on the learned representation.&quot;}, {&quot;name&quot;: &quot;Sparse Autoencoders&quot;, &quot;description&quot;: &quot;Autoencoders that impose sparsity constraints on the hidden layer.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and linear algebra." />
+          <attvalue for="6" value="[&quot;Encoder&quot;, &quot;Decoder&quot;, &quot;Latent Space&quot;, &quot;Reconstruction Loss&quot;]" />
+          <attvalue for="7" value="[&quot;Autoencoders are only for image data.&quot;, &quot;They can only be used for dimensionality reduction.&quot;]" />
+          <attvalue for="8" value="[&quot;Image denoising&quot;, &quot;Anomaly detection&quot;, &quot;Data compression&quot;, &quot;Feature learning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Manifold Learning" label="Manifold Learning">
+        <attvalues>
+          <attvalue for="0" value="A set of techniques for learning low-dimensional representations of high-dimensional data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Tangent Hyperplane&quot;, &quot;description&quot;: &quot;A linear approximation of a manifold at a given point.&quot;}, {&quot;name&quot;: &quot;Manifold Representation&quot;, &quot;description&quot;: &quot;The representation of data points in a lower-dimensional manifold.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and statistics." />
+          <attvalue for="6" value="[&quot;Dimensionality Reduction&quot;, &quot;Nonlinear Manifolds&quot;]" />
+          <attvalue for="7" value="[&quot;Manifold learning is only for image data.&quot;, &quot;It always requires labeled data.&quot;]" />
+          <attvalue for="8" value="[&quot;Data visualization&quot;, &quot;Preprocessing for machine learning models&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Learning Algorithms" label="Learning Algorithms">
+        <attvalues>
+          <attvalue for="0" value="Methods and techniques used to train models in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Stochastic Autoencoders&quot;, &quot;description&quot;: &quot;Autoencoders that incorporate stochastic elements in their architecture.&quot;}, {&quot;name&quot;: &quot;Score Matching&quot;, &quot;description&quot;: &quot;A technique for estimating the parameters of probabilistic models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;, &quot;Model Evaluation&quot;]" />
+          <attvalue for="7" value="[&quot;All algorithms work equally well for every problem.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Network Components" label="Neural Network Components">
+        <attvalues>
+          <attvalue for="0" value="Key elements that make up neural networks and their functionality." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Decoder&quot;, &quot;description&quot;: &quot;The part of an autoencoder that reconstructs the input from the encoded representation.&quot;}, {&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neuron given an input.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus." />
+          <attvalue for="6" value="[&quot;Neurons&quot;, &quot;Activation Functions&quot;, &quot;Layers&quot;, &quot;Weights and Biases&quot;, &quot;Loss Function&quot;]" />
+          <attvalue for="7" value="[&quot;Neurons are biological replicas&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods used to optimize the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing the loss function.&quot;}, {&quot;name&quot;: &quot;Loss Function&quot;, &quot;description&quot;: &quot;A function that quantifies the difference between predicted and actual outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting and Underfitting&quot;, &quot;Cross-Validation&quot;, &quot;Hyperparameter Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Training and testing data can be mixed&quot;, &quot;Complex models are always better&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Predictive analytics&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Reconstruction" label="Data Reconstruction">
+        <attvalues>
+          <attvalue for="0" value="The process of reconstructing original data from its compressed representation." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Input Reconstruction&quot;, &quot;description&quot;: &quot;The task of reconstructing the original input from the encoded representation.&quot;}, {&quot;name&quot;: &quot;Reconstructed Input&quot;, &quot;description&quot;: &quot;The output generated by the decoder in an autoencoder.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data representation and compression techniques." />
+          <attvalue for="6" value="[&quot;Compression algorithms&quot;, &quot;Lossy vs Lossless reconstruction&quot;]" />
+          <attvalue for="7" value="[&quot;Reconstruction always retains original quality&quot;, &quot;Data reconstruction is only applicable to images&quot;]" />
+          <attvalue for="8" value="[&quot;Image and video compression&quot;, &quot;Audio signal processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Autoencoder Variants" label="Autoencoder Variants">
+        <attvalues>
+          <attvalue for="0" value="Different types of autoencoders designed for specific tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Overcomplete Autoencoders&quot;, &quot;description&quot;: &quot;Autoencoders with more hidden units than input dimensions.&quot;}, {&quot;name&quot;: &quot;Undercomplete Autoencoders&quot;, &quot;description&quot;: &quot;Autoencoders with fewer hidden units than input dimensions.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and unsupervised learning." />
+          <attvalue for="6" value="[&quot;Denoising Autoencoders&quot;, &quot;Variational Autoencoders&quot;, &quot;Sparse Autoencoders&quot;, &quot;Contractive Autoencoders&quot;]" />
+          <attvalue for="7" value="[&quot;All autoencoders are the same&quot;, &quot;Autoencoders can only be used for dimensionality reduction&quot;]" />
+          <attvalue for="8" value="[&quot;Image denoising&quot;, &quot;Anomaly detection&quot;, &quot;Data compression&quot;, &quot;Generative modeling&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Coordinate Systems" label="Coordinate Systems">
+        <attvalues>
+          <attvalue for="0" value="Frameworks for representing data points in a multi-dimensional space." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Global Coordinate&quot;, &quot;description&quot;: &quot;A coordinate system that encompasses the entire data space.&quot;}, {&quot;name&quot;: &quot;Euclidean Coordinate&quot;, &quot;description&quot;: &quot;A standard coordinate system based on Euclidean geometry.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algebra and geometry." />
+          <attvalue for="6" value="[&quot;Cartesian coordinates&quot;, &quot;Polar coordinates&quot;, &quot;Homogeneous coordinates&quot;]" />
+          <attvalue for="7" value="[&quot;All coordinate systems are the same&quot;, &quot;Only 2D coordinate systems exist&quot;]" />
+          <attvalue for="8" value="[&quot;Data visualization&quot;, &quot;Machine learning algorithms&quot;, &quot;Computer graphics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Techniques for assessing the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Classification Accuracy&quot;, &quot;description&quot;: &quot;A metric that measures the proportion of correct predictions.&quot;}, {&quot;name&quot;: &quot;Likelihood Score&quot;, &quot;description&quot;: &quot;A measure of how well a model explains the observed data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;ROC Curve&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern if the model performs well on training data.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating classification models in healthcare.&quot;, &quot;Assessing predictive models in finance.&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Autoencoders" target="Autoencoder Variants" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Variants build directly on the basic autoencoder concept." />
+        </attvalues>
+      </edge>
+      <edge source="Learning Algorithms" target="Autoencoders" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding how models are trained is necessary before learning autoencoders as trainable neural models." />
+        </attvalues>
+      </edge>
+      <edge source="Learning Algorithms" target="Training Techniques" id="2">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.8366" />
+        </attvalues>
+      </edge>
+      <edge source="Learning Algorithms" target="Model Evaluation" id="3">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7431" />
+        </attvalues>
+      </edge>
+      <edge source="Neural Network Components" target="Autoencoders" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Autoencoders are neural networks, so core neural network elements must be understood first." />
+        </attvalues>
+      </edge>
+      <edge source="Training Techniques" target="Autoencoders" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Learning autoencoders requires understanding optimization and training methods used to fit them." />
+        </attvalues>
+      </edge>
+      <edge source="Model Evaluation" target="Training Techniques" id="6">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7989" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

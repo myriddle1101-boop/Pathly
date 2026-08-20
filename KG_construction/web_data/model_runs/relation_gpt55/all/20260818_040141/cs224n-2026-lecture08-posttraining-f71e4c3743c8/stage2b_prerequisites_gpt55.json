@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Pretraining Techniques",
+      "to": "Fine-tuning Methods",
+      "relation_type": "strong_prerequisite",
+      "reason": "Fine-tuning adapts pretrained models, so understanding pretraining is needed first."
+    }
+  ]
+}

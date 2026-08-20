@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\02_linear_algebra.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 7.4056,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 12039\n[2] 清洗后词数: 12219\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 60\n[5] 分块数（过滤后）: 52\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=74\nLinear Algebra Lecture slides for Chapter 2 of Deep Learning Ian Goodfellow 2016-06-24 About this chapter Not a comprehensive survey of all of linear algebra  Focused on the subset most relevant to deep  learning Large...\n\n[Chunk 2] words=262\nCHAPTER 2. LINEAR ALGEBRA s example, we might say “Let be the slope of the line,” while defining a R CHAPTER 2. LINEAR ALGEBRA 2 n real-valued scalar, or “Let be the number of units,” while defining a N example, we might...\n\n[Chunk 3] words=276\nThe elements of the vector are identified by writing its name in italic x 1 x 2 2 3 x = . (2.1) . x x typeface,. with a subscript. The first element of is , the second element . 1 6 7 6 x 7 n 6 7 4 5 x is and so on. We a...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-understanding-embeddings\\2a611584541b",
+  "run_id": "02-understanding-embeddings-2a611584541b",
+  "model": "gpt-5.4",
+  "created_at": "2026-08-18T18:32:04.979137+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "8fd74b02a142b7fab395271f98798502529f1eaeac0af33e5f990f4a7685f406",
+    "stage2a_topics_hybrid.json": "d82629b0f32fd3291b767e78da2a0c84d5b417a34a4e9f01c290d1df138e5ce8",
+    "stage2c_similarity_edges.json": "21f9498731e7842fe3d4ef91ea3b4294d465298ffcb785213814755c33792b38",
+    "stage3_topics_with_summary.json": "e90d7c9b7900b81a5bf0fc9f94eda91268b73f53338860b0e250d3021efec4d2"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 4,
+  "new_node_count": 9,
+  "new_edge_count": 4,
+  "golden_path_resource": false
+}

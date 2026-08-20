@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-08-18">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="convolutional kernels in image processing" label="convolutional kernels in image processing">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: convolutional kernels in image processing" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and image processing concepts." />
+          <attvalue for="6" value="[&quot;Convolution operation&quot;, &quot;Kernel size and shape&quot;, &quot;Feature extraction&quot;, &quot;Stride and padding&quot;]" />
+          <attvalue for="7" value="[&quot;Kernels only detect edges&quot;, &quot;Convolution is the same as correlation&quot;]" />
+          <attvalue for="8" value="[&quot;Image filtering&quot;, &quot;Object detection&quot;, &quot;Image classification&quot;, &quot;Facial recognition&quot;]" />
+        </attvalues>
+      </node>
+      <node id="deep learning architectures and applications" label="deep learning architectures and applications">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: deep learning architectures and applications" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and neural networks." />
+          <attvalue for="6" value="[&quot;Convolutional Neural Networks (CNNs)&quot;, &quot;Recurrent Neural Networks (RNNs)&quot;]" />
+          <attvalue for="7" value="[&quot;Deep learning is the same as machine learning.&quot;, &quot;More layers always mean better performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="learning whynotusea in neural networks" label="learning whynotusea in neural networks">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: learning whynotusea in neural networks" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and machine learning principles." />
+          <attvalue for="6" value="[&quot;Activation functions&quot;, &quot;Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks always require large datasets&quot;, &quot;More layers always improve performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="feature selection techniques in learning models" label="feature selection techniques in learning models">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: feature selection techniques in learning models" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and statistics." />
+          <attvalue for="6" value="[&quot;Filter methods&quot;, &quot;Wrapper methods&quot;, &quot;Embedded methods&quot;]" />
+          <attvalue for="7" value="[&quot;Feature selection is the same as feature extraction&quot;, &quot;More features always lead to better model performance&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model accuracy&quot;, &quot;Reducing overfitting&quot;, &quot;Enhancing model interpretability&quot;]" />
+        </attvalues>
+      </node>
+      <node id="neural networks and their training methodologies" label="neural networks and their training methodologies">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: neural networks and their training methodologies" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and activation functions&quot;, &quot;Backpropagation and optimization algorithms&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="groups of neurons and their functional roles" label="groups of neurons and their functional roles">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: groups of neurons and their functional roles" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and biological neuron functions." />
+          <attvalue for="6" value="[&quot;Neuron types (excitatory, inhibitory)&quot;, &quot;Neural circuits and their roles in processing information&quot;]" />
+          <attvalue for="7" value="[&quot;All neurons function the same way&quot;, &quot;Groups of neurons do not interact with each other&quot;]" />
+          <attvalue for="8" value="[&quot;Neural network design in AI&quot;, &quot;Understanding brain functions in neuroscience&quot;]" />
+        </attvalues>
+      </node>
+      <node id="learning pooling strategies in convolutional networks" label="learning pooling strategies in convolutional networks">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: learning pooling strategies in convolutional networks" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and convolutional layers." />
+          <attvalue for="6" value="[&quot;Max Pooling&quot;, &quot;Average Pooling&quot;, &quot;Global Pooling&quot;, &quot;Strided Convolutions&quot;]" />
+          <attvalue for="7" value="[&quot;Pooling layers reduce the amount of information too much.&quot;, &quot;Pooling is only used for downsampling.&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Object detection&quot;, &quot;Feature extraction in CNNs&quot;]" />
+        </attvalues>
+      </node>
+      <node id="convolutional layer design and optimization" label="convolutional layer design and optimization">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: convolutional layer design and optimization" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and linear algebra." />
+          <attvalue for="6" value="[&quot;Filter design&quot;, &quot;Stride and padding&quot;, &quot;Activation functions&quot;, &quot;Pooling layers&quot;]" />
+          <attvalue for="7" value="[&quot;Convolutional layers only detect edges&quot;, &quot;More filters always improve performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Object detection&quot;, &quot;Facial recognition&quot;, &quot;Medical image analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="whynotusea in the context of LNNs" label="whynotusea in the context of LNNs">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: whynotusea in the context of LNNs" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and logic programming." />
+          <attvalue for="6" value="[&quot;Logic Neural Networks (LNNs)&quot;, &quot;Reasoning with LNNs&quot;]" />
+          <attvalue for="7" value="[&quot;LNNs are the same as traditional neural networks&quot;, &quot;LNNs cannot handle uncertainty&quot;]" />
+          <attvalue for="8" value="[&quot;Automated reasoning systems&quot;, &quot;Knowledge representation in AI&quot;]" />
+        </attvalues>
+      </node>
+      <node id="specific examples of learning applications" label="specific examples of learning applications">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: specific examples of learning applications" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning principles and terminology." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning can solve any problem without data.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition in social media platforms&quot;, &quot;Recommendation systems in e-commerce&quot;]" />
+        </attvalues>
+      </node>
+      <node id="learning lectures on advanced neural network topics" label="learning lectures on advanced neural network topics">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: learning lectures on advanced neural network topics" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and machine learning principles." />
+          <attvalue for="6" value="[&quot;Convolutional Neural Networks (CNNs)&quot;, &quot;Recurrent Neural Networks (RNNs)&quot;, &quot;Transfer Learning&quot;, &quot;Generative Adversarial Networks (GANs)&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks always require large datasets&quot;, &quot;More layers always lead to better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Autonomous vehicles&quot;, &quot;Game AI&quot;]" />
+        </attvalues>
+      </node>
+      <node id="practical comments on implementing learning algorithms" label="practical comments on implementing learning algorithms">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: practical comments on implementing learning algorithms" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and programming skills in Python." />
+          <attvalue for="6" value="[&quot;Hyperparameter tuning&quot;, &quot;Model evaluation techniques&quot;]" />
+          <attvalue for="7" value="[&quot;More complex models always perform better&quot;, &quot;Overfitting is only a problem for large datasets&quot;]" />
+          <attvalue for="8" value="[&quot;Predictive modeling in business&quot;, &quot;Image classification tasks&quot;]" />
+        </attvalues>
+      </node>
+      <node id="kernels example in machine learning contexts" label="kernels example in machine learning contexts">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: kernels example in machine learning contexts" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and introductory machine learning concepts." />
+          <attvalue for="6" value="[&quot;Kernel functions&quot;, &quot;Support Vector Machines (SVM)&quot;, &quot;Gaussian Processes&quot;, &quot;Feature space transformation&quot;]" />
+          <attvalue for="7" value="[&quot;Kernels only apply to SVMs&quot;, &quot;Kernels are only for non-linear problems&quot;, &quot;All kernels are the same&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Text classification&quot;, &quot;Anomaly detection&quot;, &quot;Regression tasks&quot;]" />
+        </attvalues>
+      </node>
+      <node id="foundational concepts in learning theory" label="foundational concepts in learning theory">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: foundational concepts in learning theory" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting&quot;, &quot;Bias-Variance Tradeoff&quot;]" />
+          <attvalue for="7" value="[&quot;Learning theory is only about algorithms.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Model evaluation and selection&quot;, &quot;Understanding generalization in machine learning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="analyzing image data with LNNs and potential losses" label="analyzing image data with LNNs and potential losses">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: analyzing image data with LNNs and potential losses" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and neural networks, familiarity with image processing concepts." />
+          <attvalue for="6" value="[&quot;Local Neural Networks (LNNs)&quot;, &quot;Loss functions for image data&quot;]" />
+          <attvalue for="7" value="[&quot;LNNs are the same as CNNs&quot;, &quot;Loss functions only measure accuracy&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Object detection in images&quot;]" />
+        </attvalues>
+      </node>
+      <node id="whynotusea as a critique of existing models" label="whynotusea as a critique of existing models">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: whynotusea as a critique of existing models" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and model evaluation." />
+          <attvalue for="6" value="[&quot;Model evaluation metrics&quot;, &quot;Bias-variance tradeoff&quot;]" />
+          <attvalue for="7" value="[&quot;All models are equally valid&quot;, &quot;Critiquing a model means it is unusable&quot;]" />
+          <attvalue for="8" value="[&quot;Improving existing models&quot;, &quot;Identifying gaps in model performance&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="convolutional kernels in image processing" target="convolutional layer design and optimization" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="understanding convolutional kernels is crucial for designing and optimizing layers" />
+        </attvalues>
+      </edge>
+      <edge source="learning whynotusea in neural networks" target="neural networks and their training methodologies" id="1">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.744" />
+        </attvalues>
+      </edge>
+      <edge source="neural networks and their training methodologies" target="deep learning architectures and applications" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="knowledge of neural networks is essential for understanding deep learning architectures" />
+        </attvalues>
+      </edge>
+      <edge source="learning pooling strategies in convolutional networks" target="convolutional layer design and optimization" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="pooling strategies are integral to the design and optimization of convolutional layers" />
+        </attvalues>
+      </edge>
+      <edge source="whynotusea in the context of LNNs" target="whynotusea as a critique of existing models" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="understanding whynotusea in LNNs is necessary to critique existing models" />
+        </attvalues>
+      </edge>
+      <edge source="learning lectures on advanced neural network topics" target="neural networks and their training methodologies" id="5">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7752" />
+        </attvalues>
+      </edge>
+      <edge source="learning lectures on advanced neural network topics" target="learning whynotusea in neural networks" id="6">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7358" />
+        </attvalues>
+      </edge>
+      <edge source="foundational concepts in learning theory" target="feature selection techniques in learning models" id="7">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="understanding foundational concepts is necessary for grasping feature selection" />
+        </attvalues>
+      </edge>
+      <edge source="analyzing image data with LNNs and potential losses" target="deep learning architectures and applications" id="8">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="analyzing image data is a key application of deep learning architectures" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e",
+  "run_id": "07_regularization-997097d7933e",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:00:54.651068+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "b7a6baadb63c19e565ff21f1c1ffa9b0193f7c64d4e6aca155fe86fa2528d90b",
+    "stage2a_topics_hybrid.json": "93a1a375fca5cb533885d1e0f6abf946ef273701a70c54ef558bb8b920ed9678",
+    "stage2c_similarity_edges.json": "330d230eeed201841ea9382b6812e79f9bf9c387a7a70e3bb43afba23862417e",
+    "stage3_topics_with_summary.json": "05253fe35bcc7a3f61bdc1263979bfb7245a0b3dbd8e0e83ceae2c9086973c26"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

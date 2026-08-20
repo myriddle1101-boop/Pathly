@@ -1,0 +1,325 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 9,
+  "candidate_count": 23,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "gluecode",
+      "avg_score": 0.7497,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "abstraction boundaries",
+      "avg_score": 0.7352,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "gluecode itmay",
+      "avg_score": 0.732,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "glue code",
+      "avg_score": 0.7245,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "smells insoftwareengineering",
+      "avg_score": 0.7141,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "reproducibility debt",
+      "avg_score": 0.7062,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "packages glue",
+      "avg_score": 0.7,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "95 gluecode",
+      "avg_score": 0.6906,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "prototype smell",
+      "avg_score": 0.6624,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "ml smells",
+      "avg_score": 0.6392,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "debt asscientists",
+      "avg_score": 0.6322,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "strict abstraction",
+      "avg_score": 0.6102,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "common smells",
+      "avg_score": 0.6098,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "strong abstraction",
+      "avg_score": 0.6065,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "machine learning",
+      "avg_score": 0.5489,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "mlsystemsiscomposedofthe mlcode",
+      "avg_score": 0.5334,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "references ananthanarayanan",
+      "avg_score": 0.5065,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "debt machine",
+      "avg_score": 0.4902,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "technical debt",
+      "avg_score": 0.4809,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "ryabkov singh",
+      "avg_score": 0.4788,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "research 14",
+      "avg_score": 0.4574,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "kalyanaraman projectadam",
+      "avg_score": 0.4513,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "sigkdd international",
+      "avg_score": 0.4435,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Technical Debt",
+      "description": "Challenges in software development that hinder progress and maintainability.",
+      "sub_topics": [
+        {
+          "name": "Reproducibility Debt",
+          "description": "Issues that arise when experiments cannot be reliably reproduced."
+        },
+        {
+          "name": "Glue Code",
+          "description": "Code that connects different software components but may reduce clarity."
+        },
+        {
+          "name": "Common Smells",
+          "description": "Indicators of potential problems in software design and implementation."
+        }
+      ]
+    },
+    {
+      "name": "Abstraction Boundaries",
+      "description": "Concepts that define the limits of abstraction in software systems.",
+      "sub_topics": [
+        {
+          "name": "Strict Abstraction",
+          "description": "Clear separation of concerns in software architecture."
+        },
+        {
+          "name": "Strong Abstraction",
+          "description": "High-level representations that simplify complex systems."
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning Smells",
+      "description": "Common pitfalls and issues in machine learning projects.",
+      "sub_topics": [
+        {
+          "name": "Prototype Smell",
+          "description": "Indicators that a machine learning model is not well-structured."
+        },
+        {
+          "name": "ML Systems Composition",
+          "description": "Understanding how different components of ML systems interact."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": [
+        {
+          "name": "Activation Function",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "Algorithm for training neural networks by minimizing error."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Metrics used to evaluate the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Regression Loss",
+          "description": "Loss functions used for regression tasks."
+        },
+        {
+          "name": "Classification Loss",
+          "description": "Loss functions used for classification tasks."
+        }
+      ]
+    },
+    {
+      "name": "Linear Separability",
+      "description": "The ability to separate classes in a dataset using a linear boundary.",
+      "sub_topics": [
+        {
+          "name": "Linear Regression",
+          "description": "A method for modeling the relationship between variables."
+        },
+        {
+          "name": "Classification Techniques",
+          "description": "Methods for categorizing data points into classes."
+        }
+      ]
+    },
+    {
+      "name": "Research References",
+      "description": "Key studies and papers in the field of machine learning.",
+      "sub_topics": [
+        {
+          "name": "Ananthanarayanan Reference",
+          "description": "Notable work by Ananthanarayanan in machine learning."
+        },
+        {
+          "name": "Kalyanaraman Project Adam",
+          "description": "Significant project in the development of machine learning systems."
+        }
+      ]
+    },
+    {
+      "name": "Software Engineering Smells",
+      "description": "Indicators of poor software design and implementation practices.",
+      "sub_topics": [
+        {
+          "name": "In Software Engineering",
+          "description": "Common issues faced in software engineering practices."
+        },
+        {
+          "name": "Debt for Scientists",
+          "description": "Challenges specific to scientists working with software."
+        }
+      ]
+    },
+    {
+      "name": "Packages and Glue",
+      "description": "The role of software packages in connecting different components.",
+      "sub_topics": [
+        {
+          "name": "Glue Code Packages",
+          "description": "Packages that facilitate integration between software components."
+        },
+        {
+          "name": "95 Glue Code",
+          "description": "Specific instances of glue code in software projects."
+        }
+      ]
+    }
+  ]
+}

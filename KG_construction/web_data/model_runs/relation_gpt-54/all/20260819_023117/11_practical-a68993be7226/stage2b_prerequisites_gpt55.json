@@ -1,0 +1,44 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 11,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation is specifically defined as an algorithm for training neural networks, so understanding neural network structure is necessary first."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation updates weights based on error gradients derived from a loss, so understanding loss functions is necessary."
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation computes gradients through neural network nodes, which requires understanding activation functions used at those nodes."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning is a subset focused on neural networks with many layers, so neural networks are foundational knowledge."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Activation Functions",
+      "relation_type": "strong_prerequisite",
+      "reason": "Activation functions are defined as functions determining the output of a neural network node, so neural networks must be understood first."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Training Inference",
+      "relation_type": "strong_prerequisite",
+      "reason": "Inference here refers to making predictions using a trained model, and in this topic set it depends on understanding the neural network model being used."
+    }
+  ]
+}

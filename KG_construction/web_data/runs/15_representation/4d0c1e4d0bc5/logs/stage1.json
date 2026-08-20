@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\15_representation\\4d0c1e4d0bc5\\15_representation.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\15_representation\\4d0c1e4d0bc5\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\15_representation\\4d0c1e4d0bc5\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.4854,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3902\n[2] 清洗后词数: 3935\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 22\n[5] 分块数（过滤后）: 19\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\15_representation\\4d0c1e4d0bc5\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\15_representation\\4d0c1e4d0bc5\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=267\nJournal of Chemical Information and Modeling Article Unsupervised Pretraining Usually Hurts but Sometimes Helps ff Figure 7. Di erence between joint DNNs trained with multiple data sets and the individual DNNs trained wi...\n\n[Chunk 2] words=280\nWhen averaged over all data sets, there seems to be multiple training sets is preferable over training an individual ff a di erence favoring the joint DNN. However, the size of the DNN using a single data set. Given a DN...\n\n[Chunk 3] words=245\nCHAPTER 15. REPRESENTATION LEARNING Pretraining Changes Learning Tra jectory 1500 With pretraining 1000 Without pretraining 500 0 500 1000 1500 4000 3000 2000 1000 0 1000 2000 3000 4000 Figure 15.1 Figure 15.1: Vi...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

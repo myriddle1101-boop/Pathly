@@ -1,0 +1,913 @@
+{
+  "audit_version": "k1-golden-chain-audit-v1",
+  "generated_at": "2026-08-11T20:14:57.404510+00:00",
+  "read_only": true,
+  "neo4j_health": {
+    "configured": true,
+    "configured_backend": "neo4j",
+    "bolt_reachable": true,
+    "query_verified": true,
+    "actual_backend": "neo4j",
+    "database": "neo4j",
+    "concept_count": 366,
+    "reason": null
+  },
+  "concepts": [
+    {
+      "concept_name": "Linear Separability",
+      "node_status": "verified",
+      "relationship_status": "needs_relationship_review",
+      "source_status": "usable",
+      "overall_status": "needs_relationship_review",
+      "reason": "the intended Linear Separability to XOR bridge is absent; content is indexed, but Chroma chunks do not preserve page metadata",
+      "neo4j": {
+        "node_exists": true,
+        "properties": {
+          "difficulty_level": 2,
+          "common_misconceptions": "[\"All datasets are linearly separable\", \"Linear separability guarantees perfect classification\"]",
+          "estimated_learning_time": "1-2 hours",
+          "target_audience": "Undergraduate",
+          "name": "Linear Separability",
+          "description": "The ability to separate classes in a dataset using a linear boundary.",
+          "practical_applications": "[\"Binary classification tasks\", \"Image recognition\"]",
+          "id": "Linear Separability",
+          "key_sub_concepts": "[\"Hyperplanes\", \"Support Vector Machines\"]",
+          "prerequisites_summary": "Basic understanding of linear algebra and introductory statistics."
+        },
+        "topics": [
+          {
+            "name": "Machine Learning Foundations",
+            "description": "Core machine learning concepts, learning paradigms, model behavior, and introductory foundations.",
+            "id": "topic_machine_learning_foundations",
+            "source": "neo4j_topic_importer",
+            "created_from": "course_module_rule_plus_keyword_assignment"
+          }
+        ],
+        "prerequisites": [],
+        "unlocks": [
+          "Neural Networks",
+          "Model Evaluation",
+          "Feedforward Networks"
+        ],
+        "resources": [
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\DL___Lecture_6___Design_Engineering.pdf",
+            "filename": "DL___Lecture_6___Design_Engineering.pdf",
+            "sha256": "fb7c77f387de18289bb233efe426af04569c12151847cd4bcc5084c280ab6249",
+            "source_type": "pdf",
+            "id": "fb7c77f387de18289bb233efe426af04569c12151847cd4bcc5084c280ab6249",
+            "doc_type": "pdf",
+            "title": "DL___Lecture_6___Design_Engineering"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\HiddenCosts.pdf",
+            "filename": "HiddenCosts.pdf",
+            "sha256": "1a67da09a8bd5ba9a3577176e30aa2fbd88534e6baf0bc31522b4999f643d2a1",
+            "source_type": "pdf",
+            "id": "1a67da09a8bd5ba9a3577176e30aa2fbd88534e6baf0bc31522b4999f643d2a1",
+            "doc_type": "pdf",
+            "title": "HiddenCosts"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06_mlp\\01e27d8d0770\\06_mlp.pdf",
+            "filename": "06_mlp.pdf",
+            "sha256": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "source_type": "pdf",
+            "id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "doc_type": "pdf",
+            "title": "06_mlp"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\batch_norm\\d1d6f8695dd4\\batch_norm.pdf",
+            "filename": "batch_norm.pdf",
+            "sha256": "d1d6f8695dd447c046d292bd0e7da5e0e78e674ec8fa34030291f92eb214a97a",
+            "source_type": "pdf",
+            "id": "d1d6f8695dd447c046d292bd0e7da5e0e78e674ec8fa34030291f92eb214a97a",
+            "doc_type": "pdf",
+            "title": "batch_norm"
+          }
+        ]
+      },
+      "verified_pdf_source": {
+        "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+        "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+        "document_title": "06_mlp.pdf",
+        "source_scope": "public",
+        "page_sequence": [
+          {
+            "page_number": 2,
+            "role": "introduction",
+            "chunk_ids": []
+          },
+          {
+            "page_number": 3,
+            "role": "mechanism",
+            "chunk_ids": []
+          }
+        ],
+        "chunk_ids": [],
+        "relevance_score": 1.0,
+        "coverage_score": 1.0,
+        "match_method": "s2_verified_golden_source",
+        "match_reason": "Pages 2-3 introduce the XOR problem and show directly why its classes are not linearly separable.",
+        "review_status": "verified",
+        "source_readiness": "offline_kg_resource",
+        "golden_path_version": "source-grounded-golden-s2-v1",
+        "golden_path_position": 1
+      },
+      "public_chroma": {
+        "chunk_count": 34,
+        "chunks_with_page_metadata": 0,
+        "chunks_with_concept_metadata": 0
+      },
+      "license_status": "needs_source_review"
+    },
+    {
+      "concept_name": "XOR",
+      "node_status": "needs_relationship_review",
+      "relationship_status": "needs_relationship_review",
+      "source_status": "usable",
+      "overall_status": "needs_relationship_review",
+      "reason": "canonical Neo4j Concept node is missing; content is indexed, but Chroma chunks do not preserve page metadata",
+      "neo4j": {
+        "node_exists": false,
+        "properties": {},
+        "topics": [],
+        "prerequisites": [],
+        "unlocks": [],
+        "resources": []
+      },
+      "verified_pdf_source": {
+        "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+        "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+        "document_title": "06_mlp.pdf",
+        "source_scope": "public",
+        "page_sequence": [
+          {
+            "page_number": 2,
+            "role": "introduction",
+            "chunk_ids": []
+          },
+          {
+            "page_number": 3,
+            "role": "problem",
+            "chunk_ids": []
+          },
+          {
+            "page_number": 4,
+            "role": "nonlinearity",
+            "chunk_ids": []
+          },
+          {
+            "page_number": 5,
+            "role": "architecture",
+            "chunk_ids": []
+          },
+          {
+            "page_number": 6,
+            "role": "mechanism",
+            "chunk_ids": []
+          },
+          {
+            "page_number": 7,
+            "role": "worked_example",
+            "chunk_ids": []
+          }
+        ],
+        "chunk_ids": [],
+        "relevance_score": 1.0,
+        "coverage_score": 1.0,
+        "match_method": "s2_verified_golden_source",
+        "match_reason": "Pages 2-7 form a continuous worked sequence from the XOR problem through a learned nonlinear representation.",
+        "review_status": "verified",
+        "source_readiness": "offline_kg_resource",
+        "golden_path_version": "source-grounded-golden-s2-v1",
+        "golden_path_position": 2
+      },
+      "public_chroma": {
+        "chunk_count": 34,
+        "chunks_with_page_metadata": 0,
+        "chunks_with_concept_metadata": 0
+      },
+      "license_status": "needs_source_review"
+    },
+    {
+      "concept_name": "Neural Networks",
+      "node_status": "verified",
+      "relationship_status": "needs_relationship_review",
+      "source_status": "usable",
+      "overall_status": "needs_relationship_review",
+      "reason": "Activation Functions currently points into Neural Networks, creating a pedagogical cycle; content is indexed, but Chroma chunks do not preserve page metadata",
+      "neo4j": {
+        "node_exists": true,
+        "properties": {
+          "difficulty_level": 2,
+          "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+          "estimated_learning_time": "1-2 hours",
+          "target_audience": "Undergraduate",
+          "name": "Neural Networks",
+          "description": "Fundamental structures in machine learning that mimic the human brain.",
+          "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game playing\", \"Medical diagnosis\"]",
+          "id": "Neural Networks",
+          "key_sub_concepts": "[\"Neurons\", \"Activation Functions\", \"Layers\", \"Backpropagation\"]",
+          "prerequisites_summary": "Basic understanding of linear algebra and calculus."
+        },
+        "topics": [
+          {
+            "name": "Deep Learning",
+            "description": "Neural networks, deep architectures, representation learning, and training methods.",
+            "id": "topic_deep_learning",
+            "source": "neo4j_topic_importer",
+            "created_from": "course_module_rule_plus_keyword_assignment"
+          }
+        ],
+        "prerequisites": [
+          "Deep Learning",
+          "Backpropagation",
+          "Linear Separability",
+          "Machine Learning",
+          "AI Algorithms",
+          "Data Representation",
+          "Model Evaluation",
+          "Activation Functions",
+          "Model Training",
+          "Machine Learning Concepts",
+          "Training Techniques",
+          "Statistical Learning",
+          "Learning Algorithms",
+          "Statistical Inference",
+          "Mathematical Functions",
+          "Statistical Language Processing",
+          "Learning Representations"
+        ],
+        "unlocks": [
+          "Deep Learning",
+          "Backpropagation",
+          "Loss Functions",
+          "Transformers",
+          "Activation Functions",
+          "Model Training",
+          "Learning Techniques",
+          "Machine Learning Techniques",
+          "Training Techniques",
+          "Shape and Parameters",
+          "Language Models",
+          "Machine Translation",
+          "Gradient Issues",
+          "Attention Mechanisms",
+          "Training Strategies",
+          "RAG Systems",
+          "Training Process",
+          "Computational Graphs",
+          "Training Data",
+          "Convolutional Networks",
+          "Network Architecture",
+          "Recurrent Neural Networks",
+          "Memory Models",
+          "Layer Structures",
+          "Mapping Functions",
+          "General Concepts",
+          "Applications of Neural Networks",
+          "Neural Network Evaluation",
+          "Neural Network Architecture"
+        ],
+        "resources": [
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\AIChallenges.pdf",
+            "filename": "AIChallenges.pdf",
+            "sha256": "3a1ca615166ecdc44b784038d9758a689d7438db97012692baccd4ee77b90d45",
+            "source_type": "pdf",
+            "id": "3a1ca615166ecdc44b784038d9758a689d7438db97012692baccd4ee77b90d45",
+            "doc_type": "pdf",
+            "title": "AIChallenges"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\AlgorithmicBias.pdf",
+            "filename": "AlgorithmicBias.pdf",
+            "sha256": "6bc189c9007e83c9343104a14d8ff578ba3d4b689ee5560f3dbc191d8a1daf92",
+            "source_type": "pdf",
+            "id": "6bc189c9007e83c9343104a14d8ff578ba3d4b689ee5560f3dbc191d8a1daf92",
+            "doc_type": "pdf",
+            "title": "AlgorithmicBias"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\DL___Lecture_6___Design_Engineering.pdf",
+            "filename": "DL___Lecture_6___Design_Engineering.pdf",
+            "sha256": "fb7c77f387de18289bb233efe426af04569c12151847cd4bcc5084c280ab6249",
+            "source_type": "pdf",
+            "id": "fb7c77f387de18289bb233efe426af04569c12151847cd4bcc5084c280ab6249",
+            "doc_type": "pdf",
+            "title": "DL___Lecture_6___Design_Engineering"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\HiddenCosts.pdf",
+            "filename": "HiddenCosts.pdf",
+            "sha256": "1a67da09a8bd5ba9a3577176e30aa2fbd88534e6baf0bc31522b4999f643d2a1",
+            "source_type": "pdf",
+            "id": "1a67da09a8bd5ba9a3577176e30aa2fbd88534e6baf0bc31522b4999f643d2a1",
+            "doc_type": "pdf",
+            "title": "HiddenCosts"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-history\\5845dce2ddc2\\cs224n-2026-lecture01-history.pdf",
+            "filename": "cs224n-2026-lecture01-history.pdf",
+            "sha256": "5845dce2ddc24d1fb69d17f50913cf0634a714bea8254fb93b0ee99c1812682e",
+            "source_type": "pdf",
+            "id": "5845dce2ddc24d1fb69d17f50913cf0634a714bea8254fb93b0ee99c1812682e",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture01-history"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\cs224n-2026-lecture01-intro.pdf",
+            "filename": "cs224n-2026-lecture01-intro.pdf",
+            "sha256": "f9a723b011b2e55efe11f2eb52665b1c3ca2b0071162b0eaa76dd4dd6202ef6d",
+            "source_type": "pdf",
+            "id": "f9a723b011b2e55efe11f2eb52665b1c3ca2b0071162b0eaa76dd4dd6202ef6d",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture01-intro"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\cs224n-2026-lecture02-wordvecs.pdf",
+            "filename": "cs224n-2026-lecture02-wordvecs.pdf",
+            "sha256": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "source_type": "pdf",
+            "id": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture02-wordvecs"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125\\cs224n-2026-lecture03-neuralnets.pdf",
+            "filename": "cs224n-2026-lecture03-neuralnets.pdf",
+            "sha256": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+            "source_type": "pdf",
+            "id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture03-neuralnets"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee\\cs224n-2026-lecture04-rnnlm.pdf",
+            "filename": "cs224n-2026-lecture04-rnnlm.pdf",
+            "sha256": "590f0f50aaee7f4e8cc655b113d8225ad50bf87885aa83651984e0c682196ac1",
+            "source_type": "pdf",
+            "id": "590f0f50aaee7f4e8cc655b113d8225ad50bf87885aa83651984e0c682196ac1",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture04-rnnlm"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\cs224n-2026-lecture05-transformers.pdf",
+            "filename": "cs224n-2026-lecture05-transformers.pdf",
+            "sha256": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+            "source_type": "pdf",
+            "id": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture05-transformers"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\cs224n-2026-lecture06-final-project.pdf",
+            "filename": "cs224n-2026-lecture06-final-project.pdf",
+            "sha256": "b7818dcc886c2fb45467bf3b32280deb78ed4b66b36ba70e77011db2bc5197c1",
+            "source_type": "pdf",
+            "id": "b7818dcc886c2fb45467bf3b32280deb78ed4b66b36ba70e77011db2bc5197c1",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture06-final-project"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4\\cs224n-2026-lecture11-evaluation.pdf",
+            "filename": "cs224n-2026-lecture11-evaluation.pdf",
+            "sha256": "93703513bbd445f9545f6ed83044917cd209b315fe29b25e3acb63af1d616844",
+            "source_type": "pdf",
+            "id": "93703513bbd445f9545f6ed83044917cd209b315fe29b25e3acb63af1d616844",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture11-evaluation"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture12-reasoning-part1\\4f4ba00d02f4\\cs224n-2026-lecture12-reasoning-part1.pdf",
+            "filename": "cs224n-2026-lecture12-reasoning-part1.pdf",
+            "sha256": "4f4ba00d02f42ef9964e6b2af352cb2d59c84aa3281742a13c8a3ff6687a8c93",
+            "source_type": "pdf",
+            "id": "4f4ba00d02f42ef9964e6b2af352cb2d59c84aa3281742a13c8a3ff6687a8c93",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture12-reasoning-part1"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality.pdf",
+            "filename": "cs224n-2026-lecture14-guest-julie-tokenization-multilinguality.pdf",
+            "sha256": "759f414aec53e37653eab4d034f278b5bc7cfec754ee30c067474bffc3e9c846",
+            "source_type": "pdf",
+            "id": "759f414aec53e37653eab4d034f278b5bc7cfec754ee30c067474bffc3e9c846",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture14-guest-julie-tokenization-multilinguality"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture19-open-questions\\f6d8d31e8a6f\\cs224n-2026-lecture19-open-questions.pdf",
+            "filename": "cs224n-2026-lecture19-open-questions.pdf",
+            "sha256": "f6d8d31e8a6f7c4895b60f63acbcbb13e2681f935e648b312cced407dd0dc175",
+            "source_type": "pdf",
+            "id": "f6d8d31e8a6f7c4895b60f63acbcbb13e2681f935e648b312cced407dd0dc175",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture19-open-questions"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\01-introduction-to-rag.pdf",
+            "filename": "01-introduction-to-rag.pdf",
+            "sha256": "7cfd7fd316117255ab11718aa1e83a6c03b9d0edc4490e8699fe63ebdbeec833",
+            "source_type": "pdf",
+            "id": "7cfd7fd316117255ab11718aa1e83a6c03b9d0edc4490e8699fe63ebdbeec833",
+            "doc_type": "pdf",
+            "title": "01-introduction-to-rag"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-understanding-embeddings\\2a611584541b\\02-understanding-embeddings.pdf",
+            "filename": "02-understanding-embeddings.pdf",
+            "sha256": "2a611584541beb27fa2667ea00074e6362e236cbbf8855464a3873eea74bec2e",
+            "source_type": "pdf",
+            "id": "2a611584541beb27fa2667ea00074e6362e236cbbf8855464a3873eea74bec2e",
+            "doc_type": "pdf",
+            "title": "02-understanding-embeddings"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04-language-models-generation\\fd2b5b9f4415\\04-language-models-generation.pdf",
+            "filename": "04-language-models-generation.pdf",
+            "sha256": "fd2b5b9f44155aa1e35cd4d2afa1456991aca98ce295bd2a3b8771c929232f80",
+            "source_type": "pdf",
+            "id": "fd2b5b9f44155aa1e35cd4d2afa1456991aca98ce295bd2a3b8771c929232f80",
+            "doc_type": "pdf",
+            "title": "04-language-models-generation"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\05-building-simple-rag.pdf",
+            "filename": "05-building-simple-rag.pdf",
+            "sha256": "35ec62f5ee2b5b76fb8c40725f638949b72d9b584ee2f8d77dfd3fe051af777d",
+            "source_type": "pdf",
+            "id": "35ec62f5ee2b5b76fb8c40725f638949b72d9b584ee2f8d77dfd3fe051af777d",
+            "doc_type": "pdf",
+            "title": "05-building-simple-rag"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\glossary\\c9772e6502e2\\GLOSSARY.pdf",
+            "filename": "GLOSSARY.pdf",
+            "sha256": "c9772e6502e25fac72196098a3df34fe4d5724021b3a62ad10ea48a58c54e990",
+            "source_type": "pdf",
+            "id": "c9772e6502e25fac72196098a3df34fe4d5724021b3a62ad10ea48a58c54e990",
+            "doc_type": "pdf",
+            "title": "GLOSSARY"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\README.pdf",
+            "filename": "README.pdf",
+            "sha256": "3ceb60c79421b335d017398a98cbb6891ef3c7a51ba0b7724bc03e134ca8c3d5",
+            "source_type": "pdf",
+            "id": "3ceb60c79421b335d017398a98cbb6891ef3c7a51ba0b7724bc03e134ca8c3d5",
+            "doc_type": "pdf",
+            "title": "README"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\andrew-ng-machine-learning-yearning.pdf",
+            "filename": "andrew-ng-machine-learning-yearning.pdf",
+            "sha256": "7e40402fdf34502f85a74e6b6629ab1caa2f4c68f2620563c92cf59b06a5d303",
+            "source_type": "pdf",
+            "id": "7e40402fdf34502f85a74e6b6629ab1caa2f4c68f2620563c92cf59b06a5d303",
+            "doc_type": "pdf",
+            "title": "andrew-ng-machine-learning-yearning"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\ISLP_website.pdf",
+            "filename": "ISLP_website.pdf",
+            "sha256": "278d3bdd49a8a480c2ff8e03245822caad8a3a48e81afd6d039c52c8fc13ad60",
+            "source_type": "pdf",
+            "id": "278d3bdd49a8a480c2ff8e03245822caad8a3a48e81afd6d039c52c8fc13ad60",
+            "doc_type": "pdf",
+            "title": "ISLP_website"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islrv2_corrected_june_2023\\7ed447d1a513\\ISLRv2_corrected_June_2023.pdf",
+            "filename": "ISLRv2_corrected_June_2023.pdf",
+            "sha256": "7ed447d1a513c5dd95240a829603310f1d319a14a8079ddfb180c6a3d9d9a6ff",
+            "source_type": "pdf",
+            "id": "7ed447d1a513c5dd95240a829603310f1d319a14a8079ddfb180c6a3d9d9a6ff",
+            "doc_type": "pdf",
+            "title": "ISLRv2_corrected_June_2023"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\03_prob.pdf",
+            "filename": "03_prob.pdf",
+            "sha256": "20e52d6d8bb6215b1a95cb6efe928b7dc4cee97a57c84283e905f5b70c9cbfe9",
+            "source_type": "pdf",
+            "id": "20e52d6d8bb6215b1a95cb6efe928b7dc4cee97a57c84283e905f5b70c9cbfe9",
+            "doc_type": "pdf",
+            "title": "03_prob"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05_ml\\f11d16937e75\\05_ml.pdf",
+            "filename": "05_ml.pdf",
+            "sha256": "f11d16937e75185b7cfb6a106cd19511244a4b644cff76cfe990dbc30f598ff1",
+            "source_type": "pdf",
+            "id": "f11d16937e75185b7cfb6a106cd19511244a4b644cff76cfe990dbc30f598ff1",
+            "doc_type": "pdf",
+            "title": "05_ml"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\07_regularization.pdf",
+            "filename": "07_regularization.pdf",
+            "sha256": "997097d7933e27001ae81f533cedcc36197bcee6d3b669d361df7364dd833a13",
+            "source_type": "pdf",
+            "id": "997097d7933e27001ae81f533cedcc36197bcee6d3b669d361df7364dd833a13",
+            "doc_type": "pdf",
+            "title": "07_regularization"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\09_conv.pdf",
+            "filename": "09_conv.pdf",
+            "sha256": "426f5e52542b14242773b6643431c21c065ce3b101388d03d2f04796b1bf11b7",
+            "source_type": "pdf",
+            "id": "426f5e52542b14242773b6643431c21c065ce3b101388d03d2f04796b1bf11b7",
+            "doc_type": "pdf",
+            "title": "09_conv"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\10_rnn\\9b582c970ecc\\10_rnn.pdf",
+            "filename": "10_rnn.pdf",
+            "sha256": "9b582c970ecc4819d3af8b0e00ee0461759bc7194a6793221237674e0fb104a8",
+            "source_type": "pdf",
+            "id": "9b582c970ecc4819d3af8b0e00ee0461759bc7194a6793221237674e0fb104a8",
+            "doc_type": "pdf",
+            "title": "10_rnn"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226\\11_practical.pdf",
+            "filename": "11_practical.pdf",
+            "sha256": "a68993be72264d8775c2fd4af57f6dc69666266354cff3772af69be720adce15",
+            "source_type": "pdf",
+            "id": "a68993be72264d8775c2fd4af57f6dc69666266354cff3772af69be720adce15",
+            "doc_type": "pdf",
+            "title": "11_practical"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\13_linear_factors.pdf",
+            "filename": "13_linear_factors.pdf",
+            "sha256": "92de7f819b1aa57206582f6fa9d0179706012976becc2387dfbd9ebab9fe7985",
+            "source_type": "pdf",
+            "id": "92de7f819b1aa57206582f6fa9d0179706012976becc2387dfbd9ebab9fe7985",
+            "doc_type": "pdf",
+            "title": "13_linear_factors"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\15_representation\\4d0c1e4d0bc5\\15_representation.pdf",
+            "filename": "15_representation.pdf",
+            "sha256": "4d0c1e4d0bc519f1b0bc6102880f21b37fb7ae8607d47e6f5196957e6896bf16",
+            "source_type": "pdf",
+            "id": "4d0c1e4d0bc519f1b0bc6102880f21b37fb7ae8607d47e6f5196957e6896bf16",
+            "doc_type": "pdf",
+            "title": "15_representation"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\18_partition.pdf",
+            "filename": "18_partition.pdf",
+            "sha256": "b39fd6ffea3b937ecf281268343eef963d6f8c333586181b97c21c81b459770c",
+            "source_type": "pdf",
+            "id": "b39fd6ffea3b937ecf281268343eef963d6f8c333586181b97c21c81b459770c",
+            "doc_type": "pdf",
+            "title": "18_partition"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\batch_norm\\d1d6f8695dd4\\batch_norm.pdf",
+            "filename": "batch_norm.pdf",
+            "sha256": "d1d6f8695dd447c046d292bd0e7da5e0e78e674ec8fa34030291f92eb214a97a",
+            "source_type": "pdf",
+            "id": "d1d6f8695dd447c046d292bd0e7da5e0e78e674ec8fa34030291f92eb214a97a",
+            "doc_type": "pdf",
+            "title": "batch_norm"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dls_2016\\562b4445509a\\dls_2016.pdf",
+            "filename": "dls_2016.pdf",
+            "sha256": "562b4445509ab719019bd4232e0f2ee13ca0d4cfd03fdf7c95070c9d5e063e36",
+            "source_type": "pdf",
+            "id": "562b4445509ab719019bd4232e0f2ee13ca0d4cfd03fdf7c95070c9d5e063e36",
+            "doc_type": "pdf",
+            "title": "dls_2016"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\front_matter.pdf",
+            "filename": "front_matter.pdf",
+            "sha256": "1f6f329f952557e7896b5d67c55c88b6517a6bb1873b836f6f44ff289a89428a",
+            "source_type": "pdf",
+            "id": "1f6f329f952557e7896b5d67c55c88b6517a6bb1873b836f6f44ff289a89428a",
+            "doc_type": "pdf",
+            "title": "front_matter"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\sgd_and_cost_structure.pdf",
+            "filename": "sgd_and_cost_structure.pdf",
+            "sha256": "84a4549929c00ccaf513e1228c07b4fac6f3d313a24d0f2546c7e4abc58b5bc6",
+            "source_type": "pdf",
+            "id": "84a4549929c00ccaf513e1228c07b4fac6f3d313a24d0f2546c7e4abc58b5bc6",
+            "doc_type": "pdf",
+            "title": "sgd_and_cost_structure"
+          }
+        ]
+      },
+      "verified_pdf_source": {
+        "resource_id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+        "document_id": "public:8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+        "document_title": "cs224n-2026-lecture03-neuralnets.pdf",
+        "source_scope": "public",
+        "page_sequence": [
+          {
+            "page_number": 13,
+            "role": "introduction",
+            "chunk_ids": []
+          },
+          {
+            "page_number": 14,
+            "role": "mechanism",
+            "chunk_ids": []
+          }
+        ],
+        "chunk_ids": [],
+        "relevance_score": 1.0,
+        "coverage_score": 1.0,
+        "match_method": "s2_verified_golden_source",
+        "match_reason": "Pages 13-14 contrast a linear classifier with a neural classifier and introduce its nonlinear hidden computation.",
+        "review_status": "verified",
+        "source_readiness": "public_chroma",
+        "golden_path_version": "source-grounded-golden-s2-v1",
+        "golden_path_position": 3
+      },
+      "public_chroma": {
+        "chunk_count": 13,
+        "chunks_with_page_metadata": 0,
+        "chunks_with_concept_metadata": 0
+      },
+      "license_status": "needs_source_review"
+    },
+    {
+      "concept_name": "Activation Functions",
+      "node_status": "verified",
+      "relationship_status": "needs_relationship_review",
+      "source_status": "usable",
+      "overall_status": "needs_relationship_review",
+      "reason": "Neural Networks and Activation Functions form a prerequisite cycle; content is indexed, but Chroma chunks do not preserve page metadata",
+      "neo4j": {
+        "node_exists": true,
+        "properties": {
+          "difficulty_level": 2,
+          "common_misconceptions": "[\"Activation functions are only used in the output layer.\", \"All activation functions are the same.\"]",
+          "estimated_learning_time": "1-2 hours",
+          "target_audience": "Undergraduate",
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node.",
+          "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game AI\", \"Financial forecasting\"]",
+          "id": "Activation Functions",
+          "key_sub_concepts": "[\"Sigmoid Function\", \"ReLU (Rectified Linear Unit)\", \"Tanh Function\", \"Softmax Function\"]",
+          "prerequisites_summary": "Basic understanding of neural networks and calculus."
+        },
+        "topics": [
+          {
+            "name": "Deep Learning",
+            "description": "Neural networks, deep architectures, representation learning, and training methods.",
+            "id": "topic_deep_learning",
+            "source": "neo4j_topic_importer",
+            "created_from": "course_module_rule_plus_keyword_assignment"
+          }
+        ],
+        "prerequisites": [
+          "Neural Networks",
+          "Feedforward Networks"
+        ],
+        "unlocks": [
+          "Neural Networks",
+          "Neural Computation"
+        ],
+        "resources": [
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\Dreamer.pdf",
+            "filename": "Dreamer.pdf",
+            "sha256": "318891d59ba0065f57eb0e735735700e5eb528f53bf08b81c773437385586c64",
+            "source_type": "pdf",
+            "id": "318891d59ba0065f57eb0e735735700e5eb528f53bf08b81c773437385586c64",
+            "doc_type": "pdf",
+            "title": "Dreamer"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125\\cs224n-2026-lecture03-neuralnets.pdf",
+            "filename": "cs224n-2026-lecture03-neuralnets.pdf",
+            "sha256": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+            "source_type": "pdf",
+            "id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture03-neuralnets"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06_mlp\\01e27d8d0770\\06_mlp.pdf",
+            "filename": "06_mlp.pdf",
+            "sha256": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "source_type": "pdf",
+            "id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "doc_type": "pdf",
+            "title": "06_mlp"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226\\11_practical.pdf",
+            "filename": "11_practical.pdf",
+            "sha256": "a68993be72264d8775c2fd4af57f6dc69666266354cff3772af69be720adce15",
+            "source_type": "pdf",
+            "id": "a68993be72264d8775c2fd4af57f6dc69666266354cff3772af69be720adce15",
+            "doc_type": "pdf",
+            "title": "11_practical"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\15_representation\\4d0c1e4d0bc5\\15_representation.pdf",
+            "filename": "15_representation.pdf",
+            "sha256": "4d0c1e4d0bc519f1b0bc6102880f21b37fb7ae8607d47e6f5196957e6896bf16",
+            "source_type": "pdf",
+            "id": "4d0c1e4d0bc519f1b0bc6102880f21b37fb7ae8607d47e6f5196957e6896bf16",
+            "doc_type": "pdf",
+            "title": "15_representation"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dls_2016\\562b4445509a\\dls_2016.pdf",
+            "filename": "dls_2016.pdf",
+            "sha256": "562b4445509ab719019bd4232e0f2ee13ca0d4cfd03fdf7c95070c9d5e063e36",
+            "source_type": "pdf",
+            "id": "562b4445509ab719019bd4232e0f2ee13ca0d4cfd03fdf7c95070c9d5e063e36",
+            "doc_type": "pdf",
+            "title": "dls_2016"
+          }
+        ]
+      },
+      "verified_pdf_source": {
+        "resource_id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+        "document_id": "public:8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+        "document_title": "cs224n-2026-lecture03-neuralnets.pdf",
+        "source_scope": "public",
+        "page_sequence": [
+          {
+            "page_number": 15,
+            "role": "introduction",
+            "chunk_ids": []
+          },
+          {
+            "page_number": 16,
+            "role": "examples",
+            "chunk_ids": []
+          },
+          {
+            "page_number": 17,
+            "role": "mechanism",
+            "chunk_ids": []
+          }
+        ],
+        "chunk_ids": [],
+        "relevance_score": 1.0,
+        "coverage_score": 1.0,
+        "match_method": "s2_verified_golden_source",
+        "match_reason": "Pages 15-17 compare common activation functions and explain why nonlinearity is necessary.",
+        "review_status": "verified",
+        "source_readiness": "public_chroma",
+        "golden_path_version": "source-grounded-golden-s2-v1",
+        "golden_path_position": 4
+      },
+      "public_chroma": {
+        "chunk_count": 13,
+        "chunks_with_page_metadata": 0,
+        "chunks_with_concept_metadata": 0
+      },
+      "license_status": "needs_source_review"
+    },
+    {
+      "concept_name": "Gradient Descent",
+      "node_status": "verified",
+      "relationship_status": "needs_relationship_review",
+      "source_status": "usable",
+      "overall_status": "needs_relationship_review",
+      "reason": "Backpropagation is currently a prerequisite of Gradient Descent and needs direction review; content is indexed, but Chroma chunks do not preserve page metadata",
+      "neo4j": {
+        "node_exists": true,
+        "properties": {
+          "difficulty_level": 2,
+          "common_misconceptions": "[\"Gradient descent always finds the global minimum.\", \"A smaller learning rate is always better.\"]",
+          "estimated_learning_time": "1-2 hours",
+          "target_audience": "Undergraduate",
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm used to minimize the loss function.",
+          "practical_applications": "[\"Training neural networks\", \"Linear regression optimization\", \"Logistic regression\", \"Support vector machines\"]",
+          "id": "Gradient Descent",
+          "key_sub_concepts": "[\"Learning Rate\", \"Convergence\", \"Stochastic Gradient Descent\", \"Batch Gradient Descent\"]",
+          "prerequisites_summary": "Basic understanding of calculus and linear algebra."
+        },
+        "topics": [
+          {
+            "name": "Optimization",
+            "description": "Optimization methods, loss minimization, gradients, and model training dynamics.",
+            "id": "topic_optimization",
+            "source": "neo4j_topic_importer",
+            "created_from": "course_module_rule_plus_keyword_assignment"
+          }
+        ],
+        "prerequisites": [
+          "Backpropagation",
+          "Loss Functions",
+          "Partial Derivatives"
+        ],
+        "unlocks": [
+          "Model Evaluation",
+          "Training Neural Networks",
+          "Training Dynamics",
+          "Gradient Noise"
+        ],
+        "resources": [
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\DL___Week_1___Design_Engineering (2).pdf",
+            "filename": "DL___Week_1___Design_Engineering (2).pdf",
+            "sha256": "4b5a4de9201e8dfc636a212cf8862925f07eab0ec822f732c719e1e4d47cbe71",
+            "source_type": "pdf",
+            "id": "4b5a4de9201e8dfc636a212cf8862925f07eab0ec822f732c719e1e4d47cbe71",
+            "doc_type": "pdf",
+            "title": "DL___Week_1___Design_Engineering (2)"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125\\cs224n-2026-lecture03-neuralnets.pdf",
+            "filename": "cs224n-2026-lecture03-neuralnets.pdf",
+            "sha256": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+            "source_type": "pdf",
+            "id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+            "doc_type": "pdf",
+            "title": "cs224n-2026-lecture03-neuralnets"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\04_numerical.pdf",
+            "filename": "04_numerical.pdf",
+            "sha256": "dd3a4dd53cd3c82a250f47305f44f4d4066b36ef2443397723055de4ed45a9a4",
+            "source_type": "pdf",
+            "id": "dd3a4dd53cd3c82a250f47305f44f4d4066b36ef2443397723055de4ed45a9a4",
+            "doc_type": "pdf",
+            "title": "04_numerical"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06_mlp\\01e27d8d0770\\06_mlp.pdf",
+            "filename": "06_mlp.pdf",
+            "sha256": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "source_type": "pdf",
+            "id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+            "doc_type": "pdf",
+            "title": "06_mlp"
+          },
+          {
+            "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\sgd_and_cost_structure.pdf",
+            "filename": "sgd_and_cost_structure.pdf",
+            "sha256": "84a4549929c00ccaf513e1228c07b4fac6f3d313a24d0f2546c7e4abc58b5bc6",
+            "source_type": "pdf",
+            "id": "84a4549929c00ccaf513e1228c07b4fac6f3d313a24d0f2546c7e4abc58b5bc6",
+            "doc_type": "pdf",
+            "title": "sgd_and_cost_structure"
+          }
+        ]
+      },
+      "verified_pdf_source": {
+        "resource_id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+        "document_id": "public:8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+        "document_title": "cs224n-2026-lecture03-neuralnets.pdf",
+        "source_scope": "public",
+        "page_sequence": [
+          {
+            "page_number": 18,
+            "role": "objective",
+            "chunk_ids": []
+          },
+          {
+            "page_number": 19,
+            "role": "update_rule",
+            "chunk_ids": []
+          },
+          {
+            "page_number": 20,
+            "role": "gradient_computation",
+            "chunk_ids": []
+          }
+        ],
+        "chunk_ids": [],
+        "relevance_score": 1.0,
+        "coverage_score": 1.0,
+        "match_method": "s2_verified_golden_source",
+        "match_reason": "Pages 18-20 connect the loss objective to the stochastic-gradient update and gradient computation.",
+        "review_status": "verified",
+        "source_readiness": "public_chroma",
+        "golden_path_version": "source-grounded-golden-s2-v1",
+        "golden_path_position": 5
+      },
+      "public_chroma": {
+        "chunk_count": 13,
+        "chunks_with_page_metadata": 0,
+        "chunks_with_concept_metadata": 0
+      },
+      "license_status": "needs_source_review"
+    }
+  ],
+  "summary": {
+    "concept_count": 5,
+    "verified_overall": 0,
+    "needs_relationship_review": 5,
+    "needs_source": 0
+  }
+}

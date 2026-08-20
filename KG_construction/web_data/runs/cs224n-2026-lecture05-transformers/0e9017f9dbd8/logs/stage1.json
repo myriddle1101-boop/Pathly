@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\cs224n-2026-lecture05-transformers.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 12.0167,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 5291\n[2] 清洗后词数: 5325\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 23\n[5] 分块数（过滤后）: 22\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=198\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang Lecture 5: Attention and Transformers Lecture Plan Lecture 5: Attention and Transformers 1. Vanishing gradients (10 mins) 2. Machine translation ...\n\n[Chunk 2] words=271\nEffect of vanishing gradient on RNN-LM  LM task: When she tried to print her tickets, she found that the printer was out of toner. She went to the stationery store to buy more toner. It was very overpriced. After instal...\n\n[Chunk 3] words=201\nHow to fix the vanishing gradient problem?  The main problem is that it’s too difficult for the RNN to learn to preserve information over many timesteps.  In a vanilla RNN, the hidden state is constantly being rewritte...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

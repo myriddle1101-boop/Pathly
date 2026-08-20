@@ -1,0 +1,24 @@
+# Secrets and local environments
+.env
+.venv/
+KG_construction/.env
+KG_construction/.venv/
+KG_construction/.conda/
+
+# Learner-owned local state; the public Chroma index is intentionally versioned
+# because the production image seeds it on a new persistent volume.
+**/learner_profiles.db
+**/pathly_learning.db
+**/pathly_private_documents/
+**/pathly_private_chroma/
+**/public_page_cache/
+**/candidate_reviews/
+**/evaluation_runs/
+
+# Generated artifacts and local runtime output
+**/__pycache__/
+**/.pytest_cache/
+*.log
+*.out
+*.err
+tmp/

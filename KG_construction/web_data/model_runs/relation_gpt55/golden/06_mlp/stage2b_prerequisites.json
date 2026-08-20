@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Activation Functions",
+      "to": "Feedforward Networks",
+      "reason": "Feedforward network nodes rely on activation functions to produce outputs."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Gradient Descent",
+      "reason": "Gradient descent minimizes an objective such as a loss function."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Backpropagation",
+      "reason": "Backpropagation computes gradients used for gradient-based weight updates."
+    },
+    {
+      "from": "Computational Graphs",
+      "to": "Backpropagation",
+      "reason": "Backpropagation applies the chain rule through a computational graph."
+    },
+    {
+      "from": "Feedforward Networks",
+      "to": "Backpropagation",
+      "reason": "Backpropagation is commonly defined over neural network computations such as feedforward networks."
+    },
+    {
+      "from": "Feedforward Networks",
+      "to": "Neural Network Models",
+      "reason": "Feedforward networks are a foundational neural network architecture."
+    }
+  ]
+}

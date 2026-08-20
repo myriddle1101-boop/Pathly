@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-08-18T18:46:14.443694+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-16_graphical_models-26ce146b38e1",
+  "file_name": "16_graphical_models-26ce146b38e1",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 38,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6154,
+    "f1": 0.7273,
+    "tp": 8,
+    "fp": 1,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 5,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Deep Learning",
+      "Probabilistic Models",
+      "Graph Models",
+      "Structured Modeling",
+      "Graph Theory",
+      "Sampling Techniques",
+      "Model Evaluation",
+      "Graph Representations"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Training Algorithms",
+        "reason": "The source mentions gradient descent only incidentally and does not develop training algorithms as a topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Directed Graphical Models",
+        "reason": "The source formally defines directed graphical models using DAGs and local conditional distributions."
+      },
+      {
+        "name": "Undirected Graphical Models",
+        "reason": "The source explains undirected models, cliques, clique potentials, and normalization."
+      },
+      {
+        "name": "Conditional Independence and D-Separation",
+        "reason": "Separation and d-separation are substantial topics used to identify graph-implied conditional independences."
+      },
+      {
+        "name": "Ancestral Sampling",
+        "reason": "The source presents ancestral sampling in topological order as an efficient procedure for directed models."
+      },
+      {
+        "name": "Approximate Inference",
+        "reason": "The source explicitly states that marginal and conditional inference are #P-hard and usually require approximation."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Graph Theory",
+        "to": "Graph Models",
+        "reason": "Graph concepts are used to describe graphical models, but the source does not establish Graph Theory as a required learning prerequisite."
+      },
+      {
+        "from": "Graph Theory",
+        "to": "Graph Representations",
+        "reason": "This is a broad association rather than a specific, strong directional dependency established in the source."
+      },
+      {
+        "from": "Graph Models",
+        "to": "Structured Modeling",
+        "reason": "Graphical models are a representation of structured modeling, not a clearly established prerequisite for learning structured modeling."
+      },
+      {
+        "from": "Sampling Techniques",
+        "to": "Model Evaluation",
+        "reason": "The source does not make sampling knowledge a prerequisite for model evaluation or validation-based structure selection."
+      },
+      {
+        "from": "Training Algorithms",
+        "to": "Model Evaluation",
+        "reason": "The source does not present training algorithms as a prerequisite for evaluation."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Directed Graphical Models",
+        "to": "Ancestral Sampling",
+        "reason": "Ancestral sampling operates on a directed model by sampling each variable conditional on its parents."
+      },
+      {
+        "from": "Topological Ordering",
+        "to": "Ancestral Sampling",
+        "reason": "The source states that variables must be sorted topologically so parents are available before sampling each node."
+      },
+      {
+        "from": "Undirected Graphical Models",
+        "to": "Partition Function",
+        "reason": "The partition function is introduced to normalize an undirected model's product of clique potentials into a valid probability distribution."
+      },
+      {
+        "from": "Conditional Independence",
+        "to": "D-Separation",
+        "reason": "D-separation is defined as the directed-graph criterion for graph-implied conditional independence."
+      }
+    ],
+    "overall_note": "The predictions capture the chapter's broad graph-based structured-modeling theme, but omit its central directed/undirected model and inference concepts; none of the proposed prerequisite relations are sufficiently strong."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-16_graphical_models-26ce146b38e1.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-16_graphical_models-26ce146b38e1.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-16_graphical_models-26ce146b38e1_ledger.csv"
+  }
+}

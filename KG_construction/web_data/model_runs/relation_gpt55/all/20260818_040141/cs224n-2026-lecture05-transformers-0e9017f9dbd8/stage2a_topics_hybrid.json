@@ -1,0 +1,844 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 22,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "sequence attention",
+      "avg_score": 0.6745,
+      "frequency": 4,
+      "chunk_ids": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "name": "self attention",
+      "avg_score": 0.5433,
+      "frequency": 4,
+      "chunk_ids": [
+        13,
+        14,
+        16,
+        17
+      ]
+    },
+    {
+      "name": "sequence sequence",
+      "avg_score": 0.5758,
+      "frequency": 3,
+      "chunk_ids": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "name": "sequence",
+      "avg_score": 0.566,
+      "frequency": 3,
+      "chunk_ids": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "name": "attention output",
+      "avg_score": 0.5215,
+      "frequency": 3,
+      "chunk_ids": [
+        9,
+        10,
+        16
+      ]
+    },
+    {
+      "name": "machine translation",
+      "avg_score": 0.5597,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "neural machine",
+      "avg_score": 0.5582,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "attention transformers",
+      "avg_score": 0.5313,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        22
+      ]
+    },
+    {
+      "name": "source sequence",
+      "avg_score": 0.5279,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "name": "attention hypothetical",
+      "avg_score": 0.5259,
+      "frequency": 2,
+      "chunk_ids": [
+        12,
+        17
+      ]
+    },
+    {
+      "name": "encoder",
+      "avg_score": 0.5202,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "name": "vanishing gradient",
+      "avg_score": 0.5121,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "sentence input",
+      "avg_score": 0.495,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        10
+      ]
+    },
+    {
+      "name": "multiple attention",
+      "avg_score": 0.6899,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "normalization trick",
+      "avg_score": 0.6788,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "position representations",
+      "avg_score": 0.6648,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "position representation",
+      "avg_score": 0.6551,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "training dimensionality",
+      "avg_score": 0.6486,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "normalization",
+      "avg_score": 0.6403,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "encoder focus",
+      "avg_score": 0.6393,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "attention helps",
+      "avg_score": 0.635,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "representations position",
+      "avg_score": 0.6348,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "attention provides",
+      "avg_score": 0.6317,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "normalizing",
+      "avg_score": 0.6298,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "vectors learned",
+      "avg_score": 0.6269,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "encoder transformer",
+      "avg_score": 0.6263,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "attention solves",
+      "avg_score": 0.626,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "ranges attention",
+      "avg_score": 0.626,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "representation vectors",
+      "avg_score": 0.6258,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "decoder input",
+      "avg_score": 0.6254,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "transformer encoder",
+      "avg_score": 0.6246,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "attention allows",
+      "avg_score": 0.621,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "layer normalization",
+      "avg_score": 0.6204,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "normalization ba",
+      "avg_score": 0.6176,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "decoder timestep",
+      "avg_score": 0.6159,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "normalizing gradients",
+      "avg_score": 0.614,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "attention heads",
+      "avg_score": 0.6136,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "attention architectures",
+      "avg_score": 0.613,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "attention looks",
+      "avg_score": 0.6122,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "attention significantly",
+      "avg_score": 0.6088,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "look multiple",
+      "avg_score": 0.6022,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "translation nmt",
+      "avg_score": 0.602,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "decoder modified",
+      "avg_score": 0.602,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "learn matrix",
+      "avg_score": 0.6018,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "attention basis",
+      "avg_score": 0.5994,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "attention independently",
+      "avg_score": 0.5945,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "abstractly attention",
+      "avg_score": 0.5889,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "attention generate",
+      "avg_score": 0.5865,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "neural representation",
+      "avg_score": 0.5859,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "output attention",
+      "avg_score": 0.5833,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "dimensionality large",
+      "avg_score": 0.5807,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "model neural",
+      "avg_score": 0.5774,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "model language",
+      "avg_score": 0.5763,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "language model",
+      "avg_score": 0.5761,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "scaled dot",
+      "avg_score": 0.5726,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "transformer decoder",
+      "avg_score": 0.5696,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "encoder decoder",
+      "avg_score": 0.5688,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "attention block",
+      "avg_score": 0.566,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "step decoder",
+      "avg_score": 0.5655,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "rnn language",
+      "avg_score": 0.5626,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "dimensionality",
+      "avg_score": 0.5623,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "attention input",
+      "avg_score": 0.5607,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "attention computed",
+      "avg_score": 0.5579,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "setting attention",
+      "avg_score": 0.5572,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "attention architecture",
+      "avg_score": 0.5546,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "decoder use",
+      "avg_score": 0.5544,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "35 sequence",
+      "avg_score": 0.5516,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "attention building",
+      "avg_score": 0.5492,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "sequence dot",
+      "avg_score": 0.548,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "attention function",
+      "avg_score": 0.5457,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "dimensionality divided",
+      "avg_score": 0.5449,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "transformers lecture",
+      "avg_score": 0.5448,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "attention problem",
+      "avg_score": 0.543,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "attention paying",
+      "avg_score": 0.5417,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "attention keys",
+      "avg_score": 0.5367,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "output decoder",
+      "avg_score": 0.5326,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "predicting word",
+      "avg_score": 0.5325,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "sentence encoding",
+      "avg_score": 0.5323,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "29 sequence",
+      "avg_score": 0.53,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "generate attention",
+      "avg_score": 0.523,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Attention Mechanisms",
+      "description": "Techniques that allow models to focus on specific parts of the input sequence.",
+      "sub_topics": [
+        {
+          "name": "Self Attention",
+          "description": "A mechanism where a sequence attends to itself to capture dependencies."
+        },
+        {
+          "name": "Multi-Head Attention",
+          "description": "An extension of attention that allows the model to jointly attend to information from different representation subspaces."
+        },
+        {
+          "name": "Attention Output",
+          "description": "The result produced by applying attention mechanisms to input sequences."
+        }
+      ]
+    },
+    {
+      "name": "Transformers",
+      "description": "A neural network architecture that relies heavily on attention mechanisms.",
+      "sub_topics": [
+        {
+          "name": "Encoder-Decoder Architecture",
+          "description": "A structure that consists of an encoder to process input and a decoder to generate output."
+        },
+        {
+          "name": "Transformer Encoder",
+          "description": "The part of the transformer that processes the input sequence."
+        },
+        {
+          "name": "Transformer Decoder",
+          "description": "The part of the transformer that generates the output sequence."
+        }
+      ]
+    },
+    {
+      "name": "Sequence Processing",
+      "description": "Methods and techniques for handling sequential data in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Source Sequence",
+          "description": "The original input sequence fed into the model."
+        },
+        {
+          "name": "Sentence Encoding",
+          "description": "The process of converting sentences into numerical representations."
+        },
+        {
+          "name": "Sequence Attention",
+          "description": "Applying attention mechanisms specifically to sequences."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain, consisting of interconnected neurons.",
+      "sub_topics": [
+        {
+          "name": "Neural Machine Translation",
+          "description": "Using neural networks to translate text from one language to another."
+        },
+        {
+          "name": "Vanishing Gradient Problem",
+          "description": "A challenge in training deep networks where gradients become too small."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neuron based on its input."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods used to optimize machine learning models during training.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by propagating errors backward."
+        },
+        {
+          "name": "Normalization Techniques",
+          "description": "Methods to adjust and scale inputs to improve training efficiency."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Dimensionality Reduction",
+      "description": "Techniques to reduce the number of features in a dataset while preserving important information.",
+      "sub_topics": [
+        {
+          "name": "Training Dimensionality",
+          "description": "The dimensionality of the input data used during model training."
+        },
+        {
+          "name": "Normalization Trick",
+          "description": "A technique to stabilize training by normalizing inputs."
+        }
+      ]
+    },
+    {
+      "name": "Attention Variants",
+      "description": "Different forms and applications of attention mechanisms in models.",
+      "sub_topics": [
+        {
+          "name": "Attention Heads",
+          "description": "Individual attention mechanisms within multi-head attention."
+        },
+        {
+          "name": "Scaled Dot-Product Attention",
+          "description": "A specific implementation of attention that scales dot products."
+        }
+      ]
+    },
+    {
+      "name": "Language Models",
+      "description": "Models designed to understand and generate human language.",
+      "sub_topics": [
+        {
+          "name": "RNN Language Models",
+          "description": "Recurrent neural networks used for language processing."
+        },
+        {
+          "name": "Neural Representation",
+          "description": "The way language is represented in neural networks."
+        }
+      ]
+    },
+    {
+      "name": "Output Generation",
+      "description": "Processes involved in generating outputs from models.",
+      "sub_topics": [
+        {
+          "name": "Decoder Input",
+          "description": "The input provided to the decoder during output generation."
+        },
+        {
+          "name": "Predicting Words",
+          "description": "The task of generating the next word in a sequence."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 28.7143,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

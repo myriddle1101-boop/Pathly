@@ -1,0 +1,29 @@
+{
+  "stage": "stage3",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage3_node_summary_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage3_node_summary_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5\\stage3_topics_with_summary.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 25.7587,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage3_topics_with_summary.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Model Tuning\n[LLM] 2/9 Sparsity Techniques\n[LLM] 3/9 Learning Adaptation\n[LLM] 4/9 Reinforcement Learning\n[LLM] 5/9 Language Models\n[LLM] 6/9 Learning Efficiency\n[LLM] 7/9 Demonstration Learning\n[LLM] 8/9 Neural Network Concepts\n[LLM] 9/9 Emergent Abilities\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+  "stderr_tail": ""
+}

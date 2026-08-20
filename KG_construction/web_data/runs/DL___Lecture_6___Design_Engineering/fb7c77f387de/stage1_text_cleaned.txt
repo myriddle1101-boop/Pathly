@@ -1,0 +1,551 @@
+Deep Learning
+Lecture 4: Practicalities and
+Convolutional Neural Networks
+Pietro Ferraro
+
+Table of 1. Recap
+2. Trainingand Overfitting
+Content 3. Methodstoreduceoverfitting
+4. Intuitionabouthierarchy
+5. Convolutional Neural Networks
+Imperial College London Deep Learning
+
+Recap
+l Wecanusebackpropagationtotrainanetworkandminimisealossfunction.
+l Wehaveseenthatwecanbuilda ANNtosolveregressionusingalinearoutput
+MSEasalossfunction.
+l Wehaveseenthatwecanbuilda ANNtosolveclassificationusingasoftmax
+outputandcross-entropyasalossfunction.
+Imperial College London Deep Learning
+
+Practicalcomments
+Roughlyspeakingweneedtoconsiderthreethings.
+l Gettingthedatareadyforlearning.
+l Selectingfeaturesandthemodel.
+l Choosinganappropriatelearningalgorithm.
+Imperial College London Deep Learning
+
+Gettingthedataready
+Therearemanystepsinmakingadatasetsuitableforamachinelearningalgorithm.
+Aswehavealreadydiscussed,ataverybasiclevel,onemustlabeladatasetto
+makeitsuitableformachinelearningalgorithms. Often,thiscanbeaverylabour
+intensiveprocess-thinkofthetaskoflabellingimages.
+Sometimes,problemsariseinwhichwemustconvertnon-numericlabelsinto
+numericonesandvice-versa. Again,thisisataskthatmustbeundertakewithgreat
+care.
+Imperial College London Deep Learning
+
+Practical aspects of Deep Learning
+Imperial College London Deep Learning
+
+Gettingthedataready
+Amorecommondatacurationtechniqueiscalleddatanormalisation.
+Normalisationisnecessarytoavoidhavingdifferentscalesinthetrainingdata. For
+example,supposewepostulateamodeloftheform:
+y = ax +bx +c; (1)
+1 2
+namely,theoutputdependsontwoinputfeaturesx ,x . supposefurtherthatx is
+1 2 1
+intheinterval[0.1,0.7]andx isintheinterval[−10000,20000].
+2
+Situationslikethisalmostalwayscauseproblemsformachinelearningalgorithms.
+Oftentheleadtonumericproblems,orjustmakethechoiceoflearningparameters
+difficult.
+Imperial College London Deep Learning
+
+Gettingthedataready
+Herethebasicideaittoconverttheactualrangewhichanumericaltechniquecan
+taketobeinastandardinterval;say[0,1]. Thatis:
+x(j)−minx
+˜x(j) ← j (2)
+maxx−minx
+j j
+orintheinterval[−1,1]withzeromean,
+x(j)−µ
+˜x(j) ← (3)
+maxx−minx
+j j
+whereµistheaverageofthex(i).
+Imperial College London Deep Learning
+
+Gettingthedataready
+Anotherproblemthatoftenarisesconcernsdatawithmissingfeatures. This
+happensextremelyoften. Typicalapproachestodealingwithmissingdatainclude:
+l removingexampleswithmissingfeatures;
+l usingspeciallearningalgorithmsthatcandealwithmissingfeatures;
+l usingadataimputationtechnique(forexample-replacingthemissingfeature
+byanaveragevalueofthefeatureinthetrainingset).
+Imperial College London Deep Learning
+
+Dataandlearning
+Anotherissueconcernsdividingthedataintotestandtrainingsets. Remember,our
+objectiveistolearn. Infact,uptonowinallourexamples,wehavenotreally
+consideredlearning. Whatwehavedoneistofitasetsofdata-pointstoa
+parameterisedmodel.
+Thisisnotlearning. Tolearn,wewishourmodelstobeabletogeneralise. Thatis:
+makepredictionsondatathatthemodelhasnotseenbefore.
+Imperial College London Deep Learning
+
+Dataandlearning
+Usuallywedivideourdatainto 3 parts.
+l atrainingset;
+l atestset;
+l avalidationset.
+Sometimes,weuseonlyatrainingsetandavalidationset.
+Imperial College London Deep Learning
+
+Dataandlearning
+Themeaningofthesedatasetsisprettyself-explanatory.
+Roughlyspeaking,thetrainingsetisusedtofindthemodelsparameters(usingfor
+example,gradientdescent);thevalidationsetistoseehowwellthemodelhas
+learned,andtodetectover-fitting;andthetestsetistoprovideanindependent
+verificationofthegoodnessofthemodel.
+Imperial College London Deep Learning
+
+Datasets
+Imperial College London Deep Learning
+
+Datasets
+Imperial College London Deep Learning
+
+Modelandfeatureselection
+Consideralinearregressionform. Wepostulatedamodeltofittothedataofthe
+form:
+y = mx+c. (4)
+Whydidwepickamodelofthisform? Howdoweknowthatthismodelismore
+appropriatethan,forexample:
+y = ax 2 +bx+c. (5)
+Isn’titagoodideatouserichermodelstructures? Thesamethingcanbesaidfor
+ANNs. Whyuseamodelwith 10 neuronsperlayerand 2 layerswhen Icanuse 1000
+neuronsperlayerand 500 layers?
+Imperial College London Deep Learning
+
+Modelandfeatureselection
+Isn’titagoodideatouserichermodelstructures? Well,notalways.
+l
+Toofewparameters→Don’treallycapturewhatisgoingon.
+l
+Toomanyparameters→Weendupfittingnoise.
+Inreality,bothsituationsarebad,andleadstomodelswithverypoorabilityto
+generalise.
+Imperial College London Deep Learning
+
+Modelandfeatureselection
+Imperial College London Deep Learning
+
+Modelandfeatureselection
+Imperial College London Deep Learning
+
+Modelandfeatureselection
+Imperial College London Deep Learning
+
+Overfittingandbiasvariancedilemma
+Inreality,selectingthestructureforthemodel,andthefeaturestopredictlabels,is
+usuallybasedonpriorinformationabouttheproblem.
+Forexample,inrobotics,weoftenknowthedifferentialequationthatdescribesthe
+process.
+Overfittedmodelsususallyhavehighvariance. Changethedata,andthemodel
+parameterschangealot. Underfittedmodelsusuallyhaveahighbias. Thatis,they
+makealotoferrorsinthetestset. Strikingabalancebetweenthetwoiscalledthe
+bias-variancetradeoff.
+Imperial College London Deep Learning
+
+Regularisation
+Therearemanysolutionstotheproblemofoverfitting. Perhapstheonethatismost
+widelyusedisknownasregularisation.
+Regularisationisanumbrellatermthatconstrainsthemodelparameters: inother
+words,itforcesthelearningalgorithmtofindalesscomplexmodel.
+Suppose,givenadata-set,wepostulateaneuralnetworkoftheform:
+y = NN(W,x),where Wdenotestheparametersofthemodel.
+Imperial College London Deep Learning
+
+Regularisation
+Uptonow,wefindthe’optimal’,θbyfindingtheparametersthatsolvesthe
+followingoptimization:
+minimize J(W)
+W
+Regularisationinvolvesaddinganothertermtotheoptimizationtoconstrainthe
+parameters.
+minimize J(W)+λg(W)
+W
+Imperial College London Deep Learning
+
+Regularisation
+Typicalchoicesofg(W)are
+∑
+g(W) = w 2
+ijk
+ijk
+∑
+g(W) = |w |
+ijk
+ijk
+Theformeriscalled L 2 regularisation,orridgeregularisation. L 2 regularisation
+looksforsmallparametervectors.
+Thelatteriscalled L 1 regularisation,or LASSOregularisation. L 1 regularisationlooks
+forsparseparametervectors.
+Imperial College London Deep Learning
+
+Dropout
+Anothermethodtoimprovetheeffectsofoverfittingistointroducedropout:
+l Randomlysetsthederivativeofafractionofneuronstozeroduringtraining.
+l Preventsco-adaptationofneurons.
+l Actsasanensembleofmodels.
+Thisisusuallyspecifiedthroughadropoutrate. Inpractice,duringtraining,we
+”deactivate”aportionoftheneurons.
+Imperial College London Deep Learning
+
+Parameter Tuning
+Howdo Itunethehyperparameterofthenetwork? Mainexamplesare: numberof
+layers,numberofneurons,learningrateη,dropoutrate,regularizationparameterλ,
+numberofepochs,etc.
+l Trialanderror.
+l Usealreadyexistingnetworks
+l Usetechniqueslikegridsearchorrandomsearch.
+Imperial College London Deep Learning
+
+Convolutional Neural Networks
+Imperial College London Deep Learning
+
+Imagesandpatterns
+Ahumanwouldhavenoissuessayingthatthesetwoimageslookverysimilar.
+l Why?
+l Canweusea Linear Neural Networks(LNNs)toclassifythem?
+Imperial College London Deep Learning
+
+Whynotusea LNN?
+Animageisjustamatrixofnumbers(actually,threeorfourmatricesgenerally)
+1 0 0 0 1
+0 1 0 1 0
+0 0 0 0 1
+0 0 1 0 0
+0 1 0 1 0
+1 0 0 0 1
+0 1 0 1 0
+0 0 1 0 0
+0 1 0 1 0
+1 0 0 0 1
+0 1 0 1 0
+0 0 1 0 0
+1 0 0 0 0
+0 1 0 1 0
+1 0 0 0 1
+Imperial College London Deep Learning
+
+Whynotusea LNN?
+Let’sconsiderasimplecasewithonlyonechannel
+1 0 0 0 1 0 0 0 0 1
+0 1 0 1 0 0 1 0 1 0
+0 0 1 0 0 0 0 1 0 0
+0 1 0 1 0 0 1 0 1 0
+1 0 0 0 1 1 0 0 0 0
+Imperial College London Deep Learning
+
+Whynotusea LNN?
+l Canyouthinkofadisadvantageinusinga LNNwhenanalysinganimage?
+Imperial College London Deep Learning
+
+Whynotusea LNN?
+l Canyouthinkofadisadvantageinusinga LNNwhenanalysinganimage?
+l Whatarewelosing(orrather,whatarewegettingtoomuchof),intermsof
+information?
+Imperial College London Deep Learning
+
+Whynotusea LNN?
+l Canyouthinkofadisadvantageinusinga LNNwhenanalysinganimage(tryto
+countthenumberofweightsneededfora 1024×1024 imageina LNNwith 64
+neuronsasafirstlayer)?
+l Whatarewelosing,intermsofinformation?
+x
+!"#$
+1 0 0 0 1
+0 1 0 1 0
+0 0 1 0 0 1 0 ... 0 1
+0 1 0 1 0
+1 0 0 0 1
+Imperial College London Deep Learning
+
+Features
+Imagesanddata,ingeneral,oftenpresent Spatial Featuresandtheorderinwhich
+dataarepresentedmatters. Ina LNN,sinceeachneuronlooksatthewholeinput,
+weloseentirelythespatialinformation
+l Edges,curves
+l Imagesareoftencomposedinahierarchicalway
+l Howcanweincludetheminour Neural Network?
+Imperial College London Deep Learning
+
+Convolutional Kernels
+Agoodwayofspottingfeaturesdoingitisbyemployingtheconvolutionaloperator
+andasetof”filters”or”Convolutional Kernels”
+Imperial College London Deep Learning
+
+Convolutional Kernels-Example
+W
+1
+X X X
+11 12 13
+X =X X X  W ∗X
+21 22 23 1 ij
+X X X
+ 31 32 33
+Imperial College London Deep Learning
+
+Convolutional Kernels-Example
+Let’suse-1 and 1,insteadof 0 and 1,tomakethedifferencebetweenpatchesmore
+striking
+1 −1 −1 −1 1
+−1 1 −1 1 −1 1 −1 −1 9
+−1 −1 1 −1 −1 ∗ −1 1 −1 =
+−1 1 −1 1 −1 −1 −1 1
+1 −1 −1 −1 1
+(1·1)+(−1·−1)+(−1·−1)+(−1·−1)+(1·1)+(−1·−1)+(−1·−1)+(−1·−1)+(1·1)=9
+Imperial College London Deep Learning
+
+Convolutional Kernels-Example
+Inthisportionoftheimagetheactivationismuchlower
+1 −1 −1 −1 1
+−1 1 −1 1 −1 1 −1 −1 9 −3
+−1 −1 1 −1 −1 ∗ −1 1 −1 =
+−1 1 −1 1 −1 −1 −1 1
+1 −1 −1 −1 1
+(−1·1)+(−1·−1)+(−1·−1)+(1·−1)+(−1·1)+(1·−1)+(−1·−1)+(1·−1)+(−1·1)=−3
+Imperial College London Deep Learning
+
+Convolutional Kernels-Example
+Ifthe Kernel”finds”thefeatureinapatch,thecorrespondingoutputwillbealarge
+value
+1 −1 −1 −1 1
+−1 1 −1 1 −1 1 −1 −1 9 −3 1
+−1 −1 1 −1 −1 ∗ −1 1 −1 = −3 3 −3
+−1 1 −1 1 −1 −1 −1 1 1 −3 9
+1 −1 −1 −1 1
+Imperial College London Deep Learning
+
+Convolutional Kernels-Example
+Ifthe Kernel”finds”thefeatureinapatch,thecorrespondingoutputwillbealarge
+value
+1 −1 −1 −1 1
+−1 1 −1 1 −1 1 −1 −1 9 −3 1
+−1 −1 1 −1 −1 ∗ −1 1 −1 = −3 3 −3
+−1 1 −1 1 −1 −1 −1 1 1 −3 9
+1 −1 −1 −1 1
+Imperial College London Deep Learning
+
+Convolutional Layers
+Wetalkedaboutkernelsandfeatures. Howisthisconnectedtoneurons? (Showing
+onlythreeneuronsoutofnine)
+!
+y 111
+!
+y 221
+!
+y 331
+Imperial College London Deep Learning
+
+Convolutional Layers
+Eachneuronisconnectedtoalimitedamountofinputs,calledthe”receptivefield”
+ofthatspecificneuron. Foralltheseneuronstheweights(thekernel)arethesame!
+{
+s ifs ≥ 0
+h(s) =
+0, otherwise
+! y 111
+! y 221
+! y 331
+w 111 w 121 w 131
+W 1= w 211 w 221 w 231  yij 1=h(W 1 ∗Xij+b 1)
+w 311 w 321 w 331
+Imperial College London Deep Learning
+
+Convolutional Layers
+Forourspecificexample,sinceweareconsideringthreekernels,weenduphaving
+three”groupsofneurons”
+w w w w w w
+111 121 131 112 122 132
+W 1= w 211 w 221 w 231  W 2= w 212 w 222 w 232 
+w 311 w 321 w 331 w 312 w 322 w 332
+yij 1=h(W 1 ∗Xij+b 1) yij 2=h(W 2 ∗Xij+b 2)
+w w w
+113 123 133
+W 3= w 213 w 223 w 233 
+w 313 w 323 w 333
+yij 3=h(W 3 ∗Xij+b 3)
+Imperial College London Deep Learning
+
+Convolutional Layers
+l
+n n n
+111 121 121
+n 211 n 221 n 231 h
+n n n
+311 321 331
+h×l×d
+1 2 3
+d
+Imperial College London Deep Learning
+
+Convolutional Layers
+So,aconvolutionallayeriscomposedofh×l×dneuronsandtheresultingoutput
+isah×l×darray(tensor)thatisthenfedtothenextlayer. Thesetofneuronsthat
+sharethesamefeature(theonesshowninthepreviousslide)areusuallycalleda
+”featuremap”.
+Whatdoyouthinkwillthenextlayerdo? Arethefeaturesofthenextlayerrelatedto
+theonebefore?
+Imperial College London Deep Learning
+
+Convolutional Layers
+Imperial College London Deep Learning
+
+Abitmoreon Convolutional Kernels...
+Youwillhavenoticedthattheresultingoutput,inourexample,issmallerthanthe
+originalimage. Thisdependsonaseriesofhyperparameters:
+l Kerneldimensions(k xi ×k yi ): Dimensionofthematrices W i (it’snormallysquare
+butnothingpreventsk ̸= k );
+xi yi
+l Stride(S): thedistancebetweenthecenterofthecurrentandthenext
+convolutionoperation. Inourexamplewesetthestrideto 1;
+l Padding(P): Fillingtheimagewithaseriesof 0 ontheedgesinordertoavoid
+croppingeffectsduetokernels.
+Imperial College London Deep Learning
+
+Strideand Paddingexample
+Stride,S = 3
+Padding,P = 1
+Imperial College London Deep Learning
+
+CNNArchitecture
+Let’snowtakealookatacompleteconvolutionalnetworktoclassifyimages.
+l Convolutional Layeristheonejustexplained
+l Let’stakealookattheothertwonow
+Input
+1 0 0 0 1
+0 10 00 10 00 1
+0 00 111 000 010 00 1 ...
+1 0 1 0 0 0 0 01 00 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 1 0 0 0 Con L vo a l y u e t r ional Pooling Layer Con L vo a l y u e t r ional Pooling Layer Linear Layer
+1 00 01 00 01 0
+1 0 0 0 1
+Imperial College London Deep Learning
+
+Pooling Layer
+Thislayerisusedtoreducethedimensionoftheinputandto”focus”onlarger
+areasoftheimage(otherwisetocapturecombinationoffeaturesthedimensionof
+thekernelinsuccessivelayersshouldkeepincreasing)
+Input
+1 0 0 0 1
+0 10 00 10 00 1
+0 00 111 000 010 00 1 ...
+1 0 1 0 0 0 0 01 00 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 1 0 0 0 Con L vo a l y u e t r ional Pooling Layer Con L vo a l y u e t r ional Pooling Layer Linear Layer
+1 00 01 00 01 0
+1 0 0 0 1
+Imperial College London Deep Learning
+
+Pooling Layer Example
+9 −3 1 9 0 1
+Pooling
+9
+Re Lu Max
+−3 3 −3 0 3 0
+1 −3 9 1 0 9
+Imperial College London Deep Learning
+
+Pooling Layer Example
+Sinceinthisexamplethedimensionsofthematrixareodd,weaddtwolinesof
+zeros(noticethattheresultcouldbedifferent,dependingonwhereyoudoit,but
+forverylargeimagesthiswouldn’treallymatter).
+9 −3 1 9 0 1 0 Pooling
+Re Lu Max 9 1
+−3 3 −3 0 3 0 0
+1 −3 9 1 0 9 0
+0 0 0 0
+Imperial College London Deep Learning
+
+Pooling Layer Example
+Sinceinthisexamplethedimensionsofthematrixareodd,weaddtwolinesof
+zeros(noticethattheresultcouldbedifferent,dependingonwhereyoudoit,but
+forverylargeimagesthiswouldn’treallymatter).
+9 −3 1 9 0 1 0 Pooling
+Re Lu Max 9 1
+−3 3 −3 0 3 0 0
+1
+1 −3 9 1 0 9 0
+0 0 0 0
+Imperial College London Deep Learning
+
+Pooling Layer Example
+Sinceinthisexamplethedimensionsofthematrixareodd,weaddtwolinesof
+zeros(noticethattheresultcouldbedifferent,dependingonwhereyoudoit,but
+forverylargeimagesthiswouldn’treallymatter).
+9 −3 1 9 0 1 0 Pooling
+Re Lu Max 9 1
+−3 3 −3 0 3 0 0
+1 9
+1 −3 9 1 0 9 0
+0 0 0 0
+Imperial College London Deep Learning
+
+Pooling Layer
+Pooling Layerscanbeofdifferentkinds
+l Max Pool: Wetakethemaximumvalueinthepoolingfilter
+l Avg Pool: Weaverageoverthevaluesinthepoolingfilter
+l Thedimensionofthepoolingfilterisadesignchoice
+l Thestrideofthepoolingfilterisalmostalwaysequaltoitsx-size
+Imperial College London Deep Learning
+
+Linear Layer
+Finally,the Linear Layercombinestheoutputsofthelast Convolutionallayerand
+usesaclassifierstructuretoprovideaprobabilitydistributionforourinputimage
+Input
+1 0 0 0 1
+0 10 00 10 00 1
+0 00 111 000 010 00 1 ...
+1 0 1 0 0 0 0 01 00 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 1 0 0 0 Con L vo a l y u e t r ional Pooling Layer Con L vo a l y u e t r ional Pooling Layer Linear Layer
+1 00 01 00 01 0
+1 0 0 0 1
+Imperial College London Deep Learning
+
+Linear Layer
+Doyourememberthelastexercisein Lab 2? Weusedthesoftmaxfunctionandthe
+cross-entropylosstofindaprobabilitydistributionforourinputs.
+es
+y = f(s) = ∑ i (6)
+i i N esj
+i=1
+∑N
+H = − z logy (7)
+i i
+i=1
+∑
+Withz = [z ,...,z ]beingaone-hotvectorand N y = 1
+1 N i=1 i
+Imperial College London Deep Learning
+
+Linear Layer
+Ofcourse,onethingtorememberisthattheoutputofthelastpoolinglayerisa
+seriesofmatrices(3 matricesinourexample). Theseneedtobe”flattened”sothat
+theycanbeusedasaninputforourlastlinearlayer.
+9 1 Flattening
+9 1 1 9
+1 9
+Inourspecificexample,wewillflattenthreematricesandconcatenatethe
+resultingvectors,endingupwitha 12-dimensionalinput.
+Imperial College London Deep Learning
+
+Learning
+Atthispointeverythingissetandallweneedtodoisinitializeourweights,setting
+upourtrainingset,settingupthelabelsandthenusethebackpropagation
+algorithmtoteachournetworktorecognisethedesiredoutputs.
+∂H
+wlin ← wlin −α (8)
+ij ij ∂wlin
+ij
+∂H
+wconv ← wconv −α (9)
+ijz ij ∂wconv
+ijz
+Noticethatequation(9)ishowthenetworklearnsthefeaturesthatwehave
+consideredgiven,uptothispoint(rememberalsothatneuronsintheconvolutional
+layersharemostoftheweights).
+Imperial College London Deep Learning
+
+Any questions?
+Imperial College London Deep Learning

@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\01-simple-qa-README.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 4.269,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 323\n[2] 清洗后词数: 329\n[3] 文档类型识别: paper_book\n[4] 分块数（过滤前）: 3\n[5] 分块数（过滤后）: 3\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=78\nExample 1: Simple Question Answering A minimal RAG system demonstrating the core concepts. What It Does (cid:127) Loads a small knowledge base (facts) (cid:127) Embeds and stores them in Chroma DB (cid:127) Answers quest...\n\n[Chunk 2] words=140\n# Run python simple_qa.py Without Open AI (Free, Simple Answers) # Just run it - will use basic fallback python simple_qa.py Example Output ============================================================== Simple Question A...\n\n[Chunk 3] words=111\n2. Storage: Vectors are stored in Chroma DB 3. Retrieval: Similar vectors are found using cosine similarity 4. Generation: Answer is generated from retrieved facts Code Structure class Simple QA: def add_knowledge(facts)...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

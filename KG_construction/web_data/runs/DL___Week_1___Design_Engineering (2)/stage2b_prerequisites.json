@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Probability Theory",
+      "to": "Loss Functions",
+      "reason": "Understanding probability is essential for measuring model performance."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Gradient Descent",
+      "reason": "Gradient descent is used to minimize loss functions."
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Regression",
+      "reason": "Regression is a fundamental technique in machine learning."
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Classification",
+      "reason": "Classification is a fundamental technique in machine learning."
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Deep Learning",
+      "reason": "Deep learning is a subset of machine learning."
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Transformers",
+      "reason": "Transformers are advanced models used in deep learning."
+    }
+  ]
+}

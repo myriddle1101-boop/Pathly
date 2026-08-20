@@ -1,0 +1,33 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Neural Network Concepts",
+      "to": "Performance Optimization",
+      "reason": "Understanding neural networks is essential for optimizing their performance."
+    },
+    {
+      "from": "Query Processing",
+      "to": "Query Variations",
+      "reason": "Mastering query processing is necessary to understand different forms of queries."
+    },
+    {
+      "from": "Query Processing",
+      "to": "Results Management",
+      "reason": "Effective query processing is crucial for managing and optimizing results."
+    },
+    {
+      "from": "Text Chunking",
+      "to": "Semantic Processing",
+      "reason": "Dividing text into chunks is a prerequisite for understanding its meaning."
+    },
+    {
+      "from": "Hybrid Search",
+      "to": "Query Processing",
+      "reason": "Combining search techniques requires a solid understanding of query processing."
+    }
+  ]
+}

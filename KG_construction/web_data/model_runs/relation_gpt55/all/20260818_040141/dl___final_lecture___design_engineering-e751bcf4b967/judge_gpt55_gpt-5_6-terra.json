@@ -1,0 +1,141 @@
+{
+  "created_at": "2026-08-18T18:58:56.561537+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-dl___final_lecture___design_engineering-e751bcf4b967",
+  "file_name": "dl___final_lecture___design_engineering-e751bcf4b967",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 2,
+  "topic_metrics": {
+    "precision": 0.4,
+    "recall": 0.5,
+    "f1": 0.4444,
+    "tp": 6,
+    "fp": 9,
+    "fn": 6
+  },
+  "prerequisite_metrics": {
+    "precision": 0.4,
+    "recall": 0.6667,
+    "f1": 0.5,
+    "tp": 2,
+    "fp": 3,
+    "fn": 1
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "drone delivery systems",
+      "autonomous drone navigation",
+      "learning agents in AI",
+      "deep learning algorithms",
+      "autonomous drone applications in logistics",
+      "reinforcement learning for autonomous systems"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "drone technology advancements",
+        "reason": "The source describes a drone-delivery agent scenario, not advances in drone technology."
+      },
+      {
+        "name": "machine learning models",
+        "reason": "Models are mentioned only in a heading; no machine-learning model concept is developed."
+      },
+      {
+        "name": "learning assignments in education",
+        "reason": "The lecture includes a group activity, but does not discuss educational learning assignments as a concept."
+      },
+      {
+        "name": "learning methodologies in lectures",
+        "reason": "No lecture pedagogy or learning methodology is presented."
+      },
+      {
+        "name": "drone fleet management",
+        "reason": "The source mentions another approaching drone, but not coordinating or managing a drone fleet."
+      },
+      {
+        "name": "real-time data processing for drones",
+        "reason": "Drone sensors and observations are listed, but real-time processing is not specified."
+      },
+      {
+        "name": "deep learning for image recognition in drones",
+        "reason": "Camera or lidar observations are mentioned, but no image-recognition method is described."
+      },
+      {
+        "name": "adaptive learning systems in AI",
+        "reason": "The source asks learners to select a learning method, but does not discuss adaptive learning systems."
+      },
+      {
+        "name": "lecture-based learning strategies",
+        "reason": "No learning strategies for lecture participants are presented."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Markov Decision Processes",
+        "reason": "Listed explicitly among the lecture's core topics."
+      },
+      {
+        "name": "state space",
+        "reason": "Students are explicitly required to define the agent state space S."
+      },
+      {
+        "name": "action space",
+        "reason": "Students are explicitly required to define the agent action space A."
+      },
+      {
+        "name": "reward function",
+        "reason": "Students are explicitly required to define the reward function R."
+      },
+      {
+        "name": "partial observability",
+        "reason": "Explicitly identified as a major technical challenge, with multiple scenarios involving uncertain or conflicting sensor observations."
+      },
+      {
+        "name": "multi-agent emergent dynamics",
+        "reason": "The closing discussion identifies emergent dynamics among millions of interacting AI agents as an open problem."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "autonomous drone navigation",
+        "to": "autonomous drone applications in logistics",
+        "reason": "The drone-delivery scenario requires navigation to delivery locations while avoiding obstacles."
+      },
+      {
+        "from": "autonomous drone navigation",
+        "to": "drone delivery systems",
+        "reason": "The described delivery agent must navigate to destinations and avoid buildings, trees, and other drones."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "learning agents in AI",
+        "to": "reinforcement learning for autonomous systems",
+        "reason": "Both agents and reinforcement learning are present, but the source does not establish this instructional dependency."
+      },
+      {
+        "from": "deep learning algorithms",
+        "to": "deep learning for image recognition in drones",
+        "reason": "The target topic is not supported; the source does not describe drone image recognition."
+      },
+      {
+        "from": "real-time data processing for drones",
+        "to": "autonomous drone navigation",
+        "reason": "Real-time drone data processing is not stated in the source."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Markov Decision Processes",
+        "to": "reinforcement learning for autonomous systems",
+        "reason": "Both are explicit core topics, and Markov decision processes provide the standard state-action-reward framework for reinforcement learning."
+      }
+    ],
+    "overall_note": "The source is primarily an agent-design activity; it supports agent, reinforcement-learning, uncertainty, and drone-delivery concepts, but not detailed drone perception or operational-management methods."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___final_lecture___design_engineering-e751bcf4b967.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___final_lecture___design_engineering-e751bcf4b967.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___final_lecture___design_engineering-e751bcf4b967_ledger.csv"
+  }
+}

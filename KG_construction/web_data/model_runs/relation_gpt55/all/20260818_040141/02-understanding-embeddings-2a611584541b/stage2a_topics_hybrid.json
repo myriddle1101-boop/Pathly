@@ -1,0 +1,364 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 4,
+  "candidate_count": 24,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "understanding embeddings",
+      "avg_score": 0.7952,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "similarities cosine_similarity",
+      "avg_score": 0.7634,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "cosine_similarity similarities",
+      "avg_score": 0.7613,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "cosine_similarity",
+      "avg_score": 0.7429,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "cosine_similarity vec",
+      "avg_score": 0.7403,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "import cosine_similarity",
+      "avg_score": 0.7255,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "embeddings embeddings",
+      "avg_score": 0.7092,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "embeddings",
+      "avg_score": 0.7086,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "cosine similarity",
+      "avg_score": 0.7079,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "embeddings embedding",
+      "avg_score": 0.7019,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "embeddings work",
+      "avg_score": 0.6949,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "sentence_transformers import",
+      "avg_score": 0.6814,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "embeddings simplified",
+      "avg_score": 0.6806,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "ai embeddings",
+      "avg_score": 0.6139,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "search sentence_transformers",
+      "avg_score": 0.601,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "sentence_transformers",
+      "avg_score": 0.5895,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "sentence transformer",
+      "avg_score": 0.5635,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "sentence transformers",
+      "avg_score": 0.5581,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "cosine_similarity import",
+      "avg_score": 0.5506,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "ai api_key",
+      "avg_score": 0.5435,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "embeddings computing",
+      "avg_score": 0.5203,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "embedding models",
+      "avg_score": 0.5052,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "computing embeddings",
+      "avg_score": 0.5043,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "model encode",
+      "avg_score": 0.4967,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Embeddings",
+      "description": "Techniques for representing data in a continuous vector space.",
+      "sub_topics": [
+        {
+          "name": "Understanding Embeddings",
+          "description": "Fundamental concepts and applications of embeddings."
+        },
+        {
+          "name": "Computing Embeddings",
+          "description": "Methods and algorithms for generating embeddings."
+        },
+        {
+          "name": "Embedding Models",
+          "description": "Different architectures and models used for embeddings."
+        }
+      ]
+    },
+    {
+      "name": "Cosine Similarity",
+      "description": "A metric used to measure the similarity between two non-zero vectors.",
+      "sub_topics": [
+        {
+          "name": "Cosine Similarity Calculation",
+          "description": "Methods for calculating cosine similarity."
+        },
+        {
+          "name": "Applications of Cosine Similarity",
+          "description": "Use cases in information retrieval and clustering."
+        }
+      ]
+    },
+    {
+      "name": "Sentence Transformers",
+      "description": "Models designed to generate embeddings for sentences.",
+      "sub_topics": [
+        {
+          "name": "Importing Sentence Transformers",
+          "description": "How to use sentence transformers in code."
+        },
+        {
+          "name": "Sentence Transformer Applications",
+          "description": "Practical applications of sentence transformers in NLP."
+        }
+      ]
+    },
+    {
+      "name": "AI APIs",
+      "description": "Application Programming Interfaces for integrating AI functionalities.",
+      "sub_topics": [
+        {
+          "name": "Using AI APIs",
+          "description": "How to interact with AI APIs for various tasks."
+        },
+        {
+          "name": "API Key Management",
+          "description": "Best practices for managing API keys securely."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": [
+        {
+          "name": "Artificial Neural Networks",
+          "description": "Basic structure and function of artificial neural networks."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of neural network nodes."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "Algorithm for training neural networks through gradient descent."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Functions that measure the difference between predicted and actual values.",
+      "sub_topics": [
+        {
+          "name": "Types of Loss Functions",
+          "description": "Different loss functions used in machine learning."
+        },
+        {
+          "name": "Loss Function Optimization",
+          "description": "Techniques for minimizing loss during training."
+        }
+      ]
+    },
+    {
+      "name": "Linear Separation",
+      "description": "Concepts related to separating data points using linear boundaries.",
+      "sub_topics": [
+        {
+          "name": "Linear Separability",
+          "description": "Conditions under which data can be separated linearly."
+        },
+        {
+          "name": "Applications of Linear Separation",
+          "description": "Use cases in classification tasks."
+        }
+      ]
+    },
+    {
+      "name": "Regression and Classification",
+      "description": "Supervised learning tasks for predicting continuous and categorical outcomes.",
+      "sub_topics": [
+        {
+          "name": "Regression Techniques",
+          "description": "Methods for predicting continuous values."
+        },
+        {
+          "name": "Classification Techniques",
+          "description": "Methods for categorizing data into classes."
+        }
+      ]
+    },
+    {
+      "name": "Model Training",
+      "description": "Processes involved in training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Training Algorithms",
+          "description": "Different algorithms used for training models."
+        },
+        {
+          "name": "Evaluation Metrics",
+          "description": "Metrics for assessing model performance."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 27.9917,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

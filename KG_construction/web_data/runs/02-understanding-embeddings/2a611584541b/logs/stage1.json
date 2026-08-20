@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-understanding-embeddings\\2a611584541b\\02-understanding-embeddings.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-understanding-embeddings\\2a611584541b\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-understanding-embeddings\\2a611584541b\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 10.7763,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 1463\n[2] 清洗后词数: 1513\n[3] 文档类型识别: lecture_notes\n[4] 分块数（过滤前）: 4\n[5] 分块数（过滤后）: 4\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-understanding-embeddings\\2a611584541b\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-understanding-embeddings\\2a611584541b\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=343\nLesson 2: Understanding Embeddings Embeddings are the foundation of RAG systems. This lesson will take you from \"what's an embedding?\" to understanding how they enable semantic search. What Are Embeddings? An embedding i...\n\n[Chunk 2] words=375\nThe most common metric is cosine similarity: import numpy as np def cosine_similarity(vec 1, vec 2): \"\"\"Compute cosine similarity between two vectors\"\"\" dot_product = np.dot(vec 1, vec 2) norm 1 = np.linalg.norm(vec 1) n...\n\n[Chunk 3] words=358\n# [0.15, 0.12, 1.00]] # Third (different topic) Using Open AI Embeddings (Paid, API) from openai import Open AI client = Open AI(api_key=\"your-api-key\") # Create embedding response = client.embeddings.create( model=\"text...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

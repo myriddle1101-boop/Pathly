@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\05-building-simple-rag.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 4.9901,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 2005\n[2] 清洗后词数: 2040\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 12\n[5] 分块数（过滤后）: 12\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=141\nLesson 5: Building a Simple RAG System Now it's time to put everything together! In this lesson, you'll build a complete RAG system step by step. What We're Building A simple but functional RAG system that: - n Loads and...\n\n[Chunk 2] words=140\nLLM_MODEL = \"gpt-3.5-turbo\" LLM_TEMPERATURE = 0.7 MAX_TOKENS = 500 # Embedding Settings EMBEDDING_MODEL = \"all-Mini LM-L 6-v 2\" # Free, local model # Chunking Settings CHUNK_SIZE = 500 CHUNK_OVERLAP = 50 # Retrieval Sett...\n\n[Chunk 3] words=162\ndocuments.append(doc) print(f\"Loaded: {file_path}\") except Exception as e: print(f\"Error loading {file_path}: {e}\") return documents @staticmethod def load_from_text(text: str, metadata: Dict = None) -> Dict: \"\"\"Load fro...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

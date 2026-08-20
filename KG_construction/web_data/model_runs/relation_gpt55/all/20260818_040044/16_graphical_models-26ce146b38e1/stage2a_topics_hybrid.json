@@ -1,0 +1,863 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 38,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "models deep",
+      "avg_score": 0.5889,
+      "frequency": 9,
+      "chunk_ids": [
+        1,
+        5,
+        11,
+        13,
+        17,
+        21,
+        26,
+        30,
+        37
+      ]
+    },
+    {
+      "name": "probabilistic models",
+      "avg_score": 0.5504,
+      "frequency": 6,
+      "chunk_ids": [
+        2,
+        11,
+        13,
+        17,
+        21,
+        26
+      ]
+    },
+    {
+      "name": "models",
+      "avg_score": 0.5391,
+      "frequency": 6,
+      "chunk_ids": [
+        6,
+        11,
+        13,
+        17,
+        21,
+        26
+      ]
+    },
+    {
+      "name": "undirected graph",
+      "avg_score": 0.6091,
+      "frequency": 5,
+      "chunk_ids": [
+        18,
+        19,
+        20,
+        31,
+        32
+      ]
+    },
+    {
+      "name": "unstructured modeling",
+      "avg_score": 0.5926,
+      "frequency": 5,
+      "chunk_ids": [
+        1,
+        4,
+        10,
+        34,
+        35
+      ]
+    },
+    {
+      "name": "undirected models",
+      "avg_score": 0.6226,
+      "frequency": 4,
+      "chunk_ids": [
+        11,
+        17,
+        28,
+        34
+      ]
+    },
+    {
+      "name": "structured modeling",
+      "avg_score": 0.5921,
+      "frequency": 4,
+      "chunk_ids": [
+        4,
+        10,
+        34,
+        35
+      ]
+    },
+    {
+      "name": "modeling using",
+      "avg_score": 0.5898,
+      "frequency": 3,
+      "chunk_ids": [
+        4,
+        34,
+        35
+      ]
+    },
+    {
+      "name": "modeling structure",
+      "avg_score": 0.5762,
+      "frequency": 3,
+      "chunk_ids": [
+        4,
+        34,
+        35
+      ]
+    },
+    {
+      "name": "structured probabilistic",
+      "avg_score": 0.5472,
+      "frequency": 3,
+      "chunk_ids": [
+        10,
+        13,
+        21
+      ]
+    },
+    {
+      "name": "factor graphs",
+      "avg_score": 0.7809,
+      "frequency": 2,
+      "chunk_ids": [
+        31,
+        32
+      ]
+    },
+    {
+      "name": "factor graph",
+      "avg_score": 0.7523,
+      "frequency": 2,
+      "chunk_ids": [
+        31,
+        32
+      ]
+    },
+    {
+      "name": "graph factor",
+      "avg_score": 0.632,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        32
+      ]
+    },
+    {
+      "name": "active paths",
+      "avg_score": 0.6134,
+      "frequency": 2,
+      "chunk_ids": [
+        18,
+        22
+      ]
+    },
+    {
+      "name": "model structure",
+      "avg_score": 0.6099,
+      "frequency": 2,
+      "chunk_ids": [
+        34,
+        35
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.6084,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        37
+      ]
+    },
+    {
+      "name": "undirected model",
+      "avg_score": 0.5943,
+      "frequency": 2,
+      "chunk_ids": [
+        28,
+        30
+      ]
+    },
+    {
+      "name": "probability distribution",
+      "avg_score": 0.5736,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        14
+      ]
+    },
+    {
+      "name": "graph imply",
+      "avg_score": 0.5581,
+      "frequency": 2,
+      "chunk_ids": [
+        19,
+        20
+      ]
+    },
+    {
+      "name": "model",
+      "avg_score": 0.5546,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        13
+      ]
+    },
+    {
+      "name": "running alice",
+      "avg_score": 0.5503,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        7
+      ]
+    },
+    {
+      "name": "directed models",
+      "avg_score": 0.5467,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        21
+      ]
+    },
+    {
+      "name": "models chapter",
+      "avg_score": 0.5413,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        21
+      ]
+    },
+    {
+      "name": "graph",
+      "avg_score": 0.5378,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        19
+      ]
+    },
+    {
+      "name": "alice finishing",
+      "avg_score": 0.5367,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        7
+      ]
+    },
+    {
+      "name": "finishing time",
+      "avg_score": 0.5354,
+      "frequency": 2,
+      "chunk_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "name": "alice finishes",
+      "avg_score": 0.5168,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        7
+      ]
+    },
+    {
+      "name": "graphs factor",
+      "avg_score": 0.7728,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "complete graph",
+      "avg_score": 0.7064,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "graph represent",
+      "avg_score": 0.7008,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "complete graphs",
+      "avg_score": 0.6986,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "graphs probability",
+      "avg_score": 0.6962,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "graph probability",
+      "avg_score": 0.6957,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "graph ambiguity",
+      "avg_score": 0.6937,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "yee ouiinnta",
+      "avg_score": 0.6889,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "learning density",
+      "avg_score": 0.6754,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "paths undirected",
+      "avg_score": 0.6745,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "graph choose",
+      "avg_score": 0.6716,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "inactive paths",
+      "avg_score": 0.6667,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "constant functions",
+      "avg_score": 0.6656,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "ditional probability",
+      "avg_score": 0.6606,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "graph directed",
+      "avg_score": 0.6557,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "zb ze",
+      "avg_score": 0.6551,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "eal llt",
+      "avg_score": 0.6548,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "directed model",
+      "avg_score": 0.6414,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "values minute",
+      "avg_score": 0.64,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "probability configurations",
+      "avg_score": 0.6397,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "expectation winds",
+      "avg_score": 0.6363,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "units interaction",
+      "avg_score": 0.6334,
+      "frequency": 1,
+      "chunk_ids": [
+        38
+      ]
+    },
+    {
+      "name": "ecctu taa",
+      "avg_score": 0.6312,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "does graph",
+      "avg_score": 0.6294,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "time discretizing",
+      "avg_score": 0.6285,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "graphs",
+      "avg_score": 0.6279,
+      "frequency": 1,
+      "chunk_ids": [
+        31
+      ]
+    },
+    {
+      "name": "variable indicating",
+      "avg_score": 0.6266,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "model undirected",
+      "avg_score": 0.6241,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "graphs ambiguous",
+      "avg_score": 0.6241,
+      "frequency": 1,
+      "chunk_ids": [
+        32
+      ]
+    },
+    {
+      "name": "density estimation",
+      "avg_score": 0.6213,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "discretizing time",
+      "avg_score": 0.6213,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "density data",
+      "avg_score": 0.6184,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "represents variable",
+      "avg_score": 0.6184,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "probabilistic model",
+      "avg_score": 0.6177,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "ftthh yee",
+      "avg_score": 0.614,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "distributions conditional",
+      "avg_score": 0.613,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "using graph",
+      "avg_score": 0.6112,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "variable",
+      "avg_score": 0.6096,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "model description",
+      "avg_score": 0.6095,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "variable represents",
+      "avg_score": 0.6081,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "suppose variable",
+      "avg_score": 0.6063,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "probability distributions",
+      "avg_score": 0.6048,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "path separated",
+      "avg_score": 0.6048,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "variable representing",
+      "avg_score": 0.6047,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "represented time",
+      "avg_score": 0.6045,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "undirected graphs",
+      "avg_score": 0.603,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "models sdaiwrecetlayrloinert",
+      "avg_score": 0.6027,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "models work",
+      "avg_score": 0.6018,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "winds knowing",
+      "avg_score": 0.6016,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "model described",
+      "avg_score": 0.601,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    },
+    {
+      "name": "example sampling",
+      "avg_score": 0.5968,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "independences graph",
+      "avg_score": 0.594,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "sampling task",
+      "avg_score": 0.589,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": [
+        {
+          "name": "Artificial Neural Networks",
+          "description": "Computational models inspired by the human brain's network of neurons."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Metrics used to measure the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Probabilistic Models",
+      "description": "Models that incorporate uncertainty and randomness in predictions.",
+      "sub_topics": [
+        {
+          "name": "Probability Distributions",
+          "description": "Functions that describe the likelihood of different outcomes."
+        },
+        {
+          "name": "Conditional Distributions",
+          "description": "Distributions that specify the probability of an event given another event."
+        }
+      ]
+    },
+    {
+      "name": "Graph Models",
+      "description": "Models that represent relationships and dependencies using graph structures.",
+      "sub_topics": [
+        {
+          "name": "Factor Graphs",
+          "description": "Graphs that represent the factorization of a probability distribution."
+        },
+        {
+          "name": "Undirected Graphs",
+          "description": "Graphs where edges have no direction, representing symmetric relationships."
+        }
+      ]
+    },
+    {
+      "name": "Structured Modeling",
+      "description": "Modeling techniques that leverage the structure of data for better predictions.",
+      "sub_topics": [
+        {
+          "name": "Structured Probabilistic Models",
+          "description": "Models that combine structured data with probabilistic reasoning."
+        },
+        {
+          "name": "Model Structure",
+          "description": "The arrangement and relationships of variables in a model."
+        }
+      ]
+    },
+    {
+      "name": "Graph Theory",
+      "description": "The study of graphs and their properties, crucial for understanding complex networks.",
+      "sub_topics": [
+        {
+          "name": "Directed Graphs",
+          "description": "Graphs where edges have a direction, indicating a one-way relationship."
+        },
+        {
+          "name": "Complete Graphs",
+          "description": "Graphs in which every pair of vertices is connected by an edge."
+        }
+      ]
+    },
+    {
+      "name": "Sampling Techniques",
+      "description": "Methods for selecting a subset of data from a larger dataset for analysis.",
+      "sub_topics": [
+        {
+          "name": "Example Sampling",
+          "description": "Selecting representative examples from a dataset."
+        },
+        {
+          "name": "Sampling Tasks",
+          "description": "Specific objectives or goals related to data sampling."
+        }
+      ]
+    },
+    {
+      "name": "Training Algorithms",
+      "description": "Algorithms used to optimize models based on training data.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "A method for updating weights in neural networks based on error gradients."
+        },
+        {
+          "name": "Linear Separation",
+          "description": "The ability to separate classes in a dataset using a linear boundary."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Regression Analysis",
+          "description": "A statistical method for predicting continuous outcomes."
+        },
+        {
+          "name": "Classification Metrics",
+          "description": "Metrics used to evaluate the accuracy of classification models."
+        }
+      ]
+    },
+    {
+      "name": "Graph Representations",
+      "description": "Different ways to represent data and relationships using graphs.",
+      "sub_topics": [
+        {
+          "name": "Graph Probability",
+          "description": "The use of graphs to represent probabilistic relationships."
+        },
+        {
+          "name": "Graph Ambiguity",
+          "description": "Challenges in interpreting graphs due to multiple possible interpretations."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 31.1433,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

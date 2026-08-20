@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "03-vector-databases-retrieval-4f238ede4c95",
+  "created_at": "2026-07-22T04:07:28+08:00",
+  "updated_at": "2026-07-22T04:12:47+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "03-vector-databases-retrieval.pdf",
+    "doc_name": "03-vector-databases-retrieval",
+    "sha256": "4f238ede4c95af9fb9948b035f2137922a0d6d3213fa3951df3caf20caa891d0",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\03-vector-databases-retrieval.pdf",
+    "pdf_size_bytes": 39180
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 318.9289
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:07:28+08:00",
+      "ended_at": "2026-07-22T04:08:59+08:00",
+      "duration_seconds": 91.1036,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\03-vector-databases-retrieval.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 1929\n[2] 清洗后词数: 1976\n[3] 文档类型识别: lecture_notes\n[4] 分块数（过滤前）: 6\n[5] 分块数（过滤后）: 6\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=364\nLesson 3: Vector Databases & Retrieval Now that you understand embeddings, let's learn how to store and search through millions of them efficiently. The Challenge: Scaling Semantic Search Remember our simple search from ...\n\n[Chunk 2] words=377\nProduct Quantization (cid:127) Used by: Faiss, Pinecone (cid:127) How it works: Compresses vectors to save memory (cid:127) Pros: Very memory efficient (cid:127) Cons: Some quality loss Popular Vector Databases 1. Chroma...\n\n[Chunk 3] words=332\n1. Fixed-Size Chunking Split by number of characters/tokens with overlap: def chunk_text(text, chunk_size=500, overlap=50): \"\"\"Split text into overlapping chunks\"\"\" chunks = [] start = 0 while start < len(text): end = st...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:08:59+08:00",
+      "ended_at": "2026-07-22T04:11:39+08:00",
+      "duration_seconds": 160.1566,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：6\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/6 ...\n[KeyBERT] chunk 2/6 ...\n[KeyBERT] chunk 3/6 ...\n[KeyBERT] chunk 4/6 ...\n[KeyBERT] chunk 5/6 ...\n[KeyBERT] chunk 6/6 ...\n[2] KeyBERT候选数：34\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Vector Databases\n02. Text Chunking\n03. Cosine Similarity\n04. Document Management\n05. Retrieval Strategies\n06. Large Datasets\n07. Artificial Neural Networks\n08. Regression and Classification\n09. Embeddings\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5398.67it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:11:39+08:00",
+      "ended_at": "2026-07-22T04:11:48+08:00",
+      "duration_seconds": 8.6516,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Embeddings -> Cosine Similarity | Cosine Similarity measures similarity between vector representations (embeddings).\n02. Embeddings -> Vector Databases | Vector Databases store and retrieve embeddings.\n03. Document Management -> Retrieval Strategies | Effective document management is essential for implementing retrieval strategies.\n04. Large Datasets -> Retrieval Strategies | Handling large datasets requires efficient retrieval strategies.\n05. Artificial Neural Networks -> Regression and Classification | Understanding neural networks is crucial for applying regression and classification techniques.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:11:48+08:00",
+      "ended_at": "2026-07-22T04:12:20+08:00",
+      "duration_seconds": 31.7015,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 0 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5989.50it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:12:20+08:00",
+      "ended_at": "2026-07-22T04:12:45+08:00",
+      "duration_seconds": 25.391,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Vector Databases\n[LLM] 2/9 Text Chunking\n[LLM] 3/9 Cosine Similarity\n[LLM] 4/9 Document Management\n[LLM] 5/9 Retrieval Strategies\n[LLM] 6/9 Large Datasets\n[LLM] 7/9 Artificial Neural Networks\n[LLM] 8/9 Regression and Classification\n[LLM] 9/9 Embeddings\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:12:45+08:00",
+      "ended_at": "2026-07-22T04:12:47+08:00",
+      "duration_seconds": 1.8203,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output missing"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 5\n[3] Similarity edges: 0\n[4] Graph nodes=9, edges=5\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-22T04:07:28+08:00"
+}

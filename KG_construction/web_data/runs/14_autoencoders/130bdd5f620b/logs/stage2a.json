@@ -1,0 +1,29 @@
+{
+  "stage": "stage2a",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage1_chunks.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2a_topics_hybrid.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 52.1309,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2a_topics_hybrid.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：20\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/20 ...\n[KeyBERT] chunk 2/20 ...\n[KeyBERT] chunk 3/20 ...\n[KeyBERT] chunk 4/20 ...\n[KeyBERT] chunk 5/20 ...\n[KeyBERT] chunk 6/20 ...\n[KeyBERT] chunk 7/20 ...\n[KeyBERT] chunk 8/20 ...\n[KeyBERT] chunk 9/20 ...\n[KeyBERT] chunk 10/20 ...\n[KeyBERT] chunk 11/20 ...\n[KeyBERT] chunk 12/20 ...\n[KeyBERT] chunk 13/20 ...\n[KeyBERT] chunk 14/20 ...\n[KeyBERT] chunk 15/20 ...\n[KeyBERT] chunk 16/20 ...\n[KeyBERT] chunk 17/20 ...\n[KeyBERT] chunk 18/20 ...\n[KeyBERT] chunk 19/20 ...\n[KeyBERT] chunk 20/20 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Autoencoders\n02. Manifold Learning\n03. Learning Algorithms\n04. Neural Network Components\n05. Training Techniques\n06. Data Reconstruction\n07. Autoencoder Variants\n08. Coordinate Systems\n09. Model Evaluation\n\n Stage 2a 混合版完成\n",
+  "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4910.47it/s]\n"
+}

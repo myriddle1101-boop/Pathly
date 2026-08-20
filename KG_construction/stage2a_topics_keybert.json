@@ -1,0 +1,727 @@
+{
+  "stage": "2a",
+  "method": "keybert_offline",
+  "input_chunks": 7,
+  "topics_count": 56,
+  "topics": [
+    {
+      "name": "linearseparation wecanimmediatelyseethatthisisamuchricherarchitecture thefirstlayerconstructstwoclassifiersandseparatesclasseslinearlyasbefore",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.7652）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.7652,
+        "frequency": 1,
+        "chunk_ids": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "functionasanactivationfunction reasonbeing",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.748）",
+      "sub_topics": [
+        {
+          "name": "functionasanactivationfunction reasonbeing sign",
+          "description": "functionasanactivationfunction reasonbeing 的细化概念"
+        }
+      ],
+      "meta": {
+        "avg_score": 0.748,
+        "frequency": 1,
+        "chunk_ids": [
+          6
+        ]
+      }
+    },
+    {
+      "name": "linearseparation linearlyseperable",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.7394）",
+      "sub_topics": [
+        {
+          "name": "linearseparation linearlyseperable wherey",
+          "description": "linearseparation linearlyseperable 的细化概念"
+        }
+      ],
+      "meta": {
+        "avg_score": 0.7394,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "thereareproblems theprincipledifficultyisdevelopingtechniquesto findtheparametersofthenetwork",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.7354）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.7354,
+        "frequency": 1,
+        "chunk_ids": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "machinelearningfordesignengineers linearseparation nowconsideramorecomplicatedpatternrecognitionproblem",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.7273）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.7273,
+        "frequency": 1,
+        "chunk_ids": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "wecanimmediatelyseethatthisisamuchricherarchitecture thefirstlayerconstructstwoclassifiersandseparatesclasseslinearlyasbefore thesecondlayertheconstructsahyperplanetoclassifytheoutputofthese",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.7235）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.7235,
+        "frequency": 1,
+        "chunk_ids": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "aretheweightsofeachneuron todaywearegoingtousetheleastsquarederror lse",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.7075）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.7075,
+        "frequency": 1,
+        "chunk_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "name": "wecanimmediatelyseethatthisisamuchricherarchitecture thefirstlayerconstructstwoclassifiersandseparatesclasseslinearlyasbefore",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.7035）",
+      "sub_topics": [
+        {
+          "name": "linearseparation wecanimmediatelyseethatthisisamuchricherarchitecture thefirstlayerconstructstwoclassifiersandseparatesclasseslinearlyasbefore",
+          "description": "wecanimmediatelyseethatthisisamuchricherarchitecture thefirstlayerconstructstwoclassifiersandseparatesclasseslinearlyasbefore 的细化概念"
+        },
+        {
+          "name": "wecanimmediatelyseethatthisisamuchricherarchitecture thefirstlayerconstructstwoclassifiersandseparatesclasseslinearlyasbefore thesecondlayertheconstructsahyperplanetoclassifytheoutputofthese",
+          "description": "wecanimmediatelyseethatthisisamuchricherarchitecture thefirstlayerconstructstwoclassifiersandseparatesclasseslinearlyasbefore 的细化概念"
+        }
+      ],
+      "meta": {
+        "avg_score": 0.7035,
+        "frequency": 1,
+        "chunk_ids": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "imperialcollegelondon machinelearningfordesignengineers universalapproximationtheorem",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.7025）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.7025,
+        "frequency": 1,
+        "chunk_ids": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "imperialcollegelondon machinelearningfordesignengineers figure",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6964）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6964,
+        "frequency": 1,
+        "chunk_ids": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "imperialcollegelondon machinelearningfordefsiiggnuenrgein",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6961）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6961,
+        "frequency": 1,
+        "chunk_ids": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "linearseparation linearlyseperable wherey",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6943）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6943,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "functionasanactivationfunction reasonbeing sign",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6912）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6912,
+        "frequency": 1,
+        "chunk_ids": [
+          6
+        ]
+      }
+    },
+    {
+      "name": "machinelearningfordesignengineers figure anxortypeclassificationscenario",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6879）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6879,
+        "frequency": 1,
+        "chunk_ids": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "gradientdescentforregression forthisspecificproblem givenndatapoints",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6846）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6846,
+        "frequency": 1,
+        "chunk_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "name": "gradientdescentstartsbycalculatingthepartialderivativeofeveryparameter 2x mx",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6812）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6812,
+        "frequency": 1,
+        "chunk_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "name": "networkshouldhavetobeabletosolveagivenproblem imperialcollegelondon",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6797）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6797,
+        "frequency": 1,
+        "chunk_ids": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "machinelearningfordesignengineers learning imperialcollegelondon",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6765）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6765,
+        "frequency": 1,
+        "chunk_ids": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "thealgorithmforadjustingtheweightstoimplementgradientdescentisknownas",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6722）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6722,
+        "frequency": 1,
+        "chunk_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "name": "inregressionproblemstheobjectiveofthealgorithmistofindtheparametersof",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6678）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6678,
+        "frequency": 1,
+        "chunk_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "name": "nowmanynodesandlayersthatthe networkshouldhavetobeabletosolveagivenproblem",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6653）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6653,
+        "frequency": 1,
+        "chunk_ids": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "aswehaveseen themulti layerarchitectureisverypowerful",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6541）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6541,
+        "frequency": 1,
+        "chunk_ids": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "applyinggradientdescentandfindingtheparametersthatminimizetheloss function alossfunctionj",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6517）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6517,
+        "frequency": 1,
+        "chunk_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "name": "theparametersofthenetworkthatweare tryingtofind aretheweightsofeachneuron",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6488）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6488,
+        "frequency": 1,
+        "chunk_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "name": "gradientdescentisfairlystraightforward nn imperialcollegelondon",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6457）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6457,
+        "frequency": 1,
+        "chunk_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "name": "machinelearningfordesignengineers theneuron",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6356）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6356,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "themulti layerarchitectureisverypowerful however",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6354）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6354,
+        "frequency": 1,
+        "chunk_ids": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "operationforeachlayerisgoingtobe",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6346）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6346,
+        "frequency": 1,
+        "chunk_ids": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "machinelearningfordesignengineers convention",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6306）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6306,
+        "frequency": 1,
+        "chunk_ids": [
+          5
+        ]
+      }
+    },
+    {
+      "name": "engineers week neurons",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6238）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6238,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "activationfunctions",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6085）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6085,
+        "frequency": 1,
+        "chunk_ids": [
+          6
+        ]
+      }
+    },
+    {
+      "name": "backpropagation imperialcollegelondon machinelearningfordesignengineers",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.6037）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6037,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "design engineers week",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.566）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.566,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "followingcostfunction",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5586）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5586,
+        "frequency": 1,
+        "chunk_ids": [
+          6
+        ]
+      }
+    },
+    {
+      "name": "andtherelufunction relu",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.556）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.556,
+        "frequency": 1,
+        "chunk_ids": [
+          6
+        ]
+      }
+    },
+    {
+      "name": "1forallw 0andy 1otherwise",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5554）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5554,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "wx wtx whythisstructure",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5524）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5524,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "wtx whythisstructure",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5474）",
+      "sub_topics": [
+        {
+          "name": "wx wtx whythisstructure",
+          "description": "wtx whythisstructure 的细化概念"
+        }
+      ],
+      "meta": {
+        "avg_score": 0.5474,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "howdoweevaluateperformance wehavetwoproblemsnow howdoweselectappropriateweights",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5471）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5471,
+        "frequency": 1,
+        "chunk_ids": [
+          6
+        ]
+      }
+    },
+    {
+      "name": "artificial neural",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5466）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5466,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "artificialneuralnetworks content",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5464）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5464,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "andjustnotethatsuch architecturesareextremelyusefullearningtosolvebothregressionand classificationtasks",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5459）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5459,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "machine learning for",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5457）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5457,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "issomeappropriatecostfunction imperialcollegelondon machinelearningfordesignengineers",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5451）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5451,
+        "frequency": 1,
+        "chunk_ids": [
+          6
+        ]
+      }
+    },
+    {
+      "name": "andwhyshouldf benonlinear",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5412）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5412,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "considerthefollowingregression problem wehaveabunchofdataand",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5369）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5369,
+        "frequency": 1,
+        "chunk_ids": [
+          6
+        ]
+      }
+    },
+    {
+      "name": "machinelearningfordesignengineers linearseparation imperialcollegelondon",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5268）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5268,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "1otherwise thelabelsforeach classis",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.525）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.525,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "classificationtasks thebestknownsuchnetworkisthemulti",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5226）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5226,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "imperialcollegelondon machinelearningfordesignengineers linearseparation",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.5222）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5222,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "classis 1and1respectively",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.4116）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.4116,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "thesetofpointsx satisfyingw 0andw",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.3816）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.3816,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "1and1respectively",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.3777）",
+      "sub_topics": [
+        {
+          "name": "classis 1and1respectively",
+          "description": "1and1respectively 的细化概念"
+        }
+      ],
+      "meta": {
+        "avg_score": 0.3777,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "imperialcollegelondon machinelearningfordesignengineers",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.3577）",
+      "sub_topics": [
+        {
+          "name": "imperialcollegelondon machinelearningfordesignengineers figure",
+          "description": "imperialcollegelondon machinelearningfordesignengineers 的细化概念"
+        },
+        {
+          "name": "backpropagation imperialcollegelondon machinelearningfordesignengineers",
+          "description": "imperialcollegelondon machinelearningfordesignengineers 的细化概念"
+        },
+        {
+          "name": "imperialcollegelondon machinelearningfordesignengineers linearseparation",
+          "description": "imperialcollegelondon machinelearningfordesignengineers 的细化概念"
+        }
+      ],
+      "meta": {
+        "avg_score": 0.3577,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "thesetofpointsx",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.3557）",
+      "sub_topics": [
+        {
+          "name": "thesetofpointsx satisfyingw 0andw",
+          "description": "thesetofpointsx 的细化概念"
+        }
+      ],
+      "meta": {
+        "avg_score": 0.3557,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "recallthatahyperplanesplitstheplaneintotwoparts",
+      "description": "由KeyBERT从课程语义块自动提取（出现1次，平均相关度0.3519）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.3519,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    }
+  ]
+}

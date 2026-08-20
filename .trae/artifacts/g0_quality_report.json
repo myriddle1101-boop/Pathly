@@ -1,0 +1,101 @@
+{
+  "g0_version": "g0-neural-foundations-v1",
+  "generated_at": "2026-08-10T03:59:21.194696+00:00",
+  "passed": true,
+  "days": [
+    {
+      "day": 1,
+      "concept": "Linear Separability",
+      "checks": {
+        "ready": true,
+        "concept_matches": true,
+        "verified_source": true,
+        "page_sequence_present": true,
+        "worked_example_complete": true,
+        "objective_questions_complete": true,
+        "no_meta_language": true,
+        "readable_symbols": true
+      },
+      "passed": true
+    },
+    {
+      "day": 2,
+      "concept": "XOR",
+      "checks": {
+        "ready": true,
+        "concept_matches": true,
+        "verified_source": true,
+        "page_sequence_present": true,
+        "worked_example_complete": true,
+        "objective_questions_complete": true,
+        "no_meta_language": true,
+        "readable_symbols": true
+      },
+      "passed": true
+    },
+    {
+      "day": 3,
+      "concept": "Neural Networks",
+      "checks": {
+        "ready": true,
+        "concept_matches": true,
+        "verified_source": true,
+        "page_sequence_present": true,
+        "worked_example_complete": true,
+        "objective_questions_complete": true,
+        "no_meta_language": true,
+        "readable_symbols": true
+      },
+      "passed": true
+    },
+    {
+      "day": 4,
+      "concept": "Activation Functions",
+      "checks": {
+        "ready": true,
+        "concept_matches": true,
+        "verified_source": true,
+        "page_sequence_present": true,
+        "worked_example_complete": true,
+        "objective_questions_complete": true,
+        "no_meta_language": true,
+        "readable_symbols": true
+      },
+      "passed": true
+    },
+    {
+      "day": 5,
+      "concept": "Gradient Descent",
+      "checks": {
+        "ready": true,
+        "concept_matches": true,
+        "verified_source": true,
+        "page_sequence_present": true,
+        "worked_example_complete": true,
+        "objective_questions_complete": true,
+        "no_meta_language": true,
+        "readable_symbols": true
+      },
+      "passed": true
+    }
+  ],
+  "public_rag": {
+    "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+    "document": "06_mlp.pdf",
+    "indexed_chunks": 34,
+    "expected_chunks": 34,
+    "ready": true
+  },
+  "plan_id": "g0-neural-foundations-98c696ca12b9-v1",
+  "manual_review": {
+    "status": "passed",
+    "reviewed_fields": [
+      "concept explanation",
+      "mechanism",
+      "worked example",
+      "objective questions",
+      "next-concept bridge"
+    ],
+    "profile_transmitted_to_model": false
+  }
+}

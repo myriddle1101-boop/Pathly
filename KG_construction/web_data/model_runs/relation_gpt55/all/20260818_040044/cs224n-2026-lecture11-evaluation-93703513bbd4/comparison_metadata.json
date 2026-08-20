@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4",
+  "run_id": "cs224n-2026-lecture11-evaluation-93703513bbd4",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:09.376039+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "c5a30fdae12f5daca335c78bb7079148e5cf757aaedfee7bfe36a5d9dc0e5316",
+    "stage2a_topics_hybrid.json": "64cbb15762e5f4f6a163a633ff0904c41e33d9187598da56d88146365d93b788",
+    "stage2c_similarity_edges.json": "19fbe888a3a6ae2685167e186e8ffcf720d980f934c49707658d21ef1c4950eb",
+    "stage3_topics_with_summary.json": "8d917f6ae3946791a35bfc8d720d0b5aea8b7fb5e8556b07d323c6a1b1e5dd07"
+  },
+  "old_relation_count": 8,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

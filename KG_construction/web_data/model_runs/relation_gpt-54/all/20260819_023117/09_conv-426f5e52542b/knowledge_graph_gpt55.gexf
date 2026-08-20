@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-08-19">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="similarity" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Convolutional Networks" label="Convolutional Networks">
+        <attvalues>
+          <attvalue for="0" value="A class of deep neural networks primarily used for processing structured grid data such as images." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Convolutional Layer&quot;, &quot;description&quot;: &quot;The layer in a convolutional network that applies convolution operations to the input.&quot;}, {&quot;name&quot;: &quot;Convolution Kernel&quot;, &quot;description&quot;: &quot;A filter used in convolutional layers to extract features from input data.&quot;}, {&quot;name&quot;: &quot;Pooling&quot;, &quot;description&quot;: &quot;A down-sampling operation that reduces the spatial dimensions of the input.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and linear algebra." />
+          <attvalue for="6" value="[&quot;Convolutional layers&quot;, &quot;Pooling layers&quot;, &quot;Activation functions&quot;, &quot;Fully connected layers&quot;]" />
+          <attvalue for="7" value="[&quot;Convolutional networks only work for images&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Object detection&quot;, &quot;Facial recognition&quot;, &quot;Medical image analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Matrices" label="Matrices">
+        <attvalues>
+          <attvalue for="0" value="Mathematical structures used to represent data and perform operations in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Matrix Multiplication&quot;, &quot;description&quot;: &quot;An operation that produces a new matrix from two matrices.&quot;}, {&quot;name&quot;: &quot;Matrix Transpose&quot;, &quot;description&quot;: &quot;An operation that flips a matrix over its diagonal.&quot;}, {&quot;name&quot;: &quot;Sparse Matrices&quot;, &quot;description&quot;: &quot;Matrices in which most elements are zero, often used in machine learning.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algebra and functions." />
+          <attvalue for="6" value="[&quot;Matrix addition and subtraction&quot;, &quot;Matrix multiplication&quot;, &quot;Determinants and inverses&quot;, &quot;Eigenvalues and eigenvectors&quot;]" />
+          <attvalue for="7" value="[&quot;All matrices can be multiplied regardless of their dimensions&quot;, &quot;Matrix operations are commutative&quot;]" />
+          <attvalue for="8" value="[&quot;Data representation in machine learning&quot;, &quot;Transformations in computer graphics&quot;, &quot;Solving systems of linear equations&quot;, &quot;Principal Component Analysis (PCA)&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain, consisting of interconnected neurons." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;A function that determines the output of a neuron based on its input.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing the error.&quot;}, {&quot;name&quot;: &quot;Deep Learning&quot;, &quot;description&quot;: &quot;A subset of machine learning that uses neural networks with many layers.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Learning Algorithms" label="Learning Algorithms">
+        <attvalues>
+          <attvalue for="0" value="Procedures used to train models and make predictions based on data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Supervised Learning&quot;, &quot;description&quot;: &quot;A type of learning where the model is trained on labeled data.&quot;}, {&quot;name&quot;: &quot;Unsupervised Learning&quot;, &quot;description&quot;: &quot;A type of learning where the model finds patterns in unlabeled data.&quot;}, {&quot;name&quot;: &quot;Reinforcement Learning&quot;, &quot;description&quot;: &quot;A type of learning where an agent learns to make decisions by receiving rewards.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;]" />
+          <attvalue for="7" value="[&quot;All algorithms work the same for every problem&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Predictive analytics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Feature Learning" label="Feature Learning">
+        <attvalues>
+          <attvalue for="0" value="The process of automatically discovering the representations needed for feature detection or classification." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Learned Filters&quot;, &quot;description&quot;: &quot;Filters that are optimized during training to extract relevant features.&quot;}, {&quot;name&quot;: &quot;Invariances&quot;, &quot;description&quot;: &quot;Properties that remain unchanged under certain transformations.&quot;}, {&quot;name&quot;: &quot;Local Connections&quot;, &quot;description&quot;: &quot;Connections in neural networks that are limited to a local region of the input.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and linear algebra." />
+          <attvalue for="6" value="[&quot;Representation Learning&quot;, &quot;Deep Learning&quot;]" />
+          <attvalue for="7" value="[&quot;Feature learning is only for deep learning models.&quot;, &quot;Feature learning eliminates the need for domain knowledge.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods and strategies used to improve the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Loss Function&quot;, &quot;description&quot;: &quot;A function that measures the difference between predicted and actual outcomes.&quot;}, {&quot;name&quot;: &quot;Regularization&quot;, &quot;description&quot;: &quot;Techniques used to prevent overfitting in machine learning models.&quot;}, {&quot;name&quot;: &quot;Gradient Descent&quot;, &quot;description&quot;: &quot;An optimization algorithm used to minimize the loss function.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Cross-validation&quot;, &quot;Regularization&quot;, &quot;Hyperparameter tuning&quot;, &quot;Data augmentation&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better performance&quot;, &quot;Overfitting only occurs with complex models&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model accuracy&quot;, &quot;Reducing overfitting&quot;, &quot;Enhancing generalization to unseen data&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Representation" label="Data Representation">
+        <attvalues>
+          <attvalue for="0" value="The way data is structured and formatted for processing in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Vectors&quot;, &quot;description&quot;: &quot;Ordered arrays of numbers used to represent data points.&quot;}, {&quot;name&quot;: &quot;Tensors&quot;, &quot;description&quot;: &quot;Generalized arrays that can represent data in multiple dimensions.&quot;}, {&quot;name&quot;: &quot;Pixel Labeling&quot;, &quot;description&quot;: &quot;The process of assigning labels to individual pixels in an image.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data types and structures, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Data types (numerical, categorical)&quot;, &quot;Data normalization and scaling&quot;, &quot;Feature encoding (one-hot, label encoding)&quot;, &quot;Data formats (CSV, JSON, etc.)&quot;]" />
+          <attvalue for="7" value="[&quot;All data can be used directly without preprocessing&quot;, &quot;Data representation does not affect model performance&quot;]" />
+          <attvalue for="8" value="[&quot;Preparing datasets for machine learning models&quot;, &quot;Improving model accuracy through effective feature representation&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Network Architecture" label="Network Architecture">
+        <attvalues>
+          <attvalue for="0" value="The design and structure of neural networks, including their layers and connections." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Layer Types&quot;, &quot;description&quot;: &quot;Different types of layers used in neural networks, such as convolutional and fully connected.&quot;}, {&quot;name&quot;: &quot;Network Size&quot;, &quot;description&quot;: &quot;The number of layers and neurons in a neural network.&quot;}, {&quot;name&quot;: &quot;Strided Convolution&quot;, &quot;description&quot;: &quot;A convolution operation that skips certain input elements to reduce output size.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Layers (input, hidden, output)&quot;, &quot;Activation functions&quot;, &quot;Feedforward and backpropagation&quot;, &quot;Convolutional and recurrent networks&quot;]" />
+          <attvalue for="7" value="[&quot;More layers always mean better performance&quot;, &quot;Neural networks can learn without sufficient data&quot;, &quot;All activation functions are equally effective&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Mathematical Foundations" label="Mathematical Foundations">
+        <attvalues>
+          <attvalue for="0" value="The mathematical concepts and operations that underpin machine learning algorithms." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Algebra&quot;, &quot;description&quot;: &quot;The branch of mathematics concerning vector spaces and linear mappings.&quot;}, {&quot;name&quot;: &quot;Algebraic Operations&quot;, &quot;description&quot;: &quot;Basic operations such as addition, multiplication, and transposition of matrices.&quot;}, {&quot;name&quot;: &quot;Equations&quot;, &quot;description&quot;: &quot;Mathematical statements that express the equality of two expressions.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algebra and calculus is recommended." />
+          <attvalue for="6" value="[&quot;Linear Algebra&quot;, &quot;Probability Theory&quot;, &quot;Statistics&quot;, &quot;Calculus&quot;]" />
+          <attvalue for="7" value="[&quot;Mathematics is not necessary for machine learning.&quot;, &quot;All machine learning problems require advanced mathematics.&quot;]" />
+          <attvalue for="8" value="[&quot;Data preprocessing and feature scaling&quot;, &quot;Model evaluation and performance metrics&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Matrices" target="Mathematical Foundations" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Matrices are a core mathematical concept needed before broader mathematical foundations used in machine learning can be understood." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Convolutional Networks" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Convolutional networks are a specialized type of neural network, so basic neural network concepts are necessary first." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Network Architecture" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Designing and understanding network architecture presupposes familiarity with neural networks." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Training Techniques" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training techniques are applied to neural network models, so understanding neural networks is necessary first." />
+        </attvalues>
+      </edge>
+      <edge source="Learning Algorithms" target="Training Techniques" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training techniques are specific methods for training models and build on the broader concept of learning algorithms." />
+          <attvalue for="11" value="0.741" />
+        </attvalues>
+      </edge>
+      <edge source="Data Representation" target="Feature Learning" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Feature learning depends on having data represented in a form that can be processed by machine learning models." />
+        </attvalues>
+      </edge>
+      <edge source="Mathematical Foundations" target="Learning Algorithms" id="6">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Learning algorithms rely on underlying mathematical concepts and operations." />
+        </attvalues>
+      </edge>
+      <edge source="Mathematical Foundations" target="Neural Networks" id="7">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding neural networks requires mathematical foundations such as linear algebra and related operations." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

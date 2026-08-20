@@ -1,0 +1,26 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 3,
+  "prerequisites": [
+    {
+      "from": "Information Access",
+      "to": "Retrieval-Augmented Generation (RAG)",
+      "relation_type": "strong_prerequisite",
+      "reason": "RAG requires understanding retrieval methods as a core component before combining them with generation."
+    },
+    {
+      "from": "Generative Models",
+      "to": "Retrieval-Augmented Generation (RAG)",
+      "relation_type": "strong_prerequisite",
+      "reason": "RAG builds on generation models, so understanding generative models is necessary before learning the combined approach."
+    },
+    {
+      "from": "Relevant Information",
+      "to": "Information Retrieval Quality",
+      "relation_type": "strong_prerequisite",
+      "reason": "Assessing retrieval quality depends on judging whether retrieved information is relevant to user needs."
+    }
+  ]
+}

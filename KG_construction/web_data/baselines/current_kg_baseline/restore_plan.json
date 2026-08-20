@@ -1,0 +1,41 @@
+{
+  "baseline_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline",
+  "restore_actions": [
+    {
+      "type": "copy_file",
+      "from_snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\global\\global_knowledge_graph.json",
+      "to_worktree": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+      "purpose": "恢复全局知识图谱与处理历史"
+    },
+    {
+      "type": "copy_file",
+      "from_snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\global\\processed_files.json",
+      "to_worktree": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\processed_files.json",
+      "purpose": "恢复全局知识图谱与处理历史"
+    },
+    {
+      "type": "copy_file",
+      "from_snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\global\\upload_history.json",
+      "to_worktree": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\upload_history.json",
+      "purpose": "恢复全局知识图谱与处理历史"
+    },
+    {
+      "type": "replace_directory_contents",
+      "from_snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML",
+      "to_worktree": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML",
+      "purpose": "恢复代表样本 Security and Privacy in ML 的分阶段产物与输入 PDF"
+    },
+    {
+      "type": "replace_directory_contents",
+      "from_snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer",
+      "to_worktree": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer",
+      "purpose": "恢复代表样本 Dreamer 的分阶段产物与输入 PDF"
+    },
+    {
+      "type": "replace_directory_contents",
+      "from_snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime",
+      "to_worktree": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime",
+      "purpose": "恢复代表样本 Crime 的分阶段产物与输入 PDF"
+    }
+  ]
+}

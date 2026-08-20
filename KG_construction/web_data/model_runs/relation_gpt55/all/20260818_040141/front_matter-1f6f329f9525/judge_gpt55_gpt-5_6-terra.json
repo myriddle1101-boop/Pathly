@@ -1,0 +1,108 @@
+{
+  "created_at": "2026-08-18T19:01:17.128953+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-front_matter-1f6f329f9525",
+  "file_name": "front_matter-1f6f329f9525",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 99,
+  "topic_metrics": {
+    "precision": 0.625,
+    "recall": 0.5556,
+    "f1": 0.5882,
+    "tp": 5,
+    "fp": 3,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1": 0.5,
+    "tp": 2,
+    "fp": 2,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Neural Networks",
+      "Deep Learning",
+      "Training Techniques",
+      "Learning Representations",
+      "Applications of Neural Networks"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Statistical Learning",
+        "reason": "The excerpts contain statistical references but do not present statistical learning as a distinct learning topic."
+      },
+      {
+        "name": "Neural Computation",
+        "reason": "This occurs primarily as a journal title in bibliography entries, not as a developed instructional concept."
+      },
+      {
+        "name": "Neural Network Evaluation",
+        "reason": "Evaluation is mentioned incidentally in citations, without a clearly presented topic on neural-network evaluation."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Representation Learning",
+        "reason": "Explicitly named as Chapter 15, with sections on pretraining, transfer learning, disentangling, and distributed representations."
+      },
+      {
+        "name": "Autoencoders",
+        "reason": "Explicitly supported by sections on contractive autoencoders, predictive sparse decomposition, and applications of autoencoders."
+      },
+      {
+        "name": "Transfer Learning and Domain Adaptation",
+        "reason": "Explicitly named as a section of the Representation Learning chapter."
+      },
+      {
+        "name": "Structured Probabilistic Models",
+        "reason": "Explicitly named as Chapter 16, including graphical-model structure and sampling."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Deep Learning",
+        "reason": "Deep learning is directly grounded in multilayer neural-network architectures and their training."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Applications of Neural Networks",
+        "reason": "Learning neural-network fundamentals is necessary before studying their applications."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Neural Computation",
+        "reason": "The target is not established as a distinct instructional topic and largely overlaps with the source concept."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Neural Network Evaluation",
+        "reason": "The target is not clearly supported as a topic, and the relation is too generic to establish a strong source-based dependency."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Autoencoders",
+        "to": "Contractive Autoencoders",
+        "reason": "Contractive autoencoders are an explicitly named specialized form of autoencoder."
+      },
+      {
+        "from": "Using Graphs to Describe Model Structure",
+        "to": "Sampling from Graphical Models",
+        "reason": "The source presents graph-based model structure before sampling from graphical models."
+      }
+    ],
+    "overall_note": "The source excerpts are largely a table of contents and bibliography, so support is strongest for explicitly named chapters, sections, and methods rather than broad inferred topics."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-front_matter-1f6f329f9525.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-front_matter-1f6f329f9525.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-front_matter-1f6f329f9525_ledger.csv"
+  }
+}

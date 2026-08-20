@@ -1,0 +1,851 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 18,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "learning",
+      "avg_score": 0.4983,
+      "frequency": 4,
+      "chunk_ids": [
+        7,
+        10,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5501,
+      "frequency": 3,
+      "chunk_ids": [
+        1,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "tangent classifier",
+      "avg_score": 0.6925,
+      "frequency": 2,
+      "chunk_ids": [
+        17,
+        18
+      ]
+    },
+    {
+      "name": "manifold tangent",
+      "avg_score": 0.6654,
+      "frequency": 2,
+      "chunk_ids": [
+        17,
+        18
+      ]
+    },
+    {
+      "name": "tangent",
+      "avg_score": 0.6102,
+      "frequency": 2,
+      "chunk_ids": [
+        17,
+        18
+      ]
+    },
+    {
+      "name": "original dataset",
+      "avg_score": 0.5755,
+      "frequency": 2,
+      "chunk_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.5638,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        16
+      ]
+    },
+    {
+      "name": "gradient",
+      "avg_score": 0.4926,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        8
+      ]
+    },
+    {
+      "name": "sparsity penalty",
+      "avg_score": 0.7297,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "learning tangent",
+      "avg_score": 0.7237,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "regression cost",
+      "avg_score": 0.7132,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "tangent vectors",
+      "avg_score": 0.7105,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "tangent class",
+      "avg_score": 0.7058,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "regularization deep",
+      "avg_score": 0.6996,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "classifier tangent",
+      "avg_score": 0.6919,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "learning curves",
+      "avg_score": 0.6873,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "penalty derived",
+      "avg_score": 0.6843,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "penalty parameters",
+      "avg_score": 0.6805,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "definition regularization",
+      "avg_score": 0.6666,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "datasets bagging",
+      "avg_score": 0.6433,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "regularization",
+      "avg_score": 0.6421,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "trained dataset",
+      "avg_score": 0.6412,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "estimated tangent",
+      "avg_score": 0.64,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "learning dropout",
+      "avg_score": 0.6363,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "penalty",
+      "avg_score": 0.633,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "specified tangent",
+      "avg_score": 0.6297,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "regularization modification",
+      "avg_score": 0.6276,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "penalties larochelle",
+      "avg_score": 0.6268,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "learning factors",
+      "avg_score": 0.625,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "linear regression",
+      "avg_score": 0.6194,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "penalty choice",
+      "avg_score": 0.6194,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "obtain symmetry",
+      "avg_score": 0.6057,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "sparse representations",
+      "avg_score": 0.6025,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "weight decay",
+      "avg_score": 0.6022,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "dataset differences",
+      "avg_score": 0.6022,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "studying linear",
+      "avg_score": 0.5975,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "factors model",
+      "avg_score": 0.5942,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "regression model",
+      "avg_score": 0.5899,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "loss validation",
+      "avg_score": 0.5899,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "learning 14",
+      "avg_score": 0.5898,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "dataset resulting",
+      "avg_score": 0.5885,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "resampled datasets",
+      "avg_score": 0.5846,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "datasets sampling",
+      "avg_score": 0.584,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "dropout yy",
+      "avg_score": 0.5833,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "symmetry breaking",
+      "avg_score": 0.5792,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "deeplearningbook",
+      "avg_score": 0.5791,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "tasks factors",
+      "avg_score": 0.5764,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "subset factors",
+      "avg_score": 0.5756,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "symmetry",
+      "avg_score": 0.5755,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "regression",
+      "avg_score": 0.5728,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "learning pooled",
+      "avg_score": 0.5723,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "second dataset",
+      "avg_score": 0.5721,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "different datasets",
+      "avg_score": 0.5717,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "dataset contains",
+      "avg_score": 0.5715,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "sparse representa",
+      "avg_score": 0.5711,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "unsupervised learning",
+      "avg_score": 0.5706,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "decay constrained",
+      "avg_score": 0.5685,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "neural network",
+      "avg_score": 0.5644,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "dataset",
+      "avg_score": 0.5621,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "training iterations",
+      "avg_score": 0.5511,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "trained model",
+      "avg_score": 0.5495,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "data linear",
+      "avg_score": 0.5481,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "gradient descent",
+      "avg_score": 0.548,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "confidence confidence",
+      "avg_score": 0.5392,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "11 yy",
+      "avg_score": 0.5383,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "confidence",
+      "avg_score": 0.5324,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "level factors",
+      "avg_score": 0.5283,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "learning optimization",
+      "avg_score": 0.5279,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "analyzing gradient",
+      "avg_score": 0.5241,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "factors explain",
+      "avg_score": 0.5212,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "regularization representations",
+      "avg_score": 0.5204,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "study trajectory",
+      "avg_score": 0.5198,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "learning context",
+      "avg_score": 0.5177,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "factors associated",
+      "avg_score": 0.5157,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "estimation gaussian",
+      "avg_score": 0.5154,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "bayesian estimation",
+      "avg_score": 0.5143,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "decay regularization",
+      "avg_score": 0.5136,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "hidden units",
+      "avg_score": 0.5134,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "99 confidence",
+      "avg_score": 0.5084,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "loss eventually",
+      "avg_score": 0.5077,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Neural Networks",
+      "description": "Fundamental structures in machine learning that mimic the way human brains operate.",
+      "sub_topics": [
+        {
+          "name": "Deep Learning",
+          "description": "A subset of neural networks with multiple layers for complex data representation."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Hidden Units",
+          "description": "The neurons in the hidden layers of a neural network."
+        }
+      ]
+    },
+    {
+      "name": "Learning Algorithms",
+      "description": "Methods used to train models and improve their performance.",
+      "sub_topics": [
+        {
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm for minimizing the loss function."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "A method for calculating gradients in neural networks."
+        },
+        {
+          "name": "Learning Curves",
+          "description": "Graphs that show the performance of a model over time."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Metrics used to evaluate how well a model's predictions match the actual outcomes.",
+      "sub_topics": [
+        {
+          "name": "Regression Cost",
+          "description": "The loss function used for regression tasks."
+        },
+        {
+          "name": "Classification Loss",
+          "description": "The loss function used for classification tasks."
+        },
+        {
+          "name": "Penalty Terms",
+          "description": "Additional terms added to the loss function to prevent overfitting."
+        }
+      ]
+    },
+    {
+      "name": "Regularization Techniques",
+      "description": "Methods to prevent overfitting in machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Weight Decay",
+          "description": "A regularization technique that penalizes large weights."
+        },
+        {
+          "name": "Sparsity Penalty",
+          "description": "A regularization method that encourages sparse solutions."
+        },
+        {
+          "name": "Dropout",
+          "description": "A technique that randomly drops units during training to prevent overfitting."
+        }
+      ]
+    },
+    {
+      "name": "Data Handling",
+      "description": "Techniques for managing and processing datasets for machine learning.",
+      "sub_topics": [
+        {
+          "name": "Original Dataset",
+          "description": "The initial set of data used for training a model."
+        },
+        {
+          "name": "Resampled Datasets",
+          "description": "Datasets created by sampling from the original dataset."
+        },
+        {
+          "name": "Dataset Differences",
+          "description": "Variations between different datasets used in experiments."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Methods for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Validation Loss",
+          "description": "The loss calculated on a validation set to evaluate model performance."
+        },
+        {
+          "name": "Training Iterations",
+          "description": "The number of times the learning algorithm processes the training dataset."
+        },
+        {
+          "name": "Confidence Levels",
+          "description": "Metrics that indicate the certainty of model predictions."
+        }
+      ]
+    },
+    {
+      "name": "Tangent Classifiers",
+      "description": "A specific type of classifier that uses tangent vectors for decision boundaries.",
+      "sub_topics": [
+        {
+          "name": "Tangent Vectors",
+          "description": "Vectors that represent the direction of change in a manifold."
+        },
+        {
+          "name": "Manifold Tangent",
+          "description": "The concept of using tangent spaces in manifold learning."
+        },
+        {
+          "name": "Classifier Tangent",
+          "description": "A classifier that utilizes tangent information for predictions."
+        }
+      ]
+    },
+    {
+      "name": "Regression Techniques",
+      "description": "Methods for predicting continuous outcomes based on input features.",
+      "sub_topics": [
+        {
+          "name": "Linear Regression",
+          "description": "A basic regression technique that models the relationship between variables."
+        },
+        {
+          "name": "Regression Models",
+          "description": "Different types of models used for regression tasks."
+        },
+        {
+          "name": "Estimated Tangent",
+          "description": "The estimated direction of change in regression analysis."
+        }
+      ]
+    },
+    {
+      "name": "Unsupervised Learning",
+      "description": "Learning patterns from data without labeled outcomes.",
+      "sub_topics": [
+        {
+          "name": "Clustering Techniques",
+          "description": "Methods for grouping similar data points together."
+        },
+        {
+          "name": "Dimensionality Reduction",
+          "description": "Techniques for reducing the number of features in a dataset."
+        },
+        {
+          "name": "Sparsity Representations",
+          "description": "Representations that emphasize the most important features."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 22.8967,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

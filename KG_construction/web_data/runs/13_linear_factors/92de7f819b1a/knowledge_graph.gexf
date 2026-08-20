@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-29">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="score" type="double" />
+      <attribute id="11" title="reason" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Factor Models" label="Factor Models">
+        <attvalues>
+          <attvalue for="0" value="Statistical models that describe observed variables as linear combinations of latent factors." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Factor Analysis&quot;, &quot;description&quot;: &quot;A technique used to identify underlying relationships between variables.&quot;}, {&quot;name&quot;: &quot;Probabilistic PCA&quot;, &quot;description&quot;: &quot;A probabilistic approach to principal component analysis that incorporates latent variables.&quot;}, {&quot;name&quot;: &quot;Latent Variables&quot;, &quot;description&quot;: &quot;Variables that are not directly observed but are inferred from other variables.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Latent Variables&quot;, &quot;Principal Component Analysis&quot;, &quot;Factor Loadings&quot;, &quot;Exploratory Factor Analysis&quot;]" />
+          <attvalue for="7" value="[&quot;Factor models only apply to financial data.&quot;, &quot;Latent factors can be directly observed.&quot;]" />
+          <attvalue for="8" value="[&quot;Market Research&quot;, &quot;Psychometrics&quot;, &quot;Recommendation Systems&quot;, &quot;Genetics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Coding Techniques" label="Coding Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods used to represent data in a format suitable for machine learning algorithms." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Sparse Coding&quot;, &quot;description&quot;: &quot;A representation of data as a linear combination of a small number of basis elements.&quot;}, {&quot;name&quot;: &quot;Autoencoder&quot;, &quot;description&quot;: &quot;A type of neural network used to learn efficient representations of data.&quot;}, {&quot;name&quot;: &quot;Linear Autoencoder&quot;, &quot;description&quot;: &quot;An autoencoder that uses linear transformations to encode and decode data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and data structures." />
+          <attvalue for="6" value="[&quot;Data Encoding&quot;, &quot;Feature Scaling&quot;]" />
+          <attvalue for="7" value="[&quot;All data must be numeric&quot;, &quot;One-hot encoding is always the best method&quot;]" />
+          <attvalue for="8" value="[&quot;Preprocessing data for classification tasks&quot;, &quot;Improving model performance through feature engineering&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain, used for various machine learning tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing the loss function.&quot;}, {&quot;name&quot;: &quot;Artificial Neural Networks&quot;, &quot;description&quot;: &quot;Networks of interconnected nodes that simulate the way the human brain processes information.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Regression and Classification" label="Regression and Classification">
+        <attvalues>
+          <attvalue for="0" value="Supervised learning techniques used to predict outcomes based on input data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Regression&quot;, &quot;description&quot;: &quot;A method for modeling the relationship between a dependent variable and one or more independent variables.&quot;}, {&quot;name&quot;: &quot;Classification Algorithms&quot;, &quot;description&quot;: &quot;Techniques used to categorize data into predefined classes.&quot;}, {&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Linear Regression&quot;, &quot;Logistic Regression&quot;]" />
+          <attvalue for="7" value="[&quot;Regression is only for continuous outcomes.&quot;, &quot;Classification is only for binary outcomes.&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting house prices&quot;, &quot;Email spam detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Dimensionality Reduction" label="Dimensionality Reduction">
+        <attvalues>
+          <attvalue for="0" value="Techniques used to reduce the number of features in a dataset while preserving important information." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Principal Component Analysis&quot;, &quot;description&quot;: &quot;A method that transforms data into a lower-dimensional space.&quot;}, {&quot;name&quot;: &quot;Multivariate Analysis&quot;, &quot;description&quot;: &quot;Statistical techniques used to analyze data that involves multiple variables.&quot;}, {&quot;name&quot;: &quot;Manifold Learning&quot;, &quot;description&quot;: &quot;A type of dimensionality reduction that seeks to uncover the underlying structure of data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and statistics." />
+          <attvalue for="6" value="[&quot;Principal Component Analysis (PCA)&quot;, &quot;t-Distributed Stochastic Neighbor Embedding (t-SNE)&quot;]" />
+          <attvalue for="7" value="[&quot;Dimensionality reduction always improves model performance.&quot;, &quot;It is only applicable to high-dimensional data.&quot;]" />
+          <attvalue for="8" value="[&quot;Data visualization&quot;, &quot;Noise reduction in datasets&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Statistical Models" label="Statistical Models">
+        <attvalues>
+          <attvalue for="0" value="Mathematical representations of data that account for randomness and uncertainty." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Multivariate Normal Distribution&quot;, &quot;description&quot;: &quot;A generalization of the normal distribution to multiple dimensions.&quot;}, {&quot;name&quot;: &quot;Isotropic Precision&quot;, &quot;description&quot;: &quot;A property of statistical models where the precision is uniform across all directions.&quot;}, {&quot;name&quot;: &quot;Factorial Analysis&quot;, &quot;description&quot;: &quot;A statistical method used to describe variability among observed variables.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and probability." />
+          <attvalue for="6" value="[&quot;Probability distributions&quot;, &quot;Regression analysis&quot;]" />
+          <attvalue for="7" value="[&quot;Statistical models always provide accurate predictions&quot;, &quot;All statistical models are complex and difficult to understand&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting outcomes in finance&quot;, &quot;Analyzing trends in social sciences&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Learning Algorithms" label="Learning Algorithms">
+        <attvalues>
+          <attvalue for="0" value="Procedures used to train models on data to make predictions or decisions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Training Techniques&quot;, &quot;description&quot;: &quot;Methods used to optimize model parameters during the learning process.&quot;}, {&quot;name&quot;: &quot;Sparsity Penalty&quot;, &quot;description&quot;: &quot;A regularization technique that encourages simpler models by penalizing complexity.&quot;}, {&quot;name&quot;: &quot;Zero Probability Models&quot;, &quot;description&quot;: &quot;Models that account for the likelihood of zero occurrences in data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;]" />
+          <attvalue for="7" value="[&quot;All algorithms are the same&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Spam detection&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Methods used to assess the performance and accuracy of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Model Comparison&quot;, &quot;description&quot;: &quot;Techniques for comparing the performance of different models.&quot;}, {&quot;name&quot;: &quot;Sample Weights&quot;, &quot;description&quot;: &quot;Weights assigned to samples to influence the training process.&quot;}, {&quot;name&quot;: &quot;Observed Variables&quot;, &quot;description&quot;: &quot;Variables that are directly measured in a study.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;ROC Curve&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern if the model performs well on training data.&quot;]" />
+          <attvalue for="8" value="[&quot;Evaluating classification models in healthcare.&quot;, &quot;Assessing predictive models in finance.&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Coding Techniques" target="Learning Algorithms" id="0">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.7316" />
+        </attvalues>
+      </edge>
+      <edge source="Regression and Classification" target="Model Evaluation" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Model Evaluation is necessary to assess Regression and Classification outcomes." />
+        </attvalues>
+      </edge>
+      <edge source="Dimensionality Reduction" target="Model Evaluation" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Model Evaluation is important to assess the impact of Dimensionality Reduction." />
+        </attvalues>
+      </edge>
+      <edge source="Statistical Models" target="Factor Models" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Factor Models are a type of Statistical Model." />
+        </attvalues>
+      </edge>
+      <edge source="Statistical Models" target="Regression and Classification" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Regression and Classification are based on Statistical Models." />
+        </attvalues>
+      </edge>
+      <edge source="Learning Algorithms" target="Neural Networks" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Neural Networks require understanding of Learning Algorithms." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

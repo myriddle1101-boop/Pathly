@@ -1,0 +1,15 @@
+{
+  "run_id": "03-vector-databases-retrieval-4f238ede4c95",
+  "can_resume": false,
+  "last_failed_stage": null,
+  "next_resume_stage": null,
+  "completed_stages": [
+    "stage1",
+    "stage2a",
+    "stage2b",
+    "stage2c",
+    "stage3",
+    "stage4"
+  ],
+  "updated_at": "2026-07-22T04:12:47+08:00"
+}

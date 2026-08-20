@@ -1,0 +1,996 @@
+﻿{
+    "run_id":  "controlled-756a9cb6-3ff6-47f8-a8b3-6c45521ced64",
+    "run_type":  "controlled_evaluation",
+    "user_id":  "demo-advanced-learner",
+    "profile_snapshot":  {
+                             "user_id":  "demo-advanced-learner",
+                             "name":  "Advanced Learner",
+                             "academic_level":  "undergraduate",
+                             "domain":  "computer science",
+                             "goal_text":  "Understand how self-attention enables transformers to model context.",
+                             "target_days":  5,
+                             "prior_knowledge_level":  4,
+                             "math_foundation":  5,
+                             "programming_foundation":  5,
+                             "self_regulation":  4,
+                             "interest_tags":  [
+                                                   "computer_vision"
+                                               ],
+                             "preferred_style":  "theory",
+                             "motivation_level":  4,
+                             "confidence_level":  3,
+                             "anxiety_level":  3,
+                             "known_topics":  [
+
+                                              ],
+                             "skill_tree":  {
+
+                                            },
+                             "preferred_examples":  [
+                                                        "research",
+                                                        "code"
+                                                    ],
+                             "pace_preference":  "intensive",
+                             "mastery_vector":  {
+
+                                                },
+                             "completed_topics":  [
+
+                                                  ],
+                             "current_day":  1,
+                             "last_practice":  null,
+                             "basic_info":  {
+                                                "name":  "Advanced Learner",
+                                                "academic_level":  "undergraduate",
+                                                "domain":  "computer science"
+                                            },
+                             "cognitive_traits":  {
+                                                      "mathematical_ability":  5,
+                                                      "programming_ability":  5,
+                                                      "abstract_thinking":  5,
+                                                      "logical_reasoning":  5,
+                                                      "general_learning_foundation":  4
+                                                  },
+                             "affective_defaults":  {
+                                                        "learning_style":  "theory",
+                                                        "preferred_examples":  [
+                                                                                   "research",
+                                                                                   "code"
+                                                                               ],
+                                                        "pace_preference":  "intensive",
+                                                        "interest_tags":  [
+                                                                              "computer_vision"
+                                                                          ],
+                                                        "motivation_baseline":  4,
+                                                        "self_regulation":  4
+                                                    },
+                             "inference_records":  {
+
+                                                   },
+                             "profile_version":  1
+                         },
+    "goal":  "Understand how self-attention enables transformers to model context.",
+    "goal_admission":  {
+                           "goal_id":  "self_attention",
+                           "status":  "eligible_for_full_experience"
+                       },
+    "system_version":  "V3",
+    "enabled_components":  {
+                               "profile":  true,
+                               "kg":  true,
+                               "teaching_assets":  true,
+                               "source_grounding":  true,
+                               "fallback_allowed":  false,
+                               "product_surface":  "lecture-v4",
+                               "current_final_system":  true
+                           },
+    "time_budget":  {
+                        "user_daily_minutes":  null,
+                        "recommended_daily_minutes":  90,
+                        "deadline_days":  null
+                    },
+    "versions":  {
+                     "ablation":  "ablation-contract-v2",
+                     "kg":  "goal_chain_catalog",
+                     "source_registry":  "source-link-s3-v1",
+                     "asset_manifest":  "scoped_assets_enabled",
+                     "prompt":  "ml-education-expert-v2",
+                     "planning_prompt_version":  "controlled-eval-v3-planning-prompt-v2",
+                     "content_prompt_version":  "ml-education-expert-v2",
+                     "generator":  "source-grounded-v4-live-assets-v3",
+                     "planning_agent":  "controlled_eval_v3_planning_live",
+                     "content_agent":  "controlled_eval_v3_content_v1",
+                     "model":  "gpt-5.4",
+                     "temperature":  0.2
+                 },
+    "plan":  {
+                 "planning_agent":  "controlled_eval_v3_planning_live",
+                 "goal_text":  "Understand how self-attention enables transformers to model context.",
+                 "core_concept":  "Contextual Representations",
+                 "prerequisite_path":  [
+                                           {
+                                               "order":  1,
+                                               "concept":  "Token Representations",
+                                               "why_needed":  "Self-attention operates over token-level vector representations, so understanding how tokens are represented is a direct prerequisite."
+                                           },
+                                           {
+                                               "order":  2,
+                                               "concept":  "Queries, Keys, and Values",
+                                               "why_needed":  "Self-attention computes token-to-token relevance through query-key interactions and uses values to aggregate contextual information."
+                                           },
+                                           {
+                                               "order":  3,
+                                               "concept":  "Self-Attention",
+                                               "why_needed":  "This is the target concept and the main mechanism that enables context modeling in transformers."
+                                           },
+                                           {
+                                               "order":  4,
+                                               "concept":  "Contextual Representations",
+                                               "why_needed":  "Understanding the output of self-attention completes the goal by showing how token meanings become context-dependent."
+                                           }
+                                       ],
+                 "recommended_daily_minutes":  90,
+                 "session_minutes":  90,
+                 "estimated_total_minutes":  450,
+                 "estimated_days":  5,
+                 "concept_count":  4,
+                 "feasibility":  {
+                                     "status":  "feasible",
+                                     "deadline_days":  null
+                                 },
+                 "learner_treatment":  {
+                                           "style":  "theory",
+                                           "pace":  "intensive"
+                                       },
+                 "planning_constraints":  {
+                                              "profile":  true,
+                                              "kg":  true,
+                                              "teaching_assets":  true,
+                                              "source_grounding":  true
+                                          },
+                 "planning_rationale":  {
+                                            "learner_fit":  {
+                                                                "summary":  "The plan is intensive and theory-forward to match the learnerâs stated preferences, strong mathematical/programming foundation, and undergraduate computer science background.",
+                                                                "profile_evidence":  {
+                                                                                         "academic_level":  "undergraduate",
+                                                                                         "domain":  "computer science",
+                                                                                         "prior_knowledge_level":  4,
+                                                                                         "math_foundation":  5,
+                                                                                         "programming_foundation":  5,
+                                                                                         "preferred_style":  "theory",
+                                                                                         "pace_preference":  "intensive",
+                                                                                         "preferred_examples":  [
+                                                                                                                    "research",
+                                                                                                                    "code"
+                                                                                                                ],
+                                                                                         "interest_tags":  [
+                                                                                                               "computer_vision"
+                                                                                                           ]
+                                                                                     }
+                                                            },
+                                            "sequencing":  {
+                                                               "summary":  "The sequence respects the approved knowledge-graph path and direct prerequisites: token vectors first, then Q/K/V mechanics, then self-attention computation, then the resulting contextual representations.",
+                                                               "approved_kg_path_used":  [
+                                                                                             "Token Representations",
+                                                                                             "Queries, Keys, and Values",
+                                                                                             "Self-Attention",
+                                                                                             "Contextual Representations"
+                                                                                         ]
+                                                           },
+                                            "time_estimate":  {
+                                                                  "summary":  "Five days at 90 minutes per day matches the learnerâs target_days of 5 and intensive pace preference, while allowing one focused session per approved concept plus one synthesis/review session.",
+                                                                  "calculation":  {
+                                                                                      "recommended_daily_minutes":  90,
+                                                                                      "estimated_days":  5,
+                                                                                      "estimated_total_minutes":  450
+                                                                                  }
+                                                              },
+                                            "source_grounding":  {
+                                                                     "status":  "limited",
+                                                                     "note":  "No teaching assets or source coverage were provided in the request payload. This plan is grounded only in the approved KG path and the supplied learner profile. No external citations or fabricated evidence have been added."
+                                                                 }
+                                        },
+                 "output_format":  "lecture_v4_json",
+                 "prompt_version":  "controlled-eval-v3-planning-prompt-v2",
+                 "v3_prompt_contract":  "You are Pathly\u0027s source-grounded personalised learning-planning agent. Respect direct prerequisites, adapt workload to the anonymous learner profile, use only approved KG concepts, teaching assets and source coverage, calculate estimated total study minutes and estimated study days, and never fabricate evidence.",
+                 "day_1_minutes":  90,
+                 "selected_system_version":  "V3"
+             },
+    "day_1":  {
+                  "title":  "Day 1 Â· Understand how self-attention enables transformers to model context.",
+                  "estimated_minutes":  90,
+                  "lecture_sections":  [
+                                           {
+                                               "section_id":  "controlled:9d650ac8effa:0",
+                                               "concept_id":  "experience:contextual-representations",
+                                               "concept_name":  "Contextual Representations",
+                                               "title":  "Contextual Representations",
+                                               "estimated_minutes":  90,
+                                               "source_links":  [
+                                                                    {
+                                                                        "link_id":  "experience:self_attention:experience:contextual-representations",
+                                                                        "concept_id":  "experience:contextual-representations",
+                                                                        "concept_name":  "Contextual Representations",
+                                                                        "canonical_concept_id":  "experience:contextual-representations",
+                                                                        "resource_id":  "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+                                                                        "document_id":  "public:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+                                                                        "document_title":  "Attention Is All You Need",
+                                                                        "source_scope":  "public",
+                                                                        "page_sequence":  [
+                                                                                              {
+                                                                                                  "page_number":  5,
+                                                                                                  "role":  "source_page",
+                                                                                                  "chunk_ids":  [
+                                                                                                                    "self-attention-vaswani-attention-is-all-you-need-5"
+                                                                                                                ]
+                                                                                              }
+                                                                                          ],
+                                                                        "chunk_ids":  [
+                                                                                          "self-attention-vaswani-attention-is-all-you-need-5"
+                                                                                      ],
+                                                                        "relevance_score":  1.0,
+                                                                        "coverage_score":  1.0,
+                                                                        "match_method":  "approved_goal_chain_catalog",
+                                                                        "match_reason":  "The approved canonical concept is bound to its reviewed page-level evidence.",
+                                                                        "review_status":  "verified",
+                                                                        "source_readiness":  "approved_experience_source",
+                                                                        "source_version":  "self-attention-gold-v1",
+                                                                        "learner_tier":  "advanced",
+                                                                        "catalog_version":  "full-experience-goal-catalog-v1",
+                                                                        "asset_concept_id":  "experience:contextual-representations",
+                                                                        "asset_scope":  "goal:self_attention",
+                                                                        "asset_manifest_version":  "self-attention-gold-v1",
+                                                                        "experience_source_id":  "source:self-attention:gold-advanced-v1",
+                                                                        "link_role":  "primary"
+                                                                    }
+                                                                ],
+                                               "source_pages":  [
+                                                                    {
+                                                                        "page_number":  5,
+                                                                        "role":  "source_page",
+                                                                        "text":  "output values. These are concatenated and once again projected, resulting in the final values, as depictedinFigure2. Multi-headattentionallowsthemodeltojointlyattendtoinformationfromdifferentrepresentation subspacesatdifferentpositions. Withasingleattentionhead,averaginginhibitsthis. MultiHead(Q,K,V)=Concat(head ,...,head )WO 1 h wherehead =Attention(QWQ,KWK,VWV) i i i i WheretheprojectionsareparametermatricesWQ âRdmodelÃdk,WK âRdmodelÃdk,WV âRdmodelÃdv i i i andWO âRhdvÃdmodel. In this work we employ h = 8 parallel attention layers, or heads. For each of these we use d =d =d /h=64. Duetothereduceddimensionofeachhead,thetotalcomputationalcost k v model issimilartothatofsingle-headattentionwithfulldimensionality. 3.2.3 ApplicationsofAttentioninourModel TheTransformerusesmulti-headattentioninthreedifferentways: â¢ In\"encoder-decoderattention\"layers,thequeriescomefromthepreviousdecoderlayer, andthememorykeysandvaluescomefromtheoutputoftheencoder. Thisallowsevery positioninthedecodertoattendoverallpositionsintheinputsequence. Thismimicsthe typical encoder-decoder attention mechanisms in sequence-to-sequence models such as [38,2,9]. â¢ Theencodercontainsself-attentionlayers. Inaself-attentionlayerallofthekeys,values andqueriescomefromthesameplace,inthiscase,theoutputofthepreviouslayerinthe encoder. Eachpositionintheencodercanattendtoallpositionsinthepreviouslayerofthe encoder. â¢ Similarly,self-attentionlayersinthedecoderalloweachpositioninthedecodertoattendto allpositionsinthedecoderuptoandincludingthatposition. Weneedtopreventleftward informationflowinthedecodertopreservetheauto-regressiveproperty. Weimplementthis insideofscaleddot-productattentionbymaskingout(settingtoââ)allvaluesintheinput ofthesoftmaxwhichcorrespondtoillegalconnections. SeeFigure2. 3.3",
+                                                                        "document_id":  "public:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+                                                                        "document_title":  "Attention Is All You Need",
+                                                                        "resource_id":  "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+                                                                        "source_scope":  "public",
+                                                                        "link_role":  "primary",
+                                                                        "link_id":  "experience:self_attention:experience:contextual-representations"
+                                                                    }
+                                                                ],
+                                               "retry_attempts":  0,
+                                               "max_retry_attempts":  3,
+                                               "teaching_asset_ids":  [
+                                                                          "gold:self-attention:advanced:contextual-representations:advanced_derivation",
+                                                                          "sa-contextual-representations-advanced-worked",
+                                                                          "gold:self-attention:advanced:contextual-representations:contextual_example_variant",
+                                                                          "sa-contextual-representations-visual",
+                                                                          "gold:self-attention:foundation:contextual-representations:foundation_intuition",
+                                                                          "sa-contextual-representations-foundation-intuition"
+                                                                      ],
+                                               "asset_manifest_version":  "self-attention-gold-v1",
+                                               "v4_status":  "ready",
+                                               "generation_mode":  "live_augmented",
+                                               "lecture_content":  {
+                                                                       "concept_introduction":  {
+                                                                                                    "hook":  "How can one token representation change its meaning based on the rest of the sequence, so that a model can distinguish whether a visual patch or word should matter for an image classification decision?",
+                                                                                                    "explanation":  "A contextual representation is a token vector updated using information from relevant positions in its sequence. In a transformer, this update is produced by self-attention: each position forms a query, compares it with keys from available positions, converts those comparisons into normalized weights, and uses the weights to combine value vectors. The result is that the representation at one position is no longer only its local embedding or previous-layer state; it becomes a context-sensitive summary of other positions that the model judged relevant. The source page makes two structural points that matter here. First, in encoder self-attention, each position can attend to all positions in the previous encoder layer. Second, in decoder self-attention, each position can attend only up to and including itself, because illegal future connections are masked before the softmax. So contextuality is real, but it is constrained by architecture and masking.",
+                                                                                                    "mechanism":  [
+                                                                                                                      "Start with a sequence of vectors from the previous layer; for self-attention, queries, keys, and values all come from that same source.",
+                                                                                                                      "Apply learned linear projections to produce Q, K, and V; in multi-head attention, each head uses its own projection matrices.",
+                                                                                                                      "For each query position, compute query-key comparisons against the available positions, producing attention scores.",
+                                                                                                                      "Normalize the scores for each query with softmax, so the weights express how strongly that position attends to each allowed source position.",
+                                                                                                                      "Use those weights to form a weighted combination of the value vectors; this weighted sum is the contextual vector for that head.",
+                                                                                                                      "Concatenate the head outputs and project again to obtain the final output values, allowing the model to jointly attend to different representation subspaces at different positions."
+                                                                                                                  ],
+                                                                                                    "boundaries":  "A contextual vector reflects only the tokens made available to it and the masking rules imposed by the model. In encoder self-attention, a position can use all positions in the encoder\u0027s previous layer. In decoder self-attention, it cannot use future positions, because those connections are masked out before softmax. Therefore a contextual representation is not unrestricted access to every token in the sequence, and it is not automatically reliable just because attention was applied."
+                                                                                                },
+                                                                       "prerequisite_recap":  {
+                                                                                                  "title":  "Minimal recap: self-attention as parallel weighted retrieval",
+                                                                                                  "explanation":  "Self-attention is easiest to read as a matrix-form retrieval operation. A query asks, \"Which positions are relevant to me?\" Keys determine match strength, and values provide the content to aggregate. Because all query-key comparisons for a layer can be computed together, the model updates every position in parallel. Multi-head attention extends this by running several learned attention patterns at once, then concatenating and projecting their outputs. The source page states that this lets the model jointly attend to information from different representation subspaces at different positions; with a single head, averaging can inhibit that separation.",
+                                                                                                  "example":  "If one image patch token corresponds to an animal ear and another to striped fur, one head may emphasize shape relations while another emphasizes texture relations. Their outputs are concatenated and projected into one updated patch representation."
+                                                                                              },
+                                                                       "intuition":  "Think of each token as rewriting itself after consulting a restricted committee of other tokens. The committee is not fixed: the query chooses it dynamically through similarity to keys, and the contribution of each member is weighted rather than all-or-nothing. The rewritten token is therefore contextual. In an image-like token sequence, a patch that is ambiguous in isolation can become informative after consulting neighboring or distant patches. A small curved patch may be weak evidence alone, but after attending to patches representing whiskers, fur texture, and eye shape, its updated vector can support the class decision much more strongly. The important subtlety is that the committee can only include positions the architecture permits. In the encoder, all positions are available; in the decoder, future positions are excluded by masking",
+                                                                       "worked_example":  {
+                                                                                              "problem":  "State the representation, learned transformation, weighting step, and limitation in Contextual Representations.",
+                                                                                              "steps":  [
+                                                                                                            "A contextual representation is a token vector updated using information from relevant positions in its sequence.",
+                                                                                                            "Matrix-form attention computes all query-key comparisons, normalizes each query\u0027s weights, and applies them to values in parallel.",
+                                                                                                            "A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token."
+                                                                                                        ],
+                                                                                              "solution":  "Start from the working example: State the representation, learned transformation, weighting step, and limitation in Contextual Representations. Then test it against the counterexample: A result is not reliably grounded when this boundary is violated: A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token. The mechanism is: Matrix-form attention computes all query-key comparisons, normalizes each query\u0027s weights, and applies them to values in parallel. The conclusion must preserve the stated boundary: A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token. State which assumption fails before proposing a richer representation or update. The worked case is checked through these steps: A contextual representation is a token vector updated using information from relevant positions in its sequence. Matrix-form attention computes all query-key comparisons, normalizes each query\u0027s weights, and applies them to values in parallel. A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token.",
+                                                                                              "why_it_works":  "The conclusion follows because the representation, mechanism, counterexample, and boundary are checked in one reasoning chain."
+                                                                                          },
+                                                                       "common_mistake":  "A common mistake is to say that once a token has a contextual representation, it has effectively seen the whole sequence without restriction. That fails because contextuality is bounded by available positions and masking. The source page is explicit that decoder self-attention must prevent leftward information flow to preserve the autoregressive property, implemented by masking illegal connections before softmax. So a contextual vector is context-sensitive, not omniscient",
+                                                                       "summary_connection":  {
+                                                                                                  "summary":  "Contextual representations are the central product of self-attention. A token begins as a position-specific vector, is transformed into query, key, and value spaces, compares itself with allowed positions, and receives a weighted combination of their value vectors. In multi-head attention, several such contextual updates are computed in parallel, concatenated, and projected, allowing the model to attend to different representation subspaces at different positions. The result is a token representation whose meaning depends on sequence context. The boundary is equally important: the representation reflects only accessible tokens under the model\u0027s masking rules, so it is not unrestricted access to future information and not automatically reliable by default.",
+                                                                                                  "next_concept_bridge":  "This directly connects to how transformers make image classification decisions: once patch tokens become contextual, later layers or a classifier can use those richer representations to separate object evidence from background evidence."
+                                                                                              },
+                                                                       "math":  {
+                                                                                    "inline_math":  [
+
+                                                                                                    ],
+                                                                                    "display_math":  [
+
+                                                                                                     ],
+                                                                                    "matrix":  null,
+                                                                                    "derivation_steps":  [
+
+                                                                                                         ]
+                                                                                },
+                                                                       "objective_exercise":  {
+                                                                                                  "instructions":  "Answer each question by selecting the single best option. Focus on how self-attention updates token representations, and on the architectural limits imposed by available positions and masking.",
+                                                                                                  "questions":  [
+                                                                                                                    {
+                                                                                                                        "question_id":  "q1",
+                                                                                                                        "type":  "single_choice",
+                                                                                                                        "question_type":  "mechanism",
+                                                                                                                        "assessment_target_id":  "assessment:self-attention:contextual-representations:mechanism",
+                                                                                                                        "prompt":  "In a vision transformer for image classification, a patch token initially responds strongly to a small fur texture. After one encoder self-attention layer, that same patch token now helps indicate \u0027cat\u0027 because it incorporates nearby ear and face patches. Which description best matches how this contextual update is produced?",
+                                                                                                                        "correct_reasoning":  "In encoder self-attention, the patch\u0027s previous-layer vector is projected into query, key, and value spaces. Its query is compared with keys from all encoder positions, those scores are normalized with softmax for that query, and the resulting weights form a weighted sum of value vectors. That weighted combination becomes a context-sensitive representation, so the patch can reflect ear and face evidence rather than only its local texture.",
+                                                                                                                        "source_refs":  [
+                                                                                                                                            "page:5"
+                                                                                                                                        ],
+                                                                                                                        "explanation":  "The key mechanism is not just mixing embeddings. The token becomes contextual because attention computes query-key comparisons over allowed positions, normalizes them per query, and uses the weights to combine values.",
+                                                                                                                        "options":  [
+                                                                                                                                        {
+                                                                                                                                            "id":  "A",
+                                                                                                                                            "text":  "The patch vector is projected to queries, keys, and values; its query scores all encoder positions, softmax turns those scores into weights, and the weighted sum of value vectors becomes its updated contextual representation.",
+                                                                                                                                            "correct":  true,
+                                                                                                                                            "feedback":  "Correct. This is the canonical self-attention mechanism: compare query to keys, normalize per query, and use the weights to combine values into a context-sensitive output."
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "id":  "B",
+                                                                                                                                            "text":  "The patch vector is updated mainly by averaging all patch embeddings equally, then a projection makes the average look contextual.",
+                                                                                                                                            "correct":  false,
+                                                                                                                                            "feedback":  "This misses the mechanism. Self-attention does not generally average positions equally; it uses query-key comparisons and softmax weights, so different positions can contribute unequally depending on relevance."
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "id":  "C",
+                                                                                                                                            "text":  "The patch becomes contextual because its key vector is directly replaced by the most similar neighboring key, which transfers that neighbor\u0027s meaning into the patch.",
+                                                                                                                                            "correct":  false,
+                                                                                                                                            "feedback":  "This confuses the role of keys. Keys are used for comparison with queries; the contextual output is formed from a weighted combination of value vectors, not by replacing a token with a selected key."
+                                                                                                                                        }
+                                                                                                                                    ],
+                                                                                                                        "concept_id":  "experience:contextual-representations",
+                                                                                                                        "section_id":  "controlled:9d650ac8effa:0",
+                                                                                                                        "page_references":  [
+                                                                                                                                                5
+                                                                                                                                            ],
+                                                                                                                        "generator_version":  "source-grounded-v4-live-assets-v3",
+                                                                                                                        "supporting_explanation_ids":  [
+                                                                                                                                                           "core_idea",
+                                                                                                                                                           "page_walkthrough",
+                                                                                                                                                           "worked_example"
+                                                                                                                                                       ]
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "question_id":  "q2",
+                                                                                                                        "type":  "single_choice",
+                                                                                                                        "question_type":  "misconception_discrimination",
+                                                                                                                        "assessment_target_id":  "target:contextual-representations:mechanism",
+                                                                                                                        "prompt":  "A teammate says: \u0027Once a decoder token has a contextual representation, it has effectively seen the whole sequence, so it can use future patches or words if that would improve the classification or next-token prediction.\u0027 Which response best identifies the mistake?",
+                                                                                                                        "correct_reasoning":  "The mistake is treating contextuality as unrestricted access. In decoder self-attention, future positions are masked before softmax, so a token can only attend to positions up to and including itself. Its representation is contextual, but only with respect to allowed positions under the masking rule.",
+                                                                                                                        "source_refs":  [
+                                                                                                                                            "page:5"
+                                                                                                                                        ],
+                                                                                                                        "explanation":  "The lesson\u0027s main misconception is that contextual means omniscient. Contextual representations depend on architecture and masking; decoder tokens cannot use future information through masked self-attention.",
+                                                                                                                        "options":  [
+                                                                                                                                        {
+                                                                                                                                            "id":  "B",
+                                                                                                                                            "text":  "The claim is wrong because contextual representations are built from values rather than keys, so future positions are irrelevant even if they are present.",
+                                                                                                                                            "correct":  false,
+                                                                                                                                            "feedback":  "This identifies a true detail about values contributing to outputs, but it misses the actual boundary. Future positions are not irrelevant by nature; they are excluded in the decoder because masking prevents access to them."
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "id":  "A",
+                                                                                                                                            "text":  "The claim is wrong because a contextual representation only reflects positions made available by the architecture; in decoder self-attention, future positions are masked before softmax, so the token cannot use them.",
+                                                                                                                                            "correct":  true,
+                                                                                                                                            "feedback":  "Correct. This directly addresses the misconception: contextual does not mean unrestricted, and decoder masking blocks future-token information before attention weights are formed."
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "id":  "C",
+                                                                                                                                            "text":  "The claim is wrong because contextual representations only exist in encoders; decoders keep tokens non-contextual to preserve autoregression.",
+                                                                                                                                            "correct":  false,
+                                                                                                                                            "feedback":  "This is incorrect. Decoder tokens do become contextual, but only using positions up to and including themselves. Autoregression is preserved by masking future positions, not by removing contextuality."
+                                                                                                                                        }
+                                                                                                                                    ],
+                                                                                                                        "concept_id":  "experience:contextual-representations",
+                                                                                                                        "section_id":  "controlled:9d650ac8effa:0",
+                                                                                                                        "page_references":  [
+                                                                                                                                                5
+                                                                                                                                            ],
+                                                                                                                        "generator_version":  "source-grounded-v4-live-assets-v3",
+                                                                                                                        "supporting_explanation_ids":  [
+                                                                                                                                                           "core_idea",
+                                                                                                                                                           "page_walkthrough",
+                                                                                                                                                           "worked_example"
+                                                                                                                                                       ]
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "question_id":  "q3",
+                                                                                                                        "type":  "single_choice",
+                                                                                                                        "question_type":  "application_or_boundary",
+                                                                                                                        "assessment_target_id":  "target:contextual-representations:mechanism",
+                                                                                                                        "prompt":  "You are debugging two transformer components used around an image classification pipeline. Component 1 is an encoder over image patches. Component 2 is an autoregressive decoder that generates a textual rationale from left to right. For a token at position i, which statement correctly applies the boundary on its contextual representation?",
+                                                                                                                        "correct_reasoning":  "In the encoder, position i can attend to all positions in the previous encoder layer, so its contextual vector may use any patch token. In the autoregressive decoder, position i can attend only to positions up to and including i because future positions are masked before softmax. Thus contextual access differs by component.",
+                                                                                                                        "source_refs":  [
+                                                                                                                                            "page:5"
+                                                                                                                                        ],
+                                                                                                                        "explanation":  "This question tests transfer of the boundary to two architectures. Contextual representations are real in both cases, but the accessible context depends on whether the layer is encoder self-attention or masked decoder self-attention.",
+                                                                                                                        "options":  [
+                                                                                                                                        {
+                                                                                                                                            "id":  "B",
+                                                                                                                                            "text":  "In both components, position i can use all positions once softmax normalizes the scores, because normalization removes any masking restriction.",
+                                                                                                                                            "correct":  false,
+                                                                                                                                            "feedback":  "Softmax does not remove masking restrictions. Illegal decoder connections are masked before softmax, so those future positions are excluded from the normalized distribution."
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "id":  "C",
+                                                                                                                                            "text":  "In the encoder, position i can only use nearby patches because contextual representations are local by design; in the decoder, position i can use all positions because generation needs global context.",
+                                                                                                                                            "correct":  false,
+                                                                                                                                            "feedback":  "This reverses the lesson. Encoder self-attention is not inherently local here; it can attend to all encoder positions. Decoder self-attention is the restricted one, because future positions must be masked to preserve autoregression."
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "id":  "A",
+                                                                                                                                            "text":  "In the encoder, position i can use all patch positions from the previous encoder layer; in the autoregressive decoder, position i can use only positions up to and including i because future positions are masked.",
+                                                                                                                                            "correct":  true,
+                                                                                                                                            "feedback":  "Correct. This matches the architectural boundary exactly: full encoder self-attention versus masked decoder self-attention."
+                                                                                                                                        }
+                                                                                                                                    ],
+                                                                                                                        "concept_id":  "experience:contextual-representations",
+                                                                                                                        "section_id":  "controlled:9d650ac8effa:0",
+                                                                                                                        "page_references":  [
+                                                                                                                                                5
+                                                                                                                                            ],
+                                                                                                                        "generator_version":  "source-grounded-v4-live-assets-v3",
+                                                                                                                        "supporting_explanation_ids":  [
+                                                                                                                                                           "core_idea",
+                                                                                                                                                           "page_walkthrough",
+                                                                                                                                                           "worked_example"
+                                                                                                                                                       ]
+                                                                                                                    }
+                                                                                                                ]
+                                                                                              },
+                                                                       "learner_adaptation":  {
+                                                                                                  "treatment_version":  "dual-user-treatment-v1",
+                                                                                                  "profile_tier":  "advanced",
+                                                                                                  "prior_knowledge_level":  "advanced",
+                                                                                                  "explanation_density":  "concise",
+                                                                                                  "example_mode":  "symbolic-and-structural",
+                                                                                                  "practice_style":  "independent",
+                                                                                                  "terminology_depth":  "advanced",
+                                                                                                  "interest_usage":  "scenario_only",
+                                                                                                  "example_context":  "an image classification decision",
+                                                                                                  "preferred_examples":  [
+                                                                                                                             "research",
+                                                                                                                             "code"
+                                                                                                                         ],
+                                                                                                  "learning_style":  "theory",
+                                                                                                  "formula_support":  "compact",
+                                                                                                  "checkpoint_density":  "standard"
+                                                                                              },
+                                                                       "page_walkthrough":  [
+                                                                                                {
+                                                                                                    "page_number":  5,
+                                                                                                    "what_to_notice":  "A contextual representation is a token vector updated using information from relevant positions in its sequence.",
+                                                                                                    "explanation":  "A contextual representation is a token vector updated using information from relevant positions in its sequence. The boundary to retain is: A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token. Relate the representation directly to the stated boundary condition.",
+                                                                                                    "connection_to_previous":  "The definition establishes the representation being considered."
+                                                                                                }
+                                                                                            ],
+                                                                       "key_terms":  [
+                                                                                         {
+                                                                                             "term":  "Contextual Representations",
+                                                                                             "definition":  "A contextual representation is a token vector updated using information from relevant positions in its sequence."
+                                                                                         },
+                                                                                         {
+                                                                                             "term":  "Mechanism",
+                                                                                             "definition":  "Matrix-form attention computes all query-key comparisons, normalizes each query\u0027s weights, and applies them to values in parallel."
+                                                                                         },
+                                                                                         {
+                                                                                             "term":  "Boundary",
+                                                                                             "definition":  "A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token."
+                                                                                         }
+                                                                                     ]
+                                                                   },
+                                               "retryable":  true,
+                                               "repair_pass_used":  false,
+                                               "live_asset_repairs":  [
+                                                                          "page_walkthrough",
+                                                                          "key_terms",
+                                                                          "objective_exercise",
+                                                                          "worked_example"
+                                                                      ],
+                                               "exercise_generation_mode":  "live",
+                                               "exercise_generation_reason":  null
+                                           }
+                                       ]
+              },
+    "content_contract":  {
+                             "content_agent":  "controlled_eval_v3_content_v1",
+                             "output_format":  "lecture_v4",
+                             "inputs":  {
+                                            "planning_agent":  "controlled_eval_v3_planning_live",
+                                            "profile":  true,
+                                            "kg":  true,
+                                            "teaching_assets":  true,
+                                            "source_grounding":  true
+                                        }
+                         },
+    "evaluation_metrics":  {
+                               "planning":  {
+                                                "passed":  true,
+                                                "checks_passed":  5,
+                                                "checks_total":  5,
+                                                "path_length":  4,
+                                                "session_minutes":  90
+                                            },
+                               "content":  {
+                                               "passed":  false,
+                                               "checks_passed":  3,
+                                               "checks_total":  4,
+                                               "generation_mode":  "live_augmented",
+                                               "has_core_output":  true
+                                           },
+                               "grounding":  {
+                                                 "required":  true,
+                                                 "passed":  true,
+                                                 "source_refs":  1
+                                             },
+                               "personalization":  {
+                                                       "passed":  true
+                                                   },
+                               "overall":  {
+                                               "passed":  false,
+                                               "status":  "failed"
+                                           }
+                           },
+    "core_learning_unit":  {
+                               "section_id":  "controlled:9d650ac8effa:0",
+                               "concept_id":  "experience:contextual-representations",
+                               "concept_name":  "Contextual Representations",
+                               "title":  "Contextual Representations",
+                               "estimated_minutes":  90,
+                               "source_links":  [
+                                                    {
+                                                        "link_id":  "experience:self_attention:experience:contextual-representations",
+                                                        "concept_id":  "experience:contextual-representations",
+                                                        "concept_name":  "Contextual Representations",
+                                                        "canonical_concept_id":  "experience:contextual-representations",
+                                                        "resource_id":  "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+                                                        "document_id":  "public:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+                                                        "document_title":  "Attention Is All You Need",
+                                                        "source_scope":  "public",
+                                                        "page_sequence":  [
+                                                                              {
+                                                                                  "page_number":  5,
+                                                                                  "role":  "source_page",
+                                                                                  "chunk_ids":  [
+                                                                                                    "self-attention-vaswani-attention-is-all-you-need-5"
+                                                                                                ]
+                                                                              }
+                                                                          ],
+                                                        "chunk_ids":  [
+                                                                          "self-attention-vaswani-attention-is-all-you-need-5"
+                                                                      ],
+                                                        "relevance_score":  1.0,
+                                                        "coverage_score":  1.0,
+                                                        "match_method":  "approved_goal_chain_catalog",
+                                                        "match_reason":  "The approved canonical concept is bound to its reviewed page-level evidence.",
+                                                        "review_status":  "verified",
+                                                        "source_readiness":  "approved_experience_source",
+                                                        "source_version":  "self-attention-gold-v1",
+                                                        "learner_tier":  "advanced",
+                                                        "catalog_version":  "full-experience-goal-catalog-v1",
+                                                        "asset_concept_id":  "experience:contextual-representations",
+                                                        "asset_scope":  "goal:self_attention",
+                                                        "asset_manifest_version":  "self-attention-gold-v1",
+                                                        "experience_source_id":  "source:self-attention:gold-advanced-v1",
+                                                        "link_role":  "primary"
+                                                    }
+                                                ],
+                               "source_pages":  [
+                                                    {
+                                                        "page_number":  5,
+                                                        "role":  "source_page",
+                                                        "text":  "output values. These are concatenated and once again projected, resulting in the final values, as depictedinFigure2. Multi-headattentionallowsthemodeltojointlyattendtoinformationfromdifferentrepresentation subspacesatdifferentpositions. Withasingleattentionhead,averaginginhibitsthis. MultiHead(Q,K,V)=Concat(head ,...,head )WO 1 h wherehead =Attention(QWQ,KWK,VWV) i i i i WheretheprojectionsareparametermatricesWQ âRdmodelÃdk,WK âRdmodelÃdk,WV âRdmodelÃdv i i i andWO âRhdvÃdmodel. In this work we employ h = 8 parallel attention layers, or heads. For each of these we use d =d =d /h=64. Duetothereduceddimensionofeachhead,thetotalcomputationalcost k v model issimilartothatofsingle-headattentionwithfulldimensionality. 3.2.3 ApplicationsofAttentioninourModel TheTransformerusesmulti-headattentioninthreedifferentways: â¢ In\"encoder-decoderattention\"layers,thequeriescomefromthepreviousdecoderlayer, andthememorykeysandvaluescomefromtheoutputoftheencoder. Thisallowsevery positioninthedecodertoattendoverallpositionsintheinputsequence. Thismimicsthe typical encoder-decoder attention mechanisms in sequence-to-sequence models such as [38,2,9]. â¢ Theencodercontainsself-attentionlayers. Inaself-attentionlayerallofthekeys,values andqueriescomefromthesameplace,inthiscase,theoutputofthepreviouslayerinthe encoder. Eachpositionintheencodercanattendtoallpositionsinthepreviouslayerofthe encoder. â¢ Similarly,self-attentionlayersinthedecoderalloweachpositioninthedecodertoattendto allpositionsinthedecoderuptoandincludingthatposition. Weneedtopreventleftward informationflowinthedecodertopreservetheauto-regressiveproperty. Weimplementthis insideofscaleddot-productattentionbymaskingout(settingtoââ)allvaluesintheinput ofthesoftmaxwhichcorrespondtoillegalconnections. SeeFigure2. 3.3",
+                                                        "document_id":  "public:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+                                                        "document_title":  "Attention Is All You Need",
+                                                        "resource_id":  "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+                                                        "source_scope":  "public",
+                                                        "link_role":  "primary",
+                                                        "link_id":  "experience:self_attention:experience:contextual-representations"
+                                                    }
+                                                ],
+                               "retry_attempts":  0,
+                               "max_retry_attempts":  3,
+                               "teaching_asset_ids":  [
+                                                          "gold:self-attention:advanced:contextual-representations:advanced_derivation",
+                                                          "sa-contextual-representations-advanced-worked",
+                                                          "gold:self-attention:advanced:contextual-representations:contextual_example_variant",
+                                                          "sa-contextual-representations-visual",
+                                                          "gold:self-attention:foundation:contextual-representations:foundation_intuition",
+                                                          "sa-contextual-representations-foundation-intuition"
+                                                      ],
+                               "asset_manifest_version":  "self-attention-gold-v1",
+                               "v4_status":  "ready",
+                               "generation_mode":  "live_augmented",
+                               "lecture_content":  {
+                                                       "concept_introduction":  {
+                                                                                    "hook":  "How can one token representation change its meaning based on the rest of the sequence, so that a model can distinguish whether a visual patch or word should matter for an image classification decision?",
+                                                                                    "explanation":  "A contextual representation is a token vector updated using information from relevant positions in its sequence. In a transformer, this update is produced by self-attention: each position forms a query, compares it with keys from available positions, converts those comparisons into normalized weights, and uses the weights to combine value vectors. The result is that the representation at one position is no longer only its local embedding or previous-layer state; it becomes a context-sensitive summary of other positions that the model judged relevant. The source page makes two structural points that matter here. First, in encoder self-attention, each position can attend to all positions in the previous encoder layer. Second, in decoder self-attention, each position can attend only up to and including itself, because illegal future connections are masked before the softmax. So contextuality is real, but it is constrained by architecture and masking.",
+                                                                                    "mechanism":  [
+                                                                                                      "Start with a sequence of vectors from the previous layer; for self-attention, queries, keys, and values all come from that same source.",
+                                                                                                      "Apply learned linear projections to produce Q, K, and V; in multi-head attention, each head uses its own projection matrices.",
+                                                                                                      "For each query position, compute query-key comparisons against the available positions, producing attention scores.",
+                                                                                                      "Normalize the scores for each query with softmax, so the weights express how strongly that position attends to each allowed source position.",
+                                                                                                      "Use those weights to form a weighted combination of the value vectors; this weighted sum is the contextual vector for that head.",
+                                                                                                      "Concatenate the head outputs and project again to obtain the final output values, allowing the model to jointly attend to different representation subspaces at different positions."
+                                                                                                  ],
+                                                                                    "boundaries":  "A contextual vector reflects only the tokens made available to it and the masking rules imposed by the model. In encoder self-attention, a position can use all positions in the encoder\u0027s previous layer. In decoder self-attention, it cannot use future positions, because those connections are masked out before softmax. Therefore a contextual representation is not unrestricted access to every token in the sequence, and it is not automatically reliable just because attention was applied."
+                                                                                },
+                                                       "prerequisite_recap":  {
+                                                                                  "title":  "Minimal recap: self-attention as parallel weighted retrieval",
+                                                                                  "explanation":  "Self-attention is easiest to read as a matrix-form retrieval operation. A query asks, \"Which positions are relevant to me?\" Keys determine match strength, and values provide the content to aggregate. Because all query-key comparisons for a layer can be computed together, the model updates every position in parallel. Multi-head attention extends this by running several learned attention patterns at once, then concatenating and projecting their outputs. The source page states that this lets the model jointly attend to information from different representation subspaces at different positions; with a single head, averaging can inhibit that separation.",
+                                                                                  "example":  "If one image patch token corresponds to an animal ear and another to striped fur, one head may emphasize shape relations while another emphasizes texture relations. Their outputs are concatenated and projected into one updated patch representation."
+                                                                              },
+                                                       "intuition":  "Think of each token as rewriting itself after consulting a restricted committee of other tokens. The committee is not fixed: the query chooses it dynamically through similarity to keys, and the contribution of each member is weighted rather than all-or-nothing. The rewritten token is therefore contextual. In an image-like token sequence, a patch that is ambiguous in isolation can become informative after consulting neighboring or distant patches. A small curved patch may be weak evidence alone, but after attending to patches representing whiskers, fur texture, and eye shape, its updated vector can support the class decision much more strongly. The important subtlety is that the committee can only include positions the architecture permits. In the encoder, all positions are available; in the decoder, future positions are excluded by masking",
+                                                       "worked_example":  {
+                                                                              "problem":  "State the representation, learned transformation, weighting step, and limitation in Contextual Representations.",
+                                                                              "steps":  [
+                                                                                            "A contextual representation is a token vector updated using information from relevant positions in its sequence.",
+                                                                                            "Matrix-form attention computes all query-key comparisons, normalizes each query\u0027s weights, and applies them to values in parallel.",
+                                                                                            "A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token."
+                                                                                        ],
+                                                                              "solution":  "Start from the working example: State the representation, learned transformation, weighting step, and limitation in Contextual Representations. Then test it against the counterexample: A result is not reliably grounded when this boundary is violated: A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token. The mechanism is: Matrix-form attention computes all query-key comparisons, normalizes each query\u0027s weights, and applies them to values in parallel. The conclusion must preserve the stated boundary: A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token. State which assumption fails before proposing a richer representation or update. The worked case is checked through these steps: A contextual representation is a token vector updated using information from relevant positions in its sequence. Matrix-form attention computes all query-key comparisons, normalizes each query\u0027s weights, and applies them to values in parallel. A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token.",
+                                                                              "why_it_works":  "The conclusion follows because the representation, mechanism, counterexample, and boundary are checked in one reasoning chain."
+                                                                          },
+                                                       "common_mistake":  "A common mistake is to say that once a token has a contextual representation, it has effectively seen the whole sequence without restriction. That fails because contextuality is bounded by available positions and masking. The source page is explicit that decoder self-attention must prevent leftward information flow to preserve the autoregressive property, implemented by masking illegal connections before softmax. So a contextual vector is context-sensitive, not omniscient",
+                                                       "summary_connection":  {
+                                                                                  "summary":  "Contextual representations are the central product of self-attention. A token begins as a position-specific vector, is transformed into query, key, and value spaces, compares itself with allowed positions, and receives a weighted combination of their value vectors. In multi-head attention, several such contextual updates are computed in parallel, concatenated, and projected, allowing the model to attend to different representation subspaces at different positions. The result is a token representation whose meaning depends on sequence context. The boundary is equally important: the representation reflects only accessible tokens under the model\u0027s masking rules, so it is not unrestricted access to future information and not automatically reliable by default.",
+                                                                                  "next_concept_bridge":  "This directly connects to how transformers make image classification decisions: once patch tokens become contextual, later layers or a classifier can use those richer representations to separate object evidence from background evidence."
+                                                                              },
+                                                       "math":  {
+                                                                    "inline_math":  [
+
+                                                                                    ],
+                                                                    "display_math":  [
+
+                                                                                     ],
+                                                                    "matrix":  null,
+                                                                    "derivation_steps":  [
+
+                                                                                         ]
+                                                                },
+                                                       "objective_exercise":  {
+                                                                                  "instructions":  "Answer each question by selecting the single best option. Focus on how self-attention updates token representations, and on the architectural limits imposed by available positions and masking.",
+                                                                                  "questions":  [
+                                                                                                    {
+                                                                                                        "question_id":  "q1",
+                                                                                                        "type":  "single_choice",
+                                                                                                        "question_type":  "mechanism",
+                                                                                                        "assessment_target_id":  "assessment:self-attention:contextual-representations:mechanism",
+                                                                                                        "prompt":  "In a vision transformer for image classification, a patch token initially responds strongly to a small fur texture. After one encoder self-attention layer, that same patch token now helps indicate \u0027cat\u0027 because it incorporates nearby ear and face patches. Which description best matches how this contextual update is produced?",
+                                                                                                        "correct_reasoning":  "In encoder self-attention, the patch\u0027s previous-layer vector is projected into query, key, and value spaces. Its query is compared with keys from all encoder positions, those scores are normalized with softmax for that query, and the resulting weights form a weighted sum of value vectors. That weighted combination becomes a context-sensitive representation, so the patch can reflect ear and face evidence rather than only its local texture.",
+                                                                                                        "source_refs":  [
+                                                                                                                            "page:5"
+                                                                                                                        ],
+                                                                                                        "explanation":  "The key mechanism is not just mixing embeddings. The token becomes contextual because attention computes query-key comparisons over allowed positions, normalizes them per query, and uses the weights to combine values.",
+                                                                                                        "options":  [
+                                                                                                                        {
+                                                                                                                            "id":  "A",
+                                                                                                                            "text":  "The patch vector is projected to queries, keys, and values; its query scores all encoder positions, softmax turns those scores into weights, and the weighted sum of value vectors becomes its updated contextual representation.",
+                                                                                                                            "correct":  true,
+                                                                                                                            "feedback":  "Correct. This is the canonical self-attention mechanism: compare query to keys, normalize per query, and use the weights to combine values into a context-sensitive output."
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id":  "B",
+                                                                                                                            "text":  "The patch vector is updated mainly by averaging all patch embeddings equally, then a projection makes the average look contextual.",
+                                                                                                                            "correct":  false,
+                                                                                                                            "feedback":  "This misses the mechanism. Self-attention does not generally average positions equally; it uses query-key comparisons and softmax weights, so different positions can contribute unequally depending on relevance."
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id":  "C",
+                                                                                                                            "text":  "The patch becomes contextual because its key vector is directly replaced by the most similar neighboring key, which transfers that neighbor\u0027s meaning into the patch.",
+                                                                                                                            "correct":  false,
+                                                                                                                            "feedback":  "This confuses the role of keys. Keys are used for comparison with queries; the contextual output is formed from a weighted combination of value vectors, not by replacing a token with a selected key."
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                        "concept_id":  "experience:contextual-representations",
+                                                                                                        "section_id":  "controlled:9d650ac8effa:0",
+                                                                                                        "page_references":  [
+                                                                                                                                5
+                                                                                                                            ],
+                                                                                                        "generator_version":  "source-grounded-v4-live-assets-v3",
+                                                                                                        "supporting_explanation_ids":  [
+                                                                                                                                           "core_idea",
+                                                                                                                                           "page_walkthrough",
+                                                                                                                                           "worked_example"
+                                                                                                                                       ]
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "question_id":  "q2",
+                                                                                                        "type":  "single_choice",
+                                                                                                        "question_type":  "misconception_discrimination",
+                                                                                                        "assessment_target_id":  "target:contextual-representations:mechanism",
+                                                                                                        "prompt":  "A teammate says: \u0027Once a decoder token has a contextual representation, it has effectively seen the whole sequence, so it can use future patches or words if that would improve the classification or next-token prediction.\u0027 Which response best identifies the mistake?",
+                                                                                                        "correct_reasoning":  "The mistake is treating contextuality as unrestricted access. In decoder self-attention, future positions are masked before softmax, so a token can only attend to positions up to and including itself. Its representation is contextual, but only with respect to allowed positions under the masking rule.",
+                                                                                                        "source_refs":  [
+                                                                                                                            "page:5"
+                                                                                                                        ],
+                                                                                                        "explanation":  "The lesson\u0027s main misconception is that contextual means omniscient. Contextual representations depend on architecture and masking; decoder tokens cannot use future information through masked self-attention.",
+                                                                                                        "options":  [
+                                                                                                                        {
+                                                                                                                            "id":  "B",
+                                                                                                                            "text":  "The claim is wrong because contextual representations are built from values rather than keys, so future positions are irrelevant even if they are present.",
+                                                                                                                            "correct":  false,
+                                                                                                                            "feedback":  "This identifies a true detail about values contributing to outputs, but it misses the actual boundary. Future positions are not irrelevant by nature; they are excluded in the decoder because masking prevents access to them."
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id":  "A",
+                                                                                                                            "text":  "The claim is wrong because a contextual representation only reflects positions made available by the architecture; in decoder self-attention, future positions are masked before softmax, so the token cannot use them.",
+                                                                                                                            "correct":  true,
+                                                                                                                            "feedback":  "Correct. This directly addresses the misconception: contextual does not mean unrestricted, and decoder masking blocks future-token information before attention weights are formed."
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id":  "C",
+                                                                                                                            "text":  "The claim is wrong because contextual representations only exist in encoders; decoders keep tokens non-contextual to preserve autoregression.",
+                                                                                                                            "correct":  false,
+                                                                                                                            "feedback":  "This is incorrect. Decoder tokens do become contextual, but only using positions up to and including themselves. Autoregression is preserved by masking future positions, not by removing contextuality."
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                        "concept_id":  "experience:contextual-representations",
+                                                                                                        "section_id":  "controlled:9d650ac8effa:0",
+                                                                                                        "page_references":  [
+                                                                                                                                5
+                                                                                                                            ],
+                                                                                                        "generator_version":  "source-grounded-v4-live-assets-v3",
+                                                                                                        "supporting_explanation_ids":  [
+                                                                                                                                           "core_idea",
+                                                                                                                                           "page_walkthrough",
+                                                                                                                                           "worked_example"
+                                                                                                                                       ]
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "question_id":  "q3",
+                                                                                                        "type":  "single_choice",
+                                                                                                        "question_type":  "application_or_boundary",
+                                                                                                        "assessment_target_id":  "target:contextual-representations:mechanism",
+                                                                                                        "prompt":  "You are debugging two transformer components used around an image classification pipeline. Component 1 is an encoder over image patches. Component 2 is an autoregressive decoder that generates a textual rationale from left to right. For a token at position i, which statement correctly applies the boundary on its contextual representation?",
+                                                                                                        "correct_reasoning":  "In the encoder, position i can attend to all positions in the previous encoder layer, so its contextual vector may use any patch token. In the autoregressive decoder, position i can attend only to positions up to and including i because future positions are masked before softmax. Thus contextual access differs by component.",
+                                                                                                        "source_refs":  [
+                                                                                                                            "page:5"
+                                                                                                                        ],
+                                                                                                        "explanation":  "This question tests transfer of the boundary to two architectures. Contextual representations are real in both cases, but the accessible context depends on whether the layer is encoder self-attention or masked decoder self-attention.",
+                                                                                                        "options":  [
+                                                                                                                        {
+                                                                                                                            "id":  "B",
+                                                                                                                            "text":  "In both components, position i can use all positions once softmax normalizes the scores, because normalization removes any masking restriction.",
+                                                                                                                            "correct":  false,
+                                                                                                                            "feedback":  "Softmax does not remove masking restrictions. Illegal decoder connections are masked before softmax, so those future positions are excluded from the normalized distribution."
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id":  "C",
+                                                                                                                            "text":  "In the encoder, position i can only use nearby patches because contextual representations are local by design; in the decoder, position i can use all positions because generation needs global context.",
+                                                                                                                            "correct":  false,
+                                                                                                                            "feedback":  "This reverses the lesson. Encoder self-attention is not inherently local here; it can attend to all encoder positions. Decoder self-attention is the restricted one, because future positions must be masked to preserve autoregression."
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "id":  "A",
+                                                                                                                            "text":  "In the encoder, position i can use all patch positions from the previous encoder layer; in the autoregressive decoder, position i can use only positions up to and including i because future positions are masked.",
+                                                                                                                            "correct":  true,
+                                                                                                                            "feedback":  "Correct. This matches the architectural boundary exactly: full encoder self-attention versus masked decoder self-attention."
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                        "concept_id":  "experience:contextual-representations",
+                                                                                                        "section_id":  "controlled:9d650ac8effa:0",
+                                                                                                        "page_references":  [
+                                                                                                                                5
+                                                                                                                            ],
+                                                                                                        "generator_version":  "source-grounded-v4-live-assets-v3",
+                                                                                                        "supporting_explanation_ids":  [
+                                                                                                                                           "core_idea",
+                                                                                                                                           "page_walkthrough",
+                                                                                                                                           "worked_example"
+                                                                                                                                       ]
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                       "learner_adaptation":  {
+                                                                                  "treatment_version":  "dual-user-treatment-v1",
+                                                                                  "profile_tier":  "advanced",
+                                                                                  "prior_knowledge_level":  "advanced",
+                                                                                  "explanation_density":  "concise",
+                                                                                  "example_mode":  "symbolic-and-structural",
+                                                                                  "practice_style":  "independent",
+                                                                                  "terminology_depth":  "advanced",
+                                                                                  "interest_usage":  "scenario_only",
+                                                                                  "example_context":  "an image classification decision",
+                                                                                  "preferred_examples":  [
+                                                                                                             "research",
+                                                                                                             "code"
+                                                                                                         ],
+                                                                                  "learning_style":  "theory",
+                                                                                  "formula_support":  "compact",
+                                                                                  "checkpoint_density":  "standard"
+                                                                              },
+                                                       "page_walkthrough":  [
+                                                                                {
+                                                                                    "page_number":  5,
+                                                                                    "what_to_notice":  "A contextual representation is a token vector updated using information from relevant positions in its sequence.",
+                                                                                    "explanation":  "A contextual representation is a token vector updated using information from relevant positions in its sequence. The boundary to retain is: A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token. Relate the representation directly to the stated boundary condition.",
+                                                                                    "connection_to_previous":  "The definition establishes the representation being considered."
+                                                                                }
+                                                                            ],
+                                                       "key_terms":  [
+                                                                         {
+                                                                             "term":  "Contextual Representations",
+                                                                             "definition":  "A contextual representation is a token vector updated using information from relevant positions in its sequence."
+                                                                         },
+                                                                         {
+                                                                             "term":  "Mechanism",
+                                                                             "definition":  "Matrix-form attention computes all query-key comparisons, normalizes each query\u0027s weights, and applies them to values in parallel."
+                                                                         },
+                                                                         {
+                                                                             "term":  "Boundary",
+                                                                             "definition":  "A contextual vector reflects the available tokens and masking rules; it is not unrestricted access to every future token."
+                                                                         }
+                                                                     ]
+                                                   },
+                               "retryable":  true,
+                               "repair_pass_used":  false,
+                               "live_asset_repairs":  [
+                                                          "page_walkthrough",
+                                                          "key_terms",
+                                                          "objective_exercise",
+                                                          "worked_example"
+                                                      ],
+                               "exercise_generation_mode":  "live",
+                               "exercise_generation_reason":  null
+                           },
+    "source_evidence":  [
+                            {
+                                "resource_id":  "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+                                "document_id":  "public:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+                                "page_number":  5,
+                                "link_id":  "experience:self_attention:experience:contextual-representations"
+                            }
+                        ],
+    "cache":  {
+                  "status":  "bypassed",
+                  "fingerprint":  "8b51cf34f41576e3e83c2b09"
+              },
+    "checks":  {
+                   "system_contract":  "isolated_controlled_evaluation",
+                   "ordinary_learning_paths_untouched":  true,
+                   "goal_coverage":  {
+                                         "passed":  true,
+                                         "goal_id":  "self_attention"
+                                     },
+                   "schema":  {
+                                  "passed":  true,
+                                  "contract_version":  null,
+                                  "day_sections":  1,
+                                  "output_format":  null,
+                                  "v4_fields_present":  true
+                              },
+                   "component_contract":  {
+                                              "passed":  true,
+                                              "enabled":  {
+                                                              "profile":  true,
+                                                              "kg":  true,
+                                                              "teaching_assets":  true,
+                                                              "source_grounding":  true
+                                                          },
+                                              "expected":  {
+                                                               "profile":  true,
+                                                               "kg":  true,
+                                                               "teaching_assets":  true,
+                                                               "source_grounding":  true
+                                                           }
+                                          },
+                   "source_grounding":  {
+                                            "passed":  true,
+                                            "source_refs":  1,
+                                            "requires_grounding":  true
+                                        },
+                   "live_generation":  {
+                                           "passed":  true,
+                                           "generation_mode":  "live_augmented",
+                                           "live":  false,
+                                           "fallback_preview":  false
+                                       },
+                   "planning_live_generation":  {
+                                                    "passed":  true,
+                                                    "failure":  null,
+                                                    "fallback_preview":  false
+                                                },
+                   "cache_identity":  {
+                                          "passed":  true,
+                                          "fingerprint":  "8b51cf34f41576e3e83c2b09",
+                                          "cache_status":  "bypassed"
+                                      },
+                   "plan_coverage":  {
+                                         "passed":  true,
+                                         "path_length":  4,
+                                         "path":  [
+                                                      {
+                                                          "order":  1,
+                                                          "concept":  "Token Representations",
+                                                          "why_needed":  "Self-attention operates over token-level vector representations, so understanding how tokens are represented is a direct prerequisite."
+                                                      },
+                                                      {
+                                                          "order":  2,
+                                                          "concept":  "Queries, Keys, and Values",
+                                                          "why_needed":  "Self-attention computes token-to-token relevance through query-key interactions and uses values to aggregate contextual information."
+                                                      },
+                                                      {
+                                                          "order":  3,
+                                                          "concept":  "Self-Attention",
+                                                          "why_needed":  "This is the target concept and the main mechanism that enables context modeling in transformers."
+                                                      },
+                                                      {
+                                                          "order":  4,
+                                                          "concept":  "Contextual Representations",
+                                                          "why_needed":  "Understanding the output of self-attention completes the goal by showing how token meanings become context-dependent."
+                                                      }
+                                                  ],
+                                         "not_applicable":  false
+                                     },
+                   "prerequisite_order":  {
+                                              "passed":  true,
+                                              "path":  [
+                                                           "Token Representations",
+                                                           "Queries, Keys, and Values",
+                                                           "Self-Attention",
+                                                           "Contextual Representations"
+                                                       ],
+                                              "not_applicable":  false
+                                          },
+                   "time_budget":  {
+                                       "passed":  true,
+                                       "estimated_minutes":  90,
+                                       "recommended_daily_minutes":  90
+                                   },
+                   "planning_workload":  {
+                                             "passed":  true,
+                                             "estimated_total_minutes":  450,
+                                             "estimated_days":  5,
+                                             "concept_count":  4
+                                         },
+                   "day_completeness":  {
+                                            "passed":  false,
+                                            "section_count":  1,
+                                            "planned_concepts":  4,
+                                            "output_format":  "lecture_v4"
+                                        },
+                   "profile_structural_difference":  {
+                                                         "passed":  true,
+                                                         "different_dimensions":  5
+                                                     },
+                   "version_distinguishability":  {
+                                                      "passed":  true,
+                                                      "signature":  {
+                                                                        "profile":  true,
+                                                                        "kg":  true,
+                                                                        "teaching_assets":  true,
+                                                                        "source_grounding":  true
+                                                                    }
+                                                  },
+                   "source_evidence_integrity":  {
+                                                     "passed":  true,
+                                                     "complete_refs":  1,
+                                                     "total_refs":  1
+                                                 },
+                   "reproducibility":  {
+                                           "passed":  true,
+                                           "fingerprint":  "8b51cf34f41576e3e83c2b09"
+                                       }
+               },
+    "status":  "failed",
+    "failure_reason":  "day_completeness_failed",
+    "created_at":  "2026-08-17T19:32:01.818523+00:00",
+    "generation_mode":  "live_augmented",
+    "plan_id":  "controlled-eval:V3:self_attention",
+    "day":  1,
+    "timestamp":  "2026-08-17T19:32:01.818523+00:00"
+}

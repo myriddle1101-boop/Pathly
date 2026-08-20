@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-08-18T18:37:59.656616+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-02-understanding-embeddings-2a611584541b",
+  "file_name": "02-understanding-embeddings-2a611584541b",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 4,
+  "topic_metrics": {
+    "precision": 0.5556,
+    "recall": 0.5,
+    "f1": 0.5263,
+    "tp": 5,
+    "fp": 4,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.3333,
+    "recall": 0.2,
+    "f1": 0.25,
+    "tp": 1,
+    "fp": 2,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Embeddings",
+      "Cosine Similarity",
+      "Sentence Transformers",
+      "AI APIs",
+      "Neural Networks"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Loss Functions",
+        "reason": "Loss functions are not discussed or used in the lesson."
+      },
+      {
+        "name": "Linear Separation",
+        "reason": "The source does not cover linear separability or decision boundaries."
+      },
+      {
+        "name": "Regression and Classification",
+        "reason": "The lesson focuses on embeddings and semantic search, not predictive task types."
+      },
+      {
+        "name": "Model Training",
+        "reason": "Models are described as trained, but training procedures are not taught."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Semantic Similarity",
+        "reason": "A central topic: embeddings enable comparison of meaning beyond keyword overlap."
+      },
+      {
+        "name": "Embedding Models",
+        "reason": "The lesson explains models that convert text into vectors and compares available models."
+      },
+      {
+        "name": "Vector Space",
+        "reason": "Embeddings are explicitly explained as points in a high-dimensional vector space."
+      },
+      {
+        "name": "Normalization",
+        "reason": "The source explains unit-length embedding normalization and its relationship to dot product."
+      },
+      {
+        "name": "Semantic Search",
+        "reason": "The lesson presents semantic search as the core application of embedding similarity."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Embeddings",
+        "to": "Sentence Transformers",
+        "reason": "Sentence Transformers are introduced as tools/models for creating embeddings, so the embedding concept is needed to understand their output and purpose."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Sentence Transformers",
+        "reason": "The source identifies embedding models as neural networks but does not establish neural-network fundamentals as a required learning dependency for using Sentence Transformers."
+      },
+      {
+        "from": "Loss Functions",
+        "to": "Model Training",
+        "reason": "Neither loss functions nor the process of model training is substantively covered in the source."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Vector Space",
+        "to": "Embeddings",
+        "reason": "Embeddings are defined as vectors in a high-dimensional mathematical space."
+      },
+      {
+        "from": "Embeddings",
+        "to": "Cosine Similarity",
+        "reason": "Cosine similarity is introduced as the metric used to compare embedding vectors."
+      },
+      {
+        "from": "Embeddings",
+        "to": "Semantic Search",
+        "reason": "Semantic search is built by embedding queries and documents before comparing them."
+      },
+      {
+        "from": "Cosine Similarity",
+        "to": "Semantic Search",
+        "reason": "The source's semantic-search procedure ranks documents using similarity scores."
+      }
+    ],
+    "overall_note": "The lesson strongly covers embedding representations, similarity, and semantic-search usage, but not model-training theory or supervised-learning concepts."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-02-understanding-embeddings-2a611584541b.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-02-understanding-embeddings-2a611584541b.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-02-understanding-embeddings-2a611584541b_ledger.csv"
+  }
+}

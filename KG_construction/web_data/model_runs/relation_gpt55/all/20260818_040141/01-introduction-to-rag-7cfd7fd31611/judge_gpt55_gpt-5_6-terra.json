@@ -1,0 +1,114 @@
+{
+  "created_at": "2026-08-18T18:35:54.591283+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-01-introduction-to-rag-7cfd7fd31611",
+  "file_name": "01-introduction-to-rag-7cfd7fd31611",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 5,
+  "topic_metrics": {
+    "precision": 0.7778,
+    "recall": 0.5385,
+    "f1": 0.6364,
+    "tp": 7,
+    "fp": 2,
+    "fn": 6
+  },
+  "prerequisite_metrics": {
+    "precision": 0.3333,
+    "recall": 0.25,
+    "f1": 0.2857,
+    "tp": 1,
+    "fp": 2,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Query Embedding",
+      "Retrieval-Augmented Generation (RAG)",
+      "Information Retrieval Quality",
+      "Scalability in Systems",
+      "Information Access",
+      "Relevant Information",
+      "Generative Models"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "The source discusses LLMs and embeddings but does not explain neural networks as a learning topic."
+      },
+      {
+        "name": "Training Techniques",
+        "reason": "Fine-tuning and retraining are mentioned only as alternatives or costs, not as a topic about training techniques."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Large Language Models (LLMs)",
+        "reason": "LLMs are the generative component of RAG and are explicitly discussed throughout the lesson."
+      },
+      {
+        "name": "Indexing",
+        "reason": "Indexing is presented as the first major RAG step, including document collection, chunking, embedding, and storage."
+      },
+      {
+        "name": "Retrieval",
+        "reason": "Retrieval is a core RAG stage involving query embedding, vector search, and selection of relevant chunks."
+      },
+      {
+        "name": "Generation",
+        "reason": "Generation is the third RAG stage, in which an LLM produces an answer using retrieved context."
+      },
+      {
+        "name": "Vector Embeddings",
+        "reason": "The source explicitly explains converting document chunks and user queries into numerical vector embeddings."
+      },
+      {
+        "name": "Vector Database",
+        "reason": "Embeddings are stored and searched in a vector database as part of the RAG workflow."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Generative Models",
+        "to": "Retrieval-Augmented Generation (RAG)",
+        "reason": "RAG combines external retrieval with an LLM's answer-generation capability, so understanding generative models is a substantive foundation."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Information Access",
+        "to": "Retrieval-Augmented Generation (RAG)",
+        "reason": "Information access is presented as a benefit or application of RAG, not as a prerequisite concept."
+      },
+      {
+        "from": "Relevant Information",
+        "to": "Information Retrieval Quality",
+        "reason": "Relevance is related to retrieval quality, but the source does not establish it as a distinct directional learning prerequisite."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Vector Embeddings",
+        "to": "Retrieval",
+        "reason": "The retrieval process requires embedding the query and comparing it with embedded document chunks."
+      },
+      {
+        "from": "Indexing",
+        "to": "Retrieval",
+        "reason": "The source states that documents must be prepared, embedded, and stored before the system can retrieve information."
+      },
+      {
+        "from": "Retrieval",
+        "to": "Generation",
+        "reason": "The generation stage uses the retrieved chunks as context to produce a grounded response."
+      }
+    ],
+    "overall_note": "The predictions capture RAG and several related ideas, but omit the lesson's central workflow stages and vector-based retrieval components."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-01-introduction-to-rag-7cfd7fd31611.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-01-introduction-to-rag-7cfd7fd31611.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-01-introduction-to-rag-7cfd7fd31611_ledger.csv"
+  }
+}

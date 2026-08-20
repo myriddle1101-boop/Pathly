@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding neural network models is necessary before learning techniques for training those models effectively."
+    },
+    {
+      "from": "Information Access",
+      "to": "Retrieval-Augmented Generation (RAG)",
+      "relation_type": "strong_prerequisite",
+      "reason": "RAG depends on retrieval concepts and mechanisms from information access before combining them with generation."
+    },
+    {
+      "from": "Generative Models",
+      "to": "Retrieval-Augmented Generation (RAG)",
+      "relation_type": "strong_prerequisite",
+      "reason": "RAG requires understanding generation via generative models in order to combine retrieval with generation."
+    },
+    {
+      "from": "Information Access",
+      "to": "Query Embedding",
+      "relation_type": "strong_prerequisite",
+      "reason": "Query embedding is a retrieval-oriented technique, so core information access concepts are needed first."
+    },
+    {
+      "from": "Information Access",
+      "to": "Information Retrieval Quality",
+      "relation_type": "strong_prerequisite",
+      "reason": "Assessing retrieval quality presupposes understanding the basics of information retrieval and access systems."
+    }
+  ]
+}

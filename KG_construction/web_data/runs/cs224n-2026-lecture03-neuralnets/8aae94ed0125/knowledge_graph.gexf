@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-07">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="similarity" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Fundamental structures that mimic the way human brains operate to process data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Artificial Neural Network&quot;, &quot;description&quot;: &quot;A computational model based on the structure and functions of biological neural networks.&quot;}, {&quot;name&quot;: &quot;Neural Classification&quot;, &quot;description&quot;: &quot;The process of categorizing data using neural network architectures.&quot;}, {&quot;name&quot;: &quot;Deep Learning&quot;, &quot;description&quot;: &quot;A subset of machine learning that uses multi-layered neural networks for complex data representation.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons&quot;, &quot;Activation Functions&quot;, &quot;Layers&quot;, &quot;Backpropagation&quot;, &quot;Loss Functions&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Backpropagation" label="Backpropagation">
+        <attvalues>
+          <attvalue for="0" value="A key algorithm for training neural networks by minimizing the error through gradient descent." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Gradient Computation&quot;, &quot;description&quot;: &quot;The process of calculating the gradient of the loss function with respect to the model parameters.&quot;}, {&quot;name&quot;: &quot;Gradient Checking&quot;, &quot;description&quot;: &quot;A technique to verify the correctness of the gradient computation.&quot;}, {&quot;name&quot;: &quot;Backpropagation Software&quot;, &quot;description&quot;: &quot;Tools and libraries that implement backpropagation algorithms for training models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus, linear algebra, and neural networks." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Chain Rule&quot;, &quot;Loss Function&quot;]" />
+          <attvalue for="7" value="[&quot;Backpropagation is the same as training a neural network.&quot;, &quot;It only works for feedforward networks.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Activation Functions" label="Activation Functions">
+        <attvalues>
+          <attvalue for="0" value="Functions that determine the output of a neural network node given an input or set of inputs." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Sigmoid Function&quot;, &quot;description&quot;: &quot;An activation function that maps any real-valued number into a value between 0 and 1.&quot;}, {&quot;name&quot;: &quot;Tanh Function&quot;, &quot;description&quot;: &quot;An activation function that maps values to a range between -1 and 1.&quot;}, {&quot;name&quot;: &quot;Softmax Classifier&quot;, &quot;description&quot;: &quot;An activation function used in multi-class classification problems to convert logits into probabilities.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and calculus." />
+          <attvalue for="6" value="[&quot;Sigmoid Function&quot;, &quot;ReLU (Rectified Linear Unit)&quot;, &quot;Tanh Function&quot;, &quot;Softmax Function&quot;]" />
+          <attvalue for="7" value="[&quot;Activation functions are only used in the output layer.&quot;, &quot;All activation functions are the same.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game AI&quot;, &quot;Financial forecasting&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Loss Functions" label="Loss Functions">
+        <attvalues>
+          <attvalue for="0" value="Functions that measure how well a model's predictions match the actual data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Cross Entropy&quot;, &quot;description&quot;: &quot;A loss function commonly used in classification tasks to quantify the difference between two probability distributions.&quot;}, {&quot;name&quot;: &quot;Entropy Loss&quot;, &quot;description&quot;: &quot;A measure of uncertainty in the predictions of a model.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Mean Squared Error (MSE)&quot;, &quot;Cross-Entropy Loss&quot;]" />
+          <attvalue for="7" value="[&quot;Loss functions only measure accuracy.&quot;, &quot;All loss functions are the same.&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Evaluating regression models&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Gradient Descent" label="Gradient Descent">
+        <attvalues>
+          <attvalue for="0" value="An optimization algorithm used to minimize the loss function by iteratively adjusting model parameters." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Gradient Given&quot;, &quot;description&quot;: &quot;The calculated gradient used to update model parameters during training.&quot;}, {&quot;name&quot;: &quot;Computed Gradients&quot;, &quot;description&quot;: &quot;The gradients that are calculated during the training process.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and linear algebra." />
+          <attvalue for="6" value="[&quot;Learning Rate&quot;, &quot;Convergence&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Batch Gradient Descent&quot;]" />
+          <attvalue for="7" value="[&quot;Gradient descent always finds the global minimum.&quot;, &quot;A smaller learning rate is always better.&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Linear regression optimization&quot;, &quot;Logistic regression&quot;, &quot;Support vector machines&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Classification Techniques" label="Classification Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods used to categorize data into predefined classes." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Classifier&quot;, &quot;description&quot;: &quot;A classifier that makes its predictions based on a linear predictor function.&quot;}, {&quot;name&quot;: &quot;Window Classification&quot;, &quot;description&quot;: &quot;A technique that classifies data based on a sliding window approach.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Binary Classification&quot;, &quot;Multi-class Classification&quot;, &quot;Evaluation Metrics&quot;, &quot;Overfitting and Underfitting&quot;]" />
+          <attvalue for="7" value="[&quot;Classification is only for binary outcomes&quot;, &quot;More features always improve model performance&quot;]" />
+          <attvalue for="8" value="[&quot;Email spam detection&quot;, &quot;Image recognition&quot;, &quot;Sentiment analysis&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Gradient Flow" label="Gradient Flow">
+        <attvalues>
+          <attvalue for="0" value="The process of propagating gradients through the network during training." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Gradient Backpropagation&quot;, &quot;description&quot;: &quot;The method of propagating gradients backward through the network.&quot;}, {&quot;name&quot;: &quot;Backflow in Neural Networks&quot;, &quot;description&quot;: &quot;The reverse flow of gradients during the backpropagation process.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and neural networks." />
+          <attvalue for="6" value="[&quot;Backpropagation&quot;, &quot;Chain Rule&quot;]" />
+          <attvalue for="7" value="[&quot;Gradients are always positive&quot;, &quot;Gradient flow is the same as optimization&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Fine-tuning model parameters&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Techniques used to assess the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Evaluate Word Vectors&quot;, &quot;description&quot;: &quot;Methods for assessing the quality of word embeddings.&quot;}, {&quot;name&quot;: &quot;Checking Implementation&quot;, &quot;description&quot;: &quot;Verifying the correctness of the model's implementation.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;, &quot;ROC Curve&quot;, &quot;Cross-Validation&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern if the accuracy is high.&quot;, &quot;Validation and testing are the same.&quot;]" />
+          <attvalue for="8" value="[&quot;Comparing different models&quot;, &quot;Tuning hyperparameters&quot;, &quot;Selecting the best model for deployment&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Shape and Parameters" label="Shape and Parameters">
+        <attvalues>
+          <attvalue for="0" value="Concepts related to the structure and configuration of neural networks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Shape Parameters&quot;, &quot;description&quot;: &quot;Parameters that define the architecture of a neural network.&quot;}, {&quot;name&quot;: &quot;Shape Derivatives&quot;, &quot;description&quot;: &quot;Derivatives that describe how changes in shape parameters affect the output.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and machine learning principles." />
+          <attvalue for="6" value="[&quot;Neural network architecture&quot;, &quot;Activation functions&quot;, &quot;Layer types (input, hidden, output)&quot;, &quot;Weight initialization&quot;]" />
+          <attvalue for="7" value="[&quot;More layers always improve performance&quot;, &quot;All parameters are equally important&quot;, &quot;Shape of the network does not affect learning&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game AI&quot;, &quot;Predictive analytics&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Neural Networks" target="Backpropagation" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Backpropagation is a training algorithm specifically for neural networks." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Activation Functions" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Activation functions are integral to the functioning of neural networks." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Loss Functions" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Loss functions are used to evaluate the performance of neural networks." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Shape and Parameters" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding the shape and parameters is crucial for designing neural networks." />
+          <attvalue for="11" value="0.7251" />
+        </attvalues>
+      </edge>
+      <edge source="Backpropagation" target="Gradient Flow" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Gradient flow is essential for the backpropagation process." />
+        </attvalues>
+      </edge>
+      <edge source="Loss Functions" target="Gradient Descent" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Gradient descent is used to minimize loss functions." />
+        </attvalues>
+      </edge>
+      <edge source="Gradient Descent" target="Model Evaluation" id="6">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Model evaluation often involves assessing the results of optimization via gradient descent." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,544 @@
+History of Natural Language Processing
+CS 224 N/Ling 284
+Christopher Manning
+Lecture 1
+
+Christopher D. Manning: Human Language Understanding & Reasoning
+Four eras of NLP
+• 1940–1969: Early Explorations
+• 1970–1992: Hand-built symbolic NLP
+systems, of increasing formalization
+• 1993–2012: Statistical or Probabilistic
+NLP and then more general Supervised
+ML for NLP
+• 2013–now: Deep Learning or Artificial
+Neural Networks; Unsupervised or Self-
+Supervised NLP; Reinforcement Learning
+Only somewhat entwined fields
+Dædalus 151(2): 127–138 ( Spring 2022)
+• NLP / Computational Linguistics
+https://www.amacad.org/publication/human
+• AI / Neural Networks -language-understanding-reasoning
+2
+
+1. Early Explorations
+1940–1969
+3
+
+Machine Translation: The origin of NLP/Computational Linguistics
+“Also knowing nothing official about, but having guessed
+and inferred considerable about, the powerful new
+mechanized methods in cryptography—methods which I
+believe succeed even when one does not know what
+language has been coded—one naturally wonders if the
+problem of translation could conceivably be treated as a
+problem in cryptography. When I look at an article in
+Russian, I say: ‘This is really written in English, but it has
+been coded in some strange symbols. I will now proceed to
+decode.’ ”
+– Warren Weaver (1955:18, quoting a letter he wrote in 1947)
+
+“When I look at an article in Russian, I say:
+Weaver was a mathematician &
+‘This is really written in English, but it has engineer known for his work as a
+science funder at the Rockefeller
+been coded in some strange symbols. I will
+Foundation and OSR&D (US Govt
+now proceed to decode.’” – Warren WWII science funder) and for
+coauthoring an approachable
+Weaver, March 1947
+Info Theory intro with Shannon
+“… as to the problem of mechanical
+translation, I frankly am afraid that the
+[semantic] boundaries of words in different
+languages are too vague … to make any
+Wiener: MIT originator of
+cybernetics, which sought to tie
+quasi-mechanical translation scheme very
+together communication,
+hopeful.”
+control, and feedback in living
+things and computers.
+– Norbert Wiener, April 1947
+
+7
+
+8
+
+The early history of NLP: MT in the 1950 s
+
+AI Begins: The Dartmouth Summer Research Project 1956
+
+Neural Networks: The inspiration from knowledge of neurons
+11
+
+Warren S. Mc Culloch and Walter Pitts
+• 1898–1969. Neurophysiologist (MD), • 1923–1969. Self-taught logician* and
+psychiatrist, and cyberneticist, moved computational neuroscientist, lived
+to MIT in 1951 but Wiener split with homeless at Chicago and then MIT; died
+him and Pitts in 1952. of alcoholism.
+In 1943, published “A Logical Calculus of Ideas Immanent in Nervous Activity”, the first
+mathematical model of a neural network, showing it could implement a Turing Machine
+12 https://nautil.us/the-man-who-tried-to-redeem-the-world-with-logic-235253/
+
+Mc Culloch-Pitts Neuron
+Original Mc Culloch & Pitts
+1943 threshold unit:
+𝟏(𝑊𝑥 > 𝜃)
+= 𝟏(𝑊𝑥 − 𝜃 > 0)
+This function has no slope,
+so, no gradient-based learning
+13
+
+Frank Rosenblatt: The (Mark I) Perceptron
+https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon
+14
+
+Early AI Hype! New York Times July 8, 1958
+NEW NAVY DEVICE LEARNS BY DOING
+Psychologist Shows Embryo of Computer Designed
+to Read and Grow Wiser
+The Navy revealed the embryo of an electronic
+computer today that it expects will be able to walk,
+talk, see, write, reproduce itself and be conscious of
+its existence.
+The embryo—the Weather Bureau’s
+$2,000,000 “704” computer—learned to differentiate
+between right and left after fifty attempts in the
+Navy’s demonstration for newsmen.
+15
+
+Two visions of artificial intelligence in the 1950 s
+(Symbolic) Artificial Intelligence Cybernetics
+Minsky, Mc Carthy, Simon, Newell Wiener, Rosenblatt
+16
+
+Information Retrieval: Vannevar Bush
+Bush (1945): As We May Think Bush went from being Dean of
+Engineering at MIT and president
+“Consider a future device for individual of the Carnegie Institution of
+Washington to chairman of the
+use, which is a sort of mechanized private
+National Defense Research
+file and library. It needs a name, and, to Committee in WWII (which had
+huge funding, directing all
+coin one at random, “memex” will do. A
+wartime science, including the
+memex is a device in which an individual Manhattan Project)
+stores all his books, records, and
+communications, and which is mechanized
+so that it may be consulted with exceeding
+speed and flexibility. It is an enlarged
+intimate supplement to his memory.
+https://www.theatlantic.com/magazine/ar
+chive/1945/07/as-we-may-think/303881/
+17
+
+Cyril Cleverdon introduces benchmarking
+• Cranfield tests (1957–1967)
+• Defined the idea of benchmark tests for
+language, with a document collection,
+queries, and correct answers.
+• He had exhaustive answers on
+document relevance over a small
+corpus!
+18
+
+The 1950 s origins of NLP/Computational Linguistics
+• Foundational work on automata,
+formal languages, probabilistic
+modeling, and information theory
+• First speech systems (Davis et al.)
+• MT heavily funded by military —
+huge overconfidence
+• But using machines dumber than a
+pocket calculator
+• Little understanding of syntax,
+semantics, pragmatics
+I grabbed these timelines from Ruth
+Camburn’s “A Short History of Computational
+Linguistics”. She was a CSU Fresno Linguistics
+grad student around 2013.
+19
+
+1960 s: David Glenn Hays: ACL founder and dependency parsing
+20
+
+Raj Reddy
+(1937–, Stanford Ph D student 1963–1966; faculty 1966–1969; CMU; Turing award)
+(Selected) Students:
+James Gosling, Kai-Fu Lee,
+Roni Rosenfeld, Alex Waibel
+21
+
+Joyce Friedman
+(1928–2018; at Stanford 1965–1968)
+C. Ray
+Perrault David Scott
+↓ Warren
+James
+Allen
+22
+
+NLP in the 1960 s
+ALPAC report (1966):
+crap, this is really hard!
+23
+
+2. Hand-built demonstration NLP systems, of increasing
+formalization
+1970–1992
+24
+
+Terry Winograd
+(1946–, Stanford faculty 1973–2014; AI/NLP 1973–1984)
+Seymour Papert
+Terry Winograd
+Stuart Shieber
+25
+
+Formal and Unification-based Grammars for NLP: Martin Kay
+26
+
+Fernando Pereira Stuart Shieber
+27
+
+Constructing the meaning of human language: 1967–2017
+• Tokenize a sentence into words: The red apple is on the table
+• Parse it into a tree or graph data structure (using context-free grammars and beyond)
+• Construct its meaning by: (i) lexical lookup, then (ii) semantic composition, using a “rule-to-rule”
+approach working up the tree (e.g., PP: 𝛼(𝛽) → P: 𝛼NP: 𝛽 )
+on(𝜄(𝜆𝑥(apple(𝑥) ∧ red(𝑥))), 𝜄(𝜆𝑦.table(𝑦)))
+on(𝜄(𝜆𝑥(apple(𝑥) ∧red(𝑥))),𝜄(𝜆𝑦.table(𝑦)))
+𝜄(𝜆𝑥(apple(𝑥) ∧red(𝑥))) 𝜆𝑥.on(𝑥,𝜄(𝜆𝑦.table(𝑦)))
+The 𝜆𝑥(apple(𝑥) ∧red(𝑥)) is 𝜆𝑥.on(𝑥,𝜄(𝜆𝑦.table(𝑦)))
+𝜆𝑃.𝜄(𝑃) 𝜆𝑃.𝑃
+on
+𝜄(𝜆𝑦.table(𝑦))
+red apple
+𝜆𝑦.𝜆𝑥(on(𝑥,𝑦))
+𝜆𝑃.𝜆𝑥(𝑃(𝑥) ∧red(𝑥)) 𝜆𝑥.apple(𝑥)
+the table
+28 𝜆𝑃.𝜄(𝑃) 𝜆𝑦.table(𝑦)
+
+NLP and Knowledge Representation: Norvig (1986) Ph.D.
+Peter Norvig’s thesis: A Unified Theory of Inference for Text Understanding (1986)
+The language analyzed:
+In a poor fishing village built on an island not far from the coast of China, a
+young boy named Chang Lee lived with his widowed mother. Every day,
+little Chang bravely set off with his net, hoping to catch a few fish from
+the sea, which they could sell and have a little money to buy bread.
+(a) There is a sea, which surrounds the island, is used by the villagers for
+fishing, and forms part of the coast of China
+(b) Chang intends to trap fish in his net, which is a fishing net
+(c) The word which refers to the fish
+(d) The word they refers to Chang and his mother
+29
+
+The unified theory of inference
+“As we have just seen, a suitable knowledge base is a
+prerequisite for making proper inferences” (p. 4). It’s
+built to enable inferences
+System had 6 general forms of inference; 2 pairs, so 4
+basic types:
+1. Elaboration: Filling a slot to connect two entities
+• John got piggybank for REASON have money for
+REASON buy present
+2. Reference Resolution: Hey – it’s coreference!!!
+3. View Application: The Red Sox killed the Yankees
+• KILLED is not animal; KILLING is viewed as a DEFEAT-
+CONVINCINGLY
+4. Concretization: Infer more specific
+• TRAVELLING in an AUTOMOBILE is an instance of
+DRIVING
+30
+
+NLP in the 1970 s and 1980 s
+• Foundational work on speech
+recognition: stochastic
+modeling, hidden Markov
+models, the “noisy channel”
+• Ideas from this work would
+later revolutionize NLP!
+• Logic programming, rules-
+driven AI, deterministic
+algorithms for syntactic
+parsing (e.g., LFG)
+• Increasing interest in natural
+language understanding:
+SHRDLU, LUNAR, CHAT-80
+• But symbolic AI hit the wall:
+“AI winter”
+31
+
+3. Statistical or Probabilistic NLP (“Stat NLP”)
+and then more general Supervised ML for NLP
+1993–2012
+32
+
+Claude Shannon
+33
+
+A Mathematical Theory of Communication (1948)
+The noisy channel model
+https://www.quantamagazine.org/how-claude-shannons-information-theory-invented-the-future-20201222/
+34
+
+The statistical revolution: 1990 s
+• Influx of new ideas from EE & ASR: probabilistic modeling,
+corpus statistics, supervised learning, empirical evaluation
+• New sources of data: explosion of machine-readable text;
+human-annotated training data (e.g., the Penn Treebank)
+• Annotated data + algorithms + probabilistic prediction
+• Lowered expectations: forget full semantic understanding,
+Fred Jelinek
+let’s do text cat, part-of-speech tagging, NER, and parsing!
+• Tools: Naïve Bayes classifiers, HMMs, PCFGs, CRFs (CS 228!)
+
+Probabilistic spelling correction
+“She is a stellar and versatile acress whose combination of
+sass and glamour attracts”
+Let’s estimate probabilities of corrections following one another
+P(actress|versatile) = .0019 P(whose|actress) = .0043
+P(across|versatile) = .000092 P(whose|across) = .000026
+P(“versatile actress whose”) = .00019 × .0043 = 817,000 x 10-10
+P(“versatile across whose”) = .000092 ×.000026 = 239 x 10-10
+36
+
+The rise of the machines: 2000 s
+• Availability of much more powerful machines
+• Consolidation of the gains of the statistical revolution
+• More sophisticated statistical modeling and machine
+learning algorithms: Max Ent, SVMs, Bayes Nets, LDA, etc.
+• Big big data: 100 x growth of web, massive server farms
+• Focus shifting from supervised
+to unsupervised learning
+• Revived interest in higher-level
+semantic applications
+
+4.Deep Learning or Artificial Neural Networks for NLP
+4 a. Neural NLP
+2013–2021
+38
+
+Symbolic AI vs. “Cybernetics”
+Stanford, the home of “Symbolic Systems”
+• “Symbolic systems” studies systems of meaningful
+symbols that represent the world about us—like
+human languages, logics, and programming
+languages—and the systems that work with these
+symbols—like brains, computers, and complex social
+systems
+• While “cognitive science” focuses on the mind and
+intelligence as naturally occurring phenomena,
+Symbolic Systems gives equal focus to human-
+constructed systems that use symbols to
+communicate and to represent information
+Jon Barwise
+(1942–2000)
+39
+
+Symbolic systems versus their processors
+• Language is the symbolic system par excellence; we should study and make use of its
+symbolic structure
+• This does not show that the main processor of these symbols—the human brain—is
+implemented as a physical symbol system
+• We need not design NLP systems as physical symbol systems
+• The brain is more like a neural network model
+• Artificial neural network models scale better and can capture the world represented by
+symbols
+cat
+40 Source: https://www.freepik.com/free-photos-vectors/cat-drawing
+
+Deep Learning Breakthroughs by Hinton
+… at the University of Toronto, 2009–2012
+41
+
+Deep Learning for Speech Recognition
+• Speech recognition had first shown the breakthrough
+success of probabilistic methods: HMMs and GMMs
+Words
+• The first breakthrough results of “deep learning” on
+large datasets also happened in speech recognition
+• George Dahl et al. (2010/2012): Context-Dependent
+Pre-trained Deep Neural Networks for Large
+Vocabulary Speech Recognition
+Acoustic model \ WER RT 03 S FSH Hub 5 SWB
+Traditional GMM (D. et al. 2012) 27.4 23.6
+Deep Learning (Dahl et al. 2012) 18.5 (−33%) 16.1 (−32%)
+Deep Learning (Saon et al. 2017) 8.0 (−71%) 5.5 (−77%)
+42
+
+“(Artificial) neural (network)” or
+“deep learning” models for word meaning
+We learn to represent a word as a vector of numbers
+0.286
+0.792
+−0.177
+−0.107
+= Similar vectors = similar meaning
+versatile
+0.109
+−0.542
+0.349
+0.271
+43
+
+Learn vectors via distributional similarity
+How do we learn those word vectors?
+“You shall know a word by the company it keeps” (J. R. Firth 1957: 11)
+any devices with a web browser, from laptops and tablets to smart phones
+Users can download it for home computers or laptops from Microsoft Update website
+ These words will represent laptops 
+Defining similarity via contextual distributions in texts is one of the most successful ideas
+of modern computational linguistics
+
+An RNN encoder-decoder network
+Encoder Decoder
+Je suis étudiant <EOS>
+0.2 0.2 0.4 0.2 0.2 0.2 0.2 -0.1
+-0.3 0.4 -0.2 0.6 0.6 0.6 0.6 0.3
+-0.1 0.1 -0.3 -0.1 -0.1 -0.1 -0.1 -0.1
+-0.4 -0.5 -0.4 -0.7 -0.7 -0.7 -0.7 -0.7
+0.2 -0.2 -0.2 0.1 0.1 0.1 0.1 0.1
+I am a student <EOS> Je suis étudiant
+h = tanh(W[x ] + Uh + b)
+t t t–1
+
+An LSTM encoder-decoder network
+[Sutskever et al. 2014]
+Translation
+The protests escalated over the weekend <EOS>
+generated
+0.1 0.2 0.4 0.5 0.2 -0.1 0.2 0.2 0.3 0.4 -0.2 -0.4 -0.3
+0.3 0.6 0.4 0.5 0.6 0.6 0.6 0.6 0.6 0.4 0.6 0.6 0.5
+0.1 -0.1 0.3 0.9 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1
+-0.4 -0.7 -0.2 -0.3 -0.5 -0.7 -0.7 -0.7 -0.7 -0.7 -0.7 -0.7 -0.7
+0.2 0.1 -0.3 -0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+Encoder:
+Builds up 0.2 0.2 0.1 0.2 0.2 0.2 0.2 -0.4 0.2 -0.1 0.2 0.3 0.2
+- - 0 0 . .1 2 - 0 0 . .1 6 - 0 0 . . 3 1 - 0 0 . . 6 1 - - 0 0 . . 8 1 - 0 0. .6 1 - - 0 0 . . 1 1 - 0 0 . . 6 1 - 0 0 . . 6 1 - 0 0 . . 6 1 - 0 0 . . 4 1 - 0 0 . . 6 1 - 0 0 . . 6 1 Decoder
+sentence 0.1 -0.7 -0.7 -0.4 -0.5 -0.7 -0.7 -0.7 0.3 0.3 0.2 -0.5 -0.7
+0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+meaning
+0.2 0.4 0.2 0.2 0.4 0.2 0.2 0.2 0.2 -0.1 -0.2 -0.4 0.2
+0.6 -0.6 -0.3 0.4 -0.2 0.6 0.6 0.6 0.6 0.3 0.6 0.5 0.6
+-0.1 0.2 -0.1 0.1 -0.3 -0.1 -0.1 -0.1 -0.1 -0.1 0.1 -0.5 -0.1
+-0.7 -0.3 -0.4 -0.5 -0.4 -0.7 -0.7 -0.7 -0.7 -0.7 0.3 0.4 -0.7
+0.1 0.4 0.2 -0.2 -0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+Source Feeding in
+Die Proteste waren am Wochenende eskaliert<EOS> The protests escalated over the weekend
+sentence last word
+Bottleneck
+
+MT progress over time
+[Edinburgh En-De WMT newstest 2013 Cased BLEU; NMT 2015 from U. Montréal]
+27.
+Phrase-based SMT Syntax-based SMT Neural MT
+20.3
+13.5
+6.8
+0.
+2013 2014 2015 2016
+Source: http://www.meta-net.eu/events/meta-forum-2016/slides/09_sennrich.pdf
+47 On Google Neural MT, see: https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
+
+4.Deep Learning or Artificial Neural Networks for NLP
+4 b. Large Language Models
+2022–present
+48
+
+The Rise of Generative AI: S&P 500 Companies Discussing “AI”
+50% of S&P 500
+40% of S&P 500
+| 2024 | 2025
+Chat GPT launch
+Source: https://insight.factset.com/more-than-40-of-sp-500-companies-have-cited-ai-on-earnings-calls-for-5 th-straight-quarter
+49
+
+Large Language
+Models
+Source: GPT 4 o
+An abstract image in pastel manga style of a large
+language model as a big machine that takes in text
+and produces fresh writing on an endless scroll and
+which is maintained by a large number of scientists
+50
+and engineers.
+
+The History of Language Models
+Andrey A. Markov explores consonant-vowel transition probabilities in
+1913
+Alexander Pushkin novel, Eugene Onegin, developing Markov Models
+1948 Claude E. Shannon develops A Mathematical Theory of Information;
+explores character/word-level n-gram models, entropy, text generation
+1975 Frederick Jelinek’s group at IBM defines and names the modern
+concept of a (probabilistic) “language model” for next token prediction.
+Used for spelling correction, speech recognition, machine translation….
+But this technology wasn’t considered a pathway to machines with artificial intelligence:
+For that we needed models of memory, knowledge representations, planning systems,
+and reasoning over abstract concepts
+51
+51
+
+The History of Large Language Models
+CPAT-Tree-Based Language Models with an Application for Text Verification in
+1998
+Chinese. ROCLing 1998. First use of “LLM” trigram I know of; 200 M word corpus
+2000 A Neural Probabilistic Language Model. Bengio, Ducharme & Vincent NIPS 2000
+First neural language model built on 32 million token corpus, 31 K vocab
+2007 Large Language Models in Machine Translation. Brants, Popat, Xu, Och and
+Dean. EMNLP 2007. 2 trillion token corpus n-gram model of up to 5-grams
+2018 GPT (Radford, Narasimhan, Salimans & Sutskever) and BERT (Devlin, Chang,
+Lee & Toutanova). 3.3 billion token corpus
+2020– 100+ billion parameter neural language models trained on > 1 trillion tokens:
+GPT-3, GPT-4, Pa LM 2, Llama 3, Nemotron-4, ….
+52
+
+The History of Large Language Models
+CPAT-Tree-Based Language Models with an Application for Text Verification in
+1998
+Chinese. ROCLing 1998. First use of “LLM” trigram I know of; 200 M word corpus
+2000 A Neural Probabilistic Language Model. Bengio, Ducharme & Vincent NIPS 2000
+Not enough compute!
+First neural language model built on 32 million token corpus, 31 K vocab
+2007 Large Language Models in Machine Translation. Brants, Popat, Xu, Och and
+Not enough model flexibility!
+Dean. EMNLP 2007. 2 trillion token corpus n-gram model of up to 5-grams
+2018 GPT (Radford, Narasimhan, Salimans & Sutskever) and BERT (Devlin, Chang,
+Not enough data!
+Lee & Toutanova). 3.3 billion token corpus
+2020– 100+ billion parameter neural language models trained on > 1 trillion tokens:
+LLMs go brrr!
+GPT-3, GPT-4, Pa LM 2, Llama 3, Nemotron-4, ….
+53
+
+54
+
+Consultants using GPT-4 outperform non-users
+• Consultants (from Boston Consulting
+Group) using GPT-4 finished 12.2%
+more tasks on average, completed
+tasks 25.1% more quickly, and
+produced 40% higher quality
+results than those not using AI
+• Use of an LLM particularly improved
+the performance of lower-performing
+humans
+• Results vary depending on the task
+— Dell’Acqua et al. 2023; Mollick 2023
+Distribution of output quality across all tasks. Blue group did not use GPT-4; green
+and red groups used GPT-4; red group got additional training on how to use AI.
+
+Can GPT-4 write fiction that matches the quality of New
+Yorker fiction?
+Good news! No! (At least in 2023….)
+GPT-4 is still 3–10 x worse at creative writing!
+https://arxiv.org/abs/
+2309.14556
+56
+
+History of Natural Language Processing
+CS 224 N/Ling 284
+Christopher Manning
+Lecture 1

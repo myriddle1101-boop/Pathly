@@ -1,0 +1,6 @@
+﻿sample_name,dimension,metric_group,metric_name,metric_value,unit,success,source_file
+security_privacy_in_ml,benchmark,stage1,duration_seconds,7.002,seconds,True,D:\ic\master project\project_code\KG_construction\web_data\benchmarks\task4_evaluable_release\paper_ready_v1\benchmark\kg_benchmark.json
+security_privacy_in_ml,benchmark,stage2a,duration_seconds,74.437,seconds,True,D:\ic\master project\project_code\KG_construction\web_data\benchmarks\task4_evaluable_release\paper_ready_v1\benchmark\kg_benchmark.json
+security_privacy_in_ml,benchmark,stage2b,duration_seconds,10.688,seconds,True,D:\ic\master project\project_code\KG_construction\web_data\benchmarks\task4_evaluable_release\paper_ready_v1\benchmark\kg_benchmark.json
+security_privacy_in_ml,benchmark,stage2c,duration_seconds,38.305,seconds,True,D:\ic\master project\project_code\KG_construction\web_data\benchmarks\task4_evaluable_release\paper_ready_v1\benchmark\kg_benchmark.json
+security_privacy_in_ml,benchmark,pipeline,total_seconds,130.432,seconds,True,D:\ic\master project\project_code\KG_construction\web_data\benchmarks\task4_evaluable_release\paper_ready_v1\benchmark\kg_benchmark.json

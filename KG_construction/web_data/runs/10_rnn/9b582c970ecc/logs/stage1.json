@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\10_rnn\\9b582c970ecc\\10_rnn.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\10_rnn\\9b582c970ecc\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\10_rnn\\9b582c970ecc\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 22.5685,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 4581\n[2] 清洗后词数: 4602\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 27\n[5] 分块数（过滤后）: 22\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\10_rnn\\9b582c970ecc\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\10_rnn\\9b582c970ecc\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=259\nCHAPTER 10. SEQUENCE MODELING: RECURRENT AND RECURSIVE NETS 10.1 Unfolding Computational Graphs A computational graph is a way to formalize the structure of a set of computations, such as those involved in mapping inputs...\n\n[Chunk 2] words=107\n)) ss ss ss ss ss \u0000\u0000 ff ff ff ff Figure 10.1 Figure 10.1: The classical dynamical system described by equation 10.1, illustrated as an unfolded computational graph. Each node represents the state at some time t and the f...\n\n[Chunk 3] words=251\nCHAPTER 10. SEQUENCE MODELING: RECURRENT AND RECURSIVE NETS where we see that the state now contains information about the whole past sequence. Recurrent neural networks can be built in many different ways. Much as almos...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "id": "Lecture Structure",
+      "description": "Framework for organizing course content and delivery.",
+      "sub_topics": "[{\"name\": \"Lecture Plan\", \"description\": \"Detailed outline of topics to be covered in lectures.\"}, {\"name\": \"Guest Lecture\", \"description\": \"Special sessions featuring external experts.\"}, {\"name\": \"Lecture Introduction\", \"description\": \"Overview and objectives presented at the start of each lecture.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of course design and pedagogy.",
+      "key_sub_concepts": "[\"Course Objectives\", \"Content Sequencing\", \"Assessment Methods\", \"Engagement Strategies\"]",
+      "common_misconceptions": "[\"Lecture structure is only about content delivery\", \"All lectures must follow a strict format\"]",
+      "practical_applications": "[\"Designing a syllabus\", \"Creating engaging presentations\", \"Implementing active learning techniques\"]"
+    },
+    {
+      "id": "Grading Policy",
+      "description": "Criteria and methods for evaluating student performance.",
+      "sub_topics": "[{\"name\": \"Work Grading\", \"description\": \"Assessment methods for assignments and projects.\"}, {\"name\": \"Course Grade\", \"description\": \"Final evaluation based on cumulative performance.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of educational assessment methods and grading scales.",
+      "key_sub_concepts": "[\"Formative Assessment\", \"Summative Assessment\"]",
+      "common_misconceptions": "[\"Grading is solely based on exams\", \"All assignments carry equal weight\"]",
+      "practical_applications": "[\"Designing a grading rubric\", \"Implementing peer assessments\"]"
+    },
+    {
+      "id": "Homework Assignments",
+      "description": "Tasks assigned to reinforce learning outside of lectures.",
+      "sub_topics": "[{\"name\": \"Individually HW\", \"description\": \"Assignments completed by students independently.\"}, {\"name\": \"Notebook HW\", \"description\": \"Homework involving coding and documentation in notebooks.\"}, {\"name\": \"Parsing HW\", \"description\": \"Assignments focused on syntactic analysis of language.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of the subject matter covered in lectures.",
+      "key_sub_concepts": "[\"Task completion\", \"Time management\"]",
+      "common_misconceptions": "[\"Homework is optional\", \"All assignments are equally difficult\"]",
+      "practical_applications": "[\"Reinforcing lecture material\", \"Developing independent study skills\"]"
+    },
+    {
+      "id": "Natural Language Processing",
+      "description": "Field of study focused on the interaction between computers and human language.",
+      "sub_topics": "[{\"name\": \"NLP Lecture\", \"description\": \"Sessions dedicated to concepts and techniques in NLP.\"}, {\"name\": \"Language Processing\", \"description\": \"Techniques for analyzing and understanding human language.\"}, {\"name\": \"Language Computation\", \"description\": \"Computational methods for processing language data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and statistics.",
+      "key_sub_concepts": "[\"Tokenization\", \"Sentiment Analysis\", \"Named Entity Recognition\", \"Language Modeling\"]",
+      "common_misconceptions": "[\"NLP can understand language like humans do\", \"NLP is only about text processing\"]",
+      "practical_applications": "[\"Chatbots\", \"Text classification\", \"Machine translation\", \"Information retrieval\"]"
+    },
+    {
+      "id": "Machine Learning Concepts",
+      "description": "Fundamental principles and techniques in machine learning.",
+      "sub_topics": "[{\"name\": \"Activation Function\", \"description\": \"Functions that determine the output of neural network nodes.\"}, {\"name\": \"Loss Function\", \"description\": \"Measures the difference between predicted and actual outcomes.\"}, {\"name\": \"Backpropagation\", \"description\": \"Algorithm for training neural networks by minimizing loss.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Overfitting\", \"Model Evaluation\"]",
+      "common_misconceptions": "[\"Machine learning can solve any problem\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Recommendation systems\", \"Fraud detection\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": "[{\"name\": \"Artificial Neural Network\", \"description\": \"Network of interconnected nodes that simulate brain functions.\"}, {\"name\": \"Linear Separation\", \"description\": \"Concept of dividing data points using linear boundaries.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\", \"Loss Functions\", \"Overfitting and Regularization\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image and speech recognition\", \"Natural language processing\", \"Game playing AI\", \"Medical diagnosis\"]"
+    },
+    {
+      "id": "Learning Techniques",
+      "description": "Methods and strategies for training models.",
+      "sub_topics": "[{\"name\": \"Regression\", \"description\": \"Predictive modeling technique for continuous outcomes.\"}, {\"name\": \"Classification\", \"description\": \"Method for categorizing data into distinct classes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Reinforcement Learning\", \"Transfer Learning\"]",
+      "common_misconceptions": "[\"All models learn the same way\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Recommendation systems\", \"Game AI\"]"
+    },
+    {
+      "id": "Course Projects",
+      "description": "Hands-on assignments that apply learned concepts.",
+      "sub_topics": "[{\"name\": \"Project Guidelines\", \"description\": \"Instructions and expectations for course projects.\"}, {\"name\": \"Team Collaboration\", \"description\": \"Working in groups to complete projects.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning principles and programming skills.",
+      "key_sub_concepts": "[\"Data preprocessing\", \"Model evaluation\"]",
+      "common_misconceptions": "[\"Projects are only for advanced learners\", \"Real-world data is always clean\"]",
+      "practical_applications": "[\"Building predictive models\", \"Analyzing datasets for insights\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Natural Language Processing",
+      "relation": "prerequisite",
+      "reason": "NLP relies on foundational ML principles."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Neural networks are a key technique in ML."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Learning Techniques",
+      "relation": "prerequisite",
+      "reason": "Understanding ML concepts is essential for learning techniques."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Course Projects",
+      "relation": "prerequisite",
+      "reason": "Projects apply ML concepts learned in the course."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Homework Assignments",
+      "relation": "prerequisite",
+      "reason": "Assignments reinforce ML concepts."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Learning Techniques",
+      "relation": "prerequisite",
+      "reason": "Training neural networks requires specific learning strategies."
+    }
+  ]
+}

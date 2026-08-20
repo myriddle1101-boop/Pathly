@@ -1,0 +1,128 @@
+{
+  "created_at": "2026-08-18T19:00:33.933662+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-dl___week_2___design_engineering-a7ff94af9bad",
+  "file_name": "dl___week_2___design_engineering-a7ff94af9bad",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 6,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6429,
+    "f1": 0.7826,
+    "tp": 9,
+    "fp": 0,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.2857,
+    "recall": 0.3333,
+    "f1": 0.3077,
+    "tp": 2,
+    "fp": 5,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Artificial Neural Networks",
+      "Backpropagation",
+      "Linear Separation",
+      "Training Techniques",
+      "Neural Networks",
+      "Regression Analysis",
+      "Classification Techniques",
+      "Model Evaluation",
+      "Optimization Algorithms"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Neuron",
+        "reason": "The neuron is explicitly presented as the building block for deep learning, with weighted inputs, bias, and nonlinear activation."
+      },
+      {
+        "name": "Activation Functions",
+        "reason": "The source discusses nonlinear activations and specifically introduces sigmoid and ReLU."
+      },
+      {
+        "name": "Loss Functions",
+        "reason": "Training is defined around selecting a loss function, including Least Squared Error."
+      },
+      {
+        "name": "Gradient Descent",
+        "reason": "The source derives gradients and uses gradient-descent updates to minimize network loss."
+      },
+      {
+        "name": "Automatic Differentiation",
+        "reason": "Automatic differentiation and the chain rule are introduced as the means of computing multilayer derivatives."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Artificial Neural Networks",
+        "to": "Backpropagation",
+        "reason": "Backpropagation computes gradients and updates the weights of a multilayer neural network, so understanding ANN structure and parameters is required."
+      },
+      {
+        "from": "Optimization Algorithms",
+        "to": "Backpropagation",
+        "reason": "The source presents backpropagation as the algorithm used to implement gradient-descent optimization of network weights."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Artificial Neural Networks",
+        "reason": "This is primarily a category/subtype relationship, not a directional learning prerequisite."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Training Techniques",
+        "reason": "The relation is broad and associative; the source teaches specific methods such as loss minimization and gradient descent rather than a prerequisite concept named Training Techniques."
+      },
+      {
+        "from": "Training Techniques",
+        "to": "Model Evaluation",
+        "reason": "Training and performance evaluation are described as interconnected, but neither is established as a prerequisite for learning the other."
+      },
+      {
+        "from": "Linear Separation",
+        "to": "Classification Techniques",
+        "reason": "Linear separation is one classification setting, not a prerequisite for classification techniques generally."
+      },
+      {
+        "from": "Regression Analysis",
+        "to": "Model Evaluation",
+        "reason": "Evaluation assesses regression performance, but regression analysis is not a prerequisite for the general concept of model evaluation."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Neuron",
+        "to": "Artificial Neural Networks",
+        "reason": "The source explicitly identifies the neuron as the building block of deep learning and constructs multilayer networks from such units."
+      },
+      {
+        "from": "Activation Functions",
+        "to": "Backpropagation",
+        "reason": "Backpropagation derives gradients through activation functions using their derivatives."
+      },
+      {
+        "from": "Loss Functions",
+        "to": "Gradient Descent",
+        "reason": "Gradient descent is applied to minimize the selected loss function."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Backpropagation",
+        "reason": "The source defines backpropagation as the procedure for calculating the gradients needed to perform gradient-descent weight updates."
+      }
+    ],
+    "overall_note": "The predictions cover the lecture's broad themes, but several labels are more general than the source's explicit treatment of neurons, activations, loss functions, and gradient descent."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dl___week_2___design_engineering-a7ff94af9bad.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dl___week_2___design_engineering-a7ff94af9bad.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dl___week_2___design_engineering-a7ff94af9bad_ledger.csv"
+  }
+}

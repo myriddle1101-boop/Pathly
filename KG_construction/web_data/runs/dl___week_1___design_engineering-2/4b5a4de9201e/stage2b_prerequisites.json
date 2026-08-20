@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Probability Theory",
+      "to": "Loss Functions",
+      "reason": "Understanding probability is essential for measuring model performance."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Gradient Descent",
+      "reason": "Gradient descent is used to minimize loss functions."
+    },
+    {
+      "from": "Regression",
+      "to": "Loss Functions",
+      "reason": "Regression models require loss functions to evaluate performance."
+    },
+    {
+      "from": "Classification",
+      "to": "Loss Functions",
+      "reason": "Classification tasks depend on loss functions for performance measurement."
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Deep Learning",
+      "reason": "Deep learning is a subset of machine learning."
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Transformers",
+      "reason": "Transformers are advanced models used in deep learning."
+    }
+  ]
+}

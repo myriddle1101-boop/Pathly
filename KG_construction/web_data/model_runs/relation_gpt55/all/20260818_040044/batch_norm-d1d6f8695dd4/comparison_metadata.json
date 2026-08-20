@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\batch_norm\\d1d6f8695dd4",
+  "run_id": "batch_norm-d1d6f8695dd4",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:02.606003+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "ab0aac4e82811e2f41d4ae8caac4b4cd58a6096d615b5d211c3c05f42344977f",
+    "stage2a_topics_hybrid.json": "f43544a25b84c8f9a72f4579335436fc50f35bf9423c89159074ad53718d00d1",
+    "stage2c_similarity_edges.json": "5c065728ae178a9794bc8e8dfdccc3f61dee02238d06de958d4521907844c887",
+    "stage3_topics_with_summary.json": "9cb51622ddda2a88a291130bf29df9423b3c278d2427c1b2c6479358b3b1c7fb"
+  },
+  "old_relation_count": 6,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

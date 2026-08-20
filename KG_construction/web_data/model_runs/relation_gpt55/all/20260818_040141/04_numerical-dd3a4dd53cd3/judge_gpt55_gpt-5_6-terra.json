@@ -1,0 +1,128 @@
+{
+  "created_at": "2026-08-18T18:40:00.366078+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-04_numerical-dd3a4dd53cd3",
+  "file_name": "04_numerical-dd3a4dd53cd3",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 29,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.75,
+    "recall": 0.6667,
+    "f1": 0.7059,
+    "tp": 6,
+    "fp": 2,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Gradient Descent",
+      "Eigenvalues and Eigenvectors",
+      "Optimization Techniques",
+      "Curvature Analysis",
+      "Partial Derivatives",
+      "Training Neural Networks",
+      "Matrix Operations",
+      "Training Process"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Regression and Classification",
+        "reason": "Classification error is mentioned only as an example metric; regression and classification are not developed as learning concepts."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Numerical Precision",
+        "reason": "The slides substantially cover rounding error, finite-precision arithmetic, underflow, overflow, and numerical stabilization."
+      },
+      {
+        "name": "Hessian Matrix",
+        "reason": "The Hessian is explicitly defined as the matrix of second partial derivatives and is central to the curvature discussion."
+      },
+      {
+        "name": "Critical Points",
+        "reason": "The source explicitly defines critical/stationary points and distinguishes local minima, maxima, and saddle points."
+      },
+      {
+        "name": "Constrained Optimization",
+        "reason": "Constrained optimization, Lagrange functions, KKT multipliers, and KKT conditions are explicitly covered."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Matrix Operations",
+        "to": "Eigenvalues and Eigenvectors",
+        "reason": "Eigenvalue and eigenvector analysis is a matrix-based concept."
+      },
+      {
+        "from": "Partial Derivatives",
+        "to": "Gradient Descent",
+        "reason": "For multivariate functions, gradient descent uses the gradient vector composed of partial derivatives."
+      },
+      {
+        "from": "Partial Derivatives",
+        "to": "Curvature Analysis",
+        "reason": "Multivariate curvature is expressed through second partial derivatives."
+      },
+      {
+        "from": "Matrix Operations",
+        "to": "Curvature Analysis",
+        "reason": "The source represents multivariate curvature with the Hessian matrix and its matrix operations."
+      },
+      {
+        "from": "Eigenvalues and Eigenvectors",
+        "to": "Curvature Analysis",
+        "reason": "Hessian eigenvalues and eigenvectors determine directional second derivatives and characterize curvature."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Training Neural Networks",
+        "reason": "The source discusses gradient-based optimization as the mechanism used for deep-learning model training."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Partial Derivatives",
+        "to": "Training Neural Networks",
+        "reason": "The stated backpropagation dependency is not covered in the source, and the source does not establish this as a direct prerequisite separate from gradient-based optimization."
+      },
+      {
+        "from": "Matrix Operations",
+        "to": "Training Neural Networks",
+        "reason": "Matrix computations may occur in neural networks, but the source does not establish matrix operations as a direct learning prerequisite for training neural networks."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Partial Derivatives",
+        "to": "Hessian Matrix",
+        "reason": "The Hessian is explicitly defined as the matrix containing second partial derivatives."
+      },
+      {
+        "from": "Hessian Matrix",
+        "to": "Curvature Analysis",
+        "reason": "The source uses the Hessian to represent and analyze multivariate curvature."
+      },
+      {
+        "from": "Curvature Analysis",
+        "to": "Critical Points",
+        "reason": "Second-derivative and Hessian properties are used to distinguish minima, maxima, and saddle points at critical points."
+      }
+    ],
+    "overall_note": "The predictions cover the main optimization material well, but omit the source's substantial numerical-precision and Hessian/KKT content."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-04_numerical-dd3a4dd53cd3.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-04_numerical-dd3a4dd53cd3.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-04_numerical-dd3a4dd53cd3_ledger.csv"
+  }
+}

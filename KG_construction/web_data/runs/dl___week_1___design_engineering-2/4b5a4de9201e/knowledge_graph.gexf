@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-08-18">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Machine Learning" label="Machine Learning">
+        <attvalues>
+          <attvalue for="0" value="The study of algorithms and statistical models that enable computers to perform tasks without explicit instructions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Supervised Learning&quot;, &quot;description&quot;: &quot;A type of machine learning where the model is trained on labeled data.&quot;}, {&quot;name&quot;: &quot;Unsupervised Learning&quot;, &quot;description&quot;: &quot;A type of machine learning that deals with unlabeled data.&quot;}, {&quot;name&quot;: &quot;Semi-Supervised Learning&quot;, &quot;description&quot;: &quot;A blend of supervised and unsupervised learning using both labeled and unlabeled data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;, &quot;Neural Networks&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning can solve any problem&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Deep Learning" label="Deep Learning">
+        <attvalues>
+          <attvalue for="0" value="A subset of machine learning that uses neural networks with many layers." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Artificial Neural Networks&quot;, &quot;description&quot;: &quot;Computational models inspired by the human brain's network of neurons.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing the loss function.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, calculus, and programming in Python." />
+          <attvalue for="6" value="[&quot;Neural Networks&quot;, &quot;Backpropagation&quot;, &quot;Convolutional Neural Networks (CNNs)&quot;, &quot;Recurrent Neural Networks (RNNs)&quot;]" />
+          <attvalue for="7" value="[&quot;Deep learning is the same as machine learning.&quot;, &quot;More layers always mean better performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Autonomous vehicles&quot;, &quot;Healthcare diagnostics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Gradient Descent" label="Gradient Descent">
+        <attvalues>
+          <attvalue for="0" value="An optimization algorithm used to minimize the loss function in machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Learning Rate&quot;, &quot;description&quot;: &quot;A hyperparameter that controls how much to change the model in response to the estimated error.&quot;}, {&quot;name&quot;: &quot;Stochastic Gradient Descent&quot;, &quot;description&quot;: &quot;A variant of gradient descent that updates the model using a single training example.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and linear algebra." />
+          <attvalue for="6" value="[&quot;Learning Rate&quot;, &quot;Convergence&quot;, &quot;Stochastic Gradient Descent&quot;, &quot;Batch Gradient Descent&quot;]" />
+          <attvalue for="7" value="[&quot;Gradient descent always finds the global minimum.&quot;, &quot;A smaller learning rate is always better.&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Linear regression optimization&quot;, &quot;Logistic regression&quot;, &quot;Support vector machines&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Loss Functions" label="Loss Functions">
+        <attvalues>
+          <attvalue for="0" value="Functions that measure how well a machine learning model performs." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Mean Squared Error&quot;, &quot;description&quot;: &quot;A common loss function for regression tasks.&quot;}, {&quot;name&quot;: &quot;Cross-Entropy Loss&quot;, &quot;description&quot;: &quot;A loss function often used for classification tasks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and statistics." />
+          <attvalue for="6" value="[&quot;Mean Squared Error&quot;, &quot;Cross-Entropy Loss&quot;]" />
+          <attvalue for="7" value="[&quot;Loss functions only measure accuracy&quot;, &quot;All loss functions are the same&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Evaluating regression models&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Regression" label="Regression">
+        <attvalues>
+          <attvalue for="0" value="A type of predictive modeling technique that estimates relationships among variables." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Regression&quot;, &quot;description&quot;: &quot;A method for modeling the relationship between a scalar response and one or more explanatory variables.&quot;}, {&quot;name&quot;: &quot;Logistic Regression&quot;, &quot;description&quot;: &quot;A statistical method for predicting binary classes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and algebra." />
+          <attvalue for="6" value="[&quot;Linear Regression&quot;, &quot;Multiple Regression&quot;]" />
+          <attvalue for="7" value="[&quot;Regression implies causation&quot;, &quot;Only linear relationships can be modeled&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting sales based on advertising spend&quot;, &quot;Estimating housing prices based on features&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Classification" label="Classification">
+        <attvalues>
+          <attvalue for="0" value="The task of predicting the category of a given data point." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Binary Classification&quot;, &quot;description&quot;: &quot;A classification task with two possible outcomes.&quot;}, {&quot;name&quot;: &quot;Multi-Class Classification&quot;, &quot;description&quot;: &quot;A classification task with more than two possible outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Binary Classification&quot;, &quot;Multi-class Classification&quot;]" />
+          <attvalue for="7" value="[&quot;Classification is only for binary outcomes.&quot;, &quot;All classifiers perform equally well.&quot;]" />
+          <attvalue for="8" value="[&quot;Email spam detection&quot;, &quot;Image recognition&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Transformers" label="Transformers">
+        <attvalues>
+          <attvalue for="0" value="A type of model architecture that uses self-attention mechanisms for processing sequential data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Self-Attention Mechanism&quot;, &quot;description&quot;: &quot;A technique that allows the model to weigh the importance of different words in a sequence.&quot;}, {&quot;name&quot;: &quot;Transformer Architecture&quot;, &quot;description&quot;: &quot;A model architecture that relies on attention mechanisms rather than recurrent layers.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and sequence data." />
+          <attvalue for="6" value="[&quot;Self-Attention&quot;, &quot;Positional Encoding&quot;, &quot;Multi-Head Attention&quot;, &quot;Encoder-Decoder Architecture&quot;]" />
+          <attvalue for="7" value="[&quot;Transformers are only for NLP tasks&quot;, &quot;Self-attention is the same as recurrent processing&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Image Processing&quot;, &quot;Time Series Forecasting&quot;, &quot;Reinforcement Learning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Probability Theory" label="Probability Theory">
+        <attvalues>
+          <attvalue for="0" value="A branch of mathematics concerned with the analysis of random phenomena." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Bayesian Inference&quot;, &quot;description&quot;: &quot;A method of statistical inference in which Bayes' theorem is used to update the probability of a hypothesis.&quot;}, {&quot;name&quot;: &quot;Random Variables&quot;, &quot;description&quot;: &quot;Variables whose possible values are numerical outcomes of a random phenomenon.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algebra and statistics." />
+          <attvalue for="6" value="[&quot;Random Variables&quot;, &quot;Probability Distributions&quot;, &quot;Bayes' Theorem&quot;, &quot;Law of Large Numbers&quot;]" />
+          <attvalue for="7" value="[&quot;Probability is the same as chance&quot;, &quot;Independent events cannot affect each other&quot;]" />
+          <attvalue for="8" value="[&quot;Risk assessment in finance&quot;, &quot;Machine learning algorithms&quot;, &quot;Statistical inference&quot;, &quot;Quality control in manufacturing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Design Engineering" label="Design Engineering">
+        <attvalues>
+          <attvalue for="0" value="The discipline of designing and developing systems and products using engineering principles." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;System Design&quot;, &quot;description&quot;: &quot;The process of defining the architecture, components, modules, interfaces, and data for a system.&quot;}, {&quot;name&quot;: &quot;Product Development&quot;, &quot;description&quot;: &quot;The complete process of bringing a new product to market.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of engineering principles and design processes." />
+          <attvalue for="6" value="[&quot;Systems Design&quot;, &quot;Product Development&quot;, &quot;Prototyping&quot;, &quot;User-Centered Design&quot;]" />
+          <attvalue for="7" value="[&quot;Design engineering is only about aesthetics.&quot;, &quot;Engineering design does not require creativity.&quot;]" />
+          <attvalue for="8" value="[&quot;Creating consumer products&quot;, &quot;Developing software systems&quot;, &quot;Engineering solutions for manufacturing&quot;, &quot;Designing infrastructure projects&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Machine Learning" target="Deep Learning" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Deep learning is a subset of machine learning." />
+        </attvalues>
+      </edge>
+      <edge source="Deep Learning" target="Transformers" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Transformers are advanced models used in deep learning." />
+        </attvalues>
+      </edge>
+      <edge source="Loss Functions" target="Gradient Descent" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Gradient descent is used to minimize loss functions." />
+        </attvalues>
+      </edge>
+      <edge source="Regression" target="Loss Functions" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Regression models require loss functions to evaluate performance." />
+        </attvalues>
+      </edge>
+      <edge source="Classification" target="Loss Functions" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Classification tasks depend on loss functions for performance measurement." />
+        </attvalues>
+      </edge>
+      <edge source="Probability Theory" target="Loss Functions" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding probability is essential for measuring model performance." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

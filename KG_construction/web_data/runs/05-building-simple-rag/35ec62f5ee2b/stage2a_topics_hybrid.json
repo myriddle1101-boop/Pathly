@@ -1,0 +1,776 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 12,
+  "candidate_count": 72,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "def print_result",
+      "avg_score": 0.7486,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "statistics print",
+      "avg_score": 0.7301,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "question print_result",
+      "avg_score": 0.7285,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "chunk_text boundary",
+      "avg_score": 0.7284,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "get_stats print",
+      "avg_score": 0.7214,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "print statistics",
+      "avg_score": 0.6951,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "stats llm_model",
+      "avg_score": 0.692,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "print_result result",
+      "avg_score": 0.6835,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "get_stats",
+      "avg_score": 0.6718,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "print_result",
+      "avg_score": 0.6692,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "stats embedding_model",
+      "avg_score": 0.6661,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "chunk_metadata end",
+      "avg_score": 0.657,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "boundary max",
+      "avg_score": 0.6553,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "print query",
+      "avg_score": 0.6504,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "end chunks",
+      "avg_score": 0.6162,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "hallucinations llms",
+      "avg_score": 0.6095,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "last_newline boundary",
+      "avg_score": 0.6011,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "print error",
+      "avg_score": 0.5868,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "chunk_text chunk_text",
+      "avg_score": 0.5848,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "llm_model gpt",
+      "avg_score": 0.5792,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "exception print",
+      "avg_score": 0.565,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "def add_directory",
+      "avg_score": 0.5631,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "print question",
+      "avg_score": 0.5604,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "document_loader import",
+      "avg_score": 0.5593,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "documents staticmethod",
+      "avg_score": 0.559,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "config chunk_size",
+      "avg_score": 0.555,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "def load_from_text",
+      "avg_score": 0.5532,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "config embedding_model",
+      "avg_score": 0.5522,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "document_loader",
+      "avg_score": 0.5518,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "question python",
+      "avg_score": 0.5474,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "chunk_size config",
+      "avg_score": 0.544,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "print loaded",
+      "avg_score": 0.5433,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "llm_model",
+      "avg_score": 0.5409,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "hallucinations",
+      "avg_score": 0.5358,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "nnn rag_system",
+      "avg_score": 0.5317,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "file_path exception",
+      "avg_score": 0.5297,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "rag_system",
+      "avg_score": 0.5255,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "self generate_answer",
+      "avg_score": 0.5236,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "config chunk_overlap",
+      "avg_score": 0.5202,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "rag_system import",
+      "avg_score": 0.5182,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "answer return_sources",
+      "avg_score": 0.5166,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "self add_documents",
+      "avg_score": 0.5132,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "query rag",
+      "avg_score": 0.5114,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "generate_answer",
+      "avg_score": 0.5062,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "assistant answers",
+      "avg_score": 0.5042,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "directory return",
+      "avg_score": 0.5027,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "usage rag_system",
+      "avg_score": 0.4962,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "add_documents documents",
+      "avg_score": 0.4952,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "python cli",
+      "avg_score": 0.4942,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "mini lm",
+      "avg_score": 0.4938,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "max_tokens",
+      "avg_score": 0.4919,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "query self",
+      "avg_score": 0.4909,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "max_tokens 500",
+      "avg_score": 0.4897,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "structure simple_rag",
+      "avg_score": 0.4893,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "lm free",
+      "avg_score": 0.4892,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "generate_answer question",
+      "avg_score": 0.4863,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "issue results",
+      "avg_score": 0.4818,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "rag query",
+      "avg_score": 0.4789,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "simple_rag nnn",
+      "avg_score": 0.4784,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "load_directory directory",
+      "avg_score": 0.4776,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "add_documents",
+      "avg_score": 0.4753,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "rag class",
+      "avg_score": 0.4569,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "rag loads",
+      "avg_score": 0.4566,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "sources rag",
+      "avg_score": 0.4376,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "solutions issue",
+      "avg_score": 0.4368,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "errors cause",
+      "avg_score": 0.4346,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "issues solutions",
+      "avg_score": 0.4304,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "attribution rag",
+      "avg_score": 0.4268,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "llms",
+      "avg_score": 0.4218,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "false information",
+      "avg_score": 0.4181,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "issue slow",
+      "avg_score": 0.4162,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "query issue",
+      "avg_score": 0.4023,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Model Evaluation",
+      "description": "Techniques and metrics for assessing model performance.",
+      "sub_topics": [
+        {
+          "name": "Print Result",
+          "description": "Function to display model results."
+        },
+        {
+          "name": "Statistics",
+          "description": "Metrics used to evaluate model performance."
+        },
+        {
+          "name": "Error Handling",
+          "description": "Methods for managing and reporting errors."
+        }
+      ]
+    },
+    {
+      "name": "Text Processing",
+      "description": "Methods for handling and manipulating text data.",
+      "sub_topics": [
+        {
+          "name": "Chunk Text",
+          "description": "Dividing text into manageable segments."
+        },
+        {
+          "name": "Document Loader",
+          "description": "Tools for importing and managing documents."
+        },
+        {
+          "name": "Metadata Management",
+          "description": "Handling metadata associated with text."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Fundamental concepts and architectures of neural networks.",
+      "sub_topics": [
+        {
+          "name": "LLM Model",
+          "description": "Large language models and their applications."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine neuron output."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "Algorithm for training neural networks."
+        }
+      ]
+    },
+    {
+      "name": "RAG Systems",
+      "description": "Retrieval-Augmented Generation systems for enhanced responses.",
+      "sub_topics": [
+        {
+          "name": "RAG Query",
+          "description": "Methods for querying RAG systems."
+        },
+        {
+          "name": "Document Management",
+          "description": "Handling documents in RAG systems."
+        },
+        {
+          "name": "Sources Management",
+          "description": "Managing sources for RAG systems."
+        }
+      ]
+    },
+    {
+      "name": "Configuration Management",
+      "description": "Settings and parameters for model and system configurations.",
+      "sub_topics": [
+        {
+          "name": "Chunk Size",
+          "description": "Configuration for text chunking."
+        },
+        {
+          "name": "Embedding Model",
+          "description": "Settings for embedding models."
+        },
+        {
+          "name": "Chunk Overlap",
+          "description": "Configuration for overlapping text chunks."
+        }
+      ]
+    },
+    {
+      "name": "Query Handling",
+      "description": "Techniques for processing and managing queries.",
+      "sub_topics": [
+        {
+          "name": "Query Self",
+          "description": "Self-referential queries in models."
+        },
+        {
+          "name": "Generate Answer",
+          "description": "Methods for generating answers from queries."
+        },
+        {
+          "name": "Return Sources",
+          "description": "Returning sources used for generating answers."
+        }
+      ]
+    },
+    {
+      "name": "Error Analysis",
+      "description": "Identifying and analyzing errors in models and systems.",
+      "sub_topics": [
+        {
+          "name": "Hallucinations",
+          "description": "False information generated by models."
+        },
+        {
+          "name": "Issues and Solutions",
+          "description": "Common issues and their resolutions."
+        },
+        {
+          "name": "Attribution",
+          "description": "Attributing errors to their causes."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Regression",
+          "description": "Techniques for predicting continuous outcomes."
+        },
+        {
+          "name": "Classification",
+          "description": "Methods for categorizing data into classes."
+        },
+        {
+          "name": "Linear Separability",
+          "description": "Concept of separating data with linear boundaries."
+        }
+      ]
+    },
+    {
+      "name": "Python Integration",
+      "description": "Using Python for machine learning and data processing.",
+      "sub_topics": [
+        {
+          "name": "Python CLI",
+          "description": "Command-line interface for Python applications."
+        },
+        {
+          "name": "Static Methods",
+          "description": "Using static methods in Python classes."
+        },
+        {
+          "name": "Exception Handling",
+          "description": "Managing exceptions in Python code."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 19.8219,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

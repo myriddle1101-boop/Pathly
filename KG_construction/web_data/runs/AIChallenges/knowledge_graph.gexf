@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-06-17">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Artificial Intelligence" label="Artificial Intelligence">
+        <attvalues>
+          <attvalue for="0" value="The study and development of intelligent agents and systems." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;AI Technologies&quot;, &quot;description&quot;: &quot;Various technologies that enable artificial intelligence.&quot;}, {&quot;name&quot;: &quot;AI Systems&quot;, &quot;description&quot;: &quot;Frameworks and architectures for implementing AI.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and mathematics, particularly statistics." />
+          <attvalue for="6" value="[&quot;Machine Learning&quot;, &quot;Natural Language Processing&quot;]" />
+          <attvalue for="7" value="[&quot;AI can think like a human&quot;, &quot;AI will replace all jobs&quot;]" />
+          <attvalue for="8" value="[&quot;Virtual assistants&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain's network of neurons." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of neural network nodes.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;A method for training neural networks through gradient descent.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;, &quot;Loss Functions&quot;, &quot;Overfitting and Regularization&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing AI&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Machine Learning" label="Machine Learning">
+        <attvalues>
+          <attvalue for="0" value="A subset of AI focused on algorithms that learn from data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Regression&quot;, &quot;description&quot;: &quot;Techniques for predicting continuous outcomes.&quot;}, {&quot;name&quot;: &quot;Classification&quot;, &quot;description&quot;: &quot;Methods for categorizing data into discrete classes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;, &quot;Neural Networks&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning can solve any problem&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Challenges in AI" label="Challenges in AI">
+        <attvalues>
+          <attvalue for="0" value="Key obstacles and issues faced in the development of AI systems." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Security&quot;, &quot;description&quot;: &quot;Concerns related to the safety and integrity of AI systems.&quot;}, {&quot;name&quot;: &quot;Ethical Considerations&quot;, &quot;description&quot;: &quot;Moral implications of AI deployment and usage.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and programming concepts." />
+          <attvalue for="6" value="[&quot;Data bias&quot;, &quot;Ethical considerations&quot;, &quot;Scalability issues&quot;, &quot;Interpretability of models&quot;]" />
+          <attvalue for="7" value="[&quot;AI can think like a human&quot;, &quot;More data always leads to better models&quot;, &quot;AI systems are infallible&quot;]" />
+          <attvalue for="8" value="[&quot;Bias detection in hiring algorithms&quot;, &quot;Ethical AI frameworks in healthcare&quot;, &quot;Scalable AI solutions in finance&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data in AI" label="Data in AI">
+        <attvalues>
+          <attvalue for="0" value="The role of data in training and evaluating AI models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Data Quality&quot;, &quot;description&quot;: &quot;The importance of high-quality data for effective learning.&quot;}, {&quot;name&quot;: &quot;Data Processing&quot;, &quot;description&quot;: &quot;Techniques for preparing data for machine learning.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Data Collection&quot;, &quot;Data Preprocessing&quot;, &quot;Data Annotation&quot;, &quot;Data Augmentation&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Data quality is less important than quantity&quot;]" />
+          <attvalue for="8" value="[&quot;Training machine learning models&quot;, &quot;Evaluating model performance&quot;, &quot;Improving model accuracy through data refinement&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Robotics and Automation" label="Robotics and Automation">
+        <attvalues>
+          <attvalue for="0" value="The integration of AI in robotic systems for automation." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Cloud Robotics&quot;, &quot;description&quot;: &quot;Robotic systems that leverage cloud computing resources.&quot;}, {&quot;name&quot;: &quot;Automation Science&quot;, &quot;description&quot;: &quot;The study of automated systems and their applications.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and introductory AI concepts." />
+          <attvalue for="6" value="[&quot;Robot kinematics&quot;, &quot;Sensor integration&quot;, &quot;Machine learning algorithms&quot;, &quot;Control systems&quot;]" />
+          <attvalue for="7" value="[&quot;Robots can think independently&quot;, &quot;Automation will replace all human jobs&quot;]" />
+          <attvalue for="8" value="[&quot;Manufacturing automation&quot;, &quot;Autonomous vehicles&quot;, &quot;Warehouse robotics&quot;, &quot;Healthcare robots&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Atari Games" label="Atari Games">
+        <attvalues>
+          <attvalue for="0" value="The use of Atari games as benchmarks for AI research." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Game AI&quot;, &quot;description&quot;: &quot;AI techniques applied to game environments.&quot;}, {&quot;name&quot;: &quot;Reinforcement Learning&quot;, &quot;description&quot;: &quot;Learning strategies based on rewards and penalties in games.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and reinforcement learning concepts." />
+          <attvalue for="6" value="[&quot;Reinforcement Learning&quot;, &quot;Deep Q-Networks (DQN)&quot;]" />
+          <attvalue for="7" value="[&quot;Atari games are only for entertainment and not useful for AI research.&quot;, &quot;All AI can easily master Atari games without training.&quot;]" />
+          <attvalue for="8" value="[&quot;Benchmarking AI algorithms&quot;, &quot;Developing generalizable AI agents&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Machine Teaching" label="Machine Teaching">
+        <attvalues>
+          <attvalue for="0" value="The process of teaching machines to learn effectively." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Learning Strategies&quot;, &quot;description&quot;: &quot;Approaches to enhance machine learning efficiency.&quot;}, {&quot;name&quot;: &quot;Human-AI Interaction&quot;, &quot;description&quot;: &quot;The dynamics of how humans teach and interact with AI.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning principles and algorithms." />
+          <attvalue for="6" value="[&quot;Instructional Design&quot;, &quot;Feedback Mechanisms&quot;]" />
+          <attvalue for="7" value="[&quot;Machine teaching is the same as traditional teaching.&quot;, &quot;Only experts can perform machine teaching.&quot;]" />
+          <attvalue for="8" value="[&quot;Personalized learning systems&quot;, &quot;Automated tutoring systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Systems Challenges" label="Systems Challenges">
+        <attvalues>
+          <attvalue for="0" value="Technical difficulties encountered in AI system design and implementation." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Scalability&quot;, &quot;description&quot;: &quot;The ability of AI systems to handle increasing amounts of data.&quot;}, {&quot;name&quot;: &quot;Integration&quot;, &quot;description&quot;: &quot;Challenges in combining AI with existing systems.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning principles and programming skills." />
+          <attvalue for="6" value="[&quot;Data Quality Issues&quot;, &quot;Model Deployment Challenges&quot;]" />
+          <attvalue for="7" value="[&quot;AI systems are infallible&quot;, &quot;All data is useful for training&quot;]" />
+          <attvalue for="8" value="[&quot;Real-time data processing&quot;, &quot;Scalable model deployment&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Artificial Intelligence" target="Machine Learning" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Machine Learning is a subset of AI." />
+        </attvalues>
+      </edge>
+      <edge source="Artificial Intelligence" target="Challenges in AI" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding AI is necessary to grasp its challenges." />
+        </attvalues>
+      </edge>
+      <edge source="Artificial Intelligence" target="Robotics and Automation" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="AI principles are foundational for Robotics and Automation." />
+        </attvalues>
+      </edge>
+      <edge source="Artificial Intelligence" target="Systems Challenges" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="AI systems face unique technical challenges." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning" target="Neural Networks" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Neural Networks are a common model used in Machine Learning." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning" target="Data in AI" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Data is essential for training Machine Learning models." />
+        </attvalues>
+      </edge>
+      <edge source="Machine Learning" target="Machine Teaching" id="6">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Machine Teaching involves methods to improve Machine Learning." />
+        </attvalues>
+      </edge>
+      <edge source="Challenges in AI" target="Systems Challenges" id="7">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.9038" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

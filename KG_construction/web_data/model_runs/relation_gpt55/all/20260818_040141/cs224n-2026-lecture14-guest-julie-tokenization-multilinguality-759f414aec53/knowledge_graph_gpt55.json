@@ -1,0 +1,132 @@
+{
+  "nodes": [
+    {
+      "id": "Tokenization",
+      "description": "The process of converting text into smaller units for processing.",
+      "sub_topics": "[{\"name\": \"Subword Tokenization\", \"description\": \"A method that breaks words into smaller subword units.\"}, {\"name\": \"Byte Tokenization\", \"description\": \"A technique that encodes text at the byte level.\"}, {\"name\": \"Word Tokenization\", \"description\": \"The process of splitting text into individual words.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and programming.",
+      "key_sub_concepts": "[\"Word Tokenization\", \"Subword Tokenization\"]",
+      "common_misconceptions": "[\"Tokenization only splits by spaces\", \"All tokenization methods are the same\"]",
+      "practical_applications": "[\"Text preprocessing for machine learning\", \"Input preparation for NLP models\"]"
+    },
+    {
+      "id": "Encoding Techniques",
+      "description": "Methods used to represent text data in a numerical format.",
+      "sub_topics": "[{\"name\": \"BPE Encoding\", \"description\": \"Byte Pair Encoding, a compression technique used in tokenization.\"}, {\"name\": \"Character Encoding\", \"description\": \"Representing characters in a numerical format for processing.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and statistics.",
+      "key_sub_concepts": "[\"One-Hot Encoding\", \"Label Encoding\", \"TF-IDF\", \"Word Embeddings\"]",
+      "common_misconceptions": "[\"Encoding is only for categorical data\", \"All encoding techniques are equally effective\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Sentiment Analysis\", \"Text Classification\", \"Recommendation Systems\"]"
+    },
+    {
+      "id": "Language Models",
+      "description": "Statistical models that predict the likelihood of sequences of words.",
+      "sub_topics": "[{\"name\": \"Multilingual Language Models\", \"description\": \"Models designed to work across multiple languages.\"}, {\"name\": \"Transfer Learning in Language Models\", \"description\": \"Using knowledge from one language model to improve another.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of probability and statistics, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"N-grams\", \"Neural Language Models\"]",
+      "common_misconceptions": "[\"Language models understand language like humans do.\", \"All language models are based on deep learning.\"]",
+      "practical_applications": "[\"Text generation\", \"Sentiment analysis\"]"
+    },
+    {
+      "id": "Linguistic Diversity",
+      "description": "The variety of languages and dialects in a given context.",
+      "sub_topics": "[{\"name\": \"Multilinguality\", \"description\": \"The ability to use or understand multiple languages.\"}, {\"name\": \"Language Disparities\", \"description\": \"Differences in language use and access among populations.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linguistics and language structure.",
+      "key_sub_concepts": "[\"Language families\", \"Dialectal variation\"]",
+      "common_misconceptions": "[\"All languages are equally complex\", \"Dialects are inferior to standard languages\"]",
+      "practical_applications": "[\"Natural language processing\", \"Cross-cultural communication\"]"
+    },
+    {
+      "id": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": "[{\"name\": \"Tokenizers Training\", \"description\": \"The process of training models to effectively tokenize text.\"}, {\"name\": \"Training Corpus\", \"description\": \"The dataset used to train machine learning models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Overfitting and Underfitting\", \"Cross-Validation\", \"Hyperparameter Tuning\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Training and testing data can be mixed\", \"Complex models are always better\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Predictive analytics\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain's network of neurons.",
+      "sub_topics": "[{\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of a neural network node.\"}, {\"name\": \"Backpropagation\", \"description\": \"An algorithm for training neural networks by minimizing error.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Loss Functions\", \"description\": \"Functions that measure the difference between predicted and actual values.\"}, {\"name\": \"Regression and Classification\", \"description\": \"Types of problems that models can solve.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and statistics.",
+      "key_sub_concepts": "[\"Confusion Matrix\", \"ROC Curve\", \"Precision and Recall\", \"F1 Score\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Accuracy is the only metric that matters.\", \"Overfitting is not a concern if the model performs well on training data.\"]",
+      "practical_applications": "[\"Evaluating classification models in healthcare.\", \"Assessing regression models in finance.\"]"
+    },
+    {
+      "id": "Text Representation",
+      "description": "Methods for converting text into a format suitable for machine learning.",
+      "sub_topics": "[{\"name\": \"Tokens and Vocabulary\", \"description\": \"The basic units of text and the set of unique tokens used.\"}, {\"name\": \"Character and Word Representation\", \"description\": \"Different approaches to represent text data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and familiarity with machine learning concepts.",
+      "key_sub_concepts": "[\"Bag of Words\", \"TF-IDF\", \"Word Embeddings\"]",
+      "common_misconceptions": "[\"Text representation is only about counting words.\", \"All text representations are equally effective for all tasks.\"]",
+      "practical_applications": "[\"Sentiment analysis\", \"Document classification\", \"Chatbot development\"]"
+    },
+    {
+      "id": "Cross-Lingual Techniques",
+      "description": "Methods that facilitate understanding and processing across different languages.",
+      "sub_topics": "[{\"name\": \"Cross-Lingual Transfer\", \"description\": \"Transferring knowledge from one language to another.\"}, {\"name\": \"Multilinguality Matters\", \"description\": \"The importance of considering multiple languages in models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and machine learning principles.",
+      "key_sub_concepts": "[\"Machine Translation\", \"Cross-Lingual Embeddings\"]",
+      "common_misconceptions": "[\"Cross-lingual techniques only apply to translation tasks.\", \"All languages can be treated equally in cross-lingual models.\"]",
+      "practical_applications": "[\"Multilingual chatbots\", \"Information retrieval across languages\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Tokenization",
+      "to": "Encoding Techniques",
+      "relation": "prerequisite",
+      "reason": "Encoding text typically operates on tokens or units produced by tokenization."
+    },
+    {
+      "from": "Encoding Techniques",
+      "to": "Language Models",
+      "relation": "prerequisite",
+      "reason": "Language models require text to be converted into numerical representations before sequences can be modeled computationally."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Training Techniques",
+      "relation": "similarity",
+      "score": 0.774
+    }
+  ]
+}

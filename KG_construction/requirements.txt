@@ -1,0 +1,13 @@
+openai
+pdfplumber
+nltk
+sentence-transformers
+networkx
+numpy
+matplotlib
+keybert
+streamlit
+pandas
+chromadb
+python-dotenv
+neo4j

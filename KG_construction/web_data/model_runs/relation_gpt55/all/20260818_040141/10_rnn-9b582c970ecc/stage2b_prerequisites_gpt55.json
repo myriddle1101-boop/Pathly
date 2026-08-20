@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Recurrent Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "RNNs build on core neural network concepts such as layers, weights, activations, and learned parameters."
+    },
+    {
+      "from": "Gradient Methods",
+      "to": "Recurrent Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding how RNNs are trained requires gradient-based optimization, especially backpropagation through time."
+    }
+  ]
+}

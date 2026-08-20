@@ -1,0 +1,31 @@
+{
+  "stage": "2c",
+  "method": "sbert_cosine",
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "topic_count": 9,
+  "similarity_count": 4,
+  "threshold": 0.72,
+  "top_k_per_topic": 5,
+  "similarity_edges": [
+    {
+      "from": "Learning Techniques",
+      "to": "Machine Learning Fundamentals",
+      "similarity": 0.8887
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Model Training",
+      "similarity": 0.814
+    },
+    {
+      "from": "Learning Techniques",
+      "to": "Model Training",
+      "similarity": 0.7927
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Model Training",
+      "similarity": 0.7652
+    }
+  ]
+}

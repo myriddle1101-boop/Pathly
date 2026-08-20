@@ -1,0 +1,874 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 36,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "convolutional networks",
+      "avg_score": 0.6328,
+      "frequency": 8,
+      "chunk_ids": [
+        1,
+        13,
+        14,
+        23,
+        24,
+        25,
+        28,
+        35
+      ]
+    },
+    {
+      "name": "matrices",
+      "avg_score": 0.6922,
+      "frequency": 4,
+      "chunk_ids": [
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "name": "matrix",
+      "avg_score": 0.6847,
+      "frequency": 4,
+      "chunk_ids": [
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "name": "convolutional network",
+      "avg_score": 0.6451,
+      "frequency": 3,
+      "chunk_ids": [
+        13,
+        23,
+        25
+      ]
+    },
+    {
+      "name": "sparse connectivity",
+      "avg_score": 0.7276,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "matrix defined",
+      "avg_score": 0.7036,
+      "frequency": 2,
+      "chunk_ids": [
+        7,
+        9
+      ]
+    },
+    {
+      "name": "convolution kernel",
+      "avg_score": 0.699,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        29
+      ]
+    },
+    {
+      "name": "networks sparse",
+      "avg_score": 0.6941,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "algorithms learn",
+      "avg_score": 0.6735,
+      "frequency": 2,
+      "chunk_ids": [
+        33,
+        34
+      ]
+    },
+    {
+      "name": "learning algorithms",
+      "avg_score": 0.6734,
+      "frequency": 2,
+      "chunk_ids": [
+        33,
+        34
+      ]
+    },
+    {
+      "name": "learning algorithm",
+      "avg_score": 0.6606,
+      "frequency": 2,
+      "chunk_ids": [
+        33,
+        34
+      ]
+    },
+    {
+      "name": "connections small",
+      "avg_score": 0.6325,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "connections",
+      "avg_score": 0.6185,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        26
+      ]
+    },
+    {
+      "name": "connectivity",
+      "avg_score": 0.6123,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "55 connections",
+      "avg_score": 0.607,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "vector",
+      "avg_score": 0.5821,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "response pooling",
+      "avg_score": 0.5818,
+      "frequency": 2,
+      "chunk_ids": [
+        20,
+        21
+      ]
+    },
+    {
+      "name": "kernel",
+      "avg_score": 0.5787,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        29
+      ]
+    },
+    {
+      "name": "invariances pooling",
+      "avg_score": 0.5766,
+      "frequency": 2,
+      "chunk_ids": [
+        20,
+        21
+      ]
+    },
+    {
+      "name": "pooling invariance",
+      "avg_score": 0.5536,
+      "frequency": 2,
+      "chunk_ids": [
+        19,
+        20
+      ]
+    },
+    {
+      "name": "convolution ss",
+      "avg_score": 0.553,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        28
+      ]
+    },
+    {
+      "name": "learned filters",
+      "avg_score": 0.5507,
+      "frequency": 2,
+      "chunk_ids": [
+        20,
+        21
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5464,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        35
+      ]
+    },
+    {
+      "name": "matrix product",
+      "avg_score": 0.7606,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "local connections",
+      "avg_score": 0.7602,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "kinds connectivity",
+      "avg_score": 0.7568,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "matrix multiplication",
+      "avg_score": 0.7545,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "algebra matrix",
+      "avg_score": 0.7506,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "matrix diagonal",
+      "avg_score": 0.7502,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "connectivity local",
+      "avg_score": 0.7431,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "connectivity sparse",
+      "avg_score": 0.7382,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "local connection",
+      "avg_score": 0.7308,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "multiplication algorithm",
+      "avg_score": 0.7287,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "matrix transpose",
+      "avg_score": 0.7197,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "connectivity locally",
+      "avg_score": 0.7192,
+      "frequency": 1,
+      "chunk_ids": [
+        26
+      ]
+    },
+    {
+      "name": "define vector",
+      "avg_score": 0.7185,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "product matrices",
+      "avg_score": 0.7085,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "transpose equations",
+      "avg_score": 0.7016,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "gabor functions",
+      "avg_score": 0.7005,
+      "frequency": 1,
+      "chunk_ids": [
+        32
+      ]
+    },
+    {
+      "name": "multiplications performs",
+      "avg_score": 0.6967,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "matrices transpose",
+      "avg_score": 0.6952,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "recurrent pixel",
+      "avg_score": 0.691,
+      "frequency": 1,
+      "chunk_ids": [
+        30
+      ]
+    },
+    {
+      "name": "vector using",
+      "avg_score": 0.6903,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "matrix containing",
+      "avg_score": 0.6879,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "gabor function",
+      "avg_score": 0.6877,
+      "frequency": 1,
+      "chunk_ids": [
+        32
+      ]
+    },
+    {
+      "name": "example matrix",
+      "avg_score": 0.6861,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "pixel labeling",
+      "avg_score": 0.6804,
+      "frequency": 1,
+      "chunk_ids": [
+        30
+      ]
+    },
+    {
+      "name": "convolutional layer",
+      "avg_score": 0.6802,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.6796,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "networks ss",
+      "avg_score": 0.6787,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "compute matrix",
+      "avg_score": 0.6753,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "linear algebra",
+      "avg_score": 0.6729,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "equations matrix",
+      "avg_score": 0.6673,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "networks zero",
+      "avg_score": 0.6662,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "multiplications",
+      "avg_score": 0.6653,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "transpose vector",
+      "avg_score": 0.6633,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "operations multiplications",
+      "avg_score": 0.6625,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "matrices convenient",
+      "avg_score": 0.6565,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "labels pixel",
+      "avg_score": 0.6483,
+      "frequency": 1,
+      "chunk_ids": [
+        30
+      ]
+    },
+    {
+      "name": "softmax output",
+      "avg_score": 0.6481,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "edge detection",
+      "avg_score": 0.6452,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "matrix define",
+      "avg_score": 0.6442,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "algebra define",
+      "avg_score": 0.6427,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "connectivity chapter",
+      "avg_score": 0.6405,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "real convolutional",
+      "avg_score": 0.637,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "matrices just",
+      "avg_score": 0.6349,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "network size",
+      "avg_score": 0.633,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "strided convolution",
+      "avg_score": 0.6313,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "learns features",
+      "avg_score": 0.6296,
+      "frequency": 1,
+      "chunk_ids": [
+        33
+      ]
+    },
+    {
+      "name": "shrinks network",
+      "avg_score": 0.6256,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "output softmax",
+      "avg_score": 0.6249,
+      "frequency": 1,
+      "chunk_ids": [
+        22
+      ]
+    },
+    {
+      "name": "tensor spatial",
+      "avg_score": 0.6245,
+      "frequency": 1,
+      "chunk_ids": [
+        27
+      ]
+    },
+    {
+      "name": "convolutional feature",
+      "avg_score": 0.6239,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "networks involve",
+      "avg_score": 0.6223,
+      "frequency": 1,
+      "chunk_ids": [
+        23
+      ]
+    },
+    {
+      "name": "learn features",
+      "avg_score": 0.6193,
+      "frequency": 1,
+      "chunk_ids": [
+        34
+      ]
+    },
+    {
+      "name": "scalar equal",
+      "avg_score": 0.6176,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "using kernel",
+      "avg_score": 0.6151,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "padding network",
+      "avg_score": 0.6147,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "kernels cycle",
+      "avg_score": 0.6125,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "tiled convolution",
+      "avg_score": 0.6123,
+      "frequency": 1,
+      "chunk_ids": [
+        28
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Convolutional Networks",
+      "description": "A class of deep neural networks primarily used for processing structured grid data such as images.",
+      "sub_topics": [
+        {
+          "name": "Convolutional Layer",
+          "description": "The layer in a convolutional network that applies convolution operations to the input."
+        },
+        {
+          "name": "Convolution Kernel",
+          "description": "A filter used in convolutional layers to extract features from input data."
+        },
+        {
+          "name": "Pooling",
+          "description": "A down-sampling operation that reduces the spatial dimensions of the input."
+        }
+      ]
+    },
+    {
+      "name": "Matrices",
+      "description": "Mathematical structures used to represent data and perform operations in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Matrix Multiplication",
+          "description": "An operation that produces a new matrix from two matrices."
+        },
+        {
+          "name": "Matrix Transpose",
+          "description": "An operation that flips a matrix over its diagonal."
+        },
+        {
+          "name": "Sparse Matrices",
+          "description": "Matrices in which most elements are zero, often used in machine learning."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain, consisting of interconnected neurons.",
+      "sub_topics": [
+        {
+          "name": "Activation Function",
+          "description": "A function that determines the output of a neuron based on its input."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing the error."
+        },
+        {
+          "name": "Deep Learning",
+          "description": "A subset of machine learning that uses neural networks with many layers."
+        }
+      ]
+    },
+    {
+      "name": "Learning Algorithms",
+      "description": "Procedures used to train models and make predictions based on data.",
+      "sub_topics": [
+        {
+          "name": "Supervised Learning",
+          "description": "A type of learning where the model is trained on labeled data."
+        },
+        {
+          "name": "Unsupervised Learning",
+          "description": "A type of learning where the model finds patterns in unlabeled data."
+        },
+        {
+          "name": "Reinforcement Learning",
+          "description": "A type of learning where an agent learns to make decisions by receiving rewards."
+        }
+      ]
+    },
+    {
+      "name": "Feature Learning",
+      "description": "The process of automatically discovering the representations needed for feature detection or classification.",
+      "sub_topics": [
+        {
+          "name": "Learned Filters",
+          "description": "Filters that are optimized during training to extract relevant features."
+        },
+        {
+          "name": "Invariances",
+          "description": "Properties that remain unchanged under certain transformations."
+        },
+        {
+          "name": "Local Connections",
+          "description": "Connections in neural networks that are limited to a local region of the input."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies used to improve the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Loss Function",
+          "description": "A function that measures the difference between predicted and actual outcomes."
+        },
+        {
+          "name": "Regularization",
+          "description": "Techniques used to prevent overfitting in machine learning models."
+        },
+        {
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm used to minimize the loss function."
+        }
+      ]
+    },
+    {
+      "name": "Data Representation",
+      "description": "The way data is structured and formatted for processing in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Vectors",
+          "description": "Ordered arrays of numbers used to represent data points."
+        },
+        {
+          "name": "Tensors",
+          "description": "Generalized arrays that can represent data in multiple dimensions."
+        },
+        {
+          "name": "Pixel Labeling",
+          "description": "The process of assigning labels to individual pixels in an image."
+        }
+      ]
+    },
+    {
+      "name": "Network Architecture",
+      "description": "The design and structure of neural networks, including their layers and connections.",
+      "sub_topics": [
+        {
+          "name": "Layer Types",
+          "description": "Different types of layers used in neural networks, such as convolutional and fully connected."
+        },
+        {
+          "name": "Network Size",
+          "description": "The number of layers and neurons in a neural network."
+        },
+        {
+          "name": "Strided Convolution",
+          "description": "A convolution operation that skips certain input elements to reduce output size."
+        }
+      ]
+    },
+    {
+      "name": "Mathematical Foundations",
+      "description": "The mathematical concepts and operations that underpin machine learning algorithms.",
+      "sub_topics": [
+        {
+          "name": "Linear Algebra",
+          "description": "The branch of mathematics concerning vector spaces and linear mappings."
+        },
+        {
+          "name": "Algebraic Operations",
+          "description": "Basic operations such as addition, multiplication, and transposition of matrices."
+        },
+        {
+          "name": "Equations",
+          "description": "Mathematical statements that express the equality of two expressions."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 26.6795,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

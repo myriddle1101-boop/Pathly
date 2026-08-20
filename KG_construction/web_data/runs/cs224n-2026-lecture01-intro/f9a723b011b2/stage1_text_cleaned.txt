@@ -1,0 +1,129 @@
+Natural Language Processing
+with Deep Learning
+CS 224 N/Ling 284
+Diyi Yang & Yejin Choi
+Lecture 1: Introduction and the History of NLP
+
+Lecture Plan
+Lecture 1: Introduction and the History of NLP
+1. The course (10 mins)
+2. The history of NLP: How we got here (65 mins)
+Key learning today: understand the paradigm shifts in NLP and how our
+assumptions about language shape what is possible in each era.
+2
+
+Course logistics in brief
+• Instructor: Diyi Yang, Yejin Choi
+• Head TA: Julie Kallini
+• Course Manager: John Cho
+• TAs: Many wonderful people! See website
+• Time: Tu/Th 4:30–5:50 Pacific time, Nvidia Aud. (→ video)
+• Email list: cs 224 n-win 2526-staff@lists.stanford.edu
+• We’ve put a lot of other important information on the class webpage. Please read it!
+• http://cs 224 n.stanford.edu/ a.k.a., http://www.stanford.edu/class/cs 224 n/
+• TAs, syllabus, help sessions/office hours, Ed (for all course questions/discussion)
+• Office hours start Thursday!
+• Python/numpy and then Py Torch tutorials: First two Fridays.
+• Slide PDFs uploaded before each lecture
+3
+
+4
+
+What do we hope to teach? (A.k.a. “learning goals”)
+1. The foundations of the effective modern methods for deep learning applied to NLP
+• Basics first: word vectors, recurrent networks, attention, transformers
+• Then key methods used in NLP in 2025: pretraining, post-training, efficient
+adaptation, agents, reasoning, multilinguality, multimodality, interpretability, etc.
+2. A big picture understanding of human languages and the difficulties in understanding
+and producing them via computers
+3. An understanding of and ability to build systems for some of the major problems
+involving language and computation:
+• Word representations, question answering, fine-tuning LLMs, RAG, agentic systems
+and tool use, and LLMs evaluation
+5
+
+Course work and grading policy
+• 4 x 1.5-week Assignments: 6% + 3 x 14%: 48%
+• HW 1 is released today! Due next Tuesday! At 4:30 p.m.
+• Submitted to Gradescope in Canvas (i.e., using @stanford.edu email for your Gradescope account)
+• Final Default or Custom Course Project (1–3 people): 49%
+• Project proposal: 8%, milestone: 6%, poster or web summary: 3%, report: 32%
+• Participation: 3%
+• Guest lecture reactions, Ed, course evals, karma – see website!
+• Late day policy
+• 6 free late days; afterwards, 1% off course grade per day late
+• Assignments not accepted more than 3 days late per assignment unless given permission in advance
+6
+
+Course work and grading policy
+• Collaboration policy:
+• Please read the website and the Honor Code! Understand allowed collaboration and how to
+document it: Don’t take code off the web; acknowledge working with other students; write your own
+assignment solutions
+• Students must independently submit their solutions to CS 224 N homework
+• AI tools policy
+• Large language models are great, but we don’t want Chat GPT’s solutions to our assignment
+• Collaboration with AI tools is allowed; asking it to answer questions is strictly prohibited
+• Employing AI tools to substantially complete assignments will be considered a violation of the Honor
+Code (see Generative AI Policy Guidance here for more details)
+7
+
+High-Level Plan for Assignments (to be completed individually!)
+• Hw 1 is hopefully an easy on ramp – a Jupyter/IPython Notebook
+• Hw 2 covers neural network foundations and calculating tensor derivatives, and you
+build a small network for an NLP task around dependency parsing
+• Hw 3 is about coding a transformer from scratch and understanding attention
+• Hw 4 focuses on LLMs evaluation and redteaming
+• For Final Project, more details presented later, but you either:
+• Do the default project
+• You implement a GPT and then fine-tune and adapt it for downstream tasks
+• Open-ended but an easier start; a good choice for many
+• Propose a custom final project, which we approve
+• You will receive feedback from a mentor (TA/prof/postdoc/Ph D)
+• Can work in teams of 1–3; can use any language/packages
+8
+
+Lecture Plan
+Lecture 1: Introduction and Word Vectors
+1. The course (10 mins)
+2. The history of NLP: How we got here (65 mins)
+• A creative way of looking at the history of NLP
+Credit to Stanford NLP group; check out Gates 3 B for the exhibition
+Key learning today: understand the paradigm shifts in NLP and how our assumptions
+about language shape what is possible in each era.
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+Lecture Plan
+Lecture 1: Introduction and Word Vectors
+1. The course (10 mins)
+2. The history of NLP: How we got here (65 mins)
+• A creative way of looking at the history of NLP (5 mins)
+Credit to Stanford NLP group; check out Gates 3 B for the exhibition
+• A scientific way of looking at the history of NLP (60 mins)
+Key learning today: understand the paradigm shifts in NLP and how our assumptions
+about language shape what is possible in each era.
+19
+
+20
+
+Guest Lecture by Prof. Chris Manning, the creator of CS 224 N
+The History of NLP
+21

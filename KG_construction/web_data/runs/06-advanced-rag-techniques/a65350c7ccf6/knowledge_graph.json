@@ -1,0 +1,145 @@
+{
+  "nodes": [
+    {
+      "id": "Text Chunking",
+      "description": "Techniques for dividing text into manageable pieces for processing.",
+      "sub_topics": "[{\"name\": \"Chunk Text Function\", \"description\": \"A function to define how text is chunked.\"}, {\"name\": \"Chunk Size\", \"description\": \"The size of each text chunk.\"}, {\"name\": \"Chunker Threshold\", \"description\": \"The criteria for determining chunk boundaries.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and regular expressions.",
+      "key_sub_concepts": "[\"Tokenization\", \"Named Entity Recognition\", \"Part-of-Speech Tagging\"]",
+      "common_misconceptions": "[\"Text chunking is the same as text summarization.\", \"Chunking only applies to English language.\"]",
+      "practical_applications": "[\"Information extraction\", \"Sentiment analysis\", \"Chatbot development\"]"
+    },
+    {
+      "id": "Query Processing",
+      "description": "Methods for handling and optimizing queries in machine learning systems.",
+      "sub_topics": "[{\"name\": \"Query Expansion\", \"description\": \"Techniques to enhance queries for better results.\"}, {\"name\": \"Async Queries\", \"description\": \"Handling queries asynchronously for efficiency.\"}, {\"name\": \"Query Filters\", \"description\": \"Criteria applied to refine query results.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of databases and machine learning concepts.",
+      "key_sub_concepts": "[\"Query Optimization\", \"Indexing Techniques\", \"Data Retrieval Methods\", \"Execution Plans\"]",
+      "common_misconceptions": "[\"Query processing is only about speed.\", \"All queries can be optimized equally.\"]",
+      "practical_applications": "[\"Improving response time in ML applications\", \"Efficient data retrieval for training models\"]"
+    },
+    {
+      "id": "Results Management",
+      "description": "Strategies for managing and optimizing results from queries.",
+      "sub_topics": "[{\"name\": \"Unique Results\", \"description\": \"Ensuring results are distinct and non-redundant.\"}, {\"name\": \"Reranked Results\", \"description\": \"Reordering results based on relevance.\"}, {\"name\": \"Final Results\", \"description\": \"The final output after processing and ranking.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of databases and query languages.",
+      "key_sub_concepts": "[\"Query optimization\", \"Result caching\", \"Pagination\", \"Data filtering\"]",
+      "common_misconceptions": "[\"Results management is only about speed\", \"All queries need optimization\"]",
+      "practical_applications": "[\"Improving database performance\", \"Enhancing user experience in applications\"]"
+    },
+    {
+      "id": "Semantic Processing",
+      "description": "Techniques for understanding and processing the meaning of text.",
+      "sub_topics": "[{\"name\": \"Semantic Scores\", \"description\": \"Scores that quantify the relevance of results.\"}, {\"name\": \"Contextual Relevance\", \"description\": \"Assessing the relevance of results based on context.\"}, {\"name\": \"Combine Semantic\", \"description\": \"Merging semantic information for improved understanding.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and programming skills in Python.",
+      "key_sub_concepts": "[\"Tokenization\", \"Named Entity Recognition\", \"Sentiment Analysis\", \"Word Embeddings\"]",
+      "common_misconceptions": "[\"Semantic processing is only about grammar.\", \"All text can be easily understood by machines.\"]",
+      "practical_applications": "[\"Chatbots and virtual assistants\", \"Content recommendation systems\", \"Sentiment analysis for social media\", \"Information retrieval systems\"]"
+    },
+    {
+      "id": "Hybrid Search",
+      "description": "Combining different search techniques for improved results.",
+      "sub_topics": "[{\"name\": \"Hybrid Results\", \"description\": \"Results obtained from multiple search methods.\"}, {\"name\": \"Usage of Hybrid\", \"description\": \"Strategies for effectively using hybrid search.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of search algorithms and data structures.",
+      "key_sub_concepts": "[\"Information Retrieval\", \"Ranking Algorithms\", \"Natural Language Processing\"]",
+      "common_misconceptions": "[\"Hybrid search is only about combining two search methods.\", \"All hybrid searches yield better results than single methods.\"]",
+      "practical_applications": "[\"E-commerce product search\", \"Document retrieval systems\", \"Search engines\"]"
+    },
+    {
+      "id": "Document Compression",
+      "description": "Methods for reducing the size of documents while preserving information.",
+      "sub_topics": "[{\"name\": \"Compressed Document\", \"description\": \"A document that has been reduced in size.\"}, {\"name\": \"Compressed Docs Return\", \"description\": \"Returning compressed documents for processing.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of data structures and algorithms, familiarity with text processing.",
+      "key_sub_concepts": "[\"Lossless Compression\", \"Lossy Compression\"]",
+      "common_misconceptions": "[\"Compression always results in loss of information\", \"All compression methods are equally effective for all document types\"]",
+      "practical_applications": "[\"Reducing storage space for large text files\", \"Improving data transmission speeds over networks\"]"
+    },
+    {
+      "id": "Neural Network Concepts",
+      "description": "Fundamental concepts related to artificial neural networks.",
+      "sub_topics": "[{\"name\": \"Activation Function\", \"description\": \"Functions that determine the output of a neuron.\"}, {\"name\": \"Loss Function\", \"description\": \"A function that measures the difference between predicted and actual outcomes.\"}, {\"name\": \"Backpropagation\", \"description\": \"A method for training neural networks by updating weights.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\", \"Loss Functions\", \"Overfitting and Regularization\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game playing\", \"Medical diagnosis\"]"
+    },
+    {
+      "id": "Performance Optimization",
+      "description": "Techniques for improving the efficiency and effectiveness of machine learning models.",
+      "sub_topics": "[{\"name\": \"Optimize Use\", \"description\": \"Strategies for maximizing resource utilization.\"}, {\"name\": \"Quality Improvement\", \"description\": \"Methods for enhancing the quality of results.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning algorithms and data preprocessing techniques.",
+      "key_sub_concepts": "[\"Hyperparameter Tuning\", \"Feature Selection\", \"Model Ensembling\", \"Regularization Techniques\"]",
+      "common_misconceptions": "[\"More complex models always perform better\", \"Overfitting is not a concern with large datasets\"]",
+      "practical_applications": "[\"Improving model accuracy in classification tasks\", \"Reducing training time for large datasets\", \"Enhancing model generalization on unseen data\"]"
+    },
+    {
+      "id": "Query Variations",
+      "description": "Different forms and structures of queries used in machine learning.",
+      "sub_topics": "[{\"name\": \"Query Texts Parsed\", \"description\": \"Analyzing and interpreting different query formats.\"}, {\"name\": \"Sub-Queries Results\", \"description\": \"Results obtained from smaller, component queries.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and data querying.",
+      "key_sub_concepts": "[\"Structured Queries\", \"Unstructured Queries\", \"Natural Language Queries\", \"Boolean Queries\"]",
+      "common_misconceptions": "[\"All queries are the same regardless of structure.\", \"Only structured queries are useful in machine learning.\"]",
+      "practical_applications": "[\"Data retrieval for training datasets\", \"Information extraction from unstructured data\", \"Enhancing search algorithms in AI systems\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Text Chunking",
+      "to": "Semantic Processing",
+      "relation": "prerequisite",
+      "reason": "Dividing text into chunks is a prerequisite for understanding its meaning."
+    },
+    {
+      "from": "Query Processing",
+      "to": "Query Variations",
+      "relation": "prerequisite",
+      "reason": "Mastering query processing is necessary to understand different forms of queries.",
+      "similarity": 0.8416
+    },
+    {
+      "from": "Query Processing",
+      "to": "Results Management",
+      "relation": "prerequisite",
+      "reason": "Effective query processing is crucial for managing and optimizing results."
+    },
+    {
+      "from": "Hybrid Search",
+      "to": "Query Processing",
+      "relation": "prerequisite",
+      "reason": "Combining search techniques requires a solid understanding of query processing."
+    },
+    {
+      "from": "Neural Network Concepts",
+      "to": "Performance Optimization",
+      "relation": "prerequisite",
+      "reason": "Understanding neural networks is essential for optimizing their performance."
+    }
+  ]
+}

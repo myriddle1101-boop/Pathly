@@ -1,0 +1,158 @@
+{
+  "created_at": "2026-08-18T18:37:12.217014+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-02-document-chat-readme-f1744a249864",
+  "file_name": "02-document-chat-readme-f1744a249864",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 1,
+  "topic_metrics": {
+    "precision": 0.1333,
+    "recall": 0.3333,
+    "f1": 0.1905,
+    "tp": 2,
+    "fp": 13,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 9,
+    "fn": 0
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "python document_chat implementation",
+      "document chat functionality in Python"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "document_chat library usage in Python",
+        "reason": "The source shows execution of a Python script, not use of a document_chat library."
+      },
+      {
+        "name": "document_chat API integration",
+        "reason": "An API key is configured, but no API integration procedure or API usage is described."
+      },
+      {
+        "name": "conversation machine learning models",
+        "reason": "Machine learning is only mentioned in an example user question; no conversational models are covered."
+      },
+      {
+        "name": "documents conversation analysis techniques",
+        "reason": "The source describes document loading and chunking, not conversation-analysis techniques."
+      },
+      {
+        "name": "real-time document chat applications",
+        "reason": "The system is interactive, but real-time application design is not discussed."
+      },
+      {
+        "name": "document chat user interface design",
+        "reason": "Basic terminal chat commands are listed, but UI design is not covered."
+      },
+      {
+        "name": "document chat performance optimization",
+        "reason": "No performance measurement or optimization methods are described."
+      },
+      {
+        "name": "conversation machine architecture",
+        "reason": "The source lists system features but does not explain a conversational-machine architecture."
+      },
+      {
+        "name": "documents conversation data processing",
+        "reason": "Document loading and chunking are described, but not a general conversation-data-processing concept."
+      },
+      {
+        "name": "document chat security considerations",
+        "reason": "API-key setup is mentioned, but security considerations are not discussed."
+      },
+      {
+        "name": "python document_chat error handling",
+        "reason": "No error handling behavior or implementation is described."
+      },
+      {
+        "name": "document chat use cases in business",
+        "reason": "No business use cases are presented."
+      },
+      {
+        "name": "conversation machine training datasets",
+        "reason": "No model training or training datasets are described."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Text document loading",
+        "reason": "The listed features include loading text documents from files or directories."
+      },
+      {
+        "name": "Text chunking with overlap",
+        "reason": "The source explicitly identifies smart text chunking with overlap."
+      },
+      {
+        "name": "Conversation history",
+        "reason": "The chat system is described as maintaining conversation history and supporting multi-turn conversations."
+      },
+      {
+        "name": "Source attribution",
+        "reason": "Source attribution for answers is an explicit system feature."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "document_chat library usage in Python",
+        "to": "python document_chat implementation",
+        "reason": "No document_chat library is identified in the source, and the source does not establish this learning dependency."
+      },
+      {
+        "from": "python document_chat implementation",
+        "to": "document chat functionality in Python",
+        "reason": "The source presents an executable example but does not state that implementation knowledge is a prerequisite for understanding the functionality."
+      },
+      {
+        "from": "document chat functionality in Python",
+        "to": "document_chat API integration",
+        "reason": "API integration is not covered by the source."
+      },
+      {
+        "from": "conversation machine learning models",
+        "to": "conversation machine architecture",
+        "reason": "Neither conversational models nor system architecture is described."
+      },
+      {
+        "from": "documents conversation analysis techniques",
+        "to": "documents conversation data processing",
+        "reason": "Neither analysis techniques nor conversation-data processing is established in the source."
+      },
+      {
+        "from": "document chat user interface design",
+        "to": "real-time document chat applications",
+        "reason": "The source does not cover UI design or real-time application development."
+      },
+      {
+        "from": "document chat performance optimization",
+        "to": "real-time document chat applications",
+        "reason": "Performance optimization and real-time application requirements are not discussed."
+      },
+      {
+        "from": "document chat security considerations",
+        "to": "document chat use cases in business",
+        "reason": "Neither security considerations nor business use cases is covered."
+      },
+      {
+        "from": "conversation machine training datasets",
+        "to": "conversation machine learning models",
+        "reason": "The source contains no training-data or model-development content."
+      }
+    ],
+    "missing_prerequisites": [],
+    "overall_note": "The source is a brief runnable document-chat example; most predicted topics introduce unsupported design, modeling, optimization, security, and business material."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-02-document-chat-readme-f1744a249864.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-02-document-chat-readme-f1744a249864.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-02-document-chat-readme-f1744a249864_ledger.csv"
+  }
+}

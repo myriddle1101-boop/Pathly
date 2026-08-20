@@ -1,0 +1,963 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 66,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "probability information",
+      "avg_score": 0.5617,
+      "frequency": 9,
+      "chunk_ids": [
+        15,
+        17,
+        23,
+        28,
+        30,
+        48,
+        50,
+        62,
+        65
+      ]
+    },
+    {
+      "name": "probability distribution",
+      "avg_score": 0.6173,
+      "frequency": 8,
+      "chunk_ids": [
+        6,
+        9,
+        14,
+        15,
+        17,
+        40,
+        56,
+        63
+      ]
+    },
+    {
+      "name": "probability distributions",
+      "avg_score": 0.5949,
+      "frequency": 7,
+      "chunk_ids": [
+        33,
+        56,
+        59,
+        62,
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "name": "probability",
+      "avg_score": 0.6041,
+      "frequency": 6,
+      "chunk_ids": [
+        3,
+        15,
+        17,
+        30,
+        39,
+        59
+      ]
+    },
+    {
+      "name": "conditional probability",
+      "avg_score": 0.6256,
+      "frequency": 5,
+      "chunk_ids": [
+        10,
+        12,
+        14,
+        15,
+        17
+      ]
+    },
+    {
+      "name": "kl divergence",
+      "avg_score": 0.6233,
+      "frequency": 5,
+      "chunk_ids": [
+        55,
+        56,
+        57,
+        60,
+        61
+      ]
+    },
+    {
+      "name": "marginal probability",
+      "avg_score": 0.718,
+      "frequency": 4,
+      "chunk_ids": [
+        6,
+        9,
+        11,
+        13
+      ]
+    },
+    {
+      "name": "probability mass",
+      "avg_score": 0.6609,
+      "frequency": 4,
+      "chunk_ids": [
+        1,
+        2,
+        39,
+        40
+      ]
+    },
+    {
+      "name": "distributions",
+      "avg_score": 0.6533,
+      "frequency": 4,
+      "chunk_ids": [
+        29,
+        31,
+        32,
+        34
+      ]
+    },
+    {
+      "name": "information theory",
+      "avg_score": 0.5895,
+      "frequency": 4,
+      "chunk_ids": [
+        19,
+        48,
+        52,
+        53
+      ]
+    },
+    {
+      "name": "divergence",
+      "avg_score": 0.5675,
+      "frequency": 4,
+      "chunk_ids": [
+        55,
+        57,
+        60,
+        61
+      ]
+    },
+    {
+      "name": "probability density",
+      "avg_score": 0.7627,
+      "frequency": 3,
+      "chunk_ids": [
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "covariance",
+      "avg_score": 0.6938,
+      "frequency": 3,
+      "chunk_ids": [
+        22,
+        25,
+        26
+      ]
+    },
+    {
+      "name": "covariance example",
+      "avg_score": 0.6533,
+      "frequency": 3,
+      "chunk_ids": [
+        22,
+        26,
+        27
+      ]
+    },
+    {
+      "name": "probability defined",
+      "avg_score": 0.6493,
+      "frequency": 3,
+      "chunk_ids": [
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "name": "conditional probabilities",
+      "avg_score": 0.6476,
+      "frequency": 3,
+      "chunk_ids": [
+        10,
+        12,
+        14
+      ]
+    },
+    {
+      "name": "probability computed",
+      "avg_score": 0.6327,
+      "frequency": 3,
+      "chunk_ids": [
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "name": "gives probability",
+      "avg_score": 0.6295,
+      "frequency": 3,
+      "chunk_ids": [
+        27,
+        28,
+        30
+      ]
+    },
+    {
+      "name": "computed integral",
+      "avg_score": 0.6204,
+      "frequency": 3,
+      "chunk_ids": [
+        16,
+        18,
+        21
+      ]
+    },
+    {
+      "name": "probability denote",
+      "avg_score": 0.6196,
+      "frequency": 3,
+      "chunk_ids": [
+        9,
+        11,
+        13
+      ]
+    },
+    {
+      "name": "continuous variables",
+      "avg_score": 0.6123,
+      "frequency": 3,
+      "chunk_ids": [
+        16,
+        18,
+        21
+      ]
+    },
+    {
+      "name": "discrete",
+      "avg_score": 0.5764,
+      "frequency": 3,
+      "chunk_ids": [
+        7,
+        16,
+        18
+      ]
+    },
+    {
+      "name": "probabilistic",
+      "avg_score": 0.5619,
+      "frequency": 3,
+      "chunk_ids": [
+        59,
+        65,
+        66
+      ]
+    },
+    {
+      "name": "random variables",
+      "avg_score": 0.5297,
+      "frequency": 3,
+      "chunk_ids": [
+        7,
+        23,
+        50
+      ]
+    },
+    {
+      "name": "mixture distribution",
+      "avg_score": 0.7712,
+      "frequency": 2,
+      "chunk_ids": [
+        43,
+        45
+      ]
+    },
+    {
+      "name": "covariance negative",
+      "avg_score": 0.7514,
+      "frequency": 2,
+      "chunk_ids": [
+        22,
+        26
+      ]
+    },
+    {
+      "name": "entropy distributions",
+      "avg_score": 0.7429,
+      "frequency": 2,
+      "chunk_ids": [
+        54,
+        58
+      ]
+    },
+    {
+      "name": "covariance variables",
+      "avg_score": 0.7254,
+      "frequency": 2,
+      "chunk_ids": [
+        22,
+        26
+      ]
+    },
+    {
+      "name": "multinoulli distributions",
+      "avg_score": 0.721,
+      "frequency": 2,
+      "chunk_ids": [
+        29,
+        31
+      ]
+    },
+    {
+      "name": "density functions",
+      "avg_score": 0.7172,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "name": "marginal probabilities",
+      "avg_score": 0.7058,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        13
+      ]
+    },
+    {
+      "name": "density function",
+      "avg_score": 0.7049,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "name": "covariance dependent",
+      "avg_score": 0.6952,
+      "frequency": 2,
+      "chunk_ids": [
+        22,
+        26
+      ]
+    },
+    {
+      "name": "softplus function",
+      "avg_score": 0.6912,
+      "frequency": 2,
+      "chunk_ids": [
+        46,
+        47
+      ]
+    },
+    {
+      "name": "distribution parametrized",
+      "avg_score": 0.69,
+      "frequency": 2,
+      "chunk_ids": [
+        31,
+        34
+      ]
+    },
+    {
+      "name": "normal distributions",
+      "avg_score": 0.6843,
+      "frequency": 2,
+      "chunk_ids": [
+        33,
+        34
+      ]
+    },
+    {
+      "name": "probability state",
+      "avg_score": 0.6819,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "density continuous",
+      "avg_score": 0.6792,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "name": "discrete variables",
+      "avg_score": 0.6643,
+      "frequency": 2,
+      "chunk_ids": [
+        16,
+        18
+      ]
+    },
+    {
+      "name": "distribution normal",
+      "avg_score": 0.6634,
+      "frequency": 2,
+      "chunk_ids": [
+        33,
+        34
+      ]
+    },
+    {
+      "name": "normal distribution",
+      "avg_score": 0.663,
+      "frequency": 2,
+      "chunk_ids": [
+        33,
+        34
+      ]
+    },
+    {
+      "name": "variables mixture",
+      "avg_score": 0.66,
+      "frequency": 2,
+      "chunk_ids": [
+        43,
+        45
+      ]
+    },
+    {
+      "name": "shannon entropy",
+      "avg_score": 0.6577,
+      "frequency": 2,
+      "chunk_ids": [
+        54,
+        58
+      ]
+    },
+    {
+      "name": "component distributions",
+      "avg_score": 0.6522,
+      "frequency": 2,
+      "chunk_ids": [
+        43,
+        45
+      ]
+    },
+    {
+      "name": "covariance matrix",
+      "avg_score": 0.6488,
+      "frequency": 2,
+      "chunk_ids": [
+        25,
+        37
+      ]
+    },
+    {
+      "name": "divergence distribution",
+      "avg_score": 0.6466,
+      "frequency": 2,
+      "chunk_ids": [
+        56,
+        57
+      ]
+    },
+    {
+      "name": "distribution parameter",
+      "avg_score": 0.646,
+      "frequency": 2,
+      "chunk_ids": [
+        32,
+        37
+      ]
+    },
+    {
+      "name": "probabilistic models",
+      "avg_score": 0.646,
+      "frequency": 2,
+      "chunk_ids": [
+        59,
+        66
+      ]
+    },
+    {
+      "name": "example probability",
+      "avg_score": 0.645,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        65
+      ]
+    },
+    {
+      "name": "example mixture",
+      "avg_score": 0.6365,
+      "frequency": 2,
+      "chunk_ids": [
+        43,
+        45
+      ]
+    },
+    {
+      "name": "probabilities paper",
+      "avg_score": 0.6344,
+      "frequency": 2,
+      "chunk_ids": [
+        11,
+        13
+      ]
+    },
+    {
+      "name": "structured probabilistic",
+      "avg_score": 0.6326,
+      "frequency": 2,
+      "chunk_ids": [
+        65,
+        66
+      ]
+    },
+    {
+      "name": "generalized function",
+      "avg_score": 0.6314,
+      "frequency": 2,
+      "chunk_ids": [
+        42,
+        44
+      ]
+    },
+    {
+      "name": "theory mathematical",
+      "avg_score": 0.627,
+      "frequency": 2,
+      "chunk_ids": [
+        42,
+        44
+      ]
+    },
+    {
+      "name": "rule probability",
+      "avg_score": 0.6259,
+      "frequency": 2,
+      "chunk_ids": [
+        12,
+        14
+      ]
+    },
+    {
+      "name": "theory probability",
+      "avg_score": 0.6225,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        28
+      ]
+    },
+    {
+      "name": "conditional independence",
+      "avg_score": 0.6111,
+      "frequency": 2,
+      "chunk_ids": [
+        15,
+        20
+      ]
+    },
+    {
+      "name": "parametrize distribution",
+      "avg_score": 0.6109,
+      "frequency": 2,
+      "chunk_ids": [
+        35,
+        37
+      ]
+    },
+    {
+      "name": "independent probability",
+      "avg_score": 0.6089,
+      "frequency": 2,
+      "chunk_ids": [
+        15,
+        17
+      ]
+    },
+    {
+      "name": "denotes probability",
+      "avg_score": 0.6046,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "mathematical object",
+      "avg_score": 0.6002,
+      "frequency": 2,
+      "chunk_ids": [
+        42,
+        44
+      ]
+    },
+    {
+      "name": "delta function",
+      "avg_score": 0.5927,
+      "frequency": 2,
+      "chunk_ids": [
+        36,
+        41
+      ]
+    },
+    {
+      "name": "probabilistic relationships",
+      "avg_score": 0.5905,
+      "frequency": 2,
+      "chunk_ids": [
+        65,
+        66
+      ]
+    },
+    {
+      "name": "mathematical",
+      "avg_score": 0.5519,
+      "frequency": 2,
+      "chunk_ids": [
+        42,
+        44
+      ]
+    },
+    {
+      "name": "called generalized",
+      "avg_score": 0.5376,
+      "frequency": 2,
+      "chunk_ids": [
+        42,
+        44
+      ]
+    },
+    {
+      "name": "functions mass",
+      "avg_score": 0.5335,
+      "frequency": 2,
+      "chunk_ids": [
+        42,
+        44
+      ]
+    },
+    {
+      "name": "random variable",
+      "avg_score": 0.5275,
+      "frequency": 2,
+      "chunk_ids": [
+        23,
+        27
+      ]
+    },
+    {
+      "name": "expectations linear",
+      "avg_score": 0.5202,
+      "frequency": 2,
+      "chunk_ids": [
+        21,
+        23
+      ]
+    },
+    {
+      "name": "theory",
+      "avg_score": 0.5181,
+      "frequency": 2,
+      "chunk_ids": [
+        19,
+        48
+      ]
+    },
+    {
+      "name": "using dirac",
+      "avg_score": 0.5147,
+      "frequency": 2,
+      "chunk_ids": [
+        36,
+        41
+      ]
+    },
+    {
+      "name": "ordinary function",
+      "avg_score": 0.4952,
+      "frequency": 2,
+      "chunk_ids": [
+        36,
+        41
+      ]
+    },
+    {
+      "name": "defining pdf",
+      "avg_score": 0.4751,
+      "frequency": 2,
+      "chunk_ids": [
+        36,
+        41
+      ]
+    },
+    {
+      "name": "probability events",
+      "avg_score": 0.8188,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "event probability",
+      "avg_score": 0.8161,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "mixture distributions",
+      "avg_score": 0.7908,
+      "frequency": 1,
+      "chunk_ids": [
+        45
+      ]
+    },
+    {
+      "name": "covariance gives",
+      "avg_score": 0.7798,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "multinomial distribution",
+      "avg_score": 0.774,
+      "frequency": 1,
+      "chunk_ids": [
+        29
+      ]
+    },
+    {
+      "name": "probability chain",
+      "avg_score": 0.7738,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "covariance mean",
+      "avg_score": 0.7688,
+      "frequency": 1,
+      "chunk_ids": [
+        25
+      ]
+    },
+    {
+      "name": "entropy bernoulli",
+      "avg_score": 0.7602,
+      "frequency": 1,
+      "chunk_ids": [
+        58
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Probability Theory",
+      "description": "The mathematical framework for quantifying uncertainty.",
+      "sub_topics": [
+        {
+          "name": "Probability",
+          "description": "The measure of the likelihood of an event."
+        },
+        {
+          "name": "Conditional Probability",
+          "description": "The probability of an event given that another event has occurred."
+        },
+        {
+          "name": "Marginal Probability",
+          "description": "The probability of an event irrespective of other events."
+        }
+      ]
+    },
+    {
+      "name": "Probability Distributions",
+      "description": "Functions that describe the likelihood of different outcomes in a random variable.",
+      "sub_topics": [
+        {
+          "name": "Probability Density Function",
+          "description": "A function that describes the relative likelihood for a continuous random variable."
+        },
+        {
+          "name": "Probability Mass Function",
+          "description": "A function that gives the probability of discrete outcomes."
+        },
+        {
+          "name": "Normal Distribution",
+          "description": "A continuous probability distribution characterized by a bell-shaped curve."
+        }
+      ]
+    },
+    {
+      "name": "Information Theory",
+      "description": "The study of quantification, storage, and communication of information.",
+      "sub_topics": [
+        {
+          "name": "Entropy",
+          "description": "A measure of uncertainty or randomness in a probability distribution."
+        },
+        {
+          "name": "KL Divergence",
+          "description": "A measure of how one probability distribution diverges from a second expected probability distribution."
+        },
+        {
+          "name": "Shannon Entropy",
+          "description": "A specific measure of entropy used in information theory."
+        }
+      ]
+    },
+    {
+      "name": "Covariance",
+      "description": "A measure of how much two random variables change together.",
+      "sub_topics": [
+        {
+          "name": "Covariance Matrix",
+          "description": "A matrix that contains the covariances between pairs of variables."
+        },
+        {
+          "name": "Covariance Example",
+          "description": "Illustrative examples demonstrating the concept of covariance."
+        },
+        {
+          "name": "Covariance Dependent",
+          "description": "Situations where covariance is influenced by other variables."
+        }
+      ]
+    },
+    {
+      "name": "Random Variables",
+      "description": "Variables whose values depend on the outcomes of a random phenomenon.",
+      "sub_topics": [
+        {
+          "name": "Discrete Variables",
+          "description": "Random variables that can take on a countable number of values."
+        },
+        {
+          "name": "Continuous Variables",
+          "description": "Random variables that can take on an infinite number of values within a given range."
+        },
+        {
+          "name": "Mixture Distributions",
+          "description": "Probability distributions that are a combination of two or more distributions."
+        }
+      ]
+    },
+    {
+      "name": "Probabilistic Models",
+      "description": "Models that incorporate randomness and uncertainty in their predictions.",
+      "sub_topics": [
+        {
+          "name": "Multinomial Distribution",
+          "description": "A generalization of the binomial distribution for outcomes with more than two categories."
+        },
+        {
+          "name": "Probabilistic Relationships",
+          "description": "Relationships that express dependencies between random variables."
+        },
+        {
+          "name": "Structured Probabilistic Models",
+          "description": "Models that represent complex dependencies among random variables."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Activation Function",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Loss Function",
+          "description": "A function that quantifies the difference between predicted and actual outcomes."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing the loss function."
+        }
+      ]
+    },
+    {
+      "name": "Statistical Inference",
+      "description": "The process of drawing conclusions about populations based on sample data.",
+      "sub_topics": [
+        {
+          "name": "Hypothesis Testing",
+          "description": "A method for testing a claim or hypothesis about a parameter."
+        },
+        {
+          "name": "Confidence Intervals",
+          "description": "Ranges of values that are likely to contain a population parameter."
+        },
+        {
+          "name": "Regression Analysis",
+          "description": "A statistical method for modeling the relationship between variables."
+        }
+      ]
+    },
+    {
+      "name": "Mathematical Functions",
+      "description": "Functions that describe relationships between variables in mathematical terms.",
+      "sub_topics": [
+        {
+          "name": "Generalized Functions",
+          "description": "Functions that extend the concept of traditional functions."
+        },
+        {
+          "name": "Density Functions",
+          "description": "Functions that describe the distribution of probabilities."
+        },
+        {
+          "name": "Softplus Function",
+          "description": "A smooth approximation of the ReLU activation function."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 36.0882,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

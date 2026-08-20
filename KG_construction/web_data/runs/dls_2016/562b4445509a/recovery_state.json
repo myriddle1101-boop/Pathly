@@ -1,0 +1,15 @@
+{
+  "run_id": "dls_2016-562b4445509a",
+  "can_resume": false,
+  "last_failed_stage": null,
+  "next_resume_stage": null,
+  "completed_stages": [
+    "stage1",
+    "stage2a",
+    "stage2b",
+    "stage2c",
+    "stage3",
+    "stage4"
+  ],
+  "updated_at": "2026-07-29T14:20:02+08:00"
+}

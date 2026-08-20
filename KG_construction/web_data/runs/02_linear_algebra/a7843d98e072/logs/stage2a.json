@@ -1,0 +1,29 @@
+{
+  "stage": "stage2a",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage1_chunks.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2a_topics_hybrid.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 64.567,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2a_topics_hybrid.json: OK"
+    ]
+  },
+  "stdout_tail": ".json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：52\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/52 ...\n[KeyBERT] chunk 2/52 ...\n[KeyBERT] chunk 3/52 ...\n[KeyBERT] chunk 4/52 ...\n[KeyBERT] chunk 5/52 ...\n[KeyBERT] chunk 6/52 ...\n[KeyBERT] chunk 7/52 ...\n[KeyBERT] chunk 8/52 ...\n[KeyBERT] chunk 9/52 ...\n[KeyBERT] chunk 10/52 ...\n[KeyBERT] chunk 11/52 ...\n[KeyBERT] chunk 12/52 ...\n[KeyBERT] chunk 13/52 ...\n[KeyBERT] chunk 14/52 ...\n[KeyBERT] chunk 15/52 ...\n[KeyBERT] chunk 16/52 ...\n[KeyBERT] chunk 17/52 ...\n[KeyBERT] chunk 18/52 ...\n[KeyBERT] chunk 19/52 ...\n[KeyBERT] chunk 20/52 ...\n[KeyBERT] chunk 21/52 ...\n[KeyBERT] chunk 22/52 ...\n[KeyBERT] chunk 23/52 ...\n[KeyBERT] chunk 24/52 ...\n[KeyBERT] chunk 25/52 ...\n[KeyBERT] chunk 26/52 ...\n[KeyBERT] chunk 27/52 ...\n[KeyBERT] chunk 28/52 ...\n[KeyBERT] chunk 29/52 ...\n[KeyBERT] chunk 30/52 ...\n[KeyBERT] chunk 31/52 ...\n[KeyBERT] chunk 32/52 ...\n[KeyBERT] chunk 33/52 ...\n[KeyBERT] chunk 34/52 ...\n[KeyBERT] chunk 35/52 ...\n[KeyBERT] chunk 36/52 ...\n[KeyBERT] chunk 37/52 ...\n[KeyBERT] chunk 38/52 ...\n[KeyBERT] chunk 39/52 ...\n[KeyBERT] chunk 40/52 ...\n[KeyBERT] chunk 41/52 ...\n[KeyBERT] chunk 42/52 ...\n[KeyBERT] chunk 43/52 ...\n[KeyBERT] chunk 44/52 ...\n[KeyBERT] chunk 45/52 ...\n[KeyBERT] chunk 46/52 ...\n[KeyBERT] chunk 47/52 ...\n[KeyBERT] chunk 48/52 ...\n[KeyBERT] chunk 49/52 ...\n[KeyBERT] chunk 50/52 ...\n[KeyBERT] chunk 51/52 ...\n[KeyBERT] chunk 52/52 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Linear Algebra\n02. Matrix Inversion\n03. Matrix Decomposition\n04. Vector Norms\n05. Linear Equations\n06. Deep Learning\n07. Training Algorithms\n08. Matrix Properties\n09. Matrix Products\n\n Stage 2a 混合版完成\n",
+  "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 3559.33it/s]\n"
+}

@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": "Language Models",
+      "description": "Models designed to understand and generate human language.",
+      "sub_topics": "[{\"name\": \"GPT Models\", \"description\": \"Generative Pre-trained Transformers used for various language tasks.\"}, {\"name\": \"LLMs\", \"description\": \"Large Language Models that process and generate text.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and machine learning principles.",
+      "key_sub_concepts": "[\"Tokenization\", \"Word Embeddings\", \"Transformers\", \"Attention Mechanism\"]",
+      "common_misconceptions": "[\"Language models can understand context like humans\", \"All language models are the same\"]",
+      "practical_applications": "[\"Chatbots\", \"Text generation\", \"Sentiment analysis\", \"Machine translation\"]"
+    },
+    {
+      "id": "Contextual Understanding",
+      "description": "The ability of models to interpret and utilize context in language processing.",
+      "sub_topics": "[{\"name\": \"Context Issues\", \"description\": \"Challenges related to understanding context in language.\"}, {\"name\": \"Context Retrieval\", \"description\": \"Methods for retrieving relevant context for generating responses.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and machine learning principles.",
+      "key_sub_concepts": "[\"Word embeddings\", \"Attention mechanisms\"]",
+      "common_misconceptions": "[\"Context is only about the surrounding words\", \"Models can understand context without training on diverse datasets\"]",
+      "practical_applications": "[\"Chatbots and virtual assistants\", \"Sentiment analysis in social media\"]"
+    },
+    {
+      "id": "Self History",
+      "description": "The concept of maintaining a history of interactions for improved responses.",
+      "sub_topics": "[{\"name\": \"Messages Role\", \"description\": \"The function of messages in shaping the model's understanding.\"}, {\"name\": \"Generate History\", \"description\": \"Techniques for generating and utilizing historical data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and data structures.",
+      "key_sub_concepts": "[\"User Interaction Tracking\", \"Contextual Response Generation\"]",
+      "common_misconceptions": "[\"Self History is only about storing data\", \"It guarantees perfect responses every time\"]",
+      "practical_applications": "[\"Chatbots\", \"Personalized Recommendations\"]"
+    },
+    {
+      "id": "Answer Generation",
+      "description": "The process of creating responses based on input queries and context.",
+      "sub_topics": "[{\"name\": \"Context Answers\", \"description\": \"Responses generated with consideration of the surrounding context.\"}, {\"name\": \"User Message Generation\", \"description\": \"Techniques for generating responses to user inputs.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and machine learning principles.",
+      "key_sub_concepts": "[\"Natural Language Understanding\", \"Contextual Relevance\"]",
+      "common_misconceptions": "[\"Answer generation is the same as simple retrieval.\", \"It only requires keyword matching.\"]",
+      "practical_applications": "[\"Chatbots and virtual assistants\", \"Customer support automation\"]"
+    },
+    {
+      "id": "Quality Assessment",
+      "description": "Evaluating the performance and reliability of language models.",
+      "sub_topics": "[{\"name\": \"Quality of GPT\", \"description\": \"Metrics and methods for assessing the quality of GPT models.\"}, {\"name\": \"Cost Recommendations\", \"description\": \"Guidelines for optimizing costs associated with model usage.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and natural language processing concepts.",
+      "key_sub_concepts": "[\"Evaluation metrics (e.g., accuracy, F1 score)\", \"Bias and fairness in language models\"]",
+      "common_misconceptions": "[\"Quality assessment is only about accuracy\", \"All language models are equally reliable\"]",
+      "practical_applications": "[\"Improving model performance\", \"Ensuring ethical AI deployment\"]"
+    },
+    {
+      "id": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": "[{\"name\": \"Backpropagation\", \"description\": \"A key algorithm for training neural networks.\"}, {\"name\": \"Loss Functions\", \"description\": \"Functions used to measure the error of predictions.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Overfitting and Underfitting\", \"Cross-Validation\", \"Hyperparameter Tuning\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Training and testing data can be mixed\", \"Complex models are always better\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Predictive analytics\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": "[{\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of a neural network node.\"}, {\"name\": \"Artificial Neural Networks\", \"description\": \"Networks composed of interconnected nodes for processing data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image and speech recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Data Management",
+      "description": "Strategies for handling and processing data in machine learning.",
+      "sub_topics": "[{\"name\": \"Data Costs\", \"description\": \"Considerations regarding the costs associated with data usage.\"}, {\"name\": \"Speed Optimization\", \"description\": \"Techniques for improving the speed of data processing.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of data structures and programming.",
+      "key_sub_concepts": "[\"Data Collection\", \"Data Cleaning\", \"Data Transformation\", \"Data Storage\"]",
+      "common_misconceptions": "[\"Data management is only about storage.\", \"Cleaning data is not necessary if the dataset is large.\"]",
+      "practical_applications": "[\"Preparing datasets for model training\", \"Ensuring data quality for analysis\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "Assessing the performance and effectiveness of machine learning models.",
+      "sub_topics": "[{\"name\": \"Regression Techniques\", \"description\": \"Methods for predicting continuous outcomes.\"}, {\"name\": \"Classification Techniques\", \"description\": \"Methods for categorizing data into discrete classes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and statistics.",
+      "key_sub_concepts": "[\"Accuracy\", \"Precision and Recall\", \"F1 Score\", \"ROC Curve\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Higher accuracy always means a better model\", \"Overfitting is not a concern if the model performs well on training data\"]",
+      "practical_applications": "[\"Comparing different models\", \"Tuning hyperparameters\", \"Selecting the best model for deployment\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Language Models",
+      "to": "Contextual Understanding",
+      "relation": "prerequisite",
+      "reason": "Contextual understanding in this course setting depends on first understanding how language models process and represent language."
+    },
+    {
+      "from": "Language Models",
+      "to": "Self History",
+      "relation": "prerequisite",
+      "reason": "Maintaining interaction history is an advanced capability built on top of core language model behavior."
+    },
+    {
+      "from": "Language Models",
+      "to": "Answer Generation",
+      "relation": "prerequisite",
+      "reason": "Answer generation relies on understanding the underlying language model that produces responses."
+    },
+    {
+      "from": "Language Models",
+      "to": "Quality Assessment",
+      "relation": "prerequisite",
+      "reason": "Evaluating the quality of language models requires first understanding what language models are and how they function."
+    },
+    {
+      "from": "Training Techniques",
+      "to": "Language Models",
+      "relation": "prerequisite",
+      "reason": "Learning language models in a machine learning course generally requires prior understanding of how models are trained."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Language Models",
+      "relation": "prerequisite",
+      "reason": "Modern language models are typically built on neural network foundations, so understanding neural networks is necessary before learning language models in depth."
+    },
+    {
+      "from": "Data Management",
+      "to": "Training Techniques",
+      "relation": "prerequisite",
+      "reason": "Effective training depends on preparing, handling, and processing data appropriately beforehand."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Quality Assessment",
+      "relation": "prerequisite",
+      "reason": "Quality assessment is a specialized form of evaluating model performance and reliability, so general model evaluation comes first."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Training Techniques",
+      "relation": "similarity",
+      "score": 0.7689
+    }
+  ]
+}

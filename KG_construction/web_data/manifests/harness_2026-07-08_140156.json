@@ -1,0 +1,508 @@
+{
+  "run_id": "harness_2026-07-08_140156",
+  "status": "warning",
+  "created_at": "2026-07-08T14:01:59",
+  "graph_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+  "live_neo4j": false,
+  "rag_collection": "kg_chunks",
+  "rag_resource_id": null,
+  "planning_goal": "learn neural networks",
+  "planning_target_concepts": [
+    "Neural Networks"
+  ],
+  "stages": {
+    "audit": {
+      "status": "warning",
+      "started_at": "2026-07-08T14:01:56",
+      "ended_at": "2026-07-08T14:01:56",
+      "result": {
+        "graph_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+        "total_concepts": 183,
+        "field_coverage": {
+          "description": 0.918,
+          "difficulty_level": 1.0,
+          "estimated_learning_time": 1.0,
+          "target_audience": 1.0,
+          "prerequisites_summary": 1.0,
+          "key_sub_concepts": 1.0,
+          "common_misconceptions": 1.0,
+          "practical_applications": 1.0
+        },
+        "missing_description_count": 15,
+        "missing_difficulty_count": 0,
+        "missing_estimated_time_count": 0,
+        "missing_prerequisites_summary_count": 0,
+        "missing_common_misconceptions_count": 0,
+        "missing_practical_applications_count": 0,
+        "invalid_difficulty_count": 0,
+        "difficulty_distribution": {
+          "1": 0.0492,
+          "2": 0.918,
+          "3": 0.0328
+        },
+        "difficulty_entropy": 0.4888,
+        "difficulty_concentration_level": "2",
+        "difficulty_concentration_ratio": 0.918,
+        "difficulty_concentration_warning": true,
+        "llm_generated_field_coverage": {
+          "key_sub_concepts": 1.0,
+          "common_misconceptions": 1.0,
+          "practical_applications": 1.0
+        },
+        "warnings": [
+          "difficulty_level is overly concentrated at level 2"
+        ],
+        "status": "warning"
+      }
+    },
+    "calibrate": {
+      "status": "success",
+      "started_at": "2026-07-08T14:01:56",
+      "ended_at": "2026-07-08T14:01:56",
+      "result": {
+        "graph_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+        "status": "success",
+        "total_concepts": 183,
+        "updated_concepts": 117,
+        "unchanged_concepts": 66,
+        "output": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph_calibrated.json"
+      }
+    },
+    "kg_benchmark": {
+      "status": "success",
+      "started_at": "2026-07-08T14:01:56",
+      "ended_at": "2026-07-08T14:01:56",
+      "result": {
+        "graph_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+        "status": "success",
+        "structural_metrics": {
+          "concept_count": 183,
+          "edge_count": 178,
+          "prerequisite_edges": 152,
+          "similarity_edges": 26,
+          "isolated_concept_count": 24,
+          "duplicate_concept_count": 0
+        },
+        "node_details_metrics": {
+          "field_coverage": {
+            "description": 0.918,
+            "difficulty_level": 1.0,
+            "estimated_learning_time": 1.0,
+            "target_audience": 1.0,
+            "prerequisites_summary": 1.0,
+            "key_sub_concepts": 1.0,
+            "common_misconceptions": 1.0,
+            "practical_applications": 1.0
+          },
+          "difficulty_distribution": {
+            "1": 0.0492,
+            "2": 0.918,
+            "3": 0.0328
+          },
+          "difficulty_entropy": 0.4888,
+          "difficulty_concentration_ratio": 0.918,
+          "warnings": [
+            "difficulty_level is overly concentrated at level 2"
+          ]
+        },
+        "planning_readiness": {
+          "usable_difficulty_ratio": 1.0,
+          "estimated_time_ratio": 1.0,
+          "prerequisites_summary_ratio": 1.0
+        }
+      }
+    },
+    "profile": {
+      "status": "success",
+      "started_at": "2026-07-08T14:01:56",
+      "ended_at": "2026-07-08T14:01:56",
+      "result": {
+        "db_path": "D:\\ic\\master project\\project_code\\KG_construction\\data\\learner_profiles.db",
+        "exists": true,
+        "passed": true,
+        "checks": [
+          {
+            "name": "learner_profiles_table",
+            "passed": true
+          },
+          {
+            "name": "required_columns",
+            "required": [
+              "user_id",
+              "goal_text",
+              "target_days",
+              "daily_minutes",
+              "known_topics",
+              "confidence_level",
+              "anxiety_level",
+              "pace_preference",
+              "mastery_vector",
+              "completed_topics",
+              "current_day",
+              "last_practice"
+            ],
+            "missing": [],
+            "passed": true
+          },
+          {
+            "name": "profile_count",
+            "actual": 4,
+            "passed": true
+          }
+        ],
+        "profile_count": 4,
+        "examples": [
+          {
+            "user_id": "phase2_acceptance",
+            "goal_text": "learn transformers",
+            "target_days": 14,
+            "daily_minutes": 75,
+            "known_topics": "[\"Neural Networks\"]",
+            "confidence_level": 4,
+            "anxiety_level": 2,
+            "pace_preference": "medium",
+            "mastery_vector": "{\"Neural Networks\": 0.82}",
+            "completed_topics": "[\"Neural Networks\"]",
+            "current_day": 3,
+            "last_practice": "2026-07-08"
+          },
+          {
+            "user_id": "phase2_smoke",
+            "goal_text": "learn neural networks",
+            "target_days": 5,
+            "daily_minutes": 45,
+            "known_topics": "[\"Classification\"]",
+            "confidence_level": 3,
+            "anxiety_level": 2,
+            "pace_preference": "medium",
+            "mastery_vector": "{\"Classification\": 0.8}",
+            "completed_topics": "[\"Classification\"]",
+            "current_day": 2,
+            "last_practice": null
+          },
+          {
+            "user_id": "demo_undergrad_2",
+            "goal_text": "I need a 10-day plan for deep learning basics.",
+            "target_days": 10,
+            "daily_minutes": 60,
+            "known_topics": "[]",
+            "confidence_level": 2,
+            "anxiety_level": 4,
+            "pace_preference": "slow",
+            "mastery_vector": "{}",
+            "completed_topics": "[]",
+            "current_day": 1,
+            "last_practice": null
+          },
+          {
+            "user_id": "demo_undergrad_1",
+            "goal_text": "I want to learn neural networks in 7 days.",
+            "target_days": 7,
+            "daily_minutes": 90,
+            "known_topics": "[\"Linear Regression\", \"Classification\"]",
+            "confidence_level": 3,
+            "anxiety_level": 2,
+            "pace_preference": "medium",
+            "mastery_vector": "{}",
+            "completed_topics": "[]",
+            "current_day": 1,
+            "last_practice": null
+          }
+        ]
+      }
+    },
+    "rag": {
+      "status": "success",
+      "started_at": "2026-07-08T14:01:56",
+      "ended_at": "2026-07-08T14:01:57",
+      "result": {
+        "collection_name": "kg_chunks",
+        "chroma_path": "D:\\ic\\master project\\project_code\\KG_construction\\data\\chroma",
+        "resource_id": null,
+        "min_chunks": 1,
+        "passed": true,
+        "checks": [
+          {
+            "name": "collection_has_chunks",
+            "actual": 424,
+            "passed": true
+          }
+        ],
+        "total_count": 424,
+        "status": "success"
+      }
+    },
+    "planning": {
+      "status": "success",
+      "started_at": "2026-07-08T14:01:57",
+      "ended_at": "2026-07-08T14:01:59",
+      "result": {
+        "goal_text": "learn neural networks",
+        "graph_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+        "target_concepts": [
+          "Neural Networks"
+        ],
+        "known_topics": [],
+        "json": {
+          "goal": {
+            "target_concepts": [
+              "Neural Networks"
+            ],
+            "requested_days": 7,
+            "daily_minutes": 60
+          },
+          "target_topics": [
+            "Neural Networks"
+          ],
+          "ordered_topics": [
+            "Linear Separability",
+            "Neural Networks"
+          ],
+          "prerequisite_paths": {
+            "Neural Networks": [
+              "Linear Separability",
+              "Neural Networks"
+            ]
+          },
+          "covered_prerequisites": {
+            "Linear Separability": [],
+            "Neural Networks": [
+              "AI Algorithms",
+              "Deep Learning",
+              "Linear Separability",
+              "Machine Learning",
+              "Machine Learning Concepts"
+            ]
+          },
+          "days": [
+            {
+              "day": 1,
+              "focus_topics": [
+                "Linear Separability"
+              ],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 104,
+              "difficulty_mix": [
+                2
+              ]
+            },
+            {
+              "day": 2,
+              "focus_topics": [
+                "Neural Networks"
+              ],
+              "prerequisite_bridge": [
+                "AI Algorithms",
+                "Deep Learning",
+                "Linear Separability",
+                "Machine Learning",
+                "Machine Learning Concepts"
+              ],
+              "estimated_minutes": 104,
+              "difficulty_mix": [
+                2
+              ]
+            },
+            {
+              "day": 3,
+              "focus_topics": [],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 0,
+              "difficulty_mix": []
+            },
+            {
+              "day": 4,
+              "focus_topics": [],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 0,
+              "difficulty_mix": []
+            },
+            {
+              "day": 5,
+              "focus_topics": [],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 0,
+              "difficulty_mix": []
+            },
+            {
+              "day": 6,
+              "focus_topics": [],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 0,
+              "difficulty_mix": []
+            },
+            {
+              "day": 7,
+              "focus_topics": [],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 0,
+              "difficulty_mix": []
+            }
+          ],
+          "overflow_topics": []
+        },
+        "neo4j": {
+          "goal": {
+            "target_concepts": [
+              "Neural Networks"
+            ],
+            "requested_days": 7,
+            "daily_minutes": 60
+          },
+          "target_topics": [
+            "Neural Networks"
+          ],
+          "ordered_topics": [
+            "Linear Separability",
+            "Neural Networks"
+          ],
+          "prerequisite_paths": {
+            "Neural Networks": [
+              "Linear Separability",
+              "Neural Networks"
+            ]
+          },
+          "covered_prerequisites": {
+            "Linear Separability": [],
+            "Neural Networks": [
+              "AI Algorithms",
+              "Deep Learning",
+              "Linear Separability",
+              "Machine Learning",
+              "Machine Learning Concepts"
+            ]
+          },
+          "days": [
+            {
+              "day": 1,
+              "focus_topics": [
+                "Linear Separability"
+              ],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 104,
+              "difficulty_mix": [
+                2
+              ]
+            },
+            {
+              "day": 2,
+              "focus_topics": [
+                "Neural Networks"
+              ],
+              "prerequisite_bridge": [
+                "AI Algorithms",
+                "Deep Learning",
+                "Linear Separability",
+                "Machine Learning",
+                "Machine Learning Concepts"
+              ],
+              "estimated_minutes": 104,
+              "difficulty_mix": [
+                2
+              ]
+            },
+            {
+              "day": 3,
+              "focus_topics": [],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 0,
+              "difficulty_mix": []
+            },
+            {
+              "day": 4,
+              "focus_topics": [],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 0,
+              "difficulty_mix": []
+            },
+            {
+              "day": 5,
+              "focus_topics": [],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 0,
+              "difficulty_mix": []
+            },
+            {
+              "day": 6,
+              "focus_topics": [],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 0,
+              "difficulty_mix": []
+            },
+            {
+              "day": 7,
+              "focus_topics": [],
+              "prerequisite_bridge": [],
+              "estimated_minutes": 0,
+              "difficulty_mix": []
+            }
+          ],
+          "overflow_topics": []
+        },
+        "passed": true,
+        "error": null,
+        "status": "success"
+      }
+    },
+    "reproducibility": {
+      "status": "success",
+      "started_at": "2026-07-08T14:01:59",
+      "ended_at": "2026-07-08T14:01:59",
+      "result": {
+        "graph_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+        "status": "success",
+        "passed": true,
+        "concept_count": 183,
+        "edge_count": 178,
+        "relation_counts": {
+          "prerequisite": 152,
+          "similarity": 26
+        },
+        "node_details_field_coverage": {
+          "description": 0.918,
+          "difficulty_level": 1.0,
+          "estimated_learning_time": 1.0,
+          "target_audience": 1.0,
+          "prerequisites_summary": 1.0,
+          "key_sub_concepts": 1.0,
+          "common_misconceptions": 1.0,
+          "practical_applications": 1.0
+        },
+        "difficulty_distribution": {
+          "1": 0.0492,
+          "2": 0.918,
+          "3": 0.0328
+        },
+        "calibrated_difficulty_hash_first": "36f88a24e010617dfe33e860830547b293d5cc38fa5b1c2ca90073cabcc95722",
+        "calibrated_difficulty_hash_second": "36f88a24e010617dfe33e860830547b293d5cc38fa5b1c2ca90073cabcc95722",
+        "calibration_deterministic": true
+      }
+    },
+    "neo4j": {
+      "status": "success",
+      "started_at": "2026-07-08T14:01:59",
+      "ended_at": "2026-07-08T14:01:59",
+      "result": {
+        "graph_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+        "mode": "dry_run",
+        "expected": {
+          "concepts": 183,
+          "prerequisite_edges": 152,
+          "similarity_edges": 26,
+          "skipped_edges": 0,
+          "forbidden_learner_state_nodes": 0,
+          "min_resources": 0,
+          "min_has_resource_edges": 0,
+          "min_topics": 0,
+          "min_belongs_to_edges": 0
+        },
+        "actual": null,
+        "passed": true,
+        "checks": [
+          "dry_run_mapping_count_available"
+        ]
+      }
+    }
+  },
+  "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\manifests\\harness_2026-07-08_140156.json"
+}

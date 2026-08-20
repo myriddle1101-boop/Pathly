@@ -1,0 +1,1019 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 132,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "machine learning",
+      "avg_score": 0.4956,
+      "frequency": 21,
+      "chunk_ids": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        10,
+        12,
+        15,
+        22,
+        23,
+        28,
+        36,
+        40,
+        48,
+        60,
+        63,
+        73,
+        83,
+        86,
+        99,
+        110
+      ]
+    },
+    {
+      "name": "training data",
+      "avg_score": 0.5265,
+      "frequency": 11,
+      "chunk_ids": [
+        46,
+        59,
+        65,
+        68,
+        69,
+        79,
+        89,
+        90,
+        94,
+        95,
+        114
+      ]
+    },
+    {
+      "name": "learning algorithm",
+      "avg_score": 0.5465,
+      "frequency": 8,
+      "chunk_ids": [
+        3,
+        9,
+        48,
+        54,
+        59,
+        91,
+        107,
+        110
+      ]
+    },
+    {
+      "name": "training set",
+      "avg_score": 0.5202,
+      "frequency": 8,
+      "chunk_ids": [
+        9,
+        59,
+        71,
+        81,
+        89,
+        91,
+        95,
+        114
+      ]
+    },
+    {
+      "name": "learning curves",
+      "avg_score": 0.6046,
+      "frequency": 7,
+      "chunk_ids": [
+        2,
+        63,
+        64,
+        67,
+        69,
+        70,
+        72
+      ]
+    },
+    {
+      "name": "cat detector",
+      "avg_score": 0.5457,
+      "frequency": 7,
+      "chunk_ids": [
+        8,
+        32,
+        81,
+        82,
+        118,
+        123,
+        124
+      ]
+    },
+    {
+      "name": "error analysis",
+      "avg_score": 0.5355,
+      "frequency": 7,
+      "chunk_ids": [
+        31,
+        33,
+        34,
+        45,
+        59,
+        126,
+        129
+      ]
+    },
+    {
+      "name": "bias variance",
+      "avg_score": 0.5272,
+      "frequency": 6,
+      "chunk_ids": [
+        46,
+        49,
+        55,
+        63,
+        64,
+        92
+      ]
+    },
+    {
+      "name": "learning curve",
+      "avg_score": 0.6163,
+      "frequency": 5,
+      "chunk_ids": [
+        64,
+        65,
+        69,
+        70,
+        72
+      ]
+    },
+    {
+      "name": "training error",
+      "avg_score": 0.5756,
+      "frequency": 5,
+      "chunk_ids": [
+        2,
+        66,
+        68,
+        69,
+        71
+      ]
+    },
+    {
+      "name": "dev test",
+      "avg_score": 0.4354,
+      "frequency": 5,
+      "chunk_ids": [
+        10,
+        11,
+        14,
+        24,
+        95
+      ]
+    },
+    {
+      "name": "optimization verification",
+      "avg_score": 0.6272,
+      "frequency": 4,
+      "chunk_ids": [
+        100,
+        102,
+        103,
+        104
+      ]
+    },
+    {
+      "name": "neural network",
+      "avg_score": 0.6092,
+      "frequency": 4,
+      "chunk_ids": [
+        3,
+        4,
+        7,
+        83
+      ]
+    },
+    {
+      "name": "pipeline components",
+      "avg_score": 0.5833,
+      "frequency": 4,
+      "chunk_ids": [
+        115,
+        117,
+        122,
+        131
+      ]
+    },
+    {
+      "name": "accuracy",
+      "avg_score": 0.563,
+      "frequency": 4,
+      "chunk_ids": [
+        18,
+        31,
+        37,
+        53
+      ]
+    },
+    {
+      "name": "error training",
+      "avg_score": 0.5526,
+      "frequency": 4,
+      "chunk_ids": [
+        52,
+        66,
+        69,
+        92
+      ]
+    },
+    {
+      "name": "speech recognition",
+      "avg_score": 0.5409,
+      "frequency": 4,
+      "chunk_ids": [
+        78,
+        100,
+        111,
+        121
+      ]
+    },
+    {
+      "name": "training dev",
+      "avg_score": 0.528,
+      "frequency": 4,
+      "chunk_ids": [
+        68,
+        81,
+        89,
+        91
+      ]
+    },
+    {
+      "name": "cat",
+      "avg_score": 0.5009,
+      "frequency": 4,
+      "chunk_ids": [
+        17,
+        82,
+        123,
+        124
+      ]
+    },
+    {
+      "name": "test set",
+      "avg_score": 0.4547,
+      "frequency": 4,
+      "chunk_ids": [
+        11,
+        12,
+        24,
+        27
+      ]
+    },
+    {
+      "name": "dev set",
+      "avg_score": 0.4152,
+      "frequency": 4,
+      "chunk_ids": [
+        23,
+        28,
+        36,
+        39
+      ]
+    },
+    {
+      "name": "cat breed",
+      "avg_score": 0.6369,
+      "frequency": 3,
+      "chunk_ids": [
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.6125,
+      "frequency": 3,
+      "chunk_ids": [
+        6,
+        7,
+        110
+      ]
+    },
+    {
+      "name": "variance learning",
+      "avg_score": 0.5968,
+      "frequency": 3,
+      "chunk_ids": [
+        2,
+        61,
+        64
+      ]
+    },
+    {
+      "name": "error curve",
+      "avg_score": 0.5764,
+      "frequency": 3,
+      "chunk_ids": [
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "name": "reduces bias",
+      "avg_score": 0.5701,
+      "frequency": 3,
+      "chunk_ids": [
+        55,
+        57,
+        58
+      ]
+    },
+    {
+      "name": "plotting learning",
+      "avg_score": 0.568,
+      "frequency": 3,
+      "chunk_ids": [
+        2,
+        70,
+        72
+      ]
+    },
+    {
+      "name": "algorithm suffers",
+      "avg_score": 0.5472,
+      "frequency": 3,
+      "chunk_ids": [
+        58,
+        90,
+        93
+      ]
+    },
+    {
+      "name": "error rate",
+      "avg_score": 0.5352,
+      "frequency": 3,
+      "chunk_ids": [
+        50,
+        51,
+        92
+      ]
+    },
+    {
+      "name": "data mismatch",
+      "avg_score": 0.5262,
+      "frequency": 3,
+      "chunk_ids": [
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "name": "blackbox dev",
+      "avg_score": 0.5231,
+      "frequency": 3,
+      "chunk_ids": [
+        41,
+        42,
+        44
+      ]
+    },
+    {
+      "name": "compute score",
+      "avg_score": 0.5214,
+      "frequency": 3,
+      "chunk_ids": [
+        100,
+        102,
+        104
+      ]
+    },
+    {
+      "name": "test sets",
+      "avg_score": 0.5029,
+      "frequency": 3,
+      "chunk_ids": [
+        11,
+        24,
+        27
+      ]
+    },
+    {
+      "name": "eyeball dev",
+      "avg_score": 0.4912,
+      "frequency": 3,
+      "chunk_ids": [
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "name": "pipeline",
+      "avg_score": 0.4812,
+      "frequency": 3,
+      "chunk_ids": [
+        116,
+        119,
+        132
+      ]
+    },
+    {
+      "name": "optimizing metric",
+      "avg_score": 0.6815,
+      "frequency": 2,
+      "chunk_ids": [
+        19,
+        21
+      ]
+    },
+    {
+      "name": "choosing pipeline",
+      "avg_score": 0.6679,
+      "frequency": 2,
+      "chunk_ids": [
+        115,
+        117
+      ]
+    },
+    {
+      "name": "classifier precision",
+      "avg_score": 0.6651,
+      "frequency": 2,
+      "chunk_ids": [
+        16,
+        18
+      ]
+    },
+    {
+      "name": "components pipeline",
+      "avg_score": 0.6479,
+      "frequency": 2,
+      "chunk_ids": [
+        115,
+        117
+      ]
+    },
+    {
+      "name": "reduces variance",
+      "avg_score": 0.6447,
+      "frequency": 2,
+      "chunk_ids": [
+        57,
+        61
+      ]
+    },
+    {
+      "name": "accuracy dev",
+      "avg_score": 0.635,
+      "frequency": 2,
+      "chunk_ids": [
+        37,
+        47
+      ]
+    },
+    {
+      "name": "detector cat",
+      "avg_score": 0.6076,
+      "frequency": 2,
+      "chunk_ids": [
+        118,
+        124
+      ]
+    },
+    {
+      "name": "mislabeled dev",
+      "avg_score": 0.6072,
+      "frequency": 2,
+      "chunk_ids": [
+        35,
+        37
+      ]
+    },
+    {
+      "name": "satisficing metric",
+      "avg_score": 0.6042,
+      "frequency": 2,
+      "chunk_ids": [
+        19,
+        21
+      ]
+    },
+    {
+      "name": "pipeline flawed",
+      "avg_score": 0.5878,
+      "frequency": 2,
+      "chunk_ids": [
+        131,
+        132
+      ]
+    },
+    {
+      "name": "score optimization",
+      "avg_score": 0.5877,
+      "frequency": 2,
+      "chunk_ids": [
+        103,
+        108
+      ]
+    },
+    {
+      "name": "avoidable bias",
+      "avg_score": 0.5845,
+      "frequency": 2,
+      "chunk_ids": [
+        52,
+        58
+      ]
+    },
+    {
+      "name": "analysis training",
+      "avg_score": 0.5835,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        59
+      ]
+    },
+    {
+      "name": "redesign pipeline",
+      "avg_score": 0.5832,
+      "frequency": 2,
+      "chunk_ids": [
+        131,
+        132
+      ]
+    },
+    {
+      "name": "plotting training",
+      "avg_score": 0.581,
+      "frequency": 2,
+      "chunk_ids": [
+        2,
+        66
+      ]
+    },
+    {
+      "name": "change metric",
+      "avg_score": 0.5732,
+      "frequency": 2,
+      "chunk_ids": [
+        26,
+        28
+      ]
+    },
+    {
+      "name": "performance human",
+      "avg_score": 0.5727,
+      "frequency": 2,
+      "chunk_ids": [
+        54,
+        130
+      ]
+    },
+    {
+      "name": "algorithm bias",
+      "avg_score": 0.5616,
+      "frequency": 2,
+      "chunk_ids": [
+        47,
+        51
+      ]
+    },
+    {
+      "name": "algorithm dev",
+      "avg_score": 0.5557,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        91
+      ]
+    },
+    {
+      "name": "end learning",
+      "avg_score": 0.5467,
+      "frequency": 2,
+      "chunk_ids": [
+        109,
+        110
+      ]
+    },
+    {
+      "name": "algorithm error",
+      "avg_score": 0.5425,
+      "frequency": 2,
+      "chunk_ids": [
+        47,
+        51
+      ]
+    },
+    {
+      "name": "learning algorithms",
+      "avg_score": 0.5406,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        73
+      ]
+    },
+    {
+      "name": "worse training",
+      "avg_score": 0.5384,
+      "frequency": 2,
+      "chunk_ids": [
+        46,
+        66
+      ]
+    },
+    {
+      "name": "distribution training",
+      "avg_score": 0.5383,
+      "frequency": 2,
+      "chunk_ids": [
+        89,
+        91
+      ]
+    },
+    {
+      "name": "mistakes dogs",
+      "avg_score": 0.537,
+      "frequency": 2,
+      "chunk_ids": [
+        30,
+        31
+      ]
+    },
+    {
+      "name": "increase variance",
+      "avg_score": 0.5339,
+      "frequency": 2,
+      "chunk_ids": [
+        55,
+        63
+      ]
+    },
+    {
+      "name": "training sets",
+      "avg_score": 0.5274,
+      "frequency": 2,
+      "chunk_ids": [
+        71,
+        81
+      ]
+    },
+    {
+      "name": "overfit dev",
+      "avg_score": 0.5229,
+      "frequency": 2,
+      "chunk_ids": [
+        12,
+        25
+      ]
+    },
+    {
+      "name": "blackbox",
+      "avg_score": 0.5228,
+      "frequency": 2,
+      "chunk_ids": [
+        40,
+        44
+      ]
+    },
+    {
+      "name": "optimization",
+      "avg_score": 0.5209,
+      "frequency": 2,
+      "chunk_ids": [
+        100,
+        104
+      ]
+    },
+    {
+      "name": "examples training",
+      "avg_score": 0.5072,
+      "frequency": 2,
+      "chunk_ids": [
+        72,
+        81
+      ]
+    },
+    {
+      "name": "data training",
+      "avg_score": 0.5059,
+      "frequency": 2,
+      "chunk_ids": [
+        94,
+        95
+      ]
+    },
+    {
+      "name": "mislabeled",
+      "avg_score": 0.5056,
+      "frequency": 2,
+      "chunk_ids": [
+        35,
+        36
+      ]
+    },
+    {
+      "name": "cat pictures",
+      "avg_score": 0.502,
+      "frequency": 2,
+      "chunk_ids": [
+        8,
+        79
+      ]
+    },
+    {
+      "name": "learning strategy",
+      "avg_score": 0.4971,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "dev sets",
+      "avg_score": 0.489,
+      "frequency": 2,
+      "chunk_ids": [
+        14,
+        44
+      ]
+    },
+    {
+      "name": "eyeball blackbox",
+      "avg_score": 0.483,
+      "frequency": 2,
+      "chunk_ids": [
+        41,
+        42
+      ]
+    },
+    {
+      "name": "data train",
+      "avg_score": 0.4652,
+      "frequency": 2,
+      "chunk_ids": [
+        80,
+        116
+      ]
+    },
+    {
+      "name": "weighting",
+      "avg_score": 0.4645,
+      "frequency": 2,
+      "chunk_ids": [
+        87,
+        88
+      ]
+    },
+    {
+      "name": "images training",
+      "avg_score": 0.464,
+      "frequency": 2,
+      "chunk_ids": [
+        79,
+        82
+      ]
+    },
+    {
+      "name": "learning",
+      "avg_score": 0.4587,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "york city",
+      "avg_score": 0.4359,
+      "frequency": 2,
+      "chunk_ids": [
+        85,
+        86
+      ]
+    },
+    {
+      "name": "pipeline design",
+      "avg_score": 0.7331,
+      "frequency": 1,
+      "chunk_ids": [
+        115
+      ]
+    },
+    {
+      "name": "accuracy classifier",
+      "avg_score": 0.73,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "reducing variance",
+      "avg_score": 0.7083,
+      "frequency": 1,
+      "chunk_ids": [
+        61
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Machine Learning",
+      "description": "The study of algorithms that improve automatically through experience.",
+      "sub_topics": [
+        {
+          "name": "Learning Algorithms",
+          "description": "Methods used to train models on data."
+        },
+        {
+          "name": "Training Data",
+          "description": "Data used to train machine learning models."
+        },
+        {
+          "name": "Training Set",
+          "description": "A subset of data used for training."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": [
+        {
+          "name": "Activation Function",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "A method for training neural networks by minimizing error."
+        },
+        {
+          "name": "Loss Function",
+          "description": "A function that measures the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Training Process",
+      "description": "The methodology of training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Learning Curves",
+          "description": "Graphs that show the model's performance over time."
+        },
+        {
+          "name": "Training Error",
+          "description": "The error rate of the model on the training data."
+        },
+        {
+          "name": "Optimization",
+          "description": "The process of adjusting model parameters to minimize error."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Error Analysis",
+          "description": "The process of identifying and understanding errors in model predictions."
+        },
+        {
+          "name": "Accuracy",
+          "description": "A measure of how often the model makes correct predictions."
+        },
+        {
+          "name": "Bias-Variance Tradeoff",
+          "description": "The balance between model complexity and generalization."
+        }
+      ]
+    },
+    {
+      "name": "Data Management",
+      "description": "Handling and processing data for machine learning.",
+      "sub_topics": [
+        {
+          "name": "Training Set vs. Test Set",
+          "description": "The distinction between data used for training and data used for evaluation."
+        },
+        {
+          "name": "Data Mismatch",
+          "description": "Discrepancies between training data and real-world data."
+        },
+        {
+          "name": "Mislabeled Data",
+          "description": "Data points that are incorrectly labeled."
+        }
+      ]
+    },
+    {
+      "name": "Performance Metrics",
+      "description": "Quantitative measures used to evaluate model performance.",
+      "sub_topics": [
+        {
+          "name": "Classifier Precision",
+          "description": "The ratio of true positive predictions to the total predicted positives."
+        },
+        {
+          "name": "Error Rate",
+          "description": "The proportion of incorrect predictions made by the model."
+        },
+        {
+          "name": "Satisficing Metric",
+          "description": "A metric used to determine acceptable performance."
+        }
+      ]
+    },
+    {
+      "name": "Pipeline Design",
+      "description": "The architecture and components of a machine learning workflow.",
+      "sub_topics": [
+        {
+          "name": "Pipeline Components",
+          "description": "The individual parts that make up a machine learning pipeline."
+        },
+        {
+          "name": "Choosing Pipeline",
+          "description": "The process of selecting the appropriate components for a pipeline."
+        },
+        {
+          "name": "Redesign Pipeline",
+          "description": "Modifying the pipeline to improve performance."
+        }
+      ]
+    },
+    {
+      "name": "Overfitting and Generalization",
+      "description": "Concepts related to model performance on unseen data.",
+      "sub_topics": [
+        {
+          "name": "Overfitting",
+          "description": "When a model learns noise in the training data."
+        },
+        {
+          "name": "Variance Learning",
+          "description": "The sensitivity of the model to fluctuations in the training data."
+        },
+        {
+          "name": "Reducing Variance",
+          "description": "Techniques to improve model generalization."
+        }
+      ]
+    },
+    {
+      "name": "Specialized Applications",
+      "description": "Specific use cases of machine learning techniques.",
+      "sub_topics": [
+        {
+          "name": "Cat Detector",
+          "description": "A model specifically trained to identify cats in images."
+        },
+        {
+          "name": "Speech Recognition",
+          "description": "The ability of a machine to identify and process human speech."
+        },
+        {
+          "name": "Image Classification",
+          "description": "The task of assigning labels to images based on their content."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 54.8222,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

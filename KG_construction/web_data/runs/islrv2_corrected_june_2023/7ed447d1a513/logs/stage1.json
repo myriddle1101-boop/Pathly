@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islrv2_corrected_june_2023\\7ed447d1a513\\ISLRv2_corrected_June_2023.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islrv2_corrected_june_2023\\7ed447d1a513\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islrv2_corrected_june_2023\\7ed447d1a513\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 192.4641,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 199450\n[2] 清洗后词数: 204356\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 1085\n[5] 分块数（过滤后）: 962\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islrv2_corrected_june_2023\\7ed447d1a513\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islrv2_corrected_june_2023\\7ed447d1a513\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=274\nGareth James Daniela Witten   Trevor Hastie Robert Tibshirani  An Introduction to Statistical Learning with Applications in R Second Edition 123 This is page ii Printer: Opaque this To our parents: Alison and Michael ...\n\n[Chunk 2] words=267\nviii The first edition of ISL covered a number of important topics, including sparse methods for classification and regression, decision trees, boosting, support vector machines, and clustering. Since it was published in...\n\n[Chunk 3] words=280\nContents xiii 9.1.1 What Is a Hyperplane? . . . . . . . . . . . . . . . . 368 9.1.2 Classification Using a Separating Hyperplane . . . 369 9.1.3 The Maximal Margin Classifier . . . . . . . . . . . 371 9.1.4 Construction ...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

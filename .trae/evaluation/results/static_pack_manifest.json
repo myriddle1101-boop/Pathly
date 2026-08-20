@@ -1,0 +1,13 @@
+{
+  "evaluation_pack_version": "2026-08-15-v1",
+  "created_at": "2026-08-15T06:42:43.001656+00:00",
+  "model_calls": 0,
+  "files": [
+    "evaluation_status.csv",
+    "goal_catalog_validation.csv",
+    "kg_corpus_audit.json",
+    "kg_corpus_audit.csv",
+    "kg_corpus_audit_summary.csv"
+  ],
+  "scope_note": "Planning/content/adaptation score files require generated outputs or manual ratings and are intentionally not fabricated by this static pack."
+}

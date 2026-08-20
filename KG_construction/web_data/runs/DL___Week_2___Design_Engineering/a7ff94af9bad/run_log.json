@@ -1,0 +1,161 @@
+{
+  "run_id": "dl___week_2___design_engineering-a7ff94af9bad",
+  "events": [
+    {
+      "time": "2026-08-18T01:34:31+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "DL___Week_2___Design_Engineering.pdf",
+        "sha256": "a7ff94af9bad57a06aaaa032b35e4e9aa5a840c514c60ba56f0332bc1e49ba6b",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_2___design_engineering\\a7ff94af9bad",
+        "resume_from_stage": "stage1",
+        "run_attempts": 1
+      }
+    },
+    {
+      "time": "2026-08-18T01:34:31+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-08-18T01:34:37+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 6.6583,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-08-18T01:34:37+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-08-18T01:35:24+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 46.55,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-08-18T01:35:24+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-08-18T01:35:31+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 6.8848,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-08-18T01:35:31+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-08-18T01:36:04+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 32.8861,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-08-18T01:36:04+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-08-18T01:36:26+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 22.8394,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-08-18T01:36:26+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_2___design_engineering\\a7ff94af9bad"
+      }
+    },
+    {
+      "time": "2026-08-18T01:36:29+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 2.5755,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-08-18T01:36:29+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline completed",
+      "data": {
+        "completed_stages": [
+          "stage1",
+          "stage2a",
+          "stage2b",
+          "stage2c",
+          "stage3",
+          "stage4"
+        ]
+      }
+    }
+  ],
+  "updated_at": "2026-08-18T01:36:29+08:00"
+}

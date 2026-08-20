@@ -1,0 +1,44 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Activation Functions",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding how neurons produce outputs is foundational to understanding neural network behavior and design."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation is a training algorithm specifically defined on neural network architectures and requires prior understanding of them."
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation depends on differentiating neuron output functions, so understanding activation functions is necessary first."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Transfer Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Transfer learning commonly builds on pretrained neural network models, so understanding neural networks is necessary before learning it."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Generative Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Many core generative modeling approaches in modern machine learning are based on neural networks, making them foundational."
+    },
+    {
+      "from": "Classification Techniques",
+      "to": "Error Analysis",
+      "relation_type": "strong_prerequisite",
+      "reason": "To analyze prediction errors, one must first understand the classification task and outputs being evaluated."
+    }
+  ]
+}

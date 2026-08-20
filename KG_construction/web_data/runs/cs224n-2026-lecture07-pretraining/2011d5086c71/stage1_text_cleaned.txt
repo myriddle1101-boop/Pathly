@@ -1,0 +1,582 @@
+Natural Language Processing
+with Deep Learning
+CS 224 N/Ling 284
+Diyi Yang
+Lecture 6: Pretraining
+
+Lecture Plan
+1. Pretraining – motivation (10 mins)
+2. Subword modeling (10 mins)
+3. Motivating model pretraining from word embeddings (10 mins)
+4. Model pretraining three ways (25 mins)
+• Decoders
+• Encoders
+• Encoder-Decoders
+5. Interlude: what do we think pretraining is teaching? (10 mins)
+6. Very large models and in-context learning (10 mins)
+2
+
+The pretraining revolution
+Gains from pretrained language models
+Pretraining has had a major, tangible impact on how well NLP systems work
+
+Pretraining – scaling unsupervised learning on the internet
+Key ideas in pretraining
+• Make sure your model can process large-scale, diverse datasets
+• Don’t use labeled data (otherwise you can’t scale!)
+• Compute-aware scaling
+
+Word structure and subword models
+Let’s take a look at the assumptions we’ve made about a language’s vocabulary.
+We assume a fixed vocab of tens of thousands of words, built from the training set.
+All novel words seen at test time are mapped to a single UNK.
+word vocab mapping embedding
+hat → pizza (index)
+Common
+words
+learn → tasty (index)
+Variatio ns taaaaasty → UNK (index)
+misspellin gs laern → UNK (index)
+novel item s Transformerify → UNK (index)
+5
+
+The byte-pair encoding algorithm
+Subword modeling in NLP encompasses a wide range of methods for reasoning about
+structure below the word level. (Parts of words, characters, bytes.)
+• The dominant modern paradigm is to learn a vocabulary of parts of words (subword tokens).
+• At training and testing time, each word is split into a sequence of known subwords.
+Byte-pair encoding is a simple, effective strategy for defining a subword vocabulary.
+1. Start with a vocabulary containing only characters and an “end-of-word” symbol.
+2. Using a corpus of text, find the most common adjacent characters “a,b”; add “ab” as a subword.
+3. Replace instances of the character pair with the new subword; repeat until desired vocab size.
+Originally used in NLP for machine translation; now a similar method (Word Piece) is used in pretrained
+models.
+6 [Sennrich et al., 2016, Wu et al., 2016]
+
+Word structure and subword models
+Common words end up being a part of the subword vocabulary, while rarer words are split
+into (sometimes intuitive, sometimes not) components.
+In the worst case, words are split into as many subwords as they have characters.
+word vocab mapping embedding
+hat → hat
+Common
+words learn → learn
+taaaaasty → taa## aaa## sty
+Variations
+laern → la## ern##
+misspellings
+Transformerify → Transformer## ify
+novel items
+7
+
+Outline
+1. A brief note on subword modeling
+2. Motivating model pretraining from word embeddings
+3. Model pretraining three ways
+1. Encoders
+2. Encoder-Decoders
+3. Decoders
+4. What do we think pretraining is teaching?
+8
+
+Motivating word meaning and context
+Recall the adage we mentioned at the beginning of the course:
+“You shall know a word by the company it keeps” (J. R. Firth 1957: 11)
+This quote is a summary of distributional semantics, and motivated word 2 vec. But:
+“… the complete meaning of a word is always contextual,
+and no study of meaning apart from a complete context
+can be taken seriously.” (J. R. Firth 1935)
+Consider I record the record: the two instances of record mean different things.
+9
+[Thanks to Yoav Goldberg on Twitter for pointing out the 1935 Firth quote.]
+
+Where we were: pretrained word embeddings
+Circa 2017:
+𝒚ෝ
+• Start with pretrained word embeddings (no
+context!)
+• Learn how to incorporate context in an LSTM
+Not pretrained
+or Transformer while training on the task.
+Some issues to think about: pretrained
+(word embeddings)
+• The training data we have for our
+… the movie was …
+downstream task (like question answering)
+must be sufficient to teach all contextual
+[Recall, movie gets the same word embedding,
+aspects of language.
+no matter what sentence it shows up in]
+• Most of the parameters in our network are
+randomly initialized!
+10
+
+Where we’re going: pretraining whole models
+In modern NLP:
+𝒚ෝ
+• All (or almost all) parameters in NLP
+networks are initialized via pretraining.
+• Pretraining methods hide parts of the input
+from the model, and train the model to
+Pretrained jointly
+reconstruct those parts.
+• This has been exceptionally effective at
+building strong: … the movie was …
+• representations of language
+• parameter initializations for strong NLP
+[This model has learned how to represent
+models.
+entire sentences through pretraining]
+• Probability distributions over language that
+we can sample from
+11
+
+What can we learn from reconstructing the input?
+Stanford University is located in __________, California.
+12
+
+What can we learn from reconstructing the input?
+I put ___ fork down on the table.
+13
+
+What can we learn from reconstructing the input?
+The woman walked across the street,
+checking for traffic over ___ shoulder.
+14
+
+What can we learn from reconstructing the input?
+I went to the ocean to see the fish, turtles, seals, and _____.
+15
+
+What can we learn from reconstructing the input?
+Overall, the value I got from the two hours watching
+it was the sum total of the popcorn and the drink.
+The movie was ___.
+16
+
+What can we learn from reconstructing the input?
+I was thinking about the sequence that goes
+1, 1, 2, 3, 5, 8, 13, 21, ____
+18
+
+Pretraining through language modeling [Dai and Le, 2015]
+Recall the language modeling task:
+• Model 𝑝 𝑤 𝑤 ), the probability
+𝜃 𝑡 1:𝑡−1
+distribution over words given their past
+goes to make tasty tea END
+contexts.
+• There’s lots of data for this! (In English.)
+Decoder
+(Transformer, LSTM, ++ )
+Pretraining through language modeling:
+• Train a neural network to perform language
+modeling on a large amount of text.
+Iroh goes to make tasty tea
+• Save the network parameters.
+19
+
+The Pretraining / Finetuning Paradigm
+Pretraining can improve NLP applications by serving as parameter initialization.
+Step 1: Pretrain (on language modeling) Step 2: Finetune (on your task)
+Lots of text; learn general things! Not many labels; adapt to the task!
+goes to make tasty tea END ☺/
+(Transformer, LSTM, ++ ) (Transformer, LSTM, ++ )
+Iroh goes to make tasty tea … the movie was …
+20
+
+Where does this data come from?
+Model Training Data
+BERT Book Corpus, English
+Wikipedia
+GPT-1 Book Corpus
+GPT-3 Common Crawl, Web Text,
+English Wikipedia, and 2
+book databases (“Books 1”
+and “Books 2”)
+GPT- Undisclosed
+3.5+
+
+Bookcorpus.. what’s that?
+• Scraped ebooks from the internet – highly controversial
+
+Fair use and other concerns
+
+Lecture Plan
+1. A brief note on subword modeling
+2. Motivating model pretraining from word embeddings
+3. Model pretraining three ways
+1. Encoders
+2. Encoder-Decoders
+3. Decoders
+4. What do we think pretraining is teaching?
+25
+
+Pretraining for three types of architectures
+The neural architecture influences the type of pretraining, and natural use cases.
+• Gets bidirectional context – can condition on future!
+Encoders
+• How do we train them to build strong representations?
+Encoder- • Good parts of decoders and encoders?
+Decoders • What’s the best way to pretrain them?
+• Language models! What we’ve seen so far.
+Decoders
+• Nice to generate from; can’t condition on future words
+26
+
+Pretraining for three types of architectures
+The neural architecture influences the type of pretraining, and natural use cases.
+• Gets bidirectional context – can condition on future!
+Encoders
+• How do we train them to build strong representations?
+Encoder- • Good parts of decoders and encoders?
+Decoders • What’s the best way to pretrain them?
+• Language models! What we’ve seen so far.
+Decoders
+• Nice to generate from; can’t condition on future words
+27
+
+Pretraining encoders: what pretraining objective to use?
+So far, we’ve looked at language model pretraining. But encoders get bidirectional
+context, so we can’t do language modeling!
+Idea: replace some fraction of words in the
+store
+went
+input with a special [MASK] token; predict
+these words. 𝐴, 𝑏
+ℎ , … , ℎ
+1 𝑇
+ℎ , … , ℎ = Encoder 𝑤 , … , 𝑤
+1 𝑇 1 𝑇
+𝑦 ∼ 𝐴𝑤 + 𝑏
+𝑖 𝑖
+Only add loss terms from words that are
+I [M] to the [M]
+“masked out.” If 𝑥෤ is the masked version of 𝑥,
+we’re learning 𝑝 (𝑥|𝑥෤). Called Masked LM.
+𝜃
+[Devlin et al., 2018]
+28
+
+BERT: Bidirectional Encoder Representations from Transformers
+Devlin et al., 2018 proposed the “Masked LM” objective and released the weights of a
+pretrained Transformer, a model they labeled BERT.
+Some more details about Masked LM for BERT:
+• Predict a random 15% of (sub)word tokens. went to store
+[Predict these!]
+• Replace input word with [MASK] 80% of the time
+• Replace input word with a random token 10% of Transformer
+the time Encoder
+• Leave input word unchanged 10% of the time (but
+still predict it!)
+I pizza to the [M]
+• Why? Doesn’t let the model get complacent and not
+build strong representations of non-masked words.
+(No masks are seen at fine-tuning time!)
+[Replaced] [Not replaced] [Masked]
+29 [Devlin et al., 2018]
+
+BERT: Bidirectional Encoder Representations from Transformers
+• The pretraining input to BERT was two separate contiguous chunks of text:
+• BERT was trained to predict whether one chunk follows the other or is randomly
+sampled.
+• Later work has argued this “next sentence prediction” is not necessary.
+30 [Devlin et al., 2018, Liu et al., 2019]
+
+BERT: Bidirectional Encoder Representations from Transformers
+Details about BERT
+• Two models were released:
+• BERT-base: 12 layers, 768-dim hidden states, 12 attention heads, 110 million params.
+• BERT-large: 24 layers, 1024-dim hidden states, 16 attention heads, 340 million params.
+• Trained on:
+• Books Corpus (800 million words)
+• English Wikipedia (2,500 million words)
+• Pretraining is expensive and impractical on a single GPU.
+• BERT was pretrained with 64 TPU chips for a total of 4 days.
+• (TPUs are special tensor operation acceleration hardware)
+• Finetuning is practical and common on a single GPU
+• “Pretrain once, finetune many times.”
+31 [Devlin et al., 2018]
+
+BERT: Bidirectional Encoder Representations from Transformers
+BERT was massively popular and hugely versatile; finetuning BERT led to new state-of-
+the-art results on a broad range of tasks.
+• QQP: Quora Question Pairs (detect paraphrase • Co LA: corpus of linguistic acceptability (detect
+questions) whether sentences are grammatical.)
+• QNLI: natural language inference over question • STS-B: semantic textual similarity
+answering data
+• MRPC: microsoft paraphrase corpus
+• SST-2: sentiment analysis
+• RTE: a small natural language inference corpus
+32 [Devlin et al., 2018]
+
+Limitations of pretrained encoders
+Those results looked great! Why not used pretrained encoders for everything?
+If your task involves generating sequences, consider using a pretrained decoder; BERT and other
+pretrained encoders don’t naturally lead to nice autoregressive (1-word-at-a-time) generation
+methods.
+make/brew/craft goes to make tasty tea END
+Pretrained Encoder Pretrained Decoder
+Iroh goes to [MASK] tasty tea Iroh goes to make tasty tea
+33
+
+Extensions of BERT
+You’ll see a lot of BERT variants like Ro BERTa, Span BERT, +++
+Some generally accepted improvements to the BERT pretraining formula:
+• Ro BERTa: mainly just train BERT for longer and remove next sentence prediction!
+• Span BERT: masking contiguous spans of words makes a harder, more useful pretraining task
+It’s bly irr## esi## sti## bly
+BERT Span BERT
+It’ [MASK] [MASK] [MASK] [MASK] good
+[MASK] irr## esi## sti## [MASK] good
+34 [Liu et al., 2019; Joshi et al., 2020]
+
+Extensions of BERT
+A takeaway from the Ro BERTa paper: more compute, more data can improve pretraining
+even when not changing the underlying Transformer encoder.
+35 [Liu et al., 2019; Joshi et al., 2020]
+
+Pretraining for three types of architectures
+The neural architecture influences the type of pretraining, and natural use cases.
+• Gets bidirectional context – can condition on future!
+Encoders
+• How do we train them to build strong representations?
+Encoder- • Good parts of decoders and encoders?
+Decoders • What’s the best way to pretrain them?
+• Language models! What we’ve seen so far.
+Decoders
+• Nice to generate from; can’t condition on future words
+36
+
+Pretraining encoder-decoders: what pretraining objective to use?
+For encoder-decoders, we could do something like language modeling, but where a
+prefix of every input is provided to the encoder and is not predicted.
+𝑤 , … ,
+𝑇+2
+ℎ , … , ℎ = Encoder 𝑤 , … , 𝑤
+1 𝑇 1 𝑇
+ℎ , … , ℎ = 𝐷𝑒𝑐𝑜𝑑𝑒𝑟 𝑤 , … , 𝑤 , ℎ , … , ℎ
+𝑇+1 2 1 𝑇 1 𝑇
+𝑦 ∼ 𝐴ℎ + 𝑏, 𝑖 > 𝑇
+𝑖 𝑖
+The encoder portion benefits from
+𝑤 , … , 𝑤
+bidirectional context; the decoder portion is
+𝑇+1 2𝑇
+used to train the whole model through
+language modeling.
+𝑤 , … , 𝑤
+1 𝑇
+[Raffel et al., 2018]
+37
+
+Pretraining encoder-decoders: what pretraining objective to use?
+What Raffel et al., 2018 found to work best was span corruption. Their model: T 5.
+Replace different-length spans from the input
+with unique placeholders; decode out the
+spans that were removed!
+This is implemented in text
+preprocessing: it’s still an objective
+that looks like language modeling at
+the decoder side.
+38
+
+Pretraining encoder-decoders: what pretraining objective to use?
+Raffel et al., 2018 found encoder-decoders to work better than decoders for their tasks,
+and span corruption (denoising) to work better than language modeling.
+
+Pretraining encoder-decoders: what pretraining objective to use?
+A fascinating property
+of T 5: it can be
+finetuned to answer a
+wide range of
+questions, retrieving
+knowledge from its
+parameters.
+NQ: Natural Questions
+WQ: Web Questions 220 million params
+770 million params
+TQA: Trivia QA
+3 billion params
+11 billion params
+All “open-domain”
+versions
+[Raffel et al., 2018]
+
+Pretraining for three types of architectures
+The neural architecture influences the type of pretraining, and natural use cases.
+• Gets bidirectional context – can condition on future!
+Encoders
+• How do we train them to build strong representations?
+Encoder- • Good parts of decoders and encoders?
+Decoders • What’s the best way to pretrain them?
+• Language models! What we’ve seen so far.
+Decoders
+• Nice to generate from; can’t condition on future words
+• All the biggest pretrained models are Decoders.
+41
+
+Pretraining decoders
+When using language model pretrained decoders, we can ignore
+☺/
+that they were trained to model 𝑝 𝑤 𝑤 ).
+𝑡 1:𝑡−1
+𝐴, 𝑏
+Linear
+We can finetune them by training a classifier
+on the last word’s hidden state.
+ℎ , … , ℎ
+1 𝑇
+ℎ , … , ℎ = Decoder 𝑤 , … , 𝑤
+1 𝑇 1 𝑇
+𝑦 ∼ 𝐴ℎ + 𝑏
+𝑇
+Where 𝐴 and 𝑏 are randomly initialized and
+specified by the downstream task.
+𝑤 , … , 𝑤
+1 𝑇
+Gradients backpropagate through the whole
+[Note how the linear layer hasn’t been
+network. pretrained and must be learned from scratch.]
+42
+
+Pretraining decoders
+It’s natural to pretrain decoders as language models and then
+use them as generators, finetuning their 𝑝 𝑤 𝑤 )!
+𝜃 𝑡 1:𝑡−1
+This is helpful in tasks where the output is a
+𝑤 𝑤 𝑤 𝑤 𝑤
+2 3 4 5 6
+sequence with a vocabulary like that at
+𝐴, 𝑏
+pretraining time!
+ℎ , … , ℎ
+• Dialogue (context=dialogue history) 1 𝑇
+• Summarization (context=document)
+ℎ , … , ℎ = Decoder 𝑤 , … , 𝑤
+1 𝑇 1 𝑇
+𝑤 𝑤 𝑤 𝑤 𝑤
+𝑤 ∼ 𝐴ℎ + 𝑏 1 2 3 4 5
+𝑡 𝑡−1
+[Note how the linear layer has been pretrained.]
+Where 𝐴, 𝑏 were pretrained in the language
+model!
+43
+
+Generative Pretrained Transformer (GPT) [Radford et al., 2018]
+2018’s GPT was a big success in pretraining a decoder!
+• Transformer decoder with 12 layers, 117 M parameters.
+• 768-dimensional hidden states, 3072-dimensional feed-forward hidden layers.
+• Byte-pair encoding with 40,000 merges
+• Trained on Books Corpus: over 7000 unique books.
+• Contains long spans of contiguous text, for learning long-distance dependencies.
+• The acronym “GPT” never showed up in the original paper; it could stand for
+“Generative Pre Training” or “Generative Pretrained Transformer”
+44
+
+Generative Pretrained Transformer (GPT) [Radford et al., 2018]
+How do we format inputs to our decoder for finetuning tasks?
+Natural Language Inference: Label pairs of sentences as entailing/contradictory/neutral
+Premise: The man is in the doorway
+entailment
+Hypothesis: The person is near the door
+Radford et al., 2018 evaluate on natural language inference.
+Here’s roughly how the input was formatted, as a sequence of tokens for the decoder.
+[START] The man is in the doorway [DELIM] The person is near the door [EXTRACT]
+The linear classifier is applied to the representation of the [EXTRACT] token.
+45
+
+Generative Pretrained Transformer (GPT) [Radford et al., 2018]
+GPT results on various natural language inference datasets.
+46
+
+Increasingly convincing generations (GPT 2) [Radford et al., 2018]
+We mentioned how pretrained decoders can be used in their capacities as language models.
+GPT-2, a larger version (1.5 B) of GPT trained on more data, was shown to produce relatively
+convincing samples of natural language.
+
+GPT-3, In-context learning, and very large models
+So far, we’ve interacted with pretrained models in two ways:
+• Sample from the distributions they define (maybe providing a prompt)
+• Fine-tune them on a task we care about, and take their predictions.
+Very large language models seem to perform some kind of learning without gradient
+steps simply from examples you provide within their contexts.
+GPT-3 is the canonical example of this. The largest T 5 model had 11 billion parameters.
+GPT-3 has 175 billion parameters.
+48
+
+GPT-3, In-context learning, and very large models
+Very large language models seem to perform some kind of learning without gradient
+steps simply from examples you provide within their contexts.
+The in-context examples seem to specify the task to be performed, and the conditional
+distribution mocks performing the task to a certain extent.
+Input (prefix within a single Transformer decoder context):
+“ thanks -> merci
+hello -> bonjour
+mint -> menthe
+otter -> ”
+Output (conditional generations):
+loutre…”
+49
+
+GPT-3, In-context learning, and very large models
+Very large language models seem to perform some kind of learning without gradient
+steps simply from examples you provide within their contexts.
+50
+
+Why scale? Scaling laws
+• Empirical observation: scaling up models leads to reliable gains in perplexity
+
+Scaling can help identify model size – data tradeoffs
+• Modern observation: train a big model that’s not fully converged.
+
+Scaling laws for many other interesting architecture decisions
+• Predictable scaling helps us make intelligent decisions about architectures etc.
+
+Scaling Efficiency: how do we best use our compute
+GPT-3 was 175 B parameters and trained on 300 B tokens of text.
+Roughly, the cost of training a large transformer scales as parameters*tokens
+Did Open AI strike the right parameter-token data to get the best model? No.
+This 70 B parameter model is better than the much larger other models!
+54
+
+Outline
+1. A brief note on subword modeling
+2. Motivating model pretraining from word embeddings
+3. Model pretraining three ways
+1. Encoders
+2. Encoder-Decoders
+3. Decoders
+4. What do we think pretraining is teaching?
+55
+
+What kinds of things does pretraining teach?
+There’s increasing evidence that pretrained models learn a wide variety of things about
+the statistical properties of language. Taking our examples from the start of class:
+• Stanford University is located in __________, California. [Trivia]
+• I put ___ fork down on the table. [syntax]
+• The woman walked across the street, checking for traffic over ___ shoulder. [coreference]
+• I went to the ocean to see the fish, turtles, seals, and _____. [lexical semantics/topic]
+• Overall, the value I got from the two hours watching it was the sum total of the popcorn
+and the drink. The movie was ___. [sentiment]
+• Iroh went into the kitchen to make some tea. Standing next to Iroh, Zuko pondered his
+destiny. Zuko left the ______. [some reasoning – this is harder]
+• I was thinking about the sequence that goes 1, 1, 2, 3, 5, 8, 13, 21, ____ [some basic
+arithmetic; they don’t learn the Fibonnaci sequence]
+• Models also learn – and can exacerbate racism, sexism, all manner of bad biases.
+56
+1. Motivating model pretraining from word embeddings
+2. Model pretraining three ways
+1. Decoders
+2. Encoders
+3. Encoder-Decoders
+3. Interlude: what do we think pretraining is teaching?
+4. Very large models and in-context learning
+
+Sometimes it also memorizes copyrighted material
+
+Sometimes it learns some things we don’t want..
+• Membership inference lets you recover parts
+of the training data
+• Sometimes this training data is semi-private
+material from the web (addresses, emails)

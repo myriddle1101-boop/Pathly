@@ -1,0 +1,48 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 11,
+  "prerequisite_count": 8,
+  "prerequisites": [
+    {
+      "from": "Activation Functions",
+      "to": "Neural Networks",
+      "reason": "Activation functions are essential for understanding how neural networks process information."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Backpropagation",
+      "reason": "Loss functions are needed to compute the error used in backpropagation."
+    },
+    {
+      "from": "Backpropagation",
+      "to": "Neural Networks",
+      "reason": "Backpropagation is a key algorithm used for training neural networks."
+    },
+    {
+      "from": "Training Techniques",
+      "to": "Model Evaluation",
+      "reason": "Understanding training techniques is necessary to evaluate model performance effectively."
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Neural Networks",
+      "reason": "Deep learning is fundamentally based on neural networks."
+    },
+    {
+      "from": "Hyperparameter Optimization",
+      "to": "Training Techniques",
+      "reason": "Hyperparameter optimization is a crucial aspect of training techniques."
+    },
+    {
+      "from": "Regularization",
+      "to": "Training Techniques",
+      "reason": "Regularization techniques are part of the strategies used in training models."
+    },
+    {
+      "from": "Training Techniques",
+      "to": "Training Inference",
+      "reason": "Effective training techniques are necessary for making accurate predictions during inference."
+    }
+  ]
+}

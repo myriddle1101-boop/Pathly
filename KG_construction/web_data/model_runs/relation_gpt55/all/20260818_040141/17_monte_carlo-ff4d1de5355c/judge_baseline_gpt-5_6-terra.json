@@ -1,0 +1,141 @@
+{
+  "created_at": "2026-08-18T18:46:44.104807+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-17_monte_carlo-ff4d1de5355c",
+  "file_name": "17_monte_carlo-ff4d1de5355c",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 19,
+  "topic_metrics": {
+    "precision": 0.3636,
+    "recall": 0.4444,
+    "f1": 0.4,
+    "tp": 4,
+    "fp": 7,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 5,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Variance",
+      "Sampling Techniques",
+      "Integrals",
+      "Probabilistic Models"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Training Cost",
+        "reason": "Mentioned only incidentally as an example of minibatch subsampling, not developed as a learning topic."
+      },
+      {
+        "name": "Empirical Methods",
+        "reason": "The source uses empirical averages and variances but does not present empirical methods as a distinct concept."
+      },
+      {
+        "name": "Optimization",
+        "reason": "Variance minimization for importance sampling is discussed, but optimization is not treated as a general topic."
+      },
+      {
+        "name": "Path Analysis",
+        "reason": "The text discusses active paths and separation in graphical models, not path analysis as a standalone concept."
+      },
+      {
+        "name": "Model Evaluation",
+        "reason": "The source concerns estimation uncertainty and confidence intervals, not general model evaluation."
+      },
+      {
+        "name": "Artificial Neural Networks",
+        "reason": "Artificial neural networks are not a topic of the provided material."
+      },
+      {
+        "name": "Regression and Classification",
+        "reason": "Regression and classification are not discussed."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Monte Carlo sampling",
+        "reason": "The central topic is approximating sums, integrals, and expectations using sample averages."
+      },
+      {
+        "name": "Importance sampling",
+        "reason": "A dedicated section derives importance-weighted estimators and their variance properties."
+      },
+      {
+        "name": "Markov chains",
+        "reason": "The material introduces Markov chains for sampling when direct sampling is difficult."
+      },
+      {
+        "name": "Gibbs sampling",
+        "reason": "The source describes Gibbs updates using conditional distributions and Markov blankets."
+      },
+      {
+        "name": "Law of large numbers",
+        "reason": "It is used to justify almost-sure convergence of Monte Carlo averages."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Integrals",
+        "to": "Probabilistic Models",
+        "reason": "The source uses probability distributions to express integrals as expectations; it does not establish integrals as a prerequisite for probabilistic models."
+      },
+      {
+        "from": "Variance",
+        "to": "Model Evaluation",
+        "reason": "Model evaluation is not a supported topic, and variance is discussed for Monte Carlo estimator uncertainty rather than general evaluation."
+      },
+      {
+        "from": "Sampling Techniques",
+        "to": "Model Evaluation",
+        "reason": "The material does not present sampling as a prerequisite for model evaluation."
+      },
+      {
+        "from": "Optimization",
+        "to": "Artificial Neural Networks",
+        "reason": "Neither general optimization nor artificial neural networks is developed in the source."
+      },
+      {
+        "from": "Regression and Classification",
+        "to": "Model Evaluation",
+        "reason": "Neither regression/classification nor general model evaluation is covered."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Probability distributions",
+        "to": "Monte Carlo sampling",
+        "reason": "Monte Carlo estimation draws samples from a distribution and rewrites sums or integrals as expectations under that distribution."
+      },
+      {
+        "from": "Law of large numbers",
+        "to": "Monte Carlo sampling",
+        "reason": "The law of large numbers provides the stated convergence justification for the Monte Carlo sample average."
+      },
+      {
+        "from": "Monte Carlo sampling",
+        "to": "Importance sampling",
+        "reason": "Importance sampling is derived by transforming a Monte Carlo estimator to sample from an alternative distribution q with importance weights."
+      },
+      {
+        "from": "Conditional probability",
+        "to": "Gibbs sampling",
+        "reason": "Gibbs sampling repeatedly samples each variable from its conditional distribution given its Markov blanket."
+      }
+    ],
+    "overall_note": "The predictions are largely generic; the source is specifically focused on Monte Carlo estimation, importance sampling, and Markov-chain sampling."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-17_monte_carlo-ff4d1de5355c.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-17_monte_carlo-ff4d1de5355c.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-17_monte_carlo-ff4d1de5355c_ledger.csv"
+  }
+}

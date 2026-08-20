@@ -1,0 +1,89 @@
+{
+  "created_at": "2026-08-18T18:49:58.089583+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-cs224n-2026-lecture01-intro-f9a723b011b2",
+  "file_name": "cs224n-2026-lecture01-intro-f9a723b011b2",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 4,
+  "topic_metrics": {
+    "precision": 0.75,
+    "recall": 0.6,
+    "f1": 0.6667,
+    "tp": 6,
+    "fp": 2,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 2,
+    "fn": 1
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Lecture Structure",
+      "Grading Policy",
+      "Homework Assignments",
+      "Natural Language Processing",
+      "Neural Networks",
+      "Course Projects"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Machine Learning Concepts",
+        "reason": "The source discusses deep-learning methods and neural-network foundations, but does not present this broad label as a distinct concept."
+      },
+      {
+        "name": "Learning Techniques",
+        "reason": "This is an overly vague category; the source names specific methods such as pretraining, fine-tuning, and efficient adaptation instead."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Deep Learning",
+        "reason": "The course title and learning goals explicitly focus on deep learning applied to NLP."
+      },
+      {
+        "name": "Word Vectors",
+        "reason": "Word vectors are explicitly listed among the foundational topics."
+      },
+      {
+        "name": "Attention",
+        "reason": "Attention is explicitly identified as a foundational topic and as part of the transformer assignment."
+      },
+      {
+        "name": "Transformers",
+        "reason": "Transformers are explicitly listed as foundational and are the focus of Homework 3."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Machine Learning Concepts",
+        "to": "Learning Techniques",
+        "reason": "The source does not define these broad labels or establish a directional prerequisite relation between them."
+      },
+      {
+        "from": "Machine Learning Concepts",
+        "to": "Neural Networks",
+        "reason": "Although neural-network foundations are covered, the source does not state that the predicted broad category is a prerequisite for neural networks."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Attention",
+        "to": "Transformers",
+        "reason": "Attention is presented as a foundational topic, and Homework 3 requires understanding attention while implementing a transformer."
+      }
+    ],
+    "overall_note": "The source primarily provides course scope and logistics; it supports named NLP and deep-learning topics but not the predicted generic prerequisite claims."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture01-intro-f9a723b011b2.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture01-intro-f9a723b011b2.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture01-intro-f9a723b011b2_ledger.csv"
+  }
+}

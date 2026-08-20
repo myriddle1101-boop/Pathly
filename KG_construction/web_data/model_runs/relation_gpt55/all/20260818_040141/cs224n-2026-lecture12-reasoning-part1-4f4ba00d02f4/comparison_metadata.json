@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture12-reasoning-part1\\4f4ba00d02f4",
+  "run_id": "cs224n-2026-lecture12-reasoning-part1-4f4ba00d02f4",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:12:10.314127+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "8d1babd73f4faaed67f6319be5b1f9faf7970bccd097adbb42366cb6dd833c21",
+    "stage2a_topics_hybrid.json": "1388cb2e6434e47d283283114b99a2b8b28a894f67c1f29cfbb05e60b1233fce",
+    "stage2c_similarity_edges.json": "15b5093237647616b4447fc5c343b98440d1384df67d21ee255431dbf9687043",
+    "stage3_topics_with_summary.json": "d6d9c1ba94ae5c413ed6bd075a87a68ab4417f262c268f6b265c4c9345ac2045"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 1,
+  "new_node_count": 9,
+  "new_edge_count": 2,
+  "golden_path_resource": false
+}

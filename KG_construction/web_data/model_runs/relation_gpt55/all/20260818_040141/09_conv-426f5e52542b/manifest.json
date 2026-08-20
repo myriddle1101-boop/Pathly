@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "09_conv-426f5e52542b",
+  "created_at": "2026-07-29T13:53:08+08:00",
+  "updated_at": "2026-07-29T13:55:23+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "09_conv.pdf",
+    "doc_name": "09_conv",
+    "sha256": "426f5e52542b14242773b6643431c21c065ce3b101388d03d2f04796b1bf11b7",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\09_conv.pdf",
+    "pdf_size_bytes": 21202593
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 134.2519
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:53:08+08:00",
+      "ended_at": "2026-07-29T13:53:16+08:00",
+      "duration_seconds": 7.2077,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\09_conv.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 7177\n[2] 清洗后词数: 7321\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 38\n[5] 分块数（过滤后）: 36\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=86\nConvolutional Networks Lecture slides for Chapter 9 of Deep Learning Ian Goodfellow 2016-09-12 Convolutional Networks Scale up neural networks to process very large images /  video sequences Sparse connections  Paramet...\n\n[Chunk 2] words=279\nCHAPTER 2. LINEAR ALGEBRA CHAPTER 2. LINEAR ALGEBRA define a vector by writing out its elements in the text inline as a row matrix, define a vector by writing out its elements in the text inline as a row matrix, then usi...\n\n[Chunk 3] words=211\ni,j i,j i,j i,j · · In the context of deep learning, we also use some less conventional notation. In the context of deep learning, we also use some less conventional notation. We allow the addition of matrix and a vector...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:53:16+08:00",
+      "ended_at": "2026-07-29T13:54:15+08:00",
+      "duration_seconds": 59.1163,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：36\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/36 ...\n[KeyBERT] chunk 2/36 ...\n[KeyBERT] chunk 3/36 ...\n[KeyBERT] chunk 4/36 ...\n[KeyBERT] chunk 5/36 ...\n[KeyBERT] chunk 6/36 ...\n[KeyBERT] chunk 7/36 ...\n[KeyBERT] chunk 8/36 ...\n[KeyBERT] chunk 9/36 ...\n[KeyBERT] chunk 10/36 ...\n[KeyBERT] chunk 11/36 ...\n[KeyBERT] chunk 12/36 ...\n[KeyBERT] chunk 13/36 ...\n[KeyBERT] chunk 14/36 ...\n[KeyBERT] chunk 15/36 ...\n[KeyBERT] chunk 16/36 ...\n[KeyBERT] chunk 17/36 ...\n[KeyBERT] chunk 18/36 ...\n[KeyBERT] chunk 19/36 ...\n[KeyBERT] chunk 20/36 ...\n[KeyBERT] chunk 21/36 ...\n[KeyBERT] chunk 22/36 ...\n[KeyBERT] chunk 23/36 ...\n[KeyBERT] chunk 24/36 ...\n[KeyBERT] chunk 25/36 ...\n[KeyBERT] chunk 26/36 ...\n[KeyBERT] chunk 27/36 ...\n[KeyBERT] chunk 28/36 ...\n[KeyBERT] chunk 29/36 ...\n[KeyBERT] chunk 30/36 ...\n[KeyBERT] chunk 31/36 ...\n[KeyBERT] chunk 32/36 ...\n[KeyBERT] chunk 33/36 ...\n[KeyBERT] chunk 34/36 ...\n[KeyBERT] chunk 35/36 ...\n[KeyBERT] chunk 36/36 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Convolutional Networks\n02. Matrices\n03. Neural Networks\n04. Learning Algorithms\n05. Feature Learning\n06. Training Techniques\n07. Data Representation\n08. Network Architecture\n09. Mathematical Foundations\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5331.56it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:54:15+08:00",
+      "ended_at": "2026-07-29T13:54:22+08:00",
+      "duration_seconds": 6.83,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Mathematical Foundations -> Learning Algorithms | Mathematical concepts are essential for understanding algorithms.\n02. Mathematical Foundations -> Data Representation | Mathematics is needed to structure and format data.\n03. Neural Networks -> Convolutional Networks | Understanding neural networks is necessary to grasp convolutional networks.\n04. Neural Networks -> Network Architecture | Knowledge of neural networks is required to understand their architecture.\n05. Learning Algorithms -> Training Techniques | Algorithms are fundamental to developing effective training methods.\n06. Feature Learning -> Learning Algorithms | Feature learning relies on algorithms for model training.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:54:22+08:00",
+      "ended_at": "2026-07-29T13:54:54+08:00",
+      "duration_seconds": 32.7938,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 1 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Learning Algorithms <-> Training Techniques | sim=0.741\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5428.83it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:54:54+08:00",
+      "ended_at": "2026-07-29T13:55:21+08:00",
+      "duration_seconds": 26.2841,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Convolutional Networks\n[LLM] 2/9 Matrices\n[LLM] 3/9 Neural Networks\n[LLM] 4/9 Learning Algorithms\n[LLM] 5/9 Feature Learning\n[LLM] 6/9 Training Techniques\n[LLM] 7/9 Data Representation\n[LLM] 8/9 Network Architecture\n[LLM] 9/9 Mathematical Foundations\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:55:21+08:00",
+      "ended_at": "2026-07-29T13:55:23+08:00",
+      "duration_seconds": 1.7306,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output missing"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 6\n[3] Similarity edges: 1\n[4] Graph nodes=9, edges=6\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T13:53:08+08:00"
+}

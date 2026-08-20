@@ -1,0 +1,56 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 8,
+  "prerequisites": [
+    {
+      "from": "Python Basics",
+      "to": "Python Packages",
+      "relation_type": "strong_prerequisite",
+      "reason": "Using external libraries requires basic Python syntax and import/use of code."
+    },
+    {
+      "from": "Python Environment",
+      "to": "Python Packages",
+      "relation_type": "strong_prerequisite",
+      "reason": "Managing packages requires understanding the Python environment where packages are installed."
+    },
+    {
+      "from": "Python Basics",
+      "to": "Data Manipulation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Manipulating data in Python requires core syntax, variables, and data structures."
+    },
+    {
+      "from": "Python Packages",
+      "to": "Data Manipulation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Practical Python data manipulation commonly depends on external libraries such as pandas or NumPy."
+    },
+    {
+      "from": "Python Basics",
+      "to": "Python Functions",
+      "relation_type": "strong_prerequisite",
+      "reason": "Defining and using functions requires understanding basic Python syntax and execution."
+    },
+    {
+      "from": "Python Basics",
+      "to": "Debugging Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Debugging Python code requires understanding the basic code being inspected."
+    },
+    {
+      "from": "Python Basics",
+      "to": "Advanced Python Concepts",
+      "relation_type": "strong_prerequisite",
+      "reason": "Advanced Python features build on core language syntax and concepts."
+    },
+    {
+      "from": "Python Functions",
+      "to": "Advanced Python Concepts",
+      "relation_type": "strong_prerequisite",
+      "reason": "Many advanced Python topics rely on functions, such as decorators, closures, and higher-order functions."
+    }
+  ]
+}

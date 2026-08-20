@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04-language-models-generation\\fd2b5b9f4415",
+  "run_id": "04-language-models-generation-fd2b5b9f4415",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:01:45.030333+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "f84307d21859c680520510e9abd8db49d863197eff2db09fb3c70f511bf16f58",
+    "stage2a_topics_hybrid.json": "17f210d978101f2e16d9ba3a1c590976f212db474e6326378ac881fe2a7484cb",
+    "stage2c_similarity_edges.json": "682642be2a886df05a9d7cf50cc461ea843e1518f29f43988046a9ec6608ea96",
+    "stage3_topics_with_summary.json": "2060cf5b761adbb112e67496426847b2123011f395406abe98a11231770727b9"
+  },
+  "old_relation_count": 7,
+  "new_relation_count": 4,
+  "new_node_count": 9,
+  "new_edge_count": 5,
+  "golden_path_resource": false
+}

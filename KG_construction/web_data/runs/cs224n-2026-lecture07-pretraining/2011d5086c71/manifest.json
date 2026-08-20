@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "run_id": "cs224n-2026-lecture07-pretraining-2011d5086c71",
+  "created_at": "2026-07-07T19:49:34+08:00",
+  "updated_at": "2026-07-07T19:52:17+08:00",
+  "status": "failed",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "cs224n-2026-lecture07-pretraining.pdf",
+    "doc_name": "cs224n-2026-lecture07-pretraining",
+    "sha256": "2011d5086c717a25c628d0af7e6d2efa9847f9e58509a157b108935ae446ec6a",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\cs224n-2026-lecture07-pretraining.pdf",
+    "pdf_size_bytes": 3186931
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b"
+    ],
+    "failed_stage": "stage2c",
+    "next_resume_stage": "stage2c",
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 163.2822
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:49:34+08:00",
+      "ended_at": "2026-07-07T19:49:42+08:00",
+      "duration_seconds": 8.0284,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\cs224n-2026-lecture07-pretraining.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3405\n[2] 清洗后词数: 3436\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 15\n[5] 分块数（过滤后）: 15\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=207\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang Lecture 6: Pretraining Lecture Plan 1. Pretraining – motivation (10 mins) 2. Subword modeling (10 mins) 3. Motivating model pretraining from word...\n\n[Chunk 2] words=251\nThe byte-pair encoding algorithm Subword modeling in NLP encompasses a wide range of methods for reasoning about structure below the word level. (Parts of words, characters, bytes.)  The dominant modern paradigm is to l...\n\n[Chunk 3] words=198\nMotivating word meaning and context Recall the adage we mentioned at the beginning of the course: “You shall know a word by the company it keeps” (J. R. Firth 1957: 11) This quote is a summary of distributional semantics...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:49:42+08:00",
+      "ended_at": "2026-07-07T19:50:50+08:00",
+      "duration_seconds": 67.5964,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：15\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/15 ...\n[KeyBERT] chunk 2/15 ...\n[KeyBERT] chunk 3/15 ...\n[KeyBERT] chunk 4/15 ...\n[KeyBERT] chunk 5/15 ...\n[KeyBERT] chunk 6/15 ...\n[KeyBERT] chunk 7/15 ...\n[KeyBERT] chunk 8/15 ...\n[KeyBERT] chunk 9/15 ...\n[KeyBERT] chunk 10/15 ...\n[KeyBERT] chunk 11/15 ...\n[KeyBERT] chunk 12/15 ...\n[KeyBERT] chunk 13/15 ...\n[KeyBERT] chunk 14/15 ...\n[KeyBERT] chunk 15/15 ...\n[2] KeyBERT候选数：77\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Pretraining Techniques\n02. Decoders\n03. Encoders\n04. Language Modeling\n05. Neural Architectures\n06. Training Techniques\n07. Word Representations\n08. Contextual Learning\n09. Future Directions\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5352.69it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:50:50+08:00",
+      "ended_at": "2026-07-07T19:51:14+08:00",
+      "duration_seconds": 23.6617,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Word Representations -> Language Modeling | Language modeling relies on effective word representations to predict the next word.\n02. Encoders -> Decoders | Decoders generate outputs based on the encoded representations from encoders.\n03. Neural Architectures -> Encoders | Understanding neural architectures is essential for grasping how encoders function.\n04. Neural Architectures -> Decoders | Decoders are built upon the principles of neural architectures.\n05. Training Techniques -> Pretraining Techniques | Pretraining techniques are a specific application of broader training techniques.\n06. Contextual Learning -> Language Modeling | Contextual learning enhances language modeling by utilizing context for predictions.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "failed",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:51:14+08:00",
+      "ended_at": "2026-07-07T19:52:17+08:00",
+      "duration_seconds": 63.7725,
+      "return_code": 1,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": false,
+        "missing_inputs": [],
+        "missing_outputs": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\stage2c_similarity_edges.json"
+        ],
+        "details": []
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n",
+      "stderr_tail": "f_hub_download_to_cache_dir\n    _get_metadata_or_catch_error(\n  File \"D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Lib\\site-packages\\huggingface_hub\\file_download.py\", line 1694, in _get_metadata_or_catch_error\n    metadata = get_hf_file_metadata(\n               ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Lib\\site-packages\\huggingface_hub\\utils\\_validators.py\", line 88, in _inner_fn\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Lib\\site-packages\\huggingface_hub\\file_download.py\", line 1616, in get_hf_file_metadata\n    response = _httpx_follow_relative_redirects_with_backoff(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Lib\\site-packages\\huggingface_hub\\utils\\_http.py\", line 685, in _httpx_follow_relative_redirects_with_backoff\n    response = http_backoff(\n               ^^^^^^^^^^^^^\n  File \"D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Lib\\site-packages\\huggingface_hub\\utils\\_http.py\", line 559, in http_backoff\n    return next(\n           ^^^^^\n  File \"D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Lib\\site-packages\\huggingface_hub\\utils\\_http.py\", line 467, in _http_backoff_base\n    response = client.request(method=method, url=url, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Lib\\site-packages\\httpx\\_client.py\", line 825, in request\n    return self.send(request, auth=auth, follow_redirects=follow_redirects)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Lib\\site-packages\\httpx\\_client.py\", line 901, in send\n    raise RuntimeError(\"Cannot send a request, as the client has been closed.\")\nRuntimeError: Cannot send a request, as the client has been closed.\n"
+    },
+    "stage3": {
+      "status": "pending",
+      "attempts": 0,
+      "started_at": null,
+      "ended_at": null,
+      "duration_seconds": null,
+      "return_code": null,
+      "reused_on_resume": false,
+      "input_paths": [],
+      "output_paths": [],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": false,
+        "outputs_ok": false,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": []
+      },
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "pending",
+      "attempts": 0,
+      "started_at": null,
+      "ended_at": null,
+      "duration_seconds": null,
+      "return_code": null,
+      "reused_on_resume": false,
+      "input_paths": [],
+      "output_paths": [],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": false,
+        "outputs_ok": false,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": []
+      },
+      "stdout_tail": "",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-07T19:49:34+08:00"
+}

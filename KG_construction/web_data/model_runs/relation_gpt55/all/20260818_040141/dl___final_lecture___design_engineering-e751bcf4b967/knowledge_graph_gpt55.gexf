@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="score" type="double" />
+      <attribute id="11" title="reason" type="string" />
+      <attribute id="12" title="similarity" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="drone delivery systems" label="drone delivery systems">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: drone delivery systems" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of logistics and introductory programming concepts." />
+          <attvalue for="6" value="[&quot;Autonomous navigation&quot;, &quot;Regulatory compliance&quot;, &quot;Payload management&quot;, &quot;Route optimization&quot;]" />
+          <attvalue for="7" value="[&quot;Drones can deliver any type of package&quot;, &quot;Drone delivery is always faster than traditional methods&quot;]" />
+          <attvalue for="8" value="[&quot;E-commerce deliveries&quot;, &quot;Medical supply transport&quot;, &quot;Food delivery services&quot;, &quot;Disaster relief logistics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="autonomous drone navigation" label="autonomous drone navigation">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: autonomous drone navigation" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and introductory concepts in robotics and machine learning." />
+          <attvalue for="6" value="[&quot;GPS navigation&quot;, &quot;Computer vision&quot;, &quot;Sensor fusion&quot;, &quot;Path planning&quot;]" />
+          <attvalue for="7" value="[&quot;Drones can navigate without any human input&quot;, &quot;All drones use the same navigation algorithms&quot;]" />
+          <attvalue for="8" value="[&quot;Delivery services&quot;, &quot;Agricultural monitoring&quot;, &quot;Search and rescue operations&quot;, &quot;Surveillance and security&quot;]" />
+        </attvalues>
+      </node>
+      <node id="drone technology advancements" label="drone technology advancements">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: drone technology advancements" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of electronics and programming concepts." />
+          <attvalue for="6" value="[&quot;Autonomous navigation&quot;, &quot;Drone communication systems&quot;, &quot;Sensor integration&quot;, &quot;Regulatory frameworks&quot;]" />
+          <attvalue for="7" value="[&quot;Drones are only used for military purposes&quot;, &quot;All drones are the same&quot;, &quot;Drone technology is fully autonomous without human oversight&quot;]" />
+          <attvalue for="8" value="[&quot;Aerial photography and videography&quot;, &quot;Agricultural monitoring&quot;, &quot;Search and rescue operations&quot;, &quot;Delivery services&quot;]" />
+        </attvalues>
+      </node>
+      <node id="learning agents in AI" label="learning agents in AI">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: learning agents in AI" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of artificial intelligence and programming concepts." />
+          <attvalue for="6" value="[&quot;Agent architecture&quot;, &quot;Reinforcement learning&quot;]" />
+          <attvalue for="7" value="[&quot;Learning agents can operate without any data&quot;, &quot;All agents are the same regardless of their environment&quot;]" />
+          <attvalue for="8" value="[&quot;Game playing AI&quot;, &quot;Robotics navigation&quot;]" />
+        </attvalues>
+      </node>
+      <node id="deep learning algorithms" label="deep learning algorithms">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: deep learning algorithms" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, calculus, and programming in Python." />
+          <attvalue for="6" value="[&quot;Neural Networks&quot;, &quot;Convolutional Neural Networks (CNNs)&quot;, &quot;Recurrent Neural Networks (RNNs)&quot;, &quot;Activation Functions&quot;, &quot;Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Deep learning is the same as machine learning&quot;, &quot;More layers always mean better performance&quot;, &quot;Deep learning requires large datasets only&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Speech recognition&quot;, &quot;Autonomous vehicles&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="machine learning models" label="machine learning models">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: machine learning models" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Model Evaluation&quot;, &quot;Overfitting and Underfitting&quot;]" />
+          <attvalue for="7" value="[&quot;All models are equally effective for every problem&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="learning assignments in education" label="learning assignments in education">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: learning assignments in education" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of educational theories and assessment methods." />
+          <attvalue for="6" value="[&quot;Types of learning assignments&quot;, &quot;Assessment criteria&quot;, &quot;Feedback mechanisms&quot;]" />
+          <attvalue for="7" value="[&quot;All assignments are the same&quot;, &quot;Feedback is not important&quot;, &quot;Only grades matter&quot;]" />
+          <attvalue for="8" value="[&quot;Designing effective assignments&quot;, &quot;Evaluating student performance&quot;, &quot;Enhancing student engagement&quot;]" />
+        </attvalues>
+      </node>
+      <node id="learning methodologies in lectures" label="learning methodologies in lectures">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: learning methodologies in lectures" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;]" />
+          <attvalue for="7" value="[&quot;All machine learning requires large datasets&quot;, &quot;Machine learning can solve any problem without human intervention&quot;]" />
+          <attvalue for="8" value="[&quot;Predictive analytics in business&quot;, &quot;Image recognition in computer vision&quot;]" />
+        </attvalues>
+      </node>
+      <node id="drone fleet management" label="drone fleet management">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: drone fleet management" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of drones, programming, and data analysis." />
+          <attvalue for="6" value="[&quot;Fleet optimization&quot;, &quot;Real-time tracking&quot;, &quot;Route planning&quot;, &quot;Data collection and analysis&quot;]" />
+          <attvalue for="7" value="[&quot;Drones can operate completely autonomously without supervision&quot;, &quot;All drones are suitable for fleet management&quot;]" />
+          <attvalue for="8" value="[&quot;Delivery services&quot;, &quot;Agricultural monitoring&quot;, &quot;Search and rescue operations&quot;, &quot;Infrastructure inspection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="autonomous drone applications in logistics" label="autonomous drone applications in logistics">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: autonomous drone applications in logistics" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of drone technology and logistics principles." />
+          <attvalue for="6" value="[&quot;Drone navigation systems&quot;, &quot;Supply chain optimization&quot;]" />
+          <attvalue for="7" value="[&quot;Drones can operate without any human oversight&quot;, &quot;All logistics tasks can be fully automated with drones&quot;]" />
+          <attvalue for="8" value="[&quot;Last-mile delivery&quot;, &quot;Inventory management in warehouses&quot;]" />
+        </attvalues>
+      </node>
+      <node id="real-time data processing for drones" label="real-time data processing for drones">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: real-time data processing for drones" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of drones, data processing, and programming concepts." />
+          <attvalue for="6" value="[&quot;Sensor data integration&quot;, &quot;Real-time analytics&quot;, &quot;Communication protocols&quot;, &quot;Data filtering and aggregation&quot;]" />
+          <attvalue for="7" value="[&quot;Real-time processing is only about speed&quot;, &quot;All data can be processed equally in real-time&quot;]" />
+          <attvalue for="8" value="[&quot;Autonomous navigation&quot;, &quot;Surveillance and monitoring&quot;, &quot;Agricultural data collection&quot;, &quot;Disaster response and management&quot;]" />
+        </attvalues>
+      </node>
+      <node id="reinforcement learning for autonomous systems" label="reinforcement learning for autonomous systems">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: reinforcement learning for autonomous systems" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and programming skills in Python." />
+          <attvalue for="6" value="[&quot;Markov Decision Processes&quot;, &quot;Q-Learning&quot;, &quot;Policy Gradients&quot;]" />
+          <attvalue for="7" value="[&quot;Reinforcement learning is the same as supervised learning&quot;, &quot;More data always leads to better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Self-driving cars&quot;, &quot;Robotic control systems&quot;, &quot;Game AI development&quot;]" />
+        </attvalues>
+      </node>
+      <node id="deep learning for image recognition in drones" label="deep learning for image recognition in drones">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: deep learning for image recognition in drones" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and neural networks." />
+          <attvalue for="6" value="[&quot;Convolutional Neural Networks (CNNs)&quot;, &quot;Transfer Learning&quot;]" />
+          <attvalue for="7" value="[&quot;Deep learning requires large datasets only&quot;, &quot;Image recognition is solely about accuracy&quot;]" />
+          <attvalue for="8" value="[&quot;Autonomous navigation&quot;, &quot;Object detection in aerial imagery&quot;]" />
+        </attvalues>
+      </node>
+      <node id="adaptive learning systems in AI" label="adaptive learning systems in AI">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: adaptive learning systems in AI" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and statistics." />
+          <attvalue for="6" value="[&quot;Online learning&quot;, &quot;Reinforcement learning&quot;]" />
+          <attvalue for="7" value="[&quot;Adaptive learning systems are the same as traditional machine learning models.&quot;, &quot;They require large amounts of data to be effective.&quot;]" />
+          <attvalue for="8" value="[&quot;Personalized education platforms&quot;, &quot;Dynamic recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="lecture-based learning strategies" label="lecture-based learning strategies">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: lecture-based learning strategies" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of educational theories and learning processes." />
+          <attvalue for="6" value="[&quot;Active Learning&quot;, &quot;Note-taking Techniques&quot;, &quot;Engagement Strategies&quot;]" />
+          <attvalue for="7" value="[&quot;Lecture-based learning is passive.&quot;, &quot;All students learn the same way.&quot;]" />
+          <attvalue for="8" value="[&quot;Enhancing student engagement in lectures&quot;, &quot;Improving retention of information&quot;, &quot;Designing effective lecture materials&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="drone delivery systems" target="drone fleet management">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.8213" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="drone delivery systems" target="drone technology advancements">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.8192" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="autonomous drone navigation" target="autonomous drone applications in logistics">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Autonomous logistics applications require drones to navigate routes and avoid obstacles independently." />
+        </attvalues>
+      </edge>
+      <edge id="3" source="autonomous drone navigation" target="drone delivery systems">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Drone delivery systems depend on autonomous navigation for route following, obstacle avoidance, and safe delivery." />
+          <attvalue for="12" value="0.7484" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="autonomous drone navigation" target="drone technology advancements">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.7658" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="autonomous drone navigation" target="drone fleet management">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.7538" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="learning agents in AI" target="reinforcement learning for autonomous systems">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Reinforcement learning requires understanding agents that learn through interaction with an environment." />
+        </attvalues>
+      </edge>
+      <edge id="7" source="deep learning algorithms" target="deep learning for image recognition in drones">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Drone image recognition with deep learning depends on first understanding deep learning algorithms." />
+        </attvalues>
+      </edge>
+      <edge id="8" source="learning assignments in education" target="lecture-based learning strategies">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.7268" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="learning methodologies in lectures" target="lecture-based learning strategies">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.9141" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="drone fleet management" target="drone technology advancements">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.801" />
+        </attvalues>
+      </edge>
+      <edge id="11" source="autonomous drone applications in logistics" target="autonomous drone navigation">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.8542" />
+        </attvalues>
+      </edge>
+      <edge id="12" source="autonomous drone applications in logistics" target="drone delivery systems">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.8291" />
+        </attvalues>
+      </edge>
+      <edge id="13" source="autonomous drone applications in logistics" target="drone fleet management">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.7952" />
+        </attvalues>
+      </edge>
+      <edge id="14" source="autonomous drone applications in logistics" target="drone technology advancements">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.7576" />
+        </attvalues>
+      </edge>
+      <edge id="15" source="real-time data processing for drones" target="autonomous drone navigation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="11" value="Autonomous drone navigation requires processing sensor and environmental data in real time." />
+        </attvalues>
+      </edge>
+      <edge id="16" source="deep learning for image recognition in drones" target="real-time data processing for drones">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.7252" />
+        </attvalues>
+      </edge>
+      <edge id="17" source="adaptive learning systems in AI" target="learning agents in AI">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.8169" />
+        </attvalues>
+      </edge>
+      <edge id="18" source="adaptive learning systems in AI" target="reinforcement learning for autonomous systems">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="10" value="0.7759" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

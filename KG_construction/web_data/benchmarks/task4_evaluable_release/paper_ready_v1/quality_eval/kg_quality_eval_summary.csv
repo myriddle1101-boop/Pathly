@@ -1,0 +1,4 @@
+﻿metric_group,precision,recall,f1,tp,fp,fn,predicted,gold
+topics,0.3333,0.5,0.4,3,6,3,9,6
+prerequisites,0.0,0.0,0.0,0,8,4,8,4
+similarity,1.0,0.3333,0.5,1,0,2,1,3

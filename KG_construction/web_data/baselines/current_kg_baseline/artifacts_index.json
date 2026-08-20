@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-06-22T21:49:59",
+  "baseline_root": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline",
+  "copied_global_files": [
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\global\\global_knowledge_graph.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+      "sha256": "82274b000eae52f24196c52f7114e04a0e388ba14905530769895451a62fa44c"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\processed_files.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\global\\processed_files.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\processed_files.json",
+      "sha256": "645d1711e3f45e52379a77882c3f122c2985db5852a2762338cc479679caa051"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\upload_history.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\global\\upload_history.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\upload_history.json",
+      "sha256": "fbbf45d4b3b6c2aa8b1e722664044450c4ebb00ae8c0d1974f4e356a981fc3e2"
+    }
+  ],
+  "copied_run_files": [
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\Security and Privacy in ML.pdf",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\Security and Privacy in ML.pdf",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\Security and Privacy in ML.pdf",
+      "sha256": "c5106c61be69b06451a466ab0926c328b2b8a47f4970d33bfe0189231814c81f"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\kg_prerequisite.png",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\kg_prerequisite.png",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\kg_prerequisite.png",
+      "sha256": "1edcc6a2953d379caee69af2856774d27e1dd2997857c0e47c6e854f4b8b7c2b"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\kg_similarity.png",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\kg_similarity.png",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\kg_similarity.png",
+      "sha256": "da8bb3d21fd7b7d038dcc2b4292279262a125003bfac562f84346f275d91a475"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\knowledge_graph.gexf",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\knowledge_graph.gexf",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\knowledge_graph.gexf",
+      "sha256": "babd111395e027509d4a8a6eec6d48434f415c42eab14258f59e8e1ced15c0c1"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\knowledge_graph.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\knowledge_graph.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\knowledge_graph.json",
+      "sha256": "184630a48faa57660157ba7afdee2ada54a31fd8620d50ef20c6b404750c11f6"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage1_chunks.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\stage1_chunks.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage1_chunks.json",
+      "sha256": "e9363ea8a74a0e10719c3f5fb6607d9de4f38a4cf3ff2972a12ef6768cb62140"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage1_text_cleaned.txt",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\stage1_text_cleaned.txt",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage1_text_cleaned.txt",
+      "sha256": "c708c4868c24f04477f315d8db2265f12fe5c12b8dfcf8dc3f0dda22aaffb524"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage2a_topics_hybrid.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\stage2a_topics_hybrid.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage2a_topics_hybrid.json",
+      "sha256": "ab64c5ac3539636dcc9dbc61629abb2ffe61f4d551baf534167cb93360431706"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage2b_prerequisites.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\stage2b_prerequisites.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage2b_prerequisites.json",
+      "sha256": "94b21ba2b7484cf5b215fe8d4327c503a41ad95f54307569498f9f3778af62e0"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage2c_similarity_edges.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\stage2c_similarity_edges.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage2c_similarity_edges.json",
+      "sha256": "b54be1dc1af40858392eb148f6d811dc4059e3d288b0dd5c441660b67564e8a6"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage3_topics_with_summary.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML\\stage3_topics_with_summary.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage3_topics_with_summary.json",
+      "sha256": "a30d98b215db5a80dce6d10f84e9a12c9d6854b7e53ed991a18571199bfded27"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\Dreamer.pdf",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer\\Dreamer.pdf",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\Dreamer.pdf",
+      "sha256": "318891d59ba0065f57eb0e735735700e5eb528f53bf08b81c773437385586c64"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\kg_prerequisite.png",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer\\kg_prerequisite.png",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\kg_prerequisite.png",
+      "sha256": "6a4197f3fea3697ded1b7ded5c8c3127262a681084effb4a6fd38f2d3b79e64f"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\knowledge_graph.gexf",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer\\knowledge_graph.gexf",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\knowledge_graph.gexf",
+      "sha256": "c63ff0d61371c80ab39315d92882ec901244f1793c824e16954ebc40697556ff"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\knowledge_graph.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer\\knowledge_graph.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\knowledge_graph.json",
+      "sha256": "9d5bbd41f42d16767b25ca94c3b60bd4255c3027015007dd79bf9bc6d576a634"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage1_chunks.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer\\stage1_chunks.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage1_chunks.json",
+      "sha256": "9cd1e8cf6c7cdb77fa624ff2699d02bc45ad0929096d381f80fa6ec9e7748c06"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage1_text_cleaned.txt",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer\\stage1_text_cleaned.txt",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage1_text_cleaned.txt",
+      "sha256": "006649d37642b1b3b8530042484e4447bd2c035cb3d3fab894194467a4950f0e"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage2a_topics_hybrid.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer\\stage2a_topics_hybrid.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage2a_topics_hybrid.json",
+      "sha256": "57dcd5421e132e861a68dae56ad93b00a506c4435056ef2120600059876c8b25"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage2b_prerequisites.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer\\stage2b_prerequisites.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage2b_prerequisites.json",
+      "sha256": "2e6f02889397a0211d23d6faf0ee650781781e78d832287a0241cdf9ffa6655d"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage2c_similarity_edges.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer\\stage2c_similarity_edges.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage2c_similarity_edges.json",
+      "sha256": "990e741d23d51ae82cafb19b2cfde1f8789af2b6e78948923759dc8eaa71d055"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage3_topics_with_summary.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer\\stage3_topics_with_summary.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage3_topics_with_summary.json",
+      "sha256": "62c7c095a1bddb5180ae5d6f7c3e7f885959358bfaea23b3dc9bc1f1a086e278"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\Crime.pdf",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime\\Crime.pdf",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\Crime.pdf",
+      "sha256": "3adb6e2cdccd96817d19b7575386e7f14d39c78b69d26638b5504aaa15827d43"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\kg_prerequisite.png",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime\\kg_prerequisite.png",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\kg_prerequisite.png",
+      "sha256": "652098d3e6ad50dae62c80396e0f49fa0eeb289bbbbffa7dc2403574f508a8fd"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\kg_similarity.png",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime\\kg_similarity.png",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\kg_similarity.png",
+      "sha256": "3b15eb6669ead23180d391750a0474ff2d11045f8b38a93943d9df3a453d0afe"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\knowledge_graph.gexf",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime\\knowledge_graph.gexf",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\knowledge_graph.gexf",
+      "sha256": "635aed2b2c34a26486bce0983bfb95f0c740a58794abf571c920e6daeb1ac3fb"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\knowledge_graph.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime\\knowledge_graph.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\knowledge_graph.json",
+      "sha256": "45ed93fc6c570ad3e88b448cf5c5b369e2d6d8e9a8ab9c508dc50bb27337d668"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage1_chunks.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime\\stage1_chunks.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage1_chunks.json",
+      "sha256": "9aa439b8d2eb53426d96a82860d12eff5e98db3d2cb81e2c6ec73b414b0bef62"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage1_text_cleaned.txt",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime\\stage1_text_cleaned.txt",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage1_text_cleaned.txt",
+      "sha256": "9fc97129ed7cfecbb27439ed16b41bfa93627ec4ab68bf02ce38829a0f73dbdf"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage2a_topics_hybrid.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime\\stage2a_topics_hybrid.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage2a_topics_hybrid.json",
+      "sha256": "b744c0634e420165cb8ac7c61d387199c4fd82d591000deef3bf95538d8dd9cf"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage2b_prerequisites.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime\\stage2b_prerequisites.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage2b_prerequisites.json",
+      "sha256": "6f401617bd37c7f05392b4805021eef836029a40436731ef32224e2007364456"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage2c_similarity_edges.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime\\stage2c_similarity_edges.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage2c_similarity_edges.json",
+      "sha256": "42f3e9948b18ba5d54809029eebbd2e73fd70f03af437afe4b5cc8299c825681"
+    },
+    {
+      "source": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage3_topics_with_summary.json",
+      "snapshot": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime\\stage3_topics_with_summary.json",
+      "restore_target": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage3_topics_with_summary.json",
+      "sha256": "0eb0a6efdd8129f1f772cfbdda2fb50a2f3397041d002b191d4889b043863f90"
+    }
+  ]
+}

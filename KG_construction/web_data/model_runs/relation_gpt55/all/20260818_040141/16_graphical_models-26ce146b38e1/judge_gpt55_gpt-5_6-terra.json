@@ -1,0 +1,116 @@
+{
+  "created_at": "2026-08-18T18:46:29.864487+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-16_graphical_models-26ce146b38e1",
+  "file_name": "16_graphical_models-26ce146b38e1",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 38,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1": 0.75,
+    "tp": 9,
+    "fp": 0,
+    "fn": 6
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 4,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Deep Learning",
+      "Probabilistic Models",
+      "Graph Models",
+      "Structured Modeling",
+      "Graph Theory",
+      "Sampling Techniques",
+      "Training Algorithms",
+      "Model Evaluation",
+      "Graph Representations"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Directed Graphical Models",
+        "reason": "The source formally defines directed graphical models using directed acyclic graphs and local conditional distributions."
+      },
+      {
+        "name": "Undirected Graphical Models",
+        "reason": "The source explains undirected models through cliques, clique potentials, and normalized distributions."
+      },
+      {
+        "name": "Conditional Independence and D-Separation",
+        "reason": "Separation and d-separation are presented as methods for determining graph-implied conditional independences."
+      },
+      {
+        "name": "Factor Graphs",
+        "reason": "The source introduces factor graphs as bipartite representations that explicitly specify factor scopes."
+      },
+      {
+        "name": "Ancestral Sampling",
+        "reason": "The source describes ancestral sampling in topological order as an efficient procedure for directed graphical models."
+      },
+      {
+        "name": "Approximate Inference",
+        "reason": "The source states that marginal and conditional inference are #P-hard and usually require approximate inference."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Graph Theory",
+        "to": "Graph Representations",
+        "reason": "The source uses graph representations but does not establish general graph theory as a necessary learning prerequisite for them."
+      },
+      {
+        "from": "Graph Theory",
+        "to": "Graph Models",
+        "reason": "Graph concepts are used to describe graphical models, but the source does not support this broad prerequisite as a strong directional dependency."
+      },
+      {
+        "from": "Graph Representations",
+        "to": "Graph Models",
+        "reason": "Representing a graph is not established as a prerequisite for learning graph-based probabilistic models; it is part of their description."
+      },
+      {
+        "from": "Training Algorithms",
+        "to": "Deep Learning",
+        "reason": "The source mentions gradient descent for a latent-variable strategy, but does not frame training algorithms as a prerequisite for deep learning generally."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Directed Acyclic Graphs",
+        "to": "Directed Graphical Models",
+        "reason": "The source formally defines a directed graphical model using a directed acyclic graph."
+      },
+      {
+        "from": "Conditional Probability Distributions",
+        "to": "Directed Graphical Models",
+        "reason": "Directed models are defined by local conditional probability distributions associated with graph parents."
+      },
+      {
+        "from": "Directed Graphical Models",
+        "to": "Ancestral Sampling",
+        "reason": "Ancestral sampling relies on the directed model's parent structure and a topological ordering."
+      },
+      {
+        "from": "Clique Potentials",
+        "to": "Undirected Graphical Models",
+        "reason": "Undirected models are constructed from nonnegative factors over graph cliques."
+      }
+    ],
+    "overall_note": "The predictions identify the broad graph-based structured-modeling theme, but omit the central directed/undirected graphical-model formalisms and inference concepts."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-16_graphical_models-26ce146b38e1.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-16_graphical_models-26ce146b38e1.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-16_graphical_models-26ce146b38e1_ledger.csv"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b",
+  "run_id": "09_conv-426f5e52542b",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:05:12.360230+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "4f72b3d4ecf5e7432ad39175b7aecd413e2619a1b093ed21c6bfc063eee1b1f2",
+    "stage2a_topics_hybrid.json": "7068cf0214e16285a5a63647cff26a8990d31b0d08d381c7f13244117917f2eb",
+    "stage2c_similarity_edges.json": "071f51442af540c1b2afcfcbe06b4e20631ab2886a12dc7935437103e6625a4f",
+    "stage3_topics_with_summary.json": "2a538803fa6217f136265bee1930edf9519740854863ecb2034b56da707e7e46"
+  },
+  "old_relation_count": 6,
+  "new_relation_count": 6,
+  "new_node_count": 9,
+  "new_edge_count": 7,
+  "golden_path_resource": false
+}

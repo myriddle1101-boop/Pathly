@@ -1,0 +1,559 @@
+{
+  "candidate_id": "kq5-f97aca82b2f9945e",
+  "created_at": "2026-08-13T16:19:57.037550+00:00",
+  "records": [
+    {
+      "assessment_targets": [
+        {
+          "id": "linear-separability-mechanism",
+          "kind": "mechanism",
+          "text": "Trace the representation and identify whether one straight boundary can separate the classes."
+        },
+        {
+          "id": "linear-separability-misconception",
+          "kind": "misconception_discrimination",
+          "text": "Distinguish representation limits from optimisation limits."
+        },
+        {
+          "id": "linear-separability-boundary",
+          "kind": "application_or_boundary",
+          "text": "Decide when a feature transformation is needed before a linear decision."
+        }
+      ],
+      "canonical_id": "golden:linear-separability",
+      "claims": [
+        {
+          "kind": "definition",
+          "review_status": "approved",
+          "source_pages": [
+            2,
+            3
+          ],
+          "text": "A binary classification problem is linearly separable in a representation when one straight decision boundary can place the classes on opposite sides."
+        },
+        {
+          "kind": "mechanism",
+          "review_status": "approved",
+          "source_pages": [
+            2,
+            3
+          ],
+          "text": "A linear classifier scores an input with a weighted sum and uses one boundary to divide the representation space."
+        },
+        {
+          "kind": "boundary",
+          "review_status": "approved",
+          "source_pages": [
+            2,
+            3
+          ],
+          "text": "Separability is a property of the current representation, not a guarantee that every problem is simple or that training will succeed."
+        },
+        {
+          "kind": "example",
+          "review_status": "approved",
+          "source_pages": [
+            2,
+            3
+          ],
+          "text": "In the original XOR input space, positive and negative examples occupy alternating corners."
+        },
+        {
+          "kind": "counterexample",
+          "review_status": "approved",
+          "source_pages": [
+            2,
+            3
+          ],
+          "text": "XOR is not linearly separable in its original two-dimensional input representation."
+        }
+      ],
+      "concept_name": "Linear Separability",
+      "evidence": {
+        "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+        "pages": [
+          {
+            "chunk_ids": [
+              "01e27d8d0770-8"
+            ],
+            "page_number": 2,
+            "text": "Roadmap\n• Example: Learning XOR\n• Gradient-Based Learning\n• Hidden Units\n• Architecture Design\n• Back-Propagation\n(Goodfellow 2017)"
+          },
+          {
+            "chunk_ids": [
+              "01e27d8d0770-7"
+            ],
+            "page_number": 3,
+            "text": "CHAPTER 6. DEEP FEEDFORWARD NETWORKS\nXOR is not linearly separable\n1\n0\n0 1\nx\n1\n(Goodfellow 2017)\nx\n2\nOriginal x space\n1\n0\n0 1 2\nh\n1\nh\n2\nLearned h space\nFigure 6.1, left\nFigure 6.1: Solving the XOR problem by learning a representation. The bold numbers\nprinted on the plot indicate the value that the learned function must output at each point.\n(Left) A linear model applied directly to the original input cannot implement the XOR\nfunction. When x = 0, the model’s output must increase as x increases. When x = 1,\n1 2 1\nthe model’s output must decrease as x increases. A linear model must apply a fixed\n2\ncoefficient w to x . The linear model therefore cannot use the value of x to change\n2 2 1\nthe coefficient on x and cannot solve this problem. (Right) In the transformed space\n2\nrepresented by the features extracted by a neural network, a linear model can now solve\nthe problem. In our example solution, the two points that must have output 1 have been\ncollapsed into a single point in feature space. In other words, the nonlinear features have\nmapped both x = [1, 0] and x = [0, 1] to a single point in feature space, h = [1, 0] .\n> > >\nThe linear model can now describe the function as increasing in h and decreasing in h .\n1 2\nIn this example, the motivation for learning the feature space is only to make the model\ncapacity greater so that it can fit the training set. In more realistic applications, learned\nrepresentations can also help the model to generalize.\n169"
+          }
+        ],
+        "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207"
+      },
+      "misconceptions": [
+        {
+          "correction": "A nonlinear feature transformation can create a representation in which a later linear boundary works.",
+          "id": "linear-separability-is-permanent",
+          "text": "If a problem is not linearly separable once, it can never become separable."
+        },
+        {
+          "correction": "It describes whether a boundary exists in a representation; optimisation is the separate task of finding parameters.",
+          "id": "linear-separability-is-training",
+          "text": "Linear separability means a model has already learned the right weights."
+        }
+      ]
+    },
+    {
+      "assessment_targets": [
+        {
+          "id": "xor-mechanism",
+          "kind": "mechanism",
+          "text": "Explain why a nonlinear hidden representation changes the XOR solution."
+        },
+        {
+          "id": "xor-misconception",
+          "kind": "misconception_discrimination",
+          "text": "Distinguish additional depth from adding nonlinearity."
+        },
+        {
+          "id": "xor-boundary",
+          "kind": "application_or_boundary",
+          "text": "Recognise alternating labels as a reason to test representational limits."
+        }
+      ],
+      "canonical_id": "golden:xor",
+      "claims": [
+        {
+          "kind": "definition",
+          "review_status": "approved",
+          "source_pages": [
+            2,
+            3,
+            7
+          ],
+          "text": "XOR outputs one when exactly one of two binary inputs is one, and outputs zero when the inputs match."
+        },
+        {
+          "kind": "mechanism",
+          "review_status": "approved",
+          "source_pages": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "text": "A hidden nonlinear representation can map XOR inputs into features that a later linear output can separate."
+        },
+        {
+          "kind": "boundary",
+          "review_status": "approved",
+          "source_pages": [
+            4,
+            5,
+            6
+          ],
+          "text": "Adding more linear layers without nonlinear activations does not solve the representational limitation."
+        },
+        {
+          "kind": "example",
+          "review_status": "approved",
+          "source_pages": [
+            2,
+            3,
+            7
+          ],
+          "text": "The inputs (0,1) and (1,0) are positive while (0,0) and (1,1) are negative."
+        },
+        {
+          "kind": "counterexample",
+          "review_status": "approved",
+          "source_pages": [
+            2,
+            3
+          ],
+          "text": "One straight boundary in the original input plane cannot isolate both positive XOR corners."
+        }
+      ],
+      "concept_name": "XOR",
+      "evidence": {
+        "document_id": "public:01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+        "pages": [
+          {
+            "chunk_ids": [
+              "01e27d8d0770-8"
+            ],
+            "page_number": 2,
+            "text": "Roadmap\n• Example: Learning XOR\n• Gradient-Based Learning\n• Hidden Units\n• Architecture Design\n• Back-Propagation\n(Goodfellow 2017)"
+          },
+          {
+            "chunk_ids": [
+              "01e27d8d0770-7"
+            ],
+            "page_number": 3,
+            "text": "CHAPTER 6. DEEP FEEDFORWARD NETWORKS\nXOR is not linearly separable\n1\n0\n0 1\nx\n1\n(Goodfellow 2017)\nx\n2\nOriginal x space\n1\n0\n0 1 2\nh\n1\nh\n2\nLearned h space\nFigure 6.1, left\nFigure 6.1: Solving the XOR problem by learning a representation. The bold numbers\nprinted on the plot indicate the value that the learned function must output at each point.\n(Left) A linear model applied directly to the original input cannot implement the XOR\nfunction. When x = 0, the model’s output must increase as x increases. When x = 1,\n1 2 1\nthe model’s output must decrease as x increases. A linear model must apply a fixed\n2\ncoefficient w to x . The linear model therefore cannot use the value of x to change\n2 2 1\nthe coefficient on x and cannot solve this problem. (Right) In the transformed space\n2\nrepresented by the features extracted by a neural network, a linear model can now solve\nthe problem. In our example solution, the two points that must have output 1 have been\ncollapsed into a single point in feature space. In other words, the nonlinear features have\nmapped both x = [1, 0] and x = [0, 1] to a single point in feature space, h = [1, 0] .\n> > >\nThe linear model can now describe the function as increasing in h and decreasing in h .\n1 2\nIn this example, the motivation for learning the feature space is only to make the model\ncapacity greater so that it can fit the training set. In more realistic applications, learned\nrepresentations can also help the model to generalize.\n169"
+          },
+          {
+            "chunk_ids": [
+              "01e27d8d0770-2"
+            ],
+            "page_number": 4,
+            "text": "CHAPTER 6. DEEP FEEDFORWARD NETWORKS\nRectified Linear Activation\n0\n0\nz\n(Goodfellow 2017)\nz\n,0\nxam\n=\n)z(g\n}\n{\nFigure 6.3\nFigure 6.3: The rectified linear activation function. This activation function is the default\nactivation function recommended for use with most feedforward neural networks. Applying\nthis function to the output of a linear transformation yields a nonlinear transformation.\nHowever, the function remains very close to linear, in the sense that is a piecewise linear\nfunction with two linear pieces. Because rectified linear units are nearly linear, they\npreserve many of the properties that make linear models easy to optimize with gradient-\nbased methods. They also preserve many of the properties that make linear models\ngeneralize well. A common principle throughout computer science is that we can build\ncomplicated systems from minimal components. Much as a Turing machine’s memory\nneeds only to be able to store 0 or 1 states, we can build a universal function approximator\nfrom rectified linear functions.\n175"
+          },
+          {
+            "chunk_ids": [
+              "01e27d8d0770-3"
+            ],
+            "page_number": 5,
+            "text": "CHAPTER 6. DEEP FEEDFORWARD NETWORKS\nNetwork Diagrams\nyy yy\nw\nhh hh hh\n11 22\nW\nxx xx xx\n11 22\nFigure 6.2\nFigure 6.2: An example of a feedforward network, drawn in two different styles. Specifically,\n(Goodfellow 2017)\nthis is the feedforward network we use to solve the XOR example. It has a single hidden\nlayer containing two units. (Left)In this style, we draw every unit as a node in the graph.\nThis style is very explicit and unambiguous but for networks larger than this example\nit can consume too much space. (Right)In this style, we draw a node in the graph for\neach entire vector representing a layer’s activations. This style is much more compact.\nSometimes we annotate the edges in this graph with the name of the parameters that\ndescribe the relationship between two layers. Here, we indicate that a matrix W describes\nthe mapping from x to h, and a vector w describes the mapping from h to y. We\ntypically omit the intercept parameters associated with each layer when labeling this kind\nof drawing.\nmodel, we used a vector of weights and a scalar bias parameter to describe an\naffine transformation from an input vector to an output scalar. Now, we describe\nan affine transformation from a vector x to a vector h, so an entire vector of bias\nparameters is needed. The activation function g is typically chosen to be a function\nthat is applied element-wise, with h = g(x W + c ). In modern neural networks,\ni > :,i i\nthe default recommendation is to use the rectified linear unit or ReLU (Jarrett\net al., 2009; Nair and Hinton, 2010; Glorot et al., 2011a) defined by the activation\nfunction g(z) = max 0, z depicted in figure 6.3.\n{ }\nWe can now specify our complete network as\nf (x; W , c, w, b) = w max 0, W x + c + b. (6.3)\n> >\n{ }\nWe can now specify a solution to the XOR problem. Let\n1 1\nW = , (6.4)\n1 1\n \u0000\n0\nc = , (6.5)\n1\n \u0000 \u0000\n174"
+          },
+          {
+            "chunk_ids": [
+              "01e27d8d0770-5"
+            ],
+            "page_number": 6,
+            "text": "CHAPTER 6. DEEP FEEDFORWARD NETWORKS\nCHAPTER 6. DEEP FEEDFORWARD NETWORKS\naffine transformation from an input vector to an output scalar. Now, we describe\naffine transformation from an input vector to an output scalar. Now, we describe\nan affine transformation from a vector x to a vector h, so an entire vector of bias\nan affine transformation from a vector x to a vector h, so an entire vector of bias\nparameters is needed. The activation function g is typically chosen to be a function\nparameters is needed. The activation function g is typically chosen to be a function\nthat is applied element-wise, with h = g(x W + c ). In modern neural networks,\nthat is applied element-wise, with i h = g>(x W:,i +i c ). In modern neural networks,\ni > :,i i\nthe default recommendation is to use the rectified linear unit, or ReLU (Jarrett\nthe default recommendation is to use the rectified linear unit, or ReLU (Jarrett\nSolving XOR\net al., 2009; Nair and Hinton, 2010; Glorot et al., 2011a), defined by the activation\net al., 2009; Nair and Hinton, 2010; Glorot et al., 2011a), defined by the activation\nfunction g(z) = max 0, z , depicted in figure 6.3.\nfunction g(z) = max 0, z , depicted in figure 6.3.\n{ }\n{ }\nWe can now specify our complete network as\nWe can now specify our complete network as\nf (x;fW(x;, Wc, w, c,,bw) ,=b)w= wmamxax0, W0, Wx x++c c ++b.b. ((66..33))\n> > > >\n{ { } }\nWe can then specify a solution to the XOR problem. Let\nWe can then specify a solution to the XOR problem. Let\n1 1\n1 1\nW = , (6.4)\nW = , (6.4)\n1 1\n1 1\n \u0000\n \u0000\n0\n0\nc = , (6.5)\nc = 1 , (6.5)\n1\n \u0000 \u0000\n \u0000 \u0000\n1\nw = 1 , (6.6)\n2\nw = , (6.6)\n 2\u0000 \u0000\n \u0000 \u0000\nand b = 0.\nand b = 0.\nWe can now walk through how the model processes a batch of inputs. Let X\n(Goodfellow 2017)\nWe can now walk through how the model processes a batch of inputs. Let X\nbe the design matrix containing all four points in the binary input space, with one\nbe the design matrix containing all four points in the binary input space, with one\nexample per row:\nexample per row: 0 0\n0 00 1\nX = 2 3 . (6.7)\n0 11 0\nX = 2 3 . (6.7)\n6 1 1 7\n1 0\n6 7\n4 5\n6 1 1 7\nThe first step in the neural network is to multiply the input matrix by the first\n6 7\n4 5\nlayer’s weight matrix:\nThe first step in the neural network is to multiply the input matrix by the first\n0 0\nlayer’s weight matrix:\n1 1\n0 0\nXW = 2 3 . (6.8)\n1 1\n1 1\nXW = 2 6 2 32 .7 (6.8)\n16 1 7\n4 5\nNext, we add the bias vector c, to obtain\n6 2 2 7\n6 7\n4 5\n0 1\nNext, we add the bias vector c, to obtain\n\u0000\n1 0\n2 3 . (6.9)\n0 1\n1 0\n\u0000\n1 0\n6 2 1 7\n2 6 3 . 7 (6.9)\n1 0\n4 5\n171\n6 2 1 7\n6 7\n4 5\n171"
+          },
+          {
+            "chunk_ids": [
+              "01e27d8d0770-7"
+            ],
+            "page_number": 7,
+            "text": "CHAPTER 6. DEEP FEEDFORWARD NETWORKS\nSolving XOR\n1\n0\n0 1\nx\n1\n(Goodfellow 2017)\nx\n2\nOriginal x space\n1\n0\n0 1 2\nh\n1\nh\n2\nLearned h space\nFigure 6.1\nFigure 6.1: Solving the XOR problem by learning a representation. The bold numbers\nprinted on the plot indicate the value that the learned function must output at each point.\n(Left)A linear model applied directly to the original input cannot implement the XOR\nfunction. When x = 0, the model’s output must increase as x increases. When x = 1,\n1 2 1\nthe model’s output must decrease as x increases. A linear model must apply a fixed\n2\ncoefficient w to x . The linear model therefore cannot use the value of x to change\n2 2 1\nthe coefficient on x and cannot solve this problem. (Right)In the transformed space\n2\nrepresented by the features extracted by a neural network, a linear model can now solve\nthe problem. In our example solution, the two points that must have output 1 have been\ncollapsed into a single point in feature space. In other words, the nonlinear features have\nmapped both x = [1, 0] and x = [0, 1] to a single point in feature space, h = [1, 0] .\n> > >\nThe linear model can now describe the function as increasing in h and decreasing in h .\n1 2\nIn this example, the motivation for learning the feature space is only to make the model\ncapacity greater so that it can fit the training set. In more realistic applications, learned\nrepresentations can also help the model to generalize.\n173"
+          }
+        ],
+        "resource_id": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207"
+      },
+      "misconceptions": [
+        {
+          "correction": "Compositions of linear transformations remain linear; a nonlinear activation changes what can be represented.",
+          "id": "xor-needs-more-linear-layers",
+          "text": "XOR can be solved simply by stacking more linear layers."
+        },
+        {
+          "correction": "The issue is geometric: positive and negative inputs alternate in the original representation.",
+          "id": "xor-label-pattern",
+          "text": "XOR is difficult because its labels are arbitrary names."
+        }
+      ]
+    },
+    {
+      "assessment_targets": [
+        {
+          "id": "network-mechanism",
+          "kind": "mechanism",
+          "text": "Trace input, hidden representation, activation, and output."
+        },
+        {
+          "id": "network-misconception",
+          "kind": "misconception_discrimination",
+          "text": "Separate representational capacity from learning parameters."
+        },
+        {
+          "id": "network-boundary",
+          "kind": "application_or_boundary",
+          "text": "Identify why a purely linear stacked architecture cannot add nonlinear capacity."
+        }
+      ],
+      "canonical_id": "golden:neural-networks",
+      "claims": [
+        {
+          "kind": "definition",
+          "review_status": "approved",
+          "source_pages": [
+            13,
+            14
+          ],
+          "text": "A neural network composes learned weighted transformations with nonlinear activations to produce an output from an input representation."
+        },
+        {
+          "kind": "mechanism",
+          "review_status": "approved",
+          "source_pages": [
+            13,
+            14
+          ],
+          "text": "Hidden layers transform inputs into features; the output layer makes a decision from those transformed features."
+        },
+        {
+          "kind": "boundary",
+          "review_status": "approved",
+          "source_pages": [
+            13,
+            14
+          ],
+          "text": "Depth alone is not enough when every layer is linear because the composition still behaves as one linear transformation."
+        },
+        {
+          "kind": "example",
+          "review_status": "approved",
+          "source_pages": [
+            13,
+            14
+          ],
+          "text": "A hidden layer can create features that make a previously nonlinearly separable task easier for a final linear classifier."
+        },
+        {
+          "kind": "counterexample",
+          "review_status": "approved",
+          "source_pages": [
+            13,
+            14
+          ],
+          "text": "A stack of purely linear layers cannot create the nonlinear representational change needed for XOR."
+        }
+      ],
+      "concept_name": "Neural Networks",
+      "evidence": {
+        "document_id": "public:8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+        "pages": [
+          {
+            "chunk_ids": [
+              "8aae94ed0125-4"
+            ],
+            "page_number": 13,
+            "text": "Neural classification\n• Typical ML/stats softmax classifier:\n• Learned parameters θ are just elements\nof W (not input representation x, which has sparse symbolic features)\n• Classifier gives linear decision boundary, which can be limiting\n• A neural network classifier differs in that:\n• We learn both W and (distributed!) representations for words\n• The word vectors x re-represent one-hot vectors, moving them\naround in an intermediate layer vector space, for easy classification\nwith a (linear) softmax classifier\n• Conceptually, we have an embedding layer: x = Le\n• We use deep networks—more layers—that let us re-represent and But typically, it is linear\nrelative to the pre-final\ncompose our data multiple times, giving a non-linear classifier\nlayer representation\n13"
+          },
+          {
+            "chunk_ids": [
+              "8aae94ed0125-4"
+            ],
+            "page_number": 14,
+            "text": "NER: Binary classification for center word being location\n• We do supervised training and want high score if it’s a location\n1\n𝐽 𝜃 = 𝜎 𝑠 =\n𝑡\n1 + 𝑒−𝑠\npredicted model\nprobability of class\nf = Some element-\nwise non-linear\nfunction, e.g.,\nlogistic, tanh, ReLU\n∈ R5d\nEmbedding of\nx = [ x x x x x ]\nmuseums in Paris are amazing\n1-hot words\n14"
+          }
+        ],
+        "resource_id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773"
+      },
+      "misconceptions": [
+        {
+          "correction": "Its key capability comes from composing transformations with nonlinear activations into new hidden features.",
+          "id": "network-is-many-lines",
+          "text": "A neural network is just many independent linear classifiers."
+        },
+        {
+          "correction": "Architecture provides representational capacity; optimisation still has to learn useful parameters.",
+          "id": "network-automatically-learns",
+          "text": "Adding a neural network automatically finds a good solution."
+        }
+      ]
+    },
+    {
+      "assessment_targets": [
+        {
+          "id": "activation-mechanism",
+          "kind": "mechanism",
+          "text": "Explain what changes when an activation follows a weighted sum."
+        },
+        {
+          "id": "activation-misconception",
+          "kind": "misconception_discrimination",
+          "text": "Distinguish an intermediate transformation from an output label."
+        },
+        {
+          "id": "activation-boundary",
+          "kind": "application_or_boundary",
+          "text": "Predict what is lost when activations are removed from a multilayer network."
+        }
+      ],
+      "canonical_id": "golden:activation-functions",
+      "claims": [
+        {
+          "kind": "definition",
+          "review_status": "approved",
+          "source_pages": [
+            15,
+            16,
+            17
+          ],
+          "text": "An activation function applies a nonlinear transformation to a layer's weighted input."
+        },
+        {
+          "kind": "mechanism",
+          "review_status": "approved",
+          "source_pages": [
+            15,
+            16,
+            17
+          ],
+          "text": "The activation changes the hidden representation so later layers can model relationships beyond one linear transformation."
+        },
+        {
+          "kind": "boundary",
+          "review_status": "approved",
+          "source_pages": [
+            17
+          ],
+          "text": "Without nonlinear activations, multiple stacked linear layers collapse into an equivalent linear transformation."
+        },
+        {
+          "kind": "example",
+          "review_status": "approved",
+          "source_pages": [
+            15,
+            16
+          ],
+          "text": "ReLU returns zero for negative input and passes positive input through unchanged."
+        },
+        {
+          "kind": "counterexample",
+          "review_status": "approved",
+          "source_pages": [
+            17
+          ],
+          "text": "Merely adding another linear layer does not add the nonlinearity required to change representational capacity."
+        }
+      ],
+      "concept_name": "Activation Functions",
+      "evidence": {
+        "document_id": "public:8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+        "pages": [
+          {
+            "chunk_ids": [
+              "8aae94ed0125-5"
+            ],
+            "page_number": 15,
+            "text": "Non-linearities, old and new\nlogistic (“sigmoid”) tanh ReLU (Rectified Linear Unit)\ntanh is just a rescaled and shifted sigmoid (2×as steep, [−1,1]):\nLogistic and tanh are still used (e.g., logistic to get a probability); however, often, for deep networks, the first\nthing to try is ReLU: it trains quickly and performs well due to good gradient backflow.\nReLU has a negative “dead zone” that recent proposals mitigate\nt a n h ( z ) = 2 l o g i s t i c ( 2 z ) - 1\nLeaky ReLU / Parametric ReLU\nReLU 𝑧 = max(𝑧,0)\n1 1\n0\n0\n−1"
+          },
+          {
+            "chunk_ids": [
+              "8aae94ed0125-5"
+            ],
+            "page_number": 16,
+            "text": "Non-linearities, old and new\nGELU (Gaussian error linear unit); SiLU Swish\nfrequently used with Transformers Sigmoid linear unit\nGELU(x) = 𝑥 ∙ 𝑃 𝑋 ≤ 𝑥 , 𝑋~𝑁(0,1) SiLU(x) = 𝑥 ∙ 𝜎(𝑥) Swish (x) = 𝑥 ∙ 𝜎(𝛽𝑥)\n≈ 𝑥 ∙ logistic(1.702𝑥)\nGLU (gated linear unit) uses a gate/switch\nGLU(x) = (𝑥𝑉 + 𝑣) ⊗ 𝜎(𝑥𝑊 + 𝑏)\nSwiGLU (Swish-gated linear unit)\nSwiGLU(x) = 𝑥𝑉 + 𝑐 ⊗ 𝑆𝑤𝑖𝑠ℎ 𝑥𝑊 + 𝑏\n𝛽\nFrequently used, e.g., in LLama3, Qwen3\nCheck out GLU Variants Improve Transformer\nhttps://arxiv.org/pdf/2002.05202"
+          },
+          {
+            "chunk_ids": [
+              "8aae94ed0125-5"
+            ],
+            "page_number": 17,
+            "text": "Non-linearities (i.e., “f ” on previous slide): Why they’re needed\n• Neural networks do function approximation,\ne.g., regression or classification\n• Without non-linearities, deep neural networks\ncan’t do anything more than a linear transform\n• Extra layers could just be compiled down into a\nsingle linear transform: W W x = Wx\n1 2\n• But, with more layers that include non-linearities,\nthey can approximate any complex function!\n17"
+          }
+        ],
+        "resource_id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773"
+      },
+      "misconceptions": [
+        {
+          "correction": "It transforms intermediate numerical values and changes the features passed to later layers.",
+          "id": "activation-is-output-label",
+          "text": "An activation function only renames the final output class."
+        },
+        {
+          "correction": "Linear composition remains linear, regardless of how many layers are stacked.",
+          "id": "depth-replaces-activation",
+          "text": "More linear layers can replace activation functions."
+        }
+      ]
+    },
+    {
+      "assessment_targets": [
+        {
+          "id": "gradient-descent-mechanism",
+          "kind": "mechanism",
+          "text": "Trace loss, gradient, learning rate, and parameter update."
+        },
+        {
+          "id": "gradient-descent-misconception",
+          "kind": "misconception_discrimination",
+          "text": "Distinguish a gradient from the update computed using it."
+        },
+        {
+          "id": "gradient-descent-boundary",
+          "kind": "application_or_boundary",
+          "text": "Reason about a learning-rate choice or reversed update direction."
+        }
+      ],
+      "canonical_id": "golden:gradient-descent",
+      "claims": [
+        {
+          "kind": "definition",
+          "review_status": "approved",
+          "source_pages": [
+            18,
+            19,
+            20
+          ],
+          "text": "Gradient descent updates model parameters in the direction that locally reduces a chosen loss."
+        },
+        {
+          "kind": "mechanism",
+          "review_status": "approved",
+          "source_pages": [
+            18,
+            19,
+            20
+          ],
+          "text": "Compute the loss gradient, choose a learning rate, and move parameters in the opposite gradient direction."
+        },
+        {
+          "kind": "boundary",
+          "review_status": "approved",
+          "source_pages": [
+            18,
+            19,
+            20
+          ],
+          "text": "The update direction is local; learning rate choice, loss landscape, and gradient quality affect whether optimisation makes useful progress."
+        },
+        {
+          "kind": "example",
+          "review_status": "approved",
+          "source_pages": [
+            19
+          ],
+          "text": "A parameter update subtracts the learning rate times the loss gradient from the current parameter value."
+        },
+        {
+          "kind": "counterexample",
+          "review_status": "approved",
+          "source_pages": [
+            19,
+            20
+          ],
+          "text": "Moving in the gradient direction increases the loss locally rather than performing gradient descent."
+        }
+      ],
+      "concept_name": "Gradient Descent",
+      "evidence": {
+        "document_id": "public:8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+        "pages": [
+          {
+            "chunk_ids": [
+              "8aae94ed0125-6"
+            ],
+            "page_number": 18,
+            "text": "Training with “cross entropy loss” – you use this in PyTorch!\n• Until now, our objective was stated as to maximize the probability of the correct class y\nor equivalently we can minimize the negative log probability of that class\n• Now restated in terms of cross entropy, a concept from information theory\n• Let the true probability distribution be p; let our computed model probability be q\n• The cross entropy is:\n• Assuming a ground truth (or true or gold or target) probability distribution that is 1 at\nthe right class and 0 everywhere else, p = [0, …, 0, 1, 0, …, 0], then:\n• Because of one-hot p, the only term left is the negative log probability of the true\nclass y : − log 𝑝(𝑦 |𝑥 )\ni 𝑖 𝑖\n18"
+          },
+          {
+            "chunk_ids": [
+              "8aae94ed0125-6"
+            ],
+            "page_number": 19,
+            "text": "Remember: Stochastic Gradient Descent\nUpdate equation:\n𝛼 = step size or learning rate\n𝜕𝐽 𝜃\n𝑛𝑒𝑤 𝑜𝑙𝑑\ni.e., for each parameter: 𝜃 = 𝜃 − 𝛼\n𝑗 𝑗 𝑜𝑙𝑑\n𝜕𝜃\n𝑗\nIn deep learning, 𝜃 includes the data representation (e.g., word vectors) too!\nHow can we compute ∇ 𝐽(𝜃)?\n𝜃\n1. By hand\n2. Algorithmically: the backpropagation algorithm\n19"
+          },
+          {
+            "chunk_ids": [
+              "8aae94ed0125-6"
+            ],
+            "page_number": 20,
+            "text": "3. Computing Gradients by Hand\n• Matrix calculus: Fully vectorized gradients\n• “Multivariable calculus is just like single-variable calculus if you use matrices”\n• Much faster and more useful than non-vectorized gradients\n• But doing a non-vectorized gradient can be good for intuition; recall the second\nlecture for an example\n• Lecture notes and matrix calculus notes cover this material in more detail\n• You might also review Math 51, which has an online textbook:\nhttp://web.stanford.edu/class/math51/textbook.html\n20"
+          }
+        ],
+        "resource_id": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773"
+      },
+      "misconceptions": [
+        {
+          "correction": "The gradient is a direction and rate of change; it is scaled and subtracted from the current parameters.",
+          "id": "gradient-is-update",
+          "text": "The gradient itself is the new parameter value."
+        },
+        {
+          "correction": "A step that is too large can overshoot while a step that is too small can make progress impractically slow.",
+          "id": "learning-rate-only-speed",
+          "text": "The learning rate only changes training speed and cannot affect success."
+        }
+      ]
+    }
+  ],
+  "release_schema_version": "kq5-knowledge-release-v1",
+  "semantics_version": "kq1-golden-teaching-semantics-v1",
+  "status": "draft",
+  "validation_errors": []
+}

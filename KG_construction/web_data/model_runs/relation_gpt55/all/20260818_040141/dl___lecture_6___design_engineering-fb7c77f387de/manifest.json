@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "dl___lecture_6___design_engineering-fb7c77f387de",
+  "created_at": "2026-08-18T01:30:17+08:00",
+  "updated_at": "2026-08-18T01:32:35+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "DL___Lecture_6___Design_Engineering.pdf",
+    "doc_name": "DL___Lecture_6___Design_Engineering",
+    "sha256": "fb7c77f387de18289bb233efe426af04569c12151847cd4bcc5084c280ab6249",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\DL___Lecture_6___Design_Engineering.pdf",
+    "pdf_size_bytes": 1608243
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 138.2328
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-08-18T01:30:17+08:00",
+      "ended_at": "2026-08-18T01:30:24+08:00",
+      "duration_seconds": 7.6831,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\DL___Lecture_6___Design_Engineering.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 1464\n[2] 清洗后词数: 1773\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 8\n[5] 分块数（过滤后）: 7\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=278\nDeep Learning Lecture 4: Practicalities and Convolutional Neural Networks Pietro Ferraro Table of 1. Recap 2. Trainingand Overfitting Content 3. Methodstoreduceoverfitting 4. Intuitionabouthierarchy 5. Convolutional Neur...\n\n[Chunk 2] words=235\nModelandfeatureselection Imperial College London Deep Learning Overfittingandbiasvariancedilemma Inreality,selectingthestructureforthemodel,andthefeaturestopredictlabels,is usuallybasedonpriorinformationabouttheproblem. ...\n\n[Chunk 3] words=248\nWhynotusea LNN? Let’sconsiderasimplecasewithonlyonechannel 1 0 0 0 1 0 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 1 0 0 0 0 1 0 0 0 1 0 1 0 0 1 0 1 0 1 0 0 0 1 1 0 0 0 0 Imperial College London Deep Learning Whynotusea LNN? l Canyo...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-08-18T01:30:24+08:00",
+      "ended_at": "2026-08-18T01:31:13+08:00",
+      "duration_seconds": 48.9149,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：7\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/7 ...\n[KeyBERT] chunk 2/7 ...\n[KeyBERT] chunk 3/7 ...\n[KeyBERT] chunk 4/7 ...\n[KeyBERT] chunk 5/7 ...\n[KeyBERT] chunk 6/7 ...\n[KeyBERT] chunk 7/7 ...\n[2] KeyBERT候选数：16\n[3] LLM精修完成\n[4] 最终Topic数：16，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. convolutional kernels in image processing\n02. deep learning architectures and applications\n03. learning whynotusea in neural networks\n04. feature selection techniques in learning models\n05. neural networks and their training methodologies\n06. groups of neurons and their functional roles\n07. learning pooling strategies in convolutional networks\n08. convolutional layer design and optimization\n09. whynotusea in the context of LNNs\n10. specific examples of learning applications\n11. learning lectures on advanced neural network topics\n12. practical comments on implementing learning algorithms\n13. kernels example in machine learning contexts\n14. foundational concepts in learning theory\n15. analyzing image data with LNNs and potential losses\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5360.80it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-08-18T01:31:13+08:00",
+      "ended_at": "2026-08-18T01:31:21+08:00",
+      "duration_seconds": 8.0089,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 16\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. foundational concepts in learning theory -> feature selection techniques in learning models | understanding foundational concepts is necessary for grasping feature selection\n02. neural networks and their training methodologies -> deep learning architectures and applications | knowledge of neural networks is essential for understanding deep learning architectures\n03. convolutional kernels in image processing -> convolutional layer design and optimization | understanding convolutional kernels is crucial for designing and optimizing layers\n04. learning pooling strategies in convolutional networks -> convolutional layer design and optimization | pooling strategies are integral to the design and optimization of convolutional layers\n05. analyzing image data with LNNs and potential losses -> deep learning architectures and applications | analyzing image data is a key application of deep learning architectures\n06. whynotusea in the context of LNNs -> whynotusea as a critique of existing models | understanding whynotusea in LNNs is necessary to critique existing models\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-08-18T01:31:21+08:00",
+      "ended_at": "2026-08-18T01:31:52+08:00",
+      "duration_seconds": 31.1468,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 16\n[2] 相似关系数量: 3 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. learning lectures on advanced neural network topics <-> neural networks and their training methodologies | sim=0.7752\n02. learning whynotusea in neural networks <-> neural networks and their training methodologies | sim=0.744\n03. learning lectures on advanced neural network topics <-> learning whynotusea in neural networks | sim=0.7358\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4916.17it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-08-18T01:31:52+08:00",
+      "ended_at": "2026-08-18T01:32:32+08:00",
+      "duration_seconds": 39.6248,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 16\n[LLM] 1/16 convolutional kernels in image processing\n[LLM] 2/16 deep learning architectures and applications\n[LLM] 3/16 learning whynotusea in neural networks\n[LLM] 4/16 feature selection techniques in learning models\n[LLM] 5/16 neural networks and their training methodologies\n[LLM] 6/16 groups of neurons and their functional roles\n[LLM] 7/16 learning pooling strategies in convolutional networks\n[LLM] 8/16 convolutional layer design and optimization\n[LLM] 9/16 whynotusea in the context of LNNs\n[LLM] 10/16 specific examples of learning applications\n[LLM] 11/16 learning lectures on advanced neural network topics\n[LLM] 12/16 practical comments on implementing learning algorithms\n[LLM] 13/16 kernels example in machine learning contexts\n[LLM] 14/16 foundational concepts in learning theory\n[LLM] 15/16 analyzing image data with LNNs and potential losses\n[LLM] 16/16 whynotusea as a critique of existing models\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-08-18T01:32:32+08:00",
+      "ended_at": "2026-08-18T01:32:35+08:00",
+      "duration_seconds": 2.7617,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output present"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 16\n[2] Prerequisites: 6\n[3] Similarity edges: 3\n[4] Graph nodes=16, edges=9\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-08-18T01:30:17+08:00"
+}

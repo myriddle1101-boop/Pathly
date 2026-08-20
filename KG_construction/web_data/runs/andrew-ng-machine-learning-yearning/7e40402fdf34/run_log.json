@@ -1,0 +1,304 @@
+{
+  "run_id": "andrew-ng-machine-learning-yearning-7e40402fdf34",
+  "events": [
+    {
+      "time": "2026-07-28T02:43:59+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "andrew-ng-machine-learning-yearning.pdf",
+        "sha256": "7e40402fdf34502f85a74e6b6629ab1caa2f4c68f2620563c92cf59b06a5d303",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34",
+        "resume_from_stage": "stage1",
+        "run_attempts": 1
+      }
+    },
+    {
+      "time": "2026-07-28T02:43:59+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-28T02:44:10+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 10.6316,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-28T02:44:10+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-28T02:45:33+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "andrew-ng-machine-learning-yearning.pdf",
+        "sha256": "7e40402fdf34502f85a74e6b6629ab1caa2f4c68f2620563c92cf59b06a5d303",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34",
+        "resume_from_stage": "stage2a",
+        "run_attempts": 2
+      }
+    },
+    {
+      "time": "2026-07-28T02:45:33+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage1_chunks.json",
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage1_text_cleaned.txt"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-28T02:45:33+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage started",
+      "data": {
+        "attempt": 2,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-28T02:45:35+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 85.4043,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-28T02:46:56+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 83.5549,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-28T02:46:56+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-28T02:47:04+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 8.139,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-28T02:47:04+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-28T02:47:36+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 31.5442,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-28T02:47:36+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-07-28T02:48:04+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 27.8591,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-28T02:48:04+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34"
+      }
+    },
+    {
+      "time": "2026-07-28T02:48:06+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 2.0507,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-07-28T02:48:06+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline completed",
+      "data": {
+        "completed_stages": [
+          "stage1",
+          "stage2a",
+          "stage2b",
+          "stage2c",
+          "stage3",
+          "stage4"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-29T13:08:56+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "andrew-ng-machine-learning-yearning.pdf",
+        "sha256": "7e40402fdf34502f85a74e6b6629ab1caa2f4c68f2620563c92cf59b06a5d303",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34",
+        "resume_from_stage": null,
+        "run_attempts": 3
+      }
+    },
+    {
+      "time": "2026-07-29T13:08:56+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage1_chunks.json",
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage1_text_cleaned.txt"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-29T13:08:56+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2a_topics_hybrid.json"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-29T13:08:56+08:00",
+      "level": "info",
+      "stage": "stage2b",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2b_prerequisites.json"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-29T13:08:56+08:00",
+      "level": "info",
+      "stage": "stage2c",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2c_similarity_edges.json"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-29T13:08:56+08:00",
+      "level": "info",
+      "stage": "stage3",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage3_topics_with_summary.json"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-29T13:08:56+08:00",
+      "level": "info",
+      "stage": "stage4",
+      "message": "Stage reused from previous successful output",
+      "data": {
+        "output_paths": [
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\knowledge_graph.json",
+          "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\knowledge_graph.gexf"
+        ]
+      }
+    },
+    {
+      "time": "2026-07-29T13:08:56+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline completed",
+      "data": {
+        "completed_stages": [
+          "stage1",
+          "stage2a",
+          "stage2b",
+          "stage2c",
+          "stage3",
+          "stage4"
+        ]
+      }
+    }
+  ],
+  "updated_at": "2026-07-29T13:08:56+08:00"
+}

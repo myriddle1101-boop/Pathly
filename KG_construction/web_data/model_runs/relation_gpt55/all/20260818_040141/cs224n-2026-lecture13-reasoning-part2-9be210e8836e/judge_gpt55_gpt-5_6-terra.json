@@ -1,0 +1,100 @@
+{
+  "created_at": "2026-08-18T18:55:21.417676+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-cs224n-2026-lecture13-reasoning-part2-9be210e8836e",
+  "file_name": "cs224n-2026-lecture13-reasoning-part2-9be210e8836e",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 13,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.5714,
+    "f1": 0.6957,
+    "tp": 8,
+    "fp": 1,
+    "fn": 6
+  },
+  "prerequisite_metrics": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1": 0.4,
+    "tp": 1,
+    "fp": 0,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Decoding Techniques",
+      "Positional Embeddings",
+      "Policy Distillation",
+      "Scaling Techniques",
+      "Natural Language Processing",
+      "Training Methods",
+      "Reinforcement Learning",
+      "Model Optimization"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Contextual Learning",
+        "reason": "The source discusses long-context processing and context windows, not contextual learning as a distinct learning method or concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Speculative Decoding",
+        "reason": "A major lecture section covers draft-target generation, speculative sampling, dynamic speculation, and related algorithms."
+      },
+      {
+        "name": "On-Policy and Off-Policy Reinforcement Learning",
+        "reason": "The source explicitly defines and contrasts on-policy/off-policy RL and online/offline RL."
+      },
+      {
+        "name": "Off-Policy Drift",
+        "reason": "The source explains stale rollouts, practical causes of off-policy drift, its harms, and mitigation strategies."
+      },
+      {
+        "name": "Rotary Position Embedding",
+        "reason": "RoPE is presented in detail as the modern positional encoding mechanism used for long-context models."
+      },
+      {
+        "name": "Long-Context Extension",
+        "reason": "The source covers position scaling, staged training, data engineering, and attention modifications for extending context length."
+      },
+      {
+        "name": "Test-Time Compute Scaling",
+        "reason": "The final section explicitly covers inference-time scaling strategies, verification, best-of-N, revisions, and PRMs."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Reinforcement Learning",
+        "to": "Policy Distillation",
+        "reason": "On-policy distillation is defined through policy-generated rollouts and is explicitly contrasted with RL, so RL policy and on-policy concepts are important foundations."
+      }
+    ],
+    "rejected_prerequisites": [],
+    "missing_prerequisites": [
+      {
+        "from": "On-Policy and Off-Policy Reinforcement Learning",
+        "to": "On-Policy Distillation",
+        "reason": "The source defines on-policy distillation specifically in terms of student-generated contexts and contrasts it with off-policy teacher-centric distillation."
+      },
+      {
+        "from": "Positional Embeddings",
+        "to": "Rotary Position Embedding",
+        "reason": "RoPE is introduced as a positional embedding approach and compared directly with sinusoidal and learned positional embeddings."
+      },
+      {
+        "from": "Rotary Position Embedding",
+        "to": "Long-Context Extension",
+        "reason": "The long-context extension methods prominently rely on RoPE scaling, position interpolation, NTK scaling, and YaRN."
+      }
+    ],
+    "overall_note": "Most predicted topics are broad but grounded in the lecture; the main gap is that they omit the lecture's central named methods and distinctions."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture13-reasoning-part2-9be210e8836e.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture13-reasoning-part2-9be210e8836e.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture13-reasoning-part2-9be210e8836e_ledger.csv"
+  }
+}

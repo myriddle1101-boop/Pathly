@@ -1,0 +1,143 @@
+{
+  "created_at": "2026-08-18T18:48:38.740255+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-andrew-ng-machine-learning-yearning-7e40402fdf34",
+  "file_name": "andrew-ng-machine-learning-yearning-7e40402fdf34",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 132,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.5,
+    "recall": 0.75,
+    "f1": 0.6,
+    "tp": 6,
+    "fp": 6,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Machine Learning",
+      "Neural Networks",
+      "Training Process",
+      "Model Evaluation",
+      "Data Management",
+      "Performance Metrics",
+      "Pipeline Design",
+      "Overfitting and Generalization"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Specialized Applications",
+        "reason": "The text gives application examples, but does not present specialized applications as a distinct learning concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Supervised Learning",
+        "reason": "Explicitly stated as assumed prior knowledge and defined as learning a mapping from labeled examples."
+      },
+      {
+        "name": "Development and Test Sets",
+        "reason": "A central topic covering set purpose, representative distributions, sizing, and updating."
+      },
+      {
+        "name": "Error Analysis",
+        "reason": "Explicitly defined as manually examining misclassified dev-set examples to identify and prioritize error sources."
+      },
+      {
+        "name": "Bias and Variance",
+        "reason": "Listed as a major source of error and a dedicated section of the text."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Machine Learning",
+        "to": "Neural Networks",
+        "reason": "Neural networks are presented as a class of supervised learning algorithm within machine learning."
+      },
+      {
+        "from": "Machine Learning",
+        "to": "Training Process",
+        "reason": "Training learning algorithms on labeled training data presupposes core machine-learning concepts."
+      },
+      {
+        "from": "Machine Learning",
+        "to": "Model Evaluation",
+        "reason": "The text evaluates machine-learning algorithms and their performance, requiring an understanding of the models being assessed."
+      },
+      {
+        "from": "Performance Metrics",
+        "to": "Model Evaluation",
+        "reason": "Evaluation is performed through measures such as accuracy, precision, recall, and F1 score."
+      },
+      {
+        "from": "Training Process",
+        "to": "Model Evaluation",
+        "reason": "The text evaluates the performance of trained classifiers on dev and test sets."
+      },
+      {
+        "from": "Model Evaluation",
+        "to": "Overfitting and Generalization",
+        "reason": "Overfitting and generalization are diagnosed through comparative performance on dev, test, and target data distributions."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Machine Learning",
+        "to": "Data Management",
+        "reason": "The source discusses dataset selection and labels, but does not establish general data management as dependent on prior machine-learning knowledge."
+      },
+      {
+        "from": "Data Management",
+        "to": "Training Process",
+        "reason": "Training uses a training set, but the broad notion of data management is not a clearly necessary learning prerequisite for training process concepts."
+      },
+      {
+        "from": "Training Process",
+        "to": "Pipeline Design",
+        "reason": "The source mentions pipeline components, but does not establish training-process knowledge as a prerequisite for pipeline design."
+      },
+      {
+        "from": "Data Management",
+        "to": "Pipeline Design",
+        "reason": "This is a plausible workflow association rather than an explicit strong learning dependency in the source."
+      },
+      {
+        "from": "Model Evaluation",
+        "to": "Pipeline Design",
+        "reason": "Evaluation may be part of a pipeline, but pipeline design is not presented as requiring model evaluation knowledge first."
+      },
+      {
+        "from": "Machine Learning",
+        "to": "Specialized Applications",
+        "reason": "Specialized Applications is not supported as a distinct concept in the source."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Development and Test Sets",
+        "to": "Error Analysis",
+        "reason": "Error analysis is explicitly conducted by examining misclassified examples from the dev set."
+      },
+      {
+        "from": "Performance Metrics",
+        "to": "Model Selection",
+        "reason": "A single-number metric is used to rank classifiers and decide which model is superior."
+      }
+    ],
+    "overall_note": "The predictions cover broad ML strategy themes, but omit the source's most central operational concepts: supervised learning, dev/test-set design, and error analysis."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-andrew-ng-machine-learning-yearning-7e40402fdf34.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-andrew-ng-machine-learning-yearning-7e40402fdf34.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-andrew-ng-machine-learning-yearning-7e40402fdf34_ledger.csv"
+  }
+}

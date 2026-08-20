@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-06-17">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Technical Debt" label="Technical Debt">
+        <attvalues>
+          <attvalue for="0" value="Challenges in software development that hinder progress and maintainability." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Reproducibility Debt&quot;, &quot;description&quot;: &quot;Issues that arise when experiments cannot be reliably reproduced.&quot;}, {&quot;name&quot;: &quot;Glue Code&quot;, &quot;description&quot;: &quot;Code that connects different software components but may reduce clarity.&quot;}, {&quot;name&quot;: &quot;Common Smells&quot;, &quot;description&quot;: &quot;Indicators of potential problems in software design and implementation.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of software development and project management." />
+          <attvalue for="6" value="[&quot;Code Quality&quot;, &quot;Refactoring&quot;, &quot;Technical Debt Types&quot;, &quot;Impact on Development&quot;]" />
+          <attvalue for="7" value="[&quot;Technical debt is only about code quality.&quot;, &quot;Paying off technical debt is always a bad idea.&quot;]" />
+          <attvalue for="8" value="[&quot;Improving software maintainability&quot;, &quot;Prioritizing development tasks&quot;, &quot;Enhancing team communication about project challenges&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Abstraction Boundaries" label="Abstraction Boundaries">
+        <attvalues>
+          <attvalue for="0" value="Concepts that define the limits of abstraction in software systems." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Strict Abstraction&quot;, &quot;description&quot;: &quot;Clear separation of concerns in software architecture.&quot;}, {&quot;name&quot;: &quot;Strong Abstraction&quot;, &quot;description&quot;: &quot;High-level representations that simplify complex systems.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of software engineering principles and object-oriented programming." />
+          <attvalue for="6" value="[&quot;Encapsulation&quot;, &quot;Modularity&quot;, &quot;Information Hiding&quot;]" />
+          <attvalue for="7" value="[&quot;Abstraction means hiding all details&quot;, &quot;All systems must have the same level of abstraction&quot;]" />
+          <attvalue for="8" value="[&quot;Designing software architectures&quot;, &quot;Creating APIs&quot;, &quot;Developing user interfaces&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Machine Learning Smells" label="Machine Learning Smells">
+        <attvalues>
+          <attvalue for="0" value="Common pitfalls and issues in machine learning projects." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Prototype Smell&quot;, &quot;description&quot;: &quot;Indicators that a machine learning model is not well-structured.&quot;}, {&quot;name&quot;: &quot;ML Systems Composition&quot;, &quot;description&quot;: &quot;Understanding how different components of ML systems interact.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Overfitting&quot;, &quot;Data Leakage&quot;, &quot;Model Interpretability&quot;, &quot;Bias-Variance Tradeoff&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Complex models are always better&quot;, &quot;Training accuracy is the only metric that matters&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model performance&quot;, &quot;Ensuring ethical AI practices&quot;, &quot;Enhancing model robustness&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;Algorithm for training neural networks by minimizing error.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image and speech recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Loss Functions" label="Loss Functions">
+        <attvalues>
+          <attvalue for="0" value="Metrics used to evaluate the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Regression Loss&quot;, &quot;description&quot;: &quot;Loss functions used for regression tasks.&quot;}, {&quot;name&quot;: &quot;Classification Loss&quot;, &quot;description&quot;: &quot;Loss functions used for classification tasks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Mean Squared Error (MSE)&quot;, &quot;Cross-Entropy Loss&quot;]" />
+          <attvalue for="7" value="[&quot;Loss functions only measure accuracy.&quot;, &quot;All loss functions are the same.&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Evaluating regression models&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Linear Separability" label="Linear Separability">
+        <attvalues>
+          <attvalue for="0" value="The ability to separate classes in a dataset using a linear boundary." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Regression&quot;, &quot;description&quot;: &quot;A method for modeling the relationship between variables.&quot;}, {&quot;name&quot;: &quot;Classification Techniques&quot;, &quot;description&quot;: &quot;Methods for categorizing data points into classes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and introductory statistics." />
+          <attvalue for="6" value="[&quot;Hyperplanes&quot;, &quot;Support Vector Machines&quot;]" />
+          <attvalue for="7" value="[&quot;All datasets are linearly separable&quot;, &quot;Linear separability guarantees perfect classification&quot;]" />
+          <attvalue for="8" value="[&quot;Binary classification tasks&quot;, &quot;Image recognition&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Research References" label="Research References">
+        <attvalues>
+          <attvalue for="0" value="Key studies and papers in the field of machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Ananthanarayanan Reference&quot;, &quot;description&quot;: &quot;Notable work by Ananthanarayanan in machine learning.&quot;}, {&quot;name&quot;: &quot;Kalyanaraman Project Adam&quot;, &quot;description&quot;: &quot;Significant project in the development of machine learning systems.&quot;}]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and terminology." />
+          <attvalue for="6" value="[&quot;Foundational papers in machine learning&quot;, &quot;Influential algorithms and models&quot;]" />
+          <attvalue for="7" value="[&quot;All important research is recent&quot;, &quot;Only complex papers are valuable&quot;]" />
+          <attvalue for="8" value="[&quot;Guiding future research directions&quot;, &quot;Improving existing algorithms based on past findings&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Software Engineering Smells" label="Software Engineering Smells">
+        <attvalues>
+          <attvalue for="0" value="Indicators of poor software design and implementation practices." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;In Software Engineering&quot;, &quot;description&quot;: &quot;Common issues faced in software engineering practices.&quot;}, {&quot;name&quot;: &quot;Debt for Scientists&quot;, &quot;description&quot;: &quot;Challenges specific to scientists working with software.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of software development and design principles." />
+          <attvalue for="6" value="[&quot;Code Smells&quot;, &quot;Refactoring Techniques&quot;]" />
+          <attvalue for="7" value="[&quot;All code smells are critical issues&quot;, &quot;Code smells are only related to performance&quot;]" />
+          <attvalue for="8" value="[&quot;Improving code maintainability&quot;, &quot;Enhancing team collaboration and communication&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Packages and Glue" label="Packages and Glue">
+        <attvalues>
+          <attvalue for="0" value="The role of software packages in connecting different components." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Glue Code Packages&quot;, &quot;description&quot;: &quot;Packages that facilitate integration between software components.&quot;}, {&quot;name&quot;: &quot;95 Glue Code&quot;, &quot;description&quot;: &quot;Specific instances of glue code in software projects.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and software development concepts." />
+          <attvalue for="6" value="[&quot;Software packages&quot;, &quot;Dependency management&quot;, &quot;APIs&quot;, &quot;Modularity&quot;]" />
+          <attvalue for="7" value="[&quot;Packages are only for large projects&quot;, &quot;All packages are equally reliable&quot;]" />
+          <attvalue for="8" value="[&quot;Integrating libraries in data science&quot;, &quot;Building web applications with frameworks&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Machine Learning Smells" target="Loss Functions" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Recognizing machine learning smells often involves evaluating loss functions." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Networks" target="Loss Functions" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Loss functions are essential for training neural networks." />
+        </attvalues>
+      </edge>
+      <edge source="Linear Separability" target="Neural Networks" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding linear separability is fundamental for grasping how neural networks can classify data." />
+        </attvalues>
+      </edge>
+      <edge source="Software Engineering Smells" target="Technical Debt" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Identifying software engineering smells helps in understanding and managing technical debt." />
+        </attvalues>
+      </edge>
+      <edge source="Packages and Glue" target="Abstraction Boundaries" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding how packages connect components requires knowledge of abstraction boundaries." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

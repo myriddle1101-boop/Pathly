@@ -1,0 +1,504 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 7,
+  "candidate_count": 42,
+  "topics_count": 11,
+  "candidates": [
+    {
+      "name": "learning rates",
+      "avg_score": 0.7444,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "learning rate",
+      "avg_score": 0.7422,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "hyperparameter search",
+      "avg_score": 0.7156,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "grid search",
+      "avg_score": 0.6725,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "rate training",
+      "avg_score": 0.6692,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "tuning learning",
+      "avg_score": 0.6629,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "hyperparameters random",
+      "avg_score": 0.6472,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "search grid",
+      "avg_score": 0.6337,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "smaller learning",
+      "avg_score": 0.6336,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "comparison grid",
+      "avg_score": 0.6266,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "slow training",
+      "avg_score": 0.6248,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "train optimal",
+      "avg_score": 0.6231,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "tuning hyperparameters",
+      "avg_score": 0.6208,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "methodology hyperparameters",
+      "avg_score": 0.6203,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "hyperparameter increases",
+      "avg_score": 0.6149,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "hyperparameters model",
+      "avg_score": 0.6092,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "deeplearningbook org",
+      "avg_score": 0.6088,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "grid random",
+      "avg_score": 0.605,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "hyperparameters",
+      "avg_score": 0.6001,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "deeplearningbook",
+      "avg_score": 0.5979,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "www deeplearningbook",
+      "avg_score": 0.5951,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "various hyperparameters",
+      "avg_score": 0.5851,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "train examples",
+      "avg_score": 0.5832,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "layer feedforward",
+      "avg_score": 0.583,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "hyperparameter",
+      "avg_score": 0.5827,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "training set",
+      "avg_score": 0.5584,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "increasing training",
+      "avg_score": 0.5567,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "15 train",
+      "avg_score": 0.5545,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "adding regularization",
+      "avg_score": 0.5478,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "regularization way",
+      "avg_score": 0.5321,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "regularization",
+      "avg_score": 0.5307,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.529,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "capacity training",
+      "avg_score": 0.5268,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "connected baseline",
+      "avg_score": 0.5261,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "10 train",
+      "avg_score": 0.5252,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "network baseline",
+      "avg_score": 0.5151,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "neural network",
+      "avg_score": 0.5147,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "feedforward network",
+      "avg_score": 0.5146,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "training inference",
+      "avg_score": 0.5115,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "pretrained network",
+      "avg_score": 0.4975,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "metrics accuracy",
+      "avg_score": 0.4531,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "success ml",
+      "avg_score": 0.4476,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Learning Rates",
+      "description": "Parameters that control the speed of learning in training algorithms.",
+      "sub_topics": [
+        {
+          "name": "Learning Rate Tuning",
+          "description": "The process of adjusting learning rates for optimal training."
+        },
+        {
+          "name": "Smaller Learning Rates",
+          "description": "Using reduced learning rates to improve convergence."
+        }
+      ]
+    },
+    {
+      "name": "Hyperparameter Optimization",
+      "description": "Techniques for selecting the best hyperparameters for machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Grid Search",
+          "description": "A method for systematically searching through hyperparameter combinations."
+        },
+        {
+          "name": "Random Search",
+          "description": "A technique that randomly samples hyperparameter combinations."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various tasks.",
+      "sub_topics": [
+        {
+          "name": "Feedforward Networks",
+          "description": "A type of neural network where connections do not form cycles."
+        },
+        {
+          "name": "Pretrained Networks",
+          "description": "Networks that have been previously trained on a dataset."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Training Set",
+          "description": "The dataset used to train a model."
+        },
+        {
+          "name": "Increasing Training Capacity",
+          "description": "Methods to enhance the model's ability to learn from data."
+        }
+      ]
+    },
+    {
+      "name": "Regularization",
+      "description": "Techniques used to prevent overfitting in machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Adding Regularization",
+          "description": "Incorporating regularization techniques to improve model generalization."
+        },
+        {
+          "name": "Regularization Methods",
+          "description": "Different approaches to apply regularization in training."
+        }
+      ]
+    },
+    {
+      "name": "Activation Functions",
+      "description": "Functions that determine the output of a neural network node.",
+      "sub_topics": [
+        {
+          "name": "Common Activation Functions",
+          "description": "Popular functions like ReLU, Sigmoid, and Tanh used in networks."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Functions that measure the difference between predicted and actual outcomes.",
+      "sub_topics": [
+        {
+          "name": "Common Loss Functions",
+          "description": "Examples include Mean Squared Error and Cross-Entropy Loss."
+        }
+      ]
+    },
+    {
+      "name": "Backpropagation",
+      "description": "An algorithm for training neural networks by updating weights based on error gradients.",
+      "sub_topics": [
+        {
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm used in backpropagation."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Methods for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Metrics Accuracy",
+          "description": "A measure of how often the model makes correct predictions."
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": [
+        {
+          "name": "Deep Learning Frameworks",
+          "description": "Software libraries that facilitate deep learning model development."
+        }
+      ]
+    },
+    {
+      "name": "Training Inference",
+      "description": "The process of making predictions using a trained model.",
+      "sub_topics": [
+        {
+          "name": "Inference Techniques",
+          "description": "Methods for efficiently making predictions with trained models."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 19.4775,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

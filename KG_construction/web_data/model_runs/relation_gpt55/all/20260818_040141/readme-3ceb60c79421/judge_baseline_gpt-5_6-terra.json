@@ -1,0 +1,135 @@
+{
+  "created_at": "2026-08-18T19:04:04.483002+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-readme-3ceb60c79421",
+  "file_name": "readme-3ceb60c79421",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 4,
+  "topic_metrics": {
+    "precision": 0.25,
+    "recall": 0.2857,
+    "f1": 0.2667,
+    "tp": 2,
+    "fp": 6,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 5,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Learning Strategies",
+      "Retrieval-Augmented Generation (RAG)"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Contextual Learning",
+        "reason": "The source discusses integrating retrieved context into prompts, not contextual learning as a learning concept."
+      },
+      {
+        "name": "Chatbots in ML",
+        "reason": "Chatbots are mentioned only as an application of RAG, not as a tutorial concept or ML topic developed in the source."
+      },
+      {
+        "name": "Neural Networks",
+        "reason": "Neural networks are not discussed in the source."
+      },
+      {
+        "name": "Loss Functions",
+        "reason": "Loss functions are not discussed in the source."
+      },
+      {
+        "name": "Model Training",
+        "reason": "The tutorial focuses on RAG construction and use of pretrained models, not model training."
+      },
+      {
+        "name": "Technical Tutorials",
+        "reason": "This describes the resource format rather than a substantive learning concept taught by the source."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Vector Embeddings",
+        "reason": "The tutorial explicitly teaches how vector embeddings capture semantic meaning."
+      },
+      {
+        "name": "Vector Databases",
+        "reason": "Building, storing, indexing, and querying vector databases is a core stated topic."
+      },
+      {
+        "name": "Similarity Search",
+        "reason": "Similarity search algorithms are explicitly listed under retrieval."
+      },
+      {
+        "name": "Large Language Models",
+        "reason": "The source includes how LLMs work and their integration with retrieved context."
+      },
+      {
+        "name": "Prompting Techniques",
+        "reason": "Prompting techniques are explicitly listed in the language-model generation section."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Loss Functions",
+        "reason": "Neither concept is taught or supported by the source."
+      },
+      {
+        "from": "Model Training",
+        "to": "Loss Functions",
+        "reason": "Neither concept is taught or supported by the source."
+      },
+      {
+        "from": "Model Training",
+        "to": "Neural Networks",
+        "reason": "Neither concept is taught or supported by the source."
+      },
+      {
+        "from": "Retrieval-Augmented Generation (RAG)",
+        "to": "Technical Tutorials",
+        "reason": "A tutorial is a resource format, not a target concept requiring RAG as a prerequisite."
+      },
+      {
+        "from": "Chatbots in ML",
+        "to": "Technical Tutorials",
+        "reason": "This is an unsupported association between an application and a resource format, not a learning dependency."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Vector Embeddings",
+        "to": "Vector Databases",
+        "reason": "The source presents embeddings before storing and indexing vectors in vector databases; embeddings are the objects those databases manage."
+      },
+      {
+        "from": "Vector Embeddings",
+        "to": "Similarity Search",
+        "reason": "Semantic similarity and embedding representations are foundational to similarity search over vectors."
+      },
+      {
+        "from": "Vector Databases",
+        "to": "Retrieval-Augmented Generation (RAG)",
+        "reason": "RAG retrieves relevant knowledge-base information, and the tutorial teaches vector databases and retrieval before RAG system construction."
+      },
+      {
+        "from": "Large Language Models",
+        "to": "Retrieval-Augmented Generation (RAG)",
+        "reason": "RAG is defined as enhancing an LLM by augmenting its prompt with retrieved information."
+      }
+    ],
+    "overall_note": "The predictions capture RAG but omit most of the tutorial's central technical foundations, especially embeddings, vector retrieval, and LLM integration."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-readme-3ceb60c79421.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-readme-3ceb60c79421.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-readme-3ceb60c79421_ledger.csv"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 8,
+  "prerequisites": [
+    {
+      "from": "Probability Theory",
+      "to": "Probability Distributions",
+      "reason": "Probability distributions are based on the principles of probability theory."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Random Variables",
+      "reason": "Understanding random variables requires knowledge of probability theory."
+    },
+    {
+      "from": "Probability Distributions",
+      "to": "Covariance",
+      "reason": "Covariance is defined in terms of probability distributions."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Statistical Inference",
+      "reason": "Statistical inference relies on concepts from probability theory."
+    },
+    {
+      "from": "Random Variables",
+      "to": "Probabilistic Models",
+      "reason": "Probabilistic models are built using random variables."
+    },
+    {
+      "from": "Probability Theory",
+      "to": "Information Theory",
+      "reason": "Information theory is grounded in probability theory."
+    },
+    {
+      "from": "Statistical Inference",
+      "to": "Neural Networks",
+      "reason": "Statistical inference techniques are often used in training neural networks."
+    },
+    {
+      "from": "Mathematical Functions",
+      "to": "Neural Networks",
+      "reason": "Neural networks utilize mathematical functions to model relationships."
+    }
+  ]
+}

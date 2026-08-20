@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\03-vector-databases-retrieval.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 91.1036,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 1929\n[2] 清洗后词数: 1976\n[3] 文档类型识别: lecture_notes\n[4] 分块数（过滤前）: 6\n[5] 分块数（过滤后）: 6\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=364\nLesson 3: Vector Databases & Retrieval Now that you understand embeddings, let's learn how to store and search through millions of them efficiently. The Challenge: Scaling Semantic Search Remember our simple search from ...\n\n[Chunk 2] words=377\nProduct Quantization (cid:127) Used by: Faiss, Pinecone (cid:127) How it works: Compresses vectors to save memory (cid:127) Pros: Very memory efficient (cid:127) Cons: Some quality loss Popular Vector Databases 1. Chroma...\n\n[Chunk 3] words=332\n1. Fixed-Size Chunking Split by number of characters/tokens with overlap: def chunk_text(text, chunk_size=500, overlap=50): \"\"\"Split text into overlapping chunks\"\"\" chunks = [] start = 0 while start < len(text): end = st...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

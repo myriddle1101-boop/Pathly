@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "17_monte_carlo-ff4d1de5355c",
+  "created_at": "2026-07-29T14:11:17+08:00",
+  "updated_at": "2026-07-29T14:13:28+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "17_monte_carlo.pdf",
+    "doc_name": "17_monte_carlo",
+    "sha256": "ff4d1de5355c472efdbd2b351a2731e72f41003a558cbd08434224fb330ff8dd",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\17_monte_carlo.pdf",
+    "pdf_size_bytes": 4168312
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 131.1795
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:11:17+08:00",
+      "ended_at": "2026-07-29T14:11:22+08:00",
+      "duration_seconds": 5.5201,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\17_monte_carlo.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3669\n[2] 清洗后词数: 3690\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 21\n[5] 分块数（过滤后）: 19\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=61\nMonte Carlo Methods Lecture slides for Chapter 17 of Deep Learning www.deeplearningbook.org Ian Goodfellow Last updated 2017-12-29 Roadmap  Basics of Monte Carlo methods  Importance Sampling  Markov Chains (Goodfellow...\n\n[Chunk 2] words=274\nCHAPTER 17. MONTE CARLO METHODS reduced cost. Sometimes we use this to provide a significant speedup to a costly CHAPTER 17. MONTE CARLO METHODS but tractable sum, as in the case when we subsample the full training cost ...\n\n[Chunk 3] words=170\nWhen a sum or an integral cannot be computed exactly (for example, the sum 17.1.2 Basics of Monte Carlo Sampling has an exponential number of terms, and no exact simplification is known), it is 17.1.2 Basics of Monte Car...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:11:22+08:00",
+      "ended_at": "2026-07-29T14:12:15+08:00",
+      "duration_seconds": 52.3954,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：19\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/19 ...\n[KeyBERT] chunk 2/19 ...\n[KeyBERT] chunk 3/19 ...\n[KeyBERT] chunk 4/19 ...\n[KeyBERT] chunk 5/19 ...\n[KeyBERT] chunk 6/19 ...\n[KeyBERT] chunk 7/19 ...\n[KeyBERT] chunk 8/19 ...\n[KeyBERT] chunk 9/19 ...\n[KeyBERT] chunk 10/19 ...\n[KeyBERT] chunk 11/19 ...\n[KeyBERT] chunk 12/19 ...\n[KeyBERT] chunk 13/19 ...\n[KeyBERT] chunk 14/19 ...\n[KeyBERT] chunk 15/19 ...\n[KeyBERT] chunk 16/19 ...\n[KeyBERT] chunk 17/19 ...\n[KeyBERT] chunk 18/19 ...\n[KeyBERT] chunk 19/19 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：11，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Variance\n02. Sampling Techniques\n03. Training Cost\n04. Empirical Methods\n05. Optimization\n06. Integrals\n07. Probabilistic Models\n08. Path Analysis\n09. Model Evaluation\n10. Artificial Neural Networks\n11. Regression and Classification\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5645.67it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:12:15+08:00",
+      "ended_at": "2026-07-29T14:12:21+08:00",
+      "duration_seconds": 6.5728,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 11\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 5 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Integrals -> Probabilistic Models | Integrals are essential for understanding probability distributions.\n02. Variance -> Model Evaluation | Understanding variance is crucial for assessing model performance.\n03. Sampling Techniques -> Model Evaluation | Proper sampling is necessary for accurate model evaluation.\n04. Optimization -> Artificial Neural Networks | Optimization techniques are fundamental for training neural networks.\n05. Regression and Classification -> Model Evaluation | Understanding regression and classification is key to evaluating their performance.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:12:21+08:00",
+      "ended_at": "2026-07-29T14:12:55+08:00",
+      "duration_seconds": 33.4325,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 11\n[2] 相似关系数量: 0 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6506.85it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:12:55+08:00",
+      "ended_at": "2026-07-29T14:13:26+08:00",
+      "duration_seconds": 31.4736,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 11\n[LLM] 1/11 Variance\n[LLM] 2/11 Sampling Techniques\n[LLM] 3/11 Training Cost\n[LLM] 4/11 Empirical Methods\n[LLM] 5/11 Optimization\n[LLM] 6/11 Integrals\n[LLM] 7/11 Probabilistic Models\n[LLM] 8/11 Path Analysis\n[LLM] 9/11 Model Evaluation\n[LLM] 10/11 Artificial Neural Networks\n[LLM] 11/11 Regression and Classification\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T14:13:26+08:00",
+      "ended_at": "2026-07-29T14:13:28+08:00",
+      "duration_seconds": 1.685,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output missing"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 11\n[2] Prerequisites: 5\n[3] Similarity edges: 0\n[4] Graph nodes=11, edges=5\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T14:11:17+08:00"
+}

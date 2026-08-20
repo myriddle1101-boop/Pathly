@@ -1,0 +1,118 @@
+{
+  "created_at": "2026-08-18T18:50:14.777145+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-cs224n-2026-lecture02-wordvecs-fd0b4ad8af88",
+  "file_name": "cs224n-2026-lecture02-wordvecs-fd0b4ad8af88",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 15,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6429,
+    "f1": 0.7826,
+    "tp": 9,
+    "fp": 0,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.4,
+    "recall": 0.3333,
+    "f1": 0.3636,
+    "tp": 2,
+    "fp": 3,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Word Vectors",
+      "Neural Networks",
+      "Training Techniques",
+      "Similarity Measures",
+      "Natural Language Processing",
+      "Data Representation",
+      "Optimization Techniques",
+      "Model Evaluation",
+      "Deep Learning"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Distributional Semantics",
+        "reason": "The lecture presents context-based meaning as the central basis for constructing word representations."
+      },
+      {
+        "name": "Word2Vec",
+        "reason": "A major portion of the lecture explains the Word2Vec framework, especially skip-gram training."
+      },
+      {
+        "name": "Softmax",
+        "reason": "The source explicitly defines softmax as the probability prediction function for the naive Word2Vec model."
+      },
+      {
+        "name": "Gradient Descent",
+        "reason": "The lecture explicitly introduces gradient descent and stochastic gradient descent for minimizing the training objective."
+      },
+      {
+        "name": "Negative Sampling",
+        "reason": "The source explains skip-gram negative sampling as a computationally efficient Word2Vec training method."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Data Representation",
+        "to": "Word Vectors",
+        "reason": "The lecture develops word vectors by contrasting one-hot/localist representations with dense distributed representations."
+      },
+      {
+        "from": "Optimization Techniques",
+        "to": "Training Techniques",
+        "reason": "Model training is explicitly described as optimizing parameters to minimize the loss, using gradient-based methods."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Word Vectors",
+        "to": "Natural Language Processing",
+        "reason": "Word vectors are an NLP representation technique, but they are not a prerequisite for the broader field of NLP."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Deep Learning",
+        "reason": "This general dependency is not substantively developed in the source; the lecture focuses on word-vector methods rather than neural-network architecture."
+      },
+      {
+        "from": "Training Techniques",
+        "to": "Model Evaluation",
+        "reason": "Training and evaluation are related stages, but understanding training techniques is not presented as a necessary prerequisite for evaluation methods."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Distributional Semantics",
+        "to": "Word2Vec",
+        "reason": "Word2Vec operationalizes the distributional idea that words with similar nearby contexts should receive similar vectors."
+      },
+      {
+        "from": "Softmax",
+        "to": "Word2Vec",
+        "reason": "The naive skip-gram Word2Vec formulation computes context-word probabilities using a softmax distribution."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Stochastic Gradient Descent",
+        "reason": "Stochastic gradient descent is introduced as the scalable alternative to full-batch gradient descent."
+      },
+      {
+        "from": "Co-occurrence Matrix",
+        "to": "Singular Value Decomposition",
+        "reason": "The source applies SVD to a co-occurrence matrix in order to obtain low-dimensional word representations."
+      }
+    ],
+    "overall_note": "The predicted topics are broadly supported, but they omit the lecture's core Word2Vec, distributional-semantics, and efficient-training concepts."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture02-wordvecs-fd0b4ad8af88.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture02-wordvecs-fd0b4ad8af88.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture02-wordvecs-fd0b4ad8af88_ledger.csv"
+  }
+}

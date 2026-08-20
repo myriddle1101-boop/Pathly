@@ -1,0 +1,16 @@
+{
+  "similarity_edges": [
+    {
+      "from": "Learning Techniques",
+      "to": "Machine Learning Fundamentals"
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Model Training"
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Model Training"
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-22">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="core dependencies management" label="core dependencies management">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: core dependencies management" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and software development principles." />
+          <attvalue for="6" value="[&quot;Dependency resolution&quot;, &quot;Versioning&quot;, &quot;Package management&quot;]" />
+          <attvalue for="7" value="[&quot;Dependencies are always external libraries&quot;, &quot;Managing dependencies is only important for large projects&quot;]" />
+          <attvalue for="8" value="[&quot;Managing libraries in software projects&quot;, &quot;Ensuring compatibility in software development&quot;, &quot;Automating build processes&quot;]" />
+        </attvalues>
+      </node>
+      <node id="pip dependencies installation" label="pip dependencies installation">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: pip dependencies installation" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python and command line usage." />
+          <attvalue for="6" value="[&quot;pip command usage&quot;, &quot;requirements.txt file&quot;, &quot;virtual environments&quot;]" />
+          <attvalue for="7" value="[&quot;pip is only for Python 2&quot;, &quot;all dependencies are installed globally&quot;]" />
+          <attvalue for="8" value="[&quot;Setting up project environments&quot;, &quot;Managing package versions&quot;, &quot;Collaborating on Python projects&quot;]" />
+        </attvalues>
+      </node>
+      <node id="general dependencies overview" label="general dependencies overview">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: general dependencies overview" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Correlation vs. Causation&quot;, &quot;Conditional Independence&quot;]" />
+          <attvalue for="7" value="[&quot;All dependencies imply causation&quot;, &quot;Independence means no relationship at all&quot;]" />
+          <attvalue for="8" value="[&quot;Feature selection in machine learning&quot;, &quot;Understanding relationships in data analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="print testing methodology" label="print testing methodology">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: print testing methodology" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and software testing principles." />
+          <attvalue for="6" value="[&quot;Unit Testing&quot;, &quot;Integration Testing&quot;, &quot;Test Automation&quot;]" />
+          <attvalue for="7" value="[&quot;Print statements are sufficient for all testing needs.&quot;, &quot;Testing is only necessary for large projects.&quot;]" />
+          <attvalue for="8" value="[&quot;Debugging code during development&quot;, &quot;Validating outputs in data processing tasks&quot;]" />
+        </attvalues>
+      </node>
+      <node id="installing requirements from requirements.txt" label="installing requirements from requirements.txt">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: installing requirements from requirements.txt" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python and package management." />
+          <attvalue for="6" value="[&quot;Python package management&quot;, &quot;Virtual environments&quot;]" />
+          <attvalue for="7" value="[&quot;requirements.txt is only for Python projects&quot;, &quot;All packages in requirements.txt are always compatible&quot;]" />
+          <attvalue for="8" value="[&quot;Setting up development environments&quot;, &quot;Managing dependencies for Python projects&quot;]" />
+        </attvalues>
+      </node>
+      <node id="installing core packages" label="installing core packages">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: installing core packages" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and command line usage." />
+          <attvalue for="6" value="[&quot;Package managers&quot;, &quot;Environment setup&quot;]" />
+          <attvalue for="7" value="[&quot;All packages are installed by default&quot;, &quot;Installation is the same across all operating systems&quot;]" />
+          <attvalue for="8" value="[&quot;Setting up a machine learning environment&quot;, &quot;Installing libraries for data analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="testing environment setup" label="testing environment setup">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: testing environment setup" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and machine learning concepts." />
+          <attvalue for="6" value="[&quot;Environment configuration&quot;, &quot;Dependency management&quot;, &quot;Version control&quot;]" />
+          <attvalue for="7" value="[&quot;Testing environments are only for advanced users&quot;, &quot;Setting up an environment is too complex&quot;]" />
+          <attvalue for="8" value="[&quot;Developing machine learning models&quot;, &quot;Testing algorithms in isolated environments&quot;]" />
+        </attvalues>
+      </node>
+      <node id="create_collection unit test" label="create_collection unit test">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: create_collection unit test" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of unit testing and familiarity with the programming language used." />
+          <attvalue for="6" value="[&quot;Unit testing principles&quot;, &quot;Mocking dependencies&quot;]" />
+          <attvalue for="7" value="[&quot;Unit tests are only for large projects&quot;, &quot;All tests must pass for the code to be correct&quot;]" />
+          <attvalue for="8" value="[&quot;Ensuring code reliability&quot;, &quot;Facilitating code refactoring&quot;]" />
+        </attvalues>
+      </node>
+      <node id="verify functionality of components" label="verify functionality of components">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: verify functionality of components" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and programming skills." />
+          <attvalue for="6" value="[&quot;Component testing&quot;, &quot;Integration testing&quot;]" />
+          <attvalue for="7" value="[&quot;All components are functional if the system works&quot;, &quot;Testing is only necessary at the end of development&quot;]" />
+          <attvalue for="8" value="[&quot;Ensuring model accuracy&quot;, &quot;Validating data preprocessing steps&quot;]" />
+        </attvalues>
+      </node>
+      <node id="test collection implementation" label="test collection implementation">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: test collection implementation" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and programming skills in Python." />
+          <attvalue for="6" value="[&quot;Data collection methods&quot;, &quot;Evaluation metrics&quot;, &quot;Data preprocessing&quot;]" />
+          <attvalue for="7" value="[&quot;Test collections are only for supervised learning&quot;, &quot;All data in a test collection is equally important&quot;]" />
+          <attvalue for="8" value="[&quot;Benchmarking machine learning models&quot;, &quot;Evaluating information retrieval systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="requirements.txt file structure" label="requirements.txt file structure">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: requirements.txt file structure" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python and package management." />
+          <attvalue for="6" value="[&quot;Package versioning&quot;, &quot;Dependency management&quot;]" />
+          <attvalue for="7" value="[&quot;All packages must be listed in requirements.txt&quot;, &quot;requirements.txt is only for Python projects&quot;]" />
+          <attvalue for="8" value="[&quot;Managing project dependencies&quot;, &quot;Facilitating environment setup for development and production&quot;]" />
+        </attvalues>
+      </node>
+      <node id="using Python sentence_transformers library" label="using Python sentence_transformers library">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: using Python sentence_transformers library" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python programming and familiarity with machine learning concepts." />
+          <attvalue for="6" value="[&quot;Sentence embeddings&quot;, &quot;Transformers architecture&quot;]" />
+          <attvalue for="7" value="[&quot;Sentence embeddings are the same as word embeddings&quot;, &quot;Transformers only work for English text&quot;]" />
+          <attvalue for="8" value="[&quot;Text similarity and clustering&quot;, &quot;Sentiment analysis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="creating a virtual environment" label="creating a virtual environment">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: creating a virtual environment" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of command line interface and Python programming." />
+          <attvalue for="6" value="[&quot;Virtual Environment Creation&quot;, &quot;Package Management&quot;]" />
+          <attvalue for="7" value="[&quot;Virtual environments are only for Python projects&quot;, &quot;Creating a virtual environment is overly complex&quot;]" />
+          <attvalue for="8" value="[&quot;Isolating project dependencies&quot;, &quot;Managing different project environments&quot;]" />
+        </attvalues>
+      </node>
+      <node id="quick start guide for setup" label="quick start guide for setup">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: quick start guide for setup" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Environment setup&quot;, &quot;Library installation&quot;, &quot;Basic model training&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning requires advanced math&quot;, &quot;Setup is overly complex&quot;]" />
+          <attvalue for="8" value="[&quot;Data analysis&quot;, &quot;Predictive modeling&quot;]" />
+        </attvalues>
+      </node>
+      <node id="activating virtual environment via bin/activate" label="activating virtual environment via bin/activate">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: activating virtual environment via bin/activate" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of command line interface and Python programming." />
+          <attvalue for="6" value="[&quot;Virtual environments&quot;, &quot;Python package management&quot;]" />
+          <attvalue for="7" value="[&quot;Virtual environments are only for advanced users&quot;, &quot;Activating a virtual environment is the same as installing it&quot;]" />
+          <attvalue for="8" value="[&quot;Isolating project dependencies&quot;, &quot;Managing different Python versions for projects&quot;]" />
+        </attvalues>
+      </node>
+      <node id="start guide for new users" label="start guide for new users">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: start guide for new users" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Data preprocessing&quot;, &quot;Model evaluation&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning is only about algorithms&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Predictive analytics&quot;, &quot;Image recognition&quot;]" />
+        </attvalues>
+      </node>
+      <node id="rag_tutorial for creating collections" label="rag_tutorial for creating collections">
+        <attvalues>
+          <attvalue for="0" value="Auto-generated topic: rag_tutorial for creating collections" />
+          <attvalue for="1" value="[]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python and data structures." />
+          <attvalue for="6" value="[&quot;Creating collections&quot;, &quot;Managing data within collections&quot;]" />
+          <attvalue for="7" value="[&quot;Collections are only for storing data&quot;, &quot;All collections are the same&quot;]" />
+          <attvalue for="8" value="[&quot;Data organization in applications&quot;, &quot;Efficient data retrieval and manipulation&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="core dependencies management" target="pip dependencies installation" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Managing core dependencies requires knowledge of how to install them using pip." />
+        </attvalues>
+      </edge>
+      <edge source="core dependencies management" target="general dependencies overview" id="1">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.8201" />
+        </attvalues>
+      </edge>
+      <edge source="pip dependencies installation" target="installing requirements from requirements.txt" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="You need to know how to install dependencies via pip to understand installing from requirements.txt." />
+        </attvalues>
+      </edge>
+      <edge source="general dependencies overview" target="core dependencies management" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding general dependencies is necessary to manage core dependencies." />
+        </attvalues>
+      </edge>
+      <edge source="print testing methodology" target="verify functionality of components" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="You need to understand testing methodologies to verify component functionality." />
+        </attvalues>
+      </edge>
+      <edge source="testing environment setup" target="print testing methodology" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Setting up a testing environment is a prerequisite for understanding testing methodologies." />
+        </attvalues>
+      </edge>
+      <edge source="verify functionality of components" target="test collection implementation" id="6">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Verifying functionality is necessary before testing the implementation of collections." />
+        </attvalues>
+      </edge>
+      <edge source="requirements.txt file structure" target="installing requirements from requirements.txt" id="7">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding the structure of requirements.txt is necessary to install from it." />
+        </attvalues>
+      </edge>
+      <edge source="creating a virtual environment" target="activating virtual environment via bin/activate" id="8">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="You need to create a virtual environment before you can activate it." />
+        </attvalues>
+      </edge>
+      <edge source="activating virtual environment via bin/activate" target="creating a virtual environment" id="9">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7733" />
+        </attvalues>
+      </edge>
+      <edge source="rag_tutorial for creating collections" target="create_collection unit test" id="10">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="You need to understand the rag_tutorial to create unit tests for collections." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

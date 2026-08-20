@@ -1,0 +1,258 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 2,
+  "candidate_count": 12,
+  "topics_count": 8,
+  "candidates": [
+    {
+      "name": "accuracy inception",
+      "avg_score": 0.6733,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "accuracy initial",
+      "avg_score": 0.6644,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "max accuracy",
+      "avg_score": 0.6571,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "accuracy maximum",
+      "avg_score": 0.6569,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "maximum accuracy",
+      "avg_score": 0.6504,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "normalization max",
+      "avg_score": 0.6497,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "accuracy lsvrc",
+      "avg_score": 0.6465,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "normalization accelerating",
+      "avg_score": 0.6194,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "normalization",
+      "avg_score": 0.6058,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "batch normalization",
+      "avg_score": 0.6032,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "normalization ian",
+      "avg_score": 0.5969,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "max batch",
+      "avg_score": 0.4672,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Accuracy Metrics",
+      "description": "Measures of model performance in classification tasks.",
+      "sub_topics": [
+        {
+          "name": "Max Accuracy",
+          "description": "The highest accuracy achieved by a model."
+        },
+        {
+          "name": "Accuracy Inception",
+          "description": "Accuracy metrics related to Inception models."
+        },
+        {
+          "name": "Accuracy LSVRC",
+          "description": "Accuracy metrics specific to the Large Scale Visual Recognition Challenge."
+        }
+      ]
+    },
+    {
+      "name": "Normalization Techniques",
+      "description": "Methods to adjust and scale data for better model performance.",
+      "sub_topics": [
+        {
+          "name": "Batch Normalization",
+          "description": "A technique to normalize inputs of each layer in a neural network."
+        },
+        {
+          "name": "Normalization Max",
+          "description": "Normalization techniques focusing on maximum values."
+        },
+        {
+          "name": "Normalization Accelerating",
+          "description": "Normalization methods that speed up training."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": [
+        {
+          "name": "Artificial Neural Network",
+          "description": "A network of interconnected neurons used for various tasks."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neuron."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing error."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Functions that measure the difference between predicted and actual values.",
+      "sub_topics": [
+        {
+          "name": "Regression Loss",
+          "description": "Loss functions used for regression tasks."
+        },
+        {
+          "name": "Classification Loss",
+          "description": "Loss functions used for classification tasks."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Batch Training",
+          "description": "Training models using batches of data."
+        },
+        {
+          "name": "Epochs and Iterations",
+          "description": "Concepts related to the number of passes through the training dataset."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Processes for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Validation Techniques",
+          "description": "Methods for validating model performance."
+        },
+        {
+          "name": "Cross-Validation",
+          "description": "A technique for assessing how the results of a statistical analysis will generalize."
+        }
+      ]
+    },
+    {
+      "name": "Linear Separability",
+      "description": "The ability to separate classes in a dataset using a linear boundary.",
+      "sub_topics": [
+        {
+          "name": "Linear Classifiers",
+          "description": "Models that classify data points using linear decision boundaries."
+        },
+        {
+          "name": "Non-linear Separation",
+          "description": "Methods for separating classes that are not linearly separable."
+        }
+      ]
+    },
+    {
+      "name": "Maximization Techniques",
+      "description": "Strategies for maximizing performance metrics in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Maximum Accuracy",
+          "description": "Techniques aimed at achieving the highest accuracy."
+        },
+        {
+          "name": "Optimization Algorithms",
+          "description": "Algorithms used to optimize model parameters."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 21.7367,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

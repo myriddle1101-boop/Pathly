@@ -1,0 +1,108 @@
+{
+  "created_at": "2026-08-18T18:40:47.082438+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-05_ml-f11d16937e75",
+  "file_name": "05_ml-f11d16937e75",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 21,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.2,
+    "recall": 0.3333,
+    "f1": 0.25,
+    "tp": 1,
+    "fp": 4,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Machine Learning",
+      "Regression",
+      "Dimensionality Reduction",
+      "Training Data",
+      "Error Metrics",
+      "Classification",
+      "Model Evaluation",
+      "Distance Metrics"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "The provided text does not discuss neural networks."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Linear Regression",
+        "reason": "The text explicitly develops linear regression, normal equations, intercepts, and polynomial regression examples."
+      },
+      {
+        "name": "Generalization",
+        "reason": "Generalization error, train/test error, and the effects of training-set size are central topics."
+      },
+      {
+        "name": "Model Capacity",
+        "reason": "The source explicitly defines representational capacity and relates it to underfitting and overfitting."
+      },
+      {
+        "name": "Principal Components Analysis",
+        "reason": "PCA is explicitly presented as an orthogonal linear projection and dimensionality-reduction method."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Error Metrics",
+        "to": "Model Evaluation",
+        "reason": "The source evaluates models using quantities such as mean squared error, training error, test error, and generalization error."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Training Data",
+        "to": "Model Evaluation",
+        "reason": "Training data is used to fit models, but evaluation in the source specifically contrasts training performance with test/generalization performance; this is not a strong prerequisite relation."
+      },
+      {
+        "from": "Regression",
+        "to": "Classification",
+        "reason": "Regression and classification are separate task types in the source; regression is not established as a prerequisite for classification."
+      },
+      {
+        "from": "Dimensionality Reduction",
+        "to": "Distance Metrics",
+        "reason": "The PCA discussion is based on variance, covariance, and reconstruction error, not distance metrics as a prerequisite."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Training Data",
+        "reason": "Neural networks are not covered in the source, and requiring training data is an operational requirement rather than a learning prerequisite."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Model Capacity",
+        "to": "Underfitting and Overfitting",
+        "reason": "The text directly explains underfitting and overfitting in terms of model capacity relative to an optimal capacity."
+      },
+      {
+        "from": "Mean Squared Error",
+        "to": "Linear Regression",
+        "reason": "Linear regression is presented as choosing weights that minimize training-set mean squared error, including via the normal equations."
+      }
+    ],
+    "overall_note": "The predictions capture several broad themes, but omit core chapter topics including linear regression, generalization, capacity, and PCA."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-05_ml-f11d16937e75.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-05_ml-f11d16937e75.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-05_ml-f11d16937e75_ledger.csv"
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "stage": "2a",
+  "method": "keybert_cpu_optimized",
+  "input_chunks": 7,
+  "topics_count": 18,
+  "topics": [
+    {
+      "name": "learningfor design",
+      "description": "KeyBERT离线提取（出现2次，平均相关度0.5689）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5689,
+        "frequency": 2,
+        "chunk_ids": [
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "name": "linearlyseperable",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.7224）",
+      "sub_topics": [
+        {
+          "name": "linearlyseperable wherey",
+          "description": "linearlyseperable 的细化概念"
+        },
+        {
+          "name": "linearseparation linearlyseperable",
+          "description": "linearlyseperable 的细化概念"
+        }
+      ],
+      "meta": {
+        "avg_score": 0.7224,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "linearseparation",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.7133）",
+      "sub_topics": [
+        {
+          "name": "engineers linearseparation",
+          "description": "linearseparation 的细化概念"
+        },
+        {
+          "name": "linearseparation linearlyseperable",
+          "description": "linearseparation 的细化概念"
+        }
+      ],
+      "meta": {
+        "avg_score": 0.7133,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "linearseparation linearlyseperable",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.7038）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.7038,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "deep learningistheneuron",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.6729）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6729,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "learningistheneuron wx",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.6622）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6622,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "regression forthisspecificproblem",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.6385）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6385,
+        "frequency": 1,
+        "chunk_ids": [
+          7
+        ]
+      }
+    },
+    {
+      "name": "thebuildingblockfor deep",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.6347）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6347,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "engineers neuron",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.6345）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6345,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "engineers linearseparation",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.6052）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.6052,
+        "frequency": 1,
+        "chunk_ids": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "linearlyseperable wherey",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.604）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.604,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "name": "learningistheneuron",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.5871）",
+      "sub_topics": [
+        {
+          "name": "learningistheneuron wx",
+          "description": "learningistheneuron 的细化概念"
+        },
+        {
+          "name": "deep learningistheneuron",
+          "description": "learningistheneuron 的细化概念"
+        }
+      ],
+      "meta": {
+        "avg_score": 0.5871,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "neural networks",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.57）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.57,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "machine learningfor",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.5501）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5501,
+        "frequency": 1,
+        "chunk_ids": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "artificial neural",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.5442）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5442,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "design engineers",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.5401）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.5401,
+        "frequency": 1,
+        "chunk_ids": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "machine learning",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.524）",
+      "sub_topics": [
+        {
+          "name": "machine learningfor",
+          "description": "machine learning 的细化概念"
+        }
+      ],
+      "meta": {
+        "avg_score": 0.524,
+        "frequency": 1,
+        "chunk_ids": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "thelabelsforeach classis",
+      "description": "KeyBERT离线提取（出现1次，平均相关度0.4522）",
+      "sub_topics": [],
+      "meta": {
+        "avg_score": 0.4522,
+        "frequency": 1,
+        "chunk_ids": [
+          3
+        ]
+      }
+    }
+  ]
+}

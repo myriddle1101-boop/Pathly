@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6",
+  "run_id": "06-advanced-rag-techniques-a65350c7ccf6",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:04:30.444825+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "79336e8aa44b2c87833c57f8578106068d440dffc4fa06a24c207ad6b7d56927",
+    "stage2a_topics_hybrid.json": "1b309ca8d37cf5126c26e5ddc7f00b6287318d8d18576cc860db7248073f57ea",
+    "stage2c_similarity_edges.json": "1de509d9f404caa26244821c4997abfb457416235186119785a6d22230c042d8",
+    "stage3_topics_with_summary.json": "09f0430e6245ce6a891fb27ea1399b778a7487d7e3886ae93296e85244a7b16c"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 1,
+  "new_node_count": 9,
+  "new_edge_count": 2,
+  "golden_path_resource": false
+}

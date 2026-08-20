@@ -1,0 +1,174 @@
+{
+  "nodes": [
+    {
+      "id": "Neurons",
+      "description": "Fundamental units of artificial neural networks that process information.",
+      "sub_topics": "[{\"name\": \"Connections\", \"description\": \"The links between neurons that facilitate information transfer.\"}, {\"name\": \"Types of Neurons\", \"description\": \"Different neuron configurations used in various architectures.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus.",
+      "key_sub_concepts": "[\"Activation functions\", \"Weights and biases\"]",
+      "common_misconceptions": "[\"Neurons are biological and artificial neurons are the same\", \"More neurons always lead to better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Artificial Neural Networks",
+      "description": "Computational models inspired by the human brain's network of neurons.",
+      "sub_topics": "[{\"name\": \"Hidden Layers\", \"description\": \"Intermediate layers in a neural network that process inputs.\"}, {\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of a neuron.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Autoencoders",
+      "description": "Neural networks designed to learn efficient representations of data.",
+      "sub_topics": "[{\"name\": \"Training Autoencoders\", \"description\": \"The process of optimizing autoencoders to minimize reconstruction error.\"}, {\"name\": \"Types of Autoencoders\", \"description\": \"Different architectures and purposes of autoencoders.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and linear algebra.",
+      "key_sub_concepts": "[\"Encoder\", \"Decoder\", \"Latent Space\", \"Loss Function\"]",
+      "common_misconceptions": "[\"Autoencoders are only for image data\", \"They always produce better representations than other methods\"]",
+      "practical_applications": "[\"Dimensionality reduction\", \"Anomaly detection\", \"Image denoising\", \"Data compression\"]"
+    },
+    {
+      "id": "Datasets",
+      "description": "Collections of data used for training and evaluating machine learning models.",
+      "sub_topics": "[{\"name\": \"MNIST Dataset\", \"description\": \"A widely used dataset for handwritten digit recognition.\"}, {\"name\": \"Dataset Characteristics\", \"description\": \"Key features and properties of datasets used in machine learning.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of data structures and statistics.",
+      "key_sub_concepts": "[\"Types of datasets (training, validation, test)\", \"Data preprocessing techniques\"]",
+      "common_misconceptions": "[\"All datasets are equal in quality\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Computational Graphs",
+      "description": "Graphical representations of mathematical computations in neural networks.",
+      "sub_topics": "[{\"name\": \"Graph Structure\", \"description\": \"The arrangement of nodes and edges representing operations and data.\"}, {\"name\": \"Graph Output\", \"description\": \"The final results produced by traversing the computational graph.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus.",
+      "key_sub_concepts": "[\"Nodes and edges\", \"Forward and backward propagation\"]",
+      "common_misconceptions": "[\"Computational graphs are only for neural networks\", \"They cannot represent non-linear functions\"]",
+      "practical_applications": "[\"Optimizing neural network training\", \"Visualizing complex computations\"]"
+    },
+    {
+      "id": "Training Techniques",
+      "description": "Methods used to optimize machine learning models during training.",
+      "sub_topics": "[{\"name\": \"Backpropagation\", \"description\": \"An algorithm for training neural networks by minimizing error.\"}, {\"name\": \"Loss Functions\", \"description\": \"Functions that measure the difference between predicted and actual outcomes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Gradient Descent\", \"Regularization\", \"Batch vs. Stochastic Training\", \"Learning Rate Scheduling\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Overfitting can be ignored if the model performs well on training data\"]",
+      "practical_applications": "[\"Improving model accuracy\", \"Reducing training time\", \"Enhancing model generalization\"]"
+    },
+    {
+      "id": "Learning Algorithms",
+      "description": "Procedures used to train models and make predictions based on data.",
+      "sub_topics": "[{\"name\": \"Supervised Learning\", \"description\": \"Learning from labeled data to make predictions.\"}, {\"name\": \"Unsupervised Learning\", \"description\": \"Learning from unlabeled data to find patterns.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\"]",
+      "common_misconceptions": "[\"All algorithms work the same for every problem\", \"More data always leads to better models\"]",
+      "practical_applications": "[\"Image recognition\", \"Predictive analytics\"]"
+    },
+    {
+      "id": "Visual Recognition",
+      "description": "The ability of models to identify and classify objects in images.",
+      "sub_topics": "[{\"name\": \"Image Representations\", \"description\": \"How images are encoded for processing by neural networks.\"}, {\"name\": \"Recognition Challenges\", \"description\": \"Difficulties faced in accurately identifying objects in images.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and familiarity with Python programming.",
+      "key_sub_concepts": "[\"Convolutional Neural Networks (CNNs)\", \"Image Preprocessing Techniques\"]",
+      "common_misconceptions": "[\"Visual recognition is the same as image processing.\", \"More data always leads to better model performance.\"]",
+      "practical_applications": "[\"Autonomous vehicles\", \"Facial recognition systems\"]"
+    },
+    {
+      "id": "Data Representation",
+      "description": "The way data is structured and formatted for analysis.",
+      "sub_topics": "[{\"name\": \"Polar Coordinates\", \"description\": \"A coordinate system used to represent data points in a circular format.\"}, {\"name\": \"Cartesian Coordinates\", \"description\": \"A coordinate system that uses perpendicular axes to represent data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of data types and structures.",
+      "key_sub_concepts": "[\"Data types\", \"Data encoding\", \"Data normalization\", \"Feature scaling\"]",
+      "common_misconceptions": "[\"Data representation is only about data types.\", \"All data must be numeric.\"]",
+      "practical_applications": "[\"Data preprocessing for machine learning models\", \"Visualization of data for analysis\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Neurons",
+      "to": "Artificial Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Neurons are the fundamental units that make up artificial neural networks."
+    },
+    {
+      "from": "Artificial Neural Networks",
+      "to": "Autoencoders",
+      "relation": "prerequisite",
+      "reason": "Autoencoders are a specific type of artificial neural network."
+    },
+    {
+      "from": "Artificial Neural Networks",
+      "to": "Computational Graphs",
+      "relation": "prerequisite",
+      "reason": "Understanding artificial neural networks requires knowledge of computational graphs."
+    },
+    {
+      "from": "Artificial Neural Networks",
+      "to": "Neurons",
+      "relation": "similarity",
+      "score": 0.8519
+    },
+    {
+      "from": "Datasets",
+      "to": "Training Techniques",
+      "relation": "prerequisite",
+      "reason": "Training techniques require datasets for model training."
+    },
+    {
+      "from": "Datasets",
+      "to": "Visual Recognition",
+      "relation": "prerequisite",
+      "reason": "Visual recognition models are trained using datasets."
+    },
+    {
+      "from": "Datasets",
+      "to": "Data Representation",
+      "relation": "prerequisite",
+      "reason": "Data representation is essential for structuring datasets."
+    },
+    {
+      "from": "Datasets",
+      "to": "Learning Algorithms",
+      "relation": "similarity",
+      "score": 0.7578
+    },
+    {
+      "from": "Training Techniques",
+      "to": "Learning Algorithms",
+      "relation": "prerequisite",
+      "reason": "Learning algorithms are implemented through training techniques."
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Training Techniques",
+      "relation": "similarity",
+      "score": 0.7685
+    }
+  ]
+}

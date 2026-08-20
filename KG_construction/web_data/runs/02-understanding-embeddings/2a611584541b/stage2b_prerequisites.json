@@ -1,0 +1,33 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Loss Functions",
+      "reason": "Loss functions are used to evaluate the performance of neural networks."
+    },
+    {
+      "from": "Regression and Classification",
+      "to": "Model Training",
+      "reason": "Model training is essential for applying regression and classification techniques."
+    },
+    {
+      "from": "Embeddings",
+      "to": "Sentence Transformers",
+      "reason": "Sentence transformers are a specific application of embeddings."
+    },
+    {
+      "from": "Embeddings",
+      "to": "Cosine Similarity",
+      "reason": "Cosine similarity is often used to measure the similarity of embeddings."
+    },
+    {
+      "from": "Linear Separation",
+      "to": "Regression and Classification",
+      "reason": "Understanding linear separation is fundamental for regression and classification tasks."
+    }
+  ]
+}

@@ -1,0 +1,1364 @@
+{
+  "generated_at": "2026-06-22T21:49:59",
+  "run_counts": {
+    "total": 12,
+    "complete": 9,
+    "partial_or_incomplete": 3
+  },
+  "representative_selection_rule": "优先选择最近成功且具备 Stage1-Stage4 核心产物的运行目录，最多保留 3 份代表样本。",
+  "representative_runs": [
+    "Security and Privacy in ML",
+    "Dreamer",
+    "Crime"
+  ],
+  "runs": [
+    {
+      "doc_name": "AIChallenges",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges",
+      "pdf_file": "AIChallenges.pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\AIChallenges.pdf",
+      "pdf_sha256": "3a1ca615166ecdc44b784038d9758a689d7438db97012692baccd4ee77b90d45",
+      "latest_status": "done",
+      "latest_history_time": "2026-06-17 14:21:09",
+      "history_row": {
+        "time": "2026-06-17 14:21:09",
+        "file_name": "AIChallenges.pdf",
+        "sha256": "3a1ca615166ecdc44b784038d9758a689d7438db97012692baccd4ee77b90d45",
+        "status": "done",
+        "nodes_after_merge": 39,
+        "edges_after_merge": 35,
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges"
+      },
+      "available_files": [
+        "AIChallenges.pdf",
+        "kg_prerequisite.png",
+        "kg_similarity.png",
+        "knowledge_graph.gexf",
+        "knowledge_graph.json",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt",
+        "stage2a_topics_hybrid.json",
+        "stage2b_prerequisites.json",
+        "stage2c_similarity_edges.json",
+        "stage3_topics_with_summary.json"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": true
+      },
+      "counts": {
+        "chunks": 11,
+        "topics": 9,
+        "prerequisites": 7,
+        "similarity_edges": 1,
+        "topics_with_summary": 9,
+        "graph_nodes": 9,
+        "graph_edges": 8
+      },
+      "is_complete_candidate": true,
+      "completeness_score": 6,
+      "file_inventory": {
+        "AIChallenges.pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\AIChallenges.pdf",
+          "relative_path": "web_data\\runs\\AIChallenges\\AIChallenges.pdf",
+          "size_bytes": 621328,
+          "sha256": "3a1ca615166ecdc44b784038d9758a689d7438db97012692baccd4ee77b90d45",
+          "modified_at": "2026-06-17T14:19:07"
+        },
+        "kg_prerequisite.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\kg_prerequisite.png",
+          "relative_path": "web_data\\runs\\AIChallenges\\kg_prerequisite.png",
+          "size_bytes": 159412,
+          "sha256": "4a18b5dacd0247bc01f94361b454e8db30aaf73f12a33b6c270591435b7aa39c",
+          "modified_at": "2026-06-17T14:21:09"
+        },
+        "kg_similarity.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\kg_similarity.png",
+          "relative_path": "web_data\\runs\\AIChallenges\\kg_similarity.png",
+          "size_bytes": 102404,
+          "sha256": "f451d845c8579f98f45b4621e4ef1c76040d19fd8b94206ba3a9d232414d80fd",
+          "modified_at": "2026-06-17T14:21:09"
+        },
+        "knowledge_graph.gexf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\knowledge_graph.gexf",
+          "relative_path": "web_data\\runs\\AIChallenges\\knowledge_graph.gexf",
+          "size_bytes": 14684,
+          "sha256": "44df045c24b42631a080c9aa5ce9506d54e6c3670d91210d61c2c503e98e332c",
+          "modified_at": "2026-06-17T14:21:09"
+        },
+        "knowledge_graph.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\knowledge_graph.json",
+          "relative_path": "web_data\\runs\\AIChallenges\\knowledge_graph.json",
+          "size_bytes": 10290,
+          "sha256": "c2a535f3d86dd639ccaad95cdfd92ce818ce6b0a8c21d93aa3d8241dd2b13863",
+          "modified_at": "2026-06-17T14:21:09"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\AIChallenges\\stage1_chunks.json",
+          "size_bytes": 72782,
+          "sha256": "8018b1bc981c3b88853001f924238069ba03dcb159eebed97bca1d08a71f7800",
+          "modified_at": "2026-06-17T14:19:12"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\AIChallenges\\stage1_text_cleaned.txt",
+          "size_bytes": 72214,
+          "sha256": "4ccfe1a6b35d388a60b6ea854fb3c442ffe3e81c8ea5ddfdaa22e21f811d32cf",
+          "modified_at": "2026-06-17T14:19:12"
+        },
+        "stage2a_topics_hybrid.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\stage2a_topics_hybrid.json",
+          "relative_path": "web_data\\runs\\AIChallenges\\stage2a_topics_hybrid.json",
+          "size_bytes": 8403,
+          "sha256": "0481175e2083bc767a4b71c34ed84999f674e00a6cccaa9419b8a1340d415309",
+          "modified_at": "2026-06-17T14:20:04"
+        },
+        "stage2b_prerequisites.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\stage2b_prerequisites.json",
+          "relative_path": "web_data\\runs\\AIChallenges\\stage2b_prerequisites.json",
+          "size_bytes": 1237,
+          "sha256": "e34719879f9a17ddb086f45f13f3bd207d8541e38f536d89ffdf081eaeb00861",
+          "modified_at": "2026-06-17T14:20:11"
+        },
+        "stage2c_similarity_edges.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\stage2c_similarity_edges.json",
+          "relative_path": "web_data\\runs\\AIChallenges\\stage2c_similarity_edges.json",
+          "size_bytes": 340,
+          "sha256": "d25189195b13ea073618a0417881425b4bd12e93a44327f8dea860dd88577420",
+          "modified_at": "2026-06-17T14:20:37"
+        },
+        "stage3_topics_with_summary.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AIChallenges\\stage3_topics_with_summary.json",
+          "relative_path": "web_data\\runs\\AIChallenges\\stage3_topics_with_summary.json",
+          "size_bytes": 10805,
+          "sha256": "05eae5a4ffdea3ecc440d09e86a1841bff98213a27d282d74d754196756debab",
+          "modified_at": "2026-06-17T14:21:08"
+        }
+      }
+    },
+    {
+      "doc_name": "AlgorithmicBias",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias",
+      "pdf_file": "AlgorithmicBias.pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\AlgorithmicBias.pdf",
+      "pdf_sha256": "6bc189c9007e83c9343104a14d8ff578ba3d4b689ee5560f3dbc191d8a1daf92",
+      "latest_status": "done",
+      "latest_history_time": "2026-06-17 14:23:11",
+      "history_row": {
+        "time": "2026-06-17 14:23:11",
+        "file_name": "AlgorithmicBias.pdf",
+        "sha256": "6bc189c9007e83c9343104a14d8ff578ba3d4b689ee5560f3dbc191d8a1daf92",
+        "status": "done",
+        "nodes_after_merge": 47,
+        "edges_after_merge": 41,
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias"
+      },
+      "available_files": [
+        "AlgorithmicBias.pdf",
+        "kg_prerequisite.png",
+        "kg_similarity.png",
+        "knowledge_graph.gexf",
+        "knowledge_graph.json",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt",
+        "stage2a_topics_hybrid.json",
+        "stage2b_prerequisites.json",
+        "stage2c_similarity_edges.json",
+        "stage3_topics_with_summary.json"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": true
+      },
+      "counts": {
+        "chunks": 25,
+        "topics": 9,
+        "prerequisites": 5,
+        "similarity_edges": 1,
+        "topics_with_summary": 9,
+        "graph_nodes": 9,
+        "graph_edges": 6
+      },
+      "is_complete_candidate": true,
+      "completeness_score": 6,
+      "file_inventory": {
+        "AlgorithmicBias.pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\AlgorithmicBias.pdf",
+          "relative_path": "web_data\\runs\\AlgorithmicBias\\AlgorithmicBias.pdf",
+          "size_bytes": 1993268,
+          "sha256": "6bc189c9007e83c9343104a14d8ff578ba3d4b689ee5560f3dbc191d8a1daf92",
+          "modified_at": "2026-06-17T14:21:09"
+        },
+        "kg_prerequisite.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\kg_prerequisite.png",
+          "relative_path": "web_data\\runs\\AlgorithmicBias\\kg_prerequisite.png",
+          "size_bytes": 145935,
+          "sha256": "3375c7178a52afeb1cea1bc871b93c66c121a5e1d1df2179204f4b635aeef1f3",
+          "modified_at": "2026-06-17T14:23:11"
+        },
+        "kg_similarity.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\kg_similarity.png",
+          "relative_path": "web_data\\runs\\AlgorithmicBias\\kg_similarity.png",
+          "size_bytes": 92327,
+          "sha256": "d80307cd2a5c0298b140586ca075a6f9709558ebbb5bbe93b31a4a0210f0cd57",
+          "modified_at": "2026-06-17T14:23:11"
+        },
+        "knowledge_graph.gexf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\knowledge_graph.gexf",
+          "relative_path": "web_data\\runs\\AlgorithmicBias\\knowledge_graph.gexf",
+          "size_bytes": 14214,
+          "sha256": "70f4f6b814c488c091ec1b5ce7f1209890a2a3274f0fee725d1f58f588d7ad46",
+          "modified_at": "2026-06-17T14:23:11"
+        },
+        "knowledge_graph.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\knowledge_graph.json",
+          "relative_path": "web_data\\runs\\AlgorithmicBias\\knowledge_graph.json",
+          "size_bytes": 10023,
+          "sha256": "dd5d9d173babd8904379ac04a91c58b742f0cddc0a6526cbd0cbc202b0100212",
+          "modified_at": "2026-06-17T14:23:11"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\AlgorithmicBias\\stage1_chunks.json",
+          "size_bytes": 66095,
+          "sha256": "5eab44c3671981d8f191e6e12d9fe2d187a6991b72773ca00954c069256ab38e",
+          "modified_at": "2026-06-17T14:21:14"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\AlgorithmicBias\\stage1_text_cleaned.txt",
+          "size_bytes": 64154,
+          "sha256": "791c04bd6c43b0cf33b4b66ec7afafe477846b71a13ec302b2314e7ecf174630",
+          "modified_at": "2026-06-17T14:21:14"
+        },
+        "stage2a_topics_hybrid.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\stage2a_topics_hybrid.json",
+          "relative_path": "web_data\\runs\\AlgorithmicBias\\stage2a_topics_hybrid.json",
+          "size_bytes": 16287,
+          "sha256": "bade3fb25e33058b30efda2f0289f7aa69718f90d4496813de7f9ba9d6fec794",
+          "modified_at": "2026-06-17T14:22:06"
+        },
+        "stage2b_prerequisites.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\stage2b_prerequisites.json",
+          "relative_path": "web_data\\runs\\AlgorithmicBias\\stage2b_prerequisites.json",
+          "size_bytes": 998,
+          "sha256": "6082e7d533e59f0fd2c13a6f5e9b718dd1becc0670151fa93a6e6bdf3e05c354",
+          "modified_at": "2026-06-17T14:22:13"
+        },
+        "stage2c_similarity_edges.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\stage2c_similarity_edges.json",
+          "relative_path": "web_data\\runs\\AlgorithmicBias\\stage2c_similarity_edges.json",
+          "size_bytes": 334,
+          "sha256": "91870a8faf9b317701f92c7dd3ff495ec27dc7aad57fe36b97cff0588a1895f3",
+          "modified_at": "2026-06-17T14:22:37"
+        },
+        "stage3_topics_with_summary.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\AlgorithmicBias\\stage3_topics_with_summary.json",
+          "relative_path": "web_data\\runs\\AlgorithmicBias\\stage3_topics_with_summary.json",
+          "size_bytes": 10824,
+          "sha256": "761054500fdb0e6780fe805468391814ef61b0a4a351f4b7bbd88a8f9a647e07",
+          "modified_at": "2026-06-17T14:23:10"
+        }
+      }
+    },
+    {
+      "doc_name": "Crime",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime",
+      "pdf_file": "Crime.pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\Crime.pdf",
+      "pdf_sha256": "3adb6e2cdccd96817d19b7575386e7f14d39c78b69d26638b5504aaa15827d43",
+      "latest_status": "done",
+      "latest_history_time": "2026-06-21 16:07:43",
+      "history_row": {
+        "time": "2026-06-21 16:07:43",
+        "file_name": "Crime.pdf",
+        "sha256": "3adb6e2cdccd96817d19b7575386e7f14d39c78b69d26638b5504aaa15827d43",
+        "status": "done",
+        "nodes_after_merge": 61,
+        "edges_after_merge": 52,
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime"
+      },
+      "available_files": [
+        "Crime.pdf",
+        "kg_prerequisite.png",
+        "kg_similarity.png",
+        "knowledge_graph.gexf",
+        "knowledge_graph.json",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt",
+        "stage2a_topics_hybrid.json",
+        "stage2b_prerequisites.json",
+        "stage2c_similarity_edges.json",
+        "stage3_topics_with_summary.json"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": true
+      },
+      "counts": {
+        "chunks": 49,
+        "topics": 9,
+        "prerequisites": 5,
+        "similarity_edges": 1,
+        "topics_with_summary": 9,
+        "graph_nodes": 9,
+        "graph_edges": 6
+      },
+      "is_complete_candidate": true,
+      "completeness_score": 6,
+      "file_inventory": {
+        "Crime.pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\Crime.pdf",
+          "relative_path": "web_data\\runs\\Crime\\Crime.pdf",
+          "size_bytes": 224286,
+          "sha256": "3adb6e2cdccd96817d19b7575386e7f14d39c78b69d26638b5504aaa15827d43",
+          "modified_at": "2026-06-21T16:03:15"
+        },
+        "kg_prerequisite.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\kg_prerequisite.png",
+          "relative_path": "web_data\\runs\\Crime\\kg_prerequisite.png",
+          "size_bytes": 148107,
+          "sha256": "652098d3e6ad50dae62c80396e0f49fa0eeb289bbbbffa7dc2403574f508a8fd",
+          "modified_at": "2026-06-21T16:07:43"
+        },
+        "kg_similarity.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\kg_similarity.png",
+          "relative_path": "web_data\\runs\\Crime\\kg_similarity.png",
+          "size_bytes": 107721,
+          "sha256": "3b15eb6669ead23180d391750a0474ff2d11045f8b38a93943d9df3a453d0afe",
+          "modified_at": "2026-06-21T16:07:43"
+        },
+        "knowledge_graph.gexf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\knowledge_graph.gexf",
+          "relative_path": "web_data\\runs\\Crime\\knowledge_graph.gexf",
+          "size_bytes": 15595,
+          "sha256": "635aed2b2c34a26486bce0983bfb95f0c740a58794abf571c920e6daeb1ac3fb",
+          "modified_at": "2026-06-21T16:07:43"
+        },
+        "knowledge_graph.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\knowledge_graph.json",
+          "relative_path": "web_data\\runs\\Crime\\knowledge_graph.json",
+          "size_bytes": 11106,
+          "sha256": "45ed93fc6c570ad3e88b448cf5c5b369e2d6d8e9a8ab9c508dc50bb27337d668",
+          "modified_at": "2026-06-21T16:07:43"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\Crime\\stage1_chunks.json",
+          "size_bytes": 106489,
+          "sha256": "9aa439b8d2eb53426d96a82860d12eff5e98db3d2cb81e2c6ec73b414b0bef62",
+          "modified_at": "2026-06-21T16:03:22"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\Crime\\stage1_text_cleaned.txt",
+          "size_bytes": 102522,
+          "sha256": "9fc97129ed7cfecbb27439ed16b41bfa93627ec4ab68bf02ce38829a0f73dbdf",
+          "modified_at": "2026-06-21T16:03:22"
+        },
+        "stage2a_topics_hybrid.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage2a_topics_hybrid.json",
+          "relative_path": "web_data\\runs\\Crime\\stage2a_topics_hybrid.json",
+          "size_bytes": 17453,
+          "sha256": "b744c0634e420165cb8ac7c61d387199c4fd82d591000deef3bf95538d8dd9cf",
+          "modified_at": "2026-06-21T16:06:32"
+        },
+        "stage2b_prerequisites.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage2b_prerequisites.json",
+          "relative_path": "web_data\\runs\\Crime\\stage2b_prerequisites.json",
+          "size_bytes": 1100,
+          "sha256": "6f401617bd37c7f05392b4805021eef836029a40436731ef32224e2007364456",
+          "modified_at": "2026-06-21T16:06:41"
+        },
+        "stage2c_similarity_edges.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage2c_similarity_edges.json",
+          "relative_path": "web_data\\runs\\Crime\\stage2c_similarity_edges.json",
+          "size_bytes": 352,
+          "sha256": "42f3e9948b18ba5d54809029eebbd2e73fd70f03af437afe4b5cc8299c825681",
+          "modified_at": "2026-06-21T16:07:13"
+        },
+        "stage3_topics_with_summary.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime\\stage3_topics_with_summary.json",
+          "relative_path": "web_data\\runs\\Crime\\stage3_topics_with_summary.json",
+          "size_bytes": 12068,
+          "sha256": "0eb0a6efdd8129f1f772cfbdda2fb50a2f3397041d002b191d4889b043863f90",
+          "modified_at": "2026-06-21T16:07:41"
+        }
+      }
+    },
+    {
+      "doc_name": "DL___Final_Lecture___Design_Engineering",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Final_Lecture___Design_Engineering",
+      "pdf_file": "DL___Final_Lecture___Design_Engineering.pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Final_Lecture___Design_Engineering\\DL___Final_Lecture___Design_Engineering.pdf",
+      "pdf_sha256": "e751bcf4b96774c4a39e780eb74cfc8050a0436e4e36a5eabf18a4ee8c1478c4",
+      "latest_status": "unknown",
+      "latest_history_time": null,
+      "history_row": null,
+      "available_files": [
+        "DL___Final_Lecture___Design_Engineering.pdf",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt",
+        "stage2a_topics_hybrid.json",
+        "stage2b_prerequisites.json"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": false,
+        "stage3": false,
+        "stage4_json": false,
+        "stage4_gexf": false,
+        "stage4": false,
+        "kg_prerequisite_png": false,
+        "kg_similarity_png": false
+      },
+      "counts": {
+        "chunks": 2,
+        "topics": 8,
+        "prerequisites": 0,
+        "similarity_edges": null,
+        "topics_with_summary": null,
+        "graph_nodes": 0,
+        "graph_edges": 0
+      },
+      "is_complete_candidate": false,
+      "completeness_score": 3,
+      "file_inventory": {
+        "DL___Final_Lecture___Design_Engineering.pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Final_Lecture___Design_Engineering\\DL___Final_Lecture___Design_Engineering.pdf",
+          "relative_path": "web_data\\runs\\DL___Final_Lecture___Design_Engineering\\DL___Final_Lecture___Design_Engineering.pdf",
+          "size_bytes": 565084,
+          "sha256": "e751bcf4b96774c4a39e780eb74cfc8050a0436e4e36a5eabf18a4ee8c1478c4",
+          "modified_at": "2026-06-17T14:09:17"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Final_Lecture___Design_Engineering\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\DL___Final_Lecture___Design_Engineering\\stage1_chunks.json",
+          "size_bytes": 5141,
+          "sha256": "8aa132547dbb6ffe7f89612ed7cbaf8774cd0aa36227336b970b36fe24452bae",
+          "modified_at": "2026-06-17T14:09:20"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Final_Lecture___Design_Engineering\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\DL___Final_Lecture___Design_Engineering\\stage1_text_cleaned.txt",
+          "size_bytes": 4995,
+          "sha256": "e7879bdecc0333eeb9d09b14613ecbe815bf49c18b77a15cb45813dfd843df47",
+          "modified_at": "2026-06-17T14:09:20"
+        },
+        "stage2a_topics_hybrid.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Final_Lecture___Design_Engineering\\stage2a_topics_hybrid.json",
+          "relative_path": "web_data\\runs\\DL___Final_Lecture___Design_Engineering\\stage2a_topics_hybrid.json",
+          "size_bytes": 2799,
+          "sha256": "30a9de3687d97e7f741d8a777241128eaa9d9c741c561a9c54dcbf7175b3f1b0",
+          "modified_at": "2026-06-17T14:10:04"
+        },
+        "stage2b_prerequisites.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Final_Lecture___Design_Engineering\\stage2b_prerequisites.json",
+          "relative_path": "web_data\\runs\\DL___Final_Lecture___Design_Engineering\\stage2b_prerequisites.json",
+          "size_bytes": 125,
+          "sha256": "01393d8b32665ce2698c55192fd66af9f1831a453a15aed92bfb860d313a2594",
+          "modified_at": "2026-06-17T14:10:23"
+        }
+      }
+    },
+    {
+      "doc_name": "DL___Lecture_6___Design_Engineering",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering",
+      "pdf_file": "DL___Lecture_6___Design_Engineering.pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\DL___Lecture_6___Design_Engineering.pdf",
+      "pdf_sha256": "fb7c77f387de18289bb233efe426af04569c12151847cd4bcc5084c280ab6249",
+      "latest_status": "unknown",
+      "latest_history_time": null,
+      "history_row": null,
+      "available_files": [
+        "DL___Lecture_6___Design_Engineering.pdf",
+        "kg_prerequisite.png",
+        "kg_similarity.png",
+        "knowledge_graph.gexf",
+        "knowledge_graph.json",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt",
+        "stage2a_topics_hybrid.json",
+        "stage2b_prerequisites.json",
+        "stage2c_similarity_edges.json",
+        "stage3_topics_with_summary.json"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": true
+      },
+      "counts": {
+        "chunks": 7,
+        "topics": 9,
+        "prerequisites": 4,
+        "similarity_edges": 3,
+        "topics_with_summary": 9,
+        "graph_nodes": 9,
+        "graph_edges": 7
+      },
+      "is_complete_candidate": true,
+      "completeness_score": 6,
+      "file_inventory": {
+        "DL___Lecture_6___Design_Engineering.pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\DL___Lecture_6___Design_Engineering.pdf",
+          "relative_path": "web_data\\runs\\DL___Lecture_6___Design_Engineering\\DL___Lecture_6___Design_Engineering.pdf",
+          "size_bytes": 1608243,
+          "sha256": "fb7c77f387de18289bb233efe426af04569c12151847cd4bcc5084c280ab6249",
+          "modified_at": "2026-06-17T02:40:04"
+        },
+        "kg_prerequisite.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\kg_prerequisite.png",
+          "relative_path": "web_data\\runs\\DL___Lecture_6___Design_Engineering\\kg_prerequisite.png",
+          "size_bytes": 124694,
+          "sha256": "b5c452258cc057444d618e000855476a6bc0154f5d9bcdcb32543dd648a55a55",
+          "modified_at": "2026-06-17T02:42:01"
+        },
+        "kg_similarity.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\kg_similarity.png",
+          "relative_path": "web_data\\runs\\DL___Lecture_6___Design_Engineering\\kg_similarity.png",
+          "size_bytes": 121087,
+          "sha256": "2ef3b8fa4395fb735f5af6dbb003790fa668f87c113fd6897883f227d7c9aa83",
+          "modified_at": "2026-06-17T02:42:01"
+        },
+        "knowledge_graph.gexf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\knowledge_graph.gexf",
+          "relative_path": "web_data\\runs\\DL___Lecture_6___Design_Engineering\\knowledge_graph.gexf",
+          "size_bytes": 14328,
+          "sha256": "d13ccd69ac3df63d27b9cf77e9156d82eb73fa1ab65a0b028fecbe6b32c9e801",
+          "modified_at": "2026-06-17T02:42:01"
+        },
+        "knowledge_graph.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\knowledge_graph.json",
+          "relative_path": "web_data\\runs\\DL___Lecture_6___Design_Engineering\\knowledge_graph.json",
+          "size_bytes": 10041,
+          "sha256": "b3e077995dbb22e064e62ca846d982959cdbb42ed156c443d26c1151680c40e6",
+          "modified_at": "2026-06-17T02:42:01"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage1_chunks.json",
+          "size_bytes": 16917,
+          "sha256": "d6c942513e87a192adfef13e818d369ded79feb37c3374c4ccf4a241d023bc49",
+          "modified_at": "2026-06-17T02:40:08"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage1_text_cleaned.txt",
+          "size_bytes": 16978,
+          "sha256": "8c7a91ec5e3f2720fed24426ade3191770bae1cfd7945014836d1a511f7452fd",
+          "modified_at": "2026-06-17T02:40:08"
+        },
+        "stage2a_topics_hybrid.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage2a_topics_hybrid.json",
+          "relative_path": "web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage2a_topics_hybrid.json",
+          "size_bytes": 6774,
+          "sha256": "3dc47890552ea23bf327e14c12e812504f0f6c723edfc9c73445feae0215c1fe",
+          "modified_at": "2026-06-17T02:40:56"
+        },
+        "stage2b_prerequisites.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage2b_prerequisites.json",
+          "relative_path": "web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage2b_prerequisites.json",
+          "size_bytes": 836,
+          "sha256": "e5e8109f5d6f0826a9844df23ec3f78862513c5334ea0dcb9995984993e3167c",
+          "modified_at": "2026-06-17T02:41:03"
+        },
+        "stage2c_similarity_edges.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage2c_similarity_edges.json",
+          "relative_path": "web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage2c_similarity_edges.json",
+          "size_bytes": 568,
+          "sha256": "13a5a06367d12af04af3a8099b35cf07af3d36dc910d2d7eca7420d07b56a05e",
+          "modified_at": "2026-06-17T02:41:28"
+        },
+        "stage3_topics_with_summary.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage3_topics_with_summary.json",
+          "relative_path": "web_data\\runs\\DL___Lecture_6___Design_Engineering\\stage3_topics_with_summary.json",
+          "size_bytes": 10742,
+          "sha256": "0e94ce4374131d4660aade6596ed127491a91146ad97a236a27b9fbbf43d0dee",
+          "modified_at": "2026-06-17T02:41:59"
+        }
+      }
+    },
+    {
+      "doc_name": "DL___Week_1___Design_Engineering (2)",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)",
+      "pdf_file": "DL___Week_1___Design_Engineering (2).pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\DL___Week_1___Design_Engineering (2).pdf",
+      "pdf_sha256": "4b5a4de9201e8dfc636a212cf8862925f07eab0ec822f732c719e1e4d47cbe71",
+      "latest_status": "unknown",
+      "latest_history_time": null,
+      "history_row": null,
+      "available_files": [
+        "DL___Week_1___Design_Engineering (2).pdf",
+        "kg_prerequisite.png",
+        "knowledge_graph.gexf",
+        "knowledge_graph.json",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt",
+        "stage2a_topics_hybrid.json",
+        "stage2b_prerequisites.json",
+        "stage2c_similarity_edges.json",
+        "stage3_topics_with_summary.json"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": false
+      },
+      "counts": {
+        "chunks": 5,
+        "topics": 9,
+        "prerequisites": 6,
+        "similarity_edges": 0,
+        "topics_with_summary": 9,
+        "graph_nodes": 9,
+        "graph_edges": 6
+      },
+      "is_complete_candidate": true,
+      "completeness_score": 6,
+      "file_inventory": {
+        "DL___Week_1___Design_Engineering (2).pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\DL___Week_1___Design_Engineering (2).pdf",
+          "relative_path": "web_data\\runs\\DL___Week_1___Design_Engineering (2)\\DL___Week_1___Design_Engineering (2).pdf",
+          "size_bytes": 4130040,
+          "sha256": "4b5a4de9201e8dfc636a212cf8862925f07eab0ec822f732c719e1e4d47cbe71",
+          "modified_at": "2026-06-17T02:42:02"
+        },
+        "kg_prerequisite.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\kg_prerequisite.png",
+          "relative_path": "web_data\\runs\\DL___Week_1___Design_Engineering (2)\\kg_prerequisite.png",
+          "size_bytes": 153056,
+          "sha256": "d964c8ad143a02076d50cc6e5bba28bd022a082216bb2e8f6133227f80c3c0f2",
+          "modified_at": "2026-06-17T02:43:58"
+        },
+        "knowledge_graph.gexf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\knowledge_graph.gexf",
+          "relative_path": "web_data\\runs\\DL___Week_1___Design_Engineering (2)\\knowledge_graph.gexf",
+          "size_bytes": 15134,
+          "sha256": "996100f220804f7e9693553dce04bdb635f74ade8e606519eaa4f6243a0b19c6",
+          "modified_at": "2026-06-17T02:43:58"
+        },
+        "knowledge_graph.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\knowledge_graph.json",
+          "relative_path": "web_data\\runs\\DL___Week_1___Design_Engineering (2)\\knowledge_graph.json",
+          "size_bytes": 10876,
+          "sha256": "8cdaad5c9cc51266af6dd4c56df528c600fd7e4be99871de99fd324c54a7de55",
+          "modified_at": "2026-06-17T02:43:58"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage1_chunks.json",
+          "size_bytes": 19544,
+          "sha256": "826afdae84759a52f6a40cdfd211f1ce31792b20430cade6854314240f4296ea",
+          "modified_at": "2026-06-17T02:42:05"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage1_text_cleaned.txt",
+          "size_bytes": 19238,
+          "sha256": "502e299fc2c201b1f5e5dd8818d9b3ed93a13553cd1ce9bc22cf3c8049e27fad",
+          "modified_at": "2026-06-17T02:42:05"
+        },
+        "stage2a_topics_hybrid.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage2a_topics_hybrid.json",
+          "relative_path": "web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage2a_topics_hybrid.json",
+          "size_bytes": 7902,
+          "sha256": "dd4e5a6543608311628d6f572bd8ae1deb13a7ccaeeca80f12b6a97aa017019b",
+          "modified_at": "2026-06-17T02:42:53"
+        },
+        "stage2b_prerequisites.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage2b_prerequisites.json",
+          "relative_path": "web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage2b_prerequisites.json",
+          "size_bytes": 1059,
+          "sha256": "5dd1544a06ed8e98ebdf26cf2ac6e90fb3fb2d32cec2d381e3e3067687274656",
+          "modified_at": "2026-06-17T02:43:02"
+        },
+        "stage2c_similarity_edges.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage2c_similarity_edges.json",
+          "relative_path": "web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage2c_similarity_edges.json",
+          "size_bytes": 224,
+          "sha256": "990e741d23d51ae82cafb19b2cfde1f8789af2b6e78948923759dc8eaa71d055",
+          "modified_at": "2026-06-17T02:43:26"
+        },
+        "stage3_topics_with_summary.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage3_topics_with_summary.json",
+          "relative_path": "web_data\\runs\\DL___Week_1___Design_Engineering (2)\\stage3_topics_with_summary.json",
+          "size_bytes": 11858,
+          "sha256": "cdb3c1f33440f43ce3c60c0620153ee553cd7f2b9cdade7754820d24228ed08a",
+          "modified_at": "2026-06-17T02:43:57"
+        }
+      }
+    },
+    {
+      "doc_name": "DL___Week_2___Design_Engineering",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_2___Design_Engineering",
+      "pdf_file": "DL___Week_2___Design_Engineering.pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_2___Design_Engineering\\DL___Week_2___Design_Engineering.pdf",
+      "pdf_sha256": "a7ff94af9bad57a06aaaa032b35e4e9aa5a840c514c60ba56f0332bc1e49ba6b",
+      "latest_status": "unknown",
+      "latest_history_time": null,
+      "history_row": null,
+      "available_files": [
+        "DL___Week_2___Design_Engineering.pdf",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": false,
+        "stage2b": false,
+        "stage2c": false,
+        "stage3": false,
+        "stage4_json": false,
+        "stage4_gexf": false,
+        "stage4": false,
+        "kg_prerequisite_png": false,
+        "kg_similarity_png": false
+      },
+      "counts": {
+        "chunks": 6,
+        "topics": null,
+        "prerequisites": null,
+        "similarity_edges": null,
+        "topics_with_summary": null,
+        "graph_nodes": 0,
+        "graph_edges": 0
+      },
+      "is_complete_candidate": false,
+      "completeness_score": 1,
+      "file_inventory": {
+        "DL___Week_2___Design_Engineering.pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_2___Design_Engineering\\DL___Week_2___Design_Engineering.pdf",
+          "relative_path": "web_data\\runs\\DL___Week_2___Design_Engineering\\DL___Week_2___Design_Engineering.pdf",
+          "size_bytes": 1049799,
+          "sha256": "a7ff94af9bad57a06aaaa032b35e4e9aa5a840c514c60ba56f0332bc1e49ba6b",
+          "modified_at": "2026-06-17T02:43:58"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_2___Design_Engineering\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\DL___Week_2___Design_Engineering\\stage1_chunks.json",
+          "size_bytes": 15501,
+          "sha256": "98b5153fc8b4e01a2f86db154fcf20db108128dccd70595bff8d5ce335a6c31a",
+          "modified_at": "2026-06-17T02:44:01"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_2___Design_Engineering\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\DL___Week_2___Design_Engineering\\stage1_text_cleaned.txt",
+          "size_bytes": 15083,
+          "sha256": "ce0fc8cedf376debc5fc74a8dfe0fc8bb6a4549463257ebb5d4f3e2ca5172523",
+          "modified_at": "2026-06-17T02:44:01"
+        }
+      }
+    },
+    {
+      "doc_name": "DL___Week_3___Design_Engineering",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering",
+      "pdf_file": "DL___Week_3___Design_Engineering.pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\DL___Week_3___Design_Engineering.pdf",
+      "pdf_sha256": "bbb69aa46441b9d90507812f2343f84e83fac73fe35df22e6020d983bf72e27a",
+      "latest_status": "unknown",
+      "latest_history_time": null,
+      "history_row": null,
+      "available_files": [
+        "DL___Week_3___Design_Engineering.pdf",
+        "kg_prerequisite.png",
+        "kg_similarity.png",
+        "knowledge_graph.gexf",
+        "knowledge_graph.json",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt",
+        "stage2a_topics_hybrid.json",
+        "stage2b_prerequisites.json",
+        "stage2c_similarity_edges.json",
+        "stage3_topics_with_summary.json"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": true
+      },
+      "counts": {
+        "chunks": 3,
+        "topics": 15,
+        "prerequisites": 8,
+        "similarity_edges": 5,
+        "topics_with_summary": 15,
+        "graph_nodes": 15,
+        "graph_edges": 11
+      },
+      "is_complete_candidate": true,
+      "completeness_score": 6,
+      "file_inventory": {
+        "DL___Week_3___Design_Engineering.pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\DL___Week_3___Design_Engineering.pdf",
+          "relative_path": "web_data\\runs\\DL___Week_3___Design_Engineering\\DL___Week_3___Design_Engineering.pdf",
+          "size_bytes": 440246,
+          "sha256": "bbb69aa46441b9d90507812f2343f84e83fac73fe35df22e6020d983bf72e27a",
+          "modified_at": "2026-06-17T02:44:02"
+        },
+        "kg_prerequisite.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\kg_prerequisite.png",
+          "relative_path": "web_data\\runs\\DL___Week_3___Design_Engineering\\kg_prerequisite.png",
+          "size_bytes": 237782,
+          "sha256": "f423a67280a2433fcaf63f9879b99c14a13cd2c2485b068dc483279ea38870f1",
+          "modified_at": "2026-06-17T02:15:35"
+        },
+        "kg_similarity.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\kg_similarity.png",
+          "relative_path": "web_data\\runs\\DL___Week_3___Design_Engineering\\kg_similarity.png",
+          "size_bytes": 226812,
+          "sha256": "dbc170c20ed58d15708bc55004ab595062970c670900bb84d8fe71719dbaba07",
+          "modified_at": "2026-06-17T02:15:35"
+        },
+        "knowledge_graph.gexf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\knowledge_graph.gexf",
+          "relative_path": "web_data\\runs\\DL___Week_3___Design_Engineering\\knowledge_graph.gexf",
+          "size_bytes": 19567,
+          "sha256": "b516a01aa32bd99c6ebee2d5031b93116d85da7c6a6d2f970d01b1edded06bb4",
+          "modified_at": "2026-06-17T02:15:34"
+        },
+        "knowledge_graph.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\knowledge_graph.json",
+          "relative_path": "web_data\\runs\\DL___Week_3___Design_Engineering\\knowledge_graph.json",
+          "size_bytes": 13755,
+          "sha256": "98a7ad46661976011200e729565311187b0e40a700183162226f4e11a99b9d08",
+          "modified_at": "2026-06-17T02:15:34"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\DL___Week_3___Design_Engineering\\stage1_chunks.json",
+          "size_bytes": 8698,
+          "sha256": "2770a0e4bad25d57f047833d0fe9c525a98d3b6fa9d2f16a6409cd3f574a5fa3",
+          "modified_at": "2026-06-17T02:44:04"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\DL___Week_3___Design_Engineering\\stage1_text_cleaned.txt",
+          "size_bytes": 8479,
+          "sha256": "f188faa65b4edd26c8cc4fc21e10dcdc570492b8691b62d4b6f2b321f89dc529",
+          "modified_at": "2026-06-17T02:44:04"
+        },
+        "stage2a_topics_hybrid.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\stage2a_topics_hybrid.json",
+          "relative_path": "web_data\\runs\\DL___Week_3___Design_Engineering\\stage2a_topics_hybrid.json",
+          "size_bytes": 3838,
+          "sha256": "406d745e4e4c661261b1f48acc03673daddcf9ee3f01fdedd44e9de78660c10c",
+          "modified_at": "2026-06-17T02:44:47"
+        },
+        "stage2b_prerequisites.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\stage2b_prerequisites.json",
+          "relative_path": "web_data\\runs\\DL___Week_3___Design_Engineering\\stage2b_prerequisites.json",
+          "size_bytes": 1958,
+          "sha256": "04e5e135451b12f55ba9928abb9d4dbfe4afe9799e71687bc83795732d97d5b5",
+          "modified_at": "2026-06-17T02:14:27"
+        },
+        "stage2c_similarity_edges.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\stage2c_similarity_edges.json",
+          "relative_path": "web_data\\runs\\DL___Week_3___Design_Engineering\\stage2c_similarity_edges.json",
+          "size_bytes": 1075,
+          "sha256": "3b7f60e4b4f578886d92aaa29e1bdf9e0eaf1ac3c2cb7335dfdbdd1d2256d373",
+          "modified_at": "2026-06-17T02:14:51"
+        },
+        "stage3_topics_with_summary.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\stage3_topics_with_summary.json",
+          "relative_path": "web_data\\runs\\DL___Week_3___Design_Engineering\\stage3_topics_with_summary.json",
+          "size_bytes": 13136,
+          "sha256": "37e8b16286d773ac6d90aa924c2d5d8ec8a88e4fcd5b0114e47ddbc4aa581f4c",
+          "modified_at": "2026-06-17T02:15:33"
+        }
+      }
+    },
+    {
+      "doc_name": "Dreamer",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer",
+      "pdf_file": "Dreamer.pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\Dreamer.pdf",
+      "pdf_sha256": "318891d59ba0065f57eb0e735735700e5eb528f53bf08b81c773437385586c64",
+      "latest_status": "done",
+      "latest_history_time": "2026-06-21 16:12:02",
+      "history_row": {
+        "time": "2026-06-21 16:12:02",
+        "file_name": "Dreamer.pdf",
+        "sha256": "318891d59ba0065f57eb0e735735700e5eb528f53bf08b81c773437385586c64",
+        "status": "done",
+        "nodes_after_merge": 68,
+        "edges_after_merge": 58,
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer"
+      },
+      "available_files": [
+        "Dreamer.pdf",
+        "kg_prerequisite.png",
+        "knowledge_graph.gexf",
+        "knowledge_graph.json",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt",
+        "stage2a_topics_hybrid.json",
+        "stage2b_prerequisites.json",
+        "stage2c_similarity_edges.json",
+        "stage3_topics_with_summary.json"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": false
+      },
+      "counts": {
+        "chunks": 16,
+        "topics": 9,
+        "prerequisites": 6,
+        "similarity_edges": 0,
+        "topics_with_summary": 9,
+        "graph_nodes": 9,
+        "graph_edges": 6
+      },
+      "is_complete_candidate": true,
+      "completeness_score": 6,
+      "file_inventory": {
+        "Dreamer.pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\Dreamer.pdf",
+          "relative_path": "web_data\\runs\\Dreamer\\Dreamer.pdf",
+          "size_bytes": 1999946,
+          "sha256": "318891d59ba0065f57eb0e735735700e5eb528f53bf08b81c773437385586c64",
+          "modified_at": "2026-06-21T16:07:43"
+        },
+        "kg_prerequisite.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\kg_prerequisite.png",
+          "relative_path": "web_data\\runs\\Dreamer\\kg_prerequisite.png",
+          "size_bytes": 168291,
+          "sha256": "6a4197f3fea3697ded1b7ded5c8c3127262a681084effb4a6fd38f2d3b79e64f",
+          "modified_at": "2026-06-21T16:12:02"
+        },
+        "knowledge_graph.gexf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\knowledge_graph.gexf",
+          "relative_path": "web_data\\runs\\Dreamer\\knowledge_graph.gexf",
+          "size_bytes": 14594,
+          "sha256": "c63ff0d61371c80ab39315d92882ec901244f1793c824e16954ebc40697556ff",
+          "modified_at": "2026-06-21T16:12:01"
+        },
+        "knowledge_graph.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\knowledge_graph.json",
+          "relative_path": "web_data\\runs\\Dreamer\\knowledge_graph.json",
+          "size_bytes": 10409,
+          "sha256": "9d5bbd41f42d16767b25ca94c3b60bd4255c3027015007dd79bf9bc6d576a634",
+          "modified_at": "2026-06-21T16:12:01"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\Dreamer\\stage1_chunks.json",
+          "size_bytes": 57283,
+          "sha256": "9cd1e8cf6c7cdb77fa624ff2699d02bc45ad0929096d381f80fa6ec9e7748c06",
+          "modified_at": "2026-06-21T16:07:53"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\Dreamer\\stage1_text_cleaned.txt",
+          "size_bytes": 57279,
+          "sha256": "006649d37642b1b3b8530042484e4447bd2c035cb3d3fab894194467a4950f0e",
+          "modified_at": "2026-06-21T16:07:53"
+        },
+        "stage2a_topics_hybrid.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage2a_topics_hybrid.json",
+          "relative_path": "web_data\\runs\\Dreamer\\stage2a_topics_hybrid.json",
+          "size_bytes": 10264,
+          "sha256": "57dcd5421e132e861a68dae56ad93b00a506c4435056ef2120600059876c8b25",
+          "modified_at": "2026-06-21T16:10:53"
+        },
+        "stage2b_prerequisites.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage2b_prerequisites.json",
+          "relative_path": "web_data\\runs\\Dreamer\\stage2b_prerequisites.json",
+          "size_bytes": 1234,
+          "sha256": "2e6f02889397a0211d23d6faf0ee650781781e78d832287a0241cdf9ffa6655d",
+          "modified_at": "2026-06-21T16:11:02"
+        },
+        "stage2c_similarity_edges.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage2c_similarity_edges.json",
+          "relative_path": "web_data\\runs\\Dreamer\\stage2c_similarity_edges.json",
+          "size_bytes": 224,
+          "sha256": "990e741d23d51ae82cafb19b2cfde1f8789af2b6e78948923759dc8eaa71d055",
+          "modified_at": "2026-06-21T16:11:34"
+        },
+        "stage3_topics_with_summary.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer\\stage3_topics_with_summary.json",
+          "relative_path": "web_data\\runs\\Dreamer\\stage3_topics_with_summary.json",
+          "size_bytes": 11092,
+          "sha256": "62c7c095a1bddb5180ae5d6f7c3e7f885959358bfaea23b3dc9bc1f1a086e278",
+          "modified_at": "2026-06-21T16:12:00"
+        }
+      }
+    },
+    {
+      "doc_name": "HiddenCosts",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts",
+      "pdf_file": "HiddenCosts.pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\HiddenCosts.pdf",
+      "pdf_sha256": "1a67da09a8bd5ba9a3577176e30aa2fbd88534e6baf0bc31522b4999f643d2a1",
+      "latest_status": "done",
+      "latest_history_time": "2026-06-17 14:25:12",
+      "history_row": {
+        "time": "2026-06-17 14:25:12",
+        "file_name": "HiddenCosts.pdf",
+        "sha256": "1a67da09a8bd5ba9a3577176e30aa2fbd88534e6baf0bc31522b4999f643d2a1",
+        "status": "done",
+        "nodes_after_merge": 53,
+        "edges_after_merge": 46,
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts"
+      },
+      "available_files": [
+        "HiddenCosts.pdf",
+        "kg_prerequisite.png",
+        "knowledge_graph.gexf",
+        "knowledge_graph.json",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt",
+        "stage2a_topics_hybrid.json",
+        "stage2b_prerequisites.json",
+        "stage2c_similarity_edges.json",
+        "stage3_topics_with_summary.json"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": false
+      },
+      "counts": {
+        "chunks": 9,
+        "topics": 9,
+        "prerequisites": 5,
+        "similarity_edges": 0,
+        "topics_with_summary": 9,
+        "graph_nodes": 9,
+        "graph_edges": 5
+      },
+      "is_complete_candidate": true,
+      "completeness_score": 6,
+      "file_inventory": {
+        "HiddenCosts.pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\HiddenCosts.pdf",
+          "relative_path": "web_data\\runs\\HiddenCosts\\HiddenCosts.pdf",
+          "size_bytes": 165614,
+          "sha256": "1a67da09a8bd5ba9a3577176e30aa2fbd88534e6baf0bc31522b4999f643d2a1",
+          "modified_at": "2026-06-17T14:23:24"
+        },
+        "kg_prerequisite.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\kg_prerequisite.png",
+          "relative_path": "web_data\\runs\\HiddenCosts\\kg_prerequisite.png",
+          "size_bytes": 128188,
+          "sha256": "5fb87174994436e16ff2e08ba718fd85b4e1ae84462b6dc9ab1c59be8c811dfa",
+          "modified_at": "2026-06-17T14:25:12"
+        },
+        "knowledge_graph.gexf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\knowledge_graph.gexf",
+          "relative_path": "web_data\\runs\\HiddenCosts\\knowledge_graph.gexf",
+          "size_bytes": 14149,
+          "sha256": "41f19302b4d0c3b929281f77a9a3df388987199fc760ff96aac74d07179c8845",
+          "modified_at": "2026-06-17T14:25:12"
+        },
+        "knowledge_graph.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\knowledge_graph.json",
+          "relative_path": "web_data\\runs\\HiddenCosts\\knowledge_graph.json",
+          "size_bytes": 10070,
+          "sha256": "03453cece370f2383eddcad958a8bff9442e0ff72028c757c6baee0c13653dc4",
+          "modified_at": "2026-06-17T14:25:12"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\HiddenCosts\\stage1_chunks.json",
+          "size_bytes": 34486,
+          "sha256": "4bbb2eaf209db4020667f74ed3d07df86104fe3c5e09d0cb0b7b93c09c27c151",
+          "modified_at": "2026-06-17T14:23:28"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\HiddenCosts\\stage1_text_cleaned.txt",
+          "size_bytes": 33597,
+          "sha256": "d2e937894dc2145d7b696ce8c4fc75f27753cda6b3addecb74dc9e71d25b2ac8",
+          "modified_at": "2026-06-17T14:23:28"
+        },
+        "stage2a_topics_hybrid.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\stage2a_topics_hybrid.json",
+          "relative_path": "web_data\\runs\\HiddenCosts\\stage2a_topics_hybrid.json",
+          "size_bytes": 7908,
+          "sha256": "5779510cb6e61a4f4ca9af89a841fe239c02e80878310687d8225da622ad3ac8",
+          "modified_at": "2026-06-17T14:24:12"
+        },
+        "stage2b_prerequisites.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\stage2b_prerequisites.json",
+          "relative_path": "web_data\\runs\\HiddenCosts\\stage2b_prerequisites.json",
+          "size_bytes": 1069,
+          "sha256": "ecc6f8bb32b44a3f2bd521bfb1f31e06c1bc9d6882d6a8a7e854aaacac8b6587",
+          "modified_at": "2026-06-17T14:24:19"
+        },
+        "stage2c_similarity_edges.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\stage2c_similarity_edges.json",
+          "relative_path": "web_data\\runs\\HiddenCosts\\stage2c_similarity_edges.json",
+          "size_bytes": 224,
+          "sha256": "990e741d23d51ae82cafb19b2cfde1f8789af2b6e78948923759dc8eaa71d055",
+          "modified_at": "2026-06-17T14:24:43"
+        },
+        "stage3_topics_with_summary.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\HiddenCosts\\stage3_topics_with_summary.json",
+          "relative_path": "web_data\\runs\\HiddenCosts\\stage3_topics_with_summary.json",
+          "size_bytes": 10926,
+          "sha256": "f67f042119d19bae72541355fa1d6844eadd52841c417d80e776e97a276a131a",
+          "modified_at": "2026-06-17T14:25:11"
+        }
+      }
+    },
+    {
+      "doc_name": "mml-book",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\mml-book",
+      "pdf_file": "mml-book.pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\mml-book\\mml-book.pdf",
+      "pdf_sha256": "3f87b70c64a35d30ec4e565b4d5cfd18fe913002d3b3bed44691c7d0838911bc",
+      "latest_status": "unknown",
+      "latest_history_time": null,
+      "history_row": null,
+      "available_files": [
+        "mml-book.pdf",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": false,
+        "stage2b": false,
+        "stage2c": false,
+        "stage3": false,
+        "stage4_json": false,
+        "stage4_gexf": false,
+        "stage4": false,
+        "kg_prerequisite_png": false,
+        "kg_similarity_png": false
+      },
+      "counts": {
+        "chunks": 578,
+        "topics": null,
+        "prerequisites": null,
+        "similarity_edges": null,
+        "topics_with_summary": null,
+        "graph_nodes": 0,
+        "graph_edges": 0
+      },
+      "is_complete_candidate": false,
+      "completeness_score": 1,
+      "file_inventory": {
+        "mml-book.pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\mml-book\\mml-book.pdf",
+          "relative_path": "web_data\\runs\\mml-book\\mml-book.pdf",
+          "size_bytes": 17565898,
+          "sha256": "3f87b70c64a35d30ec4e565b4d5cfd18fe913002d3b3bed44691c7d0838911bc",
+          "modified_at": "2026-06-17T02:39:29"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\mml-book\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\mml-book\\stage1_chunks.json",
+          "size_bytes": 933524,
+          "sha256": "65706d9d528505e94fe8d0c3828945c145dea1ef266baf854f21a8c1fc871cd5",
+          "modified_at": "2026-06-17T02:40:32"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\mml-book\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\mml-book\\stage1_text_cleaned.txt",
+          "size_bytes": 921097,
+          "sha256": "c4879709cdb4dcc34a5f091f6c36f5d6e0038d1598c32c796d287f03cae6ac18",
+          "modified_at": "2026-06-17T02:40:32"
+        }
+      }
+    },
+    {
+      "doc_name": "Security and Privacy in ML",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML",
+      "pdf_file": "Security and Privacy in ML.pdf",
+      "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\Security and Privacy in ML.pdf",
+      "pdf_sha256": "c5106c61be69b06451a466ab0926c328b2b8a47f4970d33bfe0189231814c81f",
+      "latest_status": "done",
+      "latest_history_time": "2026-06-21 16:16:00",
+      "history_row": {
+        "time": "2026-06-21 16:16:00",
+        "file_name": "Security and Privacy in ML.pdf",
+        "sha256": "c5106c61be69b06451a466ab0926c328b2b8a47f4970d33bfe0189231814c81f",
+        "status": "done",
+        "nodes_after_merge": 76,
+        "edges_after_merge": 68,
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML"
+      },
+      "available_files": [
+        "Security and Privacy in ML.pdf",
+        "kg_prerequisite.png",
+        "kg_similarity.png",
+        "knowledge_graph.gexf",
+        "knowledge_graph.json",
+        "stage1_chunks.json",
+        "stage1_text_cleaned.txt",
+        "stage2a_topics_hybrid.json",
+        "stage2b_prerequisites.json",
+        "stage2c_similarity_edges.json",
+        "stage3_topics_with_summary.json"
+      ],
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": true
+      },
+      "counts": {
+        "chunks": 32,
+        "topics": 9,
+        "prerequisites": 7,
+        "similarity_edges": 4,
+        "topics_with_summary": 9,
+        "graph_nodes": 9,
+        "graph_edges": 10
+      },
+      "is_complete_candidate": true,
+      "completeness_score": 6,
+      "file_inventory": {
+        "Security and Privacy in ML.pdf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\Security and Privacy in ML.pdf",
+          "relative_path": "web_data\\runs\\Security and Privacy in ML\\Security and Privacy in ML.pdf",
+          "size_bytes": 764844,
+          "sha256": "c5106c61be69b06451a466ab0926c328b2b8a47f4970d33bfe0189231814c81f",
+          "modified_at": "2026-06-21T16:12:02"
+        },
+        "kg_prerequisite.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\kg_prerequisite.png",
+          "relative_path": "web_data\\runs\\Security and Privacy in ML\\kg_prerequisite.png",
+          "size_bytes": 182416,
+          "sha256": "1edcc6a2953d379caee69af2856774d27e1dd2997857c0e47c6e854f4b8b7c2b",
+          "modified_at": "2026-06-21T16:16:00"
+        },
+        "kg_similarity.png": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\kg_similarity.png",
+          "relative_path": "web_data\\runs\\Security and Privacy in ML\\kg_similarity.png",
+          "size_bytes": 120195,
+          "sha256": "da8bb3d21fd7b7d038dcc2b4292279262a125003bfac562f84346f275d91a475",
+          "modified_at": "2026-06-21T16:16:00"
+        },
+        "knowledge_graph.gexf": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\knowledge_graph.gexf",
+          "relative_path": "web_data\\runs\\Security and Privacy in ML\\knowledge_graph.gexf",
+          "size_bytes": 16959,
+          "sha256": "babd111395e027509d4a8a6eec6d48434f415c42eab14258f59e8e1ced15c0c1",
+          "modified_at": "2026-06-21T16:15:59"
+        },
+        "knowledge_graph.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\knowledge_graph.json",
+          "relative_path": "web_data\\runs\\Security and Privacy in ML\\knowledge_graph.json",
+          "size_bytes": 11999,
+          "sha256": "184630a48faa57660157ba7afdee2ada54a31fd8620d50ef20c6b404750c11f6",
+          "modified_at": "2026-06-21T16:15:59"
+        },
+        "stage1_chunks.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage1_chunks.json",
+          "relative_path": "web_data\\runs\\Security and Privacy in ML\\stage1_chunks.json",
+          "size_bytes": 102371,
+          "sha256": "e9363ea8a74a0e10719c3f5fb6607d9de4f38a4cf3ff2972a12ef6768cb62140",
+          "modified_at": "2026-06-21T16:12:09"
+        },
+        "stage1_text_cleaned.txt": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage1_text_cleaned.txt",
+          "relative_path": "web_data\\runs\\Security and Privacy in ML\\stage1_text_cleaned.txt",
+          "size_bytes": 100320,
+          "sha256": "c708c4868c24f04477f315d8db2265f12fe5c12b8dfcf8dc3f0dda22aaffb524",
+          "modified_at": "2026-06-21T16:12:09"
+        },
+        "stage2a_topics_hybrid.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage2a_topics_hybrid.json",
+          "relative_path": "web_data\\runs\\Security and Privacy in ML\\stage2a_topics_hybrid.json",
+          "size_bytes": 17044,
+          "sha256": "ab64c5ac3539636dcc9dbc61629abb2ffe61f4d551baf534167cb93360431706",
+          "modified_at": "2026-06-21T16:14:53"
+        },
+        "stage2b_prerequisites.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage2b_prerequisites.json",
+          "relative_path": "web_data\\runs\\Security and Privacy in ML\\stage2b_prerequisites.json",
+          "size_bytes": 1376,
+          "sha256": "94b21ba2b7484cf5b215fe8d4327c503a41ad95f54307569498f9f3778af62e0",
+          "modified_at": "2026-06-21T16:15:01"
+        },
+        "stage2c_similarity_edges.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage2c_similarity_edges.json",
+          "relative_path": "web_data\\runs\\Security and Privacy in ML\\stage2c_similarity_edges.json",
+          "size_bytes": 696,
+          "sha256": "b54be1dc1af40858392eb148f6d811dc4059e3d288b0dd5c441660b67564e8a6",
+          "modified_at": "2026-06-21T16:15:32"
+        },
+        "stage3_topics_with_summary.json": {
+          "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML\\stage3_topics_with_summary.json",
+          "relative_path": "web_data\\runs\\Security and Privacy in ML\\stage3_topics_with_summary.json",
+          "size_bytes": 12359,
+          "sha256": "a30d98b215db5a80dce6d10f84e9a12c9d6854b7e53ed991a18571199bfded27",
+          "modified_at": "2026-06-21T16:15:58"
+        }
+      }
+    }
+  ]
+}

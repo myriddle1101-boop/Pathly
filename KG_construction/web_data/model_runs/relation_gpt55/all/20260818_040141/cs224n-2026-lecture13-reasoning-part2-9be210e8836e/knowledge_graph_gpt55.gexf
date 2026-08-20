@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Decoding Techniques" label="Decoding Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods and algorithms for decoding in machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Speculative Decoding&quot;, &quot;description&quot;: &quot;A decoding method that explores multiple potential outputs.&quot;}, {&quot;name&quot;: &quot;Decoding Algorithms&quot;, &quot;description&quot;: &quot;Various algorithms used for decoding tasks.&quot;}, {&quot;name&quot;: &quot;Suffix Decoding&quot;, &quot;description&quot;: &quot;A technique focusing on the suffix of sequences during decoding.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and probability theory." />
+          <attvalue for="6" value="[&quot;Greedy Decoding&quot;, &quot;Beam Search&quot;, &quot;Sampling Methods&quot;, &quot;Top-k Sampling&quot;]" />
+          <attvalue for="7" value="[&quot;Decoding is only relevant for NLP tasks&quot;, &quot;All decoding methods yield the same quality of output&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Image Captioning&quot;, &quot;Speech Recognition&quot;, &quot;Reinforcement Learning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Positional Embeddings" label="Positional Embeddings">
+        <attvalues>
+          <attvalue for="0" value="Techniques for incorporating position information into models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Learned Positional Embedding&quot;, &quot;description&quot;: &quot;Dynamic embeddings that adapt during training.&quot;}, {&quot;name&quot;: &quot;Rotary Positional Embedding&quot;, &quot;description&quot;: &quot;A method that uses rotation to encode position.&quot;}, {&quot;name&quot;: &quot;Relative Positioning&quot;, &quot;description&quot;: &quot;Embedding techniques that consider relative positions.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and natural language processing." />
+          <attvalue for="6" value="[&quot;Sinusoidal embeddings&quot;, &quot;Learned embeddings&quot;]" />
+          <attvalue for="7" value="[&quot;Positional embeddings are only for text data&quot;, &quot;They are not necessary for all types of models&quot;]" />
+          <attvalue for="8" value="[&quot;Transformers in NLP&quot;, &quot;Image processing with attention mechanisms&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Policy Distillation" label="Policy Distillation">
+        <attvalues>
+          <attvalue for="0" value="Methods for transferring knowledge from one policy to another." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Offline Policy&quot;, &quot;description&quot;: &quot;Policies trained without real-time interaction.&quot;}, {&quot;name&quot;: &quot;Distillation Implications&quot;, &quot;description&quot;: &quot;Consequences and considerations of policy distillation.&quot;}, {&quot;name&quot;: &quot;Policy Drift&quot;, &quot;description&quot;: &quot;The phenomenon where policies change over time.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of reinforcement learning and neural networks." />
+          <attvalue for="6" value="[&quot;Knowledge Transfer&quot;, &quot;Policy Optimization&quot;]" />
+          <attvalue for="7" value="[&quot;Policy distillation is only for deep learning models.&quot;, &quot;It can only be applied to similar policies.&quot;]" />
+          <attvalue for="8" value="[&quot;Improving agent performance in games&quot;, &quot;Reducing model complexity for deployment&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Scaling Techniques" label="Scaling Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods for improving model performance and efficiency at scale." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Compute Scaling&quot;, &quot;description&quot;: &quot;Strategies for scaling computational resources.&quot;}, {&quot;name&quot;: &quot;Scaling Reasoning&quot;, &quot;description&quot;: &quot;Understanding the implications of scaling in models.&quot;}, {&quot;name&quot;: &quot;Intelligently Scaling&quot;, &quot;description&quot;: &quot;Smart approaches to scaling models effectively.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Normalization&quot;, &quot;Standardization&quot;, &quot;Min-Max Scaling&quot;, &quot;Robust Scaling&quot;]" />
+          <attvalue for="7" value="[&quot;Scaling is only necessary for certain algorithms&quot;, &quot;All scaling techniques yield the same results&quot;]" />
+          <attvalue for="8" value="[&quot;Improving convergence speed in gradient descent&quot;, &quot;Enhancing model performance on datasets with varying feature scales&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Contextual Learning" label="Contextual Learning">
+        <attvalues>
+          <attvalue for="0" value="Techniques for handling and utilizing context in learning tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Long Contexts&quot;, &quot;description&quot;: &quot;Methods for processing and learning from extended contexts.&quot;}, {&quot;name&quot;: &quot;Context Extension&quot;, &quot;description&quot;: &quot;Techniques to enhance the context used in models.&quot;}, {&quot;name&quot;: &quot;Context Instruction&quot;, &quot;description&quot;: &quot;Guidelines for incorporating context into learning.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and statistics." />
+          <attvalue for="6" value="[&quot;Contextual Bandits&quot;, &quot;Transfer Learning&quot;]" />
+          <attvalue for="7" value="[&quot;Contextual learning is the same as supervised learning.&quot;, &quot;Context is only relevant in natural language processing.&quot;]" />
+          <attvalue for="8" value="[&quot;Personalized recommendations&quot;, &quot;Adaptive user interfaces&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Natural Language Processing" label="Natural Language Processing">
+        <attvalues>
+          <attvalue for="0" value="Techniques and methods for processing human language data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Language Processing&quot;, &quot;description&quot;: &quot;Fundamental techniques for understanding and generating language.&quot;}, {&quot;name&quot;: &quot;Natural Language Understanding&quot;, &quot;description&quot;: &quot;Methods for comprehending human language.&quot;}, {&quot;name&quot;: &quot;Natural Language Generation&quot;, &quot;description&quot;: &quot;Techniques for producing human-like text.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Sentiment Analysis&quot;, &quot;Named Entity Recognition&quot;, &quot;Language Modeling&quot;]" />
+          <attvalue for="7" value="[&quot;NLP is only about chatbots&quot;, &quot;NLP can understand context perfectly&quot;]" />
+          <attvalue for="8" value="[&quot;Text classification&quot;, &quot;Machine translation&quot;, &quot;Chatbots&quot;, &quot;Information retrieval&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Methods" label="Training Methods">
+        <attvalues>
+          <attvalue for="0" value="Approaches and techniques for training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Pretraining&quot;, &quot;description&quot;: &quot;Initial training phase before fine-tuning on specific tasks.&quot;}, {&quot;name&quot;: &quot;Optimized Training&quot;, &quot;description&quot;: &quot;Strategies for enhancing training efficiency.&quot;}, {&quot;name&quot;: &quot;Scaling Training&quot;, &quot;description&quot;: &quot;Methods for scaling training processes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;, &quot;Transfer Learning&quot;]" />
+          <attvalue for="7" value="[&quot;All models require large datasets&quot;, &quot;Training is the same as testing&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Game AI&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Reinforcement Learning" label="Reinforcement Learning">
+        <attvalues>
+          <attvalue for="0" value="Learning paradigms based on interactions with an environment." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Offline Reinforcement Learning&quot;, &quot;description&quot;: &quot;Reinforcement learning conducted without real-time feedback.&quot;}, {&quot;name&quot;: &quot;RL Policy&quot;, &quot;description&quot;: &quot;Strategies for decision-making in reinforcement learning.&quot;}, {&quot;name&quot;: &quot;Policy Evaluation&quot;, &quot;description&quot;: &quot;Assessing the effectiveness of a given policy.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and probability theory." />
+          <attvalue for="6" value="[&quot;Markov Decision Processes&quot;, &quot;Q-Learning&quot;, &quot;Policy Gradients&quot;, &quot;Exploration vs. Exploitation&quot;]" />
+          <attvalue for="7" value="[&quot;Reinforcement learning is the same as supervised learning&quot;, &quot;More rewards always lead to better learning&quot;]" />
+          <attvalue for="8" value="[&quot;Game playing (e.g., AlphaGo)&quot;, &quot;Robotics&quot;, &quot;Autonomous vehicles&quot;, &quot;Personalized recommendations&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Optimization" label="Model Optimization">
+        <attvalues>
+          <attvalue for="0" value="Techniques for improving model performance and efficiency." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Knowledge Distillation&quot;, &quot;description&quot;: &quot;Transferring knowledge from a larger model to a smaller one.&quot;}, {&quot;name&quot;: &quot;Performance Models&quot;, &quot;description&quot;: &quot;Models designed to optimize specific performance metrics.&quot;}, {&quot;name&quot;: &quot;Algorithm Optimization&quot;, &quot;description&quot;: &quot;Improving algorithms for better performance.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning algorithms and statistics." />
+          <attvalue for="6" value="[&quot;Hyperparameter Tuning&quot;, &quot;Regularization&quot;, &quot;Cross-Validation&quot;, &quot;Feature Selection&quot;]" />
+          <attvalue for="7" value="[&quot;More complex models always perform better&quot;, &quot;Overfitting is not a concern with large datasets&quot;]" />
+          <attvalue for="8" value="[&quot;Improving accuracy of predictive models&quot;, &quot;Reducing training time&quot;, &quot;Enhancing model generalization&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Reinforcement Learning" target="Policy Distillation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Policy distillation transfers behavior between policies, which requires understanding policies and their role in reinforcement learning." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Model Optimization" target="Scaling Techniques">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7895" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-06-22T22:42:09",
+  "experiment_id": "task4_evaluable_release_paper_ready_v1",
+  "config_path": "D:\\ic\\master project\\project_code\\KG_construction\\evaluation\\task4_experiment_manifest.json",
+  "benchmark": {
+    "sample_name": "security_privacy_in_ml",
+    "artifact_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark",
+    "result_json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\kg_benchmark.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\kg_benchmark_summary.csv",
+    "stage_outputs": {
+      "benchmark_json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\kg_benchmark.json",
+      "benchmark_summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\kg_benchmark_summary.csv",
+      "stage1_chunks": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage1_chunks.json",
+      "stage2a_topics": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2a_topics_hybrid.json",
+      "stage2b_prerequisites": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2b_prerequisites.json",
+      "stage2c_similarity_edges": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2c_similarity_edges.json"
+    }
+  },
+  "quality_eval": {
+    "sample_name": "security_privacy_in_ml_small_gold",
+    "result_json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\quality_eval\\kg_quality_eval.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\quality_eval\\kg_quality_eval_summary.csv",
+    "gold_inputs": {
+      "predicted_topics_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2a_topics_hybrid.json",
+      "predicted_prereq_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2b_prerequisites.json",
+      "predicted_similarity_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\stage2c_similarity_edges.json",
+      "gold_topics_path": "D:\\ic\\master project\\project_code\\KG_construction\\evaluation\\annotations\\task4_security_privacy_topics_gold.json",
+      "gold_prereq_path": "D:\\ic\\master project\\project_code\\KG_construction\\evaluation\\annotations\\task4_security_privacy_prerequisites_gold.json",
+      "gold_similarity_path": "D:\\ic\\master project\\project_code\\KG_construction\\evaluation\\annotations\\task4_security_privacy_similarity_gold.json"
+    }
+  },
+  "paper_tables": {
+    "benchmark_table_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\paper_tables\\benchmark_table.csv",
+    "quality_table_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\paper_tables\\quality_table.csv",
+    "experiment_table_draft_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\paper_tables\\experiment_table_draft.csv"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "created_at": "2026-08-18T18:54:09.449425+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-cs224n-2026-lecture11-evaluation-93703513bbd4",
+  "file_name": "cs224n-2026-lecture11-evaluation-93703513bbd4",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 20,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.125,
+    "recall": 0.3333,
+    "f1": 0.1818,
+    "tp": 1,
+    "fp": 7,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Evaluation Metrics",
+      "Bias in Machine Learning",
+      "Model Training",
+      "Benchmarking",
+      "Divergence Metrics",
+      "Natural Language Understanding",
+      "Complexity in Evaluation",
+      "Adversarial Testing"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "Neural models are mentioned incidentally, but neural-network architecture or learning is not a substantive topic of the lecture."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Reference-based and Reference-free Evaluation",
+        "reason": "The lecture explicitly contrasts metrics requiring gold references with reference-free metrics."
+      },
+      {
+        "name": "Human Evaluation",
+        "reason": "The source discusses human-evaluation limitations, rubrics, calibration, and inter-rater agreement."
+      },
+      {
+        "name": "LLM as a Judge",
+        "reason": "LLM judging, its biases, and jury-style mitigation are a dedicated lecture section."
+      },
+      {
+        "name": "Data Decontamination",
+        "reason": "The source identifies benchmark contamination and n-gram/near-duplicate detection practices."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Evaluation Metrics",
+        "to": "Benchmarking",
+        "reason": "Benchmarks require a scoring or grading method to evaluate and compare model outputs."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Model Training",
+        "to": "Evaluation Metrics",
+        "reason": "Training may precede evaluating a particular model, but it is not a conceptual prerequisite for learning evaluation metrics."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Model Training",
+        "reason": "This dependency is not established by the source, which does not teach neural-network fundamentals."
+      },
+      {
+        "from": "Natural Language Understanding",
+        "to": "Evaluation Metrics",
+        "reason": "NLU is an application domain for some evaluations, not a prerequisite for the general topic of evaluation metrics."
+      },
+      {
+        "from": "Bias in Machine Learning",
+        "to": "Evaluation Metrics",
+        "reason": "The lecture treats spurious bias as a benchmark-design concern, not as a prerequisite to evaluation metrics."
+      },
+      {
+        "from": "Divergence Metrics",
+        "to": "Evaluation Metrics",
+        "reason": "Divergence metrics are a category of evaluation metric; this is a taxonomic relation rather than a prerequisite."
+      },
+      {
+        "from": "Adversarial Testing",
+        "to": "Evaluation Metrics",
+        "reason": "Adversarial benchmarks may use metrics, but adversarial testing is not required to understand evaluation metrics generally."
+      },
+      {
+        "from": "Complexity in Evaluation",
+        "to": "Evaluation Metrics",
+        "reason": "Grading complexity characterizes answer types and evaluation settings rather than serving as a prerequisite for metrics."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "KL Divergence",
+        "to": "MAUVE",
+        "reason": "The source explains MAUVE through a frontier based on KL divergence and reverse KL after quantization."
+      },
+      {
+        "from": "Shannon Entropy",
+        "to": "Information-theoretic Metrics",
+        "reason": "The lecture introduces Shannon entropy as an information-theoretic quantity used for corpus and output diversity measurement."
+      }
+    ],
+    "overall_note": "The predictions capture the lecture's broad evaluation and benchmark themes, but omit several central evaluation paradigms and contain mostly weak or taxonomic prerequisite claims."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture11-evaluation-93703513bbd4.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture11-evaluation-93703513bbd4.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture11-evaluation-93703513bbd4_ledger.csv"
+  }
+}

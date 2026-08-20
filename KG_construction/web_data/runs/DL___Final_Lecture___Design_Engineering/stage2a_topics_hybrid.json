@@ -1,0 +1,124 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_local_fallback",
+  "input_chunks": 2,
+  "candidate_count": 8,
+  "topics_count": 8,
+  "candidates": [
+    {
+      "name": "drone delivery",
+      "avg_score": 0.6948,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "autonomous drone",
+      "avg_score": 0.6888,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "drone",
+      "avg_score": 0.6259,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "learning agent",
+      "avg_score": 0.6176,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5473,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning modelsto",
+      "avg_score": 0.5349,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning assigned",
+      "avg_score": 0.5161,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning lecture",
+      "avg_score": 0.5133,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "drone delivery",
+      "description": "Auto-refined from KeyBERT candidates (freq=1, score=0.6948).",
+      "sub_topics": []
+    },
+    {
+      "name": "autonomous drone",
+      "description": "Auto-refined from KeyBERT candidates (freq=1, score=0.6888).",
+      "sub_topics": []
+    },
+    {
+      "name": "drone",
+      "description": "Auto-refined from KeyBERT candidates (freq=1, score=0.6259).",
+      "sub_topics": [
+        {
+          "name": "drone delivery",
+          "description": "Sub concept of drone"
+        },
+        {
+          "name": "autonomous drone",
+          "description": "Sub concept of drone"
+        }
+      ]
+    },
+    {
+      "name": "learning agent",
+      "description": "Auto-refined from KeyBERT candidates (freq=1, score=0.6176).",
+      "sub_topics": []
+    },
+    {
+      "name": "deep learning",
+      "description": "Auto-refined from KeyBERT candidates (freq=1, score=0.5473).",
+      "sub_topics": []
+    },
+    {
+      "name": "learning modelsto",
+      "description": "Auto-refined from KeyBERT candidates (freq=1, score=0.5349).",
+      "sub_topics": []
+    },
+    {
+      "name": "learning assigned",
+      "description": "Auto-refined from KeyBERT candidates (freq=1, score=0.5161).",
+      "sub_topics": []
+    },
+    {
+      "name": "learning lecture",
+      "description": "Auto-refined from KeyBERT candidates (freq=1, score=0.5133).",
+      "sub_topics": []
+    }
+  ]
+}

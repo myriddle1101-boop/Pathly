@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Data Representation",
+      "to": "Regression and Classification",
+      "relation_type": "strong_prerequisite",
+      "reason": "Supervised prediction methods require understanding how inputs, features, and labels are represented."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural networks require data to be encoded as numerical vectors, tensors, or other structured representations."
+    },
+    {
+      "from": "Probabilistic Models",
+      "to": "Likelihood Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Likelihood is defined from a probabilistic model of observed data given parameters."
+    },
+    {
+      "from": "Probabilistic Models",
+      "to": "Model Sampling",
+      "relation_type": "strong_prerequisite",
+      "reason": "Sampling from a model requires understanding distributions and randomness represented by probabilistic models."
+    },
+    {
+      "from": "Algorithm Optimization",
+      "to": "Training Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training algorithms commonly rely on optimization concepts to adjust model parameters and minimize objectives."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Agent Systems",
+      "to": "Agent Reasoning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding what agents are and how they operate is necessary before studying their decision-making processes."
+    }
+  ]
+}

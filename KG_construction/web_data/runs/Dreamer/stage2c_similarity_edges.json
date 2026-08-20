@@ -1,0 +1,10 @@
+{
+  "stage": "2c",
+  "method": "sbert_cosine",
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "topic_count": 9,
+  "similarity_count": 0,
+  "threshold": 0.72,
+  "top_k_per_topic": 5,
+  "similarity_edges": []
+}

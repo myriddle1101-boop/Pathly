@@ -1,0 +1,53 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 17,
+  "prerequisite_count": 9,
+  "prerequisites": [
+    {
+      "from": "creating a virtual environment",
+      "to": "activating virtual environment via bin/activate",
+      "reason": "You need to create a virtual environment before you can activate it."
+    },
+    {
+      "from": "general dependencies overview",
+      "to": "core dependencies management",
+      "reason": "Understanding general dependencies is necessary to manage core dependencies."
+    },
+    {
+      "from": "core dependencies management",
+      "to": "pip dependencies installation",
+      "reason": "Managing core dependencies requires knowledge of how to install them using pip."
+    },
+    {
+      "from": "pip dependencies installation",
+      "to": "installing requirements from requirements.txt",
+      "reason": "You need to know how to install dependencies via pip to understand installing from requirements.txt."
+    },
+    {
+      "from": "requirements.txt file structure",
+      "to": "installing requirements from requirements.txt",
+      "reason": "Understanding the structure of requirements.txt is necessary to install from it."
+    },
+    {
+      "from": "testing environment setup",
+      "to": "print testing methodology",
+      "reason": "Setting up a testing environment is a prerequisite for understanding testing methodologies."
+    },
+    {
+      "from": "print testing methodology",
+      "to": "verify functionality of components",
+      "reason": "You need to understand testing methodologies to verify component functionality."
+    },
+    {
+      "from": "verify functionality of components",
+      "to": "test collection implementation",
+      "reason": "Verifying functionality is necessary before testing the implementation of collections."
+    },
+    {
+      "from": "rag_tutorial for creating collections",
+      "to": "create_collection unit test",
+      "reason": "You need to understand the rag_tutorial to create unit tests for collections."
+    }
+  ]
+}

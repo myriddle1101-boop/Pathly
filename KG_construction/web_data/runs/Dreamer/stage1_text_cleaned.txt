@@ -1,0 +1,1306 @@
+Publishedasaconferencepaperat ICLR 2020
+DREAM TO CONTROL: LEARNING BEHAVIORS
+BY LATENT IMAGINATION
+Danijar Hafner∗ Timothy Lillicrap Jimmy Ba Mohammad Norouzi
+Universityof Toronto Deep Mind Universityof Toronto Google Brain
+Google Brain
+Abstract
+Learned world models summarize an agent’s experience to facilitate learning
+complexbehaviors. Whilelearningworldmodelsfromhigh-dimensionalsensory
+inputsisbecomingfeasiblethroughdeeplearning,therearemanypotentialways
+forderivingbehaviorsfromthem. Wepresent Dreamer,areinforcementlearning
+agent that solves long-horizon tasks from images purely by latent imagination.
+Weefficientlylearnbehaviorsbypropagatinganalyticgradientsoflearnedstate
+valuesbackthroughtrajectoriesimaginedinthecompactstatespaceofalearned
+worldmodel. On 20 challengingvisualcontroltasks,Dreamerexceedsexisting
+approachesindata-efficiency,computationtime,andfinalperformance.
+1 INTRODUCTION
+Intelligentagentscanachievegoalsincomplexenvironmentseventhough
+Dataset of Experience
+theyneverencountertheexactsamesituationtwice. Thisabilityrequires
+building representations of the world from past experience that enable
+generalizationtonovelsituations. Worldmodelsofferanexplicitwayto
+representanagent’sknowledgeabouttheworldinaparametricmodelthat
+canmakepredictionsaboutthefuture.
+When the sensory inputs are high-dimensional images, latent dynamics
+modelscanabstractobservationstopredictforwardincompactstatespaces
+Learned Latent Dynamics
+(Watter et al., 2015; Oh et al., 2017; Gregor et al., 2019). Compared to
+predictionsinimagespace,latentstateshaveasmallmemoryfootprintthat
+enablesimaginingthousandsoftrajectoriesinparallel. Learningeffective
+latent dynamics models is becoming feasible through advances in deep
+learningandlatentvariablemodels(Krishnanetal.,2015;Karletal.,2016;
+Doerretal.,2018;Buesingetal.,2018).
+Behaviors can be derived from dynamics models in many ways. Often,
+imaginedrewardsaremaximizedwithaparametricpolicy(Sutton,1991;
+Ha and Schmidhuber, 2018; Zhang et al., 2019) or by online planning
+(Chuaetal.,2018;Hafneretal.,2018). However,consideringonlyrewards
+Value and Action Learned
+withinafixedimaginationhorizonresultsinshortsightedbehaviors(Wang
+by Latent Imagination
+et al., 2019). Moreover, prior work commonly resorts to derivative-free
+optimizationforrobustnesstomodelerrors(Ebertetal.,2017;Chuaetal.,
+2018;Parmasetal.,2019),ratherthanleveraginganalyticgradientsoffered
+byneuralnetworkdynamics(Henaffetal.,2019;Srinivasetal.,2018).
+We present Dreamer, an agent that learns long-horizon behaviors from
+imagespurelybylatentimagination. Anovelactorcriticalgorithmaccounts
+forrewardsbeyondtheimaginationhorizonwhilemakingefficientuseof Figure 1: Dreamer
+theneuralnetworkdynamics. Forthis,wepredictstatevaluesandactions learns a world model
+inthelearnedlatentspaceassummarizedin Figure 1. Thevaluesoptimize from past experience
+Bellmanconsistencyforimaginedrewardsandthepolicymaximizesthe and efficiently learns
+valuesbypropagatingtheiranalyticgradientsbackthroughthedynamics. farsightedbehaviorsin
+its latent space by
+Incomparisontoactorcriticalgorithmsthatlearnonlineorbyexperience
+backpropagatingvalue
+replay (Lillicrap et al., 2015; Mnih et al., 2016; Schulman et al., 2017;
+estimatesbackthrough
+Haarnojaetal.,2018;Leeetal.,2019),worldmodelscaninterpolatepast
+imaginedtrajectories.
+experienceandofferanalyticgradientsofmulti-stepreturnsforefficient
+policyoptimization.
+∗Correspondenceto:Danijar Hafner<mail@danijar.com>.
+1
+0202
+ra M
+71
+]GL.sc[
+3 v 30610.2191:vi Xra
+
+Publishedasaconferencepaperat ICLR 2020
+(a)Cup (b)Acrobot (c)Hopper (d)Walker (e)Quadruped
+Figure 2: Imageobservationsfor 5 ofthe 20 visualcontroltasksusedinourexperiments. Thetasks
+poseavarietyofchallengesincludingcontactdynamics,sparserewards,manydegreesoffreedom,
+and 3 Denvironments. Severalofthesetaskscouldpreviouslynotbesolvedthroughworldmodels.
+Thekeycontributionsofthispaperaresummarizedasfollows:
+• Learninglong-horizonbehaviorsbylatentimagination Model-basedagentscanbeshort-
+sightediftheyuseafiniteimaginationhorizon. Weapproachthislimitationbypredictingboth
+actionsandstatevalues. Trainingpurelybyimaginationinalatentspaceletsusefficientlylearn
+thepolicybypropagatinganalyticvaluegradientsbackthroughthelatentdynamics.
+• Empirical performance for visual control We pair Dreamer with existing representation
+learningmethodsandevaluateitonthe Deep Mind Control Suitewithimageinputs,illustratedin
+Figure 2. Usingthesamehyperparametersforalltasks,Dreamerexceedspreviousmodel-based
+andmodel-freeagentsintermsofdata-efficiency,computationtime,andfinalperformance.
+2 CONTROL WITH WORLD MODELS
+Reinforcementlearning Weformulatevisualcontrolasapartiallyobservable Markovdecision
+process(POMDP)withdiscretetimestept∈[1;T],continuousvector-valuedactionsa ∼p(a |
+t t
+o ,a )generatedbytheagent, andhigh-dimensionalobservationsandscalarrewardso ,r ∼
+≤t <t t t
+p(o ,r | o ,a )generatedbytheunknownenvironment. Thegoalistodevelopanagentthat
+t t <t <t
+maximizestheexpectedsumofrewards E
+(cid:0)(cid:80)T
+r
+(cid:1)
+. Figure 2 showsaselectionofourtasks.
+p t=1 t
+Agentcomponents Theclassicalcomponentsofagentsthatlearninimaginationaredynamics
+learning, behaviorlearning, andenvironmentinteraction(Sutton,1991). Inthe caseof Dreamer,
+the behavior is learned by predicting hypothetical trajectories in the compact latent space of the
+worldmodel. Asoutlinedin Figure 3 anddetailedin Algorithm 1,Dreamerperformsthefollowing
+operationsthroughouttheagent’slifetime,eitherinterleavedorinparallel:
+• Learning the latent dynamics model from the dataset of past experience to predict future re-
+wardsfromactionsandpastobservations. Anylearningobjectivefortheworldmodelcanbe
+incorporatedwith Dreamer. Wereviewexistingmethodsforlearninglatentdynamicsin Section 4.
+• Learningactionandvaluemodelsfrompredictedlatenttrajectories,asdescribedin Section 3.
+Thevaluemodeloptimizes Bellmanconsistencyforimaginedrewardsandtheactionmodelis
+updatedbypropagatinggradientsofvalueestimatesbackthroughtheneuralnetworkdynamics.
+• Executingthelearnedactionmodelintheworldtocollectnewexperienceforgrowingthedataset.
+Latentdynamics Dreamerusesalatentdynamicsmodelthatconsistsofthreecomponents. The
+representationmodelencodesobservationsandactionstocreatecontinuousvector-valuedmodel
+statess with Markoviantransitions(Watteretal.,2015;Zhangetal.,2019;Hafneretal.,2018). The
+t
+transitionmodelpredictsfuturemodelstateswithoutseeingthecorrespondingobservationsthatwill
+latercausethem. Therewardmodelpredictstherewardsgiventhemodelstates,
+Representationmodel: p(s |s ,a ,o )
+t t−1 t−1 t
+Transitionmodel: q(s |s ,a ) (1)
+t t−1 t−1
+Rewardmodel: q(r |s ).
+t t
+Weusepfordistributionsthatgeneratesamplesintherealenvironmentandqfortheirapproximations
+thatenablelatentimagination. Specifically,thetransitionmodelletsuspredictaheadinthecompact
+latentspacewithouthavingtoobserveorimaginethecorrespondingimages. Thisresultsinalow
+memoryfootprintandfastpredictionsofthousandsofimaginedtrajectoriesinparallel.
+Themodelmimicsanon-linear Kalmanfilter(Kalman,1960),latentstatespacemodel,or HMM
+withreal-valuedstates. However,itisconditionedonactionsandpredictsrewards,allowingtheagent
+toimaginetheoutcomesofpotentialactionsequenceswithoutexecutingthemintheenvironment.
+2
+
+Publishedasaconferencepaperat ICLR 2020
+r̂ 1 a 1 r̂ 2 a 2 r̂ 3 v ̂ 1 r̂ 1 a ̂ 1 v ̂ 2 r̂ 2 a ̂ 2 v ̂ 3 r̂ 3 a ̂ 3 a 1 a 2 a ̂ 3
+o o ̂ o o ̂ o o ̂ o o o o
+1 1 2 2 3 3 1 1 2 3
+(a)Learndynamicsfromexperience (b)Learnbehaviorinimagination (c)Actintheenvironment
+Figure 3:Componentsof Dreamer. (a)Fromthedatasetofpastexperience,theagentlearnstoencode
+observationsandactionsintocompactlatentstates( ),forexampleviareconstruction,andpredicts
+environmentrewards( ). (b)Inthecompactlatentspace,Dreamerpredictsstatevalues( )and
+actions( )thatmaximizefuturevaluepredictionsbypropagatinggradientsbackthroughimagined
+trajectories. (c)Theagentencodesthehistoryoftheepisodetocomputethecurrentmodelstateand
+predictthenextactiontoexecuteintheenvironment. See Algorithm 1 forpseudocodeoftheagent.
+3 LEARNING BEHAVIORS BY LATENT IMAGINATION
+Dreamer learns long-horizon behaviors in the compact latent space of a learned world model by
+efficientlyleveragingtheneuralnetworklatentdynamics. Forthis,wepropagatestochasticgradients
+ofmulti-stepreturnsthroughneuralnetworkpredictionsofactions,states,rewards,andvaluesusing
+reparameterization. Thissectiondescribesthemaincontributionofourpaper.
+Imaginationenvironment Thelatentdynamicsdefinea Markovdecisionprocess(MDP;Sutton,
+1991)thatisfullyobservedbecausethecompactmodelstatess are Markovian. Wedenoteimagined
+t
+quantitieswithτ asthetimeindex.Imaginedtrajectoriesstartatthetruemodelstatess ofobservation
+t
+sequencesdrawnfromtheagent’spastexperience. Theyfollowpredictionsofthetransitionmodel
+s ∼ q(s | s ,a ), reward model r ∼ q(r | s ), and a policy a ∼ q(a | s ). The
+τ τ τ−1 τ−1 τ τ τ τ τ τ
+objectiveistomaximizeexpectedimaginedrewards E (cid:0)(cid:80)∞ γτ−tr (cid:1) withrespecttothepolicy.
+q τ=t τ
+Algorithm 1:Dreamer
+Initializedataset Dwith S randomseedepisodes. Modelcomponents
+Initializeneuralnetworkparametersθ,φ,ψrandomly. Representation p (s |s ,a ,o )
+θ t t-1 t-1 t
+whilenotconvergeddo Transition q (s |s ,a )
+θ t t-1 t-1
+forupdatestepc=1..C do
+Reward q (r |s )
+θ t t
+// Dynamics learning
+Action q (a |s )
+φ t t
+Draw Bdatasequences{(a t ,o t ,r t )}k t= + k L ∼D. Value v ψ (s t )
+Computemodelstatess ∼p (s |s ,a ,o ).
+t θ t t−1 t−1 t
+Hyperparameters
+Updateθusingrepresentationlearning.
+Seedepisodes S
+// Behavior learning
+Collectinterval C
+Imaginetrajectories{(s ,a )}t+H fromeachs .
+(cid:0) τ τ (cid:1) τ=t t Batchsize B
+Predictrewards E q (r |s ) andvaluesv (s ).
+θ τ τ ψ τ Sequencelength L
+Computevalueestimates V (s )via Equation 6.
+λ τ
+Updateφ←φ+α∇
+(cid:80)t+HV
+(s ).
+Imaginationhorizon H
+φ τ=t λ τ Learningrate α
+Updateψ←ψ−α∇ ψ (cid:80)t τ + = H t 2 1(cid:13) (cid:13)v ψ (s τ )(cid:57)V λ (s τ ) (cid:13) (cid:13) 2 .
+// Environment interaction
+o ←env.reset()
+1
+fortimestept=1..T do
+Computes ∼p (s |s ,a ,o )fromhistory.
+t θ t t−1 t−1 t
+Computea ∼q (a |s )withtheactionmodel.
+t φ t t
+Addexplorationnoisetoaction.
+r ,o ←env.step(a ).
+t t+1 t
+Addexperiencetodataset D ←D∪{(o ,a ,r )T }.
+t t t t=1
+3
+
+Publishedasaconferencepaperat ICLR 2020
+1000
+800
+600
+400
+200
+0
+10 20 30 40
+Imagination Horizon
+nrute R
+edosip E
+Cartpole Swingup Cheetah Run Quadruped Walk Walker Walk
+1000 1000 1000
+800 800 800
+600 600 600
+400 400 400
+Dreamer ( )
+200 200 200 No value ( R)
+Pla Net ( R)
+0 0 0
+10 20 30 40 10 20 30 40 10 20 30 40
+Imagination Horizon Imagination Horizon Imagination Horizon
+Figure 4: Imaginationhorizons. Wecomparethefinalperformanceof Dreamer,learninganaction
+modelwithoutvalueprediction,andonlineplanningusing Pla Net. Learningastatevaluemodelto
+estimaterewardsbeyondtheimaginationhorizonmakes Dreamermorerobusttothehorizonlength.
+Theagentsusepixelreconstructionforrepresentationlearningandanactionrepeatof R=2.
+Actionandvaluemodels Considerimaginedtrajectorieswithafinitehorizon H. Dreameruses
+anactorcriticapproachtolearnbehaviorsthatconsiderrewardsbeyondthehorizon. Welearnan
+actionmodelandavaluemodelinthelatentspaceoftheworldmodelforthis. Theactionmodel
+implementsthepolicyandaimstopredictactionsthatsolvetheimaginationenvironment. Thevalue
+modelestimatestheexpectedimaginedrewardsthattheactionmodelachievesfromeachstates ,
+τ
+Actionmodel: a ∼ q (a |s )
+τ φ τ τ
+(2)
+Valuemodel: v (s )≈E
+(cid:0)(cid:80)t+Hγτ−tr (cid:1)
+.
+ψ τ q(·|sτ) τ=t τ
+Theactionandvaluemodelsaretrainedcooperativelyastypicalinpolicyiteration: theactionmodel
+aimstomaximizeanestimateofthevalue,whilethevaluemodelaimstomatchanestimateofthe
+valuethatchangesastheactionmodelchanges.
+Weusedenseneuralnetworksfortheactionandvaluemodelswithparametersφandψ,respectively.
+Theactionmodeloutputsatanh-transformed Gaussian(Haarnojaetal.,2018)withsufficientstatistics
+predictedbytheneuralnetwork. Thisallowsforreparameterizedsampling(Kingmaand Welling,
+2013;Rezendeetal.,2014)thatviewssampledactionsasdeterministicallydependentontheneural
+networkoutput,allowingustobackpropagateanalyticgradientsthroughthesamplingoperation,
+a =tanh (cid:0) µ (s )+σ (s )(cid:15) (cid:1) , (cid:15)∼Normal(0,I). (3)
+τ φ τ φ τ
+Value estimation To learn the action and value models, we need to estimate the state values
+of imagined trajectories {s ,a ,r }t+H. These trajectories branch off of the model states s of
+τ τ τ τ=t t
+sequencebatchesdrawnfromtheagent’sdatasetofexperienceandpredictforwardfortheimagination
+horizon H usingactionssampledfromtheactionmodel. Statevaluescanbeestimatedinmultiple
+waysthattradeoffbiasandvariance(Suttonand Barto,2018),
+(cid:18)t+H (cid:19)
+. (cid:88)
+V (s )=E r , (4)
+R τ qθ,qφ n
+n=τ
+(cid:18)h−1 (cid:19)
+. (cid:88)
+Vk(s )=E γn−τr +γh−τv (s ) with h=min(τ +k,t+H), (5)
+N τ qθ,qφ n ψ h
+n=τ
+H−1
+. (cid:88)
+V (s ) =(1−λ) λn−1 Vn(s )+λH−1 VH(s ), (6)
+λ τ N τ N τ
+n=1
+wheretheexpectationsareestimatedundertheimaginedtrajectories. V simplysumstherewards
+R
+fromτ untilthehorizonandignoresrewardsbeyondit. Thisallowslearningtheactionmodelwithout
+avaluemodel,anablationwecomparetoinourexperiments. Vk estimatesrewardsbeyondksteps
+N
+withthelearnedvaluemodel. Dreameruses V ,anexponentially-weightedaverageoftheestimates
+λ
+fordifferentktobalancebiasandvariance.Figure 4 showsthatlearningavaluemodelinimagination
+enables Dreamertosolvelong-horizontaskswhilebeingrobusttotheimaginationhorizon. The
+experimentaldetailsandresultsonalltasksaredescribedin Section 6.
+4
+
+Publishedasaconferencepaperat ICLR 2020
+eur T
+Context 6 10 15 20 25 30 35 40 45 50
+ledo M
+eur T
+ledo M
+Figure 5: Reconstructionsoflong-termpredictions. Weapplytherepresentationmodeltothefirst 5
+imagesoftwohold-outtrajectoriesandpredictforwardfor 45 stepsusingthelatentdynamics,given
+onlytheactions. Therecurrentstatespacemodel(RSSM;Hafneretal.,2018)performsaccurate
+long-termpredictions,enabling Dreamertolearnsuccessfulbehaviorsinacompactlatentspace.
+Learningobjective Toupdatetheactionandvaluemodels,wefirstcomputethevalueestimates
+V (s )forallstatess alongtheimaginedtrajectories.Theobjectivefortheactionmodelq (a |s )
+λ τ τ φ τ τ
+istopredictactionsthatresultinstatetrajectorieswithhighvalueestimates. Theobjectiveforthe
+valuemodelv (s ),inturn,istoregressthevalueestimates,
+ψ τ
+(cid:18)t (cid:88) +H (cid:19) (cid:18)t (cid:88) +H 1(cid:13) (cid:13)2 (cid:19)
+m φ ax E qθ,qφ V λ (s τ ) , (7) m ψ in E qθ,qφ 2 (cid:13) (cid:13) v ψ (s τ )−V λ (s τ ))(cid:13) (cid:13) . (8)
+τ=t τ=t
+The value model is updated to regress the targets, around which we stop the gradient as typical
+(Suttonand Barto,2018). Theactionmodelusesanalyticgradientsthroughthelearneddynamics
+tomaximizethevalueestimates. Tounderstandthis, wenotethatthevalueestimatesdependon
+therewardandvaluepredictions,whichdependontheimaginedstates,whichinturndependon
+theimaginedactions. Sinceallstepsareimplementedasneuralnetworks,weanalyticallycompute
+∇ E
+(cid:0)(cid:80)t+HV
+(s )
+(cid:1)
+by stochastic backpropagation (Kingma and Welling, 2013; Rezende
+φ qθ,qφ τ=t λ τ
+etal.,2014). Weusereparameterizationforcontinuousactionsandlatentstatesandstraight-through
+gradients(Bengioetal.,2013)fordiscreteactions. Theworldmodelisfixedwhilelearningbehaviors.
+Intaskswithearlytermination,theworldmodelalsopredictsthediscountfactorfromeachlatent
+statetoweighthetimestepsin Equations 7 and 8 bythecumulativeproductofthepredicteddiscount
+factors,sotermsareweighteddownbasedonhowlikelytheimaginedtrajectorywouldhaveended.
+Comparisontoactorcriticmethods Agentsusing Reinforcegradients(Williams,1992),suchas
+A 3 Cand PPO(Mnihetal.,2016;Schulmanetal.,2017),employvaluebaselinestoreducegradient
+variance,while Dreamerbackpropagatesthroughthevaluemodel. Thisissimilartodeterministic
+orreparameterizedactorcritics(Silveretal.,2014),suchas DDPGand SAC(Lillicrapetal.,2015;
+Haarnoja et al., 2018). However, these do not leverage gradients through transitions and only
+maximize immediate Q-values. MVE and STEVE (Feinberg et al., 2018; Buckman et al., 2018)
+extendthemtomulti-step Q-learningwithlearneddynamicstoprovidemoreaccurate Q-valuetargets.
+Wepredictstatevalues,whichissufficientforpolicyoptimizationsincewebackpropagatethrough
+thedynamics. Referto Section 5 foramoredetailedcomparisontorelatedwork.
+4 LEARNING LATENT DYNAMICS
+Learningbehaviorsinimaginationrequiresaworldmodelthatgeneralizeswell. Wefocusonlatent
+dynamicsmodelsthatpredictforwardinacompactlatentspace,facilitatinglong-termpredictions
+andallowingtheagenttoimaginethousandsoftrajectoriesinparallel. Severalobjectivesforlearning
+representations for control have been proposed (Watter et al., 2015; Jaderberg et al., 2016; Oord
+etal.,2018;Eslamietal.,2018). Wereviewthreeapproachesforlearningrepresentationstousewith
+Dreamer: rewardprediction,imagereconstruction,andcontrastiveestimation.
+Reward prediction Latent imagination requires a representation model p(s | s ,a ,o ),
+t t−1 t−1 t
+transition model q(s | s ,a ,), and reward model q(r | s ), as described in Section 2. In
+t t−1 t−1 t t
+principle, this could be achieved by simply learning to predict future rewards given actions and
+pastobservations(Ohetal.,2017;Geladaetal.,2019;Schrittwieseretal.,2019). Withalargeand
+diversedataset,suchrepresentationsshouldbesufficientforsolvingacontroltask. However,witha
+finitedatasetandespeciallywhenrewardsaresparse,learningaboutobservationsthatcorrelatewith
+rewardsislikelytoimprovetheworldmodel(Jaderbergetal.,2016;Gregoretal.,2019).
+5
+
+Publishedasaconferencepaperat ICLR 2020
+eloptra C ecnala B rekla W dnat S pu C hcta C rekla W kla W eloptra C esrap S
+.la B
+rehcae R ysa E depurdau Q kla W reppo H dnat S hateeh C nu R regni F dra H
+nru T
+depurdau Q nu R eloptra C pugniw S muludne P pugniw S regni F ysa E
+nru T
+rekla W nu R rehcae R dra H eloptra C esrap S
+.iw S
+regni F nip S reppo H po H toborc A pugniw S
+1000
+800
+600
+400
+200
+0
+nrute R
+edosip E
+a/n a/n a/n a/n
+Dreamer (5 e 6 steps) Pla Net (5 e 6 steps) D 4 PG (1 e 8 steps) A 3 C (1 e 8 steps, proprio)
+Figure 6: Performance comparison to existing methods. Dreamer inherits the data-efficiency of
+Pla Netwhileexceedingtheasymptoticperformanceofthebestmodel-freeagents. After 5×106
+environmentsteps,Dreamerreachesanaverageperformanceof 823 acrosstasks,comparedto Pla Net
+at 332 andthetopmodel-free D 4 PGagentat 786 after 108 steps. Resultsareaveragesover 5 seeds.
+Reconstruction Wefirstdescribetheworldmodelusedby Pla Net(Hafneretal.,2018)thatlearns
+latentdynamicsbyreconstructingimagesasshownin Figure 3 a. Theworldmodelconsistsofthe
+followingcomponents,wheretheobservationmodelisonlyusedtoprovidealearningsignal,
+Representationmodel: p (s |s ,a ,o )
+θ t t−1 t−1 t
+Observationmodel: q (o |s )
+θ t t
+(9)
+Rewardmodel: q (r |s )
+θ t t
+Transitionmodel: q (s |s ,a ).
+θ t t−1 t−1
+Thecomponentsareoptimizedjointlytoincreasethevariationallowerbound(ELBO;Jordanetal.,
+1999)ormoregenerallythevariationalinformationbottleneck(VIB;Tishbyetal.,2000;Alemietal.,
+2016). As derived in Appendix B, the bound includes reconstruction terms for observations and
+rewardsanda KLregularizer. Theexpectationistakenunderthedatasetandrepresentationmodel,
+. (cid:18) (cid:88)(cid:16) (cid:17)(cid:19) .
+J =E Jt +Jt +Jt +const Jt = lnq(o |s )
+REC p O R D O t t
+(10)
+t
+J
+R
+t = . lnq(r
+t
+|s
+t
+) J
+D
+t = . −βKL (cid:0) p(s
+t
+|s
+t−1
+,a
+t−1
+,o
+t
+) (cid:13) (cid:13)q(s
+t
+|s
+t−1
+,a
+t−1
+) (cid:1) .
+Weimplementthetransitionmodelasarecurrentstatespacemodel(RSSM;Hafneretal.,2018),the
+representationmodelbycombiningthe RSSMwithaconvolutionalneuralnetwork(CNN;Le Cun
+et al., 1989) applied to the image observation, the observation model as a transposed CNN, and
+therewardmodelasadensenetwork. Thecombinedparametervectorθ isupdatedbystochastic
+backpropagation(Kingmaand Welling,2013;Rezendeetal.,2014).Figure 5 showsvideopredictions
+ofthismodel. Wereferto Appendix Aand Hafneretal.(2018)modeldetails.
+Contrastiveestimation Predictingpixelscanrequirehighmodelcapacity. Wecanalsoencourage
+mutualinformationbetweenmodelstatesandobservationsbyinsteadpredictingthestatesfromthe
+images(Guoetal.,2018). Thisreplacestheobservationmodelwithastatemodel,
+Statemodel: q (s |o ). (11)
+θ t t
+While the reconstruction objective used the fact that the observation marginal is a constant, we
+nowfacethestatemarginal. Asshownin Appendix B,thiscanbeestimatedvianoisecontrastive
+estimation(NCE;Gutmannand Hyvärinen,2010;Oordetal.,2018)byaveragingthestatemodel
+overobservationso(cid:48)ofthecurrentsequencebatch. Intuitively,q(s |o )makesthestatepredictable
+t t
+fromthecurrentimagewhileln (cid:80) q(s |o(cid:48))keepsitdiversetopreventcollapse,
+o(cid:48) t
+. (cid:18) (cid:88)(cid:16) (cid:17)(cid:19) . (cid:18) (cid:88) (cid:19)
+J NCE = E J S t+J R t +J D t J S t = lnq(s t |o t )−ln q(s t |o(cid:48)) . (12)
+t o(cid:48)
+Weimplementthestatemodelasa CNNandagainoptimizetheboundwithrespecttothecombined
+parametervectorθusingstochasticbackpropagation. Whileavoidingpixelprediction,theamountof
+informationthisboundcanextractefficientlyislimited(Mc Allesterand Statos,2018).Weempirically
+comparereward,reconstruction,andcontrastiveobjectivesinourexperimentsin Figure 8.
+6
+
+Publishedasaconferencepaperat ICLR 2020
+400
+300
+200
+100
+0
+0.0 0.5 1.0 1.5 2.0
+nrute R
+edosip E
+Acrobot Swingup Cartpole Swingup Sparse Hopper Hop Hopper Stand
+1000
+800
+400
+750
+600
+400 200 500
+200 250
+0 0 0
+0.0 0.5 1.0 1.5 2.0 0.0 0.5 1.0 1.5 2.0 0.0 0.5 1.0 1.5 2.0
+750
+500
+250
+0
+0.0 0.5 1.0 1.5 2.0
+Environment Steps 1 e 6
+nrute R
+edosip E
+Pendulum Swingup Quadruped Walk Walker Run Walker Walk
+1000 1000
+800
+750 600 750
+500 400 500
+250 200 250
+0 0 0
+0.0 0.5 1.0 1.5 2.0 0.0 0.5 1.0 1.5 2.0 0.0 0.5 1.0 1.5 2.0
+Environment Steps 1 e 6 Environment Steps 1 e 6 Environment Steps 1 e 6
+Dreamer No value Pla Net D 4 PG (1 e 9 steps) A 3 C (1 e 9 steps, proprio)
+Figure 7: Dreamersucceedsatvisualcontroltasksthatrequirelong-horizoncreditassignment,such
+astheacrobotandhoppertasks. Optimizingonlyimaginedrewardswithinthehorizonviaanaction
+modelorbyonlineplanningyieldsshortsightedbehaviorsthatonlysucceedinreactivetasks,suchas
+inthewalkerdomain. Theperformanceonall 20 tasksissummarizedin Figure 6 andtrainingcurves
+areshownin Appendix D.See Tassaetal.(2018)forperformancecurvesof D 4 PGand A 3 C.
+5 RELATED WORK
+Prior works learn latent dynamics for visual control by derivative-free policy learning or online
+planning, augment model-free agents with multi-step predictions, or use analytic gradients of Q-
+valuesormulti-steprewards,oftenforlow-dimensionaltasks. Incomparison,Dreamerusesanalytic
+gradientstoefficientlylearnlong-horizonbehaviorsforvisualcontrolpurelybylatentimagination.
+Controlwithlatentdynamics E 2 C(Watteretal.,2015)and RCE(Banijamalietal.,2017)embed
+imagestopredictforwardinacompactspacetosolvesimpletasks. World Models(Haand Schmid-
+huber,2018)learnlatentdynamicsinatwo-stageprocesstoevolvelinearcontrollersinimagination.
+Pla Net(Hafneretal.,2018)learnsthemjointlyandsolvesvisuallocomotiontasksbylatentonline
+planning. SOLAR(Zhangetal.,2019)solvesrobotictasksviaguidedpolicysearchinlatentspace.
+I 2 A(Weberetal.,2017)handsimaginedtrajectoriestoamodel-freepolicy,while Leeetal.(2019)
+and Gregoretal.(2019)learnbeliefrepresentationstoacceleratemodel-freeagents.
+Imaginedmulti-stepreturns VPN(Ohetal.,2017),MVE(Feinbergetal.,2018),and STEVE
+(Buckman et al., 2018) learn dynamics for multi-step Q-learning from a replay buffer. Alpha Go
+(Silveretal.,2017)combinespredictionsofactionsandstatevalueswithplanning,assumingaccess
+to the true dynamics. Also assuming access to the dynamics, POLO (Lowrey et al., 2018) plans
+toexplorebylearningavalueensemble. Mu Zero(Schrittwieseretal.,2019)learnstask-specific
+rewardandvaluemodelstosolvechallengingtasksbutrequireslargeamountsofexperience. PETS
+(Chuaetal.,2018),Visual MPC(Ebertetal.,2017),and Pla Net(Hafneretal.,2018)planonline
+usingderivative-freeoptimization. POPLIN(Wangand Ba,2019)improvesoveronlineplanningby
+self-imitation. Piergiovannietal.(2018)learnrobotpoliciesbyimaginationwithalatentdynamics
+model. Planningwithneuralnetworkgradientswasshownonsmallproblems(Schmidhuber,1990;
+Henaffetal.,2018)buthasbeenchallengingtoscale(Parmasetal.,2019).
+Analytic value gradients DPG (Silver et al., 2014), DDPG (Lillicrap et al., 2015), and SAC
+(Haarnojaetal.,2018)leveragegradientsoflearnedimmediateactionvaluestolearnapolicyby
+experiencereplay. SVG(Heessetal.,2015)reducesthevarianceofmodel-freeon-policyalgorithms
+byanalyticvaluegradientsofone-stepmodelpredictions. Concurrentworkby Byravanetal.(2019)
+useslatentimaginationwithdeterministicmodelsfornavigationandmanipulationtasks. ME-TRPO
+(Kurutachetal.,2018)acceleratesanotherwisemodel-freeagentviagradientsofpredictedrewards
+for proprioceptive inputs. Dist GBP (Henaff et al., 2017; 2019) uses model gradients for online
+planninginsimpletasks.
+7
+
+Publishedasaconferencepaperat ICLR 2020
+400
+300
+200
+100
+0
+0.0 0.5 1.0 1.5 2.0
+nrute R
+edosip E
+Acrobot Swingup Cheetah Run Cup Catch Finger Spin
+1000 1000
+750
+750 750
+500 500 500
+250 250 250
+0 0 0
+0.0 0.5 1.0 1.5 2.0 0.0 0.5 1.0 1.5 2.0 0.0 0.5 1.0 1.5 2.0
+1000
+750
+500
+250
+0
+0.0 0.5 1.0 1.5 2.0
+Environment Steps 1 e 6
+nrute R
+edosip E
+Hopper Stand Pendulum Swingup Quadruped Run Walker Stand
+1000 1000 1000
+750 750 800
+500 500 600
+250 400
+250
+0 200
+0
+0.0 0.5 1.0 1.5 2.0 0.0 0.5 1.0 1.5 2.0 0.0 0.5 1.0 1.5 2.0
+Environment Steps 1 e 6 Environment Steps 1 e 6 Environment Steps 1 e 6
+Dreamer + Reconstruction Dreamer + Contrastive Dreamer + Reward only D 4 PG (1 e 9 steps) A 3 C (1 e 9 steps, proprio)
+Figure 8: Comparisonofrepresentationlearningobjectivestobeusedwith Dreamer. Pixelrecon-
+structionperformsbestforthemajorityoftasks. Thecontrastiveobjectivesolvesabouthalfofthe
+tasks,whilepredictingrewardsalonewasnotsufficientinourexperiments. Theresultssuggestthat
+futuredevelopmentsinlearningrepresentationsarelikelytotranslateintoimprovedtaskperformance
+for Dreamer. Theperformancecurvesforalltasksareincludedin Appendix E.
+6 EXPERIMENTS
+Weexperimentallyevaluate Dreameronavarietyofcontroltasks. Wedesignedtheexperiments
+to compare Dreamer to current best methods in the literature, and to evaluate its ability to solve
+taskswithlonghorizons, continuousactions, discreteactions, andearlytermination. Wefurther
+comparetheorthogonalchoiceoflearningobjectivefortheworldmodel. Thesourcecodeforallour
+experimentsandvideosof Dreamerareavailableathttps://danijar.com/dreamer.
+Control tasks We evaluate Dreamer on 20 visual control tasks of the Deep Mind Control Suite
+(Tassaetal.,2018),illustratedin Figure 2. Thesetasksposeavarietyofchallenges,includingsparse
+rewards,contactdynamics,and 3 Dscenes. Weselectedthetasksonwhich Tassaetal.(2018)report
+non-zero performance from image inputs. Agent observations are images of shape 64×64×3,
+actionsrangefrom 1 to 12 dimensions,rewardsrangefrom 0 to 1,episodeslastfor 1000 stepsand
+haverandomizedinitialstates.Weuseafixedactionrepeatof R=2 acrosstasks.Wefurtherevaluate
+theapplicabilityof Dreamertodiscreteactionsandearlyterminationonasubsetof Atarigames
+(Bellemareetal.,2013)and Deep Mind Lablevels(Beattieetal.,2016)asdetailedin Appendix C.
+Implementation Ourimplementationuses Tensor Flow Probability(Dillonetal.,2017). Weusea
+single Nvidia V 100 GPUand 10 CPUcoresforeachtrainingrun. Thetrainingtimeforour Dreamer
+implementationisabout 3 hoursper 106 environmentstepsonthecontrolsuite,comparedto 11 hours
+foronlineplanningusing Pla Net,andthe 24 hoursusedby D 4 PGtoreachsimilarperformance. We
+usethesamehyperparametersacrossallcontinuoustasks,andsimilarlyacrossalldiscretetasks,
+detailedin Appendix A.Theworldmodelsarelearnedviareconstructionunlessspecified.
+Baselinemethods Thehighestreportedperformanceonthecontinuoustasksisachievedby D 4 PG
+(Barth-Maronetal.,2018),animprovedvariantof DDPG(Lillicrapetal.,2015)thatusesdistributed
+collection,distributional Q-learning,multi-stepreturns,andprioritizedreplay. Weincludethescores
+for D 4 PGwithpixelinputsand A 3 C(Mnihetal.,2016)withstateinputsfrom Tassaetal.(2018).
+Pla Net(Hafneretal.,2018)learnsthesameworldmodelas Dreamerandselectsactionsviaonline
+planningwithoutanactionmodelanddrasticallyimprovesover D 4 PGand A 3 Cindataefficiency.We
+re-run Pla Netwith R=2 foraunifiedexperimentalsetup. For Atari,weshowthefinalperformance
+of Sim PLe(Kaiseretal.,2019),DQN(Mnihetal.,2015)and Rainbow(Hesseletal.,2018)reported
+by Castroetal.(2018),andfor Deep Mind Labthatof IMPALA(Espeholtetal.,2018)asaguideline.
+8
+
+Publishedasaconferencepaperat ICLR 2020
+Performance Toevaluatetheperformanceof Dreamer,wecompareittostate-of-the-artreinforce-
+mentlearningagents. Theresultsaresummarizedin Figure 6. Withanaveragescoreof 823 across
+tasksafter 5×106 environmentsteps,Dreamerexceedstheperformanceofthestrongmodel-free
+D 4 PGagentthatachievesanaverageof 786 within 108 environmentsteps.Atthesametime,Dreamer
+inheritsthedata-efficiencyof Pla Net,confirmingthatthelearnedworldmodelcanhelptogeneralize
+fromsmallamountsofexperience. Theempiricalsuccessof Dreamershowsthatlearningbehaviors
+bylatentimaginationwithworldmodelscanoutperformtopmethodsbasedonexperiencereplay.
+Longhorizons Toinvestigateitsabilitytolearnlong-horizonbehaviors,wecompare Dreamerto
+alternativesforderivingbehaviorsfromtheworldmodelatvarioushorizonlengths. Forthis,we
+learnanactionmodeltomaximizeimaginedrewardswithoutavaluemodelandcomparetoonline
+planning using Pla Net. Figure 4 shows the final performance for different imagination horizons,
+confirmingthatthevaluemodelmakes Dreamermorerobusttothehorizonandperformswelleven
+forshorthorizons. Performancecurvesforall 19 taskswithhorizonof 20 areshownin Appendix D,
+where Dreameroutperformsthealternativeson 16 of 20 tasks,with 4 ties.
+Representationlearning Dreamercanbeusedwithanydifferentiabledynamicsmodelthatpre-
+dictsfuturerewardsgivenactionsandpastobservations. Sincetherepresentationlearningobjective
+isorthogonaltoouralgorithm,wecomparethreenaturalchoicesdescribedin Section 4: pixelrecon-
+struction,contrastiveestimation,andpurerewardprediction. Figure 8 showscleardifferencesintask
+performancefordifferentrepresentationlearningapproaches,withpixelreconstructionoutperform-
+ingcontrastiveestimationonmosttasks. Thissuggeststhatfutureimprovementsinrepresentation
+learningarelikelytotranslatetohighertaskperformancewith Dreamer. Rewardpredictionalone
+wasnotsufficientinourexperiments. Furtherablationsareincludedintheappendixofthepaper.
+7 CONCLUSION
+Wepresent Dreamer,anagentthatlearnslong-horizonbehaviorspurelybylatentimagination. For
+this,weproposeanactorcriticmethodthatoptimizesaparametricpolicybypropagatinganalytic
+gradientsofmulti-stepvaluesbackthroughlearnedlatentdynamics. Dreameroutperformsprevious
+methods in data-efficiency, computation time, and final performance on a variety of challenging
+continuouscontroltaskswithimageinputs. Wefurthershowthat Dreamerisapplicabletotaskswith
+discreteactionsandearlyepisodetermination. Futureresearchonrepresentationlearningcanlikely
+scalelatentimaginationtoenvironmentsofhighervisualcomplexity.
+Acknowledgements Wethank Simon Kornblith,Benjamin Eysenbach,Ian Fischer,Amy Zhang,
+Geoffrey Hinton, Shane Gu, Adam Kosiorek, Brandon Amos, Jacob Buckman, Calvin Luo, and
+Rishabh Agarwal,andouranonymousreviewersforfeedbackanddiscussions. Wethank Yuval Tassa
+foraddingthequadrupedenvironmenttothecontrolsuite.
+9
+
+Publishedasaconferencepaperat ICLR 2020
+REFERENCES
+A.A.Alemi,I.Fischer,J.V.Dillon,and K.Murphy. Deepvariationalinformationbottleneck. ar Xiv
+preprintar Xiv:1612.00410,2016.
+E.Banijamali,R.Shu,M.Ghavamzadeh,H.Bui,and A.Ghodsi. Robustlocally-linearcontrollable
+embedding. ar Xivpreprintar Xiv:1710.05373,2017.
+G.Barth-Maron,M.W.Hoffman,D.Budden,W.Dabney,D.Horgan,A.Muldal,N.Heess,and T.Lil-
+licrap. Distributeddistributionaldeterministicpolicygradients. ar Xivpreprintar Xiv:1804.08617,
+2018.
+C.Beattie,J.Z.Leibo,D.Teplyashin,T.Ward,M.Wainwright,H.Küttler,A.Lefrancq,S.Green,
+V.Valdés,A.Sadik,etal. Deepmindlab. ar Xivpreprintar Xiv:1612.03801,2016.
+M. G. Bellemare, Y. Naddaf, J. Veness, and M. Bowling. The arcade learning environment: An
+evaluationplatformforgeneralagents. Journalof Artificial Intelligence Research,47:253–279,
+2013.
+Y.Bengio,N.Léonard,and A.Courville. Estimatingorpropagatinggradientsthroughstochastic
+neuronsforconditionalcomputation. ar Xivpreprintar Xiv:1308.3432,2013.
+J.Buckman,D.Hafner,G.Tucker,E.Brevdo,and H.Lee. Sample-efficientreinforcementlearning
+withstochasticensemblevalueexpansion. In Advancesin Neural Information Processing Systems,
+pages 8224–8234,2018.
+L. Buesing, T. Weber, S. Racaniere, S. Eslami, D. Rezende, D. P. Reichert, F. Viola, F. Besse,
+K.Gregor,D.Hassabis,etal. Learningandqueryingfastgenerativemodelsforreinforcement
+learning. ar Xivpreprintar Xiv:1802.03006,2018.
+A. Byravan, J. T. Springenberg, A. Abdolmaleki, R. Hafner, M. Neunert, T. Lampe, N. Siegel,
+N.Heess,and M.Riedmiller. Imaginedvaluegradients: Model-basedpolicyoptimizationwith
+transferablelatentdynamicsmodels. ar Xivpreprintar Xiv:1910.04142,2019.
+P.S.Castro,S.Moitra,C.Gelada,S.Kumar,and M.G.Bellemare. Dopamine:Aresearchframework
+fordeepreinforcementlearning. ar Xivpreprintar Xiv:1812.06110,2018.
+K.Chua,R.Calandra,R.Mc Allister,and S.Levine. Deepreinforcementlearninginahandfulof
+trialsusingprobabilisticdynamicsmodels. In Advancesin Neural Information Processing Systems,
+pages 4754–4765,2018.
+D.-A. Clevert, T. Unterthiner, and S. Hochreiter. Fast and accurate deep network learning by
+exponentiallinearunits(elus). ar Xivpreprintar Xiv:1511.07289,2015.
+J. V. Dillon, I. Langmore, D. Tran, E. Brevdo, S. Vasudevan, D. Moore, B. Patton, A. Alemi,
+M.Hoffman,and R.A.Saurous. Tensorflowdistributions. ar Xivpreprintar Xiv:1711.10604,2017.
+A. Doerr, C. Daniel, M. Schiegg, D. Nguyen-Tuong, S. Schaal, M. Toussaint, and S. Trimpe.
+Probabilisticrecurrentstate-spacemodels. ar Xivpreprintar Xiv:1801.10395,2018.
+F. Ebert, C. Finn, A. X. Lee, and S. Levine. Self-supervised visual planning with temporal skip
+connections. ar Xivpreprintar Xiv:1710.05268,2017.
+S.A.Eslami,D.J.Rezende,F.Besse,F.Viola,A.S.Morcos,M.Garnelo,A.Ruderman,A.A.Rusu,
+I.Danihelka,K.Gregor,etal. Neuralscenerepresentationandrendering. Science,360(6394):
+1204–1210,2018.
+L.Espeholt,H.Soyer,R.Munos,K.Simonyan,V.Mnih,T.Ward,Y.Doron,V.Firoiu,T.Harley,
+I.Dunning,etal. Impala: Scalabledistributeddeep-rlwithimportanceweightedactor-learner
+architectures. ar Xivpreprintar Xiv:1802.01561,2018.
+V. Feinberg, A. Wan, I. Stoica, M. I. Jordan, J. E. Gonzalez, and S. Levine. Model-based value
+estimationforefficientmodel-freereinforcementlearning. ar Xivpreprintar Xiv:1803.00101,2018.
+10
+
+Publishedasaconferencepaperat ICLR 2020
+C.Gelada,S.Kumar,J.Buckman,O.Nachum,and M.G.Bellemare. Deepmdp:Learningcontinuous
+latentspacemodelsforrepresentationlearning. ar Xivpreprintar Xiv:1906.02736,2019.
+K.Gregor,D.J.Rezende,F.Besse,Y.Wu,H.Merzic,and A.v.d.Oord. Shapingbeliefstateswith
+generativeenvironmentmodelsforrl. ar Xivpreprintar Xiv:1906.09237,2019.
+Z. D. Guo, M. G. Azar, B. Piot, B. A. Pires, T. Pohlen, and R. Munos. Neural predictive belief
+representations. ar Xivpreprintar Xiv:1811.06407,2018.
+M. Gutmann and A. Hyvärinen. Noise-contrastive estimation: A new estimation principle for
+unnormalizedstatisticalmodels. In Proceedingsofthe Thirteenth International Conferenceon
+Artificial Intelligenceand Statistics,pages 297–304,2010.
+D.Haand J.Schmidhuber. Worldmodels. ar Xivpreprintar Xiv:1803.10122,2018.
+T.Haarnoja,A.Zhou,P.Abbeel,and S.Levine. Softactor-critic: Off-policymaximumentropydeep
+reinforcementlearningwithastochasticactor. ar Xivpreprintar Xiv:1801.01290,2018.
+D. Hafner, T. Lillicrap, I. Fischer, R. Villegas, D. Ha, H. Lee, and J. Davidson. Learning latent
+dynamicsforplanningfrompixels. ar Xivpreprintar Xiv:1811.04551,2018.
+N. Heess, G. Wayne, D. Silver, T. Lillicrap, T. Erez, and Y. Tassa. Learning continuous control
+policiesbystochasticvaluegradients. In Advancesin Neural Information Processing Systems,
+pages 2944–2952,2015.
+M.Henaff,W.F.Whitney,and Y.Le Cun. Model-basedplanningindiscreteactionspaces. Co RR,
+abs/1705.07177,2017.
+M.Henaff,W.F.Whitney,and Y.Le Cun. Model-basedplanningwithdiscreteandcontinuousactions.
+ar Xivpreprintar Xiv:1705.07177,2018.
+M.Henaff,A.Canziani,and Y.Le Cun. Model-predictivepolicylearningwithuncertaintyregulariza-
+tionfordrivingindensetraffic. ar Xivpreprintar Xiv:1901.02705,2019.
+M.Hessel, J.Modayil, H. Van Hasselt, T.Schaul, G. Ostrovski, W. Dabney, D. Horgan, B. Piot,
+M.Azar,and D.Silver. Rainbow: Combiningimprovementsindeepreinforcementlearning. In
+Thirty-Second AAAIConferenceon Artificial Intelligence,2018.
+M.Jaderberg, V.Mnih, W.M.Czarnecki, T.Schaul, J.Z.Leibo, D.Silver, and K.Kavukcuoglu.
+Reinforcementlearningwithunsupervisedauxiliarytasks. ar Xivpreprintar Xiv:1611.05397,2016.
+M.I.Jordan,Z.Ghahramani,T.S.Jaakkola,and L.K.Saul. Anintroductiontovariationalmethods
+forgraphicalmodels. Machinelearning,37(2):183–233,1999.
+L.Kaiser,M.Babaeizadeh,P.Milos,B.Osinski,R.H.Campbell,K.Czechowski,D.Erhan,C.Finn,
+P.Kozakowski, S.Levine, etal. Model-basedreinforcementlearningforatari. ar Xivpreprint
+ar Xiv:1903.00374,2019.
+R. E. Kalman. A new approach to linear filtering and prediction problems. Journal of basic
+Engineering,82(1):35–45,1960.
+M.Karl,M.Soelch,J.Bayer,and P.vander Smagt. Deepvariationalbayesfilters: Unsupervised
+learningofstatespacemodelsfromrawdata. ar Xivpreprintar Xiv:1605.06432,2016.
+D.P.Kingmaand J.Ba.Adam:Amethodforstochasticoptimization.ar Xivpreprintar Xiv:1412.6980,
+2014.
+D.P.Kingmaand M.Welling. Auto-encodingvariationalbayes. ar Xivpreprintar Xiv:1312.6114,
+2013.
+R.G.Krishnan,U.Shalit,and D.Sontag. Deepkalmanfilters. ar Xivpreprintar Xiv:1511.05121,
+2015.
+T. Kurutach, I. Clavera, Y. Duan, A. Tamar, and P. Abbeel. Model-ensemble trust-region policy
+optimization. ar Xivpreprintar Xiv:1802.10592,2018.
+11
+
+Publishedasaconferencepaperat ICLR 2020
+Y. Le Cun, B. Boser, J. S. Denker, D. Henderson, R. E. Howard, W. Hubbard, and L. D. Jackel.
+Backpropagationappliedtohandwrittenzipcoderecognition. Neuralcomputation,1(4):541–551,
+1989.
+A.X.Lee,A.Nagabandi,P.Abbeel,and S.Levine. Stochasticlatentactor-critic: Deepreinforcement
+learningwithalatentvariablemodel. ar Xivpreprintar Xiv:1907.00953,2019.
+T.P.Lillicrap,J.J.Hunt,A.Pritzel,N.Heess,T.Erez,Y.Tassa,D.Silver,and D.Wierstra.Continuous
+controlwithdeepreinforcementlearning. ar Xivpreprintar Xiv:1509.02971,2015.
+K. Lowrey, A. Rajeswaran, S. Kakade, E. Todorov, and I. Mordatch. Plan online, learn offline:
+Efficient learning and exploration via model-based control. ar Xiv preprint ar Xiv:1811.01848,
+2018.
+M.C.Machado,M.G.Bellemare,E.Talvitie,J.Veness,M.Hausknecht,and M.Bowling. Revisiting
+the arcade learning environment: Evaluation protocols and open problems for general agents.
+Journalof Artificial Intelligence Research,61:523–562,2018.
+D.Mc Allesterand K.Statos. Formallimitationsonthemeasurementofmutualinformation. ar Xiv
+preprintar Xiv:1811.04251,2018.
+V.Mnih,K.Kavukcuoglu,D.Silver,A.A.Rusu,J.Veness,M.G.Bellemare,A.Graves,M.Ried-
+miller, A. K. Fidjeland, G. Ostrovski, et al. Human-level control through deep reinforcement
+learning. Nature,518(7540):529,2015.
+V.Mnih,A.P.Badia,M.Mirza,A.Graves,T.Lillicrap,T.Harley,D.Silver,and K.Kavukcuoglu.
+Asynchronousmethodsfordeepreinforcementlearning. In International Conferenceon Machine
+Learning,pages 1928–1937,2016.
+J.Oh,S.Singh,and H.Lee. Valuepredictionnetwork. In Advancesin Neural Information Processing
+Systems,pages 6118–6128,2017.
+A. v. d. Oord, Y. Li, and O. Vinyals. Representation learning with contrastive predictive coding.
+ar Xivpreprintar Xiv:1807.03748,2018.
+P.Parmas, C.E.Rasmussen, J.Peters, and K.Doya. Pipps: Flexiblemodel-basedpolicysearch
+robusttothecurseofchaos. ar Xivpreprintar Xiv:1902.01240,2019.
+A.Piergiovanni,A.Wu,and M.S.Ryoo. Learningreal-worldrobotpoliciesbydreaming. ar Xiv
+preprintar Xiv:1805.07813,2018.
+B.Poole, S.Ozair, A.v.d.Oord, A.A.Alemi, and G.Tucker. Onvariationalboundsofmutual
+information. ar Xivpreprintar Xiv:1905.06922,2019.
+D.J.Rezende,S.Mohamed,and D.Wierstra. Stochasticbackpropagationandapproximateinference
+indeepgenerativemodels. ar Xivpreprintar Xiv:1401.4082,2014.
+J.Schmidhuber. Makingtheworlddifferentiable: Onusingself-supervisedfullyrecurrentneural
+networksfordynamicreinforcementlearningandplanninginnon-stationaryenvironments. 1990.
+J.Schrittwieser,I.Antonoglou,T.Hubert,K.Simonyan,L.Sifre,S.Schmitt,A.Guez,E.Lockhart,
+D.Hassabis,T.Graepel,etal. Masteringatari,go,chessandshogibyplanningwithalearned
+model. ar Xivpreprintar Xiv:1911.08265,2019.
+J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov. Proximal policy optimization
+algorithms. ar Xivpreprintar Xiv:1707.06347,2017.
+D. Silver, G. Lever, N. Heess, T. Degris, D. Wierstra, and M. Riedmiller. Deterministic policy
+gradientalgorithms. In Proceedingsofthe 31 st International Conferenceon Machine Learning,
+2014.
+D.Silver,J.Schrittwieser,K.Simonyan,I.Antonoglou,A.Huang,A.Guez,T.Hubert,L.Baker,
+M.Lai,A.Bolton,etal. Masteringthegameofgowithouthumanknowledge. Nature,550(7676):
+354,2017.
+12
+
+Publishedasaconferencepaperat ICLR 2020
+A.Srinivas,A.Jabri,P.Abbeel,S.Levine,and C.Finn. Universalplanningnetworks. ar Xivpreprint
+ar Xiv:1804.00645,2018.
+R.S.Sutton. Dyna,anintegratedarchitectureforlearning,planning,andreacting. ACMSIGART
+Bulletin,2(4):160–163,1991.
+R.S.Suttonand A.G.Barto. Reinforcementlearning: Anintroduction. MITpress,2018.
+Y.Tassa,Y.Doron,A.Muldal,T.Erez,Y.Li,D.d.L.Casas,D.Budden,A.Abdolmaleki,J.Merel,
+A.Lefrancq,etal. Deepmindcontrolsuite. ar Xivpreprintar Xiv:1801.00690,2018.
+N. Tishby, F. C. Pereira, and W. Bialek. The information bottleneck method. ar Xiv preprint
+physics/0004057,2000.
+T. Wang and J. Ba. Exploring model-based planning with policy networks. ar Xiv preprint
+ar Xiv:1906.08649,2019.
+T.Wang,X.Bao,I.Clavera,J.Hoang,Y.Wen,E.Langlois,S.Zhang,G.Zhang,P.Abbeel,and J.Ba.
+Benchmarkingmodel-basedreinforcementlearning. Co RR,abs/1907.02057,2019.
+M.Watter,J.Springenberg,J.Boedecker,and M.Riedmiller. Embedtocontrol: Alocallylinear
+latentdynamicsmodelforcontrolfromrawimages. In Advancesinneuralinformationprocessing
+systems,pages 2746–2754,2015.
+T.Weber,S.Racanière,D.P.Reichert,L.Buesing,A.Guez,D.J.Rezende,A.P.Badia,O.Vinyals,
+N. Heess, Y. Li, et al. Imagination-augmented agents for deep reinforcement learning. ar Xiv
+preprintar Xiv:1707.06203,2017.
+R. J. Williams. Simple statistical gradient-following algorithms for connectionist reinforcement
+learning. Machinelearning,8(3-4):229–256,1992.
+M. Zhang, S. Vikram, L. Smith, P. Abbeel, M. Johnson, and S. Levine. Solar: deep structured
+representationsformodel-basedreinforcementlearning. In International Conferenceon Machine
+Learning,2019.
+13
+
+Publishedasaconferencepaperat ICLR 2020
+A HYPER PARAMETERS
+Modelcomponents Weusetheconvolutionalencoderanddecodernetworksfrom Haand Schmid-
+huber(2018),the RSSMof Hafneretal.(2018),andimplementallotherfunctionsasthreedense
+layers of size 300 with ELU activations (Clevert et al., 2015). Distributions in latent space are
+30-dimensionaldiagonal Gaussians. Theactionmodeloutputsatanhmeanscaledbyafactorof
+5 andasoftplusstandarddeviationforthe Normaldistributionthatisthentransformedusingtanh
+(Haarnojaetal.,2018). Thescalingfactorallowstheagenttosaturatetheactiondistribution.
+Learningupdates Wedrawbatchesof 50 sequencesoflength 50 totraintheworldmodel,value
+model,andactionmodelmodelsusing Adam(Kingmaand Ba,2014)withlearningrates 6×10−4,
+8×10−5,8×10−5,respectivelyandscaledowngradientnormsthatexceed 100. Wedonotscale
+the KLregularizers(β =1)butclipthembelow 3 freenatsasin Pla Net. Theimaginationhorizonis
+H =15 andthesametrajectoriesareusedtoupdatebothactionandvaluemodels. Wecomputethe
+V targetswithγ =0.99 andλ=0.95. Wedidnotfindlatentovershootingforlearningthemodel,
+λ
+anentropybonusfortheactionmodel,ortargetnetworksforthevaluemodelnecessary.
+Environmentinteraction Thedatasetisinitializedwith S =5 episodescollectedusingrandom
+actions. Weiteratebetween 100 trainingstepsandcollecting 1 episodebyexecutingthepredicted
+modeactionwith Normal(0,0.3)explorationnoise. Insteadofmanuallyselectingtheactionrepeat
+foreachenvironmentasin Hafneretal.(2018)and Leeetal.(2019),wefixitto 2 forallenvironments.
+See Figure 12 foranassessmentoftherobustnesstodifferentactionrepeatvalues.
+Discrete control For experiments on Atari games and Deep Mind Lab levels, the action model
+predictsthelogitsofacategoricaldistribution. Weusestraight-throughgradientsforthesampling
+stepduringlatentimagination. Theactionnoiseisepsilongreedywhere(cid:15)islinearlyscheduledfrom
+0.4→0.1 overthefirst 200,000 gradientsteps. Toaccountforthehighercomplexityofthesetasks,
+weuseanimaginationhorizonof H =10,scalethe KLregularizersbyβ =0.1,andboundrewards
+usingtanh. Wepredictthediscountfactorfromthelatentstatewithabinaryclassifierthatistrained
+towardsthesoftlabelsof 0 andγ.
+14
+
+Publishedasaconferencepaperat ICLR 2020
+B DERIVATIONS
+Wedefinetheinformationbottleneckobjective(Tishbyetal.,2000)forlatentdynamicsmodels,
+max I(s ;(o ,r )|a )−βI(s ,i |a ), (13)
+1:T 1:T 1:T 1:T 1:T 1:T 1:T
+.
+whereβ isscalarandi aredatasetindicesthatdeterminetheobservationsp(o |i )=δ(o −o¯)as
+t t t t t
+in Alemietal.(2016).
+Maximizingtheobjectiveleadstomodelstatesthatcanpredictthesequenceofobservationsand
+rewardswhilelimitingtheamountofinformationextractedateachtimestep. Thisencouragesthe
+modeltoreconstructeachimagebyrelyingoninformationextractedatpreceedingtimestepstothe
+extentpossible,andonlyaccessingadditionalinformationfromthecurrentimagewhennecessary.
+Asaresult,theinformationregularizerencouragesthemodeltolearnlong-termdependencies.
+For the generative objective, we lower bound the first term using the non-negativity of the KL
+divergenceanddropthemarginaldataprobabilityasitdoesnotdependontherepresentationmodel,
+I(s ;(o ,r )|a )
+1:T 1:T 1:T 1:T
+(cid:16)(cid:88) (cid:17)
+= E lnp(o ,r |s ,a )−lnp(o ,r |a )
+p(o 1:T,r 1:T,s 1:T,a 1:T) 1:T 1:T 1:T 1:T 1:T 1:T 1:T
+t const
++
+(cid:16)(cid:88) (cid:17)
+= E lnp(o ,r |s ,a )
+1:T 1:T 1:T 1:T
+t
+(cid:16)(cid:88) (cid:17) (cid:16) (cid:13) (cid:89) (cid:17)
+≥ E lnp(o ,r |s ,a ) −KL p(o ,r |s ,a )(cid:13) q(o |s )q(r |s )
+1:T 1:T 1:T 1:T 1:T 1:T 1:T 1:T (cid:13) t t t t
+t t
+(cid:16)(cid:88) (cid:17)
+= E lnq(o |s )+lnq(r |s ) .
+t t t t
+t
+(14)
+Forthecontrastiveobjective, wesubtracttheconstantmarginalprobabilityofthedataunderthe
+variationalencoder,apply Bayesrule,andusethe Info NCEmini-batchbound(Pooleetal.,2019),
+(cid:0) (cid:1)
+E lnq(o |s )+lnq(r |s )
+t t t t
++ (cid:0) (cid:1)
+= E lnq(o |s )−lnq(o )+lnq(r |s )
+t t t t t
+= E (cid:0) lnq(s |o )−lnq(s )+lnq(r |s ) (cid:1) (15)
+t t t t t
+(cid:18) (cid:19)
+(cid:88)
+≥ E lnq(s |o )−ln q(s |o(cid:48))+lnq(r |s ) .
+t t t t t
+o(cid:48)
+Forthesecondterm,weusethenon-negativityofthe KLdivergencetoobtainanupperbound,
+I(s ;i |a )
+1:T 1:T 1:T
+(cid:16)(cid:88) (cid:17)
+= E lnp(s |s ,a ,i )−lnp(s |s ,a )
+p(o 1:T,r 1:T,s 1:T,a 1:T,i 1:T) t t−1 t−1 t t t−1 t−1
+t
+(cid:16)(cid:88) (cid:17)
+= E lnp(s |s ,a ,o )−lnp(s |s ,a )
+t t−1 t−1 t t t−1 t−1
+(16)
+t
+(cid:16)(cid:88) (cid:17)
+≤ E lnp(s |s ,a ,o )−lnq(s |s ,a )
+t t−1 t−1 t t t−1 t−1
+t
+(cid:16)(cid:88) (cid:0) (cid:13) (cid:1)(cid:17)
+= E KL p(s
+t
+|s
+t−1
+,a
+t−1
+,o
+t
+)(cid:13)q(s
+t
+|s
+t−1
+,a
+t−1
+) .
+t
+Thislowerboundstheobjective.
+15
+
+Publishedasaconferencepaperat ICLR 2020
+C DISCRETE CONTROL
+Weevaluate Dreameronasubsetoftaskswithdiscreteactionsfromthe Atarisuite(Bellemareetal.,
+2013)and Deep Mind Lab(Beattieetal.,2016). Whileagentsthatpurelylearnthroughworldmodels
+arenotyetcompetitiveinthesedomains(Kaiseretal.,2019),thetasksofferadiversetestbedwith
+visualcomplexity,sparserewards,andearlytermination. Agentsobserve 64×64×3 imagesand
+selectoneofbetween 3 and 18 actions. For Atari,wefollowtheevaluationprotocolof Machado
+etal.(2018)withstickyactions. Referto Figure 9 fortheseexperiments.
+100
+50
+0
+0.5 1.0 1.5
+1 e 7
+nrute R
+edosip E
+Boxing Choppercommand Doubledunk Fishingderby
+20
+10000
+0
+0 5000
+50
+0 20
+100
+1 2 3 4 2 4 6 1 2 3 4
+1 e 7 1 e 7 1 e 7
+0
+5
+10
+15
+20
+2 4 6
+1 e 7
+nrute R
+edosip E
+Ice Hockey Kangaroo Krull Kungfumaster
+40000
+10000 7500 30000
+5000 20000
+5000
+2500 10000
+0 0 0
+0.5 1.0 1.5 2.0 0.5 1.0 1.5 0.5 1.0 1.5 2.0
+1 e 7 1 e 7 1 e 7
+4000
+3000
+2000
+1000
+0
+0.5 1.0 1.5
+1 e 7
+nrute R
+edosip E
+Mspacman Namethisgame Pong Tutankham
+10000
+10 200
+7500
+0
+5000 100
+10
+2500
+20 0
+1 2 3 4 2 4 6 0 1 2 3 4 5
+1 e 7 1 e 7 1 e 7
+200000
+150000
+100000
+50000
+0
+2 4 6
+Environment Steps 1 e 7
+nrute R
+edosip E
+Up N Down Zaxxon Collect Good Objects Watermaze
+15000 10.0 40
+7.5
+10000
+5.0 20
+5000 2.5
+0.0 0
+0
+0.5 1.0 1.5 0.250.500.751.001.251.50 1 2 3 4 5
+Environment Steps 1 e 7 Environment Steps 1 e 7 Environment Steps 1 e 7
+Dreamer Sim PLe (1 e 5 steps) DQN (2 e 8 steps) Rainbow (2 e 8 steps) IMPALA (1 e 10 steps) Random
+Figure 9: Performance of Dreamer in environments with discrete actions and early termination.
+Dreamerlearnssuccessfulbehaviorsonthissubsetof Atarigamesandtheobjectcollectionlevelof
+DMLab. Wehighlightrepresentationlearningfortheseenvironmentsasadirectionoffuturework
+thatcouldenablecompetitiveperformanceacrossall Atarigamesand DMLablevelsusing Dreamer.
+16
+
+Publishedasaconferencepaperat ICLR 2020
+D BEHAVIOR LEARNING
+1000
+750
+500
+250
+0
+0 1 2 3 4 5
+nrute R
+edosip E
+Acrobot Swingup Cartpole Balance Cartpole Balance Sparse Cartpole Swingup
+1000 1000 1000
+750 750 750
+500 500 500
+250 250 250
+0 0 0
+0 1 2 3 4 5 0 1 2 3 4 5 0 1 2 3 4 5
+1000
+750
+500
+250
+0
+0 1 2 3 4 5
+nrute R
+edosip E
+Cartpole Swingup Sparse Cheetah Run Cup Catch Finger Spin
+1000 1000 1000
+750 750 750
+500 500 500
+250 250 250
+0 0 0
+0 1 2 3 4 5 0 1 2 3 4 5 0 1 2 3 4 5
+1000
+750
+500
+250
+0
+0 1 2 3 4 5
+nrute R
+edosip E
+Finger Turn Easy Finger Turn Hard Hopper Hop Hopper Stand
+1000 1000 1000
+750 750 750
+500 500 500
+250 250 250
+0 0 0
+0 1 2 3 4 5 0 1 2 3 4 5 0 1 2 3 4 5
+1000
+750
+500
+250
+0
+0 1 2 3 4 5
+nrute R
+edosip E
+Pendulum Swingup Quadruped Run Quadruped Walk Reacher Easy
+1000 1000 1000
+750 750 750
+500 500 500
+250 250 250
+0 0 0
+0 1 2 3 4 5 0 1 2 3 4 5 0 1 2 3 4 5
+1000
+750
+500
+250
+0
+0 1 2 3 4 5
+Environment Steps 1 e 6
+nrute R
+edosip E
+Reacher Hard Walker Run Walker Stand Walker Walk
+1000 1000 1000
+750 750 750
+500 500 500
+250 250 250
+0 0 0
+0 1 2 3 4 5 0 1 2 3 4 5 0 1 2 3 4 5
+Environment Steps 1 e 6 Environment Steps 1 e 6 Environment Steps 1 e 6
+Dreamer No value Pla Net D 4 PG (1 e 9 steps) A 3 C (1 e 9 steps, proprio) SLAC (3 e 6 steps)
+Figure 10: Comparisonofactionselectionschemesonthecontinuouscontroltasksofthe Deep Mind
+Control Suitefrompixelinputs. Thelinesshowmeanscoresoverenvironmentstepsandtheshaded
+areas show the standard deviation across 5 seeds. We compare Dreamer that learns both actions
+andvaluesinimagination,toonlylearningactionsinimagination,and Planetthatselectsactions
+byonlineplanninginsteadoflearningapolicy. Thebaselinesincludethetopmodel-freealgorithm
+D 4 PG,thewell-known A 3 Cagent,andthehybrid SLACagent.
+17
+
+Publishedasaconferencepaperat ICLR 2020
+E REPRESENTATION LEARNING
+1000
+750
+500
+250
+0
+0 1 2 3 4
+nrute R
+edosip E
+Acrobot Swingup Cartpole Balance Cartpole Balance Sparse Cartpole Swingup
+1000 1000 1000
+750 750 750
+500 500 500
+250 250 250
+0 0 0
+0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
+1000
+750
+500
+250
+0
+0 1 2 3 4
+nrute R
+edosip E
+Cartpole Swingup Sparse Cheetah Run Cup Catch Finger Spin
+1000 1000 1000
+750 750 750
+500 500 500
+250 250 250
+0 0 0
+0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
+1000
+750
+500
+250
+0
+0 1 2 3 4
+nrute R
+edosip E
+Finger Turn Easy Finger Turn Hard Hopper Hop Hopper Stand
+1000 1000 1000
+750 750 750
+500 500 500
+250 250 250
+0 0 0
+0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
+1000
+750
+500
+250
+0
+0 1 2 3 4
+nrute R
+edosip E
+Pendulum Swingup Quadruped Run Quadruped Walk Reacher Easy
+1000 1000 1000
+750 750 750
+500 500 500
+250 250 250
+0 0 0
+0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
+1000
+750
+500
+250
+0
+0 1 2 3 4
+Environment Steps 1 e 6
+nrute R
+edosip E
+Reacher Hard Walker Run Walker Stand Walker Walk
+1000 1000 1000
+750 750 750
+500 500 500
+250 250 250
+0 0 0
+0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
+Environment Steps 1 e 6 Environment Steps 1 e 6 Environment Steps 1 e 6
+Dreamer + Reconstruction Dreamer + Contrastive Dreamer + Reward only D 4 PG (1 e 9 steps) A 3 C (1 e 9 steps, proprio)
+Figure 11: Comparisonofrepresentationlearningmethodsfor Dreamer. Thelinesshowmeanscores
+and the shaded areas show the standard deviation across 5 seeds. We compare generating both
+imagesandrewards,generatingrewardsandusingacontrastivelosstolearnabouttheimages,and
+onlypredictingrewards. Imagereconstructionprovidesthebestlearningsignalacrossmostofthe
+tasks,followedbythecontrastiveobjective. Learningpurelyfromrewardswasnotsufficientinour
+experimentsandmightrequirelargeramountsofexperience.
+18
+
+Publishedasaconferencepaperat ICLR 2020
+F ACTION REPEAT
+1000
+800
+600
+400
+200
+0
+0.0 0.2 0.4 0.6 0.8 1.0
+nrute R
+edosip E
+Acrobot Swingup Cartpole Balance Cartpole Balance Sparse Cartpole Swingup
+1000 1000 1000
+800 800 800
+600 600 600
+400 400 400
+200 200 200
+0 0 0
+0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0
+1000
+800
+600
+400
+200
+0
+0.0 0.2 0.4 0.6 0.8 1.0
+nrute R
+edosip E
+Cartpole Swingup Sparse Cheetah Run Cup Catch Finger Spin
+1000 1000 1000
+800 800 800
+600 600 600
+400 400 400
+200 200 200
+0 0 0
+0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0
+1000
+800
+600
+400
+200
+0
+0.0 0.2 0.4 0.6 0.8 1.0
+nrute R
+edosip E
+Finger Turn Easy Finger Turn Hard Hopper Hop Hopper Stand
+1000 1000 1000
+800 800 800
+600 600 600
+400 400 400
+200 200 200
+0 0 0
+0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0
+1000
+800
+600
+400
+200
+0
+0.0 0.2 0.4 0.6 0.8 1.0
+nrute R
+edosip E
+Pendulum Swingup Quadruped Run Quadruped Walk Reacher Easy
+1000 1000 1000
+800 800 800
+600 600 600
+400 400 400
+200 200 200
+0 0 0
+0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0
+1000
+800
+600
+400
+200
+0
+0.0 0.2 0.4 0.6 0.8 1.0
+Environment Steps 1 e 6
+nrute R
+edosip E
+Reacher Hard Walker Run Walker Stand Walker Walk
+1000 1000 1000
+800 800 800
+600 600 600
+400 400 400
+200 200 200
+0 0 0
+0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0 0.0 0.2 0.4 0.6 0.8 1.0
+Environment Steps 1 e 6 Environment Steps 1 e 6 Environment Steps 1 e 6
+Repeat 1 Repeat 2 Repeat 4 A 3 C (1 e 9 steps, proprio) D 4 PG (1 e 9 steps) Pla Net (1 e 6 steps) SLAC (3 e 6 steps)
+Figure 12: Robustnessof Dreamertodifferentcontrolfrequencies. Reinforcementlearningmethods
+canbesensitivetothishyperparameter,whichcouldbeamplifiedwhenlearningdynamicsmodels
+atthecontrolfrequencyoftheenvironment. Forthisexperiment,wetrain Dreamerwithdifferent
+amountsofactionrepeat. Theareasshowonestandarddeviationacross 2 seeds. Weusedaprevious
+hyperparametersettingforthisexperiment. Wefindthatavalueof R=2 worksbestacrosstasks.
+19
+
+Publishedasaconferencepaperat ICLR 2020
+G CONTINUOUS CONTROL SCORES
+A 3 C D 4 PG Pla Net 1 Dreamer
+Inputmodality proprio pixels pixels pixels
+Environmentsteps 108 108 5×106 5×106
+Acrobot Swingup 41.90 91.70 3.21 365.26
+Cartpole Balance 951.60 992.80 452.56 979.56
+Cartpole Balance Sparse 857.40 1000.00 164.74 941.84
+Cartpole Swingup 558.40 862.00 312.56 833.66
+Cartpole Swingup Sparse 179.80 482.00 0.64 812.22
+Cheetah Run 213.90 523.80 496.12 894.56
+Cup Catch 104.70 980.50 455.98 962.48
+Finger Spin 129.40 985.70 495.25 498.88
+Finger Turn Easy 167.30 971.40 451.22 825.86
+Finger Turn Hard 88.70 966.00 312.55 891.38
+Hopper Hop 0.50 242.00 0.37 368.97
+Hopper Stand 27.90 929.90 5.96 923.72
+Pendulum Swingup 48.60 680.90 3.27 833.00
+Quadruped Run − − 280.45 888.39
+Quadruped Walk − − 238.90 931.61
+Reacher Easy 95.60 967.40 468.50 935.08
+Reacher Hard 39.70 957.10 187.02 817.05
+Walker Run 191.80 567.20 626.25 824.67
+Walker Stand 378.40 985.20 759.19 977.99
+Walker Walk 311.00 968.30 944.70 961.67
+Average 243.70 786.32 332.97 823.39
+1 Were-run Pla Netwithfixedactionrepeatof R=2 tonottunethethisvalueforeachofthe 20 tasks.Asa
+result,thescoresdifferfrom Hafneretal.(2018).
+20

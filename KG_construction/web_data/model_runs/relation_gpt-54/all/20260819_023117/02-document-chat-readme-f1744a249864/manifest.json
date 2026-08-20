@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "02-document-chat-readme-f1744a249864",
+  "created_at": "2026-07-22T04:21:27+08:00",
+  "updated_at": "2026-07-22T04:23:36+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "02-document-chat-README.pdf",
+    "doc_name": "02-document-chat-README",
+    "sha256": "f1744a249864450d67120ba312b26c2636653114e1f310c5e4ede584daa2f533",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\02-document-chat-README.pdf",
+    "pdf_size_bytes": 4701
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 129.1159
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:21:27+08:00",
+      "ended_at": "2026-07-22T04:21:32+08:00",
+      "duration_seconds": 4.1876,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\02-document-chat-README.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 118\n[2] 清洗后词数: 118\n[3] 文档类型识别: paper_book\n[4] 分块数（过滤前）: 1\n[5] 分块数（过滤后）: 1\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage1_text_cleaned.txt\n\n--- 前1块预览 ---\n\n[Chunk 1] words=118\nExample 2: Document Chat System An interactive chat system that lets you ask questions about your documents with conversation history. Features (cid:127) n Load text documents from files or directories (cid:127) n Smart ...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:21:32+08:00",
+      "ended_at": "2026-07-22T04:22:15+08:00",
+      "duration_seconds": 43.4016,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：1\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/1 ...\n[2] KeyBERT候选数：6\n[3] LLM精修完成\n[4] 最终Topic数：15，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. python document_chat implementation\n02. document chat functionality in Python\n03. document_chat library usage in Python\n04. document_chat API integration\n05. conversation machine learning models\n06. documents conversation analysis techniques\n07. real-time document chat applications\n08. document chat user interface design\n09. document chat performance optimization\n10. conversation machine architecture\n11. documents conversation data processing\n12. document chat security considerations\n13. python document_chat error handling\n14. document chat use cases in business\n15. conversation machine training datasets\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4183.62it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:22:15+08:00",
+      "ended_at": "2026-07-22T04:22:24+08:00",
+      "duration_seconds": 8.7692,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 15\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 9 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. document_chat library usage in Python -> python document_chat implementation | Understanding library usage is essential for implementation.\n02. python document_chat implementation -> document chat functionality in Python | Implementation knowledge is required to understand functionality.\n03. document chat functionality in Python -> document_chat API integration | Knowledge of functionality is necessary for API integration.\n04. conversation machine learning models -> conversation machine architecture | Understanding models is crucial for architecture design.\n05. documents conversation analysis techniques -> documents conversation data processing | Analysis techniques are needed for effective data processing.\n06. document chat user interface design -> real-time document chat applications | UI design is fundamental for developing real-time applications.\n07. document chat performance optimization -> real-time document chat applications | Performance optimization is critical for real-time applications.\n08. document chat security considerations -> document chat use cases in business | Security considerations are vital for business applications.\n09. conversation machine training datasets -> conversation machine learning models | Training datasets are necessary for developing models.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:22:24+08:00",
+      "ended_at": "2026-07-22T04:22:55+08:00",
+      "duration_seconds": 30.8395,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 15\n[2] 相似关系数量: 12 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. document chat functionality in Python <-> python document_chat implementation | sim=0.9281\n02. document_chat library usage in Python <-> python document_chat implementation | sim=0.921\n03. documents conversation analysis techniques <-> documents conversation data processing | sim=0.8942\n04. python document_chat error handling <-> python document_chat implementation | sim=0.8909\n05. document chat functionality in Python <-> document_chat library usage in Python | sim=0.8854\n06. document_chat library usage in Python <-> python document_chat error handling | sim=0.8737\n07. conversation machine learning models <-> conversation machine training datasets | sim=0.8327\n08. document chat functionality in Python <-> python document_chat error handling | sim=0.8257\n09. conversation machine architecture <-> conversation machine learning models | sim=0.8137\n10. conversation machine architecture <-> conversation machine training datasets | sim=0.7773\n11. document chat user interface design <-> real-time document chat applications | sim=0.7355\n12. document_chat API integration <-> python document_chat implementation | sim=0.7266\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5023.24it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:22:55+08:00",
+      "ended_at": "2026-07-22T04:23:34+08:00",
+      "duration_seconds": 39.8023,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 15\n[LLM] 1/15 python document_chat implementation\n[LLM] 2/15 document chat functionality in Python\n[LLM] 3/15 document_chat library usage in Python\n[LLM] 4/15 document_chat API integration\n[LLM] 5/15 conversation machine learning models\n[LLM] 6/15 documents conversation analysis techniques\n[LLM] 7/15 real-time document chat applications\n[LLM] 8/15 document chat user interface design\n[LLM] 9/15 document chat performance optimization\n[LLM] 10/15 conversation machine architecture\n[LLM] 11/15 documents conversation data processing\n[LLM] 12/15 document chat security considerations\n[LLM] 13/15 python document_chat error handling\n[LLM] 14/15 document chat use cases in business\n[LLM] 15/15 conversation machine training datasets\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:23:34+08:00",
+      "ended_at": "2026-07-22T04:23:36+08:00",
+      "duration_seconds": 2.0162,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output present"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 15\n[2] Prerequisites: 9\n[3] Similarity edges: 12\n[4] Graph nodes=15, edges=18\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-22T04:21:27+08:00"
+}

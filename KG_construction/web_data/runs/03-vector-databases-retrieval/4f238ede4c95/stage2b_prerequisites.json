@@ -1,0 +1,33 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Embeddings",
+      "to": "Cosine Similarity",
+      "reason": "Cosine Similarity measures similarity between vector representations (embeddings)."
+    },
+    {
+      "from": "Embeddings",
+      "to": "Vector Databases",
+      "reason": "Vector Databases store and retrieve embeddings."
+    },
+    {
+      "from": "Document Management",
+      "to": "Retrieval Strategies",
+      "reason": "Effective document management is essential for implementing retrieval strategies."
+    },
+    {
+      "from": "Large Datasets",
+      "to": "Retrieval Strategies",
+      "reason": "Handling large datasets requires efficient retrieval strategies."
+    },
+    {
+      "from": "Artificial Neural Networks",
+      "to": "Regression and Classification",
+      "reason": "Understanding neural networks is crucial for applying regression and classification techniques."
+    }
+  ]
+}

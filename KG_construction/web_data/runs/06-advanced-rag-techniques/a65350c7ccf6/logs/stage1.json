@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6\\06-advanced-rag-techniques.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 5.1523,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 2421\n[2] 清洗后词数: 2484\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 13\n[5] 分块数（过滤后）: 13\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=274\nLesson 6: Advanced RAG Techniques Take your RAG system to the next level with these advanced techniques used in production systems. Overview of Advanced Techniques Technique Purpose Complexity Impact Better context Seman...\n\n[Chunk 2] words=167\ndef _simple_split(self, text: str, separator: str) -> List[str]: \"\"\"Simple split by character\"\"\" chunks = [] for i in range(0, len(text), self.chunk_size - self.overlap): chunks.append(text[i:i + self.chunk_size]) return...\n\n[Chunk 3] words=173\nchunks = [] current_chunk = [sentences[0]] current_size = len(sentences[0]) for i in range(1, len(sentences)): sentence = sentences[i] sentence_len = len(sentence) # Check similarity with current chunk current_embedding ...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

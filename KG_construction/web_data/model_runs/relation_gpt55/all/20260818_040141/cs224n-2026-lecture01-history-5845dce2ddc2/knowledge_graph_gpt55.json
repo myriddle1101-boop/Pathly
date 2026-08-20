@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "id": "Speech Recognition",
+      "description": "The process of converting spoken language into text.",
+      "sub_topics": "[{\"name\": \"Acoustic Recognition\", \"description\": \"Techniques for identifying speech sounds.\"}, {\"name\": \"Language Processing\", \"description\": \"Methods for understanding and interpreting spoken language.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and machine learning concepts.",
+      "key_sub_concepts": "[\"Acoustic Models\", \"Language Models\", \"Feature Extraction\", \"Decoding Algorithms\"]",
+      "common_misconceptions": "[\"Speech recognition is perfect and error-free.\", \"It only works for English or major languages.\"]",
+      "practical_applications": "[\"Voice-activated assistants\", \"Transcription services\", \"Speech-to-text applications\", \"Language translation tools\"]"
+    },
+    {
+      "id": "Natural Language Processing",
+      "description": "The field focused on the interaction between computers and human language.",
+      "sub_topics": "[{\"name\": \"Language Models\", \"description\": \"Statistical models that predict the likelihood of sequences of words.\"}, {\"name\": \"Machine Translation\", \"description\": \"Automated translation of text from one language to another.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and statistics.",
+      "key_sub_concepts": "[\"Tokenization\", \"Sentiment Analysis\"]",
+      "common_misconceptions": "[\"NLP can understand language like humans do\", \"NLP is only about text processing\"]",
+      "practical_applications": "[\"Chatbots\", \"Text summarization\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain's network of neurons.",
+      "sub_topics": "[{\"name\": \"Deep Learning\", \"description\": \"A subset of machine learning using multi-layered neural networks.\"}, {\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of a neural network node.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Machine Learning Techniques",
+      "description": "Methods and algorithms used to enable machines to learn from data.",
+      "sub_topics": "[{\"name\": \"Regression\", \"description\": \"A technique for predicting continuous outcomes.\"}, {\"name\": \"Classification\", \"description\": \"A method for categorizing data into predefined classes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Reinforcement Learning\", \"Neural Networks\"]",
+      "common_misconceptions": "[\"Machine learning is the same as artificial intelligence.\", \"More data always leads to better models.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Recommendation systems\", \"Fraud detection\"]"
+    },
+    {
+      "id": "Knowledge Representation",
+      "description": "The way information and knowledge are structured for processing.",
+      "sub_topics": "[{\"name\": \"Probabilistic Models\", \"description\": \"Models that incorporate uncertainty in knowledge representation.\"}, {\"name\": \"Knowledge Bases\", \"description\": \"Databases that store complex structured and unstructured information.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of data structures and algorithms.",
+      "key_sub_concepts": "[\"Semantic Networks\", \"Frames\", \"Ontologies\", \"Logic-based Representation\"]",
+      "common_misconceptions": "[\"Knowledge representation is only about databases.\", \"It is the same as data storage.\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Expert Systems\", \"Robotics\", \"Semantic Web\"]"
+    },
+    {
+      "id": "GPT and Language Models",
+      "description": "Generative Pre-trained Transformers and their applications in language tasks.",
+      "sub_topics": "[{\"name\": \"Performance Improvement\", \"description\": \"Techniques to enhance the effectiveness of language models.\"}, {\"name\": \"Large Language Models\", \"description\": \"Extensive models trained on vast datasets for language understanding.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and natural language processing concepts.",
+      "key_sub_concepts": "[\"Transformer architecture\", \"Pre-training and fine-tuning\"]",
+      "common_misconceptions": "[\"GPT models understand language like humans\", \"GPT can generate completely original ideas\"]",
+      "practical_applications": "[\"Text generation\", \"Chatbots\", \"Language translation\", \"Content summarization\"]"
+    },
+    {
+      "id": "Computational Linguistics",
+      "description": "The study of using computational methods to analyze and model language.",
+      "sub_topics": "[{\"name\": \"Linguistic Theory\", \"description\": \"Theoretical frameworks for understanding language structure.\"}, {\"name\": \"NLP Applications\", \"description\": \"Practical uses of computational linguistics in technology.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linguistics and programming skills in Python or similar languages.",
+      "key_sub_concepts": "[\"Natural Language Processing\", \"Machine Translation\", \"Text Analysis\", \"Speech Recognition\"]",
+      "common_misconceptions": "[\"Computational linguistics is only about programming.\", \"It can fully understand human language without context.\"]",
+      "practical_applications": "[\"Chatbots and virtual assistants\", \"Sentiment analysis in social media\", \"Automated translation services\", \"Information retrieval systems\"]"
+    },
+    {
+      "id": "History of AI",
+      "description": "The evolution and milestones in the field of artificial intelligence.",
+      "sub_topics": "[{\"name\": \"Origins of AI\", \"description\": \"The foundational concepts and early developments in AI.\"}, {\"name\": \"Key Figures\", \"description\": \"Influential individuals who shaped the field of AI.\"}]",
+      "difficulty_level": 1,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of computer science and programming concepts.",
+      "key_sub_concepts": "[\"Turing Test\", \"Neural Networks\", \"Machine Learning\", \"Natural Language Processing\", \"Expert Systems\"]",
+      "common_misconceptions": "[\"AI can think like a human\", \"AI will replace all jobs\", \"AI is infallible\", \"All AI systems are self-learning\"]",
+      "practical_applications": "[\"Virtual Assistants\", \"Recommendation Systems\", \"Image Recognition\", \"Autonomous Vehicles\", \"Healthcare Diagnostics\"]"
+    },
+    {
+      "id": "Embryonic Concepts",
+      "description": "Early ideas and theories that laid the groundwork for modern computing.",
+      "sub_topics": "[{\"name\": \"Embryo Computer\", \"description\": \"Initial concepts of computing machines.\"}, {\"name\": \"Embryo Electronic\", \"description\": \"Foundational electronic principles in computing.\"}]",
+      "difficulty_level": 1,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of computer science principles and history.",
+      "key_sub_concepts": "[\"Boolean Algebra\", \"Turing Machines\"]",
+      "common_misconceptions": "[\"Early computing was only about hardware.\", \"Theoretical concepts have no practical relevance.\"]",
+      "practical_applications": "[\"Foundational theories in algorithm design\", \"Understanding the limits of computation\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Neural Networks",
+      "to": "GPT and Language Models",
+      "relation": "prerequisite",
+      "reason": "GPTs are built from neural network architectures, so neural network fundamentals are needed to understand them."
+    },
+    {
+      "from": "Machine Learning Techniques",
+      "to": "GPT and Language Models",
+      "relation": "prerequisite",
+      "reason": "Language models are trained using machine learning methods, so ML training concepts are needed first."
+    }
+  ]
+}

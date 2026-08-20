@@ -1,0 +1,12 @@
+{
+  "run_id": "cs224n-2026-lecture07-pretraining-2011d5086c71",
+  "can_resume": true,
+  "last_failed_stage": "stage2c",
+  "next_resume_stage": "stage2c",
+  "completed_stages": [
+    "stage1",
+    "stage2a",
+    "stage2b"
+  ],
+  "updated_at": "2026-07-07T19:52:17+08:00"
+}

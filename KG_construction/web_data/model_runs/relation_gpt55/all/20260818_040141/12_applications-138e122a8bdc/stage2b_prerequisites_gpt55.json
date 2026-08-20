@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Probabilities",
+      "to": "Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Language models assign and use probability distributions over language sequences."
+    },
+    {
+      "from": "Deep Learning",
+      "to": "Attention Mechanism",
+      "relation_type": "strong_prerequisite",
+      "reason": "Attention is typically learned as a component within neural network architectures."
+    },
+    {
+      "from": "Optimization Techniques",
+      "to": "Training Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training models requires optimizing parameters to improve predictive performance."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Training Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Models must receive data in an encoded, structured form before they can be trained."
+    },
+    {
+      "from": "Optimization Techniques",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning relies on optimization methods to learn neural network parameters."
+    }
+  ]
+}

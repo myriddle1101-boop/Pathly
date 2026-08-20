@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "run_id": "structure-24c34254f5dd",
+  "created_at": "2026-07-22T04:30:22+08:00",
+  "updated_at": "2026-07-22T14:01:47+08:00",
+  "status": "running",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "STRUCTURE.pdf",
+    "doc_name": "STRUCTURE",
+    "sha256": "24c34254f5dd8c5184685758a15f0654e15f954f972c7dacba5d6169c865d1b9",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\STRUCTURE.pdf",
+    "pdf_size_bytes": 19809
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs"
+  },
+  "summary": {
+    "completed_stages": [],
+    "failed_stage": null,
+    "next_resume_stage": "stage1",
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": null
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:30:22+08:00",
+      "ended_at": "2026-07-22T04:30:26+08:00",
+      "duration_seconds": 4.466,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\STRUCTURE.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 748\n[2] 清洗后词数: 757\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 4\n[5] 分块数（过滤后）: 4\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=249\nRepository Structure Complete overview of the RAG tutorial repository. n Directory Layout rag_tutorial/ n nnn n README.md # Main introduction and navigation nnn n QUICKSTART.md # 5-minute setup guide nnn n requirements.t...\n\n[Chunk 2] words=210\nn Lesson Summaries Lesson 1: Introduction to RAG (cid:127) What RAG is and why it matters (cid:127) Problems it solves (hallucinations, knowledge cutoff) (cid:127) Three-step process: Index, Retrieve, Generate (cid:127) ...\n\n[Chunk 3] words=231\nRun: python examples/01-simple-qa/simple_qa.py Example 2: Document Chat File: examples/02-document-chat/document_chat.py Interactive chat system that: - Loads text documents - Chunks them intelligently - Maintains conver...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:30:26+08:00",
+      "ended_at": "2026-07-22T04:31:18+08:00",
+      "duration_seconds": 51.6045,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：4\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/4 ...\n[KeyBERT] chunk 2/4 ...\n[KeyBERT] chunk 3/4 ...\n[KeyBERT] chunk 4/4 ...\n[2] KeyBERT候选数：24\n[3] LLM精修完成\n[4] 最终Topic数：8，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Python Utilities\n02. Tutorial Repository\n03. Repository Structure\n04. Machine Learning Concepts\n05. Training Techniques\n06. Evaluation Metrics\n07. Demo Projects\n08. Learning Resources\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6140.05it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:31:18+08:00",
+      "ended_at": "2026-07-22T04:31:26+08:00",
+      "duration_seconds": 8.6507,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 8\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 7 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Python Utilities -> Machine Learning Concepts | Understanding Python utilities is essential for implementing machine learning concepts.\n02. Machine Learning Concepts -> Training Techniques | Mastering machine learning concepts is necessary to effectively apply training techniques.\n03. Training Techniques -> Evaluation Metrics | Knowledge of training techniques is required to understand how to evaluate model performance.\n04. Machine Learning Concepts -> Demo Projects | A solid grasp of machine learning concepts is needed to create and understand demo projects.\n05. Tutorial Repository -> Machine Learning Concepts | Tutorials are designed to teach fundamental machine learning concepts.\n06. Repository Structure -> Demo Projects | Understanding repository structure is crucial for organizing and managing demo projects.\n07. Learning Resources -> Machine Learning Concepts | Learning resources are intended to enhance understanding of machine learning concepts.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:31:26+08:00",
+      "ended_at": "2026-07-22T14:01:47+08:00",
+      "duration_seconds": 34233.0572,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 8\n[2] 相似关系数量: 4 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Learning Resources <-> Machine Learning Concepts | sim=0.8324\n02. Machine Learning Concepts <-> Training Techniques | sim=0.8316\n03. Learning Resources <-> Training Techniques | sim=0.7543\n04. Learning Resources <-> Tutorial Repository | sim=0.7273\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights:  93%|█████████▎| 185/199 [00:00<00:00, 1845.20it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 1896.63it/s]\n"
+    },
+    "stage3": {
+      "status": "pending",
+      "attempts": 0,
+      "started_at": null,
+      "ended_at": null,
+      "duration_seconds": null,
+      "return_code": null,
+      "reused_on_resume": false,
+      "input_paths": [],
+      "output_paths": [],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": false,
+        "outputs_ok": false,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": []
+      },
+      "stdout_tail": "",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "pending",
+      "attempts": 0,
+      "started_at": null,
+      "ended_at": null,
+      "duration_seconds": null,
+      "return_code": null,
+      "reused_on_resume": false,
+      "input_paths": [],
+      "output_paths": [],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": false,
+        "outputs_ok": false,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": []
+      },
+      "stdout_tail": "",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-22T04:30:22+08:00"
+}

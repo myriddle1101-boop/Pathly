@@ -1,0 +1,99 @@
+{
+  "created_at": "2026-08-18T18:52:00.785393+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-cs224n-2026-lecture05-transformers-0e9017f9dbd8",
+  "file_name": "cs224n-2026-lecture05-transformers-0e9017f9dbd8",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 22,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.7273,
+    "f1": 0.8,
+    "tp": 8,
+    "fp": 1,
+    "fn": 3
+  },
+  "prerequisite_metrics": {
+    "precision": 0.75,
+    "recall": 0.6,
+    "f1": 0.6667,
+    "tp": 3,
+    "fp": 1,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Attention Mechanisms",
+      "Transformers",
+      "Sequence Processing",
+      "Neural Networks",
+      "Training Techniques",
+      "Attention Variants",
+      "Language Models",
+      "Output Generation"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Dimensionality Reduction",
+        "reason": "The lecture discusses vector dimensions and attention-head dimensionality, but not dimensionality-reduction methods or objectives."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Recurrent Neural Networks",
+        "reason": "RNNs, their vanishing/exploding-gradient problems, and their encoder-decoder use are central to the motivation for attention."
+      },
+      {
+        "name": "Self-Attention",
+        "reason": "The lecture derives self-attention using queries, keys, values, softmax weighting, positional representations, and masking."
+      },
+      {
+        "name": "Machine Translation",
+        "reason": "Machine translation is a major application used to introduce sequence-to-sequence models, attention, and Transformer encoder-decoders."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Attention Mechanisms",
+        "reason": "Attention is presented as a neural-network operation over learned vector representations, queries, keys, values, and learned weights."
+      },
+      {
+        "from": "Attention Mechanisms",
+        "to": "Transformers",
+        "reason": "Self-attention is explicitly identified as the basis of Transformer blocks and the Transformer architecture."
+      },
+      {
+        "from": "Attention Mechanisms",
+        "to": "Attention Variants",
+        "reason": "The lecture develops variants including self-attention, cross-attention, multi-head attention, and scaled dot-product attention from the basic attention mechanism."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Transformers",
+        "reason": "The source identifies Transformers as neural-network architectures, but this is a category relationship rather than a specifically established directional learning dependency."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Self-Attention",
+        "to": "Transformers",
+        "reason": "The lecture first establishes self-attention as the required building block, then constructs Transformer decoder and encoder blocks from it."
+      },
+      {
+        "from": "Attention Mechanisms",
+        "to": "Self-Attention",
+        "reason": "The lecture introduces general and cross-attention before defining self-attention as attention with keys, queries, and values from the same sequence."
+      }
+    ],
+    "overall_note": "The predictions capture the lecture's broad attention-and-Transformer focus, but omit the central specific topics of RNNs and self-attention."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture05-transformers-0e9017f9dbd8.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture05-transformers-0e9017f9dbd8.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture05-transformers-0e9017f9dbd8_ledger.csv"
+  }
+}

@@ -1,0 +1,592 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 10,
+  "candidate_count": 52,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "dpo models",
+      "avg_score": 0.5965,
+      "frequency": 4,
+      "chunk_ids": [
+        3,
+        5,
+        7,
+        10
+      ]
+    },
+    {
+      "name": "improve dpo",
+      "avg_score": 0.6023,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        10
+      ]
+    },
+    {
+      "name": "dpo response",
+      "avg_score": 0.546,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "name": "modeling reward",
+      "avg_score": 0.5422,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "name": "dpo conclusions",
+      "avg_score": 0.4919,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        9
+      ]
+    },
+    {
+      "name": "life dpo",
+      "avg_score": 0.4875,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        7
+      ]
+    },
+    {
+      "name": "dpo performance",
+      "avg_score": 0.6594,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "dpo characteristics",
+      "avg_score": 0.6543,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "models instruction",
+      "avg_score": 0.6531,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "dpo methods",
+      "avg_score": 0.6456,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "sampling dpo",
+      "avg_score": 0.6335,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "alignment models",
+      "avg_score": 0.6311,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "methods dpo",
+      "avg_score": 0.6251,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "outperforms dpo",
+      "avg_score": 0.6185,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "training model",
+      "avg_score": 0.6125,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "model learn",
+      "avg_score": 0.6089,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "assistant conversations",
+      "avg_score": 0.6086,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "models discussing",
+      "avg_score": 0.607,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "reward models",
+      "avg_score": 0.5913,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "dpo variants",
+      "avg_score": 0.5866,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "open assistant",
+      "avg_score": 0.577,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "open chat",
+      "avg_score": 0.5673,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "dpo vs",
+      "avg_score": 0.5647,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "model specific",
+      "avg_score": 0.5617,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "chat dataset",
+      "avg_score": 0.5537,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "language models",
+      "avg_score": 0.5516,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "beta dpo",
+      "avg_score": 0.548,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "evaluating reward",
+      "avg_score": 0.5438,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "conversation corpus",
+      "avg_score": 0.5403,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "assistant open",
+      "avg_score": 0.5358,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "models questions",
+      "avg_score": 0.53,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "models evaluating",
+      "avg_score": 0.5263,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "models reward",
+      "avg_score": 0.5164,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "evaluate reward",
+      "avg_score": 0.5134,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "sft dataset",
+      "avg_score": 0.5117,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "models english",
+      "avg_score": 0.503,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "optimizers learning",
+      "avg_score": 0.5003,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "models life",
+      "avg_score": 0.4946,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "dataset evaluations",
+      "avg_score": 0.4944,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "dpo reward",
+      "avg_score": 0.4904,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "thoughts takeaways",
+      "avg_score": 0.4803,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "reasoning gsm",
+      "avg_score": 0.4771,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "history lms",
+      "avg_score": 0.47,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "evaluations factuality",
+      "avg_score": 0.4669,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "natural language",
+      "avg_score": 0.4622,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "data baseline",
+      "avg_score": 0.462,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "ppo thoughts",
+      "avg_score": 0.4598,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "factuality mmlu",
+      "avg_score": 0.4513,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "history language",
+      "avg_score": 0.4475,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.4471,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "thoughts resources",
+      "avg_score": 0.4134,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "vs dpo",
+      "avg_score": 0.4094,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "DPO Models",
+      "description": "DPO (Direct Preference Optimization) models focus on optimizing responses based on user preferences.",
+      "sub_topics": [
+        {
+          "name": "DPO Performance",
+          "description": "Evaluating the effectiveness of DPO models in various tasks."
+        },
+        {
+          "name": "DPO Methods",
+          "description": "Techniques and methodologies used in implementing DPO."
+        },
+        {
+          "name": "DPO Variants",
+          "description": "Different versions and adaptations of DPO models."
+        }
+      ]
+    },
+    {
+      "name": "Reward Models",
+      "description": "Models that assess and optimize the reward signals in machine learning systems.",
+      "sub_topics": [
+        {
+          "name": "Evaluating Reward",
+          "description": "Methods for assessing the effectiveness of reward models."
+        },
+        {
+          "name": "Modeling Reward",
+          "description": "Techniques for designing reward structures in learning systems."
+        }
+      ]
+    },
+    {
+      "name": "Training Models",
+      "description": "Processes and techniques involved in training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "A method for updating model weights based on error gradients."
+        },
+        {
+          "name": "Optimizers Learning",
+          "description": "Algorithms used to minimize loss functions during training."
+        }
+      ]
+    },
+    {
+      "name": "Language Models",
+      "description": "Models designed to understand and generate human language.",
+      "sub_topics": [
+        {
+          "name": "Natural Language Processing",
+          "description": "Techniques for processing and analyzing human language."
+        },
+        {
+          "name": "Chat Dataset",
+          "description": "Datasets specifically curated for training conversational agents."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Techniques for assessing the performance and accuracy of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Dataset Evaluations",
+          "description": "Methods for evaluating model performance on various datasets."
+        },
+        {
+          "name": "Factuality Evaluations",
+          "description": "Assessing the factual accuracy of model outputs."
+        }
+      ]
+    },
+    {
+      "name": "Assistant Conversations",
+      "description": "Interactions and dialogues generated by AI assistants.",
+      "sub_topics": [
+        {
+          "name": "Open Assistant",
+          "description": "AI assistants designed for open-ended conversations."
+        },
+        {
+          "name": "Assistant Open",
+          "description": "Frameworks for developing open conversational agents."
+        }
+      ]
+    },
+    {
+      "name": "Model Characteristics",
+      "description": "Distinct features and attributes of various machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Model Specific",
+          "description": "Characteristics unique to specific types of models."
+        },
+        {
+          "name": "DPO Characteristics",
+          "description": "Unique features of DPO models compared to others."
+        }
+      ]
+    },
+    {
+      "name": "Sampling Techniques",
+      "description": "Methods for selecting data points from datasets for training and evaluation.",
+      "sub_topics": [
+        {
+          "name": "Sampling DPO",
+          "description": "Sampling methods specifically for DPO models."
+        },
+        {
+          "name": "Chat Dataset Sampling",
+          "description": "Techniques for sampling from conversational datasets."
+        }
+      ]
+    },
+    {
+      "name": "Model Discussions",
+      "description": "Conversations and analyses surrounding various machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Models Discussing",
+          "description": "Discussions on the implications and applications of different models."
+        },
+        {
+          "name": "Models Questions",
+          "description": "Common inquiries and topics of interest regarding models."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 28.2181,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

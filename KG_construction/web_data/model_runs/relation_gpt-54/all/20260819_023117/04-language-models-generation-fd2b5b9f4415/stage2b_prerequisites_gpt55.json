@@ -1,0 +1,56 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 8,
+  "prerequisites": [
+    {
+      "from": "Neural Networks",
+      "to": "Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Modern language models are typically built on neural network foundations, so understanding neural networks is necessary before learning language models in depth."
+    },
+    {
+      "from": "Language Models",
+      "to": "Contextual Understanding",
+      "relation_type": "strong_prerequisite",
+      "reason": "Contextual understanding in this course setting depends on first understanding how language models process and represent language."
+    },
+    {
+      "from": "Language Models",
+      "to": "Self History",
+      "relation_type": "strong_prerequisite",
+      "reason": "Maintaining interaction history is an advanced capability built on top of core language model behavior."
+    },
+    {
+      "from": "Language Models",
+      "to": "Answer Generation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Answer generation relies on understanding the underlying language model that produces responses."
+    },
+    {
+      "from": "Language Models",
+      "to": "Quality Assessment",
+      "relation_type": "strong_prerequisite",
+      "reason": "Evaluating the quality of language models requires first understanding what language models are and how they function."
+    },
+    {
+      "from": "Training Techniques",
+      "to": "Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Learning language models in a machine learning course generally requires prior understanding of how models are trained."
+    },
+    {
+      "from": "Data Management",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Effective training depends on preparing, handling, and processing data appropriately beforehand."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Quality Assessment",
+      "relation_type": "strong_prerequisite",
+      "reason": "Quality assessment is a specialized form of evaluating model performance and reliability, so general model evaluation comes first."
+    }
+  ]
+}

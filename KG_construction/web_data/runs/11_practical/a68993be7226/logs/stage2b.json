@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 7.803,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 11\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 8 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Activation Functions -> Neural Networks | Activation functions are essential for understanding how neural networks process information.\n02. Loss Functions -> Backpropagation | Loss functions are needed to compute the error used in backpropagation.\n03. Backpropagation -> Neural Networks | Backpropagation is a key algorithm used for training neural networks.\n04. Training Techniques -> Model Evaluation | Understanding training techniques is necessary to evaluate model performance effectively.\n05. Deep Learning -> Neural Networks | Deep learning is fundamentally based on neural networks.\n06. Hyperparameter Optimization -> Training Techniques | Hyperparameter optimization is a crucial aspect of training techniques.\n07. Regularization -> Training Techniques | Regularization techniques are part of the strategies used in training models.\n08. Training Techniques -> Training Inference | Effective training techniques are necessary for making accurate predictions during inference.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

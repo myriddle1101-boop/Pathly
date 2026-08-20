@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture10-rag-agents\\2e97edb678d2",
+  "run_id": "cs224n-2026-lecture10-rag-agents-2e97edb678d2",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:11:41.456425+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "e5cba5eddc54630e021502dd0bf43c2dc7767f90703a22c55d634d284915d335",
+    "stage2a_topics_hybrid.json": "288c1cf3e0079eb50242c8fc8ed953dcc457f8620c45e0c17f8ace47704fd69a",
+    "stage2c_similarity_edges.json": "526c7c31cdb1a64ca7d0e32d333d5422b3be544f23d0cdfc4e3c604089ac7469",
+    "stage3_topics_with_summary.json": "2ab1ae5c8c6424cb96062aadf9faab55b18532bd78536883563741de08c0540a"
+  },
+  "old_relation_count": 7,
+  "new_relation_count": 1,
+  "new_node_count": 9,
+  "new_edge_count": 1,
+  "golden_path_resource": false
+}

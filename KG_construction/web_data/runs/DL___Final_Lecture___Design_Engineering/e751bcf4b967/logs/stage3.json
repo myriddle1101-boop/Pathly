@@ -1,0 +1,29 @@
+{
+  "stage": "stage3",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage3_node_summary_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage3_node_summary_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___final_lecture___design_engineering\\e751bcf4b967\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___final_lecture___design_engineering\\e751bcf4b967\\stage3_topics_with_summary.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 44.3878,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage3_topics_with_summary.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 15\n[LLM] 1/15 drone delivery systems\n[LLM] 2/15 autonomous drone navigation\n[LLM] 3/15 drone technology advancements\n[LLM] 4/15 learning agents in AI\n[LLM] 5/15 deep learning algorithms\n[LLM] 6/15 machine learning models\n[LLM] 7/15 learning assignments in education\n[LLM] 8/15 learning methodologies in lectures\n[LLM] 9/15 drone fleet management\n[LLM] 10/15 autonomous drone applications in logistics\n[LLM] 11/15 real-time data processing for drones\n[LLM] 12/15 reinforcement learning for autonomous systems\n[LLM] 13/15 deep learning for image recognition in drones\n[LLM] 14/15 adaptive learning systems in AI\n[LLM] 15/15 lecture-based learning strategies\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___final_lecture___design_engineering\\e751bcf4b967\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+  "stderr_tail": ""
+}

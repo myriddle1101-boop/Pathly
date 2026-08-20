@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-spr2024-lecture15-life-after-dpo-lambert\\e534f25111e7",
+  "run_id": "cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:13:17.136598+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "32d5e508dbcd9b74617d17b04d442bd141c5b948c51b4478100372815146906f",
+    "stage2a_topics_hybrid.json": "e5c69e877258582dcbe323e449ca4dbbc95a86950df7307c350e8ef113f99c00",
+    "stage2c_similarity_edges.json": "1583fcb44b919d6258a6678c6a2418964b35e62ebc4d544b76d4ddd19cc057d2",
+    "stage3_topics_with_summary.json": "f5b44f35d338f8a48bb7b17f8199c72b772a78aee6aeafdd8eea08d49aa29734"
+  },
+  "old_relation_count": 4,
+  "new_relation_count": 1,
+  "new_node_count": 9,
+  "new_edge_count": 7,
+  "golden_path_resource": false
+}

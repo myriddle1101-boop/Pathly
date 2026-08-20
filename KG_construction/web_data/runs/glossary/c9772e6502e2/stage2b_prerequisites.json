@@ -1,0 +1,33 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Embeddings",
+      "to": "Similarity Scores",
+      "reason": "Understanding embeddings is essential to compute similarity scores."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Training Techniques",
+      "reason": "Knowledge of neural networks is necessary to apply training techniques effectively."
+    },
+    {
+      "from": "Document Collections",
+      "to": "Retrieval Strategies",
+      "reason": "Document collections are needed to implement effective retrieval strategies."
+    },
+    {
+      "from": "Retrieval Strategies",
+      "to": "Search Techniques",
+      "reason": "Effective retrieval strategies inform the development of efficient search techniques."
+    },
+    {
+      "from": "Prompt Engineering",
+      "to": "Training Techniques",
+      "reason": "Effective prompts are crucial for training machine learning models."
+    }
+  ]
+}

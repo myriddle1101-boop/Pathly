@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Graph Theory",
+      "to": "Graph Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding graph structures, nodes, edges, and dependencies is necessary before learning models built on graphs."
+    },
+    {
+      "from": "Graph Theory",
+      "to": "Graph Representations",
+      "relation_type": "strong_prerequisite",
+      "reason": "Graph representations rely on core graph concepts and properties taught in graph theory."
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+Natural Language Processing
+with Deep Learning
+CS 224 N/Ling 284
+Yejin Choi
+Lecture 16: AI’s impact on humanity
+
+Lecture Plan
+Why language models hallucinate
+The paradox of AI-assisted creativity
+AI’s impact on workforce
+The challenges of value alignment
+2
+
+3
+
+4
+
+5
+
+Vibe citing & hallucination
+• At least 51 accepted papers from Neur IPS 2025
+contained more than 100 hallucinated citations
+according to an investigation done by
+GPTZero
+• At least one unfortunate case resulted from the
+authors using LLMs to automatically clean up
+the formats of (originally) legit citations
+• PSA: always double-check on LLMs’ work!
+6 https://gptzero.me/news/neurips/
+
+Vibe citing & hallucination
+• ACL conferences are not any
+better… nearly 300 papers
+contain at least one
+hallucinated citations in 2025
+alone!
+7
+
+In fact, better reasoning != less hallucination!
+• Stronger reasoning models can hallucinate even more!
+• E.g., according to the Open AI o 3 / o 4-mini’s System Card from Open AI (Apr 2025) ---
+• O 3’s accuracy is higher, but O 3’s hallucination is also higher!!!
+8
+
+https://github.com/vectara/hallucination-leaderboard
+• LLMs hallucinate a few
+% of the time.
+• Which means the vast
+majority of the time, it
+will look correct!
+• But you never know
+when it fails!
+9
+
+“Language Models (Mostly) Know What They Know”
+(Kadavath et al., 2022)
+Calibration
+A model is calibrated if, for all confidence levels p, among claims where the model assigns
+probability p to being correct, the fraction that are actually correct is approximately p. Perfect
+calibration means the model’s confidence is a reliable signal of accuracy.
+Findings:
+• Base LLMs (of Anthropic) are remarkably well-calibrated on multiple-choice and
+true/false benchmarks (of Big Bench)
+• However, not well calibrated if the answer choices include “none of the above” (!!)
+• RLHF’ed LLMs are mis-calibrated, as RL collapses the model behavior.
+• Any guess on what could be a simple remedy for this?
+• In their study, using high temperature for decoding (t=2.5) can bring back calibration
+10
+
+“Language Models (Mostly) Know What They Know”
+(Kadavath et al., 2022)
+Self-evaluation 1: P(Is my answer true?)
+-- after answering the question
+Self-evaluation 2: P(I know the answer)
+-- without answering the question yet
+-- mega-cognitive judgement “this is in my wheelhouse”!
+Findings:
+• With prompt engineering tricks or supervised fine-tuning, both self-evaluation types
+can be improved and the results look promising
+• However, P(I know the answer) isn’t reliable to generalize to unfamiliar tasks
+• Also, “knowing you don’t know” != “acting responsibly based on the awareness of
+ignorance” --- RLHF’ed model can still hallucinate confidently if HF rewarded confident
+answers
+11
+
+How RLHF can undermine honesty (or promote hallucination)
+Sycophancy
+(“Towards Understanding Sycophancy in Language Models” Sharma et al., 2024)
+• The tendency to tell the user what they want to hear rather than what is true
+• Models would wrongly admit to mistakes they hadn’t made, give biased feedback
+that matched the user’s expressed preferences, and change correct answers to
+match a user’s incorrect suggestion.
+Findings of Sharma et al., 2024:
+• General phenomenon across all LLMs of all companies. Why???
+• Essentially, due to human bias: human raters in preference data show bias toward
+preferring responses that validate their views, which encourages LLMs to learn to agree
+with users to get higher rewards than telling the truth!
+• A rare case of “inverse scaling” (larger models are worse than smaller models):
+• larger LMs more likely to be even more sycophantic!
+12
+
+“Calibrated Language Models Must Hallucinate”
+(Kalai and Vempala 2024)
+Previous hypotheses for why LMs hallucinate (from other related work)
+• The training data contains falsehoods (Lin et al. 2022, Dziri et al., 2022) or outdated
+facts (Vu et al., 2023)
+• LLMs generate at the token level, and some prefix generation might be impossible to
+complete factually (Zhang et al., 2023)
+• What if hypothetically, training data consists only of facts that are all up to date?
+• If the model is “calibrated”, then it will have to hallucinate!
+13
+
+“Calibrated Language Models Must Hallucinate”
+(Kalai and Vempala 2024)
+Previous hypotheses for why LMs hallucinate (from other related work)
+• The training data contains falsehoods (Lin et al. 2022, Dziri et al., 2022) or outdated
+facts (Vu et al., 2023)
+• LLMs generate at the token level, and some prefix generation might be impossible to
+complete factually (Zhang et al., 2023)
+• What if hypothetically, training data consists only of facts that are all up to date?
+• If the model is “calibrated”, then it will have to hallucinate! Why?
+• Two types of facts:
+Systematic facts
+Arbitrary facts
+• 356 < 464567345
+• Who-did-What-When-Where-Why • (once you know the rule, you don’t have to
+• (you have to observe each instance) observe them all to determine their factuality)
+14
+
+“Calibrated Language Models Must Hallucinate”
+(Kalai and Vempala 2024)
+Calibration
+A model is calibrated if, for all confidence levels p, among claims where the model assigns
+probability p to being correct, the fraction that are actually correct is approximately p. Perfect
+calibration means the model’s confidence is a reliable signal of accuracy.
+• Not all arbitrary facts are reported in the training data
+• When previously unseen facts appear, a well calibrated model should be able to assign
+a nonzero probability (= its confidence level) that the given statement is correct
+• Which means the model needs to know how to ”reserve” probability mass to
+previously unseen events!
+Arbitrary facts
+Good-Turing Estimator!
+• Who-did-What-When-Where-Why
+• (you have to observe each instance)
+15
+
+Story time! Good-Turing Estimator
+• Once upon a time, Alan Turing and Irving John Good were working together on
+breaking German enigma ciphers via statistical cipher analysis. They faced a practical
+technical problem: how to estimate the frequency of things that they hadn’t yet
+observed.
+Obviously, p of {unseen events} should be p of {one-time events}
+Wait, that’s such a beautiful idea! Let me write that up and fill in details…
+• After publishing it in 1953, Good
+subsequently used it to help ecologists to
+estimate unseen species of butterflies!
+16
+
+Story time! Good-Turing Estimator
+• A few decades later, computational linguistics researchers encountered a similar
+situation with language models: how to estimate probabilities of previously unseen
+words and sequences of words?
+• Many “smoothing” techniques were invented, and folks also discovered Good’s 1953
+publication, except this one was notoriously complicated to nail down…
+17
+
+Good-Turing Estimator
+• Intuition:
+• probability of {previously unseen future events}
+• = probability of {one-time events in the training data}
+• Reduce the probability of seen events
+in order to “reserve” some probability
+mass for the unseen future events.
+The probability mass of less frequent
+events are relatively more reduced.
+• More formally, let 𝑁 denote the
+𝑟
+number of items (e.g., species, words,
+facts) that appear exactly 𝑟 times in a
+sample of size.
+18
+
+“Calibrated Language Models Must Hallucinate”
+(Kalai and Vempala 2024)
+Calibration
+A model is calibrated if, for all confidence levels p, among claims where the model assigns
+probability p to being correct, the fraction that are actually correct is approximately p. Perfect
+calibration means the model’s confidence is a reliable signal of accuracy.
+• Not all arbitrary facts are reported in the training data
+• When previously unseen facts appear, a well calibrated model should assign a nonzero
+probability (= its confidence level) that the given statement is correct
+• Which means the model needs to know how to ”reserve” probability mass to
+previously unseen events!
+• Suppose arbitrary facts such as [x was born in y]. The model learns this pattern as that
+of a plausible fact, but there are many instantiations of this pattern that are falsehoods.
+The model can’t know which is which, thus a model that is calibrated must hallucinate!
+19
+
+“Why language models hallucinate”
+(Kalai et al., 2025)
+Previous hypotheses for why LMs hallucinate (from other related work)
+• The training data contains falsehoods (Lin et al. 2022, Dziri et al., 2022) or outdated
+facts (Vu et al., 2023)
+• LLMs generate at the token level, and some prefix generation might be impossible to
+complete factually (Zhang et al., 2023)
+• Calibrated language models must hallucinate to cope with unseen events (K&V 2024)
+Why hallucination survives post-training (or
+even gets amplified sometimes)?
+- Benchmarks penalize abstention (“I don’t
+know”) and reward confident answers
+- A socio-technical fix proposed: modify
+benchmarks to reward calibrated uncertainty
+rather than confident guessing
+20
+
+Lecture Plan
+Why language models hallucinate
+The paradox of AI-assisted creativity
+AI’s impact on workforce
+The challenges of value alignment
+21
+
+The paradox of AI-assisted creativity
+2023
+• What they found: Writers who used AI produced stories rated higher (8–9%) on novelty
+and usefulness. Less creative writers benefited the most, and AI-assisted stories were
+rated as more enjoyable, better written, and less boring.
+• The catch: When the researchers compared stories across writers rather than within
+individuals, AI-assisted stories were significantly more similar to each other than
+human-only stories. The distribution of creative output narrowed.
+• The authors frame this as a social dilemma: each individual writer benefits, but the
+collective pool of stories becomes less varied.
+22
+
+The paradox of AI-assisted creativity
+ICLR 2024
+• Critical result: Writing with Instruct GPT produced a statistically significant reduction in
+content diversity—essays became more similar across authors, and lexical diversity
+declined.
+• Interestingly, writing with the base GPT-3 model did not produce this effect. The
+diversity loss was specifically attributable to the RLHF-tuned model providing less
+diverse suggestions.
+• Implication: the very process of aligning models to human preferences (RLHF) may
+systematically strip out the variance and unpredictability that supports diversity.
+• "good but not colorful writing"
+23
+
+The paradox of AI-assisted creativity
+Creativity & Cognition (C&C), 2024
+• This paper is particularly important because it demonstrates that homogenization is
+not limited to writing—it extends to ideation itself. When people see AI-generated
+ideas before brainstorming, they tend to anchor on those ideas, producing output that
+converges toward the model's mode.
+• The authors found, encouragingly, that simply informing users that model output tends
+to be homogeneous helped them resist the effect to some degree.
+24
+
+The paradox of AI-assisted creativity
+2024
+• This study found that AI autocomplete and writing suggestions push users toward
+Western linguistic norms—more direct, less formal, and less culturally distinctive.
+Writers from non-Western cultural backgrounds saw the most significant reduction in
+lexical diversity when using AI tools. The paper argues this represents a subtle but
+systematic form of cultural homogenization, eroding the very linguistic patterns that
+encode different ways of seeing the world.
+25
+
+Why does AI assistance reduce collective diversity?
+• Mode collapse
+• LLMs in general, and especially after RLHF, lose distributional diversity and pluralism
+compared to the natural distribution of human text
+• Diversity tax: alignment reduces diversity
+• Anchoring effects
+• When human sees an AI-generated suggestion before their own thinking, it acts as a
+“cognitive anchor”. AI’s suggestions create a particularly strong version of this effect
+as they are fluent, confident, and immediately usable.
+• Cognitive offloading
+• Gerlich (2025) reports that frequent AI users increasingly offload cognitive tasks to
+AI. The effortful cognitive struggle that produces originality is precisely what gets
+bypassed.
+26
+
+On AI assisted research (and homework)
+These problems are like distant locations
+that you would hike to. And in the past, you
+would have to go on a journey. You can lay
+down trail markers that other people could
+follow, and you could make maps.
+AI tools are like taking a helicopter to drop
+you off at the site. You miss all the benefits
+of the journey itself. You just get right to the
+destination, which actually was only just a
+part of the value of solving these problems.
+27
+Quote: https://www.theatlantic.com/technology/2026/02/ai-math-terrance-tao/686107 & photo: https://www.nytimes.com/2015/07/26/magazine/the-singular-mind-of-terry-tao.html
+
+Effects on cognition and critical thinking
+Findings of Gerlich 2025:
+• A significant negative correlation
+between frequent AI usage and
+critical thinking abilities,
+mediated by increased “cognitive
+offloading”.
+• Younger participants exhibited
+higher dependence on AI tools
+and lower critical thinking scores
+compared to older participants.
+28
+
+The paradox of AI-assisted creativity
+Algorithmic Monoculture
+A term coined by Kleinberg & Raghavan (2021) describing the systemic risk that arises when many
+different decision-makers rely on the same underlying model, causing correlated outputs and
+correlated failures.
+Homogenization
+The tendency for outputs produced with AI assistance to become more similar to one another,
+reducing the overall variety within a corpus of work produced by many different people.
+29
+
+Would it help if we used different LLMs?
+Neur IPS 2025
+
+31
+
+Overlapping text fragments
+Inter-Model
+Homogeneity
+Q: Generate a motto for a social
+media page focused on success,
+wealth, and self-help.
+Empower Your
+Journey: Unlock
+Success, Build Wealth,
+Transform Yourself.
+Worse with post-trainined models
+Empower Your Journey:
+Unlock Success, Build
+Wealth, Transform
+Yourself.
+(Sim = 1.0)
+
+Lecture Plan
+Why language models hallucinate
+The paradox of AI-assisted creativity
+AI’s impact on workforce
+The challenges of value alignment
+33
+
+Some are very concerned…
+34
+
+Recent statistics look net positive (thus far)…
+35
+
+36
+https://www.theinformation.com/articles/layoffs-shrink-tech-employee-numbers-long?rc=kbif 7 u
+
+World Economic Forum (WEF)’s 2025 report projects optimism
+https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf
+
+World Economic Forum (WEF)’s 2025 report projects optimism
+https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf
+
+https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf
+
+https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf
+
+41
+
+How well frontier agentic AI perform
+economically valuable work in the real
+world?
+• By Center for AI Safety and Scale AI (Oct 2025)
+• RLI establishes an economically grounded measure of AI automation capacity, with 240
+projects spanning 23 domains of digital freelance work.
+42
+
+How well frontier agentic AI perform
+economically valuable work in the real
+world?
+• By Center for AI Safety and Scale AI (Oct 2025)
+• RLI establishes an economically grounded measure of AI automation capacity, with 240
+projects spanning 23 domains of digital freelance work.
+43
+
+• Frontier AI agents perform near the floor on RLI, achieving an automation rate of
+less than 4%, revealing a stark gap between progress on computer use evaluations
+and the ability to perform real and economically valuable work.
+44
+
+Open research questions
+• Augmentation of humans as opposed to replacement
+• Upscaling and rescaling of humans
+• Creating jobs
+45
+
+Lecture Plan
+Why language models hallucinate
+The paradox of AI-assisted creativity
+AI’s impact on workforce
+The challenges of value alignment
+46
+
+“Constitutional AI: Harmlessness from AI Feedback”
+(Bai et al., 2022)
+• Human feedback is systematically biased toward sycophantic responses; humans often
+prefer confident-sounding wrong answers over cautious correct ones.
+• What if we reduce reliance on human feedback altogether?
+• Constitutional AI encodes desired behaviors as explicit principles, e.g., “be honest,”
+“acknowledge uncertainty,” “do not fabricate information.”
+• The model then generates its own feedback by critiquing and revising outputs against
+these principles. Then, the preference model is trained on the AI-generated
+comparisons, and RLHF proceeds as usual.
+47
+
+“Constitutional AI: Harmlessness from AI Feedback”
+(Bai et al., 2022)
+48
+
+“Constitutional AI: Harmlessness from AI Feedback”
+(Bai et al., 2022)
+49

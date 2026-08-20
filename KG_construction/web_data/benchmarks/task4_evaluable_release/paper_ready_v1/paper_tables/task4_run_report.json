@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-06-22T22:42:09",
+  "project_dir": "D:\\ic\\master project\\project_code\\KG_construction",
+  "benchmark_root": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks",
+  "config_path": "D:\\ic\\master project\\project_code\\KG_construction\\evaluation\\task4_experiment_manifest.json",
+  "artifact_index_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\artifacts_index.json",
+  "benchmark_result": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\benchmark\\kg_benchmark.json",
+  "quality_result": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\quality_eval\\kg_quality_eval.json",
+  "experiment_table_draft_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\benchmarks\\task4_evaluable_release\\paper_ready_v1\\paper_tables\\experiment_table_draft.csv"
+}

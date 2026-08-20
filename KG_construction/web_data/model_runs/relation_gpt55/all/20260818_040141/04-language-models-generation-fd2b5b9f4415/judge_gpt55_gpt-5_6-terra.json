@@ -1,0 +1,109 @@
+{
+  "created_at": "2026-08-18T18:39:29.864318+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-04-language-models-generation-fd2b5b9f4415",
+  "file_name": "04-language-models-generation-fd2b5b9f4415",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 5,
+  "topic_metrics": {
+    "precision": 0.6667,
+    "recall": 0.6,
+    "f1": 0.6316,
+    "tp": 6,
+    "fp": 3,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1": 0.5,
+    "tp": 2,
+    "fp": 2,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Language Models",
+      "Contextual Understanding",
+      "Answer Generation",
+      "Quality Assessment",
+      "Training Techniques",
+      "Neural Networks"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Self History",
+        "reason": "The source discusses conversation history for multi-turn RAG, but does not present a concept called self history."
+      },
+      {
+        "name": "Data Management",
+        "reason": "Documents and vector databases are used in examples, but data management is not a lesson concept."
+      },
+      {
+        "name": "Model Evaluation",
+        "reason": "Evaluation is only mentioned as a future lesson activity and is not substantively taught here."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Tokens",
+        "reason": "The lesson explicitly explains tokenization and gives token-count examples."
+      },
+      {
+        "name": "Context Window",
+        "reason": "The source defines context windows and discusses handling contexts that exceed them."
+      },
+      {
+        "name": "Temperature",
+        "reason": "Temperature is defined as the control for generation randomness and is used to reduce hallucinations."
+      },
+      {
+        "name": "Prompt Engineering for RAG",
+        "reason": "A substantial section covers prompt templates, constraints, citations, few-shot examples, and chain-of-thought prompting."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Language Models",
+        "reason": "The source directly defines an LLM as a neural network, making neural-network fundamentals a strong dependency."
+      },
+      {
+        "from": "Language Models",
+        "to": "Answer Generation",
+        "reason": "The lesson explains that LLMs generate responses by predicting and sampling successive tokens."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Data Management",
+        "to": "Training Techniques",
+        "reason": "Data management is not taught as a concept, and the source does not establish it as a prerequisite for training techniques."
+      },
+      {
+        "from": "Contextual Understanding",
+        "to": "Answer Generation",
+        "reason": "Both are relevant to LLM responses, but the source does not establish contextual understanding as a distinct required learning prerequisite for answer generation."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Tokens",
+        "to": "Context Window",
+        "reason": "A context window is explicitly defined in units of input and output tokens."
+      },
+      {
+        "from": "Retrieved Context",
+        "to": "Prompt Engineering for RAG",
+        "reason": "RAG prompt templates are constructed by inserting retrieved documents as the context used for answering."
+      }
+    ],
+    "overall_note": "The predictions capture core LLM and generation ideas, but omit several central RAG-generation concepts, especially tokens, context windows, temperature, and RAG prompting."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-04-language-models-generation-fd2b5b9f4415.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-04-language-models-generation-fd2b5b9f4415.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-04-language-models-generation-fd2b5b9f4415_ledger.csv"
+  }
+}

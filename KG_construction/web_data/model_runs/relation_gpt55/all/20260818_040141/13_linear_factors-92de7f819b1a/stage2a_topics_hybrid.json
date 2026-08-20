@@ -1,0 +1,716 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 12,
+  "candidate_count": 66,
+  "topics_count": 8,
+  "candidates": [
+    {
+      "name": "factor models",
+      "avg_score": 0.5932,
+      "frequency": 4,
+      "chunk_ids": [
+        1,
+        4,
+        10,
+        12
+      ]
+    },
+    {
+      "name": "factor model",
+      "avg_score": 0.592,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "factor analysis",
+      "avg_score": 0.5542,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "linear factor",
+      "avg_score": 0.5498,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "name": "coding used",
+      "avg_score": 0.7348,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "coding",
+      "avg_score": 0.7144,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "used coding",
+      "avg_score": 0.7122,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "coding refers",
+      "avg_score": 0.6989,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "coding models",
+      "avg_score": 0.6728,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "latent variables",
+      "avg_score": 0.663,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "models samples",
+      "avg_score": 0.6586,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "probabilistic pca",
+      "avg_score": 0.6367,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "encoder",
+      "avg_score": 0.6326,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "samples model",
+      "avg_score": 0.6255,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "shallow models",
+      "avg_score": 0.623,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "position objects",
+      "avg_score": 0.6228,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "coding olshausen",
+      "avg_score": 0.6146,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "position object",
+      "avg_score": 0.6083,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "isotropic precision",
+      "avg_score": 0.6076,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "linear decoder",
+      "avg_score": 0.5982,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "coefficient given",
+      "avg_score": 0.5971,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "factors noise",
+      "avg_score": 0.5956,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "slowness principle",
+      "avg_score": 0.5893,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "models 13",
+      "avg_score": 0.5773,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "decoder plus",
+      "avg_score": 0.5771,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "coefficient",
+      "avg_score": 0.5768,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "instead encoder",
+      "avg_score": 0.5753,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "decoder",
+      "avg_score": 0.5711,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "samples weights",
+      "avg_score": 0.5698,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "pca factor",
+      "avg_score": 0.5679,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "models sample",
+      "avg_score": 0.5676,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "multivariate",
+      "avg_score": 0.5658,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "linear autoencoder",
+      "avg_score": 0.5649,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "variables",
+      "avg_score": 0.5564,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "learning algorithms",
+      "avg_score": 0.5515,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "student distributions",
+      "avg_score": 0.5503,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "model learn",
+      "avg_score": 0.549,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "representation autoencoder",
+      "avg_score": 0.5478,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "pca linear",
+      "avg_score": 0.545,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "models manifold",
+      "avg_score": 0.5448,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "analysis factorial",
+      "avg_score": 0.5436,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "observed variables",
+      "avg_score": 0.5359,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "dimensional representation",
+      "avg_score": 0.5358,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "sparsity penalty",
+      "avg_score": 0.533,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "features model",
+      "avg_score": 0.5308,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "learns matrices",
+      "avg_score": 0.5308,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "distributions example",
+      "avg_score": 0.5292,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "just multivariate",
+      "avg_score": 0.5288,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "multivariate normal",
+      "avg_score": 0.5265,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "parametrized",
+      "avg_score": 0.5158,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "zero generative",
+      "avg_score": 0.5132,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "models comparison",
+      "avg_score": 0.5121,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "sparse coding",
+      "avg_score": 0.5117,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "manifold interpretation",
+      "avg_score": 0.5116,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "variants probabilistic",
+      "avg_score": 0.5026,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "matrices",
+      "avg_score": 0.4924,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "eigenvector",
+      "avg_score": 0.4878,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "sparse feature",
+      "avg_score": 0.4845,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "position",
+      "avg_score": 0.4827,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "low slowness",
+      "avg_score": 0.48,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "zero probability",
+      "avg_score": 0.467,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "approaches sparse",
+      "avg_score": 0.4624,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "zero extracted",
+      "avg_score": 0.4508,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "autoencoder learns",
+      "avg_score": 0.4499,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "object velocity",
+      "avg_score": 0.4485,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "autoencoder",
+      "avg_score": 0.4377,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Factor Models",
+      "description": "Statistical models that describe observed variables as linear combinations of latent factors.",
+      "sub_topics": [
+        {
+          "name": "Factor Analysis",
+          "description": "A technique used to identify underlying relationships between variables."
+        },
+        {
+          "name": "Probabilistic PCA",
+          "description": "A probabilistic approach to principal component analysis that incorporates latent variables."
+        },
+        {
+          "name": "Latent Variables",
+          "description": "Variables that are not directly observed but are inferred from other variables."
+        }
+      ]
+    },
+    {
+      "name": "Coding Techniques",
+      "description": "Methods used to represent data in a format suitable for machine learning algorithms.",
+      "sub_topics": [
+        {
+          "name": "Sparse Coding",
+          "description": "A representation of data as a linear combination of a small number of basis elements."
+        },
+        {
+          "name": "Autoencoder",
+          "description": "A type of neural network used to learn efficient representations of data."
+        },
+        {
+          "name": "Linear Autoencoder",
+          "description": "An autoencoder that uses linear transformations to encode and decode data."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing the loss function."
+        },
+        {
+          "name": "Artificial Neural Networks",
+          "description": "Networks of interconnected nodes that simulate the way the human brain processes information."
+        }
+      ]
+    },
+    {
+      "name": "Regression and Classification",
+      "description": "Supervised learning techniques used to predict outcomes based on input data.",
+      "sub_topics": [
+        {
+          "name": "Linear Regression",
+          "description": "A method for modeling the relationship between a dependent variable and one or more independent variables."
+        },
+        {
+          "name": "Classification Algorithms",
+          "description": "Techniques used to categorize data into predefined classes."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Dimensionality Reduction",
+      "description": "Techniques used to reduce the number of features in a dataset while preserving important information.",
+      "sub_topics": [
+        {
+          "name": "Principal Component Analysis",
+          "description": "A method that transforms data into a lower-dimensional space."
+        },
+        {
+          "name": "Multivariate Analysis",
+          "description": "Statistical techniques used to analyze data that involves multiple variables."
+        },
+        {
+          "name": "Manifold Learning",
+          "description": "A type of dimensionality reduction that seeks to uncover the underlying structure of data."
+        }
+      ]
+    },
+    {
+      "name": "Statistical Models",
+      "description": "Mathematical representations of data that account for randomness and uncertainty.",
+      "sub_topics": [
+        {
+          "name": "Multivariate Normal Distribution",
+          "description": "A generalization of the normal distribution to multiple dimensions."
+        },
+        {
+          "name": "Isotropic Precision",
+          "description": "A property of statistical models where the precision is uniform across all directions."
+        },
+        {
+          "name": "Factorial Analysis",
+          "description": "A statistical method used to describe variability among observed variables."
+        }
+      ]
+    },
+    {
+      "name": "Learning Algorithms",
+      "description": "Procedures used to train models on data to make predictions or decisions.",
+      "sub_topics": [
+        {
+          "name": "Training Techniques",
+          "description": "Methods used to optimize model parameters during the learning process."
+        },
+        {
+          "name": "Sparsity Penalty",
+          "description": "A regularization technique that encourages simpler models by penalizing complexity."
+        },
+        {
+          "name": "Zero Probability Models",
+          "description": "Models that account for the likelihood of zero occurrences in data."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Methods used to assess the performance and accuracy of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Model Comparison",
+          "description": "Techniques for comparing the performance of different models."
+        },
+        {
+          "name": "Sample Weights",
+          "description": "Weights assigned to samples to influence the training process."
+        },
+        {
+          "name": "Observed Variables",
+          "description": "Variables that are directly measured in a study."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 18.6741,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

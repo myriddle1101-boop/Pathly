@@ -1,0 +1,43 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 7,
+  "prerequisites": [
+    {
+      "from": "Artificial Intelligence",
+      "to": "Machine Learning",
+      "reason": "Machine Learning is a subset of AI."
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Neural Networks",
+      "reason": "Neural Networks are a common model used in Machine Learning."
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Data in AI",
+      "reason": "Data is essential for training Machine Learning models."
+    },
+    {
+      "from": "Artificial Intelligence",
+      "to": "Challenges in AI",
+      "reason": "Understanding AI is necessary to grasp its challenges."
+    },
+    {
+      "from": "Artificial Intelligence",
+      "to": "Robotics and Automation",
+      "reason": "AI principles are foundational for Robotics and Automation."
+    },
+    {
+      "from": "Machine Learning",
+      "to": "Machine Teaching",
+      "reason": "Machine Teaching involves methods to improve Machine Learning."
+    },
+    {
+      "from": "Artificial Intelligence",
+      "to": "Systems Challenges",
+      "reason": "AI systems face unique technical challenges."
+    }
+  ]
+}

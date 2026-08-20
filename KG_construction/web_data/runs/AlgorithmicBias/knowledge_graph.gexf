@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-06-17">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Bias in AI" label="Bias in AI">
+        <attvalues>
+          <attvalue for="0" value="Explores various aspects of bias in artificial intelligence systems." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Types of Bias&quot;, &quot;description&quot;: &quot;Different categories and manifestations of bias in AI.&quot;}, {&quot;name&quot;: &quot;Mitigating Bias&quot;, &quot;description&quot;: &quot;Strategies and methods to reduce bias in AI models.&quot;}, {&quot;name&quot;: &quot;Human Bias&quot;, &quot;description&quot;: &quot;The influence of human biases on AI decision-making.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and statistics." />
+          <attvalue for="6" value="[&quot;Types of bias (e.g., data bias, algorithmic bias)&quot;, &quot;Impact of bias on AI outcomes&quot;]" />
+          <attvalue for="7" value="[&quot;Bias only refers to human prejudice&quot;, &quot;AI systems are inherently unbiased&quot;]" />
+          <attvalue for="8" value="[&quot;Improving fairness in AI models&quot;, &quot;Bias detection and mitigation techniques&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Probabilities in AI" label="Probabilities in AI">
+        <attvalues>
+          <attvalue for="0" value="Focuses on the role of probabilities in machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Predicted Probabilities&quot;, &quot;description&quot;: &quot;Understanding how models predict outcomes based on probabilities.&quot;}, {&quot;name&quot;: &quot;Probabilities in Decision Making&quot;, &quot;description&quot;: &quot;The use of probabilities in algorithmic decision processes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and introductory machine learning concepts." />
+          <attvalue for="6" value="[&quot;Bayesian inference&quot;, &quot;Probability distributions&quot;]" />
+          <attvalue for="7" value="[&quot;Probabilities are always between 0 and 1&quot;, &quot;More data always leads to better probability estimates&quot;]" />
+          <attvalue for="8" value="[&quot;Spam detection in emails&quot;, &quot;Predictive text in search engines&quot;]" />
+        </attvalues>
+      </node>
+      <node id="AI Algorithms" label="AI Algorithms">
+        <attvalues>
+          <attvalue for="0" value="Covers various algorithms used in artificial intelligence and machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Classification Algorithms&quot;, &quot;description&quot;: &quot;Algorithms used for classifying data into categories.&quot;}, {&quot;name&quot;: &quot;Regression Algorithms&quot;, &quot;description&quot;: &quot;Techniques for predicting continuous outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;, &quot;Neural Networks&quot;]" />
+          <attvalue for="7" value="[&quot;All AI algorithms are the same&quot;, &quot;More data always leads to better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Autonomous vehicles&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Fairness in AI" label="Fairness in AI">
+        <attvalues>
+          <attvalue for="0" value="Examines the concept of fairness and its implications in AI systems." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Fairness Metrics&quot;, &quot;description&quot;: &quot;Metrics used to evaluate fairness in AI models.&quot;}, {&quot;name&quot;: &quot;Algorithmic Accountability&quot;, &quot;description&quot;: &quot;The responsibility of AI systems to be fair and transparent.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and statistics." />
+          <attvalue for="6" value="[&quot;Bias in data&quot;, &quot;Equity vs. equality&quot;]" />
+          <attvalue for="7" value="[&quot;Fairness means equal treatment for all&quot;, &quot;AI systems are inherently unbiased&quot;]" />
+          <attvalue for="8" value="[&quot;Hiring algorithms&quot;, &quot;Credit scoring systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Representation" label="Data Representation">
+        <attvalues>
+          <attvalue for="0" value="Discusses how data is represented and its impact on model performance." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Training Data&quot;, &quot;description&quot;: &quot;The data used to train machine learning models.&quot;}, {&quot;name&quot;: &quot;Benchmark Datasets&quot;, &quot;description&quot;: &quot;Standard datasets used for evaluating model performance.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Feature Scaling&quot;, &quot;Encoding Categorical Variables&quot;]" />
+          <attvalue for="7" value="[&quot;Data representation does not affect model performance.&quot;, &quot;All data types can be treated the same.&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model accuracy through better feature representation&quot;, &quot;Optimizing data for neural networks&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Evaluation" label="Model Evaluation">
+        <attvalues>
+          <attvalue for="0" value="Focuses on techniques for evaluating the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions used to measure the difference between predicted and actual outcomes.&quot;}, {&quot;name&quot;: &quot;Model Trees&quot;, &quot;description&quot;: &quot;Tree-based models for regression and classification tasks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and statistics." />
+          <attvalue for="6" value="[&quot;Confusion Matrix&quot;, &quot;ROC Curve&quot;, &quot;Precision and Recall&quot;, &quot;F1 Score&quot;]" />
+          <attvalue for="7" value="[&quot;Accuracy is the only metric that matters.&quot;, &quot;Overfitting is not a concern during evaluation.&quot;]" />
+          <attvalue for="8" value="[&quot;Model selection and comparison&quot;, &quot;Hyperparameter tuning&quot;, &quot;Performance monitoring in production&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Explores the structure and function of artificial neural networks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of neural network nodes.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;The algorithm used for training neural networks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="AI Applications" label="AI Applications">
+        <attvalues>
+          <attvalue for="0" value="Discusses various applications of AI in different fields." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Healthcare AI&quot;, &quot;description&quot;: &quot;The use of AI technologies in healthcare settings.&quot;}, {&quot;name&quot;: &quot;AI in Finance&quot;, &quot;description&quot;: &quot;Applications of AI in financial services and markets.&quot;}]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of computer science and statistics." />
+          <attvalue for="6" value="[&quot;Machine Learning&quot;, &quot;Natural Language Processing&quot;, &quot;Computer Vision&quot;, &quot;Robotics&quot;]" />
+          <attvalue for="7" value="[&quot;AI can think like a human&quot;, &quot;AI will replace all jobs&quot;, &quot;AI is infallible&quot;]" />
+          <attvalue for="8" value="[&quot;Healthcare diagnostics&quot;, &quot;Autonomous vehicles&quot;, &quot;Personalized marketing&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Ethics in AI" label="Ethics in AI">
+        <attvalues>
+          <attvalue for="0" value="Examines ethical considerations and implications of AI technologies." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Discrimination in AI&quot;, &quot;description&quot;: &quot;How AI can perpetuate discrimination and inequality.&quot;}, {&quot;name&quot;: &quot;Trustworthiness of AI&quot;, &quot;description&quot;: &quot;Factors that contribute to the trustworthiness of AI systems.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of AI and machine learning principles." />
+          <attvalue for="6" value="[&quot;Bias in AI&quot;, &quot;Transparency and Accountability&quot;]" />
+          <attvalue for="7" value="[&quot;AI is inherently objective&quot;, &quot;Ethics in AI is not relevant to technical development&quot;]" />
+          <attvalue for="8" value="[&quot;Developing fair algorithms&quot;, &quot;Implementing ethical guidelines in AI projects&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Bias in AI" target="Fairness in AI" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding bias is crucial for discussing fairness in AI systems." />
+        </attvalues>
+      </edge>
+      <edge source="Probabilities in AI" target="AI Algorithms" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding probabilities is essential for grasping algorithmic decision-making." />
+        </attvalues>
+      </edge>
+      <edge source="AI Algorithms" target="Neural Networks" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Knowledge of algorithms is necessary to understand the functioning of neural networks." />
+        </attvalues>
+      </edge>
+      <edge source="AI Algorithms" target="AI Applications" id="3">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7513" />
+        </attvalues>
+      </edge>
+      <edge source="Data Representation" target="Model Evaluation" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Effective model evaluation relies on understanding how data is represented." />
+        </attvalues>
+      </edge>
+      <edge source="Ethics in AI" target="Fairness in AI" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Ethical considerations are foundational for evaluating fairness in AI." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

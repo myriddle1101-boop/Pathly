@@ -1,0 +1,855 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 21,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "machine learning",
+      "avg_score": 0.547,
+      "frequency": 4,
+      "chunk_ids": [
+        3,
+        12,
+        14,
+        18
+      ]
+    },
+    {
+      "name": "linear regression",
+      "avg_score": 0.6225,
+      "frequency": 3,
+      "chunk_ids": [
+        1,
+        2,
+        9
+      ]
+    },
+    {
+      "name": "training error",
+      "avg_score": 0.614,
+      "frequency": 3,
+      "chunk_ids": [
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "name": "regression",
+      "avg_score": 0.5848,
+      "frequency": 3,
+      "chunk_ids": [
+        1,
+        2,
+        9
+      ]
+    },
+    {
+      "name": "learning algorithm",
+      "avg_score": 0.5578,
+      "frequency": 3,
+      "chunk_ids": [
+        4,
+        6,
+        10
+      ]
+    },
+    {
+      "name": "error training",
+      "avg_score": 0.598,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        8
+      ]
+    },
+    {
+      "name": "dimensional manifold",
+      "avg_score": 0.5802,
+      "frequency": 2,
+      "chunk_ids": [
+        19,
+        20
+      ]
+    },
+    {
+      "name": "learning basics",
+      "avg_score": 0.5119,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        12
+      ]
+    },
+    {
+      "name": "learning",
+      "avg_score": 0.4678,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        12
+      ]
+    },
+    {
+      "name": "learning manifold",
+      "avg_score": 0.7542,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "manifold learning",
+      "avg_score": 0.754,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "regression learning",
+      "avg_score": 0.7096,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "pca representation",
+      "avg_score": 0.7091,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "regression used",
+      "avg_score": 0.6952,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "regression learns",
+      "avg_score": 0.6932,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "mse estimators",
+      "avg_score": 0.659,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "term linear",
+      "avg_score": 0.6569,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "regression example",
+      "avg_score": 0.6551,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "mse measures",
+      "avg_score": 0.6466,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "manifold learner",
+      "avg_score": 0.6457,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "training dataset",
+      "avg_score": 0.6449,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "regression problem",
+      "avg_score": 0.6444,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "distance metrics",
+      "avg_score": 0.64,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "polynomial overfits",
+      "avg_score": 0.635,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "tree learn",
+      "avg_score": 0.6341,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "images uniformly",
+      "avg_score": 0.6322,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "term manifold",
+      "avg_score": 0.6229,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "training sets",
+      "avg_score": 0.6226,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "evaluating mse",
+      "avg_score": 0.6203,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "regression weight",
+      "avg_score": 0.617,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "examples leaf",
+      "avg_score": 0.6137,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "sizes training",
+      "avg_score": 0.6128,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "tree plotted",
+      "avg_score": 0.61,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "study pca",
+      "avg_score": 0.6072,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "training set",
+      "avg_score": 0.6068,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "tree divides",
+      "avg_score": 0.606,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "linear function",
+      "avg_score": 0.6045,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "training data",
+      "avg_score": 0.6042,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "manifold machine",
+      "avg_score": 0.6037,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "manifold like",
+      "avg_score": 0.6017,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "error generalization",
+      "avg_score": 0.5952,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "predictions linear",
+      "avg_score": 0.5946,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "training generalization",
+      "avg_score": 0.5943,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "generalized distance",
+      "avg_score": 0.592,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "nearest algorithm",
+      "avg_score": 0.5893,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "training algorithm",
+      "avg_score": 0.5855,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "capacity training",
+      "avg_score": 0.5799,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "manifold",
+      "avg_score": 0.5796,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "learned distance",
+      "avg_score": 0.5794,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "sampling images",
+      "avg_score": 0.5774,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "point manifold",
+      "avg_score": 0.5752,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "dimensionality statistical",
+      "avg_score": 0.5722,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "training size",
+      "avg_score": 0.5718,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "covariance matrix",
+      "avg_score": 0.5675,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "polynomial",
+      "avg_score": 0.5669,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "infinity training",
+      "avg_score": 0.5652,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "algorithm generalized",
+      "avg_score": 0.5642,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "parameters training",
+      "avg_score": 0.5641,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "examples dimensions",
+      "avg_score": 0.5639,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "sampled images",
+      "avg_score": 0.5624,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "pca learns",
+      "avg_score": 0.5611,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "ability training",
+      "avg_score": 0.5601,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "training examples",
+      "avg_score": 0.5596,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "regression model",
+      "avg_score": 0.5578,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "algorithm choose",
+      "avg_score": 0.5536,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "gap training",
+      "avg_score": 0.5536,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "dimensional example",
+      "avg_score": 0.5523,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "components analysis",
+      "avg_score": 0.5504,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "learning algorithms",
+      "avg_score": 0.5493,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "dimensionality chapter",
+      "avg_score": 0.5481,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "example training",
+      "avg_score": 0.5474,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "estimators bias",
+      "avg_score": 0.5458,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "dimensionality",
+      "avg_score": 0.5449,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "dimensionality arises",
+      "avg_score": 0.5427,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "regression include",
+      "avg_score": 0.5426,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "examples unit",
+      "avg_score": 0.5401,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "coefficients",
+      "avg_score": 0.5398,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "underlying manifold",
+      "avg_score": 0.5381,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "leaf",
+      "avg_score": 0.5368,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "neighbor algorithm",
+      "avg_score": 0.5367,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Machine Learning",
+      "description": "The study of algorithms that improve automatically through experience.",
+      "sub_topics": [
+        {
+          "name": "Learning Algorithms",
+          "description": "Methods used to create models from data."
+        },
+        {
+          "name": "Training Error",
+          "description": "The error rate of a model on the training dataset."
+        },
+        {
+          "name": "Generalization",
+          "description": "The ability of a model to perform well on unseen data."
+        }
+      ]
+    },
+    {
+      "name": "Regression",
+      "description": "A statistical method for modeling the relationship between variables.",
+      "sub_topics": [
+        {
+          "name": "Linear Regression",
+          "description": "A method for modeling the relationship between a scalar response and one or more explanatory variables."
+        },
+        {
+          "name": "Regression Model",
+          "description": "A mathematical representation of the relationship between input and output variables."
+        },
+        {
+          "name": "Regression Problem",
+          "description": "The task of predicting a continuous output variable."
+        }
+      ]
+    },
+    {
+      "name": "Dimensionality Reduction",
+      "description": "Techniques for reducing the number of features in a dataset.",
+      "sub_topics": [
+        {
+          "name": "PCA Representation",
+          "description": "Principal Component Analysis, a method for reducing dimensionality while preserving variance."
+        },
+        {
+          "name": "Manifold Learning",
+          "description": "A type of non-linear dimensionality reduction."
+        },
+        {
+          "name": "Dimensionality Statistical",
+          "description": "Statistical methods for analyzing high-dimensional data."
+        }
+      ]
+    },
+    {
+      "name": "Training Data",
+      "description": "The dataset used to train machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Training Set",
+          "description": "A subset of data used to fit the model."
+        },
+        {
+          "name": "Training Examples",
+          "description": "Individual instances in the training dataset."
+        },
+        {
+          "name": "Training Size",
+          "description": "The number of examples in the training dataset."
+        }
+      ]
+    },
+    {
+      "name": "Error Metrics",
+      "description": "Quantitative measures used to assess the performance of models.",
+      "sub_topics": [
+        {
+          "name": "MSE Measures",
+          "description": "Mean Squared Error, a common metric for regression tasks."
+        },
+        {
+          "name": "Error Generalization",
+          "description": "The difference between training error and validation error."
+        },
+        {
+          "name": "Estimators Bias",
+          "description": "The difference between the expected prediction of the model and the true value."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain's network of neurons.",
+      "sub_topics": [
+        {
+          "name": "Activation Function",
+          "description": "A function that determines the output of a neuron."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing error."
+        },
+        {
+          "name": "Artificial Neural Network",
+          "description": "A network of interconnected neurons used for various tasks."
+        }
+      ]
+    },
+    {
+      "name": "Classification",
+      "description": "The task of predicting categorical labels for data points.",
+      "sub_topics": [
+        {
+          "name": "Linear Separation",
+          "description": "The ability to separate classes using a linear boundary."
+        },
+        {
+          "name": "Classification Algorithms",
+          "description": "Methods used to classify data into categories."
+        },
+        {
+          "name": "Decision Trees",
+          "description": "A model that uses a tree-like graph of decisions."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Cross-Validation",
+          "description": "A technique for assessing how the results of a statistical analysis will generalize to an independent dataset."
+        },
+        {
+          "name": "Hyperparameter Tuning",
+          "description": "The process of optimizing model parameters to improve performance."
+        },
+        {
+          "name": "Performance Metrics",
+          "description": "Quantitative measures used to evaluate model accuracy."
+        }
+      ]
+    },
+    {
+      "name": "Distance Metrics",
+      "description": "Measures used to quantify the distance between data points.",
+      "sub_topics": [
+        {
+          "name": "Euclidean Distance",
+          "description": "The straight-line distance between two points in Euclidean space."
+        },
+        {
+          "name": "Manhattan Distance",
+          "description": "The distance between two points measured along axes at right angles."
+        },
+        {
+          "name": "Generalized Distance",
+          "description": "A broader concept of distance that can include various metrics."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 23.9132,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "stage": "stage2a",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage1_chunks.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2a_topics_hybrid.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 83.5549,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2a_topics_hybrid.json: OK"
+    ]
+  },
+  "stdout_tail": "eyBERT] chunk 78/132 ...\n[KeyBERT] chunk 79/132 ...\n[KeyBERT] chunk 80/132 ...\n[KeyBERT] chunk 81/132 ...\n[KeyBERT] chunk 82/132 ...\n[KeyBERT] chunk 83/132 ...\n[KeyBERT] chunk 84/132 ...\n[KeyBERT] chunk 85/132 ...\n[KeyBERT] chunk 86/132 ...\n[KeyBERT] chunk 87/132 ...\n[KeyBERT] chunk 88/132 ...\n[KeyBERT] chunk 89/132 ...\n[KeyBERT] chunk 90/132 ...\n[KeyBERT] chunk 91/132 ...\n[KeyBERT] chunk 92/132 ...\n[KeyBERT] chunk 93/132 ...\n[KeyBERT] chunk 94/132 ...\n[KeyBERT] chunk 95/132 ...\n[KeyBERT] chunk 96/132 ...\n[KeyBERT] chunk 97/132 ...\n[KeyBERT] chunk 98/132 ...\n[KeyBERT] chunk 99/132 ...\n[KeyBERT] chunk 100/132 ...\n[KeyBERT] chunk 101/132 ...\n[KeyBERT] chunk 102/132 ...\n[KeyBERT] chunk 103/132 ...\n[KeyBERT] chunk 104/132 ...\n[KeyBERT] chunk 105/132 ...\n[KeyBERT] chunk 106/132 ...\n[KeyBERT] chunk 107/132 ...\n[KeyBERT] chunk 108/132 ...\n[KeyBERT] chunk 109/132 ...\n[KeyBERT] chunk 110/132 ...\n[KeyBERT] chunk 111/132 ...\n[KeyBERT] chunk 112/132 ...\n[KeyBERT] chunk 113/132 ...\n[KeyBERT] chunk 114/132 ...\n[KeyBERT] chunk 115/132 ...\n[KeyBERT] chunk 116/132 ...\n[KeyBERT] chunk 117/132 ...\n[KeyBERT] chunk 118/132 ...\n[KeyBERT] chunk 119/132 ...\n[KeyBERT] chunk 120/132 ...\n[KeyBERT] chunk 121/132 ...\n[KeyBERT] chunk 122/132 ...\n[KeyBERT] chunk 123/132 ...\n[KeyBERT] chunk 124/132 ...\n[KeyBERT] chunk 125/132 ...\n[KeyBERT] chunk 126/132 ...\n[KeyBERT] chunk 127/132 ...\n[KeyBERT] chunk 128/132 ...\n[KeyBERT] chunk 129/132 ...\n[KeyBERT] chunk 130/132 ...\n[KeyBERT] chunk 131/132 ...\n[KeyBERT] chunk 132/132 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Machine Learning\n02. Neural Networks\n03. Training Process\n04. Model Evaluation\n05. Data Management\n06. Performance Metrics\n07. Pipeline Design\n08. Overfitting and Generalization\n09. Specialized Applications\n\n Stage 2a 混合版完成\n",
+  "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4925.01it/s]\n"
+}

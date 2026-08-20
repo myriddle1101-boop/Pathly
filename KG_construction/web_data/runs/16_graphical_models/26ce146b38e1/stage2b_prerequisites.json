@@ -1,0 +1,33 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Graph Theory",
+      "to": "Graph Models",
+      "reason": "Understanding graph properties is essential for modeling relationships."
+    },
+    {
+      "from": "Graph Theory",
+      "to": "Graph Representations",
+      "reason": "Knowledge of graph properties is necessary to represent data using graphs."
+    },
+    {
+      "from": "Graph Models",
+      "to": "Structured Modeling",
+      "reason": "Graph models provide a structured approach to modeling relationships."
+    },
+    {
+      "from": "Sampling Techniques",
+      "to": "Model Evaluation",
+      "reason": "Effective evaluation often requires understanding sampling methods."
+    },
+    {
+      "from": "Training Algorithms",
+      "to": "Model Evaluation",
+      "reason": "Evaluating models is crucial to understanding the effectiveness of training algorithms."
+    }
+  ]
+}

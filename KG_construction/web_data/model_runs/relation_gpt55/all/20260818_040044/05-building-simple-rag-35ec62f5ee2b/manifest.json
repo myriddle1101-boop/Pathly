@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "05-building-simple-rag-35ec62f5ee2b",
+  "created_at": "2026-07-22T04:15:07+08:00",
+  "updated_at": "2026-07-22T04:17:08+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "05-building-simple-rag.pdf",
+    "doc_name": "05-building-simple-rag",
+    "sha256": "35ec62f5ee2b5b76fb8c40725f638949b72d9b584ee2f8d77dfd3fe051af777d",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\05-building-simple-rag.pdf",
+    "pdf_size_bytes": 34686
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 121.7294
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:15:07+08:00",
+      "ended_at": "2026-07-22T04:15:12+08:00",
+      "duration_seconds": 4.9901,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\05-building-simple-rag.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 2005\n[2] 清洗后词数: 2040\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 12\n[5] 分块数（过滤后）: 12\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=141\nLesson 5: Building a Simple RAG System Now it's time to put everything together! In this lesson, you'll build a complete RAG system step by step. What We're Building A simple but functional RAG system that: - n Loads and...\n\n[Chunk 2] words=140\nLLM_MODEL = \"gpt-3.5-turbo\" LLM_TEMPERATURE = 0.7 MAX_TOKENS = 500 # Embedding Settings EMBEDDING_MODEL = \"all-Mini LM-L 6-v 2\" # Free, local model # Chunking Settings CHUNK_SIZE = 500 CHUNK_OVERLAP = 50 # Retrieval Sett...\n\n[Chunk 3] words=162\ndocuments.append(doc) print(f\"Loaded: {file_path}\") except Exception as e: print(f\"Error loading {file_path}: {e}\") return documents @staticmethod def load_from_text(text: str, metadata: Dict = None) -> Dict: \"\"\"Load fro...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:15:12+08:00",
+      "ended_at": "2026-07-22T04:16:00+08:00",
+      "duration_seconds": 48.3687,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：12\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/12 ...\n[KeyBERT] chunk 2/12 ...\n[KeyBERT] chunk 3/12 ...\n[KeyBERT] chunk 4/12 ...\n[KeyBERT] chunk 5/12 ...\n[KeyBERT] chunk 6/12 ...\n[KeyBERT] chunk 7/12 ...\n[KeyBERT] chunk 8/12 ...\n[KeyBERT] chunk 9/12 ...\n[KeyBERT] chunk 10/12 ...\n[KeyBERT] chunk 11/12 ...\n[KeyBERT] chunk 12/12 ...\n[2] KeyBERT候选数：72\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Model Evaluation\n02. Text Processing\n03. Neural Networks\n04. RAG Systems\n05. Configuration Management\n06. Query Handling\n07. Error Analysis\n08. Training Techniques\n09. Python Integration\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6501.48it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:16:00+08:00",
+      "ended_at": "2026-07-22T04:16:08+08:00",
+      "duration_seconds": 7.6138,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Text Processing -> Query Handling | Query handling often requires text processing techniques.\n02. Neural Networks -> Training Techniques | Understanding neural networks is essential for applying training techniques.\n03. Model Evaluation -> Error Analysis | Evaluating models is necessary to identify and analyze errors.\n04. Configuration Management -> Training Techniques | Proper configuration management is crucial for effective training of models.\n05. Neural Networks -> RAG Systems | Knowledge of neural networks is fundamental for understanding RAG systems.\n06. Python Integration -> Text Processing | Python is commonly used for implementing text processing methods.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:16:08+08:00",
+      "ended_at": "2026-07-22T04:16:40+08:00",
+      "duration_seconds": 32.195,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 0 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6774.12it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:16:40+08:00",
+      "ended_at": "2026-07-22T04:17:07+08:00",
+      "duration_seconds": 26.7485,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Model Evaluation\n[LLM] 2/9 Text Processing\n[LLM] 3/9 Neural Networks\n[LLM] 4/9 RAG Systems\n[LLM] 5/9 Configuration Management\n[LLM] 6/9 Query Handling\n[LLM] 7/9 Error Analysis\n[LLM] 8/9 Training Techniques\n[LLM] 9/9 Python Integration\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-22T04:17:07+08:00",
+      "ended_at": "2026-07-22T04:17:08+08:00",
+      "duration_seconds": 1.7094,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output missing"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 6\n[3] Similarity edges: 0\n[4] Graph nodes=9, edges=6\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Info] No similarity edges. Skip similarity plot.\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-22T04:15:07+08:00"
+}

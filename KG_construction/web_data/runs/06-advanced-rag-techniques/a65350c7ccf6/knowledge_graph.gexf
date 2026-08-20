@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-22">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="similarity" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Text Chunking" label="Text Chunking">
+        <attvalues>
+          <attvalue for="0" value="Techniques for dividing text into manageable pieces for processing." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Chunk Text Function&quot;, &quot;description&quot;: &quot;A function to define how text is chunked.&quot;}, {&quot;name&quot;: &quot;Chunk Size&quot;, &quot;description&quot;: &quot;The size of each text chunk.&quot;}, {&quot;name&quot;: &quot;Chunker Threshold&quot;, &quot;description&quot;: &quot;The criteria for determining chunk boundaries.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and regular expressions." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Named Entity Recognition&quot;, &quot;Part-of-Speech Tagging&quot;]" />
+          <attvalue for="7" value="[&quot;Text chunking is the same as text summarization.&quot;, &quot;Chunking only applies to English language.&quot;]" />
+          <attvalue for="8" value="[&quot;Information extraction&quot;, &quot;Sentiment analysis&quot;, &quot;Chatbot development&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Query Processing" label="Query Processing">
+        <attvalues>
+          <attvalue for="0" value="Methods for handling and optimizing queries in machine learning systems." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Query Expansion&quot;, &quot;description&quot;: &quot;Techniques to enhance queries for better results.&quot;}, {&quot;name&quot;: &quot;Async Queries&quot;, &quot;description&quot;: &quot;Handling queries asynchronously for efficiency.&quot;}, {&quot;name&quot;: &quot;Query Filters&quot;, &quot;description&quot;: &quot;Criteria applied to refine query results.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of databases and machine learning concepts." />
+          <attvalue for="6" value="[&quot;Query Optimization&quot;, &quot;Indexing Techniques&quot;, &quot;Data Retrieval Methods&quot;, &quot;Execution Plans&quot;]" />
+          <attvalue for="7" value="[&quot;Query processing is only about speed.&quot;, &quot;All queries can be optimized equally.&quot;]" />
+          <attvalue for="8" value="[&quot;Improving response time in ML applications&quot;, &quot;Efficient data retrieval for training models&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Results Management" label="Results Management">
+        <attvalues>
+          <attvalue for="0" value="Strategies for managing and optimizing results from queries." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Unique Results&quot;, &quot;description&quot;: &quot;Ensuring results are distinct and non-redundant.&quot;}, {&quot;name&quot;: &quot;Reranked Results&quot;, &quot;description&quot;: &quot;Reordering results based on relevance.&quot;}, {&quot;name&quot;: &quot;Final Results&quot;, &quot;description&quot;: &quot;The final output after processing and ranking.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of databases and query languages." />
+          <attvalue for="6" value="[&quot;Query optimization&quot;, &quot;Result caching&quot;, &quot;Pagination&quot;, &quot;Data filtering&quot;]" />
+          <attvalue for="7" value="[&quot;Results management is only about speed&quot;, &quot;All queries need optimization&quot;]" />
+          <attvalue for="8" value="[&quot;Improving database performance&quot;, &quot;Enhancing user experience in applications&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Semantic Processing" label="Semantic Processing">
+        <attvalues>
+          <attvalue for="0" value="Techniques for understanding and processing the meaning of text." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Semantic Scores&quot;, &quot;description&quot;: &quot;Scores that quantify the relevance of results.&quot;}, {&quot;name&quot;: &quot;Contextual Relevance&quot;, &quot;description&quot;: &quot;Assessing the relevance of results based on context.&quot;}, {&quot;name&quot;: &quot;Combine Semantic&quot;, &quot;description&quot;: &quot;Merging semantic information for improved understanding.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and programming skills in Python." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Named Entity Recognition&quot;, &quot;Sentiment Analysis&quot;, &quot;Word Embeddings&quot;]" />
+          <attvalue for="7" value="[&quot;Semantic processing is only about grammar.&quot;, &quot;All text can be easily understood by machines.&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots and virtual assistants&quot;, &quot;Content recommendation systems&quot;, &quot;Sentiment analysis for social media&quot;, &quot;Information retrieval systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Hybrid Search" label="Hybrid Search">
+        <attvalues>
+          <attvalue for="0" value="Combining different search techniques for improved results." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Hybrid Results&quot;, &quot;description&quot;: &quot;Results obtained from multiple search methods.&quot;}, {&quot;name&quot;: &quot;Usage of Hybrid&quot;, &quot;description&quot;: &quot;Strategies for effectively using hybrid search.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of search algorithms and data structures." />
+          <attvalue for="6" value="[&quot;Information Retrieval&quot;, &quot;Ranking Algorithms&quot;, &quot;Natural Language Processing&quot;]" />
+          <attvalue for="7" value="[&quot;Hybrid search is only about combining two search methods.&quot;, &quot;All hybrid searches yield better results than single methods.&quot;]" />
+          <attvalue for="8" value="[&quot;E-commerce product search&quot;, &quot;Document retrieval systems&quot;, &quot;Search engines&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Document Compression" label="Document Compression">
+        <attvalues>
+          <attvalue for="0" value="Methods for reducing the size of documents while preserving information." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Compressed Document&quot;, &quot;description&quot;: &quot;A document that has been reduced in size.&quot;}, {&quot;name&quot;: &quot;Compressed Docs Return&quot;, &quot;description&quot;: &quot;Returning compressed documents for processing.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data structures and algorithms, familiarity with text processing." />
+          <attvalue for="6" value="[&quot;Lossless Compression&quot;, &quot;Lossy Compression&quot;]" />
+          <attvalue for="7" value="[&quot;Compression always results in loss of information&quot;, &quot;All compression methods are equally effective for all document types&quot;]" />
+          <attvalue for="8" value="[&quot;Reducing storage space for large text files&quot;, &quot;Improving data transmission speeds over networks&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Network Concepts" label="Neural Network Concepts">
+        <attvalues>
+          <attvalue for="0" value="Fundamental concepts related to artificial neural networks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neuron.&quot;}, {&quot;name&quot;: &quot;Loss Function&quot;, &quot;description&quot;: &quot;A function that measures the difference between predicted and actual outcomes.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;A method for training neural networks by updating weights.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;, &quot;Loss Functions&quot;, &quot;Overfitting and Regularization&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Performance Optimization" label="Performance Optimization">
+        <attvalues>
+          <attvalue for="0" value="Techniques for improving the efficiency and effectiveness of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Optimize Use&quot;, &quot;description&quot;: &quot;Strategies for maximizing resource utilization.&quot;}, {&quot;name&quot;: &quot;Quality Improvement&quot;, &quot;description&quot;: &quot;Methods for enhancing the quality of results.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning algorithms and data preprocessing techniques." />
+          <attvalue for="6" value="[&quot;Hyperparameter Tuning&quot;, &quot;Feature Selection&quot;, &quot;Model Ensembling&quot;, &quot;Regularization Techniques&quot;]" />
+          <attvalue for="7" value="[&quot;More complex models always perform better&quot;, &quot;Overfitting is not a concern with large datasets&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model accuracy in classification tasks&quot;, &quot;Reducing training time for large datasets&quot;, &quot;Enhancing model generalization on unseen data&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Query Variations" label="Query Variations">
+        <attvalues>
+          <attvalue for="0" value="Different forms and structures of queries used in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Query Texts Parsed&quot;, &quot;description&quot;: &quot;Analyzing and interpreting different query formats.&quot;}, {&quot;name&quot;: &quot;Sub-Queries Results&quot;, &quot;description&quot;: &quot;Results obtained from smaller, component queries.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and data querying." />
+          <attvalue for="6" value="[&quot;Structured Queries&quot;, &quot;Unstructured Queries&quot;, &quot;Natural Language Queries&quot;, &quot;Boolean Queries&quot;]" />
+          <attvalue for="7" value="[&quot;All queries are the same regardless of structure.&quot;, &quot;Only structured queries are useful in machine learning.&quot;]" />
+          <attvalue for="8" value="[&quot;Data retrieval for training datasets&quot;, &quot;Information extraction from unstructured data&quot;, &quot;Enhancing search algorithms in AI systems&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Text Chunking" target="Semantic Processing" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Dividing text into chunks is a prerequisite for understanding its meaning." />
+        </attvalues>
+      </edge>
+      <edge source="Query Processing" target="Query Variations" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Mastering query processing is necessary to understand different forms of queries." />
+          <attvalue for="11" value="0.8416" />
+        </attvalues>
+      </edge>
+      <edge source="Query Processing" target="Results Management" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Effective query processing is crucial for managing and optimizing results." />
+        </attvalues>
+      </edge>
+      <edge source="Hybrid Search" target="Query Processing" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Combining search techniques requires a solid understanding of query processing." />
+        </attvalues>
+      </edge>
+      <edge source="Neural Network Concepts" target="Performance Optimization" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding neural networks is essential for optimizing their performance." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

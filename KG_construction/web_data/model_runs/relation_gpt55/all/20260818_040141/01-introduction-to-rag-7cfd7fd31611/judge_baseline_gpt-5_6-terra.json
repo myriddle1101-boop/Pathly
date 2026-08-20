@@ -1,0 +1,128 @@
+{
+  "created_at": "2026-08-18T18:35:34.190690+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-01-introduction-to-rag-7cfd7fd31611",
+  "file_name": "01-introduction-to-rag-7cfd7fd31611",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 5,
+  "topic_metrics": {
+    "precision": 0.4444,
+    "recall": 0.4444,
+    "f1": 0.4444,
+    "tp": 4,
+    "fp": 5,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 5,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Query Embedding",
+      "Retrieval-Augmented Generation (RAG)",
+      "Information Retrieval Quality",
+      "Relevant Information"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Scalability in Systems",
+        "reason": "Scalability is mentioned only as a comparative benefit of RAG over prompt stuffing, not as a standalone learning concept."
+      },
+      {
+        "name": "Neural Networks",
+        "reason": "The source discusses LLMs and embeddings but does not introduce neural networks as a topic."
+      },
+      {
+        "name": "Training Techniques",
+        "reason": "Fine-tuning and retraining are mentioned as alternatives or costs, but training techniques are not taught."
+      },
+      {
+        "name": "Information Access",
+        "reason": "Access to internal or personal information is an application benefit, not a distinct instructional concept."
+      },
+      {
+        "name": "Generative Models",
+        "reason": "The lesson refers specifically to LLMs generating answers, not to generative models as a general topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Vector Embeddings",
+        "reason": "The indexing and retrieval workflows explicitly convert document chunks and queries into numerical vector embeddings."
+      },
+      {
+        "name": "Vector Database",
+        "reason": "Embeddings are stored and searched in a vector database during the RAG workflow."
+      },
+      {
+        "name": "Document Chunking",
+        "reason": "Splitting documents into chunks is an explicit indexing step and a stated RAG challenge."
+      },
+      {
+        "name": "Similarity Search",
+        "reason": "Retrieval searches the vector database for embeddings similar to the query embedding."
+      },
+      {
+        "name": "Large Language Models (LLMs)",
+        "reason": "RAG is defined as combining external retrieval with LLMs, which generate the grounded response."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Training Techniques",
+        "reason": "Neither concept is taught in the source, and this dependency is not established."
+      },
+      {
+        "from": "Information Retrieval Quality",
+        "to": "Retrieval-Augmented Generation (RAG)",
+        "reason": "Retrieval quality is presented as a challenge affecting RAG performance, not as a prerequisite for learning RAG."
+      },
+      {
+        "from": "Information Access",
+        "to": "Relevant Information",
+        "reason": "The source does not establish a directional learning dependency between these broad notions."
+      },
+      {
+        "from": "Retrieval-Augmented Generation (RAG)",
+        "to": "Generative Models",
+        "reason": "The direction is unsupported: RAG uses an LLM for generation, rather than serving as a prerequisite for generative models."
+      },
+      {
+        "from": "Scalability in Systems",
+        "to": "Information Retrieval Quality",
+        "reason": "The source notes scalability as a benefit of RAG but does not make it a prerequisite for retrieval quality."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Document Chunking",
+        "to": "Vector Embeddings",
+        "reason": "The indexing process splits documents into chunks before converting those chunks into embeddings."
+      },
+      {
+        "from": "Vector Embeddings",
+        "to": "Similarity Search",
+        "reason": "Similarity search retrieves relevant chunks by comparing the query embedding with stored document embeddings."
+      },
+      {
+        "from": "RAG Retrieval",
+        "to": "RAG Generation",
+        "reason": "Generation constructs its prompt from retrieved chunks and produces an answer grounded in that context."
+      }
+    ],
+    "overall_note": "The predictions capture RAG and query embeddings, but omit several core workflow concepts and contain no valid strong prerequisite relation."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-01-introduction-to-rag-7cfd7fd31611.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-01-introduction-to-rag-7cfd7fd31611.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-01-introduction-to-rag-7cfd7fd31611_ledger.csv"
+  }
+}

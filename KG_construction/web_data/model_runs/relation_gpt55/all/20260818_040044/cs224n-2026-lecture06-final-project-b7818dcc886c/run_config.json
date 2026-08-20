@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c",
+  "run_id": "cs224n-2026-lecture06-final-project-b7818dcc886c",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:06.880556+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "5f8dc1144f482f4d1420a803f3eb454ecf1a3b6b921d8816ebc0e7c03cb1b644",
+    "stage2a_topics_hybrid.json": "0f0e54323f1718d59b63d8e1e256a42ba48ca7b6797a53e0cd1a132a039e8364",
+    "stage2c_similarity_edges.json": "ed6b078af96cf064eebcb07f13e3bc569002f24454053e83a426c3b8c1b127f4",
+    "stage3_topics_with_summary.json": "5e7ca2475cff60d45df9f8a1357d837a3617a8d880b787b5a951d4c6a776b99e"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

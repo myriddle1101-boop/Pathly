@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\cs224n-2026-lecture02-wordvecs.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 26.3658,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3283\n[2] 清洗后词数: 3345\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 15\n[5] 分块数（过滤后）: 15\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=266\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang Lecture 2: Word Vectors Lecture Plan Lecture 2: Word Vectors 1. Course organization (3 mins) 2. Word 2 vec introduction (15 mins) 3. Word 2 vec o...\n\n[Chunk 2] words=234\nHow do we have usable meaning in a computer? Previously commonest NLP solution: Use, e.g., Word Net, a thesaurus containing lists of synonym sets and hypernyms (“is a” relationships) e.g., synonym sets containing “good”:...\n\n[Chunk 3] words=197\nRepresenting words as discrete symbols In traditional NLP, we regard words as discrete symbols: hotel, conference, motel – a localist representation Means one 1, the rest 0 s Such symbols for words can be represented by ...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

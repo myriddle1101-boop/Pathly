@@ -1,0 +1,109 @@
+{
+  "created_at": "2026-08-18T18:56:00.100205+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53",
+  "file_name": "cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 28,
+  "topic_metrics": {
+    "precision": 0.7778,
+    "recall": 0.5833,
+    "f1": 0.6667,
+    "tp": 7,
+    "fp": 2,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 1.0,
+    "recall": 0.3333,
+    "f1": 0.5,
+    "tp": 2,
+    "fp": 0,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Tokenization",
+      "Encoding Techniques",
+      "Language Models",
+      "Linguistic Diversity",
+      "Training Techniques",
+      "Text Representation",
+      "Cross-Lingual Techniques"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "Transformers are mentioned as the architecture of multilingual LMs, but neural-network methods are not substantively taught."
+      },
+      {
+        "name": "Model Evaluation",
+        "reason": "The lecture reports evaluation outcomes and benchmarks, but does not cover evaluation methods as a learning topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Subword Tokenization",
+        "reason": "A central topic contrasting subword units with word and character/byte tokenization."
+      },
+      {
+        "name": "Byte Pair Encoding (BPE)",
+        "reason": "The lecture gives BPE's training algorithm, merge walkthrough, and test-time tokenization procedure."
+      },
+      {
+        "name": "Character/Byte Tokenization",
+        "reason": "The source discusses its vocabulary, coverage, sequence-length tradeoffs, and multilingual advantages."
+      },
+      {
+        "name": "Multilingual Language Models",
+        "reason": "The source defines multilingual LMs and discusses their training data, objectives, and capacity tradeoffs."
+      },
+      {
+        "name": "Cross-Lingual Transfer",
+        "reason": "The lecture explicitly defines and illustrates transfer from English fine-tuning to zero-shot inference in other languages."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Tokenization",
+        "to": "Encoding Techniques",
+        "reason": "The tokenizer first breaks text into tokens and encodes those tokens as token IDs."
+      },
+      {
+        "from": "Encoding Techniques",
+        "to": "Language Models",
+        "reason": "The source states that language models need a mapping from strings to token sequences and embeddings before they can process text."
+      }
+    ],
+    "rejected_prerequisites": [],
+    "missing_prerequisites": [
+      {
+        "from": "Tokenization",
+        "to": "Subword Tokenization",
+        "reason": "Subword tokenization is introduced as a particular tokenization scheme between word and character tokenization."
+      },
+      {
+        "from": "Subword Tokenization",
+        "to": "Byte Pair Encoding (BPE)",
+        "reason": "BPE is presented as a common algorithm for constructing a subword vocabulary."
+      },
+      {
+        "from": "Byte Pair Encoding (BPE)",
+        "to": "BPE Test-Time Tokenization",
+        "reason": "Test-time BPE tokenization applies the ordered merge rules learned during BPE training."
+      },
+      {
+        "from": "Multilingual Language Models",
+        "to": "Cross-Lingual Transfer",
+        "reason": "Cross-lingual transfer is explained as arising from shared multilingual representations learned by multilingual LMs."
+      }
+    ],
+    "overall_note": "The predictions capture the high-level tokenization-to-language-model pipeline, but omit the lecture's central specific methods, especially subword tokenization and BPE."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53_ledger.csv"
+  }
+}

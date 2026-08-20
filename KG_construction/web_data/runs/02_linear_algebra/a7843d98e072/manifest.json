@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "02_linear_algebra-a7843d98e072",
+  "created_at": "2026-07-29T13:39:05+08:00",
+  "updated_at": "2026-07-29T13:41:25+08:00",
+  "status": "success",
+  "run_attempts": 1,
+  "document": {
+    "file_name": "02_linear_algebra.pdf",
+    "doc_name": "02_linear_algebra",
+    "sha256": "a7843d98e0724cf58c8ae9bee3372da997558109d730374e7f9a2203e9891a55",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\02_linear_algebra.pdf",
+    "pdf_size_bytes": 17310841
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": "stage1",
+    "duration_seconds": 140.4274
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:39:05+08:00",
+      "ended_at": "2026-07-29T13:39:12+08:00",
+      "duration_seconds": 7.4056,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\02_linear_algebra.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 12039\n[2] 清洗后词数: 12219\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 60\n[5] 分块数（过滤后）: 52\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=74\nLinear Algebra Lecture slides for Chapter 2 of Deep Learning Ian Goodfellow 2016-06-24 About this chapter Not a comprehensive survey of all of linear algebra  Focused on the subset most relevant to deep  learning Large...\n\n[Chunk 2] words=262\nCHAPTER 2. LINEAR ALGEBRA s example, we might say “Let be the slope of the line,” while defining a R CHAPTER 2. LINEAR ALGEBRA 2 n real-valued scalar, or “Let be the number of units,” while defining a N example, we might...\n\n[Chunk 3] words=276\nThe elements of the vector are identified by writing its name in italic x 1 x 2 2 3 x = . (2.1) . x x typeface,. with a subscript. The first element of is , the second element . 1 6 7 6 x 7 n 6 7 4 5 x is and so on. We a...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:39:12+08:00",
+      "ended_at": "2026-07-29T13:40:17+08:00",
+      "duration_seconds": 64.567,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": ".json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：52\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/52 ...\n[KeyBERT] chunk 2/52 ...\n[KeyBERT] chunk 3/52 ...\n[KeyBERT] chunk 4/52 ...\n[KeyBERT] chunk 5/52 ...\n[KeyBERT] chunk 6/52 ...\n[KeyBERT] chunk 7/52 ...\n[KeyBERT] chunk 8/52 ...\n[KeyBERT] chunk 9/52 ...\n[KeyBERT] chunk 10/52 ...\n[KeyBERT] chunk 11/52 ...\n[KeyBERT] chunk 12/52 ...\n[KeyBERT] chunk 13/52 ...\n[KeyBERT] chunk 14/52 ...\n[KeyBERT] chunk 15/52 ...\n[KeyBERT] chunk 16/52 ...\n[KeyBERT] chunk 17/52 ...\n[KeyBERT] chunk 18/52 ...\n[KeyBERT] chunk 19/52 ...\n[KeyBERT] chunk 20/52 ...\n[KeyBERT] chunk 21/52 ...\n[KeyBERT] chunk 22/52 ...\n[KeyBERT] chunk 23/52 ...\n[KeyBERT] chunk 24/52 ...\n[KeyBERT] chunk 25/52 ...\n[KeyBERT] chunk 26/52 ...\n[KeyBERT] chunk 27/52 ...\n[KeyBERT] chunk 28/52 ...\n[KeyBERT] chunk 29/52 ...\n[KeyBERT] chunk 30/52 ...\n[KeyBERT] chunk 31/52 ...\n[KeyBERT] chunk 32/52 ...\n[KeyBERT] chunk 33/52 ...\n[KeyBERT] chunk 34/52 ...\n[KeyBERT] chunk 35/52 ...\n[KeyBERT] chunk 36/52 ...\n[KeyBERT] chunk 37/52 ...\n[KeyBERT] chunk 38/52 ...\n[KeyBERT] chunk 39/52 ...\n[KeyBERT] chunk 40/52 ...\n[KeyBERT] chunk 41/52 ...\n[KeyBERT] chunk 42/52 ...\n[KeyBERT] chunk 43/52 ...\n[KeyBERT] chunk 44/52 ...\n[KeyBERT] chunk 45/52 ...\n[KeyBERT] chunk 46/52 ...\n[KeyBERT] chunk 47/52 ...\n[KeyBERT] chunk 48/52 ...\n[KeyBERT] chunk 49/52 ...\n[KeyBERT] chunk 50/52 ...\n[KeyBERT] chunk 51/52 ...\n[KeyBERT] chunk 52/52 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Linear Algebra\n02. Matrix Inversion\n03. Matrix Decomposition\n04. Vector Norms\n05. Linear Equations\n06. Deep Learning\n07. Training Algorithms\n08. Matrix Properties\n09. Matrix Products\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 3559.33it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:40:17+08:00",
+      "ended_at": "2026-07-29T13:40:25+08:00",
+      "duration_seconds": 8.1701,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 7 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Linear Algebra -> Matrix Inversion | Matrix inversion relies on understanding linear algebra concepts.\n02. Linear Algebra -> Matrix Decomposition | Matrix decomposition techniques are based on linear algebra principles.\n03. Linear Algebra -> Vector Norms | Vector norms are defined using linear algebra.\n04. Linear Algebra -> Linear Equations | Linear equations are a fundamental concept in linear algebra.\n05. Matrix Inversion -> Training Algorithms | Training algorithms often require solving linear equations, which may involve matrix inversion.\n06. Matrix Properties -> Matrix Products | Understanding matrix properties is essential for performing matrix products.\n07. Deep Learning -> Training Algorithms | Training algorithms are crucial for optimizing deep learning models.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:40:25+08:00",
+      "ended_at": "2026-07-29T13:40:59+08:00",
+      "duration_seconds": 33.9322,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 2 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Linear Algebra <-> Linear Equations | sim=0.7816\n02. Matrix Products <-> Matrix Properties | sim=0.7502\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6295.33it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:40:59+08:00",
+      "ended_at": "2026-07-29T13:41:23+08:00",
+      "duration_seconds": 24.3701,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Linear Algebra\n[LLM] 2/9 Matrix Inversion\n[LLM] 3/9 Matrix Decomposition\n[LLM] 4/9 Vector Norms\n[LLM] 5/9 Linear Equations\n[LLM] 6/9 Deep Learning\n[LLM] 7/9 Training Algorithms\n[LLM] 8/9 Matrix Properties\n[LLM] 9/9 Matrix Products\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-29T13:41:23+08:00",
+      "ended_at": "2026-07-29T13:41:25+08:00",
+      "duration_seconds": 1.8929,
+      "return_code": 0,
+      "reused_on_resume": false,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: optional output present",
+          "kg_similarity.png: optional output present"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 7\n[3] Similarity edges: 2\n[4] Graph nodes=9, edges=8\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-29T13:39:05+08:00"
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\17_monte_carlo.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 5.5201,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3669\n[2] 清洗后词数: 3690\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 21\n[5] 分块数（过滤后）: 19\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=61\nMonte Carlo Methods Lecture slides for Chapter 17 of Deep Learning www.deeplearningbook.org Ian Goodfellow Last updated 2017-12-29 Roadmap  Basics of Monte Carlo methods  Importance Sampling  Markov Chains (Goodfellow...\n\n[Chunk 2] words=274\nCHAPTER 17. MONTE CARLO METHODS reduced cost. Sometimes we use this to provide a significant speedup to a costly CHAPTER 17. MONTE CARLO METHODS but tractable sum, as in the case when we subsample the full training cost ...\n\n[Chunk 3] words=170\nWhen a sum or an integral cannot be computed exactly (for example, the sum 17.1.2 Basics of Monte Carlo Sampling has an exponential number of terms, and no exact simplification is known), it is 17.1.2 Basics of Monte Car...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

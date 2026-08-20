@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee\\cs224n-2026-lecture04-rnnlm.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 10.6808,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3353\n[2] 清洗后词数: 3380\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 15\n[5] 分块数（过滤后）: 14\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=215\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang Lecture 4: Language Models and Recurrent Neural Networks Lecture Plan Lecture 4: Language modeling + RNNs 1. A new NLP task: Language Modeling (2...\n\n[Chunk 2] words=222\nWhy should we care about Language Modeling?  Language Modeling is a benchmark task that helps us measure our progress on predicting language use  Language Modeling is a subcomponent of many NLP tasks, especially those ...\n\n[Chunk 3] words=225\nn-gram Language Models the students opened their ______  Question: How to learn a Language Model?  Answer (pre- Deep Learning): learn an n-gram Language Model!  Definition: An n-gram is a chunk of n consecutive words....\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

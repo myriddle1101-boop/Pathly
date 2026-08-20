@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Recurrent Neural Networks" label="Recurrent Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="A class of neural networks designed for sequence prediction tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Sequence Modeling&quot;, &quot;description&quot;: &quot;Techniques for modeling sequential data.&quot;}, {&quot;name&quot;: &quot;RNN Architecture&quot;, &quot;description&quot;: &quot;The structural design of recurrent neural networks.&quot;}, {&quot;name&quot;: &quot;Gradient Clipping&quot;, &quot;description&quot;: &quot;A technique to prevent exploding gradients during training.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and linear algebra." />
+          <attvalue for="6" value="[&quot;Long Short-Term Memory (LSTM)&quot;, &quot;Gated Recurrent Units (GRU)&quot;]" />
+          <attvalue for="7" value="[&quot;RNNs can remember all past information indefinitely&quot;, &quot;RNNs are only suitable for text data&quot;]" />
+          <attvalue for="8" value="[&quot;Natural language processing&quot;, &quot;Time series forecasting&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain, used for various tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Metrics used to evaluate the performance of a model.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks through gradient descent.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Computational Graphs" label="Computational Graphs">
+        <attvalues>
+          <attvalue for="0" value="Graphical representations of mathematical computations in neural networks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Graphical Models&quot;, &quot;description&quot;: &quot;Models that use graphs to represent dependencies among variables.&quot;}, {&quot;name&quot;: &quot;Unfolding Graphs&quot;, &quot;description&quot;: &quot;Techniques to visualize recurrent networks over time.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus." />
+          <attvalue for="6" value="[&quot;Nodes and edges&quot;, &quot;Forward and backward propagation&quot;]" />
+          <attvalue for="7" value="[&quot;Computational graphs are only for deep learning&quot;, &quot;Graphs are only for visual representation&quot;]" />
+          <attvalue for="8" value="[&quot;Optimizing neural network training&quot;, &quot;Visualizing complex computations&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods and strategies for effectively training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Minibatch Gradient Descent&quot;, &quot;description&quot;: &quot;A variant of gradient descent that uses small batches of data.&quot;}, {&quot;name&quot;: &quot;Model Training&quot;, &quot;description&quot;: &quot;The process of optimizing a model's parameters.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting and Underfitting&quot;, &quot;Cross-Validation&quot;, &quot;Hyperparameter Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Training and testing data can be mixed&quot;, &quot;Complex models are always better&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Predictive analytics&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Sequence Prediction" label="Sequence Prediction">
+        <attvalues>
+          <attvalue for="0" value="The task of predicting future elements in a sequence based on past data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Language Modeling&quot;, &quot;description&quot;: &quot;Predicting the next word in a sequence of text.&quot;}, {&quot;name&quot;: &quot;Predictive Modeling&quot;, &quot;description&quot;: &quot;Using historical data to make predictions about future events.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Time Series Analysis&quot;, &quot;Recurrent Neural Networks (RNNs)&quot;]" />
+          <attvalue for="7" value="[&quot;Sequence prediction is only for time series data.&quot;, &quot;More data always leads to better predictions.&quot;]" />
+          <attvalue for="8" value="[&quot;Stock price forecasting&quot;, &quot;Natural language processing (e.g., text generation)&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Gradient Methods" label="Gradient Methods">
+        <attvalues>
+          <attvalue for="0" value="Techniques that utilize gradients for optimization in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Gradient Descent&quot;, &quot;description&quot;: &quot;An optimization algorithm for minimizing loss functions.&quot;}, {&quot;name&quot;: &quot;Norm Gradient&quot;, &quot;description&quot;: &quot;Techniques for normalizing gradients during training.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and linear algebra, familiarity with optimization concepts." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Stochastic Gradient Descent&quot;]" />
+          <attvalue for="7" value="[&quot;Gradient methods always converge to the global minimum&quot;, &quot;The learning rate can be arbitrary&quot;]" />
+          <attvalue for="8" value="[&quot;Training neural networks&quot;, &quot;Optimizing logistic regression models&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Memory Models" label="Memory Models">
+        <attvalues>
+          <attvalue for="0" value="Models that incorporate memory mechanisms to enhance learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Memory Cells&quot;, &quot;description&quot;: &quot;Components that store information in recurrent networks.&quot;}, {&quot;name&quot;: &quot;Hidden States&quot;, &quot;description&quot;: &quot;Internal representations of data in RNNs.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and neural networks." />
+          <attvalue for="6" value="[&quot;Recurrent Neural Networks (RNNs)&quot;, &quot;Long Short-Term Memory (LSTM) networks&quot;]" />
+          <attvalue for="7" value="[&quot;Memory models are only for sequential data&quot;, &quot;All memory models are the same&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Time Series Prediction&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Statistical Language Processing" label="Statistical Language Processing">
+        <attvalues>
+          <attvalue for="0" value="The application of statistical methods to analyze and generate language." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Statistical Language Models&quot;, &quot;description&quot;: &quot;Models that predict the probability of sequences of words.&quot;}, {&quot;name&quot;: &quot;Sequence Restrictions&quot;, &quot;description&quot;: &quot;Constraints applied to sequences in language tasks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of probability and statistics, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;N-grams&quot;, &quot;Hidden Markov Models&quot;, &quot;Word Embeddings&quot;, &quot;Topic Modeling&quot;]" />
+          <attvalue for="7" value="[&quot;Statistical methods can fully understand language semantics.&quot;, &quot;Language processing only involves text data.&quot;]" />
+          <attvalue for="8" value="[&quot;Spam detection in emails&quot;, &quot;Sentiment analysis in social media&quot;, &quot;Machine translation&quot;, &quot;Chatbots and virtual assistants&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Dynamical Systems" label="Dynamical Systems">
+        <attvalues>
+          <attvalue for="0" value="Mathematical models that describe the behavior of complex systems over time." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Classical Dynamical Systems&quot;, &quot;description&quot;: &quot;Traditional models used to study dynamic behavior.&quot;}, {&quot;name&quot;: &quot;Dynamical Descriptions&quot;, &quot;description&quot;: &quot;Methods for characterizing the evolution of systems.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of calculus and differential equations." />
+          <attvalue for="6" value="[&quot;State Space&quot;, &quot;Stability Analysis&quot;]" />
+          <attvalue for="7" value="[&quot;Dynamical systems only apply to physical systems&quot;, &quot;All dynamical systems are linear&quot;]" />
+          <attvalue for="8" value="[&quot;Modeling population dynamics&quot;, &quot;Control systems in engineering&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Neural Networks" target="Recurrent Neural Networks">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="RNNs build on core neural network concepts such as layers, weights, activations, and learned parameters." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Gradient Methods" target="Recurrent Neural Networks">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding how RNNs are trained requires gradient-based optimization, especially backpropagation through time." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

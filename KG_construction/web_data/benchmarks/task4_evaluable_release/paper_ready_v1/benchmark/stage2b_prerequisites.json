@@ -1,0 +1,48 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 8,
+  "prerequisites": [
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Neural Networks",
+      "reason": "Neural networks are a key technique in machine learning."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Model Evaluation",
+      "reason": "Understanding core concepts is essential for evaluating models."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Bias in Machine Learning",
+      "reason": "Fundamental concepts are needed to understand bias."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Learning Techniques",
+      "reason": "Fundamentals provide the basis for various learning methodologies."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Adversarial Machine Learning",
+      "reason": "Understanding neural networks is crucial for addressing adversarial attacks."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Security in Machine Learning",
+      "reason": "Basic knowledge of machine learning is necessary to understand security issues."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Cybersecurity and ML",
+      "reason": "Fundamental knowledge is required to explore the intersection with cybersecurity."
+    },
+    {
+      "from": "Machine Learning Fundamentals",
+      "to": "Genetic Algorithms",
+      "reason": "Basic concepts are needed to understand optimization techniques."
+    }
+  ]
+}

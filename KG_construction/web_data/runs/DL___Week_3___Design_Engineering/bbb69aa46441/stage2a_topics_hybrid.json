@@ -1,0 +1,209 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 3,
+  "candidate_count": 12,
+  "topics_count": 15,
+  "candidates": [
+    {
+      "name": "softmaxandprobablity noticethat",
+      "avg_score": 0.6605,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "softmaxandprobablity",
+      "avg_score": 0.6347,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "luactivation function",
+      "avg_score": 0.6048,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "engineers lecture",
+      "avg_score": 0.5713,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "machine learningfor",
+      "avg_score": 0.5664,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learningfor design",
+      "avg_score": 0.5608,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "luactivation",
+      "avg_score": 0.5573,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "learning design",
+      "avg_score": 0.546,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "lu max",
+      "avg_score": 0.5434,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "engineers backpropagation",
+      "avg_score": 0.5432,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "machine learning",
+      "avg_score": 0.5428,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "definition lu",
+      "avg_score": 0.5351,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "softmax and probability in neural networks",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "softmax function applications in machine learning",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "LU activation function in deep learning",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "engineers' lecture series on machine learning",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "machine learning for predictive analytics",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "learning for design in AI applications",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "LU activation function variations and their impacts",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "learning design principles for machine learning models",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "LU max function in optimization problems",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "engineers' approach to backpropagation in neural networks",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "machine learning techniques for data analysis",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "definition and applications of LU decomposition",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "softmax function and its role in classification tasks",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "activation functions in neural network architectures",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "designing machine learning systems for engineers",
+      "description": "",
+      "sub_topics": []
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 14.1911,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

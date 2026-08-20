@@ -1,0 +1,29 @@
+{
+  "stage": "stage2c",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2c_similarity.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2c_similarity.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2c_similarity_edges.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 30.8395,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2c_similarity_edges.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 15\n[2] 相似关系数量: 12 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. document chat functionality in Python <-> python document_chat implementation | sim=0.9281\n02. document_chat library usage in Python <-> python document_chat implementation | sim=0.921\n03. documents conversation analysis techniques <-> documents conversation data processing | sim=0.8942\n04. python document_chat error handling <-> python document_chat implementation | sim=0.8909\n05. document chat functionality in Python <-> document_chat library usage in Python | sim=0.8854\n06. document_chat library usage in Python <-> python document_chat error handling | sim=0.8737\n07. conversation machine learning models <-> conversation machine training datasets | sim=0.8327\n08. document chat functionality in Python <-> python document_chat error handling | sim=0.8257\n09. conversation machine architecture <-> conversation machine learning models | sim=0.8137\n10. conversation machine architecture <-> conversation machine training datasets | sim=0.7773\n11. document chat user interface design <-> real-time document chat applications | sim=0.7355\n12. document_chat API integration <-> python document_chat implementation | sim=0.7266\n\n Stage 2c 完成\n",
+  "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 5023.24it/s]\n"
+}

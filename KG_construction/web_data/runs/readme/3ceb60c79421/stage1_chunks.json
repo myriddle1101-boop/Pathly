@@ -1,0 +1,26 @@
+[
+  {
+    "chunk_id": 1,
+    "word_count": 163,
+    "doc_type": "paper_book",
+    "text": "Retrieval-Augmented Generation (RAG) Tutorial\nA comprehensive, hands-on tutorial that takes you from the basics through to building production-ready\nRAG systems.\nn\nWhat You'll Learn\nBy the end of this tutorial, you'll understand: - What RAG is and how it contributes to AI applications -\nHow vector embeddings capture semantic meaning - How to build and query vector databases - How to\nintegrate retrieval with language models - Advanced techniques for production RAG systems\nn\nWho This Is For\n(cid:127) Developers: Learn to build RAG applications\n(cid:127) ML Engineers: Understand the architecture and implementation details\n(cid:127) Product Managers: Gain technical insight into RAG capabilities\nn\nLearning Path\nPart 1: Foundations\n\n1. Introduction to RAG\n2. The problem RAG solves\n3. How RAG works at a high level\nReal-world applications\nUnderstanding Embeddings\n6. What are vector embeddings?\n7. Semantic similarity\nEmbedding models\nVector Databases & Retrieval\n10. Storing and indexing vectors\n11. Similarity search algorithms\nRetrieval strategies\nLanguage Models & Generation\n14. How LLMs work"
+  },
+  {
+    "chunk_id": 2,
+    "word_count": 208,
+    "doc_type": "paper_book",
+    "text": "15. Prompting techniques\n16. Integrating retrieved context\nPart 2: Building RAG Systems\n1. Building Your First RAG System\n2. Step-by-step implementation\n3. Working code example\nTesting and evaluation\nAdvanced RAG Techniques\n6. Document chunking strategies\n7. Re-ranking retrieved results\n8. Hybrid search\n9. Query optimization\n10. Handling edge cases\n\nPart 3: Practical Examples\n(cid:127) Example 1: Simple Question Answering\n(cid:127) Example 2: Document Chat System\n(cid:127) Example 3: Advanced RAG Pipeline\nnn\nSetup\nPrerequisites\n(cid:127) Python 3.13 (or 3.10+)\n(cid:127) Basic Python knowledge\n(cid:127) Understanding of APIs (helpful but not required)\nInstallation\n1. Clone this repository:\ngit clone <repository-url>\ncd myproject\n\n1. Create and activate virtual environment:\npython -m venv .venv\nsource .venv/bin/activate # On Windows: .venv\\Scripts\\activate\n1. Install dependencies:\npip install -r requirements.txt\n1. Set up API keys (you'll need at least one):\n# Create a .env file\ncp .env.example .env\n# Add your API keys:\n# OPENAI_API_KEY=your-key-here\n# Or for free alternatives:\n# HUGGINGFACE_API_KEY=your-key-here\nn\nHow to Use This Tutorial\n1. Start with Lesson 1 and work through sequentially\n2. Read the theory in each lesson markdown file\n3. Run the code examples to see concepts in action\n4. Experiment with the examples and modify them\n5. Build your own RAG system for your use case"
+  },
+  {
+    "chunk_id": 3,
+    "word_count": 127,
+    "doc_type": "paper_book",
+    "text": "n\nLearning Tips\n(cid:127) Take your time: RAG combines multiple complex concepts\n(cid:127) Run every code example: Hands-on practice is crucial\n(cid:127) Experiment: Modify parameters and see what happens\n(cid:127) Build projects: Apply what you learn to real problems\n(cid:127) Ask questions: Open issues if something isn't clear\nn\nWhat is RAG?\nRetrieval-Augmented Generation is a technique that enhances large language models by giving them\naccess to external knowledge. Instead of relying solely on their training data, RAG systems:\n1. Retrieve relevant information from a knowledge base\n2. Augment the LLM's prompt with this information\n3. Generate accurate, grounded responses\nThis solves key problems like: - n Hallucinations (making up facts) - n Outdated information - n Lack of\ndomain-specific knowledge - n Inability to cite sources"
+  },
+  {
+    "chunk_id": 4,
+    "word_count": 199,
+    "doc_type": "paper_book",
+    "text": "n\nWhy RAG Matters\nRAG has become the standard approach for: - Customer support chatbots: Answer from company\ndocumentation - Research assistants: Search through papers and documents - Enterprise search:\nQuery internal knowledge bases - Personal assistants: Access your notes and files - Legal/Medical\nAI: Ground responses in verified sources\nn\nTechnology Stack\nThis tutorial uses: - Python: Primary programming language - Open AI/Anthropic APIs: For\nembeddings and LLMs (with free alternatives) - Chroma DB: Vector database (simple, local, no setup) -\nLang Chain (optional): Framework for building LLM apps - Sentence Transformers: Free, open-source\nembeddings\nn\nRepository Structure\nrag_tutorial/\nnnn README.md # You are here\nnnn lessons/ # Step-by-step lessons\nn nnn 01-introduction-to-rag.md\nn nnn 02-understanding-embeddings.md\nn nnn 03-vector-databases-retrieval.md\nn nnn 04-language-models-generation.md\nn nnn 05-building-simple-rag.md\nn nnn 06-advanced-rag-techniques.md\nnnn examples/ # Working code examples\nn nnn 01-simple-qa/\nn nnn 02-document-chat/\nn nnn 03-advanced-rag/\nnnn notebooks/ # Jupyter notebooks for exploration\nn nnn embeddings-exploration.ipynb\nn nnn rag-from-scratch.ipynb\nnnn utils/ # Helper utilities\nn nnn embeddings.py\nn nnn retrieval.py\nn nnn generation.py\nnnn data/ # Sample data for examples\nnnn requirements.txt # Python dependencies\nnnn .env.example # Environment variables template\n\nReady to start? Head to Lesson 1: Introduction to RAG"
+  }
+]

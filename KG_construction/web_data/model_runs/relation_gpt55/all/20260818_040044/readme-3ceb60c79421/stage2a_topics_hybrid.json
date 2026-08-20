@@ -1,0 +1,342 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 4,
+  "candidate_count": 24,
+  "topics_count": 8,
+  "candidates": [
+    {
+      "name": "learning tips",
+      "avg_score": 0.5841,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "retrieved context",
+      "avg_score": 0.5176,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "context building",
+      "avg_score": 0.4953,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "rag tutorial",
+      "avg_score": 0.4916,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "tips cid",
+      "avg_score": 0.4725,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "tutorial ll",
+      "avg_score": 0.4591,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "apply learn",
+      "avg_score": 0.4588,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "learning",
+      "avg_score": 0.4583,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "technique enhances",
+      "avg_score": 0.4575,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "tips",
+      "avg_score": 0.4567,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "integrating retrieved",
+      "avg_score": 0.4486,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "tutorial takes",
+      "avg_score": 0.4453,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "tutorial comprehensive",
+      "avg_score": 0.4385,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "matters rag",
+      "avg_score": 0.437,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "support chatbots",
+      "avg_score": 0.4368,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "developers learn",
+      "avg_score": 0.4344,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "tutorial",
+      "avg_score": 0.4328,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "rag matters",
+      "avg_score": 0.4273,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "context",
+      "avg_score": 0.4121,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "rag_tutorial nnn",
+      "avg_score": 0.4121,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "chatbots",
+      "avg_score": 0.4098,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "chatbots answer",
+      "avg_score": 0.4068,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "use tutorial",
+      "avg_score": 0.3998,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "chunking strategies",
+      "avg_score": 0.3923,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Learning Strategies",
+      "description": "Techniques and tips for effective learning in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Learning Tips",
+          "description": "Practical advice for mastering machine learning concepts."
+        },
+        {
+          "name": "Chunking Strategies",
+          "description": "Methods for breaking down complex information into manageable parts."
+        }
+      ]
+    },
+    {
+      "name": "Contextual Learning",
+      "description": "Building and utilizing context in machine learning applications.",
+      "sub_topics": [
+        {
+          "name": "Context Building",
+          "description": "Techniques for creating relevant context in learning scenarios."
+        },
+        {
+          "name": "Integrating Retrieved Context",
+          "description": "Methods for incorporating external information into learning."
+        }
+      ]
+    },
+    {
+      "name": "Retrieval-Augmented Generation (RAG)",
+      "description": "Techniques and tutorials related to RAG in machine learning.",
+      "sub_topics": [
+        {
+          "name": "RAG Tutorial",
+          "description": "Comprehensive guides on implementing RAG techniques."
+        },
+        {
+          "name": "RAG Matters",
+          "description": "Importance and implications of RAG in machine learning."
+        }
+      ]
+    },
+    {
+      "name": "Chatbots in ML",
+      "description": "The role of chatbots in machine learning applications.",
+      "sub_topics": [
+        {
+          "name": "Support Chatbots",
+          "description": "Using chatbots to assist users in machine learning tasks."
+        },
+        {
+          "name": "Chatbots Answering",
+          "description": "Techniques for enabling chatbots to provide accurate responses."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Fundamental concepts and techniques related to neural networks.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of neural network nodes."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "Algorithm for training neural networks through error correction."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Metrics used to evaluate the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Types of Loss Functions",
+          "description": "Different loss functions used in various machine learning tasks."
+        },
+        {
+          "name": "Minimizing Loss",
+          "description": "Strategies for reducing loss during model training."
+        }
+      ]
+    },
+    {
+      "name": "Model Training",
+      "description": "Processes and techniques for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Training Techniques",
+          "description": "Methods for effectively training machine learning models."
+        },
+        {
+          "name": "Regression and Classification",
+          "description": "Key tasks in supervised learning involving prediction."
+        }
+      ]
+    },
+    {
+      "name": "Technical Tutorials",
+      "description": "Guides and tutorials for various machine learning techniques.",
+      "sub_topics": [
+        {
+          "name": "Comprehensive Tutorials",
+          "description": "In-depth tutorials covering essential machine learning topics."
+        },
+        {
+          "name": "Using Tutorials",
+          "description": "Best practices for leveraging tutorials in learning."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 18.0791,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

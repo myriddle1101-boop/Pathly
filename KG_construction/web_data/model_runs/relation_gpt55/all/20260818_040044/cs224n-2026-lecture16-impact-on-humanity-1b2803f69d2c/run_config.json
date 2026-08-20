@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture16-impact-on-humanity\\1b2803f69d2c",
+  "run_id": "cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:11.764399+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "88e55248616a7e9c4bcdfdccbe409dd69f5c336bd322573e699bb4d04e821a75",
+    "stage2a_topics_hybrid.json": "87e8ae15196c3dae04e178f8604c95f1ad652b15a4c3a4544fea315cb6389e94",
+    "stage2c_similarity_edges.json": "6f9003f58f7072a7c749035bd3590d3d94c5e06ffdf916decc6088001420a2c1",
+    "stage3_topics_with_summary.json": "63ab8e7d00388683afdc7acafd6cebc1ddc52e0d608c87e69602cf5ee2075a04"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

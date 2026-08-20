@@ -1,0 +1,110 @@
+[
+  {
+    "chunk_id": 1,
+    "word_count": 43,
+    "doc_type": "slides",
+    "text": "Regularization for\nDeep Learning\nLecture slides for Chapter 7 of Deep Learning\nwww.deeplearningbook.org\nIan Goodfellow\n2016-09-27 Definition\n“Regularization is any modification we make to a\n•\nlearning algorithm that is intended to reduce its\ngeneralization error but not its training error.”\n(Goodfellow 2016)"
+  },
+  {
+    "chunk_id": 2,
+    "word_count": 274,
+    "doc_type": "slides",
+    "text": "Weight Decay as Constrained CHAPTER 7. REGULARIZATION FOR DEEP LEARNING Optimization w 1 (Goodfellow 2016) w 2 w ⇤ w˜ Figure 7.1 2 Figure 7.1: An illustration of the effect of L (or weight decay) regularization on the value of the optimal w. The solid ellipses represent contours of equal value of the unregularized 2 objective. The dotted circles represent contours of equal value of the L regularizer. At the point w˜, these competing objectives reach an equilibrium. In the first dimension, the eigenvalue of the Hessian of J is small. The objective function does not increase much when moving horizontally away from w . Because the objective function does not express ⇤ a strong preference along this direction, the regularizer has a strong effect on this axis. The regularizer pulls w close to zero. In the second dimension, the objective function 1 is very sensitive to movements away from w . The corresponding eigenvalue is large, ⇤ indicating high curvature. As a result, weight decay affects the position of w relatively 2 little. Only directions along which the parameters contribute significantly to reducing the objective function are preserved relatively intact. In directions that do not contribute to reducing the objective function, a small eigenvalue of the Hessian tells us that movement in this direction will not significantly increase the gradient. Components of the weight vector corresponding to such unimportant directions are decayed away through the use of the regularization throughout training. So far we have discussed weight decay in terms of its effect on the optimization of an abstract, general, quadratic cost function. How do these effects relate to machine learning in particular?"
+  },
+  {
+    "chunk_id": 3,
+    "word_count": 69,
+    "doc_type": "slides",
+    "text": "We can find out by studying linear regression, a model for which the true cost function is quadratic and therefore amenable to the same kind of analysis we have used so far. Applying the analysis again, we will be able to obtain a special case of the same results, but with the solution now phrased in terms of the training data. For linear regression, the cost function is 233"
+  },
+  {
+    "chunk_id": 4,
+    "word_count": 47,
+    "doc_type": "slides",
+    "text": "Norm Penalties\nL 1: Encourages sparsity, equivalent to MAP\n•\nBayesian estimation with Laplace prior\nSquared L 2: Encourages small weights, equivalent to\n•\nMAP Bayesian estimation with Gaussian prior\n(Goodfellow 2016) Dataset Augmentation\nAffine Elastic\nNoise\nDistortion Deformation\nHorizontal Random\nHue Shift\nflip Translation\n(Goodfellow 2016)"
+  },
+  {
+    "chunk_id": 5,
+    "word_count": 261,
+    "doc_type": "slides",
+    "text": "CHAPTER 7. REGULARIZATION FOR DEEP LEARNING factors. The model can generally be divided into two kinds of parts and associated parameters: 1. Task-specific parameters (which only benefit from the examples of their task to achieve good generalization). These are the upper layers of the neural network in figure 7.2. 2. Generic parameters, shared across all the tasks (which benefit from the Multi-Task Learning pooled data of all the tasks). These are the lower layers of the neural network in figure 7.2. ((11)) ((22)) yy yy ((11)) ((22)) ((33)) hh hh hh ((sshhaarreedd)) hh xx Figure 7.2 Figure 7.2: Multi-task learning can be cast in several ways in deep learning frameworks (Goodfellow 2016) and this figure illustrates the common situation where the tasks share a common input but involve different target random variables. The lower layers of a deep network (whether it is supervised and feedforward or includes a generative component with downward arrows) can be shared across such tasks, while task-specific parameters (associated respectively (1) (2) with the weights into and from h and h ) can be learned on top of those yielding a (shared) shared representation h . The underlying assumption is that there exists a common pool of factors that explain the variations in the input x, while each task is associated with a subset of these factors. In this example, it is additionally assumed that top-level (1) (2) (1) hidden units h and h are specialized to each task (respectively predicting y and (2) (shared) y ) while some intermediate-level representation h is shared across all tasks."
+  },
+  {
+    "chunk_id": 6,
+    "word_count": 72,
+    "doc_type": "slides",
+    "text": "In the unsupervised learning context, it makes sense for some of the top-level factors to be (3) associated with none of the output tasks (h ): these are the factors that explain some of (1) (2) the input variations but are not relevant for predicting y or y . Improved generalization and generalization error bounds (Baxter, 1995) can be achieved because of the shared parameters, for which statistical strength can be 245"
+  },
+  {
+    "chunk_id": 7,
+    "word_count": 276,
+    "doc_type": "slides",
+    "text": "Learning Curves CHAPTER 7. REGULARIZATION FOR DEEP LEARNING 0.20 0.15 0.10 0.05 0.00 0 50 100 150 200 250 Time (epochs) (Goodfellow 2016) )doohilekil-gol evitagen( sso L Early stopping: terminate while validation set performance is better Training set loss Validation set loss Figure 7.3 Figure 7.3: Learning curves showing how the negative log-likelihood loss changes over time (indicated as number of training iterations over the dataset, or epochs). In this example, we train a maxout network on MNIST. Observe that the training objective decreases consistently over time, but the validation set average loss eventually begins to increase again, forming an asymmetric U-shaped curve. greatly improved (in proportion with the increased number of examples for the shared parameters, compared to the scenario of single-task models). Of course this will happen only if some assumptions about the statistical relationship between the different tasks are valid, meaning that there is something shared across some of the tasks. From the point of view of deep learning, the underlying prior belief is the following: among the factors that explain the variations observed in the data associated with the different tasks, some are shared across two or more tasks. 7.8 Early Stopping When training large models with sufficient representational capacity to overfit the task, we often observe that training error decreases steadily over time, but validation set error begins to rise again. See figure 7.3 for an example of this behavior. This behavior occurs very reliably. This means we can obtain a model with better validation set error (and thus, hopefully better test set error) by returning to the parameter setting at the point in time with the lowest validation set error."
+  },
+  {
+    "chunk_id": 8,
+    "word_count": 276,
+    "doc_type": "slides",
+    "text": "CHAPTER 7. REGULARIZATION FOR DEEP LEARNING Early Stopping and Weight Decay w 1 (Goodfellow 2016) w 2 w ⇤ w˜ w 1 w 2 w ⇤ w˜ Figure 7.4 Figure 7.4: An illustration of the effect of early stopping. (Left)The solid contour lines indicate the contours of the negative log-likelihood. The dashed line indicates the trajectory taken by SGD beginning from the origin. Rather than stopping at the point w that ⇤ minimizes the cost, early stopping results in the trajectory stopping at an earlier point w˜. 2 (Right)An illustration of the effect of L regularization for comparison. The dashed circles 2 indicate the contours of the L penalty, which causes the minimum of the total cost to lie nearer the origin than the minimum of the unregularized cost. We are going to study the trajectory followed by the parameter vector during 3 training. For simplicity, let us set the initial parameter vector to the origin, that (0) is w = 0. Let us study the approximate behavior of gradient descent on J by ˆ analyzing gradient descent on J : (⌧ ) (⌧ 1) ˆ (⌧ 1) w = w ✏ J (w ) (7.35) \u0000 w \u0000 \u0000 r (⌧ 1) (⌧ 1) = w ✏H (w w ) (7.36) \u0000 \u0000 ⇤ \u0000 \u0000 (⌧ ) (⌧ 1) w w = (I ✏H )(w w ). (7.37) ⇤ \u0000 ⇤ \u0000 \u0000 \u0000 Let us now rewrite this expression in the space of the eigenvectors of H , exploiting the eigendecomposition of H : H = Q⇤Q , where ⇤ is a diagonal matrix and Q > is an orthonormal basis of eigenvectors."
+  },
+  {
+    "chunk_id": 9,
+    "word_count": 80,
+    "doc_type": "slides",
+    "text": "(⌧ ) (⌧ 1) w w = (I ✏Q⇤Q )(w w ) (7.38) ⇤ > \u0000 ⇤ \u0000 \u0000 \u0000 (⌧ ) (⌧ 1) Q (w w ) = (I ✏⇤)Q (w w ) (7.39) > ⇤ > \u0000 ⇤ \u0000 \u0000 \u0000 3 For neural networks, to obtain symmetry breaking between hidden units, we cannot initialize all the parameters to 0, as discussed in section 6.2. However, the argument holds for any other (0) initial value w . 251"
+  },
+  {
+    "chunk_id": 10,
+    "word_count": 267,
+    "doc_type": "slides",
+    "text": "Sparse Representations CHAPTER 7. REGULARIZATION FOR DEEP LEARNING 0 14 3 1 2 5 4 1 \u0000 \u0000 \u0000 2 1 4 2 3 1 1 3 2 3 2 3 2 \u0000 \u0000 3 0 19 = 1 5 4 2 3 2 \u0000 \u0000 \u0000 6 0 7 (7.47) 6 2 7 6 3 1 2 3 0 3 7 6 7 6 7 6 \u0000 \u0000 7 6 3 7 6 23 7 6 5 4 2 2 5 1 7 6 \u0000 7 6 7 6 \u0000 \u0000 \u0000 \u0000 7 6 0 7 4 5 4 5 6 7 m m n n y B 4 h 5 R R R ⇥ 2 2 2 In the first expression, we have an example of a sparsely parametrized linear regression model. In the second, we have linear regression with a sparse representa- tion h of the data x. That is, h is a function of x that, in some sense, represents the information present in x, but does so with a sparse vector. Representational regularization is accomplished by the same sorts of mechanisms that we have used in parameter regularization. (Goodfellow 2016) Norm penalty regularization of representations is performed by adding to the loss function J a norm penalty on the representation. This penalty is denoted ˜ ⌦(h). As before, we denote the regularized loss function by J: ˜ J(✓; X, y) = J(✓; X, y) + ↵⌦(h) (7.48) where ↵ [0, ) weights the relative contribution of the norm penalty term, with 2 1 larger values of ↵ corresponding to more regularization."
+  },
+  {
+    "chunk_id": 11,
+    "word_count": 229,
+    "doc_type": "slides",
+    "text": "1 1 Just as an L penalty on the parameters induces parameter sparsity, an L penalty on the elements of the representation induces representational sparsity: 1 ⌦(h) = h = h . Of course, the L penalty is only one choice of penalty 1 i i || || | | that can result in a sparse representation. Others include the penalty derived from P a Student-t prior on the representation (Olshausen and Field, 1996; Bergstra, 2011) and KL divergence penalties (Larochelle and Bengio, 2008) that are especially useful for representations with elements constrained to lie on the unit interval. Lee et al. (2008) and Goodfellow et al. (2009) both provide examples of strategies 1 (i) based on regularizing the average activation across several examples, h , to m i be near some target value, such as a vector with .01 for each entry. P Other approaches obtain representational sparsity with a hard constraint on the activation values. For example, orthogonal matching pursuit (Pati et al., 1993) encodes an input x with the representation h that solves the constrained optimization problem 2 arg min x W h , (7.49) k \u0000 k h, h <k 0 k k where h is the number of non-zero entries of h. This problem can be solved 0 k k efficiently when W is constrained to be orthogonal. This method is often called 255"
+  },
+  {
+    "chunk_id": 12,
+    "word_count": 234,
+    "doc_type": "slides",
+    "text": "Bagging CHAPTER 7. REGULARIZATION FOR DEEP LEARNING Original dataset First ensemble member First resampled dataset 8 Second resampled dataset Second ensemble member 8 Figure 7.5: A cartoon depiction of how bagging works. Suppose we train an 8 detector on the dataset depicted above, containing an 8, a 6 and a 9. Suppose we make two different Figure 7.5 resampled datasets. The bagging training procedure is to construct each of these datasets by sampling with replacement. The first dataset omits the 9 and repeats th(e Goo 8 df.ellow O 20 n 16) this dataset, the detector learns that a loop on top of the digit corresponds to an 8. On the second dataset, we repeat the 9 and omit the 6. In this case, the detector learns that a loop on the bottom of the digit corresponds to an 8. Each of these individual classification rules is brittle, but if we average their output then the detector is robust, achieving maximal confidence only when both loops of the 8 are present. different kind of model using a different algorithm or objective function. Bagging is a method that allows the same kind of model, training algorithm and objective function to be reused several times. Specifically, bagging involves constructing k different datasets. Each dataset has the same number of examples as the original dataset, but each dataset is constructed by sampling with replacement from the original dataset."
+  },
+  {
+    "chunk_id": 13,
+    "word_count": 143,
+    "doc_type": "slides",
+    "text": "This means that, with high probability, each dataset is missing some of the examples from the original dataset and also contains several duplicate examples (on average around 2/3 of the examples from the original dataset are found in the resulting training set, if it has the same size as the original). Model i is then trained on dataset i. The differences between which examples are included in each dataset result in differences between the trained models. See figure 7.5 for an example. Neural networks reach a wide enough variety of solution points that they can often benefit from model averaging even if all of the models are trained on the same dataset. Differences in random initialization, random selection of minibatches, differences in hyperparameters, or different outcomes of non-deterministic imple- mentations of neural networks are often enough to cause different members of the 257"
+  },
+  {
+    "chunk_id": 14,
+    "word_count": 220,
+    "doc_type": "slides",
+    "text": "CHAPTER 7. REGULARIZATION FOR DEEP LEARNING\nDropout\nyy yy yy yy\nFigure 7.6\nhh hh hh hh hh hh hh\n11 22 11 22 11 22 22\nxx xx xx xx xx xx\n11 22 22 11 11 22\nyy\nyy yy yy yy\nhh hh hh hh\n11 11 22 22\nhh hh\n11 22\nxx xx xx xx xx\n11 22 11 22 22\nyy yy yy yy\nxx xx\n11 22\nhh hh hh\n11 11 22\nBase network\nxx xx xx xx\n11 22 11 11\nyy yy yy yy\nhh hh\n22 11\nxx\n22\n(Goodfellow 2016)\nEnsemble of subnetworks\nFigure 7.6: Dropout trains an ensemble consisting of all sub-networks that can be\nconstructed by removing non-output units from an underlying base network. Here, we\nbegin with a base network with two visible units and two hidden units. There are sixteen\npossible subsets of these four units. We show all sixteen subnetworks that may be formed\nby dropping out different subsets of units from the original network. In this small example,\na large proportion of the resulting networks have no input units or no path connecting\nthe input to the output. This problem becomes insignificant for networks with wider\nlayers, where the probability of dropping all possible paths from inputs to outputs becomes\nsmaller.\n260"
+  },
+  {
+    "chunk_id": 15,
+    "word_count": 267,
+    "doc_type": "slides",
+    "text": "Adversarial Examples CHAPTER 7. REGULARIZATION FOR DEEP LEARNING + .007 = ⇥ x + x sign( J(✓, x, y)) x r ✏ sign( J(✓, x, y)) x r y =“panda” “nematode” “gibbon” w/ 57.7% w/ 8.2% w/ 99.3 % confidence confidence confidence Figure 7.8: A demonstration of adver Fsariigaluexraem p 7 le.g 8 eneration applied to Goog Le Net (Szegedy et al., 2014 a) on Image Net. By adding an imperceptibly small vector whose elements are equal to the sign of the elements of the gradient of the cost function with respect to the input, we can change Goog Le Net’s classification of the image. Reproduced Training on adversarial examples is mostly with permission from Goodfellow et al. (2014 b). intended to improve security, but can sometimes to optimize. Unfortunately, the value of a linear function can change very rapidly provide generic regularization. if it has numerous inputs. If we change each input by ✏, then a linear function with weights w can change by as much as ✏ w , which can be a very large 1 || || amount if w is high-dimensional. Adversarial training discourages this highly sensitive locally linear behavior by encouraging the network to be locally constant (Goodfellow 2016) in the neighborhood of the training data. This can be seen as a way of explicitly introducing a local constancy prior into supervised neural nets. Adversarial training helps to illustrate the power of using a large function family in combination with aggressive regularization. Purely linear models, like logistic regression, are not able to resist adversarial examples because they are forced to be linear."
+  },
+  {
+    "chunk_id": 16,
+    "word_count": 173,
+    "doc_type": "slides",
+    "text": "Neural networks are able to represent functions that can range from nearly linear to nearly locally constant and thus have the flexibility to capture linear trends in the training data while still learning to resist local perturbation. Adversarial examples also provide a means of accomplishing semi-supervised learning. At a point x that is not associated with a label in the dataset, the model itself assigns some label yˆ. The model’s label yˆ may not be the true label, but if the model is high quality, then yˆ has a high probability of providing the true label. We can seek an adversarial example x that causes the classifier to 0 output a label y with y = yˆ. Adversarial examples generated using not the true 0 0 6 label but a label provided by a trained model are called virtual adversarial examples (Miyato et al., 2015). The classifier may then be trained to assign the same label to x and x . This encourages the classifier to learn a function that is 0 269"
+  },
+  {
+    "chunk_id": 17,
+    "word_count": 256,
+    "doc_type": "slides",
+    "text": "CHAPTER 7. REGULARIZATION FOR DEEP LEARNING Tangent Propagation x 1 (Goodfellow 2016) x 2 Normal Tangent Figure 7.9 Figure 7.9: Illustration of the main idea of the tangent prop algorithm (Simard et al., 1992) and manifold tangent classifier (Rifai et al., 2011 c), which both regularize the classifier output function f (x). Each curve represents the manifold for a different class, illustrated here as a one-dimensional manifold embedded in a two-dimensional space. On one curve, we have chosen a single point and drawn a vector that is tangent to the class manifold (parallel to and touching the manifold) and a vector that is normal to the class manifold (orthogonal to the manifold). In multiple dimensions there may be many tangent directions and many normal directions. We expect the classification function to change rapidly as it moves in the direction normal to the manifold, and not to change as it moves along the class manifold. Both tangent propagation and the manifold tangent classifier regularize f (x) to not change very much as x moves along the manifold. Tangent propagation requires the user to manually specify functions that compute the tangent directions (such as specifying that small translations of images remain in the same class manifold) while the manifold tangent classifier estimates the manifold tangent directions by training an autoencoder to fit the training data. The use of autoencoders to estimate manifolds will be described in chapter 14. estimate the manifold tangent vectors. The manifold tangent classifier makes use of this technique to avoid needing user-specified tangent vectors."
+  },
+  {
+    "chunk_id": 18,
+    "word_count": 110,
+    "doc_type": "slides",
+    "text": "As illustrated in figure 14.10, these estimated tangent vectors go beyond the classical invariants that arise out of the geometry of images (such as translation, rotation and scaling) and include factors that must be learned because they are object-specific (such as moving body parts). The algorithm proposed with the manifold tangent classifier is therefore simple: (1) use an autoencoder to learn the manifold structure by unsupervised learning, and (2) use these tangents to regularize a neural net classifier as in tangent prop (equation 7.67). This chapter has described most of the general strategies used to regularize neural networks. Regularization is a central theme of machine learning and as such 272"
+  }
+]

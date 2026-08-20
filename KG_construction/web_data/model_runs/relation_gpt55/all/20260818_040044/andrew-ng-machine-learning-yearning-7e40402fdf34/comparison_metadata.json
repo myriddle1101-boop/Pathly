@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34",
+  "run_id": "andrew-ng-machine-learning-yearning-7e40402fdf34",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:02.010205+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "6a8793e0357cf1975c1a95185bb2f52fa575e82741db6b1efe0359fdd81950d0",
+    "stage2a_topics_hybrid.json": "f39a872a9c19557a8571c1dca35e90dfc84b5e105294573ca70f9d4153c760e2",
+    "stage2c_similarity_edges.json": "fe2d82b394d297021b02fbb01025662ad1b6f5003def8690475491be972071d3",
+    "stage3_topics_with_summary.json": "a66b893d89a4e7203bd1a03b89d74ccde0adb23e9aee38dd6a06cd58f36f320d"
+  },
+  "old_relation_count": 8,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

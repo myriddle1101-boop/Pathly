@@ -1,0 +1,71 @@
+{
+  "all_matched": false,
+  "results": [
+    {
+      "stage": "stage1",
+      "return_code": 0,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage1_chunks.json",
+      "exists": true,
+      "expected_sha256": "e9363ea8a74a0e10719c3f5fb6607d9de4f38a4cf3ff2972a12ef6768cb62140",
+      "actual_sha256": "e9363ea8a74a0e10719c3f5fb6607d9de4f38a4cf3ff2972a12ef6768cb62140",
+      "matched": true,
+      "stdout_tail": " Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 11035\n[2] 清洗后词数: 11472\n[3] 文档类型识别: lecture_notes\n[4] 分块数（过滤前）: 32\n[5] 分块数（过滤后）: 32\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=437\n2018 IEEE European Symposium on Security and Privacy So K: Security and Privacy in Machine Learning     Nicolas Papernot , Patrick Mc Daniel , Arunesh Sinha , and Michael P. Wellman  Pennsylvania State University  ...\n\n[Chunk 2] words=227\nHere, we consider the lifecycle of a ML- mationthatinthepastwouldhavebeenimpossible.Inspite based system from training to inference, and identify the of these spectacular advances, the technical community’s adversarial g...\n\n[Chunk 3] words=431\n2.1. Overview of Machine Learning Tasks (cid:2)(cid:3)(cid:4)(cid:5)(cid:3)(cid:6)(cid:4)(cid:7)(cid:8)(cid:9)(cid:10)(cid:8)(cid:11)(cid:12)(cid:13)(cid:14)(cid:6)(cid:15)(cid:4)(cid:8)(cid:16)(cid:4)(cid:12)(cid:5)(cid...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    {
+      "stage": "stage2a",
+      "return_code": 0,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2a_topics_hybrid.json",
+      "exists": true,
+      "expected_sha256": "ab64c5ac3539636dcc9dbc61629abb2ffe61f4d551baf534167cb93360431706",
+      "actual_sha256": "9823f9b05bc3e0777e75e268d4e9bd7bd78321dad9a26a5fac5f56235e4e5e77",
+      "matched": false,
+      "stdout_tail": "5/32 ...\n[KeyBERT] chunk 6/32 ...\n[KeyBERT] chunk 7/32 ...\n[KeyBERT] chunk 8/32 ...\n[KeyBERT] chunk 9/32 ...\n[KeyBERT] chunk 10/32 ...\n[KeyBERT] chunk 11/32 ...\n[KeyBERT] chunk 12/32 ...\n[KeyBERT] chunk 13/32 ...\n[KeyBERT] chunk 14/32 ...\n[KeyBERT] chunk 15/32 ...\n[KeyBERT] chunk 16/32 ...\n[KeyBERT] chunk 17/32 ...\n[KeyBERT] chunk 18/32 ...\n[KeyBERT] chunk 19/32 ...\n[KeyBERT] chunk 20/32 ...\n[KeyBERT] chunk 21/32 ...\n[KeyBERT] chunk 22/32 ...\n[KeyBERT] chunk 23/32 ...\n[KeyBERT] chunk 24/32 ...\n[KeyBERT] chunk 25/32 ...\n[KeyBERT] chunk 26/32 ...\n[KeyBERT] chunk 27/32 ...\n[KeyBERT] chunk 28/32 ...\n[KeyBERT] chunk 29/32 ...\n[KeyBERT] chunk 30/32 ...\n[KeyBERT] chunk 31/32 ...\n[KeyBERT] chunk 32/32 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Machine Learning Fundamentals\n02. Neural Networks\n03. Adversarial Machine Learning\n04. Security in Machine Learning\n05. Model Evaluation\n06. Genetic Algorithms\n07. Learning Techniques\n08. Cybersecurity and AI\n09. Data Privacy\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4559.85it/s]\n"
+    },
+    {
+      "stage": "stage2b",
+      "return_code": 0,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2b_prerequisites.json",
+      "exists": true,
+      "expected_sha256": "94b21ba2b7484cf5b215fe8d4327c503a41ad95f54307569498f9f3778af62e0",
+      "actual_sha256": "5c78001bd85900ed02e2b22ece73598bb06136567ee95e92f99acbfb108acffa",
+      "matched": false,
+      "stdout_tail": "oject_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Machine Learning Fundamentals -> Neural Networks | Neural networks are a key technique in machine learning.\n02. Machine Learning Fundamentals -> Model Evaluation | Understanding core concepts is essential for evaluating models.\n03. Machine Learning Fundamentals -> Learning Techniques | Fundamental concepts are necessary to grasp various learning methodologies.\n04. Neural Networks -> Adversarial Machine Learning | Knowledge of neural networks is crucial to understand adversarial attacks.\n05. Machine Learning Fundamentals -> Security in Machine Learning | Basic understanding of machine learning is needed to address security concerns.\n06. Machine Learning Fundamentals -> Data Privacy | Fundamental concepts are necessary to understand data privacy issues.\n07. Machine Learning Fundamentals -> Cybersecurity and AI | Core concepts are needed to explore the intersection of AI and cybersecurity.\n08. Genetic Algorithms -> Learning Techniques | Genetic algorithms are a specific optimization technique within learning methodologies.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    {
+      "stage": "stage2c",
+      "return_code": 0,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2c_similarity_edges.json",
+      "exists": true,
+      "expected_sha256": "b54be1dc1af40858392eb148f6d811dc4059e3d288b0dd5c441660b67564e8a6",
+      "actual_sha256": "83f26a6ba8494c1fbf6faa062540fcf31323e5fc4941d5efe3a67f27e2b20621",
+      "matched": false,
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 3 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Learning Techniques <-> Machine Learning Fundamentals | sim=0.8542\n02. Learning Techniques <-> Model Evaluation | sim=0.7905\n03. Data Privacy <-> Security in Machine Learning | sim=0.752\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4481.12it/s]\n"
+    },
+    {
+      "stage": "stage3",
+      "return_code": 0,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage3_topics_with_summary.json",
+      "exists": true,
+      "expected_sha256": "a30d98b215db5a80dce6d10f84e9a12c9d6854b7e53ed991a18571199bfded27",
+      "actual_sha256": "2a6505141f4add2a56db8fc269faa2fffa3de1b958686e12997433d91ba930b2",
+      "matched": false,
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Machine Learning Fundamentals\n[LLM] 2/9 Neural Networks\n[LLM] 3/9 Adversarial Machine Learning\n[LLM] 4/9 Security in Machine Learning\n[LLM] 5/9 Model Evaluation\n[LLM] 6/9 Genetic Algorithms\n[LLM] 7/9 Learning Techniques\n[LLM] 8/9 Cybersecurity and AI\n[LLM] 9/9 Data Privacy\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    {
+      "stage": "stage4",
+      "return_code": 0,
+      "output_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML__reproduced\\knowledge_graph.json",
+      "exists": true,
+      "expected_sha256": "184630a48faa57660157ba7afdee2ada54a31fd8620d50ef20c6b404750c11f6",
+      "actual_sha256": "30eaff177bc2b56ae5a835a905495565e6738189106ebf10b758cdb5d7086314",
+      "matched": false,
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 8\n[3] Similarity edges: 3\n[4] Graph nodes=9, edges=11\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  ]
+}

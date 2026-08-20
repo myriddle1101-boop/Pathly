@@ -1,0 +1,61 @@
+{
+  "run_id": "dl___week_3___design_engineering-bbb69aa46441",
+  "events": [
+    {
+      "time": "2026-08-18T01:36:29+08:00",
+      "level": "info",
+      "stage": null,
+      "message": "Document pipeline started",
+      "data": {
+        "file_name": "DL___Week_3___Design_Engineering.pdf",
+        "sha256": "bbb69aa46441b9d90507812f2343f84e83fac73fe35df22e6020d983bf72e27a",
+        "doc_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_3___design_engineering\\bbb69aa46441",
+        "resume_from_stage": "stage1",
+        "run_attempts": 1
+      }
+    },
+    {
+      "time": "2026-08-18T01:36:29+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-08-18T01:36:36+08:00",
+      "level": "info",
+      "stage": "stage1",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 7.3019,
+        "outputs_ok": true
+      }
+    },
+    {
+      "time": "2026-08-18T01:36:36+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage started",
+      "data": {
+        "attempt": 1,
+        "cwd": "D:\\ic\\master project\\project_code\\KG_construction"
+      }
+    },
+    {
+      "time": "2026-08-18T01:37:23+08:00",
+      "level": "info",
+      "stage": "stage2a",
+      "message": "Stage finished",
+      "data": {
+        "return_code": 0,
+        "duration_seconds": 46.6412,
+        "outputs_ok": true
+      }
+    }
+  ],
+  "updated_at": "2026-08-18T01:37:23+08:00"
+}

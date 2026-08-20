@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 8,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Learning Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training methods rely on basic machine learning principles such as models, objectives, and generalization."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural networks require foundational machine learning concepts such as model training, features, loss functions, and evaluation."
+    }
+  ]
+}

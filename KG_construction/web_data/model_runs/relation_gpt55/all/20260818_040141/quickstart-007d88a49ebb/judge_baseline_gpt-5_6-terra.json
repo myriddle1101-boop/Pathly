@@ -1,0 +1,158 @@
+{
+  "created_at": "2026-08-18T19:03:27.847079+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-quickstart-007d88a49ebb",
+  "file_name": "quickstart-007d88a49ebb",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 3,
+  "topic_metrics": {
+    "precision": 0.5882,
+    "recall": 0.6667,
+    "f1": 0.625,
+    "tp": 10,
+    "fp": 7,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.2222,
+    "recall": 0.5,
+    "f1": 0.3077,
+    "tp": 2,
+    "fp": 7,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "pip dependencies installation",
+      "general dependencies overview",
+      "installing requirements from requirements.txt",
+      "installing core packages",
+      "testing environment setup",
+      "verify functionality of components",
+      "using Python sentence_transformers library",
+      "creating a virtual environment",
+      "quick start guide for setup",
+      "activating virtual environment via bin/activate"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "core dependencies management",
+        "reason": "The source lists and installs core dependencies but does not discuss dependency management as a learning topic."
+      },
+      {
+        "name": "print testing methodology",
+        "reason": "Print statements are used in a quick verification script, but no testing methodology is taught."
+      },
+      {
+        "name": "create_collection unit test",
+        "reason": "The source creates a Chroma collection in a setup check, not as a unit test."
+      },
+      {
+        "name": "test collection implementation",
+        "reason": "The source tests that a collection can be created and populated, not collection implementation."
+      },
+      {
+        "name": "requirements.txt file structure",
+        "reason": "The source instructs installing from requirements.txt but does not describe its structure."
+      },
+      {
+        "name": "start guide for new users",
+        "reason": "This is a redundant, overly generic restatement rather than a distinct source concept."
+      },
+      {
+        "name": "rag_tutorial for creating collections",
+        "reason": "The repository path is mentioned, but it is not presented as a concept for creating collections."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Python version requirement",
+        "reason": "Python 3.10 or higher is explicitly listed as a prerequisite."
+      },
+      {
+        "name": "OpenAI API key",
+        "reason": "An API key is optional for generation and explicitly required for the Document Chat example."
+      },
+      {
+        "name": "Retrieval-augmented generation (RAG)",
+        "reason": "The guide introduces running and learning RAG, including basic RAG concepts."
+      },
+      {
+        "name": "ChromaDB vector database",
+        "reason": "ChromaDB is installed as a vector database and tested by creating a collection."
+      },
+      {
+        "name": "Sentence embeddings",
+        "reason": "The setup test loads a sentence-transformers embedding model and verifies embeddings."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "creating a virtual environment",
+        "to": "activating virtual environment via bin/activate",
+        "reason": "A virtual environment must exist before its activation script can be run."
+      },
+      {
+        "from": "pip dependencies installation",
+        "to": "installing requirements from requirements.txt",
+        "reason": "Installing requirements.txt is a specific pip-based dependency installation procedure."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "general dependencies overview",
+        "to": "core dependencies management",
+        "reason": "Neither a dependency overview nor dependency management is taught as a directional learning dependency."
+      },
+      {
+        "from": "core dependencies management",
+        "to": "pip dependencies installation",
+        "reason": "The source gives an installation command but does not establish dependency management as a prerequisite concept."
+      },
+      {
+        "from": "requirements.txt file structure",
+        "to": "installing requirements from requirements.txt",
+        "reason": "The file structure is not covered and is not required to execute the provided pip command."
+      },
+      {
+        "from": "testing environment setup",
+        "to": "print testing methodology",
+        "reason": "The source provides a quick setup check, not a print-based testing methodology."
+      },
+      {
+        "from": "print testing methodology",
+        "to": "verify functionality of components",
+        "reason": "No testing methodology is presented as prerequisite knowledge for verification."
+      },
+      {
+        "from": "verify functionality of components",
+        "to": "test collection implementation",
+        "reason": "The source does not discuss implementing or testing collections as a separate learning target."
+      },
+      {
+        "from": "rag_tutorial for creating collections",
+        "to": "create_collection unit test",
+        "reason": "Neither the proposed source concept nor a collection unit test is supported by the guide."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "OpenAI API key",
+        "to": "Document Chat",
+        "reason": "The source explicitly states that the Document Chat example requires an API key."
+      },
+      {
+        "from": "Python version requirement",
+        "to": "creating a virtual environment",
+        "reason": "Python is explicitly required, and the virtual environment is created with the Python interpreter."
+      }
+    ],
+    "overall_note": "The source is primarily an installation and quick-start guide; it does not provide detailed dependency-management, unit-testing, or requirements-file-structure instruction."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-quickstart-007d88a49ebb.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-quickstart-007d88a49ebb.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-quickstart-007d88a49ebb_ledger.csv"
+  }
+}

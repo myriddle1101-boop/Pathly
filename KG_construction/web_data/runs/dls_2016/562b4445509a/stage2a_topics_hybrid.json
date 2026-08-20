@@ -1,0 +1,842 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 15,
+  "candidate_count": 80,
+  "topics_count": 11,
+  "candidates": [
+    {
+      "name": "layer layer",
+      "avg_score": 0.5583,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "name": "teacher network",
+      "avg_score": 0.5378,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        8
+      ]
+    },
+    {
+      "name": "teacher prediction",
+      "avg_score": 0.6954,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "accuracy inception",
+      "avg_score": 0.6733,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "prediction layers",
+      "avg_score": 0.666,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "net strategies",
+      "avg_score": 0.6587,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "max accuracy",
+      "avg_score": 0.6571,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "maximum accuracy",
+      "avg_score": 0.6504,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "accuracy lsvrc",
+      "avg_score": 0.6465,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "multiple layers",
+      "avg_score": 0.6306,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "accuracy achieved",
+      "avg_score": 0.6235,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "achieves accuracy",
+      "avg_score": 0.6196,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "widen layers",
+      "avg_score": 0.6187,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "resulting layer",
+      "avg_score": 0.6179,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "layers predict",
+      "avg_score": 0.6131,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "www deeplearningbook",
+      "avg_score": 0.6115,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "deep network",
+      "avg_score": 0.6107,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.6085,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "layers wider",
+      "avg_score": 0.6084,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "training accuracy",
+      "avg_score": 0.6078,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "deep networks",
+      "avg_score": 0.6006,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "wider layers",
+      "avg_score": 0.5995,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "identity layer",
+      "avg_score": 0.5995,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "operator layer",
+      "avg_score": 0.5982,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "layer wider",
+      "avg_score": 0.5969,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "deeplearningbook org",
+      "avg_score": 0.5951,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.595,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "effective net",
+      "avg_score": 0.5899,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "layer remapping",
+      "avg_score": 0.5897,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "neural net",
+      "avg_score": 0.5896,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "deeplearningbook",
+      "avg_score": 0.5868,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "net workflow",
+      "avg_score": 0.5867,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "accuracy initial",
+      "avg_score": 0.5855,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "training networks",
+      "avg_score": 0.5827,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "example concatenation",
+      "avg_score": 0.577,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "layers student",
+      "avg_score": 0.5741,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "net transformation",
+      "avg_score": 0.5655,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "predicted constituent",
+      "avg_score": 0.563,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "remapping functions",
+      "avg_score": 0.5626,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "random mapping",
+      "avg_score": 0.5514,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "probabilities predicted",
+      "avg_score": 0.5511,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "normalization layer",
+      "avg_score": 0.5505,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "learning rate",
+      "avg_score": 0.5497,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "estimated accuracy",
+      "avg_score": 0.5463,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "mapping function",
+      "avg_score": 0.5461,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "workflow net",
+      "avg_score": 0.5435,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "accuracy maximum",
+      "avg_score": 0.5411,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "wider net",
+      "avg_score": 0.5395,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "methods training",
+      "avg_score": 0.5364,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "model net",
+      "avg_score": 0.5334,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "layer inputs",
+      "avg_score": 0.5283,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "prediction based",
+      "avg_score": 0.5238,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "machine learning",
+      "avg_score": 0.5233,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "identity function",
+      "avg_score": 0.5224,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "accelerating learning",
+      "avg_score": 0.5171,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "learning validation",
+      "avg_score": 0.5169,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "steps prediction",
+      "avg_score": 0.5115,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "accuracy 10",
+      "avg_score": 0.5112,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "predicted",
+      "avg_score": 0.51,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "deeper net",
+      "avg_score": 0.5086,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "identity filters",
+      "avg_score": 0.5074,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "different net",
+      "avg_score": 0.5027,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "learning workflows",
+      "avg_score": 0.5024,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "prediction",
+      "avg_score": 0.5004,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "operators demonstrated",
+      "avg_score": 0.4994,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "factorization layers",
+      "avg_score": 0.4993,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "accuracy different",
+      "avg_score": 0.4961,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "activation functions",
+      "avg_score": 0.4953,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "net net",
+      "avg_score": 0.4949,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "units learn",
+      "avg_score": 0.4923,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "transformation example",
+      "avg_score": 0.4912,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "validation accuracy",
+      "avg_score": 0.4911,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "random remapping",
+      "avg_score": 0.491,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "strategies based",
+      "avg_score": 0.485,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "general net",
+      "avg_score": 0.4845,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "expand layer",
+      "avg_score": 0.4835,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "accuracy",
+      "avg_score": 0.4829,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "training algorithm",
+      "avg_score": 0.4789,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "knowledge neural",
+      "avg_score": 0.4781,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "functions example",
+      "avg_score": 0.4773,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Neural Networks",
+      "description": "Fundamental structures that mimic the way human brains operate.",
+      "sub_topics": [
+        {
+          "name": "Deep Networks",
+          "description": "Networks with multiple layers that enhance learning capabilities."
+        },
+        {
+          "name": "Neural Net",
+          "description": "A specific type of neural network used for various tasks."
+        },
+        {
+          "name": "Identity Layer",
+          "description": "A layer that passes its input directly to the output without modification."
+        }
+      ]
+    },
+    {
+      "name": "Activation Functions",
+      "description": "Functions that determine the output of a neural network node.",
+      "sub_topics": [
+        {
+          "name": "Identity Function",
+          "description": "A function that returns the input as output."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that introduce non-linearity into the model."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies used to train neural networks effectively.",
+      "sub_topics": [
+        {
+          "name": "Learning Rate",
+          "description": "A hyperparameter that controls how much to change the model in response to the estimated error."
+        },
+        {
+          "name": "Training Accuracy",
+          "description": "The accuracy of the model on the training dataset."
+        },
+        {
+          "name": "Validation Accuracy",
+          "description": "The accuracy of the model on a separate validation dataset."
+        }
+      ]
+    },
+    {
+      "name": "Prediction Layers",
+      "description": "Layers in a neural network that are responsible for making predictions.",
+      "sub_topics": [
+        {
+          "name": "Teacher Prediction",
+          "description": "Predictions made by a teacher model to guide a student model."
+        },
+        {
+          "name": "Probabilities Predicted",
+          "description": "The likelihood of different outcomes as predicted by the model."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Functions that measure how well the model's predictions match the actual outcomes.",
+      "sub_topics": [
+        {
+          "name": "Accuracy Achieved",
+          "description": "The level of correctness of the model's predictions."
+        },
+        {
+          "name": "Estimated Accuracy",
+          "description": "An approximation of how well the model is performing."
+        }
+      ]
+    },
+    {
+      "name": "Layer Structures",
+      "description": "Configurations of layers within a neural network.",
+      "sub_topics": [
+        {
+          "name": "Multiple Layers",
+          "description": "Using several layers to capture complex patterns."
+        },
+        {
+          "name": "Wider Layers",
+          "description": "Layers that have more neurons to increase capacity."
+        }
+      ]
+    },
+    {
+      "name": "Backpropagation",
+      "description": "The algorithm used for training neural networks by minimizing the loss function.",
+      "sub_topics": [
+        {
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm used to minimize the loss function."
+        },
+        {
+          "name": "Error Propagation",
+          "description": "The process of calculating gradients to update weights."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Accuracy Metrics",
+          "description": "Measures used to evaluate the correctness of predictions."
+        },
+        {
+          "name": "Training Networks",
+          "description": "The process of fitting a model to a training dataset."
+        }
+      ]
+    },
+    {
+      "name": "Learning Strategies",
+      "description": "Approaches to enhance the learning process of neural networks.",
+      "sub_topics": [
+        {
+          "name": "Net Strategies",
+          "description": "Techniques for optimizing neural network performance."
+        },
+        {
+          "name": "Effective Net",
+          "description": "A network designed to achieve high performance."
+        }
+      ]
+    },
+    {
+      "name": "Mapping Functions",
+      "description": "Functions that transform inputs into outputs in neural networks.",
+      "sub_topics": [
+        {
+          "name": "Mapping Function",
+          "description": "A function that defines how inputs are transformed."
+        },
+        {
+          "name": "Random Mapping",
+          "description": "A technique for initializing weights in a neural network."
+        }
+      ]
+    },
+    {
+      "name": "General Concepts",
+      "description": "Broad ideas and principles in machine learning and neural networks.",
+      "sub_topics": [
+        {
+          "name": "Machine Learning",
+          "description": "The field of study that focuses on algorithms that learn from data."
+        },
+        {
+          "name": "Training Algorithm",
+          "description": "The method used to train a model on data."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 23.0168,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

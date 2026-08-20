@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 6.6067,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 8\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 6 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Neural Networks -> Deep Learning | Deep Learning is a subset of Neural Networks.\n02. Neural Networks -> Applications of Neural Networks | Understanding Neural Networks is essential to apply them in real-world scenarios.\n03. Neural Networks -> Neural Network Evaluation | Evaluating Neural Networks requires knowledge of how they function.\n04. Training Techniques -> Neural Network Evaluation | Effective training techniques are necessary to evaluate the performance of neural networks.\n05. Learning Representations -> Neural Networks | Transforming input data is crucial for training Neural Networks.\n06. Statistical Learning -> Neural Computation | Statistical methods are foundational for understanding how neural networks learn.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

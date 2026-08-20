@@ -1,0 +1,109 @@
+{
+  "created_at": "2026-08-18T18:39:44.364257+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-04_numerical-dd3a4dd53cd3",
+  "file_name": "04_numerical-dd3a4dd53cd3",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 29,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.7273,
+    "f1": 0.8,
+    "tp": 8,
+    "fp": 1,
+    "fn": 3
+  },
+  "prerequisite_metrics": {
+    "precision": 0.5,
+    "recall": 0.6,
+    "f1": 0.5455,
+    "tp": 3,
+    "fp": 3,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Gradient Descent",
+      "Eigenvalues and Eigenvectors",
+      "Optimization Techniques",
+      "Curvature Analysis",
+      "Partial Derivatives",
+      "Training Neural Networks",
+      "Matrix Operations",
+      "Training Process"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Regression and Classification",
+        "reason": "The source mentions classification error only as an evaluation example and does not teach regression or regression/classification as a topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Numerical Precision",
+        "reason": "The source substantially covers floating-point rounding, overflow, underflow, NaNs, and numerically stable implementations."
+      },
+      {
+        "name": "Hessian Matrix",
+        "reason": "The Hessian is explicitly defined and used to analyze curvature, directional second derivatives, and optimization behavior."
+      },
+      {
+        "name": "Constrained Optimization",
+        "reason": "The roadmap and KKT-multiplier discussion explicitly cover constrained optimization."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Partial Derivatives",
+        "to": "Gradient Descent",
+        "reason": "For multivariate functions, gradient descent uses the gradient, which the source defines as the vector of partial derivatives."
+      },
+      {
+        "from": "Matrix Operations",
+        "to": "Eigenvalues and Eigenvectors",
+        "reason": "Eigenvalues, eigenvectors, and eigendecomposition are properties and decompositions of matrices."
+      },
+      {
+        "from": "Gradient Descent",
+        "to": "Training Neural Networks",
+        "reason": "The source directly discusses gradient descent behavior during neural-network training."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Eigenvalues and Eigenvectors",
+        "to": "Optimization Techniques",
+        "reason": "Eigenvalues inform curvature-based analysis and conditioning, but they are not a general prerequisite for the broad category of optimization techniques."
+      },
+      {
+        "from": "Training Neural Networks",
+        "to": "Training Process",
+        "reason": "This is a broad part-whole or hierarchical relationship, not a directional learning dependency."
+      },
+      {
+        "from": "Regression and Classification",
+        "to": "Training Process",
+        "reason": "The source does not establish this dependency and does not substantively cover regression."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Partial Derivatives",
+        "to": "Hessian Matrix",
+        "reason": "The source defines the Hessian as the matrix collecting second partial derivatives."
+      },
+      {
+        "from": "Hessian Matrix",
+        "to": "Curvature Analysis",
+        "reason": "The source uses the Hessian and its eigenvalues to characterize multidimensional curvature and directional second derivatives."
+      }
+    ],
+    "overall_note": "The predictions capture the main gradient-based optimization material, but omit the source's substantial numerical-stability and Hessian-focused content."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-04_numerical-dd3a4dd53cd3.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-04_numerical-dd3a4dd53cd3.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-04_numerical-dd3a4dd53cd3_ledger.csv"
+  }
+}

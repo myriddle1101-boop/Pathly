@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\front_matter.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 8.4938,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 22398\n[2] 清洗后词数: 22959\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 132\n[5] 分块数（过滤后）: 99\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=275\n. . 513 14.7 Contractive Autoencoders . . . . . . . . . . . . . . . . . . . . . . 518 14.8 Predictive Sparse Decomposition . . . . . . . . . . . . . . . . . . 521 14.9 Applications of Autoencoders . . . . . . . . . . . ....\n\n[Chunk 2] words=42\nCONTENTS Index 773 vii Website www.deeplearningbook.org This book is accompanied by the above website. The website provides a variety of supplementary material, including exercises, lecture slides, corrections of mistake...\n\n[Chunk 3] words=264\nBibliography Abadi,M.,Agarwal,A.,Barham,P.,Brevdo,E.,Chen,Z.,Citro,C.,Corrado,G.S.,Davis, A., Dean, J., Devin, M., Ghemawat, S., Goodfellow, I., Harp, A., Irving, G., Isard, M., Jia, Y., Jozefowicz, R., Kaiser, L., Kudlu...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

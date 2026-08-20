@@ -1,0 +1,29 @@
+{
+  "stage": "stage2b",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2b_prerequisites_hybrid.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06_mlp\\01e27d8d0770\\stage2a_topics_hybrid.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06_mlp\\01e27d8d0770\\stage2b_prerequisites.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 7.7742,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2b_prerequisites.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 8 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06_mlp\\01e27d8d0770\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Feedforward Networks -> Activation Functions | Activation functions are essential for determining the output in feedforward networks.\n02. Feedforward Networks -> Loss Functions | Loss functions are used to evaluate the performance of feedforward networks.\n03. Feedforward Networks -> Backpropagation | Backpropagation is used to train feedforward networks.\n04. Backpropagation -> Gradient Descent | Gradient descent is the optimization method used in backpropagation.\n05. Neural Network Models -> Feedforward Networks | Understanding feedforward networks is necessary to grasp various neural network models.\n06. Computational Graphs -> Backpropagation | Computational graphs are used to visualize and implement backpropagation.\n07. Loss Functions -> Model Generalization | Understanding loss functions is crucial for evaluating model generalization.\n08. Linear Separability -> Feedforward Networks | Linear separability is a fundamental concept that affects the design of feedforward networks.\n\n Stage 2b 完成\n",
+  "stderr_tail": ""
+}

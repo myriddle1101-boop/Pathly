@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-08-18T18:51:29.436863+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-cs224n-2026-lecture04-rnnlm-590f0f50aaee",
+  "file_name": "cs224n-2026-lecture04-rnnlm-590f0f50aaee",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 14,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.6923,
+    "f1": 0.8182,
+    "tp": 9,
+    "fp": 0,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1": 0.4,
+    "tp": 1,
+    "fp": 0,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Language Models",
+      "Neural Networks",
+      "Machine Translation",
+      "Sequence Models",
+      "Gradient Issues",
+      "Training Techniques",
+      "Language Processing",
+      "Model Evaluation",
+      "Sparsity Problems"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "n-gram Language Models",
+        "reason": "The lecture defines n-grams, explains count-based next-word probabilities, and discusses their limitations."
+      },
+      {
+        "name": "Recurrent Neural Networks",
+        "reason": "RNNs are a central lecture topic and are introduced as the neural architecture for variable-length language modeling."
+      },
+      {
+        "name": "Backpropagation Through Time",
+        "reason": "The source explicitly introduces backpropagation over timesteps and names the algorithm backpropagation through time."
+      },
+      {
+        "name": "Vanishing and Exploding Gradients",
+        "reason": "The lecture directly explains both RNN gradient problems and presents gradient clipping for exploding gradients."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Gradient Issues",
+        "reason": "The described vanishing and exploding gradients arise from gradient propagation and parameter updates in neural networks, particularly RNNs."
+      }
+    ],
+    "rejected_prerequisites": [],
+    "missing_prerequisites": [
+      {
+        "from": "n-gram Language Models",
+        "to": "Sparsity Problems",
+        "reason": "The sparsity problems are presented specifically as consequences of count-based n-gram language models."
+      },
+      {
+        "from": "Recurrent Neural Networks",
+        "to": "Backpropagation Through Time",
+        "reason": "Backpropagation through time is the method presented for training repeated RNN weights across timesteps."
+      },
+      {
+        "from": "Backpropagation Through Time",
+        "to": "Vanishing and Exploding Gradients",
+        "reason": "The vanishing and exploding effects are explained through repeated chain-rule gradient propagation over RNN timesteps."
+      }
+    ],
+    "overall_note": "All predicted concepts are supported, though several are broad labels that omit key lecture-specific concepts such as n-gram models, RNNs, and backpropagation through time."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture04-rnnlm-590f0f50aaee.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture04-rnnlm-590f0f50aaee.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-cs224n-2026-lecture04-rnnlm-590f0f50aaee_ledger.csv"
+  }
+}

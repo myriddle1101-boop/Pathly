@@ -1,0 +1,93 @@
+{
+  "created_at": "2026-08-18T19:00:08.720539+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-dl___week_1___design_engineering-2-4b5a4de9201e",
+  "file_name": "dl___week_1___design_engineering-2-4b5a4de9201e",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 5,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.5,
+    "recall": 0.3333,
+    "f1": 0.4,
+    "tp": 1,
+    "fp": 1,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Machine Learning",
+      "Deep Learning",
+      "Gradient Descent",
+      "Loss Functions",
+      "Regression",
+      "Classification",
+      "Transformers",
+      "Probability Theory"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Design Engineering",
+        "reason": "It appears as the course audience/disciplinary context and in the course title, rather than as a taught learning topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Neural Networks",
+        "reason": "Neural networks are central to the definition of deep learning and are explicitly listed among the first-section topics."
+      },
+      {
+        "name": "Back-Propagation",
+        "reason": "Training and back-propagation are explicitly listed as core course topics and back-propagation is identified as a pivotal development."
+      },
+      {
+        "name": "Optimization",
+        "reason": "Optimization is identified as a mathematical foundation of machine learning and is developed before gradient descent."
+      },
+      {
+        "name": "Reinforcement Learning",
+        "reason": "It is defined as a distinct ML system, discussed through examples, and listed among advanced course topics."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Loss Functions",
+        "to": "Gradient Descent",
+        "reason": "Gradient descent is presented as an algorithm for minimizing an objective function; loss functions provide the learning objective being minimized."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Deep Learning",
+        "to": "Transformers",
+        "reason": "Both are course topics, and transformers are listed in the advanced section, but the source does not state a direct learning dependency between them."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Optimization",
+        "to": "Gradient Descent",
+        "reason": "Gradient descent is introduced as a numerical optimization algorithm after the formulation of optimization problems and gradients."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Deep Learning",
+        "reason": "The source defines deep learning as machine learning using multilayered neural networks."
+      }
+    ],
+    "overall_note": "The predictions cover the principal introductory ML and DL topics well; the main omission is foundational neural-network and optimization material."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___week_1___design_engineering-2-4b5a4de9201e.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___week_1___design_engineering-2-4b5a4de9201e.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dl___week_1___design_engineering-2-4b5a4de9201e_ledger.csv"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Activation Functions",
+      "to": "Neural Computation",
+      "reason": "Understanding activation functions is essential for grasping neural network principles."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Neural Computation",
+      "reason": "Knowledge of loss functions is crucial for evaluating neural network performance."
+    },
+    {
+      "from": "Backpropagation",
+      "to": "Neural Computation",
+      "reason": "Backpropagation is a fundamental algorithm for training neural networks."
+    },
+    {
+      "from": "Neural Computation",
+      "to": "Imagination and Planning",
+      "reason": "Neural computation techniques are often applied in planning and decision-making."
+    },
+    {
+      "from": "Latent Dynamics Models",
+      "to": "Cartpole Dynamics",
+      "reason": "Latent dynamics models provide a framework for understanding cartpole dynamics."
+    },
+    {
+      "from": "Latent Dynamics Models",
+      "to": "Hopper Dynamics",
+      "reason": "Latent dynamics models are applicable to understanding hopper dynamics."
+    }
+  ]
+}

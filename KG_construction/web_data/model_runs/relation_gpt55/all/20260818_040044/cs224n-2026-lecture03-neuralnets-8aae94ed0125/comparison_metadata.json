@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125",
+  "run_id": "cs224n-2026-lecture03-neuralnets-8aae94ed0125",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:05.035456+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "7b997af9018d1ef396a95cd3df5237f835042b8640ed86dadaeaf19d99e2fe57",
+    "stage2a_topics_hybrid.json": "899f646159475bb3dc3da7a930ee44d36ee223534f1c417821eb0541fe8c1cc1",
+    "stage2c_similarity_edges.json": "37868f81f0f6839c5c861ace7142bdd7950ed18bb1f80e4748175ecfcd42b5a1",
+    "stage3_topics_with_summary.json": "f5d098aefb03b1155181b051cd248958688dc6c481d5811853a11f2ea6e1f4df"
+  },
+  "old_relation_count": 7,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

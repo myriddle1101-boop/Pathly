@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "id": "Regression",
+      "description": "A statistical method for modeling the relationship between a dependent variable and one or more independent variables.",
+      "sub_topics": "[{\"name\": \"Linear Regression\", \"description\": \"A type of regression that models the relationship using a linear equation.\"}, {\"name\": \"Logistic Regression\", \"description\": \"A regression model used for binary classification tasks.\"}, {\"name\": \"Ridge Regression\", \"description\": \"A technique that applies L2 regularization to linear regression.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and algebra.",
+      "key_sub_concepts": "[\"Linear Regression\", \"Multiple Regression\"]",
+      "common_misconceptions": "[\"Regression implies causation\", \"Only linear relationships can be modeled\"]",
+      "practical_applications": "[\"Predicting sales based on advertising spend\", \"Estimating housing prices based on features\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": "[{\"name\": \"Artificial Neural Network\", \"description\": \"A network of interconnected neurons used to approximate complex functions.\"}, {\"name\": \"Activation Function\", \"description\": \"A function that determines the output of a neuron.\"}, {\"name\": \"Backpropagation\", \"description\": \"An algorithm for training neural networks by minimizing the loss function.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Statistical Learning",
+      "description": "A framework for understanding and applying statistical methods to learn from data.",
+      "sub_topics": "[{\"name\": \"Model Selection\", \"description\": \"The process of choosing the best model from a set of candidates.\"}, {\"name\": \"Hypothesis Testing\", \"description\": \"A method for making inferences about populations based on sample data.\"}, {\"name\": \"Confidence Interval\", \"description\": \"A range of values that is likely to contain the population parameter.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and probability.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\"]",
+      "common_misconceptions": "[\"Statistical learning is only about regression.\", \"All statistical methods are applicable to all types of data.\"]",
+      "practical_applications": "[\"Predictive modeling in finance\", \"Customer segmentation in marketing\"]"
+    },
+    {
+      "id": "Clustering",
+      "description": "A technique for grouping similar data points into clusters.",
+      "sub_topics": "[{\"name\": \"Hierarchical Clustering\", \"description\": \"A method that builds a hierarchy of clusters.\"}, {\"name\": \"K-Means Clustering\", \"description\": \"A popular algorithm that partitions data into K distinct clusters.\"}, {\"name\": \"Clustering Methods\", \"description\": \"Various techniques used to perform clustering.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"K-means clustering\", \"Hierarchical clustering\"]",
+      "common_misconceptions": "[\"Clustering is the same as classification\", \"All clusters must have the same size\"]",
+      "practical_applications": "[\"Customer segmentation\", \"Image compression\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "The process of assessing the performance of a machine learning model.",
+      "sub_topics": "[{\"name\": \"Error Rate\", \"description\": \"The proportion of incorrect predictions made by a model.\"}, {\"name\": \"Training Error\", \"description\": \"The error rate calculated on the training dataset.\"}, {\"name\": \"Validation Set\", \"description\": \"A subset of data used to tune model parameters.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and statistics.",
+      "key_sub_concepts": "[\"Confusion Matrix\", \"ROC Curve\", \"Precision and Recall\", \"F1 Score\"]",
+      "common_misconceptions": "[\"Accuracy is the only metric that matters.\", \"Overfitting is not a concern during evaluation.\"]",
+      "practical_applications": "[\"Evaluating classification models\", \"Comparing different models\", \"Hyperparameter tuning\"]"
+    },
+    {
+      "id": "Support Vector Machines",
+      "description": "A supervised learning model used for classification and regression tasks.",
+      "sub_topics": "[{\"name\": \"Support Vector Classifier\", \"description\": \"A type of SVM used for binary classification.\"}, {\"name\": \"Hyperplane\", \"description\": \"A decision boundary that separates different classes in SVM.\"}, {\"name\": \"Kernel Trick\", \"description\": \"A method to transform data into a higher-dimensional space for better separation.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and statistics.",
+      "key_sub_concepts": "[\"Hyperplanes\", \"Kernel functions\"]",
+      "common_misconceptions": "[\"SVMs can only be used for linear classification\", \"More support vectors always lead to better performance\"]",
+      "practical_applications": "[\"Image classification\", \"Text categorization\"]"
+    },
+    {
+      "id": "Survival Analysis",
+      "description": "A set of statistical approaches for analyzing time-to-event data.",
+      "sub_topics": "[{\"name\": \"Survival Curve\", \"description\": \"A graphical representation of survival probabilities over time.\"}, {\"name\": \"Cox Proportional Hazards Model\", \"description\": \"A regression model used to explore the relationship between the survival time and one or more predictor variables.\"}, {\"name\": \"Survival Data\", \"description\": \"Data that includes the time until an event occurs.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and probability, familiarity with regression analysis.",
+      "key_sub_concepts": "[\"Censoring\", \"Kaplan-Meier Estimator\", \"Cox Proportional Hazards Model\"]",
+      "common_misconceptions": "[\"Survival analysis is only for medical data\", \"Time-to-event data must be normally distributed\"]",
+      "practical_applications": "[\"Clinical trials\", \"Reliability engineering\", \"Customer churn analysis\"]"
+    },
+    {
+      "id": "Dimensionality Reduction",
+      "description": "Techniques used to reduce the number of features in a dataset while preserving important information.",
+      "sub_topics": "[{\"name\": \"Principal Component Analysis\", \"description\": \"A method that transforms data into a lower-dimensional space.\"}, {\"name\": \"Cubic Spline\", \"description\": \"A piecewise polynomial function used for interpolation.\"}, {\"name\": \"Feature Selection\", \"description\": \"The process of selecting a subset of relevant features for model training.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and statistics.",
+      "key_sub_concepts": "[\"Principal Component Analysis (PCA)\", \"t-Distributed Stochastic Neighbor Embedding (t-SNE)\"]",
+      "common_misconceptions": "[\"Dimensionality reduction always improves model performance.\", \"It is only applicable to high-dimensional data.\"]",
+      "practical_applications": "[\"Data visualization\", \"Noise reduction in datasets\"]"
+    },
+    {
+      "id": "Regression Trees",
+      "description": "A decision tree that predicts continuous values based on input features.",
+      "sub_topics": "[{\"name\": \"Decision Trees\", \"description\": \"A model that splits data into branches to make predictions.\"}, {\"name\": \"Random Forests\", \"description\": \"An ensemble method that uses multiple decision trees for improved accuracy.\"}, {\"name\": \"Tree-Based Models\", \"description\": \"Models that use tree structures for making predictions.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and decision trees.",
+      "key_sub_concepts": "[\"Splitting criteria\", \"Overfitting and pruning\"]",
+      "common_misconceptions": "[\"Regression trees can only predict linear relationships\", \"They are not suitable for large datasets\"]",
+      "practical_applications": "[\"Predicting house prices\", \"Forecasting sales\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Regression",
+      "to": "Regression Trees",
+      "relation": "prerequisite",
+      "reason": "Regression trees are a specific application of regression techniques."
+    },
+    {
+      "from": "Statistical Learning",
+      "to": "Regression",
+      "relation": "prerequisite",
+      "reason": "Regression is a statistical method that falls under the framework of statistical learning."
+    },
+    {
+      "from": "Statistical Learning",
+      "to": "Clustering",
+      "relation": "prerequisite",
+      "reason": "Clustering techniques are part of the statistical learning framework."
+    },
+    {
+      "from": "Statistical Learning",
+      "to": "Survival Analysis",
+      "relation": "prerequisite",
+      "reason": "Survival analysis is a statistical approach that requires understanding statistical learning."
+    },
+    {
+      "from": "Statistical Learning",
+      "to": "Dimensionality Reduction",
+      "relation": "prerequisite",
+      "reason": "Dimensionality reduction techniques are based on statistical learning principles."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Support Vector Machines",
+      "relation": "prerequisite",
+      "reason": "Model evaluation is necessary to assess the performance of support vector machines."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Model evaluation is necessary to assess the performance of neural networks."
+    }
+  ]
+}

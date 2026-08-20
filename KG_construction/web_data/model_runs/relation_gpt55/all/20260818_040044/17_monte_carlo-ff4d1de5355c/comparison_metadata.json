@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c",
+  "run_id": "17_monte_carlo-ff4d1de5355c",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:00.277173+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "1b9bf51d0c85b43ceb3de258f03c2610fd1720617660bc249b6f3a34e0c03c35",
+    "stage2a_topics_hybrid.json": "82c84284153588153b7b2e7e99efaa5f9f2cf3593ed9ffd1d077789c443a072c",
+    "stage2c_similarity_edges.json": "886c0937368916f923346102ce6430810767d13e6b9b751ddcc51a3d41944246",
+    "stage3_topics_with_summary.json": "7546fdb02fab264cc63a787f0bf179dd10dcf1736bc8f5956bf3a81d75368e8f"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

@@ -1,0 +1,44 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 17,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "creating a virtual environment",
+      "to": "activating virtual environment via bin/activate",
+      "relation_type": "strong_prerequisite",
+      "reason": "A virtual environment must exist before it can be activated."
+    },
+    {
+      "from": "pip dependencies installation",
+      "to": "installing requirements from requirements.txt",
+      "relation_type": "strong_prerequisite",
+      "reason": "Installing from requirements.txt uses pip dependency installation commands."
+    },
+    {
+      "from": "installing core packages",
+      "to": "using Python sentence_transformers library",
+      "relation_type": "strong_prerequisite",
+      "reason": "The sentence_transformers package must be installed before it can be used in Python."
+    },
+    {
+      "from": "testing environment setup",
+      "to": "create_collection unit test",
+      "relation_type": "strong_prerequisite",
+      "reason": "A configured test environment is needed before running or writing this unit test."
+    },
+    {
+      "from": "testing environment setup",
+      "to": "test collection implementation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Testing the collection implementation requires a working test environment."
+    },
+    {
+      "from": "testing environment setup",
+      "to": "verify functionality of components",
+      "relation_type": "strong_prerequisite",
+      "reason": "Component functionality verification requires an environment where tests or checks can run."
+    }
+  ]
+}

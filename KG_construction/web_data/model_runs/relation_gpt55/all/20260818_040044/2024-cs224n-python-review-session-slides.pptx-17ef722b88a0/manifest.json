@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "run_id": "2024-cs224n-python-review-session-slides.pptx-17ef722b88a0",
+  "created_at": "2026-07-07T19:30:20+08:00",
+  "updated_at": "2026-07-07T19:36:14+08:00",
+  "status": "success",
+  "run_attempts": 2,
+  "document": {
+    "file_name": "2024 CS224N Python Review Session Slides.pptx.pdf",
+    "doc_name": "2024 CS224N Python Review Session Slides.pptx",
+    "sha256": "17ef722b88a092a524ec7d5575c7687908d4f8f6ab96948cf4ed6bb988824b8b",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\2024 CS224N Python Review Session Slides.pptx.pdf",
+    "pdf_size_bytes": 1268264
+  },
+  "artifacts": {
+    "output_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0",
+    "manifest_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\manifest.json",
+    "run_log_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\run_log.json",
+    "recovery_state_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\recovery_state.json",
+    "log_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs"
+  },
+  "summary": {
+    "completed_stages": [
+      "stage1",
+      "stage2a",
+      "stage2b",
+      "stage2c",
+      "stage3",
+      "stage4"
+    ],
+    "failed_stage": null,
+    "next_resume_stage": null,
+    "last_resume_from_stage": null,
+    "duration_seconds": 0.1695
+  },
+  "stages": {
+    "stage1": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:30:20+08:00",
+      "ended_at": "2026-07-07T19:30:29+08:00",
+      "duration_seconds": 8.7339,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\2024 CS224N Python Review Session Slides.pptx.pdf"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage1_chunks.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage1_text_cleaned.txt"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage1.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage1.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage1_chunks.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3571\n[2] 清洗后词数: 3662\n[3] 文档类型识别: paper_book\n[4] 分块数（过滤前）: 25\n[5] 分块数（过滤后）: 23\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=110\nReview Session Python CS 224 N - Winter 25 Stanford University 1  Two entwined snakes, based on Mayan representations. However, named after Monty Python’s Flying Circus  2  Charting a Course 1 2 3 Why Python? Setting Up...\n\n[Chunk 2] words=115\nThe Python Interpreter Ex. Interactive Mode (line-by-line) Ex. Script Mode (.py file) Python code → interpreted into bytecode (.pyc) → compiled by a VM implementation into machine instructions (most commonly using C.) “S...\n\n[Chunk 3] words=84\nLanguage Basics A variable is simply a value or object reference bound to a name. Dynamically Typed Data types of variables are determined at runtime (flexible!) Variables can be def find(required_element, sequence): for...\n\n Stage1 完成，可进入 Stage2\n",
+      "stderr_tail": ""
+    },
+    "stage2a": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:30:29+08:00",
+      "ended_at": "2026-07-07T19:31:36+08:00",
+      "duration_seconds": 67.1993,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage1_chunks.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage2a_topics_hybrid.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage2a.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage2a.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2a_topics_hybrid.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2a 真正混合版：KeyBERT召回 + LLM精修 ===\n请输入 stage1_chunks.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2a_topics_hybrid.json）：\n> [1] 读取chunks成功：23\n[Info] torch=2.12.0+cpu, requested=cuda, selected=cpu, cuda_available=False, fallback=True\n[Warn] 当前 torch 为 CPU build，未编译 CUDA 支持。\n[KeyBERT] chunk 1/23 ...\n[KeyBERT] chunk 2/23 ...\n[KeyBERT] chunk 3/23 ...\n[KeyBERT] chunk 4/23 ...\n[KeyBERT] chunk 5/23 ...\n[KeyBERT] chunk 6/23 ...\n[KeyBERT] chunk 7/23 ...\n[KeyBERT] chunk 8/23 ...\n[KeyBERT] chunk 9/23 ...\n[KeyBERT] chunk 10/23 ...\n[KeyBERT] chunk 11/23 ...\n[KeyBERT] chunk 12/23 ...\n[KeyBERT] chunk 13/23 ...\n[KeyBERT] chunk 14/23 ...\n[KeyBERT] chunk 15/23 ...\n[KeyBERT] chunk 16/23 ...\n[KeyBERT] chunk 17/23 ...\n[KeyBERT] chunk 18/23 ...\n[KeyBERT] chunk 19/23 ...\n[KeyBERT] chunk 20/23 ...\n[KeyBERT] chunk 21/23 ...\n[KeyBERT] chunk 22/23 ...\n[KeyBERT] chunk 23/23 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Python Basics\n02. Python Packages\n03. Python Environment\n04. Data Manipulation\n05. Python Functions\n06. Operators in Python\n07. Python Notebooks\n08. Debugging Techniques\n09. Advanced Python Concepts\n\n Stage 2a 混合版完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 2505.19it/s]\n"
+    },
+    "stage2b": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:31:36+08:00",
+      "ended_at": "2026-07-07T19:31:46+08:00",
+      "duration_seconds": 10.2436,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage2b_prerequisites.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage2b.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage2b.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2b_prerequisites.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2b: 先修关系（LLM优先 + 规则回退）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2b_prerequisites.json）：\n> [1] 读取Topic数量: 9\n[2] LLM先修关系提取完成\n[3] 最终先修关系数量: 7 | method=llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage2b_prerequisites.json\n\n--- Prerequisite Preview (Top 15) ---\n01. Python Basics -> Python Functions | Functions are a fundamental concept built on basic syntax.\n02. Python Basics -> Operators in Python | Understanding basic syntax is necessary to use operators.\n03. Python Basics -> Data Manipulation | Basic knowledge of Python is required to manipulate data.\n04. Python Basics -> Python Packages | Basic syntax is needed to manage and utilize packages.\n05. Python Environment -> Python Notebooks | Setting up an environment is necessary to use notebooks.\n06. Python Functions -> Debugging Techniques | Understanding functions is essential for effective debugging.\n07. Data Manipulation -> Advanced Python Concepts | Advanced concepts often build on data manipulation techniques.\n\n Stage 2b 完成\n",
+      "stderr_tail": ""
+    },
+    "stage2c": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:31:46+08:00",
+      "ended_at": "2026-07-07T19:32:25+08:00",
+      "duration_seconds": 38.7625,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage2c_similarity_edges.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage2c.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage2c.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage2c_similarity_edges.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 2c: Topic相似关系（SBERT）===\n请输入 stage2a_topics_hybrid.json 完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage2c_similarity_edges.json）：\n> [1] 读取Topic数量: 9\n[2] 相似关系数量: 4 (threshold=0.72, top_k=5)\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage2c_similarity_edges.json\n\n--- Similarity Preview (Top 15) ---\n01. Operators in Python <-> Python Functions | sim=0.7696\n02. Advanced Python Concepts <-> Python Basics | sim=0.7666\n03. Python Environment <-> Python Packages | sim=0.7643\n04. Python Basics <-> Python Functions | sim=0.7257\n\n Stage 2c 完成\n",
+      "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 4783.55it/s]\n"
+    },
+    "stage3": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:32:25+08:00",
+      "ended_at": "2026-07-07T19:32:52+08:00",
+      "duration_seconds": 26.5828,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage2a_topics_hybrid.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage3_topics_with_summary.json"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage3.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage3.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "stage3_topics_with_summary.json: OK"
+        ]
+      },
+      "stdout_tail": "=== Stage 3: Node Summary (LLM + Fallback) ===\n请输入 stage2a_topics_hybrid.json 路径：\n> 请输入输出路径（回车=当前目录/stage3_topics_with_summary.json）：\n> [1] 读取Topic数量: 9\n[LLM] 1/9 Python Basics\n[LLM] 2/9 Python Packages\n[LLM] 3/9 Python Environment\n[LLM] 4/9 Data Manipulation\n[LLM] 5/9 Python Functions\n[LLM] 6/9 Operators in Python\n[LLM] 7/9 Python Notebooks\n[LLM] 8/9 Debugging Techniques\n[LLM] 9/9 Advanced Python Concepts\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage3_topics_with_summary.json\n Stage 3 完成\n",
+      "stderr_tail": ""
+    },
+    "stage4": {
+      "status": "success",
+      "attempts": 1,
+      "started_at": "2026-07-07T19:32:52+08:00",
+      "ended_at": "2026-07-07T19:32:54+08:00",
+      "duration_seconds": 2.1263,
+      "return_code": 0,
+      "reused_on_resume": true,
+      "input_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage3_topics_with_summary.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage2b_prerequisites.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\stage2c_similarity_edges.json"
+      ],
+      "output_paths": [
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\knowledge_graph.json",
+        "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\knowledge_graph.gexf"
+      ],
+      "log_text_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage4.log",
+      "log_json_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\logs\\stage4.json",
+      "validation": {
+        "inputs_ok": true,
+        "outputs_ok": true,
+        "missing_inputs": [],
+        "missing_outputs": [],
+        "details": [
+          "knowledge_graph.json: OK",
+          "kg_prerequisite.png: 可选输出存在",
+          "kg_similarity.png: 可选输出存在"
+        ]
+      },
+      "stdout_tail": "=== Stage 4 v2: KG Merge & Visualization ===\nInput stage3_topics_with_summary.json path\n> Input stage2b_prerequisites.json path\n> Input stage2c_similarity_edges.json path\n> [1] Topics: 9\n[2] Prerequisites: 7\n[3] Similarity edges: 4\n[4] Graph nodes=9, edges=10\n[Saved] knowledge_graph.gexf\n[Saved] knowledge_graph.json\n[Saved] kg_prerequisite.png\n[Saved] kg_similarity.png\n[OK] Stage4 completed.\n",
+      "stderr_tail": ""
+    }
+  },
+  "last_attempt_at": "2026-07-07T19:36:14+08:00"
+}

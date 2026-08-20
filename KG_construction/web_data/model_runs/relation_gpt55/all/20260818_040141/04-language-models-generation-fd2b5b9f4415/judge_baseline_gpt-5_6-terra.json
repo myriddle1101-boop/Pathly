@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-08-18T18:39:16.008597+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-04-language-models-generation-fd2b5b9f4415",
+  "file_name": "04-language-models-generation-fd2b5b9f4415",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 5,
+  "topic_metrics": {
+    "precision": 0.5556,
+    "recall": 0.5,
+    "f1": 0.5263,
+    "tp": 5,
+    "fp": 4,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.2857,
+    "recall": 0.4,
+    "f1": 0.3333,
+    "tp": 2,
+    "fp": 5,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Language Models",
+      "Contextual Understanding",
+      "Answer Generation",
+      "Training Techniques",
+      "Neural Networks"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Self History",
+        "reason": "The source discusses conversation history and a self.history variable, not a concept called Self History."
+      },
+      {
+        "name": "Quality Assessment",
+        "reason": "The source includes answer verification and model-selection quality factors, but does not present quality assessment as a distinct learning concept."
+      },
+      {
+        "name": "Data Management",
+        "reason": "Documents and vector databases are used in examples, but data management is not taught as a topic in this lesson."
+      },
+      {
+        "name": "Model Evaluation",
+        "reason": "Evaluation is mentioned only as a future lesson activity, not developed as a lesson concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Tokens",
+        "reason": "The lesson explicitly explains tokenization and gives token-count examples."
+      },
+      {
+        "name": "Context Window",
+        "reason": "The lesson defines context windows, compares model limits, and addresses contexts that are too long."
+      },
+      {
+        "name": "Temperature",
+        "reason": "Temperature is explicitly defined as controlling generation randomness and is used to mitigate hallucinations."
+      },
+      {
+        "name": "RAG Prompting",
+        "reason": "A major section teaches prompt templates, constraints, citations, few-shot examples, and chain-of-thought prompting for RAG."
+      },
+      {
+        "name": "Hallucinations",
+        "reason": "The lesson identifies hallucinations as a common RAG generation issue and provides mitigation strategies."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Language Models",
+        "reason": "The source explicitly defines an LLM as a neural network trained for language tasks."
+      },
+      {
+        "from": "Language Models",
+        "to": "Answer Generation",
+        "reason": "The lesson explains that LLM inference generates responses by predicting and sampling next tokens."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Language Models",
+        "to": "Contextual Understanding",
+        "reason": "Contextual understanding is presented as an LLM capability, not as a separately developed topic that has a strong prerequisite dependency on Language Models."
+      },
+      {
+        "from": "Language Models",
+        "to": "Quality Assessment",
+        "reason": "Quality Assessment is not a distinct supported topic, and the source does not establish this learning dependency."
+      },
+      {
+        "from": "Training Techniques",
+        "to": "Neural Networks",
+        "reason": "The source describes training an LLM neural network, but does not establish general training techniques as a prerequisite for learning neural networks."
+      },
+      {
+        "from": "Data Management",
+        "to": "Training Techniques",
+        "reason": "Neither data management nor this directional dependency is taught in the source."
+      },
+      {
+        "from": "Model Evaluation",
+        "to": "Quality Assessment",
+        "reason": "Both concepts are not developed as distinct lesson topics, and the relation is largely associative."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Tokens",
+        "to": "LLM Inference",
+        "reason": "The inference workflow begins by converting input text to tokens before processing and next-token generation."
+      },
+      {
+        "from": "Retrieved Context",
+        "to": "RAG Prompting",
+        "reason": "RAG prompt templates require retrieved documents to be inserted as context for answering questions."
+      },
+      {
+        "from": "RAG Prompting",
+        "to": "Grounded Answer Generation",
+        "reason": "The lesson presents explicit context-only instructions, citations, and uncertainty handling as mechanisms for generating source-grounded answers."
+      }
+    ],
+    "overall_note": "The prediction captures the core LLM and generation material but misses the lesson's central RAG prompting, token/context-window, and hallucination-control concepts."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-04-language-models-generation-fd2b5b9f4415.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-04-language-models-generation-fd2b5b9f4415.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-04-language-models-generation-fd2b5b9f4415_ledger.csv"
+  }
+}

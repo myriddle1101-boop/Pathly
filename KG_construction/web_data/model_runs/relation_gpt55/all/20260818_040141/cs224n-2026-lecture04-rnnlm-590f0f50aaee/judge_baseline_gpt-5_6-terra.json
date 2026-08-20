@@ -1,0 +1,114 @@
+{
+  "created_at": "2026-08-18T18:51:16.252003+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-cs224n-2026-lecture04-rnnlm-590f0f50aaee",
+  "file_name": "cs224n-2026-lecture04-rnnlm-590f0f50aaee",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 14,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.8571,
+    "tp": 9,
+    "fp": 0,
+    "fn": 3
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 6,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Language Models",
+      "Neural Networks",
+      "Machine Translation",
+      "Sequence Models",
+      "Gradient Issues",
+      "Training Techniques",
+      "Language Processing",
+      "Model Evaluation",
+      "Sparsity Problems"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Recurrent Neural Networks",
+        "reason": "A central lecture topic, including RNN language-model architecture, training, advantages, and limitations."
+      },
+      {
+        "name": "n-gram Language Models",
+        "reason": "The source presents n-gram models, Markov assumptions, counting-based probabilities, smoothing, and backoff in detail."
+      },
+      {
+        "name": "Backpropagation Through Time",
+        "reason": "The source explicitly introduces BPTT as the algorithm for computing RNN gradients across timesteps."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Language Models",
+        "reason": "Language models are introduced independently through next-word prediction and n-grams; neural networks are one later implementation approach, not a prerequisite for the general concept."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Machine Translation",
+        "reason": "The source discusses neural machine translation, but machine translation as a task does not directionally require neural networks."
+      },
+      {
+        "from": "Sequence Models",
+        "to": "Language Models",
+        "reason": "The lecture introduces language modeling first and then uses RNN/sequence architectures to model it; this direction is not supported."
+      },
+      {
+        "from": "Training Techniques",
+        "to": "Model Evaluation",
+        "reason": "Training procedures and perplexity evaluation are both covered, but the source does not establish training techniques as a learning prerequisite for evaluation."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Gradient Issues",
+        "reason": "The discussed vanishing and exploding gradients are specifically consequences of recurrent training and backpropagation through time, not a general dependency on neural networks alone."
+      },
+      {
+        "from": "Language Processing",
+        "to": "Machine Translation",
+        "reason": "Machine translation is an NLP task, but this is a task-category relationship rather than a strong directional prerequisite."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Language Models",
+        "to": "Recurrent Neural Networks",
+        "reason": "The lecture frames RNNs as a neural architecture for language modeling after establishing the language-modeling task and limitations of n-grams."
+      },
+      {
+        "from": "n-gram Language Models",
+        "to": "Sparsity Problems",
+        "reason": "The sparsity problems arise directly from count-based n-gram probabilities and increasing context length."
+      },
+      {
+        "from": "Multivariable Chain Rule",
+        "to": "Backpropagation Through Time",
+        "reason": "The source explicitly derives BPTT by applying the multivariable chain rule over timesteps."
+      },
+      {
+        "from": "Recurrent Neural Networks",
+        "to": "Vanishing and Exploding Gradients",
+        "reason": "The gradient problems are presented as problems of training RNNs with repeated recurrent computations."
+      }
+    ],
+    "overall_note": "All predicted topics are broadly represented, but the prerequisite predictions mostly confuse model application, task hierarchy, or association with strong learning dependencies."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture04-rnnlm-590f0f50aaee.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture04-rnnlm-590f0f50aaee.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture04-rnnlm-590f0f50aaee_ledger.csv"
+  }
+}

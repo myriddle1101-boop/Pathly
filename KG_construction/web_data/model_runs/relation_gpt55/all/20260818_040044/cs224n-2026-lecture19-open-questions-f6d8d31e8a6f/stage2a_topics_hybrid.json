@@ -1,0 +1,596 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 9,
+  "candidate_count": 54,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "reasoning flr",
+      "avg_score": 0.6051,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "rlp outperforms",
+      "avg_score": 0.6044,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "reasoning builds",
+      "avg_score": 0.599,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "data pretraining",
+      "avg_score": 0.5922,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "indian startups",
+      "avg_score": 0.5913,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "reasoning data",
+      "avg_score": 0.5792,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "repositories china",
+      "avg_score": 0.5765,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "reasoning dataset",
+      "avg_score": 0.5758,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "scaling intelligence",
+      "avg_score": 0.5741,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "loading reasoning",
+      "avg_score": 0.5702,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "effortful rl",
+      "avg_score": 0.5687,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "reasoned predictor",
+      "avg_score": 0.5647,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "models india",
+      "avg_score": 0.5635,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "thought reasoning",
+      "avg_score": 0.5625,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "reinforcement learning",
+      "avg_score": 0.5568,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "predictor",
+      "avg_score": 0.5565,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "entropy training",
+      "avg_score": 0.5557,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "model trained",
+      "avg_score": 0.5555,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "specific tuning",
+      "avg_score": 0.5506,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "sample thought",
+      "avg_score": 0.5502,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "practices rl",
+      "avg_score": 0.55,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "rl effortful",
+      "avg_score": 0.5491,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "reasoning pretraining",
+      "avg_score": 0.5458,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "outperforms cpt",
+      "avg_score": 0.5456,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "thoughts reasoning",
+      "avg_score": 0.5446,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "better reasoning",
+      "avg_score": 0.5443,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "rlvr compared",
+      "avg_score": 0.5434,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "quality rq",
+      "avg_score": 0.5433,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "training recipe",
+      "avg_score": 0.5427,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "china contribution",
+      "avg_score": 0.5399,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "thought predicting",
+      "avg_score": 0.5336,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "improvement qwen",
+      "avg_score": 0.5269,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "optimization dapo",
+      "avg_score": 0.5268,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "reasoning exposure",
+      "avg_score": 0.523,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "better rlvr",
+      "avg_score": 0.5099,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "artificial reasoning",
+      "avg_score": 0.5094,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "intelligence pro",
+      "avg_score": 0.4974,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "worse rlvr",
+      "avg_score": 0.4952,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "findings rl",
+      "avg_score": 0.495,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "rl varying",
+      "avg_score": 0.4921,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "china",
+      "avg_score": 0.4912,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "rl matters",
+      "avg_score": 0.4862,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "outperforms",
+      "avg_score": 0.4822,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "synthesis rl",
+      "avg_score": 0.4778,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "chinese labs",
+      "avg_score": 0.4702,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "generative ai",
+      "avg_score": 0.4683,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "momentum chinese",
+      "avg_score": 0.4681,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "llm reasoning",
+      "avg_score": 0.4659,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "smart scaling",
+      "avg_score": 0.461,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "pass better",
+      "avg_score": 0.4574,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "neural models",
+      "avg_score": 0.4573,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "innovate unconventional",
+      "avg_score": 0.4559,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "intelligence era",
+      "avg_score": 0.4509,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "millions repositories",
+      "avg_score": 0.4329,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Reinforcement Learning",
+      "description": "A type of machine learning focused on training agents to make decisions through rewards and penalties.",
+      "sub_topics": [
+        {
+          "name": "Effortful RL",
+          "description": "A method in reinforcement learning that emphasizes the effort required for learning."
+        },
+        {
+          "name": "Reinforcement Learning Practices",
+          "description": "Best practices and methodologies for implementing reinforcement learning."
+        }
+      ]
+    },
+    {
+      "name": "Reasoning in AI",
+      "description": "The process of deriving logical conclusions from premises or facts in artificial intelligence.",
+      "sub_topics": [
+        {
+          "name": "Thought Reasoning",
+          "description": "The cognitive process of reasoning through thoughts in AI."
+        },
+        {
+          "name": "Reasoning Datasets",
+          "description": "Datasets specifically designed for training reasoning models."
+        }
+      ]
+    },
+    {
+      "name": "Data Pretraining",
+      "description": "The process of training models on large datasets before fine-tuning on specific tasks.",
+      "sub_topics": [
+        {
+          "name": "Reasoning Pretraining",
+          "description": "Pretraining models specifically for reasoning tasks."
+        },
+        {
+          "name": "Quality of Data",
+          "description": "The importance of data quality in pretraining models."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various machine learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Neural Models",
+          "description": "Different architectures and types of neural networks."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of neural network nodes."
+        }
+      ]
+    },
+    {
+      "name": "Model Training",
+      "description": "The process of teaching a machine learning model to make predictions or decisions.",
+      "sub_topics": [
+        {
+          "name": "Training Recipes",
+          "description": "Guidelines and strategies for effective model training."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Scaling Intelligence",
+      "description": "Techniques for enhancing the capabilities of AI systems as they grow in complexity.",
+      "sub_topics": [
+        {
+          "name": "Smart Scaling",
+          "description": "Intelligent methods for scaling AI systems."
+        },
+        {
+          "name": "Generative AI",
+          "description": "AI systems that can generate new content or data."
+        }
+      ]
+    },
+    {
+      "name": "Chinese AI Contributions",
+      "description": "The impact and advancements made by Chinese researchers and institutions in AI.",
+      "sub_topics": [
+        {
+          "name": "Chinese Labs",
+          "description": "Research laboratories in China focused on AI development."
+        },
+        {
+          "name": "Repositories in China",
+          "description": "Data and model repositories established by Chinese institutions."
+        }
+      ]
+    },
+    {
+      "name": "Predictive Modeling",
+      "description": "The use of statistical techniques to predict future outcomes based on historical data.",
+      "sub_topics": [
+        {
+          "name": "Reasoned Predictors",
+          "description": "Models that make predictions based on logical reasoning."
+        },
+        {
+          "name": "Regression and Classification",
+          "description": "Techniques for predicting continuous and categorical outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Optimization Techniques",
+      "description": "Methods used to improve the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Entropy Training",
+          "description": "A training method that incorporates entropy for better model performance."
+        },
+        {
+          "name": "Specific Tuning",
+          "description": "Fine-tuning models for specific tasks or datasets."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 26.7725,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

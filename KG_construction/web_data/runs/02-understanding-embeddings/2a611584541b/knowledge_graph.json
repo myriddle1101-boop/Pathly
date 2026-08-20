@@ -1,0 +1,144 @@
+{
+  "nodes": [
+    {
+      "id": "Embeddings",
+      "description": "Techniques for representing data in a continuous vector space.",
+      "sub_topics": "[{\"name\": \"Understanding Embeddings\", \"description\": \"Fundamental concepts and applications of embeddings.\"}, {\"name\": \"Computing Embeddings\", \"description\": \"Methods and algorithms for generating embeddings.\"}, {\"name\": \"Embedding Models\", \"description\": \"Different architectures and models used for embeddings.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and machine learning concepts.",
+      "key_sub_concepts": "[\"Word Embeddings\", \"Image Embeddings\"]",
+      "common_misconceptions": "[\"Embeddings are only for text data\", \"All embeddings are the same\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Recommendation Systems\"]"
+    },
+    {
+      "id": "Cosine Similarity",
+      "description": "A metric used to measure the similarity between two non-zero vectors.",
+      "sub_topics": "[{\"name\": \"Cosine Similarity Calculation\", \"description\": \"Methods for calculating cosine similarity.\"}, {\"name\": \"Applications of Cosine Similarity\", \"description\": \"Use cases in information retrieval and clustering.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and vector operations.",
+      "key_sub_concepts": "[\"Dot Product\", \"Magnitude of Vectors\"]",
+      "common_misconceptions": "[\"Cosine similarity measures distance, not similarity.\", \"It can be used with zero vectors.\"]",
+      "practical_applications": "[\"Text similarity in Natural Language Processing\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Sentence Transformers",
+      "description": "Models designed to generate embeddings for sentences.",
+      "sub_topics": "[{\"name\": \"Importing Sentence Transformers\", \"description\": \"How to use sentence transformers in code.\"}, {\"name\": \"Sentence Transformer Applications\", \"description\": \"Practical applications of sentence transformers in NLP.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and neural networks.",
+      "key_sub_concepts": "[\"Embedding generation\", \"Semantic similarity\"]",
+      "common_misconceptions": "[\"Sentence transformers only work for English\", \"They cannot capture context effectively\"]",
+      "practical_applications": "[\"Text classification\", \"Information retrieval\"]"
+    },
+    {
+      "id": "AI APIs",
+      "description": "Application Programming Interfaces for integrating AI functionalities.",
+      "sub_topics": "[{\"name\": \"Using AI APIs\", \"description\": \"How to interact with AI APIs for various tasks.\"}, {\"name\": \"API Key Management\", \"description\": \"Best practices for managing API keys securely.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and web development.",
+      "key_sub_concepts": "[\"RESTful APIs\", \"Machine Learning Models\"]",
+      "common_misconceptions": "[\"AI APIs are only for advanced users\", \"All AI APIs require extensive machine learning knowledge\"]",
+      "practical_applications": "[\"Integrating chatbots into applications\", \"Automating data analysis tasks\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": "[{\"name\": \"Artificial Neural Networks\", \"description\": \"Basic structure and function of artificial neural networks.\"}, {\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of neural network nodes.\"}, {\"name\": \"Backpropagation\", \"description\": \"Algorithm for training neural networks through gradient descent.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\", \"Loss Functions\", \"Overfitting and Regularization\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image and speech recognition\", \"Natural language processing\", \"Game playing AI\", \"Medical diagnosis\"]"
+    },
+    {
+      "id": "Loss Functions",
+      "description": "Functions that measure the difference between predicted and actual values.",
+      "sub_topics": "[{\"name\": \"Types of Loss Functions\", \"description\": \"Different loss functions used in machine learning.\"}, {\"name\": \"Loss Function Optimization\", \"description\": \"Techniques for minimizing loss during training.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Mean Squared Error\", \"Cross-Entropy Loss\"]",
+      "common_misconceptions": "[\"Loss functions only apply to regression problems.\", \"Lower loss always means better model.\"]",
+      "practical_applications": "[\"Training machine learning models\", \"Evaluating model performance\"]"
+    },
+    {
+      "id": "Linear Separation",
+      "description": "Concepts related to separating data points using linear boundaries.",
+      "sub_topics": "[{\"name\": \"Linear Separability\", \"description\": \"Conditions under which data can be separated linearly.\"}, {\"name\": \"Applications of Linear Separation\", \"description\": \"Use cases in classification tasks.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and introductory statistics.",
+      "key_sub_concepts": "[\"Hyperplanes\", \"Support Vector Machines\", \"Perceptrons\"]",
+      "common_misconceptions": "[\"Linear separation can always be achieved\", \"All datasets can be separated linearly\"]",
+      "practical_applications": "[\"Binary classification tasks\", \"Image recognition\", \"Spam detection\"]"
+    },
+    {
+      "id": "Regression and Classification",
+      "description": "Supervised learning tasks for predicting continuous and categorical outcomes.",
+      "sub_topics": "[{\"name\": \"Regression Techniques\", \"description\": \"Methods for predicting continuous values.\"}, {\"name\": \"Classification Techniques\", \"description\": \"Methods for categorizing data into classes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Linear Regression\", \"Logistic Regression\"]",
+      "common_misconceptions": "[\"Regression is only for continuous outcomes\", \"Classification cannot handle numerical data\"]",
+      "practical_applications": "[\"Predicting house prices\", \"Email spam detection\"]"
+    },
+    {
+      "id": "Model Training",
+      "description": "Processes involved in training machine learning models.",
+      "sub_topics": "[{\"name\": \"Training Algorithms\", \"description\": \"Different algorithms used for training models.\"}, {\"name\": \"Evaluation Metrics\", \"description\": \"Metrics for assessing model performance.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming, familiarity with Python and libraries like NumPy and Pandas.",
+      "key_sub_concepts": "[\"Data Preprocessing\", \"Model Selection\", \"Hyperparameter Tuning\", \"Training vs. Validation Sets\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Training accuracy is the only measure of model performance\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Predictive analytics in finance\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Embeddings",
+      "to": "Sentence Transformers",
+      "relation": "prerequisite",
+      "reason": "Sentence transformers are a specific application of embeddings."
+    },
+    {
+      "from": "Embeddings",
+      "to": "Cosine Similarity",
+      "relation": "prerequisite",
+      "reason": "Cosine similarity is often used to measure the similarity of embeddings."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Loss Functions",
+      "relation": "prerequisite",
+      "reason": "Loss functions are used to evaluate the performance of neural networks."
+    },
+    {
+      "from": "Linear Separation",
+      "to": "Regression and Classification",
+      "relation": "prerequisite",
+      "reason": "Understanding linear separation is fundamental for regression and classification tasks."
+    },
+    {
+      "from": "Regression and Classification",
+      "to": "Model Training",
+      "relation": "prerequisite",
+      "reason": "Model training is essential for applying regression and classification techniques."
+    }
+  ]
+}

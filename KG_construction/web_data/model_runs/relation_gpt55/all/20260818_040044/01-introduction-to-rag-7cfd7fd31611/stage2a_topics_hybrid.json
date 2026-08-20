@@ -1,0 +1,404 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 5,
+  "candidate_count": 30,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "query_embedding top_k",
+      "avg_score": 0.6026,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "query tall",
+      "avg_score": 0.5762,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "query_embedding",
+      "avg_score": 0.5652,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "embedding query_embedding",
+      "avg_score": 0.5643,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "process rag",
+      "avg_score": 0.5639,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "search query_embedding",
+      "avg_score": 0.5614,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "generation retrieval",
+      "avg_score": 0.5542,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "context scalability",
+      "avg_score": 0.5453,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "systems operate",
+      "avg_score": 0.5281,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "rag systems",
+      "avg_score": 0.5241,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "relevant information",
+      "avg_score": 0.513,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "retrieval quality",
+      "avg_score": 0.5047,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "query_embedding 25",
+      "avg_score": 0.499,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "works step",
+      "avg_score": 0.4847,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "step process",
+      "avg_score": 0.4804,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "process",
+      "avg_score": 0.4801,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "challenges retrieval",
+      "avg_score": 0.4792,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "rag retrieval",
+      "avg_score": 0.4787,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "relevance retrieves",
+      "avg_score": 0.4695,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "access information",
+      "avg_score": 0.469,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "quality retrieval",
+      "avg_score": 0.4665,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "personal information",
+      "avg_score": 0.4626,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "scalability",
+      "avg_score": 0.4579,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "relevant papers",
+      "avg_score": 0.4509,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "information cid",
+      "avg_score": 0.4504,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "information need",
+      "avg_score": 0.4436,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "retrieval augmented",
+      "avg_score": 0.4419,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "generation rag",
+      "avg_score": 0.4194,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "llms",
+      "avg_score": 0.409,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "knowledge retrieval",
+      "avg_score": 0.4045,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Query Embedding",
+      "description": "Techniques for representing queries in a vector space for improved retrieval.",
+      "sub_topics": [
+        {
+          "name": "Top-k Retrieval",
+          "description": "Selecting the top k relevant results based on query embeddings."
+        },
+        {
+          "name": "Search Techniques",
+          "description": "Methods for efficiently searching using query embeddings."
+        }
+      ]
+    },
+    {
+      "name": "Retrieval-Augmented Generation (RAG)",
+      "description": "Combining retrieval and generation techniques to enhance information access.",
+      "sub_topics": [
+        {
+          "name": "RAG Systems",
+          "description": "Architectures that integrate retrieval with generative models."
+        },
+        {
+          "name": "Challenges in RAG",
+          "description": "Issues faced in implementing effective retrieval-augmented systems."
+        }
+      ]
+    },
+    {
+      "name": "Information Retrieval Quality",
+      "description": "Metrics and methods for assessing the effectiveness of information retrieval systems.",
+      "sub_topics": [
+        {
+          "name": "Relevance Retrieval",
+          "description": "Techniques to ensure retrieved information is relevant to user queries."
+        },
+        {
+          "name": "Quality Metrics",
+          "description": "Evaluating the quality of retrieval results."
+        }
+      ]
+    },
+    {
+      "name": "Scalability in Systems",
+      "description": "Strategies for ensuring systems can handle increasing amounts of data and queries.",
+      "sub_topics": [
+        {
+          "name": "Context Scalability",
+          "description": "Adapting systems to maintain performance as context size grows."
+        },
+        {
+          "name": "System Operation",
+          "description": "How systems function under varying loads and data sizes."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain for various tasks.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of neural network nodes."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "Algorithm for training neural networks by minimizing error."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods for training machine learning models effectively.",
+      "sub_topics": [
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual outcomes."
+        },
+        {
+          "name": "Regression and Classification",
+          "description": "Types of supervised learning tasks."
+        }
+      ]
+    },
+    {
+      "name": "Information Access",
+      "description": "Methods and technologies for retrieving and utilizing information.",
+      "sub_topics": [
+        {
+          "name": "Accessing Personal Information",
+          "description": "Techniques for retrieving user-specific data."
+        },
+        {
+          "name": "Knowledge Retrieval",
+          "description": "Strategies for extracting knowledge from large datasets."
+        }
+      ]
+    },
+    {
+      "name": "Relevant Information",
+      "description": "Identifying and utilizing information that is pertinent to user needs.",
+      "sub_topics": [
+        {
+          "name": "Relevant Papers",
+          "description": "Finding academic papers that are relevant to specific queries."
+        },
+        {
+          "name": "Information Needs",
+          "description": "Understanding what information users are seeking."
+        }
+      ]
+    },
+    {
+      "name": "Generative Models",
+      "description": "Models that generate new data instances based on learned patterns.",
+      "sub_topics": [
+        {
+          "name": "Generation Techniques",
+          "description": "Methods for generating data or responses."
+        },
+        {
+          "name": "LLMs (Large Language Models)",
+          "description": "Advanced models for natural language processing tasks."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 24.4525,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

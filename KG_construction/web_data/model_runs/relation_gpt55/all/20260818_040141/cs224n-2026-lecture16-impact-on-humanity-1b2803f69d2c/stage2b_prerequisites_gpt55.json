@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Model Training",
+      "to": "Calibrated Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Calibration evaluates and adjusts confidence estimates of predictive models, which requires understanding how models are trained and make predictions."
+    },
+    {
+      "from": "Model Training",
+      "to": "Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding language models as ML models requires knowing how models are trained on data to learn predictive patterns."
+    }
+  ]
+}

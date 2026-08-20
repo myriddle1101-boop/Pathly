@@ -1,0 +1,79 @@
+{
+  "created_at": "2026-08-18T19:02:20.403424+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-islp_website-278d3bdd49a8",
+  "file_name": "islp_website-278d3bdd49a8",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 958,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.8571,
+    "tp": 9,
+    "fp": 0,
+    "fn": 3
+  },
+  "prerequisite_metrics": {
+    "precision": 1.0,
+    "recall": 0.6667,
+    "f1": 0.8,
+    "tp": 2,
+    "fp": 0,
+    "fn": 1
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Regression",
+      "Statistical Learning",
+      "Neural Networks",
+      "Support Vector Machines",
+      "Clustering",
+      "Model Evaluation",
+      "Survival Analysis",
+      "Regression Trees",
+      "Predictors"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Classification",
+        "reason": "The text explicitly identifies classification as prediction of categorical outputs and discusses multiple classification methods."
+      },
+      {
+        "name": "Supervised Learning",
+        "reason": "The introduction explicitly distinguishes supervised statistical learning from unsupervised learning."
+      },
+      {
+        "name": "Linear Regression",
+        "reason": "The text calls linear regression the fundamental starting point for regression methods and devotes Chapter 3 to it."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Predictors",
+        "to": "Regression",
+        "reason": "Regression is defined as predicting a quantitative response using one or more input variables (predictors)."
+      },
+      {
+        "from": "Predictors",
+        "to": "Regression Trees",
+        "reason": "Regression trees are tree-based regression methods and therefore require input predictor variables to model a response."
+      }
+    ],
+    "rejected_prerequisites": [],
+    "missing_prerequisites": [
+      {
+        "from": "Predictors",
+        "to": "Classification",
+        "reason": "The source defines classification as predicting a categorical output using input variables."
+      }
+    ],
+    "overall_note": "The predictions are well supported; the main omissions are foundational task distinctions, especially classification and supervised learning."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-islp_website-278d3bdd49a8.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-islp_website-278d3bdd49a8.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-islp_website-278d3bdd49a8_ledger.csv"
+  }
+}

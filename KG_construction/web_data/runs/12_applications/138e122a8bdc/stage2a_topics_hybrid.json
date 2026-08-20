@@ -1,0 +1,821 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 18,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "language models",
+      "avg_score": 0.6408,
+      "frequency": 3,
+      "chunk_ids": [
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "name": "natural language",
+      "avg_score": 0.6103,
+      "frequency": 2,
+      "chunk_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "name": "machine translation",
+      "avg_score": 0.5858,
+      "frequency": 2,
+      "chunk_ids": [
+        16,
+        17
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5372,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "fast implementations",
+      "avg_score": 0.708,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "attention mechanism",
+      "avg_score": 0.7045,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "conditional probabilities",
+      "avg_score": 0.6903,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.69,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "probabilities using",
+      "avg_score": 0.6885,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "language nlp",
+      "avg_score": 0.6879,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "speech recognition",
+      "avg_score": 0.6829,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "word categories",
+      "avg_score": 0.6823,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "implementations cpu",
+      "avg_score": 0.6748,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "categories words",
+      "avg_score": 0.6591,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "vocabularies computationally",
+      "avg_score": 0.658,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "probabilities node",
+      "avg_score": 0.6569,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "encoder mapping",
+      "avg_score": 0.6565,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "probability decomposed",
+      "avg_score": 0.6548,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "probabilities",
+      "avg_score": 0.6542,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "value probability",
+      "avg_score": 0.6436,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "weight matrix",
+      "avg_score": 0.6406,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "categories ww",
+      "avg_score": 0.6317,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "based language",
+      "avg_score": 0.6252,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "human languages",
+      "avg_score": 0.6199,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "semantic representation",
+      "avg_score": 0.6149,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "weight vector",
+      "avg_score": 0.6118,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "hierarchy words",
+      "avg_score": 0.6077,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "matrix multiplication",
+      "avg_score": 0.602,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "sequences models",
+      "avg_score": 0.6,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "language model",
+      "avg_score": 0.5974,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "language sequence",
+      "avg_score": 0.5974,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "learn representation",
+      "avg_score": 0.5962,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "deeplearningbook org",
+      "avg_score": 0.5948,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "optimization learne",
+      "avg_score": 0.5938,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "speech synthesis",
+      "avg_score": 0.59,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "cpu families",
+      "avg_score": 0.5882,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "www deeplearningbook",
+      "avg_score": 0.5881,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "modality encoder",
+      "avg_score": 0.5874,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "encoder source",
+      "avg_score": 0.5866,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "representation encoder",
+      "avg_score": 0.5864,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "binding optimization",
+      "avg_score": 0.5846,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "speedup cache",
+      "avg_score": 0.5844,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "deeplearningbook",
+      "avg_score": 0.5843,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "words sequence",
+      "avg_score": 0.5834,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "categories",
+      "avg_score": 0.5814,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "language applications",
+      "avg_score": 0.5743,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "indexing trained",
+      "avg_score": 0.5724,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "dog ra",
+      "avg_score": 0.5723,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "trigram model",
+      "avg_score": 0.5699,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "word embeddings",
+      "avg_score": 0.5692,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "language strategy",
+      "avg_score": 0.5691,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "word vocabulary",
+      "avg_score": 0.5678,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "gram sequence",
+      "avg_score": 0.5661,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "matrix high",
+      "avg_score": 0.5645,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "vocabulary size",
+      "avg_score": 0.5619,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "dimension imposes",
+      "avg_score": 0.5601,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "conditioned source",
+      "avg_score": 0.5529,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "ran dog",
+      "avg_score": 0.5497,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "representation sentences",
+      "avg_score": 0.549,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "matrix",
+      "avg_score": 0.5475,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "hierarchy word",
+      "avg_score": 0.5464,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "12 language",
+      "avg_score": 0.5459,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "descent attention",
+      "avg_score": 0.5441,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "model data",
+      "avg_score": 0.5408,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "dog",
+      "avg_score": 0.5382,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "dog ran",
+      "avg_score": 0.538,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "predictor model",
+      "avg_score": 0.5363,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "applications learning",
+      "avg_score": 0.5355,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "sentence model",
+      "avg_score": 0.5336,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "offers speedup",
+      "avg_score": 0.5311,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "sequence tokens",
+      "avg_score": 0.5271,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "data predictor",
+      "avg_score": 0.5269,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "arithmetic cpu",
+      "avg_score": 0.5208,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "awa dog",
+      "avg_score": 0.5192,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "away dog",
+      "avg_score": 0.5165,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "model reads",
+      "avg_score": 0.5165,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "useful learn",
+      "avg_score": 0.5158,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "context generates",
+      "avg_score": 0.5155,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "multiple proteins",
+      "avg_score": 0.513,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "idea encoder",
+      "avg_score": 0.5125,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Language Models",
+      "description": "Techniques for modeling and generating human language.",
+      "sub_topics": [
+        {
+          "name": "Word Embeddings",
+          "description": "Representations of words in continuous vector space."
+        },
+        {
+          "name": "Trigram Model",
+          "description": "A statistical language model that uses three-word sequences."
+        },
+        {
+          "name": "Conditional Probabilities",
+          "description": "Probabilities that depend on the occurrence of previous events."
+        }
+      ]
+    },
+    {
+      "name": "Natural Language Processing",
+      "description": "Field focused on the interaction between computers and human language.",
+      "sub_topics": [
+        {
+          "name": "Machine Translation",
+          "description": "Automated translation of text from one language to another."
+        },
+        {
+          "name": "Speech Recognition",
+          "description": "Converting spoken language into text."
+        },
+        {
+          "name": "Language Applications",
+          "description": "Practical uses of NLP techniques in various domains."
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "description": "A subset of machine learning using neural networks with many layers.",
+      "sub_topics": [
+        {
+          "name": "Neural Networks",
+          "description": "Computational models inspired by the human brain."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "Algorithm for training neural networks by minimizing error."
+        }
+      ]
+    },
+    {
+      "name": "Attention Mechanism",
+      "description": "A technique that allows models to focus on specific parts of the input.",
+      "sub_topics": [
+        {
+          "name": "Encoder-Decoder Architecture",
+          "description": "A model structure that uses separate components for input and output."
+        },
+        {
+          "name": "Contextual Attention",
+          "description": "Attention that considers the context of the input data."
+        }
+      ]
+    },
+    {
+      "name": "Probabilities",
+      "description": "Mathematical framework for quantifying uncertainty.",
+      "sub_topics": [
+        {
+          "name": "Probability Decomposition",
+          "description": "Breaking down complex probabilities into simpler components."
+        },
+        {
+          "name": "Value Probability",
+          "description": "The likelihood of a specific outcome occurring."
+        }
+      ]
+    },
+    {
+      "name": "Optimization Techniques",
+      "description": "Methods for improving the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm for minimizing loss functions."
+        },
+        {
+          "name": "Speedup Techniques",
+          "description": "Methods to enhance computational efficiency."
+        }
+      ]
+    },
+    {
+      "name": "Data Representation",
+      "description": "Ways to encode and structure data for machine learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Semantic Representation",
+          "description": "Encoding meaning in a way that machines can understand."
+        },
+        {
+          "name": "Hierarchical Structures",
+          "description": "Organizing data in a tree-like format for better processing."
+        }
+      ]
+    },
+    {
+      "name": "Training Models",
+      "description": "Processes involved in teaching models to make predictions.",
+      "sub_topics": [
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual outcomes."
+        },
+        {
+          "name": "Regression and Classification",
+          "description": "Types of predictive modeling techniques."
+        }
+      ]
+    },
+    {
+      "name": "Implementation Techniques",
+      "description": "Methods for efficiently executing machine learning algorithms.",
+      "sub_topics": [
+        {
+          "name": "Fast Implementations",
+          "description": "Optimized code for quicker execution of algorithms."
+        },
+        {
+          "name": "CPU Optimization",
+          "description": "Techniques to enhance performance on CPU architectures."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 20.7483,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

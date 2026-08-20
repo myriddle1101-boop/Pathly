@@ -1,0 +1,56 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 8,
+  "prerequisites": [
+    {
+      "from": "Matrices",
+      "to": "Mathematical Foundations",
+      "relation_type": "strong_prerequisite",
+      "reason": "Matrices are a core mathematical concept needed before broader mathematical foundations used in machine learning can be understood."
+    },
+    {
+      "from": "Mathematical Foundations",
+      "to": "Learning Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Learning algorithms rely on underlying mathematical concepts and operations."
+    },
+    {
+      "from": "Mathematical Foundations",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding neural networks requires mathematical foundations such as linear algebra and related operations."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Convolutional Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Convolutional networks are a specialized type of neural network, so basic neural network concepts are necessary first."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Network Architecture",
+      "relation_type": "strong_prerequisite",
+      "reason": "Designing and understanding network architecture presupposes familiarity with neural networks."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training techniques are applied to neural network models, so understanding neural networks is necessary first."
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training techniques are specific methods for training models and build on the broader concept of learning algorithms."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Feature Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Feature learning depends on having data represented in a form that can be processed by machine learning models."
+    }
+  ]
+}

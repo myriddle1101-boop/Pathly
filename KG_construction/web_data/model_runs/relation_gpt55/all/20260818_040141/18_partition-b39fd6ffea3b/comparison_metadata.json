@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b",
+  "run_id": "18_partition-b39fd6ffea3b",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:08:05.349389+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "798eb0934597a7ddf6eafe892d47048c0f28548342eda49105f99a34b22ca4b8",
+    "stage2a_topics_hybrid.json": "2ceb8b7db9f482873e071995cc35ea8fee11617bc74e95b3c478c1021c316734",
+    "stage2c_similarity_edges.json": "fcd70b9e71fe77ba753aa212a63dc99991beefa5cae22ca4a7c96aabb29e5f46",
+    "stage3_topics_with_summary.json": "b84ac31b00fc9ed0a7e30d11dcbada4b40936a807abf898906f68d87ff4045ad"
+  },
+  "old_relation_count": 6,
+  "new_relation_count": 5,
+  "new_node_count": 9,
+  "new_edge_count": 6,
+  "golden_path_resource": false
+}

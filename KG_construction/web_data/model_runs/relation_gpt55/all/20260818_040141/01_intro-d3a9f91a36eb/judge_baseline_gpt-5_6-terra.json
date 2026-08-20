@@ -1,0 +1,115 @@
+{
+  "created_at": "2026-08-18T18:36:39.811959+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-01_intro-d3a9f91a36eb",
+  "file_name": "01_intro-d3a9f91a36eb",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 14,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.8571,
+    "tp": 9,
+    "fp": 0,
+    "fn": 3
+  },
+  "prerequisite_metrics": {
+    "precision": 0.1429,
+    "recall": 0.25,
+    "f1": 0.1818,
+    "tp": 1,
+    "fp": 6,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Neurons",
+      "Artificial Neural Networks",
+      "Autoencoders",
+      "Datasets",
+      "Computational Graphs",
+      "Training Techniques",
+      "Learning Algorithms",
+      "Visual Recognition",
+      "Data Representation"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Representation Learning",
+        "reason": "The source explicitly defines representation learning as learning both a mapping to output and the representation itself."
+      },
+      {
+        "name": "Deep Learning",
+        "reason": "The chapter explicitly discusses deep learning, layered feature extraction, and its relationship to representation learning and machine learning."
+      },
+      {
+        "name": "Hidden Layers",
+        "reason": "The source explains that hidden layers extract increasingly abstract features from observed inputs."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neurons",
+        "to": "Artificial Neural Networks",
+        "reason": "The source describes artificial neural networks in terms of neurons and their connections, making neurons a foundational concept."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Artificial Neural Networks",
+        "to": "Autoencoders",
+        "reason": "The source identifies autoencoders as representation-learning algorithms but does not establish that they are necessarily a subtype requiring artificial neural networks."
+      },
+      {
+        "from": "Artificial Neural Networks",
+        "to": "Computational Graphs",
+        "reason": "Computational graphs are presented as a way to measure model depth, not as a required prerequisite for understanding artificial neural networks."
+      },
+      {
+        "from": "Datasets",
+        "to": "Training Techniques",
+        "reason": "Datasets are used for training, but the source does not establish a strong directional learning prerequisite from datasets to training techniques."
+      },
+      {
+        "from": "Training Techniques",
+        "to": "Learning Algorithms",
+        "reason": "Training techniques and learning algorithms are related, but the stated direction is not supported as a prerequisite dependency."
+      },
+      {
+        "from": "Datasets",
+        "to": "Visual Recognition",
+        "reason": "The source gives visual-recognition datasets as applications and benchmarks, not as a conceptual prerequisite for visual recognition."
+      },
+      {
+        "from": "Datasets",
+        "to": "Data Representation",
+        "reason": "The source discusses representations of data, but does not establish that understanding datasets is prerequisite to data representation."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Data Representation",
+        "to": "Representation Learning",
+        "reason": "Representation learning is explicitly defined in terms of learning a useful representation of input data."
+      },
+      {
+        "from": "Edges",
+        "to": "Corners and Contours",
+        "reason": "The source states that the second hidden layer identifies corners and contours from the first layer's description of edges."
+      },
+      {
+        "from": "Corners and Contours",
+        "to": "Object Parts",
+        "reason": "The source states that object parts are detected from specific collections of contours and corners."
+      }
+    ],
+    "overall_note": "Most predicted concepts are present in the introductory chapter, but most proposed relations describe association or application rather than strong learning prerequisites."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-01_intro-d3a9f91a36eb.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-01_intro-d3a9f91a36eb.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-01_intro-d3a9f91a36eb_ledger.csv"
+  }
+}

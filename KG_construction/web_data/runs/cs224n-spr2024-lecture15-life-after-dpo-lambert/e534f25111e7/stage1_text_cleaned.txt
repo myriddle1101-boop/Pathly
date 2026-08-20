@@ -1,0 +1,773 @@
+Life after DPO
+Nathan Lambert || Allen Institute for AI || @natolambert
+Stanford CS 224 N: Natural Language Processing with Deep Learning
+21 May 2024
+
+A heavily abbreviated history of language models (LMs)
+Life after DPO | Lambert: 2
+
+A heavily abbreviated history of LMs
+1948: Claude Shannon models English
+1948-2017:
+Life after DPO | Lambert: 3
+
+A heavily abbreviated history of LMs
+1948: Claude Shannon models English
+1948-2017:
+2017: the transformer is born
+2018: GPT-1, ELMo and BERT released
+2019: GPT-2 and scaling laws
+2020: GPT-3 surprising capabilities. many
+harms
+Life after DPO | Lambert: 4
+
+A heavily abbreviated history of LMs
+1948: Claude Shannon models English
+1948-2017:
+2017: the transformer is born
+2018: GPT-1, ELMo and BERT released
+2019: GPT-2 and scaling laws
+2020: GPT-3 surprising capabilities
+2021: Stochastic parrots
+2022: Chat GPT
+Life after DPO | Lambert: 5
+
+Can Chat GPT exist without RLHF?
+RLHF seems to be necessary, but not sufficient
+Life after DPO | Lambert: 6
+
+RLHF is relied upon elsewhere
+RLHF is a key factor in many popular models, both on and off the record, including
+Chat GPT, Bard/Gemini, Claude, Llama 2, and more
+Life after DPO | Lambert: 7
+
+RLHF is relied upon elsewhere
+RLHF is a key factor in many popular models, both on and off the record, including
+Chat GPT, Bard/Gemini, Claude, Llama 2, and more
+Bai, Y. et al. “Constitutional AI: Harmlessness from AI Feedback.” 2023.
+Anthropic’s Claude
+Life after DPO | Lambert: 8
+
+RLHF is relied upon elsewhere
+RLHF is a key factor in many popular models, both on and off the record, including
+Chat GPT, Bard/Gemini, Claude, Llama 2, and more
+“Meanwhile reinforcement learning,
+known for its instability, seemed a
+somewhat shadowy field for those in the
+NLP research community. However,
+reinforcement learning proved highly
+effective, particularly given its cost and
+time effectiveness.”
+- Touvron, H. et al. “ Llama 2: Open Foundation and
+Fine-Tuned Chat Models.” 2023
+Bai, Y. et al. “Constitutional AI: Harmlessness from AI Feedback.” 2023.
+Anthropic’s Claude Meta’s Llama 2
+Life after DPO | Lambert: 9
+
+Background: IFT, DPO, RLHF objective
+Intro | Background | Path to DPO models | Reward Bench | Fine-tuning a model | Online DPO | Conclusions 10
+
+Some definitions for “alignment” of models
+● Instruction fine-tuning (IFT): Training a model to follow use instructions
+(usually via autoregressive LM loss)
+● Supervised fine-tuning (SFT): Training a model to learn task-specific
+capabilities (usually via autoregressive LM loss)
+● Alignment: General notion of training a model to mirror user desires, any loss
+function
+● Reinforcement learning from human feedback (RLHF): Specific technical
+tool for training ML models from human data
+● Preference fine-tuning: Using labeled preference data to fine-tune a LM
+(either with RL, DPO, or another loss function), there’s also learning to rank
+Life after DPO | Lambert: 11
+
+Key idea: Instruction fine-tuning (IFT)
+1. Adapt base model to specific style of input
+2. Ability to include system prompts, multi-turn
+dialogues, and other chat templates
+<|system|>
+You’re a helpful agent System prompt
+<|end|>
+<|user|>
+{query}
+<|end|>
+<|assistant|>{Answer goes here}
+Special
+tokens
+Life after DPO | Lambert: 12
+
+Key idea: Instruction fine-tuning (IFT)
+starting point: a base language model
+continue training a transformer with pairs of
+question: answer
+Stack Overflow :What makes a
+transformer a transformer?, nbro
+2021
+Life after DPO | Lambert: 13
+
+π: LLM policy
+Review: RLHF objective
+π : base LLM
+θ
+x: prompt
+y: completion
+Life after DPO | Lambert: 14
+
+π: LLM policy
+Review: RLHF objective
+π : base LLM
+θ
+x: prompt
+y: completion
+Optimize “reward” inspired ▲ ▲ Constrain the model to not
+by human preferences trust the reward too much
+(preferences are hard to
+model)
+Life after DPO | Lambert: 15
+
+π: LLM policy
+Review: RLHF objective
+π : base LLM
+θ
+x: prompt
+y: completion
+Optimize “reward” inspired ▲ ▲ Constrain the model to not
+by human preferences trust the reward too much
+(preferences are hard to
+model)
+Primary questions:
+1. How to implement reward: r(x,y)
+2. How to optimize reward
+Life after DPO | Lambert: 16
+
+Review: Preference (reward) modeling
+Can we just use supervised learning on scores?
+● Assigning a scalar reward of how good a response is did not work
+● Pairwise preferences are easy to collect and worked!
+Score from
+Chosen completion
+optimal reward model
+Prompt
+Key idea:
+∝
+Probability reward
+Rejected completion
+Bradley Terry model:
+Estimate probability that a given pairwise preference is true
+Life after DPO | Lambert: 17
+
+What if we just use gradient ascent on this equation?
+Life after DPO | Lambert: 18
+
+What if we just use gradient ascent on this equation?
+The answer, with some math, is:
+Direct Preference Optimization (DPO)
+Released on May 29 th 2023
+(4+ months before models we’re discussing)
+Life after DPO | Lambert: 19
+Rafailov, Sharma, Mitchell et al. 2023
+
+DPO characteristics
+1. Extremely simple to implement
+2. Scales nicely with existing
+distributed training libraries
+3. Trains an implicit reward
+function (can still be used as a
+reward model, see Reward Bench)
+The first 2 points mean we’ll see more
+DPO models than anything else and
+learn it’s limits!
+Example code.
+Rafailov, Sharma, Mitchell et al. 2023
+Life after DPO | Lambert: 20
+
+DPO vs RL (PPO, REINFORCE, …)
+DPO and PPO are very different
+optimizers.
+It is learning directly from
+preferences vs. using RL update
+rules.
+It is also not really online vs offline
+RL, but that is more muddled.
+More discussion:
+https://twitter.com/srush_nlp/status/1729896568956895370,
+https://www.interconnects.ai/p/the-dpo-debate,
+https://www.youtube.com/watch?v=YJMCSVLRUNs
+Credit Tom Goldstein
+https://twitter.com/tomgoldsteincs
+Life after DPO | Lambert: 21
+
+The path to DPO models
+22
+s
+l Qedwo XMrc
+emg Pagu Lgdn Aa L/e
+nbe.u
+pmt Ouoo
+rgyf
+n/e/i:rnsugpgitlti AFh
+Intro | Background | Path to DPO models | Reward Bench | Fine-tuning a model | Online DPO | Conclusions
+
+First open instruction tuned models
+MT Bench 7 B: 6.69
+MT Bench 13 B: 4.53
+Alpaca Vicuna
+(lmsys/vicuna-7 b-delta-v 0)
+13 Mar. 2023 30 Mar. 2023
+● 52 k self-instruct style data distilled ● Fine-tunes Chat GPT data from
+from text-davinci-003 Share GPT
+● Model weight diff. to LLa MA 7 B ● LLa MA 7 B and 13 B diff’s
+https://crfm.stanford.edu/2023/03/13/alpaca.html ● Introduces LLM-as-a-judge
+https://lmsys.org/blog/2023-03-30-vicuna/
+Koala MT Bench 13 B: 6.08
+Dolly
+MT Bench 12 B: 3.28
+3 Apr. 2023
+12 Apr. 2023
+● Diverse dataset (Alpaca, Anthropic
+● 15 k human written data
+HH, Share GPT, Web GPT…)
+● Trained on Pythia 12 b
+● Human evaluation
+https://www.databricks.com/blog/2023/04/12/dolly
+● LLa MA 7 B diff.
+-first-open-commercially-viable-instruction-tuned-l
+https://bair.berkeley.edu/blog/2023/04/03/koala/
+lm
+Life after DPO | Lambert: 23
+
+Key resource: Share GPT data
+● Source: Data from a sharing tool for their
+Chat GPT conversations
+● Question: Legal grey area, most of these
+datasets are unlicensed / without consent.
+● Use: extensive use in last 18 months,
+starting to be replaced by carefully
+collected counterparts:
+○ LMSYS-Chat-1 M: cleaned conversations from
+Chat Bot Arena.
+○ Wild Chat: free Chat GPT usage in exchange for
+data.
+Life after DPO | Lambert: 24
+Source: https://huggingface.co/datasets/anon 8231489123/Share GPT_Vicuna_unfiltered
+
+Open Assistant: The first open, human instruction dataset
+“In an effort to democratize research on large-scale alignment, we release Open Assistant Conversations
+(OASST 1), a human-generated, human-annotated assistant-style conversation corpus consisting of 161,443
+messages in 35 different languages, annotated with 461,292 quality ratings, resulting in over 10,000 fully
+annotated conversation trees. The corpus is a product of a worldwide crowd-sourcing effort involving over 13,500
+volunteers.”
+April 15 th 2023
+● Used extensively in future models.
+● Still the only human dataset of this size to be released.
+● Open Assistant and others trained the popular models with it.
+● (released fine-tuned models too!)
+Dataset: https://huggingface.co/datasets/Open Assistant/oasst 1
+Paper: https://arxiv.org/abs/2304.07327 Life after DPO | Lambert: 25
+
+Stable Vicuna: The first RLHF model
+28 April 2024
+Trained with proximal policy optimization (PPO) on popular datasets
+● OAsst 1 dataset for SFT + PPO
+● Anthropic HH + Stanford Human Preferences (SHP) for RL
+Standard formulation. Ahead of its time!
+Model: https://huggingface.co/Carper AI/stable-vicuna-13 b-delta
+Blog: https://stability.ai/news/stablevicuna-open-source-rlhf-chatbot Life after DPO | Lambert: 26
+
+Llama 2 chat backlash
+Should chat models be “safe?”
+Röttger et al. 2023
+Life after DPO | Lambert: 27
+
+“Uncensored” models
+● Goal: Modify models so they don’t refuse any request
+● Method: Remove instances of “as a language model” or “Sorry, …” in training
+data
+● Confusion: Not the clearest name for things. The models were never
+explicitly censored to begin with.
+● Prefer the name direct or unbiased.
+One of the first models named this way (April 2023): cognitivecomputations/Wizard LM-7 B-Uncensored
+Example models here: https://huggingface.co/models?other=uncensored
+Life after DPO | Lambert: 28
+
+Transition period: Ultrachat, Open Chat, Xwin LM,
+Open Hermes, and more fine-tunes
+A series of strong models trained with instruction tuning and/or RLHF, but none
+markedly shifted the narrative.
+● April. 2023: Wizard LM v 0.1 trained with Evol Instruct (synthetic data generation),
+other strong RL math/code models mostly ignored by community,
+MT Bench 13 B: 6.35
+● Jun. 2023: Ultra LM 13 B trained on new Ultra Chat dataset
+● Jun. 2023: Open Chat 13 B trained on filtered Share GPT data
+● Sep. 2023: Xwin LM 7 B, strong model “trained with RLHF,” but no details, no paper
+Xwin LM 70 B, first model to beat GPT-4 on Alpaca Eval
+● Oct. 2023: Teknium/Open Hermes on Mistral 7 B, strong synthetic data filtering +
+better base model
+Note 17 April 2024: Wizard LM not currently available Life after DPO | Lambert: 29
+officially on Hugging Face for artifact review at Microsoft.
+
+DPO works: Zephyr β
+● First model to make a splash with
+DPO!
+● Fine-tune of Mistral 7 B with
+Ultra Feedback dataset.
+● Discovered weird low learning rates
+that are now standard (~5 E-7)
+● MT Bench 7.34
+Ultra Feedback: https://arxiv.org/abs/2310.01377 Life after DPO | Lambert: 30
+Model: https://huggingface.co/Hugging Face H 4/zephyr-7 b-beta
+
+DPO scales: Tulu 2
+● First model to scale DPO to 70 billion
+parameters!
+● Strongly validated the Zephyr results.
+● Started the DPO vs. PPO debate for
+real.
+● MT Bench 70 B: 7.89
+Model: https://huggingface.co/allenai/tulu-2-dpo-70 b Life after DPO | Lambert: 31
+
+RLHF phase: Steer LM & Starling
+Still plenty of models showing that PPO (and RL methods) outperforms DPO!
+● Steer LM: Attribute conditioned fine-tuning
+● Starling: Introduced new preference dataset, Nectar, and k-wise reward
+model loss function (i.e. moving beyond pairwise preferences)
+○ MT Bench 7 B: 8.09 (beat every model except GPT-4 at the time)
+Steer LM: https://huggingface.co/nvidia/Steer LM-llama 2-13 B Life after DPO | Lambert: 32
+Starling: https://huggingface.co/berkeley-nest/Starling-LM-7 B-alpha
+
+Life after DPO models
+33
+
+Life after DPO
+Still don’t really have the
+Much easier to
+resources (e.g. human
+get into alignment
+data) to do RLHF like
+research
+industry
+Life after DPO | Lambert: 34
+
+Life after DPO
+Still don’t really have the
+Much easier to
+resources (e.g. human
+get into alignment
+data) to do RLHF like
+research
+industry
+(I’m too often here) 🥲
+Life after DPO | Lambert: 35
+
+Life after DPO
+1. Better evaluation for alignment
+2. How can we improve upon DPO models?
+Life after DPO | Lambert: 36
+
+Life after DPO
+1. Better evaluation for alignment
+→ Reward Bench example
+→ (building a suite of tools like Arena Hard)
+2. How can we improve upon DPO models?
+→ PPO vs DPO performance study
+→ Online DPO variants
+Life after DPO | Lambert: 37
+
+Reward Bench
+Lambert at al. 2024. Reward Bench: Evaluating
+Reward Models for Language Modeling
+Intro | Background | Path to DPO models | Reward Bench | Fine-tuning a model | Online DPO | Conclusions 38
+
+From environment to reward model
+Life after DPO | Lambert: 39
+
+Reward model training
+input pair:
+selected prompt
++completion
+rejected prompt outputs:
++completion two scalar rewards
+loss: increase difference of
+The Transformer - Vaswani et al. 2017 predicted reward
+Life after DPO | Lambert: 40
+
+Reward model training
+Advanced considerations:
+● Trained for 1 epoch (overfitting)!
+● Evaluation often only has 65-75% agreement
+● Additional options (such as margin between choices in loss function)
+Life after DPO | Lambert: 41
+
+How to evaluate reward models?
+Many questions we want to answer:
+● How do reward models / preference models improve final LLM capabilities?
+● How do reward models encode safety / other specific features?
+● How do scaling laws improve specific properties of reward models?
+● …
+Context:
+→ Many researchers/engineers/papers from industry say reward models are
+crucial to RLHF.
+Life after DPO | Lambert: 42
+
+Reward Bench structure
+Life after DPO | Lambert: 43
+Lambert at al. 2024. Reward Bench: Evaluating Reward Models for Language Modeling
+
+Reward Bench
+dataset
+Life after DPO | Lambert: 44
+Lambert at al. 2024. Reward Bench: Evaluating Reward Models for Language Modeling
+
+Reward Bench
+at launch
+March 2024
+Life after DPO | Lambert: 45
+Lambert at al. 2024. Reward Bench: Evaluating Reward Models for Language Modeling
+
+Reward Bench
+at launch
+March 2024
+Life after DPO | Lambert: 46
+Lambert at al. 2024. Reward Bench: Evaluating Reward Models for Language Modeling
+
+Reward Bench
+Today
+May 2024
+Life after DPO | Lambert: 47
+
+Reward Bench
+Today
+May 2024
+From top 5 to top 30
+Life after DPO | Lambert: 48
+
+Reward Bench
+Today
+May 2024
+Some closed lab
+model scores!
+Life after DPO | Lambert: 49
+
+Reward Bench
+Today
+May 2024
+DPO models slowing
+down
+Life after DPO | Lambert: 50
+
+Reward Bench
+Today
+May 2024
+LLM-as-a-judge not
+SOTA
+Life after DPO | Lambert: 51
+
+Reward Bench
+Today
+May 2024
+Chat Hard is the only
+meaningful eval.
+Life after DPO | Lambert: 52
+
+Chat Hard - Example
+Subtle change of topics or literally trick questions (made intentionally).
+From Zeng, Zhiyuan, et al. "Evaluating large language models at evaluating instruction following." ar Xiv preprint ar Xiv:2310.07641 (2023).
+Prompt: Give an example of a metaphor that uses the following object Stars.
+Chosen: The stars were twinkling diamonds in the night sky.
+Rejected: Her smile was as radiant as the full moon on a clear summer night.
+Subset: llmbar-adver-GPTInst
+Life after DPO | Lambert: 53
+
+Safety Patterns
+Handles safety well
+Refuses everything
+Responds to
+everything
+Röttger, Paul, et al. "Xstest: A test suite for identifying exaggerated safety behaviours in large language models." ar Xiv preprint
+ar Xiv:2308.01263 (2023). Life after DPO | Lambert: 54
+Wang, Yuxia, et al. "Do-not-answer: A dataset for evaluating safeguards in llms." ar Xiv preprint ar Xiv:2308.13387 (2023).
+
+Using DPO models as an RM
+Insert more DPO math above…
+Life after DPO | Lambert: 55
+Lambert at al. 2024. Reward Bench: Evaluating Reward Models for Language Modeling
+
+DPO reward models without reference model?
+Insert more DPO math above…
+Life after DPO | Lambert: 56
+Lambert at al. 2024. Reward Bench: Evaluating Reward Models for Language Modeling
+
+DPO reward models without reference model?
+Life after DPO | Lambert: 57
+Lambert at al. 2024. Reward Bench: Evaluating Reward Models for Language Modeling
+
+Reward Bench: Cohere’s RMs
+Better than best open models by ~ 2-3 points on average.
+Cohere Mar. 2024* Open SOTA (May) Cohere May. 2024
+Chat: 94.7
+Chat Hard: 65.1
+Safety: 90.3
+Reasoning: 98.2
+*No information on architecture or training.
+Life after DPO | Lambert: 58
+Lambert at al. 2024. Reward Bench: Evaluating Reward Models for Language Modeling
+
+Reward Bench: Cohere’s RMs
+Better than best open models by ~ 2-3 points on average.
+Cohere Mar. 2024* Open SOTA (May)** Cohere May. 2024
+Chat: 94.7 98.3
+Chat Hard: 65.1 65.8
+Safety: 90.3 89.7
+Reasoning: 98.2 94.7
+*No information on architecture or training.
+** Pairwise architecture, not easy to use with RLHF.
+RLHFlow/pair-preference-model-LLa MA 3-8 B
+Life after DPO | Lambert: 59
+Lambert at al. 2024. Reward Bench: Evaluating Reward Models for Language Modeling
+
+Reward Bench: Cohere’s RMs
+Better than best open models by ~ 2-3 points on average.
+Cohere Mar. 2024* Open SOTA (May)** Cohere May. 2024
+Chat: 94.7 98.3 96.4
+Chat Hard: 65.1 65.8 71.3
+Safety: 90.3 89.7 92.7
+Reasoning: 98.2 94.7 97.7
+*No information on architecture or training.
+** Pairwise architecture, not easy to use with RLHF.
+RLHFlow/pair-preference-model-LLa MA 3-8 B
+Life after DPO | Lambert: 60
+Lambert at al. 2024. Reward Bench: Evaluating Reward Models for Language Modeling
+
+Towards Reward Bench 2.0
+● Reasoning category is easy based on formatting (bugs are small, human
+vs. model text, etc.) → Reasoning 2.0
+● Lower random baseline: from pairwise to batch RM ranking
+● More datasets
+○ Existing benchmarks (e.g. jailbreaking)
+○ Custom, held-out data (make labs come to us to evaluate!)
+● More closed models: need structured access with LLM labs
+● Correlating with PPO training
+PS: Please add your models!
+Life after DPO | Lambert: 61
+Lambert at al. 2024. Reward Bench: Evaluating Reward Models for Language Modeling
+
+Fine-tuning a “good” model
+Ivison at al. 2024. Unpacking DPO and PPO:
+Disentangling Best Practices for Learning from
+Preference Feedback
+Intro | Background | Path to DPO models | Reward Bench | Fine-tuning a model | Online DPO | Conclusions 62
+
+Fine-tuning a “good” model
+Ivison at al. 2024. Unpacking DPO and PPO:
+Disentangling Best Practices for Learning from
+Preference Feedback
+… and trying to answer if PPO > DPO?
+Intro | Background | Path to DPO models | Reward Bench | Fine-tuning a model | Online DPO | Conclusions 63
+
+Starting point: SFT
+Tulu 2 13 B foundation:
+● Llama 2 base
+● Large diverse SFT dataset
+Evaluations:
+● Factuality
+(MMLU)
+● Reasoning
+(GSM 8 k, Big Bench Hard)
+● Coding
+(Human Eval+ MBPP+)
+● Chat
+(Alpaca Eval 1&2, IFEval)
+● Safety
+(Toxi Gen, XSTest)
+● Truthfulness
+(Truthful QA)
+Ivison et al. 2024, Unpacking DPO and PPO: Disentangling Best Practices for Learning from
+Preference Feedback. Appearing soon. Life after DPO | Lambert: 64
+* Presented data not final
+
+Add DPO
+Anthropic HH RLHF data:
+● Small bump in Chat, Safety,
+Truthfulness
+● All human data baseline
+● Accepted to be noisy
+Ivison et al. 2024, Unpacking DPO and PPO: Disentangling Best Practices for Learning from
+Preference Feedback. Appearing soon. Life after DPO | Lambert: 65
+* Presented data not final
+
+Add DPO (better data)
+Ultra Feedback data:
+● Tulu 2 13 B DPO model
+● Bigger jumpts than HH RLHF
+Ivison et al. 2024, Unpacking DPO and PPO: Disentangling Best Practices for Learning from
+Preference Feedback. Appearing soon. Life after DPO | Lambert: 66
+* Presented data not final
+
+Switch from DPO to PPO
+Ultra Feedback data
+● Bump on more metrics
+(Factuality)
+● Continues overall bump
+● Biggest jump on
+Alpaca Eval 2
+Ivison et al. 2024, Unpacking DPO and PPO: Disentangling Best Practices for Learning from
+Preference Feedback. Appearing soon. Life after DPO | Lambert: 67
+* Presented data not final
+
+Scaling up the reward model
+Expectations: General
+improvements across the
+board
+Reality: Challenging tasks like
+reasoning improve, others
+decline
+Ivison et al. 2024, Unpacking DPO and PPO: Disentangling Best Practices for Learning from
+Preference Feedback. Appearing soon. Life after DPO | Lambert: 68
+* Presented data not final
+
+Scaling up the reward model
+Expectations: General
+improvements across the
+board
+Reality: Challenging tasks like
+reasoning improve, others
+decline
+Reality 2: Training a good
+reward model is not easy
+Ivison et al. 2024, Unpacking DPO and PPO: Disentangling Best Practices for Learning from
+Preference Feedback. Appearing soon. Life after DPO | Lambert: 69
+* Presented data not final
+
+Adding more prompts to RLHF
+Expectations: General
+improvements across the
+board + task specific gains
+Reality: Improvements to some
+code and reasoning subsets,
+but not easy. Messy.
+Ivison et al. 2024, Unpacking DPO and PPO: Disentangling Best Practices for Learning from
+Preference Feedback. Appearing soon. Life after DPO | Lambert: 70
+* Presented data not final
+
+PPO thoughts
+Takeaways
+● “Always one more thing to ablate”
+● “PPO gets the best model, but we don’t know why”
+● Generation very slow without accelerated inference tools (e.g. VLLM)
+Ivison et al. 2024, Unpacking DPO and PPO: Disentangling Best Practices for Learning from
+Preference Feedback. Appearing soon. Life after DPO | Lambert: 71
+* Presented data not final
+
+PPO thoughts & resources
+Takeaways
+● “Always one more thing to ablate”
+● “PPO gets the best model, but we don’t know why”
+● Generation very slow without accelerated inference tools (e.g. VLLM)
+Resources
+● All training done on TPUs on Google Tensor Research Cloud
+○ Can barely fit 70 B policy + 70 B model on 512 v 3 node
+● Codebase: Easy LM fork https://github.com/hamishivi/Easy LM
+● Work-in-progress replication with Py Torch on A/H 100 s
+Ivison et al. 2024, Unpacking DPO and PPO: Disentangling Best Practices for Learning from
+Preference Feedback. Appearing soon. Life after DPO | Lambert: 72
+* Presented data not final
+
+Many, many data ablations along the way (e.g. DPO)
+Ivison et al. 2024, Unpacking DPO and PPO: Disentangling Best Practices for Learning from
+Preference Feedback. Appearing soon. Life after DPO | Lambert: 73
+* Presented data not final
+
+PPO vs DPO
+on fixed datasets
+Ivison et al. 2024, Unpacking DPO and PPO: Disentangling Best Practices for Learning from
+Preference Feedback. Appearing soon. Life after DPO | Lambert: 74
+* Presented data not final
+
+Can we match PPO with “online” DPO?
+Singhal et al. 2024. D 2 PO: Discriminator-Guided
+DPO with Response Evaluation Models
+Intro | Background | Path to DPO models | Reward Bench | Fine-tuning a model | Online DPO | Conclusions 75
+
+What is special about online data?
+Online data is freshly generated from the policy and/or recently labelled by a
+reward model / judge.
+● PPO does both with generation + reward model scoring
+● Other methods use different ways for doing this: collect new preference data,
+re-label existing data, LLM-as-a-judge, reward model ranking
+Related question: On- or off-policy data (i.e. that generated from the policy model)
+Life after DPO | Lambert: 76
+
+Many studies on
+Online data
+Life after DPO | Lambert: 77
+
+Methods
+Life after DPO | Lambert: 78
+
+D 2 PO: Minimizing staleness of DPO training data
+(discriminator-guided DPO)
+Life after DPO | Lambert: 79
+Singhal et al. 2024. D 2 PO: Discriminator-Guided DPO with Response Evaluation Models
+
+Evaluating D 2 PO
+When evaluating “online” DPO methods, DPO become horizontal lines (all data
+used) → much closer to old school RL learning curves.
+Open ended task
+Closed form task
+Reward from AI feedback reward model
+Reward = count(nouns)
+Re-labelling RM:
+Life after DPO | Lambert: 80
+Singhal et al. 2024. D 2 PO: Discriminator-Guided DPO with Response Evaluation Models
+
+Online and/or iterative RLHF
+Industry does BOTH. Academia mostly has done a taste of the former.
+Examples of the latter – sequential training orr preference collection.
+Anthropic’s Claude
+Llama 2 Life after DPO | Lambert: 81
+
+Conclusions
+Intro | Background | Path to DPO models | Reward Bench | Fine-tuning a model | Online DPO | Conclusions 82
+
+Discussion: What did Meta do with Llama 3?
+“Our approach to post-training is a combination of supervised fine-tuning (SFT),
+rejection sampling, proximal policy optimization (PPO), and direct preference
+optimization (DPO).”
+➔ Iterative data collection (like Llama 2)
+➔ Short timelines for each iteration
+➔ Some sort of “distribution shift” per method
+➔ Hypothesis: Rejection sampling, DPO, then PPO
+Life after DPO | Lambert: 83
+
+Current directions
+1. Data! Data! Data! We are severely limited on experimentation by having too
+few preference datasets (Anthropic HH, Ultra Feedback, and Nectar are main
+three).
+2. Continuing to improve DPO: tons of papers iterating on the method (ORPO,
+c DPO, IPO, BCO, KTO, DNO, s DPO, etc)
+3. More model sizes: Most alignment research happened at 7 or 13 B
+parameter scale. Expand up and down!
+4. Specific evaluations: How do we get more specific evaluations than
+Chat Bot Arena?
+5. Personalization: A large motivation behind local models, young area
+academically
+I cover these topics regularly on my blog www.interconnects.ai Life after DPO | Lambert: 84
+
+Where open alignment is happening
+● AI 2 (self bias): Tulu models, OLMo-Adapt, dataset releases
+● Hugging Face H 4: Quick releases on new base models, recipes for new
+techniques (e.g. ORPO / CAI), other tools
+● Berkeley-Nest/Nexusflow: Nectar dataset / Starling models
+● Nous Research: Hermes fine-tuning models, datasets, and other
+● Open BMB: Preference datasets, reward models, and more
+● Argilla: Open preference datasets and resulting models
+● Some Hugging Face users
+○ Maxime Labonne: Model merging & other fine-tunes
+○ Jon Durbin: More model merges & other fine-tunes
+I cover these topics regularly on my blog www.interconnects.ai Life after DPO | Lambert: 85
+
+Thank you! Questions
+Contact: nathan at natolambert dot com
+Socials: @natolambert
+Writing: interconnects.ai
+Thanks to many teammates at Hugging Face and AI 2 for supporting this journey!
+Life after DPO | Lambert: 86

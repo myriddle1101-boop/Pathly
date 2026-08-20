@@ -1,0 +1,10 @@
+﻿metric,value
+run_count,57
+runs_with_topics,56
+topic_instances,517
+prerequisite_edges,347
+runs_with_missing_source_file,0
+runs_with_dangling_edges,0
+runs_with_cycles,0
+runs_with_duplicate_topics,0
+cross_run_reused_topic_names,58

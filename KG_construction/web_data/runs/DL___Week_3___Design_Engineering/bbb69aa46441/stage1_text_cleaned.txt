@@ -1,0 +1,235 @@
+Machine Learning for Design
+Engineers
+Lecture 3: Learning Algorithms and
+Architectures
+Pietro Ferraro
+
+Table of
+1. Backpropagationand AD
+2. Activation Functions
+Content 3. Architectures
+Imperial College London Machine Learningfor Design Engineers
+
+Backpropagation Recap
+l Fundamentalalgorithmfortrainingneuralnetworks.
+l Computesgradientsoflossfunctionw.r.tweights.
+l Useschainruletopropagateerrorsbackward.
+Imperial College London Machine Learningfor Design Engineers
+
+Limitationsof Manual Differentiation
+Thereasonfor Backpropagation(BP)isthatthealternatives(i.e.,manualand
+symbolicdifferentiation)havethefollowingdrawbacks:
+l Tediousforcomplexnetworks.
+l Pronetoerrorsinderivativecalculations.
+l Notscalableforlargemodels.
+Imperial College London Machine Learningfor Design Engineers
+
+Automatic Differentiation
+Aswementionedlasttime BPisaspecificcaseofamoregeneraltopic,called
+automaticdifferentiation:
+l Computesderivativesautomatically.
+l Utilizescomputationalgraphs.
+l Enablesefficientgradientcomputation.
+Forexample,considerthefunction:
+√
+f(x,y) = e − (x 2+y 2)
+Imperial College London Machine Learningfor Design Engineers
+
+Computational Graph
+Automaticdifferentiationworksbybuildingacomputationalgraph:
+l Nodesrepresentoperationsorvariables.
+l Edgesrepresentdependencies.
+l Facilitatesderivativecomputation.
+Imperial College London Machine Learningfor Design Engineers
+
+Step-by-Step Example
+Imperial College London Machine Learningfor Design Engineers
+
+Autograd
+Autogradisatoolthatisusedtocomputethegradientsautomaticallyandquickly
+intwosteps:
+l Forwardpass: foreachnodeinthecircuitcomputetheintermediatevaluefor
+thespecificinput.
+l Backwardpass: givenloss L,compute ∂L ,applychainruleand,usingthe
+∂wijk
+intermediatevaluesobtainedinthe Forwardpass,computethegradientsfor
+eachvariable.
+Thismakesthecomputationofgradientsextremelyquickandcomputationally
+efficient.
+Thisisimplementedautomaticallyin Pytorch(butalsoin Tensor Flowand JAX),so
+youwon’teverhavetocalculatethemmanually.
+Imperial College London Machine Learningfor Design Engineers
+
+Summaryofhowtotrainanetwork
+Thestepstotrainanetworkarethenasfollows:
+l 1: Setupthenetworkwithacertainnumberofneuronsandlayersandaloss
+function J(W). Divideyourdatasetintoa”trainingset”anda”validationset”.
+l 2: Randomlyinitialisetheweightsandthebiasesofthenetwork.
+l 3: Foreachinputx i andoutputy i performforwardpassandcomputetheloss
+J(W).
+l 4: Executethebackwardpass(i.e.,applybackpropagation)tocomputethe
+gradients ∂J .
+∂wijk
+l 5: Applygradientdescent(or RMSEor Adam).
+l 6: Repeatfrompoint 3 untilthedesiredlossisachieved.
+Points 3 to 5 areusuallycalledatrainingepoch. Thedesiredleveloflossisnormally
+calledthestoppingconditionofthetraining.
+Imperial College London Machine Learningfor Design Engineers
+
+Activation Functions
+Imperial College London Machine Learningfor Design Engineers
+
+Activation Functions
+Thesigmoidhasbeenhistoricallythemostpopularactivationfunction,howeverit
+isusedrarelynowadays
+Figure:Source
+Imperial College London Machine Learningfor Design Engineers
+
+Problemswith Sigmoid
+Therearetwomainproblemswiththesigmoid:
+l Vanishing Gradients: Derivativesapproachzeroforlarge|x|.
+l Slow Convergence: Saturationregionshinderlearning.
+Infact:
+l Derivative: σ′(x) = σ(x)(1−σ(x)).
+l
+Forlarge|x|,σ(x) ≈ 0 or 1.
+l
+Therefore,σ′(x) ≈ 0.
+Thismeansthatdeeplayerswillnottrain. Cananybodyexplainwhy?
+Imperial College London Machine Learningfor Design Engineers
+
+Re LUActivation Function
+Re Luontheotherhandhasthefollowingproperties:
+l Definition: Re LU(x) = max(0,x).
+l Outputrange: [0,∞).
+l Computationallyefficient.
+Whichleadto
+l Mitigatesvanishinggradientproblem.
+l Sparseactivation(efficientcomputation).
+l Fasterconvergenceindeepnetworks.
+Imperial College London Machine Learningfor Design Engineers
+
+Potential Issueswith Re LU
+Re LUhoweverarenotperfectastheystillhavesomeissues:
+l Dying Re LU:Neuronscangetstuckinthezerogradientregion.
+l Remediesinclude Leaky Re LU,ELUandrandomresetsoftheweights.
+Leaky Re LU:
+(
+x ifx ≥ 0
+l Definition: Leaky Re LU(x) =
+αx ifx < 0
+l Allowsasmall,non-zerogradientwhenx < 0.
+Imperial College London Machine Learningfor Design Engineers
+
+Choosing Activation Functions
+Ingeneralforshallownetworks(withnotmanyhiddenlayers)sigmoidsworkfine
+andtheydonotcauseissues. Fordeepnetworks Re LUisbyfarthemost
+reasonablechoice(howevertherearehundredsofpapersinliteratureabout
+differentactivationfunctionorcombinationofactivationfunctions).
+Let’snowtakealookatthefollowingarchitectures:
+l ANNforregression
+l ANNforclassification
+Imperial College London Machine Learningfor Design Engineers
+
+Architectures
+Imperial College London Machine Learningfor Design Engineers
+
+Universal Approximation Theorem
+Thereason ANNsaresopowerfulandtheyareabletoachievetheresultsthatwe
+haveseenovertheyearsismostlyduetothefactthat ANNsare Universal
+Approximators:
+l Neuralnetworkscanapproximateanycontinuousfunctiontoanarbitrarydegree
+ofaccuracy.
+l Requiressufficientneuronsandlayers.
+l Activationfunctionsplayakeyrole.
+Imperial College London Machine Learningfor Design Engineers
+
+Universal Approximation Theorem
+Aclassicalresultfrom Cybenko,inhisseminalpaperfrom 1989 isthatgivena
+continuousfunctionf : Rd → R,(youwilloftenseethiswrittenasf ∈ C 0(Rd)),fora
+givenaccuracyϵ ,thereexistsanumberofneuronsn,suchthat:
+n
+Xn
+NN(x) = vh(w Tx+b)
+i i
+i=1
+||f−NN||
+∞
+≤ ϵ
+n
+Imperial College London Machine Learningfor Design Engineers
+
+Activation Functionsfor Regression
+Thepreviousresultmeansthat ANNsareexcellenttosolvenonlinearregression
+problems,inwhichouraimistocapturetheunderlyingrelationshipbetweenthe
+inputandtheoutputofourdataset. Inotherwordswewanttouseaneuralnetwork
+NN(·)toapproximateafunctionf : Rd → R. Thiscanbedoneasfollows:
+l Linearactivationinoutputlayer.
+l Measuresdifferencebetweenpredictedandtruevalues.
+l Regres Psiontasksare(usually)solvedusingthe MSElossfunction,
+J = 1 n (NN(x)−y)2.
+n i=1 i i
+Imperial College London Machine Learningfor Design Engineers
+
+Overviewof Classifiers
+Whileforaregressionproblemouraimistoapproximateacontinuousfunction,ina
+classificationproblemwewantinsteadtoapproximateafunctionf : Rd → D,where
+Disafiniteset.
+Consider,forexample
+l Asetofimagesofcatsanddogs
+l Beingabletosaywhetherapatienthasdiabetesornot
+l Discriminatingwhichlanguageacertaintextbelongsto
+Imperial College London Machine Learningfor Design Engineers
+
+Abinaryclassifier
+Iftheproblemhasonlytwoclassestodistinguishfrom,thiscanbeeasilysolved
+usingabinaryclassifier,whichemploysasigmoidasoutput(whynotthesign
+function?)
+Butwhatifwehavekclasses?
+Imperial College London Machine Learningfor Design Engineers
+
+One-hotvectors
+Thefirstthingtodoistoconvertouroutputyintoaone-hotvectorz. Aone-hot
+i
+vectorisavectorz = [0,0,..., |{1 z} ,...,0]. Forexample:
+i
+i-thposition
+Imperial College London Machine Learningfor Design Engineers
+
+Softmax
+Onceallouroutputshavebeenconvertedintoone-hotvectors,wewilltrainthe
+followingarchitecture:
+Figure:Source
+Imperial College London Machine Learningfor Design Engineers
+
+Softmaxandprobablity
+Noticethat Theoutputofyourclassifierdoesnotstrictlyindicatewhichclassyour
+inputbelongstobutratherprovidesaseriesofprobabilitiespereachclass.
+Accordingly,wewillusethefollowinglossfunctionforthiskindofarchitectures:
+X
+L = − y log(ˆy)
+i i
+i
+Thislossfunctioniscalled”Cross-entropy”andithasmanyadvantagesover MSE
+forclassificationproblems:
+l Itencouragescorrectclassification
+l Itpairsverywellwithsoftmax(moreonthisinthelab)
+Imperial College London Machine Learningfor Design Engineers
+
+Trainingeitheraregressionproblemoraclassifier
+Firststepistoidentifywhethertheproblemyouareworkingwithisaregression
+problemoraclassifier. Then:
+l Chooseappropriatearchitectureandlossfunctions.
+l Splityourdatasetintoatrainingsetandintoavalidationset
+l Applyforwardpassandbackwardpassusingthetrainingset. Computelosson
+bothtrainingsetandvalidationset.
+l Applygradientdescenttoupdatetheweights.
+l Repeattheprevioustwostepsuntillossstopsdecreasinginthetrainingset.
+Whatifthelossgoesverylowinthetrainingsetbutitisveryhighinthevalidation
+set?
+Imperial College London Machine Learningfor Design Engineers
+
+Questionsand Discussion
+Thank you!
+Any Questions?
+Imperial College London Machine Learningfor Design Engineers

@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\glossary\\c9772e6502e2",
+  "run_id": "glossary-c9772e6502e2",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:17.314910+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "74aaf24db9f968a104d573b77b80db9d3bec9e36007aa3b4533409444cd6d156",
+    "stage2a_topics_hybrid.json": "a8b0fb90a70e4af7c3aab5571738d324731fe007cdc9094cb118858cd874dda9",
+    "stage2c_similarity_edges.json": "879ee0ade6139ce0cb35dd89558afebbc164feb5a3a4f5007c199503d777fefc",
+    "stage3_topics_with_summary.json": "0ff23f6ba4da940e82a88a536354538e137e658800366ae21737652d223c9109"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

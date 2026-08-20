@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Language Models" label="Language Models">
+        <attvalues>
+          <attvalue for="0" value="Study of models that understand and generate human language." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Language Processing&quot;, &quot;description&quot;: &quot;Techniques for analyzing and generating natural language.&quot;}, {&quot;name&quot;: &quot;Language Modelling&quot;, &quot;description&quot;: &quot;Statistical methods for predicting the next word in a sequence.&quot;}, {&quot;name&quot;: &quot;Toolformer Language&quot;, &quot;description&quot;: &quot;A framework for integrating tools with language models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and machine learning principles." />
+          <attvalue for="6" value="[&quot;Tokenization&quot;, &quot;Word Embeddings&quot;, &quot;Transformers&quot;, &quot;Attention Mechanism&quot;]" />
+          <attvalue for="7" value="[&quot;Language models can understand language like humans do.&quot;, &quot;All language models are the same.&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots&quot;, &quot;Text generation&quot;, &quot;Sentiment analysis&quot;, &quot;Machine translation&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Agent Systems" label="Agent Systems">
+        <attvalues>
+          <attvalue for="0" value="Exploration of intelligent agents that perform tasks autonomously." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Agent Actions&quot;, &quot;description&quot;: &quot;The various actions that agents can perform.&quot;}, {&quot;name&quot;: &quot;Agent Evaluation&quot;, &quot;description&quot;: &quot;Methods for assessing the performance of agents.&quot;}, {&quot;name&quot;: &quot;Reflexion Agents&quot;, &quot;description&quot;: &quot;Agents that utilize reflexive reasoning to improve performance.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and algorithms." />
+          <attvalue for="6" value="[&quot;Autonomous agents&quot;, &quot;Reinforcement learning&quot;, &quot;Multi-agent systems&quot;]" />
+          <attvalue for="7" value="[&quot;Agents always require human intervention&quot;, &quot;All agents are robots&quot;]" />
+          <attvalue for="8" value="[&quot;Self-driving cars&quot;, &quot;Personal assistants (e.g., Siri, Alexa)&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Reinforcement Learning" label="Reinforcement Learning">
+        <attvalues>
+          <attvalue for="0" value="A type of machine learning where agents learn by interacting with their environment." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Feedback Reflexion&quot;, &quot;description&quot;: &quot;Using feedback to enhance agent learning.&quot;}, {&quot;name&quot;: &quot;Reflextion Reinforce&quot;, &quot;description&quot;: &quot;Techniques for reinforcing learning through reflection.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and probability theory." />
+          <attvalue for="6" value="[&quot;Markov Decision Processes&quot;, &quot;Q-Learning&quot;, &quot;Policy Gradients&quot;, &quot;Exploration vs. Exploitation&quot;]" />
+          <attvalue for="7" value="[&quot;Reinforcement learning is the same as supervised learning&quot;, &quot;Agents always learn the optimal policy quickly&quot;]" />
+          <attvalue for="8" value="[&quot;Game playing (e.g., AlphaGo)&quot;, &quot;Robotics&quot;, &quot;Autonomous vehicles&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Retrieval Models" label="Retrieval Models">
+        <attvalues>
+          <attvalue for="0" value="Models designed to retrieve relevant information from large datasets." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Vector Retrieval&quot;, &quot;description&quot;: &quot;Using vector representations for efficient information retrieval.&quot;}, {&quot;name&quot;: &quot;Deep Retrieval&quot;, &quot;description&quot;: &quot;Advanced techniques for retrieving information using deep learning.&quot;}, {&quot;name&quot;: &quot;Retrieval Augmented&quot;, &quot;description&quot;: &quot;Combining retrieval methods with generative models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data structures and algorithms, familiarity with Python or similar programming languages." />
+          <attvalue for="6" value="[&quot;Information Retrieval&quot;, &quot;Vector Space Model&quot;, &quot;Boolean Retrieval&quot;, &quot;Relevance Feedback&quot;]" />
+          <attvalue for="7" value="[&quot;Retrieval models only work with text data&quot;, &quot;All retrieval models are the same&quot;]" />
+          <attvalue for="8" value="[&quot;Search engines&quot;, &quot;Recommendation systems&quot;, &quot;Document retrieval&quot;, &quot;Question answering systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Agent Reasoning" label="Agent Reasoning">
+        <attvalues>
+          <attvalue for="0" value="The cognitive processes that agents use to make decisions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Agents Reasoning&quot;, &quot;description&quot;: &quot;How agents process information to make decisions.&quot;}, {&quot;name&quot;: &quot;Reasoning Acting&quot;, &quot;description&quot;: &quot;The relationship between reasoning and action in agents.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of decision-making processes and introductory knowledge of artificial intelligence." />
+          <attvalue for="6" value="[&quot;Decision Trees&quot;, &quot;Reinforcement Learning&quot;]" />
+          <attvalue for="7" value="[&quot;Agents always make optimal decisions&quot;, &quot;Reasoning is the same as learning&quot;]" />
+          <attvalue for="8" value="[&quot;Autonomous vehicles&quot;, &quot;Game AI&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Web Environment" label="Web Environment">
+        <attvalues>
+          <attvalue for="0" value="The online context in which agents and models operate." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Web App&quot;, &quot;description&quot;: &quot;Applications that run in a web environment.&quot;}, {&quot;name&quot;: &quot;Environment Web&quot;, &quot;description&quot;: &quot;The structure and dynamics of web-based environments.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and web technologies." />
+          <attvalue for="6" value="[&quot;Web scraping&quot;, &quot;API integration&quot;, &quot;Data privacy&quot;, &quot;User interaction&quot;]" />
+          <attvalue for="7" value="[&quot;Web environment is only about web scraping&quot;, &quot;All data from the web is reliable&quot;]" />
+          <attvalue for="8" value="[&quot;Building web-based ML applications&quot;, &quot;Real-time data analysis&quot;, &quot;User behavior prediction&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Knowledge Adapters" label="Knowledge Adapters">
+        <attvalues>
+          <attvalue for="0" value="Components that allow models to adapt knowledge for specific tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Language Adapters&quot;, &quot;description&quot;: &quot;Adapters that modify language models for specific applications.&quot;}, {&quot;name&quot;: &quot;Adapters Learn&quot;, &quot;description&quot;: &quot;Techniques for training adapters to improve model performance.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and neural networks." />
+          <attvalue for="6" value="[&quot;Transfer Learning&quot;, &quot;Fine-tuning&quot;]" />
+          <attvalue for="7" value="[&quot;Knowledge adapters are the same as traditional model fine-tuning.&quot;, &quot;They can only be used with large models.&quot;]" />
+          <attvalue for="8" value="[&quot;Domain adaptation in NLP tasks&quot;, &quot;Customizing models for specific user preferences&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Question Answering" label="Question Answering">
+        <attvalues>
+          <attvalue for="0" value="Systems designed to answer questions posed in natural language." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Open Domain&quot;, &quot;description&quot;: &quot;Question answering systems that can handle a wide range of topics.&quot;}, {&quot;name&quot;: &quot;Answering Question&quot;, &quot;description&quot;: &quot;Methods and techniques for generating answers to queries.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and machine learning principles." />
+          <attvalue for="6" value="[&quot;Natural Language Processing (NLP)&quot;, &quot;Information Retrieval&quot;, &quot;Machine Learning Models&quot;, &quot;Contextual Understanding&quot;]" />
+          <attvalue for="7" value="[&quot;Question answering systems can understand context like humans.&quot;, &quot;All question answering systems are the same.&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support chatbots&quot;, &quot;Search engines&quot;, &quot;Virtual assistants&quot;, &quot;Educational tools&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Deep Learning" label="Deep Learning">
+        <attvalues>
+          <attvalue for="0" value="A subset of machine learning focused on neural networks with many layers." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Artificial Neural Networks&quot;, &quot;description&quot;: &quot;Computational models inspired by the human brain.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;A method for training neural networks through gradient descent.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, calculus, and programming in Python." />
+          <attvalue for="6" value="[&quot;Neural Networks&quot;, &quot;Backpropagation&quot;, &quot;Convolutional Neural Networks (CNNs)&quot;, &quot;Recurrent Neural Networks (RNNs)&quot;]" />
+          <attvalue for="7" value="[&quot;Deep learning is the same as machine learning.&quot;, &quot;More layers always lead to better performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Speech recognition&quot;, &quot;Game playing (e.g., AlphaGo)&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Agent Systems" target="Agent Reasoning">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding what agents are and how they operate is necessary before studying their decision-making processes." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

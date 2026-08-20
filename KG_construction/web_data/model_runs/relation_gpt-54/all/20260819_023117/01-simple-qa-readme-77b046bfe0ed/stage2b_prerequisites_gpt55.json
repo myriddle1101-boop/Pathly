@@ -1,0 +1,26 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 3,
+  "prerequisites": [
+    {
+      "from": "Python Basics",
+      "to": "Machine Learning Concepts",
+      "relation_type": "strong_prerequisite",
+      "reason": "Basic Python programming skills are typically necessary to implement and practice core machine learning concepts in code."
+    },
+    {
+      "from": "Machine Learning Concepts",
+      "to": "Training Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding core machine learning concepts is necessary before learning methods for training machine learning models."
+    },
+    {
+      "from": "Knowledge Base",
+      "to": "Question Answering",
+      "relation_type": "strong_prerequisite",
+      "reason": "Question answering over stored information requires prior understanding of what a knowledge base is and how information is organized within it."
+    }
+  ]
+}

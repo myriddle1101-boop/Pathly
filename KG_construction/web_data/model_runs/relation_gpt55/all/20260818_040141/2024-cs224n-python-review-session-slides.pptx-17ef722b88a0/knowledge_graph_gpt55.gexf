@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="similarity" type="double" />
+      <attribute id="12" title="score" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Python Basics" label="Python Basics">
+        <attvalues>
+          <attvalue for="0" value="Fundamental concepts and syntax of the Python programming language." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Variables&quot;, &quot;description&quot;: &quot;Understanding variable types and declarations.&quot;}, {&quot;name&quot;: &quot;Data Structures&quot;, &quot;description&quot;: &quot;Introduction to lists, dictionaries, and sets.&quot;}, {&quot;name&quot;: &quot;Control Structures&quot;, &quot;description&quot;: &quot;Using loops and conditional statements in Python.&quot;}]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of computer science concepts." />
+          <attvalue for="6" value="[&quot;Data types and variables&quot;, &quot;Control structures (if, for, while)&quot;, &quot;Functions and modules&quot;, &quot;Input and output operations&quot;]" />
+          <attvalue for="7" value="[&quot;Python is only for web development&quot;, &quot;Indentation is not important in Python&quot;]" />
+          <attvalue for="8" value="[&quot;Data analysis with libraries like Pandas&quot;, &quot;Scripting for automation tasks&quot;, &quot;Web scraping&quot;, &quot;Basic game development&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Python Packages" label="Python Packages">
+        <attvalues>
+          <attvalue for="0" value="Managing and utilizing external libraries in Python." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Installing Packages&quot;, &quot;description&quot;: &quot;Using pip to install Python packages.&quot;}, {&quot;name&quot;: &quot;Numpy&quot;, &quot;description&quot;: &quot;Introduction to the Numpy library for numerical computations.&quot;}, {&quot;name&quot;: &quot;Collections Module&quot;, &quot;description&quot;: &quot;Using specialized container datatypes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python programming and familiarity with command line interface." />
+          <attvalue for="6" value="[&quot;Installing packages using pip&quot;, &quot;Understanding virtual environments&quot;]" />
+          <attvalue for="7" value="[&quot;All libraries are included with Python by default&quot;, &quot;Packages are only for data science applications&quot;]" />
+          <attvalue for="8" value="[&quot;Web development with Flask or Django&quot;, &quot;Data analysis with NumPy and Pandas&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Python Environment" label="Python Environment">
+        <attvalues>
+          <attvalue for="0" value="Setting up and managing Python development environments." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Virtual Environments&quot;, &quot;description&quot;: &quot;Creating isolated Python environments.&quot;}, {&quot;name&quot;: &quot;Text Editors&quot;, &quot;description&quot;: &quot;Choosing and configuring text editors for Python.&quot;}, {&quot;name&quot;: &quot;Python Interpreter&quot;, &quot;description&quot;: &quot;Understanding how to run Python code.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python programming and command line usage." />
+          <attvalue for="6" value="[&quot;Virtual Environments&quot;, &quot;Package Management&quot;]" />
+          <attvalue for="7" value="[&quot;Python environments are only for advanced users.&quot;, &quot;All Python packages are compatible with any environment.&quot;]" />
+          <attvalue for="8" value="[&quot;Isolating project dependencies&quot;, &quot;Managing different Python versions&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Manipulation" label="Data Manipulation">
+        <attvalues>
+          <attvalue for="0" value="Techniques for manipulating and processing data in Python." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Indexing&quot;, &quot;description&quot;: &quot;Accessing elements in data structures.&quot;}, {&quot;name&quot;: &quot;Matrix Operations&quot;, &quot;description&quot;: &quot;Performing operations on matrices using Numpy.&quot;}, {&quot;name&quot;: &quot;Random Data Generation&quot;, &quot;description&quot;: &quot;Creating random matrices and vectors.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python programming and familiarity with data structures." />
+          <attvalue for="6" value="[&quot;Pandas for data manipulation&quot;, &quot;NumPy for numerical operations&quot;]" />
+          <attvalue for="7" value="[&quot;Data manipulation is only about cleaning data&quot;, &quot;Pandas is only for tabular data&quot;]" />
+          <attvalue for="8" value="[&quot;Data cleaning and preprocessing for machine learning&quot;, &quot;Exploratory data analysis and visualization&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Python Functions" label="Python Functions">
+        <attvalues>
+          <attvalue for="0" value="Defining and using functions in Python." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Defining Functions&quot;, &quot;description&quot;: &quot;Creating reusable code blocks.&quot;}, {&quot;name&quot;: &quot;Lambda Functions&quot;, &quot;description&quot;: &quot;Using anonymous functions for short operations.&quot;}, {&quot;name&quot;: &quot;Function Arguments&quot;, &quot;description&quot;: &quot;Understanding positional and keyword arguments.&quot;}]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python syntax and programming concepts." />
+          <attvalue for="6" value="[&quot;Function definition&quot;, &quot;Function parameters and arguments&quot;, &quot;Return values&quot;, &quot;Scope of variables&quot;]" />
+          <attvalue for="7" value="[&quot;Functions must always return a value&quot;, &quot;Functions cannot have default parameters&quot;, &quot;Function names cannot include underscores&quot;]" />
+          <attvalue for="8" value="[&quot;Modularizing code for better organization&quot;, &quot;Reusing code to avoid duplication&quot;, &quot;Implementing algorithms in a structured way&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Operators in Python" label="Operators in Python">
+        <attvalues>
+          <attvalue for="0" value="Understanding and using various operators in Python." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Comparison Operators&quot;, &quot;description&quot;: &quot;Using operators to compare values.&quot;}, {&quot;name&quot;: &quot;Boolean Operators&quot;, &quot;description&quot;: &quot;Combining conditions using logical operators.&quot;}, {&quot;name&quot;: &quot;Arithmetic Operators&quot;, &quot;description&quot;: &quot;Performing mathematical operations.&quot;}]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming concepts and familiarity with Python syntax." />
+          <attvalue for="6" value="[&quot;Arithmetic Operators&quot;, &quot;Comparison Operators&quot;, &quot;Logical Operators&quot;, &quot;Assignment Operators&quot;, &quot;Bitwise Operators&quot;]" />
+          <attvalue for="7" value="[&quot;Operators are the same in all programming languages&quot;, &quot;All operators return the same data type&quot;]" />
+          <attvalue for="8" value="[&quot;Performing calculations&quot;, &quot;Making decisions in code&quot;, &quot;Manipulating data structures&quot;, &quot;Controlling program flow&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Python Notebooks" label="Python Notebooks">
+        <attvalues>
+          <attvalue for="0" value="Using Jupyter notebooks for interactive coding." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Creating Notebooks&quot;, &quot;description&quot;: &quot;Setting up and managing Jupyter notebooks.&quot;}, {&quot;name&quot;: &quot;Markdown in Notebooks&quot;, &quot;description&quot;: &quot;Using Markdown for documentation.&quot;}, {&quot;name&quot;: &quot;Visualizations&quot;, &quot;description&quot;: &quot;Creating plots and visualizations in notebooks.&quot;}]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python programming and familiarity with command line interfaces." />
+          <attvalue for="6" value="[&quot;Markdown for documentation&quot;, &quot;Code execution and output visualization&quot;]" />
+          <attvalue for="7" value="[&quot;Not suitable for production code&quot;, &quot;Only for data science applications&quot;]" />
+          <attvalue for="8" value="[&quot;Data analysis and visualization&quot;, &quot;Interactive teaching and presentations&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Debugging Techniques" label="Debugging Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods for identifying and fixing errors in Python code." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Print Debugging&quot;, &quot;description&quot;: &quot;Using print statements to trace code execution.&quot;}, {&quot;name&quot;: &quot;Using Debuggers&quot;, &quot;description&quot;: &quot;Employing debugging tools to step through code.&quot;}, {&quot;name&quot;: &quot;Error Handling&quot;, &quot;description&quot;: &quot;Managing exceptions and errors in Python.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python programming and familiarity with coding concepts." />
+          <attvalue for="6" value="[&quot;Print Debugging&quot;, &quot;Using Debuggers&quot;, &quot;Unit Testing&quot;, &quot;Logging&quot;]" />
+          <attvalue for="7" value="[&quot;Debugging is only for beginners&quot;, &quot;Print statements are the only way to debug&quot;]" />
+          <attvalue for="8" value="[&quot;Improving code reliability&quot;, &quot;Enhancing software performance&quot;, &quot;Facilitating code reviews&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Advanced Python Concepts" label="Advanced Python Concepts">
+        <attvalues>
+          <attvalue for="0" value="Exploring more complex features of Python." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Decorators&quot;, &quot;description&quot;: &quot;Modifying functions with decorators.&quot;}, {&quot;name&quot;: &quot;Generators&quot;, &quot;description&quot;: &quot;Creating iterators using generator functions.&quot;}, {&quot;name&quot;: &quot;Context Managers&quot;, &quot;description&quot;: &quot;Managing resources with context managers.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of Python syntax and programming concepts." />
+          <attvalue for="6" value="[&quot;Decorators&quot;, &quot;Generators&quot;, &quot;Context Managers&quot;, &quot;Metaclasses&quot;]" />
+          <attvalue for="7" value="[&quot;Decorators are only for functions&quot;, &quot;Generators are just a way to create lists&quot;]" />
+          <attvalue for="8" value="[&quot;Building reusable code with decorators&quot;, &quot;Efficient data processing with generators&quot;, &quot;Resource management with context managers&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Python Basics" target="Python Packages">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Using external libraries requires basic Python syntax and import/use of code." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Python Basics" target="Data Manipulation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Manipulating data in Python requires core syntax, variables, and data structures." />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Python Basics" target="Python Functions">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Defining and using functions requires understanding basic Python syntax and execution." />
+          <attvalue for="11" value="0.7257" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Python Basics" target="Debugging Techniques">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Debugging Python code requires understanding the basic code being inspected." />
+        </attvalues>
+      </edge>
+      <edge id="4" source="Python Basics" target="Advanced Python Concepts">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Advanced Python features build on core language syntax and concepts." />
+        </attvalues>
+      </edge>
+      <edge id="5" source="Python Packages" target="Data Manipulation">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Practical Python data manipulation commonly depends on external libraries such as pandas or NumPy." />
+        </attvalues>
+      </edge>
+      <edge id="6" source="Python Environment" target="Python Packages">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Managing packages requires understanding the Python environment where packages are installed." />
+          <attvalue for="11" value="0.7643" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="Python Functions" target="Advanced Python Concepts">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Many advanced Python topics rely on functions, such as decorators, closures, and higher-order functions." />
+        </attvalues>
+      </edge>
+      <edge id="8" source="Operators in Python" target="Python Functions">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.7696" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="Advanced Python Concepts" target="Python Basics">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="12" value="0.7666" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

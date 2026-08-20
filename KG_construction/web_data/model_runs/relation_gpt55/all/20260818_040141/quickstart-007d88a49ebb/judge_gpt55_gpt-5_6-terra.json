@@ -1,0 +1,148 @@
+{
+  "created_at": "2026-08-18T19:03:47.815669+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-quickstart-007d88a49ebb",
+  "file_name": "quickstart-007d88a49ebb",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 3,
+  "topic_metrics": {
+    "precision": 0.5882,
+    "recall": 0.6667,
+    "f1": 0.625,
+    "tp": 10,
+    "fp": 7,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.6667,
+    "recall": 0.5714,
+    "f1": 0.6154,
+    "tp": 4,
+    "fp": 2,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "pip dependencies installation",
+      "installing requirements from requirements.txt",
+      "installing core packages",
+      "testing environment setup",
+      "verify functionality of components",
+      "using Python sentence_transformers library",
+      "creating a virtual environment",
+      "quick start guide for setup",
+      "activating virtual environment via bin/activate",
+      "start guide for new users"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "core dependencies management",
+        "reason": "The source lists and installs core dependencies but does not discuss dependency management practices."
+      },
+      {
+        "name": "general dependencies overview",
+        "reason": "Dependencies are listed, but no general conceptual overview is provided."
+      },
+      {
+        "name": "print testing methodology",
+        "reason": "Print statements are used in a quick verification script, not presented as a testing methodology."
+      },
+      {
+        "name": "create_collection unit test",
+        "reason": "The source creates a test collection as a setup check, but does not define or discuss a unit test."
+      },
+      {
+        "name": "test collection implementation",
+        "reason": "There is no collection implementation or test implementation described."
+      },
+      {
+        "name": "requirements.txt file structure",
+        "reason": "The source instructs installing from requirements.txt but does not describe its structure."
+      },
+      {
+        "name": "rag_tutorial for creating collections",
+        "reason": "rag_tutorial is only a repository path; it is not presented as a concept for creating collections."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Retrieval-Augmented Generation (RAG)",
+        "reason": "The guide explicitly introduces running examples and learning basic RAG concepts."
+      },
+      {
+        "name": "Python 3.10 or higher",
+        "reason": "Python 3.10+ is explicitly listed as a prerequisite."
+      },
+      {
+        "name": "pip package manager",
+        "reason": "pip is explicitly listed as a prerequisite and used to install dependencies."
+      },
+      {
+        "name": "vector databases",
+        "reason": "ChromaDB is explicitly identified as a vector database and tested in the setup check."
+      },
+      {
+        "name": "embeddings",
+        "reason": "The source identifies sentence-transformers as providing embeddings and verifies the embedding model."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "creating a virtual environment",
+        "to": "activating virtual environment via bin/activate",
+        "reason": "A virtual environment must be created before it can be activated."
+      },
+      {
+        "from": "pip dependencies installation",
+        "to": "installing requirements from requirements.txt",
+        "reason": "Installing requirements.txt dependencies is a specific use of pip dependency installation."
+      },
+      {
+        "from": "installing core packages",
+        "to": "using Python sentence_transformers library",
+        "reason": "The sentence-transformers package must be available before it can be imported and used."
+      },
+      {
+        "from": "testing environment setup",
+        "to": "verify functionality of components",
+        "reason": "The quick verification of embeddings and the vector database requires a working configured environment."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "testing environment setup",
+        "to": "create_collection unit test",
+        "reason": "The source does not present collection creation as a unit test."
+      },
+      {
+        "from": "testing environment setup",
+        "to": "test collection implementation",
+        "reason": "No collection implementation or associated test implementation is described."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Python 3.10 or higher",
+        "to": "creating a virtual environment",
+        "reason": "The virtual-environment command uses Python, and Python 3.10+ is stated as a prerequisite."
+      },
+      {
+        "from": "pip package manager",
+        "to": "installing requirements from requirements.txt",
+        "reason": "The source uses pip install -r requirements.txt and lists pip as a prerequisite."
+      },
+      {
+        "from": "OpenAI API key",
+        "to": "Document Chat",
+        "reason": "The Document Chat example explicitly requires setting an OpenAI API key first."
+      }
+    ],
+    "overall_note": "The source is primarily an operational setup guide, so many predicted testing and dependency-management abstractions are not explicitly supported."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-quickstart-007d88a49ebb.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-quickstart-007d88a49ebb.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-quickstart-007d88a49ebb_ledger.csv"
+  }
+}

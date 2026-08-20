@@ -1,0 +1,396 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 5,
+  "candidate_count": 29,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "language models",
+      "avg_score": 0.6475,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "language model",
+      "avg_score": 0.6469,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "self history",
+      "avg_score": 0.586,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "context self",
+      "avg_score": 0.5831,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "context solution",
+      "avg_score": 0.5614,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "context issue",
+      "avg_score": 0.558,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "issue context",
+      "avg_score": 0.5563,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "context problem",
+      "avg_score": 0.5538,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "messages role",
+      "avg_score": 0.5516,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "generate history",
+      "avg_score": 0.5483,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "messages self",
+      "avg_score": 0.5443,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "user_message generate",
+      "avg_score": 0.537,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "context question",
+      "avg_score": 0.5365,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "lesson language",
+      "avg_score": 0.5363,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "quality gpt",
+      "avg_score": 0.536,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "history self",
+      "avg_score": 0.5331,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "retrieved context",
+      "avg_score": 0.5312,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "context answer",
+      "avg_score": 0.5279,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "context answers",
+      "avg_score": 0.5277,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "answer context",
+      "avg_score": 0.5123,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "context context",
+      "avg_score": 0.5105,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "model llm",
+      "avg_score": 0.5047,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "use llm",
+      "avg_score": 0.5013,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "costs recommendations",
+      "avg_score": 0.4941,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "language generate",
+      "avg_score": 0.4876,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "model gpt",
+      "avg_score": 0.4681,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "data cost",
+      "avg_score": 0.4606,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "30 gpt",
+      "avg_score": 0.4484,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "speed gpt",
+      "avg_score": 0.439,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Language Models",
+      "description": "Models designed to understand and generate human language.",
+      "sub_topics": [
+        {
+          "name": "GPT Models",
+          "description": "Generative Pre-trained Transformers used for various language tasks."
+        },
+        {
+          "name": "LLMs",
+          "description": "Large Language Models that process and generate text."
+        }
+      ]
+    },
+    {
+      "name": "Contextual Understanding",
+      "description": "The ability of models to interpret and utilize context in language processing.",
+      "sub_topics": [
+        {
+          "name": "Context Issues",
+          "description": "Challenges related to understanding context in language."
+        },
+        {
+          "name": "Context Retrieval",
+          "description": "Methods for retrieving relevant context for generating responses."
+        }
+      ]
+    },
+    {
+      "name": "Self History",
+      "description": "The concept of maintaining a history of interactions for improved responses.",
+      "sub_topics": [
+        {
+          "name": "Messages Role",
+          "description": "The function of messages in shaping the model's understanding."
+        },
+        {
+          "name": "Generate History",
+          "description": "Techniques for generating and utilizing historical data."
+        }
+      ]
+    },
+    {
+      "name": "Answer Generation",
+      "description": "The process of creating responses based on input queries and context.",
+      "sub_topics": [
+        {
+          "name": "Context Answers",
+          "description": "Responses generated with consideration of the surrounding context."
+        },
+        {
+          "name": "User Message Generation",
+          "description": "Techniques for generating responses to user inputs."
+        }
+      ]
+    },
+    {
+      "name": "Quality Assessment",
+      "description": "Evaluating the performance and reliability of language models.",
+      "sub_topics": [
+        {
+          "name": "Quality of GPT",
+          "description": "Metrics and methods for assessing the quality of GPT models."
+        },
+        {
+          "name": "Cost Recommendations",
+          "description": "Guidelines for optimizing costs associated with model usage."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "A key algorithm for training neural networks."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Functions used to measure the error of predictions."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Artificial Neural Networks",
+          "description": "Networks composed of interconnected nodes for processing data."
+        }
+      ]
+    },
+    {
+      "name": "Data Management",
+      "description": "Strategies for handling and processing data in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Data Costs",
+          "description": "Considerations regarding the costs associated with data usage."
+        },
+        {
+          "name": "Speed Optimization",
+          "description": "Techniques for improving the speed of data processing."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Assessing the performance and effectiveness of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Regression Techniques",
+          "description": "Methods for predicting continuous outcomes."
+        },
+        {
+          "name": "Classification Techniques",
+          "description": "Methods for categorizing data into discrete classes."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 19.4823,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

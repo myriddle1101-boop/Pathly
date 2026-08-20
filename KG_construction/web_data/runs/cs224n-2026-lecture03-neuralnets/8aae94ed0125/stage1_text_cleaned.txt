@@ -1,0 +1,735 @@
+Natural Language Processing
+with Deep Learning
+CS 224 N/Ling 284
+Diyi Yang
+Lecture 3: Neural Network Foundations
+
+Lecture Plan
+Lecture 2: Neural Network Foundations
+1. Course logistics (3 mins) + Word 2 vec evaluation (7 mins)
+2. Introducing neural networks (10 mins)
+3. Matrix calculus (25 mins)
+4. Backpropagation (35 mins)
+Key Goal: the mathematics and practical implementation of how neural networks are
+trained by backpropagation
+2
+
+1. Course Logistics
+Assignment 2 is all about making sure you really understand the math of neural networks
+… then we’ll let the software do it! It also teaches us about dependency parsing
+This will be a tough week for some! → Make sure to get help if you need it:
+Visit office hours! Read tutorial materials on the syllabus!
+Py Torch tutorial: 1:30-2:20 pm this Friday NVIDIA Auditorium
+A great chance to get an intro to Py Torch, a key deep learning package!
+Poster session: March 16, 12:15-3:15 pm, AOERC. In-person presence required for in-
+person students; other exceptions see Ed forum post (due week 3)
+3
+
+Recap from Lecture 2: How to evaluate word vectors?
+• Related to general evaluation in NLP: Intrinsic vs. extrinsic
+• Intrinsic:
+• Evaluation on a specific/intermediate subtask
+• Fast to compute
+• Helps to understand that system
+• Not clear if it’s helpful unless correlation to real task is established
+• Extrinsic:
+• Evaluation on a real task
+• Can take a long time to compute accuracy
+• Unclear if the subsystem is the problem or its interaction or other subsystems
+• If replacing exactly one subsystem with another improves accuracy → Winning!
+4
+
+Intrinsic word vector evaluation
+• Word Vector Analogies
+a:b :: c:?
+man:woman :: king:?
+• Evaluate word vectors by how well their cosine
+king
+distance after addition captures intuitive
+semantic and syntactic analogy questions
+• Discarding the input words from the search (!)
+woman
+• Problem: What if the information is there but
+man
+not linear?
+5
+
+Glo Ve Visualization
+6
+
+Meaning similarity: Another intrinsic word vector evaluation
+• Word vector distances and their correlation with human judgments
+• Example dataset: Word Sim 353
+http://www.cs.technion.ac.il/~gabr/resources/data/wordsim 353/
+Word 1 Word 2 Human (mean)
+tiger cat 7.35
+tiger tiger 10
+book paper 7.46
+computer internet 7.58
+plane car 5.77
+professor doctor 6.62
+stock phone 1.62
+stock CD 1.31
+stock jaguar 0.92
+7
+
+Correlation evaluation
+• Word vector distances and their correlation with human judgments
+8
+
+Extrinsic word vector evaluation
+• One example where good word vectors should help directly: named entity
+recognition: identifying references to a person, organization or location:
+Chris Manning lives in Palo Alto.
+9
+
+2. Deep Learning Classification: Named Entity Recognition (NER)
+• The task: find and classify names in text, by labeling word tokens, for example:
+Last night , Paris Hilton wowed in a sequin gown .
+PER PER
+Samuel Quinn was arrested in the Hilton Hotel in Paris in April 1989 .
+PER PER LOC LOC LOC DATE DATE
+• Possible uses:
+• Tracking mentions of particular entities in documents
+• For question answering, answers are usually named entities
+• Relating sentiment analysis to the entity under discussion
+• Often followed by Entity Linking/Canonicalization into a Knowledge Base such as Wikidata
+10
+
+Simple NER: Window classification using binary logistic classifier
+• Idea: classify each word in its context window of neighboring words
+• Train logistic classifier on hand-labeled data to classify center word {yes/no} for each
+class based on a concatenation of word vectors in a window
+• Really, we usually use multi-class softmax, but we’re trying to keep it simple ☺
+• Example: Classify “Paris” as +/– location in context of sentence with window length 2:
+the museums in Paris are amazing to see .
+X = [ x x x x x ]T
+window museums in Paris are amazing
+• Resulting vector x = x ∈ R 5 d
+window
+• To classify all words: run classifier for each class on the vector centered on each word
+in the sentence
+11
+
+Classification review and notation
+• Supervised learning: we have a training dataset consisting of samples
+{x ,y }N
+i i i=1
+• x are inputs, e.g., words (indices or vectors!), sentences, documents, etc.
+i
+• Dimension d
+• y are labels (one of C classes) we try to predict, for example:
+i
+• classes: sentiment (+/–), named entities, buy/sell decision
+• other words
+• later: multi-word sequences
+12
+
+Neural classification
+• Typical ML/stats softmax classifier:
+• Learned parameters θ are just elements
+of W (not input representation x, which has sparse symbolic features)
+• Classifier gives linear decision boundary, which can be limiting
+• A neural network classifier differs in that:
+• We learn both W and (distributed!) representations for words
+• The word vectors x re-represent one-hot vectors, moving them
+around in an intermediate layer vector space, for easy classification
+with a (linear) softmax classifier
+• Conceptually, we have an embedding layer: x = Le
+• We use deep networks—more layers—that let us re-represent and But typically, it is linear
+relative to the pre-final
+compose our data multiple times, giving a non-linear classifier
+layer representation
+13
+
+NER: Binary classification for center word being location
+• We do supervised training and want high score if it’s a location
+1
+𝐽 𝜃 = 𝜎 𝑠 =
+𝑡
+1 + 𝑒−𝑠
+predicted model
+probability of class
+f = Some element-
+wise non-linear
+function, e.g.,
+logistic, tanh, Re LU
+∈ R 5 d
+Embedding of
+x = [ x x x x x ]
+museums in Paris are amazing
+1-hot words
+14
+
+Non-linearities, old and new
+logistic (“sigmoid”) tanh Re LU (Rectified Linear Unit)
+tanh is just a rescaled and shifted sigmoid (2×as steep, [−1,1]):
+Logistic and tanh are still used (e.g., logistic to get a probability); however, often, for deep networks, the first
+thing to try is Re LU: it trains quickly and performs well due to good gradient backflow.
+Re LU has a negative “dead zone” that recent proposals mitigate
+t a n h ( z ) = 2 l o g i s t i c ( 2 z ) - 1
+Leaky Re LU / Parametric Re LU
+Re LU 𝑧 = max(𝑧,0)
+1 1
+0
+0
+−1
+
+Non-linearities, old and new
+GELU (Gaussian error linear unit); Si LU Swish
+frequently used with Transformers Sigmoid linear unit
+GELU(x) = 𝑥 ∙ 𝑃 𝑋 ≤ 𝑥 , 𝑋~𝑁(0,1) Si LU(x) = 𝑥 ∙ 𝜎(𝑥) Swish (x) = 𝑥 ∙ 𝜎(𝛽𝑥)
+≈ 𝑥 ∙ logistic(1.702𝑥)
+GLU (gated linear unit) uses a gate/switch
+GLU(x) = (𝑥𝑉 + 𝑣) ⊗ 𝜎(𝑥𝑊 + 𝑏)
+Swi GLU (Swish-gated linear unit)
+Swi GLU(x) = 𝑥𝑉 + 𝑐 ⊗ 𝑆𝑤𝑖𝑠ℎ 𝑥𝑊 + 𝑏
+𝛽
+Frequently used, e.g., in LLama 3, Qwen 3
+Check out GLU Variants Improve Transformer
+https://arxiv.org/pdf/2002.05202
+
+Non-linearities (i.e., “f ” on previous slide): Why they’re needed
+• Neural networks do function approximation,
+e.g., regression or classification
+• Without non-linearities, deep neural networks
+can’t do anything more than a linear transform
+• Extra layers could just be compiled down into a
+single linear transform: W W x = Wx
+1 2
+• But, with more layers that include non-linearities,
+they can approximate any complex function!
+17
+
+Training with “cross entropy loss” – you use this in Py Torch!
+• Until now, our objective was stated as to maximize the probability of the correct class y
+or equivalently we can minimize the negative log probability of that class
+• Now restated in terms of cross entropy, a concept from information theory
+• Let the true probability distribution be p; let our computed model probability be q
+• The cross entropy is:
+• Assuming a ground truth (or true or gold or target) probability distribution that is 1 at
+the right class and 0 everywhere else, p = [0, …, 0, 1, 0, …, 0], then:
+• Because of one-hot p, the only term left is the negative log probability of the true
+class y : − log 𝑝(𝑦 |𝑥 )
+i 𝑖 𝑖
+18
+
+Remember: Stochastic Gradient Descent
+Update equation:
+𝛼 = step size or learning rate
+𝜕𝐽 𝜃
+𝑛𝑒𝑤 𝑜𝑙𝑑
+i.e., for each parameter: 𝜃 = 𝜃 − 𝛼
+𝑗 𝑗 𝑜𝑙𝑑
+𝜕𝜃
+𝑗
+In deep learning, 𝜃 includes the data representation (e.g., word vectors) too!
+How can we compute ∇ 𝐽(𝜃)?
+𝜃
+1. By hand
+2. Algorithmically: the backpropagation algorithm
+19
+
+3. Computing Gradients by Hand
+• Matrix calculus: Fully vectorized gradients
+• “Multivariable calculus is just like single-variable calculus if you use matrices”
+• Much faster and more useful than non-vectorized gradients
+• But doing a non-vectorized gradient can be good for intuition; recall the second
+lecture for an example
+• Lecture notes and matrix calculus notes cover this material in more detail
+• You might also review Math 51, which has an online textbook:
+http://web.stanford.edu/class/math 51/textbook.html
+20
+
+Gradients
+• Given a function with 1 output and 1 input
+3
+𝑓 𝑥 = 𝑥
+• It’s gradient (slope) is its derivative
+𝑑𝑓
+2
+= 3𝑥
+𝑑𝑥
+“How much will the output change if we change the input a bit?”
+At x = 1 it changes about 3 times as much: 1.013 = 1.03
+At x = 4 it changes about 48 times as much: 4.013 = 64.48
+21
+
+Gradients
+• Given a function with 1 output and n inputs
+• Its gradient is a vector of partial derivatives with
+respect to each input
+22
+
+Jacobian Matrix: Generalization of the Gradient
+• Given a function with m outputs and n inputs
+• It’s Jacobian is an m x n matrix of partial derivatives
+23
+
+Chain Rule
+• For composition of one-variable functions: multiply derivatives
+• For multiple variables functions: multiply Jacobians
+24
+
+Example Jacobian: Elementwise activation Function
+25
+
+Example Jacobian: Elementwise activation Function
+Function has n outputs and n inputs → n by n Jacobian
+26
+
+Example Jacobian: Elementwise activation Function
+27
+
+Example Jacobian: Elementwise activation Function
+28
+
+Example Jacobian: Elementwise activation Function
+29
+
+Other Jacobians
+• Compute these at home for practice!
+• Check your answers with the lecture notes
+30
+
+Other Jacobians
+• Compute these at home for practice!
+• Check your answers with the lecture notes
+31
+
+Other Jacobians
+Fine print: This is the correct Jacobian.
+Later we discuss the “shape convention”;
+using it the answer would be h.
+• Compute these at home for practice!
+• Check your answers with the lecture notes
+32
+
+Other Jacobians
+• Compute these at home for practice!
+• Check your answers with the lecture notes
+33
+
+Back to our Neural Net!
+x = [ x x x x x ]
+museums in Paris are amazing
+34
+
+Back to our Neural Net!
+• Let’s find
+• Really, we care about the gradient of the loss J but we
+will compute the gradient of the score for simplicity
+x = [ x x x x x ]
+museums in Paris are amazing
+35
+
+a. Break up equations into simple pieces
+Carefully define your variables and keep track of their dimensionality!
+36
+
+b. Apply the chain rule
+37
+
+b. Apply the chain rule
+38
+
+b. Apply the chain rule
+39
+
+b. Apply the chain rule
+40
+
+c. Write out the Jacobians
+Useful Jacobians from previous slide
+41
+
+c. Write out the Jacobians
+𝑇
+𝒖
+Useful Jacobians from previous slide
+42
+
+c. Write out the Jacobians
+𝑇
+𝒖
+Useful Jacobians from previous slide
+43
+
+c. Write out the Jacobians
+𝑇
+𝒖
+Useful Jacobians from previous slide
+44
+
+c. Write out the Jacobians
+𝑇
+𝒖
+𝑇
+𝒖
+.
+Useful Jacobians from previous slide
+⊙ = Hadamard product =
+element-wise multiplication
+of 2 vectors to give vector
+45
+
+Re-using Computation
+• Suppose we now want to compute
+• Using the chain rule again:
+46
+
+Re-using Computation
+• Suppose we now want to compute
+• Using the chain rule again:
+The same! Let’s avoid duplicated computation …
+47
+
+Re-using Computation
+• Suppose we now want to compute
+• Using the chain rule again:
+𝑇
+𝒖
+𝛿 is the upstream gradient (“error signal”)
+48
+
+Derivative with respect to Matrix: Output shape
+• What does look like?
+• 1 output, nm inputs: 1 by nm Jacobian?
+• Inconvenient to then do
+49
+
+Derivative with respect to Matrix: Output shape
+• What does look like?
+• 1 output, nm inputs: 1 by nm Jacobian?
+• Inconvenient to then do
+• Instead, we leave pure math and use the shape convention:
+the shape of the gradient is the shape of the parameters!
+• So is n by m:
+50
+
+Derivative with respect to Matrix
+• What is
+• is going to be in our answer
+• The other term should be because
+• Answer is:
+𝛿 is upstream gradient (“error signal”) at 𝑧
+𝑥 is local input signal
+51
+
+Why the Transposes?
+• Hacky answer: this makes the dimensions work out!
+• Useful trick for checking your work!
+• Full explanation in the lecture notes
+• Each input goes to each output – you want to get outer product
+52
+
+Deriving local input gradient in backprop
+𝜕𝒛
+• For in our equation:
+𝜕𝑾
+𝜕𝑠 𝜕𝒛 𝜕
+= 𝜹 = 𝜹 (𝑾𝒙 + 𝒃)
+𝜕𝑾 𝜕𝑾 𝜕𝑾
+• Let’s consider the derivative of a single weight W
+ij
+• W only contributes to z
+ij i u
+s
+2
+• For example: W is only
+23
+used to compute z not z
+2 1 f(z )= h h =f(z )
+1 1 2 2
+W
+23
+𝜕𝑧 𝜕
+𝑖 b
+= 𝑾 𝒙 + 𝑏
+𝑖∙ 𝑖 2
+𝜕𝑊 𝜕𝑊
+𝑖𝑗 𝑖𝑗
+𝜕
+𝑑
+= σ 𝑊 𝑥 = 𝑥 x x x +1
+𝑘=1 𝑖𝑘 𝑘 𝑗 1 2 3
+𝜕𝑊
+𝑖𝑗
+53
+
+What shape should derivatives be?
+• Similarly, is a row vector
+• But shape convention says our gradient should be a column vector because b is
+a column vector …
+• Disagreement between Jacobian form (which makes the chain rule
+easy) and the shape convention (which makes implementing SGD easy)
+• We expect answers in the assignment to follow the shape convention
+• But Jacobian form is useful for computing the answers
+54
+
+What shape should derivatives be?
+Two options for working through specific problems:
+1. Use Jacobian form as much as possible, reshape to
+follow the shape convention at the end:
+• What we just did. But at the end transpose to make the
+Use Jacobian
+to compute; derivative a column vector, resulting in
+Use shape
+convention to 2. Always follow the shape convention
+format.
+• Look at dimensions to figure out when to transpose and/or
+reorder terms
+• The error message 𝜹 that arrives at a hidden layer has the
+same dimensionality as that hidden layer
+55
+
+4. Backpropagation
+We’ve almost shown you backpropagation
+It’s taking derivatives and using the (generalized, multivariate, or matrix)
+chain rule
+Other trick:
+We re-use derivatives computed for higher layers in computing
+derivatives for lower layers to minimize computation
+56
+
+Computation Graphs and Backpropagation
+• Software represents our neural
+net equations as a graph
+• Source nodes: inputs
+• Interior nodes: operations
++ 
+
+57
+
+Computation Graphs and Backpropagation
+• Software represents our neural
+net equations as a graph
+• Source nodes: inputs
+• Interior nodes: operations
+• Edges pass along result of the
+operation
++ 
+
+58
+
+Computation Graphs and Backpropagation
+• Software represents our neural
+net equations as a graph
+• Source nodes: inputs
+“Forward Propagation”
+• Interior nodes: operations
+• Edges pass along result of the
+operation
++ 
+
+59
+
+Backpropagation
+• Then go backwards along edges
+• Pass along gradients
++ 
+
+60
+
+Backpropagation: Single Node
+• Node receives an “upstream gradient”
+• Goal is to pass on the correct
+“downstream gradient”
+Upstream
+Downstream
+gradient
+61 gradient
+
+Backpropagation: Single Node
+• Each node has a local gradient
+• The gradient of its output with
+respect to its input
+Upstream
+Downstream Local
+gradient
+62 gradient gradient
+
+Backpropagation: Single Node
+• Each node has a local gradient
+• The gradient of its output with
+respect to its input
+Chain
+rule!
+Upstream
+Downstream Local
+gradient
+63 gradient gradient
+
+Backpropagation: Single Node
+• Each node has a local gradient
+• The gradient of its output with
+respect to its input
+[downstream gradient] = [upstream gradient] x [local gradient]
+Upstream
+Downstream Local
+gradient
+64 gradient gradient
+
+Backpropagation: Single Node
+• What about nodes with multiple inputs?
+*
+65
+
+Backpropagation: Single Node
+• Multiple inputs → multiple local gradients
+*
+Downstream Local Upstream
+gradients gradients gradient
+66
+
+Gradients sum at outward branches
++
+78
+
+Gradients sum at outward branches
++
+79
+
+Node Intuitions
+• + “distributes” the upstream gradient to each summand
+1
+2 +
+3
+2
+2
+2 6
+*
+2 1
+2
+max
+0
+80
+
+Node Intuitions
+• + “distributes” the upstream gradient to each summand
+• max “routes” the upstream gradient
+1
++
+3
+2
+6
+*
+2 1
+2
+3
+max
+3
+0
+0
+81
+
+Node Intuitions
+• + “distributes” the upstream gradient
+• max “routes” the upstream gradient
+• * “switches” the upstream gradient
+1
++
+3
+2
+2
+6
+*
+2 1
+2
+max
+3
+0
+82
+
+Efficiency: compute all gradients at once
+• Incorrect way of doing backprop:
+• First compute
++ 
+*
+83
+
+Efficiency: compute all gradients at once
+• Incorrect way of doing backprop:
+• First compute
+• Then independently compute
+• Duplicated computation!
++ 
+*
+84
+
+Efficiency: compute all gradients at once
+• Correct way:
+• Compute all the gradients at once
+• Analogous to using 𝜹 when we
+computed gradients by hand
++ 
+*
+85
+
+Back-Prop in General Computation Graph
+1. Fprop: visit nodes in topological sort order
+Single scalar output
+- Compute value of node given predecessors
+2. Bprop:
+- initialize output gradient = 1
+…
+- visit nodes in reverse order:
+Compute gradient wrt each node using
+gradient wrt successors
+…
+= successors of
+Done correctly, big O() complexity of fprop and
+bprop is the same
+In general, our nets have regular layer-structure
+Inputs
+and so we can use matrices and Jacobians…
+86
+
+Automatic Differentiation
+• The gradient computation can be
+automatically inferred from the symbolic
+expression of the fprop
+• Each node type needs to know how to
+compute its output and how to compute
+the gradient wrt its inputs given the
+gradient wrt its output
+• Modern DL frameworks (Tensorflow,
+Py Torch, etc.) do backpropagation for
+you but mainly leave layer/node writer
+to hand-calculate the local derivative
+87
+
+Backprop Implementations
+88
+
+Manual Gradient checking: Numeric Gradient
+• For small h (≈ 1 e-4),
+• Easy to implement correctly
+• But approximate and very slow:
+• You have to recompute f for every parameter of our model
+• Useful for checking your implementation
+• In the old days, we hand-wrote everything, doing this everywhere was the key test
+• Now much less needed; you can use it to check layers are correctly implemented
+91
+
+Summary
+We’ve mastered the core technology of neural nets!
+• Backpropagation: recursively (and hence efficiently) apply the chain rule
+along computation graph
+• [downstream gradient] = [upstream gradient] x [local gradient]
+• Forward pass: compute results of operations and save intermediate
+values
+• Backward pass: apply chain rule to compute gradients
+92
+
+Why learn all these details about gradients?
+• Modern deep learning frameworks compute gradients for you!
+• Come to the Py Torch introduction this Friday!
+• But why take a class on compilers or systems when they are implemented for you?
+• Understanding what is going on under the hood is useful!
+• Backpropagation doesn’t always work perfectly out of the box
+• Understanding why is crucial for debugging and improving models
+• See Karpathy article (in syllabus):
+• https://medium.com/@karpathy/yes-you-should-understand-backprop-e 2 f 06 eab 496 b
+• Example in future lecture: exploding and vanishing gradients
+93

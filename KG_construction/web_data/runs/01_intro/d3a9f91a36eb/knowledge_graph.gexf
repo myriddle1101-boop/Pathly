@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-29">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Neurons" label="Neurons">
+        <attvalues>
+          <attvalue for="0" value="Fundamental units of artificial neural networks that process information." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Connections&quot;, &quot;description&quot;: &quot;The links between neurons that facilitate information transfer.&quot;}, {&quot;name&quot;: &quot;Types of Neurons&quot;, &quot;description&quot;: &quot;Different neuron configurations used in various architectures.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus." />
+          <attvalue for="6" value="[&quot;Activation functions&quot;, &quot;Weights and biases&quot;]" />
+          <attvalue for="7" value="[&quot;Neurons are biological and artificial neurons are the same&quot;, &quot;More neurons always lead to better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Artificial Neural Networks" label="Artificial Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain's network of neurons." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Hidden Layers&quot;, &quot;description&quot;: &quot;Intermediate layers in a neural network that process inputs.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neuron.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Autoencoders" label="Autoencoders">
+        <attvalues>
+          <attvalue for="0" value="Neural networks designed to learn efficient representations of data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Training Autoencoders&quot;, &quot;description&quot;: &quot;The process of optimizing autoencoders to minimize reconstruction error.&quot;}, {&quot;name&quot;: &quot;Types of Autoencoders&quot;, &quot;description&quot;: &quot;Different architectures and purposes of autoencoders.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and linear algebra." />
+          <attvalue for="6" value="[&quot;Encoder&quot;, &quot;Decoder&quot;, &quot;Latent Space&quot;, &quot;Loss Function&quot;]" />
+          <attvalue for="7" value="[&quot;Autoencoders are only for image data&quot;, &quot;They always produce better representations than other methods&quot;]" />
+          <attvalue for="8" value="[&quot;Dimensionality reduction&quot;, &quot;Anomaly detection&quot;, &quot;Image denoising&quot;, &quot;Data compression&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Datasets" label="Datasets">
+        <attvalues>
+          <attvalue for="0" value="Collections of data used for training and evaluating machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;MNIST Dataset&quot;, &quot;description&quot;: &quot;A widely used dataset for handwritten digit recognition.&quot;}, {&quot;name&quot;: &quot;Dataset Characteristics&quot;, &quot;description&quot;: &quot;Key features and properties of datasets used in machine learning.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data structures and statistics." />
+          <attvalue for="6" value="[&quot;Types of datasets (training, validation, test)&quot;, &quot;Data preprocessing techniques&quot;]" />
+          <attvalue for="7" value="[&quot;All datasets are equal in quality&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Computational Graphs" label="Computational Graphs">
+        <attvalues>
+          <attvalue for="0" value="Graphical representations of mathematical computations in neural networks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Graph Structure&quot;, &quot;description&quot;: &quot;The arrangement of nodes and edges representing operations and data.&quot;}, {&quot;name&quot;: &quot;Graph Output&quot;, &quot;description&quot;: &quot;The final results produced by traversing the computational graph.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus." />
+          <attvalue for="6" value="[&quot;Nodes and edges&quot;, &quot;Forward and backward propagation&quot;]" />
+          <attvalue for="7" value="[&quot;Computational graphs are only for neural networks&quot;, &quot;They cannot represent non-linear functions&quot;]" />
+          <attvalue for="8" value="[&quot;Optimizing neural network training&quot;, &quot;Visualizing complex computations&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods used to optimize machine learning models during training." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing error.&quot;}, {&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Gradient Descent&quot;, &quot;Regularization&quot;, &quot;Batch vs. Stochastic Training&quot;, &quot;Learning Rate Scheduling&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better models&quot;, &quot;Overfitting can be ignored if the model performs well on training data&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model accuracy&quot;, &quot;Reducing training time&quot;, &quot;Enhancing model generalization&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Learning Algorithms" label="Learning Algorithms">
+        <attvalues>
+          <attvalue for="0" value="Procedures used to train models and make predictions based on data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Supervised Learning&quot;, &quot;description&quot;: &quot;Learning from labeled data to make predictions.&quot;}, {&quot;name&quot;: &quot;Unsupervised Learning&quot;, &quot;description&quot;: &quot;Learning from unlabeled data to find patterns.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;]" />
+          <attvalue for="7" value="[&quot;All algorithms work the same for every problem&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Predictive analytics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Visual Recognition" label="Visual Recognition">
+        <attvalues>
+          <attvalue for="0" value="The ability of models to identify and classify objects in images." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Image Representations&quot;, &quot;description&quot;: &quot;How images are encoded for processing by neural networks.&quot;}, {&quot;name&quot;: &quot;Recognition Challenges&quot;, &quot;description&quot;: &quot;Difficulties faced in accurately identifying objects in images.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and familiarity with Python programming." />
+          <attvalue for="6" value="[&quot;Convolutional Neural Networks (CNNs)&quot;, &quot;Image Preprocessing Techniques&quot;]" />
+          <attvalue for="7" value="[&quot;Visual recognition is the same as image processing.&quot;, &quot;More data always leads to better model performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Autonomous vehicles&quot;, &quot;Facial recognition systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Representation" label="Data Representation">
+        <attvalues>
+          <attvalue for="0" value="The way data is structured and formatted for analysis." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Polar Coordinates&quot;, &quot;description&quot;: &quot;A coordinate system used to represent data points in a circular format.&quot;}, {&quot;name&quot;: &quot;Cartesian Coordinates&quot;, &quot;description&quot;: &quot;A coordinate system that uses perpendicular axes to represent data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data types and structures." />
+          <attvalue for="6" value="[&quot;Data types&quot;, &quot;Data encoding&quot;, &quot;Data normalization&quot;, &quot;Feature scaling&quot;]" />
+          <attvalue for="7" value="[&quot;Data representation is only about data types.&quot;, &quot;All data must be numeric.&quot;]" />
+          <attvalue for="8" value="[&quot;Data preprocessing for machine learning models&quot;, &quot;Visualization of data for analysis&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Neurons" target="Artificial Neural Networks" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Neurons are the fundamental units that make up artificial neural networks." />
+        </attvalues>
+      </edge>
+      <edge source="Artificial Neural Networks" target="Autoencoders" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Autoencoders are a specific type of artificial neural network." />
+        </attvalues>
+      </edge>
+      <edge source="Artificial Neural Networks" target="Computational Graphs" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding artificial neural networks requires knowledge of computational graphs." />
+        </attvalues>
+      </edge>
+      <edge source="Artificial Neural Networks" target="Neurons" id="3">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.8519" />
+        </attvalues>
+      </edge>
+      <edge source="Datasets" target="Training Techniques" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training techniques require datasets for model training." />
+        </attvalues>
+      </edge>
+      <edge source="Datasets" target="Visual Recognition" id="5">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Visual recognition models are trained using datasets." />
+        </attvalues>
+      </edge>
+      <edge source="Datasets" target="Data Representation" id="6">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Data representation is essential for structuring datasets." />
+        </attvalues>
+      </edge>
+      <edge source="Datasets" target="Learning Algorithms" id="7">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7578" />
+        </attvalues>
+      </edge>
+      <edge source="Training Techniques" target="Learning Algorithms" id="8">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Learning algorithms are implemented through training techniques." />
+        </attvalues>
+      </edge>
+      <edge source="Learning Algorithms" target="Training Techniques" id="9">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7685" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

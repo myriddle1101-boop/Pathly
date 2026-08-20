@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "id": "Learning Rates",
+      "description": "Parameters that control the speed of learning in training algorithms.",
+      "sub_topics": "[{\"name\": \"Learning Rate Tuning\", \"description\": \"The process of adjusting learning rates for optimal training.\"}, {\"name\": \"Smaller Learning Rates\", \"description\": \"Using reduced learning rates to improve convergence.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of calculus and linear algebra, familiarity with machine learning concepts.",
+      "key_sub_concepts": "[\"Learning Rate Schedules\", \"Adaptive Learning Rates\"]",
+      "common_misconceptions": "[\"A higher learning rate always leads to faster convergence\", \"Learning rates do not affect model performance\"]",
+      "practical_applications": "[\"Tuning hyperparameters in neural networks\", \"Optimizing gradient descent algorithms\"]"
+    },
+    {
+      "id": "Hyperparameter Optimization",
+      "description": "Techniques for selecting the best hyperparameters for machine learning models.",
+      "sub_topics": "[{\"name\": \"Grid Search\", \"description\": \"A method for systematically searching through hyperparameter combinations.\"}, {\"name\": \"Random Search\", \"description\": \"A technique that randomly samples hyperparameter combinations.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms, familiarity with model training and evaluation.",
+      "key_sub_concepts": "[\"Grid Search\", \"Random Search\", \"Bayesian Optimization\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Hyperparameter tuning is the same as model training\", \"More hyperparameters always lead to better performance\"]",
+      "practical_applications": "[\"Improving model accuracy\", \"Reducing overfitting\", \"Optimizing training time\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various tasks.",
+      "sub_topics": "[{\"name\": \"Feedforward Networks\", \"description\": \"A type of neural network where connections do not form cycles.\"}, {\"name\": \"Pretrained Networks\", \"description\": \"Networks that have been previously trained on a dataset.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image and speech recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Training Techniques",
+      "description": "Methods and strategies for training machine learning models.",
+      "sub_topics": "[{\"name\": \"Training Set\", \"description\": \"The dataset used to train a model.\"}, {\"name\": \"Increasing Training Capacity\", \"description\": \"Methods to enhance the model's ability to learn from data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Overfitting and Underfitting\", \"Cross-Validation\", \"Hyperparameter Tuning\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Training and testing data can be mixed\", \"Complex models are always better\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Predictive analytics\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Regularization",
+      "description": "Techniques used to prevent overfitting in machine learning models.",
+      "sub_topics": "[{\"name\": \"Adding Regularization\", \"description\": \"Incorporating regularization techniques to improve model generalization.\"}, {\"name\": \"Regularization Methods\", \"description\": \"Different approaches to apply regularization in training.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms, familiarity with linear regression and classification.",
+      "key_sub_concepts": "[\"L1 Regularization (Lasso)\", \"L2 Regularization (Ridge)\", \"Elastic Net\", \"Dropout\"]",
+      "common_misconceptions": "[\"Regularization always improves model performance\", \"Regularization is only applicable to linear models\"]",
+      "practical_applications": "[\"Improving model generalization\", \"Feature selection in high-dimensional datasets\", \"Preventing overfitting in neural networks\"]"
+    },
+    {
+      "id": "Activation Functions",
+      "description": "Functions that determine the output of a neural network node.",
+      "sub_topics": "[{\"name\": \"Common Activation Functions\", \"description\": \"Popular functions like ReLU, Sigmoid, and Tanh used in networks.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and calculus.",
+      "key_sub_concepts": "[\"Sigmoid Function\", \"ReLU (Rectified Linear Unit)\", \"Tanh Function\", \"Softmax Function\"]",
+      "common_misconceptions": "[\"Activation functions are only used in the output layer.\", \"All activation functions are the same.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game AI\", \"Financial forecasting\"]"
+    },
+    {
+      "id": "Loss Functions",
+      "description": "Functions that measure the difference between predicted and actual outcomes.",
+      "sub_topics": "[{\"name\": \"Common Loss Functions\", \"description\": \"Examples include Mean Squared Error and Cross-Entropy Loss.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Mean Squared Error\", \"Cross-Entropy Loss\"]",
+      "common_misconceptions": "[\"Loss functions only apply to regression problems.\", \"Lower loss always means better model.\"]",
+      "practical_applications": "[\"Training machine learning models\", \"Evaluating model performance\"]"
+    },
+    {
+      "id": "Backpropagation",
+      "description": "An algorithm for training neural networks by updating weights based on error gradients.",
+      "sub_topics": "[{\"name\": \"Gradient Descent\", \"description\": \"An optimization algorithm used in backpropagation.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of calculus and linear algebra, familiarity with neural networks.",
+      "key_sub_concepts": "[\"Gradient Descent\", \"Chain Rule\", \"Loss Function\"]",
+      "common_misconceptions": "[\"Backpropagation is the same as training a neural network.\", \"It only works for feedforward networks.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "Methods for assessing the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Metrics Accuracy\", \"description\": \"A measure of how often the model makes correct predictions.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Accuracy\", \"Precision and Recall\", \"F1 Score\", \"ROC Curve\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Higher accuracy always means a better model\", \"Overfitting is not a concern if the model performs well on training data\"]",
+      "practical_applications": "[\"Comparing different models\", \"Tuning hyperparameters\", \"Selecting the best model for deployment\"]"
+    },
+    {
+      "id": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": "[{\"name\": \"Deep Learning Frameworks\", \"description\": \"Software libraries that facilitate deep learning model development.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra, calculus, and programming in Python.",
+      "key_sub_concepts": "[\"Neural Networks\", \"Backpropagation\", \"Convolutional Neural Networks (CNNs)\", \"Recurrent Neural Networks (RNNs)\"]",
+      "common_misconceptions": "[\"Deep learning is the same as machine learning.\", \"More layers always lead to better performance.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Autonomous vehicles\", \"Healthcare diagnostics\"]"
+    },
+    {
+      "id": "Training Inference",
+      "description": "The process of making predictions using a trained model.",
+      "sub_topics": "[{\"name\": \"Inference Techniques\", \"description\": \"Methods for efficiently making predictions with trained models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Model Evaluation\", \"Prediction Accuracy\"]",
+      "common_misconceptions": "[\"Training and inference are the same process.\", \"More training data always leads to better inference.\"]",
+      "practical_applications": "[\"Predicting house prices\", \"Classifying images\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Neural Networks",
+      "to": "Backpropagation",
+      "relation": "prerequisite",
+      "reason": "Backpropagation is specifically defined as an algorithm for training neural networks, so understanding neural network structure is necessary first."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Deep Learning",
+      "relation": "prerequisite",
+      "reason": "Deep learning is a subset focused on neural networks with many layers, so neural networks are foundational knowledge."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Activation Functions",
+      "relation": "prerequisite",
+      "reason": "Activation functions are defined as functions determining the output of a neural network node, so neural networks must be understood first."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Training Inference",
+      "relation": "prerequisite",
+      "reason": "Inference here refers to making predictions using a trained model, and in this topic set it depends on understanding the neural network model being used."
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Backpropagation",
+      "relation": "prerequisite",
+      "reason": "Backpropagation computes gradients through neural network nodes, which requires understanding activation functions used at those nodes."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Backpropagation",
+      "relation": "prerequisite",
+      "reason": "Backpropagation updates weights based on error gradients derived from a loss, so understanding loss functions is necessary."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Training Techniques",
+      "relation": "similarity",
+      "score": 0.7647
+    }
+  ]
+}

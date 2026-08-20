@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": "Variance",
+      "description": "Key concept in statistics and machine learning that measures the spread of data points.",
+      "sub_topics": "[{\"name\": \"Variance Reduction\", \"description\": \"Techniques aimed at minimizing variance in model predictions.\"}, {\"name\": \"Low Variance\", \"description\": \"Strategies to achieve low variance in model training.\"}, {\"name\": \"Variance Estimation\", \"description\": \"Methods for estimating variance in datasets.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and data analysis.",
+      "key_sub_concepts": "[\"Standard Deviation\", \"Bias-Variance Tradeoff\"]",
+      "common_misconceptions": "[\"Variance is the same as standard deviation\", \"Higher variance always indicates a problem\"]",
+      "practical_applications": "[\"Model evaluation in machine learning\", \"Understanding data distribution\"]"
+    },
+    {
+      "id": "Sampling Techniques",
+      "description": "Methods used to select a subset of data for analysis in machine learning.",
+      "sub_topics": "[{\"name\": \"Importance Sampling\", \"description\": \"A technique that improves the efficiency of sampling.\"}, {\"name\": \"Unbiased Sampling\", \"description\": \"Sampling methods that ensure unbiased representation of the population.\"}, {\"name\": \"Subsampling\", \"description\": \"Selecting a smaller subset from a larger dataset.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and data analysis.",
+      "key_sub_concepts": "[\"Random Sampling\", \"Stratified Sampling\", \"Systematic Sampling\", \"Cluster Sampling\"]",
+      "common_misconceptions": "[\"Sampling is only about random selection.\", \"Larger samples always yield better results.\"]",
+      "practical_applications": "[\"Survey data collection\", \"Training machine learning models\", \"A/B testing\", \"Market research\"]"
+    },
+    {
+      "id": "Training Cost",
+      "description": "The computational expense associated with training machine learning models.",
+      "sub_topics": "[{\"name\": \"Training Distribution\", \"description\": \"The distribution of data used during the training phase.\"}, {\"name\": \"Cost Reduction Methods\", \"description\": \"Strategies to reduce the cost of training models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Computational Complexity\", \"Resource Allocation\"]",
+      "common_misconceptions": "[\"Training cost only refers to time taken\", \"Higher cost always means better model performance\"]",
+      "practical_applications": "[\"Budgeting for machine learning projects\", \"Optimizing model training processes\"]"
+    },
+    {
+      "id": "Empirical Methods",
+      "description": "Approaches based on observation and experience rather than theory.",
+      "sub_topics": "[{\"name\": \"Empirical Average\", \"description\": \"The average calculated from observed data.\"}, {\"name\": \"Empirical Justification\", \"description\": \"Providing evidence for a method based on empirical results.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and data analysis.",
+      "key_sub_concepts": "[\"Observational Studies\", \"Data-Driven Decision Making\"]",
+      "common_misconceptions": "[\"Empirical methods are always more accurate than theoretical methods.\", \"Empirical data is free from bias.\"]",
+      "practical_applications": "[\"Market Research\", \"Clinical Trials\"]"
+    },
+    {
+      "id": "Optimization",
+      "description": "The process of making a system as effective or functional as possible.",
+      "sub_topics": "[{\"name\": \"Optimal Solutions\", \"description\": \"Finding the best solution among many possible options.\"}, {\"name\": \"Determining Optimal Parameters\", \"description\": \"Methods for identifying the best parameters for models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of calculus and linear algebra.",
+      "key_sub_concepts": "[\"Gradient Descent\", \"Convex Optimization\"]",
+      "common_misconceptions": "[\"Optimization is only about finding the minimum\", \"All optimization problems have a unique solution\"]",
+      "practical_applications": "[\"Training machine learning models\", \"Resource allocation in operations research\"]"
+    },
+    {
+      "id": "Integrals",
+      "description": "Mathematical concepts used to calculate areas under curves and other applications.",
+      "sub_topics": "[{\"name\": \"Integral Estimation\", \"description\": \"Methods for estimating the value of integrals.\"}, {\"name\": \"Sum of Integrals\", \"description\": \"Calculating the total of multiple integrals.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of calculus, particularly differentiation and functions.",
+      "key_sub_concepts": "[\"Definite Integrals\", \"Indefinite Integrals\", \"Fundamental Theorem of Calculus\"]",
+      "common_misconceptions": "[\"Integrals only represent area under curves\", \"All functions can be integrated easily\"]",
+      "practical_applications": "[\"Calculating areas and volumes\", \"Physics applications like finding displacement from velocity\"]"
+    },
+    {
+      "id": "Probabilistic Models",
+      "description": "Models that incorporate randomness and uncertainty in predictions.",
+      "sub_topics": "[{\"name\": \"Statistical Models\", \"description\": \"Models that use statistical methods to make predictions.\"}, {\"name\": \"Probabilistic Inference\", \"description\": \"Drawing conclusions from probabilistic models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and probability theory.",
+      "key_sub_concepts": "[\"Bayesian Inference\", \"Markov Models\"]",
+      "common_misconceptions": "[\"Probabilistic models are only for complex problems.\", \"All predictions from probabilistic models are uncertain.\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Financial Forecasting\"]"
+    },
+    {
+      "id": "Path Analysis",
+      "description": "Techniques for analyzing paths in probabilistic models.",
+      "sub_topics": "[{\"name\": \"Active Paths\", \"description\": \"Paths that contribute to the outcome in a model.\"}, {\"name\": \"Inactive Paths\", \"description\": \"Paths that do not contribute to the outcome.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of probability and statistics, familiarity with graphical models.",
+      "key_sub_concepts": "[\"Directed Acyclic Graphs (DAGs)\", \"Causal Inference\"]",
+      "common_misconceptions": "[\"Path analysis is the same as regression analysis\", \"All paths in a model are equally important\"]",
+      "practical_applications": "[\"Social science research\", \"Health studies for causal relationships\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "Assessing the performance and effectiveness of machine learning models.",
+      "sub_topics": "[{\"name\": \"Expected Value\", \"description\": \"The average outcome of a random variable.\"}, {\"name\": \"Justification of Models\", \"description\": \"Providing reasons for the effectiveness of a model.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and statistics.",
+      "key_sub_concepts": "[\"Accuracy\", \"Precision and Recall\", \"F1 Score\", \"ROC Curve\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Higher accuracy always means a better model\", \"Overfitting is not a concern if the model performs well on training data\"]",
+      "practical_applications": "[\"Comparing different models\", \"Tuning hyperparameters\", \"Selecting the best model for deployment\"]"
+    },
+    {
+      "id": "Artificial Neural Networks",
+      "description": "Computational models inspired by the human brain, used for various tasks.",
+      "sub_topics": "[{\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of a neuron.\"}, {\"name\": \"Backpropagation\", \"description\": \"A method for training neural networks by minimizing error.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Regression and Classification",
+      "description": "Techniques for predicting outcomes based on input data.",
+      "sub_topics": "[{\"name\": \"Linear Regression\", \"description\": \"A method for modeling the relationship between variables.\"}, {\"name\": \"Classification Techniques\", \"description\": \"Methods for categorizing data into classes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and linear algebra.",
+      "key_sub_concepts": "[\"Linear Regression\", \"Logistic Regression\"]",
+      "common_misconceptions": "[\"Regression is only for continuous outcomes.\", \"Classification is only for binary outcomes.\"]",
+      "practical_applications": "[\"Predicting house prices\", \"Email spam detection\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Variance",
+      "to": "Model Evaluation",
+      "relation": "prerequisite",
+      "reason": "Understanding model evaluation requires grasping variability and stability of performance estimates."
+    },
+    {
+      "from": "Optimization",
+      "to": "Artificial Neural Networks",
+      "relation": "prerequisite",
+      "reason": "Training neural networks fundamentally requires optimization of model parameters."
+    },
+    {
+      "from": "Optimization",
+      "to": "Regression and Classification",
+      "relation": "prerequisite",
+      "reason": "Many regression and classification methods are learned by optimizing an objective or loss function."
+    },
+    {
+      "from": "Integrals",
+      "to": "Probabilistic Models",
+      "relation": "prerequisite",
+      "reason": "Continuous probabilistic models rely on integration for normalization and computing probabilities or expectations."
+    },
+    {
+      "from": "Probabilistic Models",
+      "to": "Path Analysis",
+      "relation": "prerequisite",
+      "reason": "Path analysis here depends on understanding probabilistic model structure and uncertainty propagation."
+    }
+  ]
+}

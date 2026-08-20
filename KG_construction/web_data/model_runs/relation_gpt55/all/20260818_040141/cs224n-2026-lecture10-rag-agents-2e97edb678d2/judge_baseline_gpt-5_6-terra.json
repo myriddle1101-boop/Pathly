@@ -1,0 +1,130 @@
+{
+  "created_at": "2026-08-18T18:53:40.618856+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-cs224n-2026-lecture10-rag-agents-2e97edb678d2",
+  "file_name": "cs224n-2026-lecture10-rag-agents-2e97edb678d2",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 13,
+  "topic_metrics": {
+    "precision": 0.7778,
+    "recall": 0.6364,
+    "f1": 0.7,
+    "tp": 7,
+    "fp": 2,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 7,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Language Models",
+      "Agent Systems",
+      "Retrieval Models",
+      "Agent Reasoning",
+      "Web Environment",
+      "Question Answering",
+      "Deep Learning"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Reinforcement Learning",
+        "reason": "The source discusses natural-language feedback and rejection-sampling fine-tuning, but does not present reinforcement learning as a learning concept."
+      },
+      {
+        "name": "Knowledge Adapters",
+        "reason": "The source discusses adapters and language adapters, but does not define or use the term “Knowledge Adapters.”"
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Retrieval-Augmented Generation",
+        "reason": "RAG is a central lecture topic, including retriever-reader systems, retriever training, and generative RAG."
+      },
+      {
+        "name": "Language agents",
+        "reason": "The lecture explicitly introduces language agents and their components, environments, actions, and applications."
+      },
+      {
+        "name": "Agent memory",
+        "reason": "The source gives a dedicated treatment of episodic, semantic, and procedural memory for agents."
+      },
+      {
+        "name": "Tool use",
+        "reason": "Tool use is a dedicated agent component, illustrated through Toolken GPT and Toolformer."
+      }
+    ],
+    "accepted_prerequisites": [],
+    "rejected_prerequisites": [
+      {
+        "from": "Deep Learning",
+        "to": "Language Models",
+        "reason": "Although both are in the lecture context, the source does not establish this as a taught directional dependency."
+      },
+      {
+        "from": "Reinforcement Learning",
+        "to": "Agent Systems",
+        "reason": "Reinforcement learning is not substantively covered as an approach for building the presented agent systems."
+      },
+      {
+        "from": "Agent Systems",
+        "to": "Agent Reasoning",
+        "reason": "Reasoning is presented as a component of language agents, not as a prerequisite relationship from agent systems."
+      },
+      {
+        "from": "Language Models",
+        "to": "Question Answering",
+        "reason": "Question answering is presented through conventional, neural, retriever-reader, and zero-shot LLM approaches; language models are not a necessary prerequisite for the general concept."
+      },
+      {
+        "from": "Retrieval Models",
+        "to": "Question Answering",
+        "reason": "Retrieval is important for open-domain QA and RAG, but not for question answering generally, including the reading-comprehension formulation."
+      },
+      {
+        "from": "Web Environment",
+        "to": "Agent Systems",
+        "reason": "Web environments are one application setting for agents rather than a foundational learning prerequisite for agent systems."
+      },
+      {
+        "from": "Knowledge Adapters",
+        "to": "Language Models",
+        "reason": "The source discusses adapters as modules inserted into pre-trained models; moreover, “Knowledge Adapters” is not a supported source term."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Retrieval Models",
+        "to": "Retrieval-Augmented Generation",
+        "reason": "The RAG framework relies on retrieval to identify relevant passages before a reader or generator produces an answer."
+      },
+      {
+        "from": "Language Models",
+        "to": "Language agents",
+        "reason": "Language agents are explicitly described as LLM-empowered systems with an LLM core."
+      },
+      {
+        "from": "Agent Reasoning",
+        "to": "ReAct",
+        "reason": "ReAct is explicitly introduced as a method combining reasoning and action."
+      },
+      {
+        "from": "Tool use",
+        "to": "Toolformer",
+        "reason": "Toolformer is presented as a method for training language models to decide which APIs to call, when, and with what arguments."
+      }
+    ],
+    "overall_note": "The predictions capture broad QA, retrieval, language-model, and agent themes, but omit central lecture concepts such as RAG, agent memory, and tool use; the proposed prerequisite edges are mostly weak associations or component relationships."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture10-rag-agents-2e97edb678d2.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture10-rag-agents-2e97edb678d2.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture10-rag-agents-2e97edb678d2_ledger.csv"
+  }
+}

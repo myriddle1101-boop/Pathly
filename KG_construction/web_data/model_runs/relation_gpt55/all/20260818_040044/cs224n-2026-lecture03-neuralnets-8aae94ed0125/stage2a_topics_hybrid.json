@@ -1,0 +1,793 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 13,
+  "candidate_count": 77,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "use shape",
+      "avg_score": 0.4953,
+      "frequency": 2,
+      "chunk_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "name": "graphs backpropagation",
+      "avg_score": 0.7664,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "window classification",
+      "avg_score": 0.6859,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "gradient given",
+      "avg_score": 0.6749,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "gradients given",
+      "avg_score": 0.6692,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "neural classification",
+      "avg_score": 0.6573,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "gradient backpropagation",
+      "avg_score": 0.6552,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "classify words",
+      "avg_score": 0.6495,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "shape derivatives",
+      "avg_score": 0.6476,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "classification using",
+      "avg_score": 0.6459,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "inputs gradient",
+      "avg_score": 0.6459,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "computation graphs",
+      "avg_score": 0.6459,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "classifier learned",
+      "avg_score": 0.634,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "shape parameters",
+      "avg_score": 0.6282,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "gradients",
+      "avg_score": 0.6257,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "window classify",
+      "avg_score": 0.6233,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "classify word",
+      "avg_score": 0.6228,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "backpropagation software",
+      "avg_score": 0.621,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "cross entropy",
+      "avg_score": 0.6196,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "gradient",
+      "avg_score": 0.6193,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "shape gradient",
+      "avg_score": 0.6185,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "slope derivative",
+      "avg_score": 0.6158,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "computed gradients",
+      "avg_score": 0.6123,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "museums paris",
+      "avg_score": 0.6068,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "word vector",
+      "avg_score": 0.6044,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "lecture neural",
+      "avg_score": 0.6038,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "entropy assuming",
+      "avg_score": 0.5991,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "softmax classifier",
+      "avg_score": 0.5969,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "gradient shape",
+      "avg_score": 0.5919,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "graph source",
+      "avg_score": 0.5918,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "learned parameters",
+      "avg_score": 0.5909,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "word vectors",
+      "avg_score": 0.5905,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "linear classifier",
+      "avg_score": 0.5897,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "classifier conceptually",
+      "avg_score": 0.5895,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "implementation neural",
+      "avg_score": 0.5892,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "backprop compute",
+      "avg_score": 0.5886,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "gradient computation",
+      "avg_score": 0.5876,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "entropy loss",
+      "avg_score": 0.5832,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "compute gradients",
+      "avg_score": 0.5813,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "useful checking",
+      "avg_score": 0.5812,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "classification",
+      "avg_score": 0.578,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "compute gradient",
+      "avg_score": 0.5771,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "entropy concept",
+      "avg_score": 0.5756,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "backpropagation backwards",
+      "avg_score": 0.5728,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "neural network",
+      "avg_score": 0.5714,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "introducing neural",
+      "avg_score": 0.5679,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "checking numeric",
+      "avg_score": 0.567,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.5657,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "entropy",
+      "avg_score": 0.5475,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "evaluate word",
+      "avg_score": 0.5426,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "checking implementation",
+      "avg_score": 0.5413,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "way compute",
+      "avg_score": 0.5404,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "lu rectified",
+      "avg_score": 0.5387,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.5367,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "gradient checking",
+      "avg_score": 0.5322,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "vector analogies",
+      "avg_score": 0.522,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "use derivatives",
+      "avg_score": 0.521,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "derivatives using",
+      "avg_score": 0.5187,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "matrix output",
+      "avg_score": 0.514,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "derivatives options",
+      "avg_score": 0.5101,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "vector shape",
+      "avg_score": 0.5089,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "input gradient",
+      "avg_score": 0.5004,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "computation",
+      "avg_score": 0.4975,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "compute",
+      "avg_score": 0.4971,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "probability cross",
+      "avg_score": 0.4945,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "vector evaluation",
+      "avg_score": 0.4921,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "tanh lu",
+      "avg_score": 0.4905,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "evaluation word",
+      "avg_score": 0.4894,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "paris",
+      "avg_score": 0.4847,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "paris amazing",
+      "avg_score": 0.4824,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "shifted sigmoid",
+      "avg_score": 0.4768,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "backflow lu",
+      "avg_score": 0.4761,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "gradient loss",
+      "avg_score": 0.475,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "sigmoid tanh",
+      "avg_score": 0.4663,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "lu parametric",
+      "avg_score": 0.4629,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "gradient score",
+      "avg_score": 0.4593,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "museums",
+      "avg_score": 0.4515,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Neural Networks",
+      "description": "Fundamental structures that mimic the way human brains operate to process data.",
+      "sub_topics": [
+        {
+          "name": "Artificial Neural Network",
+          "description": "A computational model based on the structure and functions of biological neural networks."
+        },
+        {
+          "name": "Neural Classification",
+          "description": "The process of categorizing data using neural network architectures."
+        },
+        {
+          "name": "Deep Learning",
+          "description": "A subset of machine learning that uses multi-layered neural networks for complex data representation."
+        }
+      ]
+    },
+    {
+      "name": "Backpropagation",
+      "description": "A key algorithm for training neural networks by minimizing the error through gradient descent.",
+      "sub_topics": [
+        {
+          "name": "Gradient Computation",
+          "description": "The process of calculating the gradient of the loss function with respect to the model parameters."
+        },
+        {
+          "name": "Gradient Checking",
+          "description": "A technique to verify the correctness of the gradient computation."
+        },
+        {
+          "name": "Backpropagation Software",
+          "description": "Tools and libraries that implement backpropagation algorithms for training models."
+        }
+      ]
+    },
+    {
+      "name": "Activation Functions",
+      "description": "Functions that determine the output of a neural network node given an input or set of inputs.",
+      "sub_topics": [
+        {
+          "name": "Sigmoid Function",
+          "description": "An activation function that maps any real-valued number into a value between 0 and 1."
+        },
+        {
+          "name": "Tanh Function",
+          "description": "An activation function that maps values to a range between -1 and 1."
+        },
+        {
+          "name": "Softmax Classifier",
+          "description": "An activation function used in multi-class classification problems to convert logits into probabilities."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Functions that measure how well a model's predictions match the actual data.",
+      "sub_topics": [
+        {
+          "name": "Cross Entropy",
+          "description": "A loss function commonly used in classification tasks to quantify the difference between two probability distributions."
+        },
+        {
+          "name": "Entropy Loss",
+          "description": "A measure of uncertainty in the predictions of a model."
+        }
+      ]
+    },
+    {
+      "name": "Gradient Descent",
+      "description": "An optimization algorithm used to minimize the loss function by iteratively adjusting model parameters.",
+      "sub_topics": [
+        {
+          "name": "Gradient Given",
+          "description": "The calculated gradient used to update model parameters during training."
+        },
+        {
+          "name": "Computed Gradients",
+          "description": "The gradients that are calculated during the training process."
+        }
+      ]
+    },
+    {
+      "name": "Classification Techniques",
+      "description": "Methods used to categorize data into predefined classes.",
+      "sub_topics": [
+        {
+          "name": "Linear Classifier",
+          "description": "A classifier that makes its predictions based on a linear predictor function."
+        },
+        {
+          "name": "Window Classification",
+          "description": "A technique that classifies data based on a sliding window approach."
+        }
+      ]
+    },
+    {
+      "name": "Gradient Flow",
+      "description": "The process of propagating gradients through the network during training.",
+      "sub_topics": [
+        {
+          "name": "Gradient Backpropagation",
+          "description": "The method of propagating gradients backward through the network."
+        },
+        {
+          "name": "Backflow in Neural Networks",
+          "description": "The reverse flow of gradients during the backpropagation process."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Techniques used to assess the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Evaluate Word Vectors",
+          "description": "Methods for assessing the quality of word embeddings."
+        },
+        {
+          "name": "Checking Implementation",
+          "description": "Verifying the correctness of the model's implementation."
+        }
+      ]
+    },
+    {
+      "name": "Shape and Parameters",
+      "description": "Concepts related to the structure and configuration of neural networks.",
+      "sub_topics": [
+        {
+          "name": "Shape Parameters",
+          "description": "Parameters that define the architecture of a neural network."
+        },
+        {
+          "name": "Shape Derivatives",
+          "description": "Derivatives that describe how changes in shape parameters affect the output."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 24.608,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

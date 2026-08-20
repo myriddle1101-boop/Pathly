@@ -1,0 +1,150 @@
+{
+  "nodes": [
+    {
+      "id": "Language Models",
+      "description": "Techniques for modeling and generating human language.",
+      "sub_topics": "[{\"name\": \"Word Embeddings\", \"description\": \"Representations of words in continuous vector space.\"}, {\"name\": \"Trigram Model\", \"description\": \"A statistical language model that uses three-word sequences.\"}, {\"name\": \"Conditional Probabilities\", \"description\": \"Probabilities that depend on the occurrence of previous events.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and statistics.",
+      "key_sub_concepts": "[\"Tokenization\", \"Neural Networks\", \"Transformers\", \"Word Embeddings\"]",
+      "common_misconceptions": "[\"Language models understand language like humans do.\", \"More data always leads to better models.\"]",
+      "practical_applications": "[\"Chatbots\", \"Text generation\", \"Sentiment analysis\", \"Machine translation\"]"
+    },
+    {
+      "id": "Natural Language Processing",
+      "description": "Field focused on the interaction between computers and human language.",
+      "sub_topics": "[{\"name\": \"Machine Translation\", \"description\": \"Automated translation of text from one language to another.\"}, {\"name\": \"Speech Recognition\", \"description\": \"Converting spoken language into text.\"}, {\"name\": \"Language Applications\", \"description\": \"Practical uses of NLP techniques in various domains.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and statistics.",
+      "key_sub_concepts": "[\"Tokenization\", \"Sentiment Analysis\", \"Named Entity Recognition\", \"Language Modeling\"]",
+      "common_misconceptions": "[\"NLP is only about chatbots\", \"NLP can understand context perfectly\"]",
+      "practical_applications": "[\"Chatbots and virtual assistants\", \"Text classification\", \"Machine translation\", \"Sentiment analysis in social media\"]"
+    },
+    {
+      "id": "Deep Learning",
+      "description": "A subset of machine learning using neural networks with many layers.",
+      "sub_topics": "[{\"name\": \"Neural Networks\", \"description\": \"Computational models inspired by the human brain.\"}, {\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of a neural network node.\"}, {\"name\": \"Backpropagation\", \"description\": \"Algorithm for training neural networks by minimizing error.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra, calculus, and programming in Python.",
+      "key_sub_concepts": "[\"Neural Networks\", \"Backpropagation\", \"Convolutional Neural Networks (CNNs)\", \"Recurrent Neural Networks (RNNs)\"]",
+      "common_misconceptions": "[\"Deep learning is the same as machine learning.\", \"More layers always lead to better performance.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Autonomous vehicles\", \"Game playing (e.g., AlphaGo)\"]"
+    },
+    {
+      "id": "Attention Mechanism",
+      "description": "A technique that allows models to focus on specific parts of the input.",
+      "sub_topics": "[{\"name\": \"Encoder-Decoder Architecture\", \"description\": \"A model structure that uses separate components for input and output.\"}, {\"name\": \"Contextual Attention\", \"description\": \"Attention that considers the context of the input data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and sequence data.",
+      "key_sub_concepts": "[\"Self-Attention\", \"Multi-Head Attention\"]",
+      "common_misconceptions": "[\"Attention is only for NLP tasks\", \"Attention replaces RNNs completely\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Computer Vision\"]"
+    },
+    {
+      "id": "Probabilities",
+      "description": "Mathematical framework for quantifying uncertainty.",
+      "sub_topics": "[{\"name\": \"Probability Decomposition\", \"description\": \"Breaking down complex probabilities into simpler components.\"}, {\"name\": \"Value Probability\", \"description\": \"The likelihood of a specific outcome occurring.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of algebra and introductory statistics.",
+      "key_sub_concepts": "[\"Random variables\", \"Probability distributions\"]",
+      "common_misconceptions": "[\"Probabilities must always add up to 1 in all scenarios\", \"A higher probability guarantees an event will occur\"]",
+      "practical_applications": "[\"Risk assessment in finance\", \"Machine learning model evaluation\"]"
+    },
+    {
+      "id": "Optimization Techniques",
+      "description": "Methods for improving the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Gradient Descent\", \"description\": \"An optimization algorithm for minimizing loss functions.\"}, {\"name\": \"Speedup Techniques\", \"description\": \"Methods to enhance computational efficiency.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning algorithms and linear algebra.",
+      "key_sub_concepts": "[\"Gradient Descent\", \"Stochastic Gradient Descent\", \"Learning Rate\", \"Regularization\"]",
+      "common_misconceptions": "[\"Optimization is only about finding the minimum loss.\", \"All optimization techniques work equally well for all models.\"]",
+      "practical_applications": "[\"Tuning hyperparameters in neural networks\", \"Improving convergence speed in training algorithms\"]"
+    },
+    {
+      "id": "Data Representation",
+      "description": "Ways to encode and structure data for machine learning tasks.",
+      "sub_topics": "[{\"name\": \"Semantic Representation\", \"description\": \"Encoding meaning in a way that machines can understand.\"}, {\"name\": \"Hierarchical Structures\", \"description\": \"Organizing data in a tree-like format for better processing.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of data types and statistics.",
+      "key_sub_concepts": "[\"Feature Encoding\", \"Data Normalization\"]",
+      "common_misconceptions": "[\"All data can be used as-is\", \"Data representation is not important\"]",
+      "practical_applications": "[\"Image processing\", \"Natural language processing\"]"
+    },
+    {
+      "id": "Training Models",
+      "description": "Processes involved in teaching models to make predictions.",
+      "sub_topics": "[{\"name\": \"Loss Functions\", \"description\": \"Functions that measure the difference between predicted and actual outcomes.\"}, {\"name\": \"Regression and Classification\", \"description\": \"Types of predictive modeling techniques.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Overfitting\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Training a model means it will always perform well on new data.\", \"More data always leads to better models.\"]",
+      "practical_applications": "[\"Predicting house prices\", \"Classifying emails as spam or not\", \"Image recognition\", \"Recommender systems\"]"
+    },
+    {
+      "id": "Implementation Techniques",
+      "description": "Methods for efficiently executing machine learning algorithms.",
+      "sub_topics": "[{\"name\": \"Fast Implementations\", \"description\": \"Optimized code for quicker execution of algorithms.\"}, {\"name\": \"CPU Optimization\", \"description\": \"Techniques to enhance performance on CPU architectures.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning algorithms and programming skills in Python or R.",
+      "key_sub_concepts": "[\"Algorithm optimization\", \"Parallel processing\", \"Model deployment\", \"Resource management\"]",
+      "common_misconceptions": "[\"Implementation is the same as theory\", \"More complex algorithms always yield better results\", \"Optimization is only about speed\"]",
+      "practical_applications": "[\"Real-time data processing\", \"Scalable web applications\", \"Automated machine learning pipelines\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Deep Learning",
+      "to": "Attention Mechanism",
+      "relation": "prerequisite",
+      "reason": "Attention is typically learned as a component within neural network architectures."
+    },
+    {
+      "from": "Probabilities",
+      "to": "Language Models",
+      "relation": "prerequisite",
+      "reason": "Language models assign and use probability distributions over language sequences."
+    },
+    {
+      "from": "Optimization Techniques",
+      "to": "Training Models",
+      "relation": "prerequisite",
+      "reason": "Training models requires optimizing parameters to improve predictive performance."
+    },
+    {
+      "from": "Optimization Techniques",
+      "to": "Deep Learning",
+      "relation": "prerequisite",
+      "reason": "Deep learning relies on optimization methods to learn neural network parameters."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Training Models",
+      "relation": "prerequisite",
+      "reason": "Models must receive data in an encoded, structured form before they can be trained."
+    },
+    {
+      "from": "Implementation Techniques",
+      "to": "Optimization Techniques",
+      "relation": "similarity",
+      "score": 0.8404
+    }
+  ]
+}

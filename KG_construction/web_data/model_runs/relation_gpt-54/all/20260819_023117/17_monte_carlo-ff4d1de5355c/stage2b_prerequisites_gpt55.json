@@ -1,0 +1,38 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 11,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Integrals",
+      "to": "Probabilistic Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Continuous probabilistic models rely on integration for normalization and computing probabilities or expectations."
+    },
+    {
+      "from": "Probabilistic Models",
+      "to": "Path Analysis",
+      "relation_type": "strong_prerequisite",
+      "reason": "Path analysis here depends on understanding probabilistic model structure and uncertainty propagation."
+    },
+    {
+      "from": "Optimization",
+      "to": "Artificial Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training neural networks fundamentally requires optimization of model parameters."
+    },
+    {
+      "from": "Optimization",
+      "to": "Regression and Classification",
+      "relation_type": "strong_prerequisite",
+      "reason": "Many regression and classification methods are learned by optimizing an objective or loss function."
+    },
+    {
+      "from": "Variance",
+      "to": "Model Evaluation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding model evaluation requires grasping variability and stability of performance estimates."
+    }
+  ]
+}

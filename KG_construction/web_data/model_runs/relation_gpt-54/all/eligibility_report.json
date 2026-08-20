@@ -1,0 +1,551 @@
+[
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611",
+    "run_id": "01-introduction-to-rag-7cfd7fd31611",
+    "file_name": "01-introduction-to-rag.pdf",
+    "sha256": "7cfd7fd316117255ab11718aa1e83a6c03b9d0edc4490e8699fe63ebdbeec833",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611\\01-introduction-to-rag.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed",
+    "run_id": "01-simple-qa-readme-77b046bfe0ed",
+    "file_name": "01-simple-qa-README.pdf",
+    "sha256": "77b046bfe0ed2527136ad23871b2934f8e7cbc705e43e045313db8cd6a03b31d",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-simple-qa-readme\\77b046bfe0ed\\01-simple-qa-README.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01_intro\\d3a9f91a36eb",
+    "run_id": "01_intro-d3a9f91a36eb",
+    "file_name": "01_intro.pdf",
+    "sha256": "d3a9f91a36ebd8bd8ebe4eda805f5cf4f46e6f8d9f01730607fc5b6fbc9b2682",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01_intro\\d3a9f91a36eb\\01_intro.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864",
+    "run_id": "02-document-chat-readme-f1744a249864",
+    "file_name": "02-document-chat-README.pdf",
+    "sha256": "f1744a249864450d67120ba312b26c2636653114e1f310c5e4ede584daa2f533",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-document-chat-readme\\f1744a249864\\02-document-chat-README.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-understanding-embeddings\\2a611584541b",
+    "run_id": "02-understanding-embeddings-2a611584541b",
+    "file_name": "02-understanding-embeddings.pdf",
+    "sha256": "2a611584541beb27fa2667ea00074e6362e236cbbf8855464a3873eea74bec2e",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02-understanding-embeddings\\2a611584541b\\02-understanding-embeddings.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072",
+    "run_id": "02_linear_algebra-a7843d98e072",
+    "file_name": "02_linear_algebra.pdf",
+    "sha256": "a7843d98e0724cf58c8ae9bee3372da997558109d730374e7f9a2203e9891a55",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\02_linear_algebra\\a7843d98e072\\02_linear_algebra.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95",
+    "run_id": "03-vector-databases-retrieval-4f238ede4c95",
+    "file_name": "03-vector-databases-retrieval.pdf",
+    "sha256": "4f238ede4c95af9fb9948b035f2137922a0d6d3213fa3951df3caf20caa891d0",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03-vector-databases-retrieval\\4f238ede4c95\\03-vector-databases-retrieval.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6",
+    "run_id": "03_prob-20e52d6d8bb6",
+    "file_name": "03_prob.pdf",
+    "sha256": "20e52d6d8bb6215b1a95cb6efe928b7dc4cee97a57c84283e905f5b70c9cbfe9",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\03_prob.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04-language-models-generation\\fd2b5b9f4415",
+    "run_id": "04-language-models-generation-fd2b5b9f4415",
+    "file_name": "04-language-models-generation.pdf",
+    "sha256": "fd2b5b9f44155aa1e35cd4d2afa1456991aca98ce295bd2a3b8771c929232f80",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04-language-models-generation\\fd2b5b9f4415\\04-language-models-generation.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3",
+    "run_id": "04_numerical-dd3a4dd53cd3",
+    "file_name": "04_numerical.pdf",
+    "sha256": "dd3a4dd53cd3c82a250f47305f44f4d4066b36ef2443397723055de4ed45a9a4",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\04_numerical\\dd3a4dd53cd3\\04_numerical.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b",
+    "run_id": "05-building-simple-rag-35ec62f5ee2b",
+    "file_name": "05-building-simple-rag.pdf",
+    "sha256": "35ec62f5ee2b5b76fb8c40725f638949b72d9b584ee2f8d77dfd3fe051af777d",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05-building-simple-rag\\35ec62f5ee2b\\05-building-simple-rag.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05_ml\\f11d16937e75",
+    "run_id": "05_ml-f11d16937e75",
+    "file_name": "05_ml.pdf",
+    "sha256": "f11d16937e75185b7cfb6a106cd19511244a4b644cff76cfe990dbc30f598ff1",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\05_ml\\f11d16937e75\\05_ml.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6",
+    "run_id": "06-advanced-rag-techniques-a65350c7ccf6",
+    "file_name": "06-advanced-rag-techniques.pdf",
+    "sha256": "a65350c7ccf69c097cdf31e91557343e55c158cc55979ea6eaf7d667915c9002",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06-advanced-rag-techniques\\a65350c7ccf6\\06-advanced-rag-techniques.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06_mlp\\01e27d8d0770",
+    "run_id": "06_mlp-01e27d8d0770",
+    "file_name": "06_mlp.pdf",
+    "sha256": "01e27d8d07707beb3f8eb4ba3bfe4018f3dd4a2d14e2976aaba0ddf32c867207",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\06_mlp\\01e27d8d0770\\06_mlp.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e",
+    "run_id": "07_regularization-997097d7933e",
+    "file_name": "07_regularization.pdf",
+    "sha256": "997097d7933e27001ae81f533cedcc36197bcee6d3b669d361df7364dd833a13",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\07_regularization\\997097d7933e\\07_regularization.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b",
+    "run_id": "09_conv-426f5e52542b",
+    "file_name": "09_conv.pdf",
+    "sha256": "426f5e52542b14242773b6643431c21c065ce3b101388d03d2f04796b1bf11b7",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\09_conv\\426f5e52542b\\09_conv.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\10_rnn\\9b582c970ecc",
+    "run_id": "10_rnn-9b582c970ecc",
+    "file_name": "10_rnn.pdf",
+    "sha256": "9b582c970ecc4819d3af8b0e00ee0461759bc7194a6793221237674e0fb104a8",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\10_rnn\\9b582c970ecc\\10_rnn.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226",
+    "run_id": "11_practical-a68993be7226",
+    "file_name": "11_practical.pdf",
+    "sha256": "a68993be72264d8775c2fd4af57f6dc69666266354cff3772af69be720adce15",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\11_practical\\a68993be7226\\11_practical.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\12_applications\\138e122a8bdc",
+    "run_id": "12_applications-138e122a8bdc",
+    "file_name": "12_applications.pdf",
+    "sha256": "138e122a8bdc0fa2c0fc34f6d2a21cb9b0fb30251be0c8aced8899aca2291766",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\12_applications\\138e122a8bdc\\12_applications.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a",
+    "run_id": "13_linear_factors-92de7f819b1a",
+    "file_name": "13_linear_factors.pdf",
+    "sha256": "92de7f819b1aa57206582f6fa9d0179706012976becc2387dfbd9ebab9fe7985",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\13_linear_factors\\92de7f819b1a\\13_linear_factors.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b",
+    "run_id": "14_autoencoders-130bdd5f620b",
+    "file_name": "14_autoencoders.pdf",
+    "sha256": "130bdd5f620b395c4f6d53184474648caf3be5832c689aa31fd97005725c31fb",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\14_autoencoders\\130bdd5f620b\\14_autoencoders.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\15_representation\\4d0c1e4d0bc5",
+    "run_id": "15_representation-4d0c1e4d0bc5",
+    "file_name": "15_representation.pdf",
+    "sha256": "4d0c1e4d0bc519f1b0bc6102880f21b37fb7ae8607d47e6f5196957e6896bf16",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\15_representation\\4d0c1e4d0bc5\\15_representation.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1",
+    "run_id": "16_graphical_models-26ce146b38e1",
+    "file_name": "16_graphical_models.pdf",
+    "sha256": "26ce146b38e1c1f2f118f14cbcecff26aae98df67f61985095882b84bc028271",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\16_graphical_models\\26ce146b38e1\\16_graphical_models.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c",
+    "run_id": "17_monte_carlo-ff4d1de5355c",
+    "file_name": "17_monte_carlo.pdf",
+    "sha256": "ff4d1de5355c472efdbd2b351a2731e72f41003a558cbd08434224fb330ff8dd",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\17_monte_carlo\\ff4d1de5355c\\17_monte_carlo.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b",
+    "run_id": "18_partition-b39fd6ffea3b",
+    "file_name": "18_partition.pdf",
+    "sha256": "b39fd6ffea3b937ecf281268343eef963d6f8c333586181b97c21c81b459770c",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\18_partition\\b39fd6ffea3b\\18_partition.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0",
+    "run_id": "2024-cs224n-python-review-session-slides.pptx-17ef722b88a0",
+    "file_name": "2024 CS224N Python Review Session Slides.pptx.pdf",
+    "sha256": "17ef722b88a092a524ec7d5575c7687908d4f8f6ab96948cf4ed6bb988824b8b",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\2024-cs224n-python-review-session-slides.pptx\\17ef722b88a0\\2024 CS224N Python Review Session Slides.pptx.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34",
+    "run_id": "andrew-ng-machine-learning-yearning-7e40402fdf34",
+    "file_name": "andrew-ng-machine-learning-yearning.pdf",
+    "sha256": "7e40402fdf34502f85a74e6b6629ab1caa2f4c68f2620563c92cf59b06a5d303",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\andrew-ng-machine-learning-yearning\\7e40402fdf34\\andrew-ng-machine-learning-yearning.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\batch_norm\\d1d6f8695dd4",
+    "run_id": "batch_norm-d1d6f8695dd4",
+    "file_name": "batch_norm.pdf",
+    "sha256": "d1d6f8695dd447c046d292bd0e7da5e0e78e674ec8fa34030291f92eb214a97a",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\batch_norm\\d1d6f8695dd4\\batch_norm.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-history\\5845dce2ddc2",
+    "run_id": "cs224n-2026-lecture01-history-5845dce2ddc2",
+    "file_name": "cs224n-2026-lecture01-history.pdf",
+    "sha256": "5845dce2ddc24d1fb69d17f50913cf0634a714bea8254fb93b0ee99c1812682e",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-history\\5845dce2ddc2\\cs224n-2026-lecture01-history.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2",
+    "run_id": "cs224n-2026-lecture01-intro-f9a723b011b2",
+    "file_name": "cs224n-2026-lecture01-intro.pdf",
+    "sha256": "f9a723b011b2e55efe11f2eb52665b1c3ca2b0071162b0eaa76dd4dd6202ef6d",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture01-intro\\f9a723b011b2\\cs224n-2026-lecture01-intro.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88",
+    "run_id": "cs224n-2026-lecture02-wordvecs-fd0b4ad8af88",
+    "file_name": "cs224n-2026-lecture02-wordvecs.pdf",
+    "sha256": "fd0b4ad8af88732a64ce947e044b827ef8e05c8dcb808878b4762958ac078c29",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture02-wordvecs\\fd0b4ad8af88\\cs224n-2026-lecture02-wordvecs.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125",
+    "run_id": "cs224n-2026-lecture03-neuralnets-8aae94ed0125",
+    "file_name": "cs224n-2026-lecture03-neuralnets.pdf",
+    "sha256": "8aae94ed012561752b0e064e7d1d6d6f81ebb973da4d19e44693e3f0763cf773",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture03-neuralnets\\8aae94ed0125\\cs224n-2026-lecture03-neuralnets.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee",
+    "run_id": "cs224n-2026-lecture04-rnnlm-590f0f50aaee",
+    "file_name": "cs224n-2026-lecture04-rnnlm.pdf",
+    "sha256": "590f0f50aaee7f4e8cc655b113d8225ad50bf87885aa83651984e0c682196ac1",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture04-rnnlm\\590f0f50aaee\\cs224n-2026-lecture04-rnnlm.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8",
+    "run_id": "cs224n-2026-lecture05-transformers-0e9017f9dbd8",
+    "file_name": "cs224n-2026-lecture05-transformers.pdf",
+    "sha256": "0e9017f9dbd8d3f995f32abac5951abd76d09cd78ed8fc5de20ebac32cbbe9e4",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture05-transformers\\0e9017f9dbd8\\cs224n-2026-lecture05-transformers.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c",
+    "run_id": "cs224n-2026-lecture06-final-project-b7818dcc886c",
+    "file_name": "cs224n-2026-lecture06-final-project.pdf",
+    "sha256": "b7818dcc886c2fb45467bf3b32280deb78ed4b66b36ba70e77011db2bc5197c1",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture06-final-project\\b7818dcc886c\\cs224n-2026-lecture06-final-project.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71",
+    "run_id": "cs224n-2026-lecture07-pretraining-2011d5086c71",
+    "file_name": "cs224n-2026-lecture07-pretraining.pdf",
+    "sha256": "2011d5086c717a25c628d0af7e6d2efa9847f9e58509a157b108935ae446ec6a",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture07-pretraining\\2011d5086c71\\cs224n-2026-lecture07-pretraining.pdf",
+    "status": "excluded",
+    "reason": "manifest_status:failed;missing:stage2c_similarity_edges.json,stage3_topics_with_summary.json"
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture08-posttraining\\f71e4c3743c8",
+    "run_id": "cs224n-2026-lecture08-posttraining-f71e4c3743c8",
+    "file_name": "cs224n-2026-lecture08-posttraining.pdf",
+    "sha256": "f71e4c3743c82287ff76da956afb533d14bac7b9ac236861187c347a875c698f",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture08-posttraining\\f71e4c3743c8\\cs224n-2026-lecture08-posttraining.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5",
+    "run_id": "cs224n-2026-lecture09-peft-c94167e219b5",
+    "file_name": "cs224n-2026-lecture09-peft.pdf",
+    "sha256": "c94167e219b5feef4d3277251cfc10ebaccf9fb1ab491d4da88199778a519356",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5\\cs224n-2026-lecture09-peft.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture10-rag-agents\\2e97edb678d2",
+    "run_id": "cs224n-2026-lecture10-rag-agents-2e97edb678d2",
+    "file_name": "cs224n-2026-lecture10-rag-agents.pdf",
+    "sha256": "2e97edb678d244fb493e5f9d1ef113151f3096a72896020a94d29e1e62bde31f",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture10-rag-agents\\2e97edb678d2\\cs224n-2026-lecture10-rag-agents.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4",
+    "run_id": "cs224n-2026-lecture11-evaluation-93703513bbd4",
+    "file_name": "cs224n-2026-lecture11-evaluation.pdf",
+    "sha256": "93703513bbd445f9545f6ed83044917cd209b315fe29b25e3acb63af1d616844",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture11-evaluation\\93703513bbd4\\cs224n-2026-lecture11-evaluation.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture12-reasoning-part1\\4f4ba00d02f4",
+    "run_id": "cs224n-2026-lecture12-reasoning-part1-4f4ba00d02f4",
+    "file_name": "cs224n-2026-lecture12-reasoning-part1.pdf",
+    "sha256": "4f4ba00d02f42ef9964e6b2af352cb2d59c84aa3281742a13c8a3ff6687a8c93",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture12-reasoning-part1\\4f4ba00d02f4\\cs224n-2026-lecture12-reasoning-part1.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture13-reasoning-part2\\9be210e8836e",
+    "run_id": "cs224n-2026-lecture13-reasoning-part2-9be210e8836e",
+    "file_name": "cs224n-2026-lecture13-reasoning-part2.pdf",
+    "sha256": "9be210e8836e9758c570ddb82c79953d06ed3486d9cb4eb4b7772c39ce2ad7dc",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture13-reasoning-part2\\9be210e8836e\\cs224n-2026-lecture13-reasoning-part2.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53",
+    "run_id": "cs224n-2026-lecture14-guest-julie-tokenization-multilinguality-759f414aec53",
+    "file_name": "cs224n-2026-lecture14-guest-julie-tokenization-multilinguality.pdf",
+    "sha256": "759f414aec53e37653eab4d034f278b5bc7cfec754ee30c067474bffc3e9c846",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality\\759f414aec53\\cs224n-2026-lecture14-guest-julie-tokenization-multilinguality.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture16-impact-on-humanity\\1b2803f69d2c",
+    "run_id": "cs224n-2026-lecture16-impact-on-humanity-1b2803f69d2c",
+    "file_name": "cs224n-2026-lecture16-impact-on-humanity.pdf",
+    "sha256": "1b2803f69d2c7a700b36c3f8898b673cebeed8a901ffcbbbfbf6300ea3243e02",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture16-impact-on-humanity\\1b2803f69d2c\\cs224n-2026-lecture16-impact-on-humanity.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture19-open-questions\\f6d8d31e8a6f",
+    "run_id": "cs224n-2026-lecture19-open-questions-f6d8d31e8a6f",
+    "file_name": "cs224n-2026-lecture19-open-questions.pdf",
+    "sha256": "f6d8d31e8a6f7c4895b60f63acbcbb13e2681f935e648b312cced407dd0dc175",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture19-open-questions\\f6d8d31e8a6f\\cs224n-2026-lecture19-open-questions.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-spr2024-lecture15-life-after-dpo-lambert\\e534f25111e7",
+    "run_id": "cs224n-spr2024-lecture15-life-after-dpo-lambert-e534f25111e7",
+    "file_name": "cs224n-spr2024-lecture15-life-after-dpo-lambert.pdf",
+    "sha256": "e534f25111e7b548f646fb8937b276cd92310de09e2d1732785cf6a5c005a26c",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-spr2024-lecture15-life-after-dpo-lambert\\e534f25111e7\\cs224n-spr2024-lecture15-life-after-dpo-lambert.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dls_2016\\562b4445509a",
+    "run_id": "dls_2016-562b4445509a",
+    "file_name": "dls_2016.pdf",
+    "sha256": "562b4445509ab719019bd4232e0f2ee13ca0d4cfd03fdf7c95070c9d5e063e36",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dls_2016\\562b4445509a\\dls_2016.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Final_Lecture___Design_Engineering\\e751bcf4b967",
+    "run_id": "dl___final_lecture___design_engineering-e751bcf4b967",
+    "file_name": "DL___Final_Lecture___Design_Engineering.pdf",
+    "sha256": "e751bcf4b96774c4a39e780eb74cfc8050a0436e4e36a5eabf18a4ee8c1478c4",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___final_lecture___design_engineering\\e751bcf4b967\\DL___Final_Lecture___Design_Engineering.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Lecture_6___Design_Engineering\\fb7c77f387de",
+    "run_id": "dl___lecture_6___design_engineering-fb7c77f387de",
+    "file_name": "DL___Lecture_6___Design_Engineering.pdf",
+    "sha256": "fb7c77f387de18289bb233efe426af04569c12151847cd4bcc5084c280ab6249",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___lecture_6___design_engineering\\fb7c77f387de\\DL___Lecture_6___Design_Engineering.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_1___design_engineering-2\\4b5a4de9201e",
+    "run_id": "dl___week_1___design_engineering-2-4b5a4de9201e",
+    "file_name": "DL___Week_1___Design_Engineering (2).pdf",
+    "sha256": "4b5a4de9201e8dfc636a212cf8862925f07eab0ec822f732c719e1e4d47cbe71",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_1___design_engineering-2\\4b5a4de9201e\\DL___Week_1___Design_Engineering (2).pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_2___Design_Engineering\\a7ff94af9bad",
+    "run_id": "dl___week_2___design_engineering-a7ff94af9bad",
+    "file_name": "DL___Week_2___Design_Engineering.pdf",
+    "sha256": "a7ff94af9bad57a06aaaa032b35e4e9aa5a840c514c60ba56f0332bc1e49ba6b",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_2___design_engineering\\a7ff94af9bad\\DL___Week_2___Design_Engineering.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\DL___Week_3___Design_Engineering\\bbb69aa46441",
+    "run_id": "dl___week_3___design_engineering-bbb69aa46441",
+    "file_name": "DL___Week_3___Design_Engineering.pdf",
+    "sha256": "bbb69aa46441b9d90507812f2343f84e83fac73fe35df22e6020d983bf72e27a",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_3___design_engineering\\bbb69aa46441\\DL___Week_3___Design_Engineering.pdf",
+    "status": "excluded",
+    "reason": "manifest_status:running;missing:stage2c_similarity_edges.json,stage3_topics_with_summary.json"
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525",
+    "run_id": "front_matter-1f6f329f9525",
+    "file_name": "front_matter.pdf",
+    "sha256": "1f6f329f952557e7896b5d67c55c88b6517a6bb1873b836f6f44ff289a89428a",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\front_matter\\1f6f329f9525\\front_matter.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\glossary\\c9772e6502e2",
+    "run_id": "glossary-c9772e6502e2",
+    "file_name": "GLOSSARY.pdf",
+    "sha256": "c9772e6502e25fac72196098a3df34fe4d5724021b3a62ad10ea48a58c54e990",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\glossary\\c9772e6502e2\\GLOSSARY.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8",
+    "run_id": "islp_website-278d3bdd49a8",
+    "file_name": "ISLP_website.pdf",
+    "sha256": "278d3bdd49a8a480c2ff8e03245822caad8a3a48e81afd6d039c52c8fc13ad60",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islp_website\\278d3bdd49a8\\ISLP_website.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islrv2_corrected_june_2023\\7ed447d1a513",
+    "run_id": "islrv2_corrected_june_2023-7ed447d1a513",
+    "file_name": "ISLRv2_corrected_June_2023.pdf",
+    "sha256": "7ed447d1a513c5dd95240a829603310f1d319a14a8079ddfb180c6a3d9d9a6ff",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\islrv2_corrected_june_2023\\7ed447d1a513\\ISLRv2_corrected_June_2023.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\linear_algebra\\02de2e03aa08",
+    "run_id": "linear_algebra-02de2e03aa08",
+    "file_name": "linear_algebra.pdf",
+    "sha256": "02de2e03aa08edf3de28d2e8d5126720896709b55c06030f68dd31f148c0d32e",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\linear_algebra\\02de2e03aa08\\linear_algebra.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\quickstart\\007d88a49ebb",
+    "run_id": "quickstart-007d88a49ebb",
+    "file_name": "QUICKSTART.pdf",
+    "sha256": "007d88a49ebb8993faad3f758dfc51910eb49ec944ab36481982af0e210c75bf",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\quickstart\\007d88a49ebb\\QUICKSTART.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421",
+    "run_id": "readme-3ceb60c79421",
+    "file_name": "README.pdf",
+    "sha256": "3ceb60c79421b335d017398a98cbb6891ef3c7a51ba0b7724bc03e134ca8c3d5",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\readme\\3ceb60c79421\\README.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0",
+    "run_id": "sgd_and_cost_structure-84a4549929c0",
+    "file_name": "sgd_and_cost_structure.pdf",
+    "sha256": "84a4549929c00ccaf513e1228c07b4fac6f3d313a24d0f2546c7e4abc58b5bc6",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0\\sgd_and_cost_structure.pdf",
+    "status": "eligible",
+    "reason": ""
+  },
+  {
+    "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd",
+    "run_id": "structure-24c34254f5dd",
+    "file_name": "STRUCTURE.pdf",
+    "sha256": "24c34254f5dd8c5184685758a15f0654e15f954f972c7dacba5d6169c865d1b9",
+    "pdf_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\structure\\24c34254f5dd\\STRUCTURE.pdf",
+    "status": "excluded",
+    "reason": "manifest_status:running;missing:stage3_topics_with_summary.json"
+  }
+]

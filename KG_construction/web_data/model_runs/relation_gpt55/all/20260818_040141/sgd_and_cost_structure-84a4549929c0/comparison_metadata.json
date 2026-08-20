@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\sgd_and_cost_structure\\84a4549929c0",
+  "run_id": "sgd_and_cost_structure-84a4549929c0",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:17:21.873746+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "49ebfa1b3a71fd46e45662fa00397d1f45191171730f0c0a532830f2d55c88f6",
+    "stage2a_topics_hybrid.json": "7748b64e14f1171da9a8ff4a467423b6cb8e9c66527e54dd24c98546affc9fed",
+    "stage2c_similarity_edges.json": "4599a5c926a64dab94318c928f9627e2b333fe510274e65394e23c1b815ff868",
+    "stage3_topics_with_summary.json": "32056f9865841c75e431f75cca6cdeee3848ef691eff0e7ea970539ab5f66835"
+  },
+  "old_relation_count": 6,
+  "new_relation_count": 6,
+  "new_node_count": 9,
+  "new_edge_count": 8,
+  "golden_path_resource": false
+}

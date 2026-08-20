@@ -1,0 +1,1291 @@
+2018 IEEE European Symposium on Security and Privacy
+So K: Security and Privacy in Machine Learning
+∗ ∗ † †
+Nicolas Papernot , Patrick Mc Daniel , Arunesh Sinha , and Michael P. Wellman
+∗
+Pennsylvania State University
+†
+University of Michigan
+{ngp 5056,mcdaniel}@cse.psu.edu, {arunesh,wellman}@umich.edu
+Abstract—Advances in machine learning (ML) in recent years In this paper, we develop a unified perspective on this
+have enabled a dizzying array of applications such as data field, based on a threat model that considers characteristics
+analytics, autonomous systems, and security diagnostics. ML of the attack surface, adversarial goals, and possible de-
+isnowpervasive—newsystemsandmodelsarebeingdeployed fense and attack capabilities particular to systems built on
+ineverydomainimaginable,leadingtowidespreaddeployment machine learning. This security model serves as a roadmap
+of software based inference and decision making. There is for surveying knowledge about attacks and defenses of ML
+growing recognition that ML exposes new vulnerabilities in systems.Wedistillmajorthemesandhighlightresultsinthe
+softwaresystems,yetthetechnicalcommunity’sunderstanding formoftake-awaymessagesaboutthisnewareaofresearch.
+of the nature and extent of these vulnerabilities remains In exploring security and privacy in this domain, it is
+limited. We systematize findings on ML security and privacy, instructive to view systems built on ML through the prism
+focusing on attacks identified on these systems and defenses of the classical confidentiality, integrity, and availability
+craftedtodate.Wearticulateacomprehensivethreatmodelfor (CIA)model[2].Inthiswork,confidentialityisdefinedwith
+ML,andcategorizeattacksanddefenseswithinanadversarial respect to the model or its data. Attacks on confidentiality
+framework.Keyinsightsresultingfromworksbothinthe ML attempt to expose the model structure or parameters (which
+andsecuritycommunitiesareidentifiedandtheeffectivenessof may be highly valuable intellectual property) or the data
+approachesarerelatedtostructuralelementsof MLalgorithms used to train and test it (e.g., patient data). The latter class
+and the data used to train them. In particular, it is apparent of attacks have a potential to impact the privacy of the
+thatconstructingatheoreticalunderstandingofthesensitivity data source, especially when model users are not trusted,
+of modern ML algorithms to the data they analyze, a` la PAC which in cases such as patient clinical data used to train
+medical diagnostic models may be highly sensitive. We
+theory, will foster a science of security and privacy in ML.
+defineattacksontheintegrityasthosethatinduceparticular
+1. Introduction
+outputs or behaviors of the adversary’s choosing. They are
+Advances in the science of machine learning (ML) cou- oftenconductedthroughmanipulationsofthedataonwhich
+pled with growth in computational capacities transformed the ML system trains or predicts. Where those adversarial
+the technology landscape, as embodied by the automation behaviorsattempttopreventlegitimateusersfromaccessing
+of Machine Learningasaserviceoncommercialcloudplat- meaningful model outputs or the features of the system
+forms. For example, ML-driven data analytics fundamen- itself, such attacks fall within the realm of availability.
+tally altered the practice of health care and finance. Within A second perspective in evaluating security and privacy
+the security domain, detection and monitoring systems now focusesonattacksanddefenseswithrespecttothemachine
+consume vast amounts of data and extract actionable infor- learning pipeline. Here, we consider the lifecycle of a ML-
+mationthatinthepastwouldhavebeenimpossible.Inspite based system from training to inference, and identify the
+of these spectacular advances, the technical community’s adversarial goals and means at each phase. We observe that
+understanding of the vulnerabilities inherent to the design attacks on training generally attempt to influence the model
+of systems built on ML and the means to defend against byalteringorinjectingtrainingsamples—inessenceguiding
+them are still in its infancy. There is a broad and pressing the learning process towards a vulnerable model. Attacks at
+callto advanceascienceof securityandprivacyin ML[1]. inference time (runtime) are more diverse. Adversaries use
+Suchcallshavenotgoneunheeded.Manyinvestigations exploratory attacks to induce targeted outputs, and oracle
+have sought to expand our understanding of the threats, attacks to extract the model itself.
+attacks and defenses of systems built on ML. This work, The science of defenses for machine learning is some-
+however,isfragmentedacrossseveralresearchcommunities what less well developed. We consider several defen-
+including ML,security,statistics,andtheoryofcomputation. sive goals. The first is robustness to distribution drifts—
+As yet there is no unified lexicon or science spanning these maintainingperformanceasfaraspossiblewhenthetraining
+disciplines. The fragmentation presents both a motivation and runtime input distributions differ. The second is to pro-
+andchallengeforourefforttosystematizeknowledgeabout vide formal guarantees of privacy preservation—bounding
+the myriad of security and privacy issues that involve ML. the amount of information exposed by a learned model.
+© 2018, Nicolas Papernot. Under license to IEEE. 399
+DOI 10.1109/Euro SP.2018.00035
+
+2.1. Overview of Machine Learning Tasks
+(cid:2)(cid:3)(cid:4)(cid:5)(cid:3)(cid:6)(cid:4)(cid:7)(cid:8)(cid:9)(cid:10)(cid:8)(cid:11)(cid:12)(cid:13)(cid:14)(cid:6)(cid:15)(cid:4)(cid:8)(cid:16)(cid:4)(cid:12)(cid:5)(cid:15)(cid:6)(cid:15)(cid:17)
+#$ (cid:2)(cid:3)(cid:4)(cid:5)(cid:4)(cid:6)(cid:7)(cid:8)(cid:3)(cid:9)(cid:3)(cid:6)(cid:7)(cid:10)(cid:9)(cid:3)(cid:11)(cid:12)(cid:4) Machine learning automates the analysis of (typically)
+large data sets, producing models or decision procedures
+reflecting general relationships found in that data [5]. ML
+(cid:18)(cid:4)(cid:13)(cid:19)(cid:5)(cid:6)(cid:20)(cid:21)(cid:8)(cid:22)(cid:4)(cid:10)(cid:6)(cid:15)(cid:6)(cid:20)(cid:6)(cid:9)(cid:15)(cid:23)(cid:8)(cid:12)(cid:15)(cid:24)(cid:8)(cid:25)(cid:9)(cid:12)(cid:26)(cid:23)
+#%
+(cid:13)(cid:9)(cid:9)(cid:3)(cid:14)(cid:5)(cid:7)(cid:10)(cid:15)(cid:16)(cid:17)(cid:3)(cid:14)(cid:12)(cid:6)(cid:7)(cid:13)(cid:18)(cid:19)(cid:12)(cid:16)(cid:4)(cid:3)(cid:16)(cid:20)(cid:3)(cid:21)(cid:7)(cid:22)(cid:3)(cid:23)(cid:3)(cid:24)(cid:20)(cid:21)(cid:20)(cid:9)(cid:20)(cid:12)(cid:4)(cid:7)(cid:3)(cid:25)(cid:18)(cid:7)(cid:26)(cid:27)(cid:3)(cid:21)(cid:4) techniques are commonly divided into three classes, char-
+acterized by the nature of the data available for analysis.
+Supervised learning: Methods that are given training exam-
+#& (cid:27)(cid:5)(cid:12)(cid:6)(cid:15)(cid:6)(cid:15)(cid:17)(cid:28)(cid:20)(cid:6)(cid:29)(cid:4)(cid:8)(cid:30)(cid:20)(cid:20)(cid:12)(cid:13)(cid:31)(cid:23) (cid:27)(cid:4)(cid:23)(cid:20)(cid:28)(cid:20)(cid:6)(cid:29)(cid:4)(cid:8) (cid:6)(cid:15)(cid:10)(cid:4)(cid:5)(cid:4)(cid:15)(cid:13)(cid:4)!(cid:8)(cid:30)(cid:20)(cid:20)(cid:12)(cid:13)(cid:31)(cid:23) #’
+(cid:3)(cid:11)(cid:3)(cid:20)(cid:25)(cid:4)(cid:9)(cid:7)(cid:28)(cid:25)(cid:9)(cid:12)(cid:11)(cid:16)(cid:20)(cid:9)(cid:29)(cid:7)(cid:3)(cid:25)(cid:18)(cid:7)(cid:30)(cid:16)(cid:20)(cid:19)(cid:3)(cid:14)(cid:29) (cid:3)(cid:11)(cid:3)(cid:20)(cid:25)(cid:4)(cid:9)(cid:7)(cid:28)(cid:25)(cid:9)(cid:12)(cid:11)(cid:16)(cid:20)(cid:9)(cid:29)(cid:7)(cid:3)(cid:25)(cid:18)(cid:7)(cid:30)(cid:16)(cid:20)(cid:19)(cid:3)(cid:14)(cid:29) plesintheformofinputslabeledwithcorrespondingoutputs
+are supervised learning techniques. Generally, the objective
+is to induce a model mapping inputs (including unseen
+(cid:22)(cid:4)(cid:10)(cid:4)(cid:15)(cid:24)(cid:6)(cid:15)(cid:17)(cid:8)(cid:11)(cid:16)
+#( (cid:2)(cid:27)(cid:31)(cid:3)(cid:16)(cid:18)(cid:4)(cid:7) (cid:27)(cid:24)(cid:15)(cid:4)(cid:9)(cid:6)(cid:7)(cid:30)(cid:16)(cid:20)(cid:19)(cid:3)(cid:9)(cid:12)(cid:6)(cid:7)(cid:3)(cid:25)(cid:18)(cid:7)(cid:13)(cid:14)(cid:14)(cid:27)(cid:15)(cid:25)(cid:9)(cid:3)(cid:24)(cid:21)(cid:12)(cid:7)!" inputs) to outputs. If the output domain is categorical, the
+taskiscalledclassification,andifcardinalthetaskisregres-
+Figure 1.Outlineforthis So K. sion.Classicexamplesofsupervisedlearningtasksinclude:
+object recognition in images [6], machine translation [7],
+and spam filtering [8].
+Third, defenses aim to ensure fairness (preventing biased Unsupervised learning:Whenthemethodisgivenunlabeled
+outputs) and accountability (explanations of why particular inputs,itstaskisunsupervised.Thisincludesproblemssuch
+outputs were generated, also known as transparency). as clustering points according to a similarity metric [9], di-
+Inexploringthesefacetsofmachinelearningattacksand mensionality reduction to project data in lower dimensional
+defense, we make the following contributions: subspaces [10], and model pre-training [11]. For instance,
+clustering may be applied to anomaly detection [12].
+• Weintroduceaunifyingthreatmodeltoallowstruc- Reinforcement learning: Data in the form of sequences of
+tured reasoning about the security and privacy of actions,observations,andrewards(e.g.,runsofvideogame
+systemsthatincorporate ML(Section 3).Thismodel play) fall in the scope of reinforcement learning (RL) [13],
+departs from previous efforts by considering the [14]. The goal of RL is to produce a policy for acting in
+entire data pipeline, of which ML is a component, the environment, and so it is the subfield of ML concerned
+instead of ML algorithms in isolation. with planning and control. RL agents learn by experience
+• We taxonomize attacks and defenses identified by exploring their environments. It was reinforcement learning
+the various technical communities. Section 4 details in combination with supervised and unsupervised methods
+the challenges of learning in adversarial settings. that recently enabled a computer to defeat a human cham-
+Section 5 considersdeployedsystems.Beyondprevi- pion at the game of Go [15].
+oussurveysoftheseareas,wecoverattacksmounted
+Readers interested in surveys of ML are well served by
+with adversarial examples and recent progress to-
+many books covering this rich topic [5], [16], [17]. Work
+wards practical differentially private learning.
+on ML security and privacy to date has been primarily
+• We systematize desirable properties to improve the
+conducted in supervised settings, as reflected by our pre-
+securityandprivacyofmachinelearning(Section 6).
+sentation in Sections 4 and 5. Since security issues are just
+asrelevantforunsupervisedandreinforcementlearning,we
+ML methods take several forms, such as classification, re-
+present results in more general settings when meaningful.
+gression, and policy learning. For brevity and ease of expo-
+sition,wefocusmuchofthecurrentpaperonclassification.
+2.2. ML Stages: Training and Inference
+Wefurtherstatethattherelatedstudyoftheimplicationsof
+AI on safety in societies is outside the scope of this paper, Itishelpfultoseparatethetrainingstagewhereamodel
+andreferinterestedreaderstoareviewby Amodeietal.[3]. is learned from input data, from the inference stage where
+We present a systematization of knowledge about secu- the trained model is applied to a task.
+rity and privacy in ML, focusing on attacks and defenses.
+Training: Most ML models can be described as functions
+Based on our analysis of the ML threat model, we have
+hθ(x) taking an input x and parametrized by a vector
+selected seminal and representative works from the litera- θ ∈ Θ.1 The output hθ(x) is the model’s prediction for
+ture.Whileweattempttobecomprehensive,itisapractical
+x of some property of interest. The input x is typically rep-
+impossibilitytociteallworks.Forinstance,wedonotcover
+resented as a vector of values called features. The space of
+trusted computing platforms for ML [4]. We begin in the functions H={x(cid:3)→hθ(x)|θ∈Θ} is the set of candidate
+nextsectionbyintroducingthebasicstructureandlexiconof
+hypotheses.Alearningalgorithmutilizesthetrainingdatato
+MLsystems.Thepaper’sorganizationisshownin Figure 1.
+determineθ.Whenlearningissupervised,theparametersare
+adjustedtoalignmodelpredictionshθ(x)withtheexpected
+2. About Machine Learning output y as indicated by the dataset. This is achieved by
+minimizing a loss function that captures the dissimilarity
+We start with a brief overview of how systems apply
+of hθ(x) and corresponding y. The model performance is
+ML. In particular, we compare different kinds of learning
+tasks, and some specifics of their practical implementation. 1.Somemodels(e.g.,nearest-neighbor[18])arenon-parametric.
+400
+
+Physical Digital Machine Learning Physical
+Domain Representation Model Domain
+Sensors,
+camera, I/O
+Generic Machine hardware Pre-processing Apply model Output analysis
+Learning System
+Object, action Bits Input features Outputs Action
+Camera Pre-processing Apply model Output analysis
+Automotive
+Computer Vision
+Traffic sign JPEG 3 D tensor in [0,1] Class probabilities Car brakes
+Packet sniffing
+on network card Pre-processing Apply model Output analysis
+Network Intrusion
+Detection
+Attackk nneettwwoorrkk traffic TCP dump Packet headers Attack probability SShhuttddown
+Flow metadata infrastructure
+Figure 2.System’sattacksurface.Thegenericmodel(toprow)isillustratedwithtwoexamplescenarios(middleandbottomrows):acomputervision
+modelusedbyanautomotivesystemtorecognizetrafficsignsontheroadandanetworkintrusiondetectionsystem.
+thenvalidatedonatestdataset,whichmustbedisjointfrom following sections builds on previous treatments [19], [20],
+the training dataset in order to measure the model’s gener- [21].Wefurtherdrawoninsightsfromrecentdevelopments
+alization (performance on unseen data). For a supervised likeadversarialexamplesandmembershipinferenceattacks.
+problem, we can evaluate model accuracy with respect to
+3.1. The ML Attack Surface
+test data: a set of labeled data held distinct from training
+data. For example, in malware classification (see above), The attack surface of a system built with data and
+accuracywouldmeasuretheproportionofpredictionshθ(x) machine learning depends on its purpose. Nevertheless, one
+that matched the label y (malware or benign) associated canviewsuchsystemswithinageneralizeddataprocessing
+with the executable x in the test dataset. In reinforcement pipeline (see Figure 2, top).
+learning, hθ encodes a policy, and the aim of training is to
+At inference, (a) input features are collected from sen-
+prescribe actions that yield the highest expected reward for
+sorsordatarepositories,(b)processedinthedigitaldomain,
+input history x. When learning is done in an online fashion
+(c) used by the model to produce an output, and (d) the
+(supervised, unsupervised, or reinforcement), parameters θ
+output is communicated to an external system or user and
+are updated as new training points become available.
+actedupon.Figure 2 illusratesthispipelinegenerically(top),
+Inference: Once training completes, the model is deployed andforautonomousvehicle(middle),andnetworkintrusion
+to infer predictions on inputs unseen during training. That detection systems (bottom). The ML systems collect sensor
+is, the value of parameters θ are fixed, and the model com- inputs (video image, network events) from which features
+putes hθ(x) for new inputs x. In our malware classification (pixels, flows) are extracted and input to the models. The
+example, the model predicts the label for each executable meaning of the model output (stop sign, network attack) is
+x encountered. The model prediction may take different then interpreted and action taken (stopping the car, filtering
+forms but the most common for classification is a vector future traffic from an IP). Here, the attack surface for the
+assigningaprobabilityforeachclassoftheproblem,which system can be defined with respect to the data processing
+characterizes how likely the input is to belong to that class. pipeline. Adversaries can attempt to manipulate the collec-
+For our unsupervised network intrusion detection system, tion of data, corrupt the model, or tamper with the outputs.
+the model would instead return the pattern representation Recall that the model is trained using either an offline
+hθ(x) that corresponds to a new input network traffic x. oronlineprocess.Thetrainingdatausedtolearnthemodel
+includesvectorsoffeaturesusedasinputsduringinference,
+as well as expected outputs for supervised learning or a
+3. Threat Model
+reward function for reinforcement learning. As discussed
+The security of any system is measured with respect to below,themeansofcollectionandvalidationprocessesoffer
+the adversarial goals and capabilities that it is designed to anotherattacksurface—adversarieswhocanmanipulatethe
+defend against–the system’s threat model. In this section, data collection process can do so to induce targeted model
+we taxonomize the definition and scope of threat models in behaviors. Similar attacks in an online setting can be quite
+ML systems and map the space of security models. damaging, where the adversary can slowly alter the model
+We begin by identifying the attack surface of ML sys- with crafted inputs submitted at runtime. Such attacks on
+tems to inform where and how an adversary will attempt to anomaly detectors have been observed in domains such as
+subvert the system. Our development of the threat model in spam and network intrusion [22].
+401
+
+Attacksagainst MLcanhavepotentiallydevastatingcon-
+Pipeline (weaker)
+sequences as they become more practical [23]. Defending
+Model black box
+against them is necessary to maintain essential properties Inference Architecture white box
+for high-stakes ML systems: safety (e.g., for autonomous Parameters
+vehicles),security(e.g.,intrusiondetectors),andcorrectness Arch and Params (stronger)
+(e.g., regulated financial markets).
+Read (weaker)
+Training Injection
+3.2. Trust Model Modificaiton
+Logic Corruption (stronger)
+Thetrustmodelofaany ML-basedsystemisdetermined
+Figure 3. Adversarial Capabilities. Adversaries attack ML systems at
+in large part by the context of its deployment as it relates
+inference time by exploiting model internal information (white box) or
+to the trust placed in the relevant actors. To abstract a bit,
+probingthesystemtoinfersystemvulnerabilities(blackbox).Adversaries
+we can think of the several classes of actors relevant to a usereadorwriteaccesstothetrainingdatatomimicorcorruptthemodel.
+deployed ML-based system. First, there are data-owners,
+who are the owners or trustees of the data/environment
+that the system is deployed within, e.g., an IT organisation
+deployingafacerecognitionauthenticationservice.Second, Inference Phase:Attacksatinferencetime—exploratoryat-
+there are system providers which construct the system and tacks [19]—do not tamper with the targeted model but
+algorithms,e.g.,theauthenticationservicesoftwarevendors. insteadeithercauseittoproduceadversaryselectedoutputs
+Third, there may be consumers of the service the system (an example of an Integrity attack in the taxonomy of
+provides,e.g.,theenterpriseusers.Lastly,thereareoutsiders adversarialgoalsbelow)orcollectevidenceaboutthemodel
+whomayhaveexplicitorincidentalaccesstothesystems,or characteristics (a Confidentiality attack). As discussed in
+maysimplybeabletoinfluencethesysteminputs,e.g.,other Section 5, the effectiveness of such attacks is largely deter-
+users or adversaries within the enterprise. Note that there mined by the information that is available to the adversary
+may be multiple users, providers, data-owners, or outsiders about the model and its use in the target environment.
+involved in a given deployment. Inferencephaseattackscanbeclassifiedintoeitherwhite
+A trust model for the given system assigns a level of boxorblackboxattacks.Inwhiteboxattacks,theadversary
+trust to each actor within that deployment. Any actor can hassomeinformationaboutthemodeloritsoriginaltraining
+be trusted, untrusted, or partially trusted (trusted to perform data, possibly due to untrusted actors in the data processing
+or not perform certain actions). The sum of those trust pipeline.Whiteboxattacksmaybefurtherdistinguishedby
+assumptionsformsthetrustmodel–andthereinidentifiesthe the information used: about the model architecture (algo-
+potential ways that bad actors may attack the system. We rithm and structure of the hypothesis h), model parameters
+do not seek in this paper to identify a specific trust model θ (weights), training data, or combinations of these. The
+or even set of “good” trust models (a likely impossible adversary exploits available information to identify where
+endeavour), but to highlight the dangers presented by bad a model is vulnerable. For example, an adversary who has
+actors.Here,weexplorethespaceoftrustmodelssimplyby access to the model h and its parameters θ may identify
+viewingthemthroughtheprismoftheadversarialcapability parts of the feature space for which the model has high
+space(seenext Section).Inthisway,weprovideinsightinto error, and exploit that by altering an input into that space,
+any trust model appropriate for a given deployment. as in adversarial example crafting [24].
+Conversely black box attacks assume no knowledge
+about the model. The adversary in these attacks use in-
+3.3. Adversarial Capabilities
+formation about the setting or past inputs to infer model
+vulnerability.Forexample,inanoracleattack,theadversary
+A threat model is also defined by the actions and infor-
+explores a model by providing a series of carefully crafted
+mation the adversary has at their disposal. The definition
+inputs and observing outputs [25]. Oracle attacks work
+of security is made with respect to stronger or weaker
+because a good deal of information about a model can be
+adversaries who have more or less access to the system
+extracted from input/output pairs, and relatively little infor-
+and its data. The term capabilities refers to the whats and
+mation is required because of the transferability property
+howsoftheavailableattacks,anddefinesthepossibleattack
+exhibited by many model architectures (See Section 5.2).
+vectorsonathreatsurface.Forinstance,innetworkintrusion
+detection, an internal adversary may have access to the Training Phase: Attacks on training attempt to learn, in-
+model used to distinguish attacks from normal behavior, fluence, or corrupt the model itself. The simplest and ar-
+whereasaweakereavesdroppingadversarymayhaveaccess guably weakest attack on training is simply accessing a
+only to TCP dumps of the network traffic. Here the attack summary,aportion,orallofthetrainingdata.Thiscouldbe
+surface is constant, but the attacker with more information through explicit attacks or via an untrusted data collection
+is a strictly stronger adversary. We explore the range of at- component. Depending on the quality and volume of data,
+tackercapabilitiesin MLsystemsastheyrelatetoinference the adversary can create a substitute model (also referred
+and training phases (see Figure 3). to as a surrogate or auxiliary model) to mount attacks on
+402
+
+the victim system. For example, the adversary can use a exposure of the model and training data. Distinguishing the
+substitute model to test potential inputs before submitting two notions is a result of the trust model.
+them to the victim [26]. Note that these attacks are offline Machine learning models have enough capacity to cap-
+attempts at model reconnaissance, and thus may be used to ture and memorize elements of their training data [29]. As
+undermine privacy (see below). such, it is hard to provide guarantees that participation in a
+There are two broad attack strategies for altering the datasetdoesnotharmtheprivacyofanindividual.Potential
+model. The first alters the training data either by inserting risks are adversaries performing membership test (to know
+adversarial inputs into the existing training data (injection), whetheranindividualisinadatasetornot)[30],recovering
+possibly as a malicious user, or altering the training data of partially known inputs (use the model to complete an in-
+directly (modification) by direct attacks or via an untrusted putvector withthemost likelymissingbits), andextraction
+data collection component. In the case of reinforcement of the training data using the model’s predictions [29].
+learning, the adversary may modify the environment in Integrity and Availability: Attacks on integrity and avail-
+which the agent is evolving. Lastly, the adversaries can ability are with respect to model outputs. Here the goal
+tamperwiththelearningalgorithm,sometimeseasilybycol- is to induce model behavior as chosen by the adversary.
+luding with an untrusted ML training component. We refer Attacksattemptingtocontrolmodeloutputsareattheheart
+to these attacks as logic corruption. Obviously, adversaries of integrity attacks—the integrity of the inference process
+that alter the learning logic (and thus controls the model is undermined. For example, attacks that attempt to induce
+itself) are very powerful and difficult to defend against. false positives in a face recognition system affect the au-
+thenticationprocess’sintegrity[23].Closelyrelated,attacks
+onavailabilityattempttoreducethequality(e.g.,confidence
+3.4. Adversarial Goals
+or consistency), performance (e.g., speed), or access (e.g.,
+denial of service). Here again, while the goals of these two
+Thelastpieceofathreatmodelspecifiesthegoalsofthe
+classes of attacks may be different, the means by which the
+adversary. We model desired ends as impacting confiden-
+adversary achieves them is often similar.
+tiality, integrity, and availability (the CIA triad mentioned
+Integrityisessentialin ML,andisthecenterofattention
+in Section 1), and adding a fourth property, privacy. An
+for most performance metrics used: e.g., accuracy [31].
+interesting duality emerges when taking a view in this way:
+However, researchers have shown that the integrity of ML
+attacks on system integrity and availability are closely re-
+systems may be compromised by adversaries capable of
+lated in goal and method, as are confidentiality and privacy.
+manipulating model inputs [24] or its training data [32].
+Integrity and privacy can both be understood at the level of
+First, the ML model’s confidence may be targeted by an
+the MLmodel,aswellasfortheentiresystemdeployingit.
+adversary: reducing this value may change the behavior
+Availability is however ill defined for a model in isolation
+of the overall system. For instance, an intrusion detection
+but makes sense for the system and environment it operates
+systemmayonlyraiseanalarmwhenitsconfidenceisovera
+in. Desirable security properties may also be defined and
+specified threshold. Input misprocessing aims at misleading
+enforced at the level of this environment. The security of
+the model into producing wrong outputs for some inputs,
+the MLmodelisanecessarybutnotsufficientconditionfor
+either modified at the entrance of the pipeline, or at the
+establishing the security of the environment. For instance,
+input of the model directly. Depending on the task type,
+integrity and availability of a driverless car’s vision model
+the wrong outputs differ. For a ML classifier, it may assign
+is needed but not sufficient to guarantee availability of the
+the wrong class to a legitimate image, or classify noise
+roadtoothervehicles.Thisaspectfallsoutsidethescopeof
+with confidence. For an unsupervised feature extractor, it
+our survey, and calls for future treatment similar to the one
+may produce a meaningless representation of the input. For
+of Amodei et al. for safety-related issues [3]. We discuss
+a reinforcement learning agent, it may act unintelligently
+belowtherangeofadversarialgoalsthatrelatetoeachrisk.
+giventheenvironmentstate.However,whentheadversaryis
+Confidentiality and Privacy: Attacks on confidentiality and capable of subverting the input-output mapping completely,
+privacy are with respect to the model and data. If the it can control the model and the system’s behavior. For in-
+adversaryisanuntrusteduserofthemodel,itmayattemptto stance,itmayforceanautomotive’scomputervisionsystem
+extractinformationaboutthemodel.Theseattacksgenerally tomisprocessatrafficsign,resultinginthecaraccelerating.
+fall under the realm of confidentiality. When the ML model Availability is somewhat different than integrity, as it is
+itself represents intellectual property and its consumers are about the prevention of access to an asset: an output or an
+not trusted by the model owner, it requires that the model action induced by a model output. Hence, the goal of these
+and its parameters be confidential, e.g., financial market attacksistomakethemodelinconsistentorunreliableinthe
+systems [27]. On the contrary, if the model owner is not target environment. For example, the goal of the adversary
+trusted by model users, these users might want to protect attacking an autonomous vehicle may be to get it to behave
+theconfidentialityoftheirdatafromthemodelownerorthe erratically or non-deterministically in a given environment.
+privacy of their data from attacks mounted by other model Yet most of the attacks in this space require corrupting the
+users.Thisisacommonsettinginmedicalapplications[28]. modelthroughtraininginputpoisoningandotherconfidence
+Regardless of the goal, the attacks and defenses for confi- reduction attacks using many of the same methods used for
+dentiality and privacy relate to exposing or preventing the integrity attacks.
+403
+
+Ifthesystemdependsontheoutputofthe MLmodelto some degree of knowledge about the learning procedure,
+take decisions that impact its availability, it may be subject in order to disrupt it through manipulations of the data.
+to attacks falling under the broad category of denial of
+Label manipulation: When adversaries are able only to
+service. Continuing with the previous example, an attack
+modify the labeling information contained in the training
+that produces vision inputs that force a autonomous vehicle
+dataset,theattacksurfaceislimited:theymustfindthemost
+to stop immediately may cause a denial of service by pre-
+harmful labels to perturb in the data given partial or full
+venting its owner from using it. More broadly, ML models
+knowledge of the learning algorithm ran by the defender.
+may also not perform correctly when some of their input
+The baseline strategy is to perturb the labels (i.e., ran-
+features are corrupted or missing [33]. Thus, by denying
+domly draw new labels) for a fraction of the training data.
+access to these features we can subvert the system.
+In practice, Biggio et al. showed that this was sufficient to
+degrade the inference performance of SVM classifiers [37],
+4. Training in Adversarial Settings as long as the adversary randomly flips about 40% of
+the training labels. It is unclear whether this attack would
+As parameters θ of the hypothesis h are fine-tuned generalizetomulti-classclassifiers,withmorethan 2 output
+during learning, the training dataset analyzed is potentially classes (they only considered binary tasks, where swapping
+vulnerable to manipulations by adversaries. This scenario the labels is guaranteed to be very harmful to the model).
+corresponds to a poisoning attack [19], and is an instance Heuristics improve the adversary’s chances of success.
+oflearninginthepresenceofnon-necessarilyadversarialbut Biggio et al. [37] observe that poisoning points classified
+neverthelessnoisydata[34].Intrusiondetectionsystemsare with confidence by the model later further degrades the
+aprevalentexampleofthesesettings.Poisoningattacksalter model’s performance during inference. In fact, they reduce
+thetrainingdatasetbyinserting,editing,orremovingpoints the ratio of poisoned points needed to reduce accuracy by
+with the intent of modifying the decision boundaries of the about 10 percentagepointswhencomparedtorandomlabel
+targeted model [32], thus targeting the learning system’s flipping. A similar attack approach has been applied in the
+integrityperourthreatmodelfrom Section 3.Itissomewhat context of healthcare [38]. These attacks require that a new
+obvious that an unbounded adversary can cause the learner ML model be learned for each new candidate poisoning
+tolearnanyarbitraryfunctionhleadingtocompleteunavail- point in order to measure the candidate’s impact on the
+ability of the system. Thus, all the attacks below bound the updated model’s performance during inference. This high
+adversaryintheirattacks[35].Modificationsofthetraining computation cost can be explained by the largely unknown
+datacanbeseenasalteringthedistribution Dthatgenerated relationshipbetweenperformancemetricsrespectivelycom-
+the training data, thereby creating a mismatch between the puted on the training and test data. However, for models
+distributions used for training and inference. In Section 6.1, wheresucharelationshipisbetterunderstood,itispossible
+we present a line of work that builds on that observation to tofindnear-optimalsetsoflabelsthatneedtobeflipped—as
+propose learning strategies robust to distribution drifts [36]. demonstrated by Xiao et al. with SVMs [39].
+Upon surveying the field, we note that works almost
+exclusively discuss poisoning attacks against classifiers (su- Our take-away 4.1. Bounds on the generalization
+pervised models trained with labeled data). Yet, as we error (the difference in performance of a model on
+strive to generalize our observations to other types of ML trainingandtestingdistributions)areoftenloose[40],
+tasks (see Section 2), we note that the strategies described in which case it is difficult to quantify the impact of
+belowmayapply,asmany RLalgorithmsemploysupervised poisoning attacks on inference.
+components.Thisisforinstancethecasefor Alpha Go[15].
+Input manipulation: In this threat model, the adversary
+can corrupt the input features of training points processed
+4.1. Targeting Integrity
+by the model, in addition to its labels. These works assume
+knowledge of the learning algorithm and training set.
+Kearns et al. theoretically analyzed the accuracy of
+learningclassifierswhentheadversaryisallowedtomodify Direct poisoning of the learning inputs: The attack surface
+training samples with probability β [32]. For large datasets, of a ML model is often exacerbated when learning is
+this adversarial capability can be interpreted as the ability performed online, that is, with new training points added
+to modify a fraction β of the training data. One of their by observing the environment in which the system evolves.
+fundamentalresultsstatesthatachievinganerrorrateof(cid:4)at Most efforts in this area focus on clustering models, where
+inference requires β ≤ (cid:3) for any learning algorithm. For theintuitivestrategyforadversariesistoslowlydisplacethe
+1+(cid:3)
+example, to achieve 90% accuracy ((cid:4) = 0.1) the adversary centeroftheclustertohavepointsmisclassifiedatinference.
+manipulation rate must be less than 10%. The efforts below Kloft et al. insert poisoned points in a training set used
+explorethisresultfromapracticalstandpointandintroduce for anomaly detection, and demonstrate how this gradually
+poisoning attacks against ML algorithms. We organize our shiftsthedecisionboundaryofacentroidmodel,i.e.amodel
+discussion around the adversarial capabilities highlighted in thatclassifiesatestinputasmaliciouswhenitistoofarfrom
+theprecedingsection.Unlikesomeattacksatinference(see the empirical mean of the training data [22]. This model is
+Section 5.2), training time attacks almost always require learned in an online fashion—new training data is collected
+404
+
+atregularintervalsandtheparametervaluesθarecomputed 5. Inferring in Adversarial Settings
+onaslidingwindowofthatdata.Poisoningpointsarefound
+Adversaries may also attack ML systems at inference
+by solving a linear programming problem that maximizes
+time,oncethedeployedmodel’sparametershavebeenfixed.
+the displacement of the centroid. This formulation exploits
+For instance, the attacker may be targeting an intrusion
+thesimplicityofcentroidmodels,whichessentiallyevaluate
+detectionsystem’swhoseruleswerelearnedandfixed.Thus,
+Euclidean distances to compute the empirical mean of the
+the attacker is interested in mounting a variant of its attack
+training data. This attack is unlikely to apply when the
+that will instantly evade detection at runtime. Strong white-
+relationship between training data and the model is not as
+box attackers have access to the model internals (e.g., its
+explicit. The approach was later revisited in the context of
+architectureandparameters),whereasblack-boxadversaries
+malware clustering [41]: malware is modified to include
+are limited to interacting with the model as an oracle (e.g.,
+additional behavioral features that place it between two ex-
+bysubmittinginputsandobservingthemodel’spredictions).
+isting clusters in the model’s input domain, thus eventually
+In practice, capabilities range on a spectrum between these
+decreasing the distance between clusters.
+twoextrema.Thisperspectiveisusedtostructurethepresent
+Inthesettingsofofflinelearning,Biggioetal.introduce
+section, of which Figure 4 provides an overview. Note that
+an attack that identifies poisoning points by gradient ascent
+mostprivacyandconfidentialityattacksaremotivatedinthe
+on the test error of the model [56]. Adding these inputs to
+black-boxsetting,andseektoexposerespectivelyproperties
+the training set results in a degraded classification accuracy
+of the data or the model itself (see Section 5.2).
+atinference.Theirapproachis(atleastintheory)specificto
+SVMs, because it relies on the existence of a closed-form
+5.1. White-box adversaries
+formulation of the model’s test error, which in their case
+follows from the assumption that support vectors 2 do not White-box adversaries have varying degrees of access
+change as a result of the insertion of poisoning points. Mei to the model h as well as its parameters θ. This strong
+et al. [57] fall under this class of approaches but derive the threat model allows the adversary to conduct particularly
+gradientascentformulationdifferently,byrelaxingabilevel devastating attacks. While it is often difficult to obtain,
+optimization problem (similarly to label flipping attacks white-boxaccessisnotalwaysunrealistic.Forinstance,ML
+like [39]). Later, this same gradient ascent strategy was modelstrainedondatacentersarecompressedanddeployed
+adapted to feature selection algorithms like LASSO [58]. tosmartphones[62],inwhichcasereverseengineeringmay
+Suchmanipulationsofthelearninginputsarealsoeffec- enable adversaries to recover the model’s internals (e.g., its
+tivewaystotargetreinforcementlearningagents.Behzadan parameter values) and thus obtain white-box access.
+etal.showedthatgradientascenttechniquesdesignedinthe
+Integrity: To target a system’s prediction integrity at infer-
+contextofadversarialexamples(see Section 5 foradetailed
+ence, adversaries perturb the inputs of the ML model. This
+presentation of these techniques) were able to induce the
+can be interpreted as modifying the distribution that gener-
+agent into learning the wrong policy [59].
+atesdataatinference.Wefirstdescribestrategiesthatrequire
+Indirect poisoning of the learning inputs: Adversaries with direct manipulation of model inputs, and then consider
+no access to the pre-processed data must instead poison indirect perturbations resilient to the pre-processing stages
+the model’s training data before its pre-processing (see of the system’s data pipeline (as illustrated in Figure 2).
+Figure 2). For instance, Perdisci et al. prevented Polygraph,
+Direct manipulation of model inputs: Here, adversaries di-
+a worm signaturegeneration tool [60], fromlearning mean-
+rectly alter the feature values processed by the model. For
+ingful signatures by inserting perturbations in worm traffic
+instance, the adversary’s goal may be to have a classifier
+flows [61]. Polygraph combines a flow tokenizer together
+assign the wrong class to inputs [19]. Szegedy et al. coined
+with a classifier that determines whether a flow should be
+the term adversarial example to refer to such inputs [24].
+in the signature. Polymorphic worms are crafted with noisy
+Similar to concurrent work [42], they formalize the search
+trafficflowssuchthat(1)theirtokenizedrepresentationswill
+for adversarial examples as a minimization problem:
+share tokens not representative of the worm’s traffic flow,
+and (2) they modify the classifier’s threshold for using a argminh(x+r)=l s.t. x ∗ =x+r∈D (1)
+r
+signature to flag worms. This attack forces Polygraph to
+generate signatures with tokens that do not correspond to
+Theinputx,correctlyclassifiedbyh,isperturbedwithr to
+invariants of the worm’s behavior.
+produceanadversarialexamplex ∗ thatremainsintheinput
+domain Dbutisassignedthetargetlabell.Whenthetargetl
+4.2. Targeting Privacy and Confidentiality ischosen,theattackisasource-targetmisclassification[21]
+(also referred to as targeted in the literature). When l can
+During training, the confidentiality and privacy of the
+be any label different from h(x), the attack is said to be
+data and model are not impacted by the fact that ML is
+a simple misclassification (or sometimes to be untargeted).
+used, but rather the extent of the adversary’s access to the
+Attacks constructing adversarial examples differ from one
+system hosting them. This is a traditional access control
+another by the approximation they use to solve Equation 1
+problem, which falls outside the scope of our discussion.
+when the model h is not convex.
+2.Supportvectorsarethesubsetoftrainingpointsthatsufficetodefine The first class of attack techniques applies existing
+thedecisionboundaryofasupportvectormachine. optimizers. For instance, Szegedy et al. use the L-BFGS
+405
+
+Integrity Privacy
+Knowledge Accesstomodelinput Accessto Source-target Trainingdata Model
+ofmodelh θ xandoutputh(x) trainingdata Misprediction misprediction Membership extraction extraction
+Full No [42],[43],[44] [24],[21],[44],[45],[46] [47] [48]
+White-Box
+Throughpipelineonly No [49],[50],[23] [50],[23]
+Yes No [51] [30],[47] [52],[29] [53]
+Black-Box Inputxonly Yes [26],[24],[43] [24] [53]
+No [25],[54] [55]
+Throughpipelineonly No [50]
+Figure 4.Attacksatinference:alloftheseworksarediscussedin Section 5 andrepresentthethreatmodelsexploredbytheresearchcommunity.
+algorithm[63]tosolve Equation 1,whichhandlestheinput Our take-away 5.1. Modelsoftenextrapolatelinearly
+domainconstraintbydesign.Theywerethefirsttofindthat from the limited subspace covered by the training
+awiderangeof MLmodels,includingdeepneuralnetworks data [43]. Algorithms can exploit this regularity in di-
+withstate-of-the-artaccuracyonvisiontasksweremisledby recting search toward prospective adversarial regions.
+perturbations r imperceptible to humans. Carlini et al. [46]
+revisitedthisapproachwithadifferentoptimizer,Adam,by
+Indirect manipulation of model inputs: When the adversary
+encoding the domain constraint as a change of variable.
+cannot directly modify feature values used as model inputs,
+Other techniques make assumptions to solve Equation 1
+it must find perturbations preserved by the data pipeline
+efficiently. This is notably the case of the fast gradient sign
+that precedes the classifier in the overall targeted system.
+method introduced by Goodfellow et al. [43]. A lineariza-
+Strategies operating in this threat model construct adversar-
+tion assumption reduces the computation of an adversarial
+example x ∗ to: x ∗ = x+(cid:4)·sign(∇ (cid:4)x Jh(θ,x,y)), where ial examples in the physical domain stage of Figure 2.
+Kurakin et al. showed how printouts of adversarial ex-
+Jh is the cost function used to train the model h. Despite
+amples produced by the fast gradient sign algorithm were
+the approximation made, a model with close to state-of-
+stillmisclassifiedbyanobjectrecognitionmodel[50].They
+the-art performance on MNIST, a widely-used corpus of
+fed the model with photographs of the printouts, thus re-
+70,000 handwritten digits used for validating ML systems
+producing the typical pre-processing stage of a computer
+for pattern recognition [64], misclassifies 89.4% of this
+visionsystem’sdatapipeline.Theyalsofoundthesephysical
+method’s adversarial examples. This empirically validates
+adversarialexamplestoberesilienttopre-processingdefor-
+thehypothesisthaterroneousmodelpredictionsonadversar-
+mations like contrast modifications or blurring. Sharif et al.
+ial examples are likely due to the linear extrapolation made
+applied the approach introduced in [24] to find adversarial
+by components of ML models (e.g., individual neurons of
+examples that are printed on glasses frames, which once
+a DNN) for inputs far from the training data.
+worn by an individual result in its face being misclassified
+In Equation 1,theminimizationofperturbationr canbe
+byafacerecognitionmodel[23].Addingpenaltiestoensure
+expressedwithdifferentmetrics.Theseformulationsalllead
+theperturbationsarephysicallyrealizable(i.e.,printable)in
+todifferentattacks[21],[44],[65].Thechoiceofanappro-
+Equation 1 is sufficient to conduct misclassification attacks
+priate metric (often a (cid:5)p norm) is problem-dependent. For
+(the face is misclassified in any wrong class), and to a
+instance, when crafting malware that evades detection by a
+more limited extent source-target misclassification attacks
+MLsystem,itiseasiertointroduceperturbationsrthatonly
+(the face is misclassified in a chosen target class).
+modify a limited subset of the features, rather than making
+small changes to all features [49]. To this effect, Papernot
+Ourtake-away 5.2. Toberesilienttothepipeline’sde-
+etal.introduceda Jacobian-basedadversarialexamplealgo-
+formations, adversarial examples in physical domains
+rithmthatminimizesthe L 0 normofr [21],i.e.thenumber
+need to introduce adapted, often larger, perturbations.
+of features perturbed. On average, only 4% of the features
+This suggests that enforcing physical realizability and
+ofan MNISTtestsetinputareperturbedtohaveitclassified
+domain constraints may reduce a model’s error space.
+in a chosen target class with 97% success—whereas most
+oftheapproachesintroducedpreviouslyperturbedtheentire
+input(albeitbysmallerchanges)toachievethissuccessrate. Beyond classification:Alfeldetal.[45]examineautoregres-
+Thevarietyofalgorithmsthatfindadversarialdirections sivemodels,wherethepredictionxtofatimes(cid:2)eriesdepends
+k
+suggests that model errors form a continuous space rather on previous k realizations of x, that is, xt =
+i=1
+cixt−i;
+than being scattered in small pockets throughout the mod- such models are prevalent in market prediction. An adver-
+els’ output surface. Warde-Farley and Goodfellow showed sary manipulates the input data with the goal of achiev-
+that adversarial examples form a space of dimension at ing their desired prediction, given budget constraints. The
+least two [66]. Later, Trame`r et al. introduced the Gradient authors formulate the adversary’s manipulation problem as
+Aligned Adversarial Subspace method, which uses a first- quadratic optimization and provide efficient solutions.
+orderapproximationsimilartotheoneusedtodefinethefast Adversarialexamplesalsoapplytoreinforcementlearn-
+gradientsignmethodtodirectlyestimatethedimensionality ing.Huangetal.demonstratedthata RLagentisvulnerable
+of the dense space formed by adversarial examples [67]. to adversarial perturbations of its environment after it has
+406
+
+been trained [68]. Using the fast gradient method (see a Service cloud platforms, where the model is potentially
+above), the adversary induces the agent into misbehaving accessible through a query interface. Without access to the
+immediatelyoratalatertime—effectivelycreating“sleeper trainingdataor MLalgorithm,queryingthetargetmodeland
+agents”thatbehavecorrectlyforseveraltimestepsafterthe knowledgeoftheclassoftargetmodelsallowstheadversary
+environment was perturbed before taking wrong actions. toreconstructthemodelwithsimilaramountsofquerydata
+asusedintraining[71]Thus,akeymetricwhencomparing
+Ourtake-away 5.3. Althoughresearchhasfocusedon differentattacksisthewealthofinformationreturnedbythe
+classification, adversarial example algorithms extend oracle, and the number of oracle queries.
+to other settings like reinforcement learning: e.g., the
+Integrity: Lowd et al. estimate the cost of misclassifica-
+adversary perturbs a frame in a video game to force
+tion in terms of the number of queries to the black-box
+an agent to take wrong actions.
+model [72]. The adversary has oracle access to the model.
+Privacy and Confidentiality: Confidentiality attacks in the A cost function is associated with modifying an input x
+white-box threat model are trivial because the adversary to a target instance x ∗. The cost function is a weighted
+already has access to the model parameters. As discussed l 1 differencebetweenx ∗andx.Theauthorsintroduce ACRE
+in Section 3, adversaries targeting the privacy of data ma- learnability, which poses the problem of finding the least
+nipulated by a ML system are interested in recovering cost modification to have a malicious input classified as
+information about either the training data. The simplest benign using a polynomial number of queries to the ML
+attack against data consists in performing a membership oracle. It is shown that continous features allow for ACRE
+test, i.e. determining whether a particular input was used learnability while discrete features make the problem NP-
+in the training dataset of a model. Stronger opponents may hard. Because ACRE learnability also depends on the cost
+seek to extract fully or partially unknown training points. function, it is a different problem from reverse engineering
+Few attacks operate in the white-box threat model, as the the model. Following up on this thread, Nelson et al. [73]
+black-box model (see below) is more realistic for privacy. identify the space of convex inducing classifiers—those
+Ateniese et al. infer statistical information about the where one of the classes is a convex set—that are ACRE
+training data from a trained model hθ [48], that is, whether learnable but not necessarily reverse engineerable.
+its training data verified a certain statistical property. Their
+Direct manipulation of model inputs: Adversaries with ac-
+attack generates several datasets, where some exhibit the
+cess to class probabilities can recover many details of the
+statistical property and others do not. A model is trained
+underlying black-box model, as shown by model extraction
+on each dataset independently. The adversary then trains
+attacks (see paragraph below). In these settings, Xu et al.
+a meta-classifier: it takes as its inputs these models and
+apply a genetic algorithm. The fitness of genetic variants
+predicts if their dataset verified the statistical property. The
+obtainedbymutationisdefinedintermsoftheoracle’sclass
+meta-classifieristhenappliedtothemodelofinteresthθ to
+probability predictions [51]. The approach evades a random
+fulfill the initial adversarial goal. One limitation is that all
+forestand SVMusedformalwaredetection.However,com-
+classifiers must be trained with the same technique than the
+putingthegeneticvariantsisachallengeforproblemswhere
+model hθ being attacked.
+the number of input features is larger.
+When the adversary cannot access probabilities, it is
+5.2. Black-box adversaries
+more difficult to extract information about the decision
+When attacking black-box systems, adversaries do not boundary, a pre-requisite to find input perturbations that
+know the model internals. This prohibits the strategies de- result in erroneous predictions. In the following works,
+scribedin Section 5.1:forinstance,integrityattacksrequire the adversary only observes the first and last stage of the
+that the attacker compute gradients defined using the model pipelinefrom Figure 2:e.g.,theinput(whichtheyproduce)
+h and its parameters θ. However, black-box access is per- andtheclasslabelinclassificationtasks.Szegedyetal.first
+hapsamorerealisticthreatmodel,asallitrequiresisaccess observed adversarial example transferability [24]: i.e., the
+to the output responses. For instance, an adversary seeking propertythatadversarialexamplescraftedtobemisclassified
+to penetrate a computer network rarely has access to the by a model are likely to be misclassified by a different
+specificationsofitsintrusiondetectionsystem—buttheycan model.Thistransferabilitypropertyholdsevenwhenmodels
+often observe how it responds to network events. Similar are trained on different datasets.
+attacks are key to performing reconnaissance in networks Assuming the availability of surrogate data to the ad-
+to determine their environmental detection and response versary, Laskov et al. explored the strategy of training a
+policies. We focus on strategies designed irrespectively of substitute model for the targeted one [26]. They exploit
+thedomain MLisbeingappliedto,albeitheuristicsspecific a semantic gap to evade a malware PDF detector: they
+to certain applications exist, e.g., spam filtering [69], [70]. inject additional features that are not interpreted by PDF
+Acommonthreatmodelforblack-boxadversariesisthe renderers. As such, their attack does not generalize well to
+one of an oracle, borrowed from the cryptography commu- other application domains or models.
+nity: the adversary may issue queries to the ML model and Papernot et al. used adversarial example transferability
+observe its output for any chosen input. This is particularly toconductblack-boxattacks[25].Theyshowhowattackers
+relevant in the increasingly popular environment of ML as canforcearemotelyhosted MLmodeltomisclassifyinputs
+407
+
+without access to its architecture, parameters, or training data, with numerous applications such as compression or
+data.Theattacktrainsasubstitutemodelusingsyntheticin- learningwithlittlesupervision(i.e.,fewtraininglabels).The
+putsgeneratedbytheadversaryandlabeledbyqueryingthe attack of Hayes et al. relies on a specific framework for
+oracle.Thesubstitutemodelisthenusedtocraftadversarial generative models named generative adversarial networks
+examplesthattransferbackto(i.e.,aremisclassifiedby)the (GAN)[74].Theyshowthatthediscriminator modelinthe
+originally targeted model. They force Meta Mind, an online GAN framework (used during training to evaluate the per-
+deeplearning API,tomisclassifyinputsatratesabove 84%. formance of the generative model by comparing its outputs
+In a follow-up work [54], the attack is generalized to many to samples from the training distribution) can be leveraged
+MLmodels.Forinstance,theattackonalogisticregression in similar ways to the shadow models of Shokri et al. [30].
+hosted by Amazon has a success rate of 96%. Given a set of training points, their attack identifies points
+This strategy is more likely to create adversarial exam- which the generative model is likely to have been trained
+ples that transfer (i.e., evade the targeted model) in a target on by observing the confidence of the discriminator model.
+class chosen by the adversary if they simultaneously evade
+Training data extraction:Fredriksonetal.presentthemodel
+several substitute models with different architectures [55].
+inversionattack[52].Foramedicinedosagepredictiontask,
+theyshowthatgivenaccesstothemodelandauxiliaryinfor-
+Our take-away 5.4. Adversarial examples transfer
+mation about the patient’s stable medicine dosage, they can
+from one model to another because their individual
+recovergenomicinformationaboutthepatient.Althoughthe
+error spaces are high-dimensional, making it likely
+approach illustrates privacy concerns that may arise from
+that these error spaces will intersect. In addition, two
+giving access to ML models trained on sensitive data, it is
+modelssolvingthesame MLtaskwithcomparableper-
+unclear whether the genomic information is recovered be-
+formancearelikelytohavesimilardecisionboundaries
+causeofthe MLmodelorthestrongcorrelationbetweenthe
+auxiliary information that the adversary also has access to
+Data pipeline manipulation: Kurakin et al. [50] showed
+(the patient’s dosage) [75]. Model inversion enables adver-
+experimentally that transferability holds in spite of pre-
+saries to extract training data from model predictions [29].
+processingstagesofthesystem’sdatapipeline.Indeed,they
+However, the inputs extracted are not specific points of the
+evaluated their physical adversarial examples (i.e., printouts
+training dataset, but rather an average representation of the
+of an adversarial image) both on the model that they were
+inputs that are classified in a class—similar to what is done
+targeting and a different model used by a smartphone app
+by saliency maps [76]. The demonstration is convincing
+to recognize objects. Their results show that the physically
+in[29]becauseeachclasscorrespondstoasingleindividual.
+printedperturbationsreliablyfoolboththemodeltheywere
+originally targeting and the second black-box model. Model extraction: Among direct confidentiality considera-
+tions like intellectual property, extracting ML model also
+Privacy and Confidentiality: In black-box settings, adver-
+has privacy implications—as models have been shown to
+saries targeting privacy may pursue the goals discussed in
+memorize training data at least partially. Tramer et al. show
+white-box settings: membership attacks and training data
+howtoextractparametersofamodelfromtheobservationof
+extraction. In addition, since the model internals are now
+its predictions [53]. Their attack consists in applying equa-
+unknown to them, extracting model parameters themselves
+tion solving to recover parameters θ from sets of observed
+is now a valid goal when targeting model confidentiality.
+input-output pairs (x,hθ(x)). While simple, the approach
+Membership attacks: This type of adversary is looking to is difficult to scale to scenarios where the adversary loses
+test whether or not a specific point was part of the training access to the probabilities returned for each class, i.e. when
+dataset analyzed to learn the model’s parameters. Shokri it can only access the label. This leaves room for future
+et al. show how to conduct this type of attack against work to make such extraction techniques more practical.
+black-box models [30]. Their strategy exploits differences
+in the model’s confidence on points that were or were 6. Towards Robust, Private, and Accountable
+not seen during training. For each class of the targeted Machine Learning Models
+black-box model, they train several shadow models. Each
+After presenting attacks conducted at training in Sec-
+shadow model is trained to solve the membership inference
+tion 4 and inference in Section 5, we cover efforts at the
+test with synthetic samples of the corresponding class. The
+intersectionofsecurity,privacy,and MLthatarerelevantto
+procedure that generates synthetic data is initialized with
+their mitigation. We draw parallels between the seemingly
+a random input and performs hill climbing by querying the
+unrelated goals of: (a) robustness to distribution drifts, (b)
+originalmodeltofindmodificationsoftheinputthatyielda
+learning privacy-preserving models, and (c) fairness and
+classification with strong confidence in the class of interest.
+accountability.Manyoftheseremainlargelyopenproblems,
+Thesesyntheticinputsareassumedtobestatisticallysimilar
+thus we draw insights useful for future work.
+to inputs contained in the black-box model’s training data.
+Hayesetal.extendtheattacktotheunsupervisedlearn- 6.1. Robustness of models to distribution drifts
+ingofgenerativemodels[47].Moderngenerativeapproaches
+often learn a neural network that models the distribution of To mitigate the integrity attacks presented in Section 5,
+trainingpoints.Thesemodelsareusedtogeneratesynthetic ML needs to be robust to distribution drifts: i.e., situa-
+408
+
+tions where the training and test distributions differ. In- (a) Defended model (b) Substitute model
+deed, adversarial manipulations are instances of such drifts. h(x∗)
+During inference, an adversary might introduce positively
+connotated words in spam emails to evade detection, thus h(x)
+creating a test distribution different from the one analyzed ∗ ∗
+x x x x
+during training [70]. The opposite, modifying the training
+distribution,isalsopossible:theadversarymightincludean r r
+Figure 5. Evading infinitesimal defenses using transferability: the de-
+identical keyword in many spam emails used for training,
+fendedmodelissmoothinneighborhoodsoftrainingpoints:i.e.,gradients
+and then submit spam ommiting that keyword at test time. of the model outputs with respect to its inputs are zero and the adver-
+sary does not know in which direction to look for adversarial examples.
+Defending against training-time attacks: Most defense However, the adversary can use the substitute model’s gradients to find
+mechanism at training-time rely on the fact that poisoning adversarial examples that transfer back to the defended model. Note that
+samples are typically out of the expected input distribution. thiseffectwouldbeexacerbatedbymodelswithmorethanonedimension.
+Rubinstein et al. [77] pull from robust statistics to build
+a PCA-based detection model robust to poisoning. To limit
+of the model h with respect to its inputs. These gradients
+the influence of outliers to the training distribution, they
+areminimizedduringthelearningphase:hencethegradient
+constrainthe PCAalgorithmtosearchforadirectionwhose
+masking terminology. We detail why this intuitive strategy
+projectionsmaximizeaunivariatedispersionmeasurebased
+is bound to have limited success.
+on robust projection pursuit estimators instead of the stan-
+Guetal.introducedeepcontractivenetworks,aclassof
+dard deviation. In a similar approach, Biggio et al. limit
+modelstrainedusingasmoothnesspenalty[82].Thepenalty
+the vulnerability of SVMs to training label manipulations
+isdefinedwiththenormofthemodel’s Jacobianmatrix,and
+by adding a regularization term to the loss function, which
+is approximated layer by layer to preserve computational
+in turn reduces the model sensitivity to out-of-diagonal
+efficiency. Although contractive models are more robust to
+kernelmatrixelements[37].Theirapproachdoesnotimpact
+adversaries, the penalty reduces their capacity, with conse-
+the convexity of the optimization problem unlike previous
+quences on their performance and applicability.
+attempts[78],[79],whichreducestheimpactofthedefense
+Theapproachintroducedin[83]doesnotinvolvetheex-
+mechanism on performance.
+pensive computation of gradient-based penalties. The tech-
+Barreno et al. make proposals to secure learning [19]. nique is an adaptation of distillation [62], a mechanism
+These include the use of regularization in the optimization designed to compress large models into smaller ones while
+problemssolvedtotrain MLmodels.Thisremovessomeof preservingpredictionaccuracy.Inanutshell,thelargemodel
+the complexity exploitable by an adversary. Alternatively, labels data with class probabilities, which are then used to
+they also propose using obfuscation or disinformation: the train the small model. Instead of compression, the authors
+defender keeps a holdout set of the data or some details of apply distillation to increase the robustness of DNNs to
+themodelsecret.However,thisviolatessecurityfundamen- adversarial samples. They report that the additional entropy
+tals, such as the ones stated by Kerckhoffs [80]. in probability vectors (compared to labels) yields models
+Recently, Steindhardt et al. extended this line of work with smoother output surfaces. In experiments with the fast
+by augmenting the defender with a detection model that gradient sign method [84] and the Jacobian attack [83],
+attempts to remove data points outside a feasible set (i.e., largerperturbationsarerequiredtoachievemisclassification
+outliers) before the model is learned [81]. of adversarial examples by the distilled model. However,
+Carlini and Wagner [46] identified a variant of the attack
+Defending against inference-time attacks: The difficulty
+in [24], which distillation fails to mitigate.
+in attaining robustness to adversarial manipulations at in-
+A simpler variant of distillation, called label smooth-
+ference stems from the inherent complexity of ML models’
+ing[85],improvesrobustnesstoadversarialsamplescrafted
+output surfaces. Yet, a paradox arises from the observation
+using the fast gradient sign method [86]. It replaces hard
+thatthiscomplexityof MLhypothesesisnecessarytoconfer
+classlabels(avectorwheretheonlynon-nullelementisthe
+modeling capacity sufficient to train robust models, which
+correctclassindex)withsoftlabels(eachclassisassigneda
+may indicate a fundamental disadvantage for the defender.
+valuecloseto 1/N fora N-classproblem).Yet,thisvariant
+Defendingagainstinferenceattacksremainslargelyanopen
+was found to not defend against more precise but computa-
+problem. We explain why mechanisms that smooth model
+tionally expensive Jacobian-based iterative attack [21].
+outputs in infinitesimal neighborhoods of the training data
+These results suggest limitations of defense strategies
+fail to guarantee integrity. Then, we present defenses effec-
+that seek to conceal gradient-based information exploited
+tive against larger perturbations.
+by adversaries. In fact, defensive distillation can be evaded
+Defending by gradient masking: Most integrity attacks in using a black-box attack [25]. We here detail the reason
+Section 5 rely on the adversary being able to find small behind this evasion. When applying defense mechanisms
+perturbations that lead to significant changes in the model’s that smooth a model’s output surface, as illustrated in Fig-
+output.Thus,anaturaldefensestrategyistoreducethesen- ure 5.(a), the adversary cannot craft adversarial examples
+sitivityofmodelstosmallchangesmadetotheirinputs.This because the gradients it needs to compute (e.g., the deriva-
+sensitivity is estimated by computing first order derivatives tiveofthemodeloutputwithrespecttoitsinput)havevalues
+409
+
+closetozero.In[25],thisisreferredtoasgradientmasking. subjects involved in their training data. This is captured by
+Theadversarymayinsteaduseasubstitutemodel,illustrated differential privacy [88], a rigorous framework to analyze
+in Figure 5.(b), to craft adversarial examples, since the theprivacyguaranteesprovidedbyalgorithms.Informally,it
+substitute is not impacted by the defensive mechanism and formulatesprivacyasthepropertythatanalgorithm’soutput
+will still have the gradients necessary to find adversarial does not differ significantly statistically for two versions of
+directions. Due to the adversarial example transferability thedatadifferingbyonlyonerecord.Inourcase,therecord
+property [24] described in Section 5, the adversarial exam- is a training point and the algorithm the ML model.
+ples crafted using the substitute are also misclassified by Arandomizedalgorithmissaidtobe(ε,δ)differentially
+the defended model. This attack vector is likely to apply to private if for two neighboring training datasets T,T (cid:3), i.e.
+any defense performing gradient masking, i.e. any mecha- which differ by at most one training point, the algorithm A
+nismdefendingagainstadversarialexamplesininfinitesimal satisfies for any acceptable set S of algorithm outputs:
+neighborhoods of the training points.
+Pr[A(T)∈S]≤e ε Pr[A(T (cid:3) )∈S]+δ (2)
+Ourtake-away 6.1. Anydefensethattamperswithad-
+versarial example crafting heuristics (e.g., by masking Theparameters(ε,δ)defineanupperboundontheprobabil-
+gradients used by adversaries) but does not mitigate itythattheoutputof Adiffersbetween T and T (cid:3).Parameter
+the underlying erroneous model predictions can be εisaprivacybudget:smallerbudgetsyieldstrongerprivacy
+evaded using a transferability-based black-box attack. guarantees. The second parameter δ is a failure rate for
+which it is tolerated that the ε bound does not hold.
+To provide any form of meaningful privacy, such as
+Defending against larger perturbations:Szegedyetal.[24]
+differential privacy, it is necessary to randomize part of the
+first suggested injecting adversarial samples, correctly la-
+ML system’s pipeline. This may be done either in the pre-
+beled, in the training set as a means to make the model
+processingstagesprecedingthemodel(thisfallsoutsidethe
+robust. They showed that models fitted with this mixture
+scopeofthispaper),whiletrainingthemodel,oratinference
+of legitimate and adversarial samples were regularized and
+by randomizing the predictions that the model outputs.
+more robust to adversaries using their attack.
+This strategy was later made practical by Goodfellow Training: At training, random noise may be injected to the
+et al. [43]: the fast gradient sign method defines a dif- data, the cost minimized by the learning algorithm, or the
+ferentiable and efficiently-computed adversarial objective values of parameters learned.
+during training. The defender minimizes the error between
+Aninstanceoftrainingdatarandomizationisformalized
+the model’s predictions on adversarial examples (computed
+by local privacy [89]. In the scenario where users send data
+using the current parameter candidates throughout training)
+to a centralized server that trainsa model with the data col-
+and the original labels. For instance, the misclassification
+lected,randomizedresponse protectsprivacy: usersrespond
+rateofa MNISTmodelisreducedfrom 89.4%to 17.9%on
+to server queries with the true answer at a probability q,
+adversarial examples [43]. Huang et al. [65] developed the and otherwise return a random value with probability 1−q.
+intuition behind adversarial training. They formulate a min-
+Erlingsson et al. showed that this allowed the developers
+max problem between the adversary applying perturbations
+of a browser to collect meaningful and privacy-preserving
+toeachtrainingpointtomaximizethemodel’sclassification
+usage statistics from users [90].
+error,andthelearningprocedureattemptingtominimizethis
+Chaudhuri et al. show that objective perturbation, i.e.
+error. The performance improvements over previous efforts
+introducing random noise in the cost function (that mea-
+are however often statistically non-significant.
+sures the error between the model predictions and the ex-
+Althoughadversarialtrainingdefendsagainstattackson
+pected outputs) minimized during learning can provide ε-
+whichthemodelistrained,itisweakinthefaceofadaptive
+differential privacy [91]. This noise is drawn from an expo-
+adversaries.Forinstance,Moosavietal.[44]useadifferent nential distribution and scaled using the model sensitivity 3
+heuristic to find adversarial examples when training and
+Bassilyetal.provideimprovedalgorithmsandprivacyanal-
+attacking.Theirevaluationshowsthatthemodelisnolonger
+ysis,alongwithreferencestomanyoftheworksintervening
+robust in these settings.
+in private learning through cost minimization [92]
+Our take-away 6.2. Even with heuristics like adver-
+Ourtake-away 6.3. Preciselyquantifyingthelearning
+sarial training, it is impossible to fully cover the ML
+algorithm’s sensitivity to training points is necessary
+task’sdatadomain.Hence,futureproposalsfordefend-
+to establish differential privacy guarantees. For non-
+ing against adversarial examples will almost certainly
+convexmodels(e.g.,neuralnets),currentloosebounds
+need to improve the ability of models to be uncertain
+on sensitivity require that learning be heavily random-
+when predicting far from their training subspace [87].
+ized to protect data—often at the expense of utility.
+6.2. Learning and Inferring with Privacy
+3.In differential privacy research, sensitivity denotes the maximum
+changeinthemodeloutputwhenoneofitstrainingpointsischanged.This
+One way of defining privacy-preserving models is that
+isnotidenticaltothesensitivityof MLmodelstoadversarialperturbations
+they do not reveal any additional information about the (see Section 5).
+410
+
+Shokrietal.showedthatlarge-capacitymodelslikedeep producingamodelthatdiscriminatesagainstcertaingroups.
+neuralnetworkstrainedwithmulti-partycomputationsfrom Historical data also inherently reflects social biases [103].
+noisy parameter values provide differential privacy guaran- Another source of bias is the learning algorithm itself,
+tees [93]. In centralized settings (a single entity trains the which can be adapted to provide guarantees for subpopu-
+model), an approach introduced by Abadi et al. guarantees lations of the training data [104]. These guarantees express
+stronger differential privacy bounds. It randomly perturbs a particular definition of fairness: e.g., equal or unbiased
+gradients computed by the learning algorithm before they treatment[105].Theyhoweverintroducetrade-offsbetween
+areappliedtoupdateparametervalues[94].Underdifferent the performance of a model and its fairness [101], [106].
+assumptions,namelytheavailabilityofpublicandunlabeled To learn fair models, Zemel et al. learn an intermediate
+datawhoseprivacydoesnotneedtobeprotected,itispossi- representation that encodes a sanitized variant of the data,
+ble to further improve the strength of the privacy protection as first discussed in [107]. Edwards et al. showed that
+onsensitive(labeled)data[95],[96].Tobegin,anensemble fairness could be achieved by learning in competition with
+of teacher models is learned on (disjoint) partitions of the an adversary trying to predict the sensitive variable from
+trainingdata.Theseteachersmakepredictionsonthepublic the fair model’s prediction [108]. They find connections
+unlabeled data, and their outputs are aggregated in a noisy between fairness and privacy, as their approach also applies
+fashiontoproduceasinglelabelpredictionwithdifferential to the task of removing sensitive annotations from images.
+privacy guarantee. This newly labeled dataset serves as a We expect future work at the intersection of fairness and
+training set for a student model. Given that this model was topics discussed in this paper to be fruitful. For instance,
+trained on private labels, it may be deployed publicly. connections between fairness and security have recently
+been drawn; techniques like adversarial example algorithms
+Inference: To provide differential privacy, the ML’s behav-
+were applied to estimate how representative of a class a
+ior may also be randomized at inference by introducing
+particular input is, which led to the identification of racial
+noise to predictions. Yet, this degrades the accuracy of
+biases in popular image datasets [109].
+predictions, since the amount of noise introduced increases
+with the number of inference queries answered by the ML Accountability: Accountability explains ML predictions
+model. Note that different forms of privacy, that often fall withthemodelinternalshθ.Fewmodelsareinterpretableby
+under the realm of test data confidentiality, can be provided design,i.e.,matchhumanreasoning[110],[111].Dattaetal.
+during inference. For instance, Dowlin et al. use homomor- introducedquantitativeinputinfluencemeasurestoestimate
+phic encryption [97] to encrypt the data in a form that the influence of specific inputs on the model output [112].
+allows a neural network to process it without decrypting Later,influencefunctionswereexploitedtomountpoisoning
+it [98]. Although, this does not provide differential privacy, attacksagainstdeeplearningbyintroducingambiguityinthe
+it protects the confidentiality of each individual input when model’strainingdata[113].Anotheravenueforaccountabil-
+the model owner is not trusted by a model user. The main ityistocomputeinputsthatthe MLmodelismostsensitive
+limitations are the performance overhead and the restricted to. Activation maximization synthesizes inputs that highly
+set of arithmetic operations supported by homomorphic activate specific neurons of a neural network [114]. The
+encryption, which introduce additional constraints in the challenge lies in producing human-interpretable synthetic
+architecture design of the ML model. inputs that faithfully represent the model’s behavior [115].
+Activation maximization is also relevant to model failures
+6.3. Fairness and Accountability in ML like adversarial examples. In fact, salient inputs that maxi-
+mallyactivateparticularmodelsareproducedwithheuristics
+The opaque nature of ML generates concerns regarding similar to those commonly used to identify input directions
+a lack of fairness and accountability of model predictions. that yield adversarial examples misclassified by a model.
+This is key in applications like banking or healthcare [99]. On the one hand, techniques used for accountability and
+In addition, legal frameworks like the European Data Pro- transparency are likely to yield improved attack techniques
+tection Regulationrequirethatcompaniesprovideanexpla- because they increase the adversary’s understanding of how
+nation for algorithm predictions if they were made using themodel’sdecisionsaremade.Ontheotherhand,theyalso
+data considered sensitive or private [100]. In the interest of contributetobuildingabetterunderstandingoftheimpactof
+space, we do not provide a comprehensive survey of rapid training data on the model learned by ML algorithm, which
+technicalprogressmadetowardsfairnessandaccountability, is beneficial to privacy-preserving ML.
+which would necessitate a dedicated So K. We focus here
+onworkrelevanttopreviouslydiscussednotionsofsecurity 7. Conclusions
+(e.g.,datapoisoning)andprivacy(e.g.,differentialprivacy).
+Fairness: In the ML pipeline from Figure 2, fairness is Thesecurityandprivacyofmachinelearningisanactive
+relevanttotheactiontakeninthephysicaldomainbasedon yet nascent area. We explored the attack surface of systems
+the model prediction. It should not nurture discrimination built upon ML. That analysis yields a natural structure for
+againstspecificindividuals[101],[102].Trainingdataisone reasoningabouttheirthreatmodels.Inthelarge,avastbody
+sourceofbiasin ML.Forinstance,adishonestdatacollector ofworkfromdiversescientificcommunitiespaintsapicture
+might adversarially attempt to manipulate the learning into that many vulnerabilities of ML and the countermeasures
+411
+
+used to defend against them are as yet unknown—yet a [11] D. Erhan, Y. Bengio, A. Courville, P.-A. Manzagol, P. Vincent,
+and S. Bengio, “Why does unsupervised pre-training help deep
+science for understanding them is slowly emerging.
+learning?”Journalof Machine Learning Research,vol.11,pp.625–
+Take-aways from this systematization of knowledge 660,2010.
+point towards varying—but related—notions of sensitivity. [12] V. Chandola, A. Banerjee, and V. Kumar, “Anomaly detection: A
+Characterizingthesensitivityoflearningalgorithmstotheir survey,” ACM Computing Surveys, vol. 41, no. 3, pp. 15:1–15:58,
+2009.
+training data is essential to privacy-preserving ML. Simi-
+larly, controlling the sensitivity of deployed models to data [13] J.Huand M.P.Wellman,“Nash Q-learningforgeneral-sumstochas-
+ticgames,”Journalof Machine Learning Research,vol.4,pp.1039–
+theyperforminferenceonisrequiredforsecure ML.Central 1069,2003.
+to these two notions, the sensitivity of generalization error
+[14] R. S. Sutton and A. G. Barto, Reinforcement Learning: An Intro-
+(i.e., the gap between performance on training and test duction. MITPress,1998.
+data)remainspoorlyunderstoodformanymodels(including [15] D. Silver, A. Huang, C. J. Maddison, A. Guez, L. Sifre et al.,
+neural nets) and calls for further research. “Mastering the game of Go with deep neural networks and tree
+search,”Nature,vol.529,no.7587,pp.484–489,2016.
+[16] C.M.Bishop,“Patternrecognition,”Machine Learning,2006.
+Acknowledgments
+[17] I.Goodfellow,Y.Bengio,and A.Courville,“Deeplearning,”2016,
+Bookinpreparationfor MITPress(www.deeplearningbook.org).
+We thank Mart´ın Abadi, Z. Berkay Celik, Ian Good- [18] N. S. Altman, “An introduction to kernel and nearest-neighbor
+fellow, Damien Octeau, and Kunal Talwar for feedback nonparametricregression,”The American Statistician,vol.46,no.3,
+pp.175–185,1992.
+on early versions of this document. We also thank Megan
+Mc Daniel for taking good care of our diet before the [19] M.Barreno,B.Nelson,R.Sears,A.D.Joseph,and J.D.Tygar,“Can
+machine learning be secure?” in ACM Symposium on Information,
+deadline. We would also like to thank Seda Guerses for Computerand Communications Security,2006,pp.16–25.
+shepherding our paper. Nicolas Papernot is supported by a
+[20] L.Huang,A.D.Joseph,B.Nelson,B.I.Rubinstein,and J.Tygar,
+Google Ph DFellowshipin Security.Researchwassupported “Adversarialmachinelearning,”in 4 th ACMWorkshopon Security
+in part by the Army Research Laboratory, under Coopera- and Artificial Intelligence,2011,pp.43–58.
+tive Agreement Number W 911 NF-13-2-0045 (ARL Cyber [21] N.Papernot,P.Mc Daniel,S.Jha,M.Fredrikson,Z.B.Celik,and
+A.Swami,“Thelimitationsofdeeplearninginadversarialsettings,”
+Security CRA), and the Army Research Office under grant in 1 st IEEEEuropean Symposiumon Securityand Privacy,2016.
+W 911 NF-13-1-0421. The views and conclusions contained
+[22] M.Kloftand P.Laskov,“Onlineanomalydetectionunderadversarial
+in this document are those of the authors and should not impact,”in 13 th International Conferenceon Artificial Intelligence
+be interpreted as representing the official policies, either and Statistics,2010,pp.405–412.
+expressed or implied, of the Army Research Laboratory or [23] M. Sharif, S. Bhagavatula, L. Bauer, and M. K. Reiter, “Acces-
+sorizetoacrime:Realandstealthyattacksonstate-of-the-artface
+the U.S. Government. The U.S. Government is authorized
+recognition,” in 23 rd ACM SIGSAC Conference on Computer and
+toreproduceanddistributereprintsforgovernmentpurposes Communications Security,2016,pp.1528–1540.
+notwithstanding any copyright notation hereon. [24] C.Szegedy,W.Zaremba,I.Sutskever,J.Bruna,D.Erhan,I.Good-
+fellow,and R.Fergus,“Intriguingpropertiesofneuralnetworks,”in
+References International Conferenceon Learning Representations,2014.
+[25] N. Papernot, P. Mc Daniel, I. Goodfellow, S. Jha, Z. B. Celik, and
+[1] W. House, “Preparing for the future of artificial intelligence,” Ex- A. Swami, “Practical black-box attacks against deep learning sys-
+ecutive Office of the President, National Science and Technology temsusingadversarialexamples,”ar Xivpreprintar Xiv:1602.02697,
+Council,Committeeon Technology,2016. 2016.
+[26] N. Sˇrndic´ and P. Laskov, “Practical evasion of a learning-based
+[2] C. P. Pfleeger and S. L. Pfleeger, Analyzing Computer Security:
+classifier: A case study,” in IEEE Symposium on Security and
+A Threat/Vulnerability/Countermeasure Approach. Prentice Hall,
+Privacy,2014,pp.197–211.
+2012.
+[27] R.J.Boltonand D.J.Hand,“Statisticalfrauddetection:Areview,”
+[3] D. Amodei, C. Olah, J. Steinhardt, P. Christiano, J. Schulman,
+Statistical Science,vol.17,pp.235–249,2002.
+and D. Mane´, “Concrete problems in AI safety,” ar Xiv preprint
+ar Xiv:1606.06565,2016. [28] T.C.Rindfleisch,“Privacy,informationtechnology,andhealthcare,”
+Communicationsofthe ACM,vol.40,no.8,pp.92–100,1997.
+[4] O. Ohrimenko, F. Schuster, C. Fournet, A. Mehta, S. Nowozin,
+K.Vaswani,and M.Costa,“Obliviousmulti-partymachinelearning [29] M.Fredrikson,S.Jha,and T.Ristenpart,“Modelinversionattacks
+ontrustedprocessors,”in 25 th USENIXSecurity Symposium,2016. thatexploitconfidenceinformationandbasiccountermeasures,”in
+22 nd ACMSIGSACConferenceon Computerand Communications
+[5] K.P.Murphy,Machine Learning:AProbabilistic Perspective. MIT
+Security,2015,pp.1322–1333.
+Press,2012.
+[30] R. Shokri, M. Stronati, and V. Shmatikov, “Membership infer-
+[6] A. Krizhevsky, I. Sutskever, and G. E. Hinton, “Imagenet classi-
+ence attacks against machine learning models,” ar Xiv preprint
+fication with deep convolutional neural networks,” in Advances in
+ar Xiv:1610.05820,2016.
+Neural Information Processing Systems,2012,pp.1097–1105.
+[31] D. M. Powers, “Evaluation: From precision, recall and F-measure
+[7] I. Sutskever, O. Vinyals, and Q. V. Le, “Sequence to sequence
+to ROC, informedness, markedness and correlation,” Journal of
+learningwithneuralnetworks,”in Advancesin Neural Information
+Machine Learning Technologies,vol.2,pp.37–63,2011.
+Processing Systems,2014,pp.3104–3112.
+[32] M.Kearnsand M.Li,“Learninginthepresenceofmaliciouserrors,”
+[8] H. Drucker, D. Wu, and V. N. Vapnik, “Support vector machines
+SIAMJournalon Computing,vol.22,no.4,pp.807–837,1993.
+for spam categorization,” IEEE Transactions on Neural Networks,
+vol.10,no.5,pp.1048–1054,1999. [33] A. Globerson and S. Roweis, “Nightmare at test time: Robust
+learning by feature deletion,” in 23 rd International Conference on
+[9] A.K.Jain,M.N.Murty,and P.J.Flynn,“Dataclustering:Areview,”
+Machine Learning,2006,pp.353–360.
+ACMComputing Surveys,vol.31,no.3,pp.264–323,1999.
+[34] N. Manwani and P. S. Sastry, “Noise tolerance under risk mini-
+[10] A.Krizhevskyand G.Hinton,“Learningmultiplelayersoffeatures
+mization,” IEEE Transactions on Cybernetics, vol. 43, no. 3, pp.
+fromtinyimages,”2009.
+1146–1151,2013.
+412
+
+[35] B.Nelsonand A.D.Joseph,“Boundinganattack’scomplexityfor [57] S. Mei and X. Zhu, “Using machine teaching to identify optimal
+asimplelearningmodel,”in First Workshopon Tackling Computer training-setattacksonmachinelearners,”in AAAI,2015,pp.2871–
+Systems Problemswith Machine Learning Techniques,2006. 2877.
+[36] G. Hulten, L. Spencer, and P. Domingos, “Mining time-changing [58] H.Xiao,B.Biggio,G.Brown,G.Fumera,C.Eckert,and F.Roli,
+data streams,” in 7 th ACM SIGKDD International Conference on “Isfeatureselectionsecureagainsttrainingdatapoisoning?”in Pro-
+Knowledge Discoveryand Data Mining,2001,pp.97–106. ceedingsofthe 32 nd International Conferenceon Machine Learning
+(ICML-15),2015,pp.1689–1698.
+[37] B.Biggio,B.Nelson,and P.Laskov,“Supportvectormachinesunder
+adversariallabelnoise,”in Asian Conferenceon Machine Learning, [59] V. Behzadan and A. Munir, “Vulnerability of deep reinforce-
+2011,pp.97–112. ment learning to policy induction attacks,” ar Xiv preprint
+ar Xiv:1701.04143,2017.
+[38] M. Mozaffari-Kermani, S. Sur-Kolay, A. Raghunathan, and N. K.
+Jha, “Systematic poisoning attacks on and defenses for machine [60] J. Newsome, B. Karp, and D. Song, “Polygraph: Automatically
+learning in healthcare,” IEEE Journal of Biomedical and Health generating signatures for polymorphic worms,” in Security and
+Informatics,vol.19,no.6,pp.1893–1905,2015. Privacy,2005 IEEESymposiumon. IEEE,2005,pp.226–241.
+[39] H.Xiao,H.Xiao,and C.Eckert,“Adversariallabelflipsattackon [61] R.Perdisci,D.Dagon,W.Lee,P.Fogla,and M.Sharif,“Mislead-
+supportvectormachines,”in 20 th European Conferenceon Artificial ingwormsignaturegeneratorsusingdeliberatenoiseinjection,”in
+Intelligence,2012,pp.870–875. Securityand Privacy,2006 IEEESymposiumon. IEEE,2006,pp.
+15–pp.
+[40] V.N.Vapnik,Statistical Learning Theory. Wiley,1998.
+[62] G. Hinton, O. Vinyals, and J. Dean, “Distilling the knowledge in
+[41] B. Biggio, K. Rieck, D. Ariu, C. Wressnegger, I. Corona, G. Gi- a neural network,” in NIPS-14 Workshop on Deep Learning and
+acinto, and F. Roli, “Poisoning behavioral malware clustering,” in Representation Learning. ar Xiv:1503.02531,2014.
+Workshopon Artificial Intelligenceand Security,2014,pp.27–36.
+[63] D.C.Liuand J.Nocedal,“Onthelimitedmemorybfgsmethodfor
+[42] B.Biggio,I.Corona,D.Maiorca,B.Nelson,N.Sˇrndic´,P.Laskov, large scale optimization,” Mathematical programming, vol. 45, no.
+G.Giacinto,and F.Roli,“Evasionattacksagainstmachinelearning 1-3,pp.503–528,1989.
+at test time,” in Machine Learning and Knowledge Discovery in
+[64] Y.Le Cunand C.Cortes,“Themnistdatabaseofhandwrittendigits,”
+Databases. Springer,2013,pp.387–402.
+1998.
+[43] I. J. Goodfellow, J. Shlens, and C. Szegedy, “Explaining and har-
+[65] R. Huang, B. Xu, D. Schuurmans, and C. Szepesvari, “Learning
+nessing adversarial examples,” in 3 d International Conference on
+withastrongadversary,”ar Xivpreprintar Xiv:1511.03034,2015.
+Learning Representations,2015.
+[66] D. Warde-Farley and I. Goodfellow, “Adversarial perturbations of
+[44] S.-M. Moosavi-Dezfooli, A. Fawzi, and P. Frossard, “Deepfool: A deep neural networks,” Advanced Structured Prediction, T. Hazan,
+simpleandaccuratemethodtofooldeepneuralnetworks,”in IEEE G.Papandreou,and D.Tarlow,Eds,2016.
+Conferenceon Computer Visionand Pattern Recognition,2016,pp.
+2574–2582. [67] F.Trame`r,N.Papernot,I.Goodfellow,D.Boneh,and P.Mc Daniel,
+“The space of transferable adversarial examples,” ar Xiv preprint
+[45] S.Alfeld,X.Zhu,and P.Barford,“Datapoisoningattacksagainst ar Xiv:1704.03453,2017.
+autoregressive models,” in 30 th AAAI Conference on Artificial In-
+telligence,2016,pp.1452–1458. [68] S. Huang, N. Papernot, I. Goodfellow, Y. Duan, and P. Abbeel,
+“Adversarial attacks on neural network policies,” ar Xiv preprint
+[46] N. Carlini and D. Wagner, “Towards evaluating the robustness of ar Xiv:1702.02284,2017.
+neural networks,” in IEEE Symposium on Security and Privacy,
+2017,pp.39–57. [69] G.L.Witteland S.F.Wu,“Onattackingstatisticalspamfilters.”in
+CEAS,2004.
+[47] J. Hayes, L. Melis, G. Danezis, and E. De Cristofaro, “Logan:
+[70] D. Lowd and C. Meek, “Good word attacks on statistical spam
+Evaluating privacy leakage of generative models using generative
+filters.”in CEAS,2005.
+adversarialnetworks,”ar Xivpreprintar Xiv:1705.07663,2017.
+[71] Y.Vorobeychikand B.Li,“Optimalrandomizedclassificationinad-
+[48] G. Ateniese, L. V. Mancini, A. Spognardi, A. Villani, D. Vitali,
+versarialsettings,”in 13 th International Conferenceon Autonomous
+and G.Felici,“Hackingsmartmachineswithsmarterones:Howto
+Agentsand Multi-Agent Systems,2014,pp.485–492.
+extractmeaningfuldatafrommachinelearningclassifiers,”Interna-
+tional Journalof Securityand Networks,vol.10,no.3,pp.137–150, [72] D. Lowd and C. Meek, “Adversarial learning,” in Proceedings of
+2015. theeleventh ACMSIGKDDinternationalconferenceon Knowledge
+discoveryindatamining. ACM,2005,pp.641–647.
+[49] K.Grosse,N.Papernot,P.Manoharan,M.Backes,and P.Mc Daniel,
+“Adversarialperturbationsagainstdeepneuralnetworksformalware [73] B. Nelson, B. I. Rubinstein, L. Huang, A. D. Joseph, S. J. Lee,
+classification,”in 22 nd European Symposiumon Researchin Com- S.Rao,and J.Tygar,“Querystrategiesforevadingconvex-inducing
+puter Security,2017. classifiers,” Journal of Machine Learning Research, vol. 13, pp.
+1293–1332,2012.
+[50] A.Kurakin,I.Goodfellow,and S.Bengio,“Adversarialexamplesin
+thephysicalworld,”ar Xivpreprintar Xiv:1607.02533,2016. [74] I.Goodfellow,J.Pouget-Abadie,M.Mirza,B.Xu,D.Warde-Farley,
+S.Ozair,A.Courville,and Y.Bengio,“Generativeadversarialnets,”
+[51] W.Xu,Y.Qi,and D.Evans,“Automaticallyevadingclassifiers:A in Advances in Neural Information Processing Systems, 2014, pp.
+casestudyon PDFmalwareclassifiers,”in Networkand Distributed 2672–2680.
+Systems Symposium,2016.
+[75] F. Mc Sherry, “Statistical inference considered harmful,” 2016.
+[52] M.Fredrikson,E.Lantz,S.Jha,S.Lin,D.Page,and T.Ristenpart, [Online]. Available: https://github.com/frankmcsherry/blog/blob/
+“Privacyinpharmacogenetics:Anend-to-endcasestudyofperson- master/posts/2016-06-14.md
+alizedwarfarindosing,”in 23 rd USENIXSecurity Symposium,2014,
+pp.17–32. [76] M. D. Zeiler and R. Fergus, “Visualizing and understanding con-
+volutional networks,” in Computer vision–ECCV 2014. Springer,
+[53] F. Trame`r, F. Zhang, A. Juels, M. K. Reiter, and T. Ristenpart, 2014,pp.818–833.
+“Stealing machine learning models via prediction APIs,” in 25 th
+USENIXSecurity Symposium,2016,pp.601–618. [77] B.I.P.Rubinstein,B.Nelson,L.Huang,A.D.Joseph,S.-h.Lau,
+S. Rao, N. Taft, and J. D. Tygar, “Antidote: Understanding and
+[54] N. Papernot, P. Mc Daniel, and I. Goodfellow, “Transferability in defending against poisoning of anomaly detectors,” in 9 th ACM
+machine learning: From phenomena to black-box attacks using SIGCOMMConferenceon Internetmeasurement,2009,pp.1–14.
+adversarialsamples,”ar Xivpreprintar Xiv:1605.07277,2016.
+[78] G. Stempfel and L. Ralaivola, “Learning SVMs from sloppily la-
+[55] Y. Liu, X. Chen, C. Liu, and D. Song, “Delving into transfer- beled data,” in International Conference on Artificial Neural Net-
+able adversarial examples and black-box attacks,” ar Xiv preprint works. Springer,2009,pp.884–893.
+ar Xiv:1611.02770,2016.
+[79] L. Xu, K. Crammer, and D. Schuurmans, “Robust support vector
+[56] B.Biggio,B.Nelson,and L.Pavel,“Poisoningattacksagainstsup- machinetrainingviaconvexoutlierablation,”in Twenty-First AAAI
+portvectormachines,”in 29 th International Conferenceon Machine National Conferenceon Artificial Intelligence,vol.6,2006,pp.536–
+Learning,2012. 542.
+413
+
+[80] A. Kerckhoffs, “La cryptographie militaire,” Journal des sciences [104] M.B.Zafar,I.Valera,M.Gomez Rodriguez,and K.P.Gummadi,
+militaires,pp.5–83,1883. “Fairness constraints: Mechanisms for fair classification,” ar Xiv
+preprintar Xiv:1507.05259,2017.
+[81] J.Steinhardt,P.W.Koh,and P.Liang,“Certifieddefensesfordata
+poisoningattacks,”ar Xivpreprintar Xiv:1706.03691,2017. [105] M.Kearns,“Fairalgorithmsformachinelearning,”in Proceedingsof
+the 2017 ACMConferenceon Economicsand Computation. ACM,
+[82] S.Guand L.Rigazio,“Towardsdeepneuralnetworkarchitectures
+2017,pp.1–1.
+robust to adversarial examples,” in Proceedings of the 2015 Inter-
+national Conferenceon Learning Representations. Computational [106] S.Corbett-Davies,E.Pierson,A.Feller,S.Goel,and A.Huq,“Al-
+and Biological Learning Society,2015. gorithmicdecisionmakingandthecostoffairness,”in Proceedings
+[83] N. Papernot, P. Mc Daniel, X. Wu, S. Jha, and A. Swami, “Distil- ofthe 23 rd ACMSIGKDDInternational Conferenceon Knowledge
+lationasadefensetoadversarialperturbationsagainstdeepneural Discoveryand Data Mining. ACM,2017,pp.797–806.
+networks,”in Proceedingsofthe 37 th IEEESymposiumon Security [107] C.Dwork,M.Hardt,T.Pitassi,O.Reingold,and R.Zemel,“Fair-
+and Privacy. IEEE,2016. ness through awareness,” in Proceedings of the 3 rd Innovations in
+[84] N. Papernot and P. Mc Daniel, “On the effectiveness of defensive Theoretical Computer Science Conference. ACM,2012,pp.214–
+distillation,”ar Xivpreprintar Xiv:1607.05113,2016. 226.
+[85] C. Szegedy, V. Vanhoucke, S. Ioffe, J. Shlens, and Z. Wojna, [108] H. Edwards and A. Storkey, “Censoring representations with an
+“Rethinking the inception architecture for computer vision,” ar Xiv adversary,”ar Xivpreprintar Xiv:1511.05897,2015.
+preprintar Xiv:1512.00567,2015. [109] P. Stock and M. Cisse, “Convnets and imagenet beyond accuracy:
+[86] D. Warde-Farley and I. Goodfellow, “Adversarial perturbations of Explanations,biasdetection,adversarialexamplesandmodelcriti-
+deepneuralnetworks,”in Advanced Structured Prediction,T.Hazan, cism,”ar Xivpreprintar Xiv:1711.11443,2017.
+G.Papandreou,and D.Tarlow,Eds.,2016. [110] B. Letham, C. Rudin, T. H. Mc Cormick, D. Madigan et al., “In-
+[87] Y. Li and Y. Gal, “Dropout inference in bayesian neural networks terpretableclassifiersusingrulesandbayesiananalysis:Buildinga
+withalpha-divergences,”ar Xivpreprintar Xiv:1703.02914,2017. better stroke prediction model,” The Annals of Applied Statistics,
+vol.9,no.3,pp.1350–1371,2015.
+[88] C. Dwork, A. Roth et al., “The algorithmic foundations of differ-
+ential privacy,” Foundations and Trends in Theoretical Computer [111] M. T. Ribeiro, S. Singh, and C. Guestrin, “Why should i trust
+Science,vol.9,no.3-4,pp.211–407,2014. you?: Explaining the predictions of any classifier,” in Proceedings
+ofthe 22 nd ACMSIGKDDInternational Conferenceon Knowledge
+[89] S. P. Kasiviswanathan, H. K. Lee, K. Nissim, S. Raskhodnikova,
+Discoveryand Data Mining. ACM,2016,pp.1135–1144.
+and A. Smith, “What can we learn privately?” SIAM Journal on
+Computing,vol.40,no.3,pp.793–826,2011. [112] A.Datta,S.Sen,and Y.Zick,“Algorithmictransparencyviaquanti-
+tativeinputinfluence,”in Proceedingsof 37 th IEEESymposiumon
+[90] U´. Erlingsson, V. Pihur, and A. Korolova, “Rappor: Randomized
+Securityand Privacy,2016.
+aggregatable privacy-preserving ordinal response,” in 21 st ACM
+SIGSAC Conference on Computer and Communications Security, [113] P.W.Kohand P.Liang,“Understandingblack-boxpredictionsvia
+2014,pp.1054–1067. influencefunctions,”ar Xivpreprintar Xiv:1703.04730,2017.
+[91] K. Chaudhuri, C. Monteleoni, and A. D. Sarwate, “Differentially [114] D. Erhan, Y. Bengio, A. Courville, and P. Vincent, “Visualizing
+privateempiricalriskminimization,”Journalof Machine Learning higher-layer features of a deep network,” University of Montreal,
+Research,vol.12,no.Mar,pp.1069–1109,2011. vol.1341,2009.
+[92] R.Bassily,A.Smith,and A.Thakurta,“Differentiallyprivateempir- [115] A. Mahendran and A. Vedaldi, “Visualizing deep convolutional
+icalriskminimization:Efficientalgorithmsandtighterrorbounds,” neuralnetworksusingnaturalpre-images,”International Journalof
+ar Xivpreprintar Xiv:1405.7085,2014. Computer Vision,pp.1–23,2016.
+[93] R.Shokriand V.Shmatikov,“Privacy-preservingdeeplearning,”in
+22 nd ACMSIGSACConferenceon Computerand Communications
+Security,2015,pp.1310–1321.
+[94] M. Abadi, A. Chu, I. Goodfellow, H. B. Mc Mahan, I. Mironov,
+K.Talwar,and L.Zhang,“Deeplearningwithdifferentialprivacy,”
+in 23 rd ACM SIGSAC Conference on Computer and Communica-
+tions Security,2016,pp.308–318.
+[95] J. Hamm, P. Cao, and M. Belkin, “Learning privately from multi-
+partydata,”ar Xivpreprintar Xiv:1602.03552,2016.
+[96] N.Papernot,M.Abadi,U´.Erlingsson,I.Goodfellow,and K.Talwar,
+“Semi-supervisedknowledgetransferfordeeplearningfromprivate
+trainingdata,”ar Xivpreprintar Xiv:1610.05755,2016.
+[97] R. L. Rivest, L. Adleman, and M. L. Dertouzos, “On data banks
+and privacy homomorphisms,” Foundations of secure computation,
+vol.4,no.11,pp.169–180,1978.
+[98] R.Gilad-Bachrach,N.Dowlin,K.Laine,K.Lauter,M.Naehrig,and
+J. Wernsing, “Cryptonets: Applying neural networks to encrypted
+datawithhighthroughputandaccuracy,”in Proceedingsof The 33 rd
+International Conferenceon Machine Learning,2016,pp.201–210.
+[99] I. W. P. Consortium et al., “Estimation of the warfarin dose with
+clinical and pharmacogenetic data,” N Engl J Med, vol. 2009, no.
+360,pp.753–764,2009.
+[100] B. Goodman and S. Flaxman, “European union regulations on
+algorithmic decision-making and a” right to explanation”,” ar Xiv
+preprintar Xiv:1606.08813,2016.
+[101] J. Kleinberg, S. Mullainathan, and M. Raghavan, “Inherent trade-
+offs in the fair determination of risk scores,” ar Xiv preprint
+ar Xiv:1609.05807,2016.
+[102] M.J.Kusner,J.R.Loftus,C.Russell,and R.Silva,“Counterfactual
+fairness,”ar Xivpreprintar Xiv:1703.06856,2017.
+[103] S.Barocasand A.D.Selbst,“Bigdata’sdisparateimpact,”Califor-
+nia Law Review,vol.104,2016.
+414

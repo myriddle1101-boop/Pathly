@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="similarity" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Python Basics" label="Python Basics">
+        <attvalues>
+          <attvalue for="0" value="Fundamental concepts and practices in Python programming." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Run Python&quot;, &quot;description&quot;: &quot;Executing Python scripts and commands.&quot;}, {&quot;name&quot;: &quot;Created Python&quot;, &quot;description&quot;: &quot;Understanding how to create Python programs.&quot;}]" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of computers and programming concepts." />
+          <attvalue for="6" value="[&quot;Data types and variables&quot;, &quot;Control structures (if, loops)&quot;, &quot;Functions and modules&quot;, &quot;Basic input/output&quot;, &quot;Error handling&quot;]" />
+          <attvalue for="7" value="[&quot;Python is only for web development&quot;, &quot;Indentation is not important&quot;, &quot;Variables must be declared before use&quot;]" />
+          <attvalue for="8" value="[&quot;Data analysis with libraries like Pandas&quot;, &quot;Web scraping with BeautifulSoup&quot;, &quot;Automating tasks with scripts&quot;, &quot;Building simple applications&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Vector Databases" label="Vector Databases">
+        <attvalues>
+          <attvalue for="0" value="Storage and retrieval systems for vector representations." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Vector DB&quot;, &quot;description&quot;: &quot;Databases specifically designed for vector storage.&quot;}, {&quot;name&quot;: &quot;Chroma DB&quot;, &quot;description&quot;: &quot;A specific type of vector database.&quot;}, {&quot;name&quot;: &quot;Vectors Stored&quot;, &quot;description&quot;: &quot;Methods for storing vector data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning and linear algebra." />
+          <attvalue for="6" value="[&quot;Vector embeddings&quot;, &quot;Similarity search&quot;]" />
+          <attvalue for="7" value="[&quot;Vector databases are the same as traditional databases&quot;, &quot;Vectors can only represent numerical data&quot;]" />
+          <attvalue for="8" value="[&quot;Recommendation systems&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Knowledge Base" label="Knowledge Base">
+        <attvalues>
+          <attvalue for="0" value="Systems for storing and retrieving information." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Core Concepts&quot;, &quot;description&quot;: &quot;Fundamental ideas in knowledge representation.&quot;}, {&quot;name&quot;: &quot;Facts Vector&quot;, &quot;description&quot;: &quot;Vector representations of factual information.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of databases and information retrieval concepts." />
+          <attvalue for="6" value="[&quot;Knowledge Representation&quot;, &quot;Inference Mechanisms&quot;]" />
+          <attvalue for="7" value="[&quot;Knowledge bases are only for expert systems.&quot;, &quot;All knowledge bases are the same.&quot;]" />
+          <attvalue for="8" value="[&quot;Chatbots and virtual assistants&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Question Answering" label="Question Answering">
+        <attvalues>
+          <attvalue for="0" value="Techniques for retrieving answers from a knowledge base." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Python Simple QA&quot;, &quot;description&quot;: &quot;Implementing simple question answering in Python.&quot;}, {&quot;name&quot;: &quot;Answers Setup&quot;, &quot;description&quot;: &quot;Configuring systems to provide answers.&quot;}, {&quot;name&quot;: &quot;Questions Retrieving&quot;, &quot;description&quot;: &quot;Methods for retrieving questions from a database.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of natural language processing and machine learning principles." />
+          <attvalue for="6" value="[&quot;Information Retrieval&quot;, &quot;Natural Language Processing&quot;, &quot;Semantic Search&quot;]" />
+          <attvalue for="7" value="[&quot;Question answering systems can understand context like humans.&quot;, &quot;All question answering systems require extensive training data.&quot;]" />
+          <attvalue for="8" value="[&quot;Customer support chatbots&quot;, &quot;Search engines&quot;, &quot;Virtual assistants&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Machine Learning Concepts" label="Machine Learning Concepts">
+        <attvalues>
+          <attvalue for="0" value="Key principles and techniques in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Artificial Neural Networks&quot;, &quot;description&quot;: &quot;Computational models inspired by the human brain.&quot;}, {&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;Functions that determine neuron output.&quot;}, {&quot;name&quot;: &quot;Loss Function&quot;, &quot;description&quot;: &quot;Measures the difference between predicted and actual outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting&quot;, &quot;Model Evaluation&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning is the same as artificial intelligence.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods for training machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;Algorithm for training neural networks.&quot;}, {&quot;name&quot;: &quot;Regression&quot;, &quot;description&quot;: &quot;Predicting continuous outcomes.&quot;}, {&quot;name&quot;: &quot;Classification&quot;, &quot;description&quot;: &quot;Categorizing data into discrete classes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Reinforcement Learning&quot;, &quot;Transfer Learning&quot;]" />
+          <attvalue for="7" value="[&quot;All models require the same amount of training data&quot;, &quot;More complex models always perform better&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Game AI&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Fallback Mechanisms" label="Fallback Mechanisms">
+        <attvalues>
+          <attvalue for="0" value="Strategies for handling failures in systems." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Fallback Python&quot;, &quot;description&quot;: &quot;Using Python for fallback solutions.&quot;}, {&quot;name&quot;: &quot;Minimal Answering&quot;, &quot;description&quot;: &quot;Providing basic answers when full data is unavailable.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of systems and error handling." />
+          <attvalue for="6" value="[&quot;Redundancy&quot;, &quot;Graceful degradation&quot;]" />
+          <attvalue for="7" value="[&quot;Fallback mechanisms are only for critical systems&quot;, &quot;All failures can be handled with a single fallback strategy&quot;]" />
+          <attvalue for="8" value="[&quot;Web service reliability&quot;, &quot;Automated customer support systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Data Storage" label="Data Storage">
+        <attvalues>
+          <attvalue for="0" value="Methods and systems for storing data efficiently." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Storage Vectors&quot;, &quot;description&quot;: &quot;Techniques for storing vector data.&quot;}, {&quot;name&quot;: &quot;Repository Root&quot;, &quot;description&quot;: &quot;The main directory for data storage.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of computer science and data structures." />
+          <attvalue for="6" value="[&quot;File Systems&quot;, &quot;Databases&quot;, &quot;Cloud Storage&quot;, &quot;Data Compression&quot;]" />
+          <attvalue for="7" value="[&quot;All data storage is the same&quot;, &quot;More storage always means better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Storing user data for applications&quot;, &quot;Data backup and recovery solutions&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Retrieval Techniques" label="Retrieval Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods for retrieving data from databases." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;DB Retrieval&quot;, &quot;description&quot;: &quot;Techniques for retrieving data from databases.&quot;}, {&quot;name&quot;: &quot;Linear Separation&quot;, &quot;description&quot;: &quot;Methods for separating data points in classification tasks.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of databases and SQL." />
+          <attvalue for="6" value="[&quot;Querying databases&quot;, &quot;Indexing techniques&quot;]" />
+          <attvalue for="7" value="[&quot;Retrieval techniques are only for SQL databases&quot;, &quot;All retrieval methods are equally efficient&quot;]" />
+          <attvalue for="8" value="[&quot;Search engines&quot;, &quot;Data analysis and reporting&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Knowledge Base" target="Question Answering">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Question answering over a knowledge base requires understanding what a knowledge base stores and how it represents information." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Machine Learning Concepts" target="Training Techniques">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training machine learning models requires understanding core machine learning principles and terminology." />
+          <attvalue for="11" value="0.8363" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Retrieval Techniques" target="Question Answering">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Retrieving answers from a knowledge base depends on understanding methods for retrieving relevant information." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

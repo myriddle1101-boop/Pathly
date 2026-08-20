@@ -1,0 +1,143 @@
+{
+  "created_at": "2026-08-18T18:58:07.371954+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-dls_2016-562b4445509a",
+  "file_name": "dls_2016-562b4445509a",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 15,
+  "topic_metrics": {
+    "precision": 0.8182,
+    "recall": 0.6923,
+    "f1": 0.75,
+    "tp": 9,
+    "fp": 2,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.1111,
+    "recall": 0.2,
+    "f1": 0.1429,
+    "tp": 1,
+    "fp": 8,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Neural Networks",
+      "Activation Functions",
+      "Training Techniques",
+      "Prediction Layers",
+      "Loss Functions",
+      "Layer Structures",
+      "Model Evaluation",
+      "Learning Strategies",
+      "Mapping Functions"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Backpropagation",
+        "reason": "The text discusses training, gradients, and forward propagation, but does not present backpropagation."
+      },
+      {
+        "name": "General Concepts",
+        "reason": "This is too vague to identify a meaningful, source-grounded learning concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Batch Normalization",
+        "reason": "A central topic, presented as a mechanism for accelerating deep-network training and reducing internal covariate shift."
+      },
+      {
+        "name": "Optimization for Deep Networks",
+        "reason": "The tutorial explicitly discusses approximate minimization, local minima, SGD steps, and training speed."
+      },
+      {
+        "name": "Net2Net",
+        "reason": "The source presents Net2Net as a knowledge-transfer approach for rapidly training larger neural networks."
+      },
+      {
+        "name": "Function-Preserving Initialization",
+        "reason": "Net2Net methods are explicitly based on initializing a student network to represent the same function as its teacher."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Training Techniques",
+        "reason": "The discussed methods, including batch normalization and Net2Net transformations, are methods for training neural networks."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Mapping Functions",
+        "to": "Neural Networks",
+        "reason": "The source uses mapping functions for Net2Wider remapping; it does not establish general mappings as a prerequisite for neural networks."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Layer Structures",
+        "reason": "This is primarily a structural containment relationship, not a distinct directional learning dependency."
+      },
+      {
+        "from": "Loss Functions",
+        "to": "Training Techniques",
+        "reason": "Loss functions are mentioned in a feature-prediction experiment, but are not established as a prerequisite for all discussed training techniques."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Backpropagation",
+        "reason": "Backpropagation is not covered as a source concept."
+      },
+      {
+        "from": "Activation Functions",
+        "to": "Backpropagation",
+        "reason": "Backpropagation is not presented in the source."
+      },
+      {
+        "from": "Loss Functions",
+        "to": "Backpropagation",
+        "reason": "Backpropagation is not presented in the source."
+      },
+      {
+        "from": "Layer Structures",
+        "to": "Backpropagation",
+        "reason": "Backpropagation is not presented in the source."
+      },
+      {
+        "from": "Training Techniques",
+        "to": "Learning Strategies",
+        "reason": "The terms overlap broadly; the source does not establish a strong prerequisite ordering between them."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Function-Preserving Initialization",
+        "to": "Net2Wider Net",
+        "reason": "Net2Wider Net is explicitly introduced as a transformation that initializes the student to implement the teacher's function."
+      },
+      {
+        "from": "Function-Preserving Initialization",
+        "to": "Net2Deeper Net",
+        "reason": "Net2Deeper Net is explicitly described as a second function-preserving transformation."
+      },
+      {
+        "from": "Activation Functions",
+        "to": "Net2Deeper Net",
+        "reason": "The deeper transformation is applicable only when the activation function permits insertion of an identity-preserving layer, such as ReLU."
+      },
+      {
+        "from": "Batch Normalization",
+        "to": "Net2Wider Net",
+        "reason": "For batch-normalization layers, the remapping of multiplication parameters must match the remapping of the weight matrix to preserve the function."
+      }
+    ],
+    "overall_note": "The source strongly emphasizes batch normalization and Net2Net function-preserving transformations; several predicted labels are broad, while backpropagation is not actually covered."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dls_2016-562b4445509a.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dls_2016-562b4445509a.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-dls_2016-562b4445509a_ledger.csv"
+  }
+}

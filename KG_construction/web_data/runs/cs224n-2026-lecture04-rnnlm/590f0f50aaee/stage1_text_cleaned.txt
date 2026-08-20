@@ -1,0 +1,686 @@
+Natural Language Processing
+with Deep Learning
+CS 224 N/Ling 284
+Diyi Yang
+Lecture 4: Language Models and Recurrent Neural Networks
+
+Lecture Plan
+Lecture 4: Language modeling + RNNs
+1. A new NLP task: Language Modeling (20 mins) This is the most important concept in the
+class! Leads to most of modern NLP
+motivates
+2. Language models with neural nets: Recurrent Neural Networks (RNNs) (25 mins)
+3. Problems with RNNs: exploding and vanishing gradients (20 mins)
+4. Machine translation (10 mins)
+Reminder: Assignment 2 – Due Jan 22, Thursday
+
+1. Language Modeling
+• Language Modeling is the task of predicting what word comes next
+books
+the students opened their ______ laptops
+exams
+minds
+• More formally: given a sequence of words ,
+compute the probability distribution of the next word :
+where can be any word in the vocabulary
+• A system that does this is called a Language Model
+3
+
+Language Modeling
+• You can also think of a Language Model as a system that
+assigns a probability to a piece of text
+• For example, if we have some text , then the
+probability of this text (according to the Language Model) is:
+This is what our LM provides
+4
+
+You use Language Models every day!
+5
+
+You use Language Models every day!
+6
+
+Why should we care about Language Modeling?
+• Language Modeling is a benchmark task that helps us measure our progress on
+predicting language use
+• Language Modeling is a subcomponent of many NLP tasks, especially those involving
+generating text or estimating the probability of text:
+• Predictive typing
+• Speech recognition
+• Handwriting recognition
+• Spelling/grammar correction
+• Authorship identification
+• Machine translation
+• Summarization
+• Dialogue
+• etc.
+• Everything else in NLP has been rebuilt upon Language Modeling: Chat GPT is an LM!
+7
+
+What can you do with next-word prediction?
+•A sufficiently strong (!) language model can do many, many things
+Stanford University is located in __________, California. [Trivia]
+I put ___ fork down on the table. [syntax]
+The woman walked across the street, checking for traffic over ___ shoulder. [coreference]
+I went to the ocean to see the fish, turtles, seals, and _____. [lexical semantics/topic]
+Overall, the value I got from the two hours watching it was the sum total of the popcorn and the
+drink. The movie was ___. [sentiment]
+Iroh went into the kitchen to make some tea. Standing next to Iroh, Zuko pondered his destiny.
+Zuko left the ______. [some reasoning – this is harder]
+I was thinking about the sequence that goes 1, 1, 2, 3, 5, 8, 13, 21, ____ [some basic arithmetic]
+
+n-gram Language Models
+the students opened their ______
+• Question: How to learn a Language Model?
+• Answer (pre- Deep Learning): learn an n-gram Language Model!
+• Definition: An n-gram is a chunk of n consecutive words.
+• unigrams: “the”, “students”, “opened”, ”their”
+• bigrams: “the students”, “students opened”, “opened their”
+• trigrams: “the students opened”, “students opened their”
+• four-grams: “the students opened their”
+• Idea: Collect statistics about how frequent different n-grams are and use these to
+predict next word.
+11
+
+n-gram Language Models
+(𝑡+1)
+• First we make a Markov assumption: 𝑥 depends only on the preceding n-1 words
+n-1 words
+(assumption)
+prob of a n-gram
+(definition of
+prob of a (n-1)-gram conditional prob)
+• Question: How do we get these n-gram and (n-1)-gram probabilities?
+• Answer: By counting them in some large corpus of text!
+(statistical
+approximation)
+12
+
+n-gram Language Models: Example
+Suppose we are learning a 4-gram Language Model.
+as the proctor started the clock, the students opened their _____
+discard
+condition on this
+For example, suppose that in the corpus:
+• “students opened their” occurred 1000 times
+• “students opened their books” occurred 400 times
+• → P(books | students opened their) = 0.4
+Should we have discarded
+• “students opened their exams” occurred 100 times the “proctor” context?
+• → P(exams | students opened their) = 0.1
+13
+
+Sparsity Problems with n-gram Language Models
+Sparsity Problem 1
+Problem: What if “students
+(Partial) Solution: Add small 𝛿
+opened their 𝑤” never
+to the count for every 𝑤 ∈ 𝑉.
+occurred in data? Then 𝑤 has
+This is called smoothing.
+probability 0!
+Sparsity Problem 2
+Problem: What if “students
+(Partial) Solution: Just condition
+opened their” never occurred in
+on “opened their” instead.
+data? Then we can’t calculate
+This is called backoff.
+probability for any 𝑤!
+Note: Increasing n makes sparsity problems worse.
+Typically, we can’t have n bigger than 5.
+14
+
+Storage Problems with n-gram Language Models
+Storage: Need to store
+count for all n-grams you
+saw in the corpus.
+Increasing n or increasing
+corpus increases model size!
+15
+
+n-gram Language Models in practice
+• You can build a simple trigram Language Model over a
+1.7 million word corpus (Reuters) in a few seconds on your laptop*
+Business and financial news
+today the _______
+get probability
+distribution
+company 0.153 Sparsity problem:
+bank 0.153
+not much granularity
+price 0.077
+in the probability
+italian 0.039
+distribution
+emirate 0.039
+…
+Otherwise, seems reasonable! * Try for yourself: https://nlpforhackers.io/language-models/
+16
+
+Generating text with a n-gram Language Model
+You can also use a Language Model to generate text
+today the _______
+condition
+get probability
+on this
+distribution
+company 0.153
+bank 0.153
+price 0.077
+sample
+italian 0.039
+emirate 0.039
+…
+17
+
+Generating text with a n-gram Language Model
+You can also use a Language Model to generate text
+today the price _______
+condition
+get probability
+on this
+distribution
+of 0.308 sample
+for 0.050
+it 0.046
+to 0.046
+is 0.031
+…
+18
+
+Generating text with a n-gram Language Model
+You can also use a Language Model to generate text
+today the price of _______
+condition
+get probability
+on this distribution
+the 0.072
+18 0.043
+oil 0.043
+its 0.036
+gold 0.018
+sample
+…
+19
+
+Generating text with a n-gram Language Model
+You can also use a Language Model to generate text
+today the price of gold per ton , while production of shoe
+lasts and shoe industry , the bank intervened just after it
+considered and rejected an imf demand to rebuild depleted
+european stocks , sept 30 end primary 76 cts a share .
+Surprisingly grammatical!
+…but incoherent. We need to consider more than
+three words at a time if we want to model language well.
+But increasing n worsens sparsity problem,
+and increases model size…
+20
+
+How to build a neural language model?
+• Recall the Language Modeling task:
+• Input: sequence of words
+• Output: prob. dist. of the next word
+• How about a window-based neural model?
+• We saw this applied to Named Entity Recognition:
+LOCATION
+museums in Paris are amazing
+21
+
+A fixed-window neural Language Model
+as the proctor started the clock the students opened their ______
+discard
+fixed window
+22
+
+A fixed-window neural Language Model
+books
+laptops
+output distribution
+a zoo
+hidden layer
+concatenated word embeddings
+words / one-hot vectors
+the students opened their
+23
+
+A fixed-window neural Language Model
+Approximately: Y. Bengio, et al. (2000/2003): A Neural Probabilistic Language Model
+books
+Improvements over n-gram LM:
+laptops
+• No sparsity problem
+• Don’t need to store all observed n-grams
+a zoo
+Remaining problems:
+• Fixed window is too small
+• Enlarging window enlarges 𝑊
+• Window can never be large enough!
+(1) (2)
+• 𝑥 and 𝑥 are multiplied by
+completely different weights in 𝑊.
+No symmetry in how the inputs are
+processed.
+We need a neural architecture
+the students opened their
+that can process any length input
+24
+
+2. Recurrent Neural Networks (RNN)
+Core idea: Apply the same
+A family of neural architectures
+weights 𝑊 repeatedly
+outputs
+…
+(optional)
+hidden states …
+input sequence
+…
+(any length)
+25
+
+A Simple RNN Language Model
+books
+laptops
+output distribution
+a zoo
+hidden states
+is the initial hidden state
+word embeddings
+words / one-hot vectors the students opened their
+Note: this input sequence could be much
+26 longer now!
+
+RNN Language Models
+books
+laptops
+RNN Advantages:
+• Can process any length input
+• Computation for step t can (in
+a zoo
+theory) use information from
+many steps back
+• Model size doesn’t increase for
+longer input context
+• Same weights applied on every
+timestep, so there is symmetry
+in how inputs are processed.
+RNN Disadvantages:
+• Recurrent computation is slow
+More on
+• In practice, difficult to access
+these later
+the students opened their
+info from many steps back
+27
+
+Training an RNN Language Model
+• Get a big corpus of text which is a sequence of words
+• Feed into RNN-LM; compute output distribution for every step t.
+• i.e., predict probability dist of every word, given words so far
+• Loss function on step t is cross-entropy between predicted probability
+distribution , and the true next word (one-hot for ):
+• Average this to get overall loss for entire training set:
+28
+
+Training an RNN Language Model
+= negative log prob
+of “students”
+Loss
+Predicted
+prob dists
+…
+Corpus the students opened their exams …
+29
+
+Training an RNN Language Model
+= negative log prob
+of “opened”
+Loss
+Predicted
+prob dists
+…
+Corpus the students opened their exams …
+30
+
+Training an RNN Language Model
+= negative log prob
+of “their”
+Loss
+Predicted
+prob dists
+…
+Corpus the students opened their exams …
+31
+
+Training an RNN Language Model
+= negative log prob
+of “exams”
+Loss
+Predicted
+prob dists
+…
+Corpus the students opened their exams …
+32
+
+Training an RNN Language Model
+“Teacher forcing”
+Loss + + + + … =
+Predicted
+prob dists
+…
+Corpus the students opened their exams …
+33
+
+Training a RNN Language Model
+• However: Computing loss and gradients across entire corpus at once is
+too expensive (memory-wise)!
+• In practice, consider as a sentence (or a document)
+• Recall: Stochastic Gradient Descent allows us to compute loss and gradients for small
+chunk of data, and update.
+• Compute loss for a sentence (actually, a batch of sentences), compute gradients
+and update weights. Repeat on a new batch of sentences.
+34
+
+Backpropagation for RNNs
+… …
+Question: What’s the derivative of w.r.t. the repeated weight matrix ?
+“The gradient w.r.t. a repeated weight
+Answer: is the sum of the gradient
+w.r.t. each time it appears”
+Why?
+35
+
+Multivariable Chain Rule
+Source:
+https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/differentiating-vector-valued-functions/a/multivariable-chain-rule-simple-version
+36
+
+Training the parameters of RNNs: Backpropagation for RNNs
+In practice, often
+“truncated” after ~20
+… …
+timesteps for training
+efficiency reasons
+Apply the multivariable chain rule:
+= 1
+Question: How do we calculate this?
+Answer: Backpropagate over timesteps
+i = t, … ,0, summing gradients as you go.
+This algorithm is called “backpropagation
+through time” [Werbos, P.G., 1988, Neural
+Networks 1, and others]
+37
+
+Generating with an RNN Language Model (“Generating roll outs”)
+Just like an n-gram Language Model, you can use a RNN Language Model to
+generate text by repeated sampling. Sampled output becomes next step’s input.
+my favorite season is spring </s>
+sample sample sample sample sample sample
+38 <s> my favorite season is spring
+
+Generating text with an RNN Language Model
+Let’s have some fun!
+• You can train an RNN-LM on any kind of text, then generate text in that style.
+• RNN-LM trained on Harry Potter:
+Source: https://medium.com/deep-writing/harry-potter-written-by-artificial-intelligence-8 a 9431803 da 6
+39
+
+Generating text with an RNN Language Model
+Let’s have some fun!
+• You can train an RNN-LM on any kind of text, then generate text in that style.
+• RNN-LM trained on recipes:
+Source: https://gist.github.com/nylki/1 efbaa 36635956 d 35 bcc
+40
+
+Evaluating Language Models
+• The standard evaluation metric for Language Models is perplexity.
+Normalized by
+number of words
+Inverse probability of corpus, according to Language Model
+• This is equal to the exponential of the cross-entropy loss :
+Lower perplexity is better!
+41
+
+3. Problems with RNNs: Vanishing and Exploding Gradients
+42
+
+Vanishing gradient intuition
+?
+43
+
+Vanishing gradient intuition
+chain rule!
+44
+
+Vanishing gradient intuition
+chain rule!
+45
+
+Vanishing gradient intuition
+chain rule!
+46
+
+Vanishing gradient intuition
+Vanishing gradient problem:
+When these are small, the gradient
+signal gets smaller and smaller as it
+What happens if these are small?
+backpropagates further
+Source: “On the difficulty of training recurrent neural networks”, Pascanu et al, 2013. http://proceedings.mlr.press/v 28/pascanu 13.pdf
+(and supplemental materials), at http://proceedings.mlr.press/v 28/pascanu 13-supp.pdf
+
+Why is vanishing gradient a problem?
+Gradient signal from far away is lost because it’s much smaller than gradient signal from close-by.
+So, model weights are updated only with respect to near effects, not long-term effects.
+50
+
+Effect of vanishing gradient on RNN-LM
+• LM task: When she tried to print her tickets, she found that the printer was out of toner.
+She went to the stationery store to buy more toner. It was very overpriced. After
+installing the toner into the printer, she finally printed her ________
+• To learn from this training example, the RNN-LM needs to model the dependency
+between “tickets” on the 7 th step and the target word “tickets” at the end.
+• But if the gradient is small, the model can’t learn this dependency
+• So, the model is unable to predict similar long-distance dependencies at test time
+51
+
+Why is exploding gradient a problem?
+• If the gradient becomes too big, then the SGD update step becomes too big:
+learning rate
+gradient
+• This can cause bad updates: we take too large a step and reach a weird and bad
+parameter configuration (with large loss)
+• You think you’ve found a hill to climb, but suddenly you’re in Iowa
+• In the worst case, this will result in Inf or Na N in your network
+(then you have to restart training from an earlier checkpoint)
+52
+
+Gradient clipping: solution for exploding gradient
+• Gradient clipping: if the norm of the gradient is greater than some threshold, scale it
+down before applying SGD update
+• Intuition: take a step in the same direction, but a smaller step
+• In practice, remembering to clip gradients is important, but exploding gradients are an
+easy problem to solve
+Source: “On the difficulty of training recurrent neural networks”, Pascanu et al, 2013. http://proceedings.mlr.press/v 28/pascanu 13.pdf
+53
+
+How to fix the vanishing gradient problem?
+• The main problem is that it’s too difficult for the RNN to learn to preserve information
+over many timesteps.
+• In a vanilla RNN, the hidden state is constantly being rewritten
+• First: How about an RNN with separate memory which is added to?
+• Long Short-Term Memory (LSTM) [link]
+• And then: Creating more direct and linear pass-through connections in model
+• Attention, residual connections, etc.
+54
+
+5. Machine Translation
+Machine Translation (MT) is the task of translating a sentence x from one language (the
+source language) to a sentence y in another language (the target language).
+x: I like deep learning
+y:
+我喜欢深度学习
+55
+
+NMT: the first big success story of NLP Deep Learning
+Neural Machine Translation went from a fringe research attempt in 2014 to the leading
+standard method in 2016
+• 2014: First seq 2 seq paper published [Sutskever et al. 2014]
+• 2016: Google Translate switches from SMT to NMT – and by 2018 everyone has
+• This is amazing!
+• SMT systems, built by hundreds of engineers over many years, outperformed by
+NMT systems trained by small groups of engineers in a few months
+56
+
+Neural Machine Translation (NMT)
+The sequence-to-sequence model
+Target sentence (output)
+Encoding of the source sentence.
+Provides initial hidden state
+he hit me with a pie <END>
+for Decoder RNN.
+x x x x x x x
+a a a a a a a
+m m m m m m m
+N g g g g g g g D
+r r r r r r r
+N a a a a a a a e
+R c
+o
+r d
+e
+e
+d
+r
+o
+R
+c
+n N
+E N
+il m’ a entarté
+<START> he hit me with a pie
+Source sentence (input) Decoder RNN is a Language Model that generates
+target sentence, conditioned on encoding.
+Encoder RNN produces Note: This diagram shows test time behavior: decoder
+an encoding of the output is fed in as next step’s input
+source sentence.
+57
+
+Sequence-to-sequence is versatile!
+• The general notion here is an encoder-decoder model
+• One neural network takes input and produces a neural representation
+• Another network produces output based on that neural representation
+• If the input and output are sequences, we call it a seq 2 seq model
+• Sequence-to-sequence is useful for more than just MT
+• Many NLP tasks can be phrased as sequence-to-sequence:
+• Summarization (long text → short text)
+• Dialogue (previous utterances → next utterance)
+• Parsing (input text → output parse as sequence)
+• Code generation (natural language → Python code)
+58
+
+Neural Machine Translation (NMT)
+• The sequence-to-sequence model is an example of a Conditional Language Model
+• Language Model because the decoder is predicting the next word of the target sentence y
+• Conditional because its predictions are also conditioned on the source sentence x
+• NMT directly calculates :
+Probability of next target word, given
+target words so far and source sentence x
+• Question: How to train an NMT system?
+• (Easy) Answer: Get a big parallel corpus…
+• But there is now exciting work on “unsupervised NMT”, data augmentation, etc.
+59
+
+Training a Neural Machine Translation system
+= negative log = negative log = negative log
+𝑇 prob of “he” prob of “with” prob of <END>
+1
+𝐽 = ෍𝐽 = 𝐽 + 𝐽 + 𝐽 + 𝐽 + 𝐽 + 𝐽 + 𝐽
+𝑡 1 2 3 4 5 6 7
+𝑇
+𝑡=1
+𝑦ො 𝑦ො 𝑦ො 𝑦ො 𝑦ො 𝑦ො 𝑦ො
+1 2 3 4 5 6 7
+N D
+N e
+c
+R
+o
+r d
+e e
+d r
+o
+R
+c
+N
+n
+E N
+il m’ a entarté <START> he hit me with a pie
+Source sentence (from corpus) Target sentence (from corpus)
+Seq 2 seq is optimized as a single system. Backpropagation operates “end-to-end”.
+60
+
+Multi-layer deep encoder-decoder machine translation net
+[Sutskever et al. 2014; Luong et al. 2015]
+The hidden states from RNN layer i
+are the inputs to RNN layer i+1
+Translation
+The protests escalated over the weekend <EOS>
+generated
+0.1 0.2 0.4 0.5 0.2 -0.1 0.2 0.2 0.3 0.4 -0.2 -0.4 -0.3
+0.3 0.6 0.4 0.5 0.6 0.6 0.6 0.6 0.6 0.4 0.6 0.6 0.5
+0.1 -0.1 0.3 0.9 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1
+-0.4 -0.7 -0.2 -0.3 -0.5 -0.7 -0.7 -0.7 -0.7 -0.7 -0.7 -0.7 -0.7
+0.2 0.1 -0.3 -0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+Encoder:
+Builds up 0.2 0.2 0.1 0.2 0.2 0.2 0.2 -0.4 0.2 -0.1 0.2 0.3 0.2
+-0.2 0.6 0.3 0.6 -0.8 0.6 -0.1 0.6 0.6 0.6 0.4 0.6 0.6 Decoder
+-0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1 -0.1
+sentence 0.1 -0.7 -0.7 -0.4 -0.5 -0.7 -0.7 -0.7 0.3 0.3 0.2 -0.5 -0.7
+0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+meaning
+0.2 0.4 0.2 0.2 0.4 0.2 0.2 0.2 0.2 -0.1 -0.2 -0.4 0.2
+0.6 -0.6 -0.3 0.4 -0.2 0.6 0.6 0.6 0.6 0.3 0.6 0.5 0.6
+-0.1 0.2 -0.1 0.1 -0.3 -0.1 -0.1 -0.1 -0.1 -0.1 0.1 -0.5 -0.1
+-0.7 -0.3 -0.4 -0.5 -0.4 -0.7 -0.7 -0.7 -0.7 -0.7 0.3 0.4 -0.7
+0.1 0.4 0.2 -0.2 -0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+Source Feeding in
+Die Proteste waren am Wochenende eskaliert <EOS> The protests escalated over the weekend
+sentence last word
+Conditioning =
+Bottleneck
+61
+
+The final piece: the bottleneck problem in RNNs
+Encoding of the
+source sentence.
+Target sentence (output)
+he hit me with a pie <END>
+N D
+N e
+R c
+o
+r d
+e
+e
+d
+r
+o
+R
+c
+n N
+E N
+il a m’ entarté <START> he hit me with a pie
+Source sentence (input)
+Problems with this architecture?
+62
+
+Lecture Plan
+Lecture 4: Language modeling + RNNs
+1. A new NLP task: Language Modeling (20 mins) This is the most important concept in the
+class! Leads to most of modern NLP
+motivates
+2. Language models with neural nets: Recurrent Neural Networks (RNNs) (25 mins)
+3. Problems with RNNs: exploding and vanishing gradients (20 mins)
+4. Machine translation (10 mins)

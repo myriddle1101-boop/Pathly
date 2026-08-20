@@ -1,0 +1,26 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 3,
+  "prerequisites": [
+    {
+      "from": "Activation Functions",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Activation functions are core components needed to understand how neural network neurons produce outputs."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation is defined over neural network structures, so understanding neural networks is necessary first."
+    },
+    {
+      "from": "Activation Functions",
+      "to": "Backpropagation",
+      "relation_type": "strong_prerequisite",
+      "reason": "Backpropagation requires computing gradients through activation functions."
+    }
+  ]
+}

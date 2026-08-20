@@ -1,0 +1,324 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 3,
+  "candidate_count": 18,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "run python",
+      "avg_score": 0.6517,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "python simple_qa",
+      "avg_score": 0.6374,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "fallback python",
+      "avg_score": 0.588,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "storage vectors",
+      "avg_score": 0.5826,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "created python",
+      "avg_score": 0.5683,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "python created",
+      "avg_score": 0.5544,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "python python",
+      "avg_score": 0.5426,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "vector db",
+      "avg_score": 0.5179,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "vectors stored",
+      "avg_score": 0.5122,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "core concepts",
+      "avg_score": 0.4731,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "db retrieval",
+      "avg_score": 0.4628,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "chroma db",
+      "avg_score": 0.4442,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "facts vector",
+      "avg_score": 0.4385,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "answers setup",
+      "avg_score": 0.4213,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "answering minimal",
+      "avg_score": 0.4204,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "knowledge base",
+      "avg_score": 0.4024,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "repository root",
+      "avg_score": 0.3879,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "questions retrieving",
+      "avg_score": 0.3873,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Python Basics",
+      "description": "Fundamental concepts and practices in Python programming.",
+      "sub_topics": [
+        {
+          "name": "Run Python",
+          "description": "Executing Python scripts and commands."
+        },
+        {
+          "name": "Created Python",
+          "description": "Understanding how to create Python programs."
+        }
+      ]
+    },
+    {
+      "name": "Vector Databases",
+      "description": "Storage and retrieval systems for vector representations.",
+      "sub_topics": [
+        {
+          "name": "Vector DB",
+          "description": "Databases specifically designed for vector storage."
+        },
+        {
+          "name": "Chroma DB",
+          "description": "A specific type of vector database."
+        },
+        {
+          "name": "Vectors Stored",
+          "description": "Methods for storing vector data."
+        }
+      ]
+    },
+    {
+      "name": "Knowledge Base",
+      "description": "Systems for storing and retrieving information.",
+      "sub_topics": [
+        {
+          "name": "Core Concepts",
+          "description": "Fundamental ideas in knowledge representation."
+        },
+        {
+          "name": "Facts Vector",
+          "description": "Vector representations of factual information."
+        }
+      ]
+    },
+    {
+      "name": "Question Answering",
+      "description": "Techniques for retrieving answers from a knowledge base.",
+      "sub_topics": [
+        {
+          "name": "Python Simple QA",
+          "description": "Implementing simple question answering in Python."
+        },
+        {
+          "name": "Answers Setup",
+          "description": "Configuring systems to provide answers."
+        },
+        {
+          "name": "Questions Retrieving",
+          "description": "Methods for retrieving questions from a database."
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning Concepts",
+      "description": "Key principles and techniques in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Artificial Neural Networks",
+          "description": "Computational models inspired by the human brain."
+        },
+        {
+          "name": "Activation Function",
+          "description": "Functions that determine neuron output."
+        },
+        {
+          "name": "Loss Function",
+          "description": "Measures the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods for training machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "Algorithm for training neural networks."
+        },
+        {
+          "name": "Regression",
+          "description": "Predicting continuous outcomes."
+        },
+        {
+          "name": "Classification",
+          "description": "Categorizing data into discrete classes."
+        }
+      ]
+    },
+    {
+      "name": "Fallback Mechanisms",
+      "description": "Strategies for handling failures in systems.",
+      "sub_topics": [
+        {
+          "name": "Fallback Python",
+          "description": "Using Python for fallback solutions."
+        },
+        {
+          "name": "Minimal Answering",
+          "description": "Providing basic answers when full data is unavailable."
+        }
+      ]
+    },
+    {
+      "name": "Data Storage",
+      "description": "Methods and systems for storing data efficiently.",
+      "sub_topics": [
+        {
+          "name": "Storage Vectors",
+          "description": "Techniques for storing vector data."
+        },
+        {
+          "name": "Repository Root",
+          "description": "The main directory for data storage."
+        }
+      ]
+    },
+    {
+      "name": "Retrieval Techniques",
+      "description": "Methods for retrieving data from databases.",
+      "sub_topics": [
+        {
+          "name": "DB Retrieval",
+          "description": "Techniques for retrieving data from databases."
+        },
+        {
+          "name": "Linear Separation",
+          "description": "Methods for separating data points in classification tasks."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 17.0425,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

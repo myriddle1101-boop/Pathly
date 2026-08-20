@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "reason": "stage2b_process_error",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\dl___week_1___design_engineering-2\\4b5a4de9201e",
+  "run_id": "dl___week_1___design_engineering-2-4b5a4de9201e",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:01:15.296468+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "826afdae84759a52f6a40cdfd211f1ce31792b20430cade6854314240f4296ea",
+    "stage2a_topics_hybrid.json": "d359c5e6a4bed440d9542aa8246ffb9b5a9efa82a97534553ea795b7df5cd967",
+    "stage2c_similarity_edges.json": "9437f9131fb205478a2933b28092329193e9c2025c296f1aa64391fa33ee55ab",
+    "stage3_topics_with_summary.json": "e19337ed06130dff5077b70024b04511fe5f1f98acb54b50e90355cb6d9c346a"
+  },
+  "old_relation_count": 6,
+  "new_relation_count": 0,
+  "new_node_count": 0,
+  "new_edge_count": 0,
+  "golden_path_resource": false
+}

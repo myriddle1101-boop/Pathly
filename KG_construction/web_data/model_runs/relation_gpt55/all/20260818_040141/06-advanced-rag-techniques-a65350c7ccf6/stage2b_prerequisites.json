@@ -1,0 +1,14 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 1,
+  "prerequisites": [
+    {
+      "from": "Semantic Processing",
+      "to": "Hybrid Search",
+      "relation_type": "strong_prerequisite",
+      "reason": "Hybrid search commonly combines semantic understanding with other search methods, so semantic processing is foundational."
+    }
+  ]
+}

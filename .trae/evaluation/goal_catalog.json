@@ -1,0 +1,18 @@
+{
+  "catalog_version": "2026-08-15-v1",
+  "scope_note": "full_experience goals are controlled linguistic and intent variants that resolve to the same verified neural-foundations chain. They are not independent subject-domain benchmarks.",
+  "full_experience": [
+    {"id": "G1", "goal_text": "Learn how neural networks solve XOR using activation functions and gradient descent", "intent": "end-to-end mechanism"},
+    {"id": "G2", "goal_text": "Understand why XOR is not linearly separable and how a neural network can solve it", "intent": "problem-to-solution explanation"},
+    {"id": "G3", "goal_text": "Learn nonlinear classification with neural networks, activation functions, and gradient descent", "intent": "application-oriented formulation"},
+    {"id": "G4", "goal_text": "Build intuition for the XOR problem, hidden nonlinearities, and training a neural network", "intent": "conceptual-intuition formulation"},
+    {"id": "G5", "goal_text": "Explain the role of activation functions and gradient descent when a neural network learns XOR", "intent": "component-to-mechanism formulation"}
+  ],
+  "planning_exploratory_only": [
+    {"id": "P1", "goal_text": "Learn neural network basics", "reason": "Planning may map this goal, but V4 has no verified full-content source guarantee."},
+    {"id": "P2", "goal_text": "Understand backpropagation", "reason": "Planning/KG exploration only; do not use for source-grounded content claims."},
+    {"id": "P3", "goal_text": "Learn word embeddings", "reason": "Planning/KG exploration only; confirm mapping and sources before any content evaluation."},
+    {"id": "P4", "goal_text": "Learn the basics of transformers", "reason": "Planning/KG exploration only; confirm mapping and sources before any content evaluation."},
+    {"id": "P5", "goal_text": "Understand retrieval-augmented generation", "reason": "Planning/KG exploration only; confirm mapping and sources before any content evaluation."}
+  ]
+}

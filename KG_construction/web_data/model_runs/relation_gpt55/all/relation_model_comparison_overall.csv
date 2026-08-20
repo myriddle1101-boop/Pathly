@@ -1,0 +1,5 @@
+﻿model,metric_group,precision,recall,f1,tp,fp,fn
+baseline,topics,0.7685,0.6231,0.6882,415,125,251
+baseline,prerequisites,0.1785,0.2788,0.2176,63,290,163
+gpt55,topics,0.7796,0.6321,0.6982,421,119,245
+gpt55,prerequisites,0.4732,0.3911,0.4283,97,108,151

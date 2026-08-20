@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-08-18T18:51:47.372146+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-cs224n-2026-lecture05-transformers-0e9017f9dbd8",
+  "file_name": "cs224n-2026-lecture05-transformers-0e9017f9dbd8",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 22,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.5714,
+    "f1": 0.6957,
+    "tp": 8,
+    "fp": 1,
+    "fn": 6
+  },
+  "prerequisite_metrics": {
+    "precision": 0.6667,
+    "recall": 0.4444,
+    "f1": 0.5333,
+    "tp": 4,
+    "fp": 2,
+    "fn": 5
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Attention Mechanisms",
+      "Transformers",
+      "Sequence Processing",
+      "Neural Networks",
+      "Training Techniques",
+      "Attention Variants",
+      "Language Models",
+      "Output Generation"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Dimensionality Reduction",
+        "reason": "The source discusses vector dimensions and attention-head dimensions, but not dimensionality reduction as a learning concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Recurrent Neural Networks",
+        "reason": "The lecture explicitly covers RNNs, their limitations, and the transition from recurrence to attention-based models."
+      },
+      {
+        "name": "Vanishing and Exploding Gradients",
+        "reason": "A major early section explains both problems and gradient clipping."
+      },
+      {
+        "name": "Neural Machine Translation",
+        "reason": "Machine translation and neural machine translation are central motivating applications throughout the lecture."
+      },
+      {
+        "name": "Sequence-to-Sequence Models",
+        "reason": "The source explains encoder-decoder sequence-to-sequence models and their conditional language-model training objective."
+      },
+      {
+        "name": "Self-Attention",
+        "reason": "Self-attention is presented as the core building block required for Transformers."
+      },
+      {
+        "name": "Positional Encodings",
+        "reason": "The source explains position representations as necessary because self-attention has no inherent notion of sequence order."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Transformers",
+        "reason": "Transformers are presented as neural-network architectures composed of attention, feed-forward layers, residual connections, and normalization."
+      },
+      {
+        "from": "Attention Mechanisms",
+        "to": "Transformers",
+        "reason": "Self-attention and multi-head attention are core components of Transformer blocks."
+      },
+      {
+        "from": "Sequence Processing",
+        "to": "Language Models",
+        "reason": "The source defines language modeling as sequential next-word prediction and discusses unidirectional sequence context."
+      },
+      {
+        "from": "Attention Mechanisms",
+        "to": "Attention Variants",
+        "reason": "The lecture develops self-attention, cross-attention, and multi-head attention from the general attention mechanism."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Attention Mechanisms",
+        "reason": "The source presents attention as a general weighted-averaging technique; neural-network implementation alone does not establish a strong directional prerequisite."
+      },
+      {
+        "from": "Training Techniques",
+        "to": "Output Generation",
+        "reason": "Training methods such as gradient clipping and normalization improve optimization, but are not conceptual prerequisites for generating model outputs."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Recurrent Neural Networks",
+        "to": "Vanishing and Exploding Gradients",
+        "reason": "The source introduces vanishing and exploding gradients specifically as problems encountered when training RNNs."
+      },
+      {
+        "from": "Sequence-to-Sequence Models",
+        "to": "Neural Machine Translation",
+        "reason": "Neural machine translation is presented as a primary application of the encoder-decoder sequence-to-sequence model."
+      },
+      {
+        "from": "Self-Attention",
+        "to": "Transformers",
+        "reason": "The lecture identifies self-attention as the basis of the Transformer decoder and encoder."
+      },
+      {
+        "from": "Positional Encodings",
+        "to": "Transformers",
+        "reason": "Position representations are required to provide sequence-order information absent from self-attention."
+      },
+      {
+        "from": "Multi-Head Attention",
+        "to": "Transformers",
+        "reason": "Transformer self-attention is explicitly replaced with multi-head self-attention in the architecture."
+      }
+    ],
+    "overall_note": "The predictions capture the lecture's broad Transformer and attention themes, but omit several central technical concepts, especially RNN limitations, sequence-to-sequence NMT, self-attention, and positional encodings."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture05-transformers-0e9017f9dbd8.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture05-transformers-0e9017f9dbd8.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-cs224n-2026-lecture05-transformers-0e9017f9dbd8_ledger.csv"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "created_at": "2026-08-18T18:41:41.745243+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-06_mlp-01e27d8d0770",
+  "file_name": "06_mlp-01e27d8d0770",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 34,
+  "topic_metrics": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.8571,
+    "tp": 9,
+    "fp": 0,
+    "fn": 3
+  },
+  "prerequisite_metrics": {
+    "precision": 0.25,
+    "recall": 0.5,
+    "f1": 0.3333,
+    "tp": 2,
+    "fp": 6,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Feedforward Networks",
+      "Activation Functions",
+      "Loss Functions",
+      "Backpropagation",
+      "Neural Network Models",
+      "Computational Graphs",
+      "Model Generalization",
+      "Linear Separability",
+      "Gradient Descent"
+    ],
+    "unsupported_topics": [],
+    "missing_topics": [
+      {
+        "name": "Rectified Linear Units",
+        "reason": "The source explicitly defines ReLU and recommends it as the default hidden-unit activation."
+      },
+      {
+        "name": "Chain Rule",
+        "reason": "The source presents the chain rule as the mathematical basis of back-propagation."
+      },
+      {
+        "name": "Hidden Units",
+        "reason": "The source has a dedicated discussion of choosing hidden-unit types and layers."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Feedforward Networks",
+        "to": "Backpropagation",
+        "reason": "The source develops back-propagation in the context of training feedforward neural networks."
+      },
+      {
+        "from": "Computational Graphs",
+        "to": "Backpropagation",
+        "reason": "Back-propagation is described as applying Jacobian-gradient products through operations in a computational graph."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Feedforward Networks",
+        "to": "Activation Functions",
+        "reason": "Activation functions are components used to define nonlinear feedforward networks, so this direction is reversed or at least not a strong dependency."
+      },
+      {
+        "from": "Feedforward Networks",
+        "to": "Loss Functions",
+        "reason": "Loss functions are general training objectives, not concepts that require feedforward networks as a prerequisite."
+      },
+      {
+        "from": "Backpropagation",
+        "to": "Gradient Descent",
+        "reason": "Back-propagation computes gradients, while gradient descent is the optimization procedure that uses them; the proposed learning direction is not clearly supported."
+      },
+      {
+        "from": "Neural Network Models",
+        "to": "Feedforward Networks",
+        "reason": "Feedforward networks are a type of neural network model; this is a taxonomic relation rather than a prerequisite."
+      },
+      {
+        "from": "Loss Functions",
+        "to": "Model Generalization",
+        "reason": "The source distinguishes fitting/training costs from generalization; understanding a loss function alone is not a strong prerequisite for generalization."
+      },
+      {
+        "from": "Linear Separability",
+        "to": "Feedforward Networks",
+        "reason": "Linear inseparability motivates the XOR example, but it is not a general prerequisite for learning feedforward networks."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Chain Rule",
+        "to": "Backpropagation",
+        "reason": "The source explicitly derives back-propagation from the chain rule, including its vector and tensor forms."
+      },
+      {
+        "from": "Activation Functions",
+        "to": "Feedforward Networks",
+        "reason": "The source specifies hidden-layer activations as an element-wise activation function applied after an affine transformation."
+      }
+    ],
+    "overall_note": "The predicted concepts are source-supported, but several proposed edges confuse model components, taxonomy, or training associations with directional learning prerequisites."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-06_mlp-01e27d8d0770.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-06_mlp-01e27d8d0770.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-06_mlp-01e27d8d0770_ledger.csv"
+  }
+}

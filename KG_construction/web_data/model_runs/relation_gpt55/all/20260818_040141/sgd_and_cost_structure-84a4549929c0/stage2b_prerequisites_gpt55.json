@@ -1,0 +1,44 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 6,
+  "prerequisites": [
+    {
+      "from": "Loss Functions",
+      "to": "Gradient Descent",
+      "relation_type": "strong_prerequisite",
+      "reason": "Gradient descent in machine learning is used to minimize a loss function, so the objective being minimized must be understood first."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Neural Network Architecture",
+      "relation_type": "strong_prerequisite",
+      "reason": "Understanding the basic structure and purpose of neural networks is necessary before studying their architectural design choices."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Gradient Noise",
+      "relation_type": "strong_prerequisite",
+      "reason": "Gradient noise concerns variability in gradient estimates during optimization, which requires understanding gradient-based optimization first."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Eigenvalues in Optimization",
+      "relation_type": "strong_prerequisite",
+      "reason": "Eigenvalues are often used to analyze the behavior and convergence of gradient-based optimization methods."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Training Dynamics",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training dynamics involve changes in model performance during training, which are measured and guided by loss functions."
+    },
+    {
+      "from": "Gradient Descent",
+      "to": "Training Dynamics",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training dynamics commonly depend on how gradient-based updates evolve during model training."
+    }
+  ]
+}

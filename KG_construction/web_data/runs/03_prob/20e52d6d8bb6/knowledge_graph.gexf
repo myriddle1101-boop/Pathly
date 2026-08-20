@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-07-29">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Probability Theory" label="Probability Theory">
+        <attvalues>
+          <attvalue for="0" value="The mathematical framework for quantifying uncertainty." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Probability&quot;, &quot;description&quot;: &quot;The measure of the likelihood of an event.&quot;}, {&quot;name&quot;: &quot;Conditional Probability&quot;, &quot;description&quot;: &quot;The probability of an event given that another event has occurred.&quot;}, {&quot;name&quot;: &quot;Marginal Probability&quot;, &quot;description&quot;: &quot;The probability of an event irrespective of other events.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algebra and calculus." />
+          <attvalue for="6" value="[&quot;Random Variables&quot;, &quot;Probability Distributions&quot;, &quot;Bayes' Theorem&quot;, &quot;Law of Large Numbers&quot;]" />
+          <attvalue for="7" value="[&quot;Probability is the same as chance&quot;, &quot;Independent events cannot affect each other&quot;]" />
+          <attvalue for="8" value="[&quot;Statistical inference&quot;, &quot;Machine learning algorithms&quot;, &quot;Risk assessment&quot;, &quot;Game theory&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Probability Distributions" label="Probability Distributions">
+        <attvalues>
+          <attvalue for="0" value="Functions that describe the likelihood of different outcomes in a random variable." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Probability Density Function&quot;, &quot;description&quot;: &quot;A function that describes the relative likelihood for a continuous random variable.&quot;}, {&quot;name&quot;: &quot;Probability Mass Function&quot;, &quot;description&quot;: &quot;A function that gives the probability of discrete outcomes.&quot;}, {&quot;name&quot;: &quot;Normal Distribution&quot;, &quot;description&quot;: &quot;A continuous probability distribution characterized by a bell-shaped curve.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and algebra." />
+          <attvalue for="6" value="[&quot;Discrete Probability Distributions&quot;, &quot;Continuous Probability Distributions&quot;]" />
+          <attvalue for="7" value="[&quot;All distributions are normal&quot;, &quot;Probability distributions only apply to large datasets&quot;]" />
+          <attvalue for="8" value="[&quot;Risk assessment in finance&quot;, &quot;Machine learning model evaluation&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Information Theory" label="Information Theory">
+        <attvalues>
+          <attvalue for="0" value="The study of quantification, storage, and communication of information." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Entropy&quot;, &quot;description&quot;: &quot;A measure of uncertainty or randomness in a probability distribution.&quot;}, {&quot;name&quot;: &quot;KL Divergence&quot;, &quot;description&quot;: &quot;A measure of how one probability distribution diverges from a second expected probability distribution.&quot;}, {&quot;name&quot;: &quot;Shannon Entropy&quot;, &quot;description&quot;: &quot;A specific measure of entropy used in information theory.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of probability and statistics." />
+          <attvalue for="6" value="[&quot;Entropy&quot;, &quot;Mutual Information&quot;]" />
+          <attvalue for="7" value="[&quot;Information is the same as data&quot;, &quot;Higher entropy means more useful information&quot;]" />
+          <attvalue for="8" value="[&quot;Data compression&quot;, &quot;Error correction in communication systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Covariance" label="Covariance">
+        <attvalues>
+          <attvalue for="0" value="A measure of how much two random variables change together." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Covariance Matrix&quot;, &quot;description&quot;: &quot;A matrix that contains the covariances between pairs of variables.&quot;}, {&quot;name&quot;: &quot;Covariance Example&quot;, &quot;description&quot;: &quot;Illustrative examples demonstrating the concept of covariance.&quot;}, {&quot;name&quot;: &quot;Covariance Dependent&quot;, &quot;description&quot;: &quot;Situations where covariance is influenced by other variables.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and probability." />
+          <attvalue for="6" value="[&quot;Variance&quot;, &quot;Correlation&quot;]" />
+          <attvalue for="7" value="[&quot;Covariance indicates the strength of a relationship&quot;, &quot;Covariance is always a positive value&quot;]" />
+          <attvalue for="8" value="[&quot;Portfolio optimization in finance&quot;, &quot;Feature selection in machine learning&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Random Variables" label="Random Variables">
+        <attvalues>
+          <attvalue for="0" value="Variables whose values depend on the outcomes of a random phenomenon." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Discrete Variables&quot;, &quot;description&quot;: &quot;Random variables that can take on a countable number of values.&quot;}, {&quot;name&quot;: &quot;Continuous Variables&quot;, &quot;description&quot;: &quot;Random variables that can take on an infinite number of values within a given range.&quot;}, {&quot;name&quot;: &quot;Mixture Distributions&quot;, &quot;description&quot;: &quot;Probability distributions that are a combination of two or more distributions.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of probability and statistics." />
+          <attvalue for="6" value="[&quot;Discrete Random Variables&quot;, &quot;Continuous Random Variables&quot;]" />
+          <attvalue for="7" value="[&quot;Random variables are the same as regular variables&quot;, &quot;All random variables are uniformly distributed&quot;]" />
+          <attvalue for="8" value="[&quot;Statistical modeling&quot;, &quot;Risk assessment in finance&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Probabilistic Models" label="Probabilistic Models">
+        <attvalues>
+          <attvalue for="0" value="Models that incorporate randomness and uncertainty in their predictions." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Multinomial Distribution&quot;, &quot;description&quot;: &quot;A generalization of the binomial distribution for outcomes with more than two categories.&quot;}, {&quot;name&quot;: &quot;Probabilistic Relationships&quot;, &quot;description&quot;: &quot;Relationships that express dependencies between random variables.&quot;}, {&quot;name&quot;: &quot;Structured Probabilistic Models&quot;, &quot;description&quot;: &quot;Models that represent complex dependencies among random variables.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and probability theory." />
+          <attvalue for="6" value="[&quot;Bayesian Inference&quot;, &quot;Markov Models&quot;]" />
+          <attvalue for="7" value="[&quot;Probabilistic models are only for complex problems.&quot;, &quot;All predictions from probabilistic models are uncertain.&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Financial Forecasting&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Computational models inspired by the human brain, used for various machine learning tasks." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}, {&quot;name&quot;: &quot;Loss Function&quot;, &quot;description&quot;: &quot;A function that quantifies the difference between predicted and actual outcomes.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing the loss function.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Statistical Inference" label="Statistical Inference">
+        <attvalues>
+          <attvalue for="0" value="The process of drawing conclusions about populations based on sample data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Hypothesis Testing&quot;, &quot;description&quot;: &quot;A method for testing a claim or hypothesis about a parameter.&quot;}, {&quot;name&quot;: &quot;Confidence Intervals&quot;, &quot;description&quot;: &quot;Ranges of values that are likely to contain a population parameter.&quot;}, {&quot;name&quot;: &quot;Regression Analysis&quot;, &quot;description&quot;: &quot;A statistical method for modeling the relationship between variables.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and probability." />
+          <attvalue for="6" value="[&quot;Hypothesis Testing&quot;, &quot;Confidence Intervals&quot;]" />
+          <attvalue for="7" value="[&quot;Statistical significance implies practical significance.&quot;, &quot;A larger sample size always guarantees accurate results.&quot;]" />
+          <attvalue for="8" value="[&quot;Market research analysis&quot;, &quot;Clinical trial evaluations&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Mathematical Functions" label="Mathematical Functions">
+        <attvalues>
+          <attvalue for="0" value="Functions that describe relationships between variables in mathematical terms." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Generalized Functions&quot;, &quot;description&quot;: &quot;Functions that extend the concept of traditional functions.&quot;}, {&quot;name&quot;: &quot;Density Functions&quot;, &quot;description&quot;: &quot;Functions that describe the distribution of probabilities.&quot;}, {&quot;name&quot;: &quot;Softplus Function&quot;, &quot;description&quot;: &quot;A smooth approximation of the ReLU activation function.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algebra and calculus." />
+          <attvalue for="6" value="[&quot;Linear Functions&quot;, &quot;Non-linear Functions&quot;]" />
+          <attvalue for="7" value="[&quot;Functions can have multiple outputs for a single input.&quot;, &quot;All functions are linear.&quot;]" />
+          <attvalue for="8" value="[&quot;Modeling real-world phenomena&quot;, &quot;Data analysis and predictions&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Probability Theory" target="Probability Distributions" id="0">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Probability distributions are based on the principles of probability theory." />
+        </attvalues>
+      </edge>
+      <edge source="Probability Theory" target="Random Variables" id="1">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Understanding random variables requires knowledge of probability theory." />
+        </attvalues>
+      </edge>
+      <edge source="Probability Theory" target="Statistical Inference" id="2">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Statistical inference relies on concepts from probability theory." />
+        </attvalues>
+      </edge>
+      <edge source="Probability Theory" target="Information Theory" id="3">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Information theory is grounded in probability theory." />
+        </attvalues>
+      </edge>
+      <edge source="Probability Distributions" target="Covariance" id="4">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Covariance is defined in terms of probability distributions." />
+        </attvalues>
+      </edge>
+      <edge source="Probability Distributions" target="Random Variables" id="5">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.7682" />
+        </attvalues>
+      </edge>
+      <edge source="Random Variables" target="Probabilistic Models" id="6">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Probabilistic models are built using random variables." />
+        </attvalues>
+      </edge>
+      <edge source="Statistical Inference" target="Neural Networks" id="7">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Statistical inference techniques are often used in training neural networks." />
+        </attvalues>
+      </edge>
+      <edge source="Mathematical Functions" target="Neural Networks" id="8">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Neural networks utilize mathematical functions to model relationships." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,33 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 8,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Statistical Models",
+      "to": "Factor Models",
+      "reason": "Factor Models are a type of Statistical Model."
+    },
+    {
+      "from": "Statistical Models",
+      "to": "Regression and Classification",
+      "reason": "Regression and Classification are based on Statistical Models."
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Neural Networks",
+      "reason": "Neural Networks require understanding of Learning Algorithms."
+    },
+    {
+      "from": "Regression and Classification",
+      "to": "Model Evaluation",
+      "reason": "Model Evaluation is necessary to assess Regression and Classification outcomes."
+    },
+    {
+      "from": "Dimensionality Reduction",
+      "to": "Model Evaluation",
+      "reason": "Model Evaluation is important to assess the impact of Dimensionality Reduction."
+    }
+  ]
+}

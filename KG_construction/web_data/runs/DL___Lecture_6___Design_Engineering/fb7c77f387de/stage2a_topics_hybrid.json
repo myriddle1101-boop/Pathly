@@ -1,0 +1,246 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 7,
+  "candidate_count": 16,
+  "topics_count": 16,
+  "candidates": [
+    {
+      "name": "convolutional kernels",
+      "avg_score": 0.673,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.6032,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning whynotusea",
+      "avg_score": 0.5888,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "learning modelandfeatureselection",
+      "avg_score": 0.5872,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "neural networks",
+      "avg_score": 0.5826,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "groupsofneurons 111",
+      "avg_score": 0.5799,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "learning pooling",
+      "avg_score": 0.5788,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "convolutional",
+      "avg_score": 0.5768,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "whynotusea lnn",
+      "avg_score": 0.5691,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "forourspecificexample",
+      "avg_score": 0.5658,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "learning lecture",
+      "avg_score": 0.5487,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "learning practicalcomments",
+      "avg_score": 0.5477,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "kernels example",
+      "avg_score": 0.5322,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "learning",
+      "avg_score": 0.5321,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "lnnwhenanalysinganimage whatarewelosing",
+      "avg_score": 0.5292,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "whynotusea",
+      "avg_score": 0.4774,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "convolutional kernels in image processing",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "deep learning architectures and applications",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "learning whynotusea in neural networks",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "feature selection techniques in learning models",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "neural networks and their training methodologies",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "groups of neurons and their functional roles",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "learning pooling strategies in convolutional networks",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "convolutional layer design and optimization",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "whynotusea in the context of LNNs",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "specific examples of learning applications",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "learning lectures on advanced neural network topics",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "practical comments on implementing learning algorithms",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "kernels example in machine learning contexts",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "foundational concepts in learning theory",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "analyzing image data with LNNs and potential losses",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "whynotusea as a critique of existing models",
+      "description": "",
+      "sub_topics": []
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 17.2584,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 3,
+  "prerequisites": [
+    {
+      "from": "Loss Functions",
+      "to": "Regularization Techniques",
+      "relation_type": "strong_prerequisite",
+      "reason": "Regularization is typically formulated as an added penalty in the training objective, so understanding loss functions is necessary."
+    },
+    {
+      "from": "Loss Functions",
+      "to": "Learning Algorithms",
+      "relation_type": "strong_prerequisite",
+      "reason": "Many learning algorithms train models by minimizing an objective defined by a loss function."
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Training neural networks requires understanding learning algorithms such as optimization-based training."
+    }
+  ]
+}

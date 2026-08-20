@@ -1,0 +1,33 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 11,
+  "prerequisite_count": 5,
+  "prerequisites": [
+    {
+      "from": "Integrals",
+      "to": "Probabilistic Models",
+      "reason": "Integrals are essential for understanding probability distributions."
+    },
+    {
+      "from": "Variance",
+      "to": "Model Evaluation",
+      "reason": "Understanding variance is crucial for assessing model performance."
+    },
+    {
+      "from": "Sampling Techniques",
+      "to": "Model Evaluation",
+      "reason": "Proper sampling is necessary for accurate model evaluation."
+    },
+    {
+      "from": "Optimization",
+      "to": "Artificial Neural Networks",
+      "reason": "Optimization techniques are fundamental for training neural networks."
+    },
+    {
+      "from": "Regression and Classification",
+      "to": "Model Evaluation",
+      "reason": "Understanding regression and classification is key to evaluating their performance."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "stage1",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage1_adaptive_chunking.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture08-posttraining\\f71e4c3743c8\\cs224n-2026-lecture08-posttraining.pdf"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture08-posttraining\\f71e4c3743c8\\stage1_chunks.json",
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture08-posttraining\\f71e4c3743c8\\stage1_text_cleaned.txt"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 7.8275,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage1_chunks.json: OK"
+    ]
+  },
+  "stdout_tail": "=== Stage1 自适应分块 ===\n请输入PDF完整路径：\n> 请输入输出JSON路径（回车=当前目录/stage1_chunks.json）：\n> [1] 原始词数: 3223\n[2] 清洗后词数: 3308\n[3] 文档类型识别: slides\n[4] 分块数（过滤前）: 15\n[5] 分块数（过滤后）: 14\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture08-posttraining\\f71e4c3743c8\\stage1_chunks.json\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture08-posttraining\\f71e4c3743c8\\stage1_text_cleaned.txt\n\n--- 前3块预览 ---\n\n[Chunk 1] words=280\nNatural Language Processing with Deep Learning CS 224 N/Ling 284 Diyi Yang Lecture 7: Post-training Lecture Plan 1. Instruction fine-tuning [15 mins] 2. Reinforcement learning from human preferences (RLHF) [20 mins] 3. I...\n\n[Chunk 2] words=274\nThe pretraining/finetuning paradigm Pretraining can improve NLP applications by serving as parameter initialization. Step 1: Pretrain (on language modeling) Step 2: Finetune (on your task) Lots of text; learn general thi...\n\n[Chunk 3] words=199\nInstruction finetuning and performance gains BIG-bench + MMLU  Recall the T 5 encoder-decoder model [Raffel et al., 2018], pretrained on the span corruption task  Flan-T 5 [Chung et al., 2022]: T 5 models finetuned on ...\n\n Stage1 完成，可进入 Stage2\n",
+  "stderr_tail": ""
+}

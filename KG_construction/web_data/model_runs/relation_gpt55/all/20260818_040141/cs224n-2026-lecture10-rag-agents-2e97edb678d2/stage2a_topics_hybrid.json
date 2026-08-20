@@ -1,0 +1,786 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 13,
+  "candidate_count": 76,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "language agents",
+      "avg_score": 0.6149,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        6
+      ]
+    },
+    {
+      "name": "agent actions",
+      "avg_score": 0.5923,
+      "frequency": 2,
+      "chunk_ids": [
+        6,
+        13
+      ]
+    },
+    {
+      "name": "agent evaluation",
+      "avg_score": 0.7345,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "toolformer language",
+      "avg_score": 0.7232,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "reflextion reinforce",
+      "avg_score": 0.7231,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "reflextion",
+      "avg_score": 0.6766,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "apple remote",
+      "avg_score": 0.6561,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "agents words",
+      "avg_score": 0.6475,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "39 reflextion",
+      "avg_score": 0.6385,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "web environment",
+      "avg_score": 0.6315,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "tool interaction",
+      "avg_score": 0.6288,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "language adapters",
+      "avg_score": 0.6256,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "challenges agent",
+      "avg_score": 0.62,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "agents reasoning",
+      "avg_score": 0.6158,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "environment web",
+      "avg_score": 0.6132,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "web app",
+      "avg_score": 0.6071,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "language models",
+      "avg_score": 0.6059,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "agent definition",
+      "avg_score": 0.603,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "reasoning acting",
+      "avg_score": 0.5953,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "app agents",
+      "avg_score": 0.5926,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "mem gpt",
+      "avg_score": 0.5891,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "language processing",
+      "avg_score": 0.5849,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "mlm learn",
+      "avg_score": 0.5835,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "agent agent",
+      "avg_score": 0.5833,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "agent step",
+      "avg_score": 0.5672,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "agent com",
+      "avg_score": 0.5667,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "agent web",
+      "avg_score": 0.5645,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "knowledge adapters",
+      "avg_score": 0.5634,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "adapters learn",
+      "avg_score": 0.5599,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "agents environment",
+      "avg_score": 0.5598,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "language modelling",
+      "avg_score": 0.5595,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "tools input",
+      "avg_score": 0.5583,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "deep retrieval",
+      "avg_score": 0.556,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "feedback reflexion",
+      "avg_score": 0.5558,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "controlled apple",
+      "avg_score": 0.5541,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "agent",
+      "avg_score": 0.5502,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "retrieval augmented",
+      "avg_score": 0.5501,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "toolformer",
+      "avg_score": 0.548,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "vector retrieval",
+      "avg_score": 0.543,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "virtual context",
+      "avg_score": 0.5424,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "latent retrieval",
+      "avg_score": 0.5392,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "retrieval models",
+      "avg_score": 0.5372,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "reflexion agents",
+      "avg_score": 0.5347,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "reasoning helpful",
+      "avg_score": 0.5315,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "documents llms",
+      "avg_score": 0.531,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "use tools",
+      "avg_score": 0.529,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "context management",
+      "avg_score": 0.5288,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "gpt represents",
+      "avg_score": 0.5269,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "language mlm",
+      "avg_score": 0.5239,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "retrieval generative",
+      "avg_score": 0.5238,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "agents verbally",
+      "avg_score": 0.5228,
+      "frequency": 1,
+      "chunk_ids": [
+        9
+      ]
+    },
+    {
+      "name": "llm virtual",
+      "avg_score": 0.5215,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "introducing language",
+      "avg_score": 0.5093,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "cabinet reasoning",
+      "avg_score": 0.5073,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "gpt performance",
+      "avg_score": 0.5041,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "domain questions",
+      "avg_score": 0.4933,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "reasoning",
+      "avg_score": 0.4914,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "reasoning right",
+      "avg_score": 0.4862,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "deep learning",
+      "avg_score": 0.4839,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "natural language",
+      "avg_score": 0.4823,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "remote control",
+      "avg_score": 0.4819,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "interact apple",
+      "avg_score": 0.4785,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "use documents",
+      "avg_score": 0.4765,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "question answering",
+      "avg_score": 0.473,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "tutorial friday",
+      "avg_score": 0.4692,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "documents use",
+      "avg_score": 0.4616,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "documents retriever",
+      "avg_score": 0.4592,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "problem documents",
+      "avg_score": 0.4571,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "lms use",
+      "avg_score": 0.4508,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "answering question",
+      "avg_score": 0.447,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "open domain",
+      "avg_score": 0.4429,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "program apple",
+      "avg_score": 0.4414,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "thought apple",
+      "avg_score": 0.4397,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "remote device",
+      "avg_score": 0.4319,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "domain question",
+      "avg_score": 0.4219,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "answer open",
+      "avg_score": 0.4134,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Language Models",
+      "description": "Study of models that understand and generate human language.",
+      "sub_topics": [
+        {
+          "name": "Language Processing",
+          "description": "Techniques for analyzing and generating natural language."
+        },
+        {
+          "name": "Language Modelling",
+          "description": "Statistical methods for predicting the next word in a sequence."
+        },
+        {
+          "name": "Toolformer Language",
+          "description": "A framework for integrating tools with language models."
+        }
+      ]
+    },
+    {
+      "name": "Agent Systems",
+      "description": "Exploration of intelligent agents that perform tasks autonomously.",
+      "sub_topics": [
+        {
+          "name": "Agent Actions",
+          "description": "The various actions that agents can perform."
+        },
+        {
+          "name": "Agent Evaluation",
+          "description": "Methods for assessing the performance of agents."
+        },
+        {
+          "name": "Reflexion Agents",
+          "description": "Agents that utilize reflexive reasoning to improve performance."
+        }
+      ]
+    },
+    {
+      "name": "Reinforcement Learning",
+      "description": "A type of machine learning where agents learn by interacting with their environment.",
+      "sub_topics": [
+        {
+          "name": "Feedback Reflexion",
+          "description": "Using feedback to enhance agent learning."
+        },
+        {
+          "name": "Reflextion Reinforce",
+          "description": "Techniques for reinforcing learning through reflection."
+        }
+      ]
+    },
+    {
+      "name": "Retrieval Models",
+      "description": "Models designed to retrieve relevant information from large datasets.",
+      "sub_topics": [
+        {
+          "name": "Vector Retrieval",
+          "description": "Using vector representations for efficient information retrieval."
+        },
+        {
+          "name": "Deep Retrieval",
+          "description": "Advanced techniques for retrieving information using deep learning."
+        },
+        {
+          "name": "Retrieval Augmented",
+          "description": "Combining retrieval methods with generative models."
+        }
+      ]
+    },
+    {
+      "name": "Agent Reasoning",
+      "description": "The cognitive processes that agents use to make decisions.",
+      "sub_topics": [
+        {
+          "name": "Agents Reasoning",
+          "description": "How agents process information to make decisions."
+        },
+        {
+          "name": "Reasoning Acting",
+          "description": "The relationship between reasoning and action in agents."
+        }
+      ]
+    },
+    {
+      "name": "Web Environment",
+      "description": "The online context in which agents and models operate.",
+      "sub_topics": [
+        {
+          "name": "Web App",
+          "description": "Applications that run in a web environment."
+        },
+        {
+          "name": "Environment Web",
+          "description": "The structure and dynamics of web-based environments."
+        }
+      ]
+    },
+    {
+      "name": "Knowledge Adapters",
+      "description": "Components that allow models to adapt knowledge for specific tasks.",
+      "sub_topics": [
+        {
+          "name": "Language Adapters",
+          "description": "Adapters that modify language models for specific applications."
+        },
+        {
+          "name": "Adapters Learn",
+          "description": "Techniques for training adapters to improve model performance."
+        }
+      ]
+    },
+    {
+      "name": "Question Answering",
+      "description": "Systems designed to answer questions posed in natural language.",
+      "sub_topics": [
+        {
+          "name": "Open Domain",
+          "description": "Question answering systems that can handle a wide range of topics."
+        },
+        {
+          "name": "Answering Question",
+          "description": "Methods and techniques for generating answers to queries."
+        }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "description": "A subset of machine learning focused on neural networks with many layers.",
+      "sub_topics": [
+        {
+          "name": "Artificial Neural Networks",
+          "description": "Computational models inspired by the human brain."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "A method for training neural networks through gradient descent."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 26.0332,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

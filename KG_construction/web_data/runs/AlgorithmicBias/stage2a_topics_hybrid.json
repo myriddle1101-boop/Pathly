@@ -1,0 +1,793 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 25,
+  "candidate_count": 80,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "bias data",
+      "avg_score": 0.6184,
+      "frequency": 3,
+      "chunk_ids": [
+        1,
+        8,
+        15
+      ]
+    },
+    {
+      "name": "causes bias",
+      "avg_score": 0.6424,
+      "frequency": 2,
+      "chunk_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "probabilities",
+      "avg_score": 0.6166,
+      "frequency": 2,
+      "chunk_ids": [
+        10,
+        13
+      ]
+    },
+    {
+      "name": "artificial intelligence",
+      "avg_score": 0.6023,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "bias fairness",
+      "avg_score": 0.5651,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "models",
+      "avg_score": 0.5427,
+      "frequency": 2,
+      "chunk_ids": [
+        17,
+        18
+      ]
+    },
+    {
+      "name": "ai based",
+      "avg_score": 0.5385,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "ai algorithms",
+      "avg_score": 0.5206,
+      "frequency": 2,
+      "chunk_ids": [
+        3,
+        14
+      ]
+    },
+    {
+      "name": "explaining ai",
+      "avg_score": 0.5029,
+      "frequency": 2,
+      "chunk_ids": [
+        4,
+        14
+      ]
+    },
+    {
+      "name": "intelligence",
+      "avg_score": 0.4948,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "cancer",
+      "avg_score": 0.4848,
+      "frequency": 2,
+      "chunk_ids": [
+        23,
+        24
+      ]
+    },
+    {
+      "name": "bias context",
+      "avg_score": 0.7728,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "ontology biased",
+      "avg_score": 0.7647,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "bias using",
+      "avg_score": 0.7536,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "types bias",
+      "avg_score": 0.7293,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "bias knowledge",
+      "avg_score": 0.7269,
+      "frequency": 1,
+      "chunk_ids": [
+        15
+      ]
+    },
+    {
+      "name": "human bias",
+      "avg_score": 0.7265,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "humans biases",
+      "avg_score": 0.7062,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "bias facets",
+      "avg_score": 0.7041,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "consider bias",
+      "avg_score": 0.7008,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "probabilities instead",
+      "avg_score": 0.6996,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "benchmark datasets",
+      "avg_score": 0.6793,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "probabilities naïve",
+      "avg_score": 0.6761,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "probabilities actual",
+      "avg_score": 0.6595,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "positive probabilities",
+      "avg_score": 0.6576,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "europeanstatistics mitigating",
+      "avg_score": 0.6508,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "bias inclination",
+      "avg_score": 0.6504,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "model trees",
+      "avg_score": 0.6487,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "probabilities protected",
+      "avg_score": 0.647,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "predicted probabilities",
+      "avg_score": 0.6453,
+      "frequency": 1,
+      "chunk_ids": [
+        10
+      ]
+    },
+    {
+      "name": "obscure models",
+      "avg_score": 0.6443,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "fair classes",
+      "avg_score": 0.6402,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "bias manifestation",
+      "avg_score": 0.6307,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "14 probabilities",
+      "avg_score": 0.6252,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    },
+    {
+      "name": "bias aware",
+      "avg_score": 0.622,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "contextual statements",
+      "avg_score": 0.6212,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "algorithmic accountability",
+      "avg_score": 0.6159,
+      "frequency": 1,
+      "chunk_ids": [
+        7
+      ]
+    },
+    {
+      "name": "intelligence systems",
+      "avg_score": 0.6146,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "ai baseddecision",
+      "avg_score": 0.6085,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "classification trees",
+      "avg_score": 0.607,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "2013 supersparselinearmodels",
+      "avg_score": 0.5988,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "discrimination disadvantage",
+      "avg_score": 0.5985,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "algorithmic decision",
+      "avg_score": 0.5963,
+      "frequency": 1,
+      "chunk_ids": [
+        19
+      ]
+    },
+    {
+      "name": "understanding bias",
+      "avg_score": 0.5943,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "bias elicitation",
+      "avg_score": 0.5923,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "statements concepts",
+      "avg_score": 0.5921,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "14 models",
+      "avg_score": 0.589,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "knowledge formalisms",
+      "avg_score": 0.5865,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "aiaccountabilityhasmany facets",
+      "avg_score": 0.5862,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "perpetuate discrimination",
+      "avg_score": 0.5771,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "fairness learner",
+      "avg_score": 0.5767,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "specific datasets",
+      "avg_score": 0.5763,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "fair data",
+      "avg_score": 0.5738,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "bias",
+      "avg_score": 0.5686,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "knowledgebases orontologies",
+      "avg_score": 0.5663,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "12 regulation",
+      "avg_score": 0.5662,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "statements trustworthiness",
+      "avg_score": 0.5627,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "journalof cancer",
+      "avg_score": 0.5626,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "representativeness training",
+      "avg_score": 0.5619,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "models include",
+      "avg_score": 0.5607,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "standardslikethe",
+      "avg_score": 0.5588,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "annotation statements",
+      "avg_score": 0.5574,
+      "frequency": 1,
+      "chunk_ids": [
+        16
+      ]
+    },
+    {
+      "name": "classifications thatcanbe",
+      "avg_score": 0.5562,
+      "frequency": 1,
+      "chunk_ids": [
+        18
+      ]
+    },
+    {
+      "name": "datasets",
+      "avg_score": 0.5554,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "specific models",
+      "avg_score": 0.5519,
+      "frequency": 1,
+      "chunk_ids": [
+        17
+      ]
+    },
+    {
+      "name": "mitigating bias",
+      "avg_score": 0.5511,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "fairness ai",
+      "avg_score": 0.5462,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "europeanstatistics",
+      "avg_score": 0.546,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "modalities bias",
+      "avg_score": 0.5441,
+      "frequency": 1,
+      "chunk_ids": [
+        8
+      ]
+    },
+    {
+      "name": "2009 europeanstatistics",
+      "avg_score": 0.5435,
+      "frequency": 1,
+      "chunk_ids": [
+        11
+      ]
+    },
+    {
+      "name": "2019 lungcancerinspanishwomen",
+      "avg_score": 0.5423,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "algorithms widely",
+      "avg_score": 0.5398,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "datasets available",
+      "avg_score": 0.5358,
+      "frequency": 1,
+      "chunk_ids": [
+        20
+      ]
+    },
+    {
+      "name": "lungcancerinspanishwomen",
+      "avg_score": 0.5351,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "problem representativeness",
+      "avg_score": 0.5338,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "aiaccountabilityhasmany",
+      "avg_score": 0.5337,
+      "frequency": 1,
+      "chunk_ids": [
+        14
+      ]
+    },
+    {
+      "name": "lungcancerinspanishwomen world",
+      "avg_score": 0.5321,
+      "frequency": 1,
+      "chunk_ids": [
+        24
+      ]
+    },
+    {
+      "name": "training data",
+      "avg_score": 0.5307,
+      "frequency": 1,
+      "chunk_ids": [
+        21
+      ]
+    },
+    {
+      "name": "iterative training",
+      "avg_score": 0.5303,
+      "frequency": 1,
+      "chunk_ids": [
+        12
+      ]
+    },
+    {
+      "name": "bayes models",
+      "avg_score": 0.5297,
+      "frequency": 1,
+      "chunk_ids": [
+        13
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Bias in AI",
+      "description": "Explores various aspects of bias in artificial intelligence systems.",
+      "sub_topics": [
+        {
+          "name": "Types of Bias",
+          "description": "Different categories and manifestations of bias in AI."
+        },
+        {
+          "name": "Mitigating Bias",
+          "description": "Strategies and methods to reduce bias in AI models."
+        },
+        {
+          "name": "Human Bias",
+          "description": "The influence of human biases on AI decision-making."
+        }
+      ]
+    },
+    {
+      "name": "Probabilities in AI",
+      "description": "Focuses on the role of probabilities in machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Predicted Probabilities",
+          "description": "Understanding how models predict outcomes based on probabilities."
+        },
+        {
+          "name": "Probabilities in Decision Making",
+          "description": "The use of probabilities in algorithmic decision processes."
+        }
+      ]
+    },
+    {
+      "name": "AI Algorithms",
+      "description": "Covers various algorithms used in artificial intelligence and machine learning.",
+      "sub_topics": [
+        {
+          "name": "Classification Algorithms",
+          "description": "Algorithms used for classifying data into categories."
+        },
+        {
+          "name": "Regression Algorithms",
+          "description": "Techniques for predicting continuous outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Fairness in AI",
+      "description": "Examines the concept of fairness and its implications in AI systems.",
+      "sub_topics": [
+        {
+          "name": "Fairness Metrics",
+          "description": "Metrics used to evaluate fairness in AI models."
+        },
+        {
+          "name": "Algorithmic Accountability",
+          "description": "The responsibility of AI systems to be fair and transparent."
+        }
+      ]
+    },
+    {
+      "name": "Data Representation",
+      "description": "Discusses how data is represented and its impact on model performance.",
+      "sub_topics": [
+        {
+          "name": "Training Data",
+          "description": "The data used to train machine learning models."
+        },
+        {
+          "name": "Benchmark Datasets",
+          "description": "Standard datasets used for evaluating model performance."
+        }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "description": "Focuses on techniques for evaluating the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Loss Functions",
+          "description": "Functions used to measure the difference between predicted and actual outcomes."
+        },
+        {
+          "name": "Model Trees",
+          "description": "Tree-based models for regression and classification tasks."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Explores the structure and function of artificial neural networks.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of neural network nodes."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "The algorithm used for training neural networks."
+        }
+      ]
+    },
+    {
+      "name": "AI Applications",
+      "description": "Discusses various applications of AI in different fields.",
+      "sub_topics": [
+        {
+          "name": "Healthcare AI",
+          "description": "The use of AI technologies in healthcare settings."
+        },
+        {
+          "name": "AI in Finance",
+          "description": "Applications of AI in financial services and markets."
+        }
+      ]
+    },
+    {
+      "name": "Ethics in AI",
+      "description": "Examines ethical considerations and implications of AI technologies.",
+      "sub_topics": [
+        {
+          "name": "Discrimination in AI",
+          "description": "How AI can perpetuate discrimination and inequality."
+        },
+        {
+          "name": "Trustworthiness of AI",
+          "description": "Factors that contribute to the trustworthiness of AI systems."
+        }
+      ]
+    }
+  ]
+}

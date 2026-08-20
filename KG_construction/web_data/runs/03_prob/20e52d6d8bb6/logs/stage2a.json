@@ -1,0 +1,29 @@
+{
+  "stage": "stage2a",
+  "script_path": "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py",
+  "cwd": "D:\\ic\\master project\\project_code\\KG_construction",
+  "command": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\.venv\\Scripts\\python.exe",
+    "D:\\ic\\master project\\project_code\\KG_construction\\stage2a_hybrid_keybert_llm.py"
+  ],
+  "input_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage1_chunks.json"
+  ],
+  "output_paths": [
+    "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2a_topics_hybrid.json"
+  ],
+  "optional_output_paths": [],
+  "return_code": 0,
+  "duration_seconds": 68.6547,
+  "validation": {
+    "inputs_ok": true,
+    "outputs_ok": true,
+    "missing_inputs": [],
+    "missing_outputs": [],
+    "details": [
+      "stage2a_topics_hybrid.json: OK"
+    ]
+  },
+  "stdout_tail": "unk 7/66 ...\n[KeyBERT] chunk 8/66 ...\n[KeyBERT] chunk 9/66 ...\n[KeyBERT] chunk 10/66 ...\n[KeyBERT] chunk 11/66 ...\n[KeyBERT] chunk 12/66 ...\n[KeyBERT] chunk 13/66 ...\n[KeyBERT] chunk 14/66 ...\n[KeyBERT] chunk 15/66 ...\n[KeyBERT] chunk 16/66 ...\n[KeyBERT] chunk 17/66 ...\n[KeyBERT] chunk 18/66 ...\n[KeyBERT] chunk 19/66 ...\n[KeyBERT] chunk 20/66 ...\n[KeyBERT] chunk 21/66 ...\n[KeyBERT] chunk 22/66 ...\n[KeyBERT] chunk 23/66 ...\n[KeyBERT] chunk 24/66 ...\n[KeyBERT] chunk 25/66 ...\n[KeyBERT] chunk 26/66 ...\n[KeyBERT] chunk 27/66 ...\n[KeyBERT] chunk 28/66 ...\n[KeyBERT] chunk 29/66 ...\n[KeyBERT] chunk 30/66 ...\n[KeyBERT] chunk 31/66 ...\n[KeyBERT] chunk 32/66 ...\n[KeyBERT] chunk 33/66 ...\n[KeyBERT] chunk 34/66 ...\n[KeyBERT] chunk 35/66 ...\n[KeyBERT] chunk 36/66 ...\n[KeyBERT] chunk 37/66 ...\n[KeyBERT] chunk 38/66 ...\n[KeyBERT] chunk 39/66 ...\n[KeyBERT] chunk 40/66 ...\n[KeyBERT] chunk 41/66 ...\n[KeyBERT] chunk 42/66 ...\n[KeyBERT] chunk 43/66 ...\n[KeyBERT] chunk 44/66 ...\n[KeyBERT] chunk 45/66 ...\n[KeyBERT] chunk 46/66 ...\n[KeyBERT] chunk 47/66 ...\n[KeyBERT] chunk 48/66 ...\n[KeyBERT] chunk 49/66 ...\n[KeyBERT] chunk 50/66 ...\n[KeyBERT] chunk 51/66 ...\n[KeyBERT] chunk 52/66 ...\n[KeyBERT] chunk 53/66 ...\n[KeyBERT] chunk 54/66 ...\n[KeyBERT] chunk 55/66 ...\n[KeyBERT] chunk 56/66 ...\n[KeyBERT] chunk 57/66 ...\n[KeyBERT] chunk 58/66 ...\n[KeyBERT] chunk 59/66 ...\n[KeyBERT] chunk 60/66 ...\n[KeyBERT] chunk 61/66 ...\n[KeyBERT] chunk 62/66 ...\n[KeyBERT] chunk 63/66 ...\n[KeyBERT] chunk 64/66 ...\n[KeyBERT] chunk 65/66 ...\n[KeyBERT] chunk 66/66 ...\n[2] KeyBERT候选数：80\n[3] LLM精修完成\n[4] 最终Topic数：9，method=hybrid_keybert_llm\n[Saved] D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\03_prob\\20e52d6d8bb6\\stage2a_topics_hybrid.json\n\n--- Top 15 Final Topics Preview ---\n01. Probability Theory\n02. Probability Distributions\n03. Information Theory\n04. Covariance\n05. Random Variables\n06. Probabilistic Models\n07. Neural Networks\n08. Statistical Inference\n09. Mathematical Functions\n\n Stage 2a 混合版完成\n",
+  "stderr_tail": "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 6410.30it/s]\n"
+}

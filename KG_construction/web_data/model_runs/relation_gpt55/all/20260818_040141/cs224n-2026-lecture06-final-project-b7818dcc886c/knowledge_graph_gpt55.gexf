@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+      <attribute id="11" title="score" type="double" />
+      <attribute id="12" title="similarity" type="double" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Neural Networks" label="Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="Fundamental structures in machine learning that mimic the way human brains operate." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Artificial Neural Networks&quot;, &quot;description&quot;: &quot;Computational models inspired by biological neural networks.&quot;}, {&quot;name&quot;: &quot;Neural Network Training&quot;, &quot;description&quot;: &quot;The process of adjusting weights in a neural network to minimize error.&quot;}, {&quot;name&quot;: &quot;Activation Functions&quot;, &quot;description&quot;: &quot;Functions that determine the output of a neural network node.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons&quot;, &quot;Activation Functions&quot;, &quot;Layers&quot;, &quot;Backpropagation&quot;, &quot;Overfitting&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Game playing&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Deep Learning" label="Deep Learning">
+        <attvalues>
+          <attvalue for="0" value="A subset of machine learning focused on neural networks with many layers." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Convolutional Neural Networks&quot;, &quot;description&quot;: &quot;A type of deep learning model particularly effective for image processing.&quot;}, {&quot;name&quot;: &quot;Recurrent Neural Networks&quot;, &quot;description&quot;: &quot;Neural networks designed for sequential data processing.&quot;}, {&quot;name&quot;: &quot;Transformers&quot;, &quot;description&quot;: &quot;A model architecture that uses self-attention mechanisms for sequence-to-sequence tasks.&quot;}]" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra, calculus, and programming in Python." />
+          <attvalue for="6" value="[&quot;Neural Networks&quot;, &quot;Backpropagation&quot;, &quot;Convolutional Neural Networks (CNNs)&quot;, &quot;Recurrent Neural Networks (RNNs)&quot;]" />
+          <attvalue for="7" value="[&quot;Deep learning is the same as machine learning.&quot;, &quot;More layers always lead to better performance.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Autonomous vehicles&quot;, &quot;Healthcare diagnostics&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Model Training" label="Model Training">
+        <attvalues>
+          <attvalue for="0" value="The process of teaching a machine learning model to make predictions based on data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Training Sets&quot;, &quot;description&quot;: &quot;Datasets used to train machine learning models.&quot;}, {&quot;name&quot;: &quot;Overfitting&quot;, &quot;description&quot;: &quot;A modeling error that occurs when a model learns noise instead of the signal.&quot;}, {&quot;name&quot;: &quot;Training Evaluation&quot;, &quot;description&quot;: &quot;Assessing the performance of a trained model on unseen data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Loss Functions&quot;, &quot;Overfitting&quot;, &quot;Validation Techniques&quot;]" />
+          <attvalue for="7" value="[&quot;Training a model means it will always perform well on new data.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting house prices&quot;, &quot;Image classification&quot;, &quot;Spam detection&quot;, &quot;Customer segmentation&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Project Proposals" label="Project Proposals">
+        <attvalues>
+          <attvalue for="0" value="Formal documents outlining the objectives and plans for machine learning projects." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Final Projects&quot;, &quot;description&quot;: &quot;Capstone projects that demonstrate the application of learned concepts.&quot;}, {&quot;name&quot;: &quot;Project Plans&quot;, &quot;description&quot;: &quot;Detailed outlines of project timelines and deliverables.&quot;}, {&quot;name&quot;: &quot;Proposal Teams&quot;, &quot;description&quot;: &quot;Groups of students collaborating on project proposals.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and project management principles." />
+          <attvalue for="6" value="[&quot;Objectives definition&quot;, &quot;Project scope&quot;, &quot;Resource allocation&quot;, &quot;Timeline estimation&quot;]" />
+          <attvalue for="7" value="[&quot;Project proposals are only for large projects&quot;, &quot;Technical details are more important than objectives&quot;]" />
+          <attvalue for="8" value="[&quot;Grant applications for research&quot;, &quot;Startup business plans&quot;, &quot;Academic project submissions&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Grading Policies" label="Grading Policies">
+        <attvalues>
+          <attvalue for="0" value="Criteria and standards used to evaluate student performance in machine learning courses." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Course Grades&quot;, &quot;description&quot;: &quot;Overall assessments based on project and exam performance.&quot;}, {&quot;name&quot;: &quot;Work Grading&quot;, &quot;description&quot;: &quot;Evaluation of individual contributions to group projects.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and evaluation metrics." />
+          <attvalue for="6" value="[&quot;Rubrics&quot;, &quot;Peer Assessment&quot;, &quot;Self-Assessment&quot;, &quot;Feedback Mechanisms&quot;]" />
+          <attvalue for="7" value="[&quot;Grading is solely based on exams&quot;, &quot;All assignments are equally weighted&quot;]" />
+          <attvalue for="8" value="[&quot;Designing course assessments&quot;, &quot;Implementing peer review systems&quot;, &quot;Creating feedback loops for improvement&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Datasets" label="Datasets">
+        <attvalues>
+          <attvalue for="0" value="Collections of data used for training and testing machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Available Datasets&quot;, &quot;description&quot;: &quot;Publicly accessible datasets for machine learning research.&quot;}, {&quot;name&quot;: &quot;Data Projects&quot;, &quot;description&quot;: &quot;Projects focused on the analysis and utilization of datasets.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of data structures and statistics." />
+          <attvalue for="6" value="[&quot;Types of datasets (training, validation, testing)&quot;, &quot;Data preprocessing techniques&quot;]" />
+          <attvalue for="7" value="[&quot;All datasets are the same size&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image classification&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Models" label="Training Models">
+        <attvalues>
+          <attvalue for="0" value="The methodologies and techniques used to develop machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Model Introduction&quot;, &quot;description&quot;: &quot;An overview of different types of machine learning models.&quot;}, {&quot;name&quot;: &quot;Loss Functions&quot;, &quot;description&quot;: &quot;Functions that measure the difference between predicted and actual outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of programming and statistics." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Model Evaluation&quot;, &quot;Overfitting and Underfitting&quot;]" />
+          <attvalue for="7" value="[&quot;Training a model means it will always perform well on new data.&quot;, &quot;More data always leads to better models.&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Predictive analytics&quot;, &quot;Recommendation systems&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Attention Mechanisms" label="Attention Mechanisms">
+        <attvalues>
+          <attvalue for="0" value="Techniques that allow models to focus on specific parts of the input data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Self-Attention&quot;, &quot;description&quot;: &quot;A mechanism that allows a model to weigh the importance of different input elements.&quot;}, {&quot;name&quot;: &quot;Cross Attention&quot;, &quot;description&quot;: &quot;A method that enables models to attend to different sequences during processing.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of neural networks and deep learning concepts." />
+          <attvalue for="6" value="[&quot;Self-Attention&quot;, &quot;Multi-Head Attention&quot;]" />
+          <attvalue for="7" value="[&quot;Attention is only for NLP tasks&quot;, &quot;Attention mechanisms replace recurrent layers completely&quot;]" />
+          <attvalue for="8" value="[&quot;Natural Language Processing&quot;, &quot;Computer Vision&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Experimental Strategies" label="Experimental Strategies">
+        <attvalues>
+          <attvalue for="0" value="Approaches used to design and conduct experiments in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Data Tuning&quot;, &quot;description&quot;: &quot;Adjusting parameters and features to improve model performance.&quot;}, {&quot;name&quot;: &quot;Model Evaluation&quot;, &quot;description&quot;: &quot;Assessing the effectiveness of a model using various metrics.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning principles and statistics." />
+          <attvalue for="6" value="[&quot;A/B Testing&quot;, &quot;Cross-Validation&quot;, &quot;Randomized Controlled Trials&quot;, &quot;Hyperparameter Tuning&quot;]" />
+          <attvalue for="7" value="[&quot;All experiments require a large dataset&quot;, &quot;A/B testing is only for web applications&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model performance&quot;, &quot;Evaluating algorithm effectiveness&quot;, &quot;Feature selection&quot;, &quot;User experience optimization&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Neural Networks" target="Deep Learning">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Deep learning builds on understanding neural network structures and learning behavior." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Neural Networks" target="Attention Mechanisms">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Attention mechanisms are typically implemented within neural network architectures." />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Deep Learning" target="Attention Mechanisms">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Attention mechanisms are most commonly studied as techniques in deep learning models." />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Model Training" target="Training Models">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.8841" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="Datasets" target="Model Training">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Model training requires understanding the data used to teach and evaluate the model." />
+          <attvalue for="12" value="0.7306" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="Datasets" target="Training Models">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Developing training methodologies depends on knowing how datasets are used." />
+        </attvalues>
+      </edge>
+      <edge id="6" source="Experimental Strategies" target="Training Models">
+        <attvalues>
+          <attvalue for="9" value="similarity" />
+          <attvalue for="11" value="0.762" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

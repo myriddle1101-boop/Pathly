@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\cs224n-2026-lecture09-peft\\c94167e219b5",
+  "run_id": "cs224n-2026-lecture09-peft-c94167e219b5",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-18T05:11:27.566337+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "c84c045b559ac31d62e54ff734884c34ce733d8599c198c2728b3a8d14ccb4e1",
+    "stage2a_topics_hybrid.json": "596a4bb8d334ee8b871821559325baf7d03009e54496282dcfcf50d6bebb1d50",
+    "stage2c_similarity_edges.json": "686f7467f75ed8c864f72d1a2b9d8980b57b5c93eea1b12239ed8cd2852f55ee",
+    "stage3_topics_with_summary.json": "2057b157e289f3fd5b25d12244bd77908e4c9c91517d63c2c0d1befa96ea81bb"
+  },
+  "old_relation_count": 7,
+  "new_relation_count": 2,
+  "new_node_count": 9,
+  "new_edge_count": 2,
+  "golden_path_resource": false
+}

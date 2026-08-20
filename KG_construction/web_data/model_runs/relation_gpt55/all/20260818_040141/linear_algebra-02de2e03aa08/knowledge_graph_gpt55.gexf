@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="9" title="relation" type="string" />
+      <attribute id="10" title="reason" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="description" type="string" />
+      <attribute id="1" title="sub_topics" type="string" />
+      <attribute id="2" title="difficulty_level" type="long" />
+      <attribute id="3" title="target_audience" type="string" />
+      <attribute id="4" title="estimated_learning_time" type="string" />
+      <attribute id="5" title="prerequisites_summary" type="string" />
+      <attribute id="6" title="key_sub_concepts" type="string" />
+      <attribute id="7" title="common_misconceptions" type="string" />
+      <attribute id="8" title="practical_applications" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>18/08/2026</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Artificial Neural Networks" label="Artificial Neural Networks">
+        <attvalues>
+          <attvalue for="0" value="A computational model inspired by the human brain's network of neurons." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Neuron&quot;, &quot;description&quot;: &quot;The basic unit of computation in an artificial neural network.&quot;}, {&quot;name&quot;: &quot;Activation Function&quot;, &quot;description&quot;: &quot;A mathematical function that determines the output of a neuron.&quot;}, {&quot;name&quot;: &quot;Backpropagation&quot;, &quot;description&quot;: &quot;An algorithm for training neural networks by minimizing error.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of linear algebra and calculus, familiarity with programming concepts." />
+          <attvalue for="6" value="[&quot;Neurons and Activation Functions&quot;, &quot;Feedforward and Backpropagation&quot;]" />
+          <attvalue for="7" value="[&quot;Neural networks can learn without data&quot;, &quot;More layers always mean better performance&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Linear Algebra" label="Linear Algebra">
+        <attvalues>
+          <attvalue for="0" value="A branch of mathematics essential for understanding machine learning algorithms." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Separation&quot;, &quot;description&quot;: &quot;The ability to separate data points using a linear boundary.&quot;}, {&quot;name&quot;: &quot;Matrix Operations&quot;, &quot;description&quot;: &quot;Fundamental operations involving matrices used in machine learning.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of algebra and familiarity with mathematical notation." />
+          <attvalue for="6" value="[&quot;Vectors&quot;, &quot;Matrices&quot;, &quot;Linear transformations&quot;, &quot;Eigenvalues and eigenvectors&quot;]" />
+          <attvalue for="7" value="[&quot;Linear algebra is only about solving equations&quot;, &quot;Vectors can only represent physical quantities&quot;]" />
+          <attvalue for="8" value="[&quot;Data representation in machine learning&quot;, &quot;Dimensionality reduction techniques like PCA&quot;, &quot;Optimization in algorithms&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Loss Functions" label="Loss Functions">
+        <attvalues>
+          <attvalue for="0" value="Functions that measure the difference between predicted and actual outcomes." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Mean Squared Error&quot;, &quot;description&quot;: &quot;A common loss function used for regression tasks.&quot;}, {&quot;name&quot;: &quot;Cross-Entropy Loss&quot;, &quot;description&quot;: &quot;A loss function often used for classification problems.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and linear algebra." />
+          <attvalue for="6" value="[&quot;Mean Squared Error&quot;, &quot;Cross-Entropy Loss&quot;]" />
+          <attvalue for="7" value="[&quot;Loss functions only apply to regression problems.&quot;, &quot;Lower loss always means better model.&quot;]" />
+          <attvalue for="8" value="[&quot;Training machine learning models&quot;, &quot;Evaluating model performance&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Regression" label="Regression">
+        <attvalues>
+          <attvalue for="0" value="A statistical method for predicting continuous outcomes." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Linear Regression&quot;, &quot;description&quot;: &quot;A technique for modeling the relationship between variables.&quot;}, {&quot;name&quot;: &quot;Polynomial Regression&quot;, &quot;description&quot;: &quot;An extension of linear regression that models non-linear relationships.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and algebra." />
+          <attvalue for="6" value="[&quot;Linear Regression&quot;, &quot;Multiple Regression&quot;]" />
+          <attvalue for="7" value="[&quot;Regression implies causation&quot;, &quot;Only linear relationships can be modeled&quot;]" />
+          <attvalue for="8" value="[&quot;Predicting housing prices&quot;, &quot;Forecasting sales revenue&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Classification" label="Classification">
+        <attvalues>
+          <attvalue for="0" value="The process of predicting categorical outcomes based on input data." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Binary Classification&quot;, &quot;description&quot;: &quot;A classification task with two possible outcomes.&quot;}, {&quot;name&quot;: &quot;Multi-Class Classification&quot;, &quot;description&quot;: &quot;A classification task with more than two possible outcomes.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Binary Classification&quot;, &quot;Multi-class Classification&quot;, &quot;Evaluation Metrics&quot;, &quot;Overfitting and Underfitting&quot;]" />
+          <attvalue for="7" value="[&quot;Classification is only for binary outcomes&quot;, &quot;More features always improve classification accuracy&quot;]" />
+          <attvalue for="8" value="[&quot;Spam detection in emails&quot;, &quot;Image recognition&quot;, &quot;Sentiment analysis&quot;, &quot;Medical diagnosis&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Training Techniques" label="Training Techniques">
+        <attvalues>
+          <attvalue for="0" value="Methods used to improve the performance of machine learning models." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Gradient Descent&quot;, &quot;description&quot;: &quot;An optimization algorithm used to minimize loss functions.&quot;}, {&quot;name&quot;: &quot;Regularization&quot;, &quot;description&quot;: &quot;Techniques to prevent overfitting in machine learning models.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning concepts and algorithms." />
+          <attvalue for="6" value="[&quot;Cross-validation&quot;, &quot;Regularization&quot;, &quot;Data augmentation&quot;, &quot;Hyperparameter tuning&quot;]" />
+          <attvalue for="7" value="[&quot;More data always leads to better performance&quot;, &quot;Overfitting only occurs with complex models&quot;]" />
+          <attvalue for="8" value="[&quot;Improving model accuracy&quot;, &quot;Reducing overfitting&quot;, &quot;Enhancing generalization on unseen data&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Exercises" label="Exercises">
+        <attvalues>
+          <attvalue for="0" value="Practical tasks designed to reinforce learning concepts in machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Hands-On Coding&quot;, &quot;description&quot;: &quot;Exercises that involve writing code to implement algorithms.&quot;}, {&quot;name&quot;: &quot;Theoretical Problems&quot;, &quot;description&quot;: &quot;Exercises focused on understanding the mathematical foundations.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of machine learning principles and programming skills in Python." />
+          <attvalue for="6" value="[&quot;Data preprocessing&quot;, &quot;Model evaluation techniques&quot;]" />
+          <attvalue for="7" value="[&quot;Exercises are only for beginners&quot;, &quot;Practical tasks are not necessary for understanding theory&quot;]" />
+          <attvalue for="8" value="[&quot;Building simple predictive models&quot;, &quot;Implementing algorithms on real datasets&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Machine Learning Fundamentals" label="Machine Learning Fundamentals">
+        <attvalues>
+          <attvalue for="0" value="Core principles and concepts that underpin machine learning." />
+          <attvalue for="1" value="[{&quot;name&quot;: &quot;Supervised Learning&quot;, &quot;description&quot;: &quot;A type of learning where the model is trained on labeled data.&quot;}, {&quot;name&quot;: &quot;Unsupervised Learning&quot;, &quot;description&quot;: &quot;A type of learning where the model identifies patterns in unlabeled data.&quot;}]" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="Undergraduate" />
+          <attvalue for="4" value="1-2 hours" />
+          <attvalue for="5" value="Basic understanding of statistics and programming." />
+          <attvalue for="6" value="[&quot;Supervised Learning&quot;, &quot;Unsupervised Learning&quot;, &quot;Overfitting&quot;, &quot;Model Evaluation&quot;]" />
+          <attvalue for="7" value="[&quot;Machine learning can solve any problem&quot;, &quot;More data always leads to better models&quot;]" />
+          <attvalue for="8" value="[&quot;Image recognition&quot;, &quot;Natural language processing&quot;, &quot;Recommendation systems&quot;, &quot;Fraud detection&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Linear Algebra" target="Artificial Neural Networks">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Neural networks rely on vectors, matrices, and linear transformations." />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Linear Algebra" target="Regression">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Regression models commonly use vector and matrix representations for inputs, parameters, and solutions." />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Loss Functions" target="Training Techniques">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training techniques generally optimize or depend on a defined loss objective." />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Machine Learning Fundamentals" target="Loss Functions">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Loss functions require understanding predictions, targets, model evaluation, and learning objectives." />
+        </attvalues>
+      </edge>
+      <edge id="4" source="Machine Learning Fundamentals" target="Regression">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Regression depends on core machine learning concepts such as features, models, training, and evaluation." />
+        </attvalues>
+      </edge>
+      <edge id="5" source="Machine Learning Fundamentals" target="Classification">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Classification depends on core machine learning concepts such as features, labels, models, training, and evaluation." />
+        </attvalues>
+      </edge>
+      <edge id="6" source="Machine Learning Fundamentals" target="Training Techniques">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Training techniques require understanding how machine learning models learn and are evaluated." />
+        </attvalues>
+      </edge>
+      <edge id="7" source="Machine Learning Fundamentals" target="Artificial Neural Networks">
+        <attvalues>
+          <attvalue for="9" value="prerequisite" />
+          <attvalue for="10" value="Artificial neural networks are advanced machine learning models that require basic ML concepts first." />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

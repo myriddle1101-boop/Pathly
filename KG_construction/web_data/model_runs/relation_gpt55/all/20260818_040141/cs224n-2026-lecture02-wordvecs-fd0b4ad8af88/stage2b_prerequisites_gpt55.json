@@ -1,0 +1,26 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 3,
+  "prerequisites": [
+    {
+      "from": "Data Representation",
+      "to": "Word Vectors",
+      "relation_type": "strong_prerequisite",
+      "reason": "Word vectors are a specific way of encoding words as machine-readable numerical representations."
+    },
+    {
+      "from": "Data Representation",
+      "to": "Neural Networks",
+      "relation_type": "strong_prerequisite",
+      "reason": "Neural networks require inputs to be encoded in structured numerical forms such as vectors or tensors."
+    },
+    {
+      "from": "Neural Networks",
+      "to": "Deep Learning",
+      "relation_type": "strong_prerequisite",
+      "reason": "Deep learning builds on neural networks by using architectures with many layers."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "id": "Reasoning Techniques",
+      "description": "Explores various methods and models for reasoning in machine learning.",
+      "sub_topics": "[{\"name\": \"Reasoning Models\", \"description\": \"Different models used for reasoning tasks.\"}, {\"name\": \"Reasoning Paths\", \"description\": \"Paths taken by models to arrive at conclusions.\"}, {\"name\": \"Reasoning Behavior\", \"description\": \"How models exhibit reasoning in their outputs.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning principles and algorithms.",
+      "key_sub_concepts": "[\"Logical Reasoning\", \"Probabilistic Reasoning\", \"Symbolic Reasoning\", \"Neural Reasoning\"]",
+      "common_misconceptions": "[\"Reasoning is only about logic\", \"All reasoning techniques are equally effective in all scenarios\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Game AI\", \"Decision Support Systems\", \"Robotics\"]"
+    },
+    {
+      "id": "Complexity Analysis",
+      "description": "Examines the complexity of algorithms and models in machine learning.",
+      "sub_topics": "[{\"name\": \"Complexity PPO\", \"description\": \"Complexity considerations in Proximal Policy Optimization.\"}, {\"name\": \"Dissecting Complexity\", \"description\": \"Breaking down complexity into manageable components.\"}, {\"name\": \"Training Complexity\", \"description\": \"Complexity involved in the training process.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of algorithms and data structures, familiarity with big O notation.",
+      "key_sub_concepts": "[\"Time Complexity\", \"Space Complexity\"]",
+      "common_misconceptions": "[\"Complexity analysis only applies to sorting algorithms.\", \"Higher complexity always means slower performance.\"]",
+      "practical_applications": "[\"Evaluating model efficiency in machine learning\", \"Optimizing algorithms for large datasets\"]"
+    },
+    {
+      "id": "Decoding Techniques",
+      "description": "Methods for decoding outputs from machine learning models.",
+      "sub_topics": "[{\"name\": \"Temperature Sampling\", \"description\": \"Sampling methods that use temperature as a parameter.\"}, {\"name\": \"Nucleus Sampling\", \"description\": \"A technique for sampling from a probability distribution.\"}, {\"name\": \"Decoding Limitations\", \"description\": \"Challenges and limitations in decoding outputs.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Greedy Decoding\", \"Beam Search\", \"Top-k Sampling\", \"Temperature Scaling\"]",
+      "common_misconceptions": "[\"Decoding is only relevant for classification tasks\", \"All decoding techniques yield the same quality of output\"]",
+      "practical_applications": "[\"Natural Language Processing\", \"Image Captioning\", \"Speech Recognition\", \"Reinforcement Learning\"]"
+    },
+    {
+      "id": "Training Strategies",
+      "description": "Strategies and techniques for training machine learning models.",
+      "sub_topics": "[{\"name\": \"PPO Training\", \"description\": \"Training methods specific to Proximal Policy Optimization.\"}, {\"name\": \"Importance Sampling\", \"description\": \"A technique to improve training efficiency.\"}, {\"name\": \"Training Value\", \"description\": \"Evaluating the value of different training approaches.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Batch Training\", \"Online Training\", \"Transfer Learning\", \"Data Augmentation\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Training and testing data can be mixed\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Recommendation systems\", \"Time series forecasting\"]"
+    },
+    {
+      "id": "Neural Networks",
+      "description": "Fundamental concepts and architectures of neural networks.",
+      "sub_topics": "[{\"name\": \"Artificial Neural Networks\", \"description\": \"Models inspired by biological neural networks.\"}, {\"name\": \"Activation Functions\", \"description\": \"Functions that determine the output of neural network nodes.\"}, {\"name\": \"Backpropagation\", \"description\": \"A method for training neural networks through gradient descent.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus, familiarity with programming concepts.",
+      "key_sub_concepts": "[\"Neurons and Activation Functions\", \"Feedforward and Backpropagation\", \"Loss Functions\", \"Overfitting and Regularization\"]",
+      "common_misconceptions": "[\"Neural networks can learn without data\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image and speech recognition\", \"Natural language processing\", \"Game playing AI\", \"Medical diagnosis\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "Techniques for evaluating the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Loss Functions\", \"description\": \"Functions that measure the difference between predicted and actual values.\"}, {\"name\": \"Readability\", \"description\": \"Assessing the clarity and interpretability of model outputs.\"}, {\"name\": \"Performance Metrics\", \"description\": \"Metrics used to evaluate model performance.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and statistics.",
+      "key_sub_concepts": "[\"Confusion Matrix\", \"Precision and Recall\", \"F1 Score\", \"ROC Curve\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Accuracy is the only metric that matters.\", \"Overfitting is not a concern if the model performs well on training data.\", \"A higher accuracy always indicates a better model.\"]",
+      "practical_applications": "[\"Comparing different models\", \"Tuning hyperparameters\", \"Assessing model robustness\", \"Selecting features\"]"
+    },
+    {
+      "id": "Reinforcement Learning",
+      "description": "Principles and techniques in reinforcement learning.",
+      "sub_topics": "[{\"name\": \"RL Zero\", \"description\": \"A concept in reinforcement learning focusing on zero-shot learning.\"}, {\"name\": \"Policy Value\", \"description\": \"Evaluating the value of different policies in reinforcement learning.\"}, {\"name\": \"GRPO Objective\", \"description\": \"Objectives specific to Generalized Proximal Policy Optimization.\"}]",
+      "difficulty_level": 3,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning and probability theory.",
+      "key_sub_concepts": "[\"Markov Decision Processes\", \"Q-Learning\", \"Policy Gradients\", \"Exploration vs. Exploitation\"]",
+      "common_misconceptions": "[\"Reinforcement learning is the same as supervised learning\", \"More rewards always lead to better performance\"]",
+      "practical_applications": "[\"Game playing (e.g., AlphaGo)\", \"Robotics\", \"Autonomous vehicles\", \"Personalized recommendations\"]"
+    },
+    {
+      "id": "Sampling Methods",
+      "description": "Various methods for sampling in machine learning.",
+      "sub_topics": "[{\"name\": \"Use Sampling\", \"description\": \"Techniques for effectively utilizing sampling in models.\"}, {\"name\": \"Averaging GRPO\", \"description\": \"Averaging techniques in the context of GRPO.\"}, {\"name\": \"Sampling Use Cases\", \"description\": \"Practical applications of different sampling methods.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and machine learning principles.",
+      "key_sub_concepts": "[\"Random Sampling\", \"Stratified Sampling\", \"Systematic Sampling\", \"Cluster Sampling\"]",
+      "common_misconceptions": "[\"Sampling is only about random selection.\", \"All samples must be of the same size.\"]",
+      "practical_applications": "[\"Data collection for surveys\", \"Training data preparation for machine learning models\"]"
+    },
+    {
+      "id": "Reasoning in Language Processing",
+      "description": "Explores reasoning techniques applied in natural language processing.",
+      "sub_topics": "[{\"name\": \"Language Processing\", \"description\": \"Techniques for processing and understanding human language.\"}, {\"name\": \"Variables Reasoning\", \"description\": \"How variables influence reasoning in language models.\"}, {\"name\": \"Thought Reasoning\", \"description\": \"Cognitive aspects of reasoning in language tasks.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of natural language processing and machine learning principles.",
+      "key_sub_concepts": "[\"Logical reasoning\", \"Inference mechanisms\", \"Semantic understanding\", \"Contextual reasoning\"]",
+      "common_misconceptions": "[\"Reasoning is only about logic\", \"NLP does not require reasoning capabilities\"]",
+      "practical_applications": "[\"Chatbots and virtual assistants\", \"Text summarization\", \"Sentiment analysis\", \"Question answering systems\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Reasoning Techniques",
+      "to": "Reasoning in Language Processing",
+      "relation": "prerequisite",
+      "reason": "General reasoning methods should be understood before studying their application in language processing."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Training Strategies",
+      "relation": "similarity",
+      "score": 0.7859
+    }
+  ]
+}

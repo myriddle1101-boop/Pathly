@@ -1,0 +1,202 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 1,
+  "candidate_count": 6,
+  "topics_count": 8,
+  "candidates": [
+    {
+      "name": "exercises theexpressionαuforα",
+      "avg_score": 0.6763,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "exercises chapter",
+      "avg_score": 0.6455,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "exercises",
+      "avg_score": 0.5989,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "2016 exercises",
+      "avg_score": 0.5833,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "linear algebra",
+      "avg_score": 0.575,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "exercise",
+      "avg_score": 0.5553,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Artificial Neural Networks",
+      "description": "A computational model inspired by the human brain's network of neurons.",
+      "sub_topics": [
+        {
+          "name": "Neuron",
+          "description": "The basic unit of computation in an artificial neural network."
+        },
+        {
+          "name": "Activation Function",
+          "description": "A mathematical function that determines the output of a neuron."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "An algorithm for training neural networks by minimizing error."
+        }
+      ]
+    },
+    {
+      "name": "Linear Algebra",
+      "description": "A branch of mathematics essential for understanding machine learning algorithms.",
+      "sub_topics": [
+        {
+          "name": "Linear Separation",
+          "description": "The ability to separate data points using a linear boundary."
+        },
+        {
+          "name": "Matrix Operations",
+          "description": "Fundamental operations involving matrices used in machine learning."
+        }
+      ]
+    },
+    {
+      "name": "Loss Functions",
+      "description": "Functions that measure the difference between predicted and actual outcomes.",
+      "sub_topics": [
+        {
+          "name": "Mean Squared Error",
+          "description": "A common loss function used for regression tasks."
+        },
+        {
+          "name": "Cross-Entropy Loss",
+          "description": "A loss function often used for classification problems."
+        }
+      ]
+    },
+    {
+      "name": "Regression",
+      "description": "A statistical method for predicting continuous outcomes.",
+      "sub_topics": [
+        {
+          "name": "Linear Regression",
+          "description": "A technique for modeling the relationship between variables."
+        },
+        {
+          "name": "Polynomial Regression",
+          "description": "An extension of linear regression that models non-linear relationships."
+        }
+      ]
+    },
+    {
+      "name": "Classification",
+      "description": "The process of predicting categorical outcomes based on input data.",
+      "sub_topics": [
+        {
+          "name": "Binary Classification",
+          "description": "A classification task with two possible outcomes."
+        },
+        {
+          "name": "Multi-Class Classification",
+          "description": "A classification task with more than two possible outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods used to improve the performance of machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Gradient Descent",
+          "description": "An optimization algorithm used to minimize loss functions."
+        },
+        {
+          "name": "Regularization",
+          "description": "Techniques to prevent overfitting in machine learning models."
+        }
+      ]
+    },
+    {
+      "name": "Exercises",
+      "description": "Practical tasks designed to reinforce learning concepts in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Hands-On Coding",
+          "description": "Exercises that involve writing code to implement algorithms."
+        },
+        {
+          "name": "Theoretical Problems",
+          "description": "Exercises focused on understanding the mathematical foundations."
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning Fundamentals",
+      "description": "Core principles and concepts that underpin machine learning.",
+      "sub_topics": [
+        {
+          "name": "Supervised Learning",
+          "description": "A type of learning where the model is trained on labeled data."
+        },
+        {
+          "name": "Unsupervised Learning",
+          "description": "A type of learning where the model identifies patterns in unlabeled data."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 19.0212,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

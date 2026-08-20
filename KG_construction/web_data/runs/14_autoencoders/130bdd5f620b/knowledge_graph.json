@@ -1,0 +1,163 @@
+{
+  "nodes": [
+    {
+      "id": "Autoencoders",
+      "description": "A type of artificial neural network used for unsupervised learning tasks.",
+      "sub_topics": "[{\"name\": \"Denoising Autoencoders\", \"description\": \"Autoencoders designed to remove noise from input data.\"}, {\"name\": \"Contractive Autoencoders\", \"description\": \"Autoencoders that enforce a contractive penalty on the learned representation.\"}, {\"name\": \"Sparse Autoencoders\", \"description\": \"Autoencoders that impose sparsity constraints on the hidden layer.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and linear algebra.",
+      "key_sub_concepts": "[\"Encoder\", \"Decoder\", \"Latent Space\", \"Reconstruction Loss\"]",
+      "common_misconceptions": "[\"Autoencoders are only for image data.\", \"They can only be used for dimensionality reduction.\"]",
+      "practical_applications": "[\"Image denoising\", \"Anomaly detection\", \"Data compression\", \"Feature learning\"]"
+    },
+    {
+      "id": "Manifold Learning",
+      "description": "A set of techniques for learning low-dimensional representations of high-dimensional data.",
+      "sub_topics": "[{\"name\": \"Tangent Hyperplane\", \"description\": \"A linear approximation of a manifold at a given point.\"}, {\"name\": \"Manifold Representation\", \"description\": \"The representation of data points in a lower-dimensional manifold.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and statistics.",
+      "key_sub_concepts": "[\"Dimensionality Reduction\", \"Nonlinear Manifolds\"]",
+      "common_misconceptions": "[\"Manifold learning is only for image data.\", \"It always requires labeled data.\"]",
+      "practical_applications": "[\"Data visualization\", \"Preprocessing for machine learning models\"]"
+    },
+    {
+      "id": "Learning Algorithms",
+      "description": "Methods and techniques used to train models in machine learning.",
+      "sub_topics": "[{\"name\": \"Stochastic Autoencoders\", \"description\": \"Autoencoders that incorporate stochastic elements in their architecture.\"}, {\"name\": \"Score Matching\", \"description\": \"A technique for estimating the parameters of probabilistic models.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of statistics and programming.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Reinforcement Learning\", \"Model Evaluation\"]",
+      "common_misconceptions": "[\"All algorithms work equally well for every problem.\", \"More data always leads to better models.\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Recommendation systems\", \"Fraud detection\"]"
+    },
+    {
+      "id": "Neural Network Components",
+      "description": "Key elements that make up neural networks and their functionality.",
+      "sub_topics": "[{\"name\": \"Decoder\", \"description\": \"The part of an autoencoder that reconstructs the input from the encoded representation.\"}, {\"name\": \"Activation Function\", \"description\": \"Functions that determine the output of a neuron given an input.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of linear algebra and calculus.",
+      "key_sub_concepts": "[\"Neurons\", \"Activation Functions\", \"Layers\", \"Weights and Biases\", \"Loss Function\"]",
+      "common_misconceptions": "[\"Neurons are biological replicas\", \"More layers always mean better performance\"]",
+      "practical_applications": "[\"Image recognition\", \"Natural language processing\", \"Game AI\", \"Medical diagnosis\"]"
+    },
+    {
+      "id": "Training Techniques",
+      "description": "Methods used to optimize the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Backpropagation\", \"description\": \"An algorithm for training neural networks by minimizing the loss function.\"}, {\"name\": \"Loss Function\", \"description\": \"A function that quantifies the difference between predicted and actual outcomes.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and algorithms.",
+      "key_sub_concepts": "[\"Supervised Learning\", \"Unsupervised Learning\", \"Overfitting and Underfitting\", \"Cross-Validation\", \"Hyperparameter Tuning\"]",
+      "common_misconceptions": "[\"More data always leads to better models\", \"Training and testing data can be mixed\", \"Complex models are always better\"]",
+      "practical_applications": "[\"Image classification\", \"Natural language processing\", \"Predictive analytics\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Data Reconstruction",
+      "description": "The process of reconstructing original data from its compressed representation.",
+      "sub_topics": "[{\"name\": \"Input Reconstruction\", \"description\": \"The task of reconstructing the original input from the encoded representation.\"}, {\"name\": \"Reconstructed Input\", \"description\": \"The output generated by the decoder in an autoencoder.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of data representation and compression techniques.",
+      "key_sub_concepts": "[\"Compression algorithms\", \"Lossy vs Lossless reconstruction\"]",
+      "common_misconceptions": "[\"Reconstruction always retains original quality\", \"Data reconstruction is only applicable to images\"]",
+      "practical_applications": "[\"Image and video compression\", \"Audio signal processing\"]"
+    },
+    {
+      "id": "Autoencoder Variants",
+      "description": "Different types of autoencoders designed for specific tasks.",
+      "sub_topics": "[{\"name\": \"Overcomplete Autoencoders\", \"description\": \"Autoencoders with more hidden units than input dimensions.\"}, {\"name\": \"Undercomplete Autoencoders\", \"description\": \"Autoencoders with fewer hidden units than input dimensions.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of neural networks and unsupervised learning.",
+      "key_sub_concepts": "[\"Denoising Autoencoders\", \"Variational Autoencoders\", \"Sparse Autoencoders\", \"Contractive Autoencoders\"]",
+      "common_misconceptions": "[\"All autoencoders are the same\", \"Autoencoders can only be used for dimensionality reduction\"]",
+      "practical_applications": "[\"Image denoising\", \"Anomaly detection\", \"Data compression\", \"Generative modeling\"]"
+    },
+    {
+      "id": "Coordinate Systems",
+      "description": "Frameworks for representing data points in a multi-dimensional space.",
+      "sub_topics": "[{\"name\": \"Global Coordinate\", \"description\": \"A coordinate system that encompasses the entire data space.\"}, {\"name\": \"Euclidean Coordinate\", \"description\": \"A standard coordinate system based on Euclidean geometry.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of algebra and geometry.",
+      "key_sub_concepts": "[\"Cartesian coordinates\", \"Polar coordinates\", \"Homogeneous coordinates\"]",
+      "common_misconceptions": "[\"All coordinate systems are the same\", \"Only 2D coordinate systems exist\"]",
+      "practical_applications": "[\"Data visualization\", \"Machine learning algorithms\", \"Computer graphics\"]"
+    },
+    {
+      "id": "Model Evaluation",
+      "description": "Techniques for assessing the performance of machine learning models.",
+      "sub_topics": "[{\"name\": \"Classification Accuracy\", \"description\": \"A metric that measures the proportion of correct predictions.\"}, {\"name\": \"Likelihood Score\", \"description\": \"A measure of how well a model explains the observed data.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of machine learning concepts and statistics.",
+      "key_sub_concepts": "[\"Confusion Matrix\", \"ROC Curve\", \"Precision and Recall\", \"F1 Score\", \"Cross-Validation\"]",
+      "common_misconceptions": "[\"Accuracy is the only metric that matters.\", \"Overfitting is not a concern if the model performs well on training data.\"]",
+      "practical_applications": "[\"Evaluating classification models in healthcare.\", \"Assessing predictive models in finance.\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Autoencoders",
+      "to": "Data Reconstruction",
+      "relation": "prerequisite",
+      "reason": "Autoencoders are specifically designed for the task of data reconstruction."
+    },
+    {
+      "from": "Autoencoders",
+      "to": "Autoencoder Variants",
+      "relation": "prerequisite",
+      "reason": "Understanding basic autoencoders is required to learn about their variants."
+    },
+    {
+      "from": "Manifold Learning",
+      "to": "Coordinate Systems",
+      "relation": "prerequisite",
+      "reason": "Manifold learning techniques often involve understanding coordinate systems for data representation."
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Training Techniques",
+      "relation": "prerequisite",
+      "reason": "Knowledge of learning algorithms is necessary to apply training techniques effectively.",
+      "similarity": 0.8366
+    },
+    {
+      "from": "Learning Algorithms",
+      "to": "Model Evaluation",
+      "relation": "similarity",
+      "score": 0.7431
+    },
+    {
+      "from": "Neural Network Components",
+      "to": "Autoencoders",
+      "relation": "prerequisite",
+      "reason": "Understanding neural network components is essential to grasp how autoencoders function."
+    },
+    {
+      "from": "Training Techniques",
+      "to": "Model Evaluation",
+      "relation": "prerequisite",
+      "reason": "Effective training techniques are necessary to evaluate model performance accurately."
+    },
+    {
+      "from": "Model Evaluation",
+      "to": "Training Techniques",
+      "relation": "similarity",
+      "score": 0.7989
+    }
+  ]
+}

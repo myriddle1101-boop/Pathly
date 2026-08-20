@@ -1,0 +1,150 @@
+{
+  "nodes": [
+    {
+      "id": "Artificial Intelligence",
+      "description": "The simulation of human intelligence processes by machines.",
+      "sub_topics": "[{\"name\": \"Machine Learning\", \"description\": \"A subset of AI focused on algorithms that learn from data.\"}, {\"name\": \"Deep Learning\", \"description\": \"A type of machine learning using neural networks with many layers.\"}, {\"name\": \"AI Surveillance\", \"description\": \"The use of AI technologies for monitoring and data collection.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of programming and statistics.",
+      "key_sub_concepts": "[\"Machine Learning\", \"Natural Language Processing\"]",
+      "common_misconceptions": "[\"AI can think like a human\", \"AI will replace all jobs\"]",
+      "practical_applications": "[\"Virtual assistants\", \"Recommendation systems\"]"
+    },
+    {
+      "id": "Cybersecurity",
+      "description": "The practice of protecting systems, networks, and programs from digital attacks.",
+      "sub_topics": "[{\"name\": \"Malware Threats\", \"description\": \"Software designed to disrupt, damage, or gain unauthorized access.\"}, {\"name\": \"Cybercrime\", \"description\": \"Criminal activities carried out by means of computers or the internet.\"}, {\"name\": \"Cyberattacks\", \"description\": \"Deliberate exploitation of computer systems and networks.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of computer networks and programming concepts.",
+      "key_sub_concepts": "[\"Network Security\", \"Application Security\", \"Information Security\", \"Incident Response\"]",
+      "common_misconceptions": "[\"Cybersecurity is only about antivirus software.\", \"Only large organizations need cybersecurity.\"]",
+      "practical_applications": "[\"Protecting sensitive data in organizations\", \"Securing personal devices and networks\"]"
+    },
+    {
+      "id": "Surveillance Technologies",
+      "description": "Tools and systems used for monitoring and collecting data.",
+      "sub_topics": "[{\"name\": \"Drones\", \"description\": \"Unmanned aerial vehicles used for surveillance and data collection.\"}, {\"name\": \"Gigapixel Cameras\", \"description\": \"High-resolution cameras used for detailed surveillance.\"}, {\"name\": \"Video Drones\", \"description\": \"Drones equipped with cameras for real-time video monitoring.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of data collection methods and privacy concerns.",
+      "key_sub_concepts": "[\"Video surveillance\", \"Data analytics\", \"Facial recognition\", \"IoT devices\"]",
+      "common_misconceptions": "[\"Surveillance is only about cameras\", \"All surveillance is invasive\"]",
+      "practical_applications": "[\"Public safety monitoring\", \"Traffic management\", \"Retail analytics\", \"Home security systems\"]"
+    },
+    {
+      "id": "Policing Technologies",
+      "description": "Technological tools used by law enforcement agencies.",
+      "sub_topics": "[{\"name\": \"Predictive Policing\", \"description\": \"Using data analysis to predict and prevent crime.\"}, {\"name\": \"Policing Tools\", \"description\": \"Technologies and methods employed in law enforcement.\"}, {\"name\": \"Smart City Technologies\", \"description\": \"Integrated technologies for urban management and policing.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of law enforcement practices and introductory technology concepts.",
+      "key_sub_concepts": "[\"Surveillance technologies\", \"Data analytics in policing\"]",
+      "common_misconceptions": "[\"All policing technologies are invasive\", \"Policing technologies eliminate the need for human judgment\"]",
+      "practical_applications": "[\"Crime prediction and prevention\", \"Traffic monitoring and enforcement\"]"
+    },
+    {
+      "id": "Crime and Media",
+      "description": "The intersection of crime narratives and media representation.",
+      "sub_topics": "[{\"name\": \"Media Culture\", \"description\": \"The influence of media on public perception of crime.\"}, {\"name\": \"Crime Nexus\", \"description\": \"The interconnectedness of crime and media portrayal.\"}, {\"name\": \"Deep Fakes\", \"description\": \"AI-generated synthetic media that can misrepresent reality.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of media studies and criminology.",
+      "key_sub_concepts": "[\"Media representation of crime\", \"Impact of crime narratives on public perception\"]",
+      "common_misconceptions": "[\"Media accurately reflects crime statistics\", \"Crime stories are purely fictional\"]",
+      "practical_applications": "[\"Analyzing crime reports in media\", \"Developing critical thinking about media consumption\"]"
+    },
+    {
+      "id": "Intelligence in Crime",
+      "description": "The role of intelligence analysis in understanding and preventing crime.",
+      "sub_topics": "[{\"name\": \"Crime Rates\", \"description\": \"Statistical measures of crime occurrences in a given area.\"}, {\"name\": \"Intelligence Gathering\", \"description\": \"Collecting information to inform law enforcement strategies.\"}, {\"name\": \"Police Cultures\", \"description\": \"The shared values and practices within law enforcement agencies.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of crime theories and data analysis.",
+      "key_sub_concepts": "[\"Data collection methods\", \"Predictive policing\", \"Crime mapping\", \"Behavioral analysis\"]",
+      "common_misconceptions": "[\"Intelligence analysis is only about data\", \"All crime can be predicted accurately\"]",
+      "practical_applications": "[\"Crime trend analysis\", \"Resource allocation for law enforcement\", \"Community safety initiatives\"]"
+    },
+    {
+      "id": "Technological Dystopia",
+      "description": "The potential negative consequences of advanced technologies on society.",
+      "sub_topics": "[{\"name\": \"Surveillance Campaigns\", \"description\": \"Coordinated efforts to monitor populations using technology.\"}, {\"name\": \"Smart Speakers\", \"description\": \"Voice-activated devices that can collect user data.\"}, {\"name\": \"Social Credit Systems\", \"description\": \"Systems that evaluate individuals based on their behavior.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of technology and its societal impacts.",
+      "key_sub_concepts": "[\"Surveillance capitalism\", \"AI ethics\", \"Digital divide\", \"Job displacement\"]",
+      "common_misconceptions": "[\"Technology always leads to progress\", \"Dystopian outcomes are unlikely\", \"Only science fiction depicts technological dystopias\"]",
+      "practical_applications": "[\"Policy development for technology regulation\", \"Ethical guidelines for AI development\", \"Awareness campaigns on digital rights\"]"
+    },
+    {
+      "id": "Crime Facilitation",
+      "description": "Factors and technologies that enable or exacerbate criminal activities.",
+      "sub_topics": "[{\"name\": \"Tech Crime\", \"description\": \"Crimes that involve technology as a primary tool.\"}, {\"name\": \"Hacking Surveillance\", \"description\": \"Unauthorized access to surveillance systems.\"}, {\"name\": \"Criminal Bias\", \"description\": \"Discriminatory practices in law enforcement and justice.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of criminology and technology.",
+      "key_sub_concepts": "[\"Cybercrime\", \"Social Engineering\"]",
+      "common_misconceptions": "[\"All technology is inherently good.\", \"Crime is solely a social issue.\"]",
+      "practical_applications": "[\"Developing crime prevention technologies\", \"Analyzing crime patterns using data\"]"
+    },
+    {
+      "id": "AI Ethics",
+      "description": "The moral implications and responsibilities of AI technologies.",
+      "sub_topics": "[{\"name\": \"Bias in AI\", \"description\": \"The presence of prejudice in AI algorithms and data.\"}, {\"name\": \"Accountability in AI\", \"description\": \"Determining responsibility for AI-driven decisions.\"}, {\"name\": \"Privacy Concerns\", \"description\": \"Issues related to data protection and individual rights.\"}]",
+      "difficulty_level": 2,
+      "target_audience": "Undergraduate",
+      "estimated_learning_time": "1-2 hours",
+      "prerequisites_summary": "Basic understanding of artificial intelligence and its applications.",
+      "key_sub_concepts": "[\"Fairness in AI\", \"Accountability in AI systems\"]",
+      "common_misconceptions": "[\"AI is inherently unbiased\", \"Ethics in AI is only a technical issue\"]",
+      "practical_applications": "[\"Developing ethical AI guidelines\", \"Implementing fairness audits in AI systems\"]"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Artificial Intelligence",
+      "to": "AI Ethics",
+      "relation": "prerequisite",
+      "reason": "Understanding AI is necessary to discuss its ethical implications."
+    },
+    {
+      "from": "Cybersecurity",
+      "to": "Crime Facilitation",
+      "relation": "prerequisite",
+      "reason": "Knowledge of cybersecurity is essential to understand how technologies can enable crime."
+    },
+    {
+      "from": "Surveillance Technologies",
+      "to": "Policing Technologies",
+      "relation": "prerequisite",
+      "reason": "Understanding surveillance technologies is crucial for grasping their application in policing."
+    },
+    {
+      "from": "Policing Technologies",
+      "to": "Surveillance Technologies",
+      "relation": "similarity",
+      "score": 0.7228
+    },
+    {
+      "from": "Intelligence in Crime",
+      "to": "Crime Facilitation",
+      "relation": "prerequisite",
+      "reason": "Knowledge of intelligence analysis is necessary to understand factors that enable crime."
+    },
+    {
+      "from": "Technological Dystopia",
+      "to": "AI Ethics",
+      "relation": "prerequisite",
+      "reason": "Understanding potential negative consequences of technology is important for discussing ethical responsibilities."
+    }
+  ]
+}

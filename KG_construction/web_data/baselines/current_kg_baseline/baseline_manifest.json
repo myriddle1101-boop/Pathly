@@ -1,0 +1,170 @@
+{
+  "baseline_name": "current_kg_baseline",
+  "created_at": "2026-06-22T21:49:59",
+  "project_dir": "D:\\ic\\master project\\project_code\\KG_construction",
+  "baseline_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline",
+  "mechanism_version": 1,
+  "design_goal": "冻结当前已跑通的 KG baseline，保留依赖、代表样本、关键输出和状态说明，为后续升级提供可回滚、可复现的锚点。",
+  "global_inventory": {
+    "global_knowledge_graph.json": {
+      "exists": true,
+      "metadata": {
+        "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\global_knowledge_graph.json",
+        "relative_path": "web_data\\global\\global_knowledge_graph.json",
+        "size_bytes": 87917,
+        "sha256": "82274b000eae52f24196c52f7114e04a0e388ba14905530769895451a62fa44c",
+        "modified_at": "2026-06-21T16:16:00"
+      }
+    },
+    "processed_files.json": {
+      "exists": true,
+      "metadata": {
+        "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\processed_files.json",
+        "relative_path": "web_data\\global\\processed_files.json",
+        "size_bytes": 553,
+        "sha256": "645d1711e3f45e52379a77882c3f122c2985db5852a2762338cc479679caa051",
+        "modified_at": "2026-06-21T16:16:00"
+      }
+    },
+    "upload_history.json": {
+      "exists": true,
+      "metadata": {
+        "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\global\\upload_history.json",
+        "relative_path": "web_data\\global\\upload_history.json",
+        "size_bytes": 3327,
+        "sha256": "fbbf45d4b3b6c2aa8b1e722664044450c4ebb00ae8c0d1974f4e356a981fc3e2",
+        "modified_at": "2026-06-21T16:16:00"
+      }
+    },
+    "global_graph_counts": {
+      "nodes": 76,
+      "edges": 68
+    }
+  },
+  "representative_runs": [
+    {
+      "doc_name": "Security and Privacy in ML",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Security and Privacy in ML",
+      "snapshot_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Security and Privacy in ML",
+      "latest_status": "done",
+      "latest_history_time": "2026-06-21 16:16:00",
+      "counts": {
+        "chunks": 32,
+        "topics": 9,
+        "prerequisites": 7,
+        "similarity_edges": 4,
+        "topics_with_summary": 9,
+        "graph_nodes": 9,
+        "graph_edges": 10
+      },
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": true
+      }
+    },
+    {
+      "doc_name": "Dreamer",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Dreamer",
+      "snapshot_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Dreamer",
+      "latest_status": "done",
+      "latest_history_time": "2026-06-21 16:12:02",
+      "counts": {
+        "chunks": 16,
+        "topics": 9,
+        "prerequisites": 6,
+        "similarity_edges": 0,
+        "topics_with_summary": 9,
+        "graph_nodes": 9,
+        "graph_edges": 6
+      },
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": false
+      }
+    },
+    {
+      "doc_name": "Crime",
+      "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\Crime",
+      "snapshot_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\snapshot\\runs\\Crime",
+      "latest_status": "done",
+      "latest_history_time": "2026-06-21 16:07:43",
+      "counts": {
+        "chunks": 49,
+        "topics": 9,
+        "prerequisites": 5,
+        "similarity_edges": 1,
+        "topics_with_summary": 9,
+        "graph_nodes": 9,
+        "graph_edges": 6
+      },
+      "stage_status": {
+        "stage1": true,
+        "stage2a": true,
+        "stage2b": true,
+        "stage2c": true,
+        "stage3": true,
+        "stage4_json": true,
+        "stage4_gexf": true,
+        "stage4": true,
+        "kg_prerequisite_png": true,
+        "kg_similarity_png": true
+      }
+    }
+  ],
+  "stage_output_artifacts": [
+    {
+      "name": "baseline_manifest.json",
+      "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\baseline_manifest.json"
+    },
+    {
+      "name": "dependencies.json",
+      "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\dependencies.json"
+    },
+    {
+      "name": "run_status_summary.json",
+      "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\run_status_summary.json"
+    },
+    {
+      "name": "artifacts_index.json",
+      "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\artifacts_index.json"
+    },
+    {
+      "name": "restore_plan.json",
+      "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\restore_plan.json"
+    },
+    {
+      "name": "reproduction_recipe.json",
+      "path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\reproduction_recipe.json"
+    }
+  ],
+  "rollback_proof": {
+    "snapshot_contains_global_state": true,
+    "snapshot_contains_representative_runs": [
+      "Security and Privacy in ML",
+      "Dreamer",
+      "Crime"
+    ],
+    "restore_plan_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\restore_plan.json"
+  },
+  "reproduction_proof": {
+    "recipe_path": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\baselines\\current_kg_baseline\\reproduction_recipe.json",
+    "primary_sample": "Security and Privacy in ML",
+    "verification_mode": "按阶段输出 sha256 与 baseline 产物比对"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "reason": "",
+  "source_dir": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\runs\\01-introduction-to-rag\\7cfd7fd31611",
+  "run_id": "01-introduction-to-rag-7cfd7fd31611",
+  "model": "gpt-5.5",
+  "created_at": "2026-08-17T20:02:07.619388+00:00",
+  "source_hashes": {
+    "stage1_chunks.json": "598c3f3213adf7cc2a43dd2d1f0e327513f7ba22c944b7a3141e0ae7a44d8806",
+    "stage2a_topics_hybrid.json": "59c2ab252731cc7c78da97ce18c72f92d67e170e15bcbc3a2b68e3e053d6fe12",
+    "stage2c_similarity_edges.json": "7a1049af7517de9ea8aa5b2ecad4f5e5de45f898a0b17f08d355c7cebb0bf31d",
+    "stage3_topics_with_summary.json": "78780d8b71cbd21dc1c69538835fece093ba9b85d43a9cec71f779bc4401e544"
+  },
+  "old_relation_count": 5,
+  "new_relation_count": 3,
+  "new_node_count": 9,
+  "new_edge_count": 4,
+  "golden_path_resource": false
+}

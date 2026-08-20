@@ -1,0 +1,11 @@
+﻿case_id,tier,goal_text,verified_goal_match,verified_concepts,verified_concept_count,intent_or_limit
+G1,full_experience,Learn how neural networks solve XOR using activation functions and gradient descent,True,Linear Separability | XOR | Neural Networks | Activation Functions | Gradient Descent,5,end-to-end mechanism
+G2,full_experience,Understand why XOR is not linearly separable and how a neural network can solve it,True,Linear Separability | XOR | Neural Networks | Activation Functions | Gradient Descent,5,problem-to-solution explanation
+G3,full_experience,"Learn nonlinear classification with neural networks, activation functions, and gradient descent",True,Linear Separability | XOR | Neural Networks | Activation Functions | Gradient Descent,5,application-oriented formulation
+G4,full_experience,"Build intuition for the XOR problem, hidden nonlinearities, and training a neural network",True,Linear Separability | XOR | Neural Networks | Activation Functions | Gradient Descent,5,conceptual-intuition formulation
+G5,full_experience,Explain the role of activation functions and gradient descent when a neural network learns XOR,True,Linear Separability | XOR | Neural Networks | Activation Functions | Gradient Descent,5,component-to-mechanism formulation
+P1,planning_exploratory_only,Learn neural network basics,True,,0,"Planning may map this goal, but V4 has no verified full-content source guarantee."
+P2,planning_exploratory_only,Understand backpropagation,False,,0,Planning/KG exploration only; do not use for source-grounded content claims.
+P3,planning_exploratory_only,Learn word embeddings,False,,0,Planning/KG exploration only; confirm mapping and sources before any content evaluation.
+P4,planning_exploratory_only,Learn the basics of transformers,False,,0,Planning/KG exploration only; confirm mapping and sources before any content evaluation.
+P5,planning_exploratory_only,Understand retrieval-augmented generation,False,,0,Planning/KG exploration only; confirm mapping and sources before any content evaluation.

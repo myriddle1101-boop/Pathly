@@ -1,0 +1,687 @@
+Natural Language Processing
+with Deep Learning
+CS 224 N/Ling 284
+Diyi Yang
+Lecture 10: RAG and Language Agents
+
+Overview
+From last lecture: PEFT--adapters (5 mins)
+1. Question answering and RAG (15 mins)
+2. Introducing language agents (5 mins)
+3. Reasoning and planning (15 mins)
+4. Memory (15 mins)
+5. Tool use (10 mins)
+6. Agent data and evaluation (15 mins)
+• Redeem credits! Select keywords for your project!
+• Huggingface tutorial this Friday
+
+A functional perspective of adaptation
+• Function composition augments a model’s functions
+with new task-specific functions:
+• Most commonly used in multi-task learning where
+Function
+modules of different tasks are composed.
+Composition
+3
+
+Adapter
+(Houlsby et al. 2019) +
+• Insert a new function f between layers of a pre-
+𝜙
+trained model to adapt to a downstream task ---
+Feedforward
+known as “adapters”
+up-projection
+• An adapter in a Transformer layer consists of:
+Nonlinearity
+𝐷 𝑘×𝑑
+• A feed-forward down-projection 𝑊 ∈ 𝑅
+𝑈 𝑑×𝑘
+• A feed-forward up-projection 𝑊 ∈ 𝑅
+Feedforward
+down-projection
+𝑈 𝐷
+• 𝑓 𝒙 = 𝑊 (𝜎 𝑊 𝒙 )
+𝜙
+4
+
+Adapter (Houlsby et al. 2019)
+The adapter is
+●
+usually placed after
+the multi-head
+attention and/or
+after the feed-
+forward layer
+Most approaches
+●
+have used this
+bottleneck design
+with linear layers
+5
+
+Trade-off btw accuracy and # of trained task specific parameters
+The curves show the 20 th, 50 th, and 80 th
+performance percentiles across nine tasks
+from the GLUE benchmark.
+Adapter based tuning attains a
+similar performance to full
+finetuning with two orders of
+magnitude fewer trained
+parameters
+6
+
+Language adapters? Task knowledge ~= language knowledge
+Adapters learn transformations that make the
+●
+underlying model more suited to a task or language.
+MLM MLM
+(English) (Quechuan) Using masked language modelling (MLM), we can
+●
+learn language-specific transformations for e.g.
+English and Quechua.
+=
+~
+7
+
+Performance comparison
+Prompt tuning Adapter
+underperforms achieves better
+the other performance
+methods due but add more
+to limited parameters
+capacity
+8
+
+Other variants of (efficient) adaptation
+• Knowledge distillation to obtain smaller models
+Shridhar et al., 2023
+The generic teacher-student framework for knowledge distillation (Gou et al., )
+• Also check out: Gist tokens (Wu et al., 2024), Re FT(Wu et al, 2024), etc
+9
+
+1. Question Answering
+Reading Comprehension
+(Rajpurkaret al, 2016): SQu AD: 100,000+ Questions for Machine Comprehension of Text
+10
+
+Conventional methods for reading comprehension
+Feature-based
+• Generate a list of candidate answers (𝑎 , 𝑎 , … , 𝑎 )
+1 2 𝑀
+𝑑
+• Define a feature vector 𝜙 𝑝, 𝑞, 𝑎 ∈ 𝑅 : Word/bigram features; Parse tree matches
+𝑖
+• Apply a multi-class logistic regression model
+Neural approach:
+• Problem formulation
+• Input: 𝐶 = 𝑐 , 𝑐 , … , 𝑐 , 𝑄 = 𝑞 , 𝑞 , … , 𝑞
+1 2 𝑁 1 2 𝑀
+• Output: 1≤ start ≤ end ≤𝑁
+• N~100, M ~15
+11
+
+Open-domain question answering
+Question (Q) Answer (A)
+• Different from reading comprehension, we don’t assume a given passage.
+• Instead, we only have access to a large collection of documents (e.g., Wikipedia). We
+don’t know where the answer is located, and the goal is to return the answer for any
+open-domain questions.
+• Much more challenging and a more practical problem!
+In contrast to closed-domain systems that deal with questions under a specific domain (medicine, technical support).
+
+Retrieval augmentation
+How many of Warsaw's inhabitants
+spoke Polish in 1933?
+Document Document
+Retriever Reader
+833,500
+https://github.com/facebookresearch/Dr QA
+Chen et al., 2017. Reading Wikipedia to Answer Open-domain Questions
+13
+
+Using retrieval to overcome LMs’ shortcomings
+• Instead of asking the LM to memorize everything, can we provide the LM with relevant
+and useful content just-in-time?
+• Retrieval / search is a common mechanism for identifying such relevant information.
+• Dynamic: it’s easy to update / add documents to your retrieval system
+• Interpretable: LM can generate pointers to retrieved documents that support
+human verification of its generations (citations)
+
+Retriever-Reader framework
+• Input: a large collection of documents 𝒟 = 𝐷 , 𝐷 , … , 𝐷 and 𝑄
+1 2 𝑁
+• Output: an answer string 𝐴
+Retriever: 𝑓(𝒟, 𝑄) ⟶ 𝑃 , … , 𝑃
+K is pre-defined (e.g., 100)
+1 𝐾
+Reader: 𝑔(𝑄, {𝑃 , … , 𝑃 }) ⟶ 𝐴 A reading comprehension problem!
+1 𝐾
+Retriever = A standard TF-IDF information-retrieval sparse model (a fixed module)
+Reader = a neural reading comprehension model
+• Could be Trained on SQu AD and other distantly-supervised QA datasets
+• Or a zero-shot LLM (Chat GPT etc)
+
+RAG and it’s open problems
+Retrieval Augmented Generation (RAG) is very powerful!
+See also works like REALM, DPR, ORQA etc.. [Lewis et al., 2021]
+
+Different types of retrievers
+How should we retrieve relevant passages for our retrieval system?
+● Word-overlap (BM 25)
+● Vector retrieval (DPR, Sentence vectors)
+● Other, neural systems (Col BERT)
+
+Fast vs slow retrievers
+• Fastest: computing similarities (or word overlap) on pre-computed vectors
+• Slowest: using a LM to compute similarities
+• Other hybrid (pre-computing the ‘document index’) e.g. in Col BERT
+
+We can train the retriever! Joint training of reader and retriever
+• Each text passage can be encoded as a vector using BERT and the retriever score can be measured as the
+dot product between the question representation and passage representation.
+• However, it is not easy to model as there are a huge number of passages (e.g., 21 M in English Wikipedia)
+Lee et al., 2019. Latent Retrieval for Weakly Supervised Open Domain Question Answering
+
+We can train the retriever!
+• Dense passage retrieval (DPR)
+• We can also just train the retriever using question-answer pairs!
+• Trainable retriever (using BERT) largely outperforms traditional IR retrieval models
+Karpukhin et al., 2020. Dense Passage Retrieval for Open-Domain Question Answering
+
+Deep retrieval + generative models
+• Recent work shows that it is beneficial to generate answers instead of to
+extract answers.
+Fusion-in-decoder (FID)=DPR+T 5
+Izacardand Grave 2020. Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering
+21
+
+Problem: How many documents can we use?
+The retriever is key – if we have to use only one document, then we have to get that right.
+Why not get lots of documents and pass it to the LM?
+
+LM’s can’t pay attention to the entire context
+[Liu+ 2023]
+The long-context problem bites you – LMs do not pay attention to its context well!
+Setup: 1 relevant document, all others irrelevant
+Best Closed-Book performance: GPT-3.5-Turbo, ~56%
+Best Oracle (only feed in relevant doc) performance: GPT-3.5-Turbo, ~88.5%
+
+In practice: LMs cant use many documents
+Retriever performance (yellow)
+rises slowly to 90% recall
+RAG performance (other lines)
+saturate very quickly – after 10-
+20 documents.
+
+LLMs with web search (systems that search and cite the web)
+25
+
+RARR: research and revise what LLMs say using LLMs [Guo+2023]
+Uses QA to check for consistency between
+sources and responses
+Returns citations for each of these items
+using a LM.
+Revises by detecting disagreement between
+the text and citations, then runs an edit
+model to revise the text if needed
+Evidence snippets are selected to form an
+attribution report
+26
+
+LLMs citation and hallucinations
+Unique benefit of RAG: citing
+the source
+These citations themselves
+are generated by LLMs
+So the citations could also be
+hallucinated .. How often
+does that happen?
+27
+
+LLMs citation and hallucinations
+Outputs are easy to read / appear useful to rater (1-5 scale)
+Unique benefit of RAG: citing
+the source
+These citations themselves
+are generated by LLMs
+But precision and recall are both low..
+So the citations could also be
+hallucinated .. How often
+does that happen?
+28
+
+2. Language agents: from words to action
+• LLMs predict textual output for a given input; while agents perform actions based on
+observations from the environment/world
+Action
+Observation
+• Lots of debate on what is an agent and what is not an agent
+• Same with the definition of “agentic”
+• Here, we focus on key components of LLM empowered systems or language agents
+Many slides credit to:
+Language Agents: Foundations, Prospects, and Risks. Yu Su, Diyi Yang, Shunyu Yao, Tao Yu. EMNLP 2024 Tutorial.
+29
+
+Language agents: key components
+Planning & Reasoning Memory
+Re Act / Co T / Reflexion/etc Episodic, semantic, procedural, etc Environment
+(external world)
+observe
+Desktop OS,
+LLM Core
+Web browser,
+Mobile apps,
+Games,
+Tools Robots,
+Retrieval, Calculator, Code, Search, Read/Write Memory… Databases,
+etc
+act
+Agent actions: tool call, interaction, response to users
+Illustration purpose only; not meant to be the exact process of agent development
+30
+
+Other types of common components of language agents
+https://lilianweng.github.io/posts/2023-06-23-agent/
+Cognitive Language Agents
+(Sumers and Yao, 2024)
+31
+
+3. Language agents: Reasoning
+Planning & Reasoning Memory
+Re Act / Co T / Reflexion/etc Episodic, semantic, procedural, etc Environment
+(external world)
+observe
+Desktop OS,
+LLM Core
+Web browser,
+Mobile apps,
+Games,
+Tools Robots,
+Retrieval, Calculator, Code, Search, Read/Write Memory… Databases,
+etc
+act
+Agent actions: tool call, interaction, response to users
+32
+
+Reasoning
+• For humans: various mental
+processes
+• For LLMs: intermediate
+generation that imitate
+various (but not all) human
+mental processes
+• For agents: internal actions
+*(Kahneman, 2003), also note that this notion of dual process is put in question. See, e.g., Mercier and Sperber (2017)
+Action
+think
+about
+…
+Observation
+33
+
+Why is reasoning helpful for agents?
+Obs t You are cooking a dish and seeing salt is out…
+Act
+“The dish should be savory, and since salt is out, I
+should find the soy sauce instead. It is in the cabinet to
+Reasoning
+my right…”
+Obs
+Act t Turn right
+Reason to act
+Obs t+1 You see a cabinet and a table…
+Generalization
+1.
+Alignment
+2.
+Act t+1 Open cabinet
+Observation to Action mapping could be hard
+34
+
+Reasoning without acting
+Question: Aside from the Apple Remote, what other device can control the
+program Apple Remote was originally designed to interact with?
+Standard
+Answer: i Pod
+Reason Only
+Thought: Let's think step by step. Apple Remote was originally designed to
+interact with Apple TV. Apple TV can be controlled by i Phone, i Pad, and i Pod
+Touch. So the answer is i Phone, i Pad, and i Pod Touch.
+Answer: i Phone, i Pad, i Pod Touch
+35
+
+Reasoning with acting
+Question: Aside from the Apple Remote, what other device can control the
+program Apple Remote was originally designed to interact with?
+Re Act (Reason + Act)
+Thought 1: I need to search Apple Remote and find the program it was originally designed to interact with.
+Act 1: Search[Apple Remote]
+Obs 1: The Apple Remote is a remote control introduced in October 2005 by Apple … originally designed to control
+the Front Row media center program ……(long text omitted)
+Thought 2: Apple Remote was originally designed to control the Front Row media center program. I need to search
+Front Row next and find what other device can control it.
+Act 2: Search[Front Row]
+Obs 2: Could not find [Front Row]. Similar: ['Front Row Seat to Earth', 'Front Row Motorsports','Front Row
+(software)', …]
+Thought 3: Front Row is not found. I need to search Front Row (software) .
+Act 3: Search[Front Row (software)]
+Obs 3: Front Row is a discontinued media center software …(long text omitted)
+Thought 4: Front Row (software) is controlled by an Apple Remote or the keyboard function keys. So the answer is
+keyboard function keys.
+✓
+Act 4: Finish[keyboard function keys]
+36
+
+Comparing Re Act with COT, SC
+• Re Act outperforms Act consistently
+• Hallucination is a serious problem for Co T,
+and Re Act can help mitigate it to some extent
+37
+
+Self-Consistency
+[Wang et al., 2023]
+• Prompt a language model using chain-of-thought (Co T) prompting;
+• Generate a diverse set of reasoning paths
+• Aggregate by choosing the most consistent answer in the final answer set.
+
+Reflextion: reinforce agents via natural language feedback
+• Reflexion agents verbally reflect on task feedback signals, then maintain their own
+reflective text to induce better decision-making.
+39
+
+Reflextion: reinforce agents via natural language feedback
+• Improve performance compared to Re Act
+• Reduce error cases by using self-reflection to distill long, failed trajectories into
+relevant experiences that can are used as "self-hints" in the future
+40
+
+Multi-agent debate to improve reasoning [Du et al., 2023]
+41
+
+Multi-agent debate to improve reasoning [Du et al., 2023]
+42
+
+Coordinate with Orchestrator
+https://www.microsoft.com/en-us/research/publication/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/
+
+4. Language agents: Memory
+Planning & Reasoning Memory
+Re Act / Co T / Reflexion/etc Episodic, semantic, procedural, etc Environment
+(external world)
+observe
+Desktop OS,
+LLM Core
+Web browser,
+Mobile apps,
+Games,
+Tools Robots,
+Retrieval, Calculator, Code, Search, Read/Write Memory… Databases,
+etc
+act
+Agent actions: tool call, interaction, response to users
+44
+
+Different types of memory for language agents
+Type by content Definition Examples
+Episodic memory Stores experience Generative agents
+[Park et al., 2023]
+Semantic memory Stores knowledge
+Procedural memory Stores skills Voyager
+[Wang et al., 2023]
+Note: here we only categorize based on memory content, which is inspired by human long-term memory systems
+
+Generative agents
+46
+
+Generative agents: the need for memory
+Context window cannot possibly hold all the event streams
+●
+Even if possible, might be hard to attend to relevant events, or digest over them
+●
+47
+
+Write: append-only event streams
+●
+Episodic memory
+Read: retrieval based on heuristic scores
+●
+48
+
+Write: LLM reasoning over events
+●
+Semantic memory
+Read: retrieval
+●
+49
+
+● Write: Code-based skills
+Procedural memory
+● Read: Embedding retrieval
+50
+
+Mem GPT
+[Packer+2024]
+OS-inspired LLM system for virtual context management;
+Using function calls, LLM agents can read and write to external data sources, modify their
+own context, and choose when to return responses to the user.
+51
+
+Mem GPT
+[Packer+2024]
+Deep memory retrieval (DMR) performance Mem GPT’s performance is unaffected by
+increased context length
+52
+
+5. Language agents: Tool use
+Planning & Reasoning Memory
+Re Act / Co T / Reflexion/etc Episodic, semantic, procedural, etc Environment
+(external world)
+observe
+Desktop OS,
+LLM Core
+Web browser,
+Mobile apps,
+Games,
+Tools Robots,
+Retrieval, Calculator, Code, Search, Read/Write Memory… Databases,
+etc
+act
+Agent actions: tool call, interaction, response to users
+53
+
+Toolken GPT [Hao et al., 2024]
+• Toolken GPT represents each tool as a token (“toolken”) and learns an embedding for it,
+enabling tool calls in the same way as generating a regular word token. Once a toolken
+is triggered, LM is prompted to complete arguments for the tool to execute.
+54
+
+Toolformer: language models can teach themselves to use tools
+• Toolformer trains LMs to decide which
+APIs to call, when to call them, what
+arguments to pass, and how to best
+incorporate the results.
+• Use self-supervised learning with only a
+handful of demonstrations for each API.
+• Tools: calculator, Q&A system, search
+engine, translation system, calendar.
+55
+
+Toolformer: language models can teach themselves to use tools
+1 2 𝑘
+• For an input 𝒙, sample a position 𝑖 and corresponding API call candidates 𝑐 , 𝑐 , … 𝑐 .
+𝑖 𝑖 𝑖
+• We then execute these API calls and filter out all calls which do not reduce the loss 𝐿
+𝑖
+over the next tokens.
+∗
+• All remaining API calls are interleaved with the original text, resulting in a new text 𝒙
+56
+
+Toolformer: language models can teach themselves to use tools
+
+Gorilla: LLMs connected with massive APIs (Patil et al., 2023)
+• Use self-instruct to generate {instruction, API} pairs and fine-tune LLa Ma on it
+58
+
+6. Different agent applications, data and evaluation
+Planning & Reasoning Memory
+Re Act / Co T / Reflexion/etc Episodic, semantic, procedural, etc Environment
+(external world)
+observe
+Desktop OS,
+LLM Core
+Web browser,
+Mobile apps,
+Games,
+Tools Robots,
+Retrieval, Calculator, Code, Search, Read/Write Memory… Databases,
+etc
+act
+Agent actions: tool call, interaction, response to users
+59
+
+Agent applications based on environments and domains
+Digital world
+• Coding agents
+• Gaming agents
+• Mobile agents
+• Web/app agents
+• Computer agents
+Physical world
+• Robotics
+
+Coding agents
+Environment: project code repos, filesystems, IDEs…
+●
+Observation space: code files, exe outputs, docs, errors, commit history…
+●
+Action space: code edits, file search/view, test updates…
+●
+SWE-bench (Jimenez & Yang, 2023)
+61
+
+Web/app agents
+Environment: web browsers/apps
+●
+Observation space: screenshots, DOM trees, HTML, historical actions…
+●
+Action space: browser/app controls (e.g., click, type, scroll, drag, hover…)
+●
+Mind 2 Web: Towards a Generalist Agent for the Web, (Deng et al., 2023)
+Web Arena: A Realistic Web Environment for Building Autonomous Agents, (Zhou et al., 2023)
+62
+
+Computer use agents
+Environment: desktop operating systems
+●
+Observation space: desktop screenshots, a 11 y trees, historical actions…
+●
+Action space: keyboard/mouse controls (e.g., click, type, drag, shortcuts)
+●
+Open AI Universe, (Open AI, 2016)
+OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments, (Xie et al., 2024)
+
+Agent data --- scaling agent data
+Human demonstrations
+●
+Expensive and complex infrastructure setup
+●
+Expert time & cost
+●
+Task coverage
+●
+Synthesis/simulation
+●
+Converting online tutorials into direct training demonstrations [Synatra]
+●
+64
+
+Agent data --- scaling agent data
+Human demonstrations
+●
+Expensive and complex infrastructure setup
+●
+Expert time & cost
+●
+Task coverage
+●
+Synthesis/simulation
+●
+Converting online tutorials into direct training demonstrations [Synatra]
+●
+Internet-scale data
+●
+Numerous videos/data exist online showing how humans perform (agent) tasks, but
+●
+without grounded trajectories
+65
+
+Case study of SWE-smith: scaling data for coding agents
+● A toolkit for (1) creating execution environments, and (2) synthesizing 100 s to
+1000 s of task instances for any (Python) Git Hub repository [Yang et al., 2025]
+66
+
+Training details and results
+Training Technique: Rejection Sampling Fine Tuning
+●
+Models: Claude 3.5/3.7, GPT 4 o (Experts); Qwen 2.5 Coder Instruct (Student)
+●
+Agent System: SWE-agent
+●
+67
+
+Agent evaluation
+Challenges in agent evaluation
+• Real-world environmental setup complexity
+• Task coverage
+• Open-ended success criteria
+• Multiple valid solution paths
+• Cannot script evaluation metrics, need for human judgment
+• Evaluation beyond task success
+Agent evaluation:
+• via benchmarks; via LLMs/VLMs; via crowdsourcing
+• See lecture on “Benchmarking and Evaluation”
+68
+
+Language agents: from words to action
+Planning & Reasoning Memory
+Re Act / Co T / Reflexion/etc Episodic, semantic, procedural, etc Environment
+(external world)
+observe
+Desktop OS,
+LLM Core
+Web browser,
+Mobile apps,
+Games,
+Tools Robots,
+Retrieval, Calculator, Code, Search, Read/Write Memory… Databases,
+etc
+act
+Agent actions: tool call, interaction, response to users
+69
+
+Bonus: building a coding agent (step by step)
+At its simplest, an AI coding agent is just a big loop
+John Yang
+Given a task, e.g. “create a web app for me”, we
+kickstart the following loop:
+1. The LM proposes an action
+2. You execute the action in a code environment
+(e.g., bash terminal, docker container, python
+interpreter)
+3. Tell the LM the output
+4. And then repeat steps 2-4!
+70
+
+Bonus: building a coding agent (step by step)
+At its simplest, An AI coding agent is just a big loop. Some pseudocode:
+Let’s implement 3 things: query_lm; parse_action; execute_action
+71
+
+Bonus: building a coding agent (step by step)
+query_lm parse_action execute_action
+Input: messages Input: LM’s response Input: base action
+Output: LM’s response Output: bash action Output: std. output
+Full tutorial here: https://minimal-agent.com/
+72

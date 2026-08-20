@@ -1,0 +1,20 @@
+{
+  "stage": "2b",
+  "method": "llm",
+  "topic_count": 9,
+  "prerequisite_count": 2,
+  "prerequisites": [
+    {
+      "from": "Neural Network Concepts",
+      "to": "Language Models",
+      "relation_type": "strong_prerequisite",
+      "reason": "Modern language models are typically neural models, so understanding neural network components is foundational."
+    },
+    {
+      "from": "Language Models",
+      "to": "Emergent Abilities",
+      "relation_type": "strong_prerequisite",
+      "reason": "Emergent abilities are commonly studied in large language models, requiring prior understanding of language models."
+    }
+  ]
+}

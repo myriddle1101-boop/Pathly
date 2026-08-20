@@ -1,0 +1,138 @@
+{
+  "created_at": "2026-08-18T18:57:47.465463+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-baseline-dls_2016-562b4445509a",
+  "file_name": "dls_2016-562b4445509a",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 15,
+  "topic_metrics": {
+    "precision": 0.8182,
+    "recall": 0.6923,
+    "f1": 0.75,
+    "tp": 9,
+    "fp": 2,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.1111,
+    "recall": 0.25,
+    "f1": 0.1538,
+    "tp": 1,
+    "fp": 8,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Neural Networks",
+      "Activation Functions",
+      "Training Techniques",
+      "Prediction Layers",
+      "Loss Functions",
+      "Layer Structures",
+      "Model Evaluation",
+      "Learning Strategies",
+      "Mapping Functions"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Backpropagation",
+        "reason": "The source discusses training and forward propagation, but does not mention backpropagation."
+      },
+      {
+        "name": "General Concepts",
+        "reason": "This is too vague to denote a meaningful, source-grounded learning concept."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Batch Normalization",
+        "reason": "A central topic, including its normalization mechanism and its effects on training speed and accuracy."
+      },
+      {
+        "name": "Net 2 Net",
+        "reason": "The source presents Net 2 Net as a knowledge-transfer approach for accelerating training of larger networks."
+      },
+      {
+        "name": "Net 2 Wider Net",
+        "reason": "The source explains widening networks by replicating units while preserving the teacher function."
+      },
+      {
+        "name": "Net 2 Deeper Net",
+        "reason": "The source introduces a function-preserving transformation for adding layers to an existing network."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Training Techniques",
+        "reason": "The described training procedures, including batch normalization and Net 2 Net, are methods for training neural networks."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Activation Functions",
+        "reason": "Activation functions are components used in neural networks, but neural networks are not a prerequisite for learning activation functions."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Layer Structures",
+        "reason": "Layer structure is foundational to neural-network architecture, so the proposed direction is not supported."
+      },
+      {
+        "from": "Layer Structures",
+        "to": "Prediction Layers",
+        "reason": "This is primarily a type-of-layer relationship rather than a strong directional prerequisite."
+      },
+      {
+        "from": "Training Techniques",
+        "to": "Backpropagation",
+        "reason": "Backpropagation is not discussed in the source, and it is not a downstream topic of generic training techniques."
+      },
+      {
+        "from": "Training Techniques",
+        "to": "Loss Functions",
+        "reason": "Loss or cost functions define training objectives and are conceptually prior to many training procedures, not consequences of them."
+      },
+      {
+        "from": "Loss Functions",
+        "to": "Model Evaluation",
+        "reason": "The reported evaluation uses validation accuracy and top-5 error; model evaluation does not generally require loss functions."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Mapping Functions",
+        "reason": "The random mapping functions are mathematical constructions used by the Net 2 Wider Net procedure, not a topic requiring neural networks as a prerequisite."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "General Concepts",
+        "reason": "General Concepts is not a specific source-grounded target, and the relation is not meaningful."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Function-Preserving Initializations",
+        "to": "Net 2 Wider Net",
+        "reason": "Net 2 Wider Net is explicitly presented as a function-preserving transformation that initializes the student to compute the teacher's function."
+      },
+      {
+        "from": "Function-Preserving Initializations",
+        "to": "Net 2 Deeper Net",
+        "reason": "Net 2 Deeper Net is introduced as a second function-preserving transformation."
+      },
+      {
+        "from": "Activation Functions",
+        "to": "Net 2 Deeper Net",
+        "reason": "Applicability of Net 2 Deeper Net depends on an activation satisfying the stated identity-preservation property, such as ReLU."
+      }
+    ],
+    "overall_note": "The predictions capture several broad neural-network concepts, but omit the source's main technical contributions: batch normalization and function-preserving Net 2 Net transformations."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dls_2016-562b4445509a.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dls_2016-562b4445509a.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-baseline-dls_2016-562b4445509a_ledger.csv"
+  }
+}

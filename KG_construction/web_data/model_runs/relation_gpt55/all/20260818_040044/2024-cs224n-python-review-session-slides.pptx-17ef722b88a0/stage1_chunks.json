@@ -1,0 +1,140 @@
+[
+  {
+    "chunk_id": 1,
+    "word_count": 110,
+    "doc_type": "paper_book",
+    "text": "Review Session\nPython\nCS 224 N - Winter 25\nStanford University\n1\n\nTwo entwined snakes, based on Mayan representations.\nHowever, named after Monty Python’s Flying Circus 😅\n2\n\nCharting a Course\n1 2 3\nWhy Python? Setting Up Python Basics\n4 5 6\nData Structures Numpy Practical Tips\n3\n\nCharting a Course\n1 2 3\nWhy Python? Setting Up Python Basics\n4 5 6\nData Structures Numpy Practical Tips\n4\n\nWhy Python?\n● Widely used, general purpose\n● Easy to learn, read, and write\n● Scientific computation functionality\nsimilar to Matlab and Octave\n● Used by major deep learning\nframeworks (Py Torch, Tensor Flow)\n● Active open-source, many libraries!\n5"
+  },
+  {
+    "chunk_id": 2,
+    "word_count": 115,
+    "doc_type": "paper_book",
+    "text": "The Python Interpreter\nEx. Interactive Mode (line-by-line) Ex. Script Mode (.py file)\nPython code → interpreted into bytecode (.pyc) → compiled by a VM implementation\ninto machine instructions (most commonly using C.)\n“Slower”, but can run highly optimized C/C++ subroutines to make operations fast\n6\n\nLanguage Basics\nInterpreter always “respects” the types of each variable.\nStrongly\nTyped\nInterpreter keeps track of all variable types (strict handling)\nCases like float and int\nTypes will not\n1 + ‘1’ → Error!\naddition are allowed by\nbe coerced\nexplicit implementation\nsilently like in\n[1, 2] + set([3]) → Error!\n(no auto conversion)\nJava Script, Perl\nhttps://wiki.python.org/moin/Why%20 is%20 Python%20 a%20 dynamic%20 language%20 and%20 also%20 a%20 strongly%20 typed%20 language 7"
+  },
+  {
+    "chunk_id": 3,
+    "word_count": 84,
+    "doc_type": "paper_book",
+    "text": "Language Basics\nA variable is simply a value or object reference bound to a name.\nDynamically\nTyped Data types of variables are determined at runtime (flexible!)\nVariables can be\ndef find(required_element, sequence):\nfor index, element in enumerate(sequence): assigned to values\nif element == required_element:\nreturn index of a different type.\nreturn -1\nprint(find(2, [1, 2, 3])) # Outputs: 1 ✅ num = 1 # int ✅\nprint(find(\"c\", (\"a\", \"b\", \"c\", \"d\"))) # Outputs: 2 num = \"One\" # str\nhttps://medium.com/@pavel.loginov.dev/typing-in-python-strong-dynamic-implicit-c 3512785 b 863\n8"
+  },
+  {
+    "chunk_id": 4,
+    "word_count": 180,
+    "doc_type": "paper_book",
+    "text": "A Quick Check-In 🥳\n🎯 In Python, what will the\nA. 8\nfollowing code output?\nB. \"53\"\nx = 5\nC. Type Error\ny = \"3\"\nprint(x + y)\nD. \"53.0\"\n9\n\nA Quick Check-In 🥳\n🎯 In Python, what will the\nA. 8\nfollowing code output?\nB. \"53\"\nx = 5\nC. Type Error\ny = \"3\"\nprint(x + y)\nD. \"53.0\"\n10\n\nCharting a Course\n1 2 3\nWhy Python? Setting Up Python Basics\n4 5 6\nData Structures Numpy Practical Tips\n11\n\nSyntax Going Forward\nCode is in Courier New.\nCommand line input is prefixed with ‘$’.\nOutput is prefixed with ‘>>’.\n12\n\nPython Installation\nhttps://www.python.org/downloads/ 🥳\n13\n\nHelpful Commands See Installed Libraries\npip is Python’s\n$python -m pip list\npackage installer\nPrint out Version\n-m runs a module (ex. pip) as a script\n$python --version\n$python -v\nRun in Different Modes\n$python -vv\n$python script.py\n-i remains in interactive\n$python -i script.py\nmode after running .py\nPrint out Location\n$which python (mac, linux)\n$where python (windows) $python -c “print(‘hello there!’)”\n-c runs one-liner code snippet\n14"
+  },
+  {
+    "chunk_id": 5,
+    "word_count": 216,
+    "doc_type": "paper_book",
+    "text": "Environment Management\nProblem Solution: Virtual Envs\n● ●\nDifferent versions of Python Keep multiple Python environments\n● that are isolated from each other\nCountless Python packages\nand their dependencies\n●\nEach environment\n● ○ Can use different Python version\nDifferent projects require\n○ Keeps its own set of packages\ndifferent packages → even\n(can specify package versions)\nworse, different versions of\n○ Can be easily replicated\nthe same package!\n16\n\nSolution 1: venv\n● Created on top of existing\n$python -m venv /path/to/new/virtual/env\ninstallation, known as the\nCreates a new directory → can activate (differs based on OS)\nvirtual env’s “base” Python\n● Directory contains a specific\nPython interpreter and\nlibraries, binaries which are\nneeded to support a project\n● Isolated from software in other\nvirtual envs and interpreters\nand libraries installed in OS\nhttps://docs.python.org/3/library/venv.html\n17\n\nSolution 2: Anaconda (or Miniconda)\nhttps://www.anaconda.com/download/\nChoose specific\nVery popular Python Basic Workflow\nPython version\nenv/package manager\nCreate a new environment\n$ conda create –n <environment_name>\n● Supports Windows,\n$ conda create -n <environment_name> python=3.7\nLinux, Mac OS $ conda env create -f <environment.yml>\nActivate/deactivate environment\n● Can create and\n$ conda activate <environment_name>\nmanage different <...do stuff...>\nExport/create\n$ conda deactivate\nfrom env files!\nisolated envs\nExport environment\n$ conda activate <environment_name>\n$ conda env export > environment.yml\n18"
+  },
+  {
+    "chunk_id": 6,
+    "word_count": 97,
+    "doc_type": "paper_book",
+    "text": "Installing Packages\npip installs only Python packages, conda installs packages which may contain software written in any language\n🚨 Best to first use conda to install as many packages as possible and use pip to install remaining packages after.\nconda install -n myenv [package_name][=optional version number]\nInstall packages using pip in a conda environment (necessary when package not available through conda):\nconda install -n myenv pip # Install pip in environment\nconda activate myenv # Activate environment\npip install # Install package individually OR\n[package_name][==optional version number]\npip install -r <requirements.txt> # Install packages from file\n19"
+  },
+  {
+    "chunk_id": 7,
+    "word_count": 56,
+    "doc_type": "paper_book",
+    "text": "IDEs / Text Editors\nWrite a Python program in your\nIDE or text editor of choice 😁\n● Py Charm\n● Visual Studio Code\n● Sublime Text\n● Atom\n● Vim (for Linux or Mac)\nIDEs often have useful extensions! (ex. VS Code)\nIn terminal, just activate virtual\nenvironment and run command:\n$ python <filename.py>\n20"
+  },
+  {
+    "chunk_id": 8,
+    "word_count": 81,
+    "doc_type": "paper_book",
+    "text": "Python Notebooks https://colab.research.google.com/\nJupyter Notebook Google Colab\n● Hosted Jupyter notebooks, run in\n● .ipynb → write and execute\ncloud, requires no setup to use,\nPython locally in web browser\nprovides free access to GPUs\n● Interactive, re-execute code,\n● Comes with many Python\nresult storage, can interleave\nlibraries pre-installed\ntext, equations, and images\n● Can integrate with Git (pull/run),\n● Can add conda environments Google Drive, local storage\n● Read-Eval-Print-Loop (REPL) ● Tools > Settings > Misc > 😉😁\n21"
+  },
+  {
+    "chunk_id": 9,
+    "word_count": 116,
+    "doc_type": "paper_book",
+    "text": "🎯 Matching time! A. Python package manager used to\ninstall and manage libraries.\nB. Tool for creating isolated Python\n1. venv\nenvironments for dependency\nmanagement.\n2. Anaconda\nC. Distribution that simplifies package\nand environment management,\n3. Jupyter Ntbk designed for data science.\nD. An interactive platform for writing\n4. pip and running code alongside\nvisualizations and notes.\n22\n\n🎯 Matching time! A. Python package manager used to\ninstall and manage libraries.\nB. Tool for creating isolated Python\n1. venv\nenvironments for dependency\nmanagement.\n2. Anaconda\nC. Distribution that simplifies package\nand environment management,\n3. Jupyter Ntbk designed for data science.\nD. An interactive platform for writing\n4. pip and running code alongside\nvisualizations and notes.\n23"
+  },
+  {
+    "chunk_id": 10,
+    "word_count": 135,
+    "doc_type": "paper_book",
+    "text": "Language Basics\n1 2 3\nWhy Python? Setting Up Python Basics\n4 5 6\nData Structures Numpy Practical Tips\n24\n\nCommon Operations\nx = 10 # Declaring two integer variables\ny = 3 # Comments start with hash\nx + y >> 13 # Arithmetic operations\nx ** y >> 1000 # Exponentiation\nx / y >> 3 # Dividing two integers\nx / float(y) >> 3.333… # Type casting for float division\nstr(x) + “+” >> “10 + 3” # Casting integer as string and\n+ str(y) string concatenation\n25\n\nBuilt-in Values\nTrue, False # Usual true/false values\n# Represents the absence of something\nNone\n# Variables can be assigned None\nx = None\n# Lists can contain None\narray = [1, 2, None]\n# Functions can return None\ndef func():\nreturn None\n26"
+  },
+  {
+    "chunk_id": 11,
+    "word_count": 41,
+    "doc_type": "paper_book",
+    "text": "Built-in Values\nand # Boolean operators in Python written\nas plain English, as opposed to &&,\nor\n||, ! in C++\nnot\nif [] != [None]: # Comparison operators == and !=\ncheck for equality/inequality, return\nprint(“Not equal”)\ntrue/false values\n27"
+  },
+  {
+    "chunk_id": 12,
+    "word_count": 194,
+    "doc_type": "paper_book",
+    "text": "Spacing: Brackets → Indents\nCode blocks are created using indents and newlines, instead of brackets like in C++\n● Indents can be 2 or 4 def sign(num):\n# Indent level 1: function body\nspaces, but should be\nif num == 0:\nconsistent throughout # Indent level 2: if statement body\nprint(“Zero”)\nelif num > 0:\n● If using Vim, set this # Indent level 2: else if statement body\nprint(“Positive”)\nvalue to be consistent\nelse:\nin your .vimrc # Indent level 2: else statement body\nprint(“Negative”)\n28\n\n🎯 Debugging Derby\n0 length = 10\nfloat width = 5.0\nprint \"Beginning work...\"\nFind the errors!\narea = 0 length * Width\nif area > 20\nprint(\"Area: \" + area)\nmessage = \"Completed!'\n29\n\n🎯 Debugging Derby\n0 length = 10 # can’t start var name with number\nfloat width = 5.0 # no explicit type declaration!\nprint \"Beginning work...\" # parentheses around print\narea = 0 length * Width # capitalization mismatch “Width”\nif area > 20 # missing colon after condition\nprint(\"Area: \" + area) # need to cast area to string type\nmessage = \"Completed!' # mismatch in quotation (“ vs ‘)\n30"
+  },
+  {
+    "chunk_id": 13,
+    "word_count": 50,
+    "doc_type": "paper_book",
+    "text": "🎯 Debugging Derby\nlength = 10\nwidth = 5.0\nprint(\"Beginning work...\")\nAll fixed!🥳\narea = length * width\nif area > 20:\nprint(\"Area: \" + str(area))\nmessage = \"Completed!\"\n31\n\nLanguage Basics\n1 2 3\nWhy Python? Setting Up Python Basics\n4 5 6\nData Structures Numpy Practical Tips\n32"
+  },
+  {
+    "chunk_id": 14,
+    "word_count": 188,
+    "doc_type": "paper_book",
+    "text": "Collections: List\nLists are mutable arrays (think std::vector).\nnames = [‘Zach’, ‘Jay’]\nnames[0] == ‘Zach’\nnames.append(‘Richard’)\nprint(len(names) == 3) >> True\nprint(names) >> [‘Zach’, ‘Jay’, ‘Richard’]\nnames += [‘Abi’, ‘Kevin’]\nprint(names) >> [‘Zach’, ‘Jay’, ‘Richard’, ‘Abi’, ‘Kevin’]\nnames = [] # Creates an empty list\nnames = list() # Also creates an empty list\nstuff = [1, [‘hi’,’bye’], -0.12, None] # Can mix types\n33\n\nList Slicing\nList elements can be accessed in convenient ways.\nBasic format: some_list[start_index:end_index]\nnumbers = [0, 1, 2, 3, 4, 5, 6]\nnumbers[0:3] == numbers[:3] == [0, 1, 2]\nnumbers[5:] == numbers[5:7] == [5, 6]\nnumbers[:] == numbers == [0, 1, 2, 3, 4, 5, 6]\nnumbers[-1] == 6 # Negative index wraps around\nnumbers[-3:] == [4, 5, 6]\nnumbers[3:-2] == [3, 4] # Can mix and match\n34\n\nCollections: Tuples\nTuples are immutable arrays.\nnames = (‘Zach’, ‘Jay’) # Note the parentheses\nnames[0] == ‘Zach’\nprint(len(names) == 2) >> True\nprint(names) >> (‘Zach’, ‘Jay’)\nnames[0] = ‘Richard’ >> Type Error: 'tuple' object does not\nsupport item assignment\nempty = tuple() # Empty tuple\nsingle = (10,) # Single-element tuple. Comma matters!\n35"
+  },
+  {
+    "chunk_id": 15,
+    "word_count": 92,
+    "doc_type": "paper_book",
+    "text": "Collections: Dictionary\nDictionaries are hash maps.\nphonebook = {} # Empty dictionary\nphonebook = dict() # Also creates an empty dictionary\nphonebook = {‘Zach’: ‘12-37’} # Dictionary with one item\nphonebook[‘Jay’] = ‘34-23’ # Add another item\nprint(‘Zach’ in phonebook) >> True\nprint(‘Kevin’ in phonebook) >> False\nprint(phonebook[‘Jay’]) >> ‘34-23’\ndel phonebook[‘Zach’] # Delete an item\nprint(phonebook) >> {‘Jay’ : ‘34-23’}\n36\n\nLoops\nFor loop syntax in Python\nInstead of for (i=0; i<10; i++) syntax in languages like C++, use range()\nfor i in range(10):\nprint(i)\n>> 0\n1…\n8\n9\n37"
+  },
+  {
+    "chunk_id": 16,
+    "word_count": 62,
+    "doc_type": "paper_book",
+    "text": "Loops\nTo iterate over a list\nnames = [‘Zach’, ‘Jay’, ‘Richard’] >> Hi Zach!\nfor name in names: Hi Jay!\nprint(‘Hi ‘ + name + ‘!’) Hi Richard!\nTo iterate over indices and values\n# One way >> 1 Zach\nfor i in range(len(names)): 2 Jay\nprint(i, names[i]) 3 Richard\n# A different way\nfor i, name in enumerate(names):\nprint(i, name)\n38"
+  },
+  {
+    "chunk_id": 17,
+    "word_count": 239,
+    "doc_type": "paper_book",
+    "text": "Loops\nTo iterate over a dictionary\nphonebook = {‘Zach’: ‘12-37’, ‘Jay’: ‘34-23’}\nfor name in phonebook: >> Jay\nprint(name) Zach\nfor number in phonebook.values(): >> 12-37\nprint(number) 34-23\nfor name, number in phonebook.items(): >> Zach 12-37\nprint(name, number) Jay 34-23\nNote: Whether dictionary iteration order is guaranteed depends on the version of Python.\n39\n\nClasses\n# Constructor `a =\nclass Animal(object):\nAnimal(‘human’, 10)`\ndef __init__(self, species, age):\n# Refer to instance with `self`\nself.species = species\n# Instance variables are public\nself.age = age\ndef is_person(self):\n# Invoked with `a.is_person()`\nreturn self.species\ndef age_one_year(self):\nself.age += 1\nclass Dog(Animal): # Inherits Animal’s methods\ndef age_one_year(self): # Override for dog years\nself.age += 7\n40\n\nModel Classes\nIn the later assignments, you’ll see and write model classes in Py Torch that inherit from\ntorch.nn.Module, the base class for all neural network modules.\nimport torch.nn as nn\nclass Model(nn.Module):\ndef __init__():\n…\ndef forward():\n…\n41\n\n🎯 Inner Interpreter\nv 1 = [\"Eeyore\", \"Goofy\", \"Nemo\", \"Wall-E\"]\nv 2 = {\"Eeyore\": 12, \"Nemo\": 2, \"Goofy\": 42}\nm 1 = v 1[1:-1]\nOutput?\nfor n in m 1:\nprint(f\"{n} is {v 2[n]} years old.\")\n42\n\n🎯 Inner Interpreter\nv 1 = [\"Eeyore\", \"Goofy\", \"Nemo\", \"Wall-E\"]\nv 2 = {\"Eeyore\": 12, \"Nemo\": 2, \"Goofy\": 42}\nm 1 = v 1[1:-1]\nfor n in m 1:\nprint(f\"{n} is {v 2[n]} years old.\")\n>> Goofy is 42 years old.\n>> Nemo is 2 years old.\n43"
+  },
+  {
+    "chunk_id": 18,
+    "word_count": 138,
+    "doc_type": "paper_book",
+    "text": "Language Basics\n1 2 3\nWhy Python? Setting Up Python Basics\n4 5 6\nData Structures Numpy Practical Tips\n44\n\nPrelude: Importing Package Modules\n# Import ‘os’ and ‘time’ modules\nimport os, time\n# Import under an alias\nimport numpy as np\nnp.dot(x, y) # Access components with pkg.fn\n# Import specific submodules/functions\nfrom numpy import linalg as la, dot as matrix_multiply\n# Can result in namespace collisions...\n45\n\nNow, Num Py!\n● Num Py: Optimized library for matrix and vector computation\n● Makes use of C/C++ subroutines and memory-efficient data structures\n○ Lots of computation can be efficiently represented as vectors\nThis is the data type that you will use to\nMain data type\nrepresent matrix/vector computations.\nnp.ndarray\nNote: constructor function is np.array()\nOn average, a task in Numpy is 5-100 X faster than standard list!\n46"
+  },
+  {
+    "chunk_id": 19,
+    "word_count": 160,
+    "doc_type": "paper_book",
+    "text": "np.ndarray Operations\nReductions: np.max, np.min, np.amax, np.sum, np.mean,...\n# shape: (3, 2) tl;dr “collapsing”\nAlways reduces this axis into the\nx = np.array([[1,2],[3,4], [5, 6]])\nalong an axis. func’s output.\n# shape: (3,)\nOr will reduce\nprint(np.max(x, axis = 1)) >> [2 4 6]\nalong all axes if\nnot specified. # shape: (3, 1)\nprint(np.max(x, axis = 1, keepdims = True)) >> [[2] [4] [6]]\n48\n\nnp.ndarray Operations\nInfix operators (i.e. +, -, *, **, /) are element-wise.\nElement-wise product Matrix product /\nA * B\nnp.matmul(A, B)\n(Hadamard product) of multiplication of\nor A @ B\nmatrix A and B, A ᐤ B, is: matrix A and B is:\nDot product is: np.dot(u, v) np.dot()can also be used, but if A and B are both\n2-D arrays, np.matmul() is preferred.\nMatrix vector\nproduct (1-D Transpose is: x.T\nnp.dot(x, W)\narray vectors) is:\nNote: Sci Py and np.linalg have many, many other advanced functions that are very useful! 🥳\n49"
+  },
+  {
+    "chunk_id": 20,
+    "word_count": 77,
+    "doc_type": "paper_book",
+    "text": "Indexing\nx = np.random.random((3, 4)) # Random (3,4) matrix\nx[:] # Selects everything in x\nx[np.array([0, 2]), :] # Selects the 0 th and 2 nd rows\nx[1, 1:3] # Selects 1 st row as 1-D vector\n# and 1 st through 2 nd elements\nx[x > 0.5] # Boolean indexing\nx[:, :, np.newaxis] # 3-D vector of shape (3, 4, 1)\nNote: Selecting with an ndarray or range will preserve the dimensions of the selection.\n50"
+  },
+  {
+    "chunk_id": 21,
+    "word_count": 149,
+    "doc_type": "paper_book",
+    "text": "Broadcasting\nx = np.random.random((3, 4)) # Random (3, 4) matrix\ny = np.random.random((3, 1)) # Random (3, 1) vector\nz = np.random.random((1, 4)) # Random (1, 4) vector\nx + y # Adds y to each column of x\nx * z # Multiplies z (element-wise) with each row of x\nNote: If you’re getting an error, print the shapes of the matrices and investigate from there.\n51\n\nBroadcasting (visually)\n1 2 3 4 1 1 1 1 2 3 4 5\n5 6 7 8 2 2 2 2 7 8 9 10\n9 10 11 12 3 3 3 3 12 13 14 15\nx + y\n1 2 3 4 1 2 3 4 1 4 9 16\n5 6 7 8 1 2 3 4 5 12 21 32\n9 10 11 12 1 2 3 4 9 30 33 48\nx * z\n52"
+  },
+  {
+    "chunk_id": 22,
+    "word_count": 774,
+    "doc_type": "paper_book",
+    "text": "Broadcasting (generalized) When operating on two arrays, Num Py compares their shapes element-wise. It starts with the trailing (i.e. rightmost) dimensions and works its way left. Two dimensions are compatible when 1. they are equal, or 2. one of them is 1 (in which case, elements on the axis are repeated along the dimension) a = np.random.random((3, 4)) # Random (3, 4) matrix b = np.random.random((3, 1)) # Random (3, 1) vector c = np.random.random((3, )) # Random (3, ) vector What do the following operations give us? What are the resulting shapes? b + b.T a + c If the arrays have different ranks (number of dimensions), Num Py b + c implicitly prepends 1 s to the shape of the lower-rank array. 53  Broadcasting (generalized) When operating on two arrays, Num Py compares their shapes element-wise. It starts with the trailing (i.e. rightmost) dimensions and works its way left. Two dimensions are compatible when 1. they are equal, or 2. one of them is 1 (in which case, elements on the axis are repeated along the dimension) a = np.random.random((3, 4)) # Random (3, 4) matrix b = np.random.random((3, 1)) # Random (3, 1) vector c = np.random.random((3, )) # Random (3, ) vector What do the following operations give us? What are the resulting shapes? b + b.T → (3, 3) a + c → Broadcast Error If the arrays have different ranks (number of dimensions), Num Py b + c → (3, 3) implicitly prepends 1 s to the shape of the lower-rank array. 54  Broadcasting Algorithm p = max(m, n) if m < p: left-pad A's shape with 1 s until it also has p dimensions else if n < p: left-pad B's shape with 1 s until it also has p dimensions result_dims = new list with p elements for i in p-1 ... 0: A_dim_i = A.shape[i]; B_dim_i = B.shape[i] if A_dim_i != 1 and B_dim_i != 1 and A_dim_i != B_dim_i: raise Value Error(\"could not broadcast\") else: # Pick the Array which is having maximum Dimension result_dims[i] = max(A_dim_i, B_dim_i) 55  Efficient Num Py Code Avoid explicit for-loops over indices/axes at all costs. (~10-100 x slowdown). for i in range(x.shape[0]): for i in range(100, 1000): for j in range(x.shape[1]): for j in range(x.shape[1]): x[i,j] **= 2 x[i, j] += 5 x **= 2 x[np.arange(100,1000), :] += 5 56  🎯 Numpy Knowhow How do you create a Num Py array What does np.random.rand(3, 4) with numbers from 1 to 10? generate? A. np.arange(1, 10) A. A 3 x 4 array of random integers B. np.arange(1, 11) B. A 3 x 4 array of random values C. np.array(range(1, 10)) D. np.linspace(1, 10) between 0 and 1 C. A 3 x 4 array of random values between -1 and 1 D. A 3 x 4 identity matrix 57  🎯 Numpy Knowhow How do you create a Num Py array What does np.random.rand(3, 4) with numbers from 1 to 10? generate? A. np.arange(1, 10) A. A 3 x 4 array of random integers B. np.arange(1, 11) B. A 3 x 4 array of random values C. np.array(range(1, 10)) D. np.linspace(1, 10) between 0 and 1 C. A 3 x 4 array of random values between -1 and 1 D. A 3 x 4 identity matrix 58  Language Basics 1 2 3 Why Python? Setting Up Python Basics 4 5 6 Data Structures Numpy Practical Tips 59  List Comprehensions ● Similar to map() from functional programming languages (readability + succinct) ● Format: [func(x) for x in some_list] squares = [] = squares = [i**2 for i for i in range(10): in range(10)] squares.append(i**2) ● Can be conditional: odds = [i**2 for i in range(10) if i%2 == 1] 60  Convenient Syntax Multiple assignment / unpacking iterables Join list of strings with delimiter age, name, pets = 20, ‘Joy’, [‘cat’] “, ”.join([‘1’, ‘2’, x, y, z = (‘TF’, ‘Py Torch’, ‘JAX’) ‘3’]) == ‘1, 2, 3’ Returning multiple String literals with both Single-line if else items from a function single and double quotes result = \"even\" def some_func(): message = ‘I like if number % 2 return 10, 1 “single” quotes.’ == 0 else \"odd\" ten, one = reply = “I prefer some_func() ‘double’ quotes.” 61  Debugging Tips Python has an interactive shell where you can execute arbitrary code. ● Great replacement for TI-84 (no integer overflow!) ● Can import any module (even custom ones in the current directory) ● Try out syntax you’re unsure about and small test cases (especially helpful for matrix operations) $ python Helpful Commands Python 3.9.7 (default, Sep 16 2021, 08:50:36) [Clang 10.0.0 ] :: Anaconda, Inc."
+  },
+  {
+    "chunk_id": 23,
+    "word_count": 228,
+    "doc_type": "paper_book",
+    "text": "on darwin >> import numpy as np Ctrl-d: Exit IPython Session >> A = np.array([[1, 2], [3, 4]]) >> B = np.array([[3, 3], [3, 3]]) Ctrl-c: Interrupt current command >> A * B [[3 6] Ctrl-l: Clear terminal screen [9 12]] >> np.matmul(A, B) [[9 9] [21 21]] 62  Debugging Tools Code What it does array.shape Get shape of Num Py array array.dtype Check data type of array (for precision, for weird behavior) type(stuff) Get type of variable import pdb; pdb.set_trace() Set a breakpoint [1] print(f’My name is {name}’) Easy way to construct a string to print https://docs.python.org/3/library/pdb.html 63  Common Errors Value Error(s) are often caused by mismatch of dimensions in broadcasting or matrix multiplication. If you get this type of error, a good first step s to print out the shape of relevant arrays to see if they match what you expect: array.shape [Very Active, Open-Source Community] When debugging, check Ed and forums such as Stack Overflow or Git Hub Issues → likely that others have encountered the same error! 64  Other Great References Official Python 3 documentation: https://docs.python.org/3/ Official Anaconda user guide: https://docs.conda.io/projects/conda/en/latest/user-guide/index.html Official Num Py documentation: https://numpy.org/doc/stable/ Python tutorial from CS 231 N: https://cs 231 n.github.io/python-numpy-tutorial/ Stanford Python course (CS 41): https://stanfordpython.com/#/ Several Python and library-specific (ex. Num Py) “Cheat Sheet” guides online as well! 65  Yayy, we did it! 🥳 Thanks for listening! 66"
+  }
+]

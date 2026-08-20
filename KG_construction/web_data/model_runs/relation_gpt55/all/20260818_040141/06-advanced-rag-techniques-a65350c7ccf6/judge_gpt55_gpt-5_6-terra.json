@@ -1,0 +1,92 @@
+{
+  "created_at": "2026-08-18T18:41:27.919032+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-06-advanced-rag-techniques-a65350c7ccf6",
+  "file_name": "06-advanced-rag-techniques-a65350c7ccf6",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 13,
+  "topic_metrics": {
+    "precision": 0.8889,
+    "recall": 0.6667,
+    "f1": 0.7619,
+    "tp": 8,
+    "fp": 1,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1": 0.4,
+    "tp": 1,
+    "fp": 0,
+    "fn": 3
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Text Chunking",
+      "Query Processing",
+      "Results Management",
+      "Semantic Processing",
+      "Hybrid Search",
+      "Document Compression",
+      "Performance Optimization",
+      "Query Variations"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Neural Network Concepts",
+        "reason": "The lesson uses sentence-transformer and cross-encoder models but does not teach neural-network concepts themselves."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Re-ranking",
+        "reason": "A dedicated section explains using a cross-encoder to reorder retrieved documents by relevance."
+      },
+      {
+        "name": "Multi-Query Retrieval",
+        "reason": "The source teaches decomposition of complex questions into sub-queries and combining their retrieval results."
+      },
+      {
+        "name": "Self-Querying",
+        "reason": "The lesson explicitly covers extracting structured metadata filters from natural-language queries."
+      },
+      {
+        "name": "Parent-Child Chunking",
+        "reason": "The source presents storing small child chunks for retrieval while returning larger parent context."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Semantic Processing",
+        "to": "Hybrid Search",
+        "reason": "Hybrid search explicitly combines semantic search with keyword/BM25 search, making semantic retrieval knowledge a direct component."
+      }
+    ],
+    "rejected_prerequisites": [],
+    "missing_prerequisites": [
+      {
+        "from": "Keyword Search (BM25)",
+        "to": "Hybrid Search",
+        "reason": "The hybrid retriever combines normalized BM25 keyword scores with semantic-search scores."
+      },
+      {
+        "from": "Retrieval",
+        "to": "Re-ranking",
+        "reason": "Re-ranking operates on an initial set of retrieved documents before selecting the final top results."
+      },
+      {
+        "from": "Document Metadata",
+        "to": "Self-Querying",
+        "reason": "Self-querying extracts filters that are applied against available metadata fields."
+      }
+    ],
+    "overall_note": "The predictions cover most broad lesson themes, but omit several central named advanced RAG techniques."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-06-advanced-rag-techniques-a65350c7ccf6.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-06-advanced-rag-techniques-a65350c7ccf6.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-06-advanced-rag-techniques-a65350c7ccf6_ledger.csv"
+  }
+}

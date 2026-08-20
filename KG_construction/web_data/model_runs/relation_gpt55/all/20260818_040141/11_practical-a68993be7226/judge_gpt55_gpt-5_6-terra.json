@@ -1,0 +1,116 @@
+{
+  "created_at": "2026-08-18T18:43:55.392565+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-11_practical-a68993be7226",
+  "file_name": "11_practical-a68993be7226",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 7,
+  "topic_metrics": {
+    "precision": 0.7273,
+    "recall": 0.6667,
+    "f1": 0.6957,
+    "tp": 8,
+    "fp": 3,
+    "fn": 4
+  },
+  "prerequisite_metrics": {
+    "precision": 0.4,
+    "recall": 0.5,
+    "f1": 0.4444,
+    "tp": 2,
+    "fp": 3,
+    "fn": 2
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Learning Rates",
+      "Hyperparameter Optimization",
+      "Neural Networks",
+      "Training Techniques",
+      "Regularization",
+      "Activation Functions",
+      "Model Evaluation",
+      "Deep Learning"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Loss Functions",
+        "reason": "The source discusses training, test, and validation error, but does not introduce loss functions."
+      },
+      {
+        "name": "Backpropagation",
+        "reason": "Backpropagation is not discussed in the provided text."
+      },
+      {
+        "name": "Training Inference",
+        "reason": "Training and inference costs are mentioned briefly, but this combined concept is not developed as a learning topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Model Capacity",
+        "reason": "The source repeatedly explains effective and representational capacity and how hyperparameters affect it."
+      },
+      {
+        "name": "Training and Test Error",
+        "reason": "Comparing training and test error, including their gap, is central to the data-driven adaptation guidance."
+      },
+      {
+        "name": "Hyperparameter Search",
+        "reason": "The source explicitly explains grid search, random search, and validation-set selection."
+      },
+      {
+        "name": "Dropout",
+        "reason": "Dropout is presented as a baseline component and a principal regularization method."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Model Evaluation",
+        "to": "Hyperparameter Optimization",
+        "reason": "The source states that grid and random search evaluate validation-set error to select the best configuration."
+      },
+      {
+        "from": "Neural Networks",
+        "to": "Deep Learning",
+        "reason": "The source treats deep models as neural-network architectures with increased depth and capacity."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Neural Networks",
+        "to": "Backpropagation",
+        "reason": "Although plausible generally, backpropagation is not covered in the source."
+      },
+      {
+        "from": "Loss Functions",
+        "to": "Backpropagation",
+        "reason": "Neither loss functions nor backpropagation is introduced in the source."
+      },
+      {
+        "from": "Activation Functions",
+        "to": "Backpropagation",
+        "reason": "The source mentions rectified linear units but does not discuss gradient computation or backpropagation."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Model Capacity",
+        "to": "Regularization",
+        "reason": "The source explains regularization as reducing effective model capacity, including through dropout and weight decay."
+      },
+      {
+        "from": "Validation Error",
+        "to": "Hyperparameter Search",
+        "reason": "Grid and random search select configurations by evaluating validation-set error."
+      }
+    ],
+    "overall_note": "The source emphasizes practical model selection, capacity control, regularization, and validation-based hyperparameter search rather than loss-function or backpropagation theory."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-11_practical-a68993be7226.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-11_practical-a68993be7226.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-11_practical-a68993be7226_ledger.csv"
+  }
+}

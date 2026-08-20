@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-08-18T18:47:29.619798+00:00",
+  "evaluation_type": "llm_assisted_pdf_judge",
+  "candidate_id": "modelcmp-gpt55-18_partition-b39fd6ffea3b",
+  "file_name": "18_partition-b39fd6ffea3b",
+  "judge_model": "gpt-5.6-terra",
+  "source_chunk_count": 9,
+  "topic_metrics": {
+    "precision": 0.5556,
+    "recall": 0.5,
+    "f1": 0.5263,
+    "tp": 5,
+    "fp": 4,
+    "fn": 5
+  },
+  "prerequisite_metrics": {
+    "precision": 0.4,
+    "recall": 0.3333,
+    "f1": 0.3636,
+    "tp": 2,
+    "fp": 3,
+    "fn": 4
+  },
+  "judge_ledger": {
+    "supported_topics": [
+      "Likelihood Models",
+      "Probabilistic Models",
+      "Training Algorithms",
+      "Model Sampling",
+      "Model Evaluation"
+    ],
+    "unsupported_topics": [
+      {
+        "name": "Data Representation",
+        "reason": "The source does not discuss feature, input, or label representations."
+      },
+      {
+        "name": "Neural Networks",
+        "reason": "Deep learning models are mentioned only incidentally; neural-network architectures or learning are not covered."
+      },
+      {
+        "name": "Regression and Classification",
+        "reason": "The chapter concerns likelihood training of undirected probabilistic models, not supervised regression or classification."
+      },
+      {
+        "name": "Algorithm Optimization",
+        "reason": "Although stochastic gradient descent is mentioned, the source does not address optimization algorithms as a distinct topic."
+      }
+    ],
+    "missing_topics": [
+      {
+        "name": "Partition Function",
+        "reason": "The chapter defines the partition function, explains its intractability, and discusses estimating it."
+      },
+      {
+        "name": "Unnormalized Probability Distribution",
+        "reason": "Undirected models are defined through an unnormalized distribution that must be normalized by the partition function."
+      },
+      {
+        "name": "Log-Likelihood Gradient",
+        "reason": "The source derives the likelihood gradient and its dependence on the gradient of the partition function."
+      },
+      {
+        "name": "Positive and Negative Phases",
+        "reason": "The log-likelihood gradient is explicitly decomposed into positive and negative phases."
+      },
+      {
+        "name": "Contrastive Divergence",
+        "reason": "The source identifies contrastive divergence and persistent contrastive divergence as sampling-speed alternatives."
+      }
+    ],
+    "accepted_prerequisites": [
+      {
+        "from": "Probabilistic Models",
+        "to": "Likelihood Models",
+        "reason": "Likelihood is defined using a parameterized probability distribution over observed data."
+      },
+      {
+        "from": "Probabilistic Models",
+        "to": "Model Sampling",
+        "reason": "Sampling from the model distribution requires the probabilistic-model distribution being sampled."
+      }
+    ],
+    "rejected_prerequisites": [
+      {
+        "from": "Data Representation",
+        "to": "Regression and Classification",
+        "reason": "Neither data representation nor regression/classification is substantively covered in the source."
+      },
+      {
+        "from": "Data Representation",
+        "to": "Neural Networks",
+        "reason": "The source does not establish a dependency involving data representation or neural networks."
+      },
+      {
+        "from": "Algorithm Optimization",
+        "to": "Training Algorithms",
+        "reason": "The source discusses training procedures but does not present algorithm optimization as their prerequisite."
+      }
+    ],
+    "missing_prerequisites": [
+      {
+        "from": "Unnormalized Probability Distribution",
+        "to": "Partition Function",
+        "reason": "The partition function is defined as the sum or integral of the unnormalized probability over all states."
+      },
+      {
+        "from": "Partition Function",
+        "to": "Log-Likelihood Gradient",
+        "reason": "The log-likelihood gradient contains a gradient term for the parameter-dependent partition function."
+      },
+      {
+        "from": "Log-Likelihood Gradient",
+        "to": "Positive and Negative Phases",
+        "reason": "The source explicitly presents the positive and negative phases as a decomposition of the log-likelihood gradient."
+      },
+      {
+        "from": "Markov Chain Monte Carlo",
+        "to": "Contrastive Divergence",
+        "reason": "Contrastive divergence is introduced as a less expensive alternative to repeatedly burning in Markov chains."
+      }
+    ],
+    "overall_note": "The predictions capture broad probabilistic modeling, likelihood, sampling, training, and evaluation themes, but omit the chapter's central partition-function and negative-phase learning concepts."
+  },
+  "interpretation": "LLM-assisted evidence, not independent ground truth. Audit a sample manually before reporting results.",
+  "artifacts": {
+    "json": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-18_partition-b39fd6ffea3b.json",
+    "summary_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-18_partition-b39fd6ffea3b.csv",
+    "ledger_csv": "D:\\ic\\master project\\project_code\\KG_construction\\web_data\\evaluation_runs\\llm_judge_modelcmp-gpt55-18_partition-b39fd6ffea3b_ledger.csv"
+  }
+}

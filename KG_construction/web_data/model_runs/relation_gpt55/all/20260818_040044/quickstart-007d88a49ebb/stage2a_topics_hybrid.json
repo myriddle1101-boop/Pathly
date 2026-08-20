@@ -1,0 +1,267 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 3,
+  "candidate_count": 18,
+  "topics_count": 17,
+  "candidates": [
+    {
+      "name": "core dependencies",
+      "avg_score": 0.642,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "dependencies pip",
+      "avg_score": 0.6393,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "dependencies",
+      "avg_score": 0.6065,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "print testing",
+      "avg_score": 0.5443,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "install requirements",
+      "avg_score": 0.5413,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "install core",
+      "avg_score": 0.5215,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "testing setup",
+      "avg_score": 0.515,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "create_collection test",
+      "avg_score": 0.5128,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "verify works",
+      "avg_score": 0.5015,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "test collection",
+      "avg_score": 0.5009,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "requirements txt",
+      "avg_score": 0.4944,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "python sentence_transformers",
+      "avg_score": 0.4855,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "create virtual",
+      "avg_score": 0.4229,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "quick start",
+      "avg_score": 0.4153,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "virtual environment",
+      "avg_score": 0.4152,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "bin activate",
+      "avg_score": 0.3842,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "start guide",
+      "avg_score": 0.3802,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "rag_tutorial create",
+      "avg_score": 0.3598,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "core dependencies management",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "pip dependencies installation",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "general dependencies overview",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "print testing methodology",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "installing requirements from requirements.txt",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "installing core packages",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "testing environment setup",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "create_collection unit test",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "verify functionality of components",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "test collection implementation",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "requirements.txt file structure",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "using Python sentence_transformers library",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "creating a virtual environment",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "quick start guide for setup",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "activating virtual environment via bin/activate",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "start guide for new users",
+      "description": "",
+      "sub_topics": []
+    },
+    {
+      "name": "rag_tutorial for creating collections",
+      "description": "",
+      "sub_topics": []
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 17.802,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

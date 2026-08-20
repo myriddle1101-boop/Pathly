@@ -1,0 +1,438 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 6,
+  "candidate_count": 34,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "vector databases",
+      "avg_score": 0.503,
+      "frequency": 3,
+      "chunk_ids": [
+        1,
+        2,
+        6
+      ]
+    },
+    {
+      "name": "text chunk_size",
+      "avg_score": 0.7989,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "chunks chunk_text",
+      "avg_score": 0.781,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "chunk_text text",
+      "avg_score": 0.7634,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "text chunks",
+      "avg_score": 0.7532,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "chunk_text",
+      "avg_score": 0.7519,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "chunks text",
+      "avg_score": 0.7494,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "documents python",
+      "avg_score": 0.5645,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "paris world",
+      "avg_score": 0.5593,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "fast retrieval",
+      "avg_score": 0.5555,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "cosine_similarity query_embedding",
+      "avg_score": 0.5361,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "museum paris",
+      "avg_score": 0.536,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "embeddings searches",
+      "avg_score": 0.5348,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "documents metadata",
+      "avg_score": 0.5337,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "databases vector",
+      "avg_score": 0.532,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "memory efficient",
+      "avg_score": 0.5308,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "paris capital",
+      "avg_score": 0.5299,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "add_documents",
+      "avg_score": 0.5297,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "located paris",
+      "avg_score": 0.5297,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "large datasets",
+      "avg_score": 0.5282,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "add documents",
+      "avg_score": 0.5245,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "documents add",
+      "avg_score": 0.5138,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "retrieval strategies",
+      "avg_score": 0.51,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "city france",
+      "avg_score": 0.5048,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "save memory",
+      "avg_score": 0.5007,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "documents metadatas",
+      "avg_score": 0.4898,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "intelligence louvre",
+      "avg_score": 0.4747,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "pros memory",
+      "avg_score": 0.4745,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "retrieval quality",
+      "avg_score": 0.47,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "affect retrieval",
+      "avg_score": 0.4662,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "learned vector",
+      "avg_score": 0.4589,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "storing",
+      "avg_score": 0.4588,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "memory",
+      "avg_score": 0.456,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "store vectors",
+      "avg_score": 0.4469,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Vector Databases",
+      "description": "Databases optimized for storing and retrieving vector embeddings.",
+      "sub_topics": [
+        {
+          "name": "Fast Retrieval",
+          "description": "Techniques to quickly access data from vector databases."
+        },
+        {
+          "name": "Memory Efficiency",
+          "description": "Strategies to minimize memory usage in vector storage."
+        }
+      ]
+    },
+    {
+      "name": "Text Chunking",
+      "description": "The process of dividing text into manageable pieces for analysis.",
+      "sub_topics": [
+        {
+          "name": "Chunk Size",
+          "description": "Determining the optimal size for text chunks."
+        },
+        {
+          "name": "Chunk Text",
+          "description": "Methods for processing and analyzing text chunks."
+        }
+      ]
+    },
+    {
+      "name": "Cosine Similarity",
+      "description": "A metric used to measure the similarity between two vectors.",
+      "sub_topics": [
+        {
+          "name": "Query Embedding",
+          "description": "Embedding representation of a query for similarity comparison."
+        },
+        {
+          "name": "Search Embeddings",
+          "description": "Using embeddings to perform searches based on similarity."
+        }
+      ]
+    },
+    {
+      "name": "Document Management",
+      "description": "Techniques for handling and organizing documents in machine learning.",
+      "sub_topics": [
+        {
+          "name": "Metadata Handling",
+          "description": "Managing additional information associated with documents."
+        },
+        {
+          "name": "Adding Documents",
+          "description": "Methods for incorporating new documents into a system."
+        }
+      ]
+    },
+    {
+      "name": "Retrieval Strategies",
+      "description": "Approaches to efficiently retrieve relevant information from datasets.",
+      "sub_topics": [
+        {
+          "name": "Quality of Retrieval",
+          "description": "Evaluating the effectiveness of information retrieval methods."
+        },
+        {
+          "name": "Affecting Retrieval",
+          "description": "Factors that influence the success of retrieval processes."
+        }
+      ]
+    },
+    {
+      "name": "Large Datasets",
+      "description": "Handling and processing extensive collections of data.",
+      "sub_topics": [
+        {
+          "name": "Storing Vectors",
+          "description": "Techniques for efficiently storing large vector datasets."
+        },
+        {
+          "name": "Memory Considerations",
+          "description": "Strategies to manage memory when working with large datasets."
+        }
+      ]
+    },
+    {
+      "name": "Artificial Neural Networks",
+      "description": "Computational models inspired by the human brain for processing data.",
+      "sub_topics": [
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        },
+        {
+          "name": "Backpropagation",
+          "description": "A method for training neural networks by minimizing error."
+        }
+      ]
+    },
+    {
+      "name": "Regression and Classification",
+      "description": "Techniques for predicting outcomes based on input data.",
+      "sub_topics": [
+        {
+          "name": "Linear Separation",
+          "description": "The ability to separate classes using linear boundaries."
+        },
+        {
+          "name": "Training Models",
+          "description": "The process of teaching models to make predictions."
+        }
+      ]
+    },
+    {
+      "name": "Embeddings",
+      "description": "Representations of data in a continuous vector space.",
+      "sub_topics": [
+        {
+          "name": "Search Techniques",
+          "description": "Methods for searching through embeddings."
+        },
+        {
+          "name": "Learning Vectors",
+          "description": "The process of training models to generate embeddings."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 23.3499,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

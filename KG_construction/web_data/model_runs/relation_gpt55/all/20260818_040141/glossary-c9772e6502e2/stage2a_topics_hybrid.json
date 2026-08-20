@@ -1,0 +1,431 @@
+{
+  "stage": "2a",
+  "method": "hybrid_keybert_llm",
+  "input_chunks": 6,
+  "candidate_count": 33,
+  "topics_count": 9,
+  "candidates": [
+    {
+      "name": "vector database",
+      "avg_score": 0.5908,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        5
+      ]
+    },
+    {
+      "name": "vector search",
+      "avg_score": 0.5111,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        5
+      ]
+    },
+    {
+      "name": "rag retrieval",
+      "avg_score": 0.487,
+      "frequency": 2,
+      "chunk_ids": [
+        1,
+        6
+      ]
+    },
+    {
+      "name": "embeddings vectors",
+      "avg_score": 0.6078,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "vector list",
+      "avg_score": 0.5922,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "similar vectors",
+      "avg_score": 0.5555,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "encoder model",
+      "avg_score": 0.5546,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "searching vectors",
+      "avg_score": 0.5509,
+      "frequency": 1,
+      "chunk_ids": [
+        5
+      ]
+    },
+    {
+      "name": "metadata information",
+      "avg_score": 0.537,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "effective prompts",
+      "avg_score": 0.5314,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "combining semantic",
+      "avg_score": 0.5283,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "similarity search",
+      "avg_score": 0.5212,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "prompts example",
+      "avg_score": 0.5161,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "creating prompts",
+      "avg_score": 0.5141,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "metadata",
+      "avg_score": 0.5129,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "relevance retrieval",
+      "avg_score": 0.5115,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "similarity scores",
+      "avg_score": 0.511,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "retrieval strategy",
+      "avg_score": 0.5027,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "neural network",
+      "avg_score": 0.4985,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "knowledge base",
+      "avg_score": 0.4968,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "prompts desired",
+      "avg_score": 0.4968,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "ann algorithm",
+      "avg_score": 0.4939,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "search combining",
+      "avg_score": 0.4923,
+      "frequency": 1,
+      "chunk_ids": [
+        2
+      ]
+    },
+    {
+      "name": "collection documents",
+      "avg_score": 0.49,
+      "frequency": 1,
+      "chunk_ids": [
+        3
+      ]
+    },
+    {
+      "name": "terms acronyms",
+      "avg_score": 0.4747,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "acronyms used",
+      "avg_score": 0.4725,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "scaling vector",
+      "avg_score": 0.4705,
+      "frequency": 1,
+      "chunk_ids": [
+        1
+      ]
+    },
+    {
+      "name": "prompts",
+      "avg_score": 0.4641,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "variations query",
+      "avg_score": 0.4612,
+      "frequency": 1,
+      "chunk_ids": [
+        4
+      ]
+    },
+    {
+      "name": "127 retrieval",
+      "avg_score": 0.4529,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "retrieval augmented",
+      "avg_score": 0.4361,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "reference similarity",
+      "avg_score": 0.4258,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    },
+    {
+      "name": "mmr",
+      "avg_score": 0.4177,
+      "frequency": 1,
+      "chunk_ids": [
+        6
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Vector Databases",
+      "description": "Databases optimized for storing and retrieving vector embeddings.",
+      "sub_topics": [
+        {
+          "name": "Vector Search",
+          "description": "Techniques for searching through vector databases."
+        },
+        {
+          "name": "Similarity Search",
+          "description": "Finding similar vectors based on distance metrics."
+        }
+      ]
+    },
+    {
+      "name": "Embeddings",
+      "description": "Representations of data in vector space for machine learning tasks.",
+      "sub_topics": [
+        {
+          "name": "Embedding Vectors",
+          "description": "Vectors that represent data points in a continuous vector space."
+        },
+        {
+          "name": "Similar Vectors",
+          "description": "Vectors that are close to each other in the embedding space."
+        }
+      ]
+    },
+    {
+      "name": "Retrieval Strategies",
+      "description": "Methods for retrieving relevant information from databases.",
+      "sub_topics": [
+        {
+          "name": "RAG Retrieval",
+          "description": "Retrieval-Augmented Generation techniques for information retrieval."
+        },
+        {
+          "name": "Relevance Retrieval",
+          "description": "Techniques to ensure retrieved information is relevant to the query."
+        }
+      ]
+    },
+    {
+      "name": "Neural Networks",
+      "description": "Computational models inspired by the human brain for processing data.",
+      "sub_topics": [
+        {
+          "name": "Encoder Models",
+          "description": "Models that transform input data into a different representation."
+        },
+        {
+          "name": "Activation Functions",
+          "description": "Functions that determine the output of a neural network node."
+        }
+      ]
+    },
+    {
+      "name": "Training Techniques",
+      "description": "Methods used to train machine learning models.",
+      "sub_topics": [
+        {
+          "name": "Backpropagation",
+          "description": "Algorithm for training neural networks by minimizing error."
+        },
+        {
+          "name": "Loss Functions",
+          "description": "Functions that measure the difference between predicted and actual outcomes."
+        }
+      ]
+    },
+    {
+      "name": "Prompt Engineering",
+      "description": "Techniques for designing effective prompts for models.",
+      "sub_topics": [
+        {
+          "name": "Creating Prompts",
+          "description": "Methods for generating prompts to elicit desired responses."
+        },
+        {
+          "name": "Effective Prompts",
+          "description": "Characteristics of prompts that yield high-quality outputs."
+        }
+      ]
+    },
+    {
+      "name": "Similarity Scores",
+      "description": "Metrics used to quantify the similarity between data points.",
+      "sub_topics": [
+        {
+          "name": "Calculating Similarity",
+          "description": "Methods for computing similarity scores between vectors."
+        },
+        {
+          "name": "Reference Similarity",
+          "description": "Comparing vectors against a reference point for similarity."
+        }
+      ]
+    },
+    {
+      "name": "Search Techniques",
+      "description": "Methods for efficiently searching through data.",
+      "sub_topics": [
+        {
+          "name": "Searching Vectors",
+          "description": "Techniques for querying vector databases."
+        },
+        {
+          "name": "Combining Semantic Search",
+          "description": "Integrating semantic understanding into search processes."
+        }
+      ]
+    },
+    {
+      "name": "Document Collections",
+      "description": "Groups of documents used for training and retrieval tasks.",
+      "sub_topics": [
+        {
+          "name": "Collection Documents",
+          "description": "Sets of documents used for various machine learning applications."
+        },
+        {
+          "name": "Metadata Information",
+          "description": "Data that provides context about the documents."
+        }
+      ]
+    }
+  ],
+  "benchmark": {
+    "duration_seconds": 18.5686,
+    "device_info": {
+      "requested_device": "cuda",
+      "selected_device": "cpu",
+      "device": "cpu",
+      "fallback_applied": true,
+      "fallback_reason": "当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "probe_success": true,
+      "probe_summary": "GPU 不可用，已稳定回退到 CPU。原因: 当前 torch 为 CPU build，未编译 CUDA 支持。",
+      "torch_version": "2.12.0+cpu",
+      "torch_cuda_build": null,
+      "cuda_available": false,
+      "cuda_device_count": 0,
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python_version": "3.11.9",
+      "force_device_env": "",
+      "component": "stage2a.keybert",
+      "attempts": [
+        {
+          "device": "cpu",
+          "success": true
+        }
+      ]
+    },
+    "batch_size": 8
+  }
+}

@@ -3,6 +3,9 @@
   "name": "pathly",
   "main": "worker.js",
   "compatibility_date": "2026-08-22",
+  "vars": {
+    "PATHLY_BACKEND_ORIGIN": "https://pathly-production-59cf.up.railway.app"
+  },
   "assets": {
     "directory": ".trae",
     "binding": "ASSETS"
